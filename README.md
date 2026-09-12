@@ -39,7 +39,6 @@ Abra http://127.0.0.1:5186. Também é possível abrir web/index.html diretament
 - Montagem/desmontagem, seleção, isolamento e deslocamento de peças.
 - Giro das rodas, direção dianteira e DRS ilustrativos.
 - Cores para carroceria, asas, rodas e carbono; quatro acabamentos de pintura.
-- Assinatura INTEIA em branco nas laterais, bico e asa traseira do visualizador.
 - Estúdio claro/escuro, luz, piso, fundo e exportação de imagem.
 - Túnel de vento didático com vento relativo, forças por coeficientes, gráfico e CSV. Não é CFD da geometria.
 - Blender com texturas incorporadas, coleção reutilizável e estúdio separado.

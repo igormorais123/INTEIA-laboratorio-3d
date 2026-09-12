@@ -1,5 +1,4 @@
 import {createWindTunnel} from './wind-tunnel.js';
-import {applyInteiaBranding} from './branding.js';
 import {setupCustomization} from './customize.js';
 import * as THREE from 'three';
 import {OrbitControls} from 'three/addons/controls/OrbitControls.js';
@@ -36,7 +35,7 @@ function assemblyTo(v){mechanics.setAmount(v);assembly.value=Math.round(v*100);$
 const raw=Uint8Array.from(atob($('#model-data').textContent.trim()),c=>c.charCodeAt(0));
 new GLTFLoader().parse(raw.buffer,'',g=>{
  model=g.scene;const box=new THREE.Box3().setFromObject(model),center=box.getCenter(new THREE.Vector3()),size=box.getSize(new THREE.Vector3());model.position.set(-center.x,-box.min.y,-center.z);scene.add(model);span=Math.max(size.x,size.z);focus.set(0,size.y*.43,0);model.updateMatrixWorld(true);
- materials=applyCarMaterials(THREE,model);setupCustomization(materials,studio,renderer,scene);mechanics=createMechanics(model);applyInteiaBranding(model,mechanics);windTunnel=createWindTunnel({scene,model,mechanics,reduced});
+ materials=applyCarMaterials(THREE,model);setupCustomization(materials,studio,renderer,scene);mechanics=createMechanics(model);windTunnel=createWindTunnel({scene,model,mechanics,reduced});
  const options=$('#part-select');for(const [category,label] of Object.entries(categoryLabels)){const group=document.createElement('optgroup');group.label=label;mechanics.records.filter(r=>r.category===category).forEach(r=>{const o=document.createElement('option');o.value=r.id;o.textContent=r.label;group.append(o);});options.append(group);}
  $('#part-count').textContent=mechanics.records.length;loader.hidden=true;status.textContent='ESTÚDIO PRONTO';document.body.classList.add('ready');document.querySelectorAll('[data-needs-model]').forEach(e=>e.disabled=false);resize();
  window.viewerInfo={loaded:true,parts:mechanics.records.length,triangles:0,source:'Tutorial part 7, exterior geometry'};model.traverse(o=>{if(o.isMesh)window.viewerInfo.triangles+=(o.geometry.index?o.geometry.index.count:o.geometry.attributes.position.count)/3;});
