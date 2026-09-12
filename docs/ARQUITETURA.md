@@ -28,7 +28,7 @@ Os dois caminhos reaproveitam a geometria. Eles não compartilham exatamente o m
 
 O ensaio aerodinâmico é um terceiro módulo: aero-physics.mjs contém as equações puras; wind-tunnel.js gerencia controles, gráficos e traçadores. A malha fornece apenas um comprimento de referência e envelope visual. Não há solver de pressão/velocidade local, malha volumétrica ou calibração automática de coeficientes.
 
-branding.js projeta quatro assinaturas tipográficas INTEIA sobre a carroceria e a asa traseira. Os adesivos ficam vinculados às meshes e acompanham a desmontagem, sem alterar a pintura-base. São aplicados no visualizador web; o master Blender e os GLBs de reutilização anteriores não foram reexportados com esses adesivos. assets/INTEIA-wordmark.svg oferece a assinatura branca para reutilização gráfica.
+branding.js projeta cinco assinaturas tipográficas INTEIA sobre a carroceria e a asa traseira. Os adesivos ficam vinculados às meshes e acompanham a desmontagem, sem alterar a pintura-base. São aplicados no visualizador web; o master Blender e os GLBs de reutilização anteriores não foram reexportados com esses adesivos. assets/INTEIA-wordmark.svg oferece a assinatura branca para reutilização gráfica.
 
 ## Fonte da verdade
 
