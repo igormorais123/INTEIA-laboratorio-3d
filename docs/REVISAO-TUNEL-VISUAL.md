@@ -35,3 +35,7 @@ As notas são sobre 10. As rodadas rejeitadas foram corrigidas na seguinte; não
 A esteira difusa e o ambiente melhoraram, mas os filetes ainda lembram linhas gráficas. A versão permanece reconhecivelmente digital. O juiz apontou uma extremidade de estrutura entrando pela lateral em um instante do travelling, sem esconder o carro.
 
 O fluxo usa um envelope artístico e pode cruzar detalhes da geometria: não é um campo de ar calculado sobre a malha. O ritmo visual é ajustável e não reproduz o tempo físico do ensaio. O túnel está no HTML; esta entrega não cria vídeo renderizado nem atualiza o Blender com o cenário.
+
+## Revisão adicional após avaliação do usuário
+
+A versão do ciclo anterior não atendeu à expectativa do usuário. Os filetes geométricos foram substituídos por 7.200 partículas com tamanhos, transparência e distribuição irregulares; ruído procedural nas bordas e esteira difusa. A densidade foi reduzida após nova crítica independente. O túnel ganhou iluminação própria, piso menos claro e câmera mais baixa. A avaliação continua apontando aparência digital na fumaça, sem alegação de fotorrealismo.

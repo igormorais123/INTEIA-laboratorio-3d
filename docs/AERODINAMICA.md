@@ -24,7 +24,7 @@ O modo **Túnel de vento** agora abre uma câmara escura com piso de testes, tri
 
 **Travelling suave** movimenta a câmera em um arco limitado. Arrastar a câmera ou escolher uma vista interrompe o travelling. **Só o carro** oculta o painel e os elementos sobre a cena, preservando o túnel; clique novamente para voltar. O movimento automático respeita a preferência de movimento reduzido do sistema.
 
-A fumaça combina faixas transparentes de borda suave e 2.400 partículas difusas atrás do carro. O ritmo é artístico e não mede o tempo de trânsito do ar. Pausar mantém o instante atual. Densidade e dispersão são ajustes visuais, sem efeito nos coeficientes ou nas forças. Não há fumaça quando a velocidade relativa é zero ou o carro está desmontado/isolado. Paredes externas deixam de ocultar o carro quando a câmera passa para trás delas.
+Após a revisão visual adicional, os filetes geométricos foram removidos. A fumaça usa 7.200 partículas transparentes sobrepostas, com ruído procedural e dispersão crescente na esteira. Cinco emissores definem as trajetórias artísticas. O ritmo é artístico e não mede o tempo de trânsito do ar. Pausar mantém o instante atual. Densidade e dispersão são ajustes visuais, sem efeito nos coeficientes ou nas forças. Não há fumaça quando a velocidade relativa é zero ou o carro está desmontado/isolado. Paredes externas deixam de ocultar o carro quando a câmera passa para trás delas.
 
 O túnel faz parte da experiência Web. Esta revisão não foi incorporada ao arquivo Blender nem exportada como vídeo.
 
