@@ -10,6 +10,7 @@ web/src/                     Interface, materiais e controles
 web/build.cjs                Empacotamento com esbuild
 web/server.cjs               Servidor local
 web/test-mechanics.mjs       Teste de ciclos e pivôs
+web/test-aerodynamics.mjs    Teste das equações e condições de validade
 ferramentas/                 Reconstrução e validação Blender/GLB
 docs/                        Guias e orientações
 documentacao/                Proveniência e histórico de avaliações
@@ -24,6 +25,8 @@ Base GLB → aplicação Three.js (materiais + controles + personalização) →
 Base GLB → script Blender → master + materiais portáteis + animação → GLBs → reimportação de validação.
 
 Os dois caminhos reaproveitam a geometria. Eles não compartilham exatamente o mesmo shader de carbono ou ambiente de iluminação. O .blend foi reconstruído da versão GLB separada; não é o .blend original do tutorial com sua pilha original de modificadores.
+
+O ensaio aerodinâmico é um terceiro módulo: aero-physics.mjs contém as equações puras; wind-tunnel.js gerencia controles, gráficos e traçadores. A malha fornece apenas um comprimento de referência e envelope visual. Não há solver de pressão/velocidade local, malha volumétrica ou calibração automática de coeficientes.
 
 ## Fonte da verdade
 

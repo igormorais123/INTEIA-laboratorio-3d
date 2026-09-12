@@ -16,6 +16,7 @@ Um laboratório interativo para explorar e personalizar um carro de fórmula: 97
 | Usar partes em outro Blender | [Guia Blender](docs/BLENDER.md) |
 | Integrar em sites ou jogos | [Integração](docs/INTEGRACAO.md) |
 | Entender os arquivos e materiais | [Arquitetura](docs/ARQUITETURA.md) |
+| Fazer ensaios por coeficientes | [Túnel de vento](docs/AERODINAMICA.md) |
 | Conferir testes e limitações | [Validação](docs/VALIDACAO.md) |
 
 ## Download e execução
@@ -39,6 +40,7 @@ Abra http://127.0.0.1:5186. Também é possível abrir web/index.html diretament
 - Giro das rodas, direção dianteira e DRS ilustrativos.
 - Cores para carroceria, asas, rodas e carbono; quatro acabamentos de pintura.
 - Estúdio claro/escuro, luz, piso, fundo e exportação de imagem.
+- Túnel de vento didático com vento relativo, forças por coeficientes, gráfico e CSV. Não é CFD da geometria.
 - Blender com texturas incorporadas, coleção reutilizável e estúdio separado.
 - GLBs estático e animado, fontes web, scripts de conversão e evidências de validação.
 

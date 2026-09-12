@@ -1,0 +1,14 @@
+import assert from 'node:assert/strict';
+import {aerodynamicTest as run} from './src/aero-physics.mjs';
+const p={speedKmh:36,temperatureC:15,pressureKPa:101.325,area:2,cd:.5,clDown:1};
+const a=run(p),b=run({...p,speedKmh:72});
+const near=(v,w)=>assert.ok(Math.abs(v-w)<1e-8,`${v} != ${w}`);
+assert.ok(Math.abs(a.rho-1.225)<.001);near(a.speed,10);near(a.drag,a.q);near(a.downforce,2*a.q);
+near(b.drag/a.drag,4);near(b.downforce/a.downforce,4);near(b.airPower/a.airPower,8);
+const still=run({...p,headwindKmh:-36});near(still.q,0);near(still.drag,0);near(still.airPower,0);
+const cross=run({...p,crosswindKmh:36});near(cross.q/a.q,2);near(cross.yawDeg,45);near(Math.hypot(cross.axialDrag,cross.lateralDrag),cross.drag);
+assert.equal(run({speedKmh:100}).drag,null);assert.equal(run({...p,cd:-1}).validCoefficients,false);
+assert.equal(run({...p,speedKmh:500}).withinIncompressibleRange,false);
+assert.ok(run({...p,temperatureC:35}).rho<a.rho);
+assert.throws(()=>run({...p,temperatureC:-274}),RangeError);assert.throws(()=>run({...p,pressureKPa:0}),RangeError);
+console.log('Aerodinâmica: unidades, escala V²/V³, vento relativo, densidade, limites e ausência de coeficientes OK.');

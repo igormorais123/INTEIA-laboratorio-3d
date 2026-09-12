@@ -22,3 +22,7 @@ Cinco candidatas foram avaliadas pelo juiz independente Codex: aceitas 1, 4 e 5;
 Não foram feitos testes em motores de jogos, testes de colisão, validação física de suspensão ou homologação contra um carro real. FPS foi observado pontualmente no computador de origem; não é promessa de desempenho. A versão detalhada exige otimização conforme o destino.
 
 Para repetir os testes automatizados, veja Desenvolvimento. Para avaliar alterações de materiais, compare o mesmo enquadramento, iluminação e resolução antes/depois.
+
+## Ensaio aerodinâmico por coeficientes
+
+Testes automatizados verificam conversão km/h → m/s, densidade, V² nas forças, V³ na potência, cancelamento por vento de cauda, composição lateral, parâmetros inválidos e limite de Mach. No navegador foram conferidos resultados ausentes sem coeficientes, exemplo sinalizado, aumento de forças, bloqueio com peças desmontadas e faixa de validade. Isso valida a calculadora, não a aerodinâmica deste carro. Consulte AERODINAMICA.md.
