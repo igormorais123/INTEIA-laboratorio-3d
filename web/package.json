@@ -2,6 +2,8 @@
   "name": "inteia-laboratorio-3d",
   "version": "1.0.0",
   "private": true,
+  "author": "INTEIA",
+  "license": "SEE LICENSE IN ../LICENSE",
   "scripts": {
     "build": "node build.cjs",
     "dev": "node server.cjs",

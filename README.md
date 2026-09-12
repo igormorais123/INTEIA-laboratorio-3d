@@ -50,4 +50,4 @@ As escolhas de personalização ficam na sessão do navegador. Use Salvar imagem
 
 É uma representação das peças externas fornecidas, com cerca de 753 mil triângulos. Não contém motor/câmbio completos, rig físico, colisores ou LODs. Os movimentos são ilustrativos; o projeto não foi certificado como réplica técnica nem como indistinguível de uma fotografia.
 
-A origem geométrica é o arquivo de tutorial F1 2026 parte 7 fornecido pelo usuário. A licença desse conteúdo não foi disponibilizada/verificada. Publicidade do repositório não equivale a licença de redistribuição comercial. Consulte [Direitos e procedência](docs/DIREITOS-E-PROCEDENCIA.md). A licença da biblioteca Three.js é preservada em [THIRD-PARTY-NOTICES.md](THIRD-PARTY-NOTICES.md).
+**© 2026 INTEIA — todos os direitos reservados.** O Laboratório 3D INTEIA é um projeto de titularidade da INTEIA, sob [licença proprietária](LICENSE). Estar público não concede uma licença de código aberto. A procedência dos assets e as licenças de terceiros estão registradas separadamente em [Direitos e procedência](docs/DIREITOS-E-PROCEDENCIA.md) e [THIRD-PARTY-NOTICES.md](THIRD-PARTY-NOTICES.md).
