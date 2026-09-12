@@ -1,0 +1,23 @@
+import fs from 'node:fs';
+import * as THREE from 'three';
+import {GLTFLoader} from 'three/addons/loaders/GLTFLoader.js';
+import {createMechanics} from './src/mechanics.js';
+const b=fs.readFileSync('assets/carro-movable.glb'),len=b.readUInt32LE(12),j=JSON.parse(b.subarray(20,20+len));
+j.materials=[{}];delete j.images;delete j.textures;delete j.samplers;delete j.extensionsUsed;delete j.extensionsRequired;j.meshes.forEach(m=>m.primitives.forEach(p=>p.material=0));
+const json=Buffer.from(JSON.stringify(j)),pad=Buffer.alloc(Math.ceil(json.length/4)*4,32);json.copy(pad);const tail=b.subarray(20+len),out=Buffer.alloc(20+pad.length+tail.length);b.copy(out,0,0,12);out.writeUInt32LE(out.length,8);out.writeUInt32LE(pad.length,12);out.writeUInt32LE(0x4e4f534a,16);pad.copy(out,20);tail.copy(out,20+pad.length);
+const g=await new GLTFLoader().parseAsync(out.buffer.slice(out.byteOffset,out.byteOffset+out.length),'');const model=g.scene;
+const box=new THREE.Box3().setFromObject(model);model.position.y=-box.min.y;model.updateMatrixWorld(true);
+const before=new Map();model.traverse(o=>{if(o.isMesh)before.set(o.uuid,o.matrixWorld.clone());});
+const m=createMechanics(model);m.update(.05,0,true);model.updateMatrixWorld(true);let initialError=0;model.traverse(o=>{if(before.has(o.uuid))initialError=Math.max(initialError,...o.matrixWorld.elements.map((v,i)=>Math.abs(v-before.get(o.uuid).elements[i])));});
+let now=0;for(let cycle=0;cycle<20;cycle++){m.setAmount(1);for(let t=0;t<100;t++)m.update(.05,now+=50,false);if(m.amount!==1)throw Error('Explosion not converged');m.setAmount(0);for(let t=0;t<100;t++)m.update(.05,now+=50,false);if(m.amount!==0)throw Error('Assembly not converged');}
+model.updateMatrixWorld(true);let finalError=0;model.traverse(o=>{if(before.has(o.uuid))finalError=Math.max(finalError,...o.matrixWorld.elements.map((v,i)=>Math.abs(v-before.get(o.uuid).elements[i])));});
+if(initialError>1e-6||finalError>1e-6)throw Error('Geometry drift '+initialError+' '+finalError);
+if(m.records.length!==97||m.wheels.length!==4||!m.flap)throw Error('Missing parts/pivots');
+m.select(10);m.setManual(.7);m.update(.05,now,true);if(m.motionAvailable)throw Error('Motion should pause');m.restoreParts();m.update(.05,now,true);if(!m.motionAvailable)throw Error('Motion should resume');
+m.setSteering(22);m.setSpin(true);m.setDRS(32);m.update(.05,now,true);if(!m.wheels.some(w=>Math.abs(w.pivot.rotation.y)>.2))throw Error('Steering missing');m.reset();m.update(.05,now,true);model.updateMatrixWorld(true);
+let resetError=0;model.traverse(o=>{if(before.has(o.uuid))resetError=Math.max(resetError,...o.matrixWorld.elements.map((v,i)=>Math.abs(v-before.get(o.uuid).elements[i])));});if(resetError>1e-6)throw Error('Reset drift');
+if(m.wheels.some(w=>w.covers.length!==1))throw Error('Each wheel must steer its inner cover');
+m.select(20);m.isolate();m.restoreParts();if(m.isolated)throw Error('Assembly should clear isolation');
+m.drag(true);m.records[20].root.position.x+=.75;m.drag(false);m.update(.05,now,true);if(m.records[20].custom.length()<.7)throw Error('Drag not persisted');m.restoreParts();m.reset();m.update(.05,now,true);model.updateMatrixWorld(true);
+let dragResetError=0;model.traverse(o=>{if(before.has(o.uuid))dragResetError=Math.max(dragResetError,...o.matrixWorld.elements.map((v,i)=>Math.abs(v-before.get(o.uuid).elements[i])));});if(dragResetError>1e-6)throw Error('Drag reset drift');
+const result={parts:m.records.length,wheelPivots:m.wheels.length,innerCovers:m.wheels.map(w=>w.covers.length),drs:!!m.flap,cycles:20,initialError,finalError,resetError,dragResetError,isolationRestored:true,passed:true};fs.writeFileSync('../validacao-mecanica-web.json',JSON.stringify(result,null,2));console.log(result);

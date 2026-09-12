@@ -1,0 +1,14 @@
+{
+  "mesh_components": 97,
+  "triangles": 752823,
+  "frames": [
+    1,
+    300
+  ],
+  "fps": 30,
+  "packed_images": [
+    "INTEIA_Carbono_BaseColor",
+    "web_texture_steering_wheel"
+  ],
+  "blend": "INTEIA_F1_Master.blend"
+}

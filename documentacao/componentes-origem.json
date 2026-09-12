@@ -1,0 +1,3259 @@
+{
+  "source": "outputs/carro.glb",
+  "output": "outputs/carro-movable.glb",
+  "axis": "glTF: X lateral, Y up, +Z front",
+  "parts": [
+    {
+      "name": "rear_wing_drs__01",
+      "label": "Flap traseiro DRS",
+      "category": "aero",
+      "pivot": [
+        0.0,
+        0.7664860188961029,
+        -2.315938975661993
+      ],
+      "sourceObject": "rear_wing_drs",
+      "partId": "rear_wing_drs__01",
+      "side": "center",
+      "worldPivot": [
+        0.0,
+        0.7664860188961029,
+        -2.315938975661993
+      ],
+      "boundsMin": [
+        -0.6007606983184814,
+        0.7162159085273743,
+        -2.4026374518871307
+      ],
+      "boundsMax": [
+        0.6007606983184814,
+        0.8167561292648315,
+        -2.2292404994368553
+      ],
+      "triangles": 3776,
+      "assemblyComponent": true
+    },
+    {
+      "name": "rear_wing_main_part__01",
+      "label": "Asa traseira principal",
+      "category": "aero",
+      "pivot": [
+        0.0,
+        0.6973299980163574,
+        -2.2163338362588547
+      ],
+      "sourceObject": "rear_wing_main_part",
+      "partId": "rear_wing_main_part__01",
+      "side": "center",
+      "worldPivot": [
+        0.0,
+        0.6973299980163574,
+        -2.2163338362588547
+      ],
+      "boundsMin": [
+        -0.6096404194831848,
+        0.6753873229026794,
+        -2.3967625498771667
+      ],
+      "boundsMax": [
+        0.6096404194831848,
+        0.7192726731300354,
+        -2.0359051226405427
+      ],
+      "triangles": 576,
+      "assemblyComponent": true
+    },
+    {
+      "name": "rear_wing_side__01",
+      "label": "Placa lateral traseira · 01",
+      "category": "aero",
+      "pivot": [
+        -0.5037602484226227,
+        0.518862247467041,
+        -2.2829346656799316
+      ],
+      "sourceObject": "rear_wing_side",
+      "partId": "rear_wing_side__01",
+      "side": "left",
+      "worldPivot": [
+        -0.5037602484226227,
+        0.518862247467041,
+        -2.2829346656799316
+      ],
+      "boundsMin": [
+        -0.6182751655578613,
+        0.20865285396575928,
+        -2.53900408744812
+      ],
+      "boundsMax": [
+        -0.38924533128738403,
+        0.8290716409683228,
+        -2.026865243911743
+      ],
+      "triangles": 1824,
+      "assemblyComponent": true
+    },
+    {
+      "name": "rear_wing_side__02",
+      "label": "Placa lateral traseira · 02",
+      "category": "aero",
+      "pivot": [
+        0.5037602484226227,
+        0.518862247467041,
+        -2.2829346656799316
+      ],
+      "sourceObject": "rear_wing_side",
+      "partId": "rear_wing_side__02",
+      "side": "right",
+      "worldPivot": [
+        0.5037602484226227,
+        0.518862247467041,
+        -2.2829346656799316
+      ],
+      "boundsMin": [
+        0.38924533128738403,
+        0.20865285396575928,
+        -2.53900408744812
+      ],
+      "boundsMax": [
+        0.6182751655578613,
+        0.8290716409683228,
+        -2.026865243911743
+      ],
+      "triangles": 1824,
+      "assemblyComponent": true
+    },
+    {
+      "name": "rear_wing_top_mount__01",
+      "label": "Suporte superior traseiro · 01",
+      "category": "aero",
+      "pivot": [
+        -0.6068126857280731,
+        0.7665448933839798,
+        -2.315886253491044
+      ],
+      "sourceObject": "rear_wing_top_mount",
+      "partId": "rear_wing_top_mount__01",
+      "side": "left",
+      "worldPivot": [
+        -0.6068126857280731,
+        0.7665448933839798,
+        -2.315886253491044
+      ],
+      "boundsMin": [
+        -0.6128647923469543,
+        0.7171237468719482,
+        -2.401837259531021
+      ],
+      "boundsMax": [
+        -0.6007605791091919,
+        0.8159660398960114,
+        -2.229935247451067
+      ],
+      "triangles": 112,
+      "assemblyComponent": true
+    },
+    {
+      "name": "rear_wing_top_mount__02",
+      "label": "Suporte superior traseiro · 02",
+      "category": "aero",
+      "pivot": [
+        0.6068126857280731,
+        0.7665448784828186,
+        -2.315886255353689
+      ],
+      "sourceObject": "rear_wing_top_mount",
+      "partId": "rear_wing_top_mount__02",
+      "side": "right",
+      "worldPivot": [
+        0.6068126857280731,
+        0.7665448784828186,
+        -2.315886255353689
+      ],
+      "boundsMin": [
+        0.6007605791091919,
+        0.7171237170696259,
+        -2.401837259531021
+      ],
+      "boundsMax": [
+        0.6128647923469543,
+        0.8159660398960114,
+        -2.2299352511763573
+      ],
+      "triangles": 112,
+      "assemblyComponent": true
+    },
+    {
+      "name": "rear_wing_holder__01",
+      "label": "Suporte da asa traseira · 01",
+      "category": "aero",
+      "pivot": [
+        -0.09008660167455673,
+        0.5783222764730453,
+        -2.01468962430954
+      ],
+      "sourceObject": "rear_wing_holder",
+      "partId": "rear_wing_holder__01",
+      "side": "left",
+      "worldPivot": [
+        -0.09008660167455673,
+        0.5783222764730453,
+        -2.01468962430954
+      ],
+      "boundsMin": [
+        -0.10435855388641357,
+        0.3627202808856964,
+        -2.2111825942993164
+      ],
+      "boundsMax": [
+        -0.07581464946269989,
+        0.7939242720603943,
+        -1.8181966543197632
+      ],
+      "triangles": 1312,
+      "assemblyComponent": true
+    },
+    {
+      "name": "rear_wing_holder__02",
+      "label": "Suporte da asa traseira · 02",
+      "category": "aero",
+      "pivot": [
+        0.09008660167455673,
+        0.5783222764730453,
+        -2.01468962430954
+      ],
+      "sourceObject": "rear_wing_holder",
+      "partId": "rear_wing_holder__02",
+      "side": "right",
+      "worldPivot": [
+        0.09008660167455673,
+        0.5783222764730453,
+        -2.01468962430954
+      ],
+      "boundsMin": [
+        0.07581464946269989,
+        0.3627202808856964,
+        -2.2111825942993164
+      ],
+      "boundsMax": [
+        0.10435855388641357,
+        0.7939242720603943,
+        -1.8181966543197632
+      ],
+      "triangles": 1312,
+      "assemblyComponent": true
+    },
+    {
+      "name": "rear_wing_bottom_holder__01",
+      "label": "Suporte inferior traseiro",
+      "category": "aero",
+      "pivot": [
+        0.0,
+        0.391078632324934,
+        -2.22421695291996
+      ],
+      "sourceObject": "rear_wing_bottom_holder",
+      "partId": "rear_wing_bottom_holder__01",
+      "side": "center",
+      "worldPivot": [
+        0.0,
+        0.391078632324934,
+        -2.22421695291996
+      ],
+      "boundsMin": [
+        -0.4167276620864868,
+        0.37188561260700226,
+        -2.3560858070850372
+      ],
+      "boundsMax": [
+        0.4167276620864868,
+        0.41027165204286575,
+        -2.092348098754883
+      ],
+      "triangles": 320,
+      "assemblyComponent": true
+    },
+    {
+      "name": "drs_holder__01",
+      "label": "Suporte do DRS",
+      "category": "aero",
+      "pivot": [
+        -9.313225746154785e-10,
+        0.8008742034435272,
+        -2.1037882566452026
+      ],
+      "sourceObject": "drs_holder",
+      "partId": "drs_holder__01",
+      "side": "center",
+      "worldPivot": [
+        -9.313225746154785e-10,
+        0.8008742034435272,
+        -2.1037882566452026
+      ],
+      "boundsMin": [
+        -0.021374499425292015,
+        0.6986865401268005,
+        -2.1933841705322266
+      ],
+      "boundsMax": [
+        0.021374497562646866,
+        0.9030618667602539,
+        -2.0141923427581787
+      ],
+      "triangles": 4736,
+      "assemblyComponent": true
+    },
+    {
+      "name": "drs_mechanism__01",
+      "label": "Mecanismo do DRS · 01",
+      "category": "aero",
+      "pivot": [
+        0.0,
+        0.7687632441520691,
+        -2.344451665878296
+      ],
+      "sourceObject": "drs_mechanism",
+      "partId": "drs_mechanism__01",
+      "side": "center",
+      "worldPivot": [
+        0.0,
+        0.7687632441520691,
+        -2.344451665878296
+      ],
+      "boundsMin": [
+        -0.008160592056810856,
+        0.7555803060531616,
+        -2.360049247741699
+      ],
+      "boundsMax": [
+        0.008160592056810856,
+        0.7819461822509766,
+        -2.3288540840148926
+      ],
+      "triangles": 556,
+      "assemblyComponent": true
+    },
+    {
+      "name": "drs_mechanism__02",
+      "label": "Mecanismo do DRS · 02",
+      "category": "aero",
+      "pivot": [
+        0.0,
+        0.8605705499649048,
+        -2.1720086336135864
+      ],
+      "sourceObject": "drs_mechanism",
+      "partId": "drs_mechanism__02",
+      "side": "center",
+      "worldPivot": [
+        0.0,
+        0.8605705499649048,
+        -2.1720086336135864
+      ],
+      "boundsMin": [
+        -0.008160592056810856,
+        0.8412570953369141,
+        -2.2136003971099854
+      ],
+      "boundsMax": [
+        0.008160592056810856,
+        0.8798840045928955,
+        -2.1304168701171875
+      ],
+      "triangles": 548,
+      "assemblyComponent": true
+    },
+    {
+      "name": "drs_mechanism__03",
+      "label": "Mecanismo do DRS · 03",
+      "category": "aero",
+      "pivot": [
+        0.0,
+        0.8114823997020721,
+        -2.272011876106262
+      ],
+      "sourceObject": "drs_mechanism",
+      "partId": "drs_mechanism__03",
+      "side": "center",
+      "worldPivot": [
+        0.0,
+        0.8114823997020721,
+        -2.272011876106262
+      ],
+      "boundsMin": [
+        -0.004606766626238823,
+        0.7683632969856262,
+        -2.3437676429748535
+      ],
+      "boundsMax": [
+        0.004606766626238823,
+        0.8546015024185181,
+        -2.200256109237671
+      ],
+      "triangles": 166,
+      "assemblyComponent": true
+    },
+    {
+      "name": "front_wing_side_plates__01",
+      "label": "Placa lateral dianteira · 01",
+      "category": "aero",
+      "pivot": [
+        -0.7564477622509003,
+        0.26084936782717705,
+        2.1498207449913025
+      ],
+      "sourceObject": "front_wing_side_plates",
+      "partId": "front_wing_side_plates__01",
+      "side": "left",
+      "worldPivot": [
+        -0.7564477622509003,
+        0.26084936782717705,
+        2.1498207449913025
+      ],
+      "boundsMin": [
+        -0.9109497666358948,
+        0.08120692893862724,
+        1.7985345423221588
+      ],
+      "boundsMax": [
+        -0.6019457578659058,
+        0.44049180671572685,
+        2.501106947660446
+      ],
+      "triangles": 2432,
+      "assemblyComponent": true
+    },
+    {
+      "name": "front_wing_side_plates__02",
+      "label": "Placa lateral dianteira · 02",
+      "category": "aero",
+      "pivot": [
+        0.7564477622509003,
+        0.26084936782717705,
+        2.1498207449913025
+      ],
+      "sourceObject": "front_wing_side_plates",
+      "partId": "front_wing_side_plates__02",
+      "side": "right",
+      "worldPivot": [
+        0.7564477622509003,
+        0.26084936782717705,
+        2.1498207449913025
+      ],
+      "boundsMin": [
+        0.6019457578659058,
+        0.08120692893862724,
+        1.7985345423221588
+      ],
+      "boundsMax": [
+        0.9109497666358948,
+        0.44049180671572685,
+        2.501106947660446
+      ],
+      "triangles": 2432,
+      "assemblyComponent": true
+    },
+    {
+      "name": "front_wing_side_plates__03",
+      "label": "Placa lateral dianteira · 03",
+      "category": "aero",
+      "pivot": [
+        -0.8757890164852142,
+        0.17172974534332752,
+        2.1109712347388268
+      ],
+      "sourceObject": "front_wing_side_plates",
+      "partId": "front_wing_side_plates__03",
+      "side": "left",
+      "worldPivot": [
+        -0.8757890164852142,
+        0.17172974534332752,
+        2.1109712347388268
+      ],
+      "boundsMin": [
+        -0.8944072723388672,
+        0.1122085228562355,
+        1.8964274376630783
+      ],
+      "boundsMax": [
+        -0.8571707606315613,
+        0.23125096783041954,
+        2.325515031814575
+      ],
+      "triangles": 544,
+      "assemblyComponent": true
+    },
+    {
+      "name": "front_wing_side_plates__04",
+      "label": "Placa lateral dianteira · 04",
+      "category": "aero",
+      "pivot": [
+        0.8757890164852142,
+        0.17172974534332752,
+        2.1109712347388268
+      ],
+      "sourceObject": "front_wing_side_plates",
+      "partId": "front_wing_side_plates__04",
+      "side": "right",
+      "worldPivot": [
+        0.8757890164852142,
+        0.17172974534332752,
+        2.1109712347388268
+      ],
+      "boundsMin": [
+        0.8571707606315613,
+        0.1122085228562355,
+        1.8964274376630783
+      ],
+      "boundsMax": [
+        0.8944072723388672,
+        0.23125096783041954,
+        2.325515031814575
+      ],
+      "triangles": 544,
+      "assemblyComponent": true
+    },
+    {
+      "name": "front_wing_bottom__01",
+      "label": "Asa dianteira inferior",
+      "category": "aero",
+      "pivot": [
+        0.0,
+        0.14282241463661194,
+        2.3484939336776733
+      ],
+      "sourceObject": "front_wing_bottom",
+      "partId": "front_wing_bottom__01",
+      "side": "center",
+      "worldPivot": [
+        0.0,
+        0.14282241463661194,
+        2.3484939336776733
+      ],
+      "boundsMin": [
+        -0.6541671752929688,
+        0.08539515733718872,
+        2.1519752889871597
+      ],
+      "boundsMax": [
+        0.6541671752929688,
+        0.20024967193603516,
+        2.545012578368187
+      ],
+      "triangles": 4736,
+      "assemblyComponent": true
+    },
+    {
+      "name": "front_wing_middle__01",
+      "label": "Asa dianteira intermediária",
+      "category": "aero",
+      "pivot": [
+        0.0,
+        0.17217649519443512,
+        2.2599581331014633
+      ],
+      "sourceObject": "front_wing_middle",
+      "partId": "front_wing_middle__01",
+      "side": "center",
+      "worldPivot": [
+        0.0,
+        0.17217649519443512,
+        2.2599581331014633
+      ],
+      "boundsMin": [
+        -0.6432666778564453,
+        0.11693960428237915,
+        2.1338805556297302
+      ],
+      "boundsMax": [
+        0.6432666778564453,
+        0.2274133861064911,
+        2.3860357105731964
+      ],
+      "triangles": 4736,
+      "assemblyComponent": true
+    },
+    {
+      "name": "front_wing_top__01",
+      "label": "Asa dianteira superior",
+      "category": "aero",
+      "pivot": [
+        0.0,
+        0.21104441583156586,
+        2.1848008688539267
+      ],
+      "sourceObject": "front_wing_top",
+      "partId": "front_wing_top__01",
+      "side": "center",
+      "worldPivot": [
+        0.0,
+        0.21104441583156586,
+        2.1848008688539267
+      ],
+      "boundsMin": [
+        -0.6379272937774658,
+        0.13923496007919312,
+        2.1013212352991104
+      ],
+      "boundsMax": [
+        0.6379272937774658,
+        0.2828538715839386,
+        2.268280502408743
+      ],
+      "triangles": 5376,
+      "assemblyComponent": true
+    },
+    {
+      "name": "front_wing_mounts__01",
+      "label": "Suporte dianteiro · 01",
+      "category": "aero",
+      "pivot": [
+        -0.44106484949588776,
+        0.20366735383868217,
+        2.3126900121569633
+      ],
+      "sourceObject": "front_wing_mounts",
+      "partId": "front_wing_mounts__01",
+      "side": "left",
+      "worldPivot": [
+        -0.44106484949588776,
+        0.20366735383868217,
+        2.3126900121569633
+      ],
+      "boundsMin": [
+        -0.4437348246574402,
+        0.18678975105285645,
+        2.283964291214943
+      ],
+      "boundsMax": [
+        -0.4383948743343353,
+        0.2205449566245079,
+        2.3414157330989838
+      ],
+      "triangles": 1280,
+      "assemblyComponent": true
+    },
+    {
+      "name": "front_wing_mounts__02",
+      "label": "Suporte dianteiro · 02",
+      "category": "aero",
+      "pivot": [
+        -0.24092064052820206,
+        0.15796738862991333,
+        2.3658350482583046
+      ],
+      "sourceObject": "front_wing_mounts",
+      "partId": "front_wing_mounts__02",
+      "side": "left",
+      "worldPivot": [
+        -0.24092064052820206,
+        0.15796738862991333,
+        2.3658350482583046
+      ],
+      "boundsMin": [
+        -0.2435905933380127,
+        0.14274148643016815,
+        2.3371093422174454
+      ],
+      "boundsMax": [
+        -0.23825068771839142,
+        0.1731932908296585,
+        2.394560754299164
+      ],
+      "triangles": 1280,
+      "assemblyComponent": true
+    },
+    {
+      "name": "front_wing_mounts__03",
+      "label": "Suporte dianteiro · 03",
+      "category": "aero",
+      "pivot": [
+        0.24092064052820206,
+        0.15796738862991333,
+        2.3658350482583046
+      ],
+      "sourceObject": "front_wing_mounts",
+      "partId": "front_wing_mounts__03",
+      "side": "right",
+      "worldPivot": [
+        0.24092064052820206,
+        0.15796738862991333,
+        2.3658350482583046
+      ],
+      "boundsMin": [
+        0.23825068771839142,
+        0.14274148643016815,
+        2.3371093422174454
+      ],
+      "boundsMax": [
+        0.2435905933380127,
+        0.1731932908296585,
+        2.394560754299164
+      ],
+      "triangles": 1280,
+      "assemblyComponent": true
+    },
+    {
+      "name": "front_wing_mounts__04",
+      "label": "Suporte dianteiro · 04",
+      "category": "aero",
+      "pivot": [
+        0.44106484949588776,
+        0.20366735383868217,
+        2.3126900121569633
+      ],
+      "sourceObject": "front_wing_mounts",
+      "partId": "front_wing_mounts__04",
+      "side": "right",
+      "worldPivot": [
+        0.44106484949588776,
+        0.20366735383868217,
+        2.3126900121569633
+      ],
+      "boundsMin": [
+        0.4383948743343353,
+        0.18678975105285645,
+        2.283964291214943
+      ],
+      "boundsMax": [
+        0.4437348246574402,
+        0.2205449566245079,
+        2.3414157330989838
+      ],
+      "triangles": 1280,
+      "assemblyComponent": true
+    },
+    {
+      "name": "main_body__01",
+      "label": "Carroceria",
+      "category": "body",
+      "pivot": [
+        0.0,
+        0.5521813035011292,
+        0.35201823711395264
+      ],
+      "sourceObject": "main_body",
+      "partId": "main_body__01",
+      "side": "center",
+      "worldPivot": [
+        0.0,
+        0.5521813035011292,
+        0.35201823711395264
+      ],
+      "boundsMin": [
+        -0.705899178981781,
+        0.10857117176055908,
+        -1.8472816944122314
+      ],
+      "boundsMax": [
+        0.705899178981781,
+        0.9957914352416992,
+        2.5513181686401367
+      ],
+      "triangles": 107406,
+      "assemblyComponent": true
+    },
+    {
+      "name": "floor__01",
+      "label": "Assoalho · 01",
+      "category": "aero",
+      "pivot": [
+        0.0,
+        0.2206344585865736,
+        -0.7240652441978455
+      ],
+      "sourceObject": "floor",
+      "partId": "floor__01",
+      "side": "center",
+      "worldPivot": [
+        0.0,
+        0.2206344585865736,
+        -0.7240652441978455
+      ],
+      "boundsMin": [
+        -0.8504099249839783,
+        0.031437721103429794,
+        -2.5554306507110596
+      ],
+      "boundsMax": [
+        0.8504099249839783,
+        0.4098311960697174,
+        1.1073001623153687
+      ],
+      "triangles": 27216,
+      "assemblyComponent": true
+    },
+    {
+      "name": "floor__02",
+      "label": "Assoalho · 02",
+      "category": "aero",
+      "pivot": [
+        -0.723985105752945,
+        0.18897701613605022,
+        0.45716032572090626
+      ],
+      "sourceObject": "floor",
+      "partId": "floor__02",
+      "side": "left",
+      "worldPivot": [
+        -0.723985105752945,
+        0.18897701613605022,
+        0.45716032572090626
+      ],
+      "boundsMin": [
+        -0.8518586158752441,
+        0.05178626999258995,
+        0.053368035703897476
+      ],
+      "boundsMax": [
+        -0.5961115956306458,
+        0.3261677622795105,
+        0.860952615737915
+      ],
+      "triangles": 2816,
+      "assemblyComponent": true
+    },
+    {
+      "name": "floor__03",
+      "label": "Assoalho · 03",
+      "category": "aero",
+      "pivot": [
+        0.723985105752945,
+        0.18897701613605022,
+        0.45716029591858387
+      ],
+      "sourceObject": "floor",
+      "partId": "floor__03",
+      "side": "right",
+      "worldPivot": [
+        0.723985105752945,
+        0.18897701613605022,
+        0.45716029591858387
+      ],
+      "boundsMin": [
+        0.5961115956306458,
+        0.05178626999258995,
+        0.053368035703897476
+      ],
+      "boundsMax": [
+        0.8518586158752441,
+        0.3261677622795105,
+        0.8609525561332703
+      ],
+      "triangles": 2816,
+      "assemblyComponent": true
+    },
+    {
+      "name": "rear_led__01",
+      "label": "Luz traseira",
+      "category": "details",
+      "pivot": [
+        0.0,
+        0.31448473036289215,
+        -2.5448145866394043
+      ],
+      "sourceObject": "rear_led",
+      "partId": "rear_led__01",
+      "side": "center",
+      "worldPivot": [
+        0.0,
+        0.31448473036289215,
+        -2.5448145866394043
+      ],
+      "boundsMin": [
+        -0.028270039707422256,
+        0.24815431237220764,
+        -2.5516605377197266
+      ],
+      "boundsMax": [
+        0.028270039707422256,
+        0.38081514835357666,
+        -2.537968635559082
+      ],
+      "triangles": 1248,
+      "assemblyComponent": true
+    },
+    {
+      "name": "exhaust__01",
+      "label": "Escape",
+      "category": "details",
+      "pivot": [
+        0.0,
+        0.4438844472169876,
+        -1.7809234261512756
+      ],
+      "sourceObject": "exhaust",
+      "partId": "exhaust__01",
+      "side": "center",
+      "worldPivot": [
+        0.0,
+        0.4438844472169876,
+        -1.7809234261512756
+      ],
+      "boundsMin": [
+        -0.04454135522246361,
+        0.36686262488365173,
+        -2.0719728469848633
+      ],
+      "boundsMax": [
+        0.04454135522246361,
+        0.5209062695503235,
+        -1.489874005317688
+      ],
+      "triangles": 7808,
+      "assemblyComponent": true
+    },
+    {
+      "name": "top_intake_details__01",
+      "label": "Detalhe da tomada de ar · 01",
+      "category": "details",
+      "pivot": [
+        -7.450580596923828e-09,
+        1.0485673546791077,
+        -0.3934885561466217
+      ],
+      "sourceObject": "top_intake_details",
+      "partId": "top_intake_details__01",
+      "side": "center",
+      "worldPivot": [
+        -7.450580596923828e-09,
+        1.0485673546791077,
+        -0.3934885561466217
+      ],
+      "boundsMin": [
+        -0.15633703768253326,
+        0.9921977519989014,
+        -0.5346670746803284
+      ],
+      "boundsMax": [
+        0.15633702278137207,
+        1.104936957359314,
+        -0.25231003761291504
+      ],
+      "triangles": 6784,
+      "assemblyComponent": true
+    },
+    {
+      "name": "top_intake_details__02",
+      "label": "Detalhe da tomada de ar · 02",
+      "category": "details",
+      "pivot": [
+        -0.18513232469558716,
+        0.8869708776473999,
+        -0.32664670795202255
+      ],
+      "sourceObject": "top_intake_details",
+      "partId": "top_intake_details__02",
+      "side": "left",
+      "worldPivot": [
+        -0.18513232469558716,
+        0.8869708776473999,
+        -0.32664670795202255
+      ],
+      "boundsMin": [
+        -0.27580729126930237,
+        0.8656414747238159,
+        -0.41826456785202026
+      ],
+      "boundsMax": [
+        -0.09445735812187195,
+        0.9083002805709839,
+        -0.23502884805202484
+      ],
+      "triangles": 2688,
+      "assemblyComponent": true
+    },
+    {
+      "name": "top_intake_details__03",
+      "label": "Detalhe da tomada de ar · 03",
+      "category": "details",
+      "pivot": [
+        0.18513230979442596,
+        0.8869709372520447,
+        -0.32664668560028076
+      ],
+      "sourceObject": "top_intake_details",
+      "partId": "top_intake_details__03",
+      "side": "right",
+      "worldPivot": [
+        0.18513230979442596,
+        0.8869709372520447,
+        -0.32664668560028076
+      ],
+      "boundsMin": [
+        0.09445735812187195,
+        0.8656415343284607,
+        -0.4182645380496979
+      ],
+      "boundsMax": [
+        0.27580726146698,
+        0.9083003401756287,
+        -0.23502883315086365
+      ],
+      "triangles": 2688,
+      "assemblyComponent": true
+    },
+    {
+      "name": "antennas__01",
+      "label": "Antena · 01",
+      "category": "details",
+      "pivot": [
+        0.0,
+        0.7028954867273569,
+        1.3117771819233894
+      ],
+      "sourceObject": "antennas",
+      "partId": "antennas__01",
+      "side": "center",
+      "worldPivot": [
+        0.0,
+        0.7028954867273569,
+        1.3117771819233894
+      ],
+      "boundsMin": [
+        -0.0029225503094494343,
+        0.6377983577549458,
+        1.2726046591997147
+      ],
+      "boundsMax": [
+        0.0029225503094494343,
+        0.7679926156997681,
+        1.3509497046470642
+      ],
+      "triangles": 7440,
+      "assemblyComponent": true
+    },
+    {
+      "name": "antennas__02",
+      "label": "Antena · 02",
+      "category": "details",
+      "pivot": [
+        -5.587935447692871e-09,
+        0.6874349596910179,
+        0.9084624946117401
+      ],
+      "sourceObject": "antennas",
+      "partId": "antennas__02",
+      "side": "center",
+      "worldPivot": [
+        -5.587935447692871e-09,
+        0.6874349596910179,
+        0.9084624946117401
+      ],
+      "boundsMin": [
+        -0.003914485219866037,
+        0.6682867025956511,
+        0.9045480191707611
+      ],
+      "boundsMax": [
+        0.003914474043995142,
+        0.7065832167863846,
+        0.9123769700527191
+      ],
+      "triangles": 5760,
+      "assemblyComponent": true
+    },
+    {
+      "name": "antennas__03",
+      "label": "Antena · 03",
+      "category": "details",
+      "pivot": [
+        0.0,
+        0.6994927525520325,
+        1.1375423669815063
+      ],
+      "sourceObject": "antennas",
+      "partId": "antennas__03",
+      "side": "center",
+      "worldPivot": [
+        0.0,
+        0.6994927525520325,
+        1.1375423669815063
+      ],
+      "boundsMin": [
+        -0.009005718864500523,
+        0.6554399728775024,
+        1.1285366481170058
+      ],
+      "boundsMax": [
+        0.009005718864500523,
+        0.7435455322265625,
+        1.1465480858460069
+      ],
+      "triangles": 5760,
+      "assemblyComponent": true
+    },
+    {
+      "name": "antennas__04",
+      "label": "Antena · 04",
+      "category": "details",
+      "pivot": [
+        1.862645149230957e-09,
+        0.6941492194309831,
+        1.3128449618816376
+      ],
+      "sourceObject": "antennas",
+      "partId": "antennas__04",
+      "side": "center",
+      "worldPivot": [
+        1.862645149230957e-09,
+        0.6941492194309831,
+        1.3128449618816376
+      ],
+      "boundsMin": [
+        -0.06209223344922066,
+        0.6280812565237284,
+        1.303640827536583
+      ],
+      "boundsMax": [
+        0.062092237174510956,
+        0.7602171823382378,
+        1.3220490962266922
+      ],
+      "triangles": 1984,
+      "assemblyComponent": true
+    },
+    {
+      "name": "side_mirrors__L_01",
+      "label": "Espelho retrovisor · L_01",
+      "category": "details",
+      "pivot": [
+        -0.4379212036728859,
+        0.6168248206377029,
+        0.44038474559783936
+      ],
+      "sourceObject": "side_mirrors",
+      "partId": "side_mirrors__L_01",
+      "side": "left",
+      "worldPivot": [
+        -0.4379212036728859,
+        0.6168248206377029,
+        0.44038474559783936
+      ],
+      "boundsMin": [
+        -0.6912431120872498,
+        0.5163273215293884,
+        0.2516145706176758
+      ],
+      "boundsMax": [
+        -0.18459929525852203,
+        0.7173223197460175,
+        0.6291549205780029
+      ],
+      "triangles": 5216,
+      "assemblyComponent": true
+    },
+    {
+      "name": "side_mirrors__R_01",
+      "label": "Espelho retrovisor · R_01",
+      "category": "details",
+      "pivot": [
+        0.4379212036728859,
+        0.6168248206377029,
+        0.44038474559783936
+      ],
+      "sourceObject": "side_mirrors",
+      "partId": "side_mirrors__R_01",
+      "side": "right",
+      "worldPivot": [
+        0.4379212036728859,
+        0.6168248206377029,
+        0.44038474559783936
+      ],
+      "boundsMin": [
+        0.18459929525852203,
+        0.5163273215293884,
+        0.2516145706176758
+      ],
+      "boundsMax": [
+        0.6912431120872498,
+        0.7173223197460175,
+        0.6291549205780029
+      ],
+      "triangles": 5216,
+      "assemblyComponent": true
+    },
+    {
+      "name": "front_wing_mount__01",
+      "label": "Suporte da asa dianteira · 01",
+      "category": "aero",
+      "pivot": [
+        -0.07404161058366299,
+        0.14792371541261673,
+        2.440280854701996
+      ],
+      "sourceObject": "front_wing_mount",
+      "partId": "front_wing_mount__01",
+      "side": "left",
+      "worldPivot": [
+        -0.07404161058366299,
+        0.14792371541261673,
+        2.440280854701996
+      ],
+      "boundsMin": [
+        -0.09042799472808838,
+        0.09699021279811859,
+        2.3851829171180725
+      ],
+      "boundsMax": [
+        -0.057655226439237595,
+        0.19885721802711487,
+        2.495378792285919
+      ],
+      "triangles": 256,
+      "assemblyComponent": true
+    },
+    {
+      "name": "front_wing_mount__02",
+      "label": "Suporte da asa dianteira · 02",
+      "category": "aero",
+      "pivot": [
+        0.07404161430895329,
+        0.14792371541261673,
+        2.4402808845043182
+      ],
+      "sourceObject": "front_wing_mount",
+      "partId": "front_wing_mount__02",
+      "side": "right",
+      "worldPivot": [
+        0.07404161430895329,
+        0.14792371541261673,
+        2.4402808845043182
+      ],
+      "boundsMin": [
+        0.057655226439237595,
+        0.09699021279811859,
+        2.3851829171180725
+      ],
+      "boundsMax": [
+        0.09042800217866898,
+        0.19885721802711487,
+        2.495378851890564
+      ],
+      "triangles": 256,
+      "assemblyComponent": true
+    },
+    {
+      "name": "main_body_inside__01",
+      "label": "Interior do cockpit · 01",
+      "category": "cockpit",
+      "pivot": [
+        0.0,
+        0.46475398540496826,
+        0.38864683359861374
+      ],
+      "sourceObject": "main_body_inside",
+      "partId": "main_body_inside__01",
+      "side": "center",
+      "worldPivot": [
+        0.0,
+        0.46475398540496826,
+        0.38864683359861374
+      ],
+      "boundsMin": [
+        -0.15395450592041016,
+        0.32113945484161377,
+        -0.13530530035495758
+      ],
+      "boundsMax": [
+        0.15395450592041016,
+        0.6083685159683228,
+        0.9125989675521851
+      ],
+      "triangles": 25344,
+      "assemblyComponent": true
+    },
+    {
+      "name": "main_body_inside__02",
+      "label": "Interior do cockpit · 02",
+      "category": "cockpit",
+      "pivot": [
+        0.0,
+        0.5882494151592255,
+        0.6181895136833191
+      ],
+      "sourceObject": "main_body_inside",
+      "partId": "main_body_inside__02",
+      "side": "center",
+      "worldPivot": [
+        0.0,
+        0.5882494151592255,
+        0.6181895136833191
+      ],
+      "boundsMin": [
+        -0.00997854396700859,
+        0.5782708525657654,
+        0.6041187047958374
+      ],
+      "boundsMax": [
+        0.00997854396700859,
+        0.5982279777526855,
+        0.6322603225708008
+      ],
+      "triangles": 1536,
+      "assemblyComponent": true
+    },
+    {
+      "name": "main_body_glass__01",
+      "label": "Defletor transparente",
+      "category": "cockpit",
+      "pivot": [
+        0.0,
+        0.6666785478591919,
+        0.5879332721233368
+      ],
+      "sourceObject": "main_body_glass",
+      "partId": "main_body_glass__01",
+      "side": "center",
+      "worldPivot": [
+        0.0,
+        0.6666785478591919,
+        0.5879332721233368
+      ],
+      "boundsMin": [
+        -0.13396446406841278,
+        0.6378686428070068,
+        0.5525643229484558
+      ],
+      "boundsMax": [
+        0.13396446406841278,
+        0.695488452911377,
+        0.6233022212982178
+      ],
+      "triangles": 4224,
+      "assemblyComponent": true
+    },
+    {
+      "name": "front_flap_detail__01",
+      "label": "Detalhe de flap dianteiro · 01",
+      "category": "aero",
+      "pivot": [
+        -0.2319876253604889,
+        0.3687263326719403,
+        1.9314797408878803
+      ],
+      "sourceObject": "front_flap_detail",
+      "partId": "front_flap_detail__01",
+      "side": "left",
+      "worldPivot": [
+        -0.2319876253604889,
+        0.3687263326719403,
+        1.9314797408878803
+      ],
+      "boundsMin": [
+        -0.34079575538635254,
+        0.34717203862965107,
+        1.8399432227015495
+      ],
+      "boundsMax": [
+        -0.12317949533462524,
+        0.3902806267142296,
+        2.023016259074211
+      ],
+      "triangles": 2688,
+      "assemblyComponent": true
+    },
+    {
+      "name": "front_flap_detail__02",
+      "label": "Detalhe de flap dianteiro · 02",
+      "category": "aero",
+      "pivot": [
+        0.2319875955581665,
+        0.3687263401225209,
+        1.9314797408878803
+      ],
+      "sourceObject": "front_flap_detail",
+      "partId": "front_flap_detail__02",
+      "side": "right",
+      "worldPivot": [
+        0.2319875955581665,
+        0.3687263401225209,
+        1.9314797408878803
+      ],
+      "boundsMin": [
+        0.12317943572998047,
+        0.34717204608023167,
+        1.8399432227015495
+      ],
+      "boundsMax": [
+        0.34079575538635254,
+        0.3902806341648102,
+        2.023016259074211
+      ],
+      "triangles": 2688,
+      "assemblyComponent": true
+    },
+    {
+      "name": "front_wheel_cover__L_01",
+      "label": "Conjunto de roda dianteira · L_01",
+      "category": "wheels",
+      "pivot": [
+        -0.8846774101257324,
+        0.3002643883228302,
+        1.5193947553634644
+      ],
+      "sourceObject": "front_wheel_cover",
+      "partId": "front_wheel_cover__L_01",
+      "side": "left",
+      "worldPivot": [
+        -0.8846774101257324,
+        0.3002643883228302,
+        1.5193947553634644
+      ],
+      "boundsMin": [
+        -0.911842942237854,
+        0.13429778814315796,
+        1.4744352623820305
+      ],
+      "boundsMax": [
+        -0.8825010061264038,
+        0.4662305563688278,
+        1.5619556456804276
+      ],
+      "triangles": 32480,
+      "assemblyComponent": true,
+      "axle": "front",
+      "wheelRole": "cover",
+      "wheelAssembly": "front_L",
+      "wheelAxis": [
+        1,
+        0,
+        0
+      ],
+      "wheelCenter": [
+        -0.8846774101257324,
+        0.3002643883228302,
+        1.5193947553634644
+      ]
+    },
+    {
+      "name": "front_wheel_cover__L_02",
+      "label": "Conjunto de roda dianteira · L_02",
+      "category": "wheels",
+      "pivot": [
+        -0.8846774101257324,
+        0.3002643883228302,
+        1.5193947553634644
+      ],
+      "sourceObject": "front_wheel_cover",
+      "partId": "front_wheel_cover__L_02",
+      "side": "left",
+      "worldPivot": [
+        -0.8846774101257324,
+        0.3002643883228302,
+        1.5193947553634644
+      ],
+      "boundsMin": [
+        -0.9129183292388916,
+        0.08553995192050934,
+        1.3046676516532898
+      ],
+      "boundsMax": [
+        -0.8660311698913574,
+        0.5149885714054108,
+        1.734117031097412
+      ],
+      "triangles": 15928,
+      "assemblyComponent": true,
+      "axle": "front",
+      "wheelRole": "cover",
+      "wheelAssembly": "front_L",
+      "wheelAxis": [
+        1,
+        0,
+        0
+      ],
+      "wheelCenter": [
+        -0.8846774101257324,
+        0.3002643883228302,
+        1.5193947553634644
+      ]
+    },
+    {
+      "name": "front_wheel_cover__L_03",
+      "label": "Conjunto de roda dianteira · L_03",
+      "category": "wheels",
+      "pivot": [
+        -0.8846774101257324,
+        0.3002643883228302,
+        1.5193947553634644
+      ],
+      "sourceObject": "front_wheel_cover",
+      "partId": "front_wheel_cover__L_03",
+      "side": "left",
+      "worldPivot": [
+        -0.8846774101257324,
+        0.3002643883228302,
+        1.5193947553634644
+      ],
+      "boundsMin": [
+        -0.8989366292953491,
+        0.06449072062969208,
+        1.2836181819438934
+      ],
+      "boundsMax": [
+        -0.8833962678909302,
+        0.5360380560159683,
+        1.7551661431789398
+      ],
+      "triangles": 13104,
+      "assemblyComponent": true,
+      "axle": "front",
+      "wheelRole": "cover",
+      "wheelAssembly": "front_L",
+      "wheelAxis": [
+        1,
+        0,
+        0
+      ],
+      "wheelCenter": [
+        -0.8846774101257324,
+        0.3002643883228302,
+        1.5193947553634644
+      ]
+    },
+    {
+      "name": "front_wheel_cover__L_04",
+      "label": "Conjunto de roda dianteira · L_04",
+      "category": "wheels",
+      "pivot": [
+        -0.8846774101257324,
+        0.3002643883228302,
+        1.5193947553634644
+      ],
+      "sourceObject": "front_wheel_cover",
+      "partId": "front_wheel_cover__L_04",
+      "side": "left",
+      "worldPivot": [
+        -0.8846774101257324,
+        0.3002643883228302,
+        1.5193947553634644
+      ],
+      "boundsMin": [
+        -0.8968234062194824,
+        0.22131962329149246,
+        1.3577601313591003
+      ],
+      "boundsMax": [
+        -0.8592081069946289,
+        0.3792084977030754,
+        1.3871373385190964
+      ],
+      "triangles": 7448,
+      "assemblyComponent": true,
+      "axle": "front",
+      "wheelRole": "cover",
+      "wheelAssembly": "front_L",
+      "wheelAxis": [
+        1,
+        0,
+        0
+      ],
+      "wheelCenter": [
+        -0.8846774101257324,
+        0.3002643883228302,
+        1.5193947553634644
+      ]
+    },
+    {
+      "name": "front_wheel_cover__R_01",
+      "label": "Conjunto de roda dianteira · R_01",
+      "category": "wheels",
+      "pivot": [
+        0.8846774101257324,
+        0.3002643883228302,
+        1.5193947553634644
+      ],
+      "sourceObject": "front_wheel_cover",
+      "partId": "front_wheel_cover__R_01",
+      "side": "right",
+      "worldPivot": [
+        0.8846774101257324,
+        0.3002643883228302,
+        1.5193947553634644
+      ],
+      "boundsMin": [
+        0.8825010587461293,
+        0.13429778814315796,
+        1.4744352623820305
+      ],
+      "boundsMax": [
+        0.9118429161608219,
+        0.4662305563688278,
+        1.5619556456804276
+      ],
+      "triangles": 32480,
+      "assemblyComponent": true,
+      "axle": "front",
+      "wheelRole": "cover",
+      "wheelAssembly": "front_R",
+      "wheelAxis": [
+        1,
+        0,
+        0
+      ],
+      "wheelCenter": [
+        0.8846774101257324,
+        0.3002643883228302,
+        1.5193947553634644
+      ]
+    },
+    {
+      "name": "front_wheel_cover__R_02",
+      "label": "Conjunto de roda dianteira · R_02",
+      "category": "wheels",
+      "pivot": [
+        0.8846774101257324,
+        0.3002643883228302,
+        1.5193947553634644
+      ],
+      "sourceObject": "front_wheel_cover",
+      "partId": "front_wheel_cover__R_02",
+      "side": "right",
+      "worldPivot": [
+        0.8846774101257324,
+        0.3002643883228302,
+        1.5193947553634644
+      ],
+      "boundsMin": [
+        0.8660311959683895,
+        0.08553995192050934,
+        1.3046676516532898
+      ],
+      "boundsMax": [
+        0.9129183609038591,
+        0.5149885714054108,
+        1.734117031097412
+      ],
+      "triangles": 15928,
+      "assemblyComponent": true,
+      "axle": "front",
+      "wheelRole": "cover",
+      "wheelAssembly": "front_R",
+      "wheelAxis": [
+        1,
+        0,
+        0
+      ],
+      "wheelCenter": [
+        0.8846774101257324,
+        0.3002643883228302,
+        1.5193947553634644
+      ]
+    },
+    {
+      "name": "front_wheel_cover__R_03",
+      "label": "Conjunto de roda dianteira · R_03",
+      "category": "wheels",
+      "pivot": [
+        0.8846774101257324,
+        0.3002643883228302,
+        1.5193947553634644
+      ],
+      "sourceObject": "front_wheel_cover",
+      "partId": "front_wheel_cover__R_03",
+      "side": "right",
+      "worldPivot": [
+        0.8846774101257324,
+        0.3002643883228302,
+        1.5193947553634644
+      ],
+      "boundsMin": [
+        0.8833963004872203,
+        0.06449072062969208,
+        1.2836181819438934
+      ],
+      "boundsMax": [
+        0.8989366218447685,
+        0.5360380560159683,
+        1.7551661431789398
+      ],
+      "triangles": 13104,
+      "assemblyComponent": true,
+      "axle": "front",
+      "wheelRole": "cover",
+      "wheelAssembly": "front_R",
+      "wheelAxis": [
+        1,
+        0,
+        0
+      ],
+      "wheelCenter": [
+        0.8846774101257324,
+        0.3002643883228302,
+        1.5193947553634644
+      ]
+    },
+    {
+      "name": "front_wheel_cover__R_04",
+      "label": "Conjunto de roda dianteira · R_04",
+      "category": "wheels",
+      "pivot": [
+        0.8846774101257324,
+        0.3002643883228302,
+        1.5193947553634644
+      ],
+      "sourceObject": "front_wheel_cover",
+      "partId": "front_wheel_cover__R_04",
+      "side": "right",
+      "worldPivot": [
+        0.8846774101257324,
+        0.3002643883228302,
+        1.5193947553634644
+      ],
+      "boundsMin": [
+        0.8592081479728222,
+        0.22131962329149246,
+        1.3577601313591003
+      ],
+      "boundsMax": [
+        0.89682343788445,
+        0.3792084977030754,
+        1.3871373385190964
+      ],
+      "triangles": 7448,
+      "assemblyComponent": true,
+      "axle": "front",
+      "wheelRole": "cover",
+      "wheelAssembly": "front_R",
+      "wheelAxis": [
+        1,
+        0,
+        0
+      ],
+      "wheelCenter": [
+        0.8846774101257324,
+        0.3002643883228302,
+        1.5193947553634644
+      ]
+    },
+    {
+      "name": "front_tire__01",
+      "label": "Pneu dianteiro · 01",
+      "category": "wheels",
+      "pivot": [
+        -0.8846774101257324,
+        0.3002643883228302,
+        1.5193947553634644
+      ],
+      "sourceObject": "front_tire",
+      "partId": "front_tire__01",
+      "side": "left",
+      "worldPivot": [
+        -0.8846774101257324,
+        0.3002643883228302,
+        1.5193947553634644
+      ],
+      "boundsMin": [
+        -0.9235764741897583,
+        -0.028886258602142334,
+        1.190239816904068
+      ],
+      "boundsMax": [
+        -0.5615779161453247,
+        0.6294150352478027,
+        1.8485420644283295
+      ],
+      "triangles": 8736,
+      "assemblyComponent": true,
+      "axle": "front",
+      "wheelRole": "tire",
+      "wheelAssembly": "front_L",
+      "wheelAxis": [
+        1,
+        0,
+        0
+      ],
+      "wheelCenter": [
+        -0.8846774101257324,
+        0.3002643883228302,
+        1.5193947553634644
+      ]
+    },
+    {
+      "name": "front_tire__02",
+      "label": "Pneu dianteiro · 02",
+      "category": "wheels",
+      "pivot": [
+        0.8846774101257324,
+        0.3002643883228302,
+        1.5193947553634644
+      ],
+      "sourceObject": "front_tire",
+      "partId": "front_tire__02",
+      "side": "right",
+      "worldPivot": [
+        0.8846774101257324,
+        0.3002643883228302,
+        1.5193947553634644
+      ],
+      "boundsMin": [
+        0.5615778863430023,
+        -0.028886258602142334,
+        1.190239816904068
+      ],
+      "boundsMax": [
+        0.9235764890909195,
+        0.6294150352478027,
+        1.8485420644283295
+      ],
+      "triangles": 8736,
+      "assemblyComponent": true,
+      "axle": "front",
+      "wheelRole": "tire",
+      "wheelAssembly": "front_R",
+      "wheelAxis": [
+        1,
+        0,
+        0
+      ],
+      "wheelCenter": [
+        0.8846774101257324,
+        0.3002643883228302,
+        1.5193947553634644
+      ]
+    },
+    {
+      "name": "inside_cover__01",
+      "label": "Cobertura interna dianteira · 01",
+      "category": "wheels",
+      "pivot": [
+        -0.8846774101257324,
+        0.3002643883228302,
+        1.5193947553634644
+      ],
+      "sourceObject": "inside_cover",
+      "partId": "inside_cover__01",
+      "side": "left",
+      "worldPivot": [
+        -0.8846774101257324,
+        0.3002643883228302,
+        1.5193947553634644
+      ],
+      "boundsMin": [
+        -0.6227444410324097,
+        0.05614131689071655,
+        1.2752681970596313
+      ],
+      "boundsMax": [
+        -0.5197261571884155,
+        0.5443874150514603,
+        1.7635149508714676
+      ],
+      "triangles": 10344,
+      "assemblyComponent": true,
+      "axle": "front",
+      "wheelRole": "other",
+      "wheelAssembly": "front_L",
+      "wheelAxis": [
+        1,
+        0,
+        0
+      ],
+      "wheelCenter": [
+        -0.8846774101257324,
+        0.3002643883228302,
+        1.5193947553634644
+      ]
+    },
+    {
+      "name": "inside_cover__02",
+      "label": "Cobertura interna dianteira · 02",
+      "category": "wheels",
+      "pivot": [
+        0.8846774101257324,
+        0.3002643883228302,
+        1.5193947553634644
+      ],
+      "sourceObject": "inside_cover",
+      "partId": "inside_cover__02",
+      "side": "right",
+      "worldPivot": [
+        0.8846774101257324,
+        0.3002643883228302,
+        1.5193947553634644
+      ],
+      "boundsMin": [
+        0.519726037979126,
+        0.05614127218723297,
+        1.2752683013677597
+      ],
+      "boundsMax": [
+        0.6227443218231201,
+        0.5443873703479767,
+        1.763515055179596
+      ],
+      "triangles": 10344,
+      "assemblyComponent": true,
+      "axle": "front",
+      "wheelRole": "other",
+      "wheelAssembly": "front_R",
+      "wheelAxis": [
+        1,
+        0,
+        0
+      ],
+      "wheelCenter": [
+        0.8846774101257324,
+        0.3002643883228302,
+        1.5193947553634644
+      ]
+    },
+    {
+      "name": "rear_wheel_cover__L_01",
+      "label": "Conjunto de roda traseira · L_01",
+      "category": "wheels",
+      "pivot": [
+        -0.8846774101257324,
+        0.3134784698486328,
+        -1.8401365280151367
+      ],
+      "sourceObject": "rear_wheel_cover",
+      "partId": "rear_wheel_cover__L_01",
+      "side": "left",
+      "worldPivot": [
+        -0.8846774101257324,
+        0.3134784698486328,
+        -1.8401365280151367
+      ],
+      "boundsMin": [
+        -0.911842942237854,
+        0.14751186966896057,
+        -1.8850960209965706
+      ],
+      "boundsMax": [
+        -0.8825010061264038,
+        0.47944463789463043,
+        -1.7975756376981735
+      ],
+      "triangles": 32480,
+      "assemblyComponent": true,
+      "axle": "rear",
+      "wheelRole": "cover",
+      "wheelAssembly": "rear_L",
+      "wheelAxis": [
+        1,
+        0,
+        0
+      ],
+      "wheelCenter": [
+        -0.8846774101257324,
+        0.3134784698486328,
+        -1.8401365280151367
+      ]
+    },
+    {
+      "name": "rear_wheel_cover__L_02",
+      "label": "Conjunto de roda traseira · L_02",
+      "category": "wheels",
+      "pivot": [
+        -0.8846774101257324,
+        0.3134784698486328,
+        -1.8401365280151367
+      ],
+      "sourceObject": "rear_wheel_cover",
+      "partId": "rear_wheel_cover__L_02",
+      "side": "left",
+      "worldPivot": [
+        -0.8846774101257324,
+        0.3134784698486328,
+        -1.8401365280151367
+      ],
+      "boundsMin": [
+        -0.9129183292388916,
+        0.09875403344631195,
+        -2.0548636317253113
+      ],
+      "boundsMax": [
+        -0.8660311698913574,
+        0.5282026529312134,
+        -1.625414252281189
+      ],
+      "triangles": 15928,
+      "assemblyComponent": true,
+      "axle": "rear",
+      "wheelRole": "cover",
+      "wheelAssembly": "rear_L",
+      "wheelAxis": [
+        1,
+        0,
+        0
+      ],
+      "wheelCenter": [
+        -0.8846774101257324,
+        0.3134784698486328,
+        -1.8401365280151367
+      ]
+    },
+    {
+      "name": "rear_wheel_cover__L_03",
+      "label": "Conjunto de roda traseira · L_03",
+      "category": "wheels",
+      "pivot": [
+        -0.8846774101257324,
+        0.3134784698486328,
+        -1.8401365280151367
+      ],
+      "sourceObject": "rear_wheel_cover",
+      "partId": "rear_wheel_cover__L_03",
+      "side": "left",
+      "worldPivot": [
+        -0.8846774101257324,
+        0.3134784698486328,
+        -1.8401365280151367
+      ],
+      "boundsMin": [
+        -0.8989366292953491,
+        0.07770480215549469,
+        -2.0759131014347076
+      ],
+      "boundsMax": [
+        -0.8833962678909302,
+        0.5492521375417709,
+        -1.6043651401996613
+      ],
+      "triangles": 13104,
+      "assemblyComponent": true,
+      "axle": "rear",
+      "wheelRole": "cover",
+      "wheelAssembly": "rear_L",
+      "wheelAxis": [
+        1,
+        0,
+        0
+      ],
+      "wheelCenter": [
+        -0.8846774101257324,
+        0.3134784698486328,
+        -1.8401365280151367
+      ]
+    },
+    {
+      "name": "rear_wheel_cover__L_04",
+      "label": "Conjunto de roda traseira · L_04",
+      "category": "wheels",
+      "pivot": [
+        -0.8846774101257324,
+        0.3134784698486328,
+        -1.8401365280151367
+      ],
+      "sourceObject": "rear_wheel_cover",
+      "partId": "rear_wheel_cover__L_04",
+      "side": "left",
+      "worldPivot": [
+        -0.8846774101257324,
+        0.3134784698486328,
+        -1.8401365280151367
+      ],
+      "boundsMin": [
+        -0.8968234062194824,
+        0.23453370481729507,
+        -2.0017711520195007
+      ],
+      "boundsMax": [
+        -0.8592081069946289,
+        0.392422579228878,
+        -1.9723939448595047
+      ],
+      "triangles": 7448,
+      "assemblyComponent": true,
+      "axle": "rear",
+      "wheelRole": "cover",
+      "wheelAssembly": "rear_L",
+      "wheelAxis": [
+        1,
+        0,
+        0
+      ],
+      "wheelCenter": [
+        -0.8846774101257324,
+        0.3134784698486328,
+        -1.8401365280151367
+      ]
+    },
+    {
+      "name": "rear_wheel_cover__R_01",
+      "label": "Conjunto de roda traseira · R_01",
+      "category": "wheels",
+      "pivot": [
+        0.8846774101257324,
+        0.3134784698486328,
+        -1.8401365280151367
+      ],
+      "sourceObject": "rear_wheel_cover",
+      "partId": "rear_wheel_cover__R_01",
+      "side": "right",
+      "worldPivot": [
+        0.8846774101257324,
+        0.3134784698486328,
+        -1.8401365280151367
+      ],
+      "boundsMin": [
+        0.8825010587461293,
+        0.14751186966896057,
+        -1.8850960209965706
+      ],
+      "boundsMax": [
+        0.9118429161608219,
+        0.47944463789463043,
+        -1.7975756376981735
+      ],
+      "triangles": 32480,
+      "assemblyComponent": true,
+      "axle": "rear",
+      "wheelRole": "cover",
+      "wheelAssembly": "rear_R",
+      "wheelAxis": [
+        1,
+        0,
+        0
+      ],
+      "wheelCenter": [
+        0.8846774101257324,
+        0.3134784698486328,
+        -1.8401365280151367
+      ]
+    },
+    {
+      "name": "rear_wheel_cover__R_02",
+      "label": "Conjunto de roda traseira · R_02",
+      "category": "wheels",
+      "pivot": [
+        0.8846774101257324,
+        0.3134784698486328,
+        -1.8401365280151367
+      ],
+      "sourceObject": "rear_wheel_cover",
+      "partId": "rear_wheel_cover__R_02",
+      "side": "right",
+      "worldPivot": [
+        0.8846774101257324,
+        0.3134784698486328,
+        -1.8401365280151367
+      ],
+      "boundsMin": [
+        0.8660311959683895,
+        0.09875403344631195,
+        -2.0548636317253113
+      ],
+      "boundsMax": [
+        0.9129183609038591,
+        0.5282026529312134,
+        -1.625414252281189
+      ],
+      "triangles": 15928,
+      "assemblyComponent": true,
+      "axle": "rear",
+      "wheelRole": "cover",
+      "wheelAssembly": "rear_R",
+      "wheelAxis": [
+        1,
+        0,
+        0
+      ],
+      "wheelCenter": [
+        0.8846774101257324,
+        0.3134784698486328,
+        -1.8401365280151367
+      ]
+    },
+    {
+      "name": "rear_wheel_cover__R_03",
+      "label": "Conjunto de roda traseira · R_03",
+      "category": "wheels",
+      "pivot": [
+        0.8846774101257324,
+        0.3134784698486328,
+        -1.8401365280151367
+      ],
+      "sourceObject": "rear_wheel_cover",
+      "partId": "rear_wheel_cover__R_03",
+      "side": "right",
+      "worldPivot": [
+        0.8846774101257324,
+        0.3134784698486328,
+        -1.8401365280151367
+      ],
+      "boundsMin": [
+        0.8833963004872203,
+        0.07770480215549469,
+        -2.0759131014347076
+      ],
+      "boundsMax": [
+        0.8989366218447685,
+        0.5492521375417709,
+        -1.6043651401996613
+      ],
+      "triangles": 13104,
+      "assemblyComponent": true,
+      "axle": "rear",
+      "wheelRole": "cover",
+      "wheelAssembly": "rear_R",
+      "wheelAxis": [
+        1,
+        0,
+        0
+      ],
+      "wheelCenter": [
+        0.8846774101257324,
+        0.3134784698486328,
+        -1.8401365280151367
+      ]
+    },
+    {
+      "name": "rear_wheel_cover__R_04",
+      "label": "Conjunto de roda traseira · R_04",
+      "category": "wheels",
+      "pivot": [
+        0.8846774101257324,
+        0.3134784698486328,
+        -1.8401365280151367
+      ],
+      "sourceObject": "rear_wheel_cover",
+      "partId": "rear_wheel_cover__R_04",
+      "side": "right",
+      "worldPivot": [
+        0.8846774101257324,
+        0.3134784698486328,
+        -1.8401365280151367
+      ],
+      "boundsMin": [
+        0.8592081479728222,
+        0.23453370481729507,
+        -2.0017711520195007
+      ],
+      "boundsMax": [
+        0.89682343788445,
+        0.392422579228878,
+        -1.9723939448595047
+      ],
+      "triangles": 7448,
+      "assemblyComponent": true,
+      "axle": "rear",
+      "wheelRole": "cover",
+      "wheelAssembly": "rear_R",
+      "wheelAxis": [
+        1,
+        0,
+        0
+      ],
+      "wheelCenter": [
+        0.8846774101257324,
+        0.3134784698486328,
+        -1.8401365280151367
+      ]
+    },
+    {
+      "name": "rear_tire__01",
+      "label": "Pneu traseiro · 01",
+      "category": "wheels",
+      "pivot": [
+        -0.8846774101257324,
+        0.3134784698486328,
+        -1.8401365280151367
+      ],
+      "sourceObject": "rear_tire",
+      "partId": "rear_tire__01",
+      "side": "left",
+      "worldPivot": [
+        -0.8846774101257324,
+        0.3134784698486328,
+        -1.8401365280151367
+      ],
+      "boundsMin": [
+        -0.9235764741897583,
+        -0.02833881974220276,
+        -2.1819581985473633
+      ],
+      "boundsMax": [
+        -0.5173213481903076,
+        0.6552956998348236,
+        -1.498322755098343
+      ],
+      "triangles": 8736,
+      "assemblyComponent": true,
+      "axle": "rear",
+      "wheelRole": "tire",
+      "wheelAssembly": "rear_L",
+      "wheelAxis": [
+        1,
+        0,
+        0
+      ],
+      "wheelCenter": [
+        -0.8846774101257324,
+        0.3134784698486328,
+        -1.8401365280151367
+      ]
+    },
+    {
+      "name": "rear_tire__02",
+      "label": "Pneu traseiro · 02",
+      "category": "wheels",
+      "pivot": [
+        0.8846774101257324,
+        0.3134784698486328,
+        -1.8401365280151367
+      ],
+      "sourceObject": "rear_tire",
+      "partId": "rear_tire__02",
+      "side": "right",
+      "worldPivot": [
+        0.8846774101257324,
+        0.3134784698486328,
+        -1.8401365280151367
+      ],
+      "boundsMin": [
+        0.5173213481903076,
+        -0.02833881974220276,
+        -2.1819581985473633
+      ],
+      "boundsMax": [
+        0.9235764890909195,
+        0.6552956998348236,
+        -1.498322755098343
+      ],
+      "triangles": 8736,
+      "assemblyComponent": true,
+      "axle": "rear",
+      "wheelRole": "tire",
+      "wheelAssembly": "rear_R",
+      "wheelAxis": [
+        1,
+        0,
+        0
+      ],
+      "wheelCenter": [
+        0.8846774101257324,
+        0.3134784698486328,
+        -1.8401365280151367
+      ]
+    },
+    {
+      "name": "rear_inside_cover__01",
+      "label": "Cobertura interna traseira · 01",
+      "category": "wheels",
+      "pivot": [
+        -0.8846774101257324,
+        0.3134784698486328,
+        -1.8401365280151367
+      ],
+      "sourceObject": "rear_inside_cover",
+      "partId": "rear_inside_cover__01",
+      "side": "left",
+      "worldPivot": [
+        -0.8846774101257324,
+        0.3134784698486328,
+        -1.8401365280151367
+      ],
+      "boundsMin": [
+        -0.5784878730773926,
+        0.06935539841651917,
+        -2.0842629820108414
+      ],
+      "boundsMax": [
+        -0.4754694700241089,
+        0.5576014965772629,
+        -1.5960162281990051
+      ],
+      "triangles": 10344,
+      "assemblyComponent": true,
+      "axle": "rear",
+      "wheelRole": "other",
+      "wheelAssembly": "rear_L",
+      "wheelAxis": [
+        1,
+        0,
+        0
+      ],
+      "wheelCenter": [
+        -0.8846774101257324,
+        0.3134784698486328,
+        -1.8401365280151367
+      ]
+    },
+    {
+      "name": "rear_inside_cover__02",
+      "label": "Cobertura interna traseira · 02",
+      "category": "wheels",
+      "pivot": [
+        0.8846774101257324,
+        0.3134784698486328,
+        -1.8401365280151367
+      ],
+      "sourceObject": "rear_inside_cover",
+      "partId": "rear_inside_cover__02",
+      "side": "right",
+      "worldPivot": [
+        0.8846774101257324,
+        0.3134784698486328,
+        -1.8401365280151367
+      ],
+      "boundsMin": [
+        0.4754693806171417,
+        0.06935535371303558,
+        -2.0842629820108414
+      ],
+      "boundsMax": [
+        0.578487753868103,
+        0.5576014518737793,
+        -1.5960162281990051
+      ],
+      "triangles": 10344,
+      "assemblyComponent": true,
+      "axle": "rear",
+      "wheelRole": "other",
+      "wheelAssembly": "rear_R",
+      "wheelAxis": [
+        1,
+        0,
+        0
+      ],
+      "wheelCenter": [
+        0.8846774101257324,
+        0.3134784698486328,
+        -1.8401365280151367
+      ]
+    },
+    {
+      "name": "front_control_arms__L_01",
+      "label": "Suspensão dianteira · L_01",
+      "category": "suspension",
+      "pivot": [
+        -0.36360950767993927,
+        0.2972590923309326,
+        1.3820174783468246
+      ],
+      "sourceObject": "front_control_arms",
+      "partId": "front_control_arms__L_01",
+      "side": "left",
+      "worldPivot": [
+        -0.36360950767993927,
+        0.2972590923309326,
+        1.3820174783468246
+      ],
+      "boundsMin": [
+        -0.5806037187576294,
+        0.21605515480041504,
+        1.0702680349349976
+      ],
+      "boundsMax": [
+        -0.14661529660224915,
+        0.3784630298614502,
+        1.6937669217586517
+      ],
+      "triangles": 3872,
+      "assemblyComponent": true
+    },
+    {
+      "name": "front_control_arms__L_02",
+      "label": "Suspensão dianteira · L_02",
+      "category": "suspension",
+      "pivot": [
+        -0.368768647313118,
+        0.45332013070583344,
+        1.42086960375309
+      ],
+      "sourceObject": "front_control_arms",
+      "partId": "front_control_arms__L_02",
+      "side": "left",
+      "worldPivot": [
+        -0.368768647313118,
+        0.45332013070583344,
+        1.42086960375309
+      ],
+      "boundsMin": [
+        -0.5806037187576294,
+        0.38467851281166077,
+        1.130950152873993
+      ],
+      "boundsMax": [
+        -0.15693357586860657,
+        0.5219617486000061,
+        1.710789054632187
+      ],
+      "triangles": 3680,
+      "assemblyComponent": true
+    },
+    {
+      "name": "front_control_arms__R_01",
+      "label": "Suspensão dianteira · R_01",
+      "category": "suspension",
+      "pivot": [
+        0.36360950767993927,
+        0.2972590923309326,
+        1.3820174783468246
+      ],
+      "sourceObject": "front_control_arms",
+      "partId": "front_control_arms__R_01",
+      "side": "right",
+      "worldPivot": [
+        0.36360950767993927,
+        0.2972590923309326,
+        1.3820174783468246
+      ],
+      "boundsMin": [
+        0.14661529660224915,
+        0.21605515480041504,
+        1.0702680349349976
+      ],
+      "boundsMax": [
+        0.5806037187576294,
+        0.3784630298614502,
+        1.6937669217586517
+      ],
+      "triangles": 3872,
+      "assemblyComponent": true
+    },
+    {
+      "name": "front_control_arms__R_02",
+      "label": "Suspensão dianteira · R_02",
+      "category": "suspension",
+      "pivot": [
+        0.368768647313118,
+        0.45332013070583344,
+        1.42086960375309
+      ],
+      "sourceObject": "front_control_arms",
+      "partId": "front_control_arms__R_02",
+      "side": "right",
+      "worldPivot": [
+        0.368768647313118,
+        0.45332013070583344,
+        1.42086960375309
+      ],
+      "boundsMin": [
+        0.15693357586860657,
+        0.38467851281166077,
+        1.130950152873993
+      ],
+      "boundsMax": [
+        0.5806037187576294,
+        0.5219617486000061,
+        1.710789054632187
+      ],
+      "triangles": 3680,
+      "assemblyComponent": true
+    },
+    {
+      "name": "front_pushrod__L_01",
+      "label": "Haste dianteira · L_01",
+      "category": "suspension",
+      "pivot": [
+        -0.3882535770535469,
+        0.35187259316444397,
+        1.315102458000183
+      ],
+      "sourceObject": "front_pushrod",
+      "partId": "front_pushrod__L_01",
+      "side": "left",
+      "worldPivot": [
+        -0.3882535770535469,
+        0.35187259316444397,
+        1.315102458000183
+      ],
+      "boundsMin": [
+        -0.5914166569709778,
+        0.327001690864563,
+        1.2662445455789566
+      ],
+      "boundsMax": [
+        -0.18509049713611603,
+        0.37674349546432495,
+        1.3639603704214096
+      ],
+      "triangles": 2688,
+      "assemblyComponent": true
+    },
+    {
+      "name": "front_pushrod__L_02",
+      "label": "Haste dianteira · L_02",
+      "category": "suspension",
+      "pivot": [
+        -0.37920931726694107,
+        0.4003104567527771,
+        1.4480450805276632
+      ],
+      "sourceObject": "front_pushrod",
+      "partId": "front_pushrod__L_02",
+      "side": "left",
+      "worldPivot": [
+        -0.37920931726694107,
+        0.4003104567527771,
+        1.4480450805276632
+      ],
+      "boundsMin": [
+        -0.5724697113037109,
+        0.25427794456481934,
+        1.349624365568161
+      ],
+      "boundsMax": [
+        -0.1859489232301712,
+        0.5463429689407349,
+        1.5464657954871655
+      ],
+      "triangles": 3456,
+      "assemblyComponent": true
+    },
+    {
+      "name": "front_pushrod__R_01",
+      "label": "Haste dianteira · R_01",
+      "category": "suspension",
+      "pivot": [
+        0.37920931726694107,
+        0.4003104567527771,
+        1.4480450805276632
+      ],
+      "sourceObject": "front_pushrod",
+      "partId": "front_pushrod__R_01",
+      "side": "right",
+      "worldPivot": [
+        0.37920931726694107,
+        0.4003104567527771,
+        1.4480450805276632
+      ],
+      "boundsMin": [
+        0.1859489232301712,
+        0.25427794456481934,
+        1.349624365568161
+      ],
+      "boundsMax": [
+        0.5724697113037109,
+        0.5463429689407349,
+        1.5464657954871655
+      ],
+      "triangles": 3456,
+      "assemblyComponent": true
+    },
+    {
+      "name": "front_pushrod__R_02",
+      "label": "Haste dianteira · R_02",
+      "category": "suspension",
+      "pivot": [
+        0.3882535770535469,
+        0.35187259316444397,
+        1.315102458000183
+      ],
+      "sourceObject": "front_pushrod",
+      "partId": "front_pushrod__R_02",
+      "side": "right",
+      "worldPivot": [
+        0.3882535770535469,
+        0.35187259316444397,
+        1.315102458000183
+      ],
+      "boundsMin": [
+        0.18509049713611603,
+        0.327001690864563,
+        1.2662445455789566
+      ],
+      "boundsMax": [
+        0.5914166569709778,
+        0.37674349546432495,
+        1.3639603704214096
+      ],
+      "triangles": 2688,
+      "assemblyComponent": true
+    },
+    {
+      "name": "rear_control_arms__L_01",
+      "label": "Suspensão traseira · L_01",
+      "category": "suspension",
+      "pivot": [
+        -0.3368098586797714,
+        0.2511691451072693,
+        -1.7518042661249638
+      ],
+      "sourceObject": "rear_control_arms",
+      "partId": "rear_control_arms__L_01",
+      "side": "left",
+      "worldPivot": [
+        -0.3368098586797714,
+        0.2511691451072693,
+        -1.7518042661249638
+      ],
+      "boundsMin": [
+        -0.5439626574516296,
+        0.20516255497932434,
+        -2.0241947546601295
+      ],
+      "boundsMax": [
+        -0.1296570599079132,
+        0.29717573523521423,
+        -1.479413777589798
+      ],
+      "triangles": 3040,
+      "assemblyComponent": true
+    },
+    {
+      "name": "rear_control_arms__L_02",
+      "label": "Suspensão traseira · L_02",
+      "category": "suspension",
+      "pivot": [
+        -0.34354256838560104,
+        0.35623401403427124,
+        -1.742224246263504
+      ],
+      "sourceObject": "rear_control_arms",
+      "partId": "rear_control_arms__L_02",
+      "side": "left",
+      "worldPivot": [
+        -0.34354256838560104,
+        0.35623401403427124,
+        -1.742224246263504
+      ],
+      "boundsMin": [
+        -0.5439626574516296,
+        0.3189122974872589,
+        -2.0106606483459473
+      ],
+      "boundsMax": [
+        -0.14312247931957245,
+        0.39355573058128357,
+        -1.4737878441810608
+      ],
+      "triangles": 3040,
+      "assemblyComponent": true
+    },
+    {
+      "name": "rear_control_arms__R_01",
+      "label": "Suspensão traseira · R_01",
+      "category": "suspension",
+      "pivot": [
+        0.3368098586797714,
+        0.2511691451072693,
+        -1.7518042661249638
+      ],
+      "sourceObject": "rear_control_arms",
+      "partId": "rear_control_arms__R_01",
+      "side": "right",
+      "worldPivot": [
+        0.3368098586797714,
+        0.2511691451072693,
+        -1.7518042661249638
+      ],
+      "boundsMin": [
+        0.1296570599079132,
+        0.20516255497932434,
+        -2.0241947546601295
+      ],
+      "boundsMax": [
+        0.5439626574516296,
+        0.29717573523521423,
+        -1.479413777589798
+      ],
+      "triangles": 3040,
+      "assemblyComponent": true
+    },
+    {
+      "name": "rear_control_arms__R_02",
+      "label": "Suspensão traseira · R_02",
+      "category": "suspension",
+      "pivot": [
+        0.34354256838560104,
+        0.35623401403427124,
+        -1.742224246263504
+      ],
+      "sourceObject": "rear_control_arms",
+      "partId": "rear_control_arms__R_02",
+      "side": "right",
+      "worldPivot": [
+        0.34354256838560104,
+        0.35623401403427124,
+        -1.742224246263504
+      ],
+      "boundsMin": [
+        0.14312247931957245,
+        0.3189122974872589,
+        -2.0106606483459473
+      ],
+      "boundsMax": [
+        0.5439626574516296,
+        0.39355573058128357,
+        -1.4737878441810608
+      ],
+      "triangles": 3040,
+      "assemblyComponent": true
+    },
+    {
+      "name": "rear_driveshaft__L_01",
+      "label": "Conjunto de eixo traseiro · L_01",
+      "category": "suspension",
+      "pivot": [
+        -0.33846811205148697,
+        0.3014650233089924,
+        -1.8420096593908966
+      ],
+      "sourceObject": "rear_driveshaft",
+      "partId": "rear_driveshaft__L_01",
+      "side": "left",
+      "worldPivot": [
+        -0.33846811205148697,
+        0.3014650233089924,
+        -1.8420096593908966
+      ],
+      "boundsMin": [
+        -0.5159804224967957,
+        0.2503238543868065,
+        -1.8896178444847465
+      ],
+      "boundsMax": [
+        -0.16095580160617828,
+        0.3526061922311783,
+        -1.7944014742970467
+      ],
+      "triangles": 5088,
+      "assemblyComponent": true
+    },
+    {
+      "name": "rear_driveshaft__L_02",
+      "label": "Conjunto de eixo traseiro · L_02",
+      "category": "suspension",
+      "pivot": [
+        -0.5177651643753052,
+        0.2960407268255949,
+        -1.827986825723201
+      ],
+      "sourceObject": "rear_driveshaft",
+      "partId": "rear_driveshaft__L_02",
+      "side": "left",
+      "worldPivot": [
+        -0.5177651643753052,
+        0.2960407268255949,
+        -1.827986825723201
+      ],
+      "boundsMin": [
+        -0.531032919883728,
+        0.2389765940606594,
+        -1.893648543395102
+      ],
+      "boundsMax": [
+        -0.5044974088668823,
+        0.3531048595905304,
+        -1.7623251080513
+      ],
+      "triangles": 4704,
+      "assemblyComponent": true
+    },
+    {
+      "name": "rear_driveshaft__L_03",
+      "label": "Conjunto de eixo traseiro · L_03",
+      "category": "suspension",
+      "pivot": [
+        -0.37660638988018036,
+        0.31062682531774044,
+        -1.6265549547970295
+      ],
+      "sourceObject": "rear_driveshaft",
+      "partId": "rear_driveshaft__L_03",
+      "side": "left",
+      "worldPivot": [
+        -0.37660638988018036,
+        0.31062682531774044,
+        -1.6265549547970295
+      ],
+      "boundsMin": [
+        -0.5272009372711182,
+        0.2517705224454403,
+        -1.802203930914402
+      ],
+      "boundsMax": [
+        -0.22601184248924255,
+        0.3694831281900406,
+        -1.450905978679657
+      ],
+      "triangles": 3072,
+      "assemblyComponent": true
+    },
+    {
+      "name": "rear_driveshaft__R_01",
+      "label": "Conjunto de eixo traseiro · R_01",
+      "category": "suspension",
+      "pivot": [
+        0.33846811205148697,
+        0.3014650233089924,
+        -1.8420096593908966
+      ],
+      "sourceObject": "rear_driveshaft",
+      "partId": "rear_driveshaft__R_01",
+      "side": "right",
+      "worldPivot": [
+        0.33846811205148697,
+        0.3014650233089924,
+        -1.8420096593908966
+      ],
+      "boundsMin": [
+        0.16095580160617828,
+        0.2503238543868065,
+        -1.8896178444847465
+      ],
+      "boundsMax": [
+        0.5159804224967957,
+        0.3526061922311783,
+        -1.7944014742970467
+      ],
+      "triangles": 5088,
+      "assemblyComponent": true
+    },
+    {
+      "name": "rear_driveshaft__R_02",
+      "label": "Conjunto de eixo traseiro · R_02",
+      "category": "suspension",
+      "pivot": [
+        0.5177651643753052,
+        0.2960407268255949,
+        -1.827986825723201
+      ],
+      "sourceObject": "rear_driveshaft",
+      "partId": "rear_driveshaft__R_02",
+      "side": "right",
+      "worldPivot": [
+        0.5177651643753052,
+        0.2960407268255949,
+        -1.827986825723201
+      ],
+      "boundsMin": [
+        0.5044974088668823,
+        0.2389765940606594,
+        -1.893648543395102
+      ],
+      "boundsMax": [
+        0.531032919883728,
+        0.3531048595905304,
+        -1.7623251080513
+      ],
+      "triangles": 4704,
+      "assemblyComponent": true
+    },
+    {
+      "name": "rear_driveshaft__R_03",
+      "label": "Conjunto de eixo traseiro · R_03",
+      "category": "suspension",
+      "pivot": [
+        0.37660638988018036,
+        0.31062682531774044,
+        -1.6265549547970295
+      ],
+      "sourceObject": "rear_driveshaft",
+      "partId": "rear_driveshaft__R_03",
+      "side": "right",
+      "worldPivot": [
+        0.37660638988018036,
+        0.31062682531774044,
+        -1.6265549547970295
+      ],
+      "boundsMin": [
+        0.22601184248924255,
+        0.2517705224454403,
+        -1.802203930914402
+      ],
+      "boundsMax": [
+        0.5272009372711182,
+        0.3694831281900406,
+        -1.450905978679657
+      ],
+      "triangles": 3072,
+      "assemblyComponent": true
+    },
+    {
+      "name": "new_rear_LED__01",
+      "label": "Conjunto de LEDs traseiros",
+      "category": "details",
+      "pivot": [
+        7.450580596923828e-09,
+        0.31450866162776947,
+        -2.539493575692177
+      ],
+      "sourceObject": "new_rear_LED",
+      "partId": "new_rear_LED__01",
+      "side": "center",
+      "worldPivot": [
+        7.450580596923828e-09,
+        0.31450866162776947,
+        -2.539493575692177
+      ],
+      "boundsMin": [
+        -0.02106115035712719,
+        0.2585529685020447,
+        -2.5414019972085953
+      ],
+      "boundsMax": [
+        0.021061165258288383,
+        0.37046435475349426,
+        -2.5375851541757584
+      ],
+      "triangles": 6920,
+      "assemblyComponent": true
+    },
+    {
+      "name": "lcd_screen__01",
+      "label": "Display do volante",
+      "category": "cockpit",
+      "pivot": [
+        1.1175870895385742e-08,
+        0.6220828748773783,
+        0.5168308864813298
+      ],
+      "sourceObject": "lcd_screen",
+      "partId": "lcd_screen__01",
+      "side": "center",
+      "worldPivot": [
+        1.1175870895385742e-08,
+        0.6220828748773783,
+        0.5168308864813298
+      ],
+      "boundsMin": [
+        -0.03261641412973404,
+        0.5999539545737207,
+        0.5168308826396242
+      ],
+      "boundsMax": [
+        0.03261643648147583,
+        0.644211795181036,
+        0.5168308903230354
+      ],
+      "triangles": 2,
+      "assemblyComponent": true
+    },
+    {
+      "name": "steering_wheel_buttons__01",
+      "label": "Botões do volante",
+      "category": "cockpit",
+      "pivot": [
+        1.4901161193847656e-08,
+        0.5977412443608046,
+        0.5212596619967371
+      ],
+      "sourceObject": "steering_wheel_buttons",
+      "partId": "steering_wheel_buttons__01",
+      "side": "center",
+      "worldPivot": [
+        1.4901161193847656e-08,
+        0.5977412443608046,
+        0.5212596619967371
+      ],
+      "boundsMin": [
+        -0.09751079976558685,
+        0.5406522825360298,
+        0.509845141787082
+      ],
+      "boundsMax": [
+        0.09751082956790924,
+        0.6548302061855793,
+        0.5326741822063923
+      ],
+      "triangles": 21148,
+      "assemblyComponent": true
+    },
+    {
+      "name": "steering_wheel_handles__01",
+      "label": "Empunhadura do volante · 01",
+      "category": "cockpit",
+      "pivot": [
+        -0.08800142258405685,
+        0.5907612256705761,
+        0.5212014595745131
+      ],
+      "sourceObject": "steering_wheel_handles",
+      "partId": "steering_wheel_handles__01",
+      "side": "left",
+      "worldPivot": [
+        -0.08800142258405685,
+        0.5907612256705761,
+        0.5212014595745131
+      ],
+      "boundsMin": [
+        -0.11185862123966217,
+        0.5433965772390366,
+        0.5121655368711799
+      ],
+      "boundsMax": [
+        -0.06414422392845154,
+        0.6381258741021156,
+        0.5302373822778463
+      ],
+      "triangles": 5128,
+      "assemblyComponent": true
+    },
+    {
+      "name": "steering_wheel_handles__02",
+      "label": "Empunhadura do volante · 02",
+      "category": "cockpit",
+      "pivot": [
+        0.08800142258405685,
+        0.5907611530274153,
+        0.5212014438584447
+      ],
+      "sourceObject": "steering_wheel_handles",
+      "partId": "steering_wheel_handles__02",
+      "side": "right",
+      "worldPivot": [
+        0.08800142258405685,
+        0.5907611530274153,
+        0.5212014438584447
+      ],
+      "boundsMin": [
+        0.06414420902729034,
+        0.5433965139091015,
+        0.5121655212715268
+      ],
+      "boundsMax": [
+        0.11185863614082336,
+        0.6381257921457291,
+        0.5302373664453626
+      ],
+      "triangles": 5128,
+      "assemblyComponent": true
+    },
+    {
+      "name": "steering_wheel_leds__01",
+      "label": "Indicadores do volante",
+      "category": "cockpit",
+      "pivot": [
+        1.862645149230957e-08,
+        0.6405539140105247,
+        0.5143695298174862
+      ],
+      "sourceObject": "steering_wheel_leds",
+      "partId": "steering_wheel_leds__01",
+      "side": "center",
+      "worldPivot": [
+        1.862645149230957e-08,
+        0.6405539140105247,
+        0.5143695298174862
+      ],
+      "boundsMin": [
+        -0.04199177771806717,
+        0.628403689712286,
+        0.5134758169297129
+      ],
+      "boundsMax": [
+        0.041991814970970154,
+        0.6527041383087635,
+        0.5152632427052595
+      ],
+      "triangles": 13198,
+      "assemblyComponent": true
+    },
+    {
+      "name": "steering_wheel_main__01",
+      "label": "Estrutura do volante",
+      "category": "cockpit",
+      "pivot": [
+        1.4901161193847656e-08,
+        0.5926412455737591,
+        0.5275221926566773
+      ],
+      "sourceObject": "steering_wheel_main",
+      "partId": "steering_wheel_main__01",
+      "side": "center",
+      "worldPivot": [
+        1.4901161193847656e-08,
+        0.5926412455737591,
+        0.5275221926566773
+      ],
+      "boundsMin": [
+        -0.10170534998178482,
+        0.5290536358952522,
+        0.5149773887240516
+      ],
+      "boundsMax": [
+        0.10170537978410721,
+        0.6562288552522659,
+        0.540066996589303
+      ],
+      "triangles": 8658,
+      "assemblyComponent": true
+    },
+    {
+      "name": "sw_connection__01",
+      "label": "Conexão do volante · 01",
+      "category": "cockpit",
+      "pivot": [
+        1.1175870895385742e-08,
+        0.5882829045876861,
+        0.5834122002124786
+      ],
+      "sourceObject": "sw_connection",
+      "partId": "sw_connection__01",
+      "side": "center",
+      "worldPivot": [
+        1.1175870895385742e-08,
+        0.5882829045876861,
+        0.5834122002124786
+      ],
+      "boundsMin": [
+        -0.03406994789838791,
+        0.5542129427194595,
+        0.5545680895447731
+      ],
+      "boundsMax": [
+        0.0340699702501297,
+        0.6223528664559126,
+        0.6122563108801842
+      ],
+      "triangles": 1856,
+      "assemblyComponent": true
+    },
+    {
+      "name": "sw_connection__02",
+      "label": "Conexão do volante · 02",
+      "category": "cockpit",
+      "pivot": [
+        5.587935447692871e-09,
+        0.5882829101756215,
+        0.5700295073911548
+      ],
+      "sourceObject": "sw_connection",
+      "partId": "sw_connection__02",
+      "side": "center",
+      "worldPivot": [
+        5.587935447692871e-09,
+        0.5882829101756215,
+        0.5700295073911548
+      ],
+      "boundsMin": [
+        -0.015596800483763218,
+        0.5726861041039228,
+        0.5282267909497023
+      ],
+      "boundsMax": [
+        0.015596811659634113,
+        0.6038797162473202,
+        0.6118322238326073
+      ],
+      "triangles": 414,
+      "assemblyComponent": true
+    }
+  ],
+  "limitations": [
+    "The source main_body is one connected exterior shell; no independent hidden body panels have been invented.",
+    "No complete power unit, transmission internals, cockpit seat or working hydraulic mechanism are established by this source.",
+    "Component numbering denotes disconnected source geometry, not verified mechanical identity.",
+    "Exploded movement is an illustrative assembly view, not a verified real F1 service sequence."
+  ],
+  "validation": {
+    "sourceTriangleCount": 752824,
+    "outputTriangleCount": 752824,
+    "triangleCountsMatch": true,
+    "trianglesByMaterialMatch": true,
+    "materialsPreservedExactly": true,
+    "partCount": 97,
+    "boundsMin": [
+      -0.9235764741897583,
+      -0.028886258602142334,
+      -2.5554306507110596
+    ],
+    "boundsMax": [
+      0.9235764890909195,
+      1.104936957359314,
+      2.5513181686401367
+    ],
+    "sourceNodes": 41,
+    "outputBytes": 26454116,
+    "positionRoundingNote": "Only connectivity lookup uses rounding (1e-6); output source geometry retained with float32 pivot subtraction.",
+    "embeddedImagesPreservedExactly": true,
+    "allIndicesInRange": true,
+    "maxPartBoundsError": 1.1920928955078125e-07
+  }
+}

@@ -1,0 +1,4 @@
+const fs=require('fs');const file=require('path').join(__dirname,'../modelos/INTEIA_F1_animado.glb');const b=fs.readFileSync(file),old=b.readUInt32LE(12),j=JSON.parse(b.subarray(20,20+old));
+const merged={name:'INTEIA_Demonstracao_Montagem_Rodas_DRS',channels:[],samplers:[]};
+for(const a of j.animations){const offset=merged.samplers.length;merged.samplers.push(...a.samplers);merged.channels.push(...a.channels.map(c=>({...c,sampler:c.sampler+offset})));}
+j.animations=[merged];const json=Buffer.from(JSON.stringify(j)),pad=Buffer.alloc(Math.ceil(json.length/4)*4,32);json.copy(pad);const tail=b.subarray(20+old),out=Buffer.alloc(20+pad.length+tail.length);b.copy(out,0,0,12);out.writeUInt32LE(out.length,8);out.writeUInt32LE(pad.length,12);out.writeUInt32LE(0x4e4f534a,16);pad.copy(out,20);tail.copy(out,20+pad.length);fs.writeFileSync(file,out);console.log('Clipe único:',merged.channels.length,'canais');

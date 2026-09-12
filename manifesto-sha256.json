@@ -1,0 +1,37 @@
+[
+  {
+    "arquivo": "INTEIA_F1_Master.blend",
+    "bytes": 23815409,
+    "sha256": "9e5aca76bf64c19a300f24e72193c9c6d5df391fc3ed271dc2358e6c85b9368d"
+  },
+  {
+    "arquivo": "modelos/INTEIA_F1_estatico.glb",
+    "bytes": 19896224,
+    "sha256": "e96c7e75739f1afc0fbe466679d78ad6426cba0433454d2ef02347efa9900e3c"
+  },
+  {
+    "arquivo": "modelos/INTEIA_F1_animado.glb",
+    "bytes": 20288928,
+    "sha256": "3e5fa7825faebb3dd5b55fc4812681f1333333e64b166f935e1f196b340b235a"
+  },
+  {
+    "arquivo": "texturas/INTEIA_Carbono_BaseColor.png",
+    "bytes": 4840,
+    "sha256": "e0b9e969eeed3c6f4fb6d599384879da202201780182372d6a031d307340fd8b"
+  },
+  {
+    "arquivo": "web/assets/carro-movable.glb",
+    "bytes": 26454116,
+    "sha256": "f192b6a4e09f5ec1f65b2ccf55f53ac8d84eb62d13ac19a1347c7f9aca02a3bc"
+  },
+  {
+    "arquivo": "web/index.html",
+    "bytes": 36183044,
+    "sha256": "1cc5c4ed49d1fedf2a23f26d2d79851342380e375050e9b49ddf08419291d9d0"
+  },
+  {
+    "arquivo": "Previa-Blender.png",
+    "bytes": 695174,
+    "sha256": "661a7d173d357509ced9c4a111d566031f735fe346430b807238d5d8b9ec8335"
+  }
+]

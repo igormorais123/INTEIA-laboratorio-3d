@@ -1,0 +1,29 @@
+{
+  "blend_reopened": true,
+  "components": 97,
+  "triangles": 752823,
+  "components_moved_frame90": 97,
+  "reassembly_matrix_error_frame210": 0.0,
+  "images_missing": [],
+  "exports": {
+    "INTEIA_F1_estatico.glb": {
+      "reimported": true,
+      "meshes": 97,
+      "triangles": 752823,
+      "animations": [],
+      "bytes": 19896224
+    },
+    "INTEIA_F1_animado.glb": {
+      "reimported": true,
+      "meshes": 97,
+      "triangles": 752823,
+      "animations": [
+        {
+          "name": "INTEIA_Demonstracao_Montagem_Rodas_DRS",
+          "channels": 104
+        }
+      ],
+      "bytes": 20288928
+    }
+  }
+}
