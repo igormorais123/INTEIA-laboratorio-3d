@@ -8,7 +8,7 @@
 
 ## Site
 
-Na pasta web, execute npm ci, npm run build e npm run dev. O servidor escuta somente 127.0.0.1:5186. Se a porta estiver ocupada, feche a outra instância ou defina PORT antes de executar. Ele não publica o projeto na internet.
+Na pasta web, execute npm ci, npm run build e npm run dev. O servidor escuta somente 127.0.0.1 e usa a porta 5186 por padrão. Se a porta estiver ocupada, preserve o processo existente e defina outra porta livre em PORT antes de executar. No PowerShell, use `$env:PORT='5190'` e depois `npm --prefix web run dev` a partir da raiz. Confirme que o endereço aberto serve este clone: durante o mapeamento, 5186 servia uma pasta de outputs externa. Ele não publica o projeto na internet.
 
 Edite src/app-v2.js (integração), src/mechanics.js (movimentos), src/studio.js (materiais/luz), src/customize.js (personalização) e src/template-v2.html (interface). Execute o build após editar. index.html é gerado e versionado para permitir uso imediato; não o edite manualmente.
 
@@ -38,3 +38,7 @@ Os scripts resolvem caminhos pela própria localização; não dependem do compu
 5. Atualizar documentação/manifesto, revisar git diff e criar commit.
 
 O teste automatizado não substitui a inspeção visual. Não inclua node_modules, tokens, .env, logs de sessão, arquivos temporários ou backups .blend1.
+
+## Atualizar o mapa do projeto
+
+Após alterar fontes ou documentação, execute `python ferramentas/mapear.py` e `python ferramentas/mapear.py --check` na raiz. O [guia dos mapas](mapas/MANUTENCAO.md) explica cobertura, vínculos e atualização semântica do graphify. Esses comandos não refazem modelos ou exports.

@@ -6,6 +6,8 @@ Um laboratório interativo para explorar e personalizar um carro de fórmula: 97
 
 ## Comece aqui
 
+**[Atlas do código, documentos e assets](docs/mapas/README.md)** — índice navegável, busca de arquivos e peças, grafos com evidências e [guia de reaproveitamento](docs/mapas/REUSO.md). Para a busca offline, baixe o repositório e abra [docs/mapas/index.html](docs/mapas/index.html).
+
 | Quero… | Abra / leia |
 | --- | --- |
 | Explorar e trocar cores | [web/index.html](web/index.html) — baixe o repositório e abra no navegador |
@@ -33,7 +35,7 @@ npm run build
 npm run dev
 ```
 
-Abra http://127.0.0.1:5186. Também é possível abrir web/index.html diretamente, sem instalar dependências. O link de um HTML dentro do GitHub mostra o código: ele não é um site publicado por si só.
+Abra http://127.0.0.1:5186 se essa for a porta livre usada por este servidor. Se já estiver ocupada, preserve o processo existente e escolha outra porta com `PORT`; veja [Desenvolvimento](docs/DESENVOLVIMENTO.md). Também é possível abrir web/index.html diretamente, sem instalar dependências. O link de um HTML dentro do GitHub mostra o código: ele não é um site publicado por si só.
 
 ## O que está incluído
 

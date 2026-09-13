@@ -1,0 +1,36 @@
+{
+  "files": 90,
+  "categories": {
+    "aplicação gerada": 1,
+    "base geométrica derivada": 1,
+    "configuração ou infraestrutura": 8,
+    "documentação": 22,
+    "entrega GLB": 3,
+    "entrega editável Blender": 2,
+    "evidência gerada": 5,
+    "ferramenta editável": 7,
+    "fonte web editável": 12,
+    "identidade editável": 7,
+    "licença ou procedência": 4,
+    "mapa gerado": 11,
+    "metadados de procedência": 1,
+    "prévia histórica": 3,
+    "teste": 2,
+    "textura gerada": 1
+  },
+  "declaredSymbols": 63,
+  "literalImports": 47,
+  "productionEdges": 38,
+  "templateIds": 91,
+  "componentsMatchedByPartId": 97,
+  "localMarkdownLinksChecked": 445,
+  "brokenLocalLinks": 0,
+  "fingerprint": "0dd24355792a3feecbdc67d5194d445964c4d1dd4acedd3dcb96b9492cf05733",
+  "limits": [
+    "Não abre Blender nem refaz exports.",
+    "Não verifica URLs externas.",
+    "IDs DOM dinâmicos e callbacks não são resolvidos.",
+    "Graphify é snapshot separado; este check não reextrai sua semântica.",
+    "Cobertura de arquivos não significa cobertura de testes ou de todas as relações."
+  ]
+}

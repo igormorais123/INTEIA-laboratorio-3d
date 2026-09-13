@@ -11,3 +11,17 @@ build/
 !.env.example
 .DS_Store
 Thumbs.db
+
+# Cache local do graphify e evidÃªncias temporÃ¡rias; os mapas finais sÃ£o versionados.
+graphify-out/.*
+graphify-out/semantic-*.json
+graphify-out/tmp/
+graphify-out/cache/
+graphify-out/cost.json
+graphify-out/benchmark.json
+__pycache__/
+/.mapas-worktree/
+/.playwright-cli/
+/output/playwright/
+
+graphify-out/manifest.json

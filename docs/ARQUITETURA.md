@@ -1,5 +1,7 @@
 # Arquitetura e mapa dos arquivos
 
+O [atlas completo](mapas/README.md) complementa este resumo com inventário pesquisável, símbolos, controles, catálogo de peças e grafos de arquitetura e produção. Consulte [responsabilidades dos módulos](mapas/MODULOS.md) e [reaproveitamento](mapas/REUSO.md).
+
 ```text
 INTEIA_F1_Master.blend        Projeto de edição
 modelos/                     GLBs estático e animado
