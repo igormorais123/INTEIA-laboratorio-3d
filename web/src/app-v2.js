@@ -1,3 +1,4 @@
+import {brandSVG} from './identity.js';
 import {GLTFExporter} from 'three/addons/exporters/GLTFExporter.js';
 import {createGarage} from './garage.js';
 import {createWindTunnel} from './wind-tunnel.js';
@@ -14,6 +15,7 @@ import {GLTFLoader} from 'three/addons/loaders/GLTFLoader.js';
 import {setupStudio,applyCarMaterials} from './studio.js';
 import {createMechanics} from './mechanics.js';
 const $=s=>document.querySelector(s),stage=$('#stage'),reduced=matchMedia('(prefers-reduced-motion: reduce)');
+document.getElementById('brand-logo').innerHTML=brandSVG();
 const categoryLabels={body:'Carroceria',aero:'Aerodinâmica',wheels:'Rodas e pneus',suspension:'Suspensão',cockpit:'Cockpit',details:'Detalhes'};
 try{
 const renderer=new THREE.WebGLRenderer({antialias:true,preserveDrawingBuffer:true});renderer.setPixelRatio(Math.min(devicePixelRatio,1.75));stage.prepend(renderer.domElement);renderer.domElement.tabIndex=0;renderer.domElement.setAttribute('aria-label','Carro 3D. Arraste para girar. Setas giram a câmera; mais e menos controlam o zoom.');

@@ -26,8 +26,8 @@
   },
   {
     "arquivo": "web/index.html",
-    "bytes": 36254212,
-    "sha256": "278bcef263435f8e431d6cee8784132443d88c98345e99c62b9b527276cf96a0"
+    "bytes": 36257087,
+    "sha256": "a49d2a22ced439e99cca90dbe046c36f8be283cdf8661183afa9bb7be72459e0"
   },
   {
     "arquivo": "Previa-Blender.png",
@@ -36,17 +36,37 @@
   },
   {
     "arquivo": "ambientes/INTEIA-box-laboratorio.glb",
-    "bytes": 3647904,
-    "sha256": "eca66d790276bf9f8a965f2acb21cfbc36a00af6abe7d15527cf498151768283"
+    "bytes": 3680792,
+    "sha256": "c760611d4f7a7ca9318395399c436a5b7af1f5c13a80f31b30d75a3a1f219d9e"
   },
   {
     "arquivo": "ambientes/INTEIA_Box_com_carro.blend",
-    "bytes": 24308196,
-    "sha256": "dc7a6cfed274e7139c8f46e075c236352c88e73e2cdf5fde9c4c16f9e97c6559"
+    "bytes": 24335953,
+    "sha256": "8e2441f300c93e5ebefeaf61dbbe0317b791a05bb99f2feb298f9c21ae00829f"
   },
   {
     "arquivo": "ambientes/Previa-Box.png",
-    "bytes": 871858,
-    "sha256": "7a2275d4310b1e2ec1db5e1762f3c72fe8417a2ae4aa5b6085013eafd12683a5"
+    "bytes": 875057,
+    "sha256": "fbd1909db1e4b7e0656b530d5f1154a9dc9d3beb20c578d57cb7e49425f4c0d4"
+  },
+  {
+    "arquivo": "identidade/INTEIA-principal.svg",
+    "bytes": 1110,
+    "sha256": "4bb74bb42dca65c2b42b48f68e49a3bf0e5e2d9f2b08a9e89ecb4063f24d7464"
+  },
+  {
+    "arquivo": "identidade/INTEIA-negativo.svg",
+    "bytes": 1110,
+    "sha256": "0e461dc57af4fb234f631495264b872edc6bb0945555e53862f14773b74f6bd9"
+  },
+  {
+    "arquivo": "identidade/INTEIA-monocromatico.svg",
+    "bytes": 1110,
+    "sha256": "6a09b41d3bfb56c144acc7639b4fb585cf6ceb9ff8ceb15291cfc7ad8b08db25"
+  },
+  {
+    "arquivo": "identidade/INTEIA-simbolo.svg",
+    "bytes": 188,
+    "sha256": "b7c5b7b2b2e147a117ba0664f75b1abb71334cbc1aa613e02b60fc4bcfedc2c1"
   }
 ]

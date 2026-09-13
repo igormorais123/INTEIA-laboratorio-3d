@@ -1,3 +1,4 @@
+import {drawBrand} from './identity.js';
 import * as THREE from 'three';
 import {RoundedBoxGeometry} from 'three/addons/geometries/RoundedBoxGeometry.js';
 
@@ -25,8 +26,9 @@ export function createGarage({scene,renderer,studio,camera,mechanics}) {
  const side=box(.14,3.8,13,-5.5,1.85,0,white);walls.push({o:side,axis:'x',limit:-5.4});
  for(let x=-5.2;x<5.5;x+=1.3)box(.012,3.6,.025,x,1.85,-6.40,charcoal);
  box(11,.16,.04,0,.15,-6.39,charcoal);box(11,.045,.04,0,2.65,-6.39,red);
- label('INTEIA',3.0,.50,0,3.05,-6.39,0,'#d5d9db','#303940',110);
- label('DEVELOPMENT / ENGINEERING',2.5,.15,0,2.73,-6.38,0,'#d5d9db','#5d656a',45);
+ const brandCanvas=document.createElement('canvas');brandCanvas.width=2048;brandCanvas.height=400;drawBrand(brandCanvas.getContext('2d'),2048,400);
+ const brandTexture=new THREE.CanvasTexture(brandCanvas);brandTexture.colorSpace=THREE.SRGBColorSpace;brandTexture.anisotropy=8;
+ const brandPlate=new THREE.Mesh(new THREE.PlaneGeometry(3.7,.723),new THREE.MeshBasicMaterial({map:brandTexture,transparent:true,depthWrite:false}));brandPlate.name='INTEIA identity';brandPlate.position.set(0,3.08,-6.38);root.add(brandPlate);
  function cabinet(x,z,w=1.35){
   box(w,.95,.72,x,.53,z,charcoal,true);box(w+.05,.065,.78,x,1.035,z,steel,true);
   for(let i=0;i<5;i++){box(w-.06,.135,.025,x,.21+i*.16,z+.375,white,true);box(w-.18,.018,.022,x,.254+i*.16,z+.393,steel);}
