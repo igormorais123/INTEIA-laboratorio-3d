@@ -10,7 +10,7 @@ export function setupCustomization(materials, studio, renderer, scene) {
   const originals = new Map(all.map(m => [m, {color:m.color.clone(),roughness:m.roughness,metalness:m.metalness,clearcoat:m.clearcoat,clearcoatRoughness:m.clearcoatRoughness}]));
   const paints = [...groups.body,...groups.wings];
   const finish = {
-    gloss: {roughness:.27,metalness:0,clearcoat:1,clearcoatRoughness:.105},
+    gloss: {roughness:.21,metalness:0,clearcoat:1,clearcoatRoughness:.065},
     satin: {roughness:.48,metalness:0,clearcoat:.35,clearcoatRoughness:.3},
     matte: {roughness:.78,metalness:0,clearcoat:0,clearcoatRoughness:.5},
     metallic: {roughness:.3,metalness:.65,clearcoat:1,clearcoatRoughness:.14}

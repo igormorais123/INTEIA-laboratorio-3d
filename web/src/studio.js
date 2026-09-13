@@ -190,31 +190,32 @@ export function applyCarMaterials(THREE, model) {
     if (name.startsWith('pintura')) {
       // Solid Rosso Corsa inspired paint; no pigment metal flakes or sponsor maps.
       m.map = null;
+      m.normalMap = m.bumpMap = m.roughnessMap = m.metalnessMap = m.aoMap = null;
       m.color.set('#ce0014');
       m.metalness = .0;
-      m.roughness = .27;
+      m.roughness = .21;
       m.clearcoat = 1;
-      m.clearcoatRoughness = .105;
+      m.clearcoatRoughness = .065;
       m.ior = 1.48;
     } else if (name.includes('carbon')) {
       m.color.set('#d2d4d6');
       m.map = carbonTone;
       m.metalness = .05;
-      m.roughness = .61;
+      m.roughness = .43;
       m.bumpMap = null;
       m.bumpScale = .00006;
       m.roughnessMap = carbonRoughness;
       m.normalMap = null;
-      m.clearcoat = .12;
-      m.clearcoatRoughness = .4;
+      m.clearcoat = .35;
+      m.clearcoatRoughness = .22;
       m.anisotropy = 0;
-      m.envMapIntensity = .65;
+      m.envMapIntensity = .9;
       applyLocalCarbonProjection(m);
     } else if (name === 'pneus' || name === 'borracha') {
       m.map = null;
       m.color.set(name === 'pneus' ? '#202124' : '#191a1b');
       m.metalness = 0;
-      m.roughness = .91;
+      m.roughness = .72;
       m.roughnessMap = rubber;
       m.bumpMap = rubber;
       m.bumpScale = .00045;
@@ -228,8 +229,8 @@ export function applyCarMaterials(THREE, model) {
     } else if (name === 'aço') {
       // The export assigns one steel material to broad internal panels as well
       // as hardware, so use a restrained brushed finish rather than chrome.
-      m.color.set('#656b73'); m.metalness = .8; m.roughness = .48;
-      m.envMapIntensity = .5;
+      m.color.set('#92999f'); m.metalness = 1; m.roughness = .25;
+      m.envMapIntensity = 1;
     } else if (name === 'mirror') {
       m.color.set('#e0e4e7'); m.metalness = 1; m.roughness = .055;
     } else if (name === 'vidro') {

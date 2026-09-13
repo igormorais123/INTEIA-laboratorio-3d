@@ -26,8 +26,8 @@
   },
   {
     "arquivo": "web/index.html",
-    "bytes": 36259730,
-    "sha256": "ca1c0f67020406b37a6ed5e3a5a7a65ffc08215696492eda825b850079fb4f94"
+    "bytes": 36507077,
+    "sha256": "fb47af7559333cdd300c51779effceff109a06ae4ef37ef6273250b155081171"
   },
   {
     "arquivo": "Previa-Blender.png",
@@ -36,18 +36,18 @@
   },
   {
     "arquivo": "ambientes/INTEIA-box-laboratorio.glb",
-    "bytes": 10302056,
-    "sha256": "a75030a6079a414a0a185e2c265507b253eb65d2426cd399eef2c7a35082631b"
+    "bytes": 10302288,
+    "sha256": "b443c6e556e96d6c247dde32d0df9153d3fd0ec0e992329fd2a85dea6638e608"
   },
   {
     "arquivo": "ambientes/INTEIA_Box_com_carro.blend",
-    "bytes": 24776288,
-    "sha256": "141b6118cfda4272a19f8cf39ce1d7a17127c0e3a5cc49d888bced94e51a9a12"
+    "bytes": 24679287,
+    "sha256": "7b251012c19dcb572c0b4e7e862f23171648226b1f76814397d833df2d375948"
   },
   {
     "arquivo": "ambientes/Previa-Box.png",
-    "bytes": 898443,
-    "sha256": "df596074204b1e506c492d1ae18bc59c4d93bc98b285e4316fac74666f5a78a8"
+    "bytes": 2189120,
+    "sha256": "e8a0c313dc2ff2a59dd592b10588ad538454a946c7c72a6d46a20bba4837958b"
   },
   {
     "arquivo": "identidade/INTEIA-principal.svg",

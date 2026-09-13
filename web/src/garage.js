@@ -1,3 +1,4 @@
+import {RectAreaLightUniformsLib} from 'three/addons/lights/RectAreaLightUniformsLib.js';
 import {drawBrand} from './identity.js';
 import * as THREE from 'three';
 import {RoundedBoxGeometry} from 'three/addons/geometries/RoundedBoxGeometry.js';
@@ -7,7 +8,7 @@ export function createGarage({scene,renderer,studio,camera,mechanics}) {
  const root=new THREE.Group();root.name='INTEIA development garage';scene.add(root);
  const walls=[],roof=[],entrance=[],screenUpdates=[];let section='Architecture',serial=0;
  const mat=(color,metalness=.0,roughness=.5)=>new THREE.MeshStandardMaterial({color,metalness,roughness});
- const white=mat('#d5d9db',.18,.36),charcoal=mat('#242b31',.35,.42),black=mat('#101419',.15,.55),steel=mat('#8f9da4',.82,.28),red=mat('#981b25',.32,.3),rubber=mat('#17191c',.05,.84);
+ const white=mat('#c4c9cb',0,.31),charcoal=mat('#242b31',.35,.42),black=mat('#101419',.15,.55),steel=mat('#b6bec4',1,.22),red=mat('#981b25',.32,.3),rubber=mat('#17191c',.05,.84);
  const led=new THREE.MeshBasicMaterial({color:new THREE.Color('#fff9ec').multiplyScalar(2.4)});
  function box(w,h,d,x,y,z,m=white,rounded=false,parent=root){const geo=rounded?new RoundedBoxGeometry(w,h,d,2,Math.min(.018,w/7,h/7,d/7)):new THREE.BoxGeometry(w,h,d);const o=new THREE.Mesh(geo,m);o.name=section+' '+(++serial);o.userData.section=section;o.position.set(x,y,z);o.castShadow=o.receiveShadow=true;parent.add(o);return o;}
  function cylinder(r1,r2,h,x,y,z,m=steel,parent=root){const o=new THREE.Mesh(new THREE.CylinderGeometry(r1,r2,h,24),m);o.name=section+' '+(++serial);o.userData.section=section;o.position.set(x,y,z);o.castShadow=o.receiveShadow=true;parent.add(o);return o;}
@@ -15,11 +16,11 @@ export function createGarage({scene,renderer,studio,camera,mechanics}) {
  function label(text,w,h,x,y,z,rotation=0,bg='#e0e3e4',fg='#26313b',font=50){const c=document.createElement('canvas');c.width=1024;c.height=Math.round(1024*h/w);const ctx=c.getContext('2d');ctx.fillStyle=bg;ctx.fillRect(0,0,c.width,c.height);ctx.fillStyle=fg;ctx.font=`500 ${font}px Arial`;ctx.textBaseline='middle';ctx.textAlign='center';ctx.fillText(text,512,c.height/2,960);const t=new THREE.CanvasTexture(c);t.colorSpace=THREE.SRGBColorSpace;t.anisotropy=8;const o=new THREE.Mesh(new THREE.PlaneGeometry(w,h),new THREE.MeshBasicMaterial({map:t}));o.position.set(x,y,z);o.rotation.y=rotation;root.add(o);return o;}
  // Repeatable fine surface grain; subtle enough to retain a clean workshop finish.
  function grain(repeatX,repeatY){const c=document.createElement('canvas');c.width=c.height=128;const ctx=c.getContext('2d'),img=ctx.createImageData(128,128);let seed=173;for(let i=0;i<img.data.length;i+=4){seed=(seed*1664525+1013904223)>>>0;const v=180+(seed%45);img.data.set([v,v,v,255],i);}ctx.putImageData(img,0,0);const t=new THREE.CanvasTexture(c);t.wrapS=t.wrapT=THREE.RepeatWrapping;t.repeat.set(repeatX,repeatY);t.anisotropy=8;return t;}
- const epoxy=mat('#8d969b',.12,.52);epoxy.roughnessMap=grain(12,16);epoxy.bumpMap=epoxy.roughnessMap;epoxy.bumpScale=.0012;
- const benchFinish=mat('#68757c',.7,.36);benchFinish.roughnessMap=grain(3,12);
+ const epoxy=mat('#707c83',0,.36);epoxy.roughnessMap=grain(12,16);epoxy.bumpMap=epoxy.roughnessMap;epoxy.bumpScale=.0012;
+ const benchFinish=mat('#9da8ae',1,.25);benchFinish.roughnessMap=grain(1,64);
  // Seamless epoxy working floor and flush inspection plates.
  box(11,.10,15,0,-.068,0,epoxy);
- box(3.4,.012,7.6,0,-.007,0,mat('#515b61',.3,.32));
+ box(3.4,.012,7.6,0,-.007,0,mat('#414b53',.12,.4));
  for(const x of [-1.77,1.77])box(.035,.003,8.2,x,.003,0,red);
  for(const z of [-4.1,4.1])box(3.58,.003,.035,0,.003,z,red);
  for(const x of [-1.05,1.05])for(const z of [-1.65,1.65]){
@@ -134,15 +135,18 @@ export function createGarage({scene,renderer,studio,camera,mechanics}) {
  // Pit entrance frame remains open; no foreground wall hides the vehicle.
  for(const x of [-5.35,5.35])entrance.push(box(.20,3.6,.22,x,1.8,5.5,charcoal));
  roof.push(box(10.9,.20,.22,0,3.6,5.5,charcoal));
- const garageLights=new THREE.Group();root.add(garageLights);
- const key=new THREE.DirectionalLight('#fff8ed',1.3);key.position.set(2.5,7,3);key.castShadow=true;key.shadow.mapSize.set(2048,2048);Object.assign(key.shadow.camera,{left:-9,right:9,top:9,bottom:-9,near:.1,far:30});key.shadow.camera.updateProjectionMatrix();key.shadow.normalBias=.006;key.shadow.bias=-.0001;key.shadow.radius=7;key.shadow.blurSamples=8;garageLights.add(key);
- const fill=new THREE.DirectionalLight('#dce9f4',1.1);fill.position.set(-4,3,-4);garageLights.add(fill);garageLights.add(new THREE.HemisphereLight('#f2f6ff','#5d6060',1.05));
+ const garageLights=new THREE.Group();root.add(garageLights);RectAreaLightUniformsLib.init();
+ for(const x of [-2.1,2.1]){const area=new THREE.RectAreaLight('#f5f6fa',1.2,1.2,7);area.position.set(x,3.15,0);area.lookAt(0,.3,0);garageLights.add(area);}
+ // Ceiling fixtures must not cast a hard sun-shaped grid across the car.
+ roof.forEach(o=>{o.castShadow=false;});
+ const key=new THREE.DirectionalLight('#fff8ed',.85);key.position.set(2.5,7,3);key.castShadow=true;key.shadow.mapSize.set(2048,2048);Object.assign(key.shadow.camera,{left:-9,right:9,top:9,bottom:-9,near:.1,far:30});key.shadow.camera.updateProjectionMatrix();key.shadow.normalBias=.006;key.shadow.bias=-.0001;key.shadow.radius=7;key.shadow.blurSamples=8;garageLights.add(key);
+ const fill=new THREE.DirectionalLight('#e6edf4',.55);fill.position.set(-4,3,-4);garageLights.add(fill);garageLights.add(new THREE.HemisphereLight('#f2f6ff','#32383d',.45));
  // The car reflects the actual bay and its luminous panels.
- const environmentScene=new THREE.Scene();environmentScene.background=new THREE.Color('#a2a9ad');environmentScene.add(root.clone(true));
- const pmrem=new THREE.PMREMGenerator(renderer),env=pmrem.fromScene(environmentScene,.045);pmrem.dispose();
+ const environmentScene=new THREE.Scene();environmentScene.background=new THREE.Color('#30373e');const reflectedRoom=root.clone(true);reflectedRoom.position.y=-.75;environmentScene.add(reflectedRoom);
+ const pmrem=new THREE.PMREMGenerator(renderer),env=pmrem.fromScene(environmentScene,.012);pmrem.dispose();
  const studioLights=scene.getObjectByName('Studio lighting');let enabled=false,saved=null,timer=0;root.visible=false;
  return {getExportScene(){const out=root.clone(true);out.traverse(o=>o.visible=true);return out;},get enabled(){return enabled;},root,setEnabled(on){if(on===enabled)return;enabled=on;root.visible=on;document.body.classList.toggle('garage-active',on);document.getElementById('garage-toggle').setAttribute('aria-pressed',String(on));
-  if(on){saved={background:scene.background,fog:scene.fog,environment:scene.environment,intensity:scene.environmentIntensity,floor:studio.floor.material.color.clone(),lights:studioLights.visible};studioLights.visible=false;scene.background=new THREE.Color('#6e777c');scene.fog=new THREE.Fog('#6e777c',28,65);scene.environment=env.texture;scene.environmentIntensity=.85;studio.floor.material.color.set('#969d9f');}
+  if(on){saved={background:scene.background,fog:scene.fog,environment:scene.environment,intensity:scene.environmentIntensity,floor:studio.floor.material.color.clone(),lights:studioLights.visible};studioLights.visible=false;scene.background=new THREE.Color('#6e777c');scene.fog=new THREE.Fog('#6e777c',28,65);scene.environment=env.texture;scene.environmentIntensity=1.05;studio.floor.material.color.set('#969d9f');}
   else if(saved){scene.background=saved.background;scene.fog=saved.fog;scene.environment=saved.environment;scene.environmentIntensity=saved.intensity;studio.floor.material.color.copy(saved.floor);studioLights.visible=saved.lights;}
  },update(dt){if(!enabled)return;for(const w of walls)w.o.visible=camera.position[w.axis]>w.limit;roof.forEach(o=>o.visible=camera.position.y<3.10);entrance.forEach(o=>o.visible=camera.position.z<5.25);timer+=dt;if(timer>1){screenUpdates.forEach(fn=>fn());timer=0;}}};
 }
