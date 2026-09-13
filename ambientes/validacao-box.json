@@ -1,6 +1,6 @@
 {
   "blend": "INTEIA_Box_com_carro.blend",
-  "garage_meshes": 254,
+  "garage_meshes": 568,
   "car_meshes": 97,
   "car_original_bounds": [
     [
@@ -14,6 +14,6 @@
       1.1049368381500244
     ]
   ],
-  "packed_images": 10,
+  "packed_images": 12,
   "external_images": []
 }

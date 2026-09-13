@@ -15,7 +15,7 @@ O monitor **Configuração** mostra valores reais do visualizador: quantidade de
 ## Arquivos reutilizáveis
 
 - `ambientes/INTEIA-box-laboratorio.glb`: somente o ambiente, com geometrias, materiais, telas incorporadas e luzes exportáveis. O botão **Baixar box 3D** exporta uma nova cópia com o estado atual dos monitores.
-- `ambientes/INTEIA_Box_com_carro.blend`: ambiente e carro estático em coleções separadas; 254 malhas do box e 97 do carro. Inclui câmera, luzes adicionais para Cycles e imagens empacotadas.
+- `ambientes/INTEIA_Box_com_carro.blend`: ambiente e carro estático em coleções separadas; 568 malhas do box e 97 do carro. Inclui câmera, luzes adicionais para Cycles e imagens empacotadas.
 - `ambientes/Previa-Box.png`: render de conferência do arquivo Blender, 16 amostras com denoising. Não é a mesma renderização do navegador.
 - `ambientes/validacao-box.json`: contagem de malhas e verificação de imagens empacotadas.
 - `web/src/garage.js`: construção procedural reutilizável do cenário.
@@ -32,3 +32,14 @@ O GLB não contém o ambiente de reflexão pré-calculado do navegador; outros m
 As referências orientaram o papel das estações de engenharia e sua relação com o carro. Dimensões, layout, móveis e equipamentos desta cena são interpretações originais, com simplificações para navegação em tempo real. O resultado continua sendo uma modelagem digital, sem garantia de equivalência fotográfica.
 
 A identidade vetorial INTEIA, com IA em destaque, é compartilhada entre interface e placa do box. Arquivos e regras em `identidade/LEIA-ME.md`; desenho-fonte em `web/src/identity.js`.
+
+
+## Revisão do box — três passagens visuais
+
+1. Mobiliário e superfícies: apoios de braço, encostos, teclas individuais, mouse, cabos, juntas no piso e granulação discreta na rugosidade.
+2. Arquitetura e iluminação: painel técnico recuado, armário alto ventilado, placas laterais, tomadas, bandejas superiores e redução da luz direcional principal.
+3. Equipamentos: reforços do suporte de pneus, relevos nas laterais dos pneus, bandeja com soquetes e apoio do macaco.
+
+Verificação: inspeção visual no navegador em cada passagem, troca box/túnel/box, exportação GLB em sessão limpa, testes de montagem e aerodinâmica, abertura e renderização no Blender. Revisão visual feita pelo agente executor, sem juiz independente nesta rodada. O ambiente exportado contém 568 malhas, além das 97 malhas do carro no arquivo Blender; 12 imagens incorporadas, sem imagens externas.
+
+O resultado permanece uma cena ilustrativa 3D. Não representa uma réplica dimensional de um box específico.
