@@ -1,7 +1,7 @@
 import {createTunnelVisual} from './tunnel-visual.js';
 import * as THREE from 'three';
 import {aerodynamicTest} from './aero-physics.mjs';
-export function createWindTunnel({scene,model,mechanics,reduced,studio,camera,onToggle,onRegion}) {
+export function createWindTunnel({scene,model,mechanics,reduced,studio,camera,onToggle,onRegion,onBeforeToggle}) {
   const $=id=>document.getElementById(id);
   const root=new THREE.Group();root.name='INTEIA Wind Tunnel - illustrative tracers';scene.add(root);root.visible=false;
   const bounds=new THREE.Box3().setFromObject(model),size=bounds.getSize(new THREE.Vector3()),center=bounds.getCenter(new THREE.Vector3());
@@ -49,7 +49,7 @@ export function createWindTunnel({scene,model,mechanics,reduced,studio,camera,on
   ids.forEach(id=>$(id).addEventListener('input',()=>{if(['air-area','air-cd','air-cl'].includes(id))example=false;calculate();}));
   $('air-example').onclick=()=>{example=true;$('air-area').value=1.5;$('air-cd').value=.9;$('air-cl').value=3;calculate();};
   $('air-reset').onclick=()=>{example=false;for(const id of ['air-area','air-cd','air-cl'])$(id).value='';$('air-speed').value=150;$('air-headwind').value=0;$('air-crosswind').value=0;$('air-temp').value=15;$('air-pressure').value=101.325;calculate();};
-  $('wind-toggle').onclick=()=>{enabled=!enabled;root.visible=enabled;visual.setEnabled(enabled);document.body.classList.toggle("wind-active",enabled);onToggle?.(enabled);$('air-panel').hidden=!enabled;$('air-hud').hidden=!enabled;$('wind-toggle').setAttribute('aria-pressed',String(enabled));calculate();};
+  $('wind-toggle').onclick=()=>{enabled=!enabled;onBeforeToggle?.(enabled);root.visible=enabled;visual.setEnabled(enabled);document.body.classList.toggle("wind-active",enabled);onToggle?.(enabled);$('air-panel').hidden=!enabled;$('air-hud').hidden=!enabled;$('wind-toggle').setAttribute('aria-pressed',String(enabled));calculate();};
   $('air-export').onclick=()=>{
     if($('air-export').disabled)return;
     const p=params();const rows=['# INTEIA: modelo por coeficientes; nao e CFD','# origem_coeficientes='+ (example?'exemplo_hipotetico':'usuario_nao_validado'),`# area_m2=${p.area};Cd=${p.cd};Cdown=${p.clDown};temperature_C=${p.temperatureC};pressure_kPa=${p.pressureKPa};headwind_kmh=${p.headwindKmh};crosswind_kmh=${p.crosswindKmh}`,'speed_car_kmh,relative_kmh,yaw_deg,rho_kg_m3,q_Pa,drag_N,downforce_N,air_power_W,mach,within_model'];

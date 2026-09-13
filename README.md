@@ -10,6 +10,7 @@ Um laboratório interativo para explorar e personalizar um carro de fórmula: 97
 | --- | --- |
 | Explorar e trocar cores | [web/index.html](web/index.html) — baixe o repositório e abra no navegador |
 | Editar o modelo | [INTEIA_F1_Master.blend](INTEIA_F1_Master.blend) no Blender 4.5 |
+| Explorar o box-laboratório | [Guia do ambiente](docs/BOX-LABORATORIO.md) · [Box GLB](ambientes/INTEIA-box-laboratorio.glb) · [Blender com carro](ambientes/INTEIA_Box_com_carro.blend) |
 | Importar apenas o carro | [GLB estático](modelos/INTEIA_F1_estatico.glb) |
 | Reproduzir a demonstração | [GLB animado](modelos/INTEIA_F1_animado.glb) |
 | Desenvolver o site | [Desenvolvimento](docs/DESENVOLVIMENTO.md) |
