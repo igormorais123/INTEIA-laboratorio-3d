@@ -2,7 +2,7 @@
 
 [Índice](README.md) · [Cobertura atual dos arquivos](cobertura.json) · [Procedimento de atualização](MANUTENCAO.md)
 
-Verificação realizada em 13 de setembro de 2026 UTC (12 de setembro à noite em Brasília), na worktree da branch `codex/mapas-inteia`, inicialmente baseada em `1ae4fd15062d347dc8462af8f4db33c749e6575b` e atualizada sobre `0346e58`. A revisão de materiais/luzes foi incorporada pelo commit da tarefa responsável, sem editar seus arquivos. Build, testes e mapas foram conferidos novamente. O trabalho concorrente em `docs/mapeamento-detalhado/` permanece separado e exige atualização dos mapas ao ser integrado.
+Verificação realizada em 13 de setembro de 2026 UTC (12 de setembro à noite em Brasília), na worktree da branch `codex/mapas-inteia`, inicialmente baseada em `1ae4fd15062d347dc8462af8f4db33c749e6575b` e atualizada sobre `e3d58af` (incluindo materiais/luzes de `0346e58` e a assinatura lateral). A revisão de materiais/luzes foi incorporada pelo commit da tarefa responsável, sem editar seus arquivos. Build, testes e mapas foram conferidos novamente. O trabalho concorrente em `docs/mapeamento-detalhado/` permanece separado e exige atualização dos mapas ao ser integrado.
 
 | Verificação | Resultado observado | Limite |
 | --- | --- | --- |
@@ -21,3 +21,5 @@ Verificação realizada em 13 de setembro de 2026 UTC (12 de setembro à noite e
 O Node avisou que o tipo de módulo de `mechanics.js` não está declarado no package.json e refez a interpretação como ES module; os testes passaram. Não houve mudança do pacote por esse aviso.
 
 A tentativa de iniciar servidor de prévia foi rejeitada pela revisão automática de aprovação sem motivo específico. A ferramenta inicial de navegador não respondeu, e a CLI bloqueou navegação `file:`. A alternativa validada foi renderizar os arquivos autorizados em Chrome com requisições interceptadas para um domínio reservado `.test`, sem servidor de rede e sem navegar pelo protocolo de arquivos. As capturas e o relatório local da sessão estão em `output/playwright/` na worktree, excluídos do commit.
+
+A primeira execução remota da branch no GitHub Actions foi encerrada antes de iniciar qualquer etapa: a anotação informa bloqueio da conta por cobrança. Portanto, os resultados de testes desta entrega são locais; não são uma aprovação da CI remota.

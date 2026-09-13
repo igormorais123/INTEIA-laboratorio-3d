@@ -19,13 +19,13 @@
     "textura gerada": 1
   },
   "declaredSymbols": 63,
-  "literalImports": 45,
+  "literalImports": 47,
   "productionEdges": 38,
   "templateIds": 91,
   "componentsMatchedByPartId": 97,
-  "localMarkdownLinksChecked": 443,
+  "localMarkdownLinksChecked": 445,
   "brokenLocalLinks": 0,
-  "fingerprint": "3fdaf1303043b4f347fbee3cd790e5f2c1d0bd7ec53341aea1ac68f1edccd398",
+  "fingerprint": "0dd24355792a3feecbdc67d5194d445964c4d1dd4acedd3dcb96b9492cf05733",
   "limits": [
     "Não abre Blender nem refaz exports.",
     "Não verifica URLs externas.",

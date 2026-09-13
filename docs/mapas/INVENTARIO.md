@@ -33,12 +33,12 @@ Gerado por `python ferramentas/mapear.py`. Todos os arquivos do escopo estão li
 | [docs/VALIDACAO.md](../../docs/VALIDACAO.md) | documentação | 2128 |
 | [docs/mapas/GRAFOS.md](../../docs/mapas/GRAFOS.md) | mapa gerado | — |
 | [docs/mapas/INVENTARIO.md](../../docs/mapas/INVENTARIO.md) | mapa gerado | — |
-| [docs/mapas/MANUTENCAO.md](../../docs/mapas/MANUTENCAO.md) | documentação | 6063 |
-| [docs/mapas/MODULOS.md](../../docs/mapas/MODULOS.md) | documentação | 8660 |
-| [docs/mapas/PRODUCAO.md](../../docs/mapas/PRODUCAO.md) | documentação | 17590 |
-| [docs/mapas/README.md](../../docs/mapas/README.md) | documentação | 3024 |
-| [docs/mapas/REUSO.md](../../docs/mapas/REUSO.md) | documentação | 15769 |
-| [docs/mapas/VERIFICACAO.md](../../docs/mapas/VERIFICACAO.md) | documentação | 3492 |
+| [docs/mapas/MANUTENCAO.md](../../docs/mapas/MANUTENCAO.md) | documentação | 6127 |
+| [docs/mapas/MODULOS.md](../../docs/mapas/MODULOS.md) | documentação | 8775 |
+| [docs/mapas/PRODUCAO.md](../../docs/mapas/PRODUCAO.md) | documentação | 17713 |
+| [docs/mapas/README.md](../../docs/mapas/README.md) | documentação | 3283 |
+| [docs/mapas/REUSO.md](../../docs/mapas/REUSO.md) | documentação | 16017 |
+| [docs/mapas/VERIFICACAO.md](../../docs/mapas/VERIFICACAO.md) | documentação | 3816 |
 | [docs/mapas/cobertura.json](../../docs/mapas/cobertura.json) | mapa gerado | — |
 | [docs/mapas/componentes.json](../../docs/mapas/componentes.json) | mapa gerado | — |
 | [docs/mapas/controles.json](../../docs/mapas/controles.json) | mapa gerado | — |
@@ -52,7 +52,7 @@ Gerado por `python ferramentas/mapear.py`. Todos os arquivos do escopo estão li
 | [documentacao/historico-avaliacoes.md](../../documentacao/historico-avaliacoes.md) | documentação | 5659 |
 | [ferramentas/manifest.cjs](../../ferramentas/manifest.cjs) | ferramenta editável | 828 |
 | [ferramentas/mapa-template.html](../../ferramentas/mapa-template.html) | documentação | 11578 |
-| [ferramentas/mapear.py](../../ferramentas/mapear.py) | ferramenta editável | 20522 |
+| [ferramentas/mapear.py](../../ferramentas/mapear.py) | ferramenta editável | 20655 |
 | [ferramentas/merge-animation.cjs](../../ferramentas/merge-animation.cjs) | ferramenta editável | 911 |
 | [ferramentas/package_blender.py](../../ferramentas/package_blender.py) | ferramenta editável | 10622 |
 | [ferramentas/package_garage.py](../../ferramentas/package_garage.py) | ferramenta editável | 5795 |
@@ -78,13 +78,13 @@ Gerado por `python ferramentas/mapear.py`. Todos os arquivos do escopo estão li
 | [web/assets/INTEIA-wordmark.svg](../../web/assets/INTEIA-wordmark.svg) | identidade editável | 254 |
 | [web/assets/carro-movable.glb](../../web/assets/carro-movable.glb) | base geométrica derivada | 26454116 |
 | [web/build.cjs](../../web/build.cjs) | configuração ou infraestrutura | 432 |
-| [web/index.html](../../web/index.html) | aplicação gerada | 36507074 |
+| [web/index.html](../../web/index.html) | aplicação gerada | 36511154 |
 | [web/package-lock.json](../../web/package-lock.json) | configuração ou infraestrutura | 14952 |
 | [web/package.json](../../web/package.json) | configuração ou infraestrutura | 393 |
 | [web/server.cjs](../../web/server.cjs) | configuração ou infraestrutura | 820 |
 | [web/src/aero-physics.mjs](../../web/src/aero-physics.mjs) | fonte web editável | 1377 |
-| [web/src/app-v2.js](../../web/src/app-v2.js) | fonte web editável | 18827 |
-| [web/src/branding.js](../../web/src/branding.js) | fonte web editável | 2670 |
+| [web/src/app-v2.js](../../web/src/app-v2.js) | fonte web editável | 18915 |
+| [web/src/branding.js](../../web/src/branding.js) | fonte web editável | 2147 |
 | [web/src/customize.js](../../web/src/customize.js) | fonte web editável | 3041 |
 | [web/src/flow-detail.js](../../web/src/flow-detail.js) | fonte web editável | 4610 |
 | [web/src/garage.js](../../web/src/garage.js) | fonte web editável | 16633 |
@@ -118,7 +118,7 @@ Gerado por `python ferramentas/mapear.py`. Todos os arquivos do escopo estão li
 | `check_links` | [ferramentas/mapear.py:225](../../ferramentas/mapear.py#L225) |
 | `make` | [ferramentas/mapear.py:255](../../ferramentas/mapear.py#L255) |
 | `put` | [ferramentas/mapear.py:280](../../ferramentas/mapear.py#L280) |
-| `main` | [ferramentas/mapear.py:331](../../ferramentas/mapear.py#L331) |
+| `main` | [ferramentas/mapear.py:332](../../ferramentas/mapear.py#L332) |
 | `linear` | [ferramentas/package_blender.py:27](../../ferramentas/package_blender.py#L27) |
 | `col` | [ferramentas/package_blender.py:28](../../ferramentas/package_blender.py#L28) |
 | `base` | [ferramentas/package_blender.py:29](../../ferramentas/package_blender.py#L29) |
@@ -128,16 +128,16 @@ Gerado por `python ferramentas/mapear.py`. Todos os arquivos do escopo estão li
 | `to_studio` | [ferramentas/package_blender.py:130](../../ferramentas/package_blender.py#L130) |
 | `matrices` | [ferramentas/validate-kit.py:7](../../ferramentas/validate-kit.py#L7) |
 | `aerodynamicTest` | [web/src/aero-physics.mjs:2](../../web/src/aero-physics.mjs#L2) |
-| `setFlowXray` | [web/src/app-v2.js:29](../../web/src/app-v2.js#L29) |
-| `moveCamera` | [web/src/app-v2.js:36](../../web/src/app-v2.js#L36) |
-| `view` | [web/src/app-v2.js:37](../../web/src/app-v2.js#L37) |
-| `resize` | [web/src/app-v2.js:39](../../web/src/app-v2.js#L39) |
-| `refreshSelection` | [web/src/app-v2.js:41](../../web/src/app-v2.js#L41) |
-| `select` | [web/src/app-v2.js:42](../../web/src/app-v2.js#L42) |
-| `focusPart` | [web/src/app-v2.js:43](../../web/src/app-v2.js#L43) |
-| `assemblyTo` | [web/src/app-v2.js:44](../../web/src/app-v2.js#L44) |
-| `applyInteiaBranding` | [web/src/branding.js:5](../../web/src/branding.js#L5) |
-| `project` | [web/src/branding.js:18](../../web/src/branding.js#L18) |
+| `setFlowXray` | [web/src/app-v2.js:30](../../web/src/app-v2.js#L30) |
+| `moveCamera` | [web/src/app-v2.js:37](../../web/src/app-v2.js#L37) |
+| `view` | [web/src/app-v2.js:38](../../web/src/app-v2.js#L38) |
+| `resize` | [web/src/app-v2.js:40](../../web/src/app-v2.js#L40) |
+| `refreshSelection` | [web/src/app-v2.js:42](../../web/src/app-v2.js#L42) |
+| `select` | [web/src/app-v2.js:43](../../web/src/app-v2.js#L43) |
+| `focusPart` | [web/src/app-v2.js:44](../../web/src/app-v2.js#L44) |
+| `assemblyTo` | [web/src/app-v2.js:45](../../web/src/app-v2.js#L45) |
+| `applyInteiaBranding` | [web/src/branding.js:6](../../web/src/branding.js#L6) |
+| `project` | [web/src/branding.js:16](../../web/src/branding.js#L16) |
 | `setupCustomization` | [web/src/customize.js:1](../../web/src/customize.js#L1) |
 | `createFlowDetail` | [web/src/flow-detail.js:4](../../web/src/flow-detail.js#L4) |
 | `path` | [web/src/flow-detail.js:9](../../web/src/flow-detail.js#L9) |

@@ -2,7 +2,7 @@
 
 [Voltar ao mapa](README.md) · [Produção e exportações](PRODUCAO.md) · [Guia de integração anterior](../INTEGRACAO.md)
 
-Este guia separa o que pode ser transportado como arquivo do que precisa ser integrado como código. As instruções partiram de `1ae4fd1` e o atlas foi atualizado sobre `0346e58`. Consulte também [acabamento e render](../ACABAMENTO-E-RENDER.md): o box Blender recebeu novos materiais/luzes, enquanto o GLB estático do carro foi preservado. Os números de Blender citados abaixo pertencem aos relatórios já entregues; criar os mapas não executa uma nova conversão nem testa um motor de jogos.
+Este guia separa o que pode ser transportado como arquivo do que precisa ser integrado como código. As instruções partiram de `1ae4fd1` e o atlas foi atualizado sobre `e3d58af` (incluindo materiais/luzes de `0346e58` e a assinatura lateral). Consulte também [acabamento e render](../ACABAMENTO-E-RENDER.md): o box Blender recebeu novos materiais/luzes, enquanto o GLB estático do carro foi preservado. Os números de Blender citados abaixo pertencem aos relatórios já entregues; criar os mapas não executa uma nova conversão nem testa um motor de jogos.
 
 O projeto tem [licença proprietária INTEIA](../../LICENSE). Reutilização depende das permissões aplicáveis ao conteúdo; o código público não concede uma licença geral. A geometria deriva do tutorial `F1_2026_tutorial_part7_textures.blend`, cujo original está ausente e cuja licença não foi documentada. Consulte [procedência](../DIREITOS-E-PROCEDENCIA.md) e [avisos de terceiros](../../THIRD-PARTY-NOTICES.md). Este guia descreve o caminho técnico, sem ampliar essas permissões.
 
@@ -65,7 +65,7 @@ O [servidor](../../web/server.cjs) usa a pasta `web` como raiz e escuta somente 
 
 Alguns módulos oferecem `dispose`; a aplicação completa não possui uma API única de encerramento. Em sites com troca de páginas sem recarregar, implemente e teste a remoção do ciclo de animação, observadores, eventos e recursos GPU criados. Esse trabalho de integração ainda pertence ao projeto de destino.
 
-[branding.js](../../web/src/branding.js) contém `applyInteiaBranding` para decalques, mas a entrada atual não o chama. Ele não é a fonte da marca do cabeçalho/box e não deve ser tratado como etapa ativa da entrega.
+[branding.js](../../web/src/branding.js) contém `applyInteiaBranding`, chamada pela entrada após a mecânica desde `e3d58af`. Aplica uma assinatura lateral única com os glifos de `identity.js` e prende o decalque à carroceria. Para reaproveitá-la, preserve os registros da mecânica e a geometria/nomenclatura esperadas; ela não é automaticamente incorporada ao GLB estático ou ao master Blender.
 
 ### 3. Importar somente um GLB em outro site
 

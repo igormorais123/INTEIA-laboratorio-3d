@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "fingerprint": "3fdaf1303043b4f347fbee3cd790e5f2c1d0bd7ec53341aea1ac68f1edccd398",
+  "fingerprint": "0dd24355792a3feecbdc67d5194d445964c4d1dd4acedd3dcb96b9492cf05733",
   "scope": "arquivos Git e novos não ignorados; caches, dependências instaladas e backups ignorados excluídos",
   "hashPolicy": "SHA256 e bytes de texto com LF; binários exatos; mapas gerados sem auto-hash",
   "files": [
@@ -208,43 +208,43 @@
       "path": "docs/mapas/MANUTENCAO.md",
       "category": "documentação",
       "href": "../../docs/mapas/MANUTENCAO.md",
-      "bytesCanonical": 6063,
-      "sha256": "f26c99d4e8f733963233ef25106948fee1d2a0474f3e3f173a809e799f0984aa"
+      "bytesCanonical": 6127,
+      "sha256": "06526b39e523f75d573daa335061da0a08522e86107d9bd866977b5c34ce8a3b"
     },
     {
       "path": "docs/mapas/MODULOS.md",
       "category": "documentação",
       "href": "../../docs/mapas/MODULOS.md",
-      "bytesCanonical": 8660,
-      "sha256": "a4445dad5776b440161c8a14f7724d7139925a97b9de7226a499381d5c332654"
+      "bytesCanonical": 8775,
+      "sha256": "1026a1bb93549de31a77348976c1366b03a587bbe46029e87cb00fbdadd4c633"
     },
     {
       "path": "docs/mapas/PRODUCAO.md",
       "category": "documentação",
       "href": "../../docs/mapas/PRODUCAO.md",
-      "bytesCanonical": 17590,
-      "sha256": "430139d5adbcf1a076409ed58bd74a05f4a5b930dacda3f1c4c1b7a99b7b47be"
+      "bytesCanonical": 17713,
+      "sha256": "3f1f3b800d081c56600b85ba5eb50f002b3fca5ac805e0b80e697446d4d6caa2"
     },
     {
       "path": "docs/mapas/README.md",
       "category": "documentação",
       "href": "../../docs/mapas/README.md",
-      "bytesCanonical": 3024,
-      "sha256": "a497f0b45e6ce850658dbdc22d103707bec7a2d666d24c26324c09c57663263e"
+      "bytesCanonical": 3283,
+      "sha256": "3294766c0751edf80d01d8cc0cd9593cbcc3f0b445140732850bccb208684c58"
     },
     {
       "path": "docs/mapas/REUSO.md",
       "category": "documentação",
       "href": "../../docs/mapas/REUSO.md",
-      "bytesCanonical": 15769,
-      "sha256": "201444a4a52a29aed60cf0b877a13ddf6ba146a0b3da4b3d956c7430b714d5d7"
+      "bytesCanonical": 16017,
+      "sha256": "6973e291a459d8920511c8a46b2d80bc2f266ce84d8a9a44bdcadcd5456876b6"
     },
     {
       "path": "docs/mapas/VERIFICACAO.md",
       "category": "documentação",
       "href": "../../docs/mapas/VERIFICACAO.md",
-      "bytesCanonical": 3492,
-      "sha256": "91ce8187a0c526c69e3897860b23b12a7b2d01cf633ba3ef8c215fb661b3f69d"
+      "bytesCanonical": 3816,
+      "sha256": "a2413ba1ff1b66c37141e830b28368faeb44577c56eca0af79df3be48239ff93"
     },
     {
       "path": "docs/mapas/cobertura.json",
@@ -329,8 +329,8 @@
       "path": "ferramentas/mapear.py",
       "category": "ferramenta editável",
       "href": "../../ferramentas/mapear.py",
-      "bytesCanonical": 20522,
-      "sha256": "eee3ea6f185b7d17afa01c25ec629ed5c83c885ce1967389b03810ff989ebfd4"
+      "bytesCanonical": 20655,
+      "sha256": "98b3db93db7642df6d82854b700fb3c265277e0b5e9d76daad7e93778f71f31e"
     },
     {
       "path": "ferramentas/merge-animation.cjs",
@@ -429,7 +429,7 @@
       "category": "evidência gerada",
       "href": "../../manifesto-sha256.json",
       "bytesCanonical": 2226,
-      "sha256": "e5a06e1e6e9adc7f84e905c72c90ffb60241d49eb8909b4014ec5baec2ad8042"
+      "sha256": "01cb6a3f1c904ff13903571fd9da0595c7a61c64240a236840b5fff9f5dcdf92"
     },
     {
       "path": "modelos/INTEIA_F1_animado.glb",
@@ -11282,8 +11282,8 @@
       "path": "web/index.html",
       "category": "aplicação gerada",
       "href": "../../web/index.html",
-      "bytesCanonical": 36507074,
-      "sha256": "8c98db4a9aa848b762a5a274f485c6a12f1a97daa814796b77751d2519163eac"
+      "bytesCanonical": 36511154,
+      "sha256": "773650697d98cbbb2aad9a7feb4f9afcac8bfaf86a40feac098413ef2b6ec39a"
     },
     {
       "path": "web/package-lock.json",
@@ -11318,17 +11318,17 @@
       "path": "web/src/app-v2.js",
       "category": "fonte web editável",
       "href": "../../web/src/app-v2.js",
-      "bytesCanonical": 18827,
-      "sha256": "37b06f623b64e47270e31ba6324540db165a6f13786037a0ab8395b91c73ba63",
+      "bytesCanonical": 18915,
+      "sha256": "914c253e9743a82ae4397ab33ccd55f2bdfe582c0bb804f12daca83cad4c9301",
       "reachableFromApp": true
     },
     {
       "path": "web/src/branding.js",
       "category": "fonte web editável",
       "href": "../../web/src/branding.js",
-      "bytesCanonical": 2670,
-      "sha256": "e926cc5bf5c9e94a808dc3ceaeb05972ec8062e36c56e3e4fb2f71f887f572f3",
-      "reachableFromApp": false
+      "bytesCanonical": 2147,
+      "sha256": "7e8c374b869e79775f7155ae2993009b3682c5d2b1f77019a9b75de317aeea23",
+      "reachableFromApp": true
     },
     {
       "path": "web/src/customize.js",
@@ -11525,8 +11525,8 @@
     {
       "name": "main",
       "path": "ferramentas/mapear.py",
-      "line": 331,
-      "href": "../../ferramentas/mapear.py#L331",
+      "line": 332,
+      "href": "../../ferramentas/mapear.py#L332",
       "extraction": "declaração lexical"
     },
     {
@@ -11595,71 +11595,71 @@
     {
       "name": "setFlowXray",
       "path": "web/src/app-v2.js",
-      "line": 29,
-      "href": "../../web/src/app-v2.js#L29",
+      "line": 30,
+      "href": "../../web/src/app-v2.js#L30",
       "extraction": "declaração lexical"
     },
     {
       "name": "moveCamera",
-      "path": "web/src/app-v2.js",
-      "line": 36,
-      "href": "../../web/src/app-v2.js#L36",
-      "extraction": "declaração lexical"
-    },
-    {
-      "name": "view",
       "path": "web/src/app-v2.js",
       "line": 37,
       "href": "../../web/src/app-v2.js#L37",
       "extraction": "declaração lexical"
     },
     {
+      "name": "view",
+      "path": "web/src/app-v2.js",
+      "line": 38,
+      "href": "../../web/src/app-v2.js#L38",
+      "extraction": "declaração lexical"
+    },
+    {
       "name": "resize",
       "path": "web/src/app-v2.js",
-      "line": 39,
-      "href": "../../web/src/app-v2.js#L39",
+      "line": 40,
+      "href": "../../web/src/app-v2.js#L40",
       "extraction": "declaração lexical"
     },
     {
       "name": "refreshSelection",
-      "path": "web/src/app-v2.js",
-      "line": 41,
-      "href": "../../web/src/app-v2.js#L41",
-      "extraction": "declaração lexical"
-    },
-    {
-      "name": "select",
       "path": "web/src/app-v2.js",
       "line": 42,
       "href": "../../web/src/app-v2.js#L42",
       "extraction": "declaração lexical"
     },
     {
-      "name": "focusPart",
+      "name": "select",
       "path": "web/src/app-v2.js",
       "line": 43,
       "href": "../../web/src/app-v2.js#L43",
       "extraction": "declaração lexical"
     },
     {
-      "name": "assemblyTo",
+      "name": "focusPart",
       "path": "web/src/app-v2.js",
       "line": 44,
       "href": "../../web/src/app-v2.js#L44",
       "extraction": "declaração lexical"
     },
     {
+      "name": "assemblyTo",
+      "path": "web/src/app-v2.js",
+      "line": 45,
+      "href": "../../web/src/app-v2.js#L45",
+      "extraction": "declaração lexical"
+    },
+    {
       "name": "applyInteiaBranding",
       "path": "web/src/branding.js",
-      "line": 5,
-      "href": "../../web/src/branding.js#L5",
+      "line": 6,
+      "href": "../../web/src/branding.js#L6",
       "extraction": "declaração lexical"
     },
     {
       "name": "project",
       "path": "web/src/branding.js",
-      "line": 18,
-      "href": "../../web/src/branding.js#L18",
+      "line": 16,
+      "href": "../../web/src/branding.js#L16",
       "extraction": "declaração lexical"
     },
     {

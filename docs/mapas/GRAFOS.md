@@ -10,27 +10,30 @@ Setas de dependência vão do importador ao módulo importado. Setas de produç�
 flowchart LR
   n0["aero-physics.mjs"]
   n1["app-v2.js"]
-  n2["customize.js"]
-  n3["flow-detail.js"]
-  n4["garage.js"]
-  n5["identity.js"]
-  n6["mechanics.js"]
-  n7["studio.js"]
-  n8["tunnel-visual.js"]
-  n9["wind-tunnel.js"]
-  n1 -->|"importa"| n5
-  n1 -->|"importa"| n4
-  n1 -->|"importa"| n9
+  n2["branding.js"]
+  n3["customize.js"]
+  n4["flow-detail.js"]
+  n5["garage.js"]
+  n6["identity.js"]
+  n7["mechanics.js"]
+  n8["studio.js"]
+  n9["tunnel-visual.js"]
+  n10["wind-tunnel.js"]
   n1 -->|"importa"| n2
-  n1 -->|"importa"| n7
   n1 -->|"importa"| n6
-  n4 -->|"importa"| n5
-  n8 -->|"importa"| n3
-  n9 -->|"importa"| n8
-  n9 -->|"importa"| n0
+  n1 -->|"importa"| n5
+  n1 -->|"importa"| n10
+  n1 -->|"importa"| n3
+  n1 -->|"importa"| n8
+  n1 -->|"importa"| n7
+  n2 -->|"importa"| n6
+  n5 -->|"importa"| n6
+  n9 -->|"importa"| n4
+  n10 -->|"importa"| n9
+  n10 -->|"importa"| n0
 ```
 
-`branding.js` não tem caminho de importação a partir de `app-v2.js`. Não integra a aplicação atual. Dependências externas constam nos dados e na busca.
+`branding.js` integra a árvore de imports de `app-v2.js`. Dependências externas constam nos dados e na busca.
 
 ## Produção do carro
 
@@ -98,24 +101,26 @@ O download do box é uma etapa humana: o grafo descreve o produtor, sem certific
 | `web/server.cjs` | importa | `external:http` | [web/server.cjs:1](../../web/server.cjs#L1) |
 | `web/server.cjs` | importa | `external:fs` | [web/server.cjs:1](../../web/server.cjs#L1) |
 | `web/server.cjs` | importa | `external:path` | [web/server.cjs:1](../../web/server.cjs#L1) |
-| `web/src/app-v2.js` | importa | `web/src/identity.js` | [web/src/app-v2.js:1](../../web/src/app-v2.js#L1) |
-| `web/src/app-v2.js` | importa | `external:three/addons/exporters/GLTFExporter.js` | [web/src/app-v2.js:2](../../web/src/app-v2.js#L2) |
-| `web/src/app-v2.js` | importa | `web/src/garage.js` | [web/src/app-v2.js:3](../../web/src/app-v2.js#L3) |
-| `web/src/app-v2.js` | importa | `web/src/wind-tunnel.js` | [web/src/app-v2.js:4](../../web/src/app-v2.js#L4) |
-| `web/src/app-v2.js` | importa | `web/src/customize.js` | [web/src/app-v2.js:5](../../web/src/app-v2.js#L5) |
-| `web/src/app-v2.js` | importa | `external:three` | [web/src/app-v2.js:6](../../web/src/app-v2.js#L6) |
-| `web/src/app-v2.js` | importa | `external:three/addons/controls/OrbitControls.js` | [web/src/app-v2.js:7](../../web/src/app-v2.js#L7) |
-| `web/src/app-v2.js` | importa | `external:three/addons/controls/TransformControls.js` | [web/src/app-v2.js:8](../../web/src/app-v2.js#L8) |
-| `web/src/app-v2.js` | importa | `external:three/addons/postprocessing/EffectComposer.js` | [web/src/app-v2.js:9](../../web/src/app-v2.js#L9) |
-| `web/src/app-v2.js` | importa | `external:three/addons/postprocessing/RenderPass.js` | [web/src/app-v2.js:10](../../web/src/app-v2.js#L10) |
-| `web/src/app-v2.js` | importa | `external:three/addons/postprocessing/SSAOPass.js` | [web/src/app-v2.js:11](../../web/src/app-v2.js#L11) |
-| `web/src/app-v2.js` | importa | `external:three/addons/postprocessing/OutputPass.js` | [web/src/app-v2.js:12](../../web/src/app-v2.js#L12) |
-| `web/src/app-v2.js` | importa | `external:three/addons/postprocessing/SMAAPass.js` | [web/src/app-v2.js:13](../../web/src/app-v2.js#L13) |
-| `web/src/app-v2.js` | importa | `external:three/addons/loaders/GLTFLoader.js` | [web/src/app-v2.js:14](../../web/src/app-v2.js#L14) |
-| `web/src/app-v2.js` | importa | `web/src/studio.js` | [web/src/app-v2.js:15](../../web/src/app-v2.js#L15) |
-| `web/src/app-v2.js` | importa | `web/src/mechanics.js` | [web/src/app-v2.js:16](../../web/src/app-v2.js#L16) |
-| `web/src/branding.js` | importa | `external:three` | [web/src/branding.js:1](../../web/src/branding.js#L1) |
-| `web/src/branding.js` | importa | `external:three/addons/geometries/DecalGeometry.js` | [web/src/branding.js:2](../../web/src/branding.js#L2) |
+| `web/src/app-v2.js` | importa | `web/src/branding.js` | [web/src/app-v2.js:1](../../web/src/app-v2.js#L1) |
+| `web/src/app-v2.js` | importa | `web/src/identity.js` | [web/src/app-v2.js:2](../../web/src/app-v2.js#L2) |
+| `web/src/app-v2.js` | importa | `external:three/addons/exporters/GLTFExporter.js` | [web/src/app-v2.js:3](../../web/src/app-v2.js#L3) |
+| `web/src/app-v2.js` | importa | `web/src/garage.js` | [web/src/app-v2.js:4](../../web/src/app-v2.js#L4) |
+| `web/src/app-v2.js` | importa | `web/src/wind-tunnel.js` | [web/src/app-v2.js:5](../../web/src/app-v2.js#L5) |
+| `web/src/app-v2.js` | importa | `web/src/customize.js` | [web/src/app-v2.js:6](../../web/src/app-v2.js#L6) |
+| `web/src/app-v2.js` | importa | `external:three` | [web/src/app-v2.js:7](../../web/src/app-v2.js#L7) |
+| `web/src/app-v2.js` | importa | `external:three/addons/controls/OrbitControls.js` | [web/src/app-v2.js:8](../../web/src/app-v2.js#L8) |
+| `web/src/app-v2.js` | importa | `external:three/addons/controls/TransformControls.js` | [web/src/app-v2.js:9](../../web/src/app-v2.js#L9) |
+| `web/src/app-v2.js` | importa | `external:three/addons/postprocessing/EffectComposer.js` | [web/src/app-v2.js:10](../../web/src/app-v2.js#L10) |
+| `web/src/app-v2.js` | importa | `external:three/addons/postprocessing/RenderPass.js` | [web/src/app-v2.js:11](../../web/src/app-v2.js#L11) |
+| `web/src/app-v2.js` | importa | `external:three/addons/postprocessing/SSAOPass.js` | [web/src/app-v2.js:12](../../web/src/app-v2.js#L12) |
+| `web/src/app-v2.js` | importa | `external:three/addons/postprocessing/OutputPass.js` | [web/src/app-v2.js:13](../../web/src/app-v2.js#L13) |
+| `web/src/app-v2.js` | importa | `external:three/addons/postprocessing/SMAAPass.js` | [web/src/app-v2.js:14](../../web/src/app-v2.js#L14) |
+| `web/src/app-v2.js` | importa | `external:three/addons/loaders/GLTFLoader.js` | [web/src/app-v2.js:15](../../web/src/app-v2.js#L15) |
+| `web/src/app-v2.js` | importa | `web/src/studio.js` | [web/src/app-v2.js:16](../../web/src/app-v2.js#L16) |
+| `web/src/app-v2.js` | importa | `web/src/mechanics.js` | [web/src/app-v2.js:17](../../web/src/app-v2.js#L17) |
+| `web/src/branding.js` | importa | `web/src/identity.js` | [web/src/branding.js:1](../../web/src/branding.js#L1) |
+| `web/src/branding.js` | importa | `external:three` | [web/src/branding.js:2](../../web/src/branding.js#L2) |
+| `web/src/branding.js` | importa | `external:three/addons/geometries/DecalGeometry.js` | [web/src/branding.js:3](../../web/src/branding.js#L3) |
 | `web/src/flow-detail.js` | importa | `external:three` | [web/src/flow-detail.js:1](../../web/src/flow-detail.js#L1) |
 | `web/src/garage.js` | importa | `external:three/addons/lights/RectAreaLightUniformsLib.js` | [web/src/garage.js:1](../../web/src/garage.js#L1) |
 | `web/src/garage.js` | importa | `web/src/identity.js` | [web/src/garage.js:2](../../web/src/garage.js#L2) |
@@ -144,7 +149,7 @@ O download do box é uma etapa humana: o grafo descreve o produtor, sem certific
 | `ferramentas/package_blender.py` | gera / sobrescreve | `Previa-Blender.png` | [ferramentas/package_blender.py:146](../../ferramentas/package_blender.py#L146) |
 | `ferramentas/package_blender.py` | gera / sobrescreve | `validacao-criacao.json` | [ferramentas/package_blender.py:148](../../ferramentas/package_blender.py#L148) |
 | `ferramentas/merge-animation.cjs` | reescreve clipe | `modelos/INTEIA_F1_animado.glb` | [ferramentas/merge-animation.cjs:4](../../ferramentas/merge-animation.cjs#L4) |
-| `web/src/garage.js` | download; cópia manual ao repo | `ambientes/INTEIA-box-laboratorio.glb` | [web/src/app-v2.js:55](../../web/src/app-v2.js#L55) |
+| `web/src/garage.js` | download; cópia manual ao repo | `ambientes/INTEIA-box-laboratorio.glb` | [web/src/app-v2.js:56](../../web/src/app-v2.js#L56) |
 | `ambientes/INTEIA-box-laboratorio.glb` | entrada | `ferramentas/package_garage.py` | [ferramentas/package_garage.py:6](../../ferramentas/package_garage.py#L6) |
 | `modelos/INTEIA_F1_estatico.glb` | entrada | `ferramentas/package_garage.py` | [ferramentas/package_garage.py:12](../../ferramentas/package_garage.py#L12) |
 | `ferramentas/package_garage.py` | gera / sobrescreve | `ambientes/INTEIA_Box_com_carro.blend` | [ferramentas/package_garage.py:72](../../ferramentas/package_garage.py#L72) |

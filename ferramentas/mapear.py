@@ -298,7 +298,8 @@ def make():
     rows = ['# Grafos verificáveis', '', '[Índice](README.md) · [Explorar no navegador](index.html) · [Dados e evidências](dependencias.json)', '',
             'Setas de dependência vão do importador ao módulo importado. Setas de produção vão da entrada à ferramenta ou entrega. Cada aresta abaixo tem evidência; a análise semântica complementar está em [graphify](../../graphify-out/GRAPH_REPORT.md).', '',
             '## Arquitetura dos módulos web', '', mermaid(local), '',
-            '`branding.js` não tem caminho de importação a partir de `app-v2.js`. Não integra a aplicação atual. Dependências externas constam nos dados e na busca.', '',
+            ('`branding.js` integra a árvore de imports de `app-v2.js`.' if any(r['path'] == 'web/src/branding.js' and r.get('reachableFromApp') for r in records)
+             else '`branding.js` está fora da árvore de imports de `app-v2.js`.') + ' Dependências externas constam nos dados e na busca.', '',
             '## Produção do carro', '', mermaid([e for e in pipeline if ('package_blender' in e['source'] or 'package_blender' in e['target'] or 'merge-animation' in e['source'] or e['target'] == 'web/index.html')]), '',
             '## Produção do box', '', mermaid([e for e in pipeline if any(x in e['source'] + e['target'] for x in ['package_garage', 'render_garage', 'web/src/garage.js'])]), '',
             'O download do box é uma etapa humana: o grafo descreve o produtor, sem certificar que o GLB salvo foi exportado do código atual. O original `F1_2026_tutorial_part7_textures.blend` e a etapa inicial de separação não estão disponíveis no repositório.', '',

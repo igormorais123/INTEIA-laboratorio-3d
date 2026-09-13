@@ -2,7 +2,7 @@
 
 [Voltar ao mapa](README.md) · [Guia de reaproveitamento](REUSO.md) · [Desenvolvimento](../DESENVOLVIMENTO.md)
 
-Este mapa descreve relações verificadas inicialmente em `1ae4fd1`, com inventário e vínculos atualizados sobre `0346e58`. A [revisão de acabamento e render](../ACABAMENTO-E-RENDER.md) acrescenta materiais e luzes ao box Blender e ao navegador; preserva o carro estático. As setas abaixo representam leitura, transformação ou escrita explícita. Elas não afirmam que os scripts foram executados durante o mapeamento. Os relatórios históricos continuam sendo evidências das execuções que os produziram.
+Este mapa descreve relações verificadas inicialmente em `1ae4fd1`, com inventário e vínculos atualizados sobre `e3d58af`. A [revisão de acabamento e render](../ACABAMENTO-E-RENDER.md) acrescenta materiais e luzes ao box Blender e ao navegador; preserva o carro estático. A revisão posterior ativa a assinatura lateral no navegador. As setas abaixo representam leitura, transformação ou escrita explícita. Elas não afirmam que os scripts foram executados durante o mapeamento. Os relatórios históricos continuam sendo evidências das execuções que os produziram.
 
 ## Fontes, derivados e arquivos ausentes
 
@@ -138,7 +138,7 @@ O relatório do box é escrito durante a criação e lista malhas, limites do ca
 
 [identity.js](../../web/src/identity.js) mantém as letras e o emblema em curvas. `brandSVG` entrega a assinatura do cabeçalho; `drawBrand` desenha a placa usada pelo box. A apresentação HTML e os quatro SVGs em [identidade](../../identidade/LEIA-ME.md) são entregas separadas; modificar o código não os regrava automaticamente. Compare assinatura, destaque nas letras IA, proporções e cores entre os destinos depois de uma alteração.
 
-[branding.js](../../web/src/branding.js) mantém um recurso de decalques no carro que está fora da entrada atual. [web/assets/INTEIA-wordmark.svg](../../web/assets/INTEIA-wordmark.svg) é um arquivo adicional; o cabeçalho atual é criado por `brandSVG`, não por carregamento desse SVG.
+[branding.js](../../web/src/branding.js) aplica uma assinatura lateral desde `e3d58af`, usando os glifos de `identity.js` em canvas e um decalque preso à carroceria. [web/assets/INTEIA-wordmark.svg](../../web/assets/INTEIA-wordmark.svg) permanece um arquivo adicional; nem esse decalque nem o cabeçalho criado por `brandSVG` carregam o SVG legado.
 
 **Salvar imagem** gera `INTEIA-design-3D.png` em memória no navegador, ocultando temporariamente o seletor e o gizmo. **Exportar ensaio CSV** gera `INTEIA-ensaio-aerodinamico.csv` por [wind-tunnel.js](../../web/src/wind-tunnel.js). Esses downloads são resultados de uso e não entram automaticamente no Git nem no manifesto. Não existe neste pipeline exportação do túnel para Blender, vídeo ou cálculo CFD.
 

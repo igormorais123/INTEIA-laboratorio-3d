@@ -2,7 +2,7 @@
 
 [Índice](README.md) · [Símbolos e linhas](INVENTARIO.md) · [Grafo de imports](GRAFOS.md)
 
-Atualizado sobre `0346e58`. A [revisão de acabamento e render](../ACABAMENTO-E-RENDER.md) detalha verniz, metais, luzes de área e diferenças entre o box Blender atual e o GLB estático preservado.
+Atualizado sobre `e3d58af`, que também incorpora `0346e58`. A [revisão de acabamento e render](../ACABAMENTO-E-RENDER.md) detalha verniz, metais, luzes de área e diferenças entre o box Blender atual e o GLB estático preservado.
 
 ## Entradas e montagem da aplicação
 
@@ -10,7 +10,7 @@ Atualizado sobre `0346e58`. A [revisão de acabamento e render](../ACABAMENTO-E-
 
 [server.cjs](../../web/server.cjs) serve a pasta `web` com Node, host 127.0.0.1 e porta definida por `PORT`, padrão 5186. A porta não identifica o conteúdo: na sessão de mapeamento, 5186 já pertencia a uma pasta de outputs externa. Preserve esse servidor e escolha outra porta livre para este clone.
 
-[app-v2.js](../../web/src/app-v2.js#L17) depende do DOM completo, de `matchMedia`, canvas/WebGL e do GLB incorporado. Cria renderer, câmera, estúdio, pós-processamento, OrbitControls e TransformControls; carrega o GLB, centraliza o carro no piso, aplica materiais, instala personalização e mecânica, cria o box ativo e prepara o túnel desativado. O laço `setAnimationLoop` atualiza mecânica, câmera, controles, estúdio, box e túnel e escolhe o renderer ou o composer.
+[app-v2.js](../../web/src/app-v2.js#L18) depende do DOM completo, de `matchMedia`, canvas/WebGL e do GLB incorporado. Cria renderer, câmera, estúdio, pós-processamento, OrbitControls e TransformControls; carrega o GLB, centraliza o carro no piso, aplica materiais, instala personalização e mecânica, aplica a assinatura lateral, cria o box ativo e prepara o túnel desativado. O laço `setAnimationLoop` atualiza mecânica, câmera, controles, estúdio, box e túnel e escolhe o renderer ou o composer.
 
 ## Módulos e dependências práticas
 
@@ -21,7 +21,7 @@ Atualizado sobre `0346e58`. A [revisão de acabamento e render](../ACABAMENTO-E-
 | [studio.js / applyCarMaterials](../../web/src/studio.js#L146) | Acabamentos PBR, textura procedural e projeção local do carbono | Classificação por nome do material; shader via `onBeforeCompile` não se transfere automaticamente para glTF/Blender. |
 | [customize.js / setupCustomization](../../web/src/customize.js#L1) | Grupos body/wings/wheels/carbon, paletas, quatro acabamentos, luz, piso, fundo e restauração | Acoplado aos IDs do template, aos nomes de materiais e à classe `dark` no body. Cores ficam na sessão. |
 | [identity.js / brandSVG e drawBrand](../../web/src/identity.js) | Assinatura vetorial do cabeçalho e desenho da marca em canvas | Geometria dos glifos declarada no JS. O box importa `drawBrand`; app importa `brandSVG`. Os SVGs de entrega não são importados por essas funções. |
-| [branding.js / applyInteiaBranding](../../web/src/branding.js#L5) | Implementação disponível de decalques com DecalGeometry | Não integra a árvore de imports da entrada atual. Existe como material reaproveitável, sem garantia de ativação pelo simples build. |
+| [branding.js / applyInteiaBranding](../../web/src/branding.js#L6) | Assinatura lateral única em decalque com DecalGeometry | Ativo desde `e3d58af`: app chama a fábrica após createMechanics. Importa glyphs de identity.js, desenha em canvas e anexa o decalque à carroceria móvel. Não carrega o SVG wordmark legado. |
 | [garage.js / createGarage](../../web/src/garage.js#L6) | Geometria de box, mobiliário, equipamentos, rótulos em canvas, iluminação e ambiente refletido | Depende de Three, RoundedBoxGeometry, identity, estúdio, câmera, mecânica e DOM. Monitores de setup leem o estado da aplicação; outras telas são ilustrativas. |
 | [wind-tunnel.js / createWindTunnel](../../web/src/wind-tunnel.js#L4) | Controles do ensaio, chamadas numéricas, setas, gráfico, avisos, CSV e alternância do ambiente | Depende da mecânica e DOM; bloqueia forças sem coeficientes válidos, com peças deslocadas/isoladas ou Mach fora da faixa. |
 | [aero-physics.mjs / aerodynamicTest](../../web/src/aero-physics.mjs#L2) | Função pura de vento relativo, densidade, pressão dinâmica, Mach/Reynolds e forças por coeficientes | Sem Three e sem DOM. Área, Cd e carga descendente são entradas; não são extraídos da malha. Não modela efeito físico de DRS/direção. |
