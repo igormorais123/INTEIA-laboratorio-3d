@@ -2,7 +2,7 @@
 
 [Índice](README.md) · [Busca interativa](index.html) · [CSV](dados/catalogo.csv) · [JSON](dados/catalogo.json)
 
-87 arquivos catalogados. Hashes de bytes locais em dados/catalogo.json; fontes e derivados têm naturezas distintas. Dependências externas são identificadas como external: e não inventariadas como código do projeto.
+90 arquivos catalogados. Hashes de bytes locais em dados/catalogo.json; fontes e derivados têm naturezas distintas. Dependências externas são identificadas como external: e não inventariadas como código do projeto.
 
 ## .gitattributes
 
@@ -16,7 +16,7 @@ Política de texto/LF, binários e supressão de diff do HTML empacotado.
 
 ## .github/workflows/verify.yml
 
-[Abrir arquivo](../../.github/workflows/verify.yml) · yml · 441 bytes
+[Abrir arquivo](../../.github/workflows/verify.yml) · yml · 642 bytes
 
 CI: instala dependências, constrói web e executa testes em Node 24.
 
@@ -26,13 +26,23 @@ CI: instala dependências, constrói web e executa testes em Node 24.
 
 ## .gitignore
 
-[Abrir arquivo](../../.gitignore) · sem extensão · 375 bytes
+[Abrir arquivo](../../.gitignore) · sem extensão · 467 bytes
 
 Exclusões de dependências, caches, backups Blender e dados de ambiente.
 
 **Natureza:** configuração editável. **Uso:** Git; pode receber mudanças da conversa paralela.
 **Relações de saída:** Nenhuma relação estrutural encontrada; ausência não prova desuso..
 **Referenciado por:** Nenhuma referência catalogada..
+
+## .nojekyll
+
+[Abrir arquivo](../../.nojekyll) · sem extensão · 0 bytes
+
+Habilita publicação estática direta pelo GitHub Pages.
+
+**Natureza:** configuração editável. **Uso:** GitHub Pages.
+**Relações de saída:** Nenhuma relação estrutural encontrada; ausência não prova desuso..
+**Referenciado por:** `docs/PUBLICACAO.md` (documenta).
 
 ## CHANGELOG.md
 
@@ -96,12 +106,12 @@ Prévia renderizada do projeto Blender; não é textura do modelo.
 
 ## README.md
 
-[Abrir arquivo](../../README.md) · md · 4,057 bytes
+[Abrir arquivo](../../README.md) · md · 4,317 bytes
 
 Entrada pública do laboratório, entregas, instalação e limites.
 
 **Natureza:** documento editável. **Uso:** Leitura inicial.
-**Relações de saída:** documenta → `Previa-Blender.png`; documenta → `docs/mapas/README.md`; documenta → `docs/mapas/REUSO.md`; documenta → `docs/mapas/index.html`; documenta → `web/index.html`; documenta → `INTEIA_F1_Master.blend`; documenta → `identidade/LEIA-ME.md`; documenta → `docs/BOX-LABORATORIO.md`; documenta → `ambientes/INTEIA-box-laboratorio.glb`; documenta → `ambientes/INTEIA_Box_com_carro.blend`; documenta → `modelos/INTEIA_F1_estatico.glb`; documenta → `modelos/INTEIA_F1_animado.glb`; documenta → `docs/DESENVOLVIMENTO.md`; documenta → `docs/BLENDER.md`; documenta → `docs/INTEGRACAO.md`; documenta → `docs/ARQUITETURA.md`; documenta → `docs/AERODINAMICA.md`; documenta → `docs/VALIDACAO.md`; documenta → `docs/DESENVOLVIMENTO.md`; documenta → `LICENSE`; documenta → `docs/DIREITOS-E-PROCEDENCIA.md`; documenta → `THIRD-PARTY-NOTICES.md`.
+**Relações de saída:** documenta → `docs/PUBLICACAO.md`; documenta → `Previa-Blender.png`; documenta → `docs/mapas/README.md`; documenta → `docs/mapas/REUSO.md`; documenta → `docs/mapas/index.html`; documenta → `web/index.html`; documenta → `INTEIA_F1_Master.blend`; documenta → `identidade/LEIA-ME.md`; documenta → `docs/BOX-LABORATORIO.md`; documenta → `ambientes/INTEIA-box-laboratorio.glb`; documenta → `ambientes/INTEIA_Box_com_carro.blend`; documenta → `modelos/INTEIA_F1_estatico.glb`; documenta → `modelos/INTEIA_F1_animado.glb`; documenta → `docs/DESENVOLVIMENTO.md`; documenta → `docs/BLENDER.md`; documenta → `docs/INTEGRACAO.md`; documenta → `docs/ARQUITETURA.md`; documenta → `docs/AERODINAMICA.md`; documenta → `docs/VALIDACAO.md`; documenta → `docs/DESENVOLVIMENTO.md`; documenta → `LICENSE`; documenta → `docs/DIREITOS-E-PROCEDENCIA.md`; documenta → `THIRD-PARTY-NOTICES.md`.
 **Referenciado por:** `LEIA-ME.md` (documenta).
 
 ## THIRD-PARTY-NOTICES.md
@@ -235,6 +245,16 @@ Integração dos GLBs e fontes em outros projetos.
 **Relações de saída:** alerta_conflito_com_clipe_glb → `web/src/mechanics.js`.
 **Referenciado por:** `LEIA-ME.md` (documenta); `README.md` (documenta).
 
+## docs/PUBLICACAO.md
+
+[Abrir arquivo](../../docs/PUBLICACAO.md) · md · 3,001 bytes
+
+Endereços públicos, atualização e evidência da publicação.
+
+**Natureza:** documento editável. **Uso:** Publicar e verificar novas revisões.
+**Relações de saída:** documenta → `index.html`; documenta → `web/index.html`; documenta → `.nojekyll`.
+**Referenciado por:** `README.md` (documenta).
+
 ## docs/REVISAO-TUNEL-VISUAL.md
 
 [Abrir arquivo](../../docs/REVISAO-TUNEL-VISUAL.md) · md · 4,093 bytes
@@ -257,7 +277,7 @@ Síntese de testes históricos e limites por destino.
 
 ## docs/mapas/GRAFOS.md
 
-[Abrir arquivo](../../docs/mapas/GRAFOS.md) · md · 14,370 bytes
+[Abrir arquivo](../../docs/mapas/GRAFOS.md) · md · 15,857 bytes
 
 Diagramas Mermaid e leitura do grafo geral paralelo.
 
@@ -267,7 +287,7 @@ Diagramas Mermaid e leitura do grafo geral paralelo.
 
 ## docs/mapas/INVENTARIO.md
 
-[Abrir arquivo](../../docs/mapas/INVENTARIO.md) · md · 13,538 bytes
+[Abrir arquivo](../../docs/mapas/INVENTARIO.md) · md · 21,277 bytes
 
 Inventário legível de arquivos da conversa paralela.
 
@@ -307,7 +327,7 @@ Pipeline de produção de assets documentado no mapa paralelo.
 
 ## docs/mapas/README.md
 
-[Abrir arquivo](../../docs/mapas/README.md) · md · 3,283 bytes
+[Abrir arquivo](../../docs/mapas/README.md) · md · 3,528 bytes
 
 Entrada do mapa geral produzido pela conversa paralela.
 
@@ -337,7 +357,7 @@ Resultados de verificação registrados pela conversa paralela.
 
 ## docs/mapas/cobertura.json
 
-[Abrir arquivo](../../docs/mapas/cobertura.json) · json · 1,121 bytes
+[Abrir arquivo](../../docs/mapas/cobertura.json) · json · 1,124 bytes
 
 Contagens, escopo e exclusões do mapa paralelo.
 
@@ -367,7 +387,7 @@ Catálogo de componentes GLB do mapa paralelo.
 
 ## docs/mapas/dependencias.json
 
-[Abrir arquivo](../../docs/mapas/dependencias.json) · json · 30,942 bytes
+[Abrir arquivo](../../docs/mapas/dependencias.json) · json · 33,987 bytes
 
 Relações de dependências extraídas pelo gerador paralelo.
 
@@ -387,7 +407,7 @@ Extração graphify preservada pela conversa paralela.
 
 ## docs/mapas/index.html
 
-[Abrir arquivo](../../docs/mapas/index.html) · html · 294,932 bytes
+[Abrir arquivo](../../docs/mapas/index.html) · html · 309,844 bytes
 
 Interface navegável do mapa geral paralelo.
 
@@ -397,7 +417,7 @@ Interface navegável do mapa geral paralelo.
 
 ## docs/mapas/inventario.json
 
-[Abrir arquivo](../../docs/mapas/inventario.json) · json · 371,157 bytes
+[Abrir arquivo](../../docs/mapas/inventario.json) · json · 385,838 bytes
 
 Inventário estruturado de arquivos do gerador paralelo.
 
@@ -467,7 +487,7 @@ Template da interface do mapa geral da conversa paralela.
 
 ## ferramentas/mapear.py
 
-[Abrir arquivo](../../ferramentas/mapear.py) · py · 20,655 bytes
+[Abrir arquivo](../../ferramentas/mapear.py) · py · 21,555 bytes
 
 Gerador do mapa geral da conversa paralela; saídas em docs/mapas.
 
@@ -584,6 +604,16 @@ Guia da identidade, versões e orientação de uso.
 **Natureza:** documento editável. **Uso:** Design gráfico.
 **Relações de saída:** Nenhuma relação estrutural encontrada; ausência não prova desuso..
 **Referenciado por:** `README.md` (documenta).
+
+## index.html
+
+[Abrir arquivo](../../index.html) · html · 697 bytes
+
+Entrada pública que encaminha ao laboratório em web/.
+
+**Natureza:** fonte web editável. **Uso:** Página inicial do GitHub Pages.
+**Relações de saída:** Nenhuma relação estrutural encontrada; ausência não prova desuso..
+**Referenciado por:** `docs/PUBLICACAO.md` (documenta).
 
 ## manifesto-sha256.json
 
@@ -706,7 +736,7 @@ Site autocontido gerado: template, bundle Three.js e modelo embutido.
 
 **Natureza:** HTML gerado. **Uso:** Abrir localmente; editar fontes e recompilar.
 **Relações de saída:** Nenhuma relação estrutural encontrada; ausência não prova desuso..
-**Referenciado por:** `README.md` (documenta); `web/build.cjs` (sobrescreve_html_gerado); `web/server.cjs` (serve_na_rota_raiz); `ferramentas/manifest.cjs` (le_bytes_para_sha256).
+**Referenciado por:** `README.md` (documenta); `docs/PUBLICACAO.md` (documenta); `web/build.cjs` (sobrescreve_html_gerado); `web/server.cjs` (serve_na_rota_raiz); `ferramentas/manifest.cjs` (le_bytes_para_sha256).
 
 ## web/package-lock.json
 

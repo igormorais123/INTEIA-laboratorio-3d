@@ -2,6 +2,90 @@
   "schemaVersion": 1,
   "imports": [
     {
+      "source": "docs/mapeamento-detalhado/scripts/verificar-app.mjs",
+      "target": "external:node:fs",
+      "relation": "importa",
+      "confidence": "EXTRACTED",
+      "evidence": {
+        "path": "docs/mapeamento-detalhado/scripts/verificar-app.mjs",
+        "line": 2,
+        "text": "import fs from 'node:fs'"
+      },
+      "href": "../../docs/mapeamento-detalhado/scripts/verificar-app.mjs#L2"
+    },
+    {
+      "source": "docs/mapeamento-detalhado/scripts/verificar-app.mjs",
+      "target": "external:node:path",
+      "relation": "importa",
+      "confidence": "EXTRACTED",
+      "evidence": {
+        "path": "docs/mapeamento-detalhado/scripts/verificar-app.mjs",
+        "line": 3,
+        "text": "import path from 'node:path'"
+      },
+      "href": "../../docs/mapeamento-detalhado/scripts/verificar-app.mjs#L3"
+    },
+    {
+      "source": "docs/mapeamento-detalhado/scripts/verificar-app.mjs",
+      "target": "external:node:crypto",
+      "relation": "importa",
+      "confidence": "EXTRACTED",
+      "evidence": {
+        "path": "docs/mapeamento-detalhado/scripts/verificar-app.mjs",
+        "line": 4,
+        "text": "import crypto from 'node:crypto'"
+      },
+      "href": "../../docs/mapeamento-detalhado/scripts/verificar-app.mjs#L4"
+    },
+    {
+      "source": "docs/mapeamento-detalhado/scripts/verificar-app.mjs",
+      "target": "external:node:url",
+      "relation": "importa",
+      "confidence": "EXTRACTED",
+      "evidence": {
+        "path": "docs/mapeamento-detalhado/scripts/verificar-app.mjs",
+        "line": 5,
+        "text": "import {fileURLToPath,pathToFileURL} from 'node:url'"
+      },
+      "href": "../../docs/mapeamento-detalhado/scripts/verificar-app.mjs#L5"
+    },
+    {
+      "source": "docs/mapeamento-detalhado/scripts/verificar-app.mjs",
+      "target": "external:node:module",
+      "relation": "importa",
+      "confidence": "EXTRACTED",
+      "evidence": {
+        "path": "docs/mapeamento-detalhado/scripts/verificar-app.mjs",
+        "line": 6,
+        "text": "import {createRequire} from 'node:module'"
+      },
+      "href": "../../docs/mapeamento-detalhado/scripts/verificar-app.mjs#L6"
+    },
+    {
+      "source": "docs/mapeamento-detalhado/scripts/verificar-app.mjs",
+      "target": "external:node:child_process",
+      "relation": "importa",
+      "confidence": "EXTRACTED",
+      "evidence": {
+        "path": "docs/mapeamento-detalhado/scripts/verificar-app.mjs",
+        "line": 7,
+        "text": "import {execFileSync} from 'node:child_process'"
+      },
+      "href": "../../docs/mapeamento-detalhado/scripts/verificar-app.mjs#L7"
+    },
+    {
+      "source": "docs/mapeamento-detalhado/scripts/verificar-app.mjs",
+      "target": "external:esbuild",
+      "relation": "importa",
+      "confidence": "EXTRACTED",
+      "evidence": {
+        "path": "docs/mapeamento-detalhado/scripts/verificar-app.mjs",
+        "line": 10,
+        "text": "require('esbuild')"
+      },
+      "href": "../../docs/mapeamento-detalhado/scripts/verificar-app.mjs#L10"
+    },
+    {
       "source": "ferramentas/manifest.cjs",
       "target": "external:fs",
       "relation": "importa",

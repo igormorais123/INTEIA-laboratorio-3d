@@ -26,6 +26,23 @@ GENERATED = {
 }
 BINARY = {'.glb', '.blend', '.png'}
 
+# O atlas detalhado cataloga os nossos derivados. Não criar hashes circulares:
+# suas saídas continuam no inventário, e o validador próprio confere seu conteúdo.
+DETAILED_GENERATED = {'docs/mapeamento-detalhado/' + p for p in {
+    'ARVORE.md', 'CATALOGO.md', 'FUNCOES.md', 'index.html',
+    'dados/catalogo.csv', 'dados/catalogo.json', 'dados/cobertura.json',
+    'dados/componentes.json', 'dados/entrega.json', 'dados/grafo.json',
+    'dados/manifesto-conferencia.json', 'dados/simbolos.json',
+    'dados/teste-mecanica.json', 'dados/validacao.json', 'dados/verificacao-app.json',
+    'grafos/arquitetura.json', 'grafos/arquitetura.mmd',
+    'grafos/assets.json', 'grafos/assets.mmd',
+    'grafos/dados.json', 'grafos/dados.mmd',
+}}
+
+
+def is_generated(path):
+    return path in GENERATED or path in DETAILED_GENERATED or path.startswith('graphify-out/')
+
 
 def read(path):
     return (ROOT / path).read_text(encoding='utf-8-sig')
@@ -58,7 +75,7 @@ def file_list():
 
 def category(path):
     p = Path(path)
-    if path in GENERATED or path.startswith('graphify-out/'):
+    if is_generated(path):
         return 'mapa gerado'
     if path == 'web/index.html':
         return 'aplicação gerada'
@@ -118,7 +135,7 @@ def extract(files):
     records, edges, symbols = [], [], []
     for path in files:
         rec = {'path': path, 'category': category(path), 'href': href(path)}
-        generated = path in GENERATED or path.startswith('graphify-out/')
+        generated = is_generated(path)
         if not generated:
             data = (ROOT / path).read_bytes()
             if Path(path).suffix not in BINARY:
@@ -249,7 +266,8 @@ def check_links(path, text, virtual):
             elif dest.suffix == '.md':
                 headings = [re.sub(r'[^\w\- ]', '', h.lower()).replace(' ', '-')
                             for h in re.findall(r'^#+\s+(.+)$', content, re.M)]
-                if unquote(anchor) not in headings:
+                explicit = re.findall(r'<a\s+(?:id|name)=[\"\x27]([^\"\x27]+)[\"\x27]', content)
+                if unquote(anchor) not in headings + explicit:
                     errors.append(f'{path}: âncora inexistente: {target}')
     return errors, count
 

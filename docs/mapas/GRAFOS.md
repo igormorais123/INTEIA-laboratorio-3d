@@ -91,6 +91,13 @@ O download do box é uma etapa humana: o grafo descreve o produtor, sem certific
 
 | Origem | Relação | Destino | Evidência |
 | --- | --- | --- | --- |
+| `docs/mapeamento-detalhado/scripts/verificar-app.mjs` | importa | `external:node:fs` | [docs/mapeamento-detalhado/scripts/verificar-app.mjs:2](../../docs/mapeamento-detalhado/scripts/verificar-app.mjs#L2) |
+| `docs/mapeamento-detalhado/scripts/verificar-app.mjs` | importa | `external:node:path` | [docs/mapeamento-detalhado/scripts/verificar-app.mjs:3](../../docs/mapeamento-detalhado/scripts/verificar-app.mjs#L3) |
+| `docs/mapeamento-detalhado/scripts/verificar-app.mjs` | importa | `external:node:crypto` | [docs/mapeamento-detalhado/scripts/verificar-app.mjs:4](../../docs/mapeamento-detalhado/scripts/verificar-app.mjs#L4) |
+| `docs/mapeamento-detalhado/scripts/verificar-app.mjs` | importa | `external:node:url` | [docs/mapeamento-detalhado/scripts/verificar-app.mjs:5](../../docs/mapeamento-detalhado/scripts/verificar-app.mjs#L5) |
+| `docs/mapeamento-detalhado/scripts/verificar-app.mjs` | importa | `external:node:module` | [docs/mapeamento-detalhado/scripts/verificar-app.mjs:6](../../docs/mapeamento-detalhado/scripts/verificar-app.mjs#L6) |
+| `docs/mapeamento-detalhado/scripts/verificar-app.mjs` | importa | `external:node:child_process` | [docs/mapeamento-detalhado/scripts/verificar-app.mjs:7](../../docs/mapeamento-detalhado/scripts/verificar-app.mjs#L7) |
+| `docs/mapeamento-detalhado/scripts/verificar-app.mjs` | importa | `external:esbuild` | [docs/mapeamento-detalhado/scripts/verificar-app.mjs:10](../../docs/mapeamento-detalhado/scripts/verificar-app.mjs#L10) |
 | `ferramentas/manifest.cjs` | importa | `external:fs` | [ferramentas/manifest.cjs:1](../../ferramentas/manifest.cjs#L1) |
 | `ferramentas/manifest.cjs` | importa | `external:path` | [ferramentas/manifest.cjs:1](../../ferramentas/manifest.cjs#L1) |
 | `ferramentas/manifest.cjs` | importa | `external:crypto` | [ferramentas/manifest.cjs:1](../../ferramentas/manifest.cjs#L1) |

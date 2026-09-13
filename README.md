@@ -2,6 +2,8 @@
 
 Um laboratório interativo para explorar e personalizar um carro de fórmula: 97 componentes, cores independentes, materiais, iluminação e movimentos ilustrativos. Inclui projeto Blender editável e modelos GLB para reutilização.
 
+**[Abrir o laboratório online](https://igormorais123.github.io/INTEIA-laboratorio-3d/)** · **[Atlas detalhado online](https://igormorais123.github.io/INTEIA-laboratorio-3d/docs/mapeamento-detalhado/index.html)** · [Publicação e atualização](docs/PUBLICACAO.md)
+
 ![Prévia do projeto Blender](Previa-Blender.png)
 
 ## Comece aqui
@@ -10,7 +12,7 @@ Um laboratório interativo para explorar e personalizar um carro de fórmula: 97
 
 | Quero… | Abra / leia |
 | --- | --- |
-| Explorar e trocar cores | [web/index.html](web/index.html) — baixe o repositório e abra no navegador |
+| Explorar e trocar cores | [Laboratório publicado](https://igormorais123.github.io/INTEIA-laboratorio-3d/) ou [HTML para uso local](web/index.html) |
 | Editar o modelo | [INTEIA_F1_Master.blend](INTEIA_F1_Master.blend) no Blender 4.5 |
 | Usar a identidade visual | [Marca e variantes SVG](identidade/LEIA-ME.md) |
 | Explorar o box-laboratório | [Guia do ambiente](docs/BOX-LABORATORIO.md) · [Box GLB](ambientes/INTEIA-box-laboratorio.glb) · [Blender com carro](ambientes/INTEIA_Box_com_carro.blend) |

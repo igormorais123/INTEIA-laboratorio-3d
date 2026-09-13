@@ -1,4 +1,19 @@
 {
+  ".nojekyll": [
+    "Habilita publicação estática direta pelo GitHub Pages",
+    "configuração editável",
+    "GitHub Pages"
+  ],
+  "index.html": [
+    "Entrada pública que encaminha ao laboratório em web/",
+    "fonte web editável",
+    "Página inicial do GitHub Pages"
+  ],
+  "docs/PUBLICACAO.md": [
+    "Endereços públicos, atualização e evidência da publicação",
+    "documento editável",
+    "Publicar e verificar novas revisões"
+  ],
   ".gitattributes": [
     "Política de texto/LF, binários e supressão de diff do HTML empacotado",
     "configuração editável",

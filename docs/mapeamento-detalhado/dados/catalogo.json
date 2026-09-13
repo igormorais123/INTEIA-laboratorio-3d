@@ -1,12 +1,12 @@
 {
   "metadata": {
-    "captured_at": "2026-09-13T01:42:41.748748+00:00",
-    "revision": "e3d58af3c59a87b308444e678b0b25803e00e727",
+    "captured_at": "2026-09-13T02:35:49.783351+00:00",
+    "revision": "e8a7e7a44d17d5695df2e982390e372054647213",
     "initial_revision": "1ae4fd15062d347dc8462af8f4db33c749e6575b",
     "branch": "main",
-    "status": "M .gitignore\n M README.md\n M docs/ARQUITETURA.md\n M docs/DESENVOLVIMENTO.md\n?? docs/mapas/\n?? docs/mapeamento-detalhado/\n?? ferramentas/mapa-template.html\n?? ferramentas/mapear.py\n?? graphify-out/",
-    "catalog_count": 87,
-    "bytes": 166722575,
+    "status": "M .gitignore\n M README.md\n M docs/mapas/GRAFOS.md\n M docs/mapas/INVENTARIO.md\n M docs/mapas/README.md\n M docs/mapas/cobertura.json\n M docs/mapas/dependencias.json\n M docs/mapas/index.html\n M docs/mapas/inventario.json\n M docs/mapeamento-detalhado/ARVORE.md\n M docs/mapeamento-detalhado/ATUALIZAR.md\n M docs/mapeamento-detalhado/CATALOGO.md\n M docs/mapeamento-detalhado/dados/catalogo.csv\n M docs/mapeamento-detalhado/dados/catalogo.json\n M docs/mapeamento-detalhado/dados/cobertura.json\n M docs/mapeamento-detalhado/dados/grafo.json\n M docs/mapeamento-detalhado/dados/verificacao-app.json\n M docs/mapeamento-detalhado/index.html\n M docs/mapeamento-detalhado/scripts/finalidades.json\n M ferramentas/mapear.py\n?? docs/PUBLICACAO.md",
+    "catalog_count": 90,
+    "bytes": 166769838,
     "baseline_files": 69,
     "baseline_missing": [],
     "unclassified": [],
@@ -42,10 +42,10 @@
     "symbols": 94,
     "symbol_parse_errors": [],
     "unresolved_local_imports": [],
-    "edges": 653,
-    "nodes": 201,
+    "edges": 657,
+    "nodes": 204,
     "confidence_counts": {
-      "EXTRACTED": 653
+      "EXTRACTED": 657
     }
   },
   "files": [
@@ -71,11 +71,11 @@
       "usage": "GitHub Actions",
       "classification_reviewed": true,
       "tracked": true,
-      "bytes": 441,
-      "sha256": "638b706ec127c11921fd590db5fb9abc3fb4afcbb027c3b1f3834c8b981fb163",
+      "bytes": 642,
+      "sha256": "948d7b4c40e7b94dfc1dcedf1c0d306309f32fdc7ba6a30f42422955eb2a6883",
       "dependencies": [],
       "used_by": [],
-      "lines": 20
+      "lines": 26
     },
     {
       "path": ".gitignore",
@@ -85,11 +85,29 @@
       "usage": "Git; pode receber mudanças da conversa paralela",
       "classification_reviewed": true,
       "tracked": true,
-      "bytes": 375,
-      "sha256": "1981c682b27a9747534459d780d9de376185764a26de53d84080ba0639be04ca",
+      "bytes": 467,
+      "sha256": "9c4a2f221ad5736e5da79fc4b6a2d24a80c43c731de2164cbad173457784b4c8",
       "dependencies": [],
       "used_by": [],
-      "lines": 23
+      "lines": 27
+    },
+    {
+      "path": ".nojekyll",
+      "type": "sem extensão",
+      "purpose": "Habilita publicação estática direta pelo GitHub Pages",
+      "nature": "configuração editável",
+      "usage": "GitHub Pages",
+      "classification_reviewed": true,
+      "tracked": true,
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "dependencies": [],
+      "used_by": [
+        {
+          "source": "docs/PUBLICACAO.md",
+          "relation": "documenta"
+        }
+      ]
     },
     {
       "path": "CHANGELOG.md",
@@ -269,8 +287,8 @@
       "usage": "Leitura inicial",
       "classification_reviewed": true,
       "tracked": true,
-      "bytes": 4057,
-      "sha256": "74ac698c0eb3625ea0858b987f942c251581a7c037db907f172285b1582bb267",
+      "bytes": 4317,
+      "sha256": "c8eafa573b7dcc2a5914df5bbd636fcc24bc015db76d429af72e6d23fc49c241",
       "dependencies": [],
       "used_by": [
         {
@@ -278,8 +296,13 @@
           "relation": "documenta"
         }
       ],
-      "lines": 57,
+      "lines": 59,
       "relations_out": [
+        {
+          "target": "docs/PUBLICACAO.md",
+          "relation": "documenta",
+          "line": null
+        },
         {
           "target": "Previa-Blender.png",
           "relation": "documenta",
@@ -912,6 +935,42 @@
       ]
     },
     {
+      "path": "docs/PUBLICACAO.md",
+      "type": "md",
+      "purpose": "Endereços públicos, atualização e evidência da publicação",
+      "nature": "documento editável",
+      "usage": "Publicar e verificar novas revisões",
+      "classification_reviewed": true,
+      "tracked": false,
+      "bytes": 3001,
+      "sha256": "47af7c747fe0c28961c468feec1d19b9fca5cbb7a8b26703ba797dcf5980efc2",
+      "dependencies": [],
+      "used_by": [
+        {
+          "source": "README.md",
+          "relation": "documenta"
+        }
+      ],
+      "lines": 36,
+      "relations_out": [
+        {
+          "target": "index.html",
+          "relation": "documenta",
+          "line": null
+        },
+        {
+          "target": "web/index.html",
+          "relation": "documenta",
+          "line": null
+        },
+        {
+          "target": ".nojekyll",
+          "relation": "documenta",
+          "line": null
+        }
+      ]
+    },
+    {
       "path": "docs/REVISAO-TUNEL-VISUAL.md",
       "type": "md",
       "purpose": "Revisões e limites da representação visual do fluxo",
@@ -955,12 +1014,12 @@
       "nature": "documentação/código de mapeamento paralelo",
       "usage": "Complementar a esta análise; mantido pela outra tarefa",
       "classification_reviewed": true,
-      "tracked": false,
-      "bytes": 14370,
-      "sha256": "d7ed230d23c3d727544c70232af944e25c5371d53c99f69a6587cf5db0d015d1",
+      "tracked": true,
+      "bytes": 15857,
+      "sha256": "79cd4777163b429606573d7974d277aac6eee7218ec42bd45d8013878dc4c534",
       "dependencies": [],
       "used_by": [],
-      "lines": 178
+      "lines": 185
     },
     {
       "path": "docs/mapas/INVENTARIO.md",
@@ -969,12 +1028,12 @@
       "nature": "documentação/código de mapeamento paralelo",
       "usage": "Complementar a esta análise; mantido pela outra tarefa",
       "classification_reviewed": true,
-      "tracked": false,
-      "bytes": 13538,
-      "sha256": "f5051308d3b84b4107ebf06b110ad9e0913e7c3dbe6e2888d9e1bc41f3866d4f",
+      "tracked": true,
+      "bytes": 21277,
+      "sha256": "f6027dddb3d66742ac1080ff3c54e6c3ee75a6c8c605d3ffb033ba0af9d8943e",
       "dependencies": [],
       "used_by": [],
-      "lines": 168
+      "lines": 231
     },
     {
       "path": "docs/mapas/MANUTENCAO.md",
@@ -983,7 +1042,7 @@
       "nature": "documentação/código de mapeamento paralelo",
       "usage": "Complementar a esta análise; mantido pela outra tarefa",
       "classification_reviewed": true,
-      "tracked": false,
+      "tracked": true,
       "bytes": 6127,
       "sha256": "06526b39e523f75d573daa335061da0a08522e86107d9bd866977b5c34ce8a3b",
       "dependencies": [],
@@ -1002,7 +1061,7 @@
       "nature": "documentação/código de mapeamento paralelo",
       "usage": "Complementar a esta análise; mantido pela outra tarefa",
       "classification_reviewed": true,
-      "tracked": false,
+      "tracked": true,
       "bytes": 8775,
       "sha256": "1026a1bb93549de31a77348976c1366b03a587bbe46029e87cb00fbdadd4c633",
       "dependencies": [],
@@ -1021,7 +1080,7 @@
       "nature": "documentação/código de mapeamento paralelo",
       "usage": "Complementar a esta análise; mantido pela outra tarefa",
       "classification_reviewed": true,
-      "tracked": false,
+      "tracked": true,
       "bytes": 17713,
       "sha256": "3f1f3b800d081c56600b85ba5eb50f002b3fca5ac805e0b80e697446d4d6caa2",
       "dependencies": [],
@@ -1035,9 +1094,9 @@
       "nature": "documentação/código de mapeamento paralelo",
       "usage": "Complementar a esta análise; mantido pela outra tarefa",
       "classification_reviewed": true,
-      "tracked": false,
-      "bytes": 3283,
-      "sha256": "3294766c0751edf80d01d8cc0cd9593cbcc3f0b445140732850bccb208684c58",
+      "tracked": true,
+      "bytes": 3528,
+      "sha256": "13121594abce3b0f2994f78dee664ebdbc2aadfee02395b9b31064eb65e1b0a0",
       "dependencies": [],
       "used_by": [
         {
@@ -1049,7 +1108,7 @@
           "relation": "documenta"
         }
       ],
-      "lines": 28
+      "lines": 30
     },
     {
       "path": "docs/mapas/REUSO.md",
@@ -1058,7 +1117,7 @@
       "nature": "documentação/código de mapeamento paralelo",
       "usage": "Complementar a esta análise; mantido pela outra tarefa",
       "classification_reviewed": true,
-      "tracked": false,
+      "tracked": true,
       "bytes": 16017,
       "sha256": "6973e291a459d8920511c8a46b2d80bc2f266ce84d8a9a44bdcadcd5456876b6",
       "dependencies": [],
@@ -1081,7 +1140,7 @@
       "nature": "documentação/código de mapeamento paralelo",
       "usage": "Complementar a esta análise; mantido pela outra tarefa",
       "classification_reviewed": true,
-      "tracked": false,
+      "tracked": true,
       "bytes": 3816,
       "sha256": "a2413ba1ff1b66c37141e830b28368faeb44577c56eca0af79df3be48239ff93",
       "dependencies": [],
@@ -1095,9 +1154,9 @@
       "nature": "documentação/código de mapeamento paralelo",
       "usage": "Complementar a esta análise; mantido pela outra tarefa",
       "classification_reviewed": true,
-      "tracked": false,
-      "bytes": 1121,
-      "sha256": "295567798f71779d8fe70d45f7f7c8c22b62c61fa20e7672232320cb89edb733",
+      "tracked": true,
+      "bytes": 1124,
+      "sha256": "77684333ecc82c4a82552c25a168730ae3f8f02110be0015d56b6099316afd93",
       "dependencies": [],
       "used_by": [],
       "lines": 36
@@ -1109,7 +1168,7 @@
       "nature": "documentação/código de mapeamento paralelo",
       "usage": "Complementar a esta análise; mantido pela outra tarefa",
       "classification_reviewed": true,
-      "tracked": false,
+      "tracked": true,
       "bytes": 33191,
       "sha256": "59cee101f194c235afab96ede36e0e4e389289cdacefb731e0697f658fa3f022",
       "dependencies": [],
@@ -1123,7 +1182,7 @@
       "nature": "documentação/código de mapeamento paralelo",
       "usage": "Complementar a esta análise; mantido pela outra tarefa",
       "classification_reviewed": true,
-      "tracked": false,
+      "tracked": true,
       "bytes": 36182,
       "sha256": "ed0b27bc8fe6497994c31814451f33bfa9c0e7a14ad68a3c3706c49846c4dfdb",
       "dependencies": [],
@@ -1137,12 +1196,12 @@
       "nature": "documentação/código de mapeamento paralelo",
       "usage": "Complementar a esta análise; mantido pela outra tarefa",
       "classification_reviewed": true,
-      "tracked": false,
-      "bytes": 30942,
-      "sha256": "964c7a7bb60786c5871f2c392a2f20957b1d6bc49ad8dbe4731df36772379345",
+      "tracked": true,
+      "bytes": 33987,
+      "sha256": "60490ac03b20d965be5f5f96b483102ec995ae2fb7f41a914e8e4fd73e5c57b8",
       "dependencies": [],
       "used_by": [],
-      "lines": 1028
+      "lines": 1112
     },
     {
       "path": "docs/mapas/graphify-extracao.json",
@@ -1151,7 +1210,7 @@
       "nature": "documentação/código de mapeamento paralelo",
       "usage": "Complementar a esta análise; mantido pela outra tarefa",
       "classification_reviewed": true,
-      "tracked": false,
+      "tracked": true,
       "bytes": 258641,
       "sha256": "a7b32a07d5b95fae8daa7c8a603046fb5d5e060bb2b94cb6c784e838ab00b3a4",
       "dependencies": [],
@@ -1165,9 +1224,9 @@
       "nature": "documentação/código de mapeamento paralelo",
       "usage": "Complementar a esta análise; mantido pela outra tarefa",
       "classification_reviewed": true,
-      "tracked": false,
-      "bytes": 294932,
-      "sha256": "deda8cb97d8448de944050c8c01f7a12a853bef6d4c6de0b7529ac45ef112c44",
+      "tracked": true,
+      "bytes": 309844,
+      "sha256": "d474cb4f986c4b9e71d786cec07499d31b74629ba1a9122cb46ca2eefa33add9",
       "dependencies": [],
       "used_by": [
         {
@@ -1183,12 +1242,12 @@
       "nature": "documentação/código de mapeamento paralelo",
       "usage": "Complementar a esta análise; mantido pela outra tarefa",
       "classification_reviewed": true,
-      "tracked": false,
-      "bytes": 371157,
-      "sha256": "aadac136ea41d186623ef2a445c61b9374114bd0b608aaec9a902f7bf1f34f29",
+      "tracked": true,
+      "bytes": 385838,
+      "sha256": "d9176f1495e707be2e7f0c4631a1cafae458f9f1a46da444ca3917acddf3f76c",
       "dependencies": [],
       "used_by": [],
-      "lines": 11862
+      "lines": 12261
     },
     {
       "path": "documentacao/Comparacao-iluminacao.html",
@@ -1455,7 +1514,7 @@
       "nature": "documentação/código de mapeamento paralelo",
       "usage": "Complementar a esta análise; mantido pela outra tarefa",
       "classification_reviewed": true,
-      "tracked": false,
+      "tracked": true,
       "bytes": 11578,
       "sha256": "276626fb2b30c065c1cbd9561506cd8956ed44400c0160483eb204e17a220567",
       "dependencies": [],
@@ -1468,12 +1527,12 @@
       "nature": "documentação/código de mapeamento paralelo",
       "usage": "Complementar a esta análise; mantido pela outra tarefa",
       "classification_reviewed": true,
-      "tracked": false,
-      "bytes": 20655,
-      "sha256": "98b3db93db7642df6d82854b700fb3c265277e0b5e9d76daad7e93778f71f31e",
+      "tracked": true,
+      "bytes": 21555,
+      "sha256": "b873528dabad9985ce8369bf520414d4928c6ab5db422e2c8b6aa361622cb75b",
       "dependencies": [],
       "used_by": [],
-      "lines": 354
+      "lines": 372
     },
     {
       "path": "ferramentas/merge-animation.cjs",
@@ -1937,6 +1996,24 @@
         }
       ],
       "lines": 21
+    },
+    {
+      "path": "index.html",
+      "type": "html",
+      "purpose": "Entrada pública que encaminha ao laboratório em web/",
+      "nature": "fonte web editável",
+      "usage": "Página inicial do GitHub Pages",
+      "classification_reviewed": true,
+      "tracked": true,
+      "bytes": 697,
+      "sha256": "ee84d3f31512100b8d91bf6977b756d808a17ca2832bb7fddc26e08b03ccafd8",
+      "dependencies": [],
+      "used_by": [
+        {
+          "source": "docs/PUBLICACAO.md",
+          "relation": "documenta"
+        }
+      ]
     },
     {
       "path": "manifesto-sha256.json",
@@ -12857,6 +12934,10 @@
       "used_by": [
         {
           "source": "README.md",
+          "relation": "documenta"
+        },
+        {
+          "source": "docs/PUBLICACAO.md",
           "relation": "documenta"
         },
         {

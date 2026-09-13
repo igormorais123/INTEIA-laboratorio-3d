@@ -11,6 +11,7 @@ INTEIA-laboratorio-3d/
     workflows/  # CI de build/test
       verify.yml  # CI: instala dependências, constrói web e executa testes em Node 24
   .gitignore  # Exclusões de dependências, caches, backups Blender e dados de ambiente
+  .nojekyll  # Habilita publicação estática direta pelo GitHub Pages
   CHANGELOG.md  # Histórico editorial das mudanças e entregas
   CONTRIBUTING.md  # Orientações para contribuir e verificar alterações
   INTEIA_F1_Master.blend  # Projeto Blender entregue: carro, coleções, materiais, demonstração e estúdio
@@ -33,6 +34,7 @@ INTEIA-laboratorio-3d/
     DESENVOLVIMENTO.md  # Instalação, build, servidor e testes
     DIREITOS-E-PROCEDENCIA.md  # Separa titularidade INTEIA de geometria fornecida e terceiros
     INTEGRACAO.md  # Integração dos GLBs e fontes em outros projetos
+    PUBLICACAO.md  # Endereços públicos, atualização e evidência da publicação
     REVISAO-TUNEL-VISUAL.md  # Revisões e limites da representação visual do fluxo
     VALIDACAO.md  # Síntese de testes históricos e limites por destino
     mapas/  # Documentação complementar da conversa paralela
@@ -72,6 +74,7 @@ INTEIA-laboratorio-3d/
     INTEIA-simbolo.svg  # Símbolo compacto da identidade INTEIA
     Identidade-INTEIA.html  # Apresentação visual das versões da marca
     LEIA-ME.md  # Guia da identidade, versões e orientação de uso
+  index.html  # Entrada pública que encaminha ao laboratório em web/
   manifesto-sha256.json  # Lista fechada com tamanho e hash de 14 entregas
   modelos/  # GLBs convertidos para distribuição
     INTEIA_F1_animado.glb  # Carro convertido com clipe ilustrativo de montagem, rodas e DRS

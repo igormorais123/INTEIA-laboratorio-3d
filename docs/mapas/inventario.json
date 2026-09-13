@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "fingerprint": "0dd24355792a3feecbdc67d5194d445964c4d1dd4acedd3dcb96b9492cf05733",
+  "fingerprint": "517138e7b2ca56f170d519907cd4865b7e415cb7b536a5f8e51bcb0ff1d62dca",
   "scope": "arquivos Git e novos não ignorados; caches, dependências instaladas e backups ignorados excluídos",
   "hashPolicy": "SHA256 e bytes de texto com LF; binários exatos; mapas gerados sem auto-hash",
   "files": [
@@ -22,8 +22,15 @@
       "path": ".gitignore",
       "category": "configuração ou infraestrutura",
       "href": "../../.gitignore",
-      "bytesCanonical": 447,
-      "sha256": "29b9d8b570494ee3280a730fd4bde50ed80ddf4bebf8e23c539027df613f92d3"
+      "bytesCanonical": 441,
+      "sha256": "866faa5b6687542c2dd00d2af1c99671fdfbc56eae2178bb67992b68edc1fa9f"
+    },
+    {
+      "path": ".nojekyll",
+      "category": "configuração ou infraestrutura",
+      "href": "../../.nojekyll",
+      "bytesCanonical": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
     },
     {
       "path": "CHANGELOG.md",
@@ -71,8 +78,8 @@
       "path": "README.md",
       "category": "documentação",
       "href": "../../README.md",
-      "bytesCanonical": 4004,
-      "sha256": "8cda508f8d3394bac3359b20d5162b9b0151c6092454340d7563b51ee55021d8"
+      "bytesCanonical": 4317,
+      "sha256": "c8eafa573b7dcc2a5914df5bbd636fcc24bc015db76d429af72e6d23fc49c241"
     },
     {
       "path": "THIRD-PARTY-NOTICES.md",
@@ -181,6 +188,13 @@
       "sha256": "cffcadec8f43e58aa260d28e712f7caca431bba7e54f47ddcf366bef4639f967"
     },
     {
+      "path": "docs/PUBLICACAO.md",
+      "category": "documentação",
+      "href": "../../docs/PUBLICACAO.md",
+      "bytesCanonical": 3001,
+      "sha256": "47af7c747fe0c28961c468feec1d19b9fca5cbb7a8b26703ba797dcf5980efc2"
+    },
+    {
       "path": "docs/REVISAO-TUNEL-VISUAL.md",
       "category": "documentação",
       "href": "../../docs/REVISAO-TUNEL-VISUAL.md",
@@ -229,8 +243,8 @@
       "path": "docs/mapas/README.md",
       "category": "documentação",
       "href": "../../docs/mapas/README.md",
-      "bytesCanonical": 3283,
-      "sha256": "3294766c0751edf80d01d8cc0cd9593cbcc3f0b445140732850bccb208684c58"
+      "bytesCanonical": 3528,
+      "sha256": "13121594abce3b0f2994f78dee664ebdbc2aadfee02395b9b31064eb65e1b0a0"
     },
     {
       "path": "docs/mapas/REUSO.md",
@@ -284,6 +298,244 @@
       "href": "../../docs/mapas/inventario.json"
     },
     {
+      "path": "docs/mapeamento-detalhado/.gitignore",
+      "category": "configuração ou infraestrutura",
+      "href": "../../docs/mapeamento-detalhado/.gitignore",
+      "bytesCanonical": 52,
+      "sha256": "5ecfff03b0cc1976fae09c1942ef9244d9b0b3b8951364e22f137695d2da8da7"
+    },
+    {
+      "path": "docs/mapeamento-detalhado/ARVORE.md",
+      "category": "mapa gerado",
+      "href": "../../docs/mapeamento-detalhado/ARVORE.md"
+    },
+    {
+      "path": "docs/mapeamento-detalhado/ASSETS-E-PROCEDENCIA.md",
+      "category": "documentação",
+      "href": "../../docs/mapeamento-detalhado/ASSETS-E-PROCEDENCIA.md",
+      "bytesCanonical": 39146,
+      "sha256": "4e66b14ab75ac5beebe7f64444b4434ba457567f7bb3e9df6be01f4071dc4673"
+    },
+    {
+      "path": "docs/mapeamento-detalhado/ATUALIZAR.md",
+      "category": "documentação",
+      "href": "../../docs/mapeamento-detalhado/ATUALIZAR.md",
+      "bytesCanonical": 7058,
+      "sha256": "24d5081f3428ec0aa125f36863ac13119f4381453c0d440ecf96383bd3d77dd2"
+    },
+    {
+      "path": "docs/mapeamento-detalhado/CATALOGO.md",
+      "category": "mapa gerado",
+      "href": "../../docs/mapeamento-detalhado/CATALOGO.md"
+    },
+    {
+      "path": "docs/mapeamento-detalhado/FUNCOES.md",
+      "category": "mapa gerado",
+      "href": "../../docs/mapeamento-detalhado/FUNCOES.md"
+    },
+    {
+      "path": "docs/mapeamento-detalhado/GRAFOS.md",
+      "category": "documentação",
+      "href": "../../docs/mapeamento-detalhado/GRAFOS.md",
+      "bytesCanonical": 6139,
+      "sha256": "0fb6d3ff4933c15e94155685cb5ad31a513fc2566ba99de35690742b840142b5"
+    },
+    {
+      "path": "docs/mapeamento-detalhado/MODULOS-E-FLUXOS.md",
+      "category": "documentação",
+      "href": "../../docs/mapeamento-detalhado/MODULOS-E-FLUXOS.md",
+      "bytesCanonical": 44428,
+      "sha256": "ad16b3ac267610d638353bd93f312b64e7e7fccac86a16bc35b3b95720e97b75"
+    },
+    {
+      "path": "docs/mapeamento-detalhado/NAVEGADOR.md",
+      "category": "documentação",
+      "href": "../../docs/mapeamento-detalhado/NAVEGADOR.md",
+      "bytesCanonical": 3141,
+      "sha256": "e9ecc0e491262b381f9326284838357d31fa487c37ecc0a59e35080a818d5436"
+    },
+    {
+      "path": "docs/mapeamento-detalhado/README.md",
+      "category": "documentação",
+      "href": "../../docs/mapeamento-detalhado/README.md",
+      "bytesCanonical": 5606,
+      "sha256": "11507377b5c214b6155662f186d5f056cee05a7455b07798773950f835747f32"
+    },
+    {
+      "path": "docs/mapeamento-detalhado/REUTILIZACAO.md",
+      "category": "documentação",
+      "href": "../../docs/mapeamento-detalhado/REUTILIZACAO.md",
+      "bytesCanonical": 24304,
+      "sha256": "7d2bf44a03abb7ecc50b4e222035a2e9be0c28ef92809a0a0af5cf67ea76ef29"
+    },
+    {
+      "path": "docs/mapeamento-detalhado/VALIDACAO.md",
+      "category": "documentação",
+      "href": "../../docs/mapeamento-detalhado/VALIDACAO.md",
+      "bytesCanonical": 7169,
+      "sha256": "b21a4ff7f23d1f4d9f4b286118a5877d5a67bec622aa65cbead965c72a37060d"
+    },
+    {
+      "path": "docs/mapeamento-detalhado/VISUAIS-E-IDENTIDADE.md",
+      "category": "documentação",
+      "href": "../../docs/mapeamento-detalhado/VISUAIS-E-IDENTIDADE.md",
+      "bytesCanonical": 25841,
+      "sha256": "0cc35630c85b48967ba59fbaedd98386fe7eb2a196fcd36e2d22c3e0b4cc6306"
+    },
+    {
+      "path": "docs/mapeamento-detalhado/dados/catalogo.csv",
+      "category": "mapa gerado",
+      "href": "../../docs/mapeamento-detalhado/dados/catalogo.csv"
+    },
+    {
+      "path": "docs/mapeamento-detalhado/dados/catalogo.json",
+      "category": "mapa gerado",
+      "href": "../../docs/mapeamento-detalhado/dados/catalogo.json"
+    },
+    {
+      "path": "docs/mapeamento-detalhado/dados/cobertura.json",
+      "category": "mapa gerado",
+      "href": "../../docs/mapeamento-detalhado/dados/cobertura.json"
+    },
+    {
+      "path": "docs/mapeamento-detalhado/dados/componentes.json",
+      "category": "mapa gerado",
+      "href": "../../docs/mapeamento-detalhado/dados/componentes.json"
+    },
+    {
+      "path": "docs/mapeamento-detalhado/dados/entrega.json",
+      "category": "mapa gerado",
+      "href": "../../docs/mapeamento-detalhado/dados/entrega.json"
+    },
+    {
+      "path": "docs/mapeamento-detalhado/dados/estado-inicial.json",
+      "category": "configuração ou infraestrutura",
+      "href": "../../docs/mapeamento-detalhado/dados/estado-inicial.json",
+      "bytesCanonical": 2607,
+      "sha256": "ff41e74e5f5975ecd9a38a56bff0cb49035185314849cd0b93999ec5b82c6ec6"
+    },
+    {
+      "path": "docs/mapeamento-detalhado/dados/grafo.json",
+      "category": "mapa gerado",
+      "href": "../../docs/mapeamento-detalhado/dados/grafo.json"
+    },
+    {
+      "path": "docs/mapeamento-detalhado/dados/graphify-ast.json",
+      "category": "configuração ou infraestrutura",
+      "href": "../../docs/mapeamento-detalhado/dados/graphify-ast.json",
+      "bytesCanonical": 70625,
+      "sha256": "5aa56754c07bdffd40280aeaa08f958a0b4ffe6044ab3a381df476367e0fe55a"
+    },
+    {
+      "path": "docs/mapeamento-detalhado/dados/graphify-execucao.json",
+      "category": "configuração ou infraestrutura",
+      "href": "../../docs/mapeamento-detalhado/dados/graphify-execucao.json",
+      "bytesCanonical": 4327,
+      "sha256": "7ef798138bd311633f89be140d369ddf5c5d3a10d4f13a4f87e024b7eac4ca53"
+    },
+    {
+      "path": "docs/mapeamento-detalhado/dados/manifesto-conferencia.json",
+      "category": "mapa gerado",
+      "href": "../../docs/mapeamento-detalhado/dados/manifesto-conferencia.json"
+    },
+    {
+      "path": "docs/mapeamento-detalhado/dados/relacoes-curadas.json",
+      "category": "configuração ou infraestrutura",
+      "href": "../../docs/mapeamento-detalhado/dados/relacoes-curadas.json",
+      "bytesCanonical": 50330,
+      "sha256": "e58e75941011c8cde69f417b3f125066d3b78afa4b741b121a98b4520cebbbec"
+    },
+    {
+      "path": "docs/mapeamento-detalhado/dados/simbolos.json",
+      "category": "mapa gerado",
+      "href": "../../docs/mapeamento-detalhado/dados/simbolos.json"
+    },
+    {
+      "path": "docs/mapeamento-detalhado/dados/teste-mecanica.json",
+      "category": "mapa gerado",
+      "href": "../../docs/mapeamento-detalhado/dados/teste-mecanica.json"
+    },
+    {
+      "path": "docs/mapeamento-detalhado/dados/validacao.json",
+      "category": "mapa gerado",
+      "href": "../../docs/mapeamento-detalhado/dados/validacao.json"
+    },
+    {
+      "path": "docs/mapeamento-detalhado/dados/verificacao-app.json",
+      "category": "mapa gerado",
+      "href": "../../docs/mapeamento-detalhado/dados/verificacao-app.json"
+    },
+    {
+      "path": "docs/mapeamento-detalhado/grafos/arquitetura.json",
+      "category": "mapa gerado",
+      "href": "../../docs/mapeamento-detalhado/grafos/arquitetura.json"
+    },
+    {
+      "path": "docs/mapeamento-detalhado/grafos/arquitetura.mmd",
+      "category": "mapa gerado",
+      "href": "../../docs/mapeamento-detalhado/grafos/arquitetura.mmd"
+    },
+    {
+      "path": "docs/mapeamento-detalhado/grafos/assets.json",
+      "category": "mapa gerado",
+      "href": "../../docs/mapeamento-detalhado/grafos/assets.json"
+    },
+    {
+      "path": "docs/mapeamento-detalhado/grafos/assets.mmd",
+      "category": "mapa gerado",
+      "href": "../../docs/mapeamento-detalhado/grafos/assets.mmd"
+    },
+    {
+      "path": "docs/mapeamento-detalhado/grafos/dados.json",
+      "category": "mapa gerado",
+      "href": "../../docs/mapeamento-detalhado/grafos/dados.json"
+    },
+    {
+      "path": "docs/mapeamento-detalhado/grafos/dados.mmd",
+      "category": "mapa gerado",
+      "href": "../../docs/mapeamento-detalhado/grafos/dados.mmd"
+    },
+    {
+      "path": "docs/mapeamento-detalhado/index.html",
+      "category": "mapa gerado",
+      "href": "../../docs/mapeamento-detalhado/index.html"
+    },
+    {
+      "path": "docs/mapeamento-detalhado/scripts/finalidades.json",
+      "category": "configuração ou infraestrutura",
+      "href": "../../docs/mapeamento-detalhado/scripts/finalidades.json",
+      "bytesCanonical": 16478,
+      "sha256": "8144a21b340fb171102b092ed6151bb77e6de409be9b3ab7dc2ca420e3b90117"
+    },
+    {
+      "path": "docs/mapeamento-detalhado/scripts/gerar.py",
+      "category": "configuração ou infraestrutura",
+      "href": "../../docs/mapeamento-detalhado/scripts/gerar.py",
+      "bytesCanonical": 23374,
+      "sha256": "eea0f9b63fe8a086362ec2eef4f3d36ab16988422d675daa321174b546a8c47b"
+    },
+    {
+      "path": "docs/mapeamento-detalhado/scripts/interface.html",
+      "category": "documentação",
+      "href": "../../docs/mapeamento-detalhado/scripts/interface.html",
+      "bytesCanonical": 16420,
+      "sha256": "ba83d878aa1358ce8002ac48eecdfd8bc9c7ee91b6e4577bdecbfad61097fe6a"
+    },
+    {
+      "path": "docs/mapeamento-detalhado/scripts/validar.py",
+      "category": "configuração ou infraestrutura",
+      "href": "../../docs/mapeamento-detalhado/scripts/validar.py",
+      "bytesCanonical": 6177,
+      "sha256": "a2aad1d43301605e250e2f86643760147aeb6144c21a477fed0a2a136d9a645a"
+    },
+    {
+      "path": "docs/mapeamento-detalhado/scripts/verificar-app.mjs",
+      "category": "configuração ou infraestrutura",
+      "href": "../../docs/mapeamento-detalhado/scripts/verificar-app.mjs",
+      "bytesCanonical": 4003,
+      "sha256": "398c2d3f42de376c5217fa76c5277de02e2c2492734d31ddf3b6d6c4763eda1d"
+    },
+    {
       "path": "documentacao/Comparacao-iluminacao.html",
       "category": "documentação",
       "href": "../../documentacao/Comparacao-iluminacao.html",
@@ -329,8 +581,8 @@
       "path": "ferramentas/mapear.py",
       "category": "ferramenta editável",
       "href": "../../ferramentas/mapear.py",
-      "bytesCanonical": 20655,
-      "sha256": "98b3db93db7642df6d82854b700fb3c265277e0b5e9d76daad7e93778f71f31e"
+      "bytesCanonical": 21555,
+      "sha256": "b873528dabad9985ce8369bf520414d4928c6ab5db422e2c8b6aa361622cb75b"
     },
     {
       "path": "ferramentas/merge-animation.cjs",
@@ -423,6 +675,13 @@
       "href": "../../identidade/LEIA-ME.md",
       "bytesCanonical": 1581,
       "sha256": "581e2488708acf74a5426533f71a3f4d65bca32649ad41d08c3079040733ef28"
+    },
+    {
+      "path": "index.html",
+      "category": "documentação",
+      "href": "../../index.html",
+      "bytesCanonical": 697,
+      "sha256": "ee84d3f31512100b8d91bf6977b756d808a17ca2832bb7fddc26e08b03ccafd8"
     },
     {
       "path": "manifesto-sha256.json",
@@ -11418,115 +11677,255 @@
   ],
   "symbols": [
     {
+      "name": "write",
+      "path": "docs/mapeamento-detalhado/scripts/gerar.py",
+      "line": 18,
+      "href": "../../docs/mapeamento-detalhado/scripts/gerar.py#L18",
+      "extraction": "declaração lexical"
+    },
+    {
+      "name": "git",
+      "path": "docs/mapeamento-detalhado/scripts/gerar.py",
+      "line": 23,
+      "href": "../../docs/mapeamento-detalhado/scripts/gerar.py#L23",
+      "extraction": "declaração lexical"
+    },
+    {
+      "name": "sha",
+      "path": "docs/mapeamento-detalhado/scripts/gerar.py",
+      "line": 26,
+      "href": "../../docs/mapeamento-detalhado/scripts/gerar.py#L26",
+      "extraction": "declaração lexical"
+    },
+    {
+      "name": "link",
+      "path": "docs/mapeamento-detalhado/scripts/gerar.py",
+      "line": 32,
+      "href": "../../docs/mapeamento-detalhado/scripts/gerar.py#L32",
+      "extraction": "declaração lexical"
+    },
+    {
+      "name": "inventory",
+      "path": "docs/mapeamento-detalhado/scripts/gerar.py",
+      "line": 34,
+      "href": "../../docs/mapeamento-detalhado/scripts/gerar.py#L34",
+      "extraction": "declaração lexical"
+    },
+    {
+      "name": "glb_info",
+      "path": "docs/mapeamento-detalhado/scripts/gerar.py",
+      "line": 54,
+      "href": "../../docs/mapeamento-detalhado/scripts/gerar.py#L54",
+      "extraction": "declaração lexical"
+    },
+    {
+      "name": "gather_symbols",
+      "path": "docs/mapeamento-detalhado/scripts/gerar.py",
+      "line": 76,
+      "href": "../../docs/mapeamento-detalhado/scripts/gerar.py#L76",
+      "extraction": "declaração lexical"
+    },
+    {
+      "name": "walk_py",
+      "path": "docs/mapeamento-detalhado/scripts/gerar.py",
+      "line": 94,
+      "href": "../../docs/mapeamento-detalhado/scripts/gerar.py#L94",
+      "extraction": "declaração lexical"
+    },
+    {
+      "name": "txt",
+      "path": "docs/mapeamento-detalhado/scripts/gerar.py",
+      "line": 103,
+      "href": "../../docs/mapeamento-detalhado/scripts/gerar.py#L103",
+      "extraction": "declaração lexical"
+    },
+    {
+      "name": "walk",
+      "path": "docs/mapeamento-detalhado/scripts/gerar.py",
+      "line": 104,
+      "href": "../../docs/mapeamento-detalhado/scripts/gerar.py#L104",
+      "extraction": "declaração lexical"
+    },
+    {
+      "name": "main",
+      "path": "docs/mapeamento-detalhado/scripts/gerar.py",
+      "line": 124,
+      "href": "../../docs/mapeamento-detalhado/scripts/gerar.py#L124",
+      "extraction": "declaração lexical"
+    },
+    {
+      "name": "node",
+      "path": "docs/mapeamento-detalhado/scripts/gerar.py",
+      "line": 129,
+      "href": "../../docs/mapeamento-detalhado/scripts/gerar.py#L129",
+      "extraction": "declaração lexical"
+    },
+    {
+      "name": "edge",
+      "path": "docs/mapeamento-detalhado/scripts/gerar.py",
+      "line": 131,
+      "href": "../../docs/mapeamento-detalhado/scripts/gerar.py#L131",
+      "extraction": "declaração lexical"
+    },
+    {
+      "name": "code_paths",
+      "path": "docs/mapeamento-detalhado/scripts/gerar.py",
+      "line": 271,
+      "href": "../../docs/mapeamento-detalhado/scripts/gerar.py#L271",
+      "extraction": "declaração lexical"
+    },
+    {
+      "name": "read",
+      "path": "docs/mapeamento-detalhado/scripts/validar.py",
+      "line": 6,
+      "href": "../../docs/mapeamento-detalhado/scripts/validar.py#L6",
+      "extraction": "declaração lexical"
+    },
+    {
+      "name": "hashfile",
+      "path": "docs/mapeamento-detalhado/scripts/validar.py",
+      "line": 7,
+      "href": "../../docs/mapeamento-detalhado/scripts/validar.py#L7",
+      "extraction": "declaração lexical"
+    },
+    {
+      "name": "load",
+      "path": "docs/mapeamento-detalhado/scripts/validar.py",
+      "line": 12,
+      "href": "../../docs/mapeamento-detalhado/scripts/validar.py#L12",
+      "extraction": "declaração lexical"
+    },
+    {
+      "name": "slug",
+      "path": "docs/mapeamento-detalhado/scripts/validar.py",
+      "line": 13,
+      "href": "../../docs/mapeamento-detalhado/scripts/validar.py#L13",
+      "extraction": "declaração lexical"
+    },
+    {
+      "name": "anchors",
+      "path": "docs/mapeamento-detalhado/scripts/validar.py",
+      "line": 17,
+      "href": "../../docs/mapeamento-detalhado/scripts/validar.py#L17",
+      "extraction": "declaração lexical"
+    },
+    {
+      "name": "is_generated",
+      "path": "ferramentas/mapear.py",
+      "line": 41,
+      "href": "../../ferramentas/mapear.py#L41",
+      "extraction": "declaração lexical"
+    },
+    {
       "name": "read",
       "path": "ferramentas/mapear.py",
-      "line": 28,
-      "href": "../../ferramentas/mapear.py#L28",
+      "line": 45,
+      "href": "../../ferramentas/mapear.py#L45",
       "extraction": "declaração lexical"
     },
     {
       "name": "line_of",
       "path": "ferramentas/mapear.py",
-      "line": 32,
-      "href": "../../ferramentas/mapear.py#L32",
+      "line": 49,
+      "href": "../../ferramentas/mapear.py#L49",
       "extraction": "declaração lexical"
     },
     {
       "name": "href",
-      "path": "ferramentas/mapear.py",
-      "line": 40,
-      "href": "../../ferramentas/mapear.py#L40",
-      "extraction": "declaração lexical"
-    },
-    {
-      "name": "file_list",
-      "path": "ferramentas/mapear.py",
-      "line": 44,
-      "href": "../../ferramentas/mapear.py#L44",
-      "extraction": "declaração lexical"
-    },
-    {
-      "name": "category",
       "path": "ferramentas/mapear.py",
       "line": 57,
       "href": "../../ferramentas/mapear.py#L57",
       "extraction": "declaração lexical"
     },
     {
+      "name": "file_list",
+      "path": "ferramentas/mapear.py",
+      "line": 61,
+      "href": "../../ferramentas/mapear.py#L61",
+      "extraction": "declaração lexical"
+    },
+    {
+      "name": "category",
+      "path": "ferramentas/mapear.py",
+      "line": 74,
+      "href": "../../ferramentas/mapear.py#L74",
+      "extraction": "declaração lexical"
+    },
+    {
       "name": "glb_info",
       "path": "ferramentas/mapear.py",
-      "line": 92,
-      "href": "../../ferramentas/mapear.py#L92",
+      "line": 109,
+      "href": "../../ferramentas/mapear.py#L109",
       "extraction": "declaração lexical"
     },
     {
       "name": "extract",
       "path": "ferramentas/mapear.py",
-      "line": 115,
-      "href": "../../ferramentas/mapear.py#L115",
+      "line": 132,
+      "href": "../../ferramentas/mapear.py#L132",
       "extraction": "declaração lexical"
     },
     {
       "name": "visit",
-      "path": "ferramentas/mapear.py",
-      "line": 150,
-      "href": "../../ferramentas/mapear.py#L150",
-      "extraction": "declaração lexical"
-    },
-    {
-      "name": "production_edges",
-      "path": "ferramentas/mapear.py",
-      "line": 163,
-      "href": "../../ferramentas/mapear.py#L163",
-      "extraction": "declaração lexical"
-    },
-    {
-      "name": "add",
       "path": "ferramentas/mapear.py",
       "line": 167,
       "href": "../../ferramentas/mapear.py#L167",
       "extraction": "declaração lexical"
     },
     {
+      "name": "production_edges",
+      "path": "ferramentas/mapear.py",
+      "line": 180,
+      "href": "../../ferramentas/mapear.py#L180",
+      "extraction": "declaração lexical"
+    },
+    {
+      "name": "add",
+      "path": "ferramentas/mapear.py",
+      "line": 184,
+      "href": "../../ferramentas/mapear.py#L184",
+      "extraction": "declaração lexical"
+    },
+    {
       "name": "controls",
       "path": "ferramentas/mapear.py",
-      "line": 194,
-      "href": "../../ferramentas/mapear.py#L194",
+      "line": 211,
+      "href": "../../ferramentas/mapear.py#L211",
       "extraction": "declaração lexical"
     },
     {
       "name": "mermaid",
       "path": "ferramentas/mapear.py",
-      "line": 213,
-      "href": "../../ferramentas/mapear.py#L213",
+      "line": 230,
+      "href": "../../ferramentas/mapear.py#L230",
       "extraction": "declaração lexical"
     },
     {
       "name": "check_links",
       "path": "ferramentas/mapear.py",
-      "line": 225,
-      "href": "../../ferramentas/mapear.py#L225",
+      "line": 242,
+      "href": "../../ferramentas/mapear.py#L242",
       "extraction": "declaração lexical"
     },
     {
       "name": "make",
       "path": "ferramentas/mapear.py",
-      "line": 255,
-      "href": "../../ferramentas/mapear.py#L255",
+      "line": 273,
+      "href": "../../ferramentas/mapear.py#L273",
       "extraction": "declaração lexical"
     },
     {
       "name": "put",
       "path": "ferramentas/mapear.py",
-      "line": 280,
-      "href": "../../ferramentas/mapear.py#L280",
+      "line": 298,
+      "href": "../../ferramentas/mapear.py#L298",
       "extraction": "declaração lexical"
     },
     {
       "name": "main",
       "path": "ferramentas/mapear.py",
-      "line": 332,
-      "href": "../../ferramentas/mapear.py#L332",
+      "line": 350,
+      "href": "../../ferramentas/mapear.py#L350",
       "extraction": "declaração lexical"
     },
     {

@@ -1,12 +1,12 @@
 {
   "metadata": {
-    "captured_at": "2026-09-13T01:42:41.748748+00:00",
-    "revision": "e3d58af3c59a87b308444e678b0b25803e00e727",
+    "captured_at": "2026-09-13T02:35:49.783351+00:00",
+    "revision": "e8a7e7a44d17d5695df2e982390e372054647213",
     "initial_revision": "1ae4fd15062d347dc8462af8f4db33c749e6575b",
     "branch": "main",
-    "status": "M .gitignore\n M README.md\n M docs/ARQUITETURA.md\n M docs/DESENVOLVIMENTO.md\n?? docs/mapas/\n?? docs/mapeamento-detalhado/\n?? ferramentas/mapa-template.html\n?? ferramentas/mapear.py\n?? graphify-out/",
-    "catalog_count": 87,
-    "bytes": 166722575,
+    "status": "M .gitignore\n M README.md\n M docs/mapas/GRAFOS.md\n M docs/mapas/INVENTARIO.md\n M docs/mapas/README.md\n M docs/mapas/cobertura.json\n M docs/mapas/dependencias.json\n M docs/mapas/index.html\n M docs/mapas/inventario.json\n M docs/mapeamento-detalhado/ARVORE.md\n M docs/mapeamento-detalhado/ATUALIZAR.md\n M docs/mapeamento-detalhado/CATALOGO.md\n M docs/mapeamento-detalhado/dados/catalogo.csv\n M docs/mapeamento-detalhado/dados/catalogo.json\n M docs/mapeamento-detalhado/dados/cobertura.json\n M docs/mapeamento-detalhado/dados/grafo.json\n M docs/mapeamento-detalhado/dados/verificacao-app.json\n M docs/mapeamento-detalhado/index.html\n M docs/mapeamento-detalhado/scripts/finalidades.json\n M ferramentas/mapear.py\n?? docs/PUBLICACAO.md",
+    "catalog_count": 90,
+    "bytes": 166769838,
     "baseline_files": 69,
     "baseline_missing": [],
     "unclassified": [],
@@ -42,10 +42,10 @@
     "symbols": 94,
     "symbol_parse_errors": [],
     "unresolved_local_imports": [],
-    "edges": 653,
-    "nodes": 201,
+    "edges": 657,
+    "nodes": 204,
     "confidence_counts": {
-      "EXTRACTED": 653
+      "EXTRACTED": 657
     }
   },
   "directed": true,
@@ -68,6 +68,12 @@
       "label": ".gitignore",
       "kind": "file",
       "path": ".gitignore"
+    },
+    {
+      "id": ".nojekyll",
+      "label": ".nojekyll",
+      "kind": "file",
+      "path": ".nojekyll"
     },
     {
       "id": "CHANGELOG.md",
@@ -188,6 +194,12 @@
       "label": "docs/INTEGRACAO.md",
       "kind": "file",
       "path": "docs/INTEGRACAO.md"
+    },
+    {
+      "id": "docs/PUBLICACAO.md",
+      "label": "docs/PUBLICACAO.md",
+      "kind": "file",
+      "path": "docs/PUBLICACAO.md"
     },
     {
       "id": "docs/REVISAO-TUNEL-VISUAL.md",
@@ -398,6 +410,12 @@
       "label": "identidade/LEIA-ME.md",
       "kind": "file",
       "path": "identidade/LEIA-ME.md"
+    },
+    {
+      "id": "index.html",
+      "label": "index.html",
+      "kind": "file",
+      "path": "index.html"
     },
     {
       "id": "manifesto-sha256.json",
@@ -1333,6 +1351,18 @@
     },
     {
       "source": "README.md",
+      "target": "docs/PUBLICACAO.md",
+      "relation": "documenta",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "evidence": {
+        "path": "README.md",
+        "line": null,
+        "text": "docs/PUBLICACAO.md"
+      }
+    },
+    {
+      "source": "README.md",
       "target": "Previa-Blender.png",
       "relation": "documenta",
       "confidence": "EXTRACTED",
@@ -1689,6 +1719,42 @@
         "path": "docs/DIREITOS-E-PROCEDENCIA.md",
         "line": null,
         "text": "../LICENSE"
+      }
+    },
+    {
+      "source": "docs/PUBLICACAO.md",
+      "target": "index.html",
+      "relation": "documenta",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "evidence": {
+        "path": "docs/PUBLICACAO.md",
+        "line": null,
+        "text": "../index.html"
+      }
+    },
+    {
+      "source": "docs/PUBLICACAO.md",
+      "target": "web/index.html",
+      "relation": "documenta",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "evidence": {
+        "path": "docs/PUBLICACAO.md",
+        "line": null,
+        "text": "../web/index.html"
+      }
+    },
+    {
+      "source": "docs/PUBLICACAO.md",
+      "target": ".nojekyll",
+      "relation": "documenta",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "evidence": {
+        "path": "docs/PUBLICACAO.md",
+        "line": null,
+        "text": "../.nojekyll"
       }
     },
     {

@@ -8,14 +8,15 @@ Gerado por `python ferramentas/mapear.py`. Todos os arquivos do escopo estão li
 | --- | --- | --- |
 | [.gitattributes](../../.gitattributes) | configuração ou infraestrutura | 235 |
 | [.github/workflows/verify.yml](../../.github/workflows/verify.yml) | configuração ou infraestrutura | 642 |
-| [.gitignore](../../.gitignore) | configuração ou infraestrutura | 447 |
+| [.gitignore](../../.gitignore) | configuração ou infraestrutura | 441 |
+| [.nojekyll](../../.nojekyll) | configuração ou infraestrutura | 0 |
 | [CHANGELOG.md](../../CHANGELOG.md) | documentação | 933 |
 | [CONTRIBUTING.md](../../CONTRIBUTING.md) | documentação | 652 |
 | [INTEIA_F1_Master.blend](../../INTEIA_F1_Master.blend) | entrega editável Blender | 23815409 |
 | [LEIA-ME.md](../../LEIA-ME.md) | documentação | 313 |
 | [LICENSE](../../LICENSE) | licença ou procedência | 920 |
 | [Previa-Blender.png](../../Previa-Blender.png) | prévia histórica | 695174 |
-| [README.md](../../README.md) | documentação | 4004 |
+| [README.md](../../README.md) | documentação | 4317 |
 | [THIRD-PARTY-NOTICES.md](../../THIRD-PARTY-NOTICES.md) | licença ou procedência | 540 |
 | [ambientes/INTEIA-box-laboratorio.glb](../../ambientes/INTEIA-box-laboratorio.glb) | entrega GLB | 10302288 |
 | [ambientes/INTEIA_Box_com_carro.blend](../../ambientes/INTEIA_Box_com_carro.blend) | entrega editável Blender | 24679287 |
@@ -29,6 +30,7 @@ Gerado por `python ferramentas/mapear.py`. Todos os arquivos do escopo estão li
 | [docs/DESENVOLVIMENTO.md](../../docs/DESENVOLVIMENTO.md) | documentação | 2977 |
 | [docs/DIREITOS-E-PROCEDENCIA.md](../../docs/DIREITOS-E-PROCEDENCIA.md) | licença ou procedência | 1581 |
 | [docs/INTEGRACAO.md](../../docs/INTEGRACAO.md) | documentação | 2578 |
+| [docs/PUBLICACAO.md](../../docs/PUBLICACAO.md) | documentação | 3001 |
 | [docs/REVISAO-TUNEL-VISUAL.md](../../docs/REVISAO-TUNEL-VISUAL.md) | documentação | 4051 |
 | [docs/VALIDACAO.md](../../docs/VALIDACAO.md) | documentação | 2128 |
 | [docs/mapas/GRAFOS.md](../../docs/mapas/GRAFOS.md) | mapa gerado | — |
@@ -36,7 +38,7 @@ Gerado por `python ferramentas/mapear.py`. Todos os arquivos do escopo estão li
 | [docs/mapas/MANUTENCAO.md](../../docs/mapas/MANUTENCAO.md) | documentação | 6127 |
 | [docs/mapas/MODULOS.md](../../docs/mapas/MODULOS.md) | documentação | 8775 |
 | [docs/mapas/PRODUCAO.md](../../docs/mapas/PRODUCAO.md) | documentação | 17713 |
-| [docs/mapas/README.md](../../docs/mapas/README.md) | documentação | 3283 |
+| [docs/mapas/README.md](../../docs/mapas/README.md) | documentação | 3528 |
 | [docs/mapas/REUSO.md](../../docs/mapas/REUSO.md) | documentação | 16017 |
 | [docs/mapas/VERIFICACAO.md](../../docs/mapas/VERIFICACAO.md) | documentação | 3816 |
 | [docs/mapas/cobertura.json](../../docs/mapas/cobertura.json) | mapa gerado | — |
@@ -46,13 +48,53 @@ Gerado por `python ferramentas/mapear.py`. Todos os arquivos do escopo estão li
 | [docs/mapas/graphify-extracao.json](../../docs/mapas/graphify-extracao.json) | configuração ou infraestrutura | 258641 |
 | [docs/mapas/index.html](../../docs/mapas/index.html) | mapa gerado | — |
 | [docs/mapas/inventario.json](../../docs/mapas/inventario.json) | mapa gerado | — |
+| [docs/mapeamento-detalhado/.gitignore](../../docs/mapeamento-detalhado/.gitignore) | configuração ou infraestrutura | 52 |
+| [docs/mapeamento-detalhado/ARVORE.md](../../docs/mapeamento-detalhado/ARVORE.md) | mapa gerado | — |
+| [docs/mapeamento-detalhado/ASSETS-E-PROCEDENCIA.md](../../docs/mapeamento-detalhado/ASSETS-E-PROCEDENCIA.md) | documentação | 39146 |
+| [docs/mapeamento-detalhado/ATUALIZAR.md](../../docs/mapeamento-detalhado/ATUALIZAR.md) | documentação | 7058 |
+| [docs/mapeamento-detalhado/CATALOGO.md](../../docs/mapeamento-detalhado/CATALOGO.md) | mapa gerado | — |
+| [docs/mapeamento-detalhado/FUNCOES.md](../../docs/mapeamento-detalhado/FUNCOES.md) | mapa gerado | — |
+| [docs/mapeamento-detalhado/GRAFOS.md](../../docs/mapeamento-detalhado/GRAFOS.md) | documentação | 6139 |
+| [docs/mapeamento-detalhado/MODULOS-E-FLUXOS.md](../../docs/mapeamento-detalhado/MODULOS-E-FLUXOS.md) | documentação | 44428 |
+| [docs/mapeamento-detalhado/NAVEGADOR.md](../../docs/mapeamento-detalhado/NAVEGADOR.md) | documentação | 3141 |
+| [docs/mapeamento-detalhado/README.md](../../docs/mapeamento-detalhado/README.md) | documentação | 5606 |
+| [docs/mapeamento-detalhado/REUTILIZACAO.md](../../docs/mapeamento-detalhado/REUTILIZACAO.md) | documentação | 24304 |
+| [docs/mapeamento-detalhado/VALIDACAO.md](../../docs/mapeamento-detalhado/VALIDACAO.md) | documentação | 7169 |
+| [docs/mapeamento-detalhado/VISUAIS-E-IDENTIDADE.md](../../docs/mapeamento-detalhado/VISUAIS-E-IDENTIDADE.md) | documentação | 25841 |
+| [docs/mapeamento-detalhado/dados/catalogo.csv](../../docs/mapeamento-detalhado/dados/catalogo.csv) | mapa gerado | — |
+| [docs/mapeamento-detalhado/dados/catalogo.json](../../docs/mapeamento-detalhado/dados/catalogo.json) | mapa gerado | — |
+| [docs/mapeamento-detalhado/dados/cobertura.json](../../docs/mapeamento-detalhado/dados/cobertura.json) | mapa gerado | — |
+| [docs/mapeamento-detalhado/dados/componentes.json](../../docs/mapeamento-detalhado/dados/componentes.json) | mapa gerado | — |
+| [docs/mapeamento-detalhado/dados/entrega.json](../../docs/mapeamento-detalhado/dados/entrega.json) | mapa gerado | — |
+| [docs/mapeamento-detalhado/dados/estado-inicial.json](../../docs/mapeamento-detalhado/dados/estado-inicial.json) | configuração ou infraestrutura | 2607 |
+| [docs/mapeamento-detalhado/dados/grafo.json](../../docs/mapeamento-detalhado/dados/grafo.json) | mapa gerado | — |
+| [docs/mapeamento-detalhado/dados/graphify-ast.json](../../docs/mapeamento-detalhado/dados/graphify-ast.json) | configuração ou infraestrutura | 70625 |
+| [docs/mapeamento-detalhado/dados/graphify-execucao.json](../../docs/mapeamento-detalhado/dados/graphify-execucao.json) | configuração ou infraestrutura | 4327 |
+| [docs/mapeamento-detalhado/dados/manifesto-conferencia.json](../../docs/mapeamento-detalhado/dados/manifesto-conferencia.json) | mapa gerado | — |
+| [docs/mapeamento-detalhado/dados/relacoes-curadas.json](../../docs/mapeamento-detalhado/dados/relacoes-curadas.json) | configuração ou infraestrutura | 50330 |
+| [docs/mapeamento-detalhado/dados/simbolos.json](../../docs/mapeamento-detalhado/dados/simbolos.json) | mapa gerado | — |
+| [docs/mapeamento-detalhado/dados/teste-mecanica.json](../../docs/mapeamento-detalhado/dados/teste-mecanica.json) | mapa gerado | — |
+| [docs/mapeamento-detalhado/dados/validacao.json](../../docs/mapeamento-detalhado/dados/validacao.json) | mapa gerado | — |
+| [docs/mapeamento-detalhado/dados/verificacao-app.json](../../docs/mapeamento-detalhado/dados/verificacao-app.json) | mapa gerado | — |
+| [docs/mapeamento-detalhado/grafos/arquitetura.json](../../docs/mapeamento-detalhado/grafos/arquitetura.json) | mapa gerado | — |
+| [docs/mapeamento-detalhado/grafos/arquitetura.mmd](../../docs/mapeamento-detalhado/grafos/arquitetura.mmd) | mapa gerado | — |
+| [docs/mapeamento-detalhado/grafos/assets.json](../../docs/mapeamento-detalhado/grafos/assets.json) | mapa gerado | — |
+| [docs/mapeamento-detalhado/grafos/assets.mmd](../../docs/mapeamento-detalhado/grafos/assets.mmd) | mapa gerado | — |
+| [docs/mapeamento-detalhado/grafos/dados.json](../../docs/mapeamento-detalhado/grafos/dados.json) | mapa gerado | — |
+| [docs/mapeamento-detalhado/grafos/dados.mmd](../../docs/mapeamento-detalhado/grafos/dados.mmd) | mapa gerado | — |
+| [docs/mapeamento-detalhado/index.html](../../docs/mapeamento-detalhado/index.html) | mapa gerado | — |
+| [docs/mapeamento-detalhado/scripts/finalidades.json](../../docs/mapeamento-detalhado/scripts/finalidades.json) | configuração ou infraestrutura | 16478 |
+| [docs/mapeamento-detalhado/scripts/gerar.py](../../docs/mapeamento-detalhado/scripts/gerar.py) | configuração ou infraestrutura | 23374 |
+| [docs/mapeamento-detalhado/scripts/interface.html](../../docs/mapeamento-detalhado/scripts/interface.html) | documentação | 16420 |
+| [docs/mapeamento-detalhado/scripts/validar.py](../../docs/mapeamento-detalhado/scripts/validar.py) | configuração ou infraestrutura | 6177 |
+| [docs/mapeamento-detalhado/scripts/verificar-app.mjs](../../docs/mapeamento-detalhado/scripts/verificar-app.mjs) | configuração ou infraestrutura | 4003 |
 | [documentacao/Comparacao-iluminacao.html](../../documentacao/Comparacao-iluminacao.html) | documentação | 370368 |
 | [documentacao/INTEIA-personalizacao.png](../../documentacao/INTEIA-personalizacao.png) | prévia histórica | 83329 |
 | [documentacao/componentes-origem.json](../../documentacao/componentes-origem.json) | metadados de procedência | 78871 |
 | [documentacao/historico-avaliacoes.md](../../documentacao/historico-avaliacoes.md) | documentação | 5659 |
 | [ferramentas/manifest.cjs](../../ferramentas/manifest.cjs) | ferramenta editável | 828 |
 | [ferramentas/mapa-template.html](../../ferramentas/mapa-template.html) | documentação | 11578 |
-| [ferramentas/mapear.py](../../ferramentas/mapear.py) | ferramenta editável | 20655 |
+| [ferramentas/mapear.py](../../ferramentas/mapear.py) | ferramenta editável | 21555 |
 | [ferramentas/merge-animation.cjs](../../ferramentas/merge-animation.cjs) | ferramenta editável | 911 |
 | [ferramentas/package_blender.py](../../ferramentas/package_blender.py) | ferramenta editável | 10622 |
 | [ferramentas/package_garage.py](../../ferramentas/package_garage.py) | ferramenta editável | 5795 |
@@ -67,6 +109,7 @@ Gerado por `python ferramentas/mapear.py`. Todos os arquivos do escopo estão li
 | [identidade/INTEIA-simbolo.svg](../../identidade/INTEIA-simbolo.svg) | identidade editável | 188 |
 | [identidade/Identidade-INTEIA.html](../../identidade/Identidade-INTEIA.html) | identidade editável | 4800 |
 | [identidade/LEIA-ME.md](../../identidade/LEIA-ME.md) | identidade editável | 1581 |
+| [index.html](../../index.html) | documentação | 697 |
 | [manifesto-sha256.json](../../manifesto-sha256.json) | evidência gerada | 2226 |
 | [modelos/INTEIA_F1_animado.glb](../../modelos/INTEIA_F1_animado.glb) | entrega GLB | 20288928 |
 | [modelos/INTEIA_F1_estatico.glb](../../modelos/INTEIA_F1_estatico.glb) | entrega GLB | 19896224 |
@@ -103,22 +146,42 @@ Gerado por `python ferramentas/mapear.py`. Todos os arquivos do escopo estão li
 
 | Símbolo | Origem |
 | --- | --- |
-| `read` | [ferramentas/mapear.py:28](../../ferramentas/mapear.py#L28) |
-| `line_of` | [ferramentas/mapear.py:32](../../ferramentas/mapear.py#L32) |
-| `href` | [ferramentas/mapear.py:40](../../ferramentas/mapear.py#L40) |
-| `file_list` | [ferramentas/mapear.py:44](../../ferramentas/mapear.py#L44) |
-| `category` | [ferramentas/mapear.py:57](../../ferramentas/mapear.py#L57) |
-| `glb_info` | [ferramentas/mapear.py:92](../../ferramentas/mapear.py#L92) |
-| `extract` | [ferramentas/mapear.py:115](../../ferramentas/mapear.py#L115) |
-| `visit` | [ferramentas/mapear.py:150](../../ferramentas/mapear.py#L150) |
-| `production_edges` | [ferramentas/mapear.py:163](../../ferramentas/mapear.py#L163) |
-| `add` | [ferramentas/mapear.py:167](../../ferramentas/mapear.py#L167) |
-| `controls` | [ferramentas/mapear.py:194](../../ferramentas/mapear.py#L194) |
-| `mermaid` | [ferramentas/mapear.py:213](../../ferramentas/mapear.py#L213) |
-| `check_links` | [ferramentas/mapear.py:225](../../ferramentas/mapear.py#L225) |
-| `make` | [ferramentas/mapear.py:255](../../ferramentas/mapear.py#L255) |
-| `put` | [ferramentas/mapear.py:280](../../ferramentas/mapear.py#L280) |
-| `main` | [ferramentas/mapear.py:332](../../ferramentas/mapear.py#L332) |
+| `write` | [docs/mapeamento-detalhado/scripts/gerar.py:18](../../docs/mapeamento-detalhado/scripts/gerar.py#L18) |
+| `git` | [docs/mapeamento-detalhado/scripts/gerar.py:23](../../docs/mapeamento-detalhado/scripts/gerar.py#L23) |
+| `sha` | [docs/mapeamento-detalhado/scripts/gerar.py:26](../../docs/mapeamento-detalhado/scripts/gerar.py#L26) |
+| `link` | [docs/mapeamento-detalhado/scripts/gerar.py:32](../../docs/mapeamento-detalhado/scripts/gerar.py#L32) |
+| `inventory` | [docs/mapeamento-detalhado/scripts/gerar.py:34](../../docs/mapeamento-detalhado/scripts/gerar.py#L34) |
+| `glb_info` | [docs/mapeamento-detalhado/scripts/gerar.py:54](../../docs/mapeamento-detalhado/scripts/gerar.py#L54) |
+| `gather_symbols` | [docs/mapeamento-detalhado/scripts/gerar.py:76](../../docs/mapeamento-detalhado/scripts/gerar.py#L76) |
+| `walk_py` | [docs/mapeamento-detalhado/scripts/gerar.py:94](../../docs/mapeamento-detalhado/scripts/gerar.py#L94) |
+| `txt` | [docs/mapeamento-detalhado/scripts/gerar.py:103](../../docs/mapeamento-detalhado/scripts/gerar.py#L103) |
+| `walk` | [docs/mapeamento-detalhado/scripts/gerar.py:104](../../docs/mapeamento-detalhado/scripts/gerar.py#L104) |
+| `main` | [docs/mapeamento-detalhado/scripts/gerar.py:124](../../docs/mapeamento-detalhado/scripts/gerar.py#L124) |
+| `node` | [docs/mapeamento-detalhado/scripts/gerar.py:129](../../docs/mapeamento-detalhado/scripts/gerar.py#L129) |
+| `edge` | [docs/mapeamento-detalhado/scripts/gerar.py:131](../../docs/mapeamento-detalhado/scripts/gerar.py#L131) |
+| `code_paths` | [docs/mapeamento-detalhado/scripts/gerar.py:271](../../docs/mapeamento-detalhado/scripts/gerar.py#L271) |
+| `read` | [docs/mapeamento-detalhado/scripts/validar.py:6](../../docs/mapeamento-detalhado/scripts/validar.py#L6) |
+| `hashfile` | [docs/mapeamento-detalhado/scripts/validar.py:7](../../docs/mapeamento-detalhado/scripts/validar.py#L7) |
+| `load` | [docs/mapeamento-detalhado/scripts/validar.py:12](../../docs/mapeamento-detalhado/scripts/validar.py#L12) |
+| `slug` | [docs/mapeamento-detalhado/scripts/validar.py:13](../../docs/mapeamento-detalhado/scripts/validar.py#L13) |
+| `anchors` | [docs/mapeamento-detalhado/scripts/validar.py:17](../../docs/mapeamento-detalhado/scripts/validar.py#L17) |
+| `is_generated` | [ferramentas/mapear.py:41](../../ferramentas/mapear.py#L41) |
+| `read` | [ferramentas/mapear.py:45](../../ferramentas/mapear.py#L45) |
+| `line_of` | [ferramentas/mapear.py:49](../../ferramentas/mapear.py#L49) |
+| `href` | [ferramentas/mapear.py:57](../../ferramentas/mapear.py#L57) |
+| `file_list` | [ferramentas/mapear.py:61](../../ferramentas/mapear.py#L61) |
+| `category` | [ferramentas/mapear.py:74](../../ferramentas/mapear.py#L74) |
+| `glb_info` | [ferramentas/mapear.py:109](../../ferramentas/mapear.py#L109) |
+| `extract` | [ferramentas/mapear.py:132](../../ferramentas/mapear.py#L132) |
+| `visit` | [ferramentas/mapear.py:167](../../ferramentas/mapear.py#L167) |
+| `production_edges` | [ferramentas/mapear.py:180](../../ferramentas/mapear.py#L180) |
+| `add` | [ferramentas/mapear.py:184](../../ferramentas/mapear.py#L184) |
+| `controls` | [ferramentas/mapear.py:211](../../ferramentas/mapear.py#L211) |
+| `mermaid` | [ferramentas/mapear.py:230](../../ferramentas/mapear.py#L230) |
+| `check_links` | [ferramentas/mapear.py:242](../../ferramentas/mapear.py#L242) |
+| `make` | [ferramentas/mapear.py:273](../../ferramentas/mapear.py#L273) |
+| `put` | [ferramentas/mapear.py:298](../../ferramentas/mapear.py#L298) |
+| `main` | [ferramentas/mapear.py:350](../../ferramentas/mapear.py#L350) |
 | `linear` | [ferramentas/package_blender.py:27](../../ferramentas/package_blender.py#L27) |
 | `col` | [ferramentas/package_blender.py:28](../../ferramentas/package_blender.py#L28) |
 | `base` | [ferramentas/package_blender.py:29](../../ferramentas/package_blender.py#L29) |

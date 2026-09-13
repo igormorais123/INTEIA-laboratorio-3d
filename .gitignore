@@ -12,7 +12,7 @@ build/
 .DS_Store
 Thumbs.db
 
-# Cache local do graphify e evidÃªncias temporÃ¡rias; os mapas finais sÃ£o versionados.
+# Cache local do graphify e evidências temporárias; os mapas finais são versionados.
 graphify-out/.*
 graphify-out/semantic-*.json
 graphify-out/tmp/
