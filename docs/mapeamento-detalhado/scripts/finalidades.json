@@ -1,0 +1,437 @@
+{
+  ".gitattributes": [
+    "Política de texto/LF, binários e supressão de diff do HTML empacotado",
+    "configuração editável",
+    "Git"
+  ],
+  ".gitignore": [
+    "Exclusões de dependências, caches, backups Blender e dados de ambiente",
+    "configuração editável",
+    "Git; pode receber mudanças da conversa paralela"
+  ],
+  ".github/workflows/verify.yml": [
+    "CI: instala dependências, constrói web e executa testes em Node 24",
+    "configuração editável",
+    "GitHub Actions"
+  ],
+  "README.md": [
+    "Entrada pública do laboratório, entregas, instalação e limites",
+    "documento editável",
+    "Leitura inicial"
+  ],
+  "LEIA-ME.md": [
+    "Entrada em português para o pacote e seus destinos",
+    "documento editável",
+    "Leitura inicial"
+  ],
+  "CHANGELOG.md": [
+    "Histórico editorial das mudanças e entregas",
+    "documento editável",
+    "Rastrear decisões e versões"
+  ],
+  "CONTRIBUTING.md": [
+    "Orientações para contribuir e verificar alterações",
+    "documento editável",
+    "Desenvolvimento"
+  ],
+  "LICENSE": [
+    "Termos proprietários INTEIA; publicação não equivale a licença aberta",
+    "documento editável",
+    "Direitos de reutilização"
+  ],
+  "THIRD-PARTY-NOTICES.md": [
+    "Avisos de Three.js e procedência de contribuições externas",
+    "documento editável",
+    "Atribuição e limites de distribuição"
+  ],
+  "INTEIA_F1_Master.blend": [
+    "Projeto Blender entregue: carro, coleções, materiais, demonstração e estúdio",
+    "derivado editável",
+    "Blender; ferramentas/package_blender.py"
+  ],
+  "Previa-Blender.png": [
+    "Prévia renderizada do projeto Blender; não é textura do modelo",
+    "imagem gerada",
+    "Apresentação e comparação visual"
+  ],
+  "ambientes/INTEIA-box-laboratorio.glb": [
+    "Box procedural exportado; arquivo separado do carro",
+    "modelo gerado",
+    "Importação do ambiente; exportador da interface"
+  ],
+  "ambientes/INTEIA_Box_com_carro.blend": [
+    "Cena Blender com box e carro reunidos e imagens empacotadas",
+    "derivado editável",
+    "Blender; ferramentas/package_garage.py"
+  ],
+  "ambientes/Previa-Box.png": [
+    "Prévia renderizada da cena Blender com box",
+    "imagem gerada",
+    "Apresentação do ambiente"
+  ],
+  "ambientes/validacao-box.json": [
+    "Evidência histórica do empacotamento do box e suas imagens",
+    "relatório gerado",
+    "Conferência; não é nova execução Blender"
+  ],
+  "docs/AERODINAMICA.md": [
+    "Modelo por coeficientes, unidades, entradas, resultados e limitações",
+    "documento editável",
+    "Túnel didático e calculadora"
+  ],
+  "docs/ACABAMENTO-E-RENDER.md": [
+    "Acabamento, iluminação e ajustes de render documentados em tarefa concorrente",
+    "documento editável concorrente",
+    "Consultar revisão local registrada; não confundir com benchmark validado"
+  ],
+  "docs/ARQUITETURA.md": [
+    "Visão geral das camadas, arquivos e materiais",
+    "documento editável",
+    "Orientação de desenvolvimento"
+  ],
+  "docs/BLENDER.md": [
+    "Uso das coleções, Append, animação e materiais no Blender",
+    "documento editável",
+    "Reutilização Blender"
+  ],
+  "docs/BOX-LABORATORIO.md": [
+    "Composição e reutilização do box procedural",
+    "documento editável",
+    "Ambiente e exportação"
+  ],
+  "docs/DESENVOLVIMENTO.md": [
+    "Instalação, build, servidor e testes",
+    "documento editável",
+    "Reprodução do projeto"
+  ],
+  "docs/DIREITOS-E-PROCEDENCIA.md": [
+    "Separa titularidade INTEIA de geometria fornecida e terceiros",
+    "documento editável",
+    "Procedência e permissões"
+  ],
+  "docs/INTEGRACAO.md": [
+    "Integração dos GLBs e fontes em outros projetos",
+    "documento editável",
+    "Sites e jogos"
+  ],
+  "docs/REVISAO-TUNEL-VISUAL.md": [
+    "Revisões e limites da representação visual do fluxo",
+    "documento editável",
+    "Histórico do túnel"
+  ],
+  "docs/VALIDACAO.md": [
+    "Síntese de testes históricos e limites por destino",
+    "documento editável",
+    "Leitura crítica das evidências"
+  ],
+  "documentacao/Comparacao-iluminacao.html": [
+    "Comparação visual histórica de iluminação em HTML",
+    "documento de apresentação",
+    "Avaliação visual; não entrada do aplicativo"
+  ],
+  "documentacao/INTEIA-personalizacao.png": [
+    "Captura da personalização web em uma sessão anterior",
+    "imagem gerada",
+    "Documentação visual; não persistência de configuração"
+  ],
+  "documentacao/componentes-origem.json": [
+    "Metadados dos 97 componentes: IDs, categorias, pivôs, limites e sourceObject",
+    "metadados derivados",
+    "Rastrear peças até objetos de origem; caminhos outputs históricos"
+  ],
+  "documentacao/historico-avaliacoes.md": [
+    "Pareceres históricos e subjetivos sobre versões visuais",
+    "documento editável",
+    "Histórico; não certificação física"
+  ],
+  "ferramentas/manifest.cjs": [
+    "Calcula bytes e SHA-256 de 14 entregas e grava o manifesto",
+    "código fonte editável",
+    "Node.js; sobrescreve manifesto-sha256.json"
+  ],
+  "ferramentas/merge-animation.cjs": [
+    "Reúne canais de animação do GLB animado em um único clipe",
+    "código fonte editável",
+    "Node.js; altera modelos/INTEIA_F1_animado.glb"
+  ],
+  "ferramentas/package_blender.py": [
+    "Importa base web e produz Blender mestre, texturas, GLBs e evidências",
+    "código fonte editável",
+    "Python do Blender; recria entregas"
+  ],
+  "ferramentas/package_garage.py": [
+    "Importa GLB do box e GLB estático do carro para compor uma cena Blender",
+    "código fonte editável",
+    "Python do Blender; recria ambiente"
+  ],
+  "ferramentas/render_garage_preview.py": [
+    "Abre cena Blender do box e renderiza prévia",
+    "código fonte editável",
+    "Python do Blender; grava ambientes/Previa-Box.png"
+  ],
+  "ferramentas/validate-kit.py": [
+    "Reabre Blender e GLBs para registrar verificações do pacote",
+    "código fonte editável",
+    "Python do Blender; grava validacao-reabertura.json"
+  ],
+  "identidade/INTEIA-monocromatico.svg": [
+    "Variante vetorial monocromática da marca INTEIA",
+    "asset vetorial editável",
+    "Uso gráfico conforme direitos"
+  ],
+  "identidade/INTEIA-negativo.svg": [
+    "Variante vetorial da marca para fundo escuro",
+    "asset vetorial editável",
+    "Uso gráfico conforme direitos"
+  ],
+  "identidade/INTEIA-principal.svg": [
+    "Marca vetorial principal com assinatura do laboratório",
+    "asset vetorial editável",
+    "Uso gráfico conforme direitos"
+  ],
+  "identidade/INTEIA-simbolo.svg": [
+    "Símbolo compacto da identidade INTEIA",
+    "asset vetorial editável",
+    "Uso gráfico conforme direitos"
+  ],
+  "identidade/Identidade-INTEIA.html": [
+    "Apresentação visual das versões da marca",
+    "documento de apresentação",
+    "Consulta de identidade"
+  ],
+  "identidade/LEIA-ME.md": [
+    "Guia da identidade, versões e orientação de uso",
+    "documento editável",
+    "Design gráfico"
+  ],
+  "manifesto-sha256.json": [
+    "Lista fechada com tamanho e hash de 14 entregas",
+    "manifesto gerado",
+    "Integridade de bytes; não licença nem cobertura de todo o repo"
+  ],
+  "modelos/INTEIA_F1_animado.glb": [
+    "Carro convertido com clipe ilustrativo de montagem, rodas e DRS",
+    "modelo gerado",
+    "Sites, jogos e Blender via suporte glTF"
+  ],
+  "modelos/INTEIA_F1_estatico.glb": [
+    "Carro convertido sem clipe para integração",
+    "modelo gerado",
+    "Sites, jogos e Blender via suporte glTF"
+  ],
+  "texturas/INTEIA_Carbono_BaseColor.png": [
+    "Textura de carbono portátil gerada pelo pipeline Blender",
+    "textura gerada",
+    "Materiais Blender/GLB; distinta da projeção procedural web"
+  ],
+  "validacao-criacao.json": [
+    "Registro histórico de criação do Blender e contagem do modelo",
+    "relatório gerado",
+    "Evidência histórica; package_blender.py"
+  ],
+  "validacao-mecanica-web.json": [
+    "Registro de ciclos, pivôs e erros de matrizes do teste mecânico",
+    "relatório gerado",
+    "Evidência histórica; test-mechanics.mjs"
+  ],
+  "validacao-reabertura.json": [
+    "Registro de reabertura Blender e reimportação de GLBs",
+    "relatório gerado",
+    "Evidência histórica; validate-kit.py"
+  ],
+  "web/THREE-LICENSE.txt": [
+    "Texto de licença de Three.js distribuído junto ao site",
+    "aviso de terceiro",
+    "Atribuição"
+  ],
+  "web/assets/INTEIA-wordmark.svg": [
+    "Wordmark textual independente presente no pacote",
+    "asset vetorial editável",
+    "Sem importação direta na entrada atual"
+  ],
+  "web/assets/carro-movable.glb": [
+    "Base exterior com 97 peças e metadados usada pelo build web e Blender",
+    "base derivada fornecida",
+    "Fonte operacional local; extração inicial não distribuída"
+  ],
+  "web/build.cjs": [
+    "Empacota app e base64 do GLB no template para HTML autocontido",
+    "código fonte editável",
+    "Node.js/esbuild; sobrescreve web/index.html"
+  ],
+  "web/index.html": [
+    "Site autocontido gerado: template, bundle Three.js e modelo embutido",
+    "HTML gerado",
+    "Abrir localmente; editar fontes e recompilar"
+  ],
+  "web/package-lock.json": [
+    "Versões e integridade das dependências npm",
+    "lockfile gerado",
+    "npm ci; não editar manualmente"
+  ],
+  "web/package.json": [
+    "Scripts e versões fixadas de Three.js 0.180.0/esbuild 0.25.10",
+    "configuração editável",
+    "npm; manifesto da aplicação"
+  ],
+  "web/server.cjs": [
+    "Servidor HTTP local da pasta web em PORT ou 5186",
+    "código fonte editável",
+    "Node.js; não iniciar sobre a porta 5186 ocupada"
+  ],
+  "web/src/aero-physics.mjs": [
+    "Calculadora pura por coeficientes: vento, densidade, forças e limites",
+    "código fonte editável",
+    "Independente da malha; sem CFD"
+  ],
+  "web/src/app-v2.js": [
+    "Entrada ativa: cena, GLB, módulos, controles DOM e loop de desenho",
+    "código fonte editável",
+    "Navegador WebGL; orquestração"
+  ],
+  "web/src/branding.js": [
+    "Projeta uma assinatura vetorial INTEIA na lateral direita de main_body; chamado pela entrada ativa",
+    "código fonte editável",
+    "Three.js, glyphs de identity.js, DecalGeometry e registros de mechanics; decal da sessão web"
+  ],
+  "web/src/customize.js": [
+    "Liga controles de cores/acabamento, luz, piso e fundo aos materiais",
+    "código fonte editável",
+    "DOM do template; estado em memória da sessão"
+  ],
+  "web/src/flow-detail.js": [
+    "Representação didática aproximada do fluxo nas rodas e assoalho",
+    "código fonte editável",
+    "Three.js; heurísticas visuais"
+  ],
+  "web/src/garage.js": [
+    "Constrói box, mobiliário, equipamentos, marcas e cena exportável",
+    "código fonte editável",
+    "Geometria procedural Three.js; identidade ativa"
+  ],
+  "web/src/identity.js": [
+    "Define glifos, emblema, SVG e desenho Canvas da identidade ativa",
+    "código fonte editável",
+    "Cabeçalho e superfícies do box"
+  ],
+  "web/src/mechanics.js": [
+    "Agrupa peças, cria pivôs, explode/monta, seleciona e anima rodas/DRS",
+    "código fonte editável",
+    "Three.js e extras da base GLB"
+  ],
+  "web/src/studio.js": [
+    "Materiais, carbono procedural, iluminação, ambiente, piso e tema",
+    "código fonte editável",
+    "Three.js; efeitos web não integralmente portáveis"
+  ],
+  "web/src/template-v2.html": [
+    "Estrutura e estilos da interface com marcadores __MODEL__ e __APP__",
+    "HTML fonte editável",
+    "Contrato de seletores DOM do app e módulos"
+  ],
+  "web/src/tunnel-visual.js": [
+    "Construção visual do túnel, linhas/partículas e recursos de cena",
+    "código fonte editável",
+    "Three.js; visualização ilustrativa"
+  ],
+  "web/src/wind-tunnel.js": [
+    "Liga entradas do túnel, calculadora, gráficos, CSV e efeitos de fluxo",
+    "código fonte editável",
+    "DOM + mechanics + aero-physics + efeitos visuais"
+  ],
+  "web/test-aerodynamics.mjs": [
+    "Verifica unidades, escala das fórmulas, condições e coeficientes ausentes",
+    "teste editável",
+    "Node.js; não valida física do carro"
+  ],
+  "web/test-mechanics.mjs": [
+    "Verifica peças, pivôs, 20 ciclos, seleção, arraste e restauração",
+    "teste editável",
+    "Node.js/Three.js; grava relatório na raiz"
+  ],
+  "docs/mapas/README.md": [
+    "Entrada do mapa geral produzido pela conversa paralela",
+    "documentação/código de mapeamento paralelo",
+    "Complementar a esta análise; mantido pela outra tarefa"
+  ],
+  "docs/mapas/REUSO.md": [
+    "Receitas de reutilização do mapa geral paralelo",
+    "documentação/código de mapeamento paralelo",
+    "Complementar a esta análise; mantido pela outra tarefa"
+  ],
+  "docs/mapas/MODULOS.md": [
+    "Visão de módulos e responsabilidades do mapa paralelo",
+    "documentação/código de mapeamento paralelo",
+    "Complementar a esta análise; mantido pela outra tarefa"
+  ],
+  "docs/mapas/PRODUCAO.md": [
+    "Pipeline de produção de assets documentado no mapa paralelo",
+    "documentação/código de mapeamento paralelo",
+    "Complementar a esta análise; mantido pela outra tarefa"
+  ],
+  "docs/mapas/MANUTENCAO.md": [
+    "Atualização e manutenção do gerador de mapas paralelo",
+    "documentação/código de mapeamento paralelo",
+    "Complementar a esta análise; mantido pela outra tarefa"
+  ],
+  "docs/mapas/VERIFICACAO.md": [
+    "Resultados de verificação registrados pela conversa paralela",
+    "documentação/código de mapeamento paralelo",
+    "Complementar a esta análise; mantido pela outra tarefa"
+  ],
+  "docs/mapas/INVENTARIO.md": [
+    "Inventário legível de arquivos da conversa paralela",
+    "documentação/código de mapeamento paralelo",
+    "Complementar a esta análise; mantido pela outra tarefa"
+  ],
+  "docs/mapas/GRAFOS.md": [
+    "Diagramas Mermaid e leitura do grafo geral paralelo",
+    "documentação/código de mapeamento paralelo",
+    "Complementar a esta análise; mantido pela outra tarefa"
+  ],
+  "docs/mapas/index.html": [
+    "Interface navegável do mapa geral paralelo",
+    "documentação/código de mapeamento paralelo",
+    "Complementar a esta análise; mantido pela outra tarefa"
+  ],
+  "docs/mapas/inventario.json": [
+    "Inventário estruturado de arquivos do gerador paralelo",
+    "documentação/código de mapeamento paralelo",
+    "Complementar a esta análise; mantido pela outra tarefa"
+  ],
+  "docs/mapas/graphify-extracao.json": [
+    "Extração graphify preservada pela conversa paralela",
+    "documentação/código de mapeamento paralelo",
+    "Complementar a esta análise; mantido pela outra tarefa"
+  ],
+  "docs/mapas/dependencias.json": [
+    "Relações de dependências extraídas pelo gerador paralelo",
+    "documentação/código de mapeamento paralelo",
+    "Complementar a esta análise; mantido pela outra tarefa"
+  ],
+  "docs/mapas/controles.json": [
+    "Índice de controles DOM extraído pelo gerador paralelo",
+    "documentação/código de mapeamento paralelo",
+    "Complementar a esta análise; mantido pela outra tarefa"
+  ],
+  "docs/mapas/componentes.json": [
+    "Catálogo de componentes GLB do mapa paralelo",
+    "documentação/código de mapeamento paralelo",
+    "Complementar a esta análise; mantido pela outra tarefa"
+  ],
+  "docs/mapas/cobertura.json": [
+    "Contagens, escopo e exclusões do mapa paralelo",
+    "documentação/código de mapeamento paralelo",
+    "Complementar a esta análise; mantido pela outra tarefa"
+  ],
+  "ferramentas/mapear.py": [
+    "Gerador do mapa geral da conversa paralela; saídas em docs/mapas",
+    "documentação/código de mapeamento paralelo",
+    "Complementar a esta análise; mantido pela outra tarefa"
+  ],
+  "ferramentas/mapa-template.html": [
+    "Template da interface do mapa geral da conversa paralela",
+    "documentação/código de mapeamento paralelo",
+    "Complementar a esta análise; mantido pela outra tarefa"
+  ]
+}

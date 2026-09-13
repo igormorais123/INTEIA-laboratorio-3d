@@ -1,0 +1,4156 @@
+{
+  "method": "tree-sitter-javascript: declarações nomeadas, arrow functions atribuídas e métodos; Python ast: funções/classes. Callbacks anônimos e resolução dinâmica não são indexados integralmente.",
+  "source_hashes": {
+    "ferramentas/manifest.cjs": "31241fb26f341af10fdcd8d0ebd92ac2772ac12438035bed5bc5fa1c32f1659c",
+    "ferramentas/merge-animation.cjs": "8870463d9db1c8daa8c4646331e8af726e45963f4840b6d91b8937a450890b2f",
+    "ferramentas/package_blender.py": "6a8bfa4ca77b5dbe8db20b9fca5c2ba1a5d1fbf819dee4808eb316b95b4a0d6a",
+    "ferramentas/package_garage.py": "db9da9c72d2121c7722520405910d5be7f099888b948c09cb6de9651e38dcf9c",
+    "ferramentas/render_garage_preview.py": "2943c2fab0e646463e2cd0e8a6bf8a0a2ac8227a82ae18f7b1e7a657d46aae64",
+    "ferramentas/validate-kit.py": "51b3d24db0fe5bc8ec123f269f27907066f1cfb4d1cf13f379807be3bd55c4a9",
+    "web/build.cjs": "b4195fe57f892d1fe85d1595d0f1c9ce3ae77d356648b52c537ee3ab2904e2fe",
+    "web/server.cjs": "2ef0a47dc1ee0a4673aa4c31e213f1043b984406d13688345014eecd1f284f6e",
+    "web/src/aero-physics.mjs": "ddec76df50dd3dba23d2361d5579be999d70a4a1bd58dce99001fd4b9c146482",
+    "web/src/app-v2.js": "7064534fb4a7e6f5c7070a2dbc32d161bf8744fd1b547c1369f920ee70d35977",
+    "web/src/branding.js": "84d47397f7255884a41f3273c493746b6b74de0d789cfc55052edd1b8671380b",
+    "web/src/customize.js": "9588784fd0e68d0dd4d61ad3c2731ef39c1cba33f6f57f47b172d55abc0a4176",
+    "web/src/flow-detail.js": "436414a7e85b9ad8a043c469412b63224dc101e4caba06e76340977d85684f1a",
+    "web/src/garage.js": "881afa322c3ed23315549e48147df9f1f47e31836ed29cc24730538bbd91ced4",
+    "web/src/identity.js": "f7da18ffada2006737675abb026d621097f8219e37587a5b72c1dfc798b089a6",
+    "web/src/mechanics.js": "e6795bbc6ccccca32f2c4582cae3fab14d798ff3d7d0a31b23d59ecc5b1735eb",
+    "web/src/studio.js": "36ca53b97600bcdcec404b67ab42333afefe20c00d046d2c92d28145f6b6d8e1",
+    "web/src/tunnel-visual.js": "46435c35174bd737c548b964d23a577214f26c645459bf8f4d792b183ffd02c5",
+    "web/src/wind-tunnel.js": "7795a0a4bf6a3462b7c9c81d20431b26e133041a8930dcda8ee2191bfd9556e5",
+    "web/test-aerodynamics.mjs": "a18952d5f54a4917f9fa14d546c55401d9fa57e13d559dea0bc9f7549c32bce8",
+    "web/test-mechanics.mjs": "d54f8929104e5ba8ee76479607b00313789c0e6b84af41d025b33df031ac9ba8"
+  },
+  "parse_errors": [],
+  "symbols": [
+    {
+      "id": "ferramentas/package_blender.py#27:linear",
+      "path": "ferramentas/package_blender.py",
+      "name": "linear",
+      "kind": "FunctionDef",
+      "line": 27,
+      "end_line": 27,
+      "scope": "module",
+      "signature": "def linear(v):return v/12.92 if v<=.04045 else ((v+.055)/1.055)**2.4"
+    },
+    {
+      "id": "ferramentas/package_blender.py#28:col",
+      "path": "ferramentas/package_blender.py",
+      "name": "col",
+      "kind": "FunctionDef",
+      "line": 28,
+      "end_line": 28,
+      "scope": "module",
+      "signature": "def col(h):return tuple(linear(int(h[i:i+2],16)/255) for i in (1,3,5))+(1,)"
+    },
+    {
+      "id": "ferramentas/package_blender.py#29:base",
+      "path": "ferramentas/package_blender.py",
+      "name": "base",
+      "kind": "FunctionDef",
+      "line": 29,
+      "end_line": 34,
+      "scope": "module",
+      "signature": "def base(m,h,metal,rough,coat=0,cr=.1):"
+    },
+    {
+      "id": "ferramentas/package_blender.py#74:center",
+      "path": "ferramentas/package_blender.py",
+      "name": "center",
+      "kind": "FunctionDef",
+      "line": 74,
+      "end_line": 74,
+      "scope": "module",
+      "signature": "def center(o):return sum((o.matrix_world@Vector(v) for v in o.bound_box),Vector())/8"
+    },
+    {
+      "id": "ferramentas/package_blender.py#75:reparent",
+      "path": "ferramentas/package_blender.py",
+      "name": "reparent",
+      "kind": "FunctionDef",
+      "line": 75,
+      "end_line": 78,
+      "scope": "module",
+      "signature": "def reparent(o,p):"
+    },
+    {
+      "id": "ferramentas/package_blender.py#121:select_car",
+      "path": "ferramentas/package_blender.py",
+      "name": "select_car",
+      "kind": "FunctionDef",
+      "line": 121,
+      "end_line": 124,
+      "scope": "module",
+      "signature": "def select_car():"
+    },
+    {
+      "id": "ferramentas/package_blender.py#130:to_studio",
+      "path": "ferramentas/package_blender.py",
+      "name": "to_studio",
+      "kind": "FunctionDef",
+      "line": 130,
+      "end_line": 132,
+      "scope": "module",
+      "signature": "def to_studio(o):"
+    },
+    {
+      "id": "ferramentas/validate-kit.py#7:matrices",
+      "path": "ferramentas/validate-kit.py",
+      "name": "matrices",
+      "kind": "FunctionDef",
+      "line": 7,
+      "end_line": 8,
+      "scope": "module",
+      "signature": "def matrices():"
+    },
+    {
+      "id": "web/src/aero-physics.mjs#2:aerodynamicTest",
+      "path": "web/src/aero-physics.mjs",
+      "name": "aerodynamicTest",
+      "kind": "function_declaration",
+      "line": 2,
+      "end_line": 17,
+      "scope": "module",
+      "signature": "aerodynamicTest({speedKmh=0,headwindKmh=0,crosswindKmh=0,temperatureC=15,pressureKPa=101.325,area=null,cd=null,clDown=null,length=5.5})"
+    },
+    {
+      "id": "web/src/app-v2.js#18:$",
+      "path": "web/src/app-v2.js",
+      "name": "$",
+      "kind": "variable_declarator",
+      "line": 18,
+      "end_line": 18,
+      "scope": "module",
+      "signature": "$"
+    },
+    {
+      "id": "web/src/app-v2.js#30:setFlowXray",
+      "path": "web/src/app-v2.js",
+      "name": "setFlowXray",
+      "kind": "function_declaration",
+      "line": 30,
+      "end_line": 33,
+      "scope": "module",
+      "signature": "setFlowXray(on)"
+    },
+    {
+      "id": "web/src/app-v2.js#31:clone",
+      "path": "web/src/app-v2.js",
+      "name": "clone",
+      "kind": "variable_declarator",
+      "line": 31,
+      "end_line": 31,
+      "scope": "web/src/app-v2.js#30:setFlowXray",
+      "signature": "clone"
+    },
+    {
+      "id": "web/src/app-v2.js#37:moveCamera",
+      "path": "web/src/app-v2.js",
+      "name": "moveCamera",
+      "kind": "function_declaration",
+      "line": 37,
+      "end_line": 37,
+      "scope": "module",
+      "signature": "moveCamera(to,target,animate=true)"
+    },
+    {
+      "id": "web/src/app-v2.js#38:view",
+      "path": "web/src/app-v2.js",
+      "name": "view",
+      "kind": "function_declaration",
+      "line": 38,
+      "end_line": 38,
+      "scope": "module",
+      "signature": "view(name,animate=true)"
+    },
+    {
+      "id": "web/src/app-v2.js#40:resize",
+      "path": "web/src/app-v2.js",
+      "name": "resize",
+      "kind": "function_declaration",
+      "line": 40,
+      "end_line": 40,
+      "scope": "module",
+      "signature": "resize()"
+    },
+    {
+      "id": "web/src/app-v2.js#42:refreshSelection",
+      "path": "web/src/app-v2.js",
+      "name": "refreshSelection",
+      "kind": "function_declaration",
+      "line": 42,
+      "end_line": 42,
+      "scope": "module",
+      "signature": "refreshSelection()"
+    },
+    {
+      "id": "web/src/app-v2.js#43:select",
+      "path": "web/src/app-v2.js",
+      "name": "select",
+      "kind": "function_declaration",
+      "line": 43,
+      "end_line": 43,
+      "scope": "module",
+      "signature": "select(id)"
+    },
+    {
+      "id": "web/src/app-v2.js#44:focusPart",
+      "path": "web/src/app-v2.js",
+      "name": "focusPart",
+      "kind": "function_declaration",
+      "line": 44,
+      "end_line": 44,
+      "scope": "module",
+      "signature": "focusPart()"
+    },
+    {
+      "id": "web/src/app-v2.js#45:assemblyTo",
+      "path": "web/src/app-v2.js",
+      "name": "assemblyTo",
+      "kind": "function_declaration",
+      "line": 45,
+      "end_line": 45,
+      "scope": "module",
+      "signature": "assemblyTo(v)"
+    },
+    {
+      "id": "web/src/app-v2.js#49:onBeforeToggle",
+      "path": "web/src/app-v2.js",
+      "name": "onBeforeToggle",
+      "kind": "pair",
+      "line": 49,
+      "end_line": 49,
+      "scope": "module",
+      "signature": "onBeforeToggle"
+    },
+    {
+      "id": "web/src/app-v2.js#49:onRegion",
+      "path": "web/src/app-v2.js",
+      "name": "onRegion",
+      "kind": "pair",
+      "line": 49,
+      "end_line": 49,
+      "scope": "module",
+      "signature": "onRegion"
+    },
+    {
+      "id": "web/src/app-v2.js#49:onToggle",
+      "path": "web/src/app-v2.js",
+      "name": "onToggle",
+      "kind": "pair",
+      "line": 49,
+      "end_line": 49,
+      "scope": "module",
+      "signature": "onToggle"
+    },
+    {
+      "id": "web/src/branding.js#6:applyInteiaBranding",
+      "path": "web/src/branding.js",
+      "name": "applyInteiaBranding",
+      "kind": "function_declaration",
+      "line": 6,
+      "end_line": 30,
+      "scope": "module",
+      "signature": "applyInteiaBranding(model, mechanics)"
+    },
+    {
+      "id": "web/src/branding.js#16:project",
+      "path": "web/src/branding.js",
+      "name": "project",
+      "kind": "function_declaration",
+      "line": 16,
+      "end_line": 26,
+      "scope": "web/src/branding.js#6:applyInteiaBranding",
+      "signature": "project(source,origin,direction,rotation,width,depth)"
+    },
+    {
+      "id": "web/src/branding.js#29:dispose",
+      "path": "web/src/branding.js",
+      "name": "dispose",
+      "kind": "method_definition",
+      "line": 29,
+      "end_line": 29,
+      "scope": "web/src/branding.js#6:applyInteiaBranding",
+      "signature": "dispose()"
+    },
+    {
+      "id": "web/src/customize.js#1:setupCustomization",
+      "path": "web/src/customize.js",
+      "name": "setupCustomization",
+      "kind": "function_declaration",
+      "line": 1,
+      "end_line": 56,
+      "scope": "module",
+      "signature": "setupCustomization(materials, studio, renderer, scene)"
+    },
+    {
+      "id": "web/src/customize.js#2:$",
+      "path": "web/src/customize.js",
+      "name": "$",
+      "kind": "variable_declarator",
+      "line": 2,
+      "end_line": 2,
+      "scope": "web/src/customize.js#1:setupCustomization",
+      "signature": "$"
+    },
+    {
+      "id": "web/src/customize.js#32:applyLight",
+      "path": "web/src/customize.js",
+      "name": "applyLight",
+      "kind": "variable_declarator",
+      "line": 32,
+      "end_line": 36,
+      "scope": "web/src/customize.js#1:setupCustomization",
+      "signature": "applyLight()"
+    },
+    {
+      "id": "web/src/flow-detail.js#4:createFlowDetail",
+      "path": "web/src/flow-detail.js",
+      "name": "createFlowDetail",
+      "kind": "function_declaration",
+      "line": 4,
+      "end_line": 58,
+      "scope": "module",
+      "signature": "createFlowDetail({parent,size})"
+    },
+    {
+      "id": "web/src/flow-detail.js#9:path",
+      "path": "web/src/flow-detail.js",
+      "name": "path",
+      "kind": "function_declaration",
+      "line": 9,
+      "end_line": 9,
+      "scope": "web/src/flow-detail.js#4:createFlowDetail",
+      "signature": "path(points,category)"
+    },
+    {
+      "id": "web/src/flow-detail.js#45:sample",
+      "path": "web/src/flow-detail.js",
+      "name": "sample",
+      "kind": "function_declaration",
+      "line": 45,
+      "end_line": 45,
+      "scope": "web/src/flow-detail.js#4:createFlowDetail",
+      "signature": "sample(p,t)"
+    },
+    {
+      "id": "web/src/flow-detail.js#46:update",
+      "path": "web/src/flow-detail.js",
+      "name": "update",
+      "kind": "method_definition",
+      "line": 46,
+      "end_line": 57,
+      "scope": "web/src/flow-detail.js#4:createFlowDetail",
+      "signature": "update(dt,r,invalid,reduced,settings)"
+    },
+    {
+      "id": "web/src/garage.js#7:createGarage",
+      "path": "web/src/garage.js",
+      "name": "createGarage",
+      "kind": "function_declaration",
+      "line": 7,
+      "end_line": 152,
+      "scope": "module",
+      "signature": "createGarage({scene,renderer,studio,camera,mechanics})"
+    },
+    {
+      "id": "web/src/garage.js#10:mat",
+      "path": "web/src/garage.js",
+      "name": "mat",
+      "kind": "variable_declarator",
+      "line": 10,
+      "end_line": 10,
+      "scope": "web/src/garage.js#7:createGarage",
+      "signature": "mat(color,metalness=.0,roughness=.5)"
+    },
+    {
+      "id": "web/src/garage.js#13:box",
+      "path": "web/src/garage.js",
+      "name": "box",
+      "kind": "function_declaration",
+      "line": 13,
+      "end_line": 13,
+      "scope": "web/src/garage.js#7:createGarage",
+      "signature": "box(w,h,d,x,y,z,m=white,rounded=false,parent=root)"
+    },
+    {
+      "id": "web/src/garage.js#14:cylinder",
+      "path": "web/src/garage.js",
+      "name": "cylinder",
+      "kind": "function_declaration",
+      "line": 14,
+      "end_line": 14,
+      "scope": "web/src/garage.js#7:createGarage",
+      "signature": "cylinder(r1,r2,h,x,y,z,m=steel,parent=root)"
+    },
+    {
+      "id": "web/src/garage.js#15:tube",
+      "path": "web/src/garage.js",
+      "name": "tube",
+      "kind": "function_declaration",
+      "line": 15,
+      "end_line": 15,
+      "scope": "web/src/garage.js#7:createGarage",
+      "signature": "tube(points,r=.018,m=black,parent=root)"
+    },
+    {
+      "id": "web/src/garage.js#16:label",
+      "path": "web/src/garage.js",
+      "name": "label",
+      "kind": "function_declaration",
+      "line": 16,
+      "end_line": 16,
+      "scope": "web/src/garage.js#7:createGarage",
+      "signature": "label(text,w,h,x,y,z,rotation=0,bg='#e0e3e4',fg='#26313b',font=50)"
+    },
+    {
+      "id": "web/src/garage.js#18:grain",
+      "path": "web/src/garage.js",
+      "name": "grain",
+      "kind": "function_declaration",
+      "line": 18,
+      "end_line": 18,
+      "scope": "web/src/garage.js#7:createGarage",
+      "signature": "grain(repeatX,repeatY)"
+    },
+    {
+      "id": "web/src/garage.js#40:cabinet",
+      "path": "web/src/garage.js",
+      "name": "cabinet",
+      "kind": "function_declaration",
+      "line": 40,
+      "end_line": 44,
+      "scope": "web/src/garage.js#7:createGarage",
+      "signature": "cabinet(x,z,w=1.35)"
+    },
+    {
+      "id": "web/src/garage.js#53:screen",
+      "path": "web/src/garage.js",
+      "name": "screen",
+      "kind": "function_declaration",
+      "line": 53,
+      "end_line": 65,
+      "scope": "web/src/garage.js#7:createGarage",
+      "signature": "screen(x,y,z,w,h,kind,rotation=0)"
+    },
+    {
+      "id": "web/src/garage.js#58:draw",
+      "path": "web/src/garage.js",
+      "name": "draw",
+      "kind": "function_declaration",
+      "line": 58,
+      "end_line": 64,
+      "scope": "web/src/garage.js#53:screen",
+      "signature": "draw()"
+    },
+    {
+      "id": "web/src/garage.js#148:getExportScene",
+      "path": "web/src/garage.js",
+      "name": "getExportScene",
+      "kind": "method_definition",
+      "line": 148,
+      "end_line": 148,
+      "scope": "web/src/garage.js#7:createGarage",
+      "signature": "getExportScene()"
+    },
+    {
+      "id": "web/src/garage.js#148:enabled",
+      "path": "web/src/garage.js",
+      "name": "enabled",
+      "kind": "method_definition",
+      "line": 148,
+      "end_line": 148,
+      "scope": "web/src/garage.js#7:createGarage",
+      "signature": "enabled()"
+    },
+    {
+      "id": "web/src/garage.js#148:setEnabled",
+      "path": "web/src/garage.js",
+      "name": "setEnabled",
+      "kind": "method_definition",
+      "line": 148,
+      "end_line": 151,
+      "scope": "web/src/garage.js#7:createGarage",
+      "signature": "setEnabled(on)"
+    },
+    {
+      "id": "web/src/garage.js#151:update",
+      "path": "web/src/garage.js",
+      "name": "update",
+      "kind": "method_definition",
+      "line": 151,
+      "end_line": 151,
+      "scope": "web/src/garage.js#7:createGarage",
+      "signature": "update(dt)"
+    },
+    {
+      "id": "web/src/identity.js#11:brandSVG",
+      "path": "web/src/identity.js",
+      "name": "brandSVG",
+      "kind": "function_declaration",
+      "line": 11,
+      "end_line": 15,
+      "scope": "module",
+      "signature": "brandSVG({light=false,compact=false}={})"
+    },
+    {
+      "id": "web/src/identity.js#16:drawBrand",
+      "path": "web/src/identity.js",
+      "name": "drawBrand",
+      "kind": "function_declaration",
+      "line": 16,
+      "end_line": 23,
+      "scope": "module",
+      "signature": "drawBrand(ctx,width,height,{light=false}={})"
+    },
+    {
+      "id": "web/src/mechanics.js#3:createMechanics",
+      "path": "web/src/mechanics.js",
+      "name": "createMechanics",
+      "kind": "function_declaration",
+      "line": 3,
+      "end_line": 67,
+      "scope": "module",
+      "signature": "createMechanics(model)"
+    },
+    {
+      "id": "web/src/mechanics.js#8:categoryFor",
+      "path": "web/src/mechanics.js",
+      "name": "categoryFor",
+      "kind": "variable_declarator",
+      "line": 8,
+      "end_line": 8,
+      "scope": "web/src/mechanics.js#3:createMechanics",
+      "signature": "categoryFor"
+    },
+    {
+      "id": "web/src/mechanics.js#43:apply",
+      "path": "web/src/mechanics.js",
+      "name": "apply",
+      "kind": "function_declaration",
+      "line": 43,
+      "end_line": 54,
+      "scope": "web/src/mechanics.js#3:createMechanics",
+      "signature": "apply()"
+    },
+    {
+      "id": "web/src/mechanics.js#55:amount",
+      "path": "web/src/mechanics.js",
+      "name": "amount",
+      "kind": "method_definition",
+      "line": 55,
+      "end_line": 55,
+      "scope": "web/src/mechanics.js#3:createMechanics",
+      "signature": "amount()"
+    },
+    {
+      "id": "web/src/mechanics.js#55:target",
+      "path": "web/src/mechanics.js",
+      "name": "target",
+      "kind": "method_definition",
+      "line": 55,
+      "end_line": 55,
+      "scope": "web/src/mechanics.js#3:createMechanics",
+      "signature": "target()"
+    },
+    {
+      "id": "web/src/mechanics.js#55:playing",
+      "path": "web/src/mechanics.js",
+      "name": "playing",
+      "kind": "method_definition",
+      "line": 55,
+      "end_line": 55,
+      "scope": "web/src/mechanics.js#3:createMechanics",
+      "signature": "playing()"
+    },
+    {
+      "id": "web/src/mechanics.js#55:selected",
+      "path": "web/src/mechanics.js",
+      "name": "selected",
+      "kind": "method_definition",
+      "line": 55,
+      "end_line": 55,
+      "scope": "web/src/mechanics.js#3:createMechanics",
+      "signature": "selected()"
+    },
+    {
+      "id": "web/src/mechanics.js#55:isolated",
+      "path": "web/src/mechanics.js",
+      "name": "isolated",
+      "kind": "method_definition",
+      "line": 55,
+      "end_line": 55,
+      "scope": "web/src/mechanics.js#3:createMechanics",
+      "signature": "isolated()"
+    },
+    {
+      "id": "web/src/mechanics.js#55:motionAvailable",
+      "path": "web/src/mechanics.js",
+      "name": "motionAvailable",
+      "kind": "method_definition",
+      "line": 55,
+      "end_line": 55,
+      "scope": "web/src/mechanics.js#3:createMechanics",
+      "signature": "motionAvailable()"
+    },
+    {
+      "id": "web/src/mechanics.js#56:drag",
+      "path": "web/src/mechanics.js",
+      "name": "drag",
+      "kind": "method_definition",
+      "line": 56,
+      "end_line": 56,
+      "scope": "web/src/mechanics.js#3:createMechanics",
+      "signature": "drag(v)"
+    },
+    {
+      "id": "web/src/mechanics.js#57:restoreParts",
+      "path": "web/src/mechanics.js",
+      "name": "restoreParts",
+      "kind": "method_definition",
+      "line": 57,
+      "end_line": 57,
+      "scope": "web/src/mechanics.js#3:createMechanics",
+      "signature": "restoreParts()"
+    },
+    {
+      "id": "web/src/mechanics.js#58:setAmount",
+      "path": "web/src/mechanics.js",
+      "name": "setAmount",
+      "kind": "method_definition",
+      "line": 58,
+      "end_line": 58,
+      "scope": "web/src/mechanics.js#3:createMechanics",
+      "signature": "setAmount(v)"
+    },
+    {
+      "id": "web/src/mechanics.js#59:setManual",
+      "path": "web/src/mechanics.js",
+      "name": "setManual",
+      "kind": "method_definition",
+      "line": 59,
+      "end_line": 59,
+      "scope": "web/src/mechanics.js#3:createMechanics",
+      "signature": "setManual(v)"
+    },
+    {
+      "id": "web/src/mechanics.js#60:select",
+      "path": "web/src/mechanics.js",
+      "name": "select",
+      "kind": "method_definition",
+      "line": 60,
+      "end_line": 60,
+      "scope": "web/src/mechanics.js#3:createMechanics",
+      "signature": "select(id)"
+    },
+    {
+      "id": "web/src/mechanics.js#61:isolate",
+      "path": "web/src/mechanics.js",
+      "name": "isolate",
+      "kind": "method_definition",
+      "line": 61,
+      "end_line": 61,
+      "scope": "web/src/mechanics.js#3:createMechanics",
+      "signature": "isolate()"
+    },
+    {
+      "id": "web/src/mechanics.js#62:setSpin",
+      "path": "web/src/mechanics.js",
+      "name": "setSpin",
+      "kind": "method_definition",
+      "line": 62,
+      "end_line": 62,
+      "scope": "web/src/mechanics.js#3:createMechanics",
+      "signature": "setSpin(v)"
+    },
+    {
+      "id": "web/src/mechanics.js#62:setSteering",
+      "path": "web/src/mechanics.js",
+      "name": "setSteering",
+      "kind": "method_definition",
+      "line": 62,
+      "end_line": 62,
+      "scope": "web/src/mechanics.js#3:createMechanics",
+      "signature": "setSteering(v)"
+    },
+    {
+      "id": "web/src/mechanics.js#62:setDRS",
+      "path": "web/src/mechanics.js",
+      "name": "setDRS",
+      "kind": "method_definition",
+      "line": 62,
+      "end_line": 62,
+      "scope": "web/src/mechanics.js#3:createMechanics",
+      "signature": "setDRS(v)"
+    },
+    {
+      "id": "web/src/mechanics.js#63:toggleLoop",
+      "path": "web/src/mechanics.js",
+      "name": "toggleLoop",
+      "kind": "method_definition",
+      "line": 63,
+      "end_line": 63,
+      "scope": "web/src/mechanics.js#3:createMechanics",
+      "signature": "toggleLoop()"
+    },
+    {
+      "id": "web/src/mechanics.js#64:reset",
+      "path": "web/src/mechanics.js",
+      "name": "reset",
+      "kind": "method_definition",
+      "line": 64,
+      "end_line": 64,
+      "scope": "web/src/mechanics.js#3:createMechanics",
+      "signature": "reset()"
+    },
+    {
+      "id": "web/src/mechanics.js#65:update",
+      "path": "web/src/mechanics.js",
+      "name": "update",
+      "kind": "method_definition",
+      "line": 65,
+      "end_line": 65,
+      "scope": "web/src/mechanics.js#3:createMechanics",
+      "signature": "update(dt,now,reduced)"
+    },
+    {
+      "id": "web/src/studio.js#2:setupStudio",
+      "path": "web/src/studio.js",
+      "name": "setupStudio",
+      "kind": "function_declaration",
+      "line": 2,
+      "end_line": 73,
+      "scope": "module",
+      "signature": "setupStudio(THREE, renderer, scene)"
+    },
+    {
+      "id": "web/src/studio.js#14:panel",
+      "path": "web/src/studio.js",
+      "name": "panel",
+      "kind": "variable_declarator",
+      "line": 14,
+      "end_line": 19,
+      "scope": "web/src/studio.js#2:setupStudio",
+      "signature": "panel(w, h, position, power, color = '#ffffff')"
+    },
+    {
+      "id": "web/src/studio.js#59:setTheme",
+      "path": "web/src/studio.js",
+      "name": "setTheme",
+      "kind": "variable_declarator",
+      "line": 59,
+      "end_line": 67,
+      "scope": "web/src/studio.js#2:setupStudio",
+      "signature": "setTheme"
+    },
+    {
+      "id": "web/src/studio.js#69:update",
+      "path": "web/src/studio.js",
+      "name": "update",
+      "kind": "method_definition",
+      "line": 69,
+      "end_line": 69,
+      "scope": "web/src/studio.js#2:setupStudio",
+      "signature": "update()"
+    },
+    {
+      "id": "web/src/studio.js#69:dispose",
+      "path": "web/src/studio.js",
+      "name": "dispose",
+      "kind": "method_definition",
+      "line": 69,
+      "end_line": 72,
+      "scope": "web/src/studio.js#2:setupStudio",
+      "signature": "dispose()"
+    },
+    {
+      "id": "web/src/studio.js#75:texture",
+      "path": "web/src/studio.js",
+      "name": "texture",
+      "kind": "function_declaration",
+      "line": 75,
+      "end_line": 102,
+      "scope": "module",
+      "signature": "texture(THREE, mode)"
+    },
+    {
+      "id": "web/src/studio.js#81:random",
+      "path": "web/src/studio.js",
+      "name": "random",
+      "kind": "variable_declarator",
+      "line": 81,
+      "end_line": 81,
+      "scope": "web/src/studio.js#75:texture",
+      "signature": "random()"
+    },
+    {
+      "id": "web/src/studio.js#104:applyLocalCarbonProjection",
+      "path": "web/src/studio.js",
+      "name": "applyLocalCarbonProjection",
+      "kind": "function_declaration",
+      "line": 104,
+      "end_line": 144,
+      "scope": "module",
+      "signature": "applyLocalCarbonProjection(material)"
+    },
+    {
+      "id": "web/src/studio.js#146:applyCarMaterials",
+      "path": "web/src/studio.js",
+      "name": "applyCarMaterials",
+      "kind": "function_declaration",
+      "line": 146,
+      "end_line": 252,
+      "scope": "module",
+      "signature": "applyCarMaterials(THREE, model)"
+    },
+    {
+      "id": "web/src/studio.js#182:upgrade",
+      "path": "web/src/studio.js",
+      "name": "upgrade",
+      "kind": "variable_declarator",
+      "line": 182,
+      "end_line": 244,
+      "scope": "web/src/studio.js#146:applyCarMaterials",
+      "signature": "upgrade"
+    },
+    {
+      "id": "web/src/studio.js#251:dispose",
+      "path": "web/src/studio.js",
+      "name": "dispose",
+      "kind": "method_definition",
+      "line": 251,
+      "end_line": 251,
+      "scope": "web/src/studio.js#146:applyCarMaterials",
+      "signature": "dispose()"
+    },
+    {
+      "id": "web/src/tunnel-visual.js#4:createTunnelVisual",
+      "path": "web/src/tunnel-visual.js",
+      "name": "createTunnelVisual",
+      "kind": "function_declaration",
+      "line": 4,
+      "end_line": 68,
+      "scope": "module",
+      "signature": "createTunnelVisual({scene, size, studio, camera})"
+    },
+    {
+      "id": "web/src/tunnel-visual.js#9:box",
+      "path": "web/src/tunnel-visual.js",
+      "name": "box",
+      "kind": "function_declaration",
+      "line": 9,
+      "end_line": 9,
+      "scope": "web/src/tunnel-visual.js#4:createTunnelVisual",
+      "signature": "box(w,h,d,x,y,z,mat=metal)"
+    },
+    {
+      "id": "web/src/tunnel-visual.js#31:random",
+      "path": "web/src/tunnel-visual.js",
+      "name": "random",
+      "kind": "variable_declarator",
+      "line": 31,
+      "end_line": 31,
+      "scope": "web/src/tunnel-visual.js#4:createTunnelVisual",
+      "signature": "random()"
+    },
+    {
+      "id": "web/src/tunnel-visual.js#67:setEnabled",
+      "path": "web/src/tunnel-visual.js",
+      "name": "setEnabled",
+      "kind": "method_definition",
+      "line": 67,
+      "end_line": 67,
+      "scope": "web/src/tunnel-visual.js#4:createTunnelVisual",
+      "signature": "setEnabled(on)"
+    },
+    {
+      "id": "web/src/tunnel-visual.js#67:update",
+      "path": "web/src/tunnel-visual.js",
+      "name": "update",
+      "kind": "method_definition",
+      "line": 67,
+      "end_line": 67,
+      "scope": "web/src/tunnel-visual.js#4:createTunnelVisual",
+      "signature": "update(dt,r,invalid,reduced,settings={})"
+    },
+    {
+      "id": "web/src/wind-tunnel.js#4:createWindTunnel",
+      "path": "web/src/wind-tunnel.js",
+      "name": "createWindTunnel",
+      "kind": "function_declaration",
+      "line": 4,
+      "end_line": 67,
+      "scope": "module",
+      "signature": "createWindTunnel({scene,model,mechanics,reduced,studio,camera,onToggle,onRegion,onBeforeToggle})"
+    },
+    {
+      "id": "web/src/wind-tunnel.js#5:$",
+      "path": "web/src/wind-tunnel.js",
+      "name": "$",
+      "kind": "variable_declarator",
+      "line": 5,
+      "end_line": 5,
+      "scope": "web/src/wind-tunnel.js#4:createWindTunnel",
+      "signature": "$"
+    },
+    {
+      "id": "web/src/wind-tunnel.js#18:number",
+      "path": "web/src/wind-tunnel.js",
+      "name": "number",
+      "kind": "variable_declarator",
+      "line": 18,
+      "end_line": 18,
+      "scope": "web/src/wind-tunnel.js#4:createWindTunnel",
+      "signature": "number"
+    },
+    {
+      "id": "web/src/wind-tunnel.js#19:params",
+      "path": "web/src/wind-tunnel.js",
+      "name": "params",
+      "kind": "variable_declarator",
+      "line": 19,
+      "end_line": 19,
+      "scope": "web/src/wind-tunnel.js#4:createWindTunnel",
+      "signature": "params()"
+    },
+    {
+      "id": "web/src/wind-tunnel.js#20:fmt",
+      "path": "web/src/wind-tunnel.js",
+      "name": "fmt",
+      "kind": "variable_declarator",
+      "line": 20,
+      "end_line": 20,
+      "scope": "web/src/wind-tunnel.js#4:createWindTunnel",
+      "signature": "fmt(v,d=0)"
+    },
+    {
+      "id": "web/src/wind-tunnel.js#21:calculate",
+      "path": "web/src/wind-tunnel.js",
+      "name": "calculate",
+      "kind": "function_declaration",
+      "line": 21,
+      "end_line": 38,
+      "scope": "web/src/wind-tunnel.js#4:createWindTunnel",
+      "signature": "calculate()"
+    },
+    {
+      "id": "web/src/wind-tunnel.js#39:drawChart",
+      "path": "web/src/wind-tunnel.js",
+      "name": "drawChart",
+      "kind": "function_declaration",
+      "line": 39,
+      "end_line": 48,
+      "scope": "web/src/wind-tunnel.js#4:createWindTunnel",
+      "signature": "drawChart(p,allowed)"
+    },
+    {
+      "id": "web/src/wind-tunnel.js#60:update",
+      "path": "web/src/wind-tunnel.js",
+      "name": "update",
+      "kind": "method_definition",
+      "line": 60,
+      "end_line": 66,
+      "scope": "web/src/wind-tunnel.js#4:createWindTunnel",
+      "signature": "update(dt)"
+    },
+    {
+      "id": "web/test-aerodynamics.mjs#5:near",
+      "path": "web/test-aerodynamics.mjs",
+      "name": "near",
+      "kind": "variable_declarator",
+      "line": 5,
+      "end_line": 5,
+      "scope": "module",
+      "signature": "near(v,w)"
+    }
+  ],
+  "direct_calls": [
+    {
+      "path": "ferramentas/manifest.cjs",
+      "source": "module",
+      "callee": "require",
+      "line": 1,
+      "expression": "require('fs')"
+    },
+    {
+      "path": "ferramentas/manifest.cjs",
+      "source": "module",
+      "callee": "require",
+      "line": 1,
+      "expression": "require('path')"
+    },
+    {
+      "path": "ferramentas/manifest.cjs",
+      "source": "module",
+      "callee": "require",
+      "line": 1,
+      "expression": "require('crypto')"
+    },
+    {
+      "path": "ferramentas/merge-animation.cjs",
+      "source": "module",
+      "callee": "require",
+      "line": 1,
+      "expression": "require('fs')"
+    },
+    {
+      "path": "ferramentas/merge-animation.cjs",
+      "source": "module",
+      "callee": "require",
+      "line": 1,
+      "expression": "require('path')"
+    },
+    {
+      "path": "web/build.cjs",
+      "source": "module",
+      "callee": "require",
+      "line": 1,
+      "expression": "require('fs')"
+    },
+    {
+      "path": "web/build.cjs",
+      "source": "module",
+      "callee": "require",
+      "line": 1,
+      "expression": "require('esbuild')"
+    },
+    {
+      "path": "web/server.cjs",
+      "source": "module",
+      "callee": "require",
+      "line": 1,
+      "expression": "require('http')"
+    },
+    {
+      "path": "web/server.cjs",
+      "source": "module",
+      "callee": "require",
+      "line": 1,
+      "expression": "require('fs')"
+    },
+    {
+      "path": "web/server.cjs",
+      "source": "module",
+      "callee": "require",
+      "line": 1,
+      "expression": "require('path')"
+    },
+    {
+      "path": "web/server.cjs",
+      "source": "module",
+      "callee": "Number",
+      "line": 2,
+      "expression": "Number(process.env.PORT||5186)"
+    },
+    {
+      "path": "web/server.cjs",
+      "source": "module",
+      "callee": "decodeURIComponent",
+      "line": 3,
+      "expression": "decodeURIComponent(new URL(req.url,'http://localhost').pathname)"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "$",
+      "line": 18,
+      "expression": "$('#stage')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "matchMedia",
+      "line": 18,
+      "expression": "matchMedia('(prefers-reduced-motion: reduce)')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "brandSVG",
+      "line": 19,
+      "expression": "brandSVG()"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "setupStudio",
+      "line": 23,
+      "expression": "setupStudio(THREE,renderer,scene)"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "$",
+      "line": 27,
+      "expression": "$('#loop')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "$",
+      "line": 27,
+      "expression": "$('#spin')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "$",
+      "line": 27,
+      "expression": "$('#steering')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "$",
+      "line": 27,
+      "expression": "$('#drs')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "$",
+      "line": 27,
+      "expression": "$('#steering-value')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "$",
+      "line": 27,
+      "expression": "$('#drs-value')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "web/src/app-v2.js#30:setFlowXray",
+      "callee": "clone",
+      "line": 31,
+      "expression": "clone(original)"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "$",
+      "line": 36,
+      "expression": "$('#loading')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "$",
+      "line": 36,
+      "expression": "$('#status')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "$",
+      "line": 36,
+      "expression": "$('#assembly')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "web/src/app-v2.js#38:view",
+      "callee": "moveCamera",
+      "line": 38,
+      "expression": "moveCamera(target.clone().addScaledVector(new THREE.Vector3(...views[name]).normalize(),distance*expanded),target,animate)"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "web/src/app-v2.js#38:view",
+      "callee": "String",
+      "line": 38,
+      "expression": "String(b.dataset.view===name)"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "web/src/app-v2.js#40:resize",
+      "callee": "view",
+      "line": 40,
+      "expression": "view(currentView,false)"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "resize",
+      "line": 41,
+      "expression": "resize()"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "web/src/app-v2.js#42:refreshSelection",
+      "callee": "$",
+      "line": 42,
+      "expression": "$('#selected-name')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "web/src/app-v2.js#42:refreshSelection",
+      "callee": "$",
+      "line": 42,
+      "expression": "$('#selected-category')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "web/src/app-v2.js#42:refreshSelection",
+      "callee": "$",
+      "line": 42,
+      "expression": "$('#part-offset')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "web/src/app-v2.js#42:refreshSelection",
+      "callee": "$",
+      "line": 42,
+      "expression": "$('#focus-part')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "web/src/app-v2.js#42:refreshSelection",
+      "callee": "$",
+      "line": 42,
+      "expression": "$('#isolate')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "web/src/app-v2.js#42:refreshSelection",
+      "callee": "$",
+      "line": 42,
+      "expression": "$('#isolate')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "web/src/app-v2.js#42:refreshSelection",
+      "callee": "String",
+      "line": 42,
+      "expression": "String(mechanics.isolated)"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "web/src/app-v2.js#42:refreshSelection",
+      "callee": "$",
+      "line": 42,
+      "expression": "$('#part-offset')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "web/src/app-v2.js#42:refreshSelection",
+      "callee": "$",
+      "line": 42,
+      "expression": "$('#offset-value')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "web/src/app-v2.js#42:refreshSelection",
+      "callee": "$",
+      "line": 42,
+      "expression": "$('#part-select')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "web/src/app-v2.js#43:select",
+      "callee": "Number",
+      "line": 43,
+      "expression": "Number(id)"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "web/src/app-v2.js#43:select",
+      "callee": "refreshSelection",
+      "line": 43,
+      "expression": "refreshSelection()"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "web/src/app-v2.js#43:select",
+      "callee": "$",
+      "line": 43,
+      "expression": "$('#free-move')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "web/src/app-v2.js#44:focusPart",
+      "callee": "moveCamera",
+      "line": 44,
+      "expression": "moveCamera(target.clone().addScaledVector(camera.position.clone().sub(controls.target).normalize(),d),target)"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "web/src/app-v2.js#45:assemblyTo",
+      "callee": "$",
+      "line": 45,
+      "expression": "$('#assembly-value')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "web/src/app-v2.js#45:assemblyTo",
+      "callee": "$",
+      "line": 45,
+      "expression": "$('#loop')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "web/src/app-v2.js#45:assemblyTo",
+      "callee": "view",
+      "line": 45,
+      "expression": "view(currentView)"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "atob",
+      "line": 46,
+      "expression": "atob($('#model-data').textContent.trim())"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "$",
+      "line": 46,
+      "expression": "$('#model-data')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "applyCarMaterials",
+      "line": 49,
+      "expression": "applyCarMaterials(THREE,model)"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "setupCustomization",
+      "line": 49,
+      "expression": "setupCustomization(materials,studio,renderer,scene)"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "createMechanics",
+      "line": 49,
+      "expression": "createMechanics(model)"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "applyInteiaBranding",
+      "line": 49,
+      "expression": "applyInteiaBranding(model,mechanics)"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "createGarage",
+      "line": 49,
+      "expression": "createGarage({scene,renderer,studio,camera,mechanics})"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "createWindTunnel",
+      "line": 49,
+      "expression": "createWindTunnel({scene,model,mechanics,reduced,studio,camera,onBeforeToggle:on=>{if(on){garageWasActive=garage.enabled;garage.setEnabled(false);}},onRegion:region=>{setFlowXray(re"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "web/src/app-v2.js#49:onRegion",
+      "callee": "setFlowXray",
+      "line": 49,
+      "expression": "setFlowXray(region==='floor')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "web/src/app-v2.js#49:onRegion",
+      "callee": "$",
+      "line": 49,
+      "expression": "$('#wind-cinema')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "web/src/app-v2.js#49:onRegion",
+      "callee": "$",
+      "line": 49,
+      "expression": "$('#orbit')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "web/src/app-v2.js#49:onRegion",
+      "callee": "moveCamera",
+      "line": 49,
+      "expression": "moveCamera(target.clone().addScaledVector(direction.normalize(),distance*scale),target)"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "web/src/app-v2.js#49:onToggle",
+      "callee": "setFlowXray",
+      "line": 49,
+      "expression": "setFlowXray(on&&$('#flow-region').value==='floor'&&$('#flow-detail').getAttribute('aria-pressed')==='true')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "web/src/app-v2.js#49:onToggle",
+      "callee": "$",
+      "line": 49,
+      "expression": "$('#flow-region')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "web/src/app-v2.js#49:onToggle",
+      "callee": "$",
+      "line": 49,
+      "expression": "$('#flow-detail')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "web/src/app-v2.js#49:onToggle",
+      "callee": "$",
+      "line": 49,
+      "expression": "$(\"#wind-cinema\")"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "web/src/app-v2.js#49:onToggle",
+      "callee": "$",
+      "line": 49,
+      "expression": "$(\"#orbit\")"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "web/src/app-v2.js#49:onToggle",
+      "callee": "moveCamera",
+      "line": 49,
+      "expression": "moveCamera(target.clone().addScaledVector(new THREE.Vector3(1,.28,1.4).normalize(),distance*(on?1.14:1)),target)"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "$",
+      "line": 50,
+      "expression": "$('#part-select')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "$",
+      "line": 51,
+      "expression": "$('#part-count')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "resize",
+      "line": 51,
+      "expression": "resize()"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "$",
+      "line": 54,
+      "expression": "$('#wind-cinema')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "$",
+      "line": 54,
+      "expression": "$('#orbit')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "view",
+      "line": 54,
+      "expression": "view(b.dataset.view)"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "$",
+      "line": 55,
+      "expression": "$('#garage-toggle')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "$",
+      "line": 55,
+      "expression": "$('#wind-toggle')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "view",
+      "line": 55,
+      "expression": "view('hero')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "$",
+      "line": 56,
+      "expression": "$('#garage-export')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "$",
+      "line": 56,
+      "expression": "$('#garage-export')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "setTimeout",
+      "line": 56,
+      "expression": "setTimeout(()=>URL.revokeObjectURL(url),10000)"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "$",
+      "line": 57,
+      "expression": "$('#garage-view')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "moveCamera",
+      "line": 57,
+      "expression": "moveCamera(target.clone().addScaledVector(new THREE.Vector3(.65,.40,1).normalize(),distance*1.4),target)"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "$",
+      "line": 58,
+      "expression": "$('#orbit')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "$",
+      "line": 58,
+      "expression": "$('#wind-cinema')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "$",
+      "line": 58,
+      "expression": "$('#orbit')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "String",
+      "line": 58,
+      "expression": "String(controls.autoRotate)"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "$",
+      "line": 59,
+      "expression": "$('#theme')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "$",
+      "line": 59,
+      "expression": "$('#theme')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "String",
+      "line": 59,
+      "expression": "String(dark)"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "$",
+      "line": 59,
+      "expression": "$('#theme')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "$",
+      "line": 60,
+      "expression": "$('#quality')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "$",
+      "line": 60,
+      "expression": "$('#quality')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "String",
+      "line": 60,
+      "expression": "String(highQuality)"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "$",
+      "line": 60,
+      "expression": "$('#quality')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "$",
+      "line": 61,
+      "expression": "$('#wire')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "$",
+      "line": 61,
+      "expression": "$('#wire')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "$",
+      "line": 61,
+      "expression": "$('#wire')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "String",
+      "line": 61,
+      "expression": "String(enabled)"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "assemblyTo",
+      "line": 62,
+      "expression": "assemblyTo(Number(assembly.value)/100)"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "Number",
+      "line": 62,
+      "expression": "Number(assembly.value)"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "$",
+      "line": 63,
+      "expression": "$('#explode')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "assemblyTo",
+      "line": 63,
+      "expression": "assemblyTo(1)"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "$",
+      "line": 63,
+      "expression": "$('#assemble')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "assemblyTo",
+      "line": 63,
+      "expression": "assemblyTo(0)"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "refreshSelection",
+      "line": 63,
+      "expression": "refreshSelection()"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "$",
+      "line": 64,
+      "expression": "$('#loop')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "$",
+      "line": 64,
+      "expression": "$('#loop')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "String",
+      "line": 64,
+      "expression": "String(mechanics.playing)"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "$",
+      "line": 65,
+      "expression": "$('#part-select')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "select",
+      "line": 65,
+      "expression": "select(e.target.value===''?null:e.target.value)"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "$",
+      "line": 66,
+      "expression": "$('#clear-selection')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "select",
+      "line": 66,
+      "expression": "select(null)"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "$",
+      "line": 66,
+      "expression": "$('#focus-part')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "$",
+      "line": 66,
+      "expression": "$('#isolate')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "refreshSelection",
+      "line": 66,
+      "expression": "refreshSelection()"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "$",
+      "line": 67,
+      "expression": "$('#free-move')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "$",
+      "line": 67,
+      "expression": "$('#free-move')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "String",
+      "line": 67,
+      "expression": "String(freeMove)"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "$",
+      "line": 68,
+      "expression": "$('#part-offset')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "Number",
+      "line": 68,
+      "expression": "Number(e.target.value)"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "$",
+      "line": 68,
+      "expression": "$('#offset-value')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "$",
+      "line": 69,
+      "expression": "$('#spin')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "$",
+      "line": 69,
+      "expression": "$('#spin')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "$",
+      "line": 69,
+      "expression": "$('#spin')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "String",
+      "line": 69,
+      "expression": "String(on)"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "$",
+      "line": 70,
+      "expression": "$('#steering')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "Number",
+      "line": 70,
+      "expression": "Number(e.target.value)"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "$",
+      "line": 70,
+      "expression": "$('#steering-value')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "$",
+      "line": 71,
+      "expression": "$('#drs')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "Number",
+      "line": 71,
+      "expression": "Number(e.target.value)"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "$",
+      "line": 71,
+      "expression": "$('#drs-value')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "$",
+      "line": 72,
+      "expression": "$('#reset')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "$",
+      "line": 72,
+      "expression": "$('#free-move')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "select",
+      "line": 72,
+      "expression": "select(null)"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "$",
+      "line": 72,
+      "expression": "$('#'+id)"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "$",
+      "line": 72,
+      "expression": "$('#'+id)"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "$",
+      "line": 72,
+      "expression": "$('#assembly-value')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "$",
+      "line": 72,
+      "expression": "$('#steering-value')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "$",
+      "line": 72,
+      "expression": "$('#drs-value')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "view",
+      "line": 72,
+      "expression": "view('hero')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "$",
+      "line": 73,
+      "expression": "$('#zoom-in')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "$",
+      "line": 73,
+      "expression": "$('#zoom-out')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "$",
+      "line": 74,
+      "expression": "$('#photo')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "$",
+      "line": 74,
+      "expression": "$('#photo')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "String",
+      "line": 74,
+      "expression": "String(document.body.classList.contains('photo'))"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "$",
+      "line": 75,
+      "expression": "$('#save-photo')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "select",
+      "line": 78,
+      "expression": "select(hits[0].object.userData.recordId)"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "view",
+      "line": 79,
+      "expression": "view('hero')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "select",
+      "line": 79,
+      "expression": "select(null)"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "$",
+      "line": 79,
+      "expression": "$('#zoom-in')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "$",
+      "line": 79,
+      "expression": "$('#zoom-out')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "$",
+      "line": 80,
+      "expression": "$('#wind-cinema')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "$",
+      "line": 80,
+      "expression": "$('#wind-cinema')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "String",
+      "line": 80,
+      "expression": "String(cinematic)"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "$",
+      "line": 80,
+      "expression": "$('#orbit')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "$",
+      "line": 81,
+      "expression": "$('#wind-cinema')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "$",
+      "line": 83,
+      "expression": "$('#assembly-value')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "view",
+      "line": 83,
+      "expression": "view(currentView)"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "$",
+      "line": 83,
+      "expression": "$('#motion-note')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "$",
+      "line": 83,
+      "expression": "$('#'+id)"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "$",
+      "line": 83,
+      "expression": "$('#assembly-state')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "String",
+      "line": 84,
+      "expression": "String(Math.round(frameCount*1000/(now-frameStart)))"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "$",
+      "line": 85,
+      "expression": "$('#loading')"
+    },
+    {
+      "path": "web/src/branding.js",
+      "source": "web/src/branding.js#6:applyInteiaBranding",
+      "callee": "project",
+      "line": 27,
+      "expression": "project('main_body',[2,.32,-.55],[-1,0,0],[0,Math.PI/2,0],.76,.22)"
+    },
+    {
+      "path": "web/src/branding.js",
+      "source": "web/src/branding.js#6:applyInteiaBranding",
+      "callee": "String",
+      "line": 28,
+      "expression": "String(decals.length)"
+    },
+    {
+      "path": "web/src/customize.js",
+      "source": "web/src/customize.js#1:setupCustomization",
+      "callee": "$",
+      "line": 19,
+      "expression": "$('color-'+group)"
+    },
+    {
+      "path": "web/src/customize.js",
+      "source": "web/src/customize.js#1:setupCustomization",
+      "callee": "$",
+      "line": 21,
+      "expression": "$('value-'+group)"
+    },
+    {
+      "path": "web/src/customize.js",
+      "source": "web/src/customize.js#1:setupCustomization",
+      "callee": "$",
+      "line": 24,
+      "expression": "$('paint-finish')"
+    },
+    {
+      "path": "web/src/customize.js",
+      "source": "web/src/customize.js#1:setupCustomization",
+      "callee": "$",
+      "line": 27,
+      "expression": "$('color-'+group)"
+    },
+    {
+      "path": "web/src/customize.js",
+      "source": "web/src/customize.js#1:setupCustomization",
+      "callee": "$",
+      "line": 28,
+      "expression": "$('color-'+group)"
+    },
+    {
+      "path": "web/src/customize.js",
+      "source": "web/src/customize.js#32:applyLight",
+      "callee": "$",
+      "line": 35,
+      "expression": "$('light-value')"
+    },
+    {
+      "path": "web/src/customize.js",
+      "source": "web/src/customize.js#1:setupCustomization",
+      "callee": "$",
+      "line": 37,
+      "expression": "$('light-level')"
+    },
+    {
+      "path": "web/src/customize.js",
+      "source": "web/src/customize.js#1:setupCustomization",
+      "callee": "Number",
+      "line": 37,
+      "expression": "Number(e.target.value)"
+    },
+    {
+      "path": "web/src/customize.js",
+      "source": "web/src/customize.js#1:setupCustomization",
+      "callee": "applyLight",
+      "line": 37,
+      "expression": "applyLight()"
+    },
+    {
+      "path": "web/src/customize.js",
+      "source": "web/src/customize.js#1:setupCustomization",
+      "callee": "$",
+      "line": 38,
+      "expression": "$('theme')"
+    },
+    {
+      "path": "web/src/customize.js",
+      "source": "web/src/customize.js#1:setupCustomization",
+      "callee": "applyLight",
+      "line": 39,
+      "expression": "applyLight()"
+    },
+    {
+      "path": "web/src/customize.js",
+      "source": "web/src/customize.js#1:setupCustomization",
+      "callee": "$",
+      "line": 40,
+      "expression": "$('floor-color')"
+    },
+    {
+      "path": "web/src/customize.js",
+      "source": "web/src/customize.js#1:setupCustomization",
+      "callee": "$",
+      "line": 41,
+      "expression": "$('background-color')"
+    },
+    {
+      "path": "web/src/customize.js",
+      "source": "web/src/customize.js#1:setupCustomization",
+      "callee": "$",
+      "line": 43,
+      "expression": "$('floor-color')"
+    },
+    {
+      "path": "web/src/customize.js",
+      "source": "web/src/customize.js#1:setupCustomization",
+      "callee": "$",
+      "line": 44,
+      "expression": "$('background-color')"
+    },
+    {
+      "path": "web/src/customize.js",
+      "source": "web/src/customize.js#1:setupCustomization",
+      "callee": "$",
+      "line": 45,
+      "expression": "$('reset-style')"
+    },
+    {
+      "path": "web/src/customize.js",
+      "source": "web/src/customize.js#1:setupCustomization",
+      "callee": "$",
+      "line": 49,
+      "expression": "$('color-'+group)"
+    },
+    {
+      "path": "web/src/customize.js",
+      "source": "web/src/customize.js#1:setupCustomization",
+      "callee": "$",
+      "line": 49,
+      "expression": "$('value-'+group)"
+    },
+    {
+      "path": "web/src/customize.js",
+      "source": "web/src/customize.js#1:setupCustomization",
+      "callee": "$",
+      "line": 51,
+      "expression": "$('paint-finish')"
+    },
+    {
+      "path": "web/src/customize.js",
+      "source": "web/src/customize.js#1:setupCustomization",
+      "callee": "$",
+      "line": 51,
+      "expression": "$('light-level')"
+    },
+    {
+      "path": "web/src/customize.js",
+      "source": "web/src/customize.js#1:setupCustomization",
+      "callee": "applyLight",
+      "line": 52,
+      "expression": "applyLight()"
+    },
+    {
+      "path": "web/src/customize.js",
+      "source": "web/src/customize.js#1:setupCustomization",
+      "callee": "$",
+      "line": 53,
+      "expression": "$('floor-color')"
+    },
+    {
+      "path": "web/src/customize.js",
+      "source": "web/src/customize.js#1:setupCustomization",
+      "callee": "$",
+      "line": 54,
+      "expression": "$('background-color')"
+    },
+    {
+      "path": "web/src/flow-detail.js",
+      "source": "web/src/flow-detail.js#4:createFlowDetail",
+      "callee": "path",
+      "line": 13,
+      "expression": "path([[x,y,L+2.3],[x,y,L+ .4],[sign*W*.95,y+.10,L*.68],[sign*W*.92,y+.12,0],[sign*W*.78,y+.10,-L*.72],[sign*W*.88,y+.2,-L-1],[sign*W*.94,y+.16,-L-2.3]],'body')"
+    },
+    {
+      "path": "web/src/flow-detail.js",
+      "source": "web/src/flow-detail.js#4:createFlowDetail",
+      "callee": "path",
+      "line": 22,
+      "expression": "path(points,'wheels')"
+    },
+    {
+      "path": "web/src/flow-detail.js",
+      "source": "web/src/flow-detail.js#4:createFlowDetail",
+      "callee": "path",
+      "line": 26,
+      "expression": "path([[x,.07,L+1.4],[x,.07,L*.65],[x,.075,0],[x,.11,-L*.63],[x*1.25,.30,-L],[x*1.6,.42,-L-1.5]],'floor')"
+    },
+    {
+      "path": "web/src/flow-detail.js",
+      "source": "web/src/flow-detail.js#4:createFlowDetail",
+      "callee": "path",
+      "line": 31,
+      "expression": "path([[x,H*.34,L+2.3],[x,H*.34,L*.97],[x,H*.45,L*.5],[x,H*1.02,.15],[x,H*1.04,-L*.62],[x,H*.99,-L],[x*1.4,H*.85,-L-2.2]],'body')"
+    },
+    {
+      "path": "web/src/flow-detail.js",
+      "source": "web/src/flow-detail.js#46:update",
+      "callee": "sample",
+      "line": 51,
+      "expression": "sample(p,Math.max(0,t))"
+    },
+    {
+      "path": "web/src/garage.js",
+      "source": "web/src/garage.js#7:createGarage",
+      "callee": "mat",
+      "line": 11,
+      "expression": "mat('#c4c9cb',0,.31)"
+    },
+    {
+      "path": "web/src/garage.js",
+      "source": "web/src/garage.js#7:createGarage",
+      "callee": "mat",
+      "line": 11,
+      "expression": "mat('#242b31',.35,.42)"
+    },
+    {
+      "path": "web/src/garage.js",
+      "source": "web/src/garage.js#7:createGarage",
+      "callee": "mat",
+      "line": 11,
+      "expression": "mat('#101419',.15,.55)"
+    },
+    {
+      "path": "web/src/garage.js",
+      "source": "web/src/garage.js#7:createGarage",
+      "callee": "mat",
+      "line": 11,
+      "expression": "mat('#b6bec4',1,.22)"
+    },
+    {
+      "path": "web/src/garage.js",
+      "source": "web/src/garage.js#7:createGarage",
+      "callee": "mat",
+      "line": 11,
+      "expression": "mat('#981b25',.32,.3)"
+    },
+    {
+      "path": "web/src/garage.js",
+      "source": "web/src/garage.js#7:createGarage",
+      "callee": "mat",
+      "line": 11,
+      "expression": "mat('#17191c',.05,.84)"
+    },
+    {
+      "path": "web/src/garage.js",
+      "source": "web/src/garage.js#7:createGarage",
+      "callee": "mat",
+      "line": 19,
+      "expression": "mat('#707c83',0,.36)"
+    },
+    {
+      "path": "web/src/garage.js",
+      "source": "web/src/garage.js#7:createGarage",
+      "callee": "grain",
+      "line": 19,
+      "expression": "grain(12,16)"
+    },
+    {
+      "path": "web/src/garage.js",
+      "source": "web/src/garage.js#7:createGarage",
+      "callee": "mat",
+      "line": 20,
+      "expression": "mat('#9da8ae',1,.25)"
+    },
+    {
+      "path": "web/src/garage.js",
+      "source": "web/src/garage.js#7:createGarage",
+      "callee": "grain",
+      "line": 20,
+      "expression": "grain(1,64)"
+    },
+    {
+      "path": "web/src/garage.js",
+      "source": "web/src/garage.js#7:createGarage",
+      "callee": "box",
+      "line": 22,
+      "expression": "box(11,.10,15,0,-.068,0,epoxy)"
+    },
+    {
+      "path": "web/src/garage.js",
+      "source": "web/src/garage.js#7:createGarage",
+      "callee": "box",
+      "line": 23,
+      "expression": "box(3.4,.012,7.6,0,-.007,0,mat('#414b53',.12,.4))"
+    },
+    {
+      "path": "web/src/garage.js",
+      "source": "web/src/garage.js#7:createGarage",
+      "callee": "mat",
+      "line": 23,
+      "expression": "mat('#414b53',.12,.4)"
+    },
+    {
+      "path": "web/src/garage.js",
+      "source": "web/src/garage.js#7:createGarage",
+      "callee": "box",
+      "line": 24,
+      "expression": "box(.035,.003,8.2,x,.003,0,red)"
+    },
+    {
+      "path": "web/src/garage.js",
+      "source": "web/src/garage.js#7:createGarage",
+      "callee": "box",
+      "line": 25,
+      "expression": "box(3.58,.003,.035,0,.003,z,red)"
+    },
+    {
+      "path": "web/src/garage.js",
+      "source": "web/src/garage.js#7:createGarage",
+      "callee": "box",
+      "line": 27,
+      "expression": "box(.72,.006,.80,x,-.001,z,steel)"
+    },
+    {
+      "path": "web/src/garage.js",
+      "source": "web/src/garage.js#7:createGarage",
+      "callee": "cylinder",
+      "line": 27,
+      "expression": "cylinder(.014,.014,.004,x+dx,.004,z+dz,black)"
+    },
+    {
+      "path": "web/src/garage.js",
+      "source": "web/src/garage.js#7:createGarage",
+      "callee": "box",
+      "line": 30,
+      "expression": "box(.008,.002,14,x,-.016,0,charcoal)"
+    },
+    {
+      "path": "web/src/garage.js",
+      "source": "web/src/garage.js#7:createGarage",
+      "callee": "box",
+      "line": 31,
+      "expression": "box(10.8,.002,.008,0,-.016,z,charcoal)"
+    },
+    {
+      "path": "web/src/garage.js",
+      "source": "web/src/garage.js#7:createGarage",
+      "callee": "box",
+      "line": 33,
+      "expression": "box(11,3.8,.14,0,1.85,-6.5,white)"
+    },
+    {
+      "path": "web/src/garage.js",
+      "source": "web/src/garage.js#7:createGarage",
+      "callee": "box",
+      "line": 34,
+      "expression": "box(.14,3.8,13,-5.5,1.85,0,white)"
+    },
+    {
+      "path": "web/src/garage.js",
+      "source": "web/src/garage.js#7:createGarage",
+      "callee": "box",
+      "line": 35,
+      "expression": "box(.012,3.6,.025,x,1.85,-6.40,charcoal)"
+    },
+    {
+      "path": "web/src/garage.js",
+      "source": "web/src/garage.js#7:createGarage",
+      "callee": "box",
+      "line": 36,
+      "expression": "box(11,.16,.04,0,.15,-6.39,charcoal)"
+    },
+    {
+      "path": "web/src/garage.js",
+      "source": "web/src/garage.js#7:createGarage",
+      "callee": "box",
+      "line": 36,
+      "expression": "box(11,.045,.04,0,2.65,-6.39,red)"
+    },
+    {
+      "path": "web/src/garage.js",
+      "source": "web/src/garage.js#7:createGarage",
+      "callee": "drawBrand",
+      "line": 37,
+      "expression": "drawBrand(brandCanvas.getContext('2d'),2048,400)"
+    },
+    {
+      "path": "web/src/garage.js",
+      "source": "web/src/garage.js#40:cabinet",
+      "callee": "box",
+      "line": 41,
+      "expression": "box(w,.95,.72,x,.53,z,charcoal,true)"
+    },
+    {
+      "path": "web/src/garage.js",
+      "source": "web/src/garage.js#40:cabinet",
+      "callee": "box",
+      "line": 41,
+      "expression": "box(w+.05,.065,.78,x,1.035,z,benchFinish,true)"
+    },
+    {
+      "path": "web/src/garage.js",
+      "source": "web/src/garage.js#40:cabinet",
+      "callee": "box",
+      "line": 42,
+      "expression": "box(w-.06,.135,.025,x,.21+i*.16,z+.375,white,true)"
+    },
+    {
+      "path": "web/src/garage.js",
+      "source": "web/src/garage.js#40:cabinet",
+      "callee": "box",
+      "line": 42,
+      "expression": "box(w-.18,.018,.022,x,.254+i*.16,z+.393,steel)"
+    },
+    {
+      "path": "web/src/garage.js",
+      "source": "web/src/garage.js#40:cabinet",
+      "callee": "cylinder",
+      "line": 43,
+      "expression": "cylinder(.026,.026,.10,x+dx,.05,z+dz,black)"
+    },
+    {
+      "path": "web/src/garage.js",
+      "source": "web/src/garage.js#7:createGarage",
+      "callee": "cabinet",
+      "line": 45,
+      "expression": "cabinet(x,-5.77)"
+    },
+    {
+      "path": "web/src/garage.js",
+      "source": "web/src/garage.js#7:createGarage",
+      "callee": "cylinder",
+      "line": 45,
+      "expression": "cylinder(.009,.009,.007,x+dx,.95,-5.372,steel)"
+    },
+    {
+      "path": "web/src/garage.js",
+      "source": "web/src/garage.js#7:createGarage",
+      "callee": "box",
+      "line": 47,
+      "expression": "box(7.25,1.33,.05,-.68,1.77,-6.35,charcoal,true)"
+    },
+    {
+      "path": "web/src/garage.js",
+      "source": "web/src/garage.js#7:createGarage",
+      "callee": "box",
+      "line": 48,
+      "expression": "box(7.35,.07,.18,-.68,2.48,-6.25,steel,true)"
+    },
+    {
+      "path": "web/src/garage.js",
+      "source": "web/src/garage.js#7:createGarage",
+      "callee": "box",
+      "line": 49,
+      "expression": "box(7.15,.015,.09,-.68,2.435,-6.19,led)"
+    },
+    {
+      "path": "web/src/garage.js",
+      "source": "web/src/garage.js#7:createGarage",
+      "callee": "box",
+      "line": 50,
+      "expression": "box(.20,1.22,.11,x,1.76,-6.28,steel,true)"
+    },
+    {
+      "path": "web/src/garage.js",
+      "source": "web/src/garage.js#7:createGarage",
+      "callee": "box",
+      "line": 50,
+      "expression": "box(.12,.07,.02,x,yy,-6.21,black,true)"
+    },
+    {
+      "path": "web/src/garage.js",
+      "source": "web/src/garage.js#53:screen",
+      "callee": "box",
+      "line": 55,
+      "expression": "box(w+.05,h+.05,.055,0,0,0,black,true,group)"
+    },
+    {
+      "path": "web/src/garage.js",
+      "source": "web/src/garage.js#58:draw",
+      "callee": "String",
+      "line": 60,
+      "expression": "String(mechanics.records.length)"
+    },
+    {
+      "path": "web/src/garage.js",
+      "source": "web/src/garage.js#53:screen",
+      "callee": "draw",
+      "line": 64,
+      "expression": "draw()"
+    },
+    {
+      "path": "web/src/garage.js",
+      "source": "web/src/garage.js#7:createGarage",
+      "callee": "screen",
+      "line": 66,
+      "expression": "screen(-2.35+i*1.65,1.77,-6.28,1.5,.84,kind)"
+    },
+    {
+      "path": "web/src/garage.js",
+      "source": "web/src/garage.js#7:createGarage",
+      "callee": "box",
+      "line": 69,
+      "expression": "box(.88,.07,4.1,-4.45,1.02,-1.5,steel,true)"
+    },
+    {
+      "path": "web/src/garage.js",
+      "source": "web/src/garage.js#7:createGarage",
+      "callee": "box",
+      "line": 70,
+      "expression": "box(.65,1,.065,-4.45,.49,z,charcoal)"
+    },
+    {
+      "path": "web/src/garage.js",
+      "source": "web/src/garage.js#7:createGarage",
+      "callee": "screen",
+      "line": 72,
+      "expression": "screen(-4.75,1.52,z,.94,.53,'data',Math.PI/2)"
+    },
+    {
+      "path": "web/src/garage.js",
+      "source": "web/src/garage.js#7:createGarage",
+      "callee": "cylinder",
+      "line": 72,
+      "expression": "cylinder(.024,.024,.34,-4.7,1.21,z,steel)"
+    },
+    {
+      "path": "web/src/garage.js",
+      "source": "web/src/garage.js#7:createGarage",
+      "callee": "box",
+      "line": 72,
+      "expression": "box(.35,.02,.31,-4.57,1.066,z,black,true)"
+    },
+    {
+      "path": "web/src/garage.js",
+      "source": "web/src/garage.js#7:createGarage",
+      "callee": "box",
+      "line": 73,
+      "expression": "box(.18,.02,.48,-4.2,1.066,z,black,true)"
+    },
+    {
+      "path": "web/src/garage.js",
+      "source": "web/src/garage.js#7:createGarage",
+      "callee": "box",
+      "line": 74,
+      "expression": "box(.025,.004,.028,-4.26+row*.037,1.079,z-.205+col*.037,charcoal,true)"
+    },
+    {
+      "path": "web/src/garage.js",
+      "source": "web/src/garage.js#7:createGarage",
+      "callee": "box",
+      "line": 75,
+      "expression": "box(.20,.006,.22,-4.2,1.061,z+.40,rubber,true)"
+    },
+    {
+      "path": "web/src/garage.js",
+      "source": "web/src/garage.js#7:createGarage",
+      "callee": "box",
+      "line": 75,
+      "expression": "box(.10,.035,.06,-4.2,1.082,z+.40,charcoal,true)"
+    },
+    {
+      "path": "web/src/garage.js",
+      "source": "web/src/garage.js#7:createGarage",
+      "callee": "tube",
+      "line": 76,
+      "expression": "tube([[-4.72,1.2,z],[-4.8,.93,z],[-4.8,.86,z+.25]],.006,black)"
+    },
+    {
+      "path": "web/src/garage.js",
+      "source": "web/src/garage.js#7:createGarage",
+      "callee": "box",
+      "line": 79,
+      "expression": "box(.48,.09,.47,-3.7,.55,z,charcoal,true)"
+    },
+    {
+      "path": "web/src/garage.js",
+      "source": "web/src/garage.js#7:createGarage",
+      "callee": "box",
+      "line": 79,
+      "expression": "box(.09,.54,.46,-3.48,.86,z,charcoal,true)"
+    },
+    {
+      "path": "web/src/garage.js",
+      "source": "web/src/garage.js#7:createGarage",
+      "callee": "box",
+      "line": 80,
+      "expression": "box(.10,.19,.37,-3.455,1.21,z,black,true)"
+    },
+    {
+      "path": "web/src/garage.js",
+      "source": "web/src/garage.js#7:createGarage",
+      "callee": "tube",
+      "line": 81,
+      "expression": "tube([[-3.65,.57,z+dz],[-3.58,.72,z+dz],[-3.76,.77,z+dz]],.018,steel)"
+    },
+    {
+      "path": "web/src/garage.js",
+      "source": "web/src/garage.js#7:createGarage",
+      "callee": "box",
+      "line": 81,
+      "expression": "box(.29,.045,.065,-3.73,.79,z+dz,black,true)"
+    },
+    {
+      "path": "web/src/garage.js",
+      "source": "web/src/garage.js#7:createGarage",
+      "callee": "box",
+      "line": 82,
+      "expression": "box(.005,.006,.35,-3.536,yy,z,black)"
+    },
+    {
+      "path": "web/src/garage.js",
+      "source": "web/src/garage.js#7:createGarage",
+      "callee": "cylinder",
+      "line": 83,
+      "expression": "cylinder(.045,.055,.40,-3.7,.31,z,steel)"
+    },
+    {
+      "path": "web/src/garage.js",
+      "source": "web/src/garage.js#7:createGarage",
+      "callee": "tube",
+      "line": 84,
+      "expression": "tube([[-3.7,.12,z],[px,.10,pz]],.015,steel)"
+    },
+    {
+      "path": "web/src/garage.js",
+      "source": "web/src/garage.js#7:createGarage",
+      "callee": "cylinder",
+      "line": 84,
+      "expression": "cylinder(.045,.045,.045,px,.07,pz,rubber)"
+    },
+    {
+      "path": "web/src/garage.js",
+      "source": "web/src/garage.js#7:createGarage",
+      "callee": "cabinet",
+      "line": 88,
+      "expression": "cabinet(3.58,-2.25,1.05)"
+    },
+    {
+      "path": "web/src/garage.js",
+      "source": "web/src/garage.js#7:createGarage",
+      "callee": "cylinder",
+      "line": 89,
+      "expression": "cylinder(.075,.075,.045,x,.06,z,rubber)"
+    },
+    {
+      "path": "web/src/garage.js",
+      "source": "web/src/garage.js#7:createGarage",
+      "callee": "tube",
+      "line": 90,
+      "expression": "tube([[3.1,.72,-2.60],[3.1,1.12,-2.60],[4.05,1.12,-2.60],[4.05,.72,-2.60]],.018,steel)"
+    },
+    {
+      "path": "web/src/garage.js",
+      "source": "web/src/garage.js#7:createGarage",
+      "callee": "box",
+      "line": 91,
+      "expression": "box(.035,.018,.24,x,1.08,-2.26,steel,true)"
+    },
+    {
+      "path": "web/src/garage.js",
+      "source": "web/src/garage.js#7:createGarage",
+      "callee": "cylinder",
+      "line": 91,
+      "expression": "cylinder(.032,.032,.024,x,1.085,-2.10,steel)"
+    },
+    {
+      "path": "web/src/garage.js",
+      "source": "web/src/garage.js#7:createGarage",
+      "callee": "box",
+      "line": 93,
+      "expression": "box(.83,.012,.35,3.57,1.07,-2.22,rubber,true)"
+    },
+    {
+      "path": "web/src/garage.js",
+      "source": "web/src/garage.js#7:createGarage",
+      "callee": "cylinder",
+      "line": 94,
+      "expression": "cylinder(.022,.022,.038,x,1.087,-2.47,steel)"
+    },
+    {
+      "path": "web/src/garage.js",
+      "source": "web/src/garage.js#7:createGarage",
+      "callee": "cylinder",
+      "line": 94,
+      "expression": "cylinder(.011,.011,.002,x,1.107,-2.47,black)"
+    },
+    {
+      "path": "web/src/garage.js",
+      "source": "web/src/garage.js#7:createGarage",
+      "callee": "box",
+      "line": 95,
+      "expression": "box(.025,.09,.10,x,.13,z,steel,true)"
+    },
+    {
+      "path": "web/src/garage.js",
+      "source": "web/src/garage.js#7:createGarage",
+      "callee": "cylinder",
+      "line": 97,
+      "expression": "cylinder(.055,.05,.23,3.62,1.13,-2.20,charcoal)"
+    },
+    {
+      "path": "web/src/garage.js",
+      "source": "web/src/garage.js#7:createGarage",
+      "callee": "box",
+      "line": 97,
+      "expression": "box(.05,.14,.075,3.62,1.09,-2.20,red,true)"
+    },
+    {
+      "path": "web/src/garage.js",
+      "source": "web/src/garage.js#7:createGarage",
+      "callee": "tube",
+      "line": 98,
+      "expression": "tube([[3.62,1.03,-2.2],[3.9,.45,-2.5],[4.15,.03,-2.4],[4.3,.03,-1.8],[4.0,.03,-1.3]],.012,black)"
+    },
+    {
+      "path": "web/src/garage.js",
+      "source": "web/src/garage.js#7:createGarage",
+      "callee": "box",
+      "line": 102,
+      "expression": "box(.035,2.35,.035,x,1.17,z,steel)"
+    },
+    {
+      "path": "web/src/garage.js",
+      "source": "web/src/garage.js#7:createGarage",
+      "callee": "box",
+      "line": 103,
+      "expression": "box(1.16,.035,1.18,rackX,y,rackZ,steel)"
+    },
+    {
+      "path": "web/src/garage.js",
+      "source": "web/src/garage.js#7:createGarage",
+      "callee": "mat",
+      "line": 106,
+      "expression": "mat('#303439',.05,.8)"
+    },
+    {
+      "path": "web/src/garage.js",
+      "source": "web/src/garage.js#7:createGarage",
+      "callee": "label",
+      "line": 109,
+      "expression": "label('PNEUS / RESERVA',1.05,.19,rackX,2.47,rackZ+.55,0,'#242b31','#dfe6ea',54)"
+    },
+    {
+      "path": "web/src/garage.js",
+      "source": "web/src/garage.js#7:createGarage",
+      "callee": "box",
+      "line": 112,
+      "expression": "box(.55,.10,.54,4.55,.12,.3,charcoal,true)"
+    },
+    {
+      "path": "web/src/garage.js",
+      "source": "web/src/garage.js#7:createGarage",
+      "callee": "cylinder",
+      "line": 112,
+      "expression": "cylinder(.09,.09,.06,x,.10,.3,rubber)"
+    },
+    {
+      "path": "web/src/garage.js",
+      "source": "web/src/garage.js#7:createGarage",
+      "callee": "box",
+      "line": 113,
+      "expression": "box(.38,.055,.12,4.55,.24,.07,steel,true)"
+    },
+    {
+      "path": "web/src/garage.js",
+      "source": "web/src/garage.js#7:createGarage",
+      "callee": "box",
+      "line": 113,
+      "expression": "box(.22,.045,.10,4.55,.285,.07,rubber,true)"
+    },
+    {
+      "path": "web/src/garage.js",
+      "source": "web/src/garage.js#7:createGarage",
+      "callee": "tube",
+      "line": 114,
+      "expression": "tube([[4.55,.18,.3],[4.55,.42,.55],[4.55,1.15,1.4]],.025,steel)"
+    },
+    {
+      "path": "web/src/garage.js",
+      "source": "web/src/garage.js#7:createGarage",
+      "callee": "box",
+      "line": 114,
+      "expression": "box(.38,.045,.09,4.55,1.15,1.4,red,true)"
+    },
+    {
+      "path": "web/src/garage.js",
+      "source": "web/src/garage.js#7:createGarage",
+      "callee": "box",
+      "line": 117,
+      "expression": "box(.045,.08,10,x,3.23,-.5,steel)"
+    },
+    {
+      "path": "web/src/garage.js",
+      "source": "web/src/garage.js#7:createGarage",
+      "callee": "box",
+      "line": 119,
+      "expression": "box(4.65,.07,.36,0,3.25,z,charcoal,true)"
+    },
+    {
+      "path": "web/src/garage.js",
+      "source": "web/src/garage.js#7:createGarage",
+      "callee": "box",
+      "line": 119,
+      "expression": "box(4.40,.015,.26,0,3.205,z,led)"
+    },
+    {
+      "path": "web/src/garage.js",
+      "source": "web/src/garage.js#7:createGarage",
+      "callee": "tube",
+      "line": 121,
+      "expression": "tube([[-2.1,3.18,-1.7],[-2.1,2.4,-1.7],[-2.45,1.7,-1.6],[-2.5,1.05,-1.6]],.016,black)"
+    },
+    {
+      "path": "web/src/garage.js",
+      "source": "web/src/garage.js#7:createGarage",
+      "callee": "tube",
+      "line": 122,
+      "expression": "tube(coil,.012,red)"
+    },
+    {
+      "path": "web/src/garage.js",
+      "source": "web/src/garage.js#7:createGarage",
+      "callee": "box",
+      "line": 124,
+      "expression": "box(.42,.13,10,x,3.48,-.45,charcoal,true)"
+    },
+    {
+      "path": "web/src/garage.js",
+      "source": "web/src/garage.js#7:createGarage",
+      "callee": "box",
+      "line": 124,
+      "expression": "box(.46,.022,.025,x,3.56,z,steel)"
+    },
+    {
+      "path": "web/src/garage.js",
+      "source": "web/src/garage.js#7:createGarage",
+      "callee": "cylinder",
+      "line": 124,
+      "expression": "cylinder(.012,.012,.32,x,3.67,z,steel)"
+    },
+    {
+      "path": "web/src/garage.js",
+      "source": "web/src/garage.js#7:createGarage",
+      "callee": "box",
+      "line": 127,
+      "expression": "box(.92,2.25,.72,-4.72,1.17,-5.77,charcoal,true)"
+    },
+    {
+      "path": "web/src/garage.js",
+      "source": "web/src/garage.js#7:createGarage",
+      "callee": "box",
+      "line": 128,
+      "expression": "box(.43,2.10,.03,x,1.19,-5.39,white,true)"
+    },
+    {
+      "path": "web/src/garage.js",
+      "source": "web/src/garage.js#7:createGarage",
+      "callee": "box",
+      "line": 128,
+      "expression": "box(.025,.30,.035,x+(x<-4.7?.14:-.14),1.22,-5.36,steel,true)"
+    },
+    {
+      "path": "web/src/garage.js",
+      "source": "web/src/garage.js#7:createGarage",
+      "callee": "box",
+      "line": 128,
+      "expression": "box(.28,.012,.006,x,.32+i*.033,-5.37,charcoal)"
+    },
+    {
+      "path": "web/src/garage.js",
+      "source": "web/src/garage.js#7:createGarage",
+      "callee": "box",
+      "line": 130,
+      "expression": "box(.035,2.5,1.48,-5.405,1.55,z,mat('#bec5c9',.25,.48),true)"
+    },
+    {
+      "path": "web/src/garage.js",
+      "source": "web/src/garage.js#7:createGarage",
+      "callee": "mat",
+      "line": 130,
+      "expression": "mat('#bec5c9',.25,.48)"
+    },
+    {
+      "path": "web/src/garage.js",
+      "source": "web/src/garage.js#7:createGarage",
+      "callee": "box",
+      "line": 131,
+      "expression": "box(.08,.07,.30,-5.36,.42,z,charcoal,true)"
+    },
+    {
+      "path": "web/src/garage.js",
+      "source": "web/src/garage.js#7:createGarage",
+      "callee": "box",
+      "line": 131,
+      "expression": "box(.018,.023,.065,-5.311,.42,z,steel)"
+    },
+    {
+      "path": "web/src/garage.js",
+      "source": "web/src/garage.js#7:createGarage",
+      "callee": "tube",
+      "line": 133,
+      "expression": "tube([[3.91,.18,-5.30],[4.93,2.30,-5.30]],.014,steel)"
+    },
+    {
+      "path": "web/src/garage.js",
+      "source": "web/src/garage.js#7:createGarage",
+      "callee": "tube",
+      "line": 133,
+      "expression": "tube([[4.93,.18,-5.30],[3.91,2.30,-5.30]],.014,steel)"
+    },
+    {
+      "path": "web/src/garage.js",
+      "source": "web/src/garage.js#7:createGarage",
+      "callee": "tube",
+      "line": 134,
+      "expression": "tube([[x,y,-5.29],[x,y,-4.23]],.018,steel)"
+    },
+    {
+      "path": "web/src/garage.js",
+      "source": "web/src/garage.js#7:createGarage",
+      "callee": "box",
+      "line": 136,
+      "expression": "box(.20,3.6,.22,x,1.8,5.5,charcoal)"
+    },
+    {
+      "path": "web/src/garage.js",
+      "source": "web/src/garage.js#7:createGarage",
+      "callee": "box",
+      "line": 137,
+      "expression": "box(10.9,.20,.22,0,3.6,5.5,charcoal)"
+    },
+    {
+      "path": "web/src/garage.js",
+      "source": "web/src/garage.js#148:setEnabled",
+      "callee": "String",
+      "line": 148,
+      "expression": "String(on)"
+    },
+    {
+      "path": "web/src/garage.js",
+      "source": "web/src/garage.js#151:update",
+      "callee": "fn",
+      "line": 151,
+      "expression": "fn()"
+    },
+    {
+      "path": "web/src/mechanics.js",
+      "source": "web/src/mechanics.js#3:createMechanics",
+      "callee": "categoryFor",
+      "line": 15,
+      "expression": "categoryFor(source)"
+    },
+    {
+      "path": "web/src/mechanics.js",
+      "source": "web/src/mechanics.js#56:drag",
+      "callee": "apply",
+      "line": 56,
+      "expression": "apply()"
+    },
+    {
+      "path": "web/src/mechanics.js",
+      "source": "web/src/mechanics.js#56:drag",
+      "callee": "apply",
+      "line": 56,
+      "expression": "apply()"
+    },
+    {
+      "path": "web/src/mechanics.js",
+      "source": "web/src/mechanics.js#56:drag",
+      "callee": "apply",
+      "line": 56,
+      "expression": "apply()"
+    },
+    {
+      "path": "web/src/mechanics.js",
+      "source": "web/src/mechanics.js#59:setManual",
+      "callee": "apply",
+      "line": 59,
+      "expression": "apply()"
+    },
+    {
+      "path": "web/src/mechanics.js",
+      "source": "web/src/mechanics.js#60:select",
+      "callee": "apply",
+      "line": 60,
+      "expression": "apply()"
+    },
+    {
+      "path": "web/src/mechanics.js",
+      "source": "web/src/mechanics.js#61:isolate",
+      "callee": "apply",
+      "line": 61,
+      "expression": "apply()"
+    },
+    {
+      "path": "web/src/mechanics.js",
+      "source": "web/src/mechanics.js#65:update",
+      "callee": "apply",
+      "line": 65,
+      "expression": "apply()"
+    },
+    {
+      "path": "web/src/studio.js",
+      "source": "web/src/studio.js#2:setupStudio",
+      "callee": "panel",
+      "line": 21,
+      "expression": "panel(3.2, 10, [-5.5, 6, 0], 2.6, '#fffaf5')"
+    },
+    {
+      "path": "web/src/studio.js",
+      "source": "web/src/studio.js#2:setupStudio",
+      "callee": "panel",
+      "line": 22,
+      "expression": "panel(1.2, 11, [5.7, 4.2, -1.5], 3.2, '#f0f4ff')"
+    },
+    {
+      "path": "web/src/studio.js",
+      "source": "web/src/studio.js#2:setupStudio",
+      "callee": "panel",
+      "line": 23,
+      "expression": "panel(7, 3.0, [0, 9, -1], 2.1)"
+    },
+    {
+      "path": "web/src/studio.js",
+      "source": "web/src/studio.js#2:setupStudio",
+      "callee": "panel",
+      "line": 24,
+      "expression": "panel(5, 2, [0, 4, -9], 1.8, '#f2f5ff')"
+    },
+    {
+      "path": "web/src/studio.js",
+      "source": "web/src/studio.js#2:setupStudio",
+      "callee": "setTheme",
+      "line": 68,
+      "expression": "setTheme(false)"
+    },
+    {
+      "path": "web/src/studio.js",
+      "source": "web/src/studio.js#75:texture",
+      "callee": "random",
+      "line": 91,
+      "expression": "random()"
+    },
+    {
+      "path": "web/src/studio.js",
+      "source": "web/src/studio.js#75:texture",
+      "callee": "random",
+      "line": 92,
+      "expression": "random()"
+    },
+    {
+      "path": "web/src/studio.js",
+      "source": "web/src/studio.js#146:applyCarMaterials",
+      "callee": "texture",
+      "line": 147,
+      "expression": "texture(THREE, 'carbon')"
+    },
+    {
+      "path": "web/src/studio.js",
+      "source": "web/src/studio.js#146:applyCarMaterials",
+      "callee": "texture",
+      "line": 147,
+      "expression": "texture(THREE, 'rubber')"
+    },
+    {
+      "path": "web/src/studio.js",
+      "source": "web/src/studio.js#182:upgrade",
+      "callee": "applyLocalCarbonProjection",
+      "line": 213,
+      "expression": "applyLocalCarbonProjection(m)"
+    },
+    {
+      "path": "web/src/studio.js",
+      "source": "web/src/studio.js#146:applyCarMaterials",
+      "callee": "upgrade",
+      "line": 247,
+      "expression": "upgrade(o.material)"
+    },
+    {
+      "path": "web/src/tunnel-visual.js",
+      "source": "web/src/tunnel-visual.js#4:createTunnelVisual",
+      "callee": "box",
+      "line": 10,
+      "expression": "box(7,.12,14,0,-.08,0,dark)"
+    },
+    {
+      "path": "web/src/tunnel-visual.js",
+      "source": "web/src/tunnel-visual.js#4:createTunnelVisual",
+      "callee": "box",
+      "line": 11,
+      "expression": "box(2.6,.025,12,0,-.005,0,new THREE.MeshStandardMaterial({color:0x121719,roughness:.64,metalness:.1}))"
+    },
+    {
+      "path": "web/src/tunnel-visual.js",
+      "source": "web/src/tunnel-visual.js#4:createTunnelVisual",
+      "callee": "box",
+      "line": 12,
+      "expression": "box(.1,.16,14,x,.06,0)"
+    },
+    {
+      "path": "web/src/tunnel-visual.js",
+      "source": "web/src/tunnel-visual.js#4:createTunnelVisual",
+      "callee": "box",
+      "line": 12,
+      "expression": "box(.018,.012,13,x,.16,0,new THREE.MeshBasicMaterial({color:0x59717d}))"
+    },
+    {
+      "path": "web/src/tunnel-visual.js",
+      "source": "web/src/tunnel-visual.js#4:createTunnelVisual",
+      "callee": "box",
+      "line": 14,
+      "expression": "box(.08,2.85,.1,-3.4,1.40,z)"
+    },
+    {
+      "path": "web/src/tunnel-visual.js",
+      "source": "web/src/tunnel-visual.js#4:createTunnelVisual",
+      "callee": "box",
+      "line": 14,
+      "expression": "box(6.8,.08,.1,0,2.85,z)"
+    },
+    {
+      "path": "web/src/tunnel-visual.js",
+      "source": "web/src/tunnel-visual.js#4:createTunnelVisual",
+      "callee": "box",
+      "line": 14,
+      "expression": "box(5.8,.018,.04,0,2.79,z,light)"
+    },
+    {
+      "path": "web/src/tunnel-visual.js",
+      "source": "web/src/tunnel-visual.js#4:createTunnelVisual",
+      "callee": "box",
+      "line": 15,
+      "expression": "box(.08,3.8,14,-3.46,1.85,0,dark)"
+    },
+    {
+      "path": "web/src/tunnel-visual.js",
+      "source": "web/src/tunnel-visual.js#4:createTunnelVisual",
+      "callee": "box",
+      "line": 16,
+      "expression": "box(6.9,3.8,.12,0,1.85,-7,dark)"
+    },
+    {
+      "path": "web/src/tunnel-visual.js",
+      "source": "web/src/tunnel-visual.js#4:createTunnelVisual",
+      "callee": "random",
+      "line": 32,
+      "expression": "random()"
+    },
+    {
+      "path": "web/src/tunnel-visual.js",
+      "source": "web/src/tunnel-visual.js#4:createTunnelVisual",
+      "callee": "random",
+      "line": 32,
+      "expression": "random()"
+    },
+    {
+      "path": "web/src/tunnel-visual.js",
+      "source": "web/src/tunnel-visual.js#4:createTunnelVisual",
+      "callee": "random",
+      "line": 32,
+      "expression": "random()"
+    },
+    {
+      "path": "web/src/tunnel-visual.js",
+      "source": "web/src/tunnel-visual.js#4:createTunnelVisual",
+      "callee": "createFlowDetail",
+      "line": 65,
+      "expression": "createFlowDetail({parent:flow,size})"
+    },
+    {
+      "path": "web/src/wind-tunnel.js",
+      "source": "web/src/wind-tunnel.js#4:createWindTunnel",
+      "callee": "createTunnelVisual",
+      "line": 8,
+      "expression": "createTunnelVisual({scene,size,studio,camera})"
+    },
+    {
+      "path": "web/src/wind-tunnel.js",
+      "source": "web/src/wind-tunnel.js#4:createWindTunnel",
+      "callee": "$",
+      "line": 13,
+      "expression": "$(\"smoke-\"+key)"
+    },
+    {
+      "path": "web/src/wind-tunnel.js",
+      "source": "web/src/wind-tunnel.js#4:createWindTunnel",
+      "callee": "Number",
+      "line": 13,
+      "expression": "Number(e.target.value)"
+    },
+    {
+      "path": "web/src/wind-tunnel.js",
+      "source": "web/src/wind-tunnel.js#4:createWindTunnel",
+      "callee": "$",
+      "line": 14,
+      "expression": "$(\"smoke-pause\")"
+    },
+    {
+      "path": "web/src/wind-tunnel.js",
+      "source": "web/src/wind-tunnel.js#4:createWindTunnel",
+      "callee": "$",
+      "line": 14,
+      "expression": "$(\"smoke-pause\")"
+    },
+    {
+      "path": "web/src/wind-tunnel.js",
+      "source": "web/src/wind-tunnel.js#4:createWindTunnel",
+      "callee": "$",
+      "line": 14,
+      "expression": "$(\"smoke-pause\")"
+    },
+    {
+      "path": "web/src/wind-tunnel.js",
+      "source": "web/src/wind-tunnel.js#4:createWindTunnel",
+      "callee": "String",
+      "line": 14,
+      "expression": "String(visualSettings.paused)"
+    },
+    {
+      "path": "web/src/wind-tunnel.js",
+      "source": "web/src/wind-tunnel.js#4:createWindTunnel",
+      "callee": "$",
+      "line": 15,
+      "expression": "$('flow-detail')"
+    },
+    {
+      "path": "web/src/wind-tunnel.js",
+      "source": "web/src/wind-tunnel.js#4:createWindTunnel",
+      "callee": "$",
+      "line": 15,
+      "expression": "$('flow-detail')"
+    },
+    {
+      "path": "web/src/wind-tunnel.js",
+      "source": "web/src/wind-tunnel.js#4:createWindTunnel",
+      "callee": "String",
+      "line": 15,
+      "expression": "String(visualSettings.detail)"
+    },
+    {
+      "path": "web/src/wind-tunnel.js",
+      "source": "web/src/wind-tunnel.js#4:createWindTunnel",
+      "callee": "$",
+      "line": 15,
+      "expression": "$('flow-region')"
+    },
+    {
+      "path": "web/src/wind-tunnel.js",
+      "source": "web/src/wind-tunnel.js#4:createWindTunnel",
+      "callee": "$",
+      "line": 15,
+      "expression": "$('flow-region')"
+    },
+    {
+      "path": "web/src/wind-tunnel.js",
+      "source": "web/src/wind-tunnel.js#4:createWindTunnel",
+      "callee": "$",
+      "line": 15,
+      "expression": "$('flow-region')"
+    },
+    {
+      "path": "web/src/wind-tunnel.js",
+      "source": "web/src/wind-tunnel.js#4:createWindTunnel",
+      "callee": "onRegion",
+      "line": 15,
+      "expression": "onRegion?.(null)"
+    },
+    {
+      "path": "web/src/wind-tunnel.js",
+      "source": "web/src/wind-tunnel.js#4:createWindTunnel",
+      "callee": "$",
+      "line": 15,
+      "expression": "$('flow-explanation')"
+    },
+    {
+      "path": "web/src/wind-tunnel.js",
+      "source": "web/src/wind-tunnel.js#4:createWindTunnel",
+      "callee": "$",
+      "line": 16,
+      "expression": "$('flow-region')"
+    },
+    {
+      "path": "web/src/wind-tunnel.js",
+      "source": "web/src/wind-tunnel.js#4:createWindTunnel",
+      "callee": "onRegion",
+      "line": 16,
+      "expression": "onRegion?.(e.target.value)"
+    },
+    {
+      "path": "web/src/wind-tunnel.js",
+      "source": "web/src/wind-tunnel.js#4:createWindTunnel",
+      "callee": "$",
+      "line": 16,
+      "expression": "$('flow-explanation')"
+    },
+    {
+      "path": "web/src/wind-tunnel.js",
+      "source": "web/src/wind-tunnel.js#18:number",
+      "callee": "$",
+      "line": 18,
+      "expression": "$(id)"
+    },
+    {
+      "path": "web/src/wind-tunnel.js",
+      "source": "web/src/wind-tunnel.js#18:number",
+      "callee": "Number",
+      "line": 18,
+      "expression": "Number($(id).value)"
+    },
+    {
+      "path": "web/src/wind-tunnel.js",
+      "source": "web/src/wind-tunnel.js#18:number",
+      "callee": "$",
+      "line": 18,
+      "expression": "$(id)"
+    },
+    {
+      "path": "web/src/wind-tunnel.js",
+      "source": "web/src/wind-tunnel.js#19:params",
+      "callee": "number",
+      "line": 19,
+      "expression": "number('air-speed')"
+    },
+    {
+      "path": "web/src/wind-tunnel.js",
+      "source": "web/src/wind-tunnel.js#19:params",
+      "callee": "number",
+      "line": 19,
+      "expression": "number('air-headwind')"
+    },
+    {
+      "path": "web/src/wind-tunnel.js",
+      "source": "web/src/wind-tunnel.js#19:params",
+      "callee": "number",
+      "line": 19,
+      "expression": "number('air-crosswind')"
+    },
+    {
+      "path": "web/src/wind-tunnel.js",
+      "source": "web/src/wind-tunnel.js#19:params",
+      "callee": "number",
+      "line": 19,
+      "expression": "number('air-temp')"
+    },
+    {
+      "path": "web/src/wind-tunnel.js",
+      "source": "web/src/wind-tunnel.js#19:params",
+      "callee": "number",
+      "line": 19,
+      "expression": "number('air-pressure')"
+    },
+    {
+      "path": "web/src/wind-tunnel.js",
+      "source": "web/src/wind-tunnel.js#19:params",
+      "callee": "number",
+      "line": 19,
+      "expression": "number('air-area')"
+    },
+    {
+      "path": "web/src/wind-tunnel.js",
+      "source": "web/src/wind-tunnel.js#19:params",
+      "callee": "number",
+      "line": 19,
+      "expression": "number('air-cd')"
+    },
+    {
+      "path": "web/src/wind-tunnel.js",
+      "source": "web/src/wind-tunnel.js#19:params",
+      "callee": "number",
+      "line": 19,
+      "expression": "number('air-cl')"
+    },
+    {
+      "path": "web/src/wind-tunnel.js",
+      "source": "web/src/wind-tunnel.js#21:calculate",
+      "callee": "params",
+      "line": 22,
+      "expression": "params()"
+    },
+    {
+      "path": "web/src/wind-tunnel.js",
+      "source": "web/src/wind-tunnel.js#21:calculate",
+      "callee": "aerodynamicTest",
+      "line": 23,
+      "expression": "aerodynamicTest(p)"
+    },
+    {
+      "path": "web/src/wind-tunnel.js",
+      "source": "web/src/wind-tunnel.js#21:calculate",
+      "callee": "$",
+      "line": 24,
+      "expression": "$('air-speed-value')"
+    },
+    {
+      "path": "web/src/wind-tunnel.js",
+      "source": "web/src/wind-tunnel.js#21:calculate",
+      "callee": "$",
+      "line": 24,
+      "expression": "$('air-cross-value')"
+    },
+    {
+      "path": "web/src/wind-tunnel.js",
+      "source": "web/src/wind-tunnel.js#21:calculate",
+      "callee": "$",
+      "line": 24,
+      "expression": "$('air-head-value')"
+    },
+    {
+      "path": "web/src/wind-tunnel.js",
+      "source": "web/src/wind-tunnel.js#21:calculate",
+      "callee": "$",
+      "line": 26,
+      "expression": "$('air-q')"
+    },
+    {
+      "path": "web/src/wind-tunnel.js",
+      "source": "web/src/wind-tunnel.js#21:calculate",
+      "callee": "fmt",
+      "line": 26,
+      "expression": "fmt(r.q)"
+    },
+    {
+      "path": "web/src/wind-tunnel.js",
+      "source": "web/src/wind-tunnel.js#21:calculate",
+      "callee": "$",
+      "line": 26,
+      "expression": "$('air-rho')"
+    },
+    {
+      "path": "web/src/wind-tunnel.js",
+      "source": "web/src/wind-tunnel.js#21:calculate",
+      "callee": "fmt",
+      "line": 26,
+      "expression": "fmt(r.rho,3)"
+    },
+    {
+      "path": "web/src/wind-tunnel.js",
+      "source": "web/src/wind-tunnel.js#21:calculate",
+      "callee": "$",
+      "line": 27,
+      "expression": "$('air-relative')"
+    },
+    {
+      "path": "web/src/wind-tunnel.js",
+      "source": "web/src/wind-tunnel.js#21:calculate",
+      "callee": "fmt",
+      "line": 27,
+      "expression": "fmt(r.speed*3.6,1)"
+    },
+    {
+      "path": "web/src/wind-tunnel.js",
+      "source": "web/src/wind-tunnel.js#21:calculate",
+      "callee": "$",
+      "line": 27,
+      "expression": "$('air-yaw')"
+    },
+    {
+      "path": "web/src/wind-tunnel.js",
+      "source": "web/src/wind-tunnel.js#21:calculate",
+      "callee": "fmt",
+      "line": 27,
+      "expression": "fmt(r.yawDeg,1)"
+    },
+    {
+      "path": "web/src/wind-tunnel.js",
+      "source": "web/src/wind-tunnel.js#21:calculate",
+      "callee": "$",
+      "line": 28,
+      "expression": "$('air-re')"
+    },
+    {
+      "path": "web/src/wind-tunnel.js",
+      "source": "web/src/wind-tunnel.js#21:calculate",
+      "callee": "fmt",
+      "line": 28,
+      "expression": "fmt(r.reynolds/1e6,2)"
+    },
+    {
+      "path": "web/src/wind-tunnel.js",
+      "source": "web/src/wind-tunnel.js#21:calculate",
+      "callee": "$",
+      "line": 28,
+      "expression": "$('air-mach')"
+    },
+    {
+      "path": "web/src/wind-tunnel.js",
+      "source": "web/src/wind-tunnel.js#21:calculate",
+      "callee": "fmt",
+      "line": 28,
+      "expression": "fmt(r.mach,3)"
+    },
+    {
+      "path": "web/src/wind-tunnel.js",
+      "source": "web/src/wind-tunnel.js#21:calculate",
+      "callee": "$",
+      "line": 30,
+      "expression": "$('air-drag')"
+    },
+    {
+      "path": "web/src/wind-tunnel.js",
+      "source": "web/src/wind-tunnel.js#21:calculate",
+      "callee": "fmt",
+      "line": 30,
+      "expression": "fmt(r.drag)"
+    },
+    {
+      "path": "web/src/wind-tunnel.js",
+      "source": "web/src/wind-tunnel.js#21:calculate",
+      "callee": "$",
+      "line": 30,
+      "expression": "$('air-down')"
+    },
+    {
+      "path": "web/src/wind-tunnel.js",
+      "source": "web/src/wind-tunnel.js#21:calculate",
+      "callee": "fmt",
+      "line": 30,
+      "expression": "fmt(r.downforce)"
+    },
+    {
+      "path": "web/src/wind-tunnel.js",
+      "source": "web/src/wind-tunnel.js#21:calculate",
+      "callee": "$",
+      "line": 31,
+      "expression": "$('air-power')"
+    },
+    {
+      "path": "web/src/wind-tunnel.js",
+      "source": "web/src/wind-tunnel.js#21:calculate",
+      "callee": "fmt",
+      "line": 31,
+      "expression": "fmt(r.airPower/1000,1)"
+    },
+    {
+      "path": "web/src/wind-tunnel.js",
+      "source": "web/src/wind-tunnel.js#21:calculate",
+      "callee": "$",
+      "line": 32,
+      "expression": "$('air-export')"
+    },
+    {
+      "path": "web/src/wind-tunnel.js",
+      "source": "web/src/wind-tunnel.js#21:calculate",
+      "callee": "$",
+      "line": 33,
+      "expression": "$('air-warning')"
+    },
+    {
+      "path": "web/src/wind-tunnel.js",
+      "source": "web/src/wind-tunnel.js#21:calculate",
+      "callee": "$",
+      "line": 34,
+      "expression": "$('air-hud-values')"
+    },
+    {
+      "path": "web/src/wind-tunnel.js",
+      "source": "web/src/wind-tunnel.js#21:calculate",
+      "callee": "fmt",
+      "line": 34,
+      "expression": "fmt(r.speed*3.6)"
+    },
+    {
+      "path": "web/src/wind-tunnel.js",
+      "source": "web/src/wind-tunnel.js#21:calculate",
+      "callee": "fmt",
+      "line": 34,
+      "expression": "fmt(r.drag)"
+    },
+    {
+      "path": "web/src/wind-tunnel.js",
+      "source": "web/src/wind-tunnel.js#21:calculate",
+      "callee": "fmt",
+      "line": 34,
+      "expression": "fmt(r.downforce)"
+    },
+    {
+      "path": "web/src/wind-tunnel.js",
+      "source": "web/src/wind-tunnel.js#21:calculate",
+      "callee": "fmt",
+      "line": 34,
+      "expression": "fmt(r.speed*3.6)"
+    },
+    {
+      "path": "web/src/wind-tunnel.js",
+      "source": "web/src/wind-tunnel.js#21:calculate",
+      "callee": "drawChart",
+      "line": 37,
+      "expression": "drawChart(p,allowed)"
+    },
+    {
+      "path": "web/src/wind-tunnel.js",
+      "source": "web/src/wind-tunnel.js#39:drawChart",
+      "callee": "$",
+      "line": 40,
+      "expression": "$('air-chart')"
+    },
+    {
+      "path": "web/src/wind-tunnel.js",
+      "source": "web/src/wind-tunnel.js#39:drawChart",
+      "callee": "aerodynamicTest",
+      "line": 44,
+      "expression": "aerodynamicTest({...p,speedKmh:i*5})"
+    },
+    {
+      "path": "web/src/wind-tunnel.js",
+      "source": "web/src/wind-tunnel.js#39:drawChart",
+      "callee": "fmt",
+      "line": 46,
+      "expression": "fmt(max/1000,1)"
+    },
+    {
+      "path": "web/src/wind-tunnel.js",
+      "source": "web/src/wind-tunnel.js#4:createWindTunnel",
+      "callee": "$",
+      "line": 49,
+      "expression": "$(id)"
+    },
+    {
+      "path": "web/src/wind-tunnel.js",
+      "source": "web/src/wind-tunnel.js#4:createWindTunnel",
+      "callee": "calculate",
+      "line": 49,
+      "expression": "calculate()"
+    },
+    {
+      "path": "web/src/wind-tunnel.js",
+      "source": "web/src/wind-tunnel.js#4:createWindTunnel",
+      "callee": "$",
+      "line": 50,
+      "expression": "$('air-example')"
+    },
+    {
+      "path": "web/src/wind-tunnel.js",
+      "source": "web/src/wind-tunnel.js#4:createWindTunnel",
+      "callee": "$",
+      "line": 50,
+      "expression": "$('air-area')"
+    },
+    {
+      "path": "web/src/wind-tunnel.js",
+      "source": "web/src/wind-tunnel.js#4:createWindTunnel",
+      "callee": "$",
+      "line": 50,
+      "expression": "$('air-cd')"
+    },
+    {
+      "path": "web/src/wind-tunnel.js",
+      "source": "web/src/wind-tunnel.js#4:createWindTunnel",
+      "callee": "$",
+      "line": 50,
+      "expression": "$('air-cl')"
+    },
+    {
+      "path": "web/src/wind-tunnel.js",
+      "source": "web/src/wind-tunnel.js#4:createWindTunnel",
+      "callee": "calculate",
+      "line": 50,
+      "expression": "calculate()"
+    },
+    {
+      "path": "web/src/wind-tunnel.js",
+      "source": "web/src/wind-tunnel.js#4:createWindTunnel",
+      "callee": "$",
+      "line": 51,
+      "expression": "$('air-reset')"
+    },
+    {
+      "path": "web/src/wind-tunnel.js",
+      "source": "web/src/wind-tunnel.js#4:createWindTunnel",
+      "callee": "$",
+      "line": 51,
+      "expression": "$(id)"
+    },
+    {
+      "path": "web/src/wind-tunnel.js",
+      "source": "web/src/wind-tunnel.js#4:createWindTunnel",
+      "callee": "$",
+      "line": 51,
+      "expression": "$('air-speed')"
+    },
+    {
+      "path": "web/src/wind-tunnel.js",
+      "source": "web/src/wind-tunnel.js#4:createWindTunnel",
+      "callee": "$",
+      "line": 51,
+      "expression": "$('air-headwind')"
+    },
+    {
+      "path": "web/src/wind-tunnel.js",
+      "source": "web/src/wind-tunnel.js#4:createWindTunnel",
+      "callee": "$",
+      "line": 51,
+      "expression": "$('air-crosswind')"
+    },
+    {
+      "path": "web/src/wind-tunnel.js",
+      "source": "web/src/wind-tunnel.js#4:createWindTunnel",
+      "callee": "$",
+      "line": 51,
+      "expression": "$('air-temp')"
+    },
+    {
+      "path": "web/src/wind-tunnel.js",
+      "source": "web/src/wind-tunnel.js#4:createWindTunnel",
+      "callee": "$",
+      "line": 51,
+      "expression": "$('air-pressure')"
+    },
+    {
+      "path": "web/src/wind-tunnel.js",
+      "source": "web/src/wind-tunnel.js#4:createWindTunnel",
+      "callee": "calculate",
+      "line": 51,
+      "expression": "calculate()"
+    },
+    {
+      "path": "web/src/wind-tunnel.js",
+      "source": "web/src/wind-tunnel.js#4:createWindTunnel",
+      "callee": "$",
+      "line": 52,
+      "expression": "$('wind-toggle')"
+    },
+    {
+      "path": "web/src/wind-tunnel.js",
+      "source": "web/src/wind-tunnel.js#4:createWindTunnel",
+      "callee": "onBeforeToggle",
+      "line": 52,
+      "expression": "onBeforeToggle?.(enabled)"
+    },
+    {
+      "path": "web/src/wind-tunnel.js",
+      "source": "web/src/wind-tunnel.js#4:createWindTunnel",
+      "callee": "onToggle",
+      "line": 52,
+      "expression": "onToggle?.(enabled)"
+    },
+    {
+      "path": "web/src/wind-tunnel.js",
+      "source": "web/src/wind-tunnel.js#4:createWindTunnel",
+      "callee": "$",
+      "line": 52,
+      "expression": "$('air-panel')"
+    },
+    {
+      "path": "web/src/wind-tunnel.js",
+      "source": "web/src/wind-tunnel.js#4:createWindTunnel",
+      "callee": "$",
+      "line": 52,
+      "expression": "$('air-hud')"
+    },
+    {
+      "path": "web/src/wind-tunnel.js",
+      "source": "web/src/wind-tunnel.js#4:createWindTunnel",
+      "callee": "$",
+      "line": 52,
+      "expression": "$('wind-toggle')"
+    },
+    {
+      "path": "web/src/wind-tunnel.js",
+      "source": "web/src/wind-tunnel.js#4:createWindTunnel",
+      "callee": "String",
+      "line": 52,
+      "expression": "String(enabled)"
+    },
+    {
+      "path": "web/src/wind-tunnel.js",
+      "source": "web/src/wind-tunnel.js#4:createWindTunnel",
+      "callee": "calculate",
+      "line": 52,
+      "expression": "calculate()"
+    },
+    {
+      "path": "web/src/wind-tunnel.js",
+      "source": "web/src/wind-tunnel.js#4:createWindTunnel",
+      "callee": "$",
+      "line": 53,
+      "expression": "$('air-export')"
+    },
+    {
+      "path": "web/src/wind-tunnel.js",
+      "source": "web/src/wind-tunnel.js#4:createWindTunnel",
+      "callee": "$",
+      "line": 54,
+      "expression": "$('air-export')"
+    },
+    {
+      "path": "web/src/wind-tunnel.js",
+      "source": "web/src/wind-tunnel.js#4:createWindTunnel",
+      "callee": "params",
+      "line": 55,
+      "expression": "params()"
+    },
+    {
+      "path": "web/src/wind-tunnel.js",
+      "source": "web/src/wind-tunnel.js#4:createWindTunnel",
+      "callee": "aerodynamicTest",
+      "line": 56,
+      "expression": "aerodynamicTest({...p,speedKmh:v})"
+    },
+    {
+      "path": "web/src/wind-tunnel.js",
+      "source": "web/src/wind-tunnel.js#4:createWindTunnel",
+      "callee": "setTimeout",
+      "line": 57,
+      "expression": "setTimeout(()=>URL.revokeObjectURL(url),1000)"
+    },
+    {
+      "path": "web/src/wind-tunnel.js",
+      "source": "web/src/wind-tunnel.js#4:createWindTunnel",
+      "callee": "calculate",
+      "line": 59,
+      "expression": "calculate()"
+    },
+    {
+      "path": "web/src/wind-tunnel.js",
+      "source": "web/src/wind-tunnel.js#60:update",
+      "callee": "calculate",
+      "line": 63,
+      "expression": "calculate()"
+    },
+    {
+      "path": "web/test-aerodynamics.mjs",
+      "source": "module",
+      "callee": "run",
+      "line": 4,
+      "expression": "run(p)"
+    },
+    {
+      "path": "web/test-aerodynamics.mjs",
+      "source": "module",
+      "callee": "run",
+      "line": 4,
+      "expression": "run({...p,speedKmh:72})"
+    },
+    {
+      "path": "web/test-aerodynamics.mjs",
+      "source": "module",
+      "callee": "near",
+      "line": 6,
+      "expression": "near(a.speed,10)"
+    },
+    {
+      "path": "web/test-aerodynamics.mjs",
+      "source": "module",
+      "callee": "near",
+      "line": 6,
+      "expression": "near(a.drag,a.q)"
+    },
+    {
+      "path": "web/test-aerodynamics.mjs",
+      "source": "module",
+      "callee": "near",
+      "line": 6,
+      "expression": "near(a.downforce,2*a.q)"
+    },
+    {
+      "path": "web/test-aerodynamics.mjs",
+      "source": "module",
+      "callee": "near",
+      "line": 7,
+      "expression": "near(b.drag/a.drag,4)"
+    },
+    {
+      "path": "web/test-aerodynamics.mjs",
+      "source": "module",
+      "callee": "near",
+      "line": 7,
+      "expression": "near(b.downforce/a.downforce,4)"
+    },
+    {
+      "path": "web/test-aerodynamics.mjs",
+      "source": "module",
+      "callee": "near",
+      "line": 7,
+      "expression": "near(b.airPower/a.airPower,8)"
+    },
+    {
+      "path": "web/test-aerodynamics.mjs",
+      "source": "module",
+      "callee": "run",
+      "line": 8,
+      "expression": "run({...p,headwindKmh:-36})"
+    },
+    {
+      "path": "web/test-aerodynamics.mjs",
+      "source": "module",
+      "callee": "near",
+      "line": 8,
+      "expression": "near(still.q,0)"
+    },
+    {
+      "path": "web/test-aerodynamics.mjs",
+      "source": "module",
+      "callee": "near",
+      "line": 8,
+      "expression": "near(still.drag,0)"
+    },
+    {
+      "path": "web/test-aerodynamics.mjs",
+      "source": "module",
+      "callee": "near",
+      "line": 8,
+      "expression": "near(still.airPower,0)"
+    },
+    {
+      "path": "web/test-aerodynamics.mjs",
+      "source": "module",
+      "callee": "run",
+      "line": 9,
+      "expression": "run({...p,crosswindKmh:36})"
+    },
+    {
+      "path": "web/test-aerodynamics.mjs",
+      "source": "module",
+      "callee": "near",
+      "line": 9,
+      "expression": "near(cross.q/a.q,2)"
+    },
+    {
+      "path": "web/test-aerodynamics.mjs",
+      "source": "module",
+      "callee": "near",
+      "line": 9,
+      "expression": "near(cross.yawDeg,45)"
+    },
+    {
+      "path": "web/test-aerodynamics.mjs",
+      "source": "module",
+      "callee": "near",
+      "line": 9,
+      "expression": "near(Math.hypot(cross.axialDrag,cross.lateralDrag),cross.drag)"
+    },
+    {
+      "path": "web/test-aerodynamics.mjs",
+      "source": "module",
+      "callee": "run",
+      "line": 10,
+      "expression": "run({speedKmh:100})"
+    },
+    {
+      "path": "web/test-aerodynamics.mjs",
+      "source": "module",
+      "callee": "run",
+      "line": 10,
+      "expression": "run({...p,cd:-1})"
+    },
+    {
+      "path": "web/test-aerodynamics.mjs",
+      "source": "module",
+      "callee": "run",
+      "line": 11,
+      "expression": "run({...p,speedKmh:500})"
+    },
+    {
+      "path": "web/test-aerodynamics.mjs",
+      "source": "module",
+      "callee": "run",
+      "line": 12,
+      "expression": "run({...p,temperatureC:35})"
+    },
+    {
+      "path": "web/test-aerodynamics.mjs",
+      "source": "module",
+      "callee": "run",
+      "line": 13,
+      "expression": "run({...p,temperatureC:-274})"
+    },
+    {
+      "path": "web/test-aerodynamics.mjs",
+      "source": "module",
+      "callee": "run",
+      "line": 13,
+      "expression": "run({...p,pressureKPa:0})"
+    },
+    {
+      "path": "web/test-mechanics.mjs",
+      "source": "module",
+      "callee": "createMechanics",
+      "line": 11,
+      "expression": "createMechanics(model)"
+    },
+    {
+      "path": "web/test-mechanics.mjs",
+      "source": "module",
+      "callee": "Error",
+      "line": 12,
+      "expression": "Error('Explosion not converged')"
+    },
+    {
+      "path": "web/test-mechanics.mjs",
+      "source": "module",
+      "callee": "Error",
+      "line": 12,
+      "expression": "Error('Assembly not converged')"
+    },
+    {
+      "path": "web/test-mechanics.mjs",
+      "source": "module",
+      "callee": "Error",
+      "line": 14,
+      "expression": "Error('Geometry drift '+initialError+' '+finalError)"
+    },
+    {
+      "path": "web/test-mechanics.mjs",
+      "source": "module",
+      "callee": "Error",
+      "line": 15,
+      "expression": "Error('Missing parts/pivots')"
+    },
+    {
+      "path": "web/test-mechanics.mjs",
+      "source": "module",
+      "callee": "Error",
+      "line": 16,
+      "expression": "Error('Motion should pause')"
+    },
+    {
+      "path": "web/test-mechanics.mjs",
+      "source": "module",
+      "callee": "Error",
+      "line": 16,
+      "expression": "Error('Motion should resume')"
+    },
+    {
+      "path": "web/test-mechanics.mjs",
+      "source": "module",
+      "callee": "Error",
+      "line": 17,
+      "expression": "Error('Steering missing')"
+    },
+    {
+      "path": "web/test-mechanics.mjs",
+      "source": "module",
+      "callee": "Error",
+      "line": 18,
+      "expression": "Error('Reset drift')"
+    },
+    {
+      "path": "web/test-mechanics.mjs",
+      "source": "module",
+      "callee": "Error",
+      "line": 19,
+      "expression": "Error('Each wheel must steer its inner cover')"
+    },
+    {
+      "path": "web/test-mechanics.mjs",
+      "source": "module",
+      "callee": "Error",
+      "line": 20,
+      "expression": "Error('Assembly should clear isolation')"
+    },
+    {
+      "path": "web/test-mechanics.mjs",
+      "source": "module",
+      "callee": "Error",
+      "line": 21,
+      "expression": "Error('Drag not persisted')"
+    },
+    {
+      "path": "web/test-mechanics.mjs",
+      "source": "module",
+      "callee": "Error",
+      "line": 22,
+      "expression": "Error('Drag reset drift')"
+    }
+  ]
+}

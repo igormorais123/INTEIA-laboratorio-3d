@@ -1,0 +1,18 @@
+{
+  "parts": 97,
+  "wheelPivots": 4,
+  "innerCovers": [
+    1,
+    1,
+    1,
+    1
+  ],
+  "drs": true,
+  "cycles": 20,
+  "initialError": 0,
+  "finalError": 0,
+  "resetError": 0,
+  "dragResetError": 0,
+  "isolationRestored": true,
+  "passed": true
+}

@@ -1,0 +1,716 @@
+{
+  "nodes": [
+    {
+      "id": "web/build.cjs",
+      "label": "web/build.cjs",
+      "kind": "file",
+      "path": "web/build.cjs"
+    },
+    {
+      "id": "web/server.cjs",
+      "label": "web/server.cjs",
+      "kind": "file",
+      "path": "web/server.cjs"
+    },
+    {
+      "id": "web/src/aero-physics.mjs",
+      "label": "web/src/aero-physics.mjs",
+      "kind": "file",
+      "path": "web/src/aero-physics.mjs"
+    },
+    {
+      "id": "web/src/app-v2.js",
+      "label": "web/src/app-v2.js",
+      "kind": "file",
+      "path": "web/src/app-v2.js"
+    },
+    {
+      "id": "web/src/branding.js",
+      "label": "web/src/branding.js",
+      "kind": "file",
+      "path": "web/src/branding.js"
+    },
+    {
+      "id": "web/src/customize.js",
+      "label": "web/src/customize.js",
+      "kind": "file",
+      "path": "web/src/customize.js"
+    },
+    {
+      "id": "web/src/flow-detail.js",
+      "label": "web/src/flow-detail.js",
+      "kind": "file",
+      "path": "web/src/flow-detail.js"
+    },
+    {
+      "id": "web/src/garage.js",
+      "label": "web/src/garage.js",
+      "kind": "file",
+      "path": "web/src/garage.js"
+    },
+    {
+      "id": "web/src/identity.js",
+      "label": "web/src/identity.js",
+      "kind": "file",
+      "path": "web/src/identity.js"
+    },
+    {
+      "id": "web/src/mechanics.js",
+      "label": "web/src/mechanics.js",
+      "kind": "file",
+      "path": "web/src/mechanics.js"
+    },
+    {
+      "id": "web/src/studio.js",
+      "label": "web/src/studio.js",
+      "kind": "file",
+      "path": "web/src/studio.js"
+    },
+    {
+      "id": "web/src/tunnel-visual.js",
+      "label": "web/src/tunnel-visual.js",
+      "kind": "file",
+      "path": "web/src/tunnel-visual.js"
+    },
+    {
+      "id": "web/src/wind-tunnel.js",
+      "label": "web/src/wind-tunnel.js",
+      "kind": "file",
+      "path": "web/src/wind-tunnel.js"
+    },
+    {
+      "id": "web/test-aerodynamics.mjs",
+      "label": "web/test-aerodynamics.mjs",
+      "kind": "file",
+      "path": "web/test-aerodynamics.mjs"
+    },
+    {
+      "id": "web/test-mechanics.mjs",
+      "label": "web/test-mechanics.mjs",
+      "kind": "file",
+      "path": "web/test-mechanics.mjs"
+    },
+    {
+      "id": "external:fs",
+      "label": "fs",
+      "kind": "external",
+      "path": null
+    },
+    {
+      "id": "external:path",
+      "label": "path",
+      "kind": "external",
+      "path": null
+    },
+    {
+      "id": "external:esbuild",
+      "label": "esbuild",
+      "kind": "external",
+      "path": null
+    },
+    {
+      "id": "external:http",
+      "label": "http",
+      "kind": "external",
+      "path": null
+    },
+    {
+      "id": "external:three/addons/exporters/GLTFExporter.js",
+      "label": "three/addons/exporters/GLTFExporter.js",
+      "kind": "external",
+      "path": null
+    },
+    {
+      "id": "external:three",
+      "label": "three",
+      "kind": "external",
+      "path": null
+    },
+    {
+      "id": "external:three/addons/controls/OrbitControls.js",
+      "label": "three/addons/controls/OrbitControls.js",
+      "kind": "external",
+      "path": null
+    },
+    {
+      "id": "external:three/addons/controls/TransformControls.js",
+      "label": "three/addons/controls/TransformControls.js",
+      "kind": "external",
+      "path": null
+    },
+    {
+      "id": "external:three/addons/postprocessing/EffectComposer.js",
+      "label": "three/addons/postprocessing/EffectComposer.js",
+      "kind": "external",
+      "path": null
+    },
+    {
+      "id": "external:three/addons/postprocessing/RenderPass.js",
+      "label": "three/addons/postprocessing/RenderPass.js",
+      "kind": "external",
+      "path": null
+    },
+    {
+      "id": "external:three/addons/postprocessing/SSAOPass.js",
+      "label": "three/addons/postprocessing/SSAOPass.js",
+      "kind": "external",
+      "path": null
+    },
+    {
+      "id": "external:three/addons/postprocessing/OutputPass.js",
+      "label": "three/addons/postprocessing/OutputPass.js",
+      "kind": "external",
+      "path": null
+    },
+    {
+      "id": "external:three/addons/postprocessing/SMAAPass.js",
+      "label": "three/addons/postprocessing/SMAAPass.js",
+      "kind": "external",
+      "path": null
+    },
+    {
+      "id": "external:three/addons/loaders/GLTFLoader.js",
+      "label": "three/addons/loaders/GLTFLoader.js",
+      "kind": "external",
+      "path": null
+    },
+    {
+      "id": "external:three/addons/geometries/DecalGeometry.js",
+      "label": "three/addons/geometries/DecalGeometry.js",
+      "kind": "external",
+      "path": null
+    },
+    {
+      "id": "external:three/addons/lights/RectAreaLightUniformsLib.js",
+      "label": "three/addons/lights/RectAreaLightUniformsLib.js",
+      "kind": "external",
+      "path": null
+    },
+    {
+      "id": "external:three/addons/geometries/RoundedBoxGeometry.js",
+      "label": "three/addons/geometries/RoundedBoxGeometry.js",
+      "kind": "external",
+      "path": null
+    },
+    {
+      "id": "external:node:assert/strict",
+      "label": "node:assert/strict",
+      "kind": "external",
+      "path": null
+    },
+    {
+      "id": "external:node:fs",
+      "label": "node:fs",
+      "kind": "external",
+      "path": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "web/build.cjs",
+      "target": "external:fs",
+      "relation": "importa",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "evidence": {
+        "path": "web/build.cjs",
+        "line": 1,
+        "text": "require('fs')"
+      }
+    },
+    {
+      "source": "web/build.cjs",
+      "target": "external:esbuild",
+      "relation": "importa",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "evidence": {
+        "path": "web/build.cjs",
+        "line": 1,
+        "text": "require('esbuild')"
+      }
+    },
+    {
+      "source": "web/server.cjs",
+      "target": "external:http",
+      "relation": "importa",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "evidence": {
+        "path": "web/server.cjs",
+        "line": 1,
+        "text": "require('http')"
+      }
+    },
+    {
+      "source": "web/server.cjs",
+      "target": "external:fs",
+      "relation": "importa",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "evidence": {
+        "path": "web/server.cjs",
+        "line": 1,
+        "text": "require('fs')"
+      }
+    },
+    {
+      "source": "web/server.cjs",
+      "target": "external:path",
+      "relation": "importa",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "evidence": {
+        "path": "web/server.cjs",
+        "line": 1,
+        "text": "require('path')"
+      }
+    },
+    {
+      "source": "web/src/app-v2.js",
+      "target": "web/src/branding.js",
+      "relation": "importa",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "evidence": {
+        "path": "web/src/app-v2.js",
+        "line": 1,
+        "text": "import {applyInteiaBranding} from './branding.js'"
+      }
+    },
+    {
+      "source": "web/src/app-v2.js",
+      "target": "web/src/identity.js",
+      "relation": "importa",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "evidence": {
+        "path": "web/src/app-v2.js",
+        "line": 2,
+        "text": "import {brandSVG} from './identity.js'"
+      }
+    },
+    {
+      "source": "web/src/app-v2.js",
+      "target": "external:three/addons/exporters/GLTFExporter.js",
+      "relation": "importa",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "evidence": {
+        "path": "web/src/app-v2.js",
+        "line": 3,
+        "text": "import {GLTFExporter} from 'three/addons/exporters/GLTFExporter.js'"
+      }
+    },
+    {
+      "source": "web/src/app-v2.js",
+      "target": "web/src/garage.js",
+      "relation": "importa",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "evidence": {
+        "path": "web/src/app-v2.js",
+        "line": 4,
+        "text": "import {createGarage} from './garage.js'"
+      }
+    },
+    {
+      "source": "web/src/app-v2.js",
+      "target": "web/src/wind-tunnel.js",
+      "relation": "importa",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "evidence": {
+        "path": "web/src/app-v2.js",
+        "line": 5,
+        "text": "import {createWindTunnel} from './wind-tunnel.js'"
+      }
+    },
+    {
+      "source": "web/src/app-v2.js",
+      "target": "web/src/customize.js",
+      "relation": "importa",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "evidence": {
+        "path": "web/src/app-v2.js",
+        "line": 6,
+        "text": "import {setupCustomization} from './customize.js'"
+      }
+    },
+    {
+      "source": "web/src/app-v2.js",
+      "target": "external:three",
+      "relation": "importa",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "evidence": {
+        "path": "web/src/app-v2.js",
+        "line": 7,
+        "text": "import * as THREE from 'three'"
+      }
+    },
+    {
+      "source": "web/src/app-v2.js",
+      "target": "external:three/addons/controls/OrbitControls.js",
+      "relation": "importa",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "evidence": {
+        "path": "web/src/app-v2.js",
+        "line": 8,
+        "text": "import {OrbitControls} from 'three/addons/controls/OrbitControls.js'"
+      }
+    },
+    {
+      "source": "web/src/app-v2.js",
+      "target": "external:three/addons/controls/TransformControls.js",
+      "relation": "importa",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "evidence": {
+        "path": "web/src/app-v2.js",
+        "line": 9,
+        "text": "import {TransformControls} from 'three/addons/controls/TransformControls.js'"
+      }
+    },
+    {
+      "source": "web/src/app-v2.js",
+      "target": "external:three/addons/postprocessing/EffectComposer.js",
+      "relation": "importa",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "evidence": {
+        "path": "web/src/app-v2.js",
+        "line": 10,
+        "text": "import {EffectComposer} from 'three/addons/postprocessing/EffectComposer.js'"
+      }
+    },
+    {
+      "source": "web/src/app-v2.js",
+      "target": "external:three/addons/postprocessing/RenderPass.js",
+      "relation": "importa",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "evidence": {
+        "path": "web/src/app-v2.js",
+        "line": 11,
+        "text": "import {RenderPass} from 'three/addons/postprocessing/RenderPass.js'"
+      }
+    },
+    {
+      "source": "web/src/app-v2.js",
+      "target": "external:three/addons/postprocessing/SSAOPass.js",
+      "relation": "importa",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "evidence": {
+        "path": "web/src/app-v2.js",
+        "line": 12,
+        "text": "import {SSAOPass} from 'three/addons/postprocessing/SSAOPass.js'"
+      }
+    },
+    {
+      "source": "web/src/app-v2.js",
+      "target": "external:three/addons/postprocessing/OutputPass.js",
+      "relation": "importa",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "evidence": {
+        "path": "web/src/app-v2.js",
+        "line": 13,
+        "text": "import {OutputPass} from 'three/addons/postprocessing/OutputPass.js'"
+      }
+    },
+    {
+      "source": "web/src/app-v2.js",
+      "target": "external:three/addons/postprocessing/SMAAPass.js",
+      "relation": "importa",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "evidence": {
+        "path": "web/src/app-v2.js",
+        "line": 14,
+        "text": "import {SMAAPass} from 'three/addons/postprocessing/SMAAPass.js'"
+      }
+    },
+    {
+      "source": "web/src/app-v2.js",
+      "target": "external:three/addons/loaders/GLTFLoader.js",
+      "relation": "importa",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "evidence": {
+        "path": "web/src/app-v2.js",
+        "line": 15,
+        "text": "import {GLTFLoader} from 'three/addons/loaders/GLTFLoader.js'"
+      }
+    },
+    {
+      "source": "web/src/app-v2.js",
+      "target": "web/src/studio.js",
+      "relation": "importa",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "evidence": {
+        "path": "web/src/app-v2.js",
+        "line": 16,
+        "text": "import {setupStudio,applyCarMaterials} from './studio.js'"
+      }
+    },
+    {
+      "source": "web/src/app-v2.js",
+      "target": "web/src/mechanics.js",
+      "relation": "importa",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "evidence": {
+        "path": "web/src/app-v2.js",
+        "line": 17,
+        "text": "import {createMechanics} from './mechanics.js'"
+      }
+    },
+    {
+      "source": "web/src/branding.js",
+      "target": "web/src/identity.js",
+      "relation": "importa",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "evidence": {
+        "path": "web/src/branding.js",
+        "line": 1,
+        "text": "import {glyphs} from './identity.js'"
+      }
+    },
+    {
+      "source": "web/src/branding.js",
+      "target": "external:three",
+      "relation": "importa",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "evidence": {
+        "path": "web/src/branding.js",
+        "line": 2,
+        "text": "import * as THREE from 'three'"
+      }
+    },
+    {
+      "source": "web/src/branding.js",
+      "target": "external:three/addons/geometries/DecalGeometry.js",
+      "relation": "importa",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "evidence": {
+        "path": "web/src/branding.js",
+        "line": 3,
+        "text": "import {DecalGeometry} from 'three/addons/geometries/DecalGeometry.js'"
+      }
+    },
+    {
+      "source": "web/src/flow-detail.js",
+      "target": "external:three",
+      "relation": "importa",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "evidence": {
+        "path": "web/src/flow-detail.js",
+        "line": 1,
+        "text": "import * as THREE from 'three'"
+      }
+    },
+    {
+      "source": "web/src/garage.js",
+      "target": "external:three/addons/lights/RectAreaLightUniformsLib.js",
+      "relation": "importa",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "evidence": {
+        "path": "web/src/garage.js",
+        "line": 1,
+        "text": "import {RectAreaLightUniformsLib} from 'three/addons/lights/RectAreaLightUniformsLib.js'"
+      }
+    },
+    {
+      "source": "web/src/garage.js",
+      "target": "web/src/identity.js",
+      "relation": "importa",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "evidence": {
+        "path": "web/src/garage.js",
+        "line": 2,
+        "text": "import {drawBrand} from './identity.js'"
+      }
+    },
+    {
+      "source": "web/src/garage.js",
+      "target": "external:three",
+      "relation": "importa",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "evidence": {
+        "path": "web/src/garage.js",
+        "line": 3,
+        "text": "import * as THREE from 'three'"
+      }
+    },
+    {
+      "source": "web/src/garage.js",
+      "target": "external:three/addons/geometries/RoundedBoxGeometry.js",
+      "relation": "importa",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "evidence": {
+        "path": "web/src/garage.js",
+        "line": 4,
+        "text": "import {RoundedBoxGeometry} from 'three/addons/geometries/RoundedBoxGeometry.js'"
+      }
+    },
+    {
+      "source": "web/src/mechanics.js",
+      "target": "external:three",
+      "relation": "importa",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "evidence": {
+        "path": "web/src/mechanics.js",
+        "line": 1,
+        "text": "import * as THREE from 'three'"
+      }
+    },
+    {
+      "source": "web/src/tunnel-visual.js",
+      "target": "web/src/flow-detail.js",
+      "relation": "importa",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "evidence": {
+        "path": "web/src/tunnel-visual.js",
+        "line": 1,
+        "text": "import {createFlowDetail} from './flow-detail.js'"
+      }
+    },
+    {
+      "source": "web/src/tunnel-visual.js",
+      "target": "external:three",
+      "relation": "importa",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "evidence": {
+        "path": "web/src/tunnel-visual.js",
+        "line": 2,
+        "text": "import * as THREE from 'three'"
+      }
+    },
+    {
+      "source": "web/src/wind-tunnel.js",
+      "target": "web/src/tunnel-visual.js",
+      "relation": "importa",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "evidence": {
+        "path": "web/src/wind-tunnel.js",
+        "line": 1,
+        "text": "import {createTunnelVisual} from './tunnel-visual.js'"
+      }
+    },
+    {
+      "source": "web/src/wind-tunnel.js",
+      "target": "external:three",
+      "relation": "importa",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "evidence": {
+        "path": "web/src/wind-tunnel.js",
+        "line": 2,
+        "text": "import * as THREE from 'three'"
+      }
+    },
+    {
+      "source": "web/src/wind-tunnel.js",
+      "target": "web/src/aero-physics.mjs",
+      "relation": "importa",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "evidence": {
+        "path": "web/src/wind-tunnel.js",
+        "line": 3,
+        "text": "import {aerodynamicTest} from './aero-physics.mjs'"
+      }
+    },
+    {
+      "source": "web/test-aerodynamics.mjs",
+      "target": "external:node:assert/strict",
+      "relation": "importa",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "evidence": {
+        "path": "web/test-aerodynamics.mjs",
+        "line": 1,
+        "text": "import assert from 'node:assert/strict'"
+      }
+    },
+    {
+      "source": "web/test-aerodynamics.mjs",
+      "target": "web/src/aero-physics.mjs",
+      "relation": "importa",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "evidence": {
+        "path": "web/test-aerodynamics.mjs",
+        "line": 2,
+        "text": "import {aerodynamicTest as run} from './src/aero-physics.mjs'"
+      }
+    },
+    {
+      "source": "web/test-mechanics.mjs",
+      "target": "external:node:fs",
+      "relation": "importa",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "evidence": {
+        "path": "web/test-mechanics.mjs",
+        "line": 1,
+        "text": "import fs from 'node:fs'"
+      }
+    },
+    {
+      "source": "web/test-mechanics.mjs",
+      "target": "external:three",
+      "relation": "importa",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "evidence": {
+        "path": "web/test-mechanics.mjs",
+        "line": 2,
+        "text": "import * as THREE from 'three'"
+      }
+    },
+    {
+      "source": "web/test-mechanics.mjs",
+      "target": "external:three/addons/loaders/GLTFLoader.js",
+      "relation": "importa",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "evidence": {
+        "path": "web/test-mechanics.mjs",
+        "line": 3,
+        "text": "import {GLTFLoader} from 'three/addons/loaders/GLTFLoader.js'"
+      }
+    },
+    {
+      "source": "web/test-mechanics.mjs",
+      "target": "web/src/mechanics.js",
+      "relation": "importa",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "evidence": {
+        "path": "web/test-mechanics.mjs",
+        "line": 4,
+        "text": "import {createMechanics} from './src/mechanics.js'"
+      }
+    }
+  ],
+  "directed": true,
+  "multigraph": true
+}

@@ -1,0 +1,2570 @@
+{
+  "nodes": [
+    {
+      "id": "ferramentas_manifest",
+      "label": "manifest.cjs",
+      "file_type": "code",
+      "source_file": "ferramentas/manifest.cjs",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "ferramentas_manifest_fs",
+      "label": "fs",
+      "file_type": "code",
+      "source_file": "ferramentas/manifest.cjs",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "ferramentas_manifest_path",
+      "label": "path",
+      "file_type": "code",
+      "source_file": "ferramentas/manifest.cjs",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "ferramentas_manifest_crypto",
+      "label": "crypto",
+      "file_type": "code",
+      "source_file": "ferramentas/manifest.cjs",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "ferramentas_manifest_root",
+      "label": "root",
+      "file_type": "code",
+      "source_file": "ferramentas/manifest.cjs",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "ferramentas_manifest_files",
+      "label": "files",
+      "file_type": "code",
+      "source_file": "ferramentas/manifest.cjs",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "ferramentas_manifest_out",
+      "label": "out",
+      "file_type": "code",
+      "source_file": "ferramentas/manifest.cjs",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "ferramentas_merge_animation",
+      "label": "merge-animation.cjs",
+      "file_type": "code",
+      "source_file": "ferramentas/merge-animation.cjs",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "ferramentas_merge_animation_fs",
+      "label": "fs",
+      "file_type": "code",
+      "source_file": "ferramentas/merge-animation.cjs",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "ferramentas_merge_animation_file",
+      "label": "file",
+      "file_type": "code",
+      "source_file": "ferramentas/merge-animation.cjs",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "ferramentas_merge_animation_b",
+      "label": "b",
+      "file_type": "code",
+      "source_file": "ferramentas/merge-animation.cjs",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "ferramentas_merge_animation_old",
+      "label": "old",
+      "file_type": "code",
+      "source_file": "ferramentas/merge-animation.cjs",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "ferramentas_merge_animation_j",
+      "label": "j",
+      "file_type": "code",
+      "source_file": "ferramentas/merge-animation.cjs",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "ferramentas_merge_animation_merged",
+      "label": "merged",
+      "file_type": "code",
+      "source_file": "ferramentas/merge-animation.cjs",
+      "source_location": "L2",
+      "_origin": "ast"
+    },
+    {
+      "id": "ferramentas_merge_animation_json",
+      "label": "json",
+      "file_type": "code",
+      "source_file": "ferramentas/merge-animation.cjs",
+      "source_location": "L4",
+      "_origin": "ast"
+    },
+    {
+      "id": "ferramentas_merge_animation_pad",
+      "label": "pad",
+      "file_type": "code",
+      "source_file": "ferramentas/merge-animation.cjs",
+      "source_location": "L4",
+      "_origin": "ast"
+    },
+    {
+      "id": "ferramentas_merge_animation_tail",
+      "label": "tail",
+      "file_type": "code",
+      "source_file": "ferramentas/merge-animation.cjs",
+      "source_location": "L4",
+      "_origin": "ast"
+    },
+    {
+      "id": "ferramentas_merge_animation_out",
+      "label": "out",
+      "file_type": "code",
+      "source_file": "ferramentas/merge-animation.cjs",
+      "source_location": "L4",
+      "_origin": "ast"
+    },
+    {
+      "id": "ferramentas_package_blender",
+      "label": "package_blender.py",
+      "file_type": "code",
+      "source_file": "ferramentas/package_blender.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "ferramentas_package_blender_linear",
+      "label": "linear()",
+      "file_type": "code",
+      "source_file": "ferramentas/package_blender.py",
+      "source_location": "L27",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "ferramentas_package_blender_col",
+      "label": "col()",
+      "file_type": "code",
+      "source_file": "ferramentas/package_blender.py",
+      "source_location": "L28",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "ferramentas_package_blender_base",
+      "label": "base()",
+      "file_type": "code",
+      "source_file": "ferramentas/package_blender.py",
+      "source_location": "L29",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "ferramentas_package_blender_center",
+      "label": "center()",
+      "file_type": "code",
+      "source_file": "ferramentas/package_blender.py",
+      "source_location": "L74",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "ferramentas_package_blender_reparent",
+      "label": "reparent()",
+      "file_type": "code",
+      "source_file": "ferramentas/package_blender.py",
+      "source_location": "L75",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "ferramentas_package_blender_select_car",
+      "label": "select_car()",
+      "file_type": "code",
+      "source_file": "ferramentas/package_blender.py",
+      "source_location": "L121",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "ferramentas_package_blender_to_studio",
+      "label": "to_studio()",
+      "file_type": "code",
+      "source_file": "ferramentas/package_blender.py",
+      "source_location": "L130",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "ferramentas_package_garage",
+      "label": "package_garage.py",
+      "file_type": "code",
+      "source_file": "ferramentas/package_garage.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "ferramentas_render_garage_preview",
+      "label": "render_garage_preview.py",
+      "file_type": "code",
+      "source_file": "ferramentas/render_garage_preview.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "ferramentas_validate_kit",
+      "label": "validate-kit.py",
+      "file_type": "code",
+      "source_file": "ferramentas/validate-kit.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "ferramentas_validate_kit_matrices",
+      "label": "matrices()",
+      "file_type": "code",
+      "source_file": "ferramentas/validate-kit.py",
+      "source_location": "L7",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "web_build",
+      "label": "build.cjs",
+      "file_type": "code",
+      "source_file": "web/build.cjs",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "web_build_fs",
+      "label": "fs",
+      "file_type": "code",
+      "source_file": "web/build.cjs",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "web_build_esbuild",
+      "label": "esbuild",
+      "file_type": "code",
+      "source_file": "web/build.cjs",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "web_build_html",
+      "label": "html",
+      "file_type": "code",
+      "source_file": "web/build.cjs",
+      "source_location": "L3",
+      "_origin": "ast"
+    },
+    {
+      "id": "web_server",
+      "label": "server.cjs",
+      "file_type": "code",
+      "source_file": "web/server.cjs",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "web_server_http",
+      "label": "http",
+      "file_type": "code",
+      "source_file": "web/server.cjs",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "web_server_fs",
+      "label": "fs",
+      "file_type": "code",
+      "source_file": "web/server.cjs",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "web_server_path",
+      "label": "path",
+      "file_type": "code",
+      "source_file": "web/server.cjs",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "web_server_port",
+      "label": "port",
+      "file_type": "code",
+      "source_file": "web/server.cjs",
+      "source_location": "L2",
+      "_origin": "ast"
+    },
+    {
+      "id": "web_src_aero_physics",
+      "label": "aero-physics.mjs",
+      "file_type": "code",
+      "source_file": "web/src/aero-physics.mjs",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "web_src_aero_physics_aerodynamictest",
+      "label": "aerodynamicTest()",
+      "file_type": "code",
+      "source_file": "web/src/aero-physics.mjs",
+      "source_location": "L2",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "web_src_app_v2",
+      "label": "app-v2.js",
+      "file_type": "code",
+      "source_file": "web/src/app-v2.js",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "web_src_app_v2_stage",
+      "label": "stage",
+      "file_type": "code",
+      "source_file": "web/src/app-v2.js",
+      "source_location": "L17",
+      "_origin": "ast"
+    },
+    {
+      "id": "web_src_app_v2_reduced",
+      "label": "reduced",
+      "file_type": "code",
+      "source_file": "web/src/app-v2.js",
+      "source_location": "L17",
+      "_origin": "ast"
+    },
+    {
+      "id": "web_src_app_v2_categorylabels",
+      "label": "categoryLabels",
+      "file_type": "code",
+      "source_file": "web/src/app-v2.js",
+      "source_location": "L19",
+      "_origin": "ast"
+    },
+    {
+      "id": "web_src_app_v2_setflowxray",
+      "label": "setFlowXray()",
+      "file_type": "code",
+      "source_file": "web/src/app-v2.js",
+      "source_location": "L29",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "web_src_app_v2_movecamera",
+      "label": "moveCamera()",
+      "file_type": "code",
+      "source_file": "web/src/app-v2.js",
+      "source_location": "L36",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "web_src_app_v2_view",
+      "label": "view()",
+      "file_type": "code",
+      "source_file": "web/src/app-v2.js",
+      "source_location": "L37",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "web_src_app_v2_resize",
+      "label": "resize()",
+      "file_type": "code",
+      "source_file": "web/src/app-v2.js",
+      "source_location": "L39",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "web_src_app_v2_refreshselection",
+      "label": "refreshSelection()",
+      "file_type": "code",
+      "source_file": "web/src/app-v2.js",
+      "source_location": "L41",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "web_src_app_v2_select",
+      "label": "select()",
+      "file_type": "code",
+      "source_file": "web/src/app-v2.js",
+      "source_location": "L42",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "web_src_app_v2_focuspart",
+      "label": "focusPart()",
+      "file_type": "code",
+      "source_file": "web/src/app-v2.js",
+      "source_location": "L43",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "web_src_app_v2_assemblyto",
+      "label": "assemblyTo()",
+      "file_type": "code",
+      "source_file": "web/src/app-v2.js",
+      "source_location": "L44",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "web_src_branding",
+      "label": "branding.js",
+      "file_type": "code",
+      "source_file": "web/src/branding.js",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "web_src_branding_applyinteiabranding",
+      "label": "applyInteiaBranding()",
+      "file_type": "code",
+      "source_file": "web/src/branding.js",
+      "source_location": "L5",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "web_src_customize",
+      "label": "customize.js",
+      "file_type": "code",
+      "source_file": "web/src/customize.js",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "web_src_customize_setupcustomization",
+      "label": "setupCustomization()",
+      "file_type": "code",
+      "source_file": "web/src/customize.js",
+      "source_location": "L1",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "web_src_flow_detail",
+      "label": "flow-detail.js",
+      "file_type": "code",
+      "source_file": "web/src/flow-detail.js",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "web_src_flow_detail_createflowdetail",
+      "label": "createFlowDetail()",
+      "file_type": "code",
+      "source_file": "web/src/flow-detail.js",
+      "source_location": "L4",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "web_src_garage",
+      "label": "garage.js",
+      "file_type": "code",
+      "source_file": "web/src/garage.js",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "web_src_garage_creategarage",
+      "label": "createGarage()",
+      "file_type": "code",
+      "source_file": "web/src/garage.js",
+      "source_location": "L6",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "web_src_identity",
+      "label": "identity.js",
+      "file_type": "code",
+      "source_file": "web/src/identity.js",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "web_src_identity_glyphs",
+      "label": "glyphs",
+      "file_type": "code",
+      "source_file": "web/src/identity.js",
+      "source_location": "L2",
+      "_origin": "ast"
+    },
+    {
+      "id": "web_src_identity_emblem",
+      "label": "emblem",
+      "file_type": "code",
+      "source_file": "web/src/identity.js",
+      "source_location": "L10",
+      "_origin": "ast"
+    },
+    {
+      "id": "web_src_identity_brandsvg",
+      "label": "brandSVG()",
+      "file_type": "code",
+      "source_file": "web/src/identity.js",
+      "source_location": "L11",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "web_src_identity_drawbrand",
+      "label": "drawBrand()",
+      "file_type": "code",
+      "source_file": "web/src/identity.js",
+      "source_location": "L16",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "web_src_mechanics",
+      "label": "mechanics.js",
+      "file_type": "code",
+      "source_file": "web/src/mechanics.js",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "web_src_mechanics_names",
+      "label": "names",
+      "file_type": "code",
+      "source_file": "web/src/mechanics.js",
+      "source_location": "L2",
+      "_origin": "ast"
+    },
+    {
+      "id": "web_src_mechanics_createmechanics",
+      "label": "createMechanics()",
+      "file_type": "code",
+      "source_file": "web/src/mechanics.js",
+      "source_location": "L3",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "web_src_studio",
+      "label": "studio.js",
+      "file_type": "code",
+      "source_file": "web/src/studio.js",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "web_src_studio_setupstudio",
+      "label": "setupStudio()",
+      "file_type": "code",
+      "source_file": "web/src/studio.js",
+      "source_location": "L2",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "web_src_studio_texture",
+      "label": "texture()",
+      "file_type": "code",
+      "source_file": "web/src/studio.js",
+      "source_location": "L75",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "web_src_studio_applylocalcarbonprojection",
+      "label": "applyLocalCarbonProjection()",
+      "file_type": "code",
+      "source_file": "web/src/studio.js",
+      "source_location": "L104",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "web_src_studio_applycarmaterials",
+      "label": "applyCarMaterials()",
+      "file_type": "code",
+      "source_file": "web/src/studio.js",
+      "source_location": "L146",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "web_src_tunnel_visual",
+      "label": "tunnel-visual.js",
+      "file_type": "code",
+      "source_file": "web/src/tunnel-visual.js",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "web_src_tunnel_visual_createtunnelvisual",
+      "label": "createTunnelVisual()",
+      "file_type": "code",
+      "source_file": "web/src/tunnel-visual.js",
+      "source_location": "L4",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "web_src_wind_tunnel",
+      "label": "wind-tunnel.js",
+      "file_type": "code",
+      "source_file": "web/src/wind-tunnel.js",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "web_src_wind_tunnel_createwindtunnel",
+      "label": "createWindTunnel()",
+      "file_type": "code",
+      "source_file": "web/src/wind-tunnel.js",
+      "source_location": "L4",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "web_test_aerodynamics",
+      "label": "test-aerodynamics.mjs",
+      "file_type": "code",
+      "source_file": "web/test-aerodynamics.mjs",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "web_test_aerodynamics_p",
+      "label": "p",
+      "file_type": "code",
+      "source_file": "web/test-aerodynamics.mjs",
+      "source_location": "L3",
+      "_origin": "ast"
+    },
+    {
+      "id": "web_test_aerodynamics_a",
+      "label": "a",
+      "file_type": "code",
+      "source_file": "web/test-aerodynamics.mjs",
+      "source_location": "L4",
+      "_origin": "ast"
+    },
+    {
+      "id": "web_test_aerodynamics_b",
+      "label": "b",
+      "file_type": "code",
+      "source_file": "web/test-aerodynamics.mjs",
+      "source_location": "L4",
+      "_origin": "ast"
+    },
+    {
+      "id": "web_test_aerodynamics_near",
+      "label": "near()",
+      "file_type": "code",
+      "source_file": "web/test-aerodynamics.mjs",
+      "source_location": "L5",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "web_test_aerodynamics_still",
+      "label": "still",
+      "file_type": "code",
+      "source_file": "web/test-aerodynamics.mjs",
+      "source_location": "L8",
+      "_origin": "ast"
+    },
+    {
+      "id": "web_test_aerodynamics_cross",
+      "label": "cross",
+      "file_type": "code",
+      "source_file": "web/test-aerodynamics.mjs",
+      "source_location": "L9",
+      "_origin": "ast"
+    },
+    {
+      "id": "web_test_mechanics",
+      "label": "test-mechanics.mjs",
+      "file_type": "code",
+      "source_file": "web/test-mechanics.mjs",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "web_test_mechanics_b",
+      "label": "b",
+      "file_type": "code",
+      "source_file": "web/test-mechanics.mjs",
+      "source_location": "L5",
+      "_origin": "ast"
+    },
+    {
+      "id": "web_test_mechanics_len",
+      "label": "len",
+      "file_type": "code",
+      "source_file": "web/test-mechanics.mjs",
+      "source_location": "L5",
+      "_origin": "ast"
+    },
+    {
+      "id": "web_test_mechanics_j",
+      "label": "j",
+      "file_type": "code",
+      "source_file": "web/test-mechanics.mjs",
+      "source_location": "L5",
+      "_origin": "ast"
+    },
+    {
+      "id": "web_test_mechanics_json",
+      "label": "json",
+      "file_type": "code",
+      "source_file": "web/test-mechanics.mjs",
+      "source_location": "L7",
+      "_origin": "ast"
+    },
+    {
+      "id": "web_test_mechanics_pad",
+      "label": "pad",
+      "file_type": "code",
+      "source_file": "web/test-mechanics.mjs",
+      "source_location": "L7",
+      "_origin": "ast"
+    },
+    {
+      "id": "web_test_mechanics_tail",
+      "label": "tail",
+      "file_type": "code",
+      "source_file": "web/test-mechanics.mjs",
+      "source_location": "L7",
+      "_origin": "ast"
+    },
+    {
+      "id": "web_test_mechanics_out",
+      "label": "out",
+      "file_type": "code",
+      "source_file": "web/test-mechanics.mjs",
+      "source_location": "L7",
+      "_origin": "ast"
+    },
+    {
+      "id": "web_test_mechanics_box",
+      "label": "box",
+      "file_type": "code",
+      "source_file": "web/test-mechanics.mjs",
+      "source_location": "L9",
+      "_origin": "ast"
+    },
+    {
+      "id": "web_test_mechanics_before",
+      "label": "before",
+      "file_type": "code",
+      "source_file": "web/test-mechanics.mjs",
+      "source_location": "L10",
+      "_origin": "ast"
+    },
+    {
+      "id": "web_test_mechanics_m",
+      "label": "m",
+      "file_type": "code",
+      "source_file": "web/test-mechanics.mjs",
+      "source_location": "L11",
+      "_origin": "ast"
+    },
+    {
+      "id": "web_test_mechanics_result",
+      "label": "result",
+      "file_type": "code",
+      "source_file": "web/test-mechanics.mjs",
+      "source_location": "L23",
+      "_origin": "ast"
+    }
+  ],
+  "edges": [
+    {
+      "source": "ferramentas_manifest",
+      "target": "ref_fs",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "ferramentas/manifest.cjs",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "ferramentas_manifest",
+      "target": "ref_path",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "ferramentas/manifest.cjs",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "ferramentas_manifest",
+      "target": "ref_crypto",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "ferramentas/manifest.cjs",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "ferramentas_manifest",
+      "target": "ferramentas_manifest_fs",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ferramentas/manifest.cjs",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "ferramentas_manifest",
+      "target": "ferramentas_manifest_path",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ferramentas/manifest.cjs",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "ferramentas_manifest",
+      "target": "ferramentas_manifest_crypto",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ferramentas/manifest.cjs",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "ferramentas_manifest",
+      "target": "ferramentas_manifest_root",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ferramentas/manifest.cjs",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "ferramentas_manifest",
+      "target": "ferramentas_manifest_files",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ferramentas/manifest.cjs",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "ferramentas_manifest",
+      "target": "ferramentas_manifest_out",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ferramentas/manifest.cjs",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "ferramentas_merge_animation",
+      "target": "ref_fs",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "ferramentas/merge-animation.cjs",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "ferramentas_merge_animation",
+      "target": "ferramentas_merge_animation_fs",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ferramentas/merge-animation.cjs",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "ferramentas_merge_animation",
+      "target": "ferramentas_merge_animation_file",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ferramentas/merge-animation.cjs",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "ferramentas_merge_animation",
+      "target": "ferramentas_merge_animation_b",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ferramentas/merge-animation.cjs",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "ferramentas_merge_animation",
+      "target": "ferramentas_merge_animation_old",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ferramentas/merge-animation.cjs",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "ferramentas_merge_animation",
+      "target": "ferramentas_merge_animation_j",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ferramentas/merge-animation.cjs",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "ferramentas_merge_animation",
+      "target": "ferramentas_merge_animation_merged",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ferramentas/merge-animation.cjs",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "ferramentas_merge_animation",
+      "target": "ferramentas_merge_animation_json",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ferramentas/merge-animation.cjs",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "ferramentas_merge_animation",
+      "target": "ferramentas_merge_animation_pad",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ferramentas/merge-animation.cjs",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "ferramentas_merge_animation",
+      "target": "ferramentas_merge_animation_tail",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ferramentas/merge-animation.cjs",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "ferramentas_merge_animation",
+      "target": "ferramentas_merge_animation_out",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ferramentas/merge-animation.cjs",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "ferramentas_package_blender",
+      "target": "bpy",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "ferramentas/package_blender.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "ferramentas_package_blender",
+      "target": "math",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "ferramentas/package_blender.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "ferramentas_package_blender",
+      "target": "os",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "ferramentas/package_blender.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "ferramentas_package_blender",
+      "target": "json",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "ferramentas/package_blender.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "ferramentas_package_blender",
+      "target": "mathutils",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "ferramentas/package_blender.py",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "ferramentas_package_blender",
+      "target": "pathlib",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "ferramentas/package_blender.py",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "ferramentas_package_blender",
+      "target": "ferramentas_package_blender_linear",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ferramentas/package_blender.py",
+      "source_location": "L27",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "ferramentas_package_blender",
+      "target": "ferramentas_package_blender_col",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ferramentas/package_blender.py",
+      "source_location": "L28",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "ferramentas_package_blender",
+      "target": "ferramentas_package_blender_base",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ferramentas/package_blender.py",
+      "source_location": "L29",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "ferramentas_package_blender",
+      "target": "ferramentas_package_blender_center",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ferramentas/package_blender.py",
+      "source_location": "L74",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "ferramentas_package_blender",
+      "target": "ferramentas_package_blender_reparent",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ferramentas/package_blender.py",
+      "source_location": "L75",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "ferramentas_package_blender",
+      "target": "ferramentas_package_blender_select_car",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ferramentas/package_blender.py",
+      "source_location": "L121",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "ferramentas_package_blender",
+      "target": "ferramentas_package_blender_to_studio",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ferramentas/package_blender.py",
+      "source_location": "L130",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "ferramentas_package_blender_col",
+      "target": "ferramentas_package_blender_linear",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "ferramentas/package_blender.py",
+      "source_location": "L28",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "ferramentas_package_blender_base",
+      "target": "ferramentas_package_blender_col",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "ferramentas/package_blender.py",
+      "source_location": "L32",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "ferramentas_package_garage",
+      "target": "bpy",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "ferramentas/package_garage.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "ferramentas_package_garage",
+      "target": "sys",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "ferramentas/package_garage.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "ferramentas_package_garage",
+      "target": "json",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "ferramentas/package_garage.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "ferramentas_package_garage",
+      "target": "pathlib",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "ferramentas/package_garage.py",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "ferramentas_package_garage",
+      "target": "mathutils",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "ferramentas/package_garage.py",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "ferramentas_render_garage_preview",
+      "target": "bpy",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "ferramentas/render_garage_preview.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "ferramentas_render_garage_preview",
+      "target": "sys",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "ferramentas/render_garage_preview.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "ferramentas_render_garage_preview",
+      "target": "pathlib",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "ferramentas/render_garage_preview.py",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "ferramentas_validate_kit",
+      "target": "bpy",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "ferramentas/validate-kit.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "ferramentas_validate_kit",
+      "target": "json",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "ferramentas/validate-kit.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "ferramentas_validate_kit",
+      "target": "struct",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "ferramentas/validate-kit.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "ferramentas_validate_kit",
+      "target": "os",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "ferramentas/validate-kit.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "ferramentas_validate_kit",
+      "target": "mathutils",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "ferramentas/validate-kit.py",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "ferramentas_validate_kit",
+      "target": "pathlib",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "ferramentas/validate-kit.py",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "ferramentas_validate_kit",
+      "target": "ferramentas_validate_kit_matrices",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ferramentas/validate-kit.py",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "web_build",
+      "target": "ref_fs",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "web/build.cjs",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "web_build",
+      "target": "ref_esbuild",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "web/build.cjs",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "web_build",
+      "target": "web_build_fs",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "web/build.cjs",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "web_build",
+      "target": "web_build_esbuild",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "web/build.cjs",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "web_build",
+      "target": "web_build_html",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "web/build.cjs",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "web_server",
+      "target": "ref_http",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "web/server.cjs",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "web_server",
+      "target": "ref_fs",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "web/server.cjs",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "web_server",
+      "target": "ref_path",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "web/server.cjs",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "web_server",
+      "target": "web_server_http",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "web/server.cjs",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "web_server",
+      "target": "web_server_fs",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "web/server.cjs",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "web_server",
+      "target": "web_server_path",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "web/server.cjs",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "web_server",
+      "target": "web_server_port",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "web/server.cjs",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "web_src_aero_physics",
+      "target": "web_src_aero_physics_aerodynamictest",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "web/src/aero-physics.mjs",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "web_src_app_v2",
+      "target": "web_src_identity",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "web/src/app-v2.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "web_src_app_v2",
+      "target": "web_src_identity_brandsvg",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "web/src/app-v2.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "web_src_app_v2",
+      "target": "ref_three_addons_exporters_gltfexporter_js",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "web/src/app-v2.js",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "web_src_app_v2",
+      "target": "web_src_garage",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "web/src/app-v2.js",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "web_src_app_v2",
+      "target": "web_src_garage_creategarage",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "web/src/app-v2.js",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "web_src_app_v2",
+      "target": "web_src_wind_tunnel",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "web/src/app-v2.js",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "web_src_app_v2",
+      "target": "web_src_wind_tunnel_createwindtunnel",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "web/src/app-v2.js",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "web_src_app_v2",
+      "target": "web_src_customize",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "web/src/app-v2.js",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "web_src_app_v2",
+      "target": "web_src_customize_setupcustomization",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "web/src/app-v2.js",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "web_src_app_v2",
+      "target": "ref_three",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "web/src/app-v2.js",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "web_src_app_v2",
+      "target": "ref_three_addons_controls_orbitcontrols_js",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "web/src/app-v2.js",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "web_src_app_v2",
+      "target": "ref_three_addons_controls_transformcontrols_js",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "web/src/app-v2.js",
+      "source_location": "L8",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "web_src_app_v2",
+      "target": "ref_three_addons_postprocessing_effectcomposer_js",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "web/src/app-v2.js",
+      "source_location": "L9",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "web_src_app_v2",
+      "target": "ref_three_addons_postprocessing_renderpass_js",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "web/src/app-v2.js",
+      "source_location": "L10",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "web_src_app_v2",
+      "target": "ref_three_addons_postprocessing_ssaopass_js",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "web/src/app-v2.js",
+      "source_location": "L11",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "web_src_app_v2",
+      "target": "ref_three_addons_postprocessing_outputpass_js",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "web/src/app-v2.js",
+      "source_location": "L12",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "web_src_app_v2",
+      "target": "ref_three_addons_postprocessing_smaapass_js",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "web/src/app-v2.js",
+      "source_location": "L13",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "web_src_app_v2",
+      "target": "ref_three_addons_loaders_gltfloader_js",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "web/src/app-v2.js",
+      "source_location": "L14",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "web_src_app_v2",
+      "target": "web_src_studio",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "web/src/app-v2.js",
+      "source_location": "L15",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "web_src_app_v2",
+      "target": "web_src_studio_setupstudio",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "web/src/app-v2.js",
+      "source_location": "L15",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "web_src_app_v2",
+      "target": "web_src_studio_applycarmaterials",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "web/src/app-v2.js",
+      "source_location": "L15",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "web_src_app_v2",
+      "target": "web_src_mechanics",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "web/src/app-v2.js",
+      "source_location": "L16",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "web_src_app_v2",
+      "target": "web_src_mechanics_createmechanics",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "web/src/app-v2.js",
+      "source_location": "L16",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "web_src_app_v2",
+      "target": "web_src_app_v2_stage",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "web/src/app-v2.js",
+      "source_location": "L17",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "web_src_app_v2",
+      "target": "web_src_app_v2_reduced",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "web/src/app-v2.js",
+      "source_location": "L17",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "web_src_app_v2",
+      "target": "web_src_app_v2_categorylabels",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "web/src/app-v2.js",
+      "source_location": "L19",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "web_src_app_v2",
+      "target": "web_src_app_v2_setflowxray",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "web/src/app-v2.js",
+      "source_location": "L29",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "web_src_app_v2",
+      "target": "web_src_app_v2_movecamera",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "web/src/app-v2.js",
+      "source_location": "L36",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "web_src_app_v2",
+      "target": "web_src_app_v2_view",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "web/src/app-v2.js",
+      "source_location": "L37",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "web_src_app_v2",
+      "target": "web_src_app_v2_resize",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "web/src/app-v2.js",
+      "source_location": "L39",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "web_src_app_v2",
+      "target": "web_src_app_v2_refreshselection",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "web/src/app-v2.js",
+      "source_location": "L41",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "web_src_app_v2",
+      "target": "web_src_app_v2_select",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "web/src/app-v2.js",
+      "source_location": "L42",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "web_src_app_v2",
+      "target": "web_src_app_v2_focuspart",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "web/src/app-v2.js",
+      "source_location": "L43",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "web_src_app_v2",
+      "target": "web_src_app_v2_assemblyto",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "web/src/app-v2.js",
+      "source_location": "L44",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "web_src_app_v2_view",
+      "target": "web_src_app_v2_movecamera",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "web/src/app-v2.js",
+      "source_location": "L37",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "web_src_app_v2_resize",
+      "target": "web_src_app_v2_view",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "web/src/app-v2.js",
+      "source_location": "L39",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "web_src_app_v2_select",
+      "target": "web_src_app_v2_refreshselection",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "web/src/app-v2.js",
+      "source_location": "L42",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "web_src_app_v2_focuspart",
+      "target": "web_src_app_v2_movecamera",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "web/src/app-v2.js",
+      "source_location": "L43",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "web_src_app_v2_assemblyto",
+      "target": "web_src_app_v2_view",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "web/src/app-v2.js",
+      "source_location": "L44",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "web_src_app_v2",
+      "target": "web_src_app_v2_resize",
+      "relation": "indirect_call",
+      "context": "argument",
+      "confidence": "INFERRED",
+      "source_file": "web/src/app-v2.js",
+      "source_location": "L40",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "web_src_branding",
+      "target": "ref_three",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "web/src/branding.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "web_src_branding",
+      "target": "ref_three_addons_geometries_decalgeometry_js",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "web/src/branding.js",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "web_src_branding",
+      "target": "web_src_branding_applyinteiabranding",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "web/src/branding.js",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "web_src_customize",
+      "target": "web_src_customize_setupcustomization",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "web/src/customize.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "web_src_flow_detail",
+      "target": "ref_three",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "web/src/flow-detail.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "web_src_flow_detail",
+      "target": "web_src_flow_detail_createflowdetail",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "web/src/flow-detail.js",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "web_src_garage",
+      "target": "web_src_identity",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "web/src/garage.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "web_src_garage",
+      "target": "web_src_identity_drawbrand",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "web/src/garage.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "web_src_garage",
+      "target": "ref_three",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "web/src/garage.js",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "web_src_garage",
+      "target": "ref_three_addons_geometries_roundedboxgeometry_js",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "web/src/garage.js",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "web_src_garage",
+      "target": "web_src_garage_creategarage",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "web/src/garage.js",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "web_src_identity",
+      "target": "web_src_identity_glyphs",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "web/src/identity.js",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "web_src_identity",
+      "target": "web_src_identity_emblem",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "web/src/identity.js",
+      "source_location": "L10",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "web_src_identity",
+      "target": "web_src_identity_brandsvg",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "web/src/identity.js",
+      "source_location": "L11",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "web_src_identity",
+      "target": "web_src_identity_drawbrand",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "web/src/identity.js",
+      "source_location": "L16",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "web_src_mechanics",
+      "target": "ref_three",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "web/src/mechanics.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "web_src_mechanics",
+      "target": "web_src_mechanics_names",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "web/src/mechanics.js",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "web_src_mechanics",
+      "target": "web_src_mechanics_createmechanics",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "web/src/mechanics.js",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "web_src_studio",
+      "target": "web_src_studio_setupstudio",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "web/src/studio.js",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "web_src_studio",
+      "target": "web_src_studio_texture",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "web/src/studio.js",
+      "source_location": "L75",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "web_src_studio",
+      "target": "web_src_studio_applylocalcarbonprojection",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "web/src/studio.js",
+      "source_location": "L104",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "web_src_studio",
+      "target": "web_src_studio_applycarmaterials",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "web/src/studio.js",
+      "source_location": "L146",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "web_src_studio_applycarmaterials",
+      "target": "web_src_studio_texture",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "web/src/studio.js",
+      "source_location": "L147",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "web_src_studio_applycarmaterials",
+      "target": "web_src_studio_applylocalcarbonprojection",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "web/src/studio.js",
+      "source_location": "L212",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "web_src_tunnel_visual",
+      "target": "web_src_flow_detail",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "web/src/tunnel-visual.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "web_src_tunnel_visual",
+      "target": "web_src_flow_detail_createflowdetail",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "web/src/tunnel-visual.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "web_src_tunnel_visual",
+      "target": "ref_three",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "web/src/tunnel-visual.js",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "web_src_tunnel_visual",
+      "target": "web_src_tunnel_visual_createtunnelvisual",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "web/src/tunnel-visual.js",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "web_src_wind_tunnel",
+      "target": "web_src_tunnel_visual",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "web/src/wind-tunnel.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "web_src_wind_tunnel",
+      "target": "web_src_tunnel_visual_createtunnelvisual",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "web/src/wind-tunnel.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "web_src_wind_tunnel",
+      "target": "ref_three",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "web/src/wind-tunnel.js",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "web_src_wind_tunnel",
+      "target": "web_src_aero_physics",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "web/src/wind-tunnel.js",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "web_src_wind_tunnel",
+      "target": "web_src_aero_physics_aerodynamictest",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "web/src/wind-tunnel.js",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "web_src_wind_tunnel",
+      "target": "web_src_wind_tunnel_createwindtunnel",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "web/src/wind-tunnel.js",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "web_test_aerodynamics",
+      "target": "ref_node_assert_strict",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "web/test-aerodynamics.mjs",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "web_test_aerodynamics",
+      "target": "web_src_aero_physics",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "web/test-aerodynamics.mjs",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "web_test_aerodynamics",
+      "target": "web_src_aero_physics_aerodynamictest",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "web/test-aerodynamics.mjs",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "web_test_aerodynamics",
+      "target": "web_test_aerodynamics_p",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "web/test-aerodynamics.mjs",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "web_test_aerodynamics",
+      "target": "web_test_aerodynamics_a",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "web/test-aerodynamics.mjs",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "web_test_aerodynamics",
+      "target": "web_test_aerodynamics_b",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "web/test-aerodynamics.mjs",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "web_test_aerodynamics",
+      "target": "web_test_aerodynamics_near",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "web/test-aerodynamics.mjs",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "web_test_aerodynamics",
+      "target": "web_test_aerodynamics_still",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "web/test-aerodynamics.mjs",
+      "source_location": "L8",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "web_test_aerodynamics",
+      "target": "web_test_aerodynamics_cross",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "web/test-aerodynamics.mjs",
+      "source_location": "L9",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "web_test_mechanics",
+      "target": "ref_node_fs",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "web/test-mechanics.mjs",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "web_test_mechanics",
+      "target": "ref_three",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "web/test-mechanics.mjs",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "web_test_mechanics",
+      "target": "ref_three_addons_loaders_gltfloader_js",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "web/test-mechanics.mjs",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "web_test_mechanics",
+      "target": "web_src_mechanics",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "web/test-mechanics.mjs",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "web_test_mechanics",
+      "target": "web_src_mechanics_createmechanics",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "web/test-mechanics.mjs",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "web_test_mechanics",
+      "target": "web_test_mechanics_b",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "web/test-mechanics.mjs",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "web_test_mechanics",
+      "target": "web_test_mechanics_len",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "web/test-mechanics.mjs",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "web_test_mechanics",
+      "target": "web_test_mechanics_j",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "web/test-mechanics.mjs",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "web_test_mechanics",
+      "target": "web_test_mechanics_json",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "web/test-mechanics.mjs",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "web_test_mechanics",
+      "target": "web_test_mechanics_pad",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "web/test-mechanics.mjs",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "web_test_mechanics",
+      "target": "web_test_mechanics_tail",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "web/test-mechanics.mjs",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "web_test_mechanics",
+      "target": "web_test_mechanics_out",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "web/test-mechanics.mjs",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "web_test_mechanics",
+      "target": "web_test_mechanics_box",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "web/test-mechanics.mjs",
+      "source_location": "L9",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "web_test_mechanics",
+      "target": "web_test_mechanics_before",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "web/test-mechanics.mjs",
+      "source_location": "L10",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "web_test_mechanics",
+      "target": "web_test_mechanics_m",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "web/test-mechanics.mjs",
+      "source_location": "L11",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "web_test_mechanics",
+      "target": "web_test_mechanics_result",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "web/test-mechanics.mjs",
+      "source_location": "L23",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "web_src_garage_creategarage",
+      "target": "web_src_identity_drawbrand",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "web/src/garage.js",
+      "source_location": "L36",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "web_src_tunnel_visual_createtunnelvisual",
+      "target": "web_src_flow_detail_createflowdetail",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "web/src/tunnel-visual.js",
+      "source_location": "L65",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "web_src_wind_tunnel_createwindtunnel",
+      "target": "web_src_tunnel_visual_createtunnelvisual",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "web/src/wind-tunnel.js",
+      "source_location": "L8",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "web_src_wind_tunnel_createwindtunnel",
+      "target": "web_src_aero_physics_aerodynamictest",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "web/src/wind-tunnel.js",
+      "source_location": "L23",
+      "weight": 1.0,
+      "_origin": "ast"
+    }
+  ],
+  "input_tokens": 0,
+  "output_tokens": 0,
+  "failed_sources": []
+}

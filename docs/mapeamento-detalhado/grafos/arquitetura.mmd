@@ -1,0 +1,77 @@
+flowchart LR
+  n0["web/build.cjs"]
+  n1["web/server.cjs"]
+  n2["web/src/aero-physics.mjs"]
+  n3["web/src/app-v2.js"]
+  n4["web/src/branding.js"]
+  n5["web/src/customize.js"]
+  n6["web/src/flow-detail.js"]
+  n7["web/src/garage.js"]
+  n8["web/src/identity.js"]
+  n9["web/src/mechanics.js"]
+  n10["web/src/studio.js"]
+  n11["web/src/tunnel-visual.js"]
+  n12["web/src/wind-tunnel.js"]
+  n13["web/test-aerodynamics.mjs"]
+  n14["web/test-mechanics.mjs"]
+  n15["fs"]
+  n16["path"]
+  n17["esbuild"]
+  n18["http"]
+  n19["three/addons/exporters/GLTFExporter.js"]
+  n20["three"]
+  n21["three/addons/controls/OrbitControls.js"]
+  n22["three/addons/controls/TransformControls.js"]
+  n23["three/addons/postprocessing/EffectComposer.js"]
+  n24["three/addons/postprocessing/RenderPass.js"]
+  n25["three/addons/postprocessing/SSAOPass.js"]
+  n26["three/addons/postprocessing/OutputPass.js"]
+  n27["three/addons/postprocessing/SMAAPass.js"]
+  n28["three/addons/loaders/GLTFLoader.js"]
+  n29["three/addons/geometries/DecalGeometry.js"]
+  n30["three/addons/lights/RectAreaLightUniformsLib.js"]
+  n31["three/addons/geometries/RoundedBoxGeometry.js"]
+  n32["node:assert/strict"]
+  n33["node:fs"]
+  n0 -->|"importa · EXTRACTED"| n15
+  n0 -->|"importa · EXTRACTED"| n17
+  n1 -->|"importa · EXTRACTED"| n18
+  n1 -->|"importa · EXTRACTED"| n15
+  n1 -->|"importa · EXTRACTED"| n16
+  n3 -->|"importa · EXTRACTED"| n4
+  n3 -->|"importa · EXTRACTED"| n8
+  n3 -->|"importa · EXTRACTED"| n19
+  n3 -->|"importa · EXTRACTED"| n7
+  n3 -->|"importa · EXTRACTED"| n12
+  n3 -->|"importa · EXTRACTED"| n5
+  n3 -->|"importa · EXTRACTED"| n20
+  n3 -->|"importa · EXTRACTED"| n21
+  n3 -->|"importa · EXTRACTED"| n22
+  n3 -->|"importa · EXTRACTED"| n23
+  n3 -->|"importa · EXTRACTED"| n24
+  n3 -->|"importa · EXTRACTED"| n25
+  n3 -->|"importa · EXTRACTED"| n26
+  n3 -->|"importa · EXTRACTED"| n27
+  n3 -->|"importa · EXTRACTED"| n28
+  n3 -->|"importa · EXTRACTED"| n10
+  n3 -->|"importa · EXTRACTED"| n9
+  n4 -->|"importa · EXTRACTED"| n8
+  n4 -->|"importa · EXTRACTED"| n20
+  n4 -->|"importa · EXTRACTED"| n29
+  n6 -->|"importa · EXTRACTED"| n20
+  n7 -->|"importa · EXTRACTED"| n30
+  n7 -->|"importa · EXTRACTED"| n8
+  n7 -->|"importa · EXTRACTED"| n20
+  n7 -->|"importa · EXTRACTED"| n31
+  n9 -->|"importa · EXTRACTED"| n20
+  n11 -->|"importa · EXTRACTED"| n6
+  n11 -->|"importa · EXTRACTED"| n20
+  n12 -->|"importa · EXTRACTED"| n11
+  n12 -->|"importa · EXTRACTED"| n20
+  n12 -->|"importa · EXTRACTED"| n2
+  n13 -->|"importa · EXTRACTED"| n32
+  n13 -->|"importa · EXTRACTED"| n2
+  n14 -->|"importa · EXTRACTED"| n33
+  n14 -->|"importa · EXTRACTED"| n20
+  n14 -->|"importa · EXTRACTED"| n28
+  n14 -->|"importa · EXTRACTED"| n9

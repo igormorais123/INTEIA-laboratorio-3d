@@ -1,0 +1,15 @@
+{
+  "timestamp": "2026-09-13T01:42:43.132964+00:00",
+  "passed": true,
+  "links_checked": 506,
+  "catalog_files": 87,
+  "symbols": 94,
+  "nodes": 201,
+  "edges": 653,
+  "parts": 97,
+  "errors": [],
+  "warnings": [
+    "AST bruto graphify contém 51 relações sem extremidade; não confundir com grafo validado desta documentação"
+  ],
+  "scope": "Links locais e âncoras Markdown, JSON, linhas de fonte, hashes, imports, extremos de grafo e metadados GLB. Não valida destinos HTTP nem a física do carro."
+}

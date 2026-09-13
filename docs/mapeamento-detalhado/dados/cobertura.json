@@ -1,0 +1,49 @@
+{
+  "captured_at": "2026-09-13T01:42:41.748748+00:00",
+  "revision": "e3d58af3c59a87b308444e678b0b25803e00e727",
+  "initial_revision": "1ae4fd15062d347dc8462af8f4db33c749e6575b",
+  "branch": "main",
+  "status": "M .gitignore\n M README.md\n M docs/ARQUITETURA.md\n M docs/DESENVOLVIMENTO.md\n?? docs/mapas/\n?? docs/mapeamento-detalhado/\n?? ferramentas/mapa-template.html\n?? ferramentas/mapear.py\n?? graphify-out/",
+  "catalog_count": 87,
+  "bytes": 166722575,
+  "baseline_files": 69,
+  "baseline_missing": [],
+  "unclassified": [],
+  "excluded": [
+    {
+      "path": ".git",
+      "reason": "Metadados e objetos internos Git; revisão registrada via Git"
+    },
+    {
+      "path": ".mapas-worktree",
+      "reason": "Checkout/worktree Git aninhado: cópia operacional do mesmo projeto, não é fonte adicional"
+    },
+    {
+      "path": "graphify-out",
+      "reason": "Extração/cache da conversa paralela ou cache isolado desta análise"
+    },
+    {
+      "path": "ambientes/INTEIA_Box_com_carro.blend1",
+      "reason": "Ambiente local, log, backup ou pacote duplicado; conteúdo não lido"
+    },
+    {
+      "path": "docs/mapeamento-detalhado",
+      "reason": "Esta entrega: inventário próprio em dados/entrega.json; evita autorreferência recursiva"
+    },
+    {
+      "path": "web/node_modules",
+      "reason": "Dependências instaladas; versões em package-lock.json"
+    }
+  ],
+  "scope": "Somente C:\\Users\\igorm\\projetos\\INTEIA-laboratorio-3d",
+  "own_delivery": "dados/entrega.json",
+  "parallel_thread": "01a09849-3de3-7dc2-bd60-06a9b58be580",
+  "symbols": 94,
+  "symbol_parse_errors": [],
+  "unresolved_local_imports": [],
+  "edges": 653,
+  "nodes": 201,
+  "confidence_counts": {
+    "EXTRACTED": 653
+  }
+}

@@ -1,0 +1,200 @@
+{
+  "note": "Manifesto da documentação; exclui a si mesmo para evitar hash recursivo e caches/logs. Não substitui manifesto-sha256.json do aplicativo.",
+  "files": [
+    {
+      "path": ".gitignore",
+      "bytes": 52,
+      "sha256": "5ecfff03b0cc1976fae09c1942ef9244d9b0b3b8951364e22f137695d2da8da7"
+    },
+    {
+      "path": "ARVORE.md",
+      "bytes": 9115,
+      "sha256": "88ad19f7a9b47920730494f117a0253fe327d9a60cd0e30ca4db3c939b2d0e9a"
+    },
+    {
+      "path": "ASSETS-E-PROCEDENCIA.md",
+      "bytes": 39479,
+      "sha256": "dc416d723b0c609f516af963c87f8d42629c199aba92b99b841e7990beab9800"
+    },
+    {
+      "path": "ATUALIZAR.md",
+      "bytes": 6751,
+      "sha256": "2abac7e56073cbdd90a7b0050fe42302c453727af307418c2bfbf3dcd10856b0"
+    },
+    {
+      "path": "CATALOGO.md",
+      "bytes": 54120,
+      "sha256": "4cfbd14c5300d7698839729826f08c4442267ba58616085693afcd4c60ccc597"
+    },
+    {
+      "path": "dados/catalogo.csv",
+      "bytes": 25914,
+      "sha256": "b4a566bc3d43ac6699e3f102741434fb0987309218d1327e95e6c596a557c89b"
+    },
+    {
+      "path": "dados/catalogo.json",
+      "bytes": 474217,
+      "sha256": "fba1e6156a9c1828a2884959377ec461fcaa3e4a4af173281148cfdb395b71be"
+    },
+    {
+      "path": "dados/cobertura.json",
+      "bytes": 1786,
+      "sha256": "b75e27deb1cd7cd1b116afbcb3e35d3bdaf52eb581cc43ba14afdeda17d4a255"
+    },
+    {
+      "path": "dados/componentes.json",
+      "bytes": 82268,
+      "sha256": "9ae61b8757dc3044db314a9c5f6ecb99e7d5efda497bd7c570c729e5e8357bf7"
+    },
+    {
+      "path": "dados/estado-inicial.json",
+      "bytes": 2687,
+      "sha256": "450c1e5ceae4e7d87f5232c45f5c560dc0494839eb1ec6db679613e7900d148a"
+    },
+    {
+      "path": "dados/grafo.json",
+      "bytes": 288635,
+      "sha256": "1e0dd83ef9db1adbbad61160540fe87fc0032c59961c1d5d60cface0aba6a854"
+    },
+    {
+      "path": "dados/graphify-ast.json",
+      "bytes": 73194,
+      "sha256": "d42030f22ccebf095bf2ab415d33dda579f63296aae84460f5352343814267b2"
+    },
+    {
+      "path": "dados/graphify-execucao.json",
+      "bytes": 4484,
+      "sha256": "bcb02ea9018488b6dd8e55a982dfd991cc0d5a9a8bb6dbe199bb20cef376c6dc"
+    },
+    {
+      "path": "dados/manifesto-conferencia.json",
+      "bytes": 2606,
+      "sha256": "0d0a5e249d535d40d789d425718a55ae122c6ef105f246f77f989f92d83ed2c6"
+    },
+    {
+      "path": "dados/relacoes-curadas.json",
+      "bytes": 51292,
+      "sha256": "dffab23e7a290f3a8b1d12d23fcac5997da0ca1e14ef2d986d5903f41ec20e0f"
+    },
+    {
+      "path": "dados/simbolos.json",
+      "bytes": 118418,
+      "sha256": "264a3f96edb360f1e9e252a014bff2a221a346b3a6cf0247e69d5072e5b4b63a"
+    },
+    {
+      "path": "dados/teste-mecanica.json",
+      "bytes": 248,
+      "sha256": "431fe5c5fbb590ad49d96bf4e303ec86fae4fae827abced3b8b175687575474a"
+    },
+    {
+      "path": "dados/validacao.json",
+      "bytes": 527,
+      "sha256": "6642b645d164ff1742a9a87615f7cde153d1afd399ba22482ba1aa29582d2a83"
+    },
+    {
+      "path": "dados/verificacao-app.json",
+      "bytes": 2943,
+      "sha256": "fdf41ff893a7350c4795d81eb77c2e45be4c020e7db04b8d02f3b016f361e2f1"
+    },
+    {
+      "path": "FUNCOES.md",
+      "bytes": 8227,
+      "sha256": "2319514536ec23acf7145d64f95718cd85bc43e41c9843df4e4c761263aceae0"
+    },
+    {
+      "path": "grafos/arquitetura.json",
+      "bytes": 20314,
+      "sha256": "987d904e9a093b440dbb50fcda05fd39410b11edff5d76ecfc615631c41f5694"
+    },
+    {
+      "path": "grafos/arquitetura.mmd",
+      "bytes": 2805,
+      "sha256": "8ffecffa9d047bbe659bd7901b5f3530d9cb86b3576070f3ef9f5f862b128e33"
+    },
+    {
+      "path": "grafos/assets.json",
+      "bytes": 43615,
+      "sha256": "664322d2fb628bb9d6cdd7226158038a06071d09780d829ed77f272653bf5577"
+    },
+    {
+      "path": "grafos/assets.mmd",
+      "bytes": 4307,
+      "sha256": "73fb3506bbdce99ace8b2b0a45402c4aedd91882b4a95e1683b8c295245ca62a"
+    },
+    {
+      "path": "grafos/dados.json",
+      "bytes": 61382,
+      "sha256": "e604f4e702e46ff3cab9731f8e112fd7d0853fbfadc9a1e90f4708ebcd27a718"
+    },
+    {
+      "path": "grafos/dados.mmd",
+      "bytes": 6354,
+      "sha256": "31f1a6349c13676556d3aeb11761cd961bf962563e4d95e83a2d5c76479f197d"
+    },
+    {
+      "path": "GRAFOS.md",
+      "bytes": 6233,
+      "sha256": "391f7cee57b170cb8984f48e495398ce7fc6a0437d790d8c4a9901c27f11c07f"
+    },
+    {
+      "path": "index.html",
+      "bytes": 579156,
+      "sha256": "ee3801b84da70b42940a399c189f7a227d2ccf40c912ff0842b182f10b8e25f6"
+    },
+    {
+      "path": "MODULOS-E-FLUXOS.md",
+      "bytes": 44740,
+      "sha256": "3acfcf11c68b617441665f93cc95677f4f1f9716d0a6db4ab78b088c474ebf93"
+    },
+    {
+      "path": "NAVEGADOR.md",
+      "bytes": 3141,
+      "sha256": "e9ecc0e491262b381f9326284838357d31fa487c37ecc0a59e35080a818d5436"
+    },
+    {
+      "path": "README.md",
+      "bytes": 5648,
+      "sha256": "6024636d4e725e7588a21ef1391f38a53ac29536043308dff02abbc87a3dcec2"
+    },
+    {
+      "path": "REUTILIZACAO.md",
+      "bytes": 24499,
+      "sha256": "d466e5ed4cb577b0a1fd208096b43b0f9a9b2c8cb0232154ecdaebd6cb2bf6a2"
+    },
+    {
+      "path": "scripts/finalidades.json",
+      "bytes": 16455,
+      "sha256": "b6ce513dfdd29981ab5aa4071360e526e7099f0a4adaa9605014811c9fed0827"
+    },
+    {
+      "path": "scripts/gerar.py",
+      "bytes": 23374,
+      "sha256": "eea0f9b63fe8a086362ec2eef4f3d36ab16988422d675daa321174b546a8c47b"
+    },
+    {
+      "path": "scripts/interface.html",
+      "bytes": 16462,
+      "sha256": "18c3303d13f03fa8ea2ce05f32f82fefe2e5092e4607f65322ec6c1d2c774df0"
+    },
+    {
+      "path": "scripts/validar.py",
+      "bytes": 6177,
+      "sha256": "a2aad1d43301605e250e2f86643760147aeb6144c21a477fed0a2a136d9a645a"
+    },
+    {
+      "path": "scripts/verificar-app.mjs",
+      "bytes": 4003,
+      "sha256": "398c2d3f42de376c5217fa76c5277de02e2c2492734d31ddf3b6d6c4763eda1d"
+    },
+    {
+      "path": "VALIDACAO.md",
+      "bytes": 7223,
+      "sha256": "17f8921febd96e857fae32acc7ec29af304c4b8032268347ce7b9828504d78bd"
+    },
+    {
+      "path": "VISUAIS-E-IDENTIDADE.md",
+      "bytes": 25841,
+      "sha256": "0cc35630c85b48967ba59fbaedd98386fe7eb2a196fcd36e2d22c3e0b4cc6306"
+    }
+  ]
+}

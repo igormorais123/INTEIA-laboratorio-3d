@@ -1,0 +1,103 @@
+flowchart LR
+  n0["INTEIA_F1_Master.blend"]
+  n1["Previa-Blender.png"]
+  n2["README.md"]
+  n3["ambientes/INTEIA-box-laboratorio.glb"]
+  n4["ambientes/INTEIA_Box_com_carro.blend"]
+  n5["ambientes/Previa-Box.png"]
+  n6["ambientes/validacao-box.json"]
+  n7["docs/ACABAMENTO-E-RENDER.md"]
+  n8["docs/ARQUITETURA.md"]
+  n9["docs/BOX-LABORATORIO.md"]
+  n10["ferramentas/manifest.cjs"]
+  n11["ferramentas/merge-animation.cjs"]
+  n12["ferramentas/package_blender.py"]
+  n13["ferramentas/package_garage.py"]
+  n14["ferramentas/render_garage_preview.py"]
+  n15["ferramentas/validate-kit.py"]
+  n16["identidade/INTEIA-monocromatico.svg"]
+  n17["identidade/INTEIA-negativo.svg"]
+  n18["identidade/INTEIA-principal.svg"]
+  n19["identidade/INTEIA-simbolo.svg"]
+  n20["manifesto-sha256.json"]
+  n21["modelos/INTEIA_F1_animado.glb"]
+  n22["modelos/INTEIA_F1_estatico.glb"]
+  n23["texturas/INTEIA_Carbono_BaseColor.png"]
+  n24["validacao-criacao.json"]
+  n25["validacao-reabertura.json"]
+  n26["web/assets/carro-movable.glb"]
+  n27["web/build.cjs"]
+  n28["web/index.html"]
+  n29["web/src/garage.js"]
+  n30["web/test-mechanics.mjs"]
+  n31["fs"]
+  n32["path"]
+  n33["crypto"]
+  n34["linear"]
+  n35["col"]
+  n36["base"]
+  n37["center"]
+  n38["reparent"]
+  n39["select_car"]
+  n40["to_studio"]
+  n41["matrices"]
+  n2 -->|"documenta · EXTRACTED"| n1
+  n2 -->|"documenta · EXTRACTED"| n0
+  n2 -->|"documenta · EXTRACTED"| n3
+  n2 -->|"documenta · EXTRACTED"| n4
+  n2 -->|"documenta · EXTRACTED"| n22
+  n2 -->|"documenta · EXTRACTED"| n21
+  n10 -->|"importa · EXTRACTED"| n31
+  n10 -->|"importa · EXTRACTED"| n32
+  n10 -->|"importa · EXTRACTED"| n33
+  n11 -->|"importa · EXTRACTED"| n31
+  n11 -->|"importa · EXTRACTED"| n32
+  n12 -->|"define · EXTRACTED"| n34
+  n12 -->|"define · EXTRACTED"| n35
+  n12 -->|"define · EXTRACTED"| n36
+  n12 -->|"define · EXTRACTED"| n37
+  n12 -->|"define · EXTRACTED"| n38
+  n12 -->|"define · EXTRACTED"| n39
+  n12 -->|"define · EXTRACTED"| n40
+  n15 -->|"define · EXTRACTED"| n41
+  n27 -->|"incorpora_como_base64 · EXTRACTED"| n26
+  n30 -->|"le_geometria_para_testes · EXTRACTED"| n26
+  n12 -->|"importa_base_derivada · EXTRACTED"| n26
+  n12 -->|"gera_ou_sobrescreve · EXTRACTED"| n23
+  n12 -->|"gera_ou_sobrescreve · EXTRACTED"| n22
+  n12 -->|"gera_ou_sobrescreve · EXTRACTED"| n21
+  n12 -->|"gera_ou_sobrescreve · EXTRACTED"| n0
+  n12 -->|"gera_ou_sobrescreve · EXTRACTED"| n1
+  n12 -->|"gera_ou_sobrescreve · EXTRACTED"| n24
+  n11 -->|"le_e_reescreve_com_clipe_unico · EXTRACTED"| n21
+  n15 -->|"reabre_para_validacao · EXTRACTED"| n0
+  n15 -->|"le_e_reimporta_para_validacao · EXTRACTED"| n22
+  n15 -->|"le_e_reimporta_para_validacao · EXTRACTED"| n21
+  n15 -->|"escreve_relatorio · EXTRACTED"| n25
+  n13 -->|"importa_cenario · EXTRACTED"| n3
+  n13 -->|"importa_carro_estatico · EXTRACTED"| n22
+  n13 -->|"registra_fonte_do_cenario_em_metadado · EXTRACTED"| n29
+  n13 -->|"salva_blend_conjunto · EXTRACTED"| n4
+  n13 -->|"escreve_relatorio · EXTRACTED"| n6
+  n14 -->|"abre_cena_para_render · EXTRACTED"| n4
+  n14 -->|"renderiza_previa · EXTRACTED"| n5
+  n10 -->|"le_bytes_para_sha256 · EXTRACTED"| n0
+  n10 -->|"le_bytes_para_sha256 · EXTRACTED"| n22
+  n10 -->|"le_bytes_para_sha256 · EXTRACTED"| n21
+  n10 -->|"le_bytes_para_sha256 · EXTRACTED"| n23
+  n10 -->|"le_bytes_para_sha256 · EXTRACTED"| n26
+  n10 -->|"le_bytes_para_sha256 · EXTRACTED"| n28
+  n10 -->|"le_bytes_para_sha256 · EXTRACTED"| n1
+  n10 -->|"le_bytes_para_sha256 · EXTRACTED"| n3
+  n10 -->|"le_bytes_para_sha256 · EXTRACTED"| n4
+  n10 -->|"le_bytes_para_sha256 · EXTRACTED"| n5
+  n10 -->|"le_bytes_para_sha256 · EXTRACTED"| n18
+  n10 -->|"le_bytes_para_sha256 · EXTRACTED"| n17
+  n10 -->|"le_bytes_para_sha256 · EXTRACTED"| n16
+  n10 -->|"le_bytes_para_sha256 · EXTRACTED"| n19
+  n10 -->|"sobrescreve_manifesto_de_artefatos · EXTRACTED"| n20
+  n9 -->|"documenta_uso_e_origem · EXTRACTED"| n3
+  n9 -->|"documenta_uso_e_origem · EXTRACTED"| n4
+  n8 -->|"identifica_fonte_editavel_e_risco_de_reconstrucao · EXTRACTED"| n0
+  n7 -->|"documenta_acabamento_e_limites_de_exportacao · EXTRACTED"| n4
+  n7 -->|"documenta_acabamento_e_limites_de_exportacao · EXTRACTED"| n3

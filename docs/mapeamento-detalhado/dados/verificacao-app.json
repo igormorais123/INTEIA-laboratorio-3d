@@ -1,0 +1,62 @@
+{
+  "timestamp": "2026-09-13T01:40:21.857Z",
+  "node": "v24.16.0",
+  "three": "0.180.0",
+  "esbuild": "0.25.10",
+  "build": {
+    "success": true,
+    "method": "esbuild write:false e substituição de template em memória",
+    "bytes": 36511157,
+    "sha256": "84f13241d40b248176f6428e85a00684ca97fb4ecc4a1a877e6fbc9a2b4c1d22",
+    "equals_checked_in_html": true
+  },
+  "mechanics": {
+    "parts": 97,
+    "wheelPivots": 4,
+    "innerCovers": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "drs": true,
+    "cycles": 20,
+    "initialError": 0,
+    "finalError": 0,
+    "resetError": 0,
+    "dragResetError": 0,
+    "isolationRestored": true,
+    "passed": true
+  },
+  "aerodynamics": {
+    "success": true,
+    "output": "Aerodinâmica: unidades, escala V²/V³, vento relativo, densidade, limites e ausência de coeficientes OK."
+  },
+  "source_hashes": {
+    "web/src/aero-physics.mjs": "ddec76df50dd3dba23d2361d5579be999d70a4a1bd58dce99001fd4b9c146482",
+    "web/src/app-v2.js": "7064534fb4a7e6f5c7070a2dbc32d161bf8744fd1b547c1369f920ee70d35977",
+    "web/src/branding.js": "84d47397f7255884a41f3273c493746b6b74de0d789cfc55052edd1b8671380b",
+    "web/src/customize.js": "9588784fd0e68d0dd4d61ad3c2731ef39c1cba33f6f57f47b172d55abc0a4176",
+    "web/src/flow-detail.js": "436414a7e85b9ad8a043c469412b63224dc101e4caba06e76340977d85684f1a",
+    "web/src/garage.js": "881afa322c3ed23315549e48147df9f1f47e31836ed29cc24730538bbd91ced4",
+    "web/src/identity.js": "f7da18ffada2006737675abb026d621097f8219e37587a5b72c1dfc798b089a6",
+    "web/src/mechanics.js": "e6795bbc6ccccca32f2c4582cae3fab14d798ff3d7d0a31b23d59ecc5b1735eb",
+    "web/src/studio.js": "36ca53b97600bcdcec404b67ab42333afefe20c00d046d2c92d28145f6b6d8e1",
+    "web/src/template-v2.html": "eb68c53ef7656791d9b8e4a2555be50fa5e5f91d22ccdc22e24d9c8a49b51dc7",
+    "web/src/tunnel-visual.js": "46435c35174bd737c548b964d23a577214f26c645459bf8f4d792b183ffd02c5",
+    "web/src/wind-tunnel.js": "7795a0a4bf6a3462b7c9c81d20431b26e133041a8930dcda8ee2191bfd9556e5",
+    "web/assets/carro-movable.glb": "f192b6a4e09f5ec1f65b2ccf55f53ac8d84eb62d13ac19a1347c7f9aca02a3bc",
+    "web/build.cjs": "b4195fe57f892d1fe85d1595d0f1c9ce3ae77d356648b52c537ee3ab2904e2fe",
+    "web/test-mechanics.mjs": "d54f8929104e5ba8ee76479607b00313789c0e6b84af41d025b33df031ac9ba8",
+    "web/test-aerodynamics.mjs": "a18952d5f54a4917f9fa14d546c55401d9fa57e13d559dea0bc9f7549c32bce8",
+    "web/index.html": "84f13241d40b248176f6428e85a00684ca97fb4ecc4a1a877e6fbc9a2b4c1d22",
+    "validacao-mecanica-web.json": "431fe5c5fbb590ad49d96bf4e303ec86fae4fae827abced3b8b175687575474a"
+  },
+  "changed_during_test": [],
+  "limitations": [
+    "Sem execução gráfica do aplicativo nesta tarefa",
+    "Teste mecânico original remove texturas/materiais para executar em Node; não verifica aparência",
+    "Não reabre .blend nem renderiza Cycles",
+    "Fórmulas de coeficientes não validam aerodinâmica da geometria"
+  ]
+}

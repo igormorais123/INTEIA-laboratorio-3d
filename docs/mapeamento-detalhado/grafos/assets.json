@@ -1,0 +1,980 @@
+{
+  "nodes": [
+    {
+      "id": "INTEIA_F1_Master.blend",
+      "label": "INTEIA_F1_Master.blend",
+      "kind": "file",
+      "path": "INTEIA_F1_Master.blend"
+    },
+    {
+      "id": "Previa-Blender.png",
+      "label": "Previa-Blender.png",
+      "kind": "file",
+      "path": "Previa-Blender.png"
+    },
+    {
+      "id": "README.md",
+      "label": "README.md",
+      "kind": "file",
+      "path": "README.md"
+    },
+    {
+      "id": "ambientes/INTEIA-box-laboratorio.glb",
+      "label": "ambientes/INTEIA-box-laboratorio.glb",
+      "kind": "file",
+      "path": "ambientes/INTEIA-box-laboratorio.glb"
+    },
+    {
+      "id": "ambientes/INTEIA_Box_com_carro.blend",
+      "label": "ambientes/INTEIA_Box_com_carro.blend",
+      "kind": "file",
+      "path": "ambientes/INTEIA_Box_com_carro.blend"
+    },
+    {
+      "id": "ambientes/Previa-Box.png",
+      "label": "ambientes/Previa-Box.png",
+      "kind": "file",
+      "path": "ambientes/Previa-Box.png"
+    },
+    {
+      "id": "ambientes/validacao-box.json",
+      "label": "ambientes/validacao-box.json",
+      "kind": "file",
+      "path": "ambientes/validacao-box.json"
+    },
+    {
+      "id": "docs/ACABAMENTO-E-RENDER.md",
+      "label": "docs/ACABAMENTO-E-RENDER.md",
+      "kind": "file",
+      "path": "docs/ACABAMENTO-E-RENDER.md"
+    },
+    {
+      "id": "docs/ARQUITETURA.md",
+      "label": "docs/ARQUITETURA.md",
+      "kind": "file",
+      "path": "docs/ARQUITETURA.md"
+    },
+    {
+      "id": "docs/BOX-LABORATORIO.md",
+      "label": "docs/BOX-LABORATORIO.md",
+      "kind": "file",
+      "path": "docs/BOX-LABORATORIO.md"
+    },
+    {
+      "id": "ferramentas/manifest.cjs",
+      "label": "ferramentas/manifest.cjs",
+      "kind": "file",
+      "path": "ferramentas/manifest.cjs"
+    },
+    {
+      "id": "ferramentas/merge-animation.cjs",
+      "label": "ferramentas/merge-animation.cjs",
+      "kind": "file",
+      "path": "ferramentas/merge-animation.cjs"
+    },
+    {
+      "id": "ferramentas/package_blender.py",
+      "label": "ferramentas/package_blender.py",
+      "kind": "file",
+      "path": "ferramentas/package_blender.py"
+    },
+    {
+      "id": "ferramentas/package_garage.py",
+      "label": "ferramentas/package_garage.py",
+      "kind": "file",
+      "path": "ferramentas/package_garage.py"
+    },
+    {
+      "id": "ferramentas/render_garage_preview.py",
+      "label": "ferramentas/render_garage_preview.py",
+      "kind": "file",
+      "path": "ferramentas/render_garage_preview.py"
+    },
+    {
+      "id": "ferramentas/validate-kit.py",
+      "label": "ferramentas/validate-kit.py",
+      "kind": "file",
+      "path": "ferramentas/validate-kit.py"
+    },
+    {
+      "id": "identidade/INTEIA-monocromatico.svg",
+      "label": "identidade/INTEIA-monocromatico.svg",
+      "kind": "file",
+      "path": "identidade/INTEIA-monocromatico.svg"
+    },
+    {
+      "id": "identidade/INTEIA-negativo.svg",
+      "label": "identidade/INTEIA-negativo.svg",
+      "kind": "file",
+      "path": "identidade/INTEIA-negativo.svg"
+    },
+    {
+      "id": "identidade/INTEIA-principal.svg",
+      "label": "identidade/INTEIA-principal.svg",
+      "kind": "file",
+      "path": "identidade/INTEIA-principal.svg"
+    },
+    {
+      "id": "identidade/INTEIA-simbolo.svg",
+      "label": "identidade/INTEIA-simbolo.svg",
+      "kind": "file",
+      "path": "identidade/INTEIA-simbolo.svg"
+    },
+    {
+      "id": "manifesto-sha256.json",
+      "label": "manifesto-sha256.json",
+      "kind": "file",
+      "path": "manifesto-sha256.json"
+    },
+    {
+      "id": "modelos/INTEIA_F1_animado.glb",
+      "label": "modelos/INTEIA_F1_animado.glb",
+      "kind": "file",
+      "path": "modelos/INTEIA_F1_animado.glb"
+    },
+    {
+      "id": "modelos/INTEIA_F1_estatico.glb",
+      "label": "modelos/INTEIA_F1_estatico.glb",
+      "kind": "file",
+      "path": "modelos/INTEIA_F1_estatico.glb"
+    },
+    {
+      "id": "texturas/INTEIA_Carbono_BaseColor.png",
+      "label": "texturas/INTEIA_Carbono_BaseColor.png",
+      "kind": "file",
+      "path": "texturas/INTEIA_Carbono_BaseColor.png"
+    },
+    {
+      "id": "validacao-criacao.json",
+      "label": "validacao-criacao.json",
+      "kind": "file",
+      "path": "validacao-criacao.json"
+    },
+    {
+      "id": "validacao-reabertura.json",
+      "label": "validacao-reabertura.json",
+      "kind": "file",
+      "path": "validacao-reabertura.json"
+    },
+    {
+      "id": "web/assets/carro-movable.glb",
+      "label": "web/assets/carro-movable.glb",
+      "kind": "file",
+      "path": "web/assets/carro-movable.glb"
+    },
+    {
+      "id": "web/build.cjs",
+      "label": "web/build.cjs",
+      "kind": "file",
+      "path": "web/build.cjs"
+    },
+    {
+      "id": "web/index.html",
+      "label": "web/index.html",
+      "kind": "file",
+      "path": "web/index.html"
+    },
+    {
+      "id": "web/src/garage.js",
+      "label": "web/src/garage.js",
+      "kind": "file",
+      "path": "web/src/garage.js"
+    },
+    {
+      "id": "web/test-mechanics.mjs",
+      "label": "web/test-mechanics.mjs",
+      "kind": "file",
+      "path": "web/test-mechanics.mjs"
+    },
+    {
+      "id": "external:fs",
+      "label": "fs",
+      "kind": "external",
+      "path": null
+    },
+    {
+      "id": "external:path",
+      "label": "path",
+      "kind": "external",
+      "path": null
+    },
+    {
+      "id": "external:crypto",
+      "label": "crypto",
+      "kind": "external",
+      "path": null
+    },
+    {
+      "id": "ferramentas/package_blender.py#27:linear",
+      "label": "linear",
+      "kind": "symbol",
+      "path": "ferramentas/package_blender.py"
+    },
+    {
+      "id": "ferramentas/package_blender.py#28:col",
+      "label": "col",
+      "kind": "symbol",
+      "path": "ferramentas/package_blender.py"
+    },
+    {
+      "id": "ferramentas/package_blender.py#29:base",
+      "label": "base",
+      "kind": "symbol",
+      "path": "ferramentas/package_blender.py"
+    },
+    {
+      "id": "ferramentas/package_blender.py#74:center",
+      "label": "center",
+      "kind": "symbol",
+      "path": "ferramentas/package_blender.py"
+    },
+    {
+      "id": "ferramentas/package_blender.py#75:reparent",
+      "label": "reparent",
+      "kind": "symbol",
+      "path": "ferramentas/package_blender.py"
+    },
+    {
+      "id": "ferramentas/package_blender.py#121:select_car",
+      "label": "select_car",
+      "kind": "symbol",
+      "path": "ferramentas/package_blender.py"
+    },
+    {
+      "id": "ferramentas/package_blender.py#130:to_studio",
+      "label": "to_studio",
+      "kind": "symbol",
+      "path": "ferramentas/package_blender.py"
+    },
+    {
+      "id": "ferramentas/validate-kit.py#7:matrices",
+      "label": "matrices",
+      "kind": "symbol",
+      "path": "ferramentas/validate-kit.py"
+    }
+  ],
+  "edges": [
+    {
+      "source": "README.md",
+      "target": "Previa-Blender.png",
+      "relation": "documenta",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "evidence": {
+        "path": "README.md",
+        "line": null,
+        "text": "Previa-Blender.png"
+      }
+    },
+    {
+      "source": "README.md",
+      "target": "INTEIA_F1_Master.blend",
+      "relation": "documenta",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "evidence": {
+        "path": "README.md",
+        "line": null,
+        "text": "INTEIA_F1_Master.blend"
+      }
+    },
+    {
+      "source": "README.md",
+      "target": "ambientes/INTEIA-box-laboratorio.glb",
+      "relation": "documenta",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "evidence": {
+        "path": "README.md",
+        "line": null,
+        "text": "ambientes/INTEIA-box-laboratorio.glb"
+      }
+    },
+    {
+      "source": "README.md",
+      "target": "ambientes/INTEIA_Box_com_carro.blend",
+      "relation": "documenta",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "evidence": {
+        "path": "README.md",
+        "line": null,
+        "text": "ambientes/INTEIA_Box_com_carro.blend"
+      }
+    },
+    {
+      "source": "README.md",
+      "target": "modelos/INTEIA_F1_estatico.glb",
+      "relation": "documenta",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "evidence": {
+        "path": "README.md",
+        "line": null,
+        "text": "modelos/INTEIA_F1_estatico.glb"
+      }
+    },
+    {
+      "source": "README.md",
+      "target": "modelos/INTEIA_F1_animado.glb",
+      "relation": "documenta",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "evidence": {
+        "path": "README.md",
+        "line": null,
+        "text": "modelos/INTEIA_F1_animado.glb"
+      }
+    },
+    {
+      "source": "ferramentas/manifest.cjs",
+      "target": "external:fs",
+      "relation": "importa",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "evidence": {
+        "path": "ferramentas/manifest.cjs",
+        "line": 1,
+        "text": "require('fs')"
+      }
+    },
+    {
+      "source": "ferramentas/manifest.cjs",
+      "target": "external:path",
+      "relation": "importa",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "evidence": {
+        "path": "ferramentas/manifest.cjs",
+        "line": 1,
+        "text": "require('path')"
+      }
+    },
+    {
+      "source": "ferramentas/manifest.cjs",
+      "target": "external:crypto",
+      "relation": "importa",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "evidence": {
+        "path": "ferramentas/manifest.cjs",
+        "line": 1,
+        "text": "require('crypto')"
+      }
+    },
+    {
+      "source": "ferramentas/merge-animation.cjs",
+      "target": "external:fs",
+      "relation": "importa",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "evidence": {
+        "path": "ferramentas/merge-animation.cjs",
+        "line": 1,
+        "text": "require('fs')"
+      }
+    },
+    {
+      "source": "ferramentas/merge-animation.cjs",
+      "target": "external:path",
+      "relation": "importa",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "evidence": {
+        "path": "ferramentas/merge-animation.cjs",
+        "line": 1,
+        "text": "require('path')"
+      }
+    },
+    {
+      "source": "ferramentas/package_blender.py",
+      "target": "ferramentas/package_blender.py#27:linear",
+      "relation": "define",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "evidence": {
+        "path": "ferramentas/package_blender.py",
+        "line": 27,
+        "text": "def linear(v):return v/12.92 if v<=.04045 else ((v+.055)/1.055)**2.4"
+      }
+    },
+    {
+      "source": "ferramentas/package_blender.py",
+      "target": "ferramentas/package_blender.py#28:col",
+      "relation": "define",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "evidence": {
+        "path": "ferramentas/package_blender.py",
+        "line": 28,
+        "text": "def col(h):return tuple(linear(int(h[i:i+2],16)/255) for i in (1,3,5))+(1,)"
+      }
+    },
+    {
+      "source": "ferramentas/package_blender.py",
+      "target": "ferramentas/package_blender.py#29:base",
+      "relation": "define",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "evidence": {
+        "path": "ferramentas/package_blender.py",
+        "line": 29,
+        "text": "def base(m,h,metal,rough,coat=0,cr=.1):"
+      }
+    },
+    {
+      "source": "ferramentas/package_blender.py",
+      "target": "ferramentas/package_blender.py#74:center",
+      "relation": "define",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "evidence": {
+        "path": "ferramentas/package_blender.py",
+        "line": 74,
+        "text": "def center(o):return sum((o.matrix_world@Vector(v) for v in o.bound_box),Vector())/8"
+      }
+    },
+    {
+      "source": "ferramentas/package_blender.py",
+      "target": "ferramentas/package_blender.py#75:reparent",
+      "relation": "define",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "evidence": {
+        "path": "ferramentas/package_blender.py",
+        "line": 75,
+        "text": "def reparent(o,p):"
+      }
+    },
+    {
+      "source": "ferramentas/package_blender.py",
+      "target": "ferramentas/package_blender.py#121:select_car",
+      "relation": "define",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "evidence": {
+        "path": "ferramentas/package_blender.py",
+        "line": 121,
+        "text": "def select_car():"
+      }
+    },
+    {
+      "source": "ferramentas/package_blender.py",
+      "target": "ferramentas/package_blender.py#130:to_studio",
+      "relation": "define",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "evidence": {
+        "path": "ferramentas/package_blender.py",
+        "line": 130,
+        "text": "def to_studio(o):"
+      }
+    },
+    {
+      "source": "ferramentas/validate-kit.py",
+      "target": "ferramentas/validate-kit.py#7:matrices",
+      "relation": "define",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "evidence": {
+        "path": "ferramentas/validate-kit.py",
+        "line": 7,
+        "text": "def matrices():"
+      }
+    },
+    {
+      "source": "web/build.cjs",
+      "target": "web/assets/carro-movable.glb",
+      "relation": "incorpora_como_base64",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "evidence": {
+        "path": "web/build.cjs",
+        "line": 3,
+        "text": "const html=fs.readFileSync('src/template-v2.html','utf8').replace('__MODEL__',fs.readFileSync('assets/carro-movable.glb').toString('base64')).replace('__APP__',()=>bundle.replace(/<\\/script/gi,'<\\\\/script'));"
+      }
+    },
+    {
+      "source": "web/test-mechanics.mjs",
+      "target": "web/assets/carro-movable.glb",
+      "relation": "le_geometria_para_testes",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "evidence": {
+        "path": "web/test-mechanics.mjs",
+        "line": 5,
+        "text": "const b=fs.readFileSync('assets/carro-movable.glb'),len=b.readUInt32LE(12),j=JSON.parse(b.subarray(20,20+len));"
+      }
+    },
+    {
+      "source": "ferramentas/package_blender.py",
+      "target": "web/assets/carro-movable.glb",
+      "relation": "importa_base_derivada",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "evidence": {
+        "path": "ferramentas/package_blender.py",
+        "line": 9,
+        "text": "bpy.ops.import_scene.gltf(filepath=ROOT+'/web/assets/carro-movable.glb')"
+      }
+    },
+    {
+      "source": "ferramentas/package_blender.py",
+      "target": "texturas/INTEIA_Carbono_BaseColor.png",
+      "relation": "gera_ou_sobrescreve",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "evidence": {
+        "path": "ferramentas/package_blender.py",
+        "line": 44,
+        "text": "im.pixels.foreach_set(pixels);im.filepath_raw=OUT+'/texturas/INTEIA_Carbono_BaseColor.png';im.file_format='PNG';im.save();im.pack()"
+      }
+    },
+    {
+      "source": "ferramentas/package_blender.py",
+      "target": "modelos/INTEIA_F1_estatico.glb",
+      "relation": "gera_ou_sobrescreve",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "evidence": {
+        "path": "ferramentas/package_blender.py",
+        "line": 126,
+        "text": "bpy.ops.export_scene.gltf(filepath=OUT+'/modelos/INTEIA_F1_estatico.glb',use_selection=True,export_animations=False,export_extras=True)"
+      }
+    },
+    {
+      "source": "ferramentas/package_blender.py",
+      "target": "modelos/INTEIA_F1_animado.glb",
+      "relation": "gera_ou_sobrescreve",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "evidence": {
+        "path": "ferramentas/package_blender.py",
+        "line": 127,
+        "text": "bpy.ops.export_scene.gltf(filepath=OUT+'/modelos/INTEIA_F1_animado.glb',use_selection=True,export_animations=True,export_animation_mode='SCENE',export_frame_range=True,export_force_sampling=True,export_extras=True)"
+      }
+    },
+    {
+      "source": "ferramentas/package_blender.py",
+      "target": "INTEIA_F1_Master.blend",
+      "relation": "gera_ou_sobrescreve",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "evidence": {
+        "path": "ferramentas/package_blender.py",
+        "line": 145,
+        "text": "select_car();bpy.ops.file.pack_all();bpy.ops.wm.save_as_mainfile(filepath=OUT+'/INTEIA_F1_Master.blend',compress=True)"
+      }
+    },
+    {
+      "source": "ferramentas/package_blender.py",
+      "target": "Previa-Blender.png",
+      "relation": "gera_ou_sobrescreve",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "evidence": {
+        "path": "ferramentas/package_blender.py",
+        "line": 146,
+        "text": "scene.render.filepath=OUT+'/Previa-Blender.png';bpy.ops.render.render(write_still=True)"
+      }
+    },
+    {
+      "source": "ferramentas/package_blender.py",
+      "target": "validacao-criacao.json",
+      "relation": "gera_ou_sobrescreve",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "evidence": {
+        "path": "ferramentas/package_blender.py",
+        "line": 148,
+        "text": "open(OUT+'/validacao-criacao.json','w').write(json.dumps(report,indent=2))"
+      }
+    },
+    {
+      "source": "ferramentas/merge-animation.cjs",
+      "target": "modelos/INTEIA_F1_animado.glb",
+      "relation": "le_e_reescreve_com_clipe_unico",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "evidence": {
+        "path": "ferramentas/merge-animation.cjs",
+        "line": 4,
+        "text": "j.animations=[merged];const json=Buffer.from(JSON.stringify(j)),pad=Buffer.alloc(Math.ceil(json.length/4)*4,32);json.copy(pad);const tail=b.subarray(20+old),out=Buffer.alloc(20+pad.length+tail.length);b.copy(out,0,0,12);out.writeUInt32LE(out.length,8);out.writeUInt32LE(pad.length,12);out.writeUInt32LE(0x4e4f534a,16);pad.copy(out,20);tail.copy(out,20+pad.length);fs.writeFileSync(file,out);console.log('Clipe único:',merged.channels.length,'canais');"
+      }
+    },
+    {
+      "source": "ferramentas/validate-kit.py",
+      "target": "INTEIA_F1_Master.blend",
+      "relation": "reabre_para_validacao",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "evidence": {
+        "path": "ferramentas/validate-kit.py",
+        "line": 5,
+        "text": "bpy.ops.wm.open_mainfile(filepath=ROOT+'/INTEIA_F1_Master.blend')"
+      }
+    },
+    {
+      "source": "ferramentas/validate-kit.py",
+      "target": "modelos/INTEIA_F1_estatico.glb",
+      "relation": "le_e_reimporta_para_validacao",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "evidence": {
+        "path": "ferramentas/validate-kit.py",
+        "line": 15,
+        "text": "for filename in ['INTEIA_F1_estatico.glb','INTEIA_F1_animado.glb']:"
+      }
+    },
+    {
+      "source": "ferramentas/validate-kit.py",
+      "target": "modelos/INTEIA_F1_animado.glb",
+      "relation": "le_e_reimporta_para_validacao",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "evidence": {
+        "path": "ferramentas/validate-kit.py",
+        "line": 15,
+        "text": "for filename in ['INTEIA_F1_estatico.glb','INTEIA_F1_animado.glb']:"
+      }
+    },
+    {
+      "source": "ferramentas/validate-kit.py",
+      "target": "validacao-reabertura.json",
+      "relation": "escreve_relatorio",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "evidence": {
+        "path": "ferramentas/validate-kit.py",
+        "line": 25,
+        "text": "open(ROOT+'/validacao-reabertura.json','w').write(json.dumps(report,indent=2))"
+      }
+    },
+    {
+      "source": "ferramentas/package_garage.py",
+      "target": "ambientes/INTEIA-box-laboratorio.glb",
+      "relation": "importa_cenario",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "evidence": {
+        "path": "ferramentas/package_garage.py",
+        "line": 6,
+        "text": "bpy.ops.import_scene.gltf(filepath=str(repo/'ambientes/INTEIA-box-laboratorio.glb'))"
+      }
+    },
+    {
+      "source": "ferramentas/package_garage.py",
+      "target": "modelos/INTEIA_F1_estatico.glb",
+      "relation": "importa_carro_estatico",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "evidence": {
+        "path": "ferramentas/package_garage.py",
+        "line": 12,
+        "text": "bpy.ops.import_scene.gltf(filepath=str(repo/'modelos/INTEIA_F1_estatico.glb'))"
+      }
+    },
+    {
+      "source": "ferramentas/package_garage.py",
+      "target": "web/src/garage.js",
+      "relation": "registra_fonte_do_cenario_em_metadado",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "evidence": {
+        "path": "ferramentas/package_garage.py",
+        "line": 70,
+        "text": "scene['web_source']='web/src/garage.js'"
+      }
+    },
+    {
+      "source": "ferramentas/package_garage.py",
+      "target": "ambientes/INTEIA_Box_com_carro.blend",
+      "relation": "salva_blend_conjunto",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "evidence": {
+        "path": "ferramentas/package_garage.py",
+        "line": 72,
+        "text": "out=repo/'ambientes/INTEIA_Box_com_carro.blend'"
+      }
+    },
+    {
+      "source": "ferramentas/package_garage.py",
+      "target": "ambientes/validacao-box.json",
+      "relation": "escreve_relatorio",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "evidence": {
+        "path": "ferramentas/package_garage.py",
+        "line": 75,
+        "text": "(repo/'ambientes/validacao-box.json').write_text(json.dumps(report,indent=2),encoding='utf-8')"
+      }
+    },
+    {
+      "source": "ferramentas/render_garage_preview.py",
+      "target": "ambientes/INTEIA_Box_com_carro.blend",
+      "relation": "abre_cena_para_render",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "evidence": {
+        "path": "ferramentas/render_garage_preview.py",
+        "line": 4,
+        "text": "bpy.ops.wm.open_mainfile(filepath=str(repo/'ambientes/INTEIA_Box_com_carro.blend'))"
+      }
+    },
+    {
+      "source": "ferramentas/render_garage_preview.py",
+      "target": "ambientes/Previa-Box.png",
+      "relation": "renderiza_previa",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "evidence": {
+        "path": "ferramentas/render_garage_preview.py",
+        "line": 5,
+        "text": "s=bpy.context.scene;s.render.threads_mode='FIXED';s.render.threads=6;s.cycles.samples=64;s.cycles.use_denoising=True;s.render.resolution_x=1600;s.render.resolution_y=1000;s.render.resolution_percentage=100;s.render.filepath=str(repo/'ambientes/Previa-Box.png')"
+      }
+    },
+    {
+      "source": "ferramentas/manifest.cjs",
+      "target": "INTEIA_F1_Master.blend",
+      "relation": "le_bytes_para_sha256",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "evidence": {
+        "path": "ferramentas/manifest.cjs",
+        "line": 1,
+        "text": "const fs=require('fs'),path=require('path'),crypto=require('crypto');const root=path.resolve(__dirname,'..');const files=['INTEIA_F1_Master.blend','modelos/INTEIA_F1_estatico.glb','modelos/INTEIA_F1_animado.glb','texturas/INTEIA_Carbono_BaseColor.png','web/assets/carro-movable.glb','web/index.html','Previa-Blender.png','ambientes/INTEIA-box-laboratorio.glb','ambientes/INTEIA_Box_com_carro.blend','ambientes/Previa-Box.png','identidade/INTEIA-principal.svg','identidade/INTEIA-negativo.svg','identidade/INTEIA-monocromatico.svg','identidade/INTEIA-simbolo.svg'];const out=files.map(arquivo=>{const b=fs.readFileSync(path.join(root,arquivo));return {arquivo,bytes:b.length,sha256:crypto.createHash('sha256').update(b).digest('hex')};});fs.writeFileSync(path.join(root,'manifesto-sha256.json'),JSON.stringify(out,null,2)+'\\n');"
+      }
+    },
+    {
+      "source": "ferramentas/manifest.cjs",
+      "target": "modelos/INTEIA_F1_estatico.glb",
+      "relation": "le_bytes_para_sha256",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "evidence": {
+        "path": "ferramentas/manifest.cjs",
+        "line": 1,
+        "text": "const fs=require('fs'),path=require('path'),crypto=require('crypto');const root=path.resolve(__dirname,'..');const files=['INTEIA_F1_Master.blend','modelos/INTEIA_F1_estatico.glb','modelos/INTEIA_F1_animado.glb','texturas/INTEIA_Carbono_BaseColor.png','web/assets/carro-movable.glb','web/index.html','Previa-Blender.png','ambientes/INTEIA-box-laboratorio.glb','ambientes/INTEIA_Box_com_carro.blend','ambientes/Previa-Box.png','identidade/INTEIA-principal.svg','identidade/INTEIA-negativo.svg','identidade/INTEIA-monocromatico.svg','identidade/INTEIA-simbolo.svg'];const out=files.map(arquivo=>{const b=fs.readFileSync(path.join(root,arquivo));return {arquivo,bytes:b.length,sha256:crypto.createHash('sha256').update(b).digest('hex')};});fs.writeFileSync(path.join(root,'manifesto-sha256.json'),JSON.stringify(out,null,2)+'\\n');"
+      }
+    },
+    {
+      "source": "ferramentas/manifest.cjs",
+      "target": "modelos/INTEIA_F1_animado.glb",
+      "relation": "le_bytes_para_sha256",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "evidence": {
+        "path": "ferramentas/manifest.cjs",
+        "line": 1,
+        "text": "const fs=require('fs'),path=require('path'),crypto=require('crypto');const root=path.resolve(__dirname,'..');const files=['INTEIA_F1_Master.blend','modelos/INTEIA_F1_estatico.glb','modelos/INTEIA_F1_animado.glb','texturas/INTEIA_Carbono_BaseColor.png','web/assets/carro-movable.glb','web/index.html','Previa-Blender.png','ambientes/INTEIA-box-laboratorio.glb','ambientes/INTEIA_Box_com_carro.blend','ambientes/Previa-Box.png','identidade/INTEIA-principal.svg','identidade/INTEIA-negativo.svg','identidade/INTEIA-monocromatico.svg','identidade/INTEIA-simbolo.svg'];const out=files.map(arquivo=>{const b=fs.readFileSync(path.join(root,arquivo));return {arquivo,bytes:b.length,sha256:crypto.createHash('sha256').update(b).digest('hex')};});fs.writeFileSync(path.join(root,'manifesto-sha256.json'),JSON.stringify(out,null,2)+'\\n');"
+      }
+    },
+    {
+      "source": "ferramentas/manifest.cjs",
+      "target": "texturas/INTEIA_Carbono_BaseColor.png",
+      "relation": "le_bytes_para_sha256",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "evidence": {
+        "path": "ferramentas/manifest.cjs",
+        "line": 1,
+        "text": "const fs=require('fs'),path=require('path'),crypto=require('crypto');const root=path.resolve(__dirname,'..');const files=['INTEIA_F1_Master.blend','modelos/INTEIA_F1_estatico.glb','modelos/INTEIA_F1_animado.glb','texturas/INTEIA_Carbono_BaseColor.png','web/assets/carro-movable.glb','web/index.html','Previa-Blender.png','ambientes/INTEIA-box-laboratorio.glb','ambientes/INTEIA_Box_com_carro.blend','ambientes/Previa-Box.png','identidade/INTEIA-principal.svg','identidade/INTEIA-negativo.svg','identidade/INTEIA-monocromatico.svg','identidade/INTEIA-simbolo.svg'];const out=files.map(arquivo=>{const b=fs.readFileSync(path.join(root,arquivo));return {arquivo,bytes:b.length,sha256:crypto.createHash('sha256').update(b).digest('hex')};});fs.writeFileSync(path.join(root,'manifesto-sha256.json'),JSON.stringify(out,null,2)+'\\n');"
+      }
+    },
+    {
+      "source": "ferramentas/manifest.cjs",
+      "target": "web/assets/carro-movable.glb",
+      "relation": "le_bytes_para_sha256",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "evidence": {
+        "path": "ferramentas/manifest.cjs",
+        "line": 1,
+        "text": "const fs=require('fs'),path=require('path'),crypto=require('crypto');const root=path.resolve(__dirname,'..');const files=['INTEIA_F1_Master.blend','modelos/INTEIA_F1_estatico.glb','modelos/INTEIA_F1_animado.glb','texturas/INTEIA_Carbono_BaseColor.png','web/assets/carro-movable.glb','web/index.html','Previa-Blender.png','ambientes/INTEIA-box-laboratorio.glb','ambientes/INTEIA_Box_com_carro.blend','ambientes/Previa-Box.png','identidade/INTEIA-principal.svg','identidade/INTEIA-negativo.svg','identidade/INTEIA-monocromatico.svg','identidade/INTEIA-simbolo.svg'];const out=files.map(arquivo=>{const b=fs.readFileSync(path.join(root,arquivo));return {arquivo,bytes:b.length,sha256:crypto.createHash('sha256').update(b).digest('hex')};});fs.writeFileSync(path.join(root,'manifesto-sha256.json'),JSON.stringify(out,null,2)+'\\n');"
+      }
+    },
+    {
+      "source": "ferramentas/manifest.cjs",
+      "target": "web/index.html",
+      "relation": "le_bytes_para_sha256",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "evidence": {
+        "path": "ferramentas/manifest.cjs",
+        "line": 1,
+        "text": "const fs=require('fs'),path=require('path'),crypto=require('crypto');const root=path.resolve(__dirname,'..');const files=['INTEIA_F1_Master.blend','modelos/INTEIA_F1_estatico.glb','modelos/INTEIA_F1_animado.glb','texturas/INTEIA_Carbono_BaseColor.png','web/assets/carro-movable.glb','web/index.html','Previa-Blender.png','ambientes/INTEIA-box-laboratorio.glb','ambientes/INTEIA_Box_com_carro.blend','ambientes/Previa-Box.png','identidade/INTEIA-principal.svg','identidade/INTEIA-negativo.svg','identidade/INTEIA-monocromatico.svg','identidade/INTEIA-simbolo.svg'];const out=files.map(arquivo=>{const b=fs.readFileSync(path.join(root,arquivo));return {arquivo,bytes:b.length,sha256:crypto.createHash('sha256').update(b).digest('hex')};});fs.writeFileSync(path.join(root,'manifesto-sha256.json'),JSON.stringify(out,null,2)+'\\n');"
+      }
+    },
+    {
+      "source": "ferramentas/manifest.cjs",
+      "target": "Previa-Blender.png",
+      "relation": "le_bytes_para_sha256",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "evidence": {
+        "path": "ferramentas/manifest.cjs",
+        "line": 1,
+        "text": "const fs=require('fs'),path=require('path'),crypto=require('crypto');const root=path.resolve(__dirname,'..');const files=['INTEIA_F1_Master.blend','modelos/INTEIA_F1_estatico.glb','modelos/INTEIA_F1_animado.glb','texturas/INTEIA_Carbono_BaseColor.png','web/assets/carro-movable.glb','web/index.html','Previa-Blender.png','ambientes/INTEIA-box-laboratorio.glb','ambientes/INTEIA_Box_com_carro.blend','ambientes/Previa-Box.png','identidade/INTEIA-principal.svg','identidade/INTEIA-negativo.svg','identidade/INTEIA-monocromatico.svg','identidade/INTEIA-simbolo.svg'];const out=files.map(arquivo=>{const b=fs.readFileSync(path.join(root,arquivo));return {arquivo,bytes:b.length,sha256:crypto.createHash('sha256').update(b).digest('hex')};});fs.writeFileSync(path.join(root,'manifesto-sha256.json'),JSON.stringify(out,null,2)+'\\n');"
+      }
+    },
+    {
+      "source": "ferramentas/manifest.cjs",
+      "target": "ambientes/INTEIA-box-laboratorio.glb",
+      "relation": "le_bytes_para_sha256",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "evidence": {
+        "path": "ferramentas/manifest.cjs",
+        "line": 1,
+        "text": "const fs=require('fs'),path=require('path'),crypto=require('crypto');const root=path.resolve(__dirname,'..');const files=['INTEIA_F1_Master.blend','modelos/INTEIA_F1_estatico.glb','modelos/INTEIA_F1_animado.glb','texturas/INTEIA_Carbono_BaseColor.png','web/assets/carro-movable.glb','web/index.html','Previa-Blender.png','ambientes/INTEIA-box-laboratorio.glb','ambientes/INTEIA_Box_com_carro.blend','ambientes/Previa-Box.png','identidade/INTEIA-principal.svg','identidade/INTEIA-negativo.svg','identidade/INTEIA-monocromatico.svg','identidade/INTEIA-simbolo.svg'];const out=files.map(arquivo=>{const b=fs.readFileSync(path.join(root,arquivo));return {arquivo,bytes:b.length,sha256:crypto.createHash('sha256').update(b).digest('hex')};});fs.writeFileSync(path.join(root,'manifesto-sha256.json'),JSON.stringify(out,null,2)+'\\n');"
+      }
+    },
+    {
+      "source": "ferramentas/manifest.cjs",
+      "target": "ambientes/INTEIA_Box_com_carro.blend",
+      "relation": "le_bytes_para_sha256",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "evidence": {
+        "path": "ferramentas/manifest.cjs",
+        "line": 1,
+        "text": "const fs=require('fs'),path=require('path'),crypto=require('crypto');const root=path.resolve(__dirname,'..');const files=['INTEIA_F1_Master.blend','modelos/INTEIA_F1_estatico.glb','modelos/INTEIA_F1_animado.glb','texturas/INTEIA_Carbono_BaseColor.png','web/assets/carro-movable.glb','web/index.html','Previa-Blender.png','ambientes/INTEIA-box-laboratorio.glb','ambientes/INTEIA_Box_com_carro.blend','ambientes/Previa-Box.png','identidade/INTEIA-principal.svg','identidade/INTEIA-negativo.svg','identidade/INTEIA-monocromatico.svg','identidade/INTEIA-simbolo.svg'];const out=files.map(arquivo=>{const b=fs.readFileSync(path.join(root,arquivo));return {arquivo,bytes:b.length,sha256:crypto.createHash('sha256').update(b).digest('hex')};});fs.writeFileSync(path.join(root,'manifesto-sha256.json'),JSON.stringify(out,null,2)+'\\n');"
+      }
+    },
+    {
+      "source": "ferramentas/manifest.cjs",
+      "target": "ambientes/Previa-Box.png",
+      "relation": "le_bytes_para_sha256",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "evidence": {
+        "path": "ferramentas/manifest.cjs",
+        "line": 1,
+        "text": "const fs=require('fs'),path=require('path'),crypto=require('crypto');const root=path.resolve(__dirname,'..');const files=['INTEIA_F1_Master.blend','modelos/INTEIA_F1_estatico.glb','modelos/INTEIA_F1_animado.glb','texturas/INTEIA_Carbono_BaseColor.png','web/assets/carro-movable.glb','web/index.html','Previa-Blender.png','ambientes/INTEIA-box-laboratorio.glb','ambientes/INTEIA_Box_com_carro.blend','ambientes/Previa-Box.png','identidade/INTEIA-principal.svg','identidade/INTEIA-negativo.svg','identidade/INTEIA-monocromatico.svg','identidade/INTEIA-simbolo.svg'];const out=files.map(arquivo=>{const b=fs.readFileSync(path.join(root,arquivo));return {arquivo,bytes:b.length,sha256:crypto.createHash('sha256').update(b).digest('hex')};});fs.writeFileSync(path.join(root,'manifesto-sha256.json'),JSON.stringify(out,null,2)+'\\n');"
+      }
+    },
+    {
+      "source": "ferramentas/manifest.cjs",
+      "target": "identidade/INTEIA-principal.svg",
+      "relation": "le_bytes_para_sha256",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "evidence": {
+        "path": "ferramentas/manifest.cjs",
+        "line": 1,
+        "text": "const fs=require('fs'),path=require('path'),crypto=require('crypto');const root=path.resolve(__dirname,'..');const files=['INTEIA_F1_Master.blend','modelos/INTEIA_F1_estatico.glb','modelos/INTEIA_F1_animado.glb','texturas/INTEIA_Carbono_BaseColor.png','web/assets/carro-movable.glb','web/index.html','Previa-Blender.png','ambientes/INTEIA-box-laboratorio.glb','ambientes/INTEIA_Box_com_carro.blend','ambientes/Previa-Box.png','identidade/INTEIA-principal.svg','identidade/INTEIA-negativo.svg','identidade/INTEIA-monocromatico.svg','identidade/INTEIA-simbolo.svg'];const out=files.map(arquivo=>{const b=fs.readFileSync(path.join(root,arquivo));return {arquivo,bytes:b.length,sha256:crypto.createHash('sha256').update(b).digest('hex')};});fs.writeFileSync(path.join(root,'manifesto-sha256.json'),JSON.stringify(out,null,2)+'\\n');"
+      }
+    },
+    {
+      "source": "ferramentas/manifest.cjs",
+      "target": "identidade/INTEIA-negativo.svg",
+      "relation": "le_bytes_para_sha256",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "evidence": {
+        "path": "ferramentas/manifest.cjs",
+        "line": 1,
+        "text": "const fs=require('fs'),path=require('path'),crypto=require('crypto');const root=path.resolve(__dirname,'..');const files=['INTEIA_F1_Master.blend','modelos/INTEIA_F1_estatico.glb','modelos/INTEIA_F1_animado.glb','texturas/INTEIA_Carbono_BaseColor.png','web/assets/carro-movable.glb','web/index.html','Previa-Blender.png','ambientes/INTEIA-box-laboratorio.glb','ambientes/INTEIA_Box_com_carro.blend','ambientes/Previa-Box.png','identidade/INTEIA-principal.svg','identidade/INTEIA-negativo.svg','identidade/INTEIA-monocromatico.svg','identidade/INTEIA-simbolo.svg'];const out=files.map(arquivo=>{const b=fs.readFileSync(path.join(root,arquivo));return {arquivo,bytes:b.length,sha256:crypto.createHash('sha256').update(b).digest('hex')};});fs.writeFileSync(path.join(root,'manifesto-sha256.json'),JSON.stringify(out,null,2)+'\\n');"
+      }
+    },
+    {
+      "source": "ferramentas/manifest.cjs",
+      "target": "identidade/INTEIA-monocromatico.svg",
+      "relation": "le_bytes_para_sha256",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "evidence": {
+        "path": "ferramentas/manifest.cjs",
+        "line": 1,
+        "text": "const fs=require('fs'),path=require('path'),crypto=require('crypto');const root=path.resolve(__dirname,'..');const files=['INTEIA_F1_Master.blend','modelos/INTEIA_F1_estatico.glb','modelos/INTEIA_F1_animado.glb','texturas/INTEIA_Carbono_BaseColor.png','web/assets/carro-movable.glb','web/index.html','Previa-Blender.png','ambientes/INTEIA-box-laboratorio.glb','ambientes/INTEIA_Box_com_carro.blend','ambientes/Previa-Box.png','identidade/INTEIA-principal.svg','identidade/INTEIA-negativo.svg','identidade/INTEIA-monocromatico.svg','identidade/INTEIA-simbolo.svg'];const out=files.map(arquivo=>{const b=fs.readFileSync(path.join(root,arquivo));return {arquivo,bytes:b.length,sha256:crypto.createHash('sha256').update(b).digest('hex')};});fs.writeFileSync(path.join(root,'manifesto-sha256.json'),JSON.stringify(out,null,2)+'\\n');"
+      }
+    },
+    {
+      "source": "ferramentas/manifest.cjs",
+      "target": "identidade/INTEIA-simbolo.svg",
+      "relation": "le_bytes_para_sha256",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "evidence": {
+        "path": "ferramentas/manifest.cjs",
+        "line": 1,
+        "text": "const fs=require('fs'),path=require('path'),crypto=require('crypto');const root=path.resolve(__dirname,'..');const files=['INTEIA_F1_Master.blend','modelos/INTEIA_F1_estatico.glb','modelos/INTEIA_F1_animado.glb','texturas/INTEIA_Carbono_BaseColor.png','web/assets/carro-movable.glb','web/index.html','Previa-Blender.png','ambientes/INTEIA-box-laboratorio.glb','ambientes/INTEIA_Box_com_carro.blend','ambientes/Previa-Box.png','identidade/INTEIA-principal.svg','identidade/INTEIA-negativo.svg','identidade/INTEIA-monocromatico.svg','identidade/INTEIA-simbolo.svg'];const out=files.map(arquivo=>{const b=fs.readFileSync(path.join(root,arquivo));return {arquivo,bytes:b.length,sha256:crypto.createHash('sha256').update(b).digest('hex')};});fs.writeFileSync(path.join(root,'manifesto-sha256.json'),JSON.stringify(out,null,2)+'\\n');"
+      }
+    },
+    {
+      "source": "ferramentas/manifest.cjs",
+      "target": "manifesto-sha256.json",
+      "relation": "sobrescreve_manifesto_de_artefatos",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "evidence": {
+        "path": "ferramentas/manifest.cjs",
+        "line": 1,
+        "text": "const fs=require('fs'),path=require('path'),crypto=require('crypto');const root=path.resolve(__dirname,'..');const files=['INTEIA_F1_Master.blend','modelos/INTEIA_F1_estatico.glb','modelos/INTEIA_F1_animado.glb','texturas/INTEIA_Carbono_BaseColor.png','web/assets/carro-movable.glb','web/index.html','Previa-Blender.png','ambientes/INTEIA-box-laboratorio.glb','ambientes/INTEIA_Box_com_carro.blend','ambientes/Previa-Box.png','identidade/INTEIA-principal.svg','identidade/INTEIA-negativo.svg','identidade/INTEIA-monocromatico.svg','identidade/INTEIA-simbolo.svg'];const out=files.map(arquivo=>{const b=fs.readFileSync(path.join(root,arquivo));return {arquivo,bytes:b.length,sha256:crypto.createHash('sha256').update(b).digest('hex')};});fs.writeFileSync(path.join(root,'manifesto-sha256.json'),JSON.stringify(out,null,2)+'\\n');"
+      }
+    },
+    {
+      "source": "docs/BOX-LABORATORIO.md",
+      "target": "ambientes/INTEIA-box-laboratorio.glb",
+      "relation": "documenta_uso_e_origem",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "evidence": {
+        "path": "docs/BOX-LABORATORIO.md",
+        "line": 17,
+        "text": "- `ambientes/INTEIA-box-laboratorio.glb`: somente o ambiente, com geometrias, materiais, telas incorporadas e luzes exportáveis. O botão **Baixar box 3D** exporta uma nova cópia com o estado atual dos monitores."
+      }
+    },
+    {
+      "source": "docs/BOX-LABORATORIO.md",
+      "target": "ambientes/INTEIA_Box_com_carro.blend",
+      "relation": "documenta_uso_e_origem",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "evidence": {
+        "path": "docs/BOX-LABORATORIO.md",
+        "line": 18,
+        "text": "- `ambientes/INTEIA_Box_com_carro.blend`: ambiente e carro estático em coleções separadas; 568 malhas do box e 97 do carro. Inclui câmera, luzes adicionais para Cycles e imagens empacotadas."
+      }
+    },
+    {
+      "source": "docs/ARQUITETURA.md",
+      "target": "INTEIA_F1_Master.blend",
+      "relation": "identifica_fonte_editavel_e_risco_de_reconstrucao",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "evidence": {
+        "path": "docs/ARQUITETURA.md",
+        "line": 36,
+        "text": "web/src é a fonte do visualizador. INTEIA_F1_Master.blend é o arquivo de edição reutilizável entregue. package_blender.py reproduz a versão gerada a partir de web/assets; executar novamente não preserva edições manuais posteriores no master. Faça commits dessas edições e decida qual fluxo pretende manter."
+      }
+    },
+    {
+      "source": "docs/ACABAMENTO-E-RENDER.md",
+      "target": "ambientes/INTEIA_Box_com_carro.blend",
+      "relation": "documenta_acabamento_e_limites_de_exportacao",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "evidence": {
+        "path": "docs/ACABAMENTO-E-RENDER.md",
+        "line": 18,
+        "text": "- `ambientes/INTEIA_Box_com_carro.blend`: cena editável, materiais e luzes do Cycles."
+      }
+    },
+    {
+      "source": "docs/ACABAMENTO-E-RENDER.md",
+      "target": "ambientes/INTEIA-box-laboratorio.glb",
+      "relation": "documenta_acabamento_e_limites_de_exportacao",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "evidence": {
+        "path": "docs/ACABAMENTO-E-RENDER.md",
+        "line": 19,
+        "text": "- `ambientes/INTEIA-box-laboratorio.glb`: geometria e materiais exportáveis do box."
+      }
+    }
+  ],
+  "directed": true,
+  "multigraph": true
+}
