@@ -39,3 +39,10 @@ O fluxo usa um envelope artístico e pode cruzar detalhes da geometria: não é 
 ## Revisão adicional após avaliação do usuário
 
 A versão do ciclo anterior não atendeu à expectativa do usuário. Os filetes geométricos foram substituídos por 7.200 partículas com tamanhos, transparência e distribuição irregulares; ruído procedural nas bordas e esteira difusa. A densidade foi reduzida após nova crítica independente. O túnel ganhou iluminação própria, piso menos claro e câmera mais baixa. A avaliação continua apontando aparência digital na fumaça, sem alegação de fotorrealismo.
+## Detalhamento informativo do fluxo
+
+Revisão posterior: trajetórias com pulsos e setas fixas; seleção de carroceria/asas, esteira das rodas e assoalho/difusor; câmera por região; carroceria em transparência com assoalho destacado; redução de fumaça nas vistas isoladas.
+
+Juiz independente Codex aprovou a melhoria de legibilidade informativa nas capturas finais. Ressalva: contraste do assoalho moderado; imagens não comprovam física nem fluidez da animação.
+
+Verificações locais: build e testes existentes aprovados, console sem erros na inspeção, pausa confirmada por duas capturas idênticas pixel a pixel, seleção e restauração visual exercitadas no navegador, incluindo tela de 390 × 844. As cores representam regiões ilustrativas, não resultados de pressão ou velocidade local.

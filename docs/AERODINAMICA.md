@@ -43,3 +43,15 @@ O gráfico mostra como arrasto e carga variam com velocidade do carro, mantendo 
 - [NASA — pressão dinâmica](https://www1.grc.nasa.gov/beginners-guide-to-aeronautics/dynamic-pressure/)
 
 Execute `node test-aerodynamics.mjs` na pasta web para testar unidades, escala de forças com V², potência com V³, vento relativo, densidade e condições inválidas.
+
+## Leitura visual por região
+
+**Trajetórias e sentido do ar** combina trajetórias discretas contínuas, pulsos com caudas e setas fixas. As setas permitem ler a direção também com a animação pausada. Em **Explorar uma região**:
+
+- **Carroceria e asas:** azul-claro; trajetórias sobre e ao lado do envelope do carro.
+- **Esteira das rodas:** âmbar; pares de curvas em espiral atrás das rodas traseiras, com câmera reposicionada para incluir a esteira.
+- **Assoalho e difusor:** verde-claro; carroceria transparente e assoalho destacado, com vista elevada e estruturas superiores ocultadas para não obstruir a leitura.
+
+A seleção diminui a fumaça de fundo para preservar a legibilidade. Desligar trajetórias ou sair do túnel restaura os materiais originais; a transparência usa cópias temporárias dos materiais e não altera os modelos exportados.
+
+Essas cores identificam **regiões**, nunca pressão, velocidade ou intensidade medidas. Os percursos e espirais são formas ilustrativas baseadas nas dimensões externas. Não provam vórtices reais, separação ou aceleração local; podem cruzar a geometria, e não respondem ao DRS ou à forma de cada peça como responderia um solver CFD. O vento lateral gira o conjunto de trajetórias, sem recalculá-las a partir da malha.

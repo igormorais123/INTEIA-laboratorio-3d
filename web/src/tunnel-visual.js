@@ -1,3 +1,4 @@
+import {createFlowDetail} from './flow-detail.js';
 import * as THREE from 'three';
 // Art-directed smoke paths: a visual envelope, not a CFD solution.
 export function createTunnelVisual({scene, size, studio, camera}) {
@@ -9,7 +10,8 @@ export function createTunnelVisual({scene, size, studio, camera}) {
  box(7,.12,14,0,-.08,0,dark);
  box(2.6,.025,12,0,-.005,0,new THREE.MeshStandardMaterial({color:0x121719,roughness:.64,metalness:.1}));
  for(const x of [-3.3,3.3]){box(.1,.16,14,x,.06,0);box(.018,.012,13,x,.16,0,new THREE.MeshBasicMaterial({color:0x59717d}));}
- for(const z of [-6,-3,0]){box(.08,2.85,.1,-3.4,1.40,z);box(6.8,.08,.1,0,2.85,z);box(5.8,.018,.04,0,2.79,z,light);}
+ const roof=[];
+ for(const z of [-6,-3,0]){box(.08,2.85,.1,-3.4,1.40,z);roof.push(box(6.8,.08,.1,0,2.85,z),box(5.8,.018,.04,0,2.79,z,light));}
  const sideWall=box(.08,3.8,14,-3.46,1.85,0,dark);
  const rearWall=box(6.9,3.8,.12,0,1.85,-7,dark);
  const grille=new THREE.LineSegments(new THREE.BufferGeometry(),new THREE.LineBasicMaterial({color:0x4c6373,transparent:true,opacity:.18}));
@@ -60,6 +62,7 @@ export function createTunnelVisual({scene, size, studio, camera}) {
  const nozzle=new THREE.Mesh(new THREE.CylinderGeometry(.018,.028,.30,12),metal);
  nozzle.rotation.x=Math.PI/2;nozzle.position.set(i*.72,.36,5.96);root.add(nozzle);
  }
+ const detail=createFlowDetail({parent:flow,size});
  let saved;
- return {setEnabled(on){root.visible=on;if(on){saved={environmentIntensity:scene.environmentIntensity,lightsVisible:studioLights?.visible,background:scene.background,fog:scene.fog,color:studio.floor.material.color.clone()};if(studioLights)studioLights.visible=false;scene.environmentIntensity=.67;scene.background=new THREE.Color('#080e16');scene.fog=new THREE.Fog('#080e16',16,40);studio.floor.material.color.set('#101820');}else if(saved){scene.environmentIntensity=saved.environmentIntensity;if(studioLights)studioLights.visible=saved.lightsVisible;scene.background=saved.background;scene.fog=saved.fog;studio.floor.material.color.copy(saved.color);}},update(dt,r,invalid,reduced,settings={}){uniforms.strength.value=.105*(settings.density??1);uniforms.turbulence.value=settings.turbulence??1;sideWall.visible=camera.position.x>-3.4;rearWall.visible=grille.visible=camera.position.z>-6.9;flow.visible=!invalid&&r.speed>0;if(!reduced&&!settings.paused)uniforms.time.value+=dt*r.speed*.08*(settings.tempo??1);flow.rotation.y=-r.yawDeg*Math.PI/180;}};
+ return {setEnabled(on){root.visible=on;if(on){saved={environmentIntensity:scene.environmentIntensity,lightsVisible:studioLights?.visible,background:scene.background,fog:scene.fog,color:studio.floor.material.color.clone()};if(studioLights)studioLights.visible=false;scene.environmentIntensity=.67;scene.background=new THREE.Color('#080e16');scene.fog=new THREE.Fog('#080e16',16,40);studio.floor.material.color.set('#101820');}else if(saved){scene.environmentIntensity=saved.environmentIntensity;if(studioLights)studioLights.visible=saved.lightsVisible;scene.background=saved.background;scene.fog=saved.fog;studio.floor.material.color.copy(saved.color);}},update(dt,r,invalid,reduced,settings={}){uniforms.strength.value=.060*(settings.density??1)*(settings.detail!==false&&settings.region&&settings.region!=="all"?.08:1);detail.update(dt,r,invalid,reduced,settings);roof.forEach(o=>o.visible=camera.position.y<2.85&&(settings.region!=="floor"||settings.detail===false));uniforms.turbulence.value=settings.turbulence??1;sideWall.visible=camera.position.x>-3.4;rearWall.visible=grille.visible=camera.position.z>-6.9;flow.visible=!invalid&&r.speed>0;if(!reduced&&!settings.paused)uniforms.time.value+=dt*r.speed*.08*(settings.tempo??1);flow.rotation.y=-r.yawDeg*Math.PI/180;}};
 }

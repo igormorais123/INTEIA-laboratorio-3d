@@ -1,7 +1,7 @@
 import {createTunnelVisual} from './tunnel-visual.js';
 import * as THREE from 'three';
 import {aerodynamicTest} from './aero-physics.mjs';
-export function createWindTunnel({scene,model,mechanics,reduced,studio,camera,onToggle}) {
+export function createWindTunnel({scene,model,mechanics,reduced,studio,camera,onToggle,onRegion}) {
   const $=id=>document.getElementById(id);
   const root=new THREE.Group();root.name='INTEIA Wind Tunnel - illustrative tracers';scene.add(root);root.visible=false;
   const bounds=new THREE.Box3().setFromObject(model),size=bounds.getSize(new THREE.Vector3()),center=bounds.getCenter(new THREE.Vector3());
@@ -9,9 +9,11 @@ export function createWindTunnel({scene,model,mechanics,reduced,studio,camera,on
   const dragArrow=new THREE.ArrowHelper(new THREE.Vector3(0,0,-1),new THREE.Vector3(0,size.y+1,0),1,0xe69b27,.22,.12);
   const downArrow=new THREE.ArrowHelper(new THREE.Vector3(0,-1,0),new THREE.Vector3(0,size.y+1,0),1,0x975de2,.22,.12);root.add(dragArrow,downArrow);
   let enabled=false,result=null,example=false,lastInvalid=null;
-  const visualSettings={density:1,turbulence:1,tempo:.55,paused:false};
+  const visualSettings={density:1,turbulence:1,tempo:.55,paused:false,detail:true,region:"all"};
   for(const key of ["density","turbulence","tempo"])$("smoke-"+key).oninput=e=>{visualSettings[key]=Number(e.target.value)/100;};
   $("smoke-pause").onclick=()=>{visualSettings.paused=!visualSettings.paused;$("smoke-pause").textContent=visualSettings.paused?"Retomar fumaça":"Pausar fumaça";$("smoke-pause").setAttribute("aria-pressed",String(visualSettings.paused));};
+  $('flow-detail').onclick=()=>{visualSettings.detail=!visualSettings.detail;$('flow-detail').setAttribute('aria-pressed',String(visualSettings.detail));$('flow-region').disabled=!visualSettings.detail;if(visualSettings.detail)$('flow-region').onchange({target:$('flow-region')});else{onRegion?.(null);$('flow-explanation').textContent='Ative as trajetórias para explorar o sentido do ar e as regiões do carro.';}};
+  $('flow-region').onchange=e=>{visualSettings.region=e.target.value;onRegion?.(e.target.value);const notes={all:'Setas e pulsos mostram o sentido do ar. Cores distinguem regiões, não valores de pressão.',body:'Observe a divisão do fluxo junto ao nariz e os desvios sobre a carroceria.',wheels:'Observe os pares de trajetórias em espiral atrás das rodas. Forma ilustrativa da esteira.',floor:'Carroceria transparente e assoalho destacado para revelar as trajetórias sob o assoalho e a abertura após o difusor.'};$('flow-explanation').textContent=notes[e.target.value];};
   const ids=['air-speed','air-headwind','air-crosswind','air-temp','air-pressure','air-area','air-cd','air-cl'];
   const number=id=>$(id).value.trim()===''?null:Number($(id).value);
   const params=()=>({speedKmh:number('air-speed'),headwindKmh:number('air-headwind'),crosswindKmh:number('air-crosswind'),temperatureC:number('air-temp'),pressureKPa:number('air-pressure'),area:number('air-area'),cd:number('air-cd'),clDown:number('air-cl'),length:size.z});
