@@ -1,0 +1,1506 @@
+{
+  "limits": "IDs do HTML e referências literais; IDs concatenados, delegação e CSS exigem revisão humana.",
+  "controls": [
+    {
+      "id": "brand-logo",
+      "tag": "div",
+      "line": 3,
+      "href": "../../web/src/template-v2.html#L3",
+      "literalReferences": [
+        {
+          "path": "web/src/app-v2.js",
+          "line": 18,
+          "href": "../../web/src/app-v2.js#L18"
+        }
+      ]
+    },
+    {
+      "id": "status",
+      "tag": "div",
+      "line": 3,
+      "href": "../../web/src/template-v2.html#L3",
+      "literalReferences": [
+        {
+          "path": "web/src/app-v2.js",
+          "line": 35,
+          "href": "../../web/src/app-v2.js#L35"
+        }
+      ]
+    },
+    {
+      "id": "stage",
+      "tag": "div",
+      "line": 3,
+      "href": "../../web/src/template-v2.html#L3",
+      "literalReferences": [
+        {
+          "path": "web/src/app-v2.js",
+          "line": 17,
+          "href": "../../web/src/app-v2.js#L17"
+        }
+      ]
+    },
+    {
+      "id": "air-hud",
+      "tag": "div",
+      "line": 3,
+      "href": "../../web/src/template-v2.html#L3",
+      "literalReferences": [
+        {
+          "path": "web/src/wind-tunnel.js",
+          "line": 52,
+          "href": "../../web/src/wind-tunnel.js#L52"
+        }
+      ]
+    },
+    {
+      "id": "air-hud-values",
+      "tag": "span",
+      "line": 3,
+      "href": "../../web/src/template-v2.html#L3",
+      "literalReferences": [
+        {
+          "path": "web/src/wind-tunnel.js",
+          "line": 34,
+          "href": "../../web/src/wind-tunnel.js#L34"
+        }
+      ]
+    },
+    {
+      "id": "zoom-in",
+      "tag": "button",
+      "line": 3,
+      "href": "../../web/src/template-v2.html#L3",
+      "literalReferences": [
+        {
+          "path": "web/src/app-v2.js",
+          "line": 72,
+          "href": "../../web/src/app-v2.js#L72"
+        },
+        {
+          "path": "web/src/app-v2.js",
+          "line": 78,
+          "href": "../../web/src/app-v2.js#L78"
+        }
+      ]
+    },
+    {
+      "id": "zoom-out",
+      "tag": "button",
+      "line": 3,
+      "href": "../../web/src/template-v2.html#L3",
+      "literalReferences": [
+        {
+          "path": "web/src/app-v2.js",
+          "line": 72,
+          "href": "../../web/src/app-v2.js#L72"
+        },
+        {
+          "path": "web/src/app-v2.js",
+          "line": 78,
+          "href": "../../web/src/app-v2.js#L78"
+        }
+      ]
+    },
+    {
+      "id": "reset",
+      "tag": "button",
+      "line": 3,
+      "href": "../../web/src/template-v2.html#L3",
+      "literalReferences": [
+        {
+          "path": "web/src/app-v2.js",
+          "line": 71,
+          "href": "../../web/src/app-v2.js#L71"
+        }
+      ]
+    },
+    {
+      "id": "loading",
+      "tag": "div",
+      "line": 3,
+      "href": "../../web/src/template-v2.html#L3",
+      "literalReferences": [
+        {
+          "path": "web/src/app-v2.js",
+          "line": 35,
+          "href": "../../web/src/app-v2.js#L35"
+        },
+        {
+          "path": "web/src/app-v2.js",
+          "line": 84,
+          "href": "../../web/src/app-v2.js#L84"
+        }
+      ]
+    },
+    {
+      "id": "orbit",
+      "tag": "button",
+      "line": 3,
+      "href": "../../web/src/template-v2.html#L3",
+      "literalReferences": [
+        {
+          "path": "web/src/app-v2.js",
+          "line": 48,
+          "href": "../../web/src/app-v2.js#L48"
+        },
+        {
+          "path": "web/src/app-v2.js",
+          "line": 53,
+          "href": "../../web/src/app-v2.js#L53"
+        },
+        {
+          "path": "web/src/app-v2.js",
+          "line": 57,
+          "href": "../../web/src/app-v2.js#L57"
+        },
+        {
+          "path": "web/src/app-v2.js",
+          "line": 71,
+          "href": "../../web/src/app-v2.js#L71"
+        },
+        {
+          "path": "web/src/app-v2.js",
+          "line": 79,
+          "href": "../../web/src/app-v2.js#L79"
+        }
+      ]
+    },
+    {
+      "id": "garage-toggle",
+      "tag": "button",
+      "line": 3,
+      "href": "../../web/src/template-v2.html#L3",
+      "literalReferences": [
+        {
+          "path": "web/src/app-v2.js",
+          "line": 54,
+          "href": "../../web/src/app-v2.js#L54"
+        },
+        {
+          "path": "web/src/garage.js",
+          "line": 148,
+          "href": "../../web/src/garage.js#L148"
+        }
+      ]
+    },
+    {
+      "id": "garage-view",
+      "tag": "button",
+      "line": 3,
+      "href": "../../web/src/template-v2.html#L3",
+      "literalReferences": [
+        {
+          "path": "web/src/app-v2.js",
+          "line": 56,
+          "href": "../../web/src/app-v2.js#L56"
+        }
+      ]
+    },
+    {
+      "id": "garage-export",
+      "tag": "button",
+      "line": 3,
+      "href": "../../web/src/template-v2.html#L3",
+      "literalReferences": [
+        {
+          "path": "web/src/app-v2.js",
+          "line": 55,
+          "href": "../../web/src/app-v2.js#L55"
+        }
+      ]
+    },
+    {
+      "id": "wind-toggle",
+      "tag": "button",
+      "line": 3,
+      "href": "../../web/src/template-v2.html#L3",
+      "literalReferences": [
+        {
+          "path": "web/src/app-v2.js",
+          "line": 54,
+          "href": "../../web/src/app-v2.js#L54"
+        },
+        {
+          "path": "web/src/wind-tunnel.js",
+          "line": 52,
+          "href": "../../web/src/wind-tunnel.js#L52"
+        }
+      ]
+    },
+    {
+      "id": "wind-cinema",
+      "tag": "button",
+      "line": 3,
+      "href": "../../web/src/template-v2.html#L3",
+      "literalReferences": [
+        {
+          "path": "web/src/app-v2.js",
+          "line": 48,
+          "href": "../../web/src/app-v2.js#L48"
+        },
+        {
+          "path": "web/src/app-v2.js",
+          "line": 53,
+          "href": "../../web/src/app-v2.js#L53"
+        },
+        {
+          "path": "web/src/app-v2.js",
+          "line": 57,
+          "href": "../../web/src/app-v2.js#L57"
+        },
+        {
+          "path": "web/src/app-v2.js",
+          "line": 79,
+          "href": "../../web/src/app-v2.js#L79"
+        },
+        {
+          "path": "web/src/app-v2.js",
+          "line": 80,
+          "href": "../../web/src/app-v2.js#L80"
+        }
+      ]
+    },
+    {
+      "id": "photo",
+      "tag": "button",
+      "line": 3,
+      "href": "../../web/src/template-v2.html#L3",
+      "literalReferences": [
+        {
+          "path": "web/src/app-v2.js",
+          "line": 41,
+          "href": "../../web/src/app-v2.js#L41"
+        },
+        {
+          "path": "web/src/app-v2.js",
+          "line": 73,
+          "href": "../../web/src/app-v2.js#L73"
+        }
+      ]
+    },
+    {
+      "id": "part-count",
+      "tag": "span",
+      "line": 3,
+      "href": "../../web/src/template-v2.html#L3",
+      "literalReferences": [
+        {
+          "path": "web/src/app-v2.js",
+          "line": 50,
+          "href": "../../web/src/app-v2.js#L50"
+        }
+      ]
+    },
+    {
+      "id": "air-panel",
+      "tag": "section",
+      "line": 3,
+      "href": "../../web/src/template-v2.html#L3",
+      "literalReferences": [
+        {
+          "path": "web/src/wind-tunnel.js",
+          "line": 52,
+          "href": "../../web/src/wind-tunnel.js#L52"
+        }
+      ]
+    },
+    {
+      "id": "flow-detail",
+      "tag": "button",
+      "line": 3,
+      "href": "../../web/src/template-v2.html#L3",
+      "literalReferences": [
+        {
+          "path": "web/src/app-v2.js",
+          "line": 48,
+          "href": "../../web/src/app-v2.js#L48"
+        },
+        {
+          "path": "web/src/wind-tunnel.js",
+          "line": 15,
+          "href": "../../web/src/wind-tunnel.js#L15"
+        }
+      ]
+    },
+    {
+      "id": "flow-region",
+      "tag": "select",
+      "line": 3,
+      "href": "../../web/src/template-v2.html#L3",
+      "literalReferences": [
+        {
+          "path": "web/src/app-v2.js",
+          "line": 48,
+          "href": "../../web/src/app-v2.js#L48"
+        },
+        {
+          "path": "web/src/wind-tunnel.js",
+          "line": 15,
+          "href": "../../web/src/wind-tunnel.js#L15"
+        },
+        {
+          "path": "web/src/wind-tunnel.js",
+          "line": 16,
+          "href": "../../web/src/wind-tunnel.js#L16"
+        }
+      ]
+    },
+    {
+      "id": "flow-explanation",
+      "tag": "p",
+      "line": 3,
+      "href": "../../web/src/template-v2.html#L3",
+      "literalReferences": [
+        {
+          "path": "web/src/wind-tunnel.js",
+          "line": 15,
+          "href": "../../web/src/wind-tunnel.js#L15"
+        },
+        {
+          "path": "web/src/wind-tunnel.js",
+          "line": 16,
+          "href": "../../web/src/wind-tunnel.js#L16"
+        }
+      ]
+    },
+    {
+      "id": "smoke-density",
+      "tag": "input",
+      "line": 3,
+      "href": "../../web/src/template-v2.html#L3",
+      "literalReferences": []
+    },
+    {
+      "id": "smoke-turbulence",
+      "tag": "input",
+      "line": 3,
+      "href": "../../web/src/template-v2.html#L3",
+      "literalReferences": []
+    },
+    {
+      "id": "smoke-tempo",
+      "tag": "input",
+      "line": 3,
+      "href": "../../web/src/template-v2.html#L3",
+      "literalReferences": []
+    },
+    {
+      "id": "smoke-pause",
+      "tag": "button",
+      "line": 3,
+      "href": "../../web/src/template-v2.html#L3",
+      "literalReferences": [
+        {
+          "path": "web/src/wind-tunnel.js",
+          "line": 14,
+          "href": "../../web/src/wind-tunnel.js#L14"
+        }
+      ]
+    },
+    {
+      "id": "air-technical",
+      "tag": "details",
+      "line": 3,
+      "href": "../../web/src/template-v2.html#L3",
+      "literalReferences": []
+    },
+    {
+      "id": "air-speed-value",
+      "tag": "output",
+      "line": 3,
+      "href": "../../web/src/template-v2.html#L3",
+      "literalReferences": [
+        {
+          "path": "web/src/wind-tunnel.js",
+          "line": 24,
+          "href": "../../web/src/wind-tunnel.js#L24"
+        }
+      ]
+    },
+    {
+      "id": "air-speed",
+      "tag": "input",
+      "line": 3,
+      "href": "../../web/src/template-v2.html#L3",
+      "literalReferences": [
+        {
+          "path": "web/src/wind-tunnel.js",
+          "line": 17,
+          "href": "../../web/src/wind-tunnel.js#L17"
+        },
+        {
+          "path": "web/src/wind-tunnel.js",
+          "line": 19,
+          "href": "../../web/src/wind-tunnel.js#L19"
+        },
+        {
+          "path": "web/src/wind-tunnel.js",
+          "line": 51,
+          "href": "../../web/src/wind-tunnel.js#L51"
+        }
+      ]
+    },
+    {
+      "id": "air-head-value",
+      "tag": "output",
+      "line": 3,
+      "href": "../../web/src/template-v2.html#L3",
+      "literalReferences": [
+        {
+          "path": "web/src/wind-tunnel.js",
+          "line": 24,
+          "href": "../../web/src/wind-tunnel.js#L24"
+        }
+      ]
+    },
+    {
+      "id": "air-headwind",
+      "tag": "input",
+      "line": 3,
+      "href": "../../web/src/template-v2.html#L3",
+      "literalReferences": [
+        {
+          "path": "web/src/wind-tunnel.js",
+          "line": 17,
+          "href": "../../web/src/wind-tunnel.js#L17"
+        },
+        {
+          "path": "web/src/wind-tunnel.js",
+          "line": 19,
+          "href": "../../web/src/wind-tunnel.js#L19"
+        },
+        {
+          "path": "web/src/wind-tunnel.js",
+          "line": 51,
+          "href": "../../web/src/wind-tunnel.js#L51"
+        }
+      ]
+    },
+    {
+      "id": "air-cross-value",
+      "tag": "output",
+      "line": 3,
+      "href": "../../web/src/template-v2.html#L3",
+      "literalReferences": [
+        {
+          "path": "web/src/wind-tunnel.js",
+          "line": 24,
+          "href": "../../web/src/wind-tunnel.js#L24"
+        }
+      ]
+    },
+    {
+      "id": "air-crosswind",
+      "tag": "input",
+      "line": 3,
+      "href": "../../web/src/template-v2.html#L3",
+      "literalReferences": [
+        {
+          "path": "web/src/wind-tunnel.js",
+          "line": 17,
+          "href": "../../web/src/wind-tunnel.js#L17"
+        },
+        {
+          "path": "web/src/wind-tunnel.js",
+          "line": 19,
+          "href": "../../web/src/wind-tunnel.js#L19"
+        },
+        {
+          "path": "web/src/wind-tunnel.js",
+          "line": 51,
+          "href": "../../web/src/wind-tunnel.js#L51"
+        }
+      ]
+    },
+    {
+      "id": "air-temp",
+      "tag": "input",
+      "line": 3,
+      "href": "../../web/src/template-v2.html#L3",
+      "literalReferences": [
+        {
+          "path": "web/src/wind-tunnel.js",
+          "line": 17,
+          "href": "../../web/src/wind-tunnel.js#L17"
+        },
+        {
+          "path": "web/src/wind-tunnel.js",
+          "line": 19,
+          "href": "../../web/src/wind-tunnel.js#L19"
+        },
+        {
+          "path": "web/src/wind-tunnel.js",
+          "line": 51,
+          "href": "../../web/src/wind-tunnel.js#L51"
+        }
+      ]
+    },
+    {
+      "id": "air-pressure",
+      "tag": "input",
+      "line": 3,
+      "href": "../../web/src/template-v2.html#L3",
+      "literalReferences": [
+        {
+          "path": "web/src/wind-tunnel.js",
+          "line": 17,
+          "href": "../../web/src/wind-tunnel.js#L17"
+        },
+        {
+          "path": "web/src/wind-tunnel.js",
+          "line": 19,
+          "href": "../../web/src/wind-tunnel.js#L19"
+        },
+        {
+          "path": "web/src/wind-tunnel.js",
+          "line": 51,
+          "href": "../../web/src/wind-tunnel.js#L51"
+        }
+      ]
+    },
+    {
+      "id": "air-area",
+      "tag": "input",
+      "line": 3,
+      "href": "../../web/src/template-v2.html#L3",
+      "literalReferences": [
+        {
+          "path": "web/src/wind-tunnel.js",
+          "line": 17,
+          "href": "../../web/src/wind-tunnel.js#L17"
+        },
+        {
+          "path": "web/src/wind-tunnel.js",
+          "line": 19,
+          "href": "../../web/src/wind-tunnel.js#L19"
+        },
+        {
+          "path": "web/src/wind-tunnel.js",
+          "line": 49,
+          "href": "../../web/src/wind-tunnel.js#L49"
+        },
+        {
+          "path": "web/src/wind-tunnel.js",
+          "line": 50,
+          "href": "../../web/src/wind-tunnel.js#L50"
+        },
+        {
+          "path": "web/src/wind-tunnel.js",
+          "line": 51,
+          "href": "../../web/src/wind-tunnel.js#L51"
+        }
+      ]
+    },
+    {
+      "id": "air-cd",
+      "tag": "input",
+      "line": 3,
+      "href": "../../web/src/template-v2.html#L3",
+      "literalReferences": [
+        {
+          "path": "web/src/wind-tunnel.js",
+          "line": 17,
+          "href": "../../web/src/wind-tunnel.js#L17"
+        },
+        {
+          "path": "web/src/wind-tunnel.js",
+          "line": 19,
+          "href": "../../web/src/wind-tunnel.js#L19"
+        },
+        {
+          "path": "web/src/wind-tunnel.js",
+          "line": 49,
+          "href": "../../web/src/wind-tunnel.js#L49"
+        },
+        {
+          "path": "web/src/wind-tunnel.js",
+          "line": 50,
+          "href": "../../web/src/wind-tunnel.js#L50"
+        },
+        {
+          "path": "web/src/wind-tunnel.js",
+          "line": 51,
+          "href": "../../web/src/wind-tunnel.js#L51"
+        }
+      ]
+    },
+    {
+      "id": "air-cl",
+      "tag": "input",
+      "line": 3,
+      "href": "../../web/src/template-v2.html#L3",
+      "literalReferences": [
+        {
+          "path": "web/src/wind-tunnel.js",
+          "line": 17,
+          "href": "../../web/src/wind-tunnel.js#L17"
+        },
+        {
+          "path": "web/src/wind-tunnel.js",
+          "line": 19,
+          "href": "../../web/src/wind-tunnel.js#L19"
+        },
+        {
+          "path": "web/src/wind-tunnel.js",
+          "line": 49,
+          "href": "../../web/src/wind-tunnel.js#L49"
+        },
+        {
+          "path": "web/src/wind-tunnel.js",
+          "line": 50,
+          "href": "../../web/src/wind-tunnel.js#L50"
+        },
+        {
+          "path": "web/src/wind-tunnel.js",
+          "line": 51,
+          "href": "../../web/src/wind-tunnel.js#L51"
+        }
+      ]
+    },
+    {
+      "id": "air-example",
+      "tag": "button",
+      "line": 3,
+      "href": "../../web/src/template-v2.html#L3",
+      "literalReferences": [
+        {
+          "path": "web/src/wind-tunnel.js",
+          "line": 50,
+          "href": "../../web/src/wind-tunnel.js#L50"
+        }
+      ]
+    },
+    {
+      "id": "air-warning",
+      "tag": "p",
+      "line": 3,
+      "href": "../../web/src/template-v2.html#L3",
+      "literalReferences": [
+        {
+          "path": "web/src/wind-tunnel.js",
+          "line": 33,
+          "href": "../../web/src/wind-tunnel.js#L33"
+        }
+      ]
+    },
+    {
+      "id": "air-relative",
+      "tag": "strong",
+      "line": 3,
+      "href": "../../web/src/template-v2.html#L3",
+      "literalReferences": [
+        {
+          "path": "web/src/wind-tunnel.js",
+          "line": 27,
+          "href": "../../web/src/wind-tunnel.js#L27"
+        }
+      ]
+    },
+    {
+      "id": "air-yaw",
+      "tag": "strong",
+      "line": 3,
+      "href": "../../web/src/template-v2.html#L3",
+      "literalReferences": [
+        {
+          "path": "web/src/wind-tunnel.js",
+          "line": 27,
+          "href": "../../web/src/wind-tunnel.js#L27"
+        }
+      ]
+    },
+    {
+      "id": "air-rho",
+      "tag": "strong",
+      "line": 3,
+      "href": "../../web/src/template-v2.html#L3",
+      "literalReferences": [
+        {
+          "path": "web/src/wind-tunnel.js",
+          "line": 26,
+          "href": "../../web/src/wind-tunnel.js#L26"
+        }
+      ]
+    },
+    {
+      "id": "air-q",
+      "tag": "strong",
+      "line": 3,
+      "href": "../../web/src/template-v2.html#L3",
+      "literalReferences": [
+        {
+          "path": "web/src/wind-tunnel.js",
+          "line": 26,
+          "href": "../../web/src/wind-tunnel.js#L26"
+        }
+      ]
+    },
+    {
+      "id": "air-drag",
+      "tag": "strong",
+      "line": 3,
+      "href": "../../web/src/template-v2.html#L3",
+      "literalReferences": [
+        {
+          "path": "web/src/wind-tunnel.js",
+          "line": 30,
+          "href": "../../web/src/wind-tunnel.js#L30"
+        }
+      ]
+    },
+    {
+      "id": "air-down",
+      "tag": "strong",
+      "line": 3,
+      "href": "../../web/src/template-v2.html#L3",
+      "literalReferences": [
+        {
+          "path": "web/src/wind-tunnel.js",
+          "line": 30,
+          "href": "../../web/src/wind-tunnel.js#L30"
+        }
+      ]
+    },
+    {
+      "id": "air-power",
+      "tag": "strong",
+      "line": 3,
+      "href": "../../web/src/template-v2.html#L3",
+      "literalReferences": [
+        {
+          "path": "web/src/wind-tunnel.js",
+          "line": 31,
+          "href": "../../web/src/wind-tunnel.js#L31"
+        }
+      ]
+    },
+    {
+      "id": "air-re",
+      "tag": "strong",
+      "line": 3,
+      "href": "../../web/src/template-v2.html#L3",
+      "literalReferences": [
+        {
+          "path": "web/src/wind-tunnel.js",
+          "line": 28,
+          "href": "../../web/src/wind-tunnel.js#L28"
+        }
+      ]
+    },
+    {
+      "id": "air-mach",
+      "tag": "strong",
+      "line": 3,
+      "href": "../../web/src/template-v2.html#L3",
+      "literalReferences": [
+        {
+          "path": "web/src/wind-tunnel.js",
+          "line": 28,
+          "href": "../../web/src/wind-tunnel.js#L28"
+        }
+      ]
+    },
+    {
+      "id": "air-chart",
+      "tag": "canvas",
+      "line": 3,
+      "href": "../../web/src/template-v2.html#L3",
+      "literalReferences": [
+        {
+          "path": "web/src/wind-tunnel.js",
+          "line": 40,
+          "href": "../../web/src/wind-tunnel.js#L40"
+        }
+      ]
+    },
+    {
+      "id": "air-export",
+      "tag": "button",
+      "line": 3,
+      "href": "../../web/src/template-v2.html#L3",
+      "literalReferences": [
+        {
+          "path": "web/src/wind-tunnel.js",
+          "line": 32,
+          "href": "../../web/src/wind-tunnel.js#L32"
+        },
+        {
+          "path": "web/src/wind-tunnel.js",
+          "line": 53,
+          "href": "../../web/src/wind-tunnel.js#L53"
+        },
+        {
+          "path": "web/src/wind-tunnel.js",
+          "line": 54,
+          "href": "../../web/src/wind-tunnel.js#L54"
+        }
+      ]
+    },
+    {
+      "id": "air-reset",
+      "tag": "button",
+      "line": 3,
+      "href": "../../web/src/template-v2.html#L3",
+      "literalReferences": [
+        {
+          "path": "web/src/wind-tunnel.js",
+          "line": 51,
+          "href": "../../web/src/wind-tunnel.js#L51"
+        }
+      ]
+    },
+    {
+      "id": "value-body",
+      "tag": "output",
+      "line": 3,
+      "href": "../../web/src/template-v2.html#L3",
+      "literalReferences": []
+    },
+    {
+      "id": "color-body",
+      "tag": "input",
+      "line": 3,
+      "href": "../../web/src/template-v2.html#L3",
+      "literalReferences": []
+    },
+    {
+      "id": "value-wings",
+      "tag": "output",
+      "line": 3,
+      "href": "../../web/src/template-v2.html#L3",
+      "literalReferences": []
+    },
+    {
+      "id": "color-wings",
+      "tag": "input",
+      "line": 3,
+      "href": "../../web/src/template-v2.html#L3",
+      "literalReferences": []
+    },
+    {
+      "id": "value-wheels",
+      "tag": "output",
+      "line": 3,
+      "href": "../../web/src/template-v2.html#L3",
+      "literalReferences": []
+    },
+    {
+      "id": "color-wheels",
+      "tag": "input",
+      "line": 3,
+      "href": "../../web/src/template-v2.html#L3",
+      "literalReferences": []
+    },
+    {
+      "id": "value-carbon",
+      "tag": "output",
+      "line": 3,
+      "href": "../../web/src/template-v2.html#L3",
+      "literalReferences": []
+    },
+    {
+      "id": "color-carbon",
+      "tag": "input",
+      "line": 3,
+      "href": "../../web/src/template-v2.html#L3",
+      "literalReferences": []
+    },
+    {
+      "id": "paint-finish",
+      "tag": "select",
+      "line": 3,
+      "href": "../../web/src/template-v2.html#L3",
+      "literalReferences": [
+        {
+          "path": "web/src/customize.js",
+          "line": 24,
+          "href": "../../web/src/customize.js#L24"
+        },
+        {
+          "path": "web/src/customize.js",
+          "line": 51,
+          "href": "../../web/src/customize.js#L51"
+        }
+      ]
+    },
+    {
+      "id": "light-value",
+      "tag": "output",
+      "line": 3,
+      "href": "../../web/src/template-v2.html#L3",
+      "literalReferences": [
+        {
+          "path": "web/src/customize.js",
+          "line": 35,
+          "href": "../../web/src/customize.js#L35"
+        }
+      ]
+    },
+    {
+      "id": "light-level",
+      "tag": "input",
+      "line": 3,
+      "href": "../../web/src/template-v2.html#L3",
+      "literalReferences": [
+        {
+          "path": "web/src/customize.js",
+          "line": 37,
+          "href": "../../web/src/customize.js#L37"
+        },
+        {
+          "path": "web/src/customize.js",
+          "line": 51,
+          "href": "../../web/src/customize.js#L51"
+        }
+      ]
+    },
+    {
+      "id": "floor-color",
+      "tag": "input",
+      "line": 3,
+      "href": "../../web/src/template-v2.html#L3",
+      "literalReferences": [
+        {
+          "path": "web/src/customize.js",
+          "line": 40,
+          "href": "../../web/src/customize.js#L40"
+        },
+        {
+          "path": "web/src/customize.js",
+          "line": 43,
+          "href": "../../web/src/customize.js#L43"
+        },
+        {
+          "path": "web/src/customize.js",
+          "line": 53,
+          "href": "../../web/src/customize.js#L53"
+        }
+      ]
+    },
+    {
+      "id": "background-color",
+      "tag": "input",
+      "line": 3,
+      "href": "../../web/src/template-v2.html#L3",
+      "literalReferences": [
+        {
+          "path": "web/src/customize.js",
+          "line": 41,
+          "href": "../../web/src/customize.js#L41"
+        },
+        {
+          "path": "web/src/customize.js",
+          "line": 44,
+          "href": "../../web/src/customize.js#L44"
+        },
+        {
+          "path": "web/src/customize.js",
+          "line": 54,
+          "href": "../../web/src/customize.js#L54"
+        }
+      ]
+    },
+    {
+      "id": "reset-style",
+      "tag": "button",
+      "line": 3,
+      "href": "../../web/src/template-v2.html#L3",
+      "literalReferences": [
+        {
+          "path": "web/src/customize.js",
+          "line": 45,
+          "href": "../../web/src/customize.js#L45"
+        }
+      ]
+    },
+    {
+      "id": "assembly-value",
+      "tag": "output",
+      "line": 3,
+      "href": "../../web/src/template-v2.html#L3",
+      "literalReferences": [
+        {
+          "path": "web/src/app-v2.js",
+          "line": 44,
+          "href": "../../web/src/app-v2.js#L44"
+        },
+        {
+          "path": "web/src/app-v2.js",
+          "line": 71,
+          "href": "../../web/src/app-v2.js#L71"
+        },
+        {
+          "path": "web/src/app-v2.js",
+          "line": 82,
+          "href": "../../web/src/app-v2.js#L82"
+        }
+      ]
+    },
+    {
+      "id": "assembly",
+      "tag": "input",
+      "line": 3,
+      "href": "../../web/src/template-v2.html#L3",
+      "literalReferences": [
+        {
+          "path": "web/src/app-v2.js",
+          "line": 35,
+          "href": "../../web/src/app-v2.js#L35"
+        },
+        {
+          "path": "web/src/app-v2.js",
+          "line": 71,
+          "href": "../../web/src/app-v2.js#L71"
+        }
+      ]
+    },
+    {
+      "id": "assembly-state",
+      "tag": "span",
+      "line": 3,
+      "href": "../../web/src/template-v2.html#L3",
+      "literalReferences": [
+        {
+          "path": "web/src/app-v2.js",
+          "line": 82,
+          "href": "../../web/src/app-v2.js#L82"
+        }
+      ]
+    },
+    {
+      "id": "loop",
+      "tag": "button",
+      "line": 3,
+      "href": "../../web/src/template-v2.html#L3",
+      "literalReferences": [
+        {
+          "path": "web/src/app-v2.js",
+          "line": 26,
+          "href": "../../web/src/app-v2.js#L26"
+        },
+        {
+          "path": "web/src/app-v2.js",
+          "line": 44,
+          "href": "../../web/src/app-v2.js#L44"
+        },
+        {
+          "path": "web/src/app-v2.js",
+          "line": 63,
+          "href": "../../web/src/app-v2.js#L63"
+        },
+        {
+          "path": "web/src/app-v2.js",
+          "line": 71,
+          "href": "../../web/src/app-v2.js#L71"
+        }
+      ]
+    },
+    {
+      "id": "assemble",
+      "tag": "button",
+      "line": 3,
+      "href": "../../web/src/template-v2.html#L3",
+      "literalReferences": [
+        {
+          "path": "web/src/app-v2.js",
+          "line": 62,
+          "href": "../../web/src/app-v2.js#L62"
+        }
+      ]
+    },
+    {
+      "id": "explode",
+      "tag": "button",
+      "line": 3,
+      "href": "../../web/src/template-v2.html#L3",
+      "literalReferences": [
+        {
+          "path": "web/src/app-v2.js",
+          "line": 62,
+          "href": "../../web/src/app-v2.js#L62"
+        }
+      ]
+    },
+    {
+      "id": "part-select",
+      "tag": "select",
+      "line": 3,
+      "href": "../../web/src/template-v2.html#L3",
+      "literalReferences": [
+        {
+          "path": "web/src/app-v2.js",
+          "line": 41,
+          "href": "../../web/src/app-v2.js#L41"
+        },
+        {
+          "path": "web/src/app-v2.js",
+          "line": 49,
+          "href": "../../web/src/app-v2.js#L49"
+        },
+        {
+          "path": "web/src/app-v2.js",
+          "line": 64,
+          "href": "../../web/src/app-v2.js#L64"
+        }
+      ]
+    },
+    {
+      "id": "selected-name",
+      "tag": "strong",
+      "line": 3,
+      "href": "../../web/src/template-v2.html#L3",
+      "literalReferences": [
+        {
+          "path": "web/src/app-v2.js",
+          "line": 41,
+          "href": "../../web/src/app-v2.js#L41"
+        }
+      ]
+    },
+    {
+      "id": "selected-category",
+      "tag": "p",
+      "line": 3,
+      "href": "../../web/src/template-v2.html#L3",
+      "literalReferences": [
+        {
+          "path": "web/src/app-v2.js",
+          "line": 41,
+          "href": "../../web/src/app-v2.js#L41"
+        }
+      ]
+    },
+    {
+      "id": "focus-part",
+      "tag": "button",
+      "line": 3,
+      "href": "../../web/src/template-v2.html#L3",
+      "literalReferences": [
+        {
+          "path": "web/src/app-v2.js",
+          "line": 41,
+          "href": "../../web/src/app-v2.js#L41"
+        },
+        {
+          "path": "web/src/app-v2.js",
+          "line": 65,
+          "href": "../../web/src/app-v2.js#L65"
+        }
+      ]
+    },
+    {
+      "id": "isolate",
+      "tag": "button",
+      "line": 3,
+      "href": "../../web/src/template-v2.html#L3",
+      "literalReferences": [
+        {
+          "path": "web/src/app-v2.js",
+          "line": 41,
+          "href": "../../web/src/app-v2.js#L41"
+        },
+        {
+          "path": "web/src/app-v2.js",
+          "line": 65,
+          "href": "../../web/src/app-v2.js#L65"
+        }
+      ]
+    },
+    {
+      "id": "free-move",
+      "tag": "button",
+      "line": 3,
+      "href": "../../web/src/template-v2.html#L3",
+      "literalReferences": [
+        {
+          "path": "web/src/app-v2.js",
+          "line": 42,
+          "href": "../../web/src/app-v2.js#L42"
+        },
+        {
+          "path": "web/src/app-v2.js",
+          "line": 66,
+          "href": "../../web/src/app-v2.js#L66"
+        },
+        {
+          "path": "web/src/app-v2.js",
+          "line": 71,
+          "href": "../../web/src/app-v2.js#L71"
+        }
+      ]
+    },
+    {
+      "id": "offset-value",
+      "tag": "output",
+      "line": 3,
+      "href": "../../web/src/template-v2.html#L3",
+      "literalReferences": [
+        {
+          "path": "web/src/app-v2.js",
+          "line": 41,
+          "href": "../../web/src/app-v2.js#L41"
+        },
+        {
+          "path": "web/src/app-v2.js",
+          "line": 67,
+          "href": "../../web/src/app-v2.js#L67"
+        }
+      ]
+    },
+    {
+      "id": "part-offset",
+      "tag": "input",
+      "line": 3,
+      "href": "../../web/src/template-v2.html#L3",
+      "literalReferences": [
+        {
+          "path": "web/src/app-v2.js",
+          "line": 41,
+          "href": "../../web/src/app-v2.js#L41"
+        },
+        {
+          "path": "web/src/app-v2.js",
+          "line": 67,
+          "href": "../../web/src/app-v2.js#L67"
+        }
+      ]
+    },
+    {
+      "id": "clear-selection",
+      "tag": "button",
+      "line": 3,
+      "href": "../../web/src/template-v2.html#L3",
+      "literalReferences": [
+        {
+          "path": "web/src/app-v2.js",
+          "line": 65,
+          "href": "../../web/src/app-v2.js#L65"
+        }
+      ]
+    },
+    {
+      "id": "spin",
+      "tag": "button",
+      "line": 3,
+      "href": "../../web/src/template-v2.html#L3",
+      "literalReferences": [
+        {
+          "path": "web/src/app-v2.js",
+          "line": 26,
+          "href": "../../web/src/app-v2.js#L26"
+        },
+        {
+          "path": "web/src/app-v2.js",
+          "line": 68,
+          "href": "../../web/src/app-v2.js#L68"
+        },
+        {
+          "path": "web/src/app-v2.js",
+          "line": 71,
+          "href": "../../web/src/app-v2.js#L71"
+        },
+        {
+          "path": "web/src/app-v2.js",
+          "line": 82,
+          "href": "../../web/src/app-v2.js#L82"
+        }
+      ]
+    },
+    {
+      "id": "steering-value",
+      "tag": "output",
+      "line": 3,
+      "href": "../../web/src/template-v2.html#L3",
+      "literalReferences": [
+        {
+          "path": "web/src/app-v2.js",
+          "line": 26,
+          "href": "../../web/src/app-v2.js#L26"
+        },
+        {
+          "path": "web/src/app-v2.js",
+          "line": 69,
+          "href": "../../web/src/app-v2.js#L69"
+        },
+        {
+          "path": "web/src/app-v2.js",
+          "line": 71,
+          "href": "../../web/src/app-v2.js#L71"
+        },
+        {
+          "path": "web/src/garage.js",
+          "line": 60,
+          "href": "../../web/src/garage.js#L60"
+        }
+      ]
+    },
+    {
+      "id": "steering",
+      "tag": "input",
+      "line": 3,
+      "href": "../../web/src/template-v2.html#L3",
+      "literalReferences": [
+        {
+          "path": "web/src/app-v2.js",
+          "line": 26,
+          "href": "../../web/src/app-v2.js#L26"
+        },
+        {
+          "path": "web/src/app-v2.js",
+          "line": 69,
+          "href": "../../web/src/app-v2.js#L69"
+        },
+        {
+          "path": "web/src/app-v2.js",
+          "line": 71,
+          "href": "../../web/src/app-v2.js#L71"
+        },
+        {
+          "path": "web/src/app-v2.js",
+          "line": 82,
+          "href": "../../web/src/app-v2.js#L82"
+        }
+      ]
+    },
+    {
+      "id": "drs-value",
+      "tag": "output",
+      "line": 3,
+      "href": "../../web/src/template-v2.html#L3",
+      "literalReferences": [
+        {
+          "path": "web/src/app-v2.js",
+          "line": 26,
+          "href": "../../web/src/app-v2.js#L26"
+        },
+        {
+          "path": "web/src/app-v2.js",
+          "line": 70,
+          "href": "../../web/src/app-v2.js#L70"
+        },
+        {
+          "path": "web/src/app-v2.js",
+          "line": 71,
+          "href": "../../web/src/app-v2.js#L71"
+        },
+        {
+          "path": "web/src/garage.js",
+          "line": 60,
+          "href": "../../web/src/garage.js#L60"
+        }
+      ]
+    },
+    {
+      "id": "drs",
+      "tag": "input",
+      "line": 3,
+      "href": "../../web/src/template-v2.html#L3",
+      "literalReferences": [
+        {
+          "path": "web/src/app-v2.js",
+          "line": 26,
+          "href": "../../web/src/app-v2.js#L26"
+        },
+        {
+          "path": "web/src/app-v2.js",
+          "line": 70,
+          "href": "../../web/src/app-v2.js#L70"
+        },
+        {
+          "path": "web/src/app-v2.js",
+          "line": 71,
+          "href": "../../web/src/app-v2.js#L71"
+        },
+        {
+          "path": "web/src/app-v2.js",
+          "line": 82,
+          "href": "../../web/src/app-v2.js#L82"
+        }
+      ]
+    },
+    {
+      "id": "motion-note",
+      "tag": "p",
+      "line": 3,
+      "href": "../../web/src/template-v2.html#L3",
+      "literalReferences": [
+        {
+          "path": "web/src/app-v2.js",
+          "line": 82,
+          "href": "../../web/src/app-v2.js#L82"
+        }
+      ]
+    },
+    {
+      "id": "theme",
+      "tag": "button",
+      "line": 3,
+      "href": "../../web/src/template-v2.html#L3",
+      "literalReferences": [
+        {
+          "path": "web/src/app-v2.js",
+          "line": 58,
+          "href": "../../web/src/app-v2.js#L58"
+        },
+        {
+          "path": "web/src/customize.js",
+          "line": 38,
+          "href": "../../web/src/customize.js#L38"
+        }
+      ]
+    },
+    {
+      "id": "wire",
+      "tag": "button",
+      "line": 3,
+      "href": "../../web/src/template-v2.html#L3",
+      "literalReferences": [
+        {
+          "path": "web/src/app-v2.js",
+          "line": 60,
+          "href": "../../web/src/app-v2.js#L60"
+        }
+      ]
+    },
+    {
+      "id": "quality",
+      "tag": "button",
+      "line": 3,
+      "href": "../../web/src/template-v2.html#L3",
+      "literalReferences": [
+        {
+          "path": "web/src/app-v2.js",
+          "line": 59,
+          "href": "../../web/src/app-v2.js#L59"
+        }
+      ]
+    },
+    {
+      "id": "save-photo",
+      "tag": "button",
+      "line": 3,
+      "href": "../../web/src/template-v2.html#L3",
+      "literalReferences": [
+        {
+          "path": "web/src/app-v2.js",
+          "line": 74,
+          "href": "../../web/src/app-v2.js#L74"
+        }
+      ]
+    },
+    {
+      "id": "model-data",
+      "tag": "script",
+      "line": 3,
+      "href": "../../web/src/template-v2.html#L3",
+      "literalReferences": [
+        {
+          "path": "web/src/app-v2.js",
+          "line": 45,
+          "href": "../../web/src/app-v2.js#L45"
+        }
+      ]
+    }
+  ]
+}

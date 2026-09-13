@@ -18,3 +18,9 @@ jobs:
       - run: npm ci
       - run: npm run build
       - run: npm test
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - name: Conferir mapas e links
+        working-directory: .
+        run: python ferramentas/mapear.py --check

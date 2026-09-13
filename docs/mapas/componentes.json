@@ -1,0 +1,976 @@
+{
+  "source": "documentacao/componentes-origem.json",
+  "comparedTo": "web/assets/carro-movable.glb",
+  "parts": [
+    {
+      "partId": "rear_wing_drs__01",
+      "label": "Flap traseiro DRS",
+      "category": "aero",
+      "sourceObject": "rear_wing_drs",
+      "trianglesRecorded": 3776,
+      "originPointer": "/parts/0",
+      "nodePointer": "/nodes/1",
+      "originHref": "../../documentacao/componentes-origem.json#L16"
+    },
+    {
+      "partId": "rear_wing_main_part__01",
+      "label": "Asa traseira principal",
+      "category": "aero",
+      "sourceObject": "rear_wing_main_part",
+      "trianglesRecorded": 576,
+      "originPointer": "/parts/1",
+      "nodePointer": "/nodes/3",
+      "originHref": "../../documentacao/componentes-origem.json#L46"
+    },
+    {
+      "partId": "rear_wing_side__01",
+      "label": "Placa lateral traseira · 01",
+      "category": "aero",
+      "sourceObject": "rear_wing_side",
+      "trianglesRecorded": 1824,
+      "originPointer": "/parts/2",
+      "nodePointer": "/nodes/5",
+      "originHref": "../../documentacao/componentes-origem.json#L76"
+    },
+    {
+      "partId": "rear_wing_side__02",
+      "label": "Placa lateral traseira · 02",
+      "category": "aero",
+      "sourceObject": "rear_wing_side",
+      "trianglesRecorded": 1824,
+      "originPointer": "/parts/3",
+      "nodePointer": "/nodes/6",
+      "originHref": "../../documentacao/componentes-origem.json#L106"
+    },
+    {
+      "partId": "rear_wing_top_mount__01",
+      "label": "Suporte superior traseiro · 01",
+      "category": "aero",
+      "sourceObject": "rear_wing_top_mount",
+      "trianglesRecorded": 112,
+      "originPointer": "/parts/4",
+      "nodePointer": "/nodes/8",
+      "originHref": "../../documentacao/componentes-origem.json#L136"
+    },
+    {
+      "partId": "rear_wing_top_mount__02",
+      "label": "Suporte superior traseiro · 02",
+      "category": "aero",
+      "sourceObject": "rear_wing_top_mount",
+      "trianglesRecorded": 112,
+      "originPointer": "/parts/5",
+      "nodePointer": "/nodes/9",
+      "originHref": "../../documentacao/componentes-origem.json#L166"
+    },
+    {
+      "partId": "rear_wing_holder__01",
+      "label": "Suporte da asa traseira · 01",
+      "category": "aero",
+      "sourceObject": "rear_wing_holder",
+      "trianglesRecorded": 1312,
+      "originPointer": "/parts/6",
+      "nodePointer": "/nodes/11",
+      "originHref": "../../documentacao/componentes-origem.json#L196"
+    },
+    {
+      "partId": "rear_wing_holder__02",
+      "label": "Suporte da asa traseira · 02",
+      "category": "aero",
+      "sourceObject": "rear_wing_holder",
+      "trianglesRecorded": 1312,
+      "originPointer": "/parts/7",
+      "nodePointer": "/nodes/12",
+      "originHref": "../../documentacao/componentes-origem.json#L226"
+    },
+    {
+      "partId": "rear_wing_bottom_holder__01",
+      "label": "Suporte inferior traseiro",
+      "category": "aero",
+      "sourceObject": "rear_wing_bottom_holder",
+      "trianglesRecorded": 320,
+      "originPointer": "/parts/8",
+      "nodePointer": "/nodes/14",
+      "originHref": "../../documentacao/componentes-origem.json#L256"
+    },
+    {
+      "partId": "drs_holder__01",
+      "label": "Suporte do DRS",
+      "category": "aero",
+      "sourceObject": "drs_holder",
+      "trianglesRecorded": 4736,
+      "originPointer": "/parts/9",
+      "nodePointer": "/nodes/16",
+      "originHref": "../../documentacao/componentes-origem.json#L286"
+    },
+    {
+      "partId": "drs_mechanism__01",
+      "label": "Mecanismo do DRS · 01",
+      "category": "aero",
+      "sourceObject": "drs_mechanism",
+      "trianglesRecorded": 556,
+      "originPointer": "/parts/10",
+      "nodePointer": "/nodes/18",
+      "originHref": "../../documentacao/componentes-origem.json#L316"
+    },
+    {
+      "partId": "drs_mechanism__02",
+      "label": "Mecanismo do DRS · 02",
+      "category": "aero",
+      "sourceObject": "drs_mechanism",
+      "trianglesRecorded": 548,
+      "originPointer": "/parts/11",
+      "nodePointer": "/nodes/19",
+      "originHref": "../../documentacao/componentes-origem.json#L346"
+    },
+    {
+      "partId": "drs_mechanism__03",
+      "label": "Mecanismo do DRS · 03",
+      "category": "aero",
+      "sourceObject": "drs_mechanism",
+      "trianglesRecorded": 166,
+      "originPointer": "/parts/12",
+      "nodePointer": "/nodes/20",
+      "originHref": "../../documentacao/componentes-origem.json#L376"
+    },
+    {
+      "partId": "front_wing_side_plates__01",
+      "label": "Placa lateral dianteira · 01",
+      "category": "aero",
+      "sourceObject": "front_wing_side_plates",
+      "trianglesRecorded": 2432,
+      "originPointer": "/parts/13",
+      "nodePointer": "/nodes/22",
+      "originHref": "../../documentacao/componentes-origem.json#L406"
+    },
+    {
+      "partId": "front_wing_side_plates__02",
+      "label": "Placa lateral dianteira · 02",
+      "category": "aero",
+      "sourceObject": "front_wing_side_plates",
+      "trianglesRecorded": 2432,
+      "originPointer": "/parts/14",
+      "nodePointer": "/nodes/23",
+      "originHref": "../../documentacao/componentes-origem.json#L436"
+    },
+    {
+      "partId": "front_wing_side_plates__03",
+      "label": "Placa lateral dianteira · 03",
+      "category": "aero",
+      "sourceObject": "front_wing_side_plates",
+      "trianglesRecorded": 544,
+      "originPointer": "/parts/15",
+      "nodePointer": "/nodes/24",
+      "originHref": "../../documentacao/componentes-origem.json#L466"
+    },
+    {
+      "partId": "front_wing_side_plates__04",
+      "label": "Placa lateral dianteira · 04",
+      "category": "aero",
+      "sourceObject": "front_wing_side_plates",
+      "trianglesRecorded": 544,
+      "originPointer": "/parts/16",
+      "nodePointer": "/nodes/25",
+      "originHref": "../../documentacao/componentes-origem.json#L496"
+    },
+    {
+      "partId": "front_wing_bottom__01",
+      "label": "Asa dianteira inferior",
+      "category": "aero",
+      "sourceObject": "front_wing_bottom",
+      "trianglesRecorded": 4736,
+      "originPointer": "/parts/17",
+      "nodePointer": "/nodes/27",
+      "originHref": "../../documentacao/componentes-origem.json#L526"
+    },
+    {
+      "partId": "front_wing_middle__01",
+      "label": "Asa dianteira intermediária",
+      "category": "aero",
+      "sourceObject": "front_wing_middle",
+      "trianglesRecorded": 4736,
+      "originPointer": "/parts/18",
+      "nodePointer": "/nodes/29",
+      "originHref": "../../documentacao/componentes-origem.json#L556"
+    },
+    {
+      "partId": "front_wing_top__01",
+      "label": "Asa dianteira superior",
+      "category": "aero",
+      "sourceObject": "front_wing_top",
+      "trianglesRecorded": 5376,
+      "originPointer": "/parts/19",
+      "nodePointer": "/nodes/31",
+      "originHref": "../../documentacao/componentes-origem.json#L586"
+    },
+    {
+      "partId": "front_wing_mounts__01",
+      "label": "Suporte dianteiro · 01",
+      "category": "aero",
+      "sourceObject": "front_wing_mounts",
+      "trianglesRecorded": 1280,
+      "originPointer": "/parts/20",
+      "nodePointer": "/nodes/33",
+      "originHref": "../../documentacao/componentes-origem.json#L616"
+    },
+    {
+      "partId": "front_wing_mounts__02",
+      "label": "Suporte dianteiro · 02",
+      "category": "aero",
+      "sourceObject": "front_wing_mounts",
+      "trianglesRecorded": 1280,
+      "originPointer": "/parts/21",
+      "nodePointer": "/nodes/34",
+      "originHref": "../../documentacao/componentes-origem.json#L646"
+    },
+    {
+      "partId": "front_wing_mounts__03",
+      "label": "Suporte dianteiro · 03",
+      "category": "aero",
+      "sourceObject": "front_wing_mounts",
+      "trianglesRecorded": 1280,
+      "originPointer": "/parts/22",
+      "nodePointer": "/nodes/35",
+      "originHref": "../../documentacao/componentes-origem.json#L676"
+    },
+    {
+      "partId": "front_wing_mounts__04",
+      "label": "Suporte dianteiro · 04",
+      "category": "aero",
+      "sourceObject": "front_wing_mounts",
+      "trianglesRecorded": 1280,
+      "originPointer": "/parts/23",
+      "nodePointer": "/nodes/36",
+      "originHref": "../../documentacao/componentes-origem.json#L706"
+    },
+    {
+      "partId": "main_body__01",
+      "label": "Carroceria",
+      "category": "body",
+      "sourceObject": "main_body",
+      "trianglesRecorded": 107406,
+      "originPointer": "/parts/24",
+      "nodePointer": "/nodes/38",
+      "originHref": "../../documentacao/componentes-origem.json#L736"
+    },
+    {
+      "partId": "floor__01",
+      "label": "Assoalho · 01",
+      "category": "aero",
+      "sourceObject": "floor",
+      "trianglesRecorded": 27216,
+      "originPointer": "/parts/25",
+      "nodePointer": "/nodes/40",
+      "originHref": "../../documentacao/componentes-origem.json#L766"
+    },
+    {
+      "partId": "floor__02",
+      "label": "Assoalho · 02",
+      "category": "aero",
+      "sourceObject": "floor",
+      "trianglesRecorded": 2816,
+      "originPointer": "/parts/26",
+      "nodePointer": "/nodes/41",
+      "originHref": "../../documentacao/componentes-origem.json#L796"
+    },
+    {
+      "partId": "floor__03",
+      "label": "Assoalho · 03",
+      "category": "aero",
+      "sourceObject": "floor",
+      "trianglesRecorded": 2816,
+      "originPointer": "/parts/27",
+      "nodePointer": "/nodes/42",
+      "originHref": "../../documentacao/componentes-origem.json#L826"
+    },
+    {
+      "partId": "rear_led__01",
+      "label": "Luz traseira",
+      "category": "details",
+      "sourceObject": "rear_led",
+      "trianglesRecorded": 1248,
+      "originPointer": "/parts/28",
+      "nodePointer": "/nodes/44",
+      "originHref": "../../documentacao/componentes-origem.json#L856"
+    },
+    {
+      "partId": "exhaust__01",
+      "label": "Escape",
+      "category": "details",
+      "sourceObject": "exhaust",
+      "trianglesRecorded": 7808,
+      "originPointer": "/parts/29",
+      "nodePointer": "/nodes/46",
+      "originHref": "../../documentacao/componentes-origem.json#L886"
+    },
+    {
+      "partId": "top_intake_details__01",
+      "label": "Detalhe da tomada de ar · 01",
+      "category": "details",
+      "sourceObject": "top_intake_details",
+      "trianglesRecorded": 6784,
+      "originPointer": "/parts/30",
+      "nodePointer": "/nodes/48",
+      "originHref": "../../documentacao/componentes-origem.json#L916"
+    },
+    {
+      "partId": "top_intake_details__02",
+      "label": "Detalhe da tomada de ar · 02",
+      "category": "details",
+      "sourceObject": "top_intake_details",
+      "trianglesRecorded": 2688,
+      "originPointer": "/parts/31",
+      "nodePointer": "/nodes/49",
+      "originHref": "../../documentacao/componentes-origem.json#L946"
+    },
+    {
+      "partId": "top_intake_details__03",
+      "label": "Detalhe da tomada de ar · 03",
+      "category": "details",
+      "sourceObject": "top_intake_details",
+      "trianglesRecorded": 2688,
+      "originPointer": "/parts/32",
+      "nodePointer": "/nodes/50",
+      "originHref": "../../documentacao/componentes-origem.json#L976"
+    },
+    {
+      "partId": "antennas__01",
+      "label": "Antena · 01",
+      "category": "details",
+      "sourceObject": "antennas",
+      "trianglesRecorded": 7440,
+      "originPointer": "/parts/33",
+      "nodePointer": "/nodes/52",
+      "originHref": "../../documentacao/componentes-origem.json#L1006"
+    },
+    {
+      "partId": "antennas__02",
+      "label": "Antena · 02",
+      "category": "details",
+      "sourceObject": "antennas",
+      "trianglesRecorded": 5760,
+      "originPointer": "/parts/34",
+      "nodePointer": "/nodes/53",
+      "originHref": "../../documentacao/componentes-origem.json#L1036"
+    },
+    {
+      "partId": "antennas__03",
+      "label": "Antena · 03",
+      "category": "details",
+      "sourceObject": "antennas",
+      "trianglesRecorded": 5760,
+      "originPointer": "/parts/35",
+      "nodePointer": "/nodes/54",
+      "originHref": "../../documentacao/componentes-origem.json#L1066"
+    },
+    {
+      "partId": "antennas__04",
+      "label": "Antena · 04",
+      "category": "details",
+      "sourceObject": "antennas",
+      "trianglesRecorded": 1984,
+      "originPointer": "/parts/36",
+      "nodePointer": "/nodes/55",
+      "originHref": "../../documentacao/componentes-origem.json#L1096"
+    },
+    {
+      "partId": "side_mirrors__L_01",
+      "label": "Espelho retrovisor · L_01",
+      "category": "details",
+      "sourceObject": "side_mirrors",
+      "trianglesRecorded": 5216,
+      "originPointer": "/parts/37",
+      "nodePointer": "/nodes/57",
+      "originHref": "../../documentacao/componentes-origem.json#L1126"
+    },
+    {
+      "partId": "side_mirrors__R_01",
+      "label": "Espelho retrovisor · R_01",
+      "category": "details",
+      "sourceObject": "side_mirrors",
+      "trianglesRecorded": 5216,
+      "originPointer": "/parts/38",
+      "nodePointer": "/nodes/58",
+      "originHref": "../../documentacao/componentes-origem.json#L1156"
+    },
+    {
+      "partId": "front_wing_mount__01",
+      "label": "Suporte da asa dianteira · 01",
+      "category": "aero",
+      "sourceObject": "front_wing_mount",
+      "trianglesRecorded": 256,
+      "originPointer": "/parts/39",
+      "nodePointer": "/nodes/60",
+      "originHref": "../../documentacao/componentes-origem.json#L1186"
+    },
+    {
+      "partId": "front_wing_mount__02",
+      "label": "Suporte da asa dianteira · 02",
+      "category": "aero",
+      "sourceObject": "front_wing_mount",
+      "trianglesRecorded": 256,
+      "originPointer": "/parts/40",
+      "nodePointer": "/nodes/61",
+      "originHref": "../../documentacao/componentes-origem.json#L1216"
+    },
+    {
+      "partId": "main_body_inside__01",
+      "label": "Interior do cockpit · 01",
+      "category": "cockpit",
+      "sourceObject": "main_body_inside",
+      "trianglesRecorded": 25344,
+      "originPointer": "/parts/41",
+      "nodePointer": "/nodes/63",
+      "originHref": "../../documentacao/componentes-origem.json#L1246"
+    },
+    {
+      "partId": "main_body_inside__02",
+      "label": "Interior do cockpit · 02",
+      "category": "cockpit",
+      "sourceObject": "main_body_inside",
+      "trianglesRecorded": 1536,
+      "originPointer": "/parts/42",
+      "nodePointer": "/nodes/64",
+      "originHref": "../../documentacao/componentes-origem.json#L1276"
+    },
+    {
+      "partId": "main_body_glass__01",
+      "label": "Defletor transparente",
+      "category": "cockpit",
+      "sourceObject": "main_body_glass",
+      "trianglesRecorded": 4224,
+      "originPointer": "/parts/43",
+      "nodePointer": "/nodes/66",
+      "originHref": "../../documentacao/componentes-origem.json#L1306"
+    },
+    {
+      "partId": "front_flap_detail__01",
+      "label": "Detalhe de flap dianteiro · 01",
+      "category": "aero",
+      "sourceObject": "front_flap_detail",
+      "trianglesRecorded": 2688,
+      "originPointer": "/parts/44",
+      "nodePointer": "/nodes/68",
+      "originHref": "../../documentacao/componentes-origem.json#L1336"
+    },
+    {
+      "partId": "front_flap_detail__02",
+      "label": "Detalhe de flap dianteiro · 02",
+      "category": "aero",
+      "sourceObject": "front_flap_detail",
+      "trianglesRecorded": 2688,
+      "originPointer": "/parts/45",
+      "nodePointer": "/nodes/69",
+      "originHref": "../../documentacao/componentes-origem.json#L1366"
+    },
+    {
+      "partId": "front_wheel_cover__L_01",
+      "label": "Conjunto de roda dianteira · L_01",
+      "category": "wheels",
+      "sourceObject": "front_wheel_cover",
+      "trianglesRecorded": 32480,
+      "originPointer": "/parts/46",
+      "nodePointer": "/nodes/71",
+      "originHref": "../../documentacao/componentes-origem.json#L1396"
+    },
+    {
+      "partId": "front_wheel_cover__L_02",
+      "label": "Conjunto de roda dianteira · L_02",
+      "category": "wheels",
+      "sourceObject": "front_wheel_cover",
+      "trianglesRecorded": 15928,
+      "originPointer": "/parts/47",
+      "nodePointer": "/nodes/72",
+      "originHref": "../../documentacao/componentes-origem.json#L1439"
+    },
+    {
+      "partId": "front_wheel_cover__L_03",
+      "label": "Conjunto de roda dianteira · L_03",
+      "category": "wheels",
+      "sourceObject": "front_wheel_cover",
+      "trianglesRecorded": 13104,
+      "originPointer": "/parts/48",
+      "nodePointer": "/nodes/73",
+      "originHref": "../../documentacao/componentes-origem.json#L1482"
+    },
+    {
+      "partId": "front_wheel_cover__L_04",
+      "label": "Conjunto de roda dianteira · L_04",
+      "category": "wheels",
+      "sourceObject": "front_wheel_cover",
+      "trianglesRecorded": 7448,
+      "originPointer": "/parts/49",
+      "nodePointer": "/nodes/74",
+      "originHref": "../../documentacao/componentes-origem.json#L1525"
+    },
+    {
+      "partId": "front_wheel_cover__R_01",
+      "label": "Conjunto de roda dianteira · R_01",
+      "category": "wheels",
+      "sourceObject": "front_wheel_cover",
+      "trianglesRecorded": 32480,
+      "originPointer": "/parts/50",
+      "nodePointer": "/nodes/75",
+      "originHref": "../../documentacao/componentes-origem.json#L1568"
+    },
+    {
+      "partId": "front_wheel_cover__R_02",
+      "label": "Conjunto de roda dianteira · R_02",
+      "category": "wheels",
+      "sourceObject": "front_wheel_cover",
+      "trianglesRecorded": 15928,
+      "originPointer": "/parts/51",
+      "nodePointer": "/nodes/76",
+      "originHref": "../../documentacao/componentes-origem.json#L1611"
+    },
+    {
+      "partId": "front_wheel_cover__R_03",
+      "label": "Conjunto de roda dianteira · R_03",
+      "category": "wheels",
+      "sourceObject": "front_wheel_cover",
+      "trianglesRecorded": 13104,
+      "originPointer": "/parts/52",
+      "nodePointer": "/nodes/77",
+      "originHref": "../../documentacao/componentes-origem.json#L1654"
+    },
+    {
+      "partId": "front_wheel_cover__R_04",
+      "label": "Conjunto de roda dianteira · R_04",
+      "category": "wheels",
+      "sourceObject": "front_wheel_cover",
+      "trianglesRecorded": 7448,
+      "originPointer": "/parts/53",
+      "nodePointer": "/nodes/78",
+      "originHref": "../../documentacao/componentes-origem.json#L1697"
+    },
+    {
+      "partId": "front_tire__01",
+      "label": "Pneu dianteiro · 01",
+      "category": "wheels",
+      "sourceObject": "front_tire",
+      "trianglesRecorded": 8736,
+      "originPointer": "/parts/54",
+      "nodePointer": "/nodes/80",
+      "originHref": "../../documentacao/componentes-origem.json#L1740"
+    },
+    {
+      "partId": "front_tire__02",
+      "label": "Pneu dianteiro · 02",
+      "category": "wheels",
+      "sourceObject": "front_tire",
+      "trianglesRecorded": 8736,
+      "originPointer": "/parts/55",
+      "nodePointer": "/nodes/81",
+      "originHref": "../../documentacao/componentes-origem.json#L1783"
+    },
+    {
+      "partId": "inside_cover__01",
+      "label": "Cobertura interna dianteira · 01",
+      "category": "wheels",
+      "sourceObject": "inside_cover",
+      "trianglesRecorded": 10344,
+      "originPointer": "/parts/56",
+      "nodePointer": "/nodes/83",
+      "originHref": "../../documentacao/componentes-origem.json#L1826"
+    },
+    {
+      "partId": "inside_cover__02",
+      "label": "Cobertura interna dianteira · 02",
+      "category": "wheels",
+      "sourceObject": "inside_cover",
+      "trianglesRecorded": 10344,
+      "originPointer": "/parts/57",
+      "nodePointer": "/nodes/84",
+      "originHref": "../../documentacao/componentes-origem.json#L1869"
+    },
+    {
+      "partId": "rear_wheel_cover__L_01",
+      "label": "Conjunto de roda traseira · L_01",
+      "category": "wheels",
+      "sourceObject": "rear_wheel_cover",
+      "trianglesRecorded": 32480,
+      "originPointer": "/parts/58",
+      "nodePointer": "/nodes/86",
+      "originHref": "../../documentacao/componentes-origem.json#L1912"
+    },
+    {
+      "partId": "rear_wheel_cover__L_02",
+      "label": "Conjunto de roda traseira · L_02",
+      "category": "wheels",
+      "sourceObject": "rear_wheel_cover",
+      "trianglesRecorded": 15928,
+      "originPointer": "/parts/59",
+      "nodePointer": "/nodes/87",
+      "originHref": "../../documentacao/componentes-origem.json#L1955"
+    },
+    {
+      "partId": "rear_wheel_cover__L_03",
+      "label": "Conjunto de roda traseira · L_03",
+      "category": "wheels",
+      "sourceObject": "rear_wheel_cover",
+      "trianglesRecorded": 13104,
+      "originPointer": "/parts/60",
+      "nodePointer": "/nodes/88",
+      "originHref": "../../documentacao/componentes-origem.json#L1998"
+    },
+    {
+      "partId": "rear_wheel_cover__L_04",
+      "label": "Conjunto de roda traseira · L_04",
+      "category": "wheels",
+      "sourceObject": "rear_wheel_cover",
+      "trianglesRecorded": 7448,
+      "originPointer": "/parts/61",
+      "nodePointer": "/nodes/89",
+      "originHref": "../../documentacao/componentes-origem.json#L2041"
+    },
+    {
+      "partId": "rear_wheel_cover__R_01",
+      "label": "Conjunto de roda traseira · R_01",
+      "category": "wheels",
+      "sourceObject": "rear_wheel_cover",
+      "trianglesRecorded": 32480,
+      "originPointer": "/parts/62",
+      "nodePointer": "/nodes/90",
+      "originHref": "../../documentacao/componentes-origem.json#L2084"
+    },
+    {
+      "partId": "rear_wheel_cover__R_02",
+      "label": "Conjunto de roda traseira · R_02",
+      "category": "wheels",
+      "sourceObject": "rear_wheel_cover",
+      "trianglesRecorded": 15928,
+      "originPointer": "/parts/63",
+      "nodePointer": "/nodes/91",
+      "originHref": "../../documentacao/componentes-origem.json#L2127"
+    },
+    {
+      "partId": "rear_wheel_cover__R_03",
+      "label": "Conjunto de roda traseira · R_03",
+      "category": "wheels",
+      "sourceObject": "rear_wheel_cover",
+      "trianglesRecorded": 13104,
+      "originPointer": "/parts/64",
+      "nodePointer": "/nodes/92",
+      "originHref": "../../documentacao/componentes-origem.json#L2170"
+    },
+    {
+      "partId": "rear_wheel_cover__R_04",
+      "label": "Conjunto de roda traseira · R_04",
+      "category": "wheels",
+      "sourceObject": "rear_wheel_cover",
+      "trianglesRecorded": 7448,
+      "originPointer": "/parts/65",
+      "nodePointer": "/nodes/93",
+      "originHref": "../../documentacao/componentes-origem.json#L2213"
+    },
+    {
+      "partId": "rear_tire__01",
+      "label": "Pneu traseiro · 01",
+      "category": "wheels",
+      "sourceObject": "rear_tire",
+      "trianglesRecorded": 8736,
+      "originPointer": "/parts/66",
+      "nodePointer": "/nodes/95",
+      "originHref": "../../documentacao/componentes-origem.json#L2256"
+    },
+    {
+      "partId": "rear_tire__02",
+      "label": "Pneu traseiro · 02",
+      "category": "wheels",
+      "sourceObject": "rear_tire",
+      "trianglesRecorded": 8736,
+      "originPointer": "/parts/67",
+      "nodePointer": "/nodes/96",
+      "originHref": "../../documentacao/componentes-origem.json#L2299"
+    },
+    {
+      "partId": "rear_inside_cover__01",
+      "label": "Cobertura interna traseira · 01",
+      "category": "wheels",
+      "sourceObject": "rear_inside_cover",
+      "trianglesRecorded": 10344,
+      "originPointer": "/parts/68",
+      "nodePointer": "/nodes/98",
+      "originHref": "../../documentacao/componentes-origem.json#L2342"
+    },
+    {
+      "partId": "rear_inside_cover__02",
+      "label": "Cobertura interna traseira · 02",
+      "category": "wheels",
+      "sourceObject": "rear_inside_cover",
+      "trianglesRecorded": 10344,
+      "originPointer": "/parts/69",
+      "nodePointer": "/nodes/99",
+      "originHref": "../../documentacao/componentes-origem.json#L2385"
+    },
+    {
+      "partId": "front_control_arms__L_01",
+      "label": "Suspensão dianteira · L_01",
+      "category": "suspension",
+      "sourceObject": "front_control_arms",
+      "trianglesRecorded": 3872,
+      "originPointer": "/parts/70",
+      "nodePointer": "/nodes/101",
+      "originHref": "../../documentacao/componentes-origem.json#L2428"
+    },
+    {
+      "partId": "front_control_arms__L_02",
+      "label": "Suspensão dianteira · L_02",
+      "category": "suspension",
+      "sourceObject": "front_control_arms",
+      "trianglesRecorded": 3680,
+      "originPointer": "/parts/71",
+      "nodePointer": "/nodes/102",
+      "originHref": "../../documentacao/componentes-origem.json#L2458"
+    },
+    {
+      "partId": "front_control_arms__R_01",
+      "label": "Suspensão dianteira · R_01",
+      "category": "suspension",
+      "sourceObject": "front_control_arms",
+      "trianglesRecorded": 3872,
+      "originPointer": "/parts/72",
+      "nodePointer": "/nodes/103",
+      "originHref": "../../documentacao/componentes-origem.json#L2488"
+    },
+    {
+      "partId": "front_control_arms__R_02",
+      "label": "Suspensão dianteira · R_02",
+      "category": "suspension",
+      "sourceObject": "front_control_arms",
+      "trianglesRecorded": 3680,
+      "originPointer": "/parts/73",
+      "nodePointer": "/nodes/104",
+      "originHref": "../../documentacao/componentes-origem.json#L2518"
+    },
+    {
+      "partId": "front_pushrod__L_01",
+      "label": "Haste dianteira · L_01",
+      "category": "suspension",
+      "sourceObject": "front_pushrod",
+      "trianglesRecorded": 2688,
+      "originPointer": "/parts/74",
+      "nodePointer": "/nodes/106",
+      "originHref": "../../documentacao/componentes-origem.json#L2548"
+    },
+    {
+      "partId": "front_pushrod__L_02",
+      "label": "Haste dianteira · L_02",
+      "category": "suspension",
+      "sourceObject": "front_pushrod",
+      "trianglesRecorded": 3456,
+      "originPointer": "/parts/75",
+      "nodePointer": "/nodes/107",
+      "originHref": "../../documentacao/componentes-origem.json#L2578"
+    },
+    {
+      "partId": "front_pushrod__R_01",
+      "label": "Haste dianteira · R_01",
+      "category": "suspension",
+      "sourceObject": "front_pushrod",
+      "trianglesRecorded": 3456,
+      "originPointer": "/parts/76",
+      "nodePointer": "/nodes/108",
+      "originHref": "../../documentacao/componentes-origem.json#L2608"
+    },
+    {
+      "partId": "front_pushrod__R_02",
+      "label": "Haste dianteira · R_02",
+      "category": "suspension",
+      "sourceObject": "front_pushrod",
+      "trianglesRecorded": 2688,
+      "originPointer": "/parts/77",
+      "nodePointer": "/nodes/109",
+      "originHref": "../../documentacao/componentes-origem.json#L2638"
+    },
+    {
+      "partId": "rear_control_arms__L_01",
+      "label": "Suspensão traseira · L_01",
+      "category": "suspension",
+      "sourceObject": "rear_control_arms",
+      "trianglesRecorded": 3040,
+      "originPointer": "/parts/78",
+      "nodePointer": "/nodes/111",
+      "originHref": "../../documentacao/componentes-origem.json#L2668"
+    },
+    {
+      "partId": "rear_control_arms__L_02",
+      "label": "Suspensão traseira · L_02",
+      "category": "suspension",
+      "sourceObject": "rear_control_arms",
+      "trianglesRecorded": 3040,
+      "originPointer": "/parts/79",
+      "nodePointer": "/nodes/112",
+      "originHref": "../../documentacao/componentes-origem.json#L2698"
+    },
+    {
+      "partId": "rear_control_arms__R_01",
+      "label": "Suspensão traseira · R_01",
+      "category": "suspension",
+      "sourceObject": "rear_control_arms",
+      "trianglesRecorded": 3040,
+      "originPointer": "/parts/80",
+      "nodePointer": "/nodes/113",
+      "originHref": "../../documentacao/componentes-origem.json#L2728"
+    },
+    {
+      "partId": "rear_control_arms__R_02",
+      "label": "Suspensão traseira · R_02",
+      "category": "suspension",
+      "sourceObject": "rear_control_arms",
+      "trianglesRecorded": 3040,
+      "originPointer": "/parts/81",
+      "nodePointer": "/nodes/114",
+      "originHref": "../../documentacao/componentes-origem.json#L2758"
+    },
+    {
+      "partId": "rear_driveshaft__L_01",
+      "label": "Conjunto de eixo traseiro · L_01",
+      "category": "suspension",
+      "sourceObject": "rear_driveshaft",
+      "trianglesRecorded": 5088,
+      "originPointer": "/parts/82",
+      "nodePointer": "/nodes/116",
+      "originHref": "../../documentacao/componentes-origem.json#L2788"
+    },
+    {
+      "partId": "rear_driveshaft__L_02",
+      "label": "Conjunto de eixo traseiro · L_02",
+      "category": "suspension",
+      "sourceObject": "rear_driveshaft",
+      "trianglesRecorded": 4704,
+      "originPointer": "/parts/83",
+      "nodePointer": "/nodes/117",
+      "originHref": "../../documentacao/componentes-origem.json#L2818"
+    },
+    {
+      "partId": "rear_driveshaft__L_03",
+      "label": "Conjunto de eixo traseiro · L_03",
+      "category": "suspension",
+      "sourceObject": "rear_driveshaft",
+      "trianglesRecorded": 3072,
+      "originPointer": "/parts/84",
+      "nodePointer": "/nodes/118",
+      "originHref": "../../documentacao/componentes-origem.json#L2848"
+    },
+    {
+      "partId": "rear_driveshaft__R_01",
+      "label": "Conjunto de eixo traseiro · R_01",
+      "category": "suspension",
+      "sourceObject": "rear_driveshaft",
+      "trianglesRecorded": 5088,
+      "originPointer": "/parts/85",
+      "nodePointer": "/nodes/119",
+      "originHref": "../../documentacao/componentes-origem.json#L2878"
+    },
+    {
+      "partId": "rear_driveshaft__R_02",
+      "label": "Conjunto de eixo traseiro · R_02",
+      "category": "suspension",
+      "sourceObject": "rear_driveshaft",
+      "trianglesRecorded": 4704,
+      "originPointer": "/parts/86",
+      "nodePointer": "/nodes/120",
+      "originHref": "../../documentacao/componentes-origem.json#L2908"
+    },
+    {
+      "partId": "rear_driveshaft__R_03",
+      "label": "Conjunto de eixo traseiro · R_03",
+      "category": "suspension",
+      "sourceObject": "rear_driveshaft",
+      "trianglesRecorded": 3072,
+      "originPointer": "/parts/87",
+      "nodePointer": "/nodes/121",
+      "originHref": "../../documentacao/componentes-origem.json#L2938"
+    },
+    {
+      "partId": "new_rear_LED__01",
+      "label": "Conjunto de LEDs traseiros",
+      "category": "details",
+      "sourceObject": "new_rear_LED",
+      "trianglesRecorded": 6920,
+      "originPointer": "/parts/88",
+      "nodePointer": "/nodes/123",
+      "originHref": "../../documentacao/componentes-origem.json#L2968"
+    },
+    {
+      "partId": "lcd_screen__01",
+      "label": "Display do volante",
+      "category": "cockpit",
+      "sourceObject": "lcd_screen",
+      "trianglesRecorded": 2,
+      "originPointer": "/parts/89",
+      "nodePointer": "/nodes/125",
+      "originHref": "../../documentacao/componentes-origem.json#L2998"
+    },
+    {
+      "partId": "steering_wheel_buttons__01",
+      "label": "Botões do volante",
+      "category": "cockpit",
+      "sourceObject": "steering_wheel_buttons",
+      "trianglesRecorded": 21148,
+      "originPointer": "/parts/90",
+      "nodePointer": "/nodes/127",
+      "originHref": "../../documentacao/componentes-origem.json#L3028"
+    },
+    {
+      "partId": "steering_wheel_handles__01",
+      "label": "Empunhadura do volante · 01",
+      "category": "cockpit",
+      "sourceObject": "steering_wheel_handles",
+      "trianglesRecorded": 5128,
+      "originPointer": "/parts/91",
+      "nodePointer": "/nodes/129",
+      "originHref": "../../documentacao/componentes-origem.json#L3058"
+    },
+    {
+      "partId": "steering_wheel_handles__02",
+      "label": "Empunhadura do volante · 02",
+      "category": "cockpit",
+      "sourceObject": "steering_wheel_handles",
+      "trianglesRecorded": 5128,
+      "originPointer": "/parts/92",
+      "nodePointer": "/nodes/130",
+      "originHref": "../../documentacao/componentes-origem.json#L3088"
+    },
+    {
+      "partId": "steering_wheel_leds__01",
+      "label": "Indicadores do volante",
+      "category": "cockpit",
+      "sourceObject": "steering_wheel_leds",
+      "trianglesRecorded": 13198,
+      "originPointer": "/parts/93",
+      "nodePointer": "/nodes/132",
+      "originHref": "../../documentacao/componentes-origem.json#L3118"
+    },
+    {
+      "partId": "steering_wheel_main__01",
+      "label": "Estrutura do volante",
+      "category": "cockpit",
+      "sourceObject": "steering_wheel_main",
+      "trianglesRecorded": 8658,
+      "originPointer": "/parts/94",
+      "nodePointer": "/nodes/134",
+      "originHref": "../../documentacao/componentes-origem.json#L3148"
+    },
+    {
+      "partId": "sw_connection__01",
+      "label": "Conexão do volante · 01",
+      "category": "cockpit",
+      "sourceObject": "sw_connection",
+      "trianglesRecorded": 1856,
+      "originPointer": "/parts/95",
+      "nodePointer": "/nodes/136",
+      "originHref": "../../documentacao/componentes-origem.json#L3178"
+    },
+    {
+      "partId": "sw_connection__02",
+      "label": "Conexão do volante · 02",
+      "category": "cockpit",
+      "sourceObject": "sw_connection",
+      "trianglesRecorded": 414,
+      "originPointer": "/parts/96",
+      "nodePointer": "/nodes/137",
+      "originHref": "../../documentacao/componentes-origem.json#L3208"
+    }
+  ]
+}
