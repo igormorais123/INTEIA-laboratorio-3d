@@ -30,3 +30,7 @@ A geometria do conjunto tem posições e normais finitas, e o capacete retorna e
 ## Atualização de encaixe do site principal
 
 Sincronizado com a correção `7f04d8a` do F1 Loop: escala 0,84, centro em (0; 0,653; 0,068) e inclinação de 0,14 radiano. O capacete fica mais baixo no cockpit. Os ajustes da bancada partem dessa referência.
+
+## Proporção pela referência lateral enviada
+
+Ajuste visual posterior: escala 0,68, centro (0; 0,735; 0,020), mantendo inclinação de 0,14 radiano. Reduz o capacete em 19% em relação ao encaixe anterior e reposiciona o conjunto dentro da abertura do cockpit. Vista lateral da bancada agora sem elevação para comparação. A foto serve como referência de proporção, sem calibração dimensional.

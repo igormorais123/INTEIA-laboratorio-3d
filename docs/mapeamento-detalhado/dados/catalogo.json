@@ -1,12 +1,12 @@
 {
   "metadata": {
-    "captured_at": "2026-09-15T20:37:16.881820+00:00",
-    "revision": "4b81c9f3774c7a6fd8ddc83e2e4d9e345ac0e24d",
+    "captured_at": "2026-09-15T21:09:46.144550+00:00",
+    "revision": "9985d0b4a8a2ff38a3d6cb02c3910e877d06e4b8",
     "initial_revision": "1ae4fd15062d347dc8462af8f4db33c749e6575b",
     "branch": "main",
-    "status": "M docs/PILOTO-E-CAPACETE.md\n M docs/mapas/INVENTARIO.md\n M docs/mapas/cobertura.json\n M docs/mapas/index.html\n M docs/mapas/inventario.json\n M docs/mapeamento-detalhado/CATALOGO.md\n M docs/mapeamento-detalhado/dados/catalogo.csv\n M docs/mapeamento-detalhado/dados/catalogo.json\n M docs/mapeamento-detalhado/dados/cobertura.json\n M docs/mapeamento-detalhado/dados/grafo.json\n M docs/mapeamento-detalhado/dados/manifesto-conferencia.json\n M docs/mapeamento-detalhado/dados/simbolos.json\n M docs/mapeamento-detalhado/dados/verificacao-app.json\n M docs/mapeamento-detalhado/index.html\n M manifesto-sha256.json\n M web/index.html\n M web/src/app-v2.js\n M web/src/senna-driver.js\n M web/test-driver-model.mjs",
+    "status": "M docs/PILOTO-E-CAPACETE.md\n M docs/mapas/INVENTARIO.md\n M docs/mapas/cobertura.json\n M docs/mapas/index.html\n M docs/mapas/inventario.json\n M docs/mapeamento-detalhado/CATALOGO.md\n M docs/mapeamento-detalhado/dados/catalogo.csv\n M docs/mapeamento-detalhado/dados/catalogo.json\n M docs/mapeamento-detalhado/dados/cobertura.json\n M docs/mapeamento-detalhado/dados/entrega.json\n M docs/mapeamento-detalhado/dados/grafo.json\n M docs/mapeamento-detalhado/dados/manifesto-conferencia.json\n M docs/mapeamento-detalhado/dados/simbolos.json\n M docs/mapeamento-detalhado/dados/validacao.json\n M docs/mapeamento-detalhado/dados/verificacao-app.json\n M docs/mapeamento-detalhado/index.html\n M manifesto-sha256.json\n M web/index.html\n M web/src/app-v2.js\n M web/src/senna-driver.js\n M web/src/workbench.js\n M web/test-driver-model.mjs",
     "catalog_count": 110,
-    "bytes": 142993197,
+    "bytes": 142993609,
     "baseline_files": 69,
     "baseline_missing": [],
     "unclassified": [],
@@ -971,8 +971,8 @@
       "usage": "Consultar proporções e controles",
       "classification_reviewed": true,
       "tracked": true,
-      "bytes": 2784,
-      "sha256": "2391fa2c5b1a1c3360a4cb713f5b3996e6d58a159d107c17f2668edb94a3c73e",
+      "bytes": 3195,
+      "sha256": "d043b97d7451436059bb662d8964e37bca67dfd122c68c6a8325bb96f3dfc8a6",
       "dependencies": [],
       "used_by": [
         {
@@ -980,7 +980,7 @@
           "relation": "documenta"
         }
       ],
-      "lines": 32
+      "lines": 36
     },
     {
       "path": "docs/PUBLICACAO.md",
@@ -1078,7 +1078,7 @@
       "classification_reviewed": true,
       "tracked": true,
       "bytes": 28481,
-      "sha256": "121a13b3a1e5dcaf23fae118a2090409029f9398aa7d0b5af919bc60e30e30b1",
+      "sha256": "fdac7acb096ea413cb170bac9e038a0290093bb9260b63c5fcf6d3deb41f0ac0",
       "dependencies": [],
       "used_by": [],
       "lines": 314
@@ -1204,7 +1204,7 @@
       "classification_reviewed": true,
       "tracked": true,
       "bytes": 1126,
-      "sha256": "a3a8b15404eb6ff9a3eab132e806f55ad9faccfc9503549cf6f12280058d8954",
+      "sha256": "d19cc9762249d4b576ce4535b2415f088f43973976365b0e92fb9cb061384d7b",
       "dependencies": [],
       "used_by": [],
       "lines": 36
@@ -1274,7 +1274,7 @@
       "classification_reviewed": true,
       "tracked": true,
       "bytes": 397493,
-      "sha256": "347f86f735f9ded72a9b1c534691e95e3fe997482b4dd38f640d816586d022c8",
+      "sha256": "b58f374471868206a4c377530dbd1df2f276ca615efe823234295ca4c5c76d70",
       "dependencies": [],
       "used_by": [
         {
@@ -1292,7 +1292,7 @@
       "classification_reviewed": true,
       "tracked": true,
       "bytes": 513454,
-      "sha256": "402a3b6875c44c29e9b4770f8029817b4e782c848e0a86bfbedd38064f54a38c",
+      "sha256": "68ad98827dff21bc17e0ad1e2afd269c86bb34029f2ce9cc7098710e2c72345d",
       "dependencies": [],
       "used_by": [],
       "lines": 16395
@@ -2072,7 +2072,7 @@
       "classification_reviewed": true,
       "tracked": true,
       "bytes": 3048,
-      "sha256": "ec9f25be16698cde1a8aeb1c914d728aa751814e7ba58a9c27188d2090dca2cb",
+      "sha256": "852f7d1fc480bc100816e7e44671ac7c55b502b94f79494481e6d482ec933902",
       "dependencies": [],
       "used_by": [
         {
@@ -16636,7 +16636,7 @@
       "classification_reviewed": true,
       "tracked": true,
       "bytes": 4369286,
-      "sha256": "d7921966a38ec22e3a38bf1a443f913af378f313b64a5d570fde2214354ff226",
+      "sha256": "bca828521ea8be92d2827c996feee3e764cb5edcd7449d49d7646ebfdd91c395",
       "dependencies": [],
       "used_by": [
         {
@@ -16850,8 +16850,8 @@
       "usage": "Navegador WebGL; orquestração",
       "classification_reviewed": true,
       "tracked": true,
-      "bytes": 22614,
-      "sha256": "d6a34bc3472b31c344d66868219324a42208940e7c100d82e7b1b5e0c5b8dbe7",
+      "bytes": 22616,
+      "sha256": "5be750af0183a8597c21e23a98bffc4211185568b253c90712dac59a3282290c",
       "dependencies": [
         {
           "target": "web/src/workbench.js",
@@ -18971,7 +18971,7 @@
       "classification_reviewed": true,
       "tracked": true,
       "bytes": 7865,
-      "sha256": "bf490039204f057c8f54b6630da587f1f91ebb1e0af25ac7b6d5f42c5ec6cfb9",
+      "sha256": "33468bbfe1f1c746d47085d8d6111ebebc7a6fc54e7740abcdd540a0b22aba1b",
       "dependencies": [
         {
           "target": "external:three",
@@ -19480,8 +19480,8 @@
       "usage": "Controla bancadas do laboratório",
       "classification_reviewed": true,
       "tracked": true,
-      "bytes": 6757,
-      "sha256": "99fe90cd3aeafaef173034645c1db26f771eb9978ead3ec6db2a7316a508a9c7",
+      "bytes": 6756,
+      "sha256": "17e9594ca5acc14b3aeec177c808e9d04961fb242c07dae53d7482a50332f9f3",
       "dependencies": [
         {
           "target": "external:three",
@@ -19750,7 +19750,7 @@
       "classification_reviewed": true,
       "tracked": true,
       "bytes": 1705,
-      "sha256": "20ca13daf273df9614db1153ca3010bd703486fb16f9edee99ec77132478ce0d",
+      "sha256": "00570a7ccbd8c8c9254b7cea40469b6dc05a63fa7567d31ea14040256df229ab",
       "dependencies": [
         {
           "target": "external:node:assert/strict",

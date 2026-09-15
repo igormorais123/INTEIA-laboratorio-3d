@@ -61,9 +61,9 @@ export function createSennaDriver(model, mechanics) {
   ribbon('Cinto abdominal '+side,[chest(.14,side*.082),chest(.15,side*.05),chest(.15,side*.01)],.029);
  }
  rounded('Fecho central',[.038,.025,.013],chest(.15,0),silver).rotation.x=-.55;
- const helmet=createHelmet1991({detail:96});helmet.root.scale.setScalar(.84);root.add(helmet.root);
+ const helmet=createHelmet1991({detail:96});helmet.root.scale.setScalar(.68);root.add(helmet.root);
  const fit={height:0,foreAft:0,pitch:0};
- function applyFit(){helmet.root.position.set(0,.653+fit.height,.068+fit.foreAft);helmet.root.rotation.set(.14+fit.pitch,0,0);}
+ function applyFit(){helmet.root.position.set(0,.735+fit.height,.020+fit.foreAft);helmet.root.rotation.set(.14+fit.pitch,0,0);}
  applyFit();
  root.userData.references=['https://www.mercedesamgf1.com/news/onwards-to-bahrain-w14-completes-initial-running','https://commons.wikimedia.org/wiki/Category:Helmets_of_Ayrton_Senna_in_1991'];
  return {root,body,helmet,fit,setFit(values){Object.assign(fit,values);applyFit();},update(){root.visible=mechanics.motionAvailable&&!mechanics.isolated;},dispose(){root.removeFromParent();helmet.dispose();geometries.forEach(g=>g.dispose());materials.forEach(m=>m.dispose());textures.forEach(t=>t.dispose());}};

@@ -24,22 +24,22 @@
     {
       "path": "CATALOGO.md",
       "bytes": 65616,
-      "sha256": "aff7519c2eac44808f3cc419fb3775ab74cf5cd9fdb044644472b212f0367a41"
+      "sha256": "98a0154ef5292e3b0e55457fbc0ca4069451e642b11c5d38375c6c4729c611ea"
     },
     {
       "path": "dados/catalogo.csv",
       "bytes": 31618,
-      "sha256": "837875554b5d51271361bacc90dad8faef509eaf892a08952698f72e4fdab185"
+      "sha256": "04b66be9eaea7c9ba88742b52d31c5cd16ed42ab0d7c19c27e0bca12d7477036"
     },
     {
       "path": "dados/catalogo.json",
-      "bytes": 627060,
-      "sha256": "2b052c2cec3266fa73fd85e9e014a850fa304dd4bb9763c3c8f70a9423225a1d"
+      "bytes": 627185,
+      "sha256": "97e33d2e84c060a7398109356c92cea341a90406f6c7d65fa4d73c46d767c582"
     },
     {
       "path": "dados/cobertura.json",
-      "bytes": 2304,
-      "sha256": "f839e12cc8c1a04545e3fef149e5f000391edf1ec89790a84741d92c956054ab"
+      "bytes": 2429,
+      "sha256": "cf3c83ff81cae852cef3a16fc31b59699440ff76362d9e23092df2ee744796cf"
     },
     {
       "path": "dados/componentes.json",
@@ -53,8 +53,8 @@
     },
     {
       "path": "dados/grafo.json",
-      "bytes": 477015,
-      "sha256": "235f09bc12b029dceae6ac5951c6401457ca0414aadcd49ad72314a20834f76a"
+      "bytes": 477140,
+      "sha256": "76bdeb86654133290f1d8f39d0dd6bbc71f01deef71c7070e6ccace19298b77f"
     },
     {
       "path": "dados/graphify-ast.json",
@@ -69,7 +69,7 @@
     {
       "path": "dados/manifesto-conferencia.json",
       "bytes": 3563,
-      "sha256": "8e787c95d31967f4a1dd190c8c7caecafa828f768c04137c1209be3e4f1cdd65"
+      "sha256": "43174ff9abacce9f0dc9897412b0f354c40325591cb111d8a087a08e1e3029b0"
     },
     {
       "path": "dados/relacoes-curadas.json",
@@ -79,7 +79,7 @@
     {
       "path": "dados/simbolos.json",
       "bytes": 223498,
-      "sha256": "a5514178d63220c74567b3e052f01b5c88823bff57d6995d828c08cde0cc3fd2"
+      "sha256": "f2841035848f19bef8de8c6c80d15029f095c6a2f8301591a2d77891d465fe24"
     },
     {
       "path": "dados/teste-mecanica.json",
@@ -89,12 +89,12 @@
     {
       "path": "dados/validacao.json",
       "bytes": 530,
-      "sha256": "cab89aae6eb6336a10794f797f710d8f310d19367e7826766e308aad27bcdef5"
+      "sha256": "c02a0eb6735a016905891043d374d21208b42062e102c4c19274daf06e0a4055"
     },
     {
       "path": "dados/verificacao-app.json",
       "bytes": 4058,
-      "sha256": "1b086c85804834d9979e8c78c820c88a150ce96a5024fecfde8204f048d86f95"
+      "sha256": "5c17c9c92b77303f4ef231886a80313fc84d377ddad179ad73a9438a00b5a58c"
     },
     {
       "path": "FUNCOES.md",
@@ -138,8 +138,8 @@
     },
     {
       "path": "index.html",
-      "bytes": 832056,
-      "sha256": "f53c29dedff359847c9368c2c7f5377052822fd60c1c3ab44af8d22583d3513a"
+      "bytes": 832181,
+      "sha256": "506e6847ddbd6df0f9e048e698fb2a472db02ee34611c2607d64bf5c2652dbda"
     },
     {
       "path": "MODULOS-E-FLUXOS.md",

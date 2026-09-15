@@ -10,7 +10,7 @@ export function createWorkbench({scene,model,driver,engine,garage,controls,camer
  let bounds=null;
  function frame(object){bounds=new THREE.Box3().setFromObject(object);target=bounds.getCenter(new THREE.Vector3());view('hero');}
  function view(name){
-  const directions={hero:[1,.32,1.35],side:[1,.1,0],front:[0,.08,1],rear:[0,.1,-1],top:[.001,1,0],bottom:[.001,-1,0]},direction=new THREE.Vector3(...directions[name]).normalize();
+  const directions={hero:[1,.32,1.35],side:[1,0,0],front:[0,.08,1],rear:[0,.1,-1],top:[.001,1,0],bottom:[.001,-1,0]},direction=new THREE.Vector3(...directions[name]).normalize();
   if(bounds){const right=new THREE.Vector3().crossVectors(new THREE.Vector3(0,1,0),direction).normalize(),up=new THREE.Vector3().crossVectors(direction,right),tan=Math.tan(THREE.MathUtils.degToRad(camera.fov/2));radius=0;
    for(const x of [bounds.min.x,bounds.max.x])for(const y of [bounds.min.y,bounds.max.y])for(const z of [bounds.min.z,bounds.max.z]){const p=new THREE.Vector3(x,y,z).sub(target);radius=Math.max(radius,p.dot(direction)+Math.max(Math.abs(p.dot(right))/(tan*camera.aspect),Math.abs(p.dot(up))/tan));}radius=Math.max(radius*1.16,mode==='cockpit'?1.2:.5);
   }

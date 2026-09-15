@@ -1,12 +1,12 @@
 {
   "metadata": {
-    "captured_at": "2026-09-15T20:37:16.881820+00:00",
-    "revision": "4b81c9f3774c7a6fd8ddc83e2e4d9e345ac0e24d",
+    "captured_at": "2026-09-15T21:09:46.144550+00:00",
+    "revision": "9985d0b4a8a2ff38a3d6cb02c3910e877d06e4b8",
     "initial_revision": "1ae4fd15062d347dc8462af8f4db33c749e6575b",
     "branch": "main",
-    "status": "M docs/PILOTO-E-CAPACETE.md\n M docs/mapas/INVENTARIO.md\n M docs/mapas/cobertura.json\n M docs/mapas/index.html\n M docs/mapas/inventario.json\n M docs/mapeamento-detalhado/CATALOGO.md\n M docs/mapeamento-detalhado/dados/catalogo.csv\n M docs/mapeamento-detalhado/dados/catalogo.json\n M docs/mapeamento-detalhado/dados/cobertura.json\n M docs/mapeamento-detalhado/dados/grafo.json\n M docs/mapeamento-detalhado/dados/manifesto-conferencia.json\n M docs/mapeamento-detalhado/dados/simbolos.json\n M docs/mapeamento-detalhado/dados/verificacao-app.json\n M docs/mapeamento-detalhado/index.html\n M manifesto-sha256.json\n M web/index.html\n M web/src/app-v2.js\n M web/src/senna-driver.js\n M web/test-driver-model.mjs",
+    "status": "M docs/PILOTO-E-CAPACETE.md\n M docs/mapas/INVENTARIO.md\n M docs/mapas/cobertura.json\n M docs/mapas/index.html\n M docs/mapas/inventario.json\n M docs/mapeamento-detalhado/CATALOGO.md\n M docs/mapeamento-detalhado/dados/catalogo.csv\n M docs/mapeamento-detalhado/dados/catalogo.json\n M docs/mapeamento-detalhado/dados/cobertura.json\n M docs/mapeamento-detalhado/dados/entrega.json\n M docs/mapeamento-detalhado/dados/grafo.json\n M docs/mapeamento-detalhado/dados/manifesto-conferencia.json\n M docs/mapeamento-detalhado/dados/simbolos.json\n M docs/mapeamento-detalhado/dados/validacao.json\n M docs/mapeamento-detalhado/dados/verificacao-app.json\n M docs/mapeamento-detalhado/index.html\n M manifesto-sha256.json\n M web/index.html\n M web/src/app-v2.js\n M web/src/senna-driver.js\n M web/src/workbench.js\n M web/test-driver-model.mjs",
     "catalog_count": 110,
-    "bytes": 142993197,
+    "bytes": 142993609,
     "baseline_files": 69,
     "baseline_missing": [],
     "unclassified": [],

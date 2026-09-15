@@ -257,7 +257,7 @@ Integração dos GLBs e fontes em outros projetos.
 
 ## docs/PILOTO-E-CAPACETE.md
 
-[Abrir arquivo](../../docs/PILOTO-E-CAPACETE.md) · md · 2,784 bytes
+[Abrir arquivo](../../docs/PILOTO-E-CAPACETE.md) · md · 3,195 bytes
 
 Referências, operação e limites do estudo do piloto.
 
@@ -892,7 +892,7 @@ Calculadora pura por coeficientes: vento, densidade, forças e limites.
 
 ## web/src/app-v2.js
 
-[Abrir arquivo](../../web/src/app-v2.js) · js · 22,614 bytes
+[Abrir arquivo](../../web/src/app-v2.js) · js · 22,616 bytes
 
 Entrada ativa: cena, GLB, módulos, controles DOM e loop de desenho.
 
@@ -1062,7 +1062,7 @@ Liga entradas do túnel, calculadora, gráficos, CSV e efeitos de fluxo.
 
 ## web/src/workbench.js
 
-[Abrir arquivo](../../web/src/workbench.js) · js · 6,757 bytes
+[Abrir arquivo](../../web/src/workbench.js) · js · 6,756 bytes
 
 Abas, inspeção, ajustes e exportação dos modelos.
 

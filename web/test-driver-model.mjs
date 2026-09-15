@@ -6,7 +6,7 @@ const context=new Proxy({createImageData:(w,h)=>({data:new Uint8ClampedArray(w*h
 globalThis.document={createElement:()=>({width:1,height:1,getContext:()=>context})};
 const model=new THREE.Group(),mechanics={motionAvailable:true,isolated:false},driver=createSennaDriver(model,mechanics);
 model.updateMatrixWorld(true);const box=new THREE.Box3().setFromObject(driver.helmet.root),rest=driver.helmet.root.position.clone();
-assert.ok(box.max.y<.82&&box.min.y>.45,'Capacete fora da faixa de encaixe revisada');
+assert.ok(box.max.y<.90&&box.min.y>.45,'Capacete fora da faixa de encaixe revisada');
 assert.ok(driver.root.getObjectByName('Perna -1')&&driver.root.getObjectByName('Perna 1'));
 assert.ok(driver.root.getObjectByName('Cinto do ombro 1')&&driver.root.getObjectByName('Fecho central'));
 let meshes=0,vertices=0;driver.root.traverse(o=>{if(!o.isMesh)return;meshes++;for(const key of ['position','normal']){const a=o.geometry.attributes[key];for(const value of a.array)assert.ok(Number.isFinite(value),'Geometria invalida');}vertices+=o.geometry.attributes.position.count;});
