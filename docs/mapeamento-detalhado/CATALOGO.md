@@ -257,7 +257,7 @@ Integração dos GLBs e fontes em outros projetos.
 
 ## docs/PILOTO-E-CAPACETE.md
 
-[Abrir arquivo](../../docs/PILOTO-E-CAPACETE.md) · md · 2,520 bytes
+[Abrir arquivo](../../docs/PILOTO-E-CAPACETE.md) · md · 2,784 bytes
 
 Referências, operação e limites do estudo do piloto.
 
@@ -842,7 +842,7 @@ Empacota app e base64 do GLB no template para HTML autocontido.
 
 ## web/index.html
 
-[Abrir arquivo](../../web/index.html) · html · 4,369,253 bytes
+[Abrir arquivo](../../web/index.html) · html · 4,369,286 bytes
 
 Site autocontido gerado: template, bundle Three.js e modelo embutido.
 
@@ -892,7 +892,7 @@ Calculadora pura por coeficientes: vento, densidade, forças e limites.
 
 ## web/src/app-v2.js
 
-[Abrir arquivo](../../web/src/app-v2.js) · js · 22,608 bytes
+[Abrir arquivo](../../web/src/app-v2.js) · js · 22,614 bytes
 
 Entrada ativa: cena, GLB, módulos, controles DOM e loop de desenho.
 
@@ -1002,7 +1002,7 @@ Agrupa peças, cria pivôs, explode/monta, seleciona e anima rodas/DRS.
 
 ## web/src/senna-driver.js
 
-[Abrir arquivo](../../web/src/senna-driver.js) · js · 7,833 bytes
+[Abrir arquivo](../../web/src/senna-driver.js) · js · 7,865 bytes
 
 Piloto ilustrativo do carro final.
 
@@ -1082,7 +1082,7 @@ Verifica unidades, escala das fórmulas, condições e coeficientes ausentes.
 
 ## web/test-driver-model.mjs
 
-[Abrir arquivo](../../web/test-driver-model.mjs) · mjs · 1,688 bytes
+[Abrir arquivo](../../web/test-driver-model.mjs) · mjs · 1,705 bytes
 
 Geometria e restauração do encaixe do piloto.
 

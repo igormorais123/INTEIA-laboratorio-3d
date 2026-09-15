@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "fingerprint": "9d5b680aed8afccb619fb5e95d6eeb4ddb770d5736431a9562407369d9d67006",
+  "fingerprint": "af4252c36e108990be5ca1ab896ce357fa813daf42d02668f970d04bbac0c3d4",
   "scope": "arquivos Git e novos não ignorados; caches, dependências instaladas e backups ignorados excluídos",
   "hashPolicy": "SHA256 e bytes de texto com LF; binários exatos; mapas gerados sem auto-hash",
   "files": [
@@ -198,8 +198,8 @@
       "path": "docs/PILOTO-E-CAPACETE.md",
       "category": "documentação",
       "href": "../../docs/PILOTO-E-CAPACETE.md",
-      "bytesCanonical": 2492,
-      "sha256": "a7e8bd72da0fd29bb1123d6e88a7991cd65dbd2cf33467736537ede2390ba7b8"
+      "bytesCanonical": 2752,
+      "sha256": "de9677f4e54bbfbf46d295e01a8924b497704b7e8baa75f19a3da15be08141d7"
     },
     {
       "path": "docs/PUBLICACAO.md",
@@ -702,7 +702,7 @@
       "category": "evidência gerada",
       "href": "../../manifesto-sha256.json",
       "bytesCanonical": 3048,
-      "sha256": "0aa800840b20b7ad35c52b32e66a1fb24a1bc609986524952c7a3c9d88f6986d"
+      "sha256": "ec9f25be16698cde1a8aeb1c914d728aa751814e7ba58a9c27188d2090dca2cb"
     },
     {
       "path": "modelos/INTEIA_F1_animado.glb",
@@ -15164,8 +15164,8 @@
       "path": "web/index.html",
       "category": "aplicação gerada",
       "href": "../../web/index.html",
-      "bytesCanonical": 4369247,
-      "sha256": "cd208bf4af3502e58214a2f4b39a4ceecde899530935b4f1ce0c30a55484440d"
+      "bytesCanonical": 4369280,
+      "sha256": "c23febe5de8ae0d5eff3718f9f4232a26e3403ce0d16642798e5714e2f18e772"
     },
     {
       "path": "web/package-lock.json",
@@ -15200,8 +15200,8 @@
       "path": "web/src/app-v2.js",
       "category": "fonte web editável",
       "href": "../../web/src/app-v2.js",
-      "bytesCanonical": 22502,
-      "sha256": "44ac942d102f30c3f7f010ce21041321755a0d6fcabf9acd124129e94cf8f9f5",
+      "bytesCanonical": 22508,
+      "sha256": "de596d076ec54a090fca76ef5407512463a2a26555b235f145358dd9cfc88b42",
       "reachableFromApp": true
     },
     {
@@ -15288,8 +15288,8 @@
       "path": "web/src/senna-driver.js",
       "category": "fonte web editável",
       "href": "../../web/src/senna-driver.js",
-      "bytesCanonical": 7763,
-      "sha256": "66670514b4b3262d6b9e53d92dcf6ebdbd71c7e60fa9167f444f3669c386c8a7",
+      "bytesCanonical": 7795,
+      "sha256": "bdac77ad362db1a7735caa2118d27c13db04e20a1ec20d4add8c16c8d1c82e9a",
       "reachableFromApp": true
     },
     {
@@ -15350,8 +15350,8 @@
       "path": "web/test-driver-model.mjs",
       "category": "teste",
       "href": "../../web/test-driver-model.mjs",
-      "bytesCanonical": 1687,
-      "sha256": "8df3bbf22f7d09bc07e775a7345559cc118ebf06308ddc359d1cd7d0fa0e3928"
+      "bytesCanonical": 1688,
+      "sha256": "76af85f2c8f65dee5633f337d59479c8b5573cf2497a68ef754f197a989fb420"
     },
     {
       "path": "web/test-mechanics.mjs",

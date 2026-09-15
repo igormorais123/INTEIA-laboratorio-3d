@@ -31,7 +31,7 @@ Gerado por `python ferramentas/mapear.py`. Todos os arquivos do escopo estão li
 | [docs/DIREITOS-E-PROCEDENCIA.md](../../docs/DIREITOS-E-PROCEDENCIA.md) | licença ou procedência | 1581 |
 | [docs/INTEGRACAO-MOTOR.md](../../docs/INTEGRACAO-MOTOR.md) | documentação | 2096 |
 | [docs/INTEGRACAO.md](../../docs/INTEGRACAO.md) | documentação | 2578 |
-| [docs/PILOTO-E-CAPACETE.md](../../docs/PILOTO-E-CAPACETE.md) | documentação | 2492 |
+| [docs/PILOTO-E-CAPACETE.md](../../docs/PILOTO-E-CAPACETE.md) | documentação | 2752 |
 | [docs/PUBLICACAO.md](../../docs/PUBLICACAO.md) | documentação | 3001 |
 | [docs/REVISAO-TUNEL-VISUAL.md](../../docs/REVISAO-TUNEL-VISUAL.md) | documentação | 4051 |
 | [docs/VALIDACAO.md](../../docs/VALIDACAO.md) | documentação | 2128 |
@@ -132,12 +132,12 @@ Gerado por `python ferramentas/mapear.py`. Todos os arquivos do escopo estão li
 | [web/assets/power-unit-v1.glb](../../web/assets/power-unit-v1.glb) | entrega GLB | 4640876 |
 | [web/assets/power-unit-v1.manifest.json](../../web/assets/power-unit-v1.manifest.json) | configuração ou infraestrutura | 1728 |
 | [web/build.cjs](../../web/build.cjs) | configuração ou infraestrutura | 432 |
-| [web/index.html](../../web/index.html) | aplicação gerada | 4369247 |
+| [web/index.html](../../web/index.html) | aplicação gerada | 4369280 |
 | [web/package-lock.json](../../web/package-lock.json) | configuração ou infraestrutura | 14952 |
 | [web/package.json](../../web/package.json) | configuração ou infraestrutura | 451 |
 | [web/server.cjs](../../web/server.cjs) | configuração ou infraestrutura | 864 |
 | [web/src/aero-physics.mjs](../../web/src/aero-physics.mjs) | fonte web editável | 1377 |
-| [web/src/app-v2.js](../../web/src/app-v2.js) | fonte web editável | 22502 |
+| [web/src/app-v2.js](../../web/src/app-v2.js) | fonte web editável | 22508 |
 | [web/src/branding.js](../../web/src/branding.js) | fonte web editável | 4155 |
 | [web/src/car-look.js](../../web/src/car-look.js) | fonte web editável | 19008 |
 | [web/src/customize.js](../../web/src/customize.js) | fonte web editável | 3041 |
@@ -148,7 +148,7 @@ Gerado por `python ferramentas/mapear.py`. Todos os arquivos do escopo estão li
 | [web/src/helmet-1991.js](../../web/src/helmet-1991.js) | fonte web editável | 9068 |
 | [web/src/identity.js](../../web/src/identity.js) | fonte web editável | 2244 |
 | [web/src/mechanics.js](../../web/src/mechanics.js) | fonte web editável | 7149 |
-| [web/src/senna-driver.js](../../web/src/senna-driver.js) | fonte web editável | 7763 |
+| [web/src/senna-driver.js](../../web/src/senna-driver.js) | fonte web editável | 7795 |
 | [web/src/studio.js](../../web/src/studio.js) | fonte web editável | 10517 |
 | [web/src/surface-library.js](../../web/src/surface-library.js) | fonte web editável | 6989 |
 | [web/src/template-v2.html](../../web/src/template-v2.html) | fonte web editável | 27814 |
@@ -156,7 +156,7 @@ Gerado por `python ferramentas/mapear.py`. Todos os arquivos do escopo estão li
 | [web/src/wind-tunnel.js](../../web/src/wind-tunnel.js) | fonte web editável | 8411 |
 | [web/src/workbench.js](../../web/src/workbench.js) | fonte web editável | 6700 |
 | [web/test-aerodynamics.mjs](../../web/test-aerodynamics.mjs) | teste | 1182 |
-| [web/test-driver-model.mjs](../../web/test-driver-model.mjs) | teste | 1687 |
+| [web/test-driver-model.mjs](../../web/test-driver-model.mjs) | teste | 1688 |
 | [web/test-mechanics.mjs](../../web/test-mechanics.mjs) | teste | 3930 |
 | [web/test-power-unit.mjs](../../web/test-power-unit.mjs) | teste | 2245 |
 

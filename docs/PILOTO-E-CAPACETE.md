@@ -26,3 +26,7 @@ Os ajustes de encaixe são visuais e limitados. A exportação do piloto conserv
 ## Verificação
 
 A geometria do conjunto tem posições e normais finitas, e o capacete retorna exatamente à posição inicial após 20 ciclos de ajustes. Os testes anteriores do carro e motor continuam ativos. O navegador é usado para conferir vistas, navegação, encaixe e exportação; o teste numérico não avalia realismo visual.
+
+## Atualização de encaixe do site principal
+
+Sincronizado com a correção `7f04d8a` do F1 Loop: escala 0,84, centro em (0; 0,653; 0,068) e inclinação de 0,14 radiano. O capacete fica mais baixo no cockpit. Os ajustes da bancada partem dessa referência.

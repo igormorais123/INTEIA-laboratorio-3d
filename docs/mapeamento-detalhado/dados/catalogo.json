@@ -1,12 +1,12 @@
 {
   "metadata": {
-    "captured_at": "2026-09-15T20:29:32.804856+00:00",
-    "revision": "2ee8f44bd8cd47fa44194b8542d951e00ea69064",
+    "captured_at": "2026-09-15T20:37:16.881820+00:00",
+    "revision": "4b81c9f3774c7a6fd8ddc83e2e4d9e345ac0e24d",
     "initial_revision": "1ae4fd15062d347dc8462af8f4db33c749e6575b",
     "branch": "main",
-    "status": "M CHANGELOG.md\n M README.md\n M docs/mapas/GRAFOS.md\n M docs/mapas/INVENTARIO.md\n M docs/mapas/cobertura.json\n M docs/mapas/controles.json\n M docs/mapas/dependencias.json\n M docs/mapas/index.html\n M docs/mapas/inventario.json\n M docs/mapeamento-detalhado/ARVORE.md\n M docs/mapeamento-detalhado/CATALOGO.md\n M docs/mapeamento-detalhado/FUNCOES.md\n M docs/mapeamento-detalhado/dados/catalogo.csv\n M docs/mapeamento-detalhado/dados/catalogo.json\n M docs/mapeamento-detalhado/dados/cobertura.json\n M docs/mapeamento-detalhado/dados/grafo.json\n M docs/mapeamento-detalhado/dados/manifesto-conferencia.json\n M docs/mapeamento-detalhado/dados/relacoes-curadas.json\n M docs/mapeamento-detalhado/dados/simbolos.json\n M docs/mapeamento-detalhado/dados/verificacao-app.json\n M docs/mapeamento-detalhado/grafos/arquitetura.json\n M docs/mapeamento-detalhado/grafos/arquitetura.mmd\n M docs/mapeamento-detalhado/grafos/dados.json\n M docs/mapeamento-detalhado/index.html\n M docs/mapeamento-detalhado/scripts/finalidades.json\n M docs/mapeamento-detalhado/scripts/verificar-app.mjs\n M manifesto-sha256.json\n M web/index.html\n M web/package.json\n M web/src/app-v2.js\n M web/src/senna-driver.js\n M web/src/template-v2.html\n?? docs/PILOTO-E-CAPACETE.md\n?? web/src/helmet-1991.js\n?? web/src/workbench.js\n?? web/test-driver-model.mjs",
+    "status": "M docs/PILOTO-E-CAPACETE.md\n M docs/mapas/INVENTARIO.md\n M docs/mapas/cobertura.json\n M docs/mapas/index.html\n M docs/mapas/inventario.json\n M docs/mapeamento-detalhado/CATALOGO.md\n M docs/mapeamento-detalhado/dados/catalogo.csv\n M docs/mapeamento-detalhado/dados/catalogo.json\n M docs/mapeamento-detalhado/dados/cobertura.json\n M docs/mapeamento-detalhado/dados/grafo.json\n M docs/mapeamento-detalhado/dados/manifesto-conferencia.json\n M docs/mapeamento-detalhado/dados/simbolos.json\n M docs/mapeamento-detalhado/dados/verificacao-app.json\n M docs/mapeamento-detalhado/index.html\n M manifesto-sha256.json\n M web/index.html\n M web/src/app-v2.js\n M web/src/senna-driver.js\n M web/test-driver-model.mjs",
     "catalog_count": 110,
-    "bytes": 142992845,
+    "bytes": 142993197,
     "baseline_files": 69,
     "baseline_missing": [],
     "unclassified": [],
@@ -970,9 +970,9 @@
       "nature": "documento editável",
       "usage": "Consultar proporções e controles",
       "classification_reviewed": true,
-      "tracked": false,
-      "bytes": 2520,
-      "sha256": "6e5c6ba8afcd060cc661fa6813d28836b4867d28c97cc17f490c1dcdee0f3318",
+      "tracked": true,
+      "bytes": 2784,
+      "sha256": "2391fa2c5b1a1c3360a4cb713f5b3996e6d58a159d107c17f2668edb94a3c73e",
       "dependencies": [],
       "used_by": [
         {
@@ -980,7 +980,7 @@
           "relation": "documenta"
         }
       ],
-      "lines": 28
+      "lines": 32
     },
     {
       "path": "docs/PUBLICACAO.md",
@@ -1078,7 +1078,7 @@
       "classification_reviewed": true,
       "tracked": true,
       "bytes": 28481,
-      "sha256": "95724e507e65bb77398a027df4225561f65517d4e4cae7719e029d5efa4e3acc",
+      "sha256": "121a13b3a1e5dcaf23fae118a2090409029f9398aa7d0b5af919bc60e30e30b1",
       "dependencies": [],
       "used_by": [],
       "lines": 314
@@ -1204,7 +1204,7 @@
       "classification_reviewed": true,
       "tracked": true,
       "bytes": 1126,
-      "sha256": "f42b68ad4ef59371027ec8b3d18627aa3aaaa44598db7fb86e054bf1dac8d136",
+      "sha256": "a3a8b15404eb6ff9a3eab132e806f55ad9faccfc9503549cf6f12280058d8954",
       "dependencies": [],
       "used_by": [],
       "lines": 36
@@ -1274,7 +1274,7 @@
       "classification_reviewed": true,
       "tracked": true,
       "bytes": 397493,
-      "sha256": "cd3f50f67a6eba6ae060abfef3de5cdf3fd12e0cddb7cf52fe72c335bbd515c2",
+      "sha256": "347f86f735f9ded72a9b1c534691e95e3fe997482b4dd38f640d816586d022c8",
       "dependencies": [],
       "used_by": [
         {
@@ -1292,7 +1292,7 @@
       "classification_reviewed": true,
       "tracked": true,
       "bytes": 513454,
-      "sha256": "0518215da0765bb56087d3ab3f1feeef49b96db75ff0df7ca83e540fa54bda3c",
+      "sha256": "402a3b6875c44c29e9b4770f8029817b4e782c848e0a86bfbedd38064f54a38c",
       "dependencies": [],
       "used_by": [],
       "lines": 16395
@@ -2072,7 +2072,7 @@
       "classification_reviewed": true,
       "tracked": true,
       "bytes": 3048,
-      "sha256": "0aa800840b20b7ad35c52b32e66a1fb24a1bc609986524952c7a3c9d88f6986d",
+      "sha256": "ec9f25be16698cde1a8aeb1c914d728aa751814e7ba58a9c27188d2090dca2cb",
       "dependencies": [],
       "used_by": [
         {
@@ -16635,8 +16635,8 @@
       "usage": "Abrir localmente; editar fontes e recompilar",
       "classification_reviewed": true,
       "tracked": true,
-      "bytes": 4369253,
-      "sha256": "5ec5f13364dbbc1eb73ddf9deffb5f54df5c1de01f952e89a5d1a4cbefacb7da",
+      "bytes": 4369286,
+      "sha256": "d7921966a38ec22e3a38bf1a443f913af378f313b64a5d570fde2214354ff226",
       "dependencies": [],
       "used_by": [
         {
@@ -16850,8 +16850,8 @@
       "usage": "Navegador WebGL; orquestração",
       "classification_reviewed": true,
       "tracked": true,
-      "bytes": 22608,
-      "sha256": "9072956456aba21ce296f8d6bcb256d78aafceb7c01bcd8f0732c8e5aa65ab57",
+      "bytes": 22614,
+      "sha256": "d6a34bc3472b31c344d66868219324a42208940e7c100d82e7b1b5e0c5b8dbe7",
       "dependencies": [
         {
           "target": "web/src/workbench.js",
@@ -18672,7 +18672,7 @@
       "nature": "fonte web editável",
       "usage": "Modelagem e exportação do capacete",
       "classification_reviewed": true,
-      "tracked": false,
+      "tracked": true,
       "bytes": 9148,
       "sha256": "3dcc5137c202a3271ced7c0759b4125910b41686c8e5b7d1dc50e09074738307",
       "dependencies": [
@@ -18970,8 +18970,8 @@
       "usage": "Oculto na desmontagem e isolamento",
       "classification_reviewed": true,
       "tracked": true,
-      "bytes": 7833,
-      "sha256": "cea7bc053466963e1a3b7aa5d10c62cc7e21478dd125af9cd665f5d8b1894f89",
+      "bytes": 7865,
+      "sha256": "bf490039204f057c8f54b6630da587f1f91ebb1e0af25ac7b6d5f42c5ec6cfb9",
       "dependencies": [
         {
           "target": "external:three",
@@ -19479,7 +19479,7 @@
       "nature": "fonte web editável",
       "usage": "Controla bancadas do laboratório",
       "classification_reviewed": true,
-      "tracked": false,
+      "tracked": true,
       "bytes": 6757,
       "sha256": "99fe90cd3aeafaef173034645c1db26f771eb9978ead3ec6db2a7316a508a9c7",
       "dependencies": [
@@ -19748,9 +19748,9 @@
       "nature": "teste",
       "usage": "Executado por npm test",
       "classification_reviewed": true,
-      "tracked": false,
-      "bytes": 1688,
-      "sha256": "8ec9f50e30cb1afe1e339e69f8247e5482b8d35430dcb3f351dfa25fc641334f",
+      "tracked": true,
+      "bytes": 1705,
+      "sha256": "20ca13daf273df9614db1153ca3010bd703486fb16f9edee99ec77132478ce0d",
       "dependencies": [
         {
           "target": "external:node:assert/strict",
@@ -19769,7 +19769,7 @@
         }
       ],
       "used_by": [],
-      "lines": 16,
+      "lines": 17,
       "relations_out": [
         {
           "target": "external:node:assert/strict",
