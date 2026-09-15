@@ -42,21 +42,22 @@ Chamadas são referências sintáticas conservadoras, não rastreamento de execu
 
 | Nome | Linha | Escopo | Assinatura |
 |---|---:|---|---|
-| $ | 23 | module | `$` |
-| closeEngine | 34 | module | `closeEngine()` |
-| setFlowXray | 36 | module | `setFlowXray(on)` |
-| clone | 37 | 36:setFlowXray | `clone` |
-| moveCamera | 44 | module | `moveCamera(to,target,animate=true)` |
-| view | 45 | module | `view(name,animate=true)` |
-| resize | 47 | module | `resize()` |
-| refreshSelection | 49 | module | `refreshSelection()` |
-| select | 50 | module | `select(id)` |
-| focusPart | 51 | module | `focusPart()` |
-| assemblyTo | 52 | module | `assemblyTo(v)` |
-| target | 63 | module | `target()` |
-| onBeforeToggle | 64 | module | `onBeforeToggle` |
-| onRegion | 64 | module | `onRegion` |
-| onToggle | 64 | module | `onToggle` |
+| $ | 24 | module | `$` |
+| closeEngine | 35 | module | `closeEngine()` |
+| setFlowXray | 37 | module | `setFlowXray(on)` |
+| clone | 38 | 37:setFlowXray | `clone` |
+| moveCamera | 45 | module | `moveCamera(to,target,animate=true)` |
+| view | 46 | module | `view(name,animate=true)` |
+| resize | 48 | module | `resize()` |
+| refreshSelection | 50 | module | `refreshSelection()` |
+| select | 51 | module | `select(id)` |
+| focusPart | 52 | module | `focusPart()` |
+| assemblyTo | 53 | module | `assemblyTo(v)` |
+| target | 64 | module | `target()` |
+| onBeforeToggle | 65 | module | `onBeforeToggle` |
+| onRegion | 65 | module | `onRegion` |
+| onToggle | 65 | module | `onToggle` |
+| showCar | 66 | module | `showCar()` |
 
 ## web/src/branding.js
 
@@ -184,6 +185,26 @@ Chamadas são referências sintáticas conservadoras, não rastreamento de execu
 | setEnabled | 148 | 7:createGarage | `setEnabled(on)` |
 | update | 151 | 7:createGarage | `update(dt)` |
 
+## web/src/helmet-1991.js
+
+[Fonte](../../web/src/helmet-1991.js)
+
+| Nome | Linha | Escopo | Assinatura |
+|---|---:|---|---|
+| createHelmet1991 | 5 | module | `createHelmet1991({detail=128}={})` |
+| material | 7 | 5:createHelmet1991 | `material` |
+| add | 19 | 5:createHelmet1991 | `add(g,m,parent=root)` |
+| radius | 22 | 5:createHelmet1991 | `radius(y)` |
+| point | 23 | 5:createHelmet1991 | `point(y,a,lift=0)` |
+| patch | 33 | 5:createHelmet1991 | `patch(y0,y1,a0,a1,m,lift=0,rows=36,cols=detail,parent=root)` |
+| tube | 48 | 5:createHelmet1991 | `tube(points,r,m,parent=root)` |
+| label | 54 | 5:createHelmet1991 | `label(y0,y1,a0,a1,draw,parent=root)` |
+| text | 55 | 5:createHelmet1991 | `text(x,s,font,color='#f2f0e8')` |
+| emblem | 56 | 5:createHelmet1991 | `emblem(x)` |
+| national | 57 | 5:createHelmet1991 | `national(x)` |
+| screw | 68 | 5:createHelmet1991 | `screw(a,y,r)` |
+| dispose | 79 | 5:createHelmet1991 | `dispose()` |
+
 ## web/src/identity.js
 
 [Fonte](../../web/src/identity.js)
@@ -227,15 +248,20 @@ Chamadas são referências sintáticas conservadoras, não rastreamento de execu
 
 | Nome | Linha | Escopo | Assinatura |
 |---|---:|---|---|
-| createSennaDriver | 4 | module | `createSennaDriver(model, mechanics)` |
-| mat | 7 | 4:createSennaDriver | `mat` |
-| mesh | 19 | 4:createSennaDriver | `mesh(geo,material,parent=root)` |
-| ellipsoid | 20 | 4:createSennaDriver | `ellipsoid(center,scale,material,parent=root)` |
-| limb | 21 | 4:createSennaDriver | `limb(a,b,r1,r2,material)` |
-| radius | 36 | 4:createSennaDriver | `radius(y)` |
-| surface | 37 | 4:createSennaDriver | `surface(y0,y1,a0,a1,material,lift=0,rows=32)` |
-| update | 55 | 4:createSennaDriver | `update()` |
-| dispose | 55 | 4:createSennaDriver | `dispose()` |
+| createSennaDriver | 6 | module | `createSennaDriver(model, mechanics)` |
+| mat | 10 | 6:createSennaDriver | `mat(name,options)` |
+| mesh | 20 | 6:createSennaDriver | `mesh(name,g,m,parent=body)` |
+| V | 21 | 6:createSennaDriver | `V` |
+| loft | 23 | 6:createSennaDriver | `loft(name,points,widths,depths,material,fold=.001)` |
+| piping | 34 | 6:createSennaDriver | `piping(name,points,r,material=seam)` |
+| rounded | 35 | 6:createSennaDriver | `rounded(name,dimensions,position,material)` |
+| chest | 39 | 6:createSennaDriver | `chest(t,x)` |
+| p | 42 | 6:createSennaDriver | `p` |
+| ribbon | 55 | 6:createSennaDriver | `ribbon(name,points,width)` |
+| applyFit | 66 | 6:createSennaDriver | `applyFit()` |
+| setFit | 69 | 6:createSennaDriver | `setFit(values)` |
+| update | 69 | 6:createSennaDriver | `update()` |
+| dispose | 69 | 6:createSennaDriver | `dispose()` |
 
 ## web/src/studio.js
 
@@ -297,6 +323,25 @@ Chamadas são referências sintáticas conservadoras, não rastreamento de execu
 | drawChart | 39 | 4:createWindTunnel | `drawChart(p,allowed)` |
 | update | 60 | 4:createWindTunnel | `update(dt)` |
 
+## web/src/workbench.js
+
+[Fonte](../../web/src/workbench.js)
+
+| Nome | Linha | Escopo | Assinatura |
+|---|---:|---|---|
+| createWorkbench | 4 | module | `createWorkbench({scene,model,driver,engine,garage,controls,camera,moveCamera,closeEngine,showCar})` |
+| $ | 5 | 4:createWorkbench | `$` |
+| frame | 11 | 4:createWorkbench | `frame(object)` |
+| view | 12 | 4:createWorkbench | `view(name)` |
+| rebuild | 20 | 4:createWorkbench | `rebuild()` |
+| refreshPanels | 28 | 4:createWorkbench | `refreshPanels()` |
+| setTab | 29 | 4:createWorkbench | `setTab(next)` |
+| cockpit | 38 | 4:createWorkbench | `cockpit()` |
+| downloadModel | 44 | 4:createWorkbench | `downloadModel(kind)` |
+| inspecting | 53 | 4:createWorkbench | `inspecting()` |
+| update | 54 | 4:createWorkbench | `update()` |
+| reset | 55 | 4:createWorkbench | `reset()` |
+
 ## web/test-aerodynamics.mjs
 
 [Fonte](../../web/test-aerodynamics.mjs)
@@ -304,3 +349,14 @@ Chamadas são referências sintáticas conservadoras, não rastreamento de execu
 | Nome | Linha | Escopo | Assinatura |
 |---|---:|---|---|
 | near | 5 | module | `near(v,w)` |
+
+## web/test-driver-model.mjs
+
+[Fonte](../../web/test-driver-model.mjs)
+
+| Nome | Linha | Escopo | Assinatura |
+|---|---:|---|---|
+| createImageData | 5 | module | `createImageData(w,h)` |
+| get | 5 | module | `get(o,k)` |
+| createElement | 6 | module | `createElement()` |
+| getContext | 6 | 6:createElement | `getContext()` |

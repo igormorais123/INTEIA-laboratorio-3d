@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "fingerprint": "018129add992af15b36b0ebc22e31997c7fb95ce49677f9f64afa7f7e89cbee0",
+  "fingerprint": "9d5b680aed8afccb619fb5e95d6eeb4ddb770d5736431a9562407369d9d67006",
   "scope": "arquivos Git e novos não ignorados; caches, dependências instaladas e backups ignorados excluídos",
   "hashPolicy": "SHA256 e bytes de texto com LF; binários exatos; mapas gerados sem auto-hash",
   "files": [
@@ -36,8 +36,8 @@
       "path": "CHANGELOG.md",
       "category": "documentação",
       "href": "../../CHANGELOG.md",
-      "bytesCanonical": 1366,
-      "sha256": "2f7ff8dc9575617ade132ab5c86d011f5e644ac8b79e073d749965271e1565cd"
+      "bytesCanonical": 1770,
+      "sha256": "536b570896086dd79c2db383b008db16af10d9d4dc774028dfe43d163568a1f9"
     },
     {
       "path": "CONTRIBUTING.md",
@@ -78,8 +78,8 @@
       "path": "README.md",
       "category": "documentação",
       "href": "../../README.md",
-      "bytesCanonical": 5124,
-      "sha256": "1e0021284428e734ab2aeb1aca2b14136057882a0898265c5296244de91df839"
+      "bytesCanonical": 5679,
+      "sha256": "933ba14d22b2dde49df550b123b4eec7fa819116f03d7d5e6fc3a0e1dddde2dd"
     },
     {
       "path": "THIRD-PARTY-NOTICES.md",
@@ -193,6 +193,13 @@
       "href": "../../docs/INTEGRACAO.md",
       "bytesCanonical": 2578,
       "sha256": "cffcadec8f43e58aa260d28e712f7caca431bba7e54f47ddcf366bef4639f967"
+    },
+    {
+      "path": "docs/PILOTO-E-CAPACETE.md",
+      "category": "documentação",
+      "href": "../../docs/PILOTO-E-CAPACETE.md",
+      "bytesCanonical": 2492,
+      "sha256": "a7e8bd72da0fd29bb1123d6e88a7991cd65dbd2cf33467736537ede2390ba7b8"
     },
     {
       "path": "docs/PUBLICACAO.md",
@@ -449,8 +456,8 @@
       "path": "docs/mapeamento-detalhado/dados/relacoes-curadas.json",
       "category": "configuração ou infraestrutura",
       "href": "../../docs/mapeamento-detalhado/dados/relacoes-curadas.json",
-      "bytesCanonical": 53969,
-      "sha256": "5967afdf05132d1284b9824f5873c9c4bfd040c20f4c9f17e71e080be9854693"
+      "bytesCanonical": 54067,
+      "sha256": "af3862bade651aa53c6abb67ef491fbb6ea2b99636ceae53c8ce7c759a318e41"
     },
     {
       "path": "docs/mapeamento-detalhado/dados/simbolos.json",
@@ -511,8 +518,8 @@
       "path": "docs/mapeamento-detalhado/scripts/finalidades.json",
       "category": "configuração ou infraestrutura",
       "href": "../../docs/mapeamento-detalhado/scripts/finalidades.json",
-      "bytesCanonical": 18867,
-      "sha256": "5b2cb809b2bfbd2709df937aa00e770903a0a09e3d203a8f923658b093f79a60"
+      "bytesCanonical": 19488,
+      "sha256": "bff98643d7f51702ccd655361ddd7bfc8379a3b0e737416dbfcdef3ab6479321"
     },
     {
       "path": "docs/mapeamento-detalhado/scripts/gerar.py",
@@ -539,8 +546,8 @@
       "path": "docs/mapeamento-detalhado/scripts/verificar-app.mjs",
       "category": "configuração ou infraestrutura",
       "href": "../../docs/mapeamento-detalhado/scripts/verificar-app.mjs",
-      "bytesCanonical": 4443,
-      "sha256": "484f2972eac455a111238b312afb23128a969f476ae166ffaa5f6dcdf25e114d"
+      "bytesCanonical": 4621,
+      "sha256": "7e654c2766204c165895cb91ca3f1828c1cb622b663d9875a1b1a9d445bd1e32"
     },
     {
       "path": "documentacao/Comparacao-iluminacao.html",
@@ -695,7 +702,7 @@
       "category": "evidência gerada",
       "href": "../../manifesto-sha256.json",
       "bytesCanonical": 3048,
-      "sha256": "ba08edbbc7072798b5528f7b4431a89a2705ca7cc0f4df7497e535534c1a8a73"
+      "sha256": "0aa800840b20b7ad35c52b32e66a1fb24a1bc609986524952c7a3c9d88f6986d"
     },
     {
       "path": "modelos/INTEIA_F1_animado.glb",
@@ -15157,8 +15164,8 @@
       "path": "web/index.html",
       "category": "aplicação gerada",
       "href": "../../web/index.html",
-      "bytesCanonical": 4351046,
-      "sha256": "91e84bdad4b6c29b4e06af20b6e3e2395ef9cccfaab1a3649acf6721a7c0edd5"
+      "bytesCanonical": 4369247,
+      "sha256": "cd208bf4af3502e58214a2f4b39a4ceecde899530935b4f1ce0c30a55484440d"
     },
     {
       "path": "web/package-lock.json",
@@ -15171,8 +15178,8 @@
       "path": "web/package.json",
       "category": "configuração ou infraestrutura",
       "href": "../../web/package.json",
-      "bytesCanonical": 421,
-      "sha256": "c10d64896dac68ee8321540c0e33b2a91dacd0764f890d21117652b31cafdd07"
+      "bytesCanonical": 451,
+      "sha256": "331fa837291d78dbd682e9d0881eb67dea6630cdb10bceafe594a7e2f0527339"
     },
     {
       "path": "web/server.cjs",
@@ -15193,8 +15200,8 @@
       "path": "web/src/app-v2.js",
       "category": "fonte web editável",
       "href": "../../web/src/app-v2.js",
-      "bytesCanonical": 22194,
-      "sha256": "34f953e16d3a0bbcf188cdfaf8473a42d324db5f7df52e4fbb3a3ed033759728",
+      "bytesCanonical": 22502,
+      "sha256": "44ac942d102f30c3f7f010ce21041321755a0d6fcabf9acd124129e94cf8f9f5",
       "reachableFromApp": true
     },
     {
@@ -15254,6 +15261,14 @@
       "reachableFromApp": true
     },
     {
+      "path": "web/src/helmet-1991.js",
+      "category": "fonte web editável",
+      "href": "../../web/src/helmet-1991.js",
+      "bytesCanonical": 9068,
+      "sha256": "352792f36a89f39ac0f00854328a278a9ccd714742c5686368777f6d4a34d607",
+      "reachableFromApp": true
+    },
+    {
       "path": "web/src/identity.js",
       "category": "fonte web editável",
       "href": "../../web/src/identity.js",
@@ -15273,8 +15288,8 @@
       "path": "web/src/senna-driver.js",
       "category": "fonte web editável",
       "href": "../../web/src/senna-driver.js",
-      "bytesCanonical": 5538,
-      "sha256": "84d97bdb2fc060af2443295bba1ecf6ab9bbc774588bef71b3da7ea5ebbc1e1a",
+      "bytesCanonical": 7763,
+      "sha256": "66670514b4b3262d6b9e53d92dcf6ebdbd71c7e60fa9167f444f3669c386c8a7",
       "reachableFromApp": true
     },
     {
@@ -15297,8 +15312,8 @@
       "path": "web/src/template-v2.html",
       "category": "fonte web editável",
       "href": "../../web/src/template-v2.html",
-      "bytesCanonical": 23289,
-      "sha256": "0dcb2eac1f0a97f7880599cb2518f0b1794ba4b50fd320d61966f5d6d42682fa"
+      "bytesCanonical": 27814,
+      "sha256": "1aee3bba9f674a437a16ac823c6241cd86ffc33d00252576a9b169199862fa81"
     },
     {
       "path": "web/src/tunnel-visual.js",
@@ -15317,11 +15332,26 @@
       "reachableFromApp": true
     },
     {
+      "path": "web/src/workbench.js",
+      "category": "fonte web editável",
+      "href": "../../web/src/workbench.js",
+      "bytesCanonical": 6700,
+      "sha256": "dc2dc7665572dfb58393acace3ae24685d533e675c9f1c0f0409bb4e5c4e5a78",
+      "reachableFromApp": true
+    },
+    {
       "path": "web/test-aerodynamics.mjs",
       "category": "teste",
       "href": "../../web/test-aerodynamics.mjs",
       "bytesCanonical": 1182,
       "sha256": "a18952d5f54a4917f9fa14d546c55401d9fa57e13d559dea0bc9f7549c32bce8"
+    },
+    {
+      "path": "web/test-driver-model.mjs",
+      "category": "teste",
+      "href": "../../web/test-driver-model.mjs",
+      "bytesCanonical": 1687,
+      "sha256": "8df3bbf22f7d09bc07e775a7345559cc118ebf06308ddc359d1cd7d0fa0e3928"
     },
     {
       "path": "web/test-mechanics.mjs",
@@ -15657,64 +15687,64 @@
     {
       "name": "closeEngine",
       "path": "web/src/app-v2.js",
-      "line": 34,
-      "href": "../../web/src/app-v2.js#L34",
+      "line": 35,
+      "href": "../../web/src/app-v2.js#L35",
       "extraction": "declaração lexical"
     },
     {
       "name": "setFlowXray",
       "path": "web/src/app-v2.js",
-      "line": 36,
-      "href": "../../web/src/app-v2.js#L36",
+      "line": 37,
+      "href": "../../web/src/app-v2.js#L37",
       "extraction": "declaração lexical"
     },
     {
       "name": "moveCamera",
-      "path": "web/src/app-v2.js",
-      "line": 44,
-      "href": "../../web/src/app-v2.js#L44",
-      "extraction": "declaração lexical"
-    },
-    {
-      "name": "view",
       "path": "web/src/app-v2.js",
       "line": 45,
       "href": "../../web/src/app-v2.js#L45",
       "extraction": "declaração lexical"
     },
     {
+      "name": "view",
+      "path": "web/src/app-v2.js",
+      "line": 46,
+      "href": "../../web/src/app-v2.js#L46",
+      "extraction": "declaração lexical"
+    },
+    {
       "name": "resize",
       "path": "web/src/app-v2.js",
-      "line": 47,
-      "href": "../../web/src/app-v2.js#L47",
+      "line": 48,
+      "href": "../../web/src/app-v2.js#L48",
       "extraction": "declaração lexical"
     },
     {
       "name": "refreshSelection",
-      "path": "web/src/app-v2.js",
-      "line": 49,
-      "href": "../../web/src/app-v2.js#L49",
-      "extraction": "declaração lexical"
-    },
-    {
-      "name": "select",
       "path": "web/src/app-v2.js",
       "line": 50,
       "href": "../../web/src/app-v2.js#L50",
       "extraction": "declaração lexical"
     },
     {
-      "name": "focusPart",
+      "name": "select",
       "path": "web/src/app-v2.js",
       "line": 51,
       "href": "../../web/src/app-v2.js#L51",
       "extraction": "declaração lexical"
     },
     {
-      "name": "assemblyTo",
+      "name": "focusPart",
       "path": "web/src/app-v2.js",
       "line": 52,
       "href": "../../web/src/app-v2.js#L52",
+      "extraction": "declaração lexical"
+    },
+    {
+      "name": "assemblyTo",
+      "path": "web/src/app-v2.js",
+      "line": 53,
+      "href": "../../web/src/app-v2.js#L53",
       "extraction": "declaração lexical"
     },
     {
@@ -16033,6 +16063,83 @@
       "extraction": "declaração lexical"
     },
     {
+      "name": "createHelmet1991",
+      "path": "web/src/helmet-1991.js",
+      "line": 5,
+      "href": "../../web/src/helmet-1991.js#L5",
+      "extraction": "declaração lexical"
+    },
+    {
+      "name": "add",
+      "path": "web/src/helmet-1991.js",
+      "line": 19,
+      "href": "../../web/src/helmet-1991.js#L19",
+      "extraction": "declaração lexical"
+    },
+    {
+      "name": "radius",
+      "path": "web/src/helmet-1991.js",
+      "line": 22,
+      "href": "../../web/src/helmet-1991.js#L22",
+      "extraction": "declaração lexical"
+    },
+    {
+      "name": "point",
+      "path": "web/src/helmet-1991.js",
+      "line": 23,
+      "href": "../../web/src/helmet-1991.js#L23",
+      "extraction": "declaração lexical"
+    },
+    {
+      "name": "patch",
+      "path": "web/src/helmet-1991.js",
+      "line": 33,
+      "href": "../../web/src/helmet-1991.js#L33",
+      "extraction": "declaração lexical"
+    },
+    {
+      "name": "tube",
+      "path": "web/src/helmet-1991.js",
+      "line": 48,
+      "href": "../../web/src/helmet-1991.js#L48",
+      "extraction": "declaração lexical"
+    },
+    {
+      "name": "label",
+      "path": "web/src/helmet-1991.js",
+      "line": 54,
+      "href": "../../web/src/helmet-1991.js#L54",
+      "extraction": "declaração lexical"
+    },
+    {
+      "name": "text",
+      "path": "web/src/helmet-1991.js",
+      "line": 55,
+      "href": "../../web/src/helmet-1991.js#L55",
+      "extraction": "declaração lexical"
+    },
+    {
+      "name": "emblem",
+      "path": "web/src/helmet-1991.js",
+      "line": 56,
+      "href": "../../web/src/helmet-1991.js#L56",
+      "extraction": "declaração lexical"
+    },
+    {
+      "name": "national",
+      "path": "web/src/helmet-1991.js",
+      "line": 57,
+      "href": "../../web/src/helmet-1991.js#L57",
+      "extraction": "declaração lexical"
+    },
+    {
+      "name": "screw",
+      "path": "web/src/helmet-1991.js",
+      "line": 68,
+      "href": "../../web/src/helmet-1991.js#L68",
+      "extraction": "declaração lexical"
+    },
+    {
       "name": "glyphs",
       "path": "web/src/identity.js",
       "line": 2,
@@ -16077,43 +16184,57 @@
     {
       "name": "createSennaDriver",
       "path": "web/src/senna-driver.js",
-      "line": 4,
-      "href": "../../web/src/senna-driver.js#L4",
+      "line": 6,
+      "href": "../../web/src/senna-driver.js#L6",
       "extraction": "declaração lexical"
     },
     {
       "name": "mesh",
-      "path": "web/src/senna-driver.js",
-      "line": 19,
-      "href": "../../web/src/senna-driver.js#L19",
-      "extraction": "declaração lexical"
-    },
-    {
-      "name": "ellipsoid",
       "path": "web/src/senna-driver.js",
       "line": 20,
       "href": "../../web/src/senna-driver.js#L20",
       "extraction": "declaração lexical"
     },
     {
-      "name": "limb",
+      "name": "loft",
       "path": "web/src/senna-driver.js",
-      "line": 21,
-      "href": "../../web/src/senna-driver.js#L21",
+      "line": 23,
+      "href": "../../web/src/senna-driver.js#L23",
       "extraction": "declaração lexical"
     },
     {
-      "name": "radius",
+      "name": "piping",
       "path": "web/src/senna-driver.js",
-      "line": 36,
-      "href": "../../web/src/senna-driver.js#L36",
+      "line": 34,
+      "href": "../../web/src/senna-driver.js#L34",
       "extraction": "declaração lexical"
     },
     {
-      "name": "surface",
+      "name": "rounded",
       "path": "web/src/senna-driver.js",
-      "line": 37,
-      "href": "../../web/src/senna-driver.js#L37",
+      "line": 35,
+      "href": "../../web/src/senna-driver.js#L35",
+      "extraction": "declaração lexical"
+    },
+    {
+      "name": "chest",
+      "path": "web/src/senna-driver.js",
+      "line": 39,
+      "href": "../../web/src/senna-driver.js#L39",
+      "extraction": "declaração lexical"
+    },
+    {
+      "name": "ribbon",
+      "path": "web/src/senna-driver.js",
+      "line": 55,
+      "href": "../../web/src/senna-driver.js#L55",
+      "extraction": "declaração lexical"
+    },
+    {
+      "name": "applyFit",
+      "path": "web/src/senna-driver.js",
+      "line": 66,
+      "href": "../../web/src/senna-driver.js#L66",
       "extraction": "declaração lexical"
     },
     {
@@ -16212,6 +16333,62 @@
       "path": "web/src/wind-tunnel.js",
       "line": 39,
       "href": "../../web/src/wind-tunnel.js#L39",
+      "extraction": "declaração lexical"
+    },
+    {
+      "name": "createWorkbench",
+      "path": "web/src/workbench.js",
+      "line": 4,
+      "href": "../../web/src/workbench.js#L4",
+      "extraction": "declaração lexical"
+    },
+    {
+      "name": "frame",
+      "path": "web/src/workbench.js",
+      "line": 11,
+      "href": "../../web/src/workbench.js#L11",
+      "extraction": "declaração lexical"
+    },
+    {
+      "name": "view",
+      "path": "web/src/workbench.js",
+      "line": 12,
+      "href": "../../web/src/workbench.js#L12",
+      "extraction": "declaração lexical"
+    },
+    {
+      "name": "rebuild",
+      "path": "web/src/workbench.js",
+      "line": 20,
+      "href": "../../web/src/workbench.js#L20",
+      "extraction": "declaração lexical"
+    },
+    {
+      "name": "refreshPanels",
+      "path": "web/src/workbench.js",
+      "line": 28,
+      "href": "../../web/src/workbench.js#L28",
+      "extraction": "declaração lexical"
+    },
+    {
+      "name": "setTab",
+      "path": "web/src/workbench.js",
+      "line": 29,
+      "href": "../../web/src/workbench.js#L29",
+      "extraction": "declaração lexical"
+    },
+    {
+      "name": "cockpit",
+      "path": "web/src/workbench.js",
+      "line": 38,
+      "href": "../../web/src/workbench.js#L38",
+      "extraction": "declaração lexical"
+    },
+    {
+      "name": "downloadModel",
+      "path": "web/src/workbench.js",
+      "line": 44,
+      "href": "../../web/src/workbench.js#L44",
       "extraction": "declaração lexical"
     }
   ]

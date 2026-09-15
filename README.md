@@ -45,6 +45,12 @@ O laboratório usa o mesmo carro v2, pintura final, rodas, piloto e patrocínios
 
 [Detalhes da integração](docs/INTEGRACAO-MOTOR.md).
 
+## Bancadas de modelagem
+
+As abas **Carro, Motor, Capacete, Piloto e Ambientes** organizam a oficina. O capacete detalhado de 1991 é compartilhado entre o carro e a bancada. O piloto tem corpo completo em postura reclinada, luvas com dedos, botas, costuras e cintos. As bancadas de capacete e piloto permitem alternar entre inspeção isolada e encaixe no cockpit e baixar GLB. Ajustes de altura, avanço e inclinação do capacete ficam na sessão e são incluídos ao exportar o piloto.
+
+[Referências e limites do estudo](docs/PILOTO-E-CAPACETE.md).
+
 ## O que está incluído
 
 - 97 componentes exteriores, separados e nomeados, com metadados de origem.

@@ -10,7 +10,7 @@
     "web/build.cjs": "49e8e6782e35e4074852afb5db4c02effdd707bb00c21a4d6b0d2c681d8bd0ba",
     "web/server.cjs": "550af1113de82160b2f449ef9f8a989703707480fec3ef7e75313b37fac06b8b",
     "web/src/aero-physics.mjs": "ddec76df50dd3dba23d2361d5579be999d70a4a1bd58dce99001fd4b9c146482",
-    "web/src/app-v2.js": "426f8aaf9c96b87199ca0b539b17947ace2609c1163496c1018a3a9d7b92f859",
+    "web/src/app-v2.js": "9072956456aba21ce296f8d6bcb256d78aafceb7c01bcd8f0732c8e5aa65ab57",
     "web/src/branding.js": "27fff24dd879f885a088af614902c872624fa7189f167e2233d5ba0e951646ea",
     "web/src/car-look.js": "83f5204443f41eef3e1d7368c8454b483b2e6abc0955545b3d49a2999d12c7bb",
     "web/src/customize.js": "9588784fd0e68d0dd4d61ad3c2731ef39c1cba33f6f57f47b172d55abc0a4176",
@@ -18,14 +18,17 @@
     "web/src/engine/in-car.js": "ebe61051ecf07818e92c2a41064e1b4878e670be7c04d8938878b7a3cb31349a",
     "web/src/flow-detail.js": "436414a7e85b9ad8a043c469412b63224dc101e4caba06e76340977d85684f1a",
     "web/src/garage.js": "881afa322c3ed23315549e48147df9f1f47e31836ed29cc24730538bbd91ced4",
+    "web/src/helmet-1991.js": "3dcc5137c202a3271ced7c0759b4125910b41686c8e5b7d1dc50e09074738307",
     "web/src/identity.js": "f7da18ffada2006737675abb026d621097f8219e37587a5b72c1dfc798b089a6",
     "web/src/mechanics.js": "e6795bbc6ccccca32f2c4582cae3fab14d798ff3d7d0a31b23d59ecc5b1735eb",
-    "web/src/senna-driver.js": "22d4c75694c84fc13ab24815b8e83e61877d1d73e02a6548b35c282f72567107",
+    "web/src/senna-driver.js": "cea7bc053466963e1a3b7aa5d10c62cc7e21478dd125af9cd665f5d8b1894f89",
     "web/src/studio.js": "36ca53b97600bcdcec404b67ab42333afefe20c00d046d2c92d28145f6b6d8e1",
     "web/src/surface-library.js": "66deab1f2a8093aead43d02f0b6b23605fe64a57d9fa0b681c2768bd7257c642",
     "web/src/tunnel-visual.js": "46435c35174bd737c548b964d23a577214f26c645459bf8f4d792b183ffd02c5",
     "web/src/wind-tunnel.js": "7795a0a4bf6a3462b7c9c81d20431b26e133041a8930dcda8ee2191bfd9556e5",
+    "web/src/workbench.js": "99fe90cd3aeafaef173034645c1db26f771eb9978ead3ec6db2a7316a508a9c7",
     "web/test-aerodynamics.mjs": "a18952d5f54a4917f9fa14d546c55401d9fa57e13d559dea0bc9f7549c32bce8",
+    "web/test-driver-model.mjs": "8ec9f50e30cb1afe1e339e69f8247e5482b8d35430dcb3f351dfa25fc641334f",
     "web/test-mechanics.mjs": "f826f8fd87af78e567921a27efb06998f1b830dec12c3a6f50075a253e54fc56",
     "web/test-power-unit.mjs": "bafd0dfa7616e13bdea328e7f0de6e1896bdf2124b247205e9a67dabcea35b1b"
   },
@@ -122,154 +125,164 @@
       "signature": "aerodynamicTest({speedKmh=0,headwindKmh=0,crosswindKmh=0,temperatureC=15,pressureKPa=101.325,area=null,cd=null,clDown=null,length=5.5})"
     },
     {
-      "id": "web/src/app-v2.js#23:$",
+      "id": "web/src/app-v2.js#24:$",
       "path": "web/src/app-v2.js",
       "name": "$",
       "kind": "variable_declarator",
-      "line": 23,
-      "end_line": 23,
+      "line": 24,
+      "end_line": 24,
       "scope": "module",
       "signature": "$"
     },
     {
-      "id": "web/src/app-v2.js#34:closeEngine",
+      "id": "web/src/app-v2.js#35:closeEngine",
       "path": "web/src/app-v2.js",
       "name": "closeEngine",
       "kind": "function_declaration",
-      "line": 34,
-      "end_line": 34,
+      "line": 35,
+      "end_line": 35,
       "scope": "module",
       "signature": "closeEngine()"
     },
     {
-      "id": "web/src/app-v2.js#36:setFlowXray",
+      "id": "web/src/app-v2.js#37:setFlowXray",
       "path": "web/src/app-v2.js",
       "name": "setFlowXray",
       "kind": "function_declaration",
-      "line": 36,
-      "end_line": 39,
+      "line": 37,
+      "end_line": 40,
       "scope": "module",
       "signature": "setFlowXray(on)"
     },
     {
-      "id": "web/src/app-v2.js#37:clone",
+      "id": "web/src/app-v2.js#38:clone",
       "path": "web/src/app-v2.js",
       "name": "clone",
       "kind": "variable_declarator",
-      "line": 37,
-      "end_line": 37,
-      "scope": "web/src/app-v2.js#36:setFlowXray",
+      "line": 38,
+      "end_line": 38,
+      "scope": "web/src/app-v2.js#37:setFlowXray",
       "signature": "clone"
     },
     {
-      "id": "web/src/app-v2.js#44:moveCamera",
+      "id": "web/src/app-v2.js#45:moveCamera",
       "path": "web/src/app-v2.js",
       "name": "moveCamera",
-      "kind": "function_declaration",
-      "line": 44,
-      "end_line": 44,
-      "scope": "module",
-      "signature": "moveCamera(to,target,animate=true)"
-    },
-    {
-      "id": "web/src/app-v2.js#45:view",
-      "path": "web/src/app-v2.js",
-      "name": "view",
       "kind": "function_declaration",
       "line": 45,
       "end_line": 45,
       "scope": "module",
+      "signature": "moveCamera(to,target,animate=true)"
+    },
+    {
+      "id": "web/src/app-v2.js#46:view",
+      "path": "web/src/app-v2.js",
+      "name": "view",
+      "kind": "function_declaration",
+      "line": 46,
+      "end_line": 46,
+      "scope": "module",
       "signature": "view(name,animate=true)"
     },
     {
-      "id": "web/src/app-v2.js#47:resize",
+      "id": "web/src/app-v2.js#48:resize",
       "path": "web/src/app-v2.js",
       "name": "resize",
       "kind": "function_declaration",
-      "line": 47,
-      "end_line": 47,
+      "line": 48,
+      "end_line": 48,
       "scope": "module",
       "signature": "resize()"
     },
     {
-      "id": "web/src/app-v2.js#49:refreshSelection",
+      "id": "web/src/app-v2.js#50:refreshSelection",
       "path": "web/src/app-v2.js",
       "name": "refreshSelection",
-      "kind": "function_declaration",
-      "line": 49,
-      "end_line": 49,
-      "scope": "module",
-      "signature": "refreshSelection()"
-    },
-    {
-      "id": "web/src/app-v2.js#50:select",
-      "path": "web/src/app-v2.js",
-      "name": "select",
       "kind": "function_declaration",
       "line": 50,
       "end_line": 50,
       "scope": "module",
-      "signature": "select(id)"
+      "signature": "refreshSelection()"
     },
     {
-      "id": "web/src/app-v2.js#51:focusPart",
+      "id": "web/src/app-v2.js#51:select",
       "path": "web/src/app-v2.js",
-      "name": "focusPart",
+      "name": "select",
       "kind": "function_declaration",
       "line": 51,
       "end_line": 51,
       "scope": "module",
-      "signature": "focusPart()"
+      "signature": "select(id)"
     },
     {
-      "id": "web/src/app-v2.js#52:assemblyTo",
+      "id": "web/src/app-v2.js#52:focusPart",
       "path": "web/src/app-v2.js",
-      "name": "assemblyTo",
+      "name": "focusPart",
       "kind": "function_declaration",
       "line": 52,
       "end_line": 52,
       "scope": "module",
+      "signature": "focusPart()"
+    },
+    {
+      "id": "web/src/app-v2.js#53:assemblyTo",
+      "path": "web/src/app-v2.js",
+      "name": "assemblyTo",
+      "kind": "function_declaration",
+      "line": 53,
+      "end_line": 53,
+      "scope": "module",
       "signature": "assemblyTo(v)"
     },
     {
-      "id": "web/src/app-v2.js#63:target",
+      "id": "web/src/app-v2.js#64:target",
       "path": "web/src/app-v2.js",
       "name": "target",
       "kind": "pair",
-      "line": 63,
-      "end_line": 63,
+      "line": 64,
+      "end_line": 64,
       "scope": "module",
       "signature": "target()"
     },
     {
-      "id": "web/src/app-v2.js#64:onBeforeToggle",
+      "id": "web/src/app-v2.js#65:onBeforeToggle",
       "path": "web/src/app-v2.js",
       "name": "onBeforeToggle",
       "kind": "pair",
-      "line": 64,
-      "end_line": 64,
+      "line": 65,
+      "end_line": 65,
       "scope": "module",
       "signature": "onBeforeToggle"
     },
     {
-      "id": "web/src/app-v2.js#64:onRegion",
+      "id": "web/src/app-v2.js#65:onRegion",
       "path": "web/src/app-v2.js",
       "name": "onRegion",
       "kind": "pair",
-      "line": 64,
-      "end_line": 64,
+      "line": 65,
+      "end_line": 65,
       "scope": "module",
       "signature": "onRegion"
     },
     {
-      "id": "web/src/app-v2.js#64:onToggle",
+      "id": "web/src/app-v2.js#65:onToggle",
       "path": "web/src/app-v2.js",
       "name": "onToggle",
       "kind": "pair",
-      "line": 64,
-      "end_line": 64,
+      "line": 65,
+      "end_line": 65,
       "scope": "module",
       "signature": "onToggle"
+    },
+    {
+      "id": "web/src/app-v2.js#66:showCar",
+      "path": "web/src/app-v2.js",
+      "name": "showCar",
+      "kind": "pair",
+      "line": 66,
+      "end_line": 66,
+      "scope": "module",
+      "signature": "showCar()"
     },
     {
       "id": "web/src/branding.js#5:applyInteiaBranding",
@@ -1042,6 +1055,136 @@
       "signature": "update(dt)"
     },
     {
+      "id": "web/src/helmet-1991.js#5:createHelmet1991",
+      "path": "web/src/helmet-1991.js",
+      "name": "createHelmet1991",
+      "kind": "function_declaration",
+      "line": 5,
+      "end_line": 80,
+      "scope": "module",
+      "signature": "createHelmet1991({detail=128}={})"
+    },
+    {
+      "id": "web/src/helmet-1991.js#7:material",
+      "path": "web/src/helmet-1991.js",
+      "name": "material",
+      "kind": "variable_declarator",
+      "line": 7,
+      "end_line": 7,
+      "scope": "web/src/helmet-1991.js#5:createHelmet1991",
+      "signature": "material"
+    },
+    {
+      "id": "web/src/helmet-1991.js#19:add",
+      "path": "web/src/helmet-1991.js",
+      "name": "add",
+      "kind": "function_declaration",
+      "line": 19,
+      "end_line": 19,
+      "scope": "web/src/helmet-1991.js#5:createHelmet1991",
+      "signature": "add(g,m,parent=root)"
+    },
+    {
+      "id": "web/src/helmet-1991.js#22:radius",
+      "path": "web/src/helmet-1991.js",
+      "name": "radius",
+      "kind": "function_declaration",
+      "line": 22,
+      "end_line": 22,
+      "scope": "web/src/helmet-1991.js#5:createHelmet1991",
+      "signature": "radius(y)"
+    },
+    {
+      "id": "web/src/helmet-1991.js#23:point",
+      "path": "web/src/helmet-1991.js",
+      "name": "point",
+      "kind": "function_declaration",
+      "line": 23,
+      "end_line": 32,
+      "scope": "web/src/helmet-1991.js#5:createHelmet1991",
+      "signature": "point(y,a,lift=0)"
+    },
+    {
+      "id": "web/src/helmet-1991.js#33:patch",
+      "path": "web/src/helmet-1991.js",
+      "name": "patch",
+      "kind": "function_declaration",
+      "line": 33,
+      "end_line": 33,
+      "scope": "web/src/helmet-1991.js#5:createHelmet1991",
+      "signature": "patch(y0,y1,a0,a1,m,lift=0,rows=36,cols=detail,parent=root)"
+    },
+    {
+      "id": "web/src/helmet-1991.js#48:tube",
+      "path": "web/src/helmet-1991.js",
+      "name": "tube",
+      "kind": "function_declaration",
+      "line": 48,
+      "end_line": 48,
+      "scope": "web/src/helmet-1991.js#5:createHelmet1991",
+      "signature": "tube(points,r,m,parent=root)"
+    },
+    {
+      "id": "web/src/helmet-1991.js#54:label",
+      "path": "web/src/helmet-1991.js",
+      "name": "label",
+      "kind": "function_declaration",
+      "line": 54,
+      "end_line": 54,
+      "scope": "web/src/helmet-1991.js#5:createHelmet1991",
+      "signature": "label(y0,y1,a0,a1,draw,parent=root)"
+    },
+    {
+      "id": "web/src/helmet-1991.js#55:text",
+      "path": "web/src/helmet-1991.js",
+      "name": "text",
+      "kind": "function_declaration",
+      "line": 55,
+      "end_line": 55,
+      "scope": "web/src/helmet-1991.js#5:createHelmet1991",
+      "signature": "text(x,s,font,color='#f2f0e8')"
+    },
+    {
+      "id": "web/src/helmet-1991.js#56:emblem",
+      "path": "web/src/helmet-1991.js",
+      "name": "emblem",
+      "kind": "function_declaration",
+      "line": 56,
+      "end_line": 56,
+      "scope": "web/src/helmet-1991.js#5:createHelmet1991",
+      "signature": "emblem(x)"
+    },
+    {
+      "id": "web/src/helmet-1991.js#57:national",
+      "path": "web/src/helmet-1991.js",
+      "name": "national",
+      "kind": "function_declaration",
+      "line": 57,
+      "end_line": 57,
+      "scope": "web/src/helmet-1991.js#5:createHelmet1991",
+      "signature": "national(x)"
+    },
+    {
+      "id": "web/src/helmet-1991.js#68:screw",
+      "path": "web/src/helmet-1991.js",
+      "name": "screw",
+      "kind": "function_declaration",
+      "line": 68,
+      "end_line": 68,
+      "scope": "web/src/helmet-1991.js#5:createHelmet1991",
+      "signature": "screw(a,y,r)"
+    },
+    {
+      "id": "web/src/helmet-1991.js#79:dispose",
+      "path": "web/src/helmet-1991.js",
+      "name": "dispose",
+      "kind": "method_definition",
+      "line": 79,
+      "end_line": 79,
+      "scope": "web/src/helmet-1991.js#5:createHelmet1991",
+      "signature": "dispose()"
+    },
+    {
       "id": "web/src/identity.js#11:brandSVG",
       "path": "web/src/identity.js",
       "name": "brandSVG",
@@ -1272,93 +1415,143 @@
       "signature": "update(dt,now,reduced)"
     },
     {
-      "id": "web/src/senna-driver.js#4:createSennaDriver",
+      "id": "web/src/senna-driver.js#6:createSennaDriver",
       "path": "web/src/senna-driver.js",
       "name": "createSennaDriver",
       "kind": "function_declaration",
-      "line": 4,
-      "end_line": 56,
+      "line": 6,
+      "end_line": 70,
       "scope": "module",
       "signature": "createSennaDriver(model, mechanics)"
     },
     {
-      "id": "web/src/senna-driver.js#7:mat",
+      "id": "web/src/senna-driver.js#10:mat",
       "path": "web/src/senna-driver.js",
       "name": "mat",
       "kind": "variable_declarator",
-      "line": 7,
-      "end_line": 7,
-      "scope": "web/src/senna-driver.js#4:createSennaDriver",
-      "signature": "mat"
+      "line": 10,
+      "end_line": 10,
+      "scope": "web/src/senna-driver.js#6:createSennaDriver",
+      "signature": "mat(name,options)"
     },
     {
-      "id": "web/src/senna-driver.js#19:mesh",
+      "id": "web/src/senna-driver.js#20:mesh",
       "path": "web/src/senna-driver.js",
       "name": "mesh",
       "kind": "function_declaration",
-      "line": 19,
-      "end_line": 19,
-      "scope": "web/src/senna-driver.js#4:createSennaDriver",
-      "signature": "mesh(geo,material,parent=root)"
-    },
-    {
-      "id": "web/src/senna-driver.js#20:ellipsoid",
-      "path": "web/src/senna-driver.js",
-      "name": "ellipsoid",
-      "kind": "function_declaration",
       "line": 20,
       "end_line": 20,
-      "scope": "web/src/senna-driver.js#4:createSennaDriver",
-      "signature": "ellipsoid(center,scale,material,parent=root)"
+      "scope": "web/src/senna-driver.js#6:createSennaDriver",
+      "signature": "mesh(name,g,m,parent=body)"
     },
     {
-      "id": "web/src/senna-driver.js#21:limb",
+      "id": "web/src/senna-driver.js#21:V",
       "path": "web/src/senna-driver.js",
-      "name": "limb",
-      "kind": "function_declaration",
+      "name": "V",
+      "kind": "variable_declarator",
       "line": 21,
       "end_line": 21,
-      "scope": "web/src/senna-driver.js#4:createSennaDriver",
-      "signature": "limb(a,b,r1,r2,material)"
+      "scope": "web/src/senna-driver.js#6:createSennaDriver",
+      "signature": "V"
     },
     {
-      "id": "web/src/senna-driver.js#36:radius",
+      "id": "web/src/senna-driver.js#23:loft",
       "path": "web/src/senna-driver.js",
-      "name": "radius",
+      "name": "loft",
       "kind": "function_declaration",
-      "line": 36,
-      "end_line": 36,
-      "scope": "web/src/senna-driver.js#4:createSennaDriver",
-      "signature": "radius(y)"
+      "line": 23,
+      "end_line": 33,
+      "scope": "web/src/senna-driver.js#6:createSennaDriver",
+      "signature": "loft(name,points,widths,depths,material,fold=.001)"
     },
     {
-      "id": "web/src/senna-driver.js#37:surface",
+      "id": "web/src/senna-driver.js#34:piping",
       "path": "web/src/senna-driver.js",
-      "name": "surface",
+      "name": "piping",
       "kind": "function_declaration",
-      "line": 37,
-      "end_line": 41,
-      "scope": "web/src/senna-driver.js#4:createSennaDriver",
-      "signature": "surface(y0,y1,a0,a1,material,lift=0,rows=32)"
+      "line": 34,
+      "end_line": 34,
+      "scope": "web/src/senna-driver.js#6:createSennaDriver",
+      "signature": "piping(name,points,r,material=seam)"
     },
     {
-      "id": "web/src/senna-driver.js#55:update",
+      "id": "web/src/senna-driver.js#35:rounded",
+      "path": "web/src/senna-driver.js",
+      "name": "rounded",
+      "kind": "function_declaration",
+      "line": 35,
+      "end_line": 35,
+      "scope": "web/src/senna-driver.js#6:createSennaDriver",
+      "signature": "rounded(name,dimensions,position,material)"
+    },
+    {
+      "id": "web/src/senna-driver.js#39:chest",
+      "path": "web/src/senna-driver.js",
+      "name": "chest",
+      "kind": "function_declaration",
+      "line": 39,
+      "end_line": 39,
+      "scope": "web/src/senna-driver.js#6:createSennaDriver",
+      "signature": "chest(t,x)"
+    },
+    {
+      "id": "web/src/senna-driver.js#42:p",
+      "path": "web/src/senna-driver.js",
+      "name": "p",
+      "kind": "variable_declarator",
+      "line": 42,
+      "end_line": 42,
+      "scope": "web/src/senna-driver.js#6:createSennaDriver",
+      "signature": "p"
+    },
+    {
+      "id": "web/src/senna-driver.js#55:ribbon",
+      "path": "web/src/senna-driver.js",
+      "name": "ribbon",
+      "kind": "function_declaration",
+      "line": 55,
+      "end_line": 58,
+      "scope": "web/src/senna-driver.js#6:createSennaDriver",
+      "signature": "ribbon(name,points,width)"
+    },
+    {
+      "id": "web/src/senna-driver.js#66:applyFit",
+      "path": "web/src/senna-driver.js",
+      "name": "applyFit",
+      "kind": "function_declaration",
+      "line": 66,
+      "end_line": 66,
+      "scope": "web/src/senna-driver.js#6:createSennaDriver",
+      "signature": "applyFit()"
+    },
+    {
+      "id": "web/src/senna-driver.js#69:setFit",
+      "path": "web/src/senna-driver.js",
+      "name": "setFit",
+      "kind": "method_definition",
+      "line": 69,
+      "end_line": 69,
+      "scope": "web/src/senna-driver.js#6:createSennaDriver",
+      "signature": "setFit(values)"
+    },
+    {
+      "id": "web/src/senna-driver.js#69:update",
       "path": "web/src/senna-driver.js",
       "name": "update",
       "kind": "method_definition",
-      "line": 55,
-      "end_line": 55,
-      "scope": "web/src/senna-driver.js#4:createSennaDriver",
+      "line": 69,
+      "end_line": 69,
+      "scope": "web/src/senna-driver.js#6:createSennaDriver",
       "signature": "update()"
     },
     {
-      "id": "web/src/senna-driver.js#55:dispose",
+      "id": "web/src/senna-driver.js#69:dispose",
       "path": "web/src/senna-driver.js",
       "name": "dispose",
       "kind": "method_definition",
-      "line": 55,
-      "end_line": 55,
-      "scope": "web/src/senna-driver.js#4:createSennaDriver",
+      "line": 69,
+      "end_line": 69,
+      "scope": "web/src/senna-driver.js#6:createSennaDriver",
       "signature": "dispose()"
     },
     {
@@ -1682,6 +1875,126 @@
       "signature": "update(dt)"
     },
     {
+      "id": "web/src/workbench.js#4:createWorkbench",
+      "path": "web/src/workbench.js",
+      "name": "createWorkbench",
+      "kind": "function_declaration",
+      "line": 4,
+      "end_line": 57,
+      "scope": "module",
+      "signature": "createWorkbench({scene,model,driver,engine,garage,controls,camera,moveCamera,closeEngine,showCar})"
+    },
+    {
+      "id": "web/src/workbench.js#5:$",
+      "path": "web/src/workbench.js",
+      "name": "$",
+      "kind": "variable_declarator",
+      "line": 5,
+      "end_line": 5,
+      "scope": "web/src/workbench.js#4:createWorkbench",
+      "signature": "$"
+    },
+    {
+      "id": "web/src/workbench.js#11:frame",
+      "path": "web/src/workbench.js",
+      "name": "frame",
+      "kind": "function_declaration",
+      "line": 11,
+      "end_line": 11,
+      "scope": "web/src/workbench.js#4:createWorkbench",
+      "signature": "frame(object)"
+    },
+    {
+      "id": "web/src/workbench.js#12:view",
+      "path": "web/src/workbench.js",
+      "name": "view",
+      "kind": "function_declaration",
+      "line": 12,
+      "end_line": 19,
+      "scope": "web/src/workbench.js#4:createWorkbench",
+      "signature": "view(name)"
+    },
+    {
+      "id": "web/src/workbench.js#20:rebuild",
+      "path": "web/src/workbench.js",
+      "name": "rebuild",
+      "kind": "function_declaration",
+      "line": 20,
+      "end_line": 27,
+      "scope": "web/src/workbench.js#4:createWorkbench",
+      "signature": "rebuild()"
+    },
+    {
+      "id": "web/src/workbench.js#28:refreshPanels",
+      "path": "web/src/workbench.js",
+      "name": "refreshPanels",
+      "kind": "function_declaration",
+      "line": 28,
+      "end_line": 28,
+      "scope": "web/src/workbench.js#4:createWorkbench",
+      "signature": "refreshPanels()"
+    },
+    {
+      "id": "web/src/workbench.js#29:setTab",
+      "path": "web/src/workbench.js",
+      "name": "setTab",
+      "kind": "function_declaration",
+      "line": 29,
+      "end_line": 36,
+      "scope": "web/src/workbench.js#4:createWorkbench",
+      "signature": "setTab(next)"
+    },
+    {
+      "id": "web/src/workbench.js#38:cockpit",
+      "path": "web/src/workbench.js",
+      "name": "cockpit",
+      "kind": "function_declaration",
+      "line": 38,
+      "end_line": 38,
+      "scope": "web/src/workbench.js#4:createWorkbench",
+      "signature": "cockpit()"
+    },
+    {
+      "id": "web/src/workbench.js#44:downloadModel",
+      "path": "web/src/workbench.js",
+      "name": "downloadModel",
+      "kind": "function_declaration",
+      "line": 44,
+      "end_line": 46,
+      "scope": "web/src/workbench.js#4:createWorkbench",
+      "signature": "downloadModel(kind)"
+    },
+    {
+      "id": "web/src/workbench.js#53:inspecting",
+      "path": "web/src/workbench.js",
+      "name": "inspecting",
+      "kind": "method_definition",
+      "line": 53,
+      "end_line": 53,
+      "scope": "web/src/workbench.js#4:createWorkbench",
+      "signature": "inspecting()"
+    },
+    {
+      "id": "web/src/workbench.js#54:update",
+      "path": "web/src/workbench.js",
+      "name": "update",
+      "kind": "method_definition",
+      "line": 54,
+      "end_line": 54,
+      "scope": "web/src/workbench.js#4:createWorkbench",
+      "signature": "update()"
+    },
+    {
+      "id": "web/src/workbench.js#55:reset",
+      "path": "web/src/workbench.js",
+      "name": "reset",
+      "kind": "method_definition",
+      "line": 55,
+      "end_line": 55,
+      "scope": "web/src/workbench.js#4:createWorkbench",
+      "signature": "reset()"
+    },
+    {
       "id": "web/test-aerodynamics.mjs#5:near",
       "path": "web/test-aerodynamics.mjs",
       "name": "near",
@@ -1690,6 +2003,46 @@
       "end_line": 5,
       "scope": "module",
       "signature": "near(v,w)"
+    },
+    {
+      "id": "web/test-driver-model.mjs#5:createImageData",
+      "path": "web/test-driver-model.mjs",
+      "name": "createImageData",
+      "kind": "pair",
+      "line": 5,
+      "end_line": 5,
+      "scope": "module",
+      "signature": "createImageData(w,h)"
+    },
+    {
+      "id": "web/test-driver-model.mjs#5:get",
+      "path": "web/test-driver-model.mjs",
+      "name": "get",
+      "kind": "pair",
+      "line": 5,
+      "end_line": 5,
+      "scope": "module",
+      "signature": "get(o,k)"
+    },
+    {
+      "id": "web/test-driver-model.mjs#6:createElement",
+      "path": "web/test-driver-model.mjs",
+      "name": "createElement",
+      "kind": "pair",
+      "line": 6,
+      "end_line": 6,
+      "scope": "module",
+      "signature": "createElement()"
+    },
+    {
+      "id": "web/test-driver-model.mjs#6:getContext",
+      "path": "web/test-driver-model.mjs",
+      "name": "getContext",
+      "kind": "pair",
+      "line": 6,
+      "end_line": 6,
+      "scope": "web/test-driver-model.mjs#6:createElement",
+      "signature": "getContext()"
     }
   ],
   "direct_calls": [
@@ -1781,1267 +2134,1281 @@
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "$",
-      "line": 23,
+      "line": 24,
       "expression": "$('#stage')"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "matchMedia",
-      "line": 23,
+      "line": 24,
       "expression": "matchMedia('(prefers-reduced-motion: reduce)')"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "brandSVG",
-      "line": 24,
+      "line": 25,
       "expression": "brandSVG()"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "setupStudio",
-      "line": 28,
+      "line": 29,
       "expression": "setupStudio(THREE,renderer,scene)"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "$",
-      "line": 32,
+      "line": 33,
       "expression": "$('#loop')"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "$",
-      "line": 32,
+      "line": 33,
       "expression": "$('#spin')"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "$",
-      "line": 32,
+      "line": 33,
       "expression": "$('#steering')"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "$",
-      "line": 32,
+      "line": 33,
       "expression": "$('#drs')"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "$",
-      "line": 32,
+      "line": 33,
       "expression": "$('#steering-value')"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "$",
-      "line": 32,
+      "line": 33,
       "expression": "$('#drs-value')"
     },
     {
       "path": "web/src/app-v2.js",
-      "source": "web/src/app-v2.js#34:closeEngine",
+      "source": "web/src/app-v2.js#35:closeEngine",
       "callee": "$",
-      "line": 34,
+      "line": 35,
       "expression": "$(\"#engine-open\")"
     },
     {
       "path": "web/src/app-v2.js",
-      "source": "web/src/app-v2.js#34:closeEngine",
+      "source": "web/src/app-v2.js#35:closeEngine",
       "callee": "$",
-      "line": 34,
+      "line": 35,
       "expression": "$(\"#engine-open\")"
     },
     {
       "path": "web/src/app-v2.js",
-      "source": "web/src/app-v2.js#36:setFlowXray",
+      "source": "web/src/app-v2.js#37:setFlowXray",
       "callee": "clone",
-      "line": 37,
+      "line": 38,
       "expression": "clone(original)"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "$",
-      "line": 43,
+      "line": 44,
       "expression": "$('#loading')"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "$",
-      "line": 43,
+      "line": 44,
       "expression": "$('#status')"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "$",
-      "line": 43,
+      "line": 44,
       "expression": "$('#assembly')"
     },
     {
       "path": "web/src/app-v2.js",
-      "source": "web/src/app-v2.js#45:view",
+      "source": "web/src/app-v2.js#46:view",
       "callee": "moveCamera",
-      "line": 45,
+      "line": 46,
       "expression": "moveCamera(target.clone().addScaledVector(new THREE.Vector3(...views[name]).normalize(),distance*expanded),target,animate)"
     },
     {
       "path": "web/src/app-v2.js",
-      "source": "web/src/app-v2.js#45:view",
+      "source": "web/src/app-v2.js#46:view",
       "callee": "String",
-      "line": 45,
+      "line": 46,
       "expression": "String(b.dataset.view===name)"
     },
     {
       "path": "web/src/app-v2.js",
-      "source": "web/src/app-v2.js#47:resize",
+      "source": "web/src/app-v2.js#48:resize",
       "callee": "view",
-      "line": 47,
+      "line": 48,
       "expression": "view(currentView,false)"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "resize",
-      "line": 48,
+      "line": 49,
       "expression": "resize()"
     },
     {
       "path": "web/src/app-v2.js",
-      "source": "web/src/app-v2.js#49:refreshSelection",
+      "source": "web/src/app-v2.js#50:refreshSelection",
       "callee": "$",
-      "line": 49,
+      "line": 50,
       "expression": "$('#selected-name')"
     },
     {
       "path": "web/src/app-v2.js",
-      "source": "web/src/app-v2.js#49:refreshSelection",
+      "source": "web/src/app-v2.js#50:refreshSelection",
       "callee": "$",
-      "line": 49,
+      "line": 50,
       "expression": "$('#selected-category')"
     },
     {
       "path": "web/src/app-v2.js",
-      "source": "web/src/app-v2.js#49:refreshSelection",
+      "source": "web/src/app-v2.js#50:refreshSelection",
       "callee": "$",
-      "line": 49,
+      "line": 50,
       "expression": "$('#part-offset')"
     },
     {
       "path": "web/src/app-v2.js",
-      "source": "web/src/app-v2.js#49:refreshSelection",
+      "source": "web/src/app-v2.js#50:refreshSelection",
       "callee": "$",
-      "line": 49,
+      "line": 50,
       "expression": "$('#focus-part')"
     },
     {
       "path": "web/src/app-v2.js",
-      "source": "web/src/app-v2.js#49:refreshSelection",
+      "source": "web/src/app-v2.js#50:refreshSelection",
       "callee": "$",
-      "line": 49,
+      "line": 50,
       "expression": "$('#isolate')"
     },
     {
       "path": "web/src/app-v2.js",
-      "source": "web/src/app-v2.js#49:refreshSelection",
+      "source": "web/src/app-v2.js#50:refreshSelection",
       "callee": "$",
-      "line": 49,
+      "line": 50,
       "expression": "$('#isolate')"
     },
     {
       "path": "web/src/app-v2.js",
-      "source": "web/src/app-v2.js#49:refreshSelection",
+      "source": "web/src/app-v2.js#50:refreshSelection",
       "callee": "String",
-      "line": 49,
+      "line": 50,
       "expression": "String(mechanics.isolated)"
     },
     {
       "path": "web/src/app-v2.js",
-      "source": "web/src/app-v2.js#49:refreshSelection",
+      "source": "web/src/app-v2.js#50:refreshSelection",
       "callee": "$",
-      "line": 49,
+      "line": 50,
       "expression": "$('#part-offset')"
     },
     {
       "path": "web/src/app-v2.js",
-      "source": "web/src/app-v2.js#49:refreshSelection",
+      "source": "web/src/app-v2.js#50:refreshSelection",
       "callee": "$",
-      "line": 49,
+      "line": 50,
       "expression": "$('#offset-value')"
     },
     {
       "path": "web/src/app-v2.js",
-      "source": "web/src/app-v2.js#49:refreshSelection",
+      "source": "web/src/app-v2.js#50:refreshSelection",
       "callee": "$",
-      "line": 49,
+      "line": 50,
       "expression": "$('#part-select')"
     },
     {
       "path": "web/src/app-v2.js",
-      "source": "web/src/app-v2.js#50:select",
+      "source": "web/src/app-v2.js#51:select",
       "callee": "closeEngine",
-      "line": 50,
+      "line": 51,
       "expression": "closeEngine()"
     },
     {
       "path": "web/src/app-v2.js",
-      "source": "web/src/app-v2.js#50:select",
+      "source": "web/src/app-v2.js#51:select",
       "callee": "Number",
-      "line": 50,
+      "line": 51,
       "expression": "Number(id)"
     },
     {
       "path": "web/src/app-v2.js",
-      "source": "web/src/app-v2.js#50:select",
+      "source": "web/src/app-v2.js#51:select",
       "callee": "refreshSelection",
-      "line": 50,
+      "line": 51,
       "expression": "refreshSelection()"
     },
     {
       "path": "web/src/app-v2.js",
-      "source": "web/src/app-v2.js#50:select",
+      "source": "web/src/app-v2.js#51:select",
       "callee": "$",
-      "line": 50,
+      "line": 51,
       "expression": "$('#free-move')"
     },
     {
       "path": "web/src/app-v2.js",
-      "source": "web/src/app-v2.js#51:focusPart",
+      "source": "web/src/app-v2.js#52:focusPart",
       "callee": "moveCamera",
-      "line": 51,
+      "line": 52,
       "expression": "moveCamera(target.clone().addScaledVector(camera.position.clone().sub(controls.target).normalize(),d),target)"
     },
     {
       "path": "web/src/app-v2.js",
-      "source": "web/src/app-v2.js#52:assemblyTo",
+      "source": "web/src/app-v2.js#53:assemblyTo",
       "callee": "closeEngine",
-      "line": 52,
+      "line": 53,
       "expression": "closeEngine()"
     },
     {
       "path": "web/src/app-v2.js",
-      "source": "web/src/app-v2.js#52:assemblyTo",
+      "source": "web/src/app-v2.js#53:assemblyTo",
       "callee": "$",
-      "line": 52,
+      "line": 53,
       "expression": "$('#assembly-value')"
     },
     {
       "path": "web/src/app-v2.js",
-      "source": "web/src/app-v2.js#52:assemblyTo",
+      "source": "web/src/app-v2.js#53:assemblyTo",
       "callee": "$",
-      "line": 52,
+      "line": 53,
       "expression": "$('#loop')"
     },
     {
       "path": "web/src/app-v2.js",
-      "source": "web/src/app-v2.js#52:assemblyTo",
+      "source": "web/src/app-v2.js#53:assemblyTo",
       "callee": "view",
-      "line": 52,
+      "line": 53,
       "expression": "view(currentView)"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "atob",
-      "line": 53,
+      "line": 54,
       "expression": "atob($('#model-data').textContent.trim())"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "$",
-      "line": 53,
+      "line": 54,
       "expression": "$('#model-data')"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "applyCarMaterials",
-      "line": 57,
+      "line": 58,
       "expression": "applyCarMaterials(THREE,model)"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "createMechanics",
-      "line": 57,
+      "line": 58,
       "expression": "createMechanics(model)"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "applyInteiaBranding",
-      "line": 57,
+      "line": 58,
       "expression": "applyInteiaBranding(model,mechanics)"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "createSurfaceLibrary",
-      "line": 58,
+      "line": 59,
       "expression": "createSurfaceLibrary(THREE,{renderer,mobile:innerWidth<700})"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "enhanceCar",
-      "line": 60,
+      "line": 61,
       "expression": "enhanceCar({model,mechanics,mobile:innerWidth<700})"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "createSennaDriver",
-      "line": 60,
+      "line": 61,
       "expression": "createSennaDriver(model,mechanics)"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "setupCustomization",
-      "line": 61,
+      "line": 62,
       "expression": "setupCustomization(materials,studio,renderer,scene)"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "$",
-      "line": 62,
+      "line": 63,
       "expression": "$('#color-'+id)"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "$",
-      "line": 62,
+      "line": 63,
       "expression": "$('#value-'+id)"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "createInCarEngine",
-      "line": 63,
+      "line": 64,
       "expression": "createInCarEngine({scene,renderer,camera,model,mechanics,target:()=>composer.readBuffer,mobile:innerWidth<700})"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "createGarage",
-      "line": 64,
+      "line": 65,
       "expression": "createGarage({scene,renderer,studio,camera,mechanics})"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "createWindTunnel",
-      "line": 64,
+      "line": 65,
       "expression": "createWindTunnel({scene,model,mechanics,reduced,studio,camera,onBeforeToggle:on=>{closeEngine();if(on){garageWasActive=garage.enabled;garage.setEnabled(false);}},onRegion:region=>{"
     },
     {
       "path": "web/src/app-v2.js",
-      "source": "web/src/app-v2.js#64:onBeforeToggle",
+      "source": "web/src/app-v2.js#65:onBeforeToggle",
       "callee": "closeEngine",
-      "line": 64,
+      "line": 65,
       "expression": "closeEngine()"
     },
     {
       "path": "web/src/app-v2.js",
-      "source": "web/src/app-v2.js#64:onRegion",
+      "source": "web/src/app-v2.js#65:onRegion",
       "callee": "setFlowXray",
-      "line": 64,
+      "line": 65,
       "expression": "setFlowXray(region==='floor')"
     },
     {
       "path": "web/src/app-v2.js",
-      "source": "web/src/app-v2.js#64:onRegion",
+      "source": "web/src/app-v2.js#65:onRegion",
       "callee": "$",
-      "line": 64,
+      "line": 65,
       "expression": "$('#wind-cinema')"
     },
     {
       "path": "web/src/app-v2.js",
-      "source": "web/src/app-v2.js#64:onRegion",
+      "source": "web/src/app-v2.js#65:onRegion",
       "callee": "$",
-      "line": 64,
+      "line": 65,
       "expression": "$('#orbit')"
     },
     {
       "path": "web/src/app-v2.js",
-      "source": "web/src/app-v2.js#64:onRegion",
+      "source": "web/src/app-v2.js#65:onRegion",
       "callee": "moveCamera",
-      "line": 64,
+      "line": 65,
       "expression": "moveCamera(target.clone().addScaledVector(direction.normalize(),distance*scale),target)"
     },
     {
       "path": "web/src/app-v2.js",
-      "source": "web/src/app-v2.js#64:onToggle",
+      "source": "web/src/app-v2.js#65:onToggle",
       "callee": "setFlowXray",
-      "line": 64,
+      "line": 65,
       "expression": "setFlowXray(on&&$('#flow-region').value==='floor'&&$('#flow-detail').getAttribute('aria-pressed')==='true')"
     },
     {
       "path": "web/src/app-v2.js",
-      "source": "web/src/app-v2.js#64:onToggle",
+      "source": "web/src/app-v2.js#65:onToggle",
       "callee": "$",
-      "line": 64,
+      "line": 65,
       "expression": "$('#flow-region')"
     },
     {
       "path": "web/src/app-v2.js",
-      "source": "web/src/app-v2.js#64:onToggle",
+      "source": "web/src/app-v2.js#65:onToggle",
       "callee": "$",
-      "line": 64,
+      "line": 65,
       "expression": "$('#flow-detail')"
     },
     {
       "path": "web/src/app-v2.js",
-      "source": "web/src/app-v2.js#64:onToggle",
+      "source": "web/src/app-v2.js#65:onToggle",
       "callee": "$",
-      "line": 64,
+      "line": 65,
       "expression": "$(\"#wind-cinema\")"
     },
     {
       "path": "web/src/app-v2.js",
-      "source": "web/src/app-v2.js#64:onToggle",
+      "source": "web/src/app-v2.js#65:onToggle",
       "callee": "$",
-      "line": 64,
+      "line": 65,
       "expression": "$(\"#orbit\")"
     },
     {
       "path": "web/src/app-v2.js",
-      "source": "web/src/app-v2.js#64:onToggle",
+      "source": "web/src/app-v2.js#65:onToggle",
       "callee": "moveCamera",
-      "line": 64,
+      "line": 65,
       "expression": "moveCamera(target.clone().addScaledVector(new THREE.Vector3(1,.28,1.4).normalize(),distance*(on?1.14:1)),target)"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
+      "callee": "createWorkbench",
+      "line": 66,
+      "expression": "createWorkbench({scene,model,driver,engine,garage,controls,camera,moveCamera,closeEngine,showCar:()=>view('hero')})"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "web/src/app-v2.js#66:showCar",
+      "callee": "view",
+      "line": 66,
+      "expression": "view('hero')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
       "callee": "$",
-      "line": 65,
+      "line": 67,
       "expression": "$('#part-select')"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "$",
-      "line": 66,
+      "line": 68,
       "expression": "$('#part-count')"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "resize",
-      "line": 66,
+      "line": 68,
       "expression": "resize()"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "$",
-      "line": 70,
+      "line": 72,
       "expression": "$('#wind-cinema')"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "$",
-      "line": 70,
+      "line": 72,
       "expression": "$('#orbit')"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "view",
-      "line": 70,
+      "line": 72,
       "expression": "view(b.dataset.view)"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "$",
-      "line": 71,
+      "line": 73,
       "expression": "$('#garage-toggle')"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "$",
-      "line": 71,
+      "line": 73,
       "expression": "$('#wind-toggle')"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "view",
-      "line": 71,
+      "line": 73,
       "expression": "view('hero')"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "$",
-      "line": 72,
+      "line": 74,
       "expression": "$('#garage-export')"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "$",
-      "line": 72,
+      "line": 74,
       "expression": "$('#garage-export')"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "setTimeout",
-      "line": 72,
+      "line": 74,
       "expression": "setTimeout(()=>URL.revokeObjectURL(url),10000)"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "$",
-      "line": 73,
+      "line": 75,
       "expression": "$('#garage-view')"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "moveCamera",
-      "line": 73,
+      "line": 75,
       "expression": "moveCamera(target.clone().addScaledVector(new THREE.Vector3(.65,.40,1).normalize(),distance*1.4),target)"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "$",
-      "line": 74,
+      "line": 76,
       "expression": "$('#orbit')"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "$",
-      "line": 74,
+      "line": 76,
       "expression": "$('#wind-cinema')"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "$",
-      "line": 74,
+      "line": 76,
       "expression": "$('#orbit')"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "String",
-      "line": 74,
+      "line": 76,
       "expression": "String(controls.autoRotate)"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "$",
-      "line": 75,
+      "line": 77,
       "expression": "$('#theme')"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "$",
-      "line": 75,
+      "line": 77,
       "expression": "$('#theme')"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "String",
-      "line": 75,
+      "line": 77,
       "expression": "String(dark)"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "$",
-      "line": 75,
+      "line": 77,
       "expression": "$('#theme')"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "$",
-      "line": 76,
+      "line": 78,
       "expression": "$('#quality')"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "$",
-      "line": 76,
+      "line": 78,
       "expression": "$('#quality')"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "String",
-      "line": 76,
+      "line": 78,
       "expression": "String(highQuality)"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "$",
-      "line": 76,
+      "line": 78,
       "expression": "$('#quality')"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "$",
-      "line": 77,
+      "line": 79,
       "expression": "$('#wire')"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "$",
-      "line": 77,
+      "line": 79,
       "expression": "$('#wire')"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "$",
-      "line": 77,
+      "line": 79,
       "expression": "$('#wire')"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "String",
-      "line": 77,
+      "line": 79,
       "expression": "String(enabled)"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "assemblyTo",
-      "line": 78,
+      "line": 80,
       "expression": "assemblyTo(Number(assembly.value)/100)"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "Number",
-      "line": 78,
+      "line": 80,
       "expression": "Number(assembly.value)"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "$",
-      "line": 79,
+      "line": 81,
       "expression": "$('#explode')"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "assemblyTo",
-      "line": 79,
+      "line": 81,
       "expression": "assemblyTo(1)"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "$",
-      "line": 79,
+      "line": 81,
       "expression": "$('#assemble')"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "assemblyTo",
-      "line": 79,
+      "line": 81,
       "expression": "assemblyTo(0)"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "refreshSelection",
-      "line": 79,
+      "line": 81,
       "expression": "refreshSelection()"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "$",
-      "line": 80,
+      "line": 82,
       "expression": "$('#loop')"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "closeEngine",
-      "line": 80,
+      "line": 82,
       "expression": "closeEngine()"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "$",
-      "line": 80,
+      "line": 82,
       "expression": "$('#loop')"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "String",
-      "line": 80,
+      "line": 82,
       "expression": "String(mechanics.playing)"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "$",
-      "line": 81,
+      "line": 83,
       "expression": "$('#part-select')"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "select",
-      "line": 81,
+      "line": 83,
       "expression": "select(e.target.value===''?null:e.target.value)"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "$",
-      "line": 82,
+      "line": 84,
       "expression": "$('#clear-selection')"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "select",
-      "line": 82,
+      "line": 84,
       "expression": "select(null)"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "$",
-      "line": 82,
+      "line": 84,
       "expression": "$('#focus-part')"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "$",
-      "line": 82,
+      "line": 84,
       "expression": "$('#isolate')"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "refreshSelection",
-      "line": 82,
+      "line": 84,
       "expression": "refreshSelection()"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "$",
-      "line": 83,
+      "line": 85,
       "expression": "$('#free-move')"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "$",
-      "line": 83,
+      "line": 85,
       "expression": "$('#free-move')"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "String",
-      "line": 83,
+      "line": 85,
       "expression": "String(freeMove)"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "$",
-      "line": 84,
+      "line": 86,
       "expression": "$('#part-offset')"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "Number",
-      "line": 84,
+      "line": 86,
       "expression": "Number(e.target.value)"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "$",
-      "line": 84,
+      "line": 86,
       "expression": "$('#offset-value')"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "$",
-      "line": 85,
+      "line": 87,
       "expression": "$('#spin')"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "$",
-      "line": 85,
+      "line": 87,
       "expression": "$('#spin')"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "$",
-      "line": 85,
+      "line": 87,
       "expression": "$('#spin')"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "String",
-      "line": 85,
+      "line": 87,
       "expression": "String(on)"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "$",
-      "line": 86,
+      "line": 88,
       "expression": "$('#steering')"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "Number",
-      "line": 86,
+      "line": 88,
       "expression": "Number(e.target.value)"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "$",
-      "line": 86,
+      "line": 88,
       "expression": "$('#steering-value')"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "$",
-      "line": 87,
+      "line": 89,
       "expression": "$('#drs')"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "Number",
-      "line": 87,
+      "line": 89,
       "expression": "Number(e.target.value)"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "$",
-      "line": 87,
+      "line": 89,
       "expression": "$('#drs-value')"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "$",
-      "line": 88,
+      "line": 90,
       "expression": "$('#reset')"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "closeEngine",
-      "line": 88,
+      "line": 90,
       "expression": "closeEngine()"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "$",
-      "line": 88,
+      "line": 90,
       "expression": "$('#free-move')"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "select",
-      "line": 88,
+      "line": 90,
       "expression": "select(null)"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "$",
-      "line": 88,
+      "line": 90,
       "expression": "$('#'+id)"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "$",
-      "line": 88,
+      "line": 90,
       "expression": "$('#'+id)"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "$",
-      "line": 88,
+      "line": 90,
       "expression": "$('#assembly-value')"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "$",
-      "line": 88,
+      "line": 90,
       "expression": "$('#steering-value')"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "$",
-      "line": 88,
+      "line": 90,
       "expression": "$('#drs-value')"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "view",
-      "line": 88,
+      "line": 90,
       "expression": "view('hero')"
-    },
-    {
-      "path": "web/src/app-v2.js",
-      "source": "module",
-      "callee": "$",
-      "line": 89,
-      "expression": "$('#zoom-in')"
-    },
-    {
-      "path": "web/src/app-v2.js",
-      "source": "module",
-      "callee": "$",
-      "line": 89,
-      "expression": "$('#zoom-out')"
-    },
-    {
-      "path": "web/src/app-v2.js",
-      "source": "module",
-      "callee": "$",
-      "line": 90,
-      "expression": "$('#photo')"
-    },
-    {
-      "path": "web/src/app-v2.js",
-      "source": "module",
-      "callee": "$",
-      "line": 90,
-      "expression": "$('#photo')"
-    },
-    {
-      "path": "web/src/app-v2.js",
-      "source": "module",
-      "callee": "String",
-      "line": 90,
-      "expression": "String(document.body.classList.contains('photo'))"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "$",
       "line": 91,
-      "expression": "$('#save-photo')"
-    },
-    {
-      "path": "web/src/app-v2.js",
-      "source": "module",
-      "callee": "select",
-      "line": 94,
-      "expression": "select(hits[0].object.userData.recordId)"
-    },
-    {
-      "path": "web/src/app-v2.js",
-      "source": "module",
-      "callee": "view",
-      "line": 95,
-      "expression": "view('hero')"
-    },
-    {
-      "path": "web/src/app-v2.js",
-      "source": "module",
-      "callee": "select",
-      "line": 95,
-      "expression": "select(null)"
-    },
-    {
-      "path": "web/src/app-v2.js",
-      "source": "module",
-      "callee": "$",
-      "line": 95,
       "expression": "$('#zoom-in')"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "$",
-      "line": 95,
+      "line": 91,
       "expression": "$('#zoom-out')"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "$",
+      "line": 92,
+      "expression": "$('#photo')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "$",
+      "line": 92,
+      "expression": "$('#photo')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "String",
+      "line": 92,
+      "expression": "String(document.body.classList.contains('photo'))"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "$",
+      "line": 93,
+      "expression": "$('#save-photo')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "select",
       "line": 96,
+      "expression": "select(hits[0].object.userData.recordId)"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "view",
+      "line": 97,
+      "expression": "view('hero')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "select",
+      "line": 97,
+      "expression": "select(null)"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "$",
+      "line": 97,
+      "expression": "$('#zoom-in')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "$",
+      "line": 97,
+      "expression": "$('#zoom-out')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "$",
+      "line": 98,
       "expression": "$('#engine-open')"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "closeEngine",
-      "line": 96,
+      "line": 98,
       "expression": "closeEngine()"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "view",
-      "line": 96,
+      "line": 98,
       "expression": "view('hero')"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "$",
-      "line": 96,
+      "line": 98,
       "expression": "$('#wind-toggle')"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "$",
-      "line": 96,
+      "line": 98,
       "expression": "$('#reset')"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "$",
-      "line": 96,
+      "line": 98,
       "expression": "$('#engine-open')"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "$",
-      "line": 96,
+      "line": 98,
       "expression": "$('#engine-open')"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "moveCamera",
-      "line": 96,
+      "line": 98,
       "expression": "moveCamera(new THREE.Vector3(1.8,1.65,-2.35),new THREE.Vector3(0,.52,-.75))"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "$",
-      "line": 97,
+      "line": 99,
       "expression": "$('#engine-pause')"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "$",
-      "line": 97,
+      "line": 99,
       "expression": "$('#engine-pause')"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "String",
-      "line": 97,
+      "line": 99,
       "expression": "String(enginePaused)"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "$",
-      "line": 97,
+      "line": 99,
       "expression": "$('#engine-pause')"
-    },
-    {
-      "path": "web/src/app-v2.js",
-      "source": "module",
-      "callee": "$",
-      "line": 98,
-      "expression": "$('#engine-cut')"
-    },
-    {
-      "path": "web/src/app-v2.js",
-      "source": "module",
-      "callee": "$",
-      "line": 98,
-      "expression": "$('#engine-cut-value')"
-    },
-    {
-      "path": "web/src/app-v2.js",
-      "source": "module",
-      "callee": "$",
-      "line": 98,
-      "expression": "$('#engine-cut')"
-    },
-    {
-      "path": "web/src/app-v2.js",
-      "source": "module",
-      "callee": "$",
-      "line": 99,
-      "expression": "$('#wind-cinema')"
-    },
-    {
-      "path": "web/src/app-v2.js",
-      "source": "module",
-      "callee": "$",
-      "line": 99,
-      "expression": "$('#wind-cinema')"
-    },
-    {
-      "path": "web/src/app-v2.js",
-      "source": "module",
-      "callee": "String",
-      "line": 99,
-      "expression": "String(cinematic)"
-    },
-    {
-      "path": "web/src/app-v2.js",
-      "source": "module",
-      "callee": "$",
-      "line": 99,
-      "expression": "$('#orbit')"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "$",
       "line": 100,
+      "expression": "$('#engine-cut')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "$",
+      "line": 100,
+      "expression": "$('#engine-cut-value')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "$",
+      "line": 100,
+      "expression": "$('#engine-cut')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "$",
+      "line": 101,
       "expression": "$('#wind-cinema')"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "$",
-      "line": 102,
-      "expression": "$('#assembly-value')"
-    },
-    {
-      "path": "web/src/app-v2.js",
-      "source": "module",
-      "callee": "view",
-      "line": 102,
-      "expression": "view(currentView)"
-    },
-    {
-      "path": "web/src/app-v2.js",
-      "source": "module",
-      "callee": "$",
-      "line": 102,
-      "expression": "$('#motion-note')"
-    },
-    {
-      "path": "web/src/app-v2.js",
-      "source": "module",
-      "callee": "$",
-      "line": 102,
-      "expression": "$('#'+id)"
-    },
-    {
-      "path": "web/src/app-v2.js",
-      "source": "module",
-      "callee": "$",
-      "line": 102,
-      "expression": "$('#assembly-state')"
-    },
-    {
-      "path": "web/src/app-v2.js",
-      "source": "module",
-      "callee": "Number",
-      "line": 102,
-      "expression": "Number($('#engine-cut').value)"
-    },
-    {
-      "path": "web/src/app-v2.js",
-      "source": "module",
-      "callee": "$",
-      "line": 102,
-      "expression": "$('#engine-cut')"
-    },
-    {
-      "path": "web/src/app-v2.js",
-      "source": "module",
-      "callee": "$",
-      "line": 102,
-      "expression": "$('#engine-status')"
-    },
-    {
-      "path": "web/src/app-v2.js",
-      "source": "module",
-      "callee": "$",
-      "line": 102,
-      "expression": "$('#engine-cut')"
-    },
-    {
-      "path": "web/src/app-v2.js",
-      "source": "module",
-      "callee": "$",
-      "line": 102,
-      "expression": "$('#engine-pause')"
+      "line": 101,
+      "expression": "$('#wind-cinema')"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "String",
-      "line": 103,
-      "expression": "String(Math.round(frameCount*1000/(now-frameStart)))"
+      "line": 101,
+      "expression": "String(cinematic)"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "$",
+      "line": 101,
+      "expression": "$('#orbit')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "$",
+      "line": 102,
+      "expression": "$('#wind-cinema')"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "$",
       "line": 104,
+      "expression": "$('#assembly-value')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "view",
+      "line": 104,
+      "expression": "view(currentView)"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "$",
+      "line": 104,
+      "expression": "$('#motion-note')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "$",
+      "line": 104,
+      "expression": "$('#'+id)"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "$",
+      "line": 104,
+      "expression": "$('#assembly-state')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "Number",
+      "line": 104,
+      "expression": "Number($('#engine-cut').value)"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "$",
+      "line": 104,
+      "expression": "$('#engine-cut')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "$",
+      "line": 104,
+      "expression": "$('#engine-status')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "$",
+      "line": 104,
+      "expression": "$('#engine-cut')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "$",
+      "line": 104,
+      "expression": "$('#engine-pause')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "String",
+      "line": 105,
+      "expression": "String(Math.round(frameCount*1000/(now-frameStart)))"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "$",
+      "line": 106,
       "expression": "$('#loading')"
     },
     {
@@ -4592,6 +4959,412 @@
       "expression": "fn()"
     },
     {
+      "path": "web/src/helmet-1991.js",
+      "source": "web/src/helmet-1991.js#5:createHelmet1991",
+      "callee": "material",
+      "line": 8,
+      "expression": "material({color:'#ffc900',roughness:.25,metalness:0,clearcoat:1,clearcoatRoughness:.16})"
+    },
+    {
+      "path": "web/src/helmet-1991.js",
+      "source": "web/src/helmet-1991.js#5:createHelmet1991",
+      "callee": "material",
+      "line": 9,
+      "expression": "material({color:'#111419',roughness:.7})"
+    },
+    {
+      "path": "web/src/helmet-1991.js",
+      "source": "web/src/helmet-1991.js#5:createHelmet1991",
+      "callee": "material",
+      "line": 10,
+      "expression": "material({color:'#202326',roughness:.38})"
+    },
+    {
+      "path": "web/src/helmet-1991.js",
+      "source": "web/src/helmet-1991.js#5:createHelmet1991",
+      "callee": "material",
+      "line": 11,
+      "expression": "material({color:'#25262b',roughness:1,side:THREE.BackSide})"
+    },
+    {
+      "path": "web/src/helmet-1991.js",
+      "source": "web/src/helmet-1991.js#5:createHelmet1991",
+      "callee": "material",
+      "line": 12,
+      "expression": "material({color:'#b8c0c3',metalness:1,roughness:.25})"
+    },
+    {
+      "path": "web/src/helmet-1991.js",
+      "source": "web/src/helmet-1991.js#5:createHelmet1991",
+      "callee": "material",
+      "line": 13,
+      "expression": "material({color:'#167747',roughness:.25,clearcoat:1})"
+    },
+    {
+      "path": "web/src/helmet-1991.js",
+      "source": "web/src/helmet-1991.js#5:createHelmet1991",
+      "callee": "material",
+      "line": 14,
+      "expression": "material({color:'#041f51',roughness:.23,clearcoat:1})"
+    },
+    {
+      "path": "web/src/helmet-1991.js",
+      "source": "web/src/helmet-1991.js#5:createHelmet1991",
+      "callee": "material",
+      "line": 15,
+      "expression": "material({color:'#eee9d7',roughness:.32,clearcoat:.8})"
+    },
+    {
+      "path": "web/src/helmet-1991.js",
+      "source": "web/src/helmet-1991.js#5:createHelmet1991",
+      "callee": "material",
+      "line": 16,
+      "expression": "material({color:'#071d21',roughness:.12,metalness:.28,clearcoat:1,clearcoatRoughness:.08,side:THREE.DoubleSide})"
+    },
+    {
+      "path": "web/src/helmet-1991.js",
+      "source": "web/src/helmet-1991.js#23:point",
+      "callee": "radius",
+      "line": 24,
+      "expression": "radius(y)"
+    },
+    {
+      "path": "web/src/helmet-1991.js",
+      "source": "web/src/helmet-1991.js#33:patch",
+      "callee": "point",
+      "line": 33,
+      "expression": "point(y,a,lift)"
+    },
+    {
+      "path": "web/src/helmet-1991.js",
+      "source": "web/src/helmet-1991.js#33:patch",
+      "callee": "add",
+      "line": 33,
+      "expression": "add(g,m,parent)"
+    },
+    {
+      "path": "web/src/helmet-1991.js",
+      "source": "web/src/helmet-1991.js#5:createHelmet1991",
+      "callee": "patch",
+      "line": 35,
+      "expression": "patch(.065,.168,-Math.PI,Math.PI,yellow,0,64)"
+    },
+    {
+      "path": "web/src/helmet-1991.js",
+      "source": "web/src/helmet-1991.js#5:createHelmet1991",
+      "callee": "patch",
+      "line": 36,
+      "expression": "patch(-.14,-.035,-Math.PI,Math.PI,yellow)"
+    },
+    {
+      "path": "web/src/helmet-1991.js",
+      "source": "web/src/helmet-1991.js#5:createHelmet1991",
+      "callee": "patch",
+      "line": 37,
+      "expression": "patch(-.035,.065,1.24,Math.PI*2-1.24,yellow)"
+    },
+    {
+      "path": "web/src/helmet-1991.js",
+      "source": "web/src/helmet-1991.js#5:createHelmet1991",
+      "callee": "patch",
+      "line": 38,
+      "expression": "patch(-.14,.155,-Math.PI,Math.PI,lining,-.009,60)"
+    },
+    {
+      "path": "web/src/helmet-1991.js",
+      "source": "web/src/helmet-1991.js#5:createHelmet1991",
+      "callee": "patch",
+      "line": 42,
+      "expression": "patch(lo,hi,start,end,m,.00045,10)"
+    },
+    {
+      "path": "web/src/helmet-1991.js",
+      "source": "web/src/helmet-1991.js#5:createHelmet1991",
+      "callee": "patch",
+      "line": 43,
+      "expression": "patch(y,y+.0014,start,end,white,.0007,2)"
+    },
+    {
+      "path": "web/src/helmet-1991.js",
+      "source": "web/src/helmet-1991.js#5:createHelmet1991",
+      "callee": "patch",
+      "line": 43,
+      "expression": "patch(y+.0016,y+.0022,start,end,lo>0?blue:green,.0007,2)"
+    },
+    {
+      "path": "web/src/helmet-1991.js",
+      "source": "web/src/helmet-1991.js#5:createHelmet1991",
+      "callee": "patch",
+      "line": 45,
+      "expression": "patch(.069,.087,-1.24,1.24,green,.0005,8)"
+    },
+    {
+      "path": "web/src/helmet-1991.js",
+      "source": "web/src/helmet-1991.js#5:createHelmet1991",
+      "callee": "patch",
+      "line": 45,
+      "expression": "patch(.088,.0895,-1.24,1.24,white,.0007,2)"
+    },
+    {
+      "path": "web/src/helmet-1991.js",
+      "source": "web/src/helmet-1991.js#5:createHelmet1991",
+      "callee": "patch",
+      "line": 46,
+      "expression": "patch(-.14,-.132,-Math.PI,Math.PI,trim,.001,4)"
+    },
+    {
+      "path": "web/src/helmet-1991.js",
+      "source": "web/src/helmet-1991.js#48:tube",
+      "callee": "add",
+      "line": 48,
+      "expression": "add(new THREE.TubeGeometry(new THREE.CatmullRomCurve3(points),points.length*3,r,8,false),m,parent)"
+    },
+    {
+      "path": "web/src/helmet-1991.js",
+      "source": "web/src/helmet-1991.js#5:createHelmet1991",
+      "callee": "point",
+      "line": 49,
+      "expression": "point(.065,-1.24+2.48*i/60,.001)"
+    },
+    {
+      "path": "web/src/helmet-1991.js",
+      "source": "web/src/helmet-1991.js#5:createHelmet1991",
+      "callee": "point",
+      "line": 49,
+      "expression": "point(.065-.1*i/20,1.24,.001)"
+    },
+    {
+      "path": "web/src/helmet-1991.js",
+      "source": "web/src/helmet-1991.js#5:createHelmet1991",
+      "callee": "point",
+      "line": 49,
+      "expression": "point(-.035,1.24-2.48*i/60,.001)"
+    },
+    {
+      "path": "web/src/helmet-1991.js",
+      "source": "web/src/helmet-1991.js#5:createHelmet1991",
+      "callee": "point",
+      "line": 49,
+      "expression": "point(-.035+.1*i/20,-1.24,.001)"
+    },
+    {
+      "path": "web/src/helmet-1991.js",
+      "source": "web/src/helmet-1991.js#5:createHelmet1991",
+      "callee": "tube",
+      "line": 49,
+      "expression": "tube(perimeter,.0018,black)"
+    },
+    {
+      "path": "web/src/helmet-1991.js",
+      "source": "web/src/helmet-1991.js#5:createHelmet1991",
+      "callee": "patch",
+      "line": 51,
+      "expression": "patch(-.033,.062,-1.27,1.27,visorMat,.003,28,detail,shield)"
+    },
+    {
+      "path": "web/src/helmet-1991.js",
+      "source": "web/src/helmet-1991.js#5:createHelmet1991",
+      "callee": "patch",
+      "line": 52,
+      "expression": "patch(.041,.064,-1.26,1.26,blue,.004,8,detail,shield)"
+    },
+    {
+      "path": "web/src/helmet-1991.js",
+      "source": "web/src/helmet-1991.js#54:label",
+      "callee": "draw",
+      "line": 54,
+      "expression": "draw(x,1024,256)"
+    },
+    {
+      "path": "web/src/helmet-1991.js",
+      "source": "web/src/helmet-1991.js#54:label",
+      "callee": "material",
+      "line": 54,
+      "expression": "material({map:t,transparent:true,depthWrite:false,roughness:.3,clearcoat:.8,polygonOffset:true,polygonOffsetFactor:-2})"
+    },
+    {
+      "path": "web/src/helmet-1991.js",
+      "source": "web/src/helmet-1991.js#54:label",
+      "callee": "patch",
+      "line": 54,
+      "expression": "patch(y0,y1,a0,a1,m,parent===shield?.0048:.001,12,64,parent)"
+    },
+    {
+      "path": "web/src/helmet-1991.js",
+      "source": "web/src/helmet-1991.js#57:national",
+      "callee": "text",
+      "line": 57,
+      "expression": "text(x,'NACIONAL','bold 170px Arial')"
+    },
+    {
+      "path": "web/src/helmet-1991.js",
+      "source": "web/src/helmet-1991.js#5:createHelmet1991",
+      "callee": "label",
+      "line": 58,
+      "expression": "label(-.124,-.085,-.48,.64,national)"
+    },
+    {
+      "path": "web/src/helmet-1991.js",
+      "source": "web/src/helmet-1991.js#5:createHelmet1991",
+      "callee": "label",
+      "line": 58,
+      "expression": "label(-.122,-.083,-.82,-.51,emblem)"
+    },
+    {
+      "path": "web/src/helmet-1991.js",
+      "source": "web/src/helmet-1991.js#5:createHelmet1991",
+      "callee": "label",
+      "line": 60,
+      "expression": "label(.096,.124,angle-.54,angle+.54,national)"
+    },
+    {
+      "path": "web/src/helmet-1991.js",
+      "source": "web/src/helmet-1991.js#5:createHelmet1991",
+      "callee": "label",
+      "line": 60,
+      "expression": "label(.129,.151,angle-.18,angle+.18,emblem)"
+    },
+    {
+      "path": "web/src/helmet-1991.js",
+      "source": "web/src/helmet-1991.js#5:createHelmet1991",
+      "callee": "label",
+      "line": 61,
+      "expression": "label(-.112,-.075,side*.95-.28,side*.95+.28,x=>{x.fillStyle='#eee9de';x.fillRect(0,0,1024,256);x.fillStyle='#16181b';x.strokeRect(4,4,1016,248);x.textAlign='center';x.font='bold 16"
+    },
+    {
+      "path": "web/src/helmet-1991.js",
+      "source": "web/src/helmet-1991.js#5:createHelmet1991",
+      "callee": "label",
+      "line": 62,
+      "expression": "label(-.105,-.08,side*1.62-.26,side*1.62+.26,x=>{x.fillStyle='#101317';x.fillRect(0,0,1024,256);text(x,'RHEOS','italic bold 165px Arial');x.font='35px Arial';x.fillText('H E L M E "
+    },
+    {
+      "path": "web/src/helmet-1991.js",
+      "source": "web/src/helmet-1991.js#5:createHelmet1991",
+      "callee": "text",
+      "line": 62,
+      "expression": "text(x,'RHEOS','italic bold 165px Arial')"
+    },
+    {
+      "path": "web/src/helmet-1991.js",
+      "source": "web/src/helmet-1991.js#5:createHelmet1991",
+      "callee": "label",
+      "line": 64,
+      "expression": "label(.119,.158,-.6,.6,x=>{x.fillStyle='#f4f0e5';x.fillRect(0,0,1024,256);x.fillStyle='#e23217';x.beginPath();x.moveTo(10,8);x.lineTo(1014,8);x.lineTo(1014,109);x.lineTo(512,52);x."
+    },
+    {
+      "path": "web/src/helmet-1991.js",
+      "source": "web/src/helmet-1991.js#5:createHelmet1991",
+      "callee": "label",
+      "line": 65,
+      "expression": "label(.041,.063,-.89,.89,x=>text(x,'HONDA','bold 180px Georgia'),shield)"
+    },
+    {
+      "path": "web/src/helmet-1991.js",
+      "source": "web/src/helmet-1991.js#5:createHelmet1991",
+      "callee": "text",
+      "line": 65,
+      "expression": "text(x,'HONDA','bold 180px Georgia')"
+    },
+    {
+      "path": "web/src/helmet-1991.js",
+      "source": "web/src/helmet-1991.js#5:createHelmet1991",
+      "callee": "label",
+      "line": 66,
+      "expression": "label(.041,.063,side*1.04-.1,side*1.04+.1,x=>{x.strokeStyle='#f0eee4';x.lineWidth=14;x.strokeRect(90,12,844,232);text(x,'H','bold 225px Arial');},shield)"
+    },
+    {
+      "path": "web/src/helmet-1991.js",
+      "source": "web/src/helmet-1991.js#5:createHelmet1991",
+      "callee": "text",
+      "line": 66,
+      "expression": "text(x,'H','bold 225px Arial')"
+    },
+    {
+      "path": "web/src/helmet-1991.js",
+      "source": "web/src/helmet-1991.js#68:screw",
+      "callee": "point",
+      "line": 68,
+      "expression": "point(y,a,.005)"
+    },
+    {
+      "path": "web/src/helmet-1991.js",
+      "source": "web/src/helmet-1991.js#68:screw",
+      "callee": "add",
+      "line": 68,
+      "expression": "add(new THREE.CylinderGeometry(r,r,.005,32),silver)"
+    },
+    {
+      "path": "web/src/helmet-1991.js",
+      "source": "web/src/helmet-1991.js#68:screw",
+      "callee": "add",
+      "line": 68,
+      "expression": "add(new THREE.BoxGeometry(r*1.45,.001,r*.18),trim,o)"
+    },
+    {
+      "path": "web/src/helmet-1991.js",
+      "source": "web/src/helmet-1991.js#5:createHelmet1991",
+      "callee": "screw",
+      "line": 69,
+      "expression": "screw(side*1.27,.036,.012)"
+    },
+    {
+      "path": "web/src/helmet-1991.js",
+      "source": "web/src/helmet-1991.js#5:createHelmet1991",
+      "callee": "screw",
+      "line": 69,
+      "expression": "screw(side*1.06,.038,.0065)"
+    },
+    {
+      "path": "web/src/helmet-1991.js",
+      "source": "web/src/helmet-1991.js#5:createHelmet1991",
+      "callee": "screw",
+      "line": 69,
+      "expression": "screw(side*.96,-.025,.003)"
+    },
+    {
+      "path": "web/src/helmet-1991.js",
+      "source": "web/src/helmet-1991.js#5:createHelmet1991",
+      "callee": "patch",
+      "line": 71,
+      "expression": "patch(-.067,-.044,-.48,.48,yellow,.002,10)"
+    },
+    {
+      "path": "web/src/helmet-1991.js",
+      "source": "web/src/helmet-1991.js#5:createHelmet1991",
+      "callee": "point",
+      "line": 72,
+      "expression": "point(-.053,side*.25-.15+.3*i/15,.003)"
+    },
+    {
+      "path": "web/src/helmet-1991.js",
+      "source": "web/src/helmet-1991.js#5:createHelmet1991",
+      "callee": "tube",
+      "line": 72,
+      "expression": "tube(pts,.0011,trim)"
+    },
+    {
+      "path": "web/src/helmet-1991.js",
+      "source": "web/src/helmet-1991.js#5:createHelmet1991",
+      "callee": "tube",
+      "line": 75,
+      "expression": "tube(ring,.012,black,interior)"
+    },
+    {
+      "path": "web/src/helmet-1991.js",
+      "source": "web/src/helmet-1991.js#5:createHelmet1991",
+      "callee": "add",
+      "line": 76,
+      "expression": "add(new THREE.BoxGeometry(.019,.11,.003),black,interior)"
+    },
+    {
+      "path": "web/src/helmet-1991.js",
+      "source": "web/src/helmet-1991.js#5:createHelmet1991",
+      "callee": "add",
+      "line": 77,
+      "expression": "add(new THREE.TorusGeometry(.014,.0025,8,32),silver,interior)"
+    },
+    {
       "path": "web/src/mechanics.js",
       "source": "web/src/mechanics.js#3:createMechanics",
       "callee": "categoryFor",
@@ -4649,227 +5422,514 @@
     },
     {
       "path": "web/src/senna-driver.js",
-      "source": "web/src/senna-driver.js#4:createSennaDriver",
+      "source": "web/src/senna-driver.js#6:createSennaDriver",
       "callee": "mat",
-      "line": 8,
-      "expression": "mat({color:'#ffd51b',roughness:.23,metalness:.02,clearcoat:1,clearcoatRoughness:.12})"
+      "line": 14,
+      "expression": "mat('Tecido do macacão',{color:'#8f1325',roughness:.93,bumpMap:weave,bumpScale:.00032})"
     },
     {
       "path": "web/src/senna-driver.js",
-      "source": "web/src/senna-driver.js#4:createSennaDriver",
+      "source": "web/src/senna-driver.js#6:createSennaDriver",
       "callee": "mat",
-      "line": 9,
-      "expression": "mat({color:'#101217',roughness:.72})"
+      "line": 15,
+      "expression": "mat('Painéis elásticos',{color:'#600f1a',roughness:1,bumpMap:weave,bumpScale:.0002})"
     },
     {
       "path": "web/src/senna-driver.js",
-      "source": "web/src/senna-driver.js#4:createSennaDriver",
-      "callee": "mat",
-      "line": 10,
-      "expression": "mat({color:'#142229',metalness:.65,roughness:.13,clearcoat:1,clearcoatRoughness:.05})"
-    },
-    {
-      "path": "web/src/senna-driver.js",
-      "source": "web/src/senna-driver.js#4:createSennaDriver",
-      "callee": "mat",
-      "line": 11,
-      "expression": "mat({color:'#adb5b8',metalness:.85,roughness:.3})"
-    },
-    {
-      "path": "web/src/senna-driver.js",
-      "source": "web/src/senna-driver.js#4:createSennaDriver",
+      "source": "web/src/senna-driver.js#6:createSennaDriver",
       "callee": "mat",
       "line": 16,
-      "expression": "mat({color:'#b51c22',roughness:.88,bumpMap:weave,bumpScale:.0007})"
+      "expression": "mat('Costuras',{color:'#b4484f',roughness:.9})"
     },
     {
       "path": "web/src/senna-driver.js",
-      "source": "web/src/senna-driver.js#4:createSennaDriver",
+      "source": "web/src/senna-driver.js#6:createSennaDriver",
       "callee": "mat",
       "line": 17,
-      "expression": "mat({color:'#eee9df',roughness:.8,bumpMap:weave,bumpScale:.0004})"
+      "expression": "mat('Luvas de competição',{color:'#ddd7c8',roughness:.9,bumpMap:weave,bumpScale:.00018})"
     },
     {
       "path": "web/src/senna-driver.js",
-      "source": "web/src/senna-driver.js#4:createSennaDriver",
+      "source": "web/src/senna-driver.js#6:createSennaDriver",
       "callee": "mat",
       "line": 18,
-      "expression": "mat({color:'#20242b',roughness:.92})"
+      "expression": "mat('Cintos e sola',{color:'#131619',roughness:.84})"
     },
     {
       "path": "web/src/senna-driver.js",
-      "source": "web/src/senna-driver.js#20:ellipsoid",
+      "source": "web/src/senna-driver.js#6:createSennaDriver",
+      "callee": "mat",
+      "line": 19,
+      "expression": "mat('Fecho do cinto',{color:'#929b9c',metalness:.85,roughness:.31})"
+    },
+    {
+      "path": "web/src/senna-driver.js",
+      "source": "web/src/senna-driver.js#23:loft",
       "callee": "mesh",
-      "line": 20,
-      "expression": "mesh(new THREE.SphereGeometry(1,40,28),material,parent)"
+      "line": 32,
+      "expression": "mesh(name,g,material)"
     },
     {
       "path": "web/src/senna-driver.js",
-      "source": "web/src/senna-driver.js#21:limb",
+      "source": "web/src/senna-driver.js#34:piping",
       "callee": "mesh",
-      "line": 21,
-      "expression": "mesh(new THREE.CylinderGeometry(r2,r1,d.length(),24,6),material)"
+      "line": 34,
+      "expression": "mesh(name,new THREE.TubeGeometry(new THREE.CatmullRomCurve3(points.map(V)),48,r,6,false),material)"
     },
     {
       "path": "web/src/senna-driver.js",
-      "source": "web/src/senna-driver.js#4:createSennaDriver",
-      "callee": "ellipsoid",
-      "line": 23,
-      "expression": "ellipsoid([0,.48,.16],[.117,.18,.13],suit)"
-    },
-    {
-      "path": "web/src/senna-driver.js",
-      "source": "web/src/senna-driver.js#4:createSennaDriver",
-      "callee": "ellipsoid",
-      "line": 25,
-      "expression": "ellipsoid([side*.105,.59,.13],[.045,.06,.064],suit)"
-    },
-    {
-      "path": "web/src/senna-driver.js",
-      "source": "web/src/senna-driver.js#4:createSennaDriver",
-      "callee": "limb",
-      "line": 26,
-      "expression": "limb([side*.11,.58,.14],[side*.125,.45,.34],.043,.034,suit)"
-    },
-    {
-      "path": "web/src/senna-driver.js",
-      "source": "web/src/senna-driver.js#4:createSennaDriver",
-      "callee": "ellipsoid",
-      "line": 27,
-      "expression": "ellipsoid([side*.125,.45,.34],[.035,.036,.04],suit)"
-    },
-    {
-      "path": "web/src/senna-driver.js",
-      "source": "web/src/senna-driver.js#4:createSennaDriver",
-      "callee": "limb",
-      "line": 28,
-      "expression": "limb([side*.125,.45,.34],[side*.088,.586,.493],.033,.025,suit)"
-    },
-    {
-      "path": "web/src/senna-driver.js",
-      "source": "web/src/senna-driver.js#4:createSennaDriver",
-      "callee": "ellipsoid",
-      "line": 29,
-      "expression": "ellipsoid([side*.088,.591,.509],[.028,.044,.025],glove)"
-    },
-    {
-      "path": "web/src/senna-driver.js",
-      "source": "web/src/senna-driver.js#4:createSennaDriver",
-      "callee": "ellipsoid",
-      "line": 30,
-      "expression": "ellipsoid([side*.065,.584,.518],[.012,.022,.017],glove)"
-    },
-    {
-      "path": "web/src/senna-driver.js",
-      "source": "web/src/senna-driver.js#4:createSennaDriver",
-      "callee": "limb",
-      "line": 31,
-      "expression": "limb([side*.062,.61,.195],[side*.046,.40,.28],.016,.016,belt)"
-    },
-    {
-      "path": "web/src/senna-driver.js",
-      "source": "web/src/senna-driver.js#4:createSennaDriver",
-      "callee": "ellipsoid",
-      "line": 33,
-      "expression": "ellipsoid([0,.64,.065],[.057,.052,.058],rubber)"
-    },
-    {
-      "path": "web/src/senna-driver.js",
-      "source": "web/src/senna-driver.js#37:surface",
-      "callee": "radius",
-      "line": 38,
-      "expression": "radius(y)"
-    },
-    {
-      "path": "web/src/senna-driver.js",
-      "source": "web/src/senna-driver.js#37:surface",
+      "source": "web/src/senna-driver.js#35:rounded",
       "callee": "mesh",
+      "line": 35,
+      "expression": "mesh(name,new RoundedBoxGeometry(...dimensions,4,Math.min(...dimensions)*.22),material)"
+    },
+    {
+      "path": "web/src/senna-driver.js",
+      "source": "web/src/senna-driver.js#6:createSennaDriver",
+      "callee": "loft",
+      "line": 36,
+      "expression": "loft('Tronco reclinado',[[0,.355,.48],[0,.398,.39],[0,.481,.25],[0,.558,.135],[0,.595,.115]],[.083,.101,.113,.131,.077],[.064,.072,.085,.074,.048],suit,.0015)"
+    },
+    {
+      "path": "web/src/senna-driver.js",
+      "source": "web/src/senna-driver.js#6:createSennaDriver",
+      "callee": "loft",
+      "line": 37,
+      "expression": "loft('Gola',[[0,.577,.108],[0,.616,.084],[0,.644,.082]],[.070,.064,.056],[.045,.043,.04],stretch,.0003)"
+    },
+    {
+      "path": "web/src/senna-driver.js",
+      "source": "web/src/senna-driver.js#6:createSennaDriver",
+      "callee": "piping",
       "line": 40,
-      "expression": "mesh(g,material,helmet)"
+      "expression": "piping('Zíper',Array.from({length:20},(_,i)=>chest(.08+.86*i/19,0)),.0012,silver)"
     },
     {
       "path": "web/src/senna-driver.js",
-      "source": "web/src/senna-driver.js#4:createSennaDriver",
-      "callee": "surface",
-      "line": 42,
-      "expression": "surface(-.132,.153,-Math.PI,Math.PI,paint)"
+      "source": "web/src/senna-driver.js#6:createSennaDriver",
+      "callee": "chest",
+      "line": 40,
+      "expression": "chest(.08+.86*i/19,0)"
     },
     {
       "path": "web/src/senna-driver.js",
-      "source": "web/src/senna-driver.js#4:createSennaDriver",
-      "callee": "mat",
+      "source": "web/src/senna-driver.js#6:createSennaDriver",
+      "callee": "loft",
       "line": 43,
-      "expression": "mat({color:'#005b36',roughness:.27,clearcoat:1})"
+      "expression": "loft('Manga '+side,[p([.113,.555,.145]),p([.132,.526,.216]),p([.131,.466,.318]),p([.111,.516,.411]),p([.087,.565,.494])],[.052,.048,.041,.037,.027],[.052,.048,.035,.032,.024],suit,"
     },
     {
       "path": "web/src/senna-driver.js",
-      "source": "web/src/senna-driver.js#4:createSennaDriver",
-      "callee": "mat",
+      "source": "web/src/senna-driver.js#6:createSennaDriver",
+      "callee": "p",
       "line": 43,
-      "expression": "mat({color:'#052456',roughness:.27,clearcoat:1})"
+      "expression": "p([.113,.555,.145])"
     },
     {
       "path": "web/src/senna-driver.js",
-      "source": "web/src/senna-driver.js#4:createSennaDriver",
-      "callee": "surface",
+      "source": "web/src/senna-driver.js#6:createSennaDriver",
+      "callee": "p",
+      "line": 43,
+      "expression": "p([.132,.526,.216])"
+    },
+    {
+      "path": "web/src/senna-driver.js",
+      "source": "web/src/senna-driver.js#6:createSennaDriver",
+      "callee": "p",
+      "line": 43,
+      "expression": "p([.131,.466,.318])"
+    },
+    {
+      "path": "web/src/senna-driver.js",
+      "source": "web/src/senna-driver.js#6:createSennaDriver",
+      "callee": "p",
+      "line": 43,
+      "expression": "p([.111,.516,.411])"
+    },
+    {
+      "path": "web/src/senna-driver.js",
+      "source": "web/src/senna-driver.js#6:createSennaDriver",
+      "callee": "p",
+      "line": 43,
+      "expression": "p([.087,.565,.494])"
+    },
+    {
+      "path": "web/src/senna-driver.js",
+      "source": "web/src/senna-driver.js#6:createSennaDriver",
+      "callee": "piping",
       "line": 44,
-      "expression": "surface(.055,.083,-Math.PI,Math.PI,green,.0008,4)"
+      "expression": "piping('Costura da manga '+side,[p([.146,.57,.15]),p([.17,.511,.234]),p([.159,.464,.326]),p([.136,.52,.419]),p([.109,.561,.493])],.0008)"
     },
     {
       "path": "web/src/senna-driver.js",
-      "source": "web/src/senna-driver.js#4:createSennaDriver",
-      "callee": "surface",
+      "source": "web/src/senna-driver.js#6:createSennaDriver",
+      "callee": "p",
+      "line": 44,
+      "expression": "p([.146,.57,.15])"
+    },
+    {
+      "path": "web/src/senna-driver.js",
+      "source": "web/src/senna-driver.js#6:createSennaDriver",
+      "callee": "p",
+      "line": 44,
+      "expression": "p([.17,.511,.234])"
+    },
+    {
+      "path": "web/src/senna-driver.js",
+      "source": "web/src/senna-driver.js#6:createSennaDriver",
+      "callee": "p",
+      "line": 44,
+      "expression": "p([.159,.464,.326])"
+    },
+    {
+      "path": "web/src/senna-driver.js",
+      "source": "web/src/senna-driver.js#6:createSennaDriver",
+      "callee": "p",
+      "line": 44,
+      "expression": "p([.136,.52,.419])"
+    },
+    {
+      "path": "web/src/senna-driver.js",
+      "source": "web/src/senna-driver.js#6:createSennaDriver",
+      "callee": "p",
+      "line": 44,
+      "expression": "p([.109,.561,.493])"
+    },
+    {
+      "path": "web/src/senna-driver.js",
+      "source": "web/src/senna-driver.js#6:createSennaDriver",
+      "callee": "loft",
       "line": 45,
-      "expression": "surface(-.054,-.026,-Math.PI,Math.PI,blue,.0008,4)"
+      "expression": "loft('Perna '+side,[p([.066,.356,.465]),p([.066,.389,.659]),p([.073,.475,.87]),p([.07,.459,1.05]),p([.064,.403,1.28])],[.062,.059,.045,.036,.029],[.061,.062,.048,.04,.032],suit,.00"
     },
     {
       "path": "web/src/senna-driver.js",
-      "source": "web/src/senna-driver.js#4:createSennaDriver",
-      "callee": "surface",
+      "source": "web/src/senna-driver.js#6:createSennaDriver",
+      "callee": "p",
+      "line": 45,
+      "expression": "p([.066,.356,.465])"
+    },
+    {
+      "path": "web/src/senna-driver.js",
+      "source": "web/src/senna-driver.js#6:createSennaDriver",
+      "callee": "p",
+      "line": 45,
+      "expression": "p([.066,.389,.659])"
+    },
+    {
+      "path": "web/src/senna-driver.js",
+      "source": "web/src/senna-driver.js#6:createSennaDriver",
+      "callee": "p",
+      "line": 45,
+      "expression": "p([.073,.475,.87])"
+    },
+    {
+      "path": "web/src/senna-driver.js",
+      "source": "web/src/senna-driver.js#6:createSennaDriver",
+      "callee": "p",
+      "line": 45,
+      "expression": "p([.07,.459,1.05])"
+    },
+    {
+      "path": "web/src/senna-driver.js",
+      "source": "web/src/senna-driver.js#6:createSennaDriver",
+      "callee": "p",
+      "line": 45,
+      "expression": "p([.064,.403,1.28])"
+    },
+    {
+      "path": "web/src/senna-driver.js",
+      "source": "web/src/senna-driver.js#6:createSennaDriver",
+      "callee": "piping",
       "line": 46,
-      "expression": "surface(-.131,-.123,-Math.PI,Math.PI,rubber,.001,2)"
+      "expression": "piping('Costura da perna '+side,[p([.109,.354,.49]),p([.123,.40,.675]),p([.115,.476,.87]),p([.101,.454,1.10]),p([.092,.405,1.28])],.0009)"
     },
     {
       "path": "web/src/senna-driver.js",
-      "source": "web/src/senna-driver.js#4:createSennaDriver",
-      "callee": "surface",
+      "source": "web/src/senna-driver.js#6:createSennaDriver",
+      "callee": "p",
+      "line": 46,
+      "expression": "p([.109,.354,.49])"
+    },
+    {
+      "path": "web/src/senna-driver.js",
+      "source": "web/src/senna-driver.js#6:createSennaDriver",
+      "callee": "p",
+      "line": 46,
+      "expression": "p([.123,.40,.675])"
+    },
+    {
+      "path": "web/src/senna-driver.js",
+      "source": "web/src/senna-driver.js#6:createSennaDriver",
+      "callee": "p",
+      "line": 46,
+      "expression": "p([.115,.476,.87])"
+    },
+    {
+      "path": "web/src/senna-driver.js",
+      "source": "web/src/senna-driver.js#6:createSennaDriver",
+      "callee": "p",
+      "line": 46,
+      "expression": "p([.101,.454,1.10])"
+    },
+    {
+      "path": "web/src/senna-driver.js",
+      "source": "web/src/senna-driver.js#6:createSennaDriver",
+      "callee": "p",
+      "line": 46,
+      "expression": "p([.092,.405,1.28])"
+    },
+    {
+      "path": "web/src/senna-driver.js",
+      "source": "web/src/senna-driver.js#6:createSennaDriver",
+      "callee": "loft",
+      "line": 47,
+      "expression": "loft('Bota '+side,[p([.064,.403,1.25]),p([.063,.435,1.30]),p([.062,.463,1.355]),p([.062,.466,1.422])],[.028,.036,.036,.025],[.032,.039,.032,.018],stretch,.0003)"
+    },
+    {
+      "path": "web/src/senna-driver.js",
+      "source": "web/src/senna-driver.js#6:createSennaDriver",
+      "callee": "p",
+      "line": 47,
+      "expression": "p([.064,.403,1.25])"
+    },
+    {
+      "path": "web/src/senna-driver.js",
+      "source": "web/src/senna-driver.js#6:createSennaDriver",
+      "callee": "p",
+      "line": 47,
+      "expression": "p([.063,.435,1.30])"
+    },
+    {
+      "path": "web/src/senna-driver.js",
+      "source": "web/src/senna-driver.js#6:createSennaDriver",
+      "callee": "p",
+      "line": 47,
+      "expression": "p([.062,.463,1.355])"
+    },
+    {
+      "path": "web/src/senna-driver.js",
+      "source": "web/src/senna-driver.js#6:createSennaDriver",
+      "callee": "p",
+      "line": 47,
+      "expression": "p([.062,.466,1.422])"
+    },
+    {
+      "path": "web/src/senna-driver.js",
+      "source": "web/src/senna-driver.js#6:createSennaDriver",
+      "callee": "rounded",
       "line": 48,
-      "expression": "surface(-.021,.052,-1.24,1.24,rubber,.002,12)"
+      "expression": "rounded('Sola '+side,[.071,.011,.185],p([.062,.409,1.354]),black)"
     },
     {
       "path": "web/src/senna-driver.js",
-      "source": "web/src/senna-driver.js#4:createSennaDriver",
-      "callee": "surface",
+      "source": "web/src/senna-driver.js#6:createSennaDriver",
+      "callee": "p",
+      "line": 48,
+      "expression": "p([.062,.409,1.354])"
+    },
+    {
+      "path": "web/src/senna-driver.js",
+      "source": "web/src/senna-driver.js#6:createSennaDriver",
+      "callee": "piping",
       "line": 49,
-      "expression": "surface(-.014,.046,-1.18,1.18,visor,.0035,12)"
+      "expression": "piping('Costura da bota '+side+' '+i,[p([.038,.466,1.31+i*.022]),p([.061,.473,1.314+i*.022]),p([.084,.466,1.31+i*.022])],.0008)"
     },
     {
       "path": "web/src/senna-driver.js",
-      "source": "web/src/senna-driver.js#4:createSennaDriver",
-      "callee": "mesh",
+      "source": "web/src/senna-driver.js#6:createSennaDriver",
+      "callee": "p",
+      "line": 49,
+      "expression": "p([.038,.466,1.31+i*.022])"
+    },
+    {
+      "path": "web/src/senna-driver.js",
+      "source": "web/src/senna-driver.js#6:createSennaDriver",
+      "callee": "p",
+      "line": 49,
+      "expression": "p([.061,.473,1.314+i*.022])"
+    },
+    {
+      "path": "web/src/senna-driver.js",
+      "source": "web/src/senna-driver.js#6:createSennaDriver",
+      "callee": "p",
+      "line": 49,
+      "expression": "p([.084,.466,1.31+i*.022])"
+    },
+    {
+      "path": "web/src/senna-driver.js",
+      "source": "web/src/senna-driver.js#6:createSennaDriver",
+      "callee": "rounded",
       "line": 50,
-      "expression": "mesh(new THREE.CylinderGeometry(.008,.008,.004,24),metal,helmet)"
+      "expression": "rounded('Palma da luva '+side,[.042,.063,.025],p([.088,.586,.50]),gloves)"
     },
     {
       "path": "web/src/senna-driver.js",
-      "source": "web/src/senna-driver.js#4:createSennaDriver",
-      "callee": "mesh",
+      "source": "web/src/senna-driver.js#6:createSennaDriver",
+      "callee": "p",
+      "line": 50,
+      "expression": "p([.088,.586,.50])"
+    },
+    {
+      "path": "web/src/senna-driver.js",
+      "source": "web/src/senna-driver.js#6:createSennaDriver",
+      "callee": "piping",
       "line": 51,
-      "expression": "mesh(new THREE.BoxGeometry(.009,.008,.003),rubber,helmet)"
+      "expression": "piping('Dedo '+side+' '+i,[p([.105,y,.50]),p([.111,y,.518]),p([.099,y,.539]),p([.084,y,.540])],.0061,gloves)"
     },
     {
       "path": "web/src/senna-driver.js",
-      "source": "web/src/senna-driver.js#4:createSennaDriver",
-      "callee": "mat",
-      "line": 54,
-      "expression": "mat({map:label,transparent:true,depthWrite:false,roughness:.3})"
+      "source": "web/src/senna-driver.js#6:createSennaDriver",
+      "callee": "p",
+      "line": 51,
+      "expression": "p([.105,y,.50])"
     },
     {
       "path": "web/src/senna-driver.js",
-      "source": "web/src/senna-driver.js#4:createSennaDriver",
-      "callee": "surface",
-      "line": 54,
-      "expression": "surface(-.115,-.083,-.7,.7,labelMat,.002,6)"
+      "source": "web/src/senna-driver.js#6:createSennaDriver",
+      "callee": "p",
+      "line": 51,
+      "expression": "p([.111,y,.518])"
+    },
+    {
+      "path": "web/src/senna-driver.js",
+      "source": "web/src/senna-driver.js#6:createSennaDriver",
+      "callee": "p",
+      "line": 51,
+      "expression": "p([.099,y,.539])"
+    },
+    {
+      "path": "web/src/senna-driver.js",
+      "source": "web/src/senna-driver.js#6:createSennaDriver",
+      "callee": "p",
+      "line": 51,
+      "expression": "p([.084,y,.540])"
+    },
+    {
+      "path": "web/src/senna-driver.js",
+      "source": "web/src/senna-driver.js#6:createSennaDriver",
+      "callee": "piping",
+      "line": 52,
+      "expression": "piping('Polegar '+side,[p([.073,.602,.49]),p([.061,.584,.511]),p([.069,.574,.525])],.008,gloves)"
+    },
+    {
+      "path": "web/src/senna-driver.js",
+      "source": "web/src/senna-driver.js#6:createSennaDriver",
+      "callee": "p",
+      "line": 52,
+      "expression": "p([.073,.602,.49])"
+    },
+    {
+      "path": "web/src/senna-driver.js",
+      "source": "web/src/senna-driver.js#6:createSennaDriver",
+      "callee": "p",
+      "line": 52,
+      "expression": "p([.061,.584,.511])"
+    },
+    {
+      "path": "web/src/senna-driver.js",
+      "source": "web/src/senna-driver.js#6:createSennaDriver",
+      "callee": "p",
+      "line": 52,
+      "expression": "p([.069,.574,.525])"
+    },
+    {
+      "path": "web/src/senna-driver.js",
+      "source": "web/src/senna-driver.js#6:createSennaDriver",
+      "callee": "rounded",
+      "line": 53,
+      "expression": "rounded('Punho '+side,[.052,.027,.033],p([.087,.555,.492]),stretch)"
+    },
+    {
+      "path": "web/src/senna-driver.js",
+      "source": "web/src/senna-driver.js#6:createSennaDriver",
+      "callee": "p",
+      "line": 53,
+      "expression": "p([.087,.555,.492])"
+    },
+    {
+      "path": "web/src/senna-driver.js",
+      "source": "web/src/senna-driver.js#55:ribbon",
+      "callee": "mesh",
+      "line": 57,
+      "expression": "mesh(name,g,m)"
+    },
+    {
+      "path": "web/src/senna-driver.js",
+      "source": "web/src/senna-driver.js#6:createSennaDriver",
+      "callee": "ribbon",
+      "line": 60,
+      "expression": "ribbon('Cinto do ombro '+side,Array.from({length:16},(_,i)=>chest(.91-.76*i/15,side*(.061-.04*i/15))),.025)"
+    },
+    {
+      "path": "web/src/senna-driver.js",
+      "source": "web/src/senna-driver.js#6:createSennaDriver",
+      "callee": "chest",
+      "line": 60,
+      "expression": "chest(.91-.76*i/15,side*(.061-.04*i/15))"
+    },
+    {
+      "path": "web/src/senna-driver.js",
+      "source": "web/src/senna-driver.js#6:createSennaDriver",
+      "callee": "ribbon",
+      "line": 61,
+      "expression": "ribbon('Cinto abdominal '+side,[chest(.14,side*.082),chest(.15,side*.05),chest(.15,side*.01)],.029)"
+    },
+    {
+      "path": "web/src/senna-driver.js",
+      "source": "web/src/senna-driver.js#6:createSennaDriver",
+      "callee": "chest",
+      "line": 61,
+      "expression": "chest(.14,side*.082)"
+    },
+    {
+      "path": "web/src/senna-driver.js",
+      "source": "web/src/senna-driver.js#6:createSennaDriver",
+      "callee": "chest",
+      "line": 61,
+      "expression": "chest(.15,side*.05)"
+    },
+    {
+      "path": "web/src/senna-driver.js",
+      "source": "web/src/senna-driver.js#6:createSennaDriver",
+      "callee": "chest",
+      "line": 61,
+      "expression": "chest(.15,side*.01)"
+    },
+    {
+      "path": "web/src/senna-driver.js",
+      "source": "web/src/senna-driver.js#6:createSennaDriver",
+      "callee": "rounded",
+      "line": 63,
+      "expression": "rounded('Fecho central',[.038,.025,.013],chest(.15,0),silver)"
+    },
+    {
+      "path": "web/src/senna-driver.js",
+      "source": "web/src/senna-driver.js#6:createSennaDriver",
+      "callee": "chest",
+      "line": 63,
+      "expression": "chest(.15,0)"
+    },
+    {
+      "path": "web/src/senna-driver.js",
+      "source": "web/src/senna-driver.js#6:createSennaDriver",
+      "callee": "createHelmet1991",
+      "line": 64,
+      "expression": "createHelmet1991({detail:96})"
+    },
+    {
+      "path": "web/src/senna-driver.js",
+      "source": "web/src/senna-driver.js#6:createSennaDriver",
+      "callee": "applyFit",
+      "line": 67,
+      "expression": "applyFit()"
+    },
+    {
+      "path": "web/src/senna-driver.js",
+      "source": "web/src/senna-driver.js#69:setFit",
+      "callee": "applyFit",
+      "line": 69,
+      "expression": "applyFit()"
     },
     {
       "path": "web/src/studio.js",
@@ -5845,6 +6905,349 @@
       "expression": "calculate()"
     },
     {
+      "path": "web/src/workbench.js",
+      "source": "web/src/workbench.js#11:frame",
+      "callee": "view",
+      "line": 11,
+      "expression": "view('hero')"
+    },
+    {
+      "path": "web/src/workbench.js",
+      "source": "web/src/workbench.js#12:view",
+      "callee": "moveCamera",
+      "line": 17,
+      "expression": "moveCamera(target.clone().addScaledVector(direction,radius),target)"
+    },
+    {
+      "path": "web/src/workbench.js",
+      "source": "web/src/workbench.js#12:view",
+      "callee": "String",
+      "line": 18,
+      "expression": "String(b.dataset.view===name)"
+    },
+    {
+      "path": "web/src/workbench.js",
+      "source": "web/src/workbench.js#20:rebuild",
+      "callee": "frame",
+      "line": 26,
+      "expression": "frame(inspection)"
+    },
+    {
+      "path": "web/src/workbench.js",
+      "source": "web/src/workbench.js#29:setTab",
+      "callee": "$",
+      "line": 30,
+      "expression": "$('wind-toggle')"
+    },
+    {
+      "path": "web/src/workbench.js",
+      "source": "web/src/workbench.js#29:setTab",
+      "callee": "closeEngine",
+      "line": 30,
+      "expression": "closeEngine()"
+    },
+    {
+      "path": "web/src/workbench.js",
+      "source": "web/src/workbench.js#29:setTab",
+      "callee": "$",
+      "line": 31,
+      "expression": "$('orbit')"
+    },
+    {
+      "path": "web/src/workbench.js",
+      "source": "web/src/workbench.js#29:setTab",
+      "callee": "$",
+      "line": 32,
+      "expression": "$('reset')"
+    },
+    {
+      "path": "web/src/workbench.js",
+      "source": "web/src/workbench.js#29:setTab",
+      "callee": "String",
+      "line": 33,
+      "expression": "String(on)"
+    },
+    {
+      "path": "web/src/workbench.js",
+      "source": "web/src/workbench.js#29:setTab",
+      "callee": "refreshPanels",
+      "line": 34,
+      "expression": "refreshPanels()"
+    },
+    {
+      "path": "web/src/workbench.js",
+      "source": "web/src/workbench.js#29:setTab",
+      "callee": "rebuild",
+      "line": 35,
+      "expression": "rebuild()"
+    },
+    {
+      "path": "web/src/workbench.js",
+      "source": "web/src/workbench.js#29:setTab",
+      "callee": "$",
+      "line": 35,
+      "expression": "$('engine-open')"
+    },
+    {
+      "path": "web/src/workbench.js",
+      "source": "web/src/workbench.js#29:setTab",
+      "callee": "showCar",
+      "line": 35,
+      "expression": "showCar()"
+    },
+    {
+      "path": "web/src/workbench.js",
+      "source": "web/src/workbench.js#4:createWorkbench",
+      "callee": "setTab",
+      "line": 37,
+      "expression": "setTab(t.dataset.labTab)"
+    },
+    {
+      "path": "web/src/workbench.js",
+      "source": "web/src/workbench.js#4:createWorkbench",
+      "callee": "setTab",
+      "line": 37,
+      "expression": "setTab(tabs[n].dataset.labTab)"
+    },
+    {
+      "path": "web/src/workbench.js",
+      "source": "web/src/workbench.js#38:cockpit",
+      "callee": "frame",
+      "line": 38,
+      "expression": "frame(driver.helmet.root)"
+    },
+    {
+      "path": "web/src/workbench.js",
+      "source": "web/src/workbench.js#4:createWorkbench",
+      "callee": "$",
+      "line": 39,
+      "expression": "$(prefix+'-cockpit')"
+    },
+    {
+      "path": "web/src/workbench.js",
+      "source": "web/src/workbench.js#4:createWorkbench",
+      "callee": "$",
+      "line": 39,
+      "expression": "$(prefix+'-isolated')"
+    },
+    {
+      "path": "web/src/workbench.js",
+      "source": "web/src/workbench.js#4:createWorkbench",
+      "callee": "rebuild",
+      "line": 39,
+      "expression": "rebuild()"
+    },
+    {
+      "path": "web/src/workbench.js",
+      "source": "web/src/workbench.js#4:createWorkbench",
+      "callee": "$",
+      "line": 41,
+      "expression": "$(id)"
+    },
+    {
+      "path": "web/src/workbench.js",
+      "source": "web/src/workbench.js#4:createWorkbench",
+      "callee": "Number",
+      "line": 41,
+      "expression": "Number($(id).value)"
+    },
+    {
+      "path": "web/src/workbench.js",
+      "source": "web/src/workbench.js#4:createWorkbench",
+      "callee": "$",
+      "line": 41,
+      "expression": "$(id)"
+    },
+    {
+      "path": "web/src/workbench.js",
+      "source": "web/src/workbench.js#4:createWorkbench",
+      "callee": "$",
+      "line": 41,
+      "expression": "$(id+'-value')"
+    },
+    {
+      "path": "web/src/workbench.js",
+      "source": "web/src/workbench.js#4:createWorkbench",
+      "callee": "$",
+      "line": 41,
+      "expression": "$(id)"
+    },
+    {
+      "path": "web/src/workbench.js",
+      "source": "web/src/workbench.js#4:createWorkbench",
+      "callee": "rebuild",
+      "line": 41,
+      "expression": "rebuild()"
+    },
+    {
+      "path": "web/src/workbench.js",
+      "source": "web/src/workbench.js#4:createWorkbench",
+      "callee": "$",
+      "line": 43,
+      "expression": "$('fit-reset')"
+    },
+    {
+      "path": "web/src/workbench.js",
+      "source": "web/src/workbench.js#4:createWorkbench",
+      "callee": "$",
+      "line": 43,
+      "expression": "$(id)"
+    },
+    {
+      "path": "web/src/workbench.js",
+      "source": "web/src/workbench.js#4:createWorkbench",
+      "callee": "$",
+      "line": 43,
+      "expression": "$(id+'-value')"
+    },
+    {
+      "path": "web/src/workbench.js",
+      "source": "web/src/workbench.js#4:createWorkbench",
+      "callee": "rebuild",
+      "line": 43,
+      "expression": "rebuild()"
+    },
+    {
+      "path": "web/src/workbench.js",
+      "source": "web/src/workbench.js#44:downloadModel",
+      "callee": "$",
+      "line": 44,
+      "expression": "$(kind+'-export')"
+    },
+    {
+      "path": "web/src/workbench.js",
+      "source": "web/src/workbench.js#44:downloadModel",
+      "callee": "$",
+      "line": 44,
+      "expression": "$(kind+'-export-status')"
+    },
+    {
+      "path": "web/src/workbench.js",
+      "source": "web/src/workbench.js#44:downloadModel",
+      "callee": "setTimeout",
+      "line": 45,
+      "expression": "setTimeout(()=>URL.revokeObjectURL(url),10000)"
+    },
+    {
+      "path": "web/src/workbench.js",
+      "source": "web/src/workbench.js#4:createWorkbench",
+      "callee": "$",
+      "line": 47,
+      "expression": "$('helmet-export')"
+    },
+    {
+      "path": "web/src/workbench.js",
+      "source": "web/src/workbench.js#4:createWorkbench",
+      "callee": "downloadModel",
+      "line": 47,
+      "expression": "downloadModel('helmet')"
+    },
+    {
+      "path": "web/src/workbench.js",
+      "source": "web/src/workbench.js#4:createWorkbench",
+      "callee": "$",
+      "line": 47,
+      "expression": "$('driver-export')"
+    },
+    {
+      "path": "web/src/workbench.js",
+      "source": "web/src/workbench.js#4:createWorkbench",
+      "callee": "downloadModel",
+      "line": 47,
+      "expression": "downloadModel('driver')"
+    },
+    {
+      "path": "web/src/workbench.js",
+      "source": "web/src/workbench.js#4:createWorkbench",
+      "callee": "$",
+      "line": 48,
+      "expression": "$('world-box')"
+    },
+    {
+      "path": "web/src/workbench.js",
+      "source": "web/src/workbench.js#4:createWorkbench",
+      "callee": "$",
+      "line": 48,
+      "expression": "$('wind-toggle')"
+    },
+    {
+      "path": "web/src/workbench.js",
+      "source": "web/src/workbench.js#4:createWorkbench",
+      "callee": "$",
+      "line": 48,
+      "expression": "$('garage-view')"
+    },
+    {
+      "path": "web/src/workbench.js",
+      "source": "web/src/workbench.js#4:createWorkbench",
+      "callee": "$",
+      "line": 49,
+      "expression": "$('world-studio')"
+    },
+    {
+      "path": "web/src/workbench.js",
+      "source": "web/src/workbench.js#4:createWorkbench",
+      "callee": "$",
+      "line": 49,
+      "expression": "$('wind-toggle')"
+    },
+    {
+      "path": "web/src/workbench.js",
+      "source": "web/src/workbench.js#4:createWorkbench",
+      "callee": "showCar",
+      "line": 49,
+      "expression": "showCar()"
+    },
+    {
+      "path": "web/src/workbench.js",
+      "source": "web/src/workbench.js#4:createWorkbench",
+      "callee": "$",
+      "line": 50,
+      "expression": "$('world-tunnel')"
+    },
+    {
+      "path": "web/src/workbench.js",
+      "source": "web/src/workbench.js#4:createWorkbench",
+      "callee": "$",
+      "line": 50,
+      "expression": "$('wind-toggle')"
+    },
+    {
+      "path": "web/src/workbench.js",
+      "source": "web/src/workbench.js#4:createWorkbench",
+      "callee": "$",
+      "line": 51,
+      "expression": "$('world-export')"
+    },
+    {
+      "path": "web/src/workbench.js",
+      "source": "web/src/workbench.js#4:createWorkbench",
+      "callee": "$",
+      "line": 51,
+      "expression": "$('garage-export')"
+    },
+    {
+      "path": "web/src/workbench.js",
+      "source": "web/src/workbench.js#4:createWorkbench",
+      "callee": "refreshPanels",
+      "line": 52,
+      "expression": "refreshPanels()"
+    },
+    {
+      "path": "web/src/workbench.js",
+      "source": "web/src/workbench.js#55:reset",
+      "callee": "rebuild",
+      "line": 55,
+      "expression": "rebuild()"
+    },
+    {
+      "path": "web/src/workbench.js",
+      "source": "web/src/workbench.js#55:reset",
+      "callee": "cockpit",
+      "line": 55,
+      "expression": "cockpit()"
+    },
+    {
       "path": "web/test-aerodynamics.mjs",
       "source": "module",
       "callee": "run",
@@ -5997,6 +7400,13 @@
       "callee": "run",
       "line": 13,
       "expression": "run({...p,pressureKPa:0})"
+    },
+    {
+      "path": "web/test-driver-model.mjs",
+      "source": "module",
+      "callee": "createSennaDriver",
+      "line": 7,
+      "expression": "createSennaDriver(model,mechanics)"
     },
     {
       "path": "web/test-mechanics.mjs",

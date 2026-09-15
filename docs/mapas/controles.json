@@ -4,8 +4,69 @@
     {
       "id": "brand-logo",
       "tag": "div",
-      "line": 3,
-      "href": "../../web/src/template-v2.html#L3",
+      "line": 4,
+      "href": "../../web/src/template-v2.html#L4",
+      "literalReferences": [
+        {
+          "path": "web/src/app-v2.js",
+          "line": 25,
+          "href": "../../web/src/app-v2.js#L25"
+        }
+      ]
+    },
+    {
+      "id": "status",
+      "tag": "div",
+      "line": 4,
+      "href": "../../web/src/template-v2.html#L4",
+      "literalReferences": [
+        {
+          "path": "web/src/app-v2.js",
+          "line": 44,
+          "href": "../../web/src/app-v2.js#L44"
+        }
+      ]
+    },
+    {
+      "id": "tab-car",
+      "tag": "button",
+      "line": 4,
+      "href": "../../web/src/template-v2.html#L4",
+      "literalReferences": []
+    },
+    {
+      "id": "tab-engine",
+      "tag": "button",
+      "line": 4,
+      "href": "../../web/src/template-v2.html#L4",
+      "literalReferences": []
+    },
+    {
+      "id": "tab-helmet",
+      "tag": "button",
+      "line": 4,
+      "href": "../../web/src/template-v2.html#L4",
+      "literalReferences": []
+    },
+    {
+      "id": "tab-driver",
+      "tag": "button",
+      "line": 4,
+      "href": "../../web/src/template-v2.html#L4",
+      "literalReferences": []
+    },
+    {
+      "id": "tab-world",
+      "tag": "button",
+      "line": 4,
+      "href": "../../web/src/template-v2.html#L4",
+      "literalReferences": []
+    },
+    {
+      "id": "stage",
+      "tag": "div",
+      "line": 4,
+      "href": "../../web/src/template-v2.html#L4",
       "literalReferences": [
         {
           "path": "web/src/app-v2.js",
@@ -15,36 +76,10 @@
       ]
     },
     {
-      "id": "status",
-      "tag": "div",
-      "line": 3,
-      "href": "../../web/src/template-v2.html#L3",
-      "literalReferences": [
-        {
-          "path": "web/src/app-v2.js",
-          "line": 43,
-          "href": "../../web/src/app-v2.js#L43"
-        }
-      ]
-    },
-    {
-      "id": "stage",
-      "tag": "div",
-      "line": 3,
-      "href": "../../web/src/template-v2.html#L3",
-      "literalReferences": [
-        {
-          "path": "web/src/app-v2.js",
-          "line": 23,
-          "href": "../../web/src/app-v2.js#L23"
-        }
-      ]
-    },
-    {
       "id": "air-hud",
       "tag": "div",
-      "line": 3,
-      "href": "../../web/src/template-v2.html#L3",
+      "line": 4,
+      "href": "../../web/src/template-v2.html#L4",
       "literalReferences": [
         {
           "path": "web/src/wind-tunnel.js",
@@ -56,8 +91,8 @@
     {
       "id": "air-hud-values",
       "tag": "span",
-      "line": 3,
-      "href": "../../web/src/template-v2.html#L3",
+      "line": 4,
+      "href": "../../web/src/template-v2.html#L4",
       "literalReferences": [
         {
           "path": "web/src/wind-tunnel.js",
@@ -69,77 +104,82 @@
     {
       "id": "zoom-in",
       "tag": "button",
-      "line": 3,
-      "href": "../../web/src/template-v2.html#L3",
+      "line": 4,
+      "href": "../../web/src/template-v2.html#L4",
       "literalReferences": [
         {
           "path": "web/src/app-v2.js",
-          "line": 89,
-          "href": "../../web/src/app-v2.js#L89"
+          "line": 91,
+          "href": "../../web/src/app-v2.js#L91"
         },
         {
           "path": "web/src/app-v2.js",
-          "line": 95,
-          "href": "../../web/src/app-v2.js#L95"
+          "line": 97,
+          "href": "../../web/src/app-v2.js#L97"
         }
       ]
     },
     {
       "id": "zoom-out",
       "tag": "button",
-      "line": 3,
-      "href": "../../web/src/template-v2.html#L3",
+      "line": 4,
+      "href": "../../web/src/template-v2.html#L4",
       "literalReferences": [
         {
           "path": "web/src/app-v2.js",
-          "line": 89,
-          "href": "../../web/src/app-v2.js#L89"
+          "line": 91,
+          "href": "../../web/src/app-v2.js#L91"
         },
         {
           "path": "web/src/app-v2.js",
-          "line": 95,
-          "href": "../../web/src/app-v2.js#L95"
+          "line": 97,
+          "href": "../../web/src/app-v2.js#L97"
         }
       ]
     },
     {
       "id": "reset",
       "tag": "button",
-      "line": 3,
-      "href": "../../web/src/template-v2.html#L3",
+      "line": 4,
+      "href": "../../web/src/template-v2.html#L4",
       "literalReferences": [
         {
           "path": "web/src/app-v2.js",
-          "line": 88,
-          "href": "../../web/src/app-v2.js#L88"
+          "line": 90,
+          "href": "../../web/src/app-v2.js#L90"
         },
         {
           "path": "web/src/app-v2.js",
-          "line": 96,
-          "href": "../../web/src/app-v2.js#L96"
+          "line": 98,
+          "href": "../../web/src/app-v2.js#L98"
+        },
+        {
+          "path": "web/src/workbench.js",
+          "line": 32,
+          "href": "../../web/src/workbench.js#L32"
         }
       ]
     },
     {
       "id": "loading",
       "tag": "div",
-      "line": 3,
-      "href": "../../web/src/template-v2.html#L3",
+      "line": 4,
+      "href": "../../web/src/template-v2.html#L4",
       "literalReferences": [
         {
           "path": "web/src/app-v2.js",
-          "line": 43,
-          "href": "../../web/src/app-v2.js#L43"
-        },
-        {
-          "path": "web/src/app-v2.js",
-          "line": 102,
-          "href": "../../web/src/app-v2.js#L102"
+          "line": 44,
+          "href": "../../web/src/app-v2.js#L44"
         },
         {
           "path": "web/src/app-v2.js",
           "line": 104,
           "href": "../../web/src/app-v2.js#L104"
+        },
+        {
+          "path": "web/src/app-v2.js",
+          "line": 106,
+          "href": "../../web/src/app-v2.js#L106"
         },
         {
           "path": "web/src/engine/in-car.js",
@@ -156,46 +196,51 @@
     {
       "id": "orbit",
       "tag": "button",
-      "line": 3,
-      "href": "../../web/src/template-v2.html#L3",
+      "line": 4,
+      "href": "../../web/src/template-v2.html#L4",
       "literalReferences": [
         {
           "path": "web/src/app-v2.js",
-          "line": 64,
-          "href": "../../web/src/app-v2.js#L64"
+          "line": 65,
+          "href": "../../web/src/app-v2.js#L65"
         },
         {
           "path": "web/src/app-v2.js",
-          "line": 70,
-          "href": "../../web/src/app-v2.js#L70"
+          "line": 72,
+          "href": "../../web/src/app-v2.js#L72"
         },
         {
           "path": "web/src/app-v2.js",
-          "line": 74,
-          "href": "../../web/src/app-v2.js#L74"
+          "line": 76,
+          "href": "../../web/src/app-v2.js#L76"
         },
         {
           "path": "web/src/app-v2.js",
-          "line": 88,
-          "href": "../../web/src/app-v2.js#L88"
+          "line": 90,
+          "href": "../../web/src/app-v2.js#L90"
         },
         {
           "path": "web/src/app-v2.js",
-          "line": 99,
-          "href": "../../web/src/app-v2.js#L99"
+          "line": 101,
+          "href": "../../web/src/app-v2.js#L101"
+        },
+        {
+          "path": "web/src/workbench.js",
+          "line": 31,
+          "href": "../../web/src/workbench.js#L31"
         }
       ]
     },
     {
       "id": "garage-toggle",
       "tag": "button",
-      "line": 3,
-      "href": "../../web/src/template-v2.html#L3",
+      "line": 4,
+      "href": "../../web/src/template-v2.html#L4",
       "literalReferences": [
         {
           "path": "web/src/app-v2.js",
-          "line": 71,
-          "href": "../../web/src/app-v2.js#L71"
+          "line": 73,
+          "href": "../../web/src/app-v2.js#L73"
         },
         {
           "path": "web/src/garage.js",
@@ -207,139 +252,174 @@
     {
       "id": "garage-view",
       "tag": "button",
-      "line": 3,
-      "href": "../../web/src/template-v2.html#L3",
+      "line": 4,
+      "href": "../../web/src/template-v2.html#L4",
       "literalReferences": [
         {
           "path": "web/src/app-v2.js",
-          "line": 73,
-          "href": "../../web/src/app-v2.js#L73"
+          "line": 75,
+          "href": "../../web/src/app-v2.js#L75"
+        },
+        {
+          "path": "web/src/workbench.js",
+          "line": 48,
+          "href": "../../web/src/workbench.js#L48"
         }
       ]
     },
     {
       "id": "garage-export",
       "tag": "button",
-      "line": 3,
-      "href": "../../web/src/template-v2.html#L3",
+      "line": 4,
+      "href": "../../web/src/template-v2.html#L4",
       "literalReferences": [
-        {
-          "path": "web/src/app-v2.js",
-          "line": 72,
-          "href": "../../web/src/app-v2.js#L72"
-        }
-      ]
-    },
-    {
-      "id": "wind-toggle",
-      "tag": "button",
-      "line": 3,
-      "href": "../../web/src/template-v2.html#L3",
-      "literalReferences": [
-        {
-          "path": "web/src/app-v2.js",
-          "line": 71,
-          "href": "../../web/src/app-v2.js#L71"
-        },
-        {
-          "path": "web/src/app-v2.js",
-          "line": 96,
-          "href": "../../web/src/app-v2.js#L96"
-        },
-        {
-          "path": "web/src/wind-tunnel.js",
-          "line": 52,
-          "href": "../../web/src/wind-tunnel.js#L52"
-        }
-      ]
-    },
-    {
-      "id": "wind-cinema",
-      "tag": "button",
-      "line": 3,
-      "href": "../../web/src/template-v2.html#L3",
-      "literalReferences": [
-        {
-          "path": "web/src/app-v2.js",
-          "line": 64,
-          "href": "../../web/src/app-v2.js#L64"
-        },
-        {
-          "path": "web/src/app-v2.js",
-          "line": 70,
-          "href": "../../web/src/app-v2.js#L70"
-        },
         {
           "path": "web/src/app-v2.js",
           "line": 74,
           "href": "../../web/src/app-v2.js#L74"
         },
         {
+          "path": "web/src/workbench.js",
+          "line": 51,
+          "href": "../../web/src/workbench.js#L51"
+        }
+      ]
+    },
+    {
+      "id": "wind-toggle",
+      "tag": "button",
+      "line": 4,
+      "href": "../../web/src/template-v2.html#L4",
+      "literalReferences": [
+        {
           "path": "web/src/app-v2.js",
-          "line": 99,
-          "href": "../../web/src/app-v2.js#L99"
+          "line": 73,
+          "href": "../../web/src/app-v2.js#L73"
         },
         {
           "path": "web/src/app-v2.js",
-          "line": 100,
-          "href": "../../web/src/app-v2.js#L100"
+          "line": 98,
+          "href": "../../web/src/app-v2.js#L98"
+        },
+        {
+          "path": "web/src/wind-tunnel.js",
+          "line": 52,
+          "href": "../../web/src/wind-tunnel.js#L52"
+        },
+        {
+          "path": "web/src/workbench.js",
+          "line": 30,
+          "href": "../../web/src/workbench.js#L30"
+        },
+        {
+          "path": "web/src/workbench.js",
+          "line": 48,
+          "href": "../../web/src/workbench.js#L48"
+        },
+        {
+          "path": "web/src/workbench.js",
+          "line": 49,
+          "href": "../../web/src/workbench.js#L49"
+        },
+        {
+          "path": "web/src/workbench.js",
+          "line": 50,
+          "href": "../../web/src/workbench.js#L50"
+        }
+      ]
+    },
+    {
+      "id": "wind-cinema",
+      "tag": "button",
+      "line": 4,
+      "href": "../../web/src/template-v2.html#L4",
+      "literalReferences": [
+        {
+          "path": "web/src/app-v2.js",
+          "line": 65,
+          "href": "../../web/src/app-v2.js#L65"
+        },
+        {
+          "path": "web/src/app-v2.js",
+          "line": 72,
+          "href": "../../web/src/app-v2.js#L72"
+        },
+        {
+          "path": "web/src/app-v2.js",
+          "line": 76,
+          "href": "../../web/src/app-v2.js#L76"
+        },
+        {
+          "path": "web/src/app-v2.js",
+          "line": 101,
+          "href": "../../web/src/app-v2.js#L101"
+        },
+        {
+          "path": "web/src/app-v2.js",
+          "line": 102,
+          "href": "../../web/src/app-v2.js#L102"
         }
       ]
     },
     {
       "id": "photo",
       "tag": "button",
-      "line": 3,
-      "href": "../../web/src/template-v2.html#L3",
+      "line": 4,
+      "href": "../../web/src/template-v2.html#L4",
       "literalReferences": [
         {
           "path": "web/src/app-v2.js",
-          "line": 49,
-          "href": "../../web/src/app-v2.js#L49"
+          "line": 50,
+          "href": "../../web/src/app-v2.js#L50"
         },
         {
           "path": "web/src/app-v2.js",
-          "line": 90,
-          "href": "../../web/src/app-v2.js#L90"
+          "line": 92,
+          "href": "../../web/src/app-v2.js#L92"
         }
       ]
     },
     {
       "id": "part-count",
       "tag": "span",
-      "line": 3,
-      "href": "../../web/src/template-v2.html#L3",
+      "line": 4,
+      "href": "../../web/src/template-v2.html#L4",
       "literalReferences": [
         {
           "path": "web/src/app-v2.js",
-          "line": 66,
-          "href": "../../web/src/app-v2.js#L66"
+          "line": 68,
+          "href": "../../web/src/app-v2.js#L68"
         }
       ]
     },
     {
       "id": "air-panel",
       "tag": "section",
-      "line": 3,
-      "href": "../../web/src/template-v2.html#L3",
+      "line": 4,
+      "href": "../../web/src/template-v2.html#L4",
       "literalReferences": [
         {
           "path": "web/src/wind-tunnel.js",
           "line": 52,
           "href": "../../web/src/wind-tunnel.js#L52"
+        },
+        {
+          "path": "web/src/workbench.js",
+          "line": 8,
+          "href": "../../web/src/workbench.js#L8"
         }
       ]
     },
     {
       "id": "flow-detail",
       "tag": "button",
-      "line": 3,
-      "href": "../../web/src/template-v2.html#L3",
+      "line": 4,
+      "href": "../../web/src/template-v2.html#L4",
       "literalReferences": [
         {
           "path": "web/src/app-v2.js",
-          "line": 64,
-          "href": "../../web/src/app-v2.js#L64"
+          "line": 65,
+          "href": "../../web/src/app-v2.js#L65"
         },
         {
           "path": "web/src/wind-tunnel.js",
@@ -351,13 +431,13 @@
     {
       "id": "flow-region",
       "tag": "select",
-      "line": 3,
-      "href": "../../web/src/template-v2.html#L3",
+      "line": 4,
+      "href": "../../web/src/template-v2.html#L4",
       "literalReferences": [
         {
           "path": "web/src/app-v2.js",
-          "line": 64,
-          "href": "../../web/src/app-v2.js#L64"
+          "line": 65,
+          "href": "../../web/src/app-v2.js#L65"
         },
         {
           "path": "web/src/wind-tunnel.js",
@@ -374,8 +454,8 @@
     {
       "id": "flow-explanation",
       "tag": "p",
-      "line": 3,
-      "href": "../../web/src/template-v2.html#L3",
+      "line": 4,
+      "href": "../../web/src/template-v2.html#L4",
       "literalReferences": [
         {
           "path": "web/src/wind-tunnel.js",
@@ -392,29 +472,29 @@
     {
       "id": "smoke-density",
       "tag": "input",
-      "line": 3,
-      "href": "../../web/src/template-v2.html#L3",
+      "line": 4,
+      "href": "../../web/src/template-v2.html#L4",
       "literalReferences": []
     },
     {
       "id": "smoke-turbulence",
       "tag": "input",
-      "line": 3,
-      "href": "../../web/src/template-v2.html#L3",
+      "line": 4,
+      "href": "../../web/src/template-v2.html#L4",
       "literalReferences": []
     },
     {
       "id": "smoke-tempo",
       "tag": "input",
-      "line": 3,
-      "href": "../../web/src/template-v2.html#L3",
+      "line": 4,
+      "href": "../../web/src/template-v2.html#L4",
       "literalReferences": []
     },
     {
       "id": "smoke-pause",
       "tag": "button",
-      "line": 3,
-      "href": "../../web/src/template-v2.html#L3",
+      "line": 4,
+      "href": "../../web/src/template-v2.html#L4",
       "literalReferences": [
         {
           "path": "web/src/wind-tunnel.js",
@@ -426,15 +506,15 @@
     {
       "id": "air-technical",
       "tag": "details",
-      "line": 3,
-      "href": "../../web/src/template-v2.html#L3",
+      "line": 4,
+      "href": "../../web/src/template-v2.html#L4",
       "literalReferences": []
     },
     {
       "id": "air-speed-value",
       "tag": "output",
-      "line": 3,
-      "href": "../../web/src/template-v2.html#L3",
+      "line": 4,
+      "href": "../../web/src/template-v2.html#L4",
       "literalReferences": [
         {
           "path": "web/src/wind-tunnel.js",
@@ -446,8 +526,8 @@
     {
       "id": "air-speed",
       "tag": "input",
-      "line": 3,
-      "href": "../../web/src/template-v2.html#L3",
+      "line": 4,
+      "href": "../../web/src/template-v2.html#L4",
       "literalReferences": [
         {
           "path": "web/src/wind-tunnel.js",
@@ -469,8 +549,8 @@
     {
       "id": "air-head-value",
       "tag": "output",
-      "line": 3,
-      "href": "../../web/src/template-v2.html#L3",
+      "line": 4,
+      "href": "../../web/src/template-v2.html#L4",
       "literalReferences": [
         {
           "path": "web/src/wind-tunnel.js",
@@ -482,8 +562,8 @@
     {
       "id": "air-headwind",
       "tag": "input",
-      "line": 3,
-      "href": "../../web/src/template-v2.html#L3",
+      "line": 4,
+      "href": "../../web/src/template-v2.html#L4",
       "literalReferences": [
         {
           "path": "web/src/wind-tunnel.js",
@@ -505,8 +585,8 @@
     {
       "id": "air-cross-value",
       "tag": "output",
-      "line": 3,
-      "href": "../../web/src/template-v2.html#L3",
+      "line": 4,
+      "href": "../../web/src/template-v2.html#L4",
       "literalReferences": [
         {
           "path": "web/src/wind-tunnel.js",
@@ -518,8 +598,8 @@
     {
       "id": "air-crosswind",
       "tag": "input",
-      "line": 3,
-      "href": "../../web/src/template-v2.html#L3",
+      "line": 4,
+      "href": "../../web/src/template-v2.html#L4",
       "literalReferences": [
         {
           "path": "web/src/wind-tunnel.js",
@@ -541,8 +621,8 @@
     {
       "id": "air-temp",
       "tag": "input",
-      "line": 3,
-      "href": "../../web/src/template-v2.html#L3",
+      "line": 4,
+      "href": "../../web/src/template-v2.html#L4",
       "literalReferences": [
         {
           "path": "web/src/wind-tunnel.js",
@@ -564,8 +644,8 @@
     {
       "id": "air-pressure",
       "tag": "input",
-      "line": 3,
-      "href": "../../web/src/template-v2.html#L3",
+      "line": 4,
+      "href": "../../web/src/template-v2.html#L4",
       "literalReferences": [
         {
           "path": "web/src/wind-tunnel.js",
@@ -587,8 +667,8 @@
     {
       "id": "air-area",
       "tag": "input",
-      "line": 3,
-      "href": "../../web/src/template-v2.html#L3",
+      "line": 4,
+      "href": "../../web/src/template-v2.html#L4",
       "literalReferences": [
         {
           "path": "web/src/wind-tunnel.js",
@@ -620,8 +700,8 @@
     {
       "id": "air-cd",
       "tag": "input",
-      "line": 3,
-      "href": "../../web/src/template-v2.html#L3",
+      "line": 4,
+      "href": "../../web/src/template-v2.html#L4",
       "literalReferences": [
         {
           "path": "web/src/wind-tunnel.js",
@@ -653,8 +733,8 @@
     {
       "id": "air-cl",
       "tag": "input",
-      "line": 3,
-      "href": "../../web/src/template-v2.html#L3",
+      "line": 4,
+      "href": "../../web/src/template-v2.html#L4",
       "literalReferences": [
         {
           "path": "web/src/wind-tunnel.js",
@@ -686,8 +766,8 @@
     {
       "id": "air-example",
       "tag": "button",
-      "line": 3,
-      "href": "../../web/src/template-v2.html#L3",
+      "line": 4,
+      "href": "../../web/src/template-v2.html#L4",
       "literalReferences": [
         {
           "path": "web/src/wind-tunnel.js",
@@ -699,8 +779,8 @@
     {
       "id": "air-warning",
       "tag": "p",
-      "line": 3,
-      "href": "../../web/src/template-v2.html#L3",
+      "line": 4,
+      "href": "../../web/src/template-v2.html#L4",
       "literalReferences": [
         {
           "path": "web/src/wind-tunnel.js",
@@ -712,8 +792,8 @@
     {
       "id": "air-relative",
       "tag": "strong",
-      "line": 3,
-      "href": "../../web/src/template-v2.html#L3",
+      "line": 4,
+      "href": "../../web/src/template-v2.html#L4",
       "literalReferences": [
         {
           "path": "web/src/wind-tunnel.js",
@@ -725,8 +805,8 @@
     {
       "id": "air-yaw",
       "tag": "strong",
-      "line": 3,
-      "href": "../../web/src/template-v2.html#L3",
+      "line": 4,
+      "href": "../../web/src/template-v2.html#L4",
       "literalReferences": [
         {
           "path": "web/src/wind-tunnel.js",
@@ -738,8 +818,8 @@
     {
       "id": "air-rho",
       "tag": "strong",
-      "line": 3,
-      "href": "../../web/src/template-v2.html#L3",
+      "line": 4,
+      "href": "../../web/src/template-v2.html#L4",
       "literalReferences": [
         {
           "path": "web/src/wind-tunnel.js",
@@ -751,8 +831,8 @@
     {
       "id": "air-q",
       "tag": "strong",
-      "line": 3,
-      "href": "../../web/src/template-v2.html#L3",
+      "line": 4,
+      "href": "../../web/src/template-v2.html#L4",
       "literalReferences": [
         {
           "path": "web/src/wind-tunnel.js",
@@ -764,8 +844,8 @@
     {
       "id": "air-drag",
       "tag": "strong",
-      "line": 3,
-      "href": "../../web/src/template-v2.html#L3",
+      "line": 4,
+      "href": "../../web/src/template-v2.html#L4",
       "literalReferences": [
         {
           "path": "web/src/wind-tunnel.js",
@@ -777,8 +857,8 @@
     {
       "id": "air-down",
       "tag": "strong",
-      "line": 3,
-      "href": "../../web/src/template-v2.html#L3",
+      "line": 4,
+      "href": "../../web/src/template-v2.html#L4",
       "literalReferences": [
         {
           "path": "web/src/wind-tunnel.js",
@@ -790,8 +870,8 @@
     {
       "id": "air-power",
       "tag": "strong",
-      "line": 3,
-      "href": "../../web/src/template-v2.html#L3",
+      "line": 4,
+      "href": "../../web/src/template-v2.html#L4",
       "literalReferences": [
         {
           "path": "web/src/wind-tunnel.js",
@@ -803,8 +883,8 @@
     {
       "id": "air-re",
       "tag": "strong",
-      "line": 3,
-      "href": "../../web/src/template-v2.html#L3",
+      "line": 4,
+      "href": "../../web/src/template-v2.html#L4",
       "literalReferences": [
         {
           "path": "web/src/wind-tunnel.js",
@@ -816,8 +896,8 @@
     {
       "id": "air-mach",
       "tag": "strong",
-      "line": 3,
-      "href": "../../web/src/template-v2.html#L3",
+      "line": 4,
+      "href": "../../web/src/template-v2.html#L4",
       "literalReferences": [
         {
           "path": "web/src/wind-tunnel.js",
@@ -829,8 +909,8 @@
     {
       "id": "air-chart",
       "tag": "canvas",
-      "line": 3,
-      "href": "../../web/src/template-v2.html#L3",
+      "line": 4,
+      "href": "../../web/src/template-v2.html#L4",
       "literalReferences": [
         {
           "path": "web/src/wind-tunnel.js",
@@ -842,8 +922,8 @@
     {
       "id": "air-export",
       "tag": "button",
-      "line": 3,
-      "href": "../../web/src/template-v2.html#L3",
+      "line": 4,
+      "href": "../../web/src/template-v2.html#L4",
       "literalReferences": [
         {
           "path": "web/src/wind-tunnel.js",
@@ -865,8 +945,8 @@
     {
       "id": "air-reset",
       "tag": "button",
-      "line": 3,
-      "href": "../../web/src/template-v2.html#L3",
+      "line": 4,
+      "href": "../../web/src/template-v2.html#L4",
       "literalReferences": [
         {
           "path": "web/src/wind-tunnel.js",
@@ -878,64 +958,64 @@
     {
       "id": "value-body",
       "tag": "output",
-      "line": 3,
-      "href": "../../web/src/template-v2.html#L3",
+      "line": 4,
+      "href": "../../web/src/template-v2.html#L4",
       "literalReferences": []
     },
     {
       "id": "color-body",
       "tag": "input",
-      "line": 3,
-      "href": "../../web/src/template-v2.html#L3",
+      "line": 4,
+      "href": "../../web/src/template-v2.html#L4",
       "literalReferences": []
     },
     {
       "id": "value-wings",
       "tag": "output",
-      "line": 3,
-      "href": "../../web/src/template-v2.html#L3",
+      "line": 4,
+      "href": "../../web/src/template-v2.html#L4",
       "literalReferences": []
     },
     {
       "id": "color-wings",
       "tag": "input",
-      "line": 3,
-      "href": "../../web/src/template-v2.html#L3",
+      "line": 4,
+      "href": "../../web/src/template-v2.html#L4",
       "literalReferences": []
     },
     {
       "id": "value-wheels",
       "tag": "output",
-      "line": 3,
-      "href": "../../web/src/template-v2.html#L3",
+      "line": 4,
+      "href": "../../web/src/template-v2.html#L4",
       "literalReferences": []
     },
     {
       "id": "color-wheels",
       "tag": "input",
-      "line": 3,
-      "href": "../../web/src/template-v2.html#L3",
+      "line": 4,
+      "href": "../../web/src/template-v2.html#L4",
       "literalReferences": []
     },
     {
       "id": "value-carbon",
       "tag": "output",
-      "line": 3,
-      "href": "../../web/src/template-v2.html#L3",
+      "line": 4,
+      "href": "../../web/src/template-v2.html#L4",
       "literalReferences": []
     },
     {
       "id": "color-carbon",
       "tag": "input",
-      "line": 3,
-      "href": "../../web/src/template-v2.html#L3",
+      "line": 4,
+      "href": "../../web/src/template-v2.html#L4",
       "literalReferences": []
     },
     {
       "id": "paint-finish",
       "tag": "select",
-      "line": 3,
-      "href": "../../web/src/template-v2.html#L3",
+      "line": 4,
+      "href": "../../web/src/template-v2.html#L4",
       "literalReferences": [
         {
           "path": "web/src/customize.js",
@@ -952,8 +1032,8 @@
     {
       "id": "light-value",
       "tag": "output",
-      "line": 3,
-      "href": "../../web/src/template-v2.html#L3",
+      "line": 4,
+      "href": "../../web/src/template-v2.html#L4",
       "literalReferences": [
         {
           "path": "web/src/customize.js",
@@ -965,8 +1045,8 @@
     {
       "id": "light-level",
       "tag": "input",
-      "line": 3,
-      "href": "../../web/src/template-v2.html#L3",
+      "line": 4,
+      "href": "../../web/src/template-v2.html#L4",
       "literalReferences": [
         {
           "path": "web/src/customize.js",
@@ -983,8 +1063,8 @@
     {
       "id": "floor-color",
       "tag": "input",
-      "line": 3,
-      "href": "../../web/src/template-v2.html#L3",
+      "line": 4,
+      "href": "../../web/src/template-v2.html#L4",
       "literalReferences": [
         {
           "path": "web/src/customize.js",
@@ -1006,8 +1086,8 @@
     {
       "id": "background-color",
       "tag": "input",
-      "line": 3,
-      "href": "../../web/src/template-v2.html#L3",
+      "line": 4,
+      "href": "../../web/src/template-v2.html#L4",
       "literalReferences": [
         {
           "path": "web/src/customize.js",
@@ -1029,8 +1109,8 @@
     {
       "id": "reset-style",
       "tag": "button",
-      "line": 3,
-      "href": "../../web/src/template-v2.html#L3",
+      "line": 4,
+      "href": "../../web/src/template-v2.html#L4",
       "literalReferences": [
         {
           "path": "web/src/customize.js",
@@ -1042,207 +1122,176 @@
     {
       "id": "engine-open",
       "tag": "button",
-      "line": 3,
-      "href": "../../web/src/template-v2.html#L3",
+      "line": 4,
+      "href": "../../web/src/template-v2.html#L4",
       "literalReferences": [
         {
           "path": "web/src/app-v2.js",
-          "line": 34,
-          "href": "../../web/src/app-v2.js#L34"
+          "line": 35,
+          "href": "../../web/src/app-v2.js#L35"
         },
         {
           "path": "web/src/app-v2.js",
-          "line": 96,
-          "href": "../../web/src/app-v2.js#L96"
+          "line": 98,
+          "href": "../../web/src/app-v2.js#L98"
+        },
+        {
+          "path": "web/src/workbench.js",
+          "line": 35,
+          "href": "../../web/src/workbench.js#L35"
         }
       ]
     },
     {
       "id": "engine-status",
       "tag": "p",
-      "line": 3,
-      "href": "../../web/src/template-v2.html#L3",
+      "line": 4,
+      "href": "../../web/src/template-v2.html#L4",
       "literalReferences": [
         {
           "path": "web/src/app-v2.js",
-          "line": 102,
-          "href": "../../web/src/app-v2.js#L102"
+          "line": 104,
+          "href": "../../web/src/app-v2.js#L104"
         }
       ]
     },
     {
       "id": "engine-cut-value",
       "tag": "output",
-      "line": 3,
-      "href": "../../web/src/template-v2.html#L3",
+      "line": 4,
+      "href": "../../web/src/template-v2.html#L4",
       "literalReferences": [
         {
           "path": "web/src/app-v2.js",
-          "line": 98,
-          "href": "../../web/src/app-v2.js#L98"
+          "line": 100,
+          "href": "../../web/src/app-v2.js#L100"
         }
       ]
     },
     {
       "id": "engine-cut",
       "tag": "input",
-      "line": 3,
-      "href": "../../web/src/template-v2.html#L3",
+      "line": 4,
+      "href": "../../web/src/template-v2.html#L4",
       "literalReferences": [
         {
           "path": "web/src/app-v2.js",
-          "line": 98,
-          "href": "../../web/src/app-v2.js#L98"
+          "line": 100,
+          "href": "../../web/src/app-v2.js#L100"
         },
         {
           "path": "web/src/app-v2.js",
-          "line": 102,
-          "href": "../../web/src/app-v2.js#L102"
+          "line": 104,
+          "href": "../../web/src/app-v2.js#L104"
         }
       ]
     },
     {
       "id": "engine-pause",
       "tag": "button",
-      "line": 3,
-      "href": "../../web/src/template-v2.html#L3",
+      "line": 4,
+      "href": "../../web/src/template-v2.html#L4",
       "literalReferences": [
         {
           "path": "web/src/app-v2.js",
-          "line": 97,
-          "href": "../../web/src/app-v2.js#L97"
+          "line": 99,
+          "href": "../../web/src/app-v2.js#L99"
         },
         {
           "path": "web/src/app-v2.js",
-          "line": 102,
-          "href": "../../web/src/app-v2.js#L102"
+          "line": 104,
+          "href": "../../web/src/app-v2.js#L104"
         }
       ]
     },
     {
       "id": "assembly-value",
       "tag": "output",
-      "line": 3,
-      "href": "../../web/src/template-v2.html#L3",
+      "line": 4,
+      "href": "../../web/src/template-v2.html#L4",
       "literalReferences": [
         {
           "path": "web/src/app-v2.js",
-          "line": 52,
-          "href": "../../web/src/app-v2.js#L52"
+          "line": 53,
+          "href": "../../web/src/app-v2.js#L53"
         },
         {
           "path": "web/src/app-v2.js",
-          "line": 88,
-          "href": "../../web/src/app-v2.js#L88"
+          "line": 90,
+          "href": "../../web/src/app-v2.js#L90"
         },
         {
           "path": "web/src/app-v2.js",
-          "line": 102,
-          "href": "../../web/src/app-v2.js#L102"
+          "line": 104,
+          "href": "../../web/src/app-v2.js#L104"
         }
       ]
     },
     {
       "id": "assembly",
       "tag": "input",
-      "line": 3,
-      "href": "../../web/src/template-v2.html#L3",
+      "line": 4,
+      "href": "../../web/src/template-v2.html#L4",
       "literalReferences": [
         {
           "path": "web/src/app-v2.js",
-          "line": 43,
-          "href": "../../web/src/app-v2.js#L43"
+          "line": 44,
+          "href": "../../web/src/app-v2.js#L44"
         },
         {
           "path": "web/src/app-v2.js",
-          "line": 88,
-          "href": "../../web/src/app-v2.js#L88"
+          "line": 90,
+          "href": "../../web/src/app-v2.js#L90"
         }
       ]
     },
     {
       "id": "assembly-state",
       "tag": "span",
-      "line": 3,
-      "href": "../../web/src/template-v2.html#L3",
+      "line": 4,
+      "href": "../../web/src/template-v2.html#L4",
       "literalReferences": [
         {
           "path": "web/src/app-v2.js",
-          "line": 102,
-          "href": "../../web/src/app-v2.js#L102"
+          "line": 104,
+          "href": "../../web/src/app-v2.js#L104"
         }
       ]
     },
     {
       "id": "loop",
       "tag": "button",
-      "line": 3,
-      "href": "../../web/src/template-v2.html#L3",
+      "line": 4,
+      "href": "../../web/src/template-v2.html#L4",
       "literalReferences": [
         {
           "path": "web/src/app-v2.js",
-          "line": 32,
-          "href": "../../web/src/app-v2.js#L32"
+          "line": 33,
+          "href": "../../web/src/app-v2.js#L33"
         },
         {
           "path": "web/src/app-v2.js",
-          "line": 52,
-          "href": "../../web/src/app-v2.js#L52"
+          "line": 53,
+          "href": "../../web/src/app-v2.js#L53"
         },
         {
           "path": "web/src/app-v2.js",
-          "line": 80,
-          "href": "../../web/src/app-v2.js#L80"
+          "line": 82,
+          "href": "../../web/src/app-v2.js#L82"
         },
         {
           "path": "web/src/app-v2.js",
-          "line": 88,
-          "href": "../../web/src/app-v2.js#L88"
+          "line": 90,
+          "href": "../../web/src/app-v2.js#L90"
         }
       ]
     },
     {
       "id": "assemble",
       "tag": "button",
-      "line": 3,
-      "href": "../../web/src/template-v2.html#L3",
+      "line": 4,
+      "href": "../../web/src/template-v2.html#L4",
       "literalReferences": [
-        {
-          "path": "web/src/app-v2.js",
-          "line": 79,
-          "href": "../../web/src/app-v2.js#L79"
-        }
-      ]
-    },
-    {
-      "id": "explode",
-      "tag": "button",
-      "line": 3,
-      "href": "../../web/src/template-v2.html#L3",
-      "literalReferences": [
-        {
-          "path": "web/src/app-v2.js",
-          "line": 79,
-          "href": "../../web/src/app-v2.js#L79"
-        }
-      ]
-    },
-    {
-      "id": "part-select",
-      "tag": "select",
-      "line": 3,
-      "href": "../../web/src/template-v2.html#L3",
-      "literalReferences": [
-        {
-          "path": "web/src/app-v2.js",
-          "line": 49,
-          "href": "../../web/src/app-v2.js#L49"
-        },
-        {
-          "path": "web/src/app-v2.js",
-          "line": 65,
-          "href": "../../web/src/app-v2.js#L65"
-        },
         {
           "path": "web/src/app-v2.js",
           "line": 81,
@@ -1251,72 +1300,23 @@
       ]
     },
     {
-      "id": "selected-name",
-      "tag": "strong",
-      "line": 3,
-      "href": "../../web/src/template-v2.html#L3",
-      "literalReferences": [
-        {
-          "path": "web/src/app-v2.js",
-          "line": 49,
-          "href": "../../web/src/app-v2.js#L49"
-        }
-      ]
-    },
-    {
-      "id": "selected-category",
-      "tag": "p",
-      "line": 3,
-      "href": "../../web/src/template-v2.html#L3",
-      "literalReferences": [
-        {
-          "path": "web/src/app-v2.js",
-          "line": 49,
-          "href": "../../web/src/app-v2.js#L49"
-        }
-      ]
-    },
-    {
-      "id": "focus-part",
+      "id": "explode",
       "tag": "button",
-      "line": 3,
-      "href": "../../web/src/template-v2.html#L3",
+      "line": 4,
+      "href": "../../web/src/template-v2.html#L4",
       "literalReferences": [
         {
           "path": "web/src/app-v2.js",
-          "line": 49,
-          "href": "../../web/src/app-v2.js#L49"
-        },
-        {
-          "path": "web/src/app-v2.js",
-          "line": 82,
-          "href": "../../web/src/app-v2.js#L82"
+          "line": 81,
+          "href": "../../web/src/app-v2.js#L81"
         }
       ]
     },
     {
-      "id": "isolate",
-      "tag": "button",
-      "line": 3,
-      "href": "../../web/src/template-v2.html#L3",
-      "literalReferences": [
-        {
-          "path": "web/src/app-v2.js",
-          "line": 49,
-          "href": "../../web/src/app-v2.js#L49"
-        },
-        {
-          "path": "web/src/app-v2.js",
-          "line": 82,
-          "href": "../../web/src/app-v2.js#L82"
-        }
-      ]
-    },
-    {
-      "id": "free-move",
-      "tag": "button",
-      "line": 3,
-      "href": "../../web/src/template-v2.html#L3",
+      "id": "part-select",
+      "tag": "select",
+      "line": 4,
+      "href": "../../web/src/template-v2.html#L4",
       "literalReferences": [
         {
           "path": "web/src/app-v2.js",
@@ -1325,26 +1325,52 @@
         },
         {
           "path": "web/src/app-v2.js",
+          "line": 67,
+          "href": "../../web/src/app-v2.js#L67"
+        },
+        {
+          "path": "web/src/app-v2.js",
           "line": 83,
           "href": "../../web/src/app-v2.js#L83"
-        },
-        {
-          "path": "web/src/app-v2.js",
-          "line": 88,
-          "href": "../../web/src/app-v2.js#L88"
         }
       ]
     },
     {
-      "id": "offset-value",
-      "tag": "output",
-      "line": 3,
-      "href": "../../web/src/template-v2.html#L3",
+      "id": "selected-name",
+      "tag": "strong",
+      "line": 4,
+      "href": "../../web/src/template-v2.html#L4",
       "literalReferences": [
         {
           "path": "web/src/app-v2.js",
-          "line": 49,
-          "href": "../../web/src/app-v2.js#L49"
+          "line": 50,
+          "href": "../../web/src/app-v2.js#L50"
+        }
+      ]
+    },
+    {
+      "id": "selected-category",
+      "tag": "p",
+      "line": 4,
+      "href": "../../web/src/template-v2.html#L4",
+      "literalReferences": [
+        {
+          "path": "web/src/app-v2.js",
+          "line": 50,
+          "href": "../../web/src/app-v2.js#L50"
+        }
+      ]
+    },
+    {
+      "id": "focus-part",
+      "tag": "button",
+      "line": 4,
+      "href": "../../web/src/template-v2.html#L4",
+      "literalReferences": [
+        {
+          "path": "web/src/app-v2.js",
+          "line": 50,
+          "href": "../../web/src/app-v2.js#L50"
         },
         {
           "path": "web/src/app-v2.js",
@@ -1354,15 +1380,15 @@
       ]
     },
     {
-      "id": "part-offset",
-      "tag": "input",
-      "line": 3,
-      "href": "../../web/src/template-v2.html#L3",
+      "id": "isolate",
+      "tag": "button",
+      "line": 4,
+      "href": "../../web/src/template-v2.html#L4",
       "literalReferences": [
         {
           "path": "web/src/app-v2.js",
-          "line": 49,
-          "href": "../../web/src/app-v2.js#L49"
+          "line": 50,
+          "href": "../../web/src/app-v2.js#L50"
         },
         {
           "path": "web/src/app-v2.js",
@@ -1372,28 +1398,15 @@
       ]
     },
     {
-      "id": "clear-selection",
+      "id": "free-move",
       "tag": "button",
-      "line": 3,
-      "href": "../../web/src/template-v2.html#L3",
+      "line": 4,
+      "href": "../../web/src/template-v2.html#L4",
       "literalReferences": [
         {
           "path": "web/src/app-v2.js",
-          "line": 82,
-          "href": "../../web/src/app-v2.js#L82"
-        }
-      ]
-    },
-    {
-      "id": "spin",
-      "tag": "button",
-      "line": 3,
-      "href": "../../web/src/template-v2.html#L3",
-      "literalReferences": [
-        {
-          "path": "web/src/app-v2.js",
-          "line": 32,
-          "href": "../../web/src/app-v2.js#L32"
+          "line": 51,
+          "href": "../../web/src/app-v2.js#L51"
         },
         {
           "path": "web/src/app-v2.js",
@@ -1402,36 +1415,108 @@
         },
         {
           "path": "web/src/app-v2.js",
-          "line": 88,
-          "href": "../../web/src/app-v2.js#L88"
+          "line": 90,
+          "href": "../../web/src/app-v2.js#L90"
+        }
+      ]
+    },
+    {
+      "id": "offset-value",
+      "tag": "output",
+      "line": 4,
+      "href": "../../web/src/template-v2.html#L4",
+      "literalReferences": [
+        {
+          "path": "web/src/app-v2.js",
+          "line": 50,
+          "href": "../../web/src/app-v2.js#L50"
         },
         {
           "path": "web/src/app-v2.js",
-          "line": 102,
-          "href": "../../web/src/app-v2.js#L102"
+          "line": 86,
+          "href": "../../web/src/app-v2.js#L86"
+        }
+      ]
+    },
+    {
+      "id": "part-offset",
+      "tag": "input",
+      "line": 4,
+      "href": "../../web/src/template-v2.html#L4",
+      "literalReferences": [
+        {
+          "path": "web/src/app-v2.js",
+          "line": 50,
+          "href": "../../web/src/app-v2.js#L50"
+        },
+        {
+          "path": "web/src/app-v2.js",
+          "line": 86,
+          "href": "../../web/src/app-v2.js#L86"
+        }
+      ]
+    },
+    {
+      "id": "clear-selection",
+      "tag": "button",
+      "line": 4,
+      "href": "../../web/src/template-v2.html#L4",
+      "literalReferences": [
+        {
+          "path": "web/src/app-v2.js",
+          "line": 84,
+          "href": "../../web/src/app-v2.js#L84"
+        }
+      ]
+    },
+    {
+      "id": "spin",
+      "tag": "button",
+      "line": 4,
+      "href": "../../web/src/template-v2.html#L4",
+      "literalReferences": [
+        {
+          "path": "web/src/app-v2.js",
+          "line": 33,
+          "href": "../../web/src/app-v2.js#L33"
+        },
+        {
+          "path": "web/src/app-v2.js",
+          "line": 87,
+          "href": "../../web/src/app-v2.js#L87"
+        },
+        {
+          "path": "web/src/app-v2.js",
+          "line": 90,
+          "href": "../../web/src/app-v2.js#L90"
+        },
+        {
+          "path": "web/src/app-v2.js",
+          "line": 104,
+          "href": "../../web/src/app-v2.js#L104"
         }
       ]
     },
     {
       "id": "steering-value",
       "tag": "output",
-      "line": 3,
-      "href": "../../web/src/template-v2.html#L3",
+      "line": 4,
+      "href": "../../web/src/template-v2.html#L4",
       "literalReferences": [
         {
           "path": "web/src/app-v2.js",
-          "line": 32,
-          "href": "../../web/src/app-v2.js#L32"
-        },
-        {
-          "path": "web/src/app-v2.js",
-          "line": 86,
-          "href": "../../web/src/app-v2.js#L86"
+          "line": 33,
+          "href": "../../web/src/app-v2.js#L33"
         },
         {
           "path": "web/src/app-v2.js",
           "line": 88,
           "href": "../../web/src/app-v2.js#L88"
+        },
+        {
+          "path": "web/src/app-v2.js",
+          "line": 90,
+          "href": "../../web/src/app-v2.js#L90"
         },
         {
           "path": "web/src/garage.js",
@@ -1443,18 +1528,13 @@
     {
       "id": "steering",
       "tag": "input",
-      "line": 3,
-      "href": "../../web/src/template-v2.html#L3",
+      "line": 4,
+      "href": "../../web/src/template-v2.html#L4",
       "literalReferences": [
         {
           "path": "web/src/app-v2.js",
-          "line": 32,
-          "href": "../../web/src/app-v2.js#L32"
-        },
-        {
-          "path": "web/src/app-v2.js",
-          "line": 86,
-          "href": "../../web/src/app-v2.js#L86"
+          "line": 33,
+          "href": "../../web/src/app-v2.js#L33"
         },
         {
           "path": "web/src/app-v2.js",
@@ -1463,31 +1543,36 @@
         },
         {
           "path": "web/src/app-v2.js",
-          "line": 102,
-          "href": "../../web/src/app-v2.js#L102"
+          "line": 90,
+          "href": "../../web/src/app-v2.js#L90"
+        },
+        {
+          "path": "web/src/app-v2.js",
+          "line": 104,
+          "href": "../../web/src/app-v2.js#L104"
         }
       ]
     },
     {
       "id": "drs-value",
       "tag": "output",
-      "line": 3,
-      "href": "../../web/src/template-v2.html#L3",
+      "line": 4,
+      "href": "../../web/src/template-v2.html#L4",
       "literalReferences": [
         {
           "path": "web/src/app-v2.js",
-          "line": 32,
-          "href": "../../web/src/app-v2.js#L32"
+          "line": 33,
+          "href": "../../web/src/app-v2.js#L33"
         },
         {
           "path": "web/src/app-v2.js",
-          "line": 87,
-          "href": "../../web/src/app-v2.js#L87"
+          "line": 89,
+          "href": "../../web/src/app-v2.js#L89"
         },
         {
           "path": "web/src/app-v2.js",
-          "line": 88,
-          "href": "../../web/src/app-v2.js#L88"
+          "line": 90,
+          "href": "../../web/src/app-v2.js#L90"
         },
         {
           "path": "web/src/garage.js",
@@ -1499,54 +1584,54 @@
     {
       "id": "drs",
       "tag": "input",
-      "line": 3,
-      "href": "../../web/src/template-v2.html#L3",
+      "line": 4,
+      "href": "../../web/src/template-v2.html#L4",
       "literalReferences": [
         {
           "path": "web/src/app-v2.js",
-          "line": 32,
-          "href": "../../web/src/app-v2.js#L32"
+          "line": 33,
+          "href": "../../web/src/app-v2.js#L33"
         },
         {
           "path": "web/src/app-v2.js",
-          "line": 87,
-          "href": "../../web/src/app-v2.js#L87"
+          "line": 89,
+          "href": "../../web/src/app-v2.js#L89"
         },
         {
           "path": "web/src/app-v2.js",
-          "line": 88,
-          "href": "../../web/src/app-v2.js#L88"
+          "line": 90,
+          "href": "../../web/src/app-v2.js#L90"
         },
         {
           "path": "web/src/app-v2.js",
-          "line": 102,
-          "href": "../../web/src/app-v2.js#L102"
+          "line": 104,
+          "href": "../../web/src/app-v2.js#L104"
         }
       ]
     },
     {
       "id": "motion-note",
       "tag": "p",
-      "line": 3,
-      "href": "../../web/src/template-v2.html#L3",
+      "line": 4,
+      "href": "../../web/src/template-v2.html#L4",
       "literalReferences": [
         {
           "path": "web/src/app-v2.js",
-          "line": 102,
-          "href": "../../web/src/app-v2.js#L102"
+          "line": 104,
+          "href": "../../web/src/app-v2.js#L104"
         }
       ]
     },
     {
       "id": "theme",
       "tag": "button",
-      "line": 3,
-      "href": "../../web/src/template-v2.html#L3",
+      "line": 4,
+      "href": "../../web/src/template-v2.html#L4",
       "literalReferences": [
         {
           "path": "web/src/app-v2.js",
-          "line": 75,
-          "href": "../../web/src/app-v2.js#L75"
+          "line": 77,
+          "href": "../../web/src/app-v2.js#L77"
         },
         {
           "path": "web/src/customize.js",
@@ -1558,52 +1643,260 @@
     {
       "id": "wire",
       "tag": "button",
-      "line": 3,
-      "href": "../../web/src/template-v2.html#L3",
+      "line": 4,
+      "href": "../../web/src/template-v2.html#L4",
       "literalReferences": [
         {
           "path": "web/src/app-v2.js",
-          "line": 77,
-          "href": "../../web/src/app-v2.js#L77"
+          "line": 79,
+          "href": "../../web/src/app-v2.js#L79"
         }
       ]
     },
     {
       "id": "quality",
       "tag": "button",
-      "line": 3,
-      "href": "../../web/src/template-v2.html#L3",
+      "line": 4,
+      "href": "../../web/src/template-v2.html#L4",
       "literalReferences": [
         {
           "path": "web/src/app-v2.js",
-          "line": 76,
-          "href": "../../web/src/app-v2.js#L76"
+          "line": 78,
+          "href": "../../web/src/app-v2.js#L78"
         }
       ]
     },
     {
       "id": "save-photo",
       "tag": "button",
-      "line": 3,
-      "href": "../../web/src/template-v2.html#L3",
+      "line": 4,
+      "href": "../../web/src/template-v2.html#L4",
       "literalReferences": [
         {
           "path": "web/src/app-v2.js",
-          "line": 91,
-          "href": "../../web/src/app-v2.js#L91"
+          "line": 93,
+          "href": "../../web/src/app-v2.js#L93"
+        }
+      ]
+    },
+    {
+      "id": "helmet-isolated",
+      "tag": "button",
+      "line": 4,
+      "href": "../../web/src/template-v2.html#L4",
+      "literalReferences": []
+    },
+    {
+      "id": "helmet-cockpit",
+      "tag": "button",
+      "line": 4,
+      "href": "../../web/src/template-v2.html#L4",
+      "literalReferences": []
+    },
+    {
+      "id": "fit-height-value",
+      "tag": "output",
+      "line": 4,
+      "href": "../../web/src/template-v2.html#L4",
+      "literalReferences": []
+    },
+    {
+      "id": "fit-height",
+      "tag": "input",
+      "line": 4,
+      "href": "../../web/src/template-v2.html#L4",
+      "literalReferences": [
+        {
+          "path": "web/src/workbench.js",
+          "line": 40,
+          "href": "../../web/src/workbench.js#L40"
+        },
+        {
+          "path": "web/src/workbench.js",
+          "line": 43,
+          "href": "../../web/src/workbench.js#L43"
+        }
+      ]
+    },
+    {
+      "id": "fit-depth-value",
+      "tag": "output",
+      "line": 4,
+      "href": "../../web/src/template-v2.html#L4",
+      "literalReferences": []
+    },
+    {
+      "id": "fit-depth",
+      "tag": "input",
+      "line": 4,
+      "href": "../../web/src/template-v2.html#L4",
+      "literalReferences": [
+        {
+          "path": "web/src/workbench.js",
+          "line": 40,
+          "href": "../../web/src/workbench.js#L40"
+        },
+        {
+          "path": "web/src/workbench.js",
+          "line": 43,
+          "href": "../../web/src/workbench.js#L43"
+        }
+      ]
+    },
+    {
+      "id": "fit-pitch-value",
+      "tag": "output",
+      "line": 4,
+      "href": "../../web/src/template-v2.html#L4",
+      "literalReferences": []
+    },
+    {
+      "id": "fit-pitch",
+      "tag": "input",
+      "line": 4,
+      "href": "../../web/src/template-v2.html#L4",
+      "literalReferences": [
+        {
+          "path": "web/src/workbench.js",
+          "line": 40,
+          "href": "../../web/src/workbench.js#L40"
+        },
+        {
+          "path": "web/src/workbench.js",
+          "line": 43,
+          "href": "../../web/src/workbench.js#L43"
+        }
+      ]
+    },
+    {
+      "id": "fit-reset",
+      "tag": "button",
+      "line": 4,
+      "href": "../../web/src/template-v2.html#L4",
+      "literalReferences": [
+        {
+          "path": "web/src/workbench.js",
+          "line": 43,
+          "href": "../../web/src/workbench.js#L43"
+        }
+      ]
+    },
+    {
+      "id": "helmet-export",
+      "tag": "button",
+      "line": 4,
+      "href": "../../web/src/template-v2.html#L4",
+      "literalReferences": [
+        {
+          "path": "web/src/workbench.js",
+          "line": 47,
+          "href": "../../web/src/workbench.js#L47"
+        }
+      ]
+    },
+    {
+      "id": "helmet-export-status",
+      "tag": "p",
+      "line": 4,
+      "href": "../../web/src/template-v2.html#L4",
+      "literalReferences": []
+    },
+    {
+      "id": "driver-isolated",
+      "tag": "button",
+      "line": 5,
+      "href": "../../web/src/template-v2.html#L5",
+      "literalReferences": []
+    },
+    {
+      "id": "driver-cockpit",
+      "tag": "button",
+      "line": 5,
+      "href": "../../web/src/template-v2.html#L5",
+      "literalReferences": []
+    },
+    {
+      "id": "driver-export",
+      "tag": "button",
+      "line": 5,
+      "href": "../../web/src/template-v2.html#L5",
+      "literalReferences": [
+        {
+          "path": "web/src/workbench.js",
+          "line": 47,
+          "href": "../../web/src/workbench.js#L47"
+        }
+      ]
+    },
+    {
+      "id": "driver-export-status",
+      "tag": "p",
+      "line": 5,
+      "href": "../../web/src/template-v2.html#L5",
+      "literalReferences": []
+    },
+    {
+      "id": "world-box",
+      "tag": "button",
+      "line": 6,
+      "href": "../../web/src/template-v2.html#L6",
+      "literalReferences": [
+        {
+          "path": "web/src/workbench.js",
+          "line": 48,
+          "href": "../../web/src/workbench.js#L48"
+        }
+      ]
+    },
+    {
+      "id": "world-studio",
+      "tag": "button",
+      "line": 6,
+      "href": "../../web/src/template-v2.html#L6",
+      "literalReferences": [
+        {
+          "path": "web/src/workbench.js",
+          "line": 49,
+          "href": "../../web/src/workbench.js#L49"
+        }
+      ]
+    },
+    {
+      "id": "world-tunnel",
+      "tag": "button",
+      "line": 6,
+      "href": "../../web/src/template-v2.html#L6",
+      "literalReferences": [
+        {
+          "path": "web/src/workbench.js",
+          "line": 50,
+          "href": "../../web/src/workbench.js#L50"
+        }
+      ]
+    },
+    {
+      "id": "world-export",
+      "tag": "button",
+      "line": 6,
+      "href": "../../web/src/template-v2.html#L6",
+      "literalReferences": [
+        {
+          "path": "web/src/workbench.js",
+          "line": 51,
+          "href": "../../web/src/workbench.js#L51"
         }
       ]
     },
     {
       "id": "model-data",
       "tag": "script",
-      "line": 3,
-      "href": "../../web/src/template-v2.html#L3",
+      "line": 6,
+      "href": "../../web/src/template-v2.html#L6",
       "literalReferences": [
         {
           "path": "web/src/app-v2.js",
-          "line": 53,
-          "href": "../../web/src/app-v2.js#L53"
+          "line": 54,
+          "href": "../../web/src/app-v2.js#L54"
         }
       ]
     }

@@ -10,13 +10,13 @@ Gerado por `python ferramentas/mapear.py`. Todos os arquivos do escopo estão li
 | [.github/workflows/verify.yml](../../.github/workflows/verify.yml) | configuração ou infraestrutura | 642 |
 | [.gitignore](../../.gitignore) | configuração ou infraestrutura | 441 |
 | [.nojekyll](../../.nojekyll) | configuração ou infraestrutura | 0 |
-| [CHANGELOG.md](../../CHANGELOG.md) | documentação | 1366 |
+| [CHANGELOG.md](../../CHANGELOG.md) | documentação | 1770 |
 | [CONTRIBUTING.md](../../CONTRIBUTING.md) | documentação | 652 |
 | [INTEIA_F1_Master.blend](../../INTEIA_F1_Master.blend) | entrega editável Blender | 23815409 |
 | [LEIA-ME.md](../../LEIA-ME.md) | documentação | 313 |
 | [LICENSE](../../LICENSE) | licença ou procedência | 920 |
 | [Previa-Blender.png](../../Previa-Blender.png) | prévia histórica | 695174 |
-| [README.md](../../README.md) | documentação | 5124 |
+| [README.md](../../README.md) | documentação | 5679 |
 | [THIRD-PARTY-NOTICES.md](../../THIRD-PARTY-NOTICES.md) | licença ou procedência | 861 |
 | [ambientes/INTEIA-box-laboratorio.glb](../../ambientes/INTEIA-box-laboratorio.glb) | entrega GLB | 10302288 |
 | [ambientes/INTEIA_Box_com_carro.blend](../../ambientes/INTEIA_Box_com_carro.blend) | entrega editável Blender | 24679287 |
@@ -31,6 +31,7 @@ Gerado por `python ferramentas/mapear.py`. Todos os arquivos do escopo estão li
 | [docs/DIREITOS-E-PROCEDENCIA.md](../../docs/DIREITOS-E-PROCEDENCIA.md) | licença ou procedência | 1581 |
 | [docs/INTEGRACAO-MOTOR.md](../../docs/INTEGRACAO-MOTOR.md) | documentação | 2096 |
 | [docs/INTEGRACAO.md](../../docs/INTEGRACAO.md) | documentação | 2578 |
+| [docs/PILOTO-E-CAPACETE.md](../../docs/PILOTO-E-CAPACETE.md) | documentação | 2492 |
 | [docs/PUBLICACAO.md](../../docs/PUBLICACAO.md) | documentação | 3001 |
 | [docs/REVISAO-TUNEL-VISUAL.md](../../docs/REVISAO-TUNEL-VISUAL.md) | documentação | 4051 |
 | [docs/VALIDACAO.md](../../docs/VALIDACAO.md) | documentação | 2128 |
@@ -72,7 +73,7 @@ Gerado por `python ferramentas/mapear.py`. Todos os arquivos do escopo estão li
 | [docs/mapeamento-detalhado/dados/graphify-ast.json](../../docs/mapeamento-detalhado/dados/graphify-ast.json) | configuração ou infraestrutura | 70625 |
 | [docs/mapeamento-detalhado/dados/graphify-execucao.json](../../docs/mapeamento-detalhado/dados/graphify-execucao.json) | configuração ou infraestrutura | 4327 |
 | [docs/mapeamento-detalhado/dados/manifesto-conferencia.json](../../docs/mapeamento-detalhado/dados/manifesto-conferencia.json) | mapa gerado | — |
-| [docs/mapeamento-detalhado/dados/relacoes-curadas.json](../../docs/mapeamento-detalhado/dados/relacoes-curadas.json) | configuração ou infraestrutura | 53969 |
+| [docs/mapeamento-detalhado/dados/relacoes-curadas.json](../../docs/mapeamento-detalhado/dados/relacoes-curadas.json) | configuração ou infraestrutura | 54067 |
 | [docs/mapeamento-detalhado/dados/simbolos.json](../../docs/mapeamento-detalhado/dados/simbolos.json) | mapa gerado | — |
 | [docs/mapeamento-detalhado/dados/teste-mecanica.json](../../docs/mapeamento-detalhado/dados/teste-mecanica.json) | mapa gerado | — |
 | [docs/mapeamento-detalhado/dados/validacao.json](../../docs/mapeamento-detalhado/dados/validacao.json) | mapa gerado | — |
@@ -84,11 +85,11 @@ Gerado por `python ferramentas/mapear.py`. Todos os arquivos do escopo estão li
 | [docs/mapeamento-detalhado/grafos/dados.json](../../docs/mapeamento-detalhado/grafos/dados.json) | mapa gerado | — |
 | [docs/mapeamento-detalhado/grafos/dados.mmd](../../docs/mapeamento-detalhado/grafos/dados.mmd) | mapa gerado | — |
 | [docs/mapeamento-detalhado/index.html](../../docs/mapeamento-detalhado/index.html) | mapa gerado | — |
-| [docs/mapeamento-detalhado/scripts/finalidades.json](../../docs/mapeamento-detalhado/scripts/finalidades.json) | configuração ou infraestrutura | 18867 |
+| [docs/mapeamento-detalhado/scripts/finalidades.json](../../docs/mapeamento-detalhado/scripts/finalidades.json) | configuração ou infraestrutura | 19488 |
 | [docs/mapeamento-detalhado/scripts/gerar.py](../../docs/mapeamento-detalhado/scripts/gerar.py) | configuração ou infraestrutura | 23592 |
 | [docs/mapeamento-detalhado/scripts/interface.html](../../docs/mapeamento-detalhado/scripts/interface.html) | documentação | 16420 |
 | [docs/mapeamento-detalhado/scripts/validar.py](../../docs/mapeamento-detalhado/scripts/validar.py) | configuração ou infraestrutura | 6177 |
-| [docs/mapeamento-detalhado/scripts/verificar-app.mjs](../../docs/mapeamento-detalhado/scripts/verificar-app.mjs) | configuração ou infraestrutura | 4443 |
+| [docs/mapeamento-detalhado/scripts/verificar-app.mjs](../../docs/mapeamento-detalhado/scripts/verificar-app.mjs) | configuração ou infraestrutura | 4621 |
 | [documentacao/Comparacao-iluminacao.html](../../documentacao/Comparacao-iluminacao.html) | documentação | 370368 |
 | [documentacao/INTEIA-personalizacao.png](../../documentacao/INTEIA-personalizacao.png) | prévia histórica | 83329 |
 | [documentacao/componentes-origem.json](../../documentacao/componentes-origem.json) | metadados de procedência | 78871 |
@@ -131,12 +132,12 @@ Gerado por `python ferramentas/mapear.py`. Todos os arquivos do escopo estão li
 | [web/assets/power-unit-v1.glb](../../web/assets/power-unit-v1.glb) | entrega GLB | 4640876 |
 | [web/assets/power-unit-v1.manifest.json](../../web/assets/power-unit-v1.manifest.json) | configuração ou infraestrutura | 1728 |
 | [web/build.cjs](../../web/build.cjs) | configuração ou infraestrutura | 432 |
-| [web/index.html](../../web/index.html) | aplicação gerada | 4351046 |
+| [web/index.html](../../web/index.html) | aplicação gerada | 4369247 |
 | [web/package-lock.json](../../web/package-lock.json) | configuração ou infraestrutura | 14952 |
-| [web/package.json](../../web/package.json) | configuração ou infraestrutura | 421 |
+| [web/package.json](../../web/package.json) | configuração ou infraestrutura | 451 |
 | [web/server.cjs](../../web/server.cjs) | configuração ou infraestrutura | 864 |
 | [web/src/aero-physics.mjs](../../web/src/aero-physics.mjs) | fonte web editável | 1377 |
-| [web/src/app-v2.js](../../web/src/app-v2.js) | fonte web editável | 22194 |
+| [web/src/app-v2.js](../../web/src/app-v2.js) | fonte web editável | 22502 |
 | [web/src/branding.js](../../web/src/branding.js) | fonte web editável | 4155 |
 | [web/src/car-look.js](../../web/src/car-look.js) | fonte web editável | 19008 |
 | [web/src/customize.js](../../web/src/customize.js) | fonte web editável | 3041 |
@@ -144,15 +145,18 @@ Gerado por `python ferramentas/mapear.py`. Todos os arquivos do escopo estão li
 | [web/src/engine/in-car.js](../../web/src/engine/in-car.js) | fonte web editável | 14990 |
 | [web/src/flow-detail.js](../../web/src/flow-detail.js) | fonte web editável | 4610 |
 | [web/src/garage.js](../../web/src/garage.js) | fonte web editável | 16633 |
+| [web/src/helmet-1991.js](../../web/src/helmet-1991.js) | fonte web editável | 9068 |
 | [web/src/identity.js](../../web/src/identity.js) | fonte web editável | 2244 |
 | [web/src/mechanics.js](../../web/src/mechanics.js) | fonte web editável | 7149 |
-| [web/src/senna-driver.js](../../web/src/senna-driver.js) | fonte web editável | 5538 |
+| [web/src/senna-driver.js](../../web/src/senna-driver.js) | fonte web editável | 7763 |
 | [web/src/studio.js](../../web/src/studio.js) | fonte web editável | 10517 |
 | [web/src/surface-library.js](../../web/src/surface-library.js) | fonte web editável | 6989 |
-| [web/src/template-v2.html](../../web/src/template-v2.html) | fonte web editável | 23289 |
+| [web/src/template-v2.html](../../web/src/template-v2.html) | fonte web editável | 27814 |
 | [web/src/tunnel-visual.js](../../web/src/tunnel-visual.js) | fonte web editável | 6325 |
 | [web/src/wind-tunnel.js](../../web/src/wind-tunnel.js) | fonte web editável | 8411 |
+| [web/src/workbench.js](../../web/src/workbench.js) | fonte web editável | 6700 |
 | [web/test-aerodynamics.mjs](../../web/test-aerodynamics.mjs) | teste | 1182 |
+| [web/test-driver-model.mjs](../../web/test-driver-model.mjs) | teste | 1687 |
 | [web/test-mechanics.mjs](../../web/test-mechanics.mjs) | teste | 3930 |
 | [web/test-power-unit.mjs](../../web/test-power-unit.mjs) | teste | 2245 |
 
@@ -207,15 +211,15 @@ Gerado por `python ferramentas/mapear.py`. Todos os arquivos do escopo estão li
 | `to_studio` | [ferramentas/package_blender.py:130](../../ferramentas/package_blender.py#L130) |
 | `matrices` | [ferramentas/validate-kit.py:7](../../ferramentas/validate-kit.py#L7) |
 | `aerodynamicTest` | [web/src/aero-physics.mjs:2](../../web/src/aero-physics.mjs#L2) |
-| `closeEngine` | [web/src/app-v2.js:34](../../web/src/app-v2.js#L34) |
-| `setFlowXray` | [web/src/app-v2.js:36](../../web/src/app-v2.js#L36) |
-| `moveCamera` | [web/src/app-v2.js:44](../../web/src/app-v2.js#L44) |
-| `view` | [web/src/app-v2.js:45](../../web/src/app-v2.js#L45) |
-| `resize` | [web/src/app-v2.js:47](../../web/src/app-v2.js#L47) |
-| `refreshSelection` | [web/src/app-v2.js:49](../../web/src/app-v2.js#L49) |
-| `select` | [web/src/app-v2.js:50](../../web/src/app-v2.js#L50) |
-| `focusPart` | [web/src/app-v2.js:51](../../web/src/app-v2.js#L51) |
-| `assemblyTo` | [web/src/app-v2.js:52](../../web/src/app-v2.js#L52) |
+| `closeEngine` | [web/src/app-v2.js:35](../../web/src/app-v2.js#L35) |
+| `setFlowXray` | [web/src/app-v2.js:37](../../web/src/app-v2.js#L37) |
+| `moveCamera` | [web/src/app-v2.js:45](../../web/src/app-v2.js#L45) |
+| `view` | [web/src/app-v2.js:46](../../web/src/app-v2.js#L46) |
+| `resize` | [web/src/app-v2.js:48](../../web/src/app-v2.js#L48) |
+| `refreshSelection` | [web/src/app-v2.js:50](../../web/src/app-v2.js#L50) |
+| `select` | [web/src/app-v2.js:51](../../web/src/app-v2.js#L51) |
+| `focusPart` | [web/src/app-v2.js:52](../../web/src/app-v2.js#L52) |
+| `assemblyTo` | [web/src/app-v2.js:53](../../web/src/app-v2.js#L53) |
 | `applyInteiaBranding` | [web/src/branding.js:5](../../web/src/branding.js#L5) |
 | `project` | [web/src/branding.js:25](../../web/src/branding.js#L25) |
 | `rimPatch` | [web/src/car-look.js:36](../../web/src/car-look.js#L36) |
@@ -261,18 +265,31 @@ Gerado por `python ferramentas/mapear.py`. Todos os arquivos do escopo estão li
 | `cabinet` | [web/src/garage.js:40](../../web/src/garage.js#L40) |
 | `screen` | [web/src/garage.js:53](../../web/src/garage.js#L53) |
 | `draw` | [web/src/garage.js:58](../../web/src/garage.js#L58) |
+| `createHelmet1991` | [web/src/helmet-1991.js:5](../../web/src/helmet-1991.js#L5) |
+| `add` | [web/src/helmet-1991.js:19](../../web/src/helmet-1991.js#L19) |
+| `radius` | [web/src/helmet-1991.js:22](../../web/src/helmet-1991.js#L22) |
+| `point` | [web/src/helmet-1991.js:23](../../web/src/helmet-1991.js#L23) |
+| `patch` | [web/src/helmet-1991.js:33](../../web/src/helmet-1991.js#L33) |
+| `tube` | [web/src/helmet-1991.js:48](../../web/src/helmet-1991.js#L48) |
+| `label` | [web/src/helmet-1991.js:54](../../web/src/helmet-1991.js#L54) |
+| `text` | [web/src/helmet-1991.js:55](../../web/src/helmet-1991.js#L55) |
+| `emblem` | [web/src/helmet-1991.js:56](../../web/src/helmet-1991.js#L56) |
+| `national` | [web/src/helmet-1991.js:57](../../web/src/helmet-1991.js#L57) |
+| `screw` | [web/src/helmet-1991.js:68](../../web/src/helmet-1991.js#L68) |
 | `glyphs` | [web/src/identity.js:2](../../web/src/identity.js#L2) |
 | `emblem` | [web/src/identity.js:10](../../web/src/identity.js#L10) |
 | `brandSVG` | [web/src/identity.js:11](../../web/src/identity.js#L11) |
 | `drawBrand` | [web/src/identity.js:16](../../web/src/identity.js#L16) |
 | `createMechanics` | [web/src/mechanics.js:3](../../web/src/mechanics.js#L3) |
 | `apply` | [web/src/mechanics.js:43](../../web/src/mechanics.js#L43) |
-| `createSennaDriver` | [web/src/senna-driver.js:4](../../web/src/senna-driver.js#L4) |
-| `mesh` | [web/src/senna-driver.js:19](../../web/src/senna-driver.js#L19) |
-| `ellipsoid` | [web/src/senna-driver.js:20](../../web/src/senna-driver.js#L20) |
-| `limb` | [web/src/senna-driver.js:21](../../web/src/senna-driver.js#L21) |
-| `radius` | [web/src/senna-driver.js:36](../../web/src/senna-driver.js#L36) |
-| `surface` | [web/src/senna-driver.js:37](../../web/src/senna-driver.js#L37) |
+| `createSennaDriver` | [web/src/senna-driver.js:6](../../web/src/senna-driver.js#L6) |
+| `mesh` | [web/src/senna-driver.js:20](../../web/src/senna-driver.js#L20) |
+| `loft` | [web/src/senna-driver.js:23](../../web/src/senna-driver.js#L23) |
+| `piping` | [web/src/senna-driver.js:34](../../web/src/senna-driver.js#L34) |
+| `rounded` | [web/src/senna-driver.js:35](../../web/src/senna-driver.js#L35) |
+| `chest` | [web/src/senna-driver.js:39](../../web/src/senna-driver.js#L39) |
+| `ribbon` | [web/src/senna-driver.js:55](../../web/src/senna-driver.js#L55) |
+| `applyFit` | [web/src/senna-driver.js:66](../../web/src/senna-driver.js#L66) |
 | `setupStudio` | [web/src/studio.js:2](../../web/src/studio.js#L2) |
 | `texture` | [web/src/studio.js:75](../../web/src/studio.js#L75) |
 | `applyLocalCarbonProjection` | [web/src/studio.js:104](../../web/src/studio.js#L104) |
@@ -287,3 +304,11 @@ Gerado por `python ferramentas/mapear.py`. Todos os arquivos do escopo estão li
 | `createWindTunnel` | [web/src/wind-tunnel.js:4](../../web/src/wind-tunnel.js#L4) |
 | `calculate` | [web/src/wind-tunnel.js:21](../../web/src/wind-tunnel.js#L21) |
 | `drawChart` | [web/src/wind-tunnel.js:39](../../web/src/wind-tunnel.js#L39) |
+| `createWorkbench` | [web/src/workbench.js:4](../../web/src/workbench.js#L4) |
+| `frame` | [web/src/workbench.js:11](../../web/src/workbench.js#L11) |
+| `view` | [web/src/workbench.js:12](../../web/src/workbench.js#L12) |
+| `rebuild` | [web/src/workbench.js:20](../../web/src/workbench.js#L20) |
+| `refreshPanels` | [web/src/workbench.js:28](../../web/src/workbench.js#L28) |
+| `setTab` | [web/src/workbench.js:29](../../web/src/workbench.js#L29) |
+| `cockpit` | [web/src/workbench.js:38](../../web/src/workbench.js#L38) |
+| `downloadModel` | [web/src/workbench.js:44](../../web/src/workbench.js#L44) |

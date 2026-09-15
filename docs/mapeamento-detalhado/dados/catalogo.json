@@ -1,12 +1,12 @@
 {
   "metadata": {
-    "captured_at": "2026-09-15T20:00:55.032940+00:00",
-    "revision": "0c9dde4107737622fc2088bb2e76bc5ec979e443",
+    "captured_at": "2026-09-15T20:29:32.804856+00:00",
+    "revision": "2ee8f44bd8cd47fa44194b8542d951e00ea69064",
     "initial_revision": "1ae4fd15062d347dc8462af8f4db33c749e6575b",
     "branch": "main",
-    "status": "M CHANGELOG.md\n M README.md\n M THIRD-PARTY-NOTICES.md\n M docs/mapas/GRAFOS.md\n M docs/mapas/INVENTARIO.md\n M docs/mapas/cobertura.json\n M docs/mapas/componentes.json\n M docs/mapas/controles.json\n M docs/mapas/dependencias.json\n M docs/mapas/index.html\n M docs/mapas/inventario.json\n M docs/mapeamento-detalhado/ARVORE.md\n M docs/mapeamento-detalhado/CATALOGO.md\n M docs/mapeamento-detalhado/FUNCOES.md\n M docs/mapeamento-detalhado/dados/catalogo.csv\n M docs/mapeamento-detalhado/dados/catalogo.json\n M docs/mapeamento-detalhado/dados/cobertura.json\n M docs/mapeamento-detalhado/dados/componentes.json\n M docs/mapeamento-detalhado/dados/entrega.json\n M docs/mapeamento-detalhado/dados/grafo.json\n M docs/mapeamento-detalhado/dados/manifesto-conferencia.json\n M docs/mapeamento-detalhado/dados/relacoes-curadas.json\n M docs/mapeamento-detalhado/dados/simbolos.json\n M docs/mapeamento-detalhado/dados/validacao.json\n M docs/mapeamento-detalhado/dados/verificacao-app.json\n M docs/mapeamento-detalhado/grafos/arquitetura.json\n M docs/mapeamento-detalhado/grafos/arquitetura.mmd\n M docs/mapeamento-detalhado/index.html\n M docs/mapeamento-detalhado/scripts/finalidades.json\n M docs/mapeamento-detalhado/scripts/gerar.py\n M docs/mapeamento-detalhado/scripts/verificar-app.mjs\n M ferramentas/manifest.cjs\n M ferramentas/mapear.py\n M manifesto-sha256.json\n M web/build.cjs\n M web/index.html\n M web/package.json\n M web/server.cjs\n M web/src/app-v2.js\n M web/src/branding.js\n M web/src/template-v2.html\n M web/test-mechanics.mjs\n?? docs/INTEGRACAO-MOTOR.md\n?? web/assets/carro-aula-v2.glb\n?? web/assets/carro-aula-v2.proveniencia.json\n?? web/assets/carro-aula-v2.validacao.json\n?? web/assets/inteia-escudo-oficial.svg\n?? web/assets/inteia-nome-oficial.svg\n?? web/assets/inteligencia-mil-grau-transparent.png\n?? web/assets/inteligencia-mil-grau.source.json\n?? web/assets/power-unit-v1.glb\n?? web/assets/power-unit-v1.manifest.json\n?? web/src/car-look.js\n?? web/src/engine/\n?? web/src/senna-driver.js\n?? web/src/surface-library.js\n?? web/test-power-unit.mjs",
-    "catalog_count": 106,
-    "bytes": 142916273,
+    "status": "M CHANGELOG.md\n M README.md\n M docs/mapas/GRAFOS.md\n M docs/mapas/INVENTARIO.md\n M docs/mapas/cobertura.json\n M docs/mapas/controles.json\n M docs/mapas/dependencias.json\n M docs/mapas/index.html\n M docs/mapas/inventario.json\n M docs/mapeamento-detalhado/ARVORE.md\n M docs/mapeamento-detalhado/CATALOGO.md\n M docs/mapeamento-detalhado/FUNCOES.md\n M docs/mapeamento-detalhado/dados/catalogo.csv\n M docs/mapeamento-detalhado/dados/catalogo.json\n M docs/mapeamento-detalhado/dados/cobertura.json\n M docs/mapeamento-detalhado/dados/grafo.json\n M docs/mapeamento-detalhado/dados/manifesto-conferencia.json\n M docs/mapeamento-detalhado/dados/relacoes-curadas.json\n M docs/mapeamento-detalhado/dados/simbolos.json\n M docs/mapeamento-detalhado/dados/verificacao-app.json\n M docs/mapeamento-detalhado/grafos/arquitetura.json\n M docs/mapeamento-detalhado/grafos/arquitetura.mmd\n M docs/mapeamento-detalhado/grafos/dados.json\n M docs/mapeamento-detalhado/index.html\n M docs/mapeamento-detalhado/scripts/finalidades.json\n M docs/mapeamento-detalhado/scripts/verificar-app.mjs\n M manifesto-sha256.json\n M web/index.html\n M web/package.json\n M web/src/app-v2.js\n M web/src/senna-driver.js\n M web/src/template-v2.html\n?? docs/PILOTO-E-CAPACETE.md\n?? web/src/helmet-1991.js\n?? web/src/workbench.js\n?? web/test-driver-model.mjs",
+    "catalog_count": 110,
+    "bytes": 142992845,
     "baseline_files": 69,
     "baseline_missing": [],
     "unclassified": [],
@@ -39,13 +39,13 @@
     "scope": "Somente C:\\Users\\igorm\\projetos\\INTEIA-laboratorio-3d",
     "own_delivery": "dados/entrega.json",
     "parallel_thread": "01a09849-3de3-7dc2-bd60-06a9b58be580",
-    "symbols": 166,
+    "symbols": 201,
     "symbol_parse_errors": [],
     "unresolved_local_imports": [],
-    "edges": 908,
-    "nodes": 293,
+    "edges": 1095,
+    "nodes": 332,
     "confidence_counts": {
-      "EXTRACTED": 908
+      "EXTRACTED": 1095
     }
   },
   "files": [
@@ -117,11 +117,11 @@
       "usage": "Rastrear decisões e versões",
       "classification_reviewed": true,
       "tracked": true,
-      "bytes": 1391,
-      "sha256": "12f8906d8637f9a5d6a5f20d42632292a920e3a1617341cdb59b70baab81e14d",
+      "bytes": 1803,
+      "sha256": "db18b7c8e87d2380144c292b8a396d3ee99e6fb4fe4a8d9cf4d15cae774d6ffc",
       "dependencies": [],
       "used_by": [],
-      "lines": 25
+      "lines": 33
     },
     {
       "path": "CONTRIBUTING.md",
@@ -287,8 +287,8 @@
       "usage": "Leitura inicial",
       "classification_reviewed": true,
       "tracked": true,
-      "bytes": 5189,
-      "sha256": "ae9a07f717393560d222e64389c3ca94dcd259331d9fc8ee4933040be4eb75b0",
+      "bytes": 5750,
+      "sha256": "ec1936b49c72578ec2f9c8c8f635881c9a59a697b86e8fcd69f7b1d4683d505a",
       "dependencies": [],
       "used_by": [
         {
@@ -296,7 +296,7 @@
           "relation": "documenta"
         }
       ],
-      "lines": 65,
+      "lines": 71,
       "relations_out": [
         {
           "target": "docs/PUBLICACAO.md",
@@ -400,6 +400,11 @@
         },
         {
           "target": "docs/INTEGRACAO-MOTOR.md",
+          "relation": "documenta",
+          "line": null
+        },
+        {
+          "target": "docs/PILOTO-E-CAPACETE.md",
           "relation": "documenta",
           "line": null
         },
@@ -910,7 +915,7 @@
       "nature": "documento editável",
       "usage": "Consultar controles e limites",
       "classification_reviewed": true,
-      "tracked": false,
+      "tracked": true,
       "bytes": 2120,
       "sha256": "3740e11b19f24de81d6d06f23a32099d7503058733bb461fc75397a2648c6772",
       "dependencies": [],
@@ -957,6 +962,25 @@
           "line": 18
         }
       ]
+    },
+    {
+      "path": "docs/PILOTO-E-CAPACETE.md",
+      "type": "md",
+      "purpose": "Referências, operação e limites do estudo do piloto",
+      "nature": "documento editável",
+      "usage": "Consultar proporções e controles",
+      "classification_reviewed": true,
+      "tracked": false,
+      "bytes": 2520,
+      "sha256": "6e5c6ba8afcd060cc661fa6813d28836b4867d28c97cc17f490c1dcdee0f3318",
+      "dependencies": [],
+      "used_by": [
+        {
+          "source": "README.md",
+          "relation": "documenta"
+        }
+      ],
+      "lines": 28
     },
     {
       "path": "docs/PUBLICACAO.md",
@@ -1039,11 +1063,11 @@
       "usage": "Complementar a esta análise; mantido pela outra tarefa",
       "classification_reviewed": true,
       "tracked": true,
-      "bytes": 18903,
-      "sha256": "53472a4bfef6e3cd80106df6db54c365a6caac00a766ee471148b42ca9f4a147",
+      "bytes": 20196,
+      "sha256": "38314b3f98d96a98783d1cda7e9684c2697cf04eed5714a655faca27441df35a",
       "dependencies": [],
       "used_by": [],
-      "lines": 215
+      "lines": 228
     },
     {
       "path": "docs/mapas/INVENTARIO.md",
@@ -1053,11 +1077,11 @@
       "usage": "Complementar a esta análise; mantido pela outra tarefa",
       "classification_reviewed": true,
       "tracked": true,
-      "bytes": 26534,
-      "sha256": "8b568c05d4bbad278e241f6e80d9bb9e7e47cd5eb7fb0c62eef2c881d6ac911f",
+      "bytes": 28481,
+      "sha256": "95724e507e65bb77398a027df4225561f65517d4e4cae7719e029d5efa4e3acc",
       "dependencies": [],
       "used_by": [],
-      "lines": 289
+      "lines": 314
     },
     {
       "path": "docs/mapas/MANUTENCAO.md",
@@ -1179,8 +1203,8 @@
       "usage": "Complementar a esta análise; mantido pela outra tarefa",
       "classification_reviewed": true,
       "tracked": true,
-      "bytes": 1125,
-      "sha256": "fde82bb7288270bb74d7b1d4fe114363ae506236a7a2456570d11085dc04c43a",
+      "bytes": 1126,
+      "sha256": "f42b68ad4ef59371027ec8b3d18627aa3aaaa44598db7fb86e054bf1dac8d136",
       "dependencies": [],
       "used_by": [],
       "lines": 36
@@ -1207,11 +1231,11 @@
       "usage": "Complementar a esta análise; mantido pela outra tarefa",
       "classification_reviewed": true,
       "tracked": true,
-      "bytes": 38762,
-      "sha256": "2abb1aa68a5826fd5624e00231341d8111aa7eaaf28e2d5069863adc2bd1fc25",
+      "bytes": 45841,
+      "sha256": "6788a20b3c8aa8b20dc3a11cf69f687a204af2a5d27721a4e418d61b3c6380be",
       "dependencies": [],
       "used_by": [],
-      "lines": 1611
+      "lines": 1904
     },
     {
       "path": "docs/mapas/dependencias.json",
@@ -1221,11 +1245,11 @@
       "usage": "Complementar a esta análise; mantido pela outra tarefa",
       "classification_reviewed": true,
       "tracked": true,
-      "bytes": 41476,
-      "sha256": "7d1fc85ddc2435df97c0a412718824838d80f804854f0c99ae11ba307d55038e",
+      "bytes": 44791,
+      "sha256": "2453696b37200c4fc0d9208902b93874990d773b9b8e92fe644bc021c972562f",
       "dependencies": [],
       "used_by": [],
-      "lines": 1352
+      "lines": 1460
     },
     {
       "path": "docs/mapas/graphify-extracao.json",
@@ -1249,8 +1273,8 @@
       "usage": "Complementar a esta análise; mantido pela outra tarefa",
       "classification_reviewed": true,
       "tracked": true,
-      "bytes": 385955,
-      "sha256": "eb7ada05520baf0e45d7bf98f33aa18d15eed8d890c58db832a4b816d423b114",
+      "bytes": 397493,
+      "sha256": "cd3f50f67a6eba6ae060abfef3de5cdf3fd12e0cddb7cf52fe72c335bbd515c2",
       "dependencies": [],
       "used_by": [
         {
@@ -1267,11 +1291,11 @@
       "usage": "Complementar a esta análise; mantido pela outra tarefa",
       "classification_reviewed": true,
       "tracked": true,
-      "bytes": 508452,
-      "sha256": "2123943241d8ca621b7d2b1c61806bbfaf873731fd536f2299c1dbf8a69f28f5",
+      "bytes": 513454,
+      "sha256": "0518215da0765bb56087d3ab3f1feeef49b96db75ff0df7ca83e540fa54bda3c",
       "dependencies": [],
       "used_by": [],
-      "lines": 16218
+      "lines": 16395
     },
     {
       "path": "documentacao/Comparacao-iluminacao.html",
@@ -2048,7 +2072,7 @@
       "classification_reviewed": true,
       "tracked": true,
       "bytes": 3048,
-      "sha256": "ba08edbbc7072798b5528f7b4431a89a2705ca7cc0f4df7497e535534c1a8a73",
+      "sha256": "0aa800840b20b7ad35c52b32e66a1fb24a1bc609986524952c7a3c9d88f6986d",
       "dependencies": [],
       "used_by": [
         {
@@ -9378,7 +9402,7 @@
       "nature": "asset GLB",
       "usage": "Modelo incorporado ao laboratório",
       "classification_reviewed": true,
-      "tracked": false,
+      "tracked": true,
       "bytes": 2293292,
       "sha256": "02bae139775f9c99f069e8ba664f4076cbbaaf8afdce6545a81afb77462ca245",
       "dependencies": [],
@@ -12862,7 +12886,7 @@
       "nature": "metadados",
       "usage": "Conferir origem do carro",
       "classification_reviewed": true,
-      "tracked": false,
+      "tracked": true,
       "bytes": 7442,
       "sha256": "8b04257293d6a35be4156eec55135d54ad62e1db45e7c982c27aa9c6ad9540d5",
       "dependencies": [],
@@ -12876,7 +12900,7 @@
       "nature": "evidência histórica",
       "usage": "Consultar junto aos testes atuais",
       "classification_reviewed": true,
-      "tracked": false,
+      "tracked": true,
       "bytes": 1070,
       "sha256": "8e24947ee76ca9646bc766771e51b6830be79a20c37dd50842a19692c5375292",
       "dependencies": [],
@@ -16371,7 +16395,7 @@
       "nature": "identidade visual",
       "usage": "Aplicado à carroceria",
       "classification_reviewed": true,
-      "tracked": false,
+      "tracked": true,
       "bytes": 5927,
       "sha256": "5021fd72b3981876ad48fcfa1f63c1c5cba3fe9801770200ef78e069ae834064",
       "dependencies": [],
@@ -16390,7 +16414,7 @@
       "nature": "identidade visual",
       "usage": "Aplicada à lateral",
       "classification_reviewed": true,
-      "tracked": false,
+      "tracked": true,
       "bytes": 1292,
       "sha256": "5b4d15ba39acea6813a7c76de2a06b1fe99ae16bf11c5b9b013cb3d8cc9ee14e",
       "dependencies": [],
@@ -16409,7 +16433,7 @@
       "nature": "identidade visual",
       "usage": "Aplicada à tampa do motor",
       "classification_reviewed": true,
-      "tracked": false,
+      "tracked": true,
       "bytes": 1070790,
       "sha256": "e8f5874746919d46f30b4e1f1b1eab91f07c5e2969261ceed3b439cf4bf34f8d",
       "dependencies": [],
@@ -16432,7 +16456,7 @@
       "nature": "metadados",
       "usage": "Consultar origem",
       "classification_reviewed": true,
-      "tracked": false,
+      "tracked": true,
       "bytes": 564,
       "sha256": "2a60e8b3d502e725a7aa10bf72cfa9f3b028e0723c6a98de6933774c073a4eb1",
       "dependencies": [],
@@ -16446,7 +16470,7 @@
       "nature": "asset GLB",
       "usage": "Carregado sob demanda no box",
       "classification_reviewed": true,
-      "tracked": false,
+      "tracked": true,
       "bytes": 4640876,
       "sha256": "2f056193a412878d70cfe96e7c1f42055bde17938a076bdadda704718c403eae",
       "dependencies": [],
@@ -16512,7 +16536,7 @@
       "nature": "metadados",
       "usage": "Conferir procedência e limites",
       "classification_reviewed": true,
-      "tracked": false,
+      "tracked": true,
       "bytes": 1786,
       "sha256": "d9a93d1a6544f6c84c54a6e5e96cf9997a0895fc4c0869511ab3158241af3975",
       "dependencies": [],
@@ -16611,8 +16635,8 @@
       "usage": "Abrir localmente; editar fontes e recompilar",
       "classification_reviewed": true,
       "tracked": true,
-      "bytes": 4351049,
-      "sha256": "f7b57d3e286df679554e24111ef7aa8fa21a0146a9fb0992be0d50de0cd9c61d",
+      "bytes": 4369253,
+      "sha256": "5ec5f13364dbbc1eb73ddf9deffb5f54df5c1de01f952e89a5d1a4cbefacb7da",
       "dependencies": [],
       "used_by": [
         {
@@ -16659,8 +16683,8 @@
       "usage": "npm; manifesto da aplicação",
       "classification_reviewed": true,
       "tracked": true,
-      "bytes": 439,
-      "sha256": "147d3524dd84f39880c355e9c76b8465d6882a66984362d60e41d80d229d4001",
+      "bytes": 469,
+      "sha256": "6d99522cc832e7de14b69c746d283d55459a4b41f62c05ae4d881ce67b1412a4",
       "dependencies": [
         {
           "target": "web/build.cjs",
@@ -16826,153 +16850,158 @@
       "usage": "Navegador WebGL; orquestração",
       "classification_reviewed": true,
       "tracked": true,
-      "bytes": 22298,
-      "sha256": "426f8aaf9c96b87199ca0b539b17947ace2609c1163496c1018a3a9d7b92f859",
+      "bytes": 22608,
+      "sha256": "9072956456aba21ce296f8d6bcb256d78aafceb7c01bcd8f0732c8e5aa65ab57",
       "dependencies": [
         {
-          "target": "external:three/addons/libs/meshopt_decoder.module.js",
+          "target": "web/src/workbench.js",
           "relation": "importa",
           "line": 1
         },
         {
-          "target": "web/src/engine/in-car.js",
+          "target": "external:three/addons/libs/meshopt_decoder.module.js",
           "relation": "importa",
           "line": 2
         },
         {
-          "target": "web/src/car-look.js",
+          "target": "web/src/engine/in-car.js",
           "relation": "importa",
           "line": 3
         },
         {
-          "target": "web/src/surface-library.js",
+          "target": "web/src/car-look.js",
           "relation": "importa",
           "line": 4
         },
         {
-          "target": "web/src/senna-driver.js",
+          "target": "web/src/surface-library.js",
           "relation": "importa",
           "line": 5
         },
         {
-          "target": "web/src/branding.js",
+          "target": "web/src/senna-driver.js",
           "relation": "importa",
           "line": 6
         },
         {
-          "target": "web/src/identity.js",
+          "target": "web/src/branding.js",
           "relation": "importa",
           "line": 7
         },
         {
-          "target": "external:three/addons/exporters/GLTFExporter.js",
+          "target": "web/src/identity.js",
           "relation": "importa",
           "line": 8
         },
         {
-          "target": "web/src/garage.js",
+          "target": "external:three/addons/exporters/GLTFExporter.js",
           "relation": "importa",
           "line": 9
         },
         {
-          "target": "web/src/wind-tunnel.js",
+          "target": "web/src/garage.js",
           "relation": "importa",
           "line": 10
         },
         {
-          "target": "web/src/customize.js",
+          "target": "web/src/wind-tunnel.js",
           "relation": "importa",
           "line": 11
         },
         {
-          "target": "external:three",
+          "target": "web/src/customize.js",
           "relation": "importa",
           "line": 12
         },
         {
-          "target": "external:three/addons/controls/OrbitControls.js",
+          "target": "external:three",
           "relation": "importa",
           "line": 13
         },
         {
-          "target": "external:three/addons/controls/TransformControls.js",
+          "target": "external:three/addons/controls/OrbitControls.js",
           "relation": "importa",
           "line": 14
         },
         {
-          "target": "external:three/addons/postprocessing/EffectComposer.js",
+          "target": "external:three/addons/controls/TransformControls.js",
           "relation": "importa",
           "line": 15
         },
         {
-          "target": "external:three/addons/postprocessing/RenderPass.js",
+          "target": "external:three/addons/postprocessing/EffectComposer.js",
           "relation": "importa",
           "line": 16
         },
         {
-          "target": "external:three/addons/postprocessing/SSAOPass.js",
+          "target": "external:three/addons/postprocessing/RenderPass.js",
           "relation": "importa",
           "line": 17
         },
         {
-          "target": "external:three/addons/postprocessing/OutputPass.js",
+          "target": "external:three/addons/postprocessing/SSAOPass.js",
           "relation": "importa",
           "line": 18
         },
         {
-          "target": "external:three/addons/postprocessing/SMAAPass.js",
+          "target": "external:three/addons/postprocessing/OutputPass.js",
           "relation": "importa",
           "line": 19
         },
         {
-          "target": "external:three/addons/loaders/GLTFLoader.js",
+          "target": "external:three/addons/postprocessing/SMAAPass.js",
           "relation": "importa",
           "line": 20
         },
         {
-          "target": "web/src/studio.js",
+          "target": "external:three/addons/loaders/GLTFLoader.js",
           "relation": "importa",
           "line": 21
         },
         {
-          "target": "web/src/mechanics.js",
+          "target": "web/src/studio.js",
           "relation": "importa",
           "line": 22
         },
         {
+          "target": "web/src/mechanics.js",
+          "relation": "importa",
+          "line": 23
+        },
+        {
           "target": "web/src/template-v2.html",
           "relation": "conecta_stage_e_controles_dom",
-          "line": 23
+          "line": 24
         },
         {
           "target": "web/src/garage.js",
           "relation": "exporta_clone_do_box_via_gltfexporter",
-          "line": 72
+          "line": 74
         },
         {
           "target": "web/src/mechanics.js",
           "relation": "atualiza_estado_a_cada_quadro",
-          "line": 102
+          "line": 104
         },
         {
           "target": "web/src/wind-tunnel.js",
           "relation": "coordena_box_e_transparencia_por_callbacks",
-          "line": 64
+          "line": 65
         },
         {
           "target": "web/src/studio.js",
           "relation": "renderiza_e_atualiza_piso",
-          "line": 103
+          "line": 105
         },
         {
           "target": "web/src/branding.js",
           "relation": "importa_assinatura_ativa",
-          "line": 6
+          "line": 7
         },
         {
           "target": "web/src/branding.js",
           "relation": "aplica_assinatura_apos_criar_mecanica",
-          "line": 57
+          "line": 58
         }
       ],
       "used_by": [
@@ -16981,857 +17010,872 @@
           "relation": "empacota_entrada"
         }
       ],
-      "lines": 104,
+      "lines": 106,
       "relations_out": [
         {
-          "target": "external:three/addons/libs/meshopt_decoder.module.js",
+          "target": "web/src/workbench.js",
           "relation": "importa",
           "line": 1
         },
         {
-          "target": "web/src/engine/in-car.js",
+          "target": "external:three/addons/libs/meshopt_decoder.module.js",
           "relation": "importa",
           "line": 2
         },
         {
-          "target": "web/src/car-look.js",
+          "target": "web/src/engine/in-car.js",
           "relation": "importa",
           "line": 3
         },
         {
-          "target": "web/src/surface-library.js",
+          "target": "web/src/car-look.js",
           "relation": "importa",
           "line": 4
         },
         {
-          "target": "web/src/senna-driver.js",
+          "target": "web/src/surface-library.js",
           "relation": "importa",
           "line": 5
         },
         {
-          "target": "web/src/branding.js",
+          "target": "web/src/senna-driver.js",
           "relation": "importa",
           "line": 6
         },
         {
-          "target": "web/src/identity.js",
+          "target": "web/src/branding.js",
           "relation": "importa",
           "line": 7
         },
         {
-          "target": "external:three/addons/exporters/GLTFExporter.js",
+          "target": "web/src/identity.js",
           "relation": "importa",
           "line": 8
         },
         {
-          "target": "web/src/garage.js",
+          "target": "external:three/addons/exporters/GLTFExporter.js",
           "relation": "importa",
           "line": 9
         },
         {
-          "target": "web/src/wind-tunnel.js",
+          "target": "web/src/garage.js",
           "relation": "importa",
           "line": 10
         },
         {
-          "target": "web/src/customize.js",
+          "target": "web/src/wind-tunnel.js",
           "relation": "importa",
           "line": 11
         },
         {
-          "target": "external:three",
+          "target": "web/src/customize.js",
           "relation": "importa",
           "line": 12
         },
         {
-          "target": "external:three/addons/controls/OrbitControls.js",
+          "target": "external:three",
           "relation": "importa",
           "line": 13
         },
         {
-          "target": "external:three/addons/controls/TransformControls.js",
+          "target": "external:three/addons/controls/OrbitControls.js",
           "relation": "importa",
           "line": 14
         },
         {
-          "target": "external:three/addons/postprocessing/EffectComposer.js",
+          "target": "external:three/addons/controls/TransformControls.js",
           "relation": "importa",
           "line": 15
         },
         {
-          "target": "external:three/addons/postprocessing/RenderPass.js",
+          "target": "external:three/addons/postprocessing/EffectComposer.js",
           "relation": "importa",
           "line": 16
         },
         {
-          "target": "external:three/addons/postprocessing/SSAOPass.js",
+          "target": "external:three/addons/postprocessing/RenderPass.js",
           "relation": "importa",
           "line": 17
         },
         {
-          "target": "external:three/addons/postprocessing/OutputPass.js",
+          "target": "external:three/addons/postprocessing/SSAOPass.js",
           "relation": "importa",
           "line": 18
         },
         {
-          "target": "external:three/addons/postprocessing/SMAAPass.js",
+          "target": "external:three/addons/postprocessing/OutputPass.js",
           "relation": "importa",
           "line": 19
         },
         {
-          "target": "external:three/addons/loaders/GLTFLoader.js",
+          "target": "external:three/addons/postprocessing/SMAAPass.js",
           "relation": "importa",
           "line": 20
         },
         {
-          "target": "web/src/studio.js",
+          "target": "external:three/addons/loaders/GLTFLoader.js",
           "relation": "importa",
           "line": 21
         },
         {
-          "target": "web/src/mechanics.js",
+          "target": "web/src/studio.js",
           "relation": "importa",
           "line": 22
         },
         {
-          "target": "web/src/app-v2.js#23:$",
-          "relation": "define",
+          "target": "web/src/mechanics.js",
+          "relation": "importa",
           "line": 23
         },
         {
-          "target": "web/src/app-v2.js#34:closeEngine",
+          "target": "web/src/app-v2.js#24:$",
           "relation": "define",
-          "line": 34
+          "line": 24
         },
         {
-          "target": "web/src/app-v2.js#36:setFlowXray",
+          "target": "web/src/app-v2.js#35:closeEngine",
           "relation": "define",
-          "line": 36
+          "line": 35
         },
         {
-          "target": "web/src/app-v2.js#37:clone",
+          "target": "web/src/app-v2.js#37:setFlowXray",
           "relation": "define",
           "line": 37
         },
         {
-          "target": "web/src/app-v2.js#44:moveCamera",
+          "target": "web/src/app-v2.js#38:clone",
           "relation": "define",
-          "line": 44
+          "line": 38
         },
         {
-          "target": "web/src/app-v2.js#45:view",
+          "target": "web/src/app-v2.js#45:moveCamera",
           "relation": "define",
           "line": 45
         },
         {
-          "target": "web/src/app-v2.js#47:resize",
+          "target": "web/src/app-v2.js#46:view",
           "relation": "define",
-          "line": 47
+          "line": 46
         },
         {
-          "target": "web/src/app-v2.js#49:refreshSelection",
+          "target": "web/src/app-v2.js#48:resize",
           "relation": "define",
-          "line": 49
+          "line": 48
         },
         {
-          "target": "web/src/app-v2.js#50:select",
+          "target": "web/src/app-v2.js#50:refreshSelection",
           "relation": "define",
           "line": 50
         },
         {
-          "target": "web/src/app-v2.js#51:focusPart",
+          "target": "web/src/app-v2.js#51:select",
           "relation": "define",
           "line": 51
         },
         {
-          "target": "web/src/app-v2.js#52:assemblyTo",
+          "target": "web/src/app-v2.js#52:focusPart",
           "relation": "define",
           "line": 52
         },
         {
-          "target": "web/src/app-v2.js#63:target",
+          "target": "web/src/app-v2.js#53:assemblyTo",
           "relation": "define",
-          "line": 63
+          "line": 53
         },
         {
-          "target": "web/src/app-v2.js#64:onBeforeToggle",
-          "relation": "define",
-          "line": 64
-        },
-        {
-          "target": "web/src/app-v2.js#64:onRegion",
+          "target": "web/src/app-v2.js#64:target",
           "relation": "define",
           "line": 64
         },
         {
-          "target": "web/src/app-v2.js#64:onToggle",
+          "target": "web/src/app-v2.js#65:onBeforeToggle",
           "relation": "define",
-          "line": 64
+          "line": 65
         },
         {
-          "target": "web/src/app-v2.js#23:$",
-          "relation": "chama_sintaticamente",
-          "line": 23
+          "target": "web/src/app-v2.js#65:onRegion",
+          "relation": "define",
+          "line": 65
         },
         {
-          "target": "web/src/identity.js#11:brandSVG",
+          "target": "web/src/app-v2.js#65:onToggle",
+          "relation": "define",
+          "line": 65
+        },
+        {
+          "target": "web/src/app-v2.js#66:showCar",
+          "relation": "define",
+          "line": 66
+        },
+        {
+          "target": "web/src/app-v2.js#24:$",
           "relation": "chama_sintaticamente",
           "line": 24
         },
         {
+          "target": "web/src/identity.js#11:brandSVG",
+          "relation": "chama_sintaticamente",
+          "line": 25
+        },
+        {
           "target": "web/src/studio.js#2:setupStudio",
           "relation": "chama_sintaticamente",
-          "line": 28
+          "line": 29
         },
         {
-          "target": "web/src/app-v2.js#23:$",
+          "target": "web/src/app-v2.js#24:$",
           "relation": "chama_sintaticamente",
-          "line": 32
+          "line": 33
         },
         {
-          "target": "web/src/app-v2.js#23:$",
+          "target": "web/src/app-v2.js#24:$",
           "relation": "chama_sintaticamente",
-          "line": 32
+          "line": 33
         },
         {
-          "target": "web/src/app-v2.js#23:$",
+          "target": "web/src/app-v2.js#24:$",
           "relation": "chama_sintaticamente",
-          "line": 32
+          "line": 33
         },
         {
-          "target": "web/src/app-v2.js#23:$",
+          "target": "web/src/app-v2.js#24:$",
           "relation": "chama_sintaticamente",
-          "line": 32
+          "line": 33
         },
         {
-          "target": "web/src/app-v2.js#23:$",
+          "target": "web/src/app-v2.js#24:$",
           "relation": "chama_sintaticamente",
-          "line": 32
+          "line": 33
         },
         {
-          "target": "web/src/app-v2.js#23:$",
+          "target": "web/src/app-v2.js#24:$",
           "relation": "chama_sintaticamente",
-          "line": 32
+          "line": 33
         },
         {
-          "target": "web/src/app-v2.js#23:$",
+          "target": "web/src/app-v2.js#24:$",
           "relation": "chama_sintaticamente",
-          "line": 43
+          "line": 44
         },
         {
-          "target": "web/src/app-v2.js#23:$",
+          "target": "web/src/app-v2.js#24:$",
           "relation": "chama_sintaticamente",
-          "line": 43
+          "line": 44
         },
         {
-          "target": "web/src/app-v2.js#23:$",
+          "target": "web/src/app-v2.js#24:$",
           "relation": "chama_sintaticamente",
-          "line": 43
+          "line": 44
         },
         {
-          "target": "web/src/app-v2.js#47:resize",
+          "target": "web/src/app-v2.js#48:resize",
           "relation": "chama_sintaticamente",
-          "line": 48
+          "line": 49
         },
         {
-          "target": "web/src/app-v2.js#23:$",
+          "target": "web/src/app-v2.js#24:$",
           "relation": "chama_sintaticamente",
-          "line": 53
+          "line": 54
         },
         {
           "target": "web/src/studio.js#146:applyCarMaterials",
           "relation": "chama_sintaticamente",
-          "line": 57
+          "line": 58
         },
         {
           "target": "web/src/mechanics.js#3:createMechanics",
           "relation": "chama_sintaticamente",
-          "line": 57
+          "line": 58
         },
         {
           "target": "web/src/branding.js#5:applyInteiaBranding",
           "relation": "chama_sintaticamente",
-          "line": 57
+          "line": 58
         },
         {
           "target": "web/src/surface-library.js#16:createSurfaceLibrary",
           "relation": "chama_sintaticamente",
-          "line": 58
+          "line": 59
         },
         {
           "target": "web/src/car-look.js#202:enhanceCar",
           "relation": "chama_sintaticamente",
-          "line": 60
+          "line": 61
         },
         {
-          "target": "web/src/senna-driver.js#4:createSennaDriver",
-          "relation": "chama_sintaticamente",
-          "line": 60
-        },
-        {
-          "target": "web/src/customize.js#1:setupCustomization",
+          "target": "web/src/senna-driver.js#6:createSennaDriver",
           "relation": "chama_sintaticamente",
           "line": 61
         },
         {
-          "target": "web/src/app-v2.js#23:$",
+          "target": "web/src/customize.js#1:setupCustomization",
           "relation": "chama_sintaticamente",
           "line": 62
         },
         {
-          "target": "web/src/app-v2.js#23:$",
-          "relation": "chama_sintaticamente",
-          "line": 62
-        },
-        {
-          "target": "web/src/engine/in-car.js#25:createInCarEngine",
+          "target": "web/src/app-v2.js#24:$",
           "relation": "chama_sintaticamente",
           "line": 63
         },
         {
+          "target": "web/src/app-v2.js#24:$",
+          "relation": "chama_sintaticamente",
+          "line": 63
+        },
+        {
+          "target": "web/src/engine/in-car.js#25:createInCarEngine",
+          "relation": "chama_sintaticamente",
+          "line": 64
+        },
+        {
           "target": "web/src/garage.js#7:createGarage",
-          "relation": "chama_sintaticamente",
-          "line": 64
-        },
-        {
-          "target": "web/src/wind-tunnel.js#4:createWindTunnel",
-          "relation": "chama_sintaticamente",
-          "line": 64
-        },
-        {
-          "target": "web/src/app-v2.js#23:$",
           "relation": "chama_sintaticamente",
           "line": 65
         },
         {
-          "target": "web/src/app-v2.js#23:$",
+          "target": "web/src/wind-tunnel.js#4:createWindTunnel",
+          "relation": "chama_sintaticamente",
+          "line": 65
+        },
+        {
+          "target": "web/src/workbench.js#4:createWorkbench",
           "relation": "chama_sintaticamente",
           "line": 66
         },
         {
-          "target": "web/src/app-v2.js#47:resize",
+          "target": "web/src/app-v2.js#24:$",
           "relation": "chama_sintaticamente",
-          "line": 66
+          "line": 67
         },
         {
-          "target": "web/src/app-v2.js#23:$",
+          "target": "web/src/app-v2.js#24:$",
           "relation": "chama_sintaticamente",
-          "line": 70
+          "line": 68
         },
         {
-          "target": "web/src/app-v2.js#23:$",
+          "target": "web/src/app-v2.js#48:resize",
           "relation": "chama_sintaticamente",
-          "line": 70
+          "line": 68
         },
         {
-          "target": "web/src/app-v2.js#45:view",
-          "relation": "chama_sintaticamente",
-          "line": 70
-        },
-        {
-          "target": "web/src/app-v2.js#23:$",
-          "relation": "chama_sintaticamente",
-          "line": 71
-        },
-        {
-          "target": "web/src/app-v2.js#23:$",
-          "relation": "chama_sintaticamente",
-          "line": 71
-        },
-        {
-          "target": "web/src/app-v2.js#45:view",
-          "relation": "chama_sintaticamente",
-          "line": 71
-        },
-        {
-          "target": "web/src/app-v2.js#23:$",
+          "target": "web/src/app-v2.js#24:$",
           "relation": "chama_sintaticamente",
           "line": 72
         },
         {
-          "target": "web/src/app-v2.js#23:$",
+          "target": "web/src/app-v2.js#24:$",
           "relation": "chama_sintaticamente",
           "line": 72
         },
         {
-          "target": "web/src/app-v2.js#23:$",
+          "target": "web/src/app-v2.js#46:view",
+          "relation": "chama_sintaticamente",
+          "line": 72
+        },
+        {
+          "target": "web/src/app-v2.js#24:$",
           "relation": "chama_sintaticamente",
           "line": 73
         },
         {
-          "target": "web/src/app-v2.js#44:moveCamera",
+          "target": "web/src/app-v2.js#24:$",
           "relation": "chama_sintaticamente",
           "line": 73
         },
         {
-          "target": "web/src/app-v2.js#23:$",
+          "target": "web/src/app-v2.js#46:view",
+          "relation": "chama_sintaticamente",
+          "line": 73
+        },
+        {
+          "target": "web/src/app-v2.js#24:$",
           "relation": "chama_sintaticamente",
           "line": 74
         },
         {
-          "target": "web/src/app-v2.js#23:$",
+          "target": "web/src/app-v2.js#24:$",
           "relation": "chama_sintaticamente",
           "line": 74
         },
         {
-          "target": "web/src/app-v2.js#23:$",
-          "relation": "chama_sintaticamente",
-          "line": 74
-        },
-        {
-          "target": "web/src/app-v2.js#23:$",
+          "target": "web/src/app-v2.js#24:$",
           "relation": "chama_sintaticamente",
           "line": 75
         },
         {
-          "target": "web/src/app-v2.js#23:$",
+          "target": "web/src/app-v2.js#45:moveCamera",
           "relation": "chama_sintaticamente",
           "line": 75
         },
         {
-          "target": "web/src/app-v2.js#23:$",
-          "relation": "chama_sintaticamente",
-          "line": 75
-        },
-        {
-          "target": "web/src/app-v2.js#23:$",
+          "target": "web/src/app-v2.js#24:$",
           "relation": "chama_sintaticamente",
           "line": 76
         },
         {
-          "target": "web/src/app-v2.js#23:$",
+          "target": "web/src/app-v2.js#24:$",
           "relation": "chama_sintaticamente",
           "line": 76
         },
         {
-          "target": "web/src/app-v2.js#23:$",
+          "target": "web/src/app-v2.js#24:$",
           "relation": "chama_sintaticamente",
           "line": 76
         },
         {
-          "target": "web/src/app-v2.js#23:$",
+          "target": "web/src/app-v2.js#24:$",
           "relation": "chama_sintaticamente",
           "line": 77
         },
         {
-          "target": "web/src/app-v2.js#23:$",
+          "target": "web/src/app-v2.js#24:$",
           "relation": "chama_sintaticamente",
           "line": 77
         },
         {
-          "target": "web/src/app-v2.js#23:$",
+          "target": "web/src/app-v2.js#24:$",
           "relation": "chama_sintaticamente",
           "line": 77
         },
         {
-          "target": "web/src/app-v2.js#52:assemblyTo",
+          "target": "web/src/app-v2.js#24:$",
           "relation": "chama_sintaticamente",
           "line": 78
         },
         {
-          "target": "web/src/app-v2.js#23:$",
+          "target": "web/src/app-v2.js#24:$",
+          "relation": "chama_sintaticamente",
+          "line": 78
+        },
+        {
+          "target": "web/src/app-v2.js#24:$",
+          "relation": "chama_sintaticamente",
+          "line": 78
+        },
+        {
+          "target": "web/src/app-v2.js#24:$",
           "relation": "chama_sintaticamente",
           "line": 79
         },
         {
-          "target": "web/src/app-v2.js#52:assemblyTo",
+          "target": "web/src/app-v2.js#24:$",
           "relation": "chama_sintaticamente",
           "line": 79
         },
         {
-          "target": "web/src/app-v2.js#23:$",
+          "target": "web/src/app-v2.js#24:$",
           "relation": "chama_sintaticamente",
           "line": 79
         },
         {
-          "target": "web/src/app-v2.js#52:assemblyTo",
-          "relation": "chama_sintaticamente",
-          "line": 79
-        },
-        {
-          "target": "web/src/app-v2.js#49:refreshSelection",
-          "relation": "chama_sintaticamente",
-          "line": 79
-        },
-        {
-          "target": "web/src/app-v2.js#23:$",
+          "target": "web/src/app-v2.js#53:assemblyTo",
           "relation": "chama_sintaticamente",
           "line": 80
         },
         {
-          "target": "web/src/app-v2.js#34:closeEngine",
-          "relation": "chama_sintaticamente",
-          "line": 80
-        },
-        {
-          "target": "web/src/app-v2.js#23:$",
-          "relation": "chama_sintaticamente",
-          "line": 80
-        },
-        {
-          "target": "web/src/app-v2.js#23:$",
+          "target": "web/src/app-v2.js#24:$",
           "relation": "chama_sintaticamente",
           "line": 81
         },
         {
-          "target": "web/src/app-v2.js#50:select",
+          "target": "web/src/app-v2.js#53:assemblyTo",
           "relation": "chama_sintaticamente",
           "line": 81
         },
         {
-          "target": "web/src/app-v2.js#23:$",
+          "target": "web/src/app-v2.js#24:$",
+          "relation": "chama_sintaticamente",
+          "line": 81
+        },
+        {
+          "target": "web/src/app-v2.js#53:assemblyTo",
+          "relation": "chama_sintaticamente",
+          "line": 81
+        },
+        {
+          "target": "web/src/app-v2.js#50:refreshSelection",
+          "relation": "chama_sintaticamente",
+          "line": 81
+        },
+        {
+          "target": "web/src/app-v2.js#24:$",
           "relation": "chama_sintaticamente",
           "line": 82
         },
         {
-          "target": "web/src/app-v2.js#50:select",
+          "target": "web/src/app-v2.js#35:closeEngine",
           "relation": "chama_sintaticamente",
           "line": 82
         },
         {
-          "target": "web/src/app-v2.js#23:$",
+          "target": "web/src/app-v2.js#24:$",
           "relation": "chama_sintaticamente",
           "line": 82
         },
         {
-          "target": "web/src/app-v2.js#23:$",
-          "relation": "chama_sintaticamente",
-          "line": 82
-        },
-        {
-          "target": "web/src/app-v2.js#49:refreshSelection",
-          "relation": "chama_sintaticamente",
-          "line": 82
-        },
-        {
-          "target": "web/src/app-v2.js#23:$",
+          "target": "web/src/app-v2.js#24:$",
           "relation": "chama_sintaticamente",
           "line": 83
         },
         {
-          "target": "web/src/app-v2.js#23:$",
+          "target": "web/src/app-v2.js#51:select",
           "relation": "chama_sintaticamente",
           "line": 83
         },
         {
-          "target": "web/src/app-v2.js#23:$",
+          "target": "web/src/app-v2.js#24:$",
           "relation": "chama_sintaticamente",
           "line": 84
         },
         {
-          "target": "web/src/app-v2.js#23:$",
+          "target": "web/src/app-v2.js#51:select",
           "relation": "chama_sintaticamente",
           "line": 84
         },
         {
-          "target": "web/src/app-v2.js#23:$",
+          "target": "web/src/app-v2.js#24:$",
+          "relation": "chama_sintaticamente",
+          "line": 84
+        },
+        {
+          "target": "web/src/app-v2.js#24:$",
+          "relation": "chama_sintaticamente",
+          "line": 84
+        },
+        {
+          "target": "web/src/app-v2.js#50:refreshSelection",
+          "relation": "chama_sintaticamente",
+          "line": 84
+        },
+        {
+          "target": "web/src/app-v2.js#24:$",
           "relation": "chama_sintaticamente",
           "line": 85
         },
         {
-          "target": "web/src/app-v2.js#23:$",
+          "target": "web/src/app-v2.js#24:$",
           "relation": "chama_sintaticamente",
           "line": 85
         },
         {
-          "target": "web/src/app-v2.js#23:$",
-          "relation": "chama_sintaticamente",
-          "line": 85
-        },
-        {
-          "target": "web/src/app-v2.js#23:$",
+          "target": "web/src/app-v2.js#24:$",
           "relation": "chama_sintaticamente",
           "line": 86
         },
         {
-          "target": "web/src/app-v2.js#23:$",
+          "target": "web/src/app-v2.js#24:$",
           "relation": "chama_sintaticamente",
           "line": 86
         },
         {
-          "target": "web/src/app-v2.js#23:$",
+          "target": "web/src/app-v2.js#24:$",
           "relation": "chama_sintaticamente",
           "line": 87
         },
         {
-          "target": "web/src/app-v2.js#23:$",
+          "target": "web/src/app-v2.js#24:$",
           "relation": "chama_sintaticamente",
           "line": 87
         },
         {
-          "target": "web/src/app-v2.js#23:$",
+          "target": "web/src/app-v2.js#24:$",
+          "relation": "chama_sintaticamente",
+          "line": 87
+        },
+        {
+          "target": "web/src/app-v2.js#24:$",
           "relation": "chama_sintaticamente",
           "line": 88
         },
         {
-          "target": "web/src/app-v2.js#34:closeEngine",
+          "target": "web/src/app-v2.js#24:$",
           "relation": "chama_sintaticamente",
           "line": 88
         },
         {
-          "target": "web/src/app-v2.js#23:$",
-          "relation": "chama_sintaticamente",
-          "line": 88
-        },
-        {
-          "target": "web/src/app-v2.js#50:select",
-          "relation": "chama_sintaticamente",
-          "line": 88
-        },
-        {
-          "target": "web/src/app-v2.js#23:$",
-          "relation": "chama_sintaticamente",
-          "line": 88
-        },
-        {
-          "target": "web/src/app-v2.js#23:$",
-          "relation": "chama_sintaticamente",
-          "line": 88
-        },
-        {
-          "target": "web/src/app-v2.js#23:$",
-          "relation": "chama_sintaticamente",
-          "line": 88
-        },
-        {
-          "target": "web/src/app-v2.js#23:$",
-          "relation": "chama_sintaticamente",
-          "line": 88
-        },
-        {
-          "target": "web/src/app-v2.js#23:$",
-          "relation": "chama_sintaticamente",
-          "line": 88
-        },
-        {
-          "target": "web/src/app-v2.js#45:view",
-          "relation": "chama_sintaticamente",
-          "line": 88
-        },
-        {
-          "target": "web/src/app-v2.js#23:$",
+          "target": "web/src/app-v2.js#24:$",
           "relation": "chama_sintaticamente",
           "line": 89
         },
         {
-          "target": "web/src/app-v2.js#23:$",
+          "target": "web/src/app-v2.js#24:$",
           "relation": "chama_sintaticamente",
           "line": 89
         },
         {
-          "target": "web/src/app-v2.js#23:$",
+          "target": "web/src/app-v2.js#24:$",
           "relation": "chama_sintaticamente",
           "line": 90
         },
         {
-          "target": "web/src/app-v2.js#23:$",
+          "target": "web/src/app-v2.js#35:closeEngine",
           "relation": "chama_sintaticamente",
           "line": 90
         },
         {
-          "target": "web/src/app-v2.js#23:$",
+          "target": "web/src/app-v2.js#24:$",
+          "relation": "chama_sintaticamente",
+          "line": 90
+        },
+        {
+          "target": "web/src/app-v2.js#51:select",
+          "relation": "chama_sintaticamente",
+          "line": 90
+        },
+        {
+          "target": "web/src/app-v2.js#24:$",
+          "relation": "chama_sintaticamente",
+          "line": 90
+        },
+        {
+          "target": "web/src/app-v2.js#24:$",
+          "relation": "chama_sintaticamente",
+          "line": 90
+        },
+        {
+          "target": "web/src/app-v2.js#24:$",
+          "relation": "chama_sintaticamente",
+          "line": 90
+        },
+        {
+          "target": "web/src/app-v2.js#24:$",
+          "relation": "chama_sintaticamente",
+          "line": 90
+        },
+        {
+          "target": "web/src/app-v2.js#24:$",
+          "relation": "chama_sintaticamente",
+          "line": 90
+        },
+        {
+          "target": "web/src/app-v2.js#46:view",
+          "relation": "chama_sintaticamente",
+          "line": 90
+        },
+        {
+          "target": "web/src/app-v2.js#24:$",
           "relation": "chama_sintaticamente",
           "line": 91
         },
         {
-          "target": "web/src/app-v2.js#50:select",
+          "target": "web/src/app-v2.js#24:$",
           "relation": "chama_sintaticamente",
-          "line": 94
+          "line": 91
         },
         {
-          "target": "web/src/app-v2.js#45:view",
+          "target": "web/src/app-v2.js#24:$",
           "relation": "chama_sintaticamente",
-          "line": 95
+          "line": 92
         },
         {
-          "target": "web/src/app-v2.js#50:select",
+          "target": "web/src/app-v2.js#24:$",
           "relation": "chama_sintaticamente",
-          "line": 95
+          "line": 92
         },
         {
-          "target": "web/src/app-v2.js#23:$",
+          "target": "web/src/app-v2.js#24:$",
           "relation": "chama_sintaticamente",
-          "line": 95
+          "line": 93
         },
         {
-          "target": "web/src/app-v2.js#23:$",
-          "relation": "chama_sintaticamente",
-          "line": 95
-        },
-        {
-          "target": "web/src/app-v2.js#23:$",
+          "target": "web/src/app-v2.js#51:select",
           "relation": "chama_sintaticamente",
           "line": 96
         },
         {
-          "target": "web/src/app-v2.js#34:closeEngine",
-          "relation": "chama_sintaticamente",
-          "line": 96
-        },
-        {
-          "target": "web/src/app-v2.js#45:view",
-          "relation": "chama_sintaticamente",
-          "line": 96
-        },
-        {
-          "target": "web/src/app-v2.js#23:$",
-          "relation": "chama_sintaticamente",
-          "line": 96
-        },
-        {
-          "target": "web/src/app-v2.js#23:$",
-          "relation": "chama_sintaticamente",
-          "line": 96
-        },
-        {
-          "target": "web/src/app-v2.js#23:$",
-          "relation": "chama_sintaticamente",
-          "line": 96
-        },
-        {
-          "target": "web/src/app-v2.js#23:$",
-          "relation": "chama_sintaticamente",
-          "line": 96
-        },
-        {
-          "target": "web/src/app-v2.js#44:moveCamera",
-          "relation": "chama_sintaticamente",
-          "line": 96
-        },
-        {
-          "target": "web/src/app-v2.js#23:$",
+          "target": "web/src/app-v2.js#46:view",
           "relation": "chama_sintaticamente",
           "line": 97
         },
         {
-          "target": "web/src/app-v2.js#23:$",
+          "target": "web/src/app-v2.js#51:select",
           "relation": "chama_sintaticamente",
           "line": 97
         },
         {
-          "target": "web/src/app-v2.js#23:$",
+          "target": "web/src/app-v2.js#24:$",
           "relation": "chama_sintaticamente",
           "line": 97
         },
         {
-          "target": "web/src/app-v2.js#23:$",
+          "target": "web/src/app-v2.js#24:$",
+          "relation": "chama_sintaticamente",
+          "line": 97
+        },
+        {
+          "target": "web/src/app-v2.js#24:$",
           "relation": "chama_sintaticamente",
           "line": 98
         },
         {
-          "target": "web/src/app-v2.js#23:$",
+          "target": "web/src/app-v2.js#35:closeEngine",
           "relation": "chama_sintaticamente",
           "line": 98
         },
         {
-          "target": "web/src/app-v2.js#23:$",
+          "target": "web/src/app-v2.js#46:view",
           "relation": "chama_sintaticamente",
           "line": 98
         },
         {
-          "target": "web/src/app-v2.js#23:$",
+          "target": "web/src/app-v2.js#24:$",
+          "relation": "chama_sintaticamente",
+          "line": 98
+        },
+        {
+          "target": "web/src/app-v2.js#24:$",
+          "relation": "chama_sintaticamente",
+          "line": 98
+        },
+        {
+          "target": "web/src/app-v2.js#24:$",
+          "relation": "chama_sintaticamente",
+          "line": 98
+        },
+        {
+          "target": "web/src/app-v2.js#24:$",
+          "relation": "chama_sintaticamente",
+          "line": 98
+        },
+        {
+          "target": "web/src/app-v2.js#45:moveCamera",
+          "relation": "chama_sintaticamente",
+          "line": 98
+        },
+        {
+          "target": "web/src/app-v2.js#24:$",
           "relation": "chama_sintaticamente",
           "line": 99
         },
         {
-          "target": "web/src/app-v2.js#23:$",
+          "target": "web/src/app-v2.js#24:$",
           "relation": "chama_sintaticamente",
           "line": 99
         },
         {
-          "target": "web/src/app-v2.js#23:$",
+          "target": "web/src/app-v2.js#24:$",
           "relation": "chama_sintaticamente",
           "line": 99
         },
         {
-          "target": "web/src/app-v2.js#23:$",
+          "target": "web/src/app-v2.js#24:$",
           "relation": "chama_sintaticamente",
           "line": 100
         },
         {
-          "target": "web/src/app-v2.js#23:$",
+          "target": "web/src/app-v2.js#24:$",
+          "relation": "chama_sintaticamente",
+          "line": 100
+        },
+        {
+          "target": "web/src/app-v2.js#24:$",
+          "relation": "chama_sintaticamente",
+          "line": 100
+        },
+        {
+          "target": "web/src/app-v2.js#24:$",
+          "relation": "chama_sintaticamente",
+          "line": 101
+        },
+        {
+          "target": "web/src/app-v2.js#24:$",
+          "relation": "chama_sintaticamente",
+          "line": 101
+        },
+        {
+          "target": "web/src/app-v2.js#24:$",
+          "relation": "chama_sintaticamente",
+          "line": 101
+        },
+        {
+          "target": "web/src/app-v2.js#24:$",
           "relation": "chama_sintaticamente",
           "line": 102
         },
         {
-          "target": "web/src/app-v2.js#45:view",
-          "relation": "chama_sintaticamente",
-          "line": 102
-        },
-        {
-          "target": "web/src/app-v2.js#23:$",
-          "relation": "chama_sintaticamente",
-          "line": 102
-        },
-        {
-          "target": "web/src/app-v2.js#23:$",
-          "relation": "chama_sintaticamente",
-          "line": 102
-        },
-        {
-          "target": "web/src/app-v2.js#23:$",
-          "relation": "chama_sintaticamente",
-          "line": 102
-        },
-        {
-          "target": "web/src/app-v2.js#23:$",
-          "relation": "chama_sintaticamente",
-          "line": 102
-        },
-        {
-          "target": "web/src/app-v2.js#23:$",
-          "relation": "chama_sintaticamente",
-          "line": 102
-        },
-        {
-          "target": "web/src/app-v2.js#23:$",
-          "relation": "chama_sintaticamente",
-          "line": 102
-        },
-        {
-          "target": "web/src/app-v2.js#23:$",
-          "relation": "chama_sintaticamente",
-          "line": 102
-        },
-        {
-          "target": "web/src/app-v2.js#23:$",
+          "target": "web/src/app-v2.js#24:$",
           "relation": "chama_sintaticamente",
           "line": 104
         },
         {
+          "target": "web/src/app-v2.js#46:view",
+          "relation": "chama_sintaticamente",
+          "line": 104
+        },
+        {
+          "target": "web/src/app-v2.js#24:$",
+          "relation": "chama_sintaticamente",
+          "line": 104
+        },
+        {
+          "target": "web/src/app-v2.js#24:$",
+          "relation": "chama_sintaticamente",
+          "line": 104
+        },
+        {
+          "target": "web/src/app-v2.js#24:$",
+          "relation": "chama_sintaticamente",
+          "line": 104
+        },
+        {
+          "target": "web/src/app-v2.js#24:$",
+          "relation": "chama_sintaticamente",
+          "line": 104
+        },
+        {
+          "target": "web/src/app-v2.js#24:$",
+          "relation": "chama_sintaticamente",
+          "line": 104
+        },
+        {
+          "target": "web/src/app-v2.js#24:$",
+          "relation": "chama_sintaticamente",
+          "line": 104
+        },
+        {
+          "target": "web/src/app-v2.js#24:$",
+          "relation": "chama_sintaticamente",
+          "line": 104
+        },
+        {
+          "target": "web/src/app-v2.js#24:$",
+          "relation": "chama_sintaticamente",
+          "line": 106
+        },
+        {
           "target": "web/src/template-v2.html",
           "relation": "conecta_stage_e_controles_dom",
-          "line": 23
+          "line": 24
         },
         {
           "target": "web/src/garage.js",
           "relation": "exporta_clone_do_box_via_gltfexporter",
-          "line": 72
+          "line": 74
         },
         {
           "target": "web/src/mechanics.js",
           "relation": "atualiza_estado_a_cada_quadro",
-          "line": 102
+          "line": 104
         },
         {
           "target": "web/src/wind-tunnel.js",
           "relation": "coordena_box_e_transparencia_por_callbacks",
-          "line": 64
+          "line": 65
         },
         {
           "target": "web/src/studio.js",
           "relation": "renderiza_e_atualiza_piso",
-          "line": 103
+          "line": 105
         },
         {
           "target": "web/src/branding.js",
           "relation": "importa_assinatura_ativa",
-          "line": 6
+          "line": 7
         },
         {
           "target": "web/src/branding.js",
           "relation": "aplica_assinatura_apos_criar_mecanica",
-          "line": 57
+          "line": 58
         }
       ]
     },
@@ -17947,7 +17991,7 @@
       "nature": "fonte web editável",
       "usage": "Usado pelo visualizador",
       "classification_reviewed": true,
-      "tracked": false,
+      "tracked": true,
       "bytes": 19357,
       "sha256": "83f5204443f41eef3e1d7368c8454b483b2e6abc0955545b3d49a2999d12c7bb",
       "dependencies": [
@@ -18140,7 +18184,7 @@
       "nature": "fonte web editável",
       "usage": "Reaproveitado do F1 Loop",
       "classification_reviewed": true,
-      "tracked": false,
+      "tracked": true,
       "bytes": 5253,
       "sha256": "165b60f87f7f1ea4627788ee8987bfe61503c10736e0e34bb9f93664cc339958",
       "dependencies": [],
@@ -18196,7 +18240,7 @@
       "nature": "fonte web editável",
       "usage": "Controlado pela oficina",
       "classification_reviewed": true,
-      "tracked": false,
+      "tracked": true,
       "bytes": 15226,
       "sha256": "ebe61051ecf07818e92c2a41064e1b4878e670be7c04d8938878b7a3cb31349a",
       "dependencies": [
@@ -18622,6 +18666,103 @@
       ]
     },
     {
+      "path": "web/src/helmet-1991.js",
+      "type": "js",
+      "purpose": "Capacete detalhado compartilhado com o cockpit",
+      "nature": "fonte web editável",
+      "usage": "Modelagem e exportação do capacete",
+      "classification_reviewed": true,
+      "tracked": false,
+      "bytes": 9148,
+      "sha256": "3dcc5137c202a3271ced7c0759b4125910b41686c8e5b7d1dc50e09074738307",
+      "dependencies": [
+        {
+          "target": "external:three",
+          "relation": "importa",
+          "line": 1
+        }
+      ],
+      "used_by": [
+        {
+          "source": "web/src/senna-driver.js",
+          "relation": "importa"
+        }
+      ],
+      "lines": 80,
+      "relations_out": [
+        {
+          "target": "external:three",
+          "relation": "importa",
+          "line": 1
+        },
+        {
+          "target": "web/src/helmet-1991.js#5:createHelmet1991",
+          "relation": "define",
+          "line": 5
+        },
+        {
+          "target": "web/src/helmet-1991.js#7:material",
+          "relation": "define",
+          "line": 7
+        },
+        {
+          "target": "web/src/helmet-1991.js#19:add",
+          "relation": "define",
+          "line": 19
+        },
+        {
+          "target": "web/src/helmet-1991.js#22:radius",
+          "relation": "define",
+          "line": 22
+        },
+        {
+          "target": "web/src/helmet-1991.js#23:point",
+          "relation": "define",
+          "line": 23
+        },
+        {
+          "target": "web/src/helmet-1991.js#33:patch",
+          "relation": "define",
+          "line": 33
+        },
+        {
+          "target": "web/src/helmet-1991.js#48:tube",
+          "relation": "define",
+          "line": 48
+        },
+        {
+          "target": "web/src/helmet-1991.js#54:label",
+          "relation": "define",
+          "line": 54
+        },
+        {
+          "target": "web/src/helmet-1991.js#55:text",
+          "relation": "define",
+          "line": 55
+        },
+        {
+          "target": "web/src/helmet-1991.js#56:emblem",
+          "relation": "define",
+          "line": 56
+        },
+        {
+          "target": "web/src/helmet-1991.js#57:national",
+          "relation": "define",
+          "line": 57
+        },
+        {
+          "target": "web/src/helmet-1991.js#68:screw",
+          "relation": "define",
+          "line": 68
+        },
+        {
+          "target": "web/src/helmet-1991.js#79:dispose",
+          "relation": "define",
+          "line": 79
+        }
+      ]
+    },
+    {
       "path": "web/src/identity.js",
       "type": "js",
       "purpose": "Define glifos, emblema, SVG e desenho Canvas da identidade ativa",
@@ -18828,23 +18969,37 @@
       "nature": "fonte web editável",
       "usage": "Oculto na desmontagem e isolamento",
       "classification_reviewed": true,
-      "tracked": false,
-      "bytes": 5594,
-      "sha256": "22d4c75694c84fc13ab24815b8e83e61877d1d73e02a6548b35c282f72567107",
+      "tracked": true,
+      "bytes": 7833,
+      "sha256": "cea7bc053466963e1a3b7aa5d10c62cc7e21478dd125af9cd665f5d8b1894f89",
       "dependencies": [
         {
           "target": "external:three",
           "relation": "importa",
           "line": 1
+        },
+        {
+          "target": "external:three/addons/geometries/RoundedBoxGeometry.js",
+          "relation": "importa",
+          "line": 2
+        },
+        {
+          "target": "web/src/helmet-1991.js",
+          "relation": "importa",
+          "line": 3
         }
       ],
       "used_by": [
         {
           "source": "web/src/app-v2.js",
           "relation": "importa"
+        },
+        {
+          "source": "web/test-driver-model.mjs",
+          "relation": "importa"
         }
       ],
-      "lines": 56,
+      "lines": 70,
       "relations_out": [
         {
           "target": "external:three",
@@ -18852,49 +19007,84 @@
           "line": 1
         },
         {
-          "target": "web/src/senna-driver.js#4:createSennaDriver",
-          "relation": "define",
-          "line": 4
+          "target": "external:three/addons/geometries/RoundedBoxGeometry.js",
+          "relation": "importa",
+          "line": 2
         },
         {
-          "target": "web/src/senna-driver.js#7:mat",
-          "relation": "define",
-          "line": 7
+          "target": "web/src/helmet-1991.js",
+          "relation": "importa",
+          "line": 3
         },
         {
-          "target": "web/src/senna-driver.js#19:mesh",
+          "target": "web/src/senna-driver.js#6:createSennaDriver",
           "relation": "define",
-          "line": 19
+          "line": 6
         },
         {
-          "target": "web/src/senna-driver.js#20:ellipsoid",
+          "target": "web/src/senna-driver.js#10:mat",
+          "relation": "define",
+          "line": 10
+        },
+        {
+          "target": "web/src/senna-driver.js#20:mesh",
           "relation": "define",
           "line": 20
         },
         {
-          "target": "web/src/senna-driver.js#21:limb",
+          "target": "web/src/senna-driver.js#21:V",
           "relation": "define",
           "line": 21
         },
         {
-          "target": "web/src/senna-driver.js#36:radius",
+          "target": "web/src/senna-driver.js#23:loft",
           "relation": "define",
-          "line": 36
+          "line": 23
         },
         {
-          "target": "web/src/senna-driver.js#37:surface",
+          "target": "web/src/senna-driver.js#34:piping",
           "relation": "define",
-          "line": 37
+          "line": 34
         },
         {
-          "target": "web/src/senna-driver.js#55:update",
+          "target": "web/src/senna-driver.js#35:rounded",
+          "relation": "define",
+          "line": 35
+        },
+        {
+          "target": "web/src/senna-driver.js#39:chest",
+          "relation": "define",
+          "line": 39
+        },
+        {
+          "target": "web/src/senna-driver.js#42:p",
+          "relation": "define",
+          "line": 42
+        },
+        {
+          "target": "web/src/senna-driver.js#55:ribbon",
           "relation": "define",
           "line": 55
         },
         {
-          "target": "web/src/senna-driver.js#55:dispose",
+          "target": "web/src/senna-driver.js#66:applyFit",
           "relation": "define",
-          "line": 55
+          "line": 66
+        },
+        {
+          "target": "web/src/senna-driver.js#69:setFit",
+          "relation": "define",
+          "line": 69
+        },
+        {
+          "target": "web/src/senna-driver.js#69:update",
+          "relation": "define",
+          "line": 69
+        },
+        {
+          "target": "web/src/senna-driver.js#69:dispose",
+          "relation": "define",
+          "line": 69
         }
       ]
     },
@@ -19001,7 +19191,7 @@
       "nature": "fonte web editável",
       "usage": "Aplicado a pintura, carbono e borracha",
       "classification_reviewed": true,
-      "tracked": false,
+      "tracked": true,
       "bytes": 7088,
       "sha256": "66deab1f2a8093aead43d02f0b6b23605fe64a57d9fa0b681c2768bd7257c642",
       "dependencies": [],
@@ -19063,8 +19253,8 @@
       "usage": "Contrato de seletores DOM do app e módulos",
       "classification_reviewed": true,
       "tracked": true,
-      "bytes": 23292,
-      "sha256": "0ef102ba7313992cdfc1b2e9e9d3f3e75e4d895a2ebecc2727a29ca4b83aa8db",
+      "bytes": 27820,
+      "sha256": "932b3df21c387d18a926bdefb1572faa7a28e2e32b6e27c32a0b59547c2f2438",
       "dependencies": [],
       "used_by": [
         {
@@ -19283,6 +19473,108 @@
       ]
     },
     {
+      "path": "web/src/workbench.js",
+      "type": "js",
+      "purpose": "Abas, inspeção, ajustes e exportação dos modelos",
+      "nature": "fonte web editável",
+      "usage": "Controla bancadas do laboratório",
+      "classification_reviewed": true,
+      "tracked": false,
+      "bytes": 6757,
+      "sha256": "99fe90cd3aeafaef173034645c1db26f771eb9978ead3ec6db2a7316a508a9c7",
+      "dependencies": [
+        {
+          "target": "external:three",
+          "relation": "importa",
+          "line": 1
+        },
+        {
+          "target": "external:three/addons/exporters/GLTFExporter.js",
+          "relation": "importa",
+          "line": 2
+        }
+      ],
+      "used_by": [
+        {
+          "source": "web/src/app-v2.js",
+          "relation": "importa"
+        }
+      ],
+      "lines": 57,
+      "relations_out": [
+        {
+          "target": "external:three",
+          "relation": "importa",
+          "line": 1
+        },
+        {
+          "target": "external:three/addons/exporters/GLTFExporter.js",
+          "relation": "importa",
+          "line": 2
+        },
+        {
+          "target": "web/src/workbench.js#4:createWorkbench",
+          "relation": "define",
+          "line": 4
+        },
+        {
+          "target": "web/src/workbench.js#5:$",
+          "relation": "define",
+          "line": 5
+        },
+        {
+          "target": "web/src/workbench.js#11:frame",
+          "relation": "define",
+          "line": 11
+        },
+        {
+          "target": "web/src/workbench.js#12:view",
+          "relation": "define",
+          "line": 12
+        },
+        {
+          "target": "web/src/workbench.js#20:rebuild",
+          "relation": "define",
+          "line": 20
+        },
+        {
+          "target": "web/src/workbench.js#28:refreshPanels",
+          "relation": "define",
+          "line": 28
+        },
+        {
+          "target": "web/src/workbench.js#29:setTab",
+          "relation": "define",
+          "line": 29
+        },
+        {
+          "target": "web/src/workbench.js#38:cockpit",
+          "relation": "define",
+          "line": 38
+        },
+        {
+          "target": "web/src/workbench.js#44:downloadModel",
+          "relation": "define",
+          "line": 44
+        },
+        {
+          "target": "web/src/workbench.js#53:inspecting",
+          "relation": "define",
+          "line": 53
+        },
+        {
+          "target": "web/src/workbench.js#54:update",
+          "relation": "define",
+          "line": 54
+        },
+        {
+          "target": "web/src/workbench.js#55:reset",
+          "relation": "define",
+          "line": 55
+        }
+      ]
+    },
+    {
       "path": "web/test-aerodynamics.mjs",
       "type": "mjs",
       "purpose": "Verifica unidades, escala das fórmulas, condições e coeficientes ausentes",
@@ -19450,6 +19742,78 @@
       ]
     },
     {
+      "path": "web/test-driver-model.mjs",
+      "type": "mjs",
+      "purpose": "Geometria e restauração do encaixe do piloto",
+      "nature": "teste",
+      "usage": "Executado por npm test",
+      "classification_reviewed": true,
+      "tracked": false,
+      "bytes": 1688,
+      "sha256": "8ec9f50e30cb1afe1e339e69f8247e5482b8d35430dcb3f351dfa25fc641334f",
+      "dependencies": [
+        {
+          "target": "external:node:assert/strict",
+          "relation": "importa",
+          "line": 1
+        },
+        {
+          "target": "external:three",
+          "relation": "importa",
+          "line": 2
+        },
+        {
+          "target": "web/src/senna-driver.js",
+          "relation": "importa",
+          "line": 3
+        }
+      ],
+      "used_by": [],
+      "lines": 16,
+      "relations_out": [
+        {
+          "target": "external:node:assert/strict",
+          "relation": "importa",
+          "line": 1
+        },
+        {
+          "target": "external:three",
+          "relation": "importa",
+          "line": 2
+        },
+        {
+          "target": "web/src/senna-driver.js",
+          "relation": "importa",
+          "line": 3
+        },
+        {
+          "target": "web/test-driver-model.mjs#5:createImageData",
+          "relation": "define",
+          "line": 5
+        },
+        {
+          "target": "web/test-driver-model.mjs#5:get",
+          "relation": "define",
+          "line": 5
+        },
+        {
+          "target": "web/test-driver-model.mjs#6:createElement",
+          "relation": "define",
+          "line": 6
+        },
+        {
+          "target": "web/test-driver-model.mjs#6:getContext",
+          "relation": "define",
+          "line": 6
+        },
+        {
+          "target": "web/src/senna-driver.js#6:createSennaDriver",
+          "relation": "chama_sintaticamente",
+          "line": 7
+        }
+      ]
+    },
+    {
       "path": "web/test-mechanics.mjs",
       "type": "mjs",
       "purpose": "Verifica peças, pivôs, 20 ciclos, seleção, arraste e restauração",
@@ -19555,7 +19919,7 @@
       "nature": "teste",
       "usage": "Executado por npm test",
       "classification_reviewed": true,
-      "tracked": false,
+      "tracked": true,
       "bytes": 2267,
       "sha256": "bafd0dfa7616e13bdea328e7f0de6e1896bdf2124b247205e9a67dabcea35b1b",
       "dependencies": [

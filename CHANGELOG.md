@@ -23,3 +23,11 @@
 - Motor V6 integrado: abertura da tampa, corte dos pistões, pausa e presença na vista explodida.
 - Testes de 20 ciclos do carro e motor sem deriva; box, seleção e túnel conferidos no navegador.
 - Inventários adaptados aos assets comprimidos. Entregas Blender anteriores preservadas.
+
+
+## 2026-09-15 — Bancadas, piloto e capacete
+
+- Cinco abas: Carro, Motor, Capacete, Piloto e Ambientes.
+- Capacete detalhado de 1991 compartilhado com o cockpit; corpo completo com postura reclinada, costuras, luvas, botas e cintos.
+- Inspeção isolada e no carro, ajustes de encaixe e exportação GLB do capacete e piloto.
+- Referências visuais e limites registrados em docs/PILOTO-E-CAPACETE.md.

@@ -528,5 +528,25 @@
     "Valida animação do motor em 20 ciclos",
     "teste",
     "Executado por npm test"
+  ],
+  "web/src/helmet-1991.js": [
+    "Capacete detalhado compartilhado com o cockpit",
+    "fonte web editável",
+    "Modelagem e exportação do capacete"
+  ],
+  "web/src/workbench.js": [
+    "Abas, inspeção, ajustes e exportação dos modelos",
+    "fonte web editável",
+    "Controla bancadas do laboratório"
+  ],
+  "web/test-driver-model.mjs": [
+    "Geometria e restauração do encaixe do piloto",
+    "teste",
+    "Executado por npm test"
+  ],
+  "docs/PILOTO-E-CAPACETE.md": [
+    "Referências, operação e limites do estudo do piloto",
+    "documento editável",
+    "Consultar proporções e controles"
   ]
 }

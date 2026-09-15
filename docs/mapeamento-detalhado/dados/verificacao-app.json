@@ -1,13 +1,13 @@
 {
-  "timestamp": "2026-09-15T19:57:01.387Z",
+  "timestamp": "2026-09-15T20:29:13.957Z",
   "node": "v24.16.0",
   "three": "0.180.0",
   "esbuild": "0.25.10",
   "build": {
     "success": true,
     "method": "esbuild write:false e substituição de template em memória",
-    "bytes": 4351049,
-    "sha256": "f7b57d3e286df679554e24111ef7aa8fa21a0146a9fb0992be0d50de0cd9c61d",
+    "bytes": 4369253,
+    "sha256": "5ec5f13364dbbc1eb73ddf9deffb5f54df5c1de01f952e89a5d1a4cbefacb7da",
     "equals_checked_in_html": true
   },
   "mechanics": {
@@ -36,29 +36,35 @@
     "success": true,
     "output": "{\n  motor: 'V6 ilustrativo INTEIA',\n  assemblies: 9,\n  animationChannels: 19,\n  movingNodes: 51,\n  cycles: 20,\n  drift: 0,\n  passed: true\n}"
   },
+  "driver": {
+    "success": true,
+    "output": "{\n  pilot: true,\n  helmet: true,\n  meshes: 94,\n  vertices: 93226,\n  fitCycles: 20,\n  drift: 0\n}"
+  },
   "source_hashes": {
     "web/src/aero-physics.mjs": "ddec76df50dd3dba23d2361d5579be999d70a4a1bd58dce99001fd4b9c146482",
-    "web/src/app-v2.js": "426f8aaf9c96b87199ca0b539b17947ace2609c1163496c1018a3a9d7b92f859",
+    "web/src/app-v2.js": "9072956456aba21ce296f8d6bcb256d78aafceb7c01bcd8f0732c8e5aa65ab57",
     "web/src/branding.js": "27fff24dd879f885a088af614902c872624fa7189f167e2233d5ba0e951646ea",
     "web/src/car-look.js": "83f5204443f41eef3e1d7368c8454b483b2e6abc0955545b3d49a2999d12c7bb",
     "web/src/customize.js": "9588784fd0e68d0dd4d61ad3c2731ef39c1cba33f6f57f47b172d55abc0a4176",
     "web/src/flow-detail.js": "436414a7e85b9ad8a043c469412b63224dc101e4caba06e76340977d85684f1a",
     "web/src/garage.js": "881afa322c3ed23315549e48147df9f1f47e31836ed29cc24730538bbd91ced4",
+    "web/src/helmet-1991.js": "3dcc5137c202a3271ced7c0759b4125910b41686c8e5b7d1dc50e09074738307",
     "web/src/identity.js": "f7da18ffada2006737675abb026d621097f8219e37587a5b72c1dfc798b089a6",
     "web/src/mechanics.js": "e6795bbc6ccccca32f2c4582cae3fab14d798ff3d7d0a31b23d59ecc5b1735eb",
-    "web/src/senna-driver.js": "22d4c75694c84fc13ab24815b8e83e61877d1d73e02a6548b35c282f72567107",
+    "web/src/senna-driver.js": "cea7bc053466963e1a3b7aa5d10c62cc7e21478dd125af9cd665f5d8b1894f89",
     "web/src/studio.js": "36ca53b97600bcdcec404b67ab42333afefe20c00d046d2c92d28145f6b6d8e1",
     "web/src/surface-library.js": "66deab1f2a8093aead43d02f0b6b23605fe64a57d9fa0b681c2768bd7257c642",
-    "web/src/template-v2.html": "0ef102ba7313992cdfc1b2e9e9d3f3e75e4d895a2ebecc2727a29ca4b83aa8db",
+    "web/src/template-v2.html": "932b3df21c387d18a926bdefb1572faa7a28e2e32b6e27c32a0b59547c2f2438",
     "web/src/tunnel-visual.js": "46435c35174bd737c548b964d23a577214f26c645459bf8f4d792b183ffd02c5",
     "web/src/wind-tunnel.js": "7795a0a4bf6a3462b7c9c81d20431b26e133041a8930dcda8ee2191bfd9556e5",
+    "web/src/workbench.js": "99fe90cd3aeafaef173034645c1db26f771eb9978ead3ec6db2a7316a508a9c7",
     "web/src/engine\\engine-shot.js": "165b60f87f7f1ea4627788ee8987bfe61503c10736e0e34bb9f93664cc339958",
     "web/src/engine\\in-car.js": "ebe61051ecf07818e92c2a41064e1b4878e670be7c04d8938878b7a3cb31349a",
     "web/assets/carro-aula-v2.glb": "02bae139775f9c99f069e8ba664f4076cbbaaf8afdce6545a81afb77462ca245",
     "web/build.cjs": "49e8e6782e35e4074852afb5db4c02effdd707bb00c21a4d6b0d2c681d8bd0ba",
     "web/test-mechanics.mjs": "f826f8fd87af78e567921a27efb06998f1b830dec12c3a6f50075a253e54fc56",
     "web/test-aerodynamics.mjs": "a18952d5f54a4917f9fa14d546c55401d9fa57e13d559dea0bc9f7549c32bce8",
-    "web/index.html": "f7b57d3e286df679554e24111ef7aa8fa21a0146a9fb0992be0d50de0cd9c61d",
+    "web/index.html": "5ec5f13364dbbc1eb73ddf9deffb5f54df5c1de01f952e89a5d1a4cbefacb7da",
     "validacao-mecanica-web.json": "431fe5c5fbb590ad49d96bf4e303ec86fae4fae827abced3b8b175687575474a"
   },
   "changed_during_test": [],

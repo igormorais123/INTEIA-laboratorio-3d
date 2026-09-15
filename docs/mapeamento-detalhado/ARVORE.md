@@ -35,6 +35,7 @@ INTEIA-laboratorio-3d/
     DIREITOS-E-PROCEDENCIA.md  # Separa titularidade INTEIA de geometria fornecida e terceiros
     INTEGRACAO-MOTOR.md  # Operação e procedência da integração do carro final e motor
     INTEGRACAO.md  # Integração dos GLBs e fontes em outros projetos
+    PILOTO-E-CAPACETE.md  # Referências, operação e limites do estudo do piloto
     PUBLICACAO.md  # Endereços públicos, atualização e evidência da publicação
     REVISAO-TUNEL-VISUAL.md  # Revisões e limites da representação visual do fluxo
     VALIDACAO.md  # Síntese de testes históricos e limites por destino
@@ -115,6 +116,7 @@ INTEIA-laboratorio-3d/
         in-car.js  # Motor integrado, corte e tampa móvel
       flow-detail.js  # Representação didática aproximada do fluxo nas rodas e assoalho
       garage.js  # Constrói box, mobiliário, equipamentos, marcas e cena exportável
+      helmet-1991.js  # Capacete detalhado compartilhado com o cockpit
       identity.js  # Define glifos, emblema, SVG e desenho Canvas da identidade ativa
       mechanics.js  # Agrupa peças, cria pivôs, explode/monta, seleciona e anima rodas/DRS
       senna-driver.js  # Piloto ilustrativo do carro final
@@ -123,7 +125,9 @@ INTEIA-laboratorio-3d/
       template-v2.html  # Estrutura e estilos da interface com marcadores __MODEL__ e __APP__
       tunnel-visual.js  # Construção visual do túnel, linhas/partículas e recursos de cena
       wind-tunnel.js  # Liga entradas do túnel, calculadora, gráficos, CSV e efeitos de fluxo
+      workbench.js  # Abas, inspeção, ajustes e exportação dos modelos
     test-aerodynamics.mjs  # Verifica unidades, escala das fórmulas, condições e coeficientes ausentes
+    test-driver-model.mjs  # Geometria e restauração do encaixe do piloto
     test-mechanics.mjs  # Verifica peças, pivôs, 20 ciclos, seleção, arraste e restauração
     test-power-unit.mjs  # Valida animação do motor em 20 ciclos
   docs/mapeamento-detalhado/  # Esta entrega: índice, HTML, catálogos, grafos e scripts

@@ -17,29 +17,33 @@ flowchart LR
   n6["engine/in-car.js"]
   n7["flow-detail.js"]
   n8["garage.js"]
-  n9["identity.js"]
-  n10["mechanics.js"]
-  n11["senna-driver.js"]
-  n12["studio.js"]
-  n13["surface-library.js"]
-  n14["tunnel-visual.js"]
-  n15["wind-tunnel.js"]
+  n9["helmet-1991.js"]
+  n10["identity.js"]
+  n11["mechanics.js"]
+  n12["senna-driver.js"]
+  n13["studio.js"]
+  n14["surface-library.js"]
+  n15["tunnel-visual.js"]
+  n16["wind-tunnel.js"]
+  n17["workbench.js"]
+  n1 -->|"importa"| n17
   n1 -->|"importa"| n6
   n1 -->|"importa"| n3
+  n1 -->|"importa"| n14
+  n1 -->|"importa"| n12
+  n1 -->|"importa"| n2
+  n1 -->|"importa"| n10
+  n1 -->|"importa"| n8
+  n1 -->|"importa"| n16
+  n1 -->|"importa"| n4
   n1 -->|"importa"| n13
   n1 -->|"importa"| n11
-  n1 -->|"importa"| n2
-  n1 -->|"importa"| n9
-  n1 -->|"importa"| n8
-  n1 -->|"importa"| n15
-  n1 -->|"importa"| n4
-  n1 -->|"importa"| n12
-  n1 -->|"importa"| n10
   n6 -->|"importa"| n5
-  n8 -->|"importa"| n9
-  n14 -->|"importa"| n7
-  n15 -->|"importa"| n14
-  n15 -->|"importa"| n0
+  n8 -->|"importa"| n10
+  n12 -->|"importa"| n9
+  n15 -->|"importa"| n7
+  n16 -->|"importa"| n15
+  n16 -->|"importa"| n0
 ```
 
 `branding.js` integra a árvore de imports de `app-v2.js`. Dependências externas constam nos dados e na busca.
@@ -118,28 +122,29 @@ O download do box é uma etapa humana: o grafo descreve o produtor, sem certific
 | `web/server.cjs` | importa | `external:http` | [web/server.cjs:1](../../web/server.cjs#L1) |
 | `web/server.cjs` | importa | `external:fs` | [web/server.cjs:1](../../web/server.cjs#L1) |
 | `web/server.cjs` | importa | `external:path` | [web/server.cjs:1](../../web/server.cjs#L1) |
-| `web/src/app-v2.js` | importa | `external:three/addons/libs/meshopt_decoder.module.js` | [web/src/app-v2.js:1](../../web/src/app-v2.js#L1) |
-| `web/src/app-v2.js` | importa | `web/src/engine/in-car.js` | [web/src/app-v2.js:2](../../web/src/app-v2.js#L2) |
-| `web/src/app-v2.js` | importa | `web/src/car-look.js` | [web/src/app-v2.js:3](../../web/src/app-v2.js#L3) |
-| `web/src/app-v2.js` | importa | `web/src/surface-library.js` | [web/src/app-v2.js:4](../../web/src/app-v2.js#L4) |
-| `web/src/app-v2.js` | importa | `web/src/senna-driver.js` | [web/src/app-v2.js:5](../../web/src/app-v2.js#L5) |
-| `web/src/app-v2.js` | importa | `web/src/branding.js` | [web/src/app-v2.js:6](../../web/src/app-v2.js#L6) |
-| `web/src/app-v2.js` | importa | `web/src/identity.js` | [web/src/app-v2.js:7](../../web/src/app-v2.js#L7) |
-| `web/src/app-v2.js` | importa | `external:three/addons/exporters/GLTFExporter.js` | [web/src/app-v2.js:8](../../web/src/app-v2.js#L8) |
-| `web/src/app-v2.js` | importa | `web/src/garage.js` | [web/src/app-v2.js:9](../../web/src/app-v2.js#L9) |
-| `web/src/app-v2.js` | importa | `web/src/wind-tunnel.js` | [web/src/app-v2.js:10](../../web/src/app-v2.js#L10) |
-| `web/src/app-v2.js` | importa | `web/src/customize.js` | [web/src/app-v2.js:11](../../web/src/app-v2.js#L11) |
-| `web/src/app-v2.js` | importa | `external:three` | [web/src/app-v2.js:12](../../web/src/app-v2.js#L12) |
-| `web/src/app-v2.js` | importa | `external:three/addons/controls/OrbitControls.js` | [web/src/app-v2.js:13](../../web/src/app-v2.js#L13) |
-| `web/src/app-v2.js` | importa | `external:three/addons/controls/TransformControls.js` | [web/src/app-v2.js:14](../../web/src/app-v2.js#L14) |
-| `web/src/app-v2.js` | importa | `external:three/addons/postprocessing/EffectComposer.js` | [web/src/app-v2.js:15](../../web/src/app-v2.js#L15) |
-| `web/src/app-v2.js` | importa | `external:three/addons/postprocessing/RenderPass.js` | [web/src/app-v2.js:16](../../web/src/app-v2.js#L16) |
-| `web/src/app-v2.js` | importa | `external:three/addons/postprocessing/SSAOPass.js` | [web/src/app-v2.js:17](../../web/src/app-v2.js#L17) |
-| `web/src/app-v2.js` | importa | `external:three/addons/postprocessing/OutputPass.js` | [web/src/app-v2.js:18](../../web/src/app-v2.js#L18) |
-| `web/src/app-v2.js` | importa | `external:three/addons/postprocessing/SMAAPass.js` | [web/src/app-v2.js:19](../../web/src/app-v2.js#L19) |
-| `web/src/app-v2.js` | importa | `external:three/addons/loaders/GLTFLoader.js` | [web/src/app-v2.js:20](../../web/src/app-v2.js#L20) |
-| `web/src/app-v2.js` | importa | `web/src/studio.js` | [web/src/app-v2.js:21](../../web/src/app-v2.js#L21) |
-| `web/src/app-v2.js` | importa | `web/src/mechanics.js` | [web/src/app-v2.js:22](../../web/src/app-v2.js#L22) |
+| `web/src/app-v2.js` | importa | `web/src/workbench.js` | [web/src/app-v2.js:1](../../web/src/app-v2.js#L1) |
+| `web/src/app-v2.js` | importa | `external:three/addons/libs/meshopt_decoder.module.js` | [web/src/app-v2.js:2](../../web/src/app-v2.js#L2) |
+| `web/src/app-v2.js` | importa | `web/src/engine/in-car.js` | [web/src/app-v2.js:3](../../web/src/app-v2.js#L3) |
+| `web/src/app-v2.js` | importa | `web/src/car-look.js` | [web/src/app-v2.js:4](../../web/src/app-v2.js#L4) |
+| `web/src/app-v2.js` | importa | `web/src/surface-library.js` | [web/src/app-v2.js:5](../../web/src/app-v2.js#L5) |
+| `web/src/app-v2.js` | importa | `web/src/senna-driver.js` | [web/src/app-v2.js:6](../../web/src/app-v2.js#L6) |
+| `web/src/app-v2.js` | importa | `web/src/branding.js` | [web/src/app-v2.js:7](../../web/src/app-v2.js#L7) |
+| `web/src/app-v2.js` | importa | `web/src/identity.js` | [web/src/app-v2.js:8](../../web/src/app-v2.js#L8) |
+| `web/src/app-v2.js` | importa | `external:three/addons/exporters/GLTFExporter.js` | [web/src/app-v2.js:9](../../web/src/app-v2.js#L9) |
+| `web/src/app-v2.js` | importa | `web/src/garage.js` | [web/src/app-v2.js:10](../../web/src/app-v2.js#L10) |
+| `web/src/app-v2.js` | importa | `web/src/wind-tunnel.js` | [web/src/app-v2.js:11](../../web/src/app-v2.js#L11) |
+| `web/src/app-v2.js` | importa | `web/src/customize.js` | [web/src/app-v2.js:12](../../web/src/app-v2.js#L12) |
+| `web/src/app-v2.js` | importa | `external:three` | [web/src/app-v2.js:13](../../web/src/app-v2.js#L13) |
+| `web/src/app-v2.js` | importa | `external:three/addons/controls/OrbitControls.js` | [web/src/app-v2.js:14](../../web/src/app-v2.js#L14) |
+| `web/src/app-v2.js` | importa | `external:three/addons/controls/TransformControls.js` | [web/src/app-v2.js:15](../../web/src/app-v2.js#L15) |
+| `web/src/app-v2.js` | importa | `external:three/addons/postprocessing/EffectComposer.js` | [web/src/app-v2.js:16](../../web/src/app-v2.js#L16) |
+| `web/src/app-v2.js` | importa | `external:three/addons/postprocessing/RenderPass.js` | [web/src/app-v2.js:17](../../web/src/app-v2.js#L17) |
+| `web/src/app-v2.js` | importa | `external:three/addons/postprocessing/SSAOPass.js` | [web/src/app-v2.js:18](../../web/src/app-v2.js#L18) |
+| `web/src/app-v2.js` | importa | `external:three/addons/postprocessing/OutputPass.js` | [web/src/app-v2.js:19](../../web/src/app-v2.js#L19) |
+| `web/src/app-v2.js` | importa | `external:three/addons/postprocessing/SMAAPass.js` | [web/src/app-v2.js:20](../../web/src/app-v2.js#L20) |
+| `web/src/app-v2.js` | importa | `external:three/addons/loaders/GLTFLoader.js` | [web/src/app-v2.js:21](../../web/src/app-v2.js#L21) |
+| `web/src/app-v2.js` | importa | `web/src/studio.js` | [web/src/app-v2.js:22](../../web/src/app-v2.js#L22) |
+| `web/src/app-v2.js` | importa | `web/src/mechanics.js` | [web/src/app-v2.js:23](../../web/src/app-v2.js#L23) |
 | `web/src/branding.js` | importa | `external:three` | [web/src/branding.js:1](../../web/src/branding.js#L1) |
 | `web/src/branding.js` | importa | `external:three/addons/geometries/DecalGeometry.js` | [web/src/branding.js:2](../../web/src/branding.js#L2) |
 | `web/src/car-look.js` | importa | `external:three` | [web/src/car-look.js:6](../../web/src/car-look.js#L6) |
@@ -152,15 +157,23 @@ O download do box é uma etapa humana: o grafo descreve o produtor, sem certific
 | `web/src/garage.js` | importa | `web/src/identity.js` | [web/src/garage.js:2](../../web/src/garage.js#L2) |
 | `web/src/garage.js` | importa | `external:three` | [web/src/garage.js:3](../../web/src/garage.js#L3) |
 | `web/src/garage.js` | importa | `external:three/addons/geometries/RoundedBoxGeometry.js` | [web/src/garage.js:4](../../web/src/garage.js#L4) |
+| `web/src/helmet-1991.js` | importa | `external:three` | [web/src/helmet-1991.js:1](../../web/src/helmet-1991.js#L1) |
 | `web/src/mechanics.js` | importa | `external:three` | [web/src/mechanics.js:1](../../web/src/mechanics.js#L1) |
 | `web/src/senna-driver.js` | importa | `external:three` | [web/src/senna-driver.js:1](../../web/src/senna-driver.js#L1) |
+| `web/src/senna-driver.js` | importa | `external:three/addons/geometries/RoundedBoxGeometry.js` | [web/src/senna-driver.js:2](../../web/src/senna-driver.js#L2) |
+| `web/src/senna-driver.js` | importa | `web/src/helmet-1991.js` | [web/src/senna-driver.js:3](../../web/src/senna-driver.js#L3) |
 | `web/src/tunnel-visual.js` | importa | `web/src/flow-detail.js` | [web/src/tunnel-visual.js:1](../../web/src/tunnel-visual.js#L1) |
 | `web/src/tunnel-visual.js` | importa | `external:three` | [web/src/tunnel-visual.js:2](../../web/src/tunnel-visual.js#L2) |
 | `web/src/wind-tunnel.js` | importa | `web/src/tunnel-visual.js` | [web/src/wind-tunnel.js:1](../../web/src/wind-tunnel.js#L1) |
 | `web/src/wind-tunnel.js` | importa | `external:three` | [web/src/wind-tunnel.js:2](../../web/src/wind-tunnel.js#L2) |
 | `web/src/wind-tunnel.js` | importa | `web/src/aero-physics.mjs` | [web/src/wind-tunnel.js:3](../../web/src/wind-tunnel.js#L3) |
+| `web/src/workbench.js` | importa | `external:three` | [web/src/workbench.js:1](../../web/src/workbench.js#L1) |
+| `web/src/workbench.js` | importa | `external:three/addons/exporters/GLTFExporter.js` | [web/src/workbench.js:2](../../web/src/workbench.js#L2) |
 | `web/test-aerodynamics.mjs` | importa | `external:node:assert/strict` | [web/test-aerodynamics.mjs:1](../../web/test-aerodynamics.mjs#L1) |
 | `web/test-aerodynamics.mjs` | importa | `web/src/aero-physics.mjs` | [web/test-aerodynamics.mjs:2](../../web/test-aerodynamics.mjs#L2) |
+| `web/test-driver-model.mjs` | importa | `external:node:assert/strict` | [web/test-driver-model.mjs:1](../../web/test-driver-model.mjs#L1) |
+| `web/test-driver-model.mjs` | importa | `external:three` | [web/test-driver-model.mjs:2](../../web/test-driver-model.mjs#L2) |
+| `web/test-driver-model.mjs` | importa | `web/src/senna-driver.js` | [web/test-driver-model.mjs:3](../../web/test-driver-model.mjs#L3) |
 | `web/test-mechanics.mjs` | importa | `external:three/addons/libs/meshopt_decoder.module.js` | [web/test-mechanics.mjs:1](../../web/test-mechanics.mjs#L1) |
 | `web/test-mechanics.mjs` | importa | `external:node:fs` | [web/test-mechanics.mjs:2](../../web/test-mechanics.mjs#L2) |
 | `web/test-mechanics.mjs` | importa | `external:three` | [web/test-mechanics.mjs:3](../../web/test-mechanics.mjs#L3) |
@@ -181,7 +194,7 @@ O download do box é uma etapa humana: o grafo descreve o produtor, sem certific
 | `ferramentas/package_blender.py` | gera / sobrescreve | `Previa-Blender.png` | [ferramentas/package_blender.py:146](../../ferramentas/package_blender.py#L146) |
 | `ferramentas/package_blender.py` | gera / sobrescreve | `validacao-criacao.json` | [ferramentas/package_blender.py:148](../../ferramentas/package_blender.py#L148) |
 | `ferramentas/merge-animation.cjs` | reescreve clipe | `modelos/INTEIA_F1_animado.glb` | [ferramentas/merge-animation.cjs:4](../../ferramentas/merge-animation.cjs#L4) |
-| `web/src/garage.js` | download; cópia manual ao repo | `ambientes/INTEIA-box-laboratorio.glb` | [web/src/app-v2.js:72](../../web/src/app-v2.js#L72) |
+| `web/src/garage.js` | download; cópia manual ao repo | `ambientes/INTEIA-box-laboratorio.glb` | [web/src/app-v2.js:74](../../web/src/app-v2.js#L74) |
 | `ambientes/INTEIA-box-laboratorio.glb` | entrada | `ferramentas/package_garage.py` | [ferramentas/package_garage.py:6](../../ferramentas/package_garage.py#L6) |
 | `modelos/INTEIA_F1_estatico.glb` | entrada | `ferramentas/package_garage.py` | [ferramentas/package_garage.py:12](../../ferramentas/package_garage.py#L12) |
 | `ferramentas/package_garage.py` | gera / sobrescreve | `ambientes/INTEIA_Box_com_carro.blend` | [ferramentas/package_garage.py:72](../../ferramentas/package_garage.py#L72) |
