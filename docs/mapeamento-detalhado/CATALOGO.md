@@ -2,7 +2,7 @@
 
 [Índice](README.md) · [Busca interativa](index.html) · [CSV](dados/catalogo.csv) · [JSON](dados/catalogo.json)
 
-90 arquivos catalogados. Hashes de bytes locais em dados/catalogo.json; fontes e derivados têm naturezas distintas. Dependências externas são identificadas como external: e não inventariadas como código do projeto.
+106 arquivos catalogados. Hashes de bytes locais em dados/catalogo.json; fontes e derivados têm naturezas distintas. Dependências externas são identificadas como external: e não inventariadas como código do projeto.
 
 ## .gitattributes
 
@@ -46,7 +46,7 @@ Habilita publicação estática direta pelo GitHub Pages.
 
 ## CHANGELOG.md
 
-[Abrir arquivo](../../CHANGELOG.md) · md · 933 bytes
+[Abrir arquivo](../../CHANGELOG.md) · md · 1,391 bytes
 
 Histórico editorial das mudanças e entregas.
 
@@ -106,17 +106,17 @@ Prévia renderizada do projeto Blender; não é textura do modelo.
 
 ## README.md
 
-[Abrir arquivo](../../README.md) · md · 4,317 bytes
+[Abrir arquivo](../../README.md) · md · 5,189 bytes
 
 Entrada pública do laboratório, entregas, instalação e limites.
 
 **Natureza:** documento editável. **Uso:** Leitura inicial.
-**Relações de saída:** documenta → `docs/PUBLICACAO.md`; documenta → `Previa-Blender.png`; documenta → `docs/mapas/README.md`; documenta → `docs/mapas/REUSO.md`; documenta → `docs/mapas/index.html`; documenta → `web/index.html`; documenta → `INTEIA_F1_Master.blend`; documenta → `identidade/LEIA-ME.md`; documenta → `docs/BOX-LABORATORIO.md`; documenta → `ambientes/INTEIA-box-laboratorio.glb`; documenta → `ambientes/INTEIA_Box_com_carro.blend`; documenta → `modelos/INTEIA_F1_estatico.glb`; documenta → `modelos/INTEIA_F1_animado.glb`; documenta → `docs/DESENVOLVIMENTO.md`; documenta → `docs/BLENDER.md`; documenta → `docs/INTEGRACAO.md`; documenta → `docs/ARQUITETURA.md`; documenta → `docs/AERODINAMICA.md`; documenta → `docs/VALIDACAO.md`; documenta → `docs/DESENVOLVIMENTO.md`; documenta → `LICENSE`; documenta → `docs/DIREITOS-E-PROCEDENCIA.md`; documenta → `THIRD-PARTY-NOTICES.md`.
+**Relações de saída:** documenta → `docs/PUBLICACAO.md`; documenta → `Previa-Blender.png`; documenta → `docs/mapas/README.md`; documenta → `docs/mapas/REUSO.md`; documenta → `docs/mapas/index.html`; documenta → `web/index.html`; documenta → `INTEIA_F1_Master.blend`; documenta → `identidade/LEIA-ME.md`; documenta → `docs/BOX-LABORATORIO.md`; documenta → `ambientes/INTEIA-box-laboratorio.glb`; documenta → `ambientes/INTEIA_Box_com_carro.blend`; documenta → `modelos/INTEIA_F1_estatico.glb`; documenta → `modelos/INTEIA_F1_animado.glb`; documenta → `docs/DESENVOLVIMENTO.md`; documenta → `docs/BLENDER.md`; documenta → `docs/INTEGRACAO.md`; documenta → `docs/ARQUITETURA.md`; documenta → `docs/AERODINAMICA.md`; documenta → `docs/VALIDACAO.md`; documenta → `docs/DESENVOLVIMENTO.md`; documenta → `docs/INTEGRACAO-MOTOR.md`; documenta → `LICENSE`; documenta → `docs/DIREITOS-E-PROCEDENCIA.md`; documenta → `THIRD-PARTY-NOTICES.md`.
 **Referenciado por:** `LEIA-ME.md` (documenta).
 
 ## THIRD-PARTY-NOTICES.md
 
-[Abrir arquivo](../../THIRD-PARTY-NOTICES.md) · md · 540 bytes
+[Abrir arquivo](../../THIRD-PARTY-NOTICES.md) · md · 873 bytes
 
 Avisos de Three.js e procedência de contribuições externas.
 
@@ -235,6 +235,16 @@ Separa titularidade INTEIA de geometria fornecida e terceiros.
 **Relações de saída:** documenta → `LICENSE`; declara_licenca_proprietaria → `LICENSE`; identifica_licenca_de_dependencia → `web/THREE-LICENSE.txt`.
 **Referenciado por:** `LEIA-ME.md` (documenta); `README.md` (documenta); `THIRD-PARTY-NOTICES.md` (documenta).
 
+## docs/INTEGRACAO-MOTOR.md
+
+[Abrir arquivo](../../docs/INTEGRACAO-MOTOR.md) · md · 2,120 bytes
+
+Operação e procedência da integração do carro final e motor.
+
+**Natureza:** documento editável. **Uso:** Consultar controles e limites.
+**Relações de saída:** Nenhuma relação estrutural encontrada; ausência não prova desuso..
+**Referenciado por:** `README.md` (documenta).
+
 ## docs/INTEGRACAO.md
 
 [Abrir arquivo](../../docs/INTEGRACAO.md) · md · 2,578 bytes
@@ -277,7 +287,7 @@ Síntese de testes históricos e limites por destino.
 
 ## docs/mapas/GRAFOS.md
 
-[Abrir arquivo](../../docs/mapas/GRAFOS.md) · md · 15,857 bytes
+[Abrir arquivo](../../docs/mapas/GRAFOS.md) · md · 18,903 bytes
 
 Diagramas Mermaid e leitura do grafo geral paralelo.
 
@@ -287,7 +297,7 @@ Diagramas Mermaid e leitura do grafo geral paralelo.
 
 ## docs/mapas/INVENTARIO.md
 
-[Abrir arquivo](../../docs/mapas/INVENTARIO.md) · md · 21,277 bytes
+[Abrir arquivo](../../docs/mapas/INVENTARIO.md) · md · 26,534 bytes
 
 Inventário legível de arquivos da conversa paralela.
 
@@ -357,7 +367,7 @@ Resultados de verificação registrados pela conversa paralela.
 
 ## docs/mapas/cobertura.json
 
-[Abrir arquivo](../../docs/mapas/cobertura.json) · json · 1,124 bytes
+[Abrir arquivo](../../docs/mapas/cobertura.json) · json · 1,125 bytes
 
 Contagens, escopo e exclusões do mapa paralelo.
 
@@ -377,7 +387,7 @@ Catálogo de componentes GLB do mapa paralelo.
 
 ## docs/mapas/controles.json
 
-[Abrir arquivo](../../docs/mapas/controles.json) · json · 36,182 bytes
+[Abrir arquivo](../../docs/mapas/controles.json) · json · 38,762 bytes
 
 Índice de controles DOM extraído pelo gerador paralelo.
 
@@ -387,7 +397,7 @@ Catálogo de componentes GLB do mapa paralelo.
 
 ## docs/mapas/dependencias.json
 
-[Abrir arquivo](../../docs/mapas/dependencias.json) · json · 33,987 bytes
+[Abrir arquivo](../../docs/mapas/dependencias.json) · json · 41,476 bytes
 
 Relações de dependências extraídas pelo gerador paralelo.
 
@@ -407,7 +417,7 @@ Extração graphify preservada pela conversa paralela.
 
 ## docs/mapas/index.html
 
-[Abrir arquivo](../../docs/mapas/index.html) · html · 309,844 bytes
+[Abrir arquivo](../../docs/mapas/index.html) · html · 385,955 bytes
 
 Interface navegável do mapa geral paralelo.
 
@@ -417,7 +427,7 @@ Interface navegável do mapa geral paralelo.
 
 ## docs/mapas/inventario.json
 
-[Abrir arquivo](../../docs/mapas/inventario.json) · json · 385,838 bytes
+[Abrir arquivo](../../docs/mapas/inventario.json) · json · 508,452 bytes
 
 Inventário estruturado de arquivos do gerador paralelo.
 
@@ -467,7 +477,7 @@ Pareceres históricos e subjetivos sobre versões visuais.
 
 ## ferramentas/manifest.cjs
 
-[Abrir arquivo](../../ferramentas/manifest.cjs) · cjs · 829 bytes
+[Abrir arquivo](../../ferramentas/manifest.cjs) · cjs · 1,018 bytes
 
 Calcula bytes e SHA-256 de 14 entregas e grava o manifesto.
 
@@ -487,7 +497,7 @@ Template da interface do mapa geral da conversa paralela.
 
 ## ferramentas/mapear.py
 
-[Abrir arquivo](../../ferramentas/mapear.py) · py · 21,555 bytes
+[Abrir arquivo](../../ferramentas/mapear.py) · py · 21,927 bytes
 
 Gerador do mapa geral da conversa paralela; saídas em docs/mapas.
 
@@ -617,7 +627,7 @@ Entrada pública que encaminha ao laboratório em web/.
 
 ## manifesto-sha256.json
 
-[Abrir arquivo](../../manifesto-sha256.json) · json · 2,226 bytes
+[Abrir arquivo](../../manifesto-sha256.json) · json · 3,048 bytes
 
 Lista fechada com tamanho e hash de 14 entregas.
 
@@ -707,6 +717,37 @@ Wordmark textual independente presente no pacote.
 **Relações de saída:** Nenhuma relação estrutural encontrada; ausência não prova desuso..
 **Referenciado por:** Nenhuma referência catalogada..
 
+## web/assets/carro-aula-v2.glb
+
+[Abrir arquivo](../../web/assets/carro-aula-v2.glb) · glb · 2,293,292 bytes
+
+Carro final otimizado do F1 Loop, 97 componentes.
+
+**Natureza:** asset GLB. **Uso:** Modelo incorporado ao laboratório.
+**Relações de saída:** Nenhuma relação estrutural encontrada; ausência não prova desuso..
+**Referenciado por:** `web/build.cjs` (incorpora_como_base64); `web/test-mechanics.mjs` (le_geometria_para_testes).
+**GLB:** 138 nós, 97 meshes, 260,023 triângulos, 21 materiais, 11 imagens, 0 clipes.
+
+## web/assets/carro-aula-v2.proveniencia.json
+
+[Abrir arquivo](../../web/assets/carro-aula-v2.proveniencia.json) · json · 7,442 bytes
+
+Procedência e transformações do carro v2.
+
+**Natureza:** metadados. **Uso:** Conferir origem do carro.
+**Relações de saída:** Nenhuma relação estrutural encontrada; ausência não prova desuso..
+**Referenciado por:** Nenhuma referência catalogada..
+
+## web/assets/carro-aula-v2.validacao.json
+
+[Abrir arquivo](../../web/assets/carro-aula-v2.validacao.json) · json · 1,070 bytes
+
+Validação original do carro v2.
+
+**Natureza:** evidência histórica. **Uso:** Consultar junto aos testes atuais.
+**Relações de saída:** Nenhuma relação estrutural encontrada; ausência não prova desuso..
+**Referenciado por:** Nenhuma referência catalogada..
+
 ## web/assets/carro-movable.glb
 
 [Abrir arquivo](../../web/assets/carro-movable.glb) · glb · 26,454,116 bytes
@@ -715,22 +756,83 @@ Base exterior com 97 peças e metadados usada pelo build web e Blender.
 
 **Natureza:** base derivada fornecida. **Uso:** Fonte operacional local; extração inicial não distribuída.
 **Relações de saída:** Nenhuma relação estrutural encontrada; ausência não prova desuso..
-**Referenciado por:** `web/build.cjs` (incorpora_como_base64); `web/test-mechanics.mjs` (le_geometria_para_testes); `ferramentas/package_blender.py` (importa_base_derivada); `ferramentas/manifest.cjs` (le_bytes_para_sha256).
+**Referenciado por:** `ferramentas/package_blender.py` (importa_base_derivada); `ferramentas/manifest.cjs` (le_bytes_para_sha256).
 **GLB:** 138 nós, 97 meshes, 752,824 triângulos, 21 materiais, 11 imagens, 0 clipes.
+
+## web/assets/inteia-escudo-oficial.svg
+
+[Abrir arquivo](../../web/assets/inteia-escudo-oficial.svg) · svg · 5,927 bytes
+
+Brasão oficial INTEIA.
+
+**Natureza:** identidade visual. **Uso:** Aplicado à carroceria.
+**Relações de saída:** Nenhuma relação estrutural encontrada; ausência não prova desuso..
+**Referenciado por:** `web/src/branding.js` (carrega_arte).
+
+## web/assets/inteia-nome-oficial.svg
+
+[Abrir arquivo](../../web/assets/inteia-nome-oficial.svg) · svg · 1,292 bytes
+
+Assinatura oficial INTEIA.
+
+**Natureza:** identidade visual. **Uso:** Aplicada à lateral.
+**Relações de saída:** Nenhuma relação estrutural encontrada; ausência não prova desuso..
+**Referenciado por:** `web/src/branding.js` (carrega_arte).
+
+## web/assets/inteligencia-mil-grau-transparent.png
+
+[Abrir arquivo](../../web/assets/inteligencia-mil-grau-transparent.png) · png · 1,070,790 bytes
+
+Arte do patrocínio Inteligência Mil Grau.
+
+**Natureza:** identidade visual. **Uso:** Aplicada à tampa do motor.
+**Relações de saída:** Nenhuma relação estrutural encontrada; ausência não prova desuso..
+**Referenciado por:** `web/src/branding.js` (carrega_arte).
+
+## web/assets/inteligencia-mil-grau.source.json
+
+[Abrir arquivo](../../web/assets/inteligencia-mil-grau.source.json) · json · 564 bytes
+
+Procedência da arte do patrocinador.
+
+**Natureza:** metadados. **Uso:** Consultar origem.
+**Relações de saída:** Nenhuma relação estrutural encontrada; ausência não prova desuso..
+**Referenciado por:** Nenhuma referência catalogada..
+
+## web/assets/power-unit-v1.glb
+
+[Abrir arquivo](../../web/assets/power-unit-v1.glb) · glb · 4,640,876 bytes
+
+Motor V6 didático animado do F1 Loop.
+
+**Natureza:** asset GLB. **Uso:** Carregado sob demanda no box.
+**Relações de saída:** Nenhuma relação estrutural encontrada; ausência não prova desuso..
+**Referenciado por:** `web/src/engine/in-car.js` (carrega_motor).
+**GLB:** 117 nós, 84 meshes, 265,396 triângulos, 15 materiais, 1 imagens, 1 clipes.
+
+## web/assets/power-unit-v1.manifest.json
+
+[Abrir arquivo](../../web/assets/power-unit-v1.manifest.json) · json · 1,786 bytes
+
+Geometria, animação, hash e licença do motor.
+
+**Natureza:** metadados. **Uso:** Conferir procedência e limites.
+**Relações de saída:** Nenhuma relação estrutural encontrada; ausência não prova desuso..
+**Referenciado por:** Nenhuma referência catalogada..
 
 ## web/build.cjs
 
-[Abrir arquivo](../../web/build.cjs) · cjs · 432 bytes
+[Abrir arquivo](../../web/build.cjs) · cjs · 436 bytes
 
 Empacota app e base64 do GLB no template para HTML autocontido.
 
 **Natureza:** código fonte editável. **Uso:** Node.js/esbuild; sobrescreve web/index.html.
-**Relações de saída:** importa → `external:fs`; importa → `external:esbuild`; empacota_entrada → `web/src/app-v2.js`; le_template → `web/src/template-v2.html`; incorpora_como_base64 → `web/assets/carro-movable.glb`; sobrescreve_html_gerado → `web/index.html`.
+**Relações de saída:** importa → `external:fs`; importa → `external:esbuild`; empacota_entrada → `web/src/app-v2.js`; le_template → `web/src/template-v2.html`; incorpora_como_base64 → `web/assets/carro-aula-v2.glb`; sobrescreve_html_gerado → `web/index.html`.
 **Referenciado por:** `web/package.json` (executa_em_build).
 
 ## web/index.html
 
-[Abrir arquivo](../../web/index.html) · html · 36,511,157 bytes
+[Abrir arquivo](../../web/index.html) · html · 4,351,049 bytes
 
 Site autocontido gerado: template, bundle Three.js e modelo embutido.
 
@@ -750,17 +852,17 @@ Versões e integridade das dependências npm.
 
 ## web/package.json
 
-[Abrir arquivo](../../web/package.json) · json · 393 bytes
+[Abrir arquivo](../../web/package.json) · json · 439 bytes
 
 Scripts e versões fixadas de Three.js 0.180.0/esbuild 0.25.10.
 
 **Natureza:** configuração editável. **Uso:** npm; manifesto da aplicação.
-**Relações de saída:** executa_em_build → `web/build.cjs`; executa_em_dev → `web/server.cjs`; executa_em_test → `web/test-mechanics.mjs`; executa_em_test → `web/test-aerodynamics.mjs`.
+**Relações de saída:** executa_em_build → `web/build.cjs`; executa_em_dev → `web/server.cjs`; executa_em_test → `web/test-mechanics.mjs`; executa_em_test → `web/test-aerodynamics.mjs`; executa_teste → `web/test-power-unit.mjs`.
 **Referenciado por:** Nenhuma referência catalogada..
 
 ## web/server.cjs
 
-[Abrir arquivo](../../web/server.cjs) · cjs · 820 bytes
+[Abrir arquivo](../../web/server.cjs) · cjs · 869 bytes
 
 Servidor HTTP local da pasta web em PORT ou 5186.
 
@@ -780,23 +882,33 @@ Calculadora pura por coeficientes: vento, densidade, forças e limites.
 
 ## web/src/app-v2.js
 
-[Abrir arquivo](../../web/src/app-v2.js) · js · 19,000 bytes
+[Abrir arquivo](../../web/src/app-v2.js) · js · 22,298 bytes
 
 Entrada ativa: cena, GLB, módulos, controles DOM e loop de desenho.
 
 **Natureza:** código fonte editável. **Uso:** Navegador WebGL; orquestração.
-**Relações de saída:** importa → `web/src/branding.js`; importa → `web/src/identity.js`; importa → `external:three/addons/exporters/GLTFExporter.js`; importa → `web/src/garage.js`; importa → `web/src/wind-tunnel.js`; importa → `web/src/customize.js`; importa → `external:three`; importa → `external:three/addons/controls/OrbitControls.js`; importa → `external:three/addons/controls/TransformControls.js`; importa → `external:three/addons/postprocessing/EffectComposer.js`; importa → `external:three/addons/postprocessing/RenderPass.js`; importa → `external:three/addons/postprocessing/SSAOPass.js`; importa → `external:three/addons/postprocessing/OutputPass.js`; importa → `external:three/addons/postprocessing/SMAAPass.js`; importa → `external:three/addons/loaders/GLTFLoader.js`; importa → `web/src/studio.js`; importa → `web/src/mechanics.js`; chama_sintaticamente → `web/src/app-v2.js#18:$`; chama_sintaticamente → `web/src/identity.js#11:brandSVG`; chama_sintaticamente → `web/src/studio.js#2:setupStudio`; chama_sintaticamente → `web/src/app-v2.js#18:$`; chama_sintaticamente → `web/src/app-v2.js#18:$`; chama_sintaticamente → `web/src/app-v2.js#18:$`; chama_sintaticamente → `web/src/app-v2.js#18:$`; chama_sintaticamente → `web/src/app-v2.js#18:$`; chama_sintaticamente → `web/src/app-v2.js#18:$`; chama_sintaticamente → `web/src/app-v2.js#18:$`; chama_sintaticamente → `web/src/app-v2.js#18:$`; chama_sintaticamente → `web/src/app-v2.js#18:$`; chama_sintaticamente → `web/src/app-v2.js#40:resize`; chama_sintaticamente → `web/src/app-v2.js#18:$`; chama_sintaticamente → `web/src/studio.js#146:applyCarMaterials`; chama_sintaticamente → `web/src/customize.js#1:setupCustomization`; chama_sintaticamente → `web/src/mechanics.js#3:createMechanics`; chama_sintaticamente → `web/src/branding.js#6:applyInteiaBranding`; chama_sintaticamente → `web/src/garage.js#7:createGarage`; chama_sintaticamente → `web/src/wind-tunnel.js#4:createWindTunnel`; chama_sintaticamente → `web/src/app-v2.js#18:$`; chama_sintaticamente → `web/src/app-v2.js#18:$`; chama_sintaticamente → `web/src/app-v2.js#40:resize`; chama_sintaticamente → `web/src/app-v2.js#18:$`; chama_sintaticamente → `web/src/app-v2.js#18:$`; chama_sintaticamente → `web/src/app-v2.js#38:view`; chama_sintaticamente → `web/src/app-v2.js#18:$`; chama_sintaticamente → `web/src/app-v2.js#18:$`; chama_sintaticamente → `web/src/app-v2.js#38:view`; chama_sintaticamente → `web/src/app-v2.js#18:$`; chama_sintaticamente → `web/src/app-v2.js#18:$`; chama_sintaticamente → `web/src/app-v2.js#18:$`; chama_sintaticamente → `web/src/app-v2.js#37:moveCamera`; chama_sintaticamente → `web/src/app-v2.js#18:$`; chama_sintaticamente → `web/src/app-v2.js#18:$`; chama_sintaticamente → `web/src/app-v2.js#18:$`; chama_sintaticamente → `web/src/app-v2.js#18:$`; chama_sintaticamente → `web/src/app-v2.js#18:$`; chama_sintaticamente → `web/src/app-v2.js#18:$`; chama_sintaticamente → `web/src/app-v2.js#18:$`; chama_sintaticamente → `web/src/app-v2.js#18:$`; chama_sintaticamente → `web/src/app-v2.js#18:$`; chama_sintaticamente → `web/src/app-v2.js#18:$`; chama_sintaticamente → `web/src/app-v2.js#18:$`; chama_sintaticamente → `web/src/app-v2.js#18:$`; chama_sintaticamente → `web/src/app-v2.js#45:assemblyTo`; chama_sintaticamente → `web/src/app-v2.js#18:$`; chama_sintaticamente → `web/src/app-v2.js#45:assemblyTo`; chama_sintaticamente → `web/src/app-v2.js#18:$`; chama_sintaticamente → `web/src/app-v2.js#45:assemblyTo`; chama_sintaticamente → `web/src/app-v2.js#42:refreshSelection`; chama_sintaticamente → `web/src/app-v2.js#18:$`; chama_sintaticamente → `web/src/app-v2.js#18:$`; chama_sintaticamente → `web/src/app-v2.js#18:$`; chama_sintaticamente → `web/src/app-v2.js#43:select`; chama_sintaticamente → `web/src/app-v2.js#18:$`; chama_sintaticamente → `web/src/app-v2.js#43:select`; chama_sintaticamente → `web/src/app-v2.js#18:$`; chama_sintaticamente → `web/src/app-v2.js#18:$`; chama_sintaticamente → `web/src/app-v2.js#42:refreshSelection`; chama_sintaticamente → `web/src/app-v2.js#18:$`; chama_sintaticamente → `web/src/app-v2.js#18:$`; chama_sintaticamente → `web/src/app-v2.js#18:$`; chama_sintaticamente → `web/src/app-v2.js#18:$`; chama_sintaticamente → `web/src/app-v2.js#18:$`; chama_sintaticamente → `web/src/app-v2.js#18:$`; chama_sintaticamente → `web/src/app-v2.js#18:$`; chama_sintaticamente → `web/src/app-v2.js#18:$`; chama_sintaticamente → `web/src/app-v2.js#18:$`; chama_sintaticamente → `web/src/app-v2.js#18:$`; chama_sintaticamente → `web/src/app-v2.js#18:$`; chama_sintaticamente → `web/src/app-v2.js#18:$`; chama_sintaticamente → `web/src/app-v2.js#18:$`; chama_sintaticamente → `web/src/app-v2.js#43:select`; chama_sintaticamente → `web/src/app-v2.js#18:$`; chama_sintaticamente → `web/src/app-v2.js#18:$`; chama_sintaticamente → `web/src/app-v2.js#18:$`; chama_sintaticamente → `web/src/app-v2.js#18:$`; chama_sintaticamente → `web/src/app-v2.js#18:$`; chama_sintaticamente → `web/src/app-v2.js#38:view`; chama_sintaticamente → `web/src/app-v2.js#18:$`; chama_sintaticamente → `web/src/app-v2.js#18:$`; chama_sintaticamente → `web/src/app-v2.js#18:$`; chama_sintaticamente → `web/src/app-v2.js#18:$`; chama_sintaticamente → `web/src/app-v2.js#18:$`; chama_sintaticamente → `web/src/app-v2.js#43:select`; chama_sintaticamente → `web/src/app-v2.js#38:view`; chama_sintaticamente → `web/src/app-v2.js#43:select`; chama_sintaticamente → `web/src/app-v2.js#18:$`; chama_sintaticamente → `web/src/app-v2.js#18:$`; chama_sintaticamente → `web/src/app-v2.js#18:$`; chama_sintaticamente → `web/src/app-v2.js#18:$`; chama_sintaticamente → `web/src/app-v2.js#18:$`; chama_sintaticamente → `web/src/app-v2.js#18:$`; chama_sintaticamente → `web/src/app-v2.js#18:$`; chama_sintaticamente → `web/src/app-v2.js#38:view`; chama_sintaticamente → `web/src/app-v2.js#18:$`; chama_sintaticamente → `web/src/app-v2.js#18:$`; chama_sintaticamente → `web/src/app-v2.js#18:$`; chama_sintaticamente → `web/src/app-v2.js#18:$`; conecta_stage_e_controles_dom → `web/src/template-v2.html`; exporta_clone_do_box_via_gltfexporter → `web/src/garage.js`; atualiza_estado_a_cada_quadro → `web/src/mechanics.js`; coordena_box_e_transparencia_por_callbacks → `web/src/wind-tunnel.js`; renderiza_e_atualiza_piso → `web/src/studio.js`; importa_assinatura_ativa → `web/src/branding.js`; aplica_assinatura_apos_criar_mecanica → `web/src/branding.js`.
+**Relações de saída:** importa → `external:three/addons/libs/meshopt_decoder.module.js`; importa → `web/src/engine/in-car.js`; importa → `web/src/car-look.js`; importa → `web/src/surface-library.js`; importa → `web/src/senna-driver.js`; importa → `web/src/branding.js`; importa → `web/src/identity.js`; importa → `external:three/addons/exporters/GLTFExporter.js`; importa → `web/src/garage.js`; importa → `web/src/wind-tunnel.js`; importa → `web/src/customize.js`; importa → `external:three`; importa → `external:three/addons/controls/OrbitControls.js`; importa → `external:three/addons/controls/TransformControls.js`; importa → `external:three/addons/postprocessing/EffectComposer.js`; importa → `external:three/addons/postprocessing/RenderPass.js`; importa → `external:three/addons/postprocessing/SSAOPass.js`; importa → `external:three/addons/postprocessing/OutputPass.js`; importa → `external:three/addons/postprocessing/SMAAPass.js`; importa → `external:three/addons/loaders/GLTFLoader.js`; importa → `web/src/studio.js`; importa → `web/src/mechanics.js`; chama_sintaticamente → `web/src/app-v2.js#23:$`; chama_sintaticamente → `web/src/identity.js#11:brandSVG`; chama_sintaticamente → `web/src/studio.js#2:setupStudio`; chama_sintaticamente → `web/src/app-v2.js#23:$`; chama_sintaticamente → `web/src/app-v2.js#23:$`; chama_sintaticamente → `web/src/app-v2.js#23:$`; chama_sintaticamente → `web/src/app-v2.js#23:$`; chama_sintaticamente → `web/src/app-v2.js#23:$`; chama_sintaticamente → `web/src/app-v2.js#23:$`; chama_sintaticamente → `web/src/app-v2.js#23:$`; chama_sintaticamente → `web/src/app-v2.js#23:$`; chama_sintaticamente → `web/src/app-v2.js#23:$`; chama_sintaticamente → `web/src/app-v2.js#47:resize`; chama_sintaticamente → `web/src/app-v2.js#23:$`; chama_sintaticamente → `web/src/studio.js#146:applyCarMaterials`; chama_sintaticamente → `web/src/mechanics.js#3:createMechanics`; chama_sintaticamente → `web/src/branding.js#5:applyInteiaBranding`; chama_sintaticamente → `web/src/surface-library.js#16:createSurfaceLibrary`; chama_sintaticamente → `web/src/car-look.js#202:enhanceCar`; chama_sintaticamente → `web/src/senna-driver.js#4:createSennaDriver`; chama_sintaticamente → `web/src/customize.js#1:setupCustomization`; chama_sintaticamente → `web/src/app-v2.js#23:$`; chama_sintaticamente → `web/src/app-v2.js#23:$`; chama_sintaticamente → `web/src/engine/in-car.js#25:createInCarEngine`; chama_sintaticamente → `web/src/garage.js#7:createGarage`; chama_sintaticamente → `web/src/wind-tunnel.js#4:createWindTunnel`; chama_sintaticamente → `web/src/app-v2.js#23:$`; chama_sintaticamente → `web/src/app-v2.js#23:$`; chama_sintaticamente → `web/src/app-v2.js#47:resize`; chama_sintaticamente → `web/src/app-v2.js#23:$`; chama_sintaticamente → `web/src/app-v2.js#23:$`; chama_sintaticamente → `web/src/app-v2.js#45:view`; chama_sintaticamente → `web/src/app-v2.js#23:$`; chama_sintaticamente → `web/src/app-v2.js#23:$`; chama_sintaticamente → `web/src/app-v2.js#45:view`; chama_sintaticamente → `web/src/app-v2.js#23:$`; chama_sintaticamente → `web/src/app-v2.js#23:$`; chama_sintaticamente → `web/src/app-v2.js#23:$`; chama_sintaticamente → `web/src/app-v2.js#44:moveCamera`; chama_sintaticamente → `web/src/app-v2.js#23:$`; chama_sintaticamente → `web/src/app-v2.js#23:$`; chama_sintaticamente → `web/src/app-v2.js#23:$`; chama_sintaticamente → `web/src/app-v2.js#23:$`; chama_sintaticamente → `web/src/app-v2.js#23:$`; chama_sintaticamente → `web/src/app-v2.js#23:$`; chama_sintaticamente → `web/src/app-v2.js#23:$`; chama_sintaticamente → `web/src/app-v2.js#23:$`; chama_sintaticamente → `web/src/app-v2.js#23:$`; chama_sintaticamente → `web/src/app-v2.js#23:$`; chama_sintaticamente → `web/src/app-v2.js#23:$`; chama_sintaticamente → `web/src/app-v2.js#23:$`; chama_sintaticamente → `web/src/app-v2.js#52:assemblyTo`; chama_sintaticamente → `web/src/app-v2.js#23:$`; chama_sintaticamente → `web/src/app-v2.js#52:assemblyTo`; chama_sintaticamente → `web/src/app-v2.js#23:$`; chama_sintaticamente → `web/src/app-v2.js#52:assemblyTo`; chama_sintaticamente → `web/src/app-v2.js#49:refreshSelection`; chama_sintaticamente → `web/src/app-v2.js#23:$`; chama_sintaticamente → `web/src/app-v2.js#34:closeEngine`; chama_sintaticamente → `web/src/app-v2.js#23:$`; chama_sintaticamente → `web/src/app-v2.js#23:$`; chama_sintaticamente → `web/src/app-v2.js#50:select`; chama_sintaticamente → `web/src/app-v2.js#23:$`; chama_sintaticamente → `web/src/app-v2.js#50:select`; chama_sintaticamente → `web/src/app-v2.js#23:$`; chama_sintaticamente → `web/src/app-v2.js#23:$`; chama_sintaticamente → `web/src/app-v2.js#49:refreshSelection`; chama_sintaticamente → `web/src/app-v2.js#23:$`; chama_sintaticamente → `web/src/app-v2.js#23:$`; chama_sintaticamente → `web/src/app-v2.js#23:$`; chama_sintaticamente → `web/src/app-v2.js#23:$`; chama_sintaticamente → `web/src/app-v2.js#23:$`; chama_sintaticamente → `web/src/app-v2.js#23:$`; chama_sintaticamente → `web/src/app-v2.js#23:$`; chama_sintaticamente → `web/src/app-v2.js#23:$`; chama_sintaticamente → `web/src/app-v2.js#23:$`; chama_sintaticamente → `web/src/app-v2.js#23:$`; chama_sintaticamente → `web/src/app-v2.js#23:$`; chama_sintaticamente → `web/src/app-v2.js#23:$`; chama_sintaticamente → `web/src/app-v2.js#34:closeEngine`; chama_sintaticamente → `web/src/app-v2.js#23:$`; chama_sintaticamente → `web/src/app-v2.js#50:select`; chama_sintaticamente → `web/src/app-v2.js#23:$`; chama_sintaticamente → `web/src/app-v2.js#23:$`; chama_sintaticamente → `web/src/app-v2.js#23:$`; chama_sintaticamente → `web/src/app-v2.js#23:$`; chama_sintaticamente → `web/src/app-v2.js#23:$`; chama_sintaticamente → `web/src/app-v2.js#45:view`; chama_sintaticamente → `web/src/app-v2.js#23:$`; chama_sintaticamente → `web/src/app-v2.js#23:$`; chama_sintaticamente → `web/src/app-v2.js#23:$`; chama_sintaticamente → `web/src/app-v2.js#23:$`; chama_sintaticamente → `web/src/app-v2.js#23:$`; chama_sintaticamente → `web/src/app-v2.js#50:select`; chama_sintaticamente → `web/src/app-v2.js#45:view`; chama_sintaticamente → `web/src/app-v2.js#50:select`; chama_sintaticamente → `web/src/app-v2.js#23:$`; chama_sintaticamente → `web/src/app-v2.js#23:$`; chama_sintaticamente → `web/src/app-v2.js#23:$`; chama_sintaticamente → `web/src/app-v2.js#34:closeEngine`; chama_sintaticamente → `web/src/app-v2.js#45:view`; chama_sintaticamente → `web/src/app-v2.js#23:$`; chama_sintaticamente → `web/src/app-v2.js#23:$`; chama_sintaticamente → `web/src/app-v2.js#23:$`; chama_sintaticamente → `web/src/app-v2.js#23:$`; chama_sintaticamente → `web/src/app-v2.js#44:moveCamera`; chama_sintaticamente → `web/src/app-v2.js#23:$`; chama_sintaticamente → `web/src/app-v2.js#23:$`; chama_sintaticamente → `web/src/app-v2.js#23:$`; chama_sintaticamente → `web/src/app-v2.js#23:$`; chama_sintaticamente → `web/src/app-v2.js#23:$`; chama_sintaticamente → `web/src/app-v2.js#23:$`; chama_sintaticamente → `web/src/app-v2.js#23:$`; chama_sintaticamente → `web/src/app-v2.js#23:$`; chama_sintaticamente → `web/src/app-v2.js#23:$`; chama_sintaticamente → `web/src/app-v2.js#23:$`; chama_sintaticamente → `web/src/app-v2.js#23:$`; chama_sintaticamente → `web/src/app-v2.js#45:view`; chama_sintaticamente → `web/src/app-v2.js#23:$`; chama_sintaticamente → `web/src/app-v2.js#23:$`; chama_sintaticamente → `web/src/app-v2.js#23:$`; chama_sintaticamente → `web/src/app-v2.js#23:$`; chama_sintaticamente → `web/src/app-v2.js#23:$`; chama_sintaticamente → `web/src/app-v2.js#23:$`; chama_sintaticamente → `web/src/app-v2.js#23:$`; chama_sintaticamente → `web/src/app-v2.js#23:$`; conecta_stage_e_controles_dom → `web/src/template-v2.html`; exporta_clone_do_box_via_gltfexporter → `web/src/garage.js`; atualiza_estado_a_cada_quadro → `web/src/mechanics.js`; coordena_box_e_transparencia_por_callbacks → `web/src/wind-tunnel.js`; renderiza_e_atualiza_piso → `web/src/studio.js`; importa_assinatura_ativa → `web/src/branding.js`; aplica_assinatura_apos_criar_mecanica → `web/src/branding.js`.
 **Referenciado por:** `web/build.cjs` (empacota_entrada).
 
 ## web/src/branding.js
 
-[Abrir arquivo](../../web/src/branding.js) · js · 2,177 bytes
+[Abrir arquivo](../../web/src/branding.js) · js · 4,204 bytes
 
 Projeta uma assinatura vetorial INTEIA na lateral direita de main_body; chamado pela entrada ativa.
 
 **Natureza:** código fonte editável. **Uso:** Three.js, glyphs de identity.js, DecalGeometry e registros de mechanics; decal da sessão web.
-**Relações de saída:** importa → `web/src/identity.js`; importa → `external:three`; importa → `external:three/addons/geometries/DecalGeometry.js`; importa_glyphs_da_identidade → `web/src/identity.js`; desenha_glyphs_em_canvas → `web/src/identity.js`; localiza_registro_da_carroceria_para_decal → `web/src/mechanics.js`.
+**Relações de saída:** importa → `external:three`; importa → `external:three/addons/geometries/DecalGeometry.js`; localiza_registro_da_carroceria_para_decal → `web/src/mechanics.js`; carrega_arte → `web/assets/inteia-nome-oficial.svg`; carrega_arte → `web/assets/inteia-escudo-oficial.svg`; carrega_arte → `web/assets/inteligencia-mil-grau-transparent.png`.
 **Referenciado por:** `web/src/app-v2.js` (importa); `web/src/app-v2.js` (importa_assinatura_ativa); `web/src/app-v2.js` (aplica_assinatura_apos_criar_mecanica).
+
+## web/src/car-look.js
+
+[Abrir arquivo](../../web/src/car-look.js) · js · 19,357 bytes
+
+Acabamento final, rodas, pneus e freios do carro.
+
+**Natureza:** fonte web editável. **Uso:** Usado pelo visualizador.
+**Relações de saída:** importa → `external:three`.
+**Referenciado por:** `web/src/app-v2.js` (importa).
 
 ## web/src/customize.js
 
@@ -807,6 +919,26 @@ Liga controles de cores/acabamento, luz, piso e fundo aos materiais.
 **Natureza:** código fonte editável. **Uso:** DOM do template; estado em memória da sessão.
 **Relações de saída:** conecta_controles_de_cor_dom → `web/src/template-v2.html`; restaura_tema_e_acabamento → `web/src/studio.js`.
 **Referenciado por:** `web/src/app-v2.js` (importa); `docs/ACABAMENTO-E-RENDER.md` (documenta_acabamento_e_limites_de_exportacao).
+
+## web/src/engine/engine-shot.js
+
+[Abrir arquivo](../../web/src/engine/engine-shot.js) · js · 5,253 bytes
+
+Poses de referência para preparação gráfica do motor.
+
+**Natureza:** fonte web editável. **Uso:** Reaproveitado do F1 Loop.
+**Relações de saída:** Nenhuma relação estrutural encontrada; ausência não prova desuso..
+**Referenciado por:** `web/src/engine/in-car.js` (importa).
+
+## web/src/engine/in-car.js
+
+[Abrir arquivo](../../web/src/engine/in-car.js) · js · 15,226 bytes
+
+Motor integrado, corte e tampa móvel.
+
+**Natureza:** fonte web editável. **Uso:** Controlado pela oficina.
+**Relações de saída:** importa → `external:three`; importa → `external:three/addons/loaders/GLTFLoader.js`; importa → `external:three/addons/libs/meshopt_decoder.module.js`; importa → `web/src/engine/engine-shot.js`; carrega_motor → `web/assets/power-unit-v1.glb`.
+**Referenciado por:** `web/src/app-v2.js` (importa).
 
 ## web/src/flow-detail.js
 
@@ -836,7 +968,7 @@ Define glifos, emblema, SVG e desenho Canvas da identidade ativa.
 
 **Natureza:** código fonte editável. **Uso:** Cabeçalho e superfícies do box.
 **Relações de saída:** Nenhuma relação estrutural encontrada; ausência não prova desuso..
-**Referenciado por:** `web/src/app-v2.js` (importa); `web/src/branding.js` (importa); `web/src/garage.js` (importa); `docs/BOX-LABORATORIO.md` (documenta_uso_e_origem); `web/src/branding.js` (importa_glyphs_da_identidade); `web/src/branding.js` (desenha_glyphs_em_canvas).
+**Referenciado por:** `web/src/app-v2.js` (importa); `web/src/garage.js` (importa); `docs/BOX-LABORATORIO.md` (documenta_uso_e_origem).
 
 ## web/src/mechanics.js
 
@@ -848,6 +980,16 @@ Agrupa peças, cria pivôs, explode/monta, seleciona e anima rodas/DRS.
 **Relações de saída:** importa → `external:three`.
 **Referenciado por:** `web/src/app-v2.js` (importa); `web/test-mechanics.mjs` (importa); `web/src/app-v2.js` (atualiza_estado_a_cada_quadro); `web/src/garage.js` (le_quantidade_e_montagem_no_monitor); `web/src/wind-tunnel.js` (bloqueia_forcas_com_pecas_deslocadas_ou_isoladas); `docs/INTEGRACAO.md` (alerta_conflito_com_clipe_glb); `web/src/branding.js` (localiza_registro_da_carroceria_para_decal).
 
+## web/src/senna-driver.js
+
+[Abrir arquivo](../../web/src/senna-driver.js) · js · 5,594 bytes
+
+Piloto ilustrativo do carro final.
+
+**Natureza:** fonte web editável. **Uso:** Oculto na desmontagem e isolamento.
+**Relações de saída:** importa → `external:three`.
+**Referenciado por:** `web/src/app-v2.js` (importa).
+
 ## web/src/studio.js
 
 [Abrir arquivo](../../web/src/studio.js) · js · 10,769 bytes
@@ -858,9 +1000,19 @@ Materiais, carbono procedural, iluminação, ambiente, piso e tema.
 **Relações de saída:** Nenhuma relação estrutural encontrada; ausência não prova desuso..
 **Referenciado por:** `web/src/app-v2.js` (importa); `web/src/app-v2.js` (renderiza_e_atualiza_piso); `web/src/customize.js` (restaura_tema_e_acabamento); `web/src/garage.js` (salva_e_substitui_ambiente_do_estudio); `web/src/tunnel-visual.js` (salva_e_restaura_iluminacao_e_piso); `docs/ACABAMENTO-E-RENDER.md` (documenta_acabamento_e_limites_de_exportacao).
 
+## web/src/surface-library.js
+
+[Abrir arquivo](../../web/src/surface-library.js) · js · 7,088 bytes
+
+Texturas de acabamento do carro final.
+
+**Natureza:** fonte web editável. **Uso:** Aplicado a pintura, carbono e borracha.
+**Relações de saída:** Nenhuma relação estrutural encontrada; ausência não prova desuso..
+**Referenciado por:** `web/src/app-v2.js` (importa).
+
 ## web/src/template-v2.html
 
-[Abrir arquivo](../../web/src/template-v2.html) · html · 22,485 bytes
+[Abrir arquivo](../../web/src/template-v2.html) · html · 23,292 bytes
 
 Estrutura e estilos da interface com marcadores __MODEL__ e __APP__.
 
@@ -900,10 +1052,20 @@ Verifica unidades, escala das fórmulas, condições e coeficientes ausentes.
 
 ## web/test-mechanics.mjs
 
-[Abrir arquivo](../../web/test-mechanics.mjs) · mjs · 3,730 bytes
+[Abrir arquivo](../../web/test-mechanics.mjs) · mjs · 3,954 bytes
 
 Verifica peças, pivôs, 20 ciclos, seleção, arraste e restauração.
 
 **Natureza:** teste editável. **Uso:** Node.js/Three.js; grava relatório na raiz.
-**Relações de saída:** importa → `external:node:fs`; importa → `external:three`; importa → `external:three/addons/loaders/GLTFLoader.js`; importa → `web/src/mechanics.js`; chama_sintaticamente → `web/src/mechanics.js#3:createMechanics`; le_geometria_para_testes → `web/assets/carro-movable.glb`; escreve_relatorio_de_teste → `validacao-mecanica-web.json`.
+**Relações de saída:** importa → `external:three/addons/libs/meshopt_decoder.module.js`; importa → `external:node:fs`; importa → `external:three`; importa → `external:three/addons/loaders/GLTFLoader.js`; importa → `web/src/mechanics.js`; chama_sintaticamente → `web/src/mechanics.js#3:createMechanics`; le_geometria_para_testes → `web/assets/carro-aula-v2.glb`; escreve_relatorio_de_teste → `validacao-mecanica-web.json`.
 **Referenciado por:** `web/package.json` (executa_em_test).
+
+## web/test-power-unit.mjs
+
+[Abrir arquivo](../../web/test-power-unit.mjs) · mjs · 2,267 bytes
+
+Valida animação do motor em 20 ciclos.
+
+**Natureza:** teste. **Uso:** Executado por npm test.
+**Relações de saída:** importa → `external:three/addons/libs/meshopt_decoder.module.js`; importa → `external:node:fs`; importa → `external:three`; importa → `external:three/addons/loaders/GLTFLoader.js`.
+**Referenciado por:** `web/package.json` (executa_teste).

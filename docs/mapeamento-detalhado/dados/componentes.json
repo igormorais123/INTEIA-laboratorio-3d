@@ -1,6 +1,6 @@
 {
   "source": "outputs/carro.glb",
-  "web_glb": "web/assets/carro-movable.glb",
+  "web_glb": "web/assets/carro-aula-v2.glb",
   "documented_parts": 97,
   "glb_parts": 97,
   "all_documented_fields_match_glb": true,

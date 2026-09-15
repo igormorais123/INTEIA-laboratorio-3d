@@ -30,50 +30,57 @@ flowchart LR
   n28["validacao-mecanica-web.json"]
   n29["validacao-reabertura.json"]
   n30["web/THREE-LICENSE.txt"]
-  n31["web/assets/carro-movable.glb"]
-  n32["web/build.cjs"]
-  n33["web/index.html"]
-  n34["web/package.json"]
-  n35["web/server.cjs"]
-  n36["web/src/aero-physics.mjs"]
-  n37["web/src/app-v2.js"]
-  n38["web/src/branding.js"]
-  n39["web/src/customize.js"]
-  n40["web/src/garage.js"]
-  n41["web/src/identity.js"]
-  n42["web/src/mechanics.js"]
-  n43["web/src/studio.js"]
-  n44["web/src/template-v2.html"]
-  n45["web/src/tunnel-visual.js"]
-  n46["web/src/wind-tunnel.js"]
-  n47["web/test-aerodynamics.mjs"]
-  n48["web/test-mechanics.mjs"]
-  n32 -->|"empacota_entrada · EXTRACTED"| n37
-  n32 -->|"le_template · EXTRACTED"| n44
-  n32 -->|"incorpora_como_base64 · EXTRACTED"| n31
-  n32 -->|"sobrescreve_html_gerado · EXTRACTED"| n33
-  n35 -->|"serve_na_rota_raiz · EXTRACTED"| n33
-  n34 -->|"executa_em_build · EXTRACTED"| n32
-  n34 -->|"executa_em_dev · EXTRACTED"| n35
-  n34 -->|"executa_em_test · EXTRACTED"| n48
-  n34 -->|"executa_em_test · EXTRACTED"| n47
-  n37 -->|"conecta_stage_e_controles_dom · EXTRACTED"| n44
-  n39 -->|"conecta_controles_de_cor_dom · EXTRACTED"| n44
-  n46 -->|"conecta_parametros_do_ensaio_dom · EXTRACTED"| n44
-  n40 -->|"le_indicadores_dom_no_monitor · EXTRACTED"| n44
-  n37 -->|"exporta_clone_do_box_via_gltfexporter · EXTRACTED"| n40
-  n37 -->|"atualiza_estado_a_cada_quadro · EXTRACTED"| n42
-  n37 -->|"coordena_box_e_transparencia_por_callbacks · EXTRACTED"| n46
-  n37 -->|"renderiza_e_atualiza_piso · EXTRACTED"| n43
-  n39 -->|"restaura_tema_e_acabamento · EXTRACTED"| n43
-  n40 -->|"le_quantidade_e_montagem_no_monitor · EXTRACTED"| n42
-  n46 -->|"bloqueia_forcas_com_pecas_deslocadas_ou_isoladas · EXTRACTED"| n42
-  n40 -->|"salva_e_substitui_ambiente_do_estudio · EXTRACTED"| n43
-  n45 -->|"salva_e_restaura_iluminacao_e_piso · EXTRACTED"| n43
-  n48 -->|"le_geometria_para_testes · EXTRACTED"| n31
-  n48 -->|"escreve_relatorio_de_teste · EXTRACTED"| n28
-  n47 -->|"testa_unidades_forcas_e_limites · EXTRACTED"| n36
-  n15 -->|"importa_base_derivada · EXTRACTED"| n31
+  n31["web/assets/carro-aula-v2.glb"]
+  n32["web/assets/carro-movable.glb"]
+  n33["web/assets/inteia-escudo-oficial.svg"]
+  n34["web/assets/inteia-nome-oficial.svg"]
+  n35["web/assets/inteligencia-mil-grau-transparent.png"]
+  n36["web/assets/power-unit-v1.glb"]
+  n37["web/build.cjs"]
+  n38["web/index.html"]
+  n39["web/package.json"]
+  n40["web/server.cjs"]
+  n41["web/src/aero-physics.mjs"]
+  n42["web/src/app-v2.js"]
+  n43["web/src/branding.js"]
+  n44["web/src/customize.js"]
+  n45["web/src/engine/in-car.js"]
+  n46["web/src/garage.js"]
+  n47["web/src/identity.js"]
+  n48["web/src/mechanics.js"]
+  n49["web/src/studio.js"]
+  n50["web/src/template-v2.html"]
+  n51["web/src/tunnel-visual.js"]
+  n52["web/src/wind-tunnel.js"]
+  n53["web/test-aerodynamics.mjs"]
+  n54["web/test-mechanics.mjs"]
+  n55["web/test-power-unit.mjs"]
+  n37 -->|"empacota_entrada · EXTRACTED"| n42
+  n37 -->|"le_template · EXTRACTED"| n50
+  n37 -->|"incorpora_como_base64 · EXTRACTED"| n31
+  n37 -->|"sobrescreve_html_gerado · EXTRACTED"| n38
+  n40 -->|"serve_na_rota_raiz · EXTRACTED"| n38
+  n39 -->|"executa_em_build · EXTRACTED"| n37
+  n39 -->|"executa_em_dev · EXTRACTED"| n40
+  n39 -->|"executa_em_test · EXTRACTED"| n54
+  n39 -->|"executa_em_test · EXTRACTED"| n53
+  n42 -->|"conecta_stage_e_controles_dom · EXTRACTED"| n50
+  n44 -->|"conecta_controles_de_cor_dom · EXTRACTED"| n50
+  n52 -->|"conecta_parametros_do_ensaio_dom · EXTRACTED"| n50
+  n46 -->|"le_indicadores_dom_no_monitor · EXTRACTED"| n50
+  n42 -->|"exporta_clone_do_box_via_gltfexporter · EXTRACTED"| n46
+  n42 -->|"atualiza_estado_a_cada_quadro · EXTRACTED"| n48
+  n42 -->|"coordena_box_e_transparencia_por_callbacks · EXTRACTED"| n52
+  n42 -->|"renderiza_e_atualiza_piso · EXTRACTED"| n49
+  n44 -->|"restaura_tema_e_acabamento · EXTRACTED"| n49
+  n46 -->|"le_quantidade_e_montagem_no_monitor · EXTRACTED"| n48
+  n52 -->|"bloqueia_forcas_com_pecas_deslocadas_ou_isoladas · EXTRACTED"| n48
+  n46 -->|"salva_e_substitui_ambiente_do_estudio · EXTRACTED"| n49
+  n51 -->|"salva_e_restaura_iluminacao_e_piso · EXTRACTED"| n49
+  n54 -->|"le_geometria_para_testes · EXTRACTED"| n31
+  n54 -->|"escreve_relatorio_de_teste · EXTRACTED"| n28
+  n53 -->|"testa_unidades_forcas_e_limites · EXTRACTED"| n41
+  n15 -->|"importa_base_derivada · EXTRACTED"| n32
   n15 -->|"gera_ou_sobrescreve · EXTRACTED"| n26
   n15 -->|"gera_ou_sobrescreve · EXTRACTED"| n25
   n15 -->|"gera_ou_sobrescreve · EXTRACTED"| n24
@@ -87,7 +94,7 @@ flowchart LR
   n18 -->|"escreve_relatorio · EXTRACTED"| n29
   n16 -->|"importa_cenario · EXTRACTED"| n3
   n16 -->|"importa_carro_estatico · EXTRACTED"| n25
-  n16 -->|"registra_fonte_do_cenario_em_metadado · EXTRACTED"| n40
+  n16 -->|"registra_fonte_do_cenario_em_metadado · EXTRACTED"| n46
   n16 -->|"salva_blend_conjunto · EXTRACTED"| n4
   n16 -->|"escreve_relatorio · EXTRACTED"| n6
   n17 -->|"abre_cena_para_render · EXTRACTED"| n4
@@ -96,8 +103,8 @@ flowchart LR
   n13 -->|"le_bytes_para_sha256 · EXTRACTED"| n25
   n13 -->|"le_bytes_para_sha256 · EXTRACTED"| n24
   n13 -->|"le_bytes_para_sha256 · EXTRACTED"| n26
-  n13 -->|"le_bytes_para_sha256 · EXTRACTED"| n31
-  n13 -->|"le_bytes_para_sha256 · EXTRACTED"| n33
+  n13 -->|"le_bytes_para_sha256 · EXTRACTED"| n32
+  n13 -->|"le_bytes_para_sha256 · EXTRACTED"| n38
   n13 -->|"le_bytes_para_sha256 · EXTRACTED"| n2
   n13 -->|"le_bytes_para_sha256 · EXTRACTED"| n3
   n13 -->|"le_bytes_para_sha256 · EXTRACTED"| n4
@@ -107,24 +114,27 @@ flowchart LR
   n13 -->|"le_bytes_para_sha256 · EXTRACTED"| n19
   n13 -->|"le_bytes_para_sha256 · EXTRACTED"| n22
   n13 -->|"sobrescreve_manifesto_de_artefatos · EXTRACTED"| n23
-  n10 -->|"documenta_uso_e_origem · EXTRACTED"| n40
+  n10 -->|"documenta_uso_e_origem · EXTRACTED"| n46
   n10 -->|"documenta_uso_e_origem · EXTRACTED"| n3
   n10 -->|"documenta_uso_e_origem · EXTRACTED"| n4
-  n10 -->|"documenta_uso_e_origem · EXTRACTED"| n41
+  n10 -->|"documenta_uso_e_origem · EXTRACTED"| n47
   n11 -->|"declara_licenca_proprietaria · EXTRACTED"| n1
   n11 -->|"identifica_licenca_de_dependencia · EXTRACTED"| n30
-  n8 -->|"documenta_equacoes_e_limites · EXTRACTED"| n36
-  n12 -->|"alerta_conflito_com_clipe_glb · EXTRACTED"| n42
+  n8 -->|"documenta_equacoes_e_limites · EXTRACTED"| n41
+  n12 -->|"alerta_conflito_com_clipe_glb · EXTRACTED"| n48
   n9 -->|"identifica_fonte_editavel_e_risco_de_reconstrucao · EXTRACTED"| n0
-  n7 -->|"documenta_acabamento_e_limites_de_exportacao · EXTRACTED"| n43
-  n7 -->|"documenta_acabamento_e_limites_de_exportacao · EXTRACTED"| n39
-  n7 -->|"documenta_acabamento_e_limites_de_exportacao · EXTRACTED"| n40
+  n7 -->|"documenta_acabamento_e_limites_de_exportacao · EXTRACTED"| n49
+  n7 -->|"documenta_acabamento_e_limites_de_exportacao · EXTRACTED"| n44
+  n7 -->|"documenta_acabamento_e_limites_de_exportacao · EXTRACTED"| n46
   n7 -->|"documenta_acabamento_e_limites_de_exportacao · EXTRACTED"| n16
   n7 -->|"documenta_acabamento_e_limites_de_exportacao · EXTRACTED"| n17
   n7 -->|"documenta_acabamento_e_limites_de_exportacao · EXTRACTED"| n4
   n7 -->|"documenta_acabamento_e_limites_de_exportacao · EXTRACTED"| n3
-  n37 -->|"importa_assinatura_ativa · EXTRACTED"| n38
-  n37 -->|"aplica_assinatura_apos_criar_mecanica · EXTRACTED"| n38
-  n38 -->|"importa_glyphs_da_identidade · EXTRACTED"| n41
-  n38 -->|"desenha_glyphs_em_canvas · EXTRACTED"| n41
-  n38 -->|"localiza_registro_da_carroceria_para_decal · EXTRACTED"| n42
+  n42 -->|"importa_assinatura_ativa · EXTRACTED"| n43
+  n42 -->|"aplica_assinatura_apos_criar_mecanica · EXTRACTED"| n43
+  n43 -->|"localiza_registro_da_carroceria_para_decal · EXTRACTED"| n48
+  n45 -->|"carrega_motor · EXTRACTED"| n36
+  n43 -->|"carrega_arte · EXTRACTED"| n34
+  n43 -->|"carrega_arte · EXTRACTED"| n33
+  n43 -->|"carrega_arte · EXTRACTED"| n35
+  n39 -->|"executa_teste · EXTRACTED"| n55

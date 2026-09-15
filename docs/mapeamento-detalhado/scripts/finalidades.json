@@ -448,5 +448,85 @@
     "Template da interface do mapa geral da conversa paralela",
     "documentação/código de mapeamento paralelo",
     "Complementar a esta análise; mantido pela outra tarefa"
+  ],
+  "docs/INTEGRACAO-MOTOR.md": [
+    "Operação e procedência da integração do carro final e motor",
+    "documento editável",
+    "Consultar controles e limites"
+  ],
+  "web/assets/carro-aula-v2.glb": [
+    "Carro final otimizado do F1 Loop, 97 componentes",
+    "asset GLB",
+    "Modelo incorporado ao laboratório"
+  ],
+  "web/assets/carro-aula-v2.proveniencia.json": [
+    "Procedência e transformações do carro v2",
+    "metadados",
+    "Conferir origem do carro"
+  ],
+  "web/assets/carro-aula-v2.validacao.json": [
+    "Validação original do carro v2",
+    "evidência histórica",
+    "Consultar junto aos testes atuais"
+  ],
+  "web/assets/inteia-escudo-oficial.svg": [
+    "Brasão oficial INTEIA",
+    "identidade visual",
+    "Aplicado à carroceria"
+  ],
+  "web/assets/inteia-nome-oficial.svg": [
+    "Assinatura oficial INTEIA",
+    "identidade visual",
+    "Aplicada à lateral"
+  ],
+  "web/assets/inteligencia-mil-grau-transparent.png": [
+    "Arte do patrocínio Inteligência Mil Grau",
+    "identidade visual",
+    "Aplicada à tampa do motor"
+  ],
+  "web/assets/inteligencia-mil-grau.source.json": [
+    "Procedência da arte do patrocinador",
+    "metadados",
+    "Consultar origem"
+  ],
+  "web/assets/power-unit-v1.glb": [
+    "Motor V6 didático animado do F1 Loop",
+    "asset GLB",
+    "Carregado sob demanda no box"
+  ],
+  "web/assets/power-unit-v1.manifest.json": [
+    "Geometria, animação, hash e licença do motor",
+    "metadados",
+    "Conferir procedência e limites"
+  ],
+  "web/src/car-look.js": [
+    "Acabamento final, rodas, pneus e freios do carro",
+    "fonte web editável",
+    "Usado pelo visualizador"
+  ],
+  "web/src/engine/engine-shot.js": [
+    "Poses de referência para preparação gráfica do motor",
+    "fonte web editável",
+    "Reaproveitado do F1 Loop"
+  ],
+  "web/src/engine/in-car.js": [
+    "Motor integrado, corte e tampa móvel",
+    "fonte web editável",
+    "Controlado pela oficina"
+  ],
+  "web/src/senna-driver.js": [
+    "Piloto ilustrativo do carro final",
+    "fonte web editável",
+    "Oculto na desmontagem e isolamento"
+  ],
+  "web/src/surface-library.js": [
+    "Texturas de acabamento do carro final",
+    "fonte web editável",
+    "Aplicado a pintura, carbono e borracha"
+  ],
+  "web/test-power-unit.mjs": [
+    "Valida animação do motor em 20 ciclos",
+    "teste",
+    "Executado por npm test"
   ]
 }

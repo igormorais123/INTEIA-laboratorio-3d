@@ -1,27 +1,33 @@
 {
   "method": "tree-sitter-javascript: declarações nomeadas, arrow functions atribuídas e métodos; Python ast: funções/classes. Callbacks anônimos e resolução dinâmica não são indexados integralmente.",
   "source_hashes": {
-    "ferramentas/manifest.cjs": "31241fb26f341af10fdcd8d0ebd92ac2772ac12438035bed5bc5fa1c32f1659c",
+    "ferramentas/manifest.cjs": "b434940d1c2572ca3f31477e00cf3c3f10e439c558cccbc5ed3d9da8340060d1",
     "ferramentas/merge-animation.cjs": "8870463d9db1c8daa8c4646331e8af726e45963f4840b6d91b8937a450890b2f",
     "ferramentas/package_blender.py": "6a8bfa4ca77b5dbe8db20b9fca5c2ba1a5d1fbf819dee4808eb316b95b4a0d6a",
     "ferramentas/package_garage.py": "db9da9c72d2121c7722520405910d5be7f099888b948c09cb6de9651e38dcf9c",
     "ferramentas/render_garage_preview.py": "2943c2fab0e646463e2cd0e8a6bf8a0a2ac8227a82ae18f7b1e7a657d46aae64",
     "ferramentas/validate-kit.py": "51b3d24db0fe5bc8ec123f269f27907066f1cfb4d1cf13f379807be3bd55c4a9",
-    "web/build.cjs": "b4195fe57f892d1fe85d1595d0f1c9ce3ae77d356648b52c537ee3ab2904e2fe",
-    "web/server.cjs": "2ef0a47dc1ee0a4673aa4c31e213f1043b984406d13688345014eecd1f284f6e",
+    "web/build.cjs": "49e8e6782e35e4074852afb5db4c02effdd707bb00c21a4d6b0d2c681d8bd0ba",
+    "web/server.cjs": "550af1113de82160b2f449ef9f8a989703707480fec3ef7e75313b37fac06b8b",
     "web/src/aero-physics.mjs": "ddec76df50dd3dba23d2361d5579be999d70a4a1bd58dce99001fd4b9c146482",
-    "web/src/app-v2.js": "7064534fb4a7e6f5c7070a2dbc32d161bf8744fd1b547c1369f920ee70d35977",
-    "web/src/branding.js": "84d47397f7255884a41f3273c493746b6b74de0d789cfc55052edd1b8671380b",
+    "web/src/app-v2.js": "426f8aaf9c96b87199ca0b539b17947ace2609c1163496c1018a3a9d7b92f859",
+    "web/src/branding.js": "27fff24dd879f885a088af614902c872624fa7189f167e2233d5ba0e951646ea",
+    "web/src/car-look.js": "83f5204443f41eef3e1d7368c8454b483b2e6abc0955545b3d49a2999d12c7bb",
     "web/src/customize.js": "9588784fd0e68d0dd4d61ad3c2731ef39c1cba33f6f57f47b172d55abc0a4176",
+    "web/src/engine/engine-shot.js": "165b60f87f7f1ea4627788ee8987bfe61503c10736e0e34bb9f93664cc339958",
+    "web/src/engine/in-car.js": "ebe61051ecf07818e92c2a41064e1b4878e670be7c04d8938878b7a3cb31349a",
     "web/src/flow-detail.js": "436414a7e85b9ad8a043c469412b63224dc101e4caba06e76340977d85684f1a",
     "web/src/garage.js": "881afa322c3ed23315549e48147df9f1f47e31836ed29cc24730538bbd91ced4",
     "web/src/identity.js": "f7da18ffada2006737675abb026d621097f8219e37587a5b72c1dfc798b089a6",
     "web/src/mechanics.js": "e6795bbc6ccccca32f2c4582cae3fab14d798ff3d7d0a31b23d59ecc5b1735eb",
+    "web/src/senna-driver.js": "22d4c75694c84fc13ab24815b8e83e61877d1d73e02a6548b35c282f72567107",
     "web/src/studio.js": "36ca53b97600bcdcec404b67ab42333afefe20c00d046d2c92d28145f6b6d8e1",
+    "web/src/surface-library.js": "66deab1f2a8093aead43d02f0b6b23605fe64a57d9fa0b681c2768bd7257c642",
     "web/src/tunnel-visual.js": "46435c35174bd737c548b964d23a577214f26c645459bf8f4d792b183ffd02c5",
     "web/src/wind-tunnel.js": "7795a0a4bf6a3462b7c9c81d20431b26e133041a8930dcda8ee2191bfd9556e5",
     "web/test-aerodynamics.mjs": "a18952d5f54a4917f9fa14d546c55401d9fa57e13d559dea0bc9f7549c32bce8",
-    "web/test-mechanics.mjs": "d54f8929104e5ba8ee76479607b00313789c0e6b84af41d025b33df031ac9ba8"
+    "web/test-mechanics.mjs": "f826f8fd87af78e567921a27efb06998f1b830dec12c3a6f50075a253e54fc56",
+    "web/test-power-unit.mjs": "bafd0dfa7616e13bdea328e7f0de6e1896bdf2124b247205e9a67dabcea35b1b"
   },
   "parse_errors": [],
   "symbols": [
@@ -116,163 +122,383 @@
       "signature": "aerodynamicTest({speedKmh=0,headwindKmh=0,crosswindKmh=0,temperatureC=15,pressureKPa=101.325,area=null,cd=null,clDown=null,length=5.5})"
     },
     {
-      "id": "web/src/app-v2.js#18:$",
+      "id": "web/src/app-v2.js#23:$",
       "path": "web/src/app-v2.js",
       "name": "$",
       "kind": "variable_declarator",
-      "line": 18,
-      "end_line": 18,
+      "line": 23,
+      "end_line": 23,
       "scope": "module",
       "signature": "$"
     },
     {
-      "id": "web/src/app-v2.js#30:setFlowXray",
+      "id": "web/src/app-v2.js#34:closeEngine",
+      "path": "web/src/app-v2.js",
+      "name": "closeEngine",
+      "kind": "function_declaration",
+      "line": 34,
+      "end_line": 34,
+      "scope": "module",
+      "signature": "closeEngine()"
+    },
+    {
+      "id": "web/src/app-v2.js#36:setFlowXray",
       "path": "web/src/app-v2.js",
       "name": "setFlowXray",
       "kind": "function_declaration",
-      "line": 30,
-      "end_line": 33,
+      "line": 36,
+      "end_line": 39,
       "scope": "module",
       "signature": "setFlowXray(on)"
     },
     {
-      "id": "web/src/app-v2.js#31:clone",
+      "id": "web/src/app-v2.js#37:clone",
       "path": "web/src/app-v2.js",
       "name": "clone",
       "kind": "variable_declarator",
-      "line": 31,
-      "end_line": 31,
-      "scope": "web/src/app-v2.js#30:setFlowXray",
+      "line": 37,
+      "end_line": 37,
+      "scope": "web/src/app-v2.js#36:setFlowXray",
       "signature": "clone"
     },
     {
-      "id": "web/src/app-v2.js#37:moveCamera",
+      "id": "web/src/app-v2.js#44:moveCamera",
       "path": "web/src/app-v2.js",
       "name": "moveCamera",
-      "kind": "function_declaration",
-      "line": 37,
-      "end_line": 37,
-      "scope": "module",
-      "signature": "moveCamera(to,target,animate=true)"
-    },
-    {
-      "id": "web/src/app-v2.js#38:view",
-      "path": "web/src/app-v2.js",
-      "name": "view",
-      "kind": "function_declaration",
-      "line": 38,
-      "end_line": 38,
-      "scope": "module",
-      "signature": "view(name,animate=true)"
-    },
-    {
-      "id": "web/src/app-v2.js#40:resize",
-      "path": "web/src/app-v2.js",
-      "name": "resize",
-      "kind": "function_declaration",
-      "line": 40,
-      "end_line": 40,
-      "scope": "module",
-      "signature": "resize()"
-    },
-    {
-      "id": "web/src/app-v2.js#42:refreshSelection",
-      "path": "web/src/app-v2.js",
-      "name": "refreshSelection",
-      "kind": "function_declaration",
-      "line": 42,
-      "end_line": 42,
-      "scope": "module",
-      "signature": "refreshSelection()"
-    },
-    {
-      "id": "web/src/app-v2.js#43:select",
-      "path": "web/src/app-v2.js",
-      "name": "select",
-      "kind": "function_declaration",
-      "line": 43,
-      "end_line": 43,
-      "scope": "module",
-      "signature": "select(id)"
-    },
-    {
-      "id": "web/src/app-v2.js#44:focusPart",
-      "path": "web/src/app-v2.js",
-      "name": "focusPart",
       "kind": "function_declaration",
       "line": 44,
       "end_line": 44,
       "scope": "module",
-      "signature": "focusPart()"
+      "signature": "moveCamera(to,target,animate=true)"
     },
     {
-      "id": "web/src/app-v2.js#45:assemblyTo",
+      "id": "web/src/app-v2.js#45:view",
       "path": "web/src/app-v2.js",
-      "name": "assemblyTo",
+      "name": "view",
       "kind": "function_declaration",
       "line": 45,
       "end_line": 45,
       "scope": "module",
+      "signature": "view(name,animate=true)"
+    },
+    {
+      "id": "web/src/app-v2.js#47:resize",
+      "path": "web/src/app-v2.js",
+      "name": "resize",
+      "kind": "function_declaration",
+      "line": 47,
+      "end_line": 47,
+      "scope": "module",
+      "signature": "resize()"
+    },
+    {
+      "id": "web/src/app-v2.js#49:refreshSelection",
+      "path": "web/src/app-v2.js",
+      "name": "refreshSelection",
+      "kind": "function_declaration",
+      "line": 49,
+      "end_line": 49,
+      "scope": "module",
+      "signature": "refreshSelection()"
+    },
+    {
+      "id": "web/src/app-v2.js#50:select",
+      "path": "web/src/app-v2.js",
+      "name": "select",
+      "kind": "function_declaration",
+      "line": 50,
+      "end_line": 50,
+      "scope": "module",
+      "signature": "select(id)"
+    },
+    {
+      "id": "web/src/app-v2.js#51:focusPart",
+      "path": "web/src/app-v2.js",
+      "name": "focusPart",
+      "kind": "function_declaration",
+      "line": 51,
+      "end_line": 51,
+      "scope": "module",
+      "signature": "focusPart()"
+    },
+    {
+      "id": "web/src/app-v2.js#52:assemblyTo",
+      "path": "web/src/app-v2.js",
+      "name": "assemblyTo",
+      "kind": "function_declaration",
+      "line": 52,
+      "end_line": 52,
+      "scope": "module",
       "signature": "assemblyTo(v)"
     },
     {
-      "id": "web/src/app-v2.js#49:onBeforeToggle",
+      "id": "web/src/app-v2.js#63:target",
+      "path": "web/src/app-v2.js",
+      "name": "target",
+      "kind": "pair",
+      "line": 63,
+      "end_line": 63,
+      "scope": "module",
+      "signature": "target()"
+    },
+    {
+      "id": "web/src/app-v2.js#64:onBeforeToggle",
       "path": "web/src/app-v2.js",
       "name": "onBeforeToggle",
       "kind": "pair",
-      "line": 49,
-      "end_line": 49,
+      "line": 64,
+      "end_line": 64,
       "scope": "module",
       "signature": "onBeforeToggle"
     },
     {
-      "id": "web/src/app-v2.js#49:onRegion",
+      "id": "web/src/app-v2.js#64:onRegion",
       "path": "web/src/app-v2.js",
       "name": "onRegion",
       "kind": "pair",
-      "line": 49,
-      "end_line": 49,
+      "line": 64,
+      "end_line": 64,
       "scope": "module",
       "signature": "onRegion"
     },
     {
-      "id": "web/src/app-v2.js#49:onToggle",
+      "id": "web/src/app-v2.js#64:onToggle",
       "path": "web/src/app-v2.js",
       "name": "onToggle",
       "kind": "pair",
-      "line": 49,
-      "end_line": 49,
+      "line": 64,
+      "end_line": 64,
       "scope": "module",
       "signature": "onToggle"
     },
     {
-      "id": "web/src/branding.js#6:applyInteiaBranding",
+      "id": "web/src/branding.js#5:applyInteiaBranding",
       "path": "web/src/branding.js",
       "name": "applyInteiaBranding",
       "kind": "function_declaration",
-      "line": 6,
-      "end_line": 30,
+      "line": 5,
+      "end_line": 49,
       "scope": "module",
       "signature": "applyInteiaBranding(model, mechanics)"
     },
     {
-      "id": "web/src/branding.js#16:project",
+      "id": "web/src/branding.js#25:project",
       "path": "web/src/branding.js",
       "name": "project",
       "kind": "function_declaration",
-      "line": 16,
-      "end_line": 26,
-      "scope": "web/src/branding.js#6:applyInteiaBranding",
-      "signature": "project(source,origin,direction,rotation,width,depth)"
+      "line": 25,
+      "end_line": 35,
+      "scope": "web/src/branding.js#5:applyInteiaBranding",
+      "signature": "project(source,origin,direction,rotation,width,depth,decalMaterial=material,decalAspect=aspect)"
     },
     {
-      "id": "web/src/branding.js#29:dispose",
+      "id": "web/src/branding.js#48:dispose",
       "path": "web/src/branding.js",
       "name": "dispose",
       "kind": "method_definition",
-      "line": 29,
-      "end_line": 29,
-      "scope": "web/src/branding.js#6:applyInteiaBranding",
+      "line": 48,
+      "end_line": 48,
+      "scope": "web/src/branding.js#5:applyInteiaBranding",
+      "signature": "dispose()"
+    },
+    {
+      "id": "web/src/car-look.js#36:rimPatch",
+      "path": "web/src/car-look.js",
+      "name": "rimPatch",
+      "kind": "function_declaration",
+      "line": 36,
+      "end_line": 47,
+      "scope": "module",
+      "signature": "rimPatch(material, uniforms)"
+    },
+    {
+      "id": "web/src/car-look.js#49:paintShader",
+      "path": "web/src/car-look.js",
+      "name": "paintShader",
+      "kind": "function_declaration",
+      "line": 49,
+      "end_line": 59,
+      "scope": "module",
+      "signature": "paintShader(material)"
+    },
+    {
+      "id": "web/src/car-look.js#62:localVaryings",
+      "path": "web/src/car-look.js",
+      "name": "localVaryings",
+      "kind": "function_declaration",
+      "line": 62,
+      "end_line": 68,
+      "scope": "module",
+      "signature": "localVaryings(shader, tag)"
+    },
+    {
+      "id": "web/src/car-look.js#70:rimShader",
+      "path": "web/src/car-look.js",
+      "name": "rimShader",
+      "kind": "function_declaration",
+      "line": 70,
+      "end_line": 98,
+      "scope": "module",
+      "signature": "rimShader(material)"
+    },
+    {
+      "id": "web/src/car-look.js#100:tyreShader",
+      "path": "web/src/car-look.js",
+      "name": "tyreShader",
+      "kind": "function_declaration",
+      "line": 100,
+      "end_line": 124,
+      "scope": "module",
+      "signature": "tyreShader(material)"
+    },
+    {
+      "id": "web/src/car-look.js#127:discTexture",
+      "path": "web/src/car-look.js",
+      "name": "discTexture",
+      "kind": "function_declaration",
+      "line": 127,
+      "end_line": 157,
+      "scope": "module",
+      "signature": "discTexture(width)"
+    },
+    {
+      "id": "web/src/car-look.js#132:random",
+      "path": "web/src/car-look.js",
+      "name": "random",
+      "kind": "variable_declarator",
+      "line": 132,
+      "end_line": 132,
+      "scope": "web/src/car-look.js#127:discTexture",
+      "signature": "random()"
+    },
+    {
+      "id": "web/src/car-look.js#160:heatTexture",
+      "path": "web/src/car-look.js",
+      "name": "heatTexture",
+      "kind": "function_declaration",
+      "line": 160,
+      "end_line": 172,
+      "scope": "module",
+      "signature": "heatTexture()"
+    },
+    {
+      "id": "web/src/car-look.js#174:discGeometry",
+      "path": "web/src/car-look.js",
+      "name": "discGeometry",
+      "kind": "function_declaration",
+      "line": 174,
+      "end_line": 184,
+      "scope": "module",
+      "signature": "discGeometry()"
+    },
+    {
+      "id": "web/src/car-look.js#186:caliperGeometry",
+      "path": "web/src/car-look.js",
+      "name": "caliperGeometry",
+      "kind": "function_declaration",
+      "line": 186,
+      "end_line": 200,
+      "scope": "module",
+      "signature": "caliperGeometry()"
+    },
+    {
+      "id": "web/src/car-look.js#188:at",
+      "path": "web/src/car-look.js",
+      "name": "at",
+      "kind": "variable_declarator",
+      "line": 188,
+      "end_line": 188,
+      "scope": "web/src/car-look.js#186:caliperGeometry",
+      "signature": "at(r, a)"
+    },
+    {
+      "id": "web/src/car-look.js#202:enhanceCar",
+      "path": "web/src/car-look.js",
+      "name": "enhanceCar",
+      "kind": "function_declaration",
+      "line": 202,
+      "end_line": 349,
+      "scope": "module",
+      "signature": "enhanceCar({model, mechanics, mobile})"
+    },
+    {
+      "id": "web/src/car-look.js#249:share",
+      "path": "web/src/car-look.js",
+      "name": "share",
+      "kind": "variable_declarator",
+      "line": 249,
+      "end_line": 252,
+      "scope": "web/src/car-look.js#202:enhanceCar",
+      "signature": "share(source, setup)"
+    },
+    {
+      "id": "web/src/car-look.js#253:rimSetup",
+      "path": "web/src/car-look.js",
+      "name": "rimSetup",
+      "kind": "variable_declarator",
+      "line": 253,
+      "end_line": 253,
+      "scope": "web/src/car-look.js#202:enhanceCar",
+      "signature": "rimSetup"
+    },
+    {
+      "id": "web/src/car-look.js#254:tyreSetup",
+      "path": "web/src/car-look.js",
+      "name": "tyreSetup",
+      "kind": "variable_declarator",
+      "line": 254,
+      "end_line": 254,
+      "scope": "web/src/car-look.js#202:enhanceCar",
+      "signature": "tyreSetup"
+    },
+    {
+      "id": "web/src/car-look.js#257:nutSetup",
+      "path": "web/src/car-look.js",
+      "name": "nutSetup",
+      "kind": "variable_declarator",
+      "line": 257,
+      "end_line": 257,
+      "scope": "web/src/car-look.js#202:enhanceCar",
+      "signature": "nutSetup"
+    },
+    {
+      "id": "web/src/car-look.js#308:update",
+      "path": "web/src/car-look.js",
+      "name": "update",
+      "kind": "method_definition",
+      "line": 308,
+      "end_line": 311,
+      "scope": "web/src/car-look.js#202:enhanceCar",
+      "signature": "update()"
+    },
+    {
+      "id": "web/src/car-look.js#314:setRim",
+      "path": "web/src/car-look.js",
+      "name": "setRim",
+      "kind": "method_definition",
+      "line": 314,
+      "end_line": 319,
+      "scope": "web/src/car-look.js#202:enhanceCar",
+      "signature": "setRim(color, strength, direction, edge = .72)"
+    },
+    {
+      "id": "web/src/car-look.js#322:race",
+      "path": "web/src/car-look.js",
+      "name": "race",
+      "kind": "method_definition",
+      "line": 322,
+      "end_line": 339,
+      "scope": "web/src/car-look.js#202:enhanceCar",
+      "signature": "race(speed, brake, time)"
+    },
+    {
+      "id": "web/src/car-look.js#340:dispose",
+      "path": "web/src/car-look.js",
+      "name": "dispose",
+      "kind": "method_definition",
+      "line": 340,
+      "end_line": 347,
+      "scope": "web/src/car-look.js#202:enhanceCar",
       "signature": "dispose()"
     },
     {
@@ -304,6 +530,336 @@
       "end_line": 36,
       "scope": "web/src/customize.js#1:setupCustomization",
       "signature": "applyLight()"
+    },
+    {
+      "id": "web/src/engine/engine-shot.js#4:clamp",
+      "path": "web/src/engine/engine-shot.js",
+      "name": "clamp",
+      "kind": "variable_declarator",
+      "line": 4,
+      "end_line": 4,
+      "scope": "module",
+      "signature": "clamp"
+    },
+    {
+      "id": "web/src/engine/engine-shot.js#5:smooth",
+      "path": "web/src/engine/engine-shot.js",
+      "name": "smooth",
+      "kind": "variable_declarator",
+      "line": 5,
+      "end_line": 5,
+      "scope": "module",
+      "signature": "smooth"
+    },
+    {
+      "id": "web/src/engine/engine-shot.js#48:segment",
+      "path": "web/src/engine/engine-shot.js",
+      "name": "segment",
+      "kind": "function_declaration",
+      "line": 48,
+      "end_line": 48,
+      "scope": "module",
+      "signature": "segment(keys,p)"
+    },
+    {
+      "id": "web/src/engine/engine-shot.js#50:tangent",
+      "path": "web/src/engine/engine-shot.js",
+      "name": "tangent",
+      "kind": "function_declaration",
+      "line": 50,
+      "end_line": 58,
+      "scope": "module",
+      "signature": "tangent(keys,i,slot,axis)"
+    },
+    {
+      "id": "web/src/engine/engine-shot.js#59:spline",
+      "path": "web/src/engine/engine-shot.js",
+      "name": "spline",
+      "kind": "function_declaration",
+      "line": 59,
+      "end_line": 63,
+      "scope": "module",
+      "signature": "spline(slot,p)"
+    },
+    {
+      "id": "web/src/engine/engine-shot.js#64:eased",
+      "path": "web/src/engine/engine-shot.js",
+      "name": "eased",
+      "kind": "function_declaration",
+      "line": 64,
+      "end_line": 67,
+      "scope": "module",
+      "signature": "eased(keys,p)"
+    },
+    {
+      "id": "web/src/engine/engine-shot.js#70:engineShot",
+      "path": "web/src/engine/engine-shot.js",
+      "name": "engineShot",
+      "kind": "function_declaration",
+      "line": 70,
+      "end_line": 88,
+      "scope": "module",
+      "signature": "engineShot(progress,mobile=false)"
+    },
+    {
+      "id": "web/src/engine/in-car.js#16:smooth",
+      "path": "web/src/engine/in-car.js",
+      "name": "smooth",
+      "kind": "variable_declarator",
+      "line": 16,
+      "end_line": 16,
+      "scope": "module",
+      "signature": "smooth"
+    },
+    {
+      "id": "web/src/engine/in-car.js#17:nextFrame",
+      "path": "web/src/engine/in-car.js",
+      "name": "nextFrame",
+      "kind": "variable_declarator",
+      "line": 17,
+      "end_line": 17,
+      "scope": "module",
+      "signature": "nextFrame()"
+    },
+    {
+      "id": "web/src/engine/in-car.js#18:aborted",
+      "path": "web/src/engine/in-car.js",
+      "name": "aborted",
+      "kind": "variable_declarator",
+      "line": 18,
+      "end_line": 18,
+      "scope": "module",
+      "signature": "aborted()"
+    },
+    {
+      "id": "web/src/engine/in-car.js#25:createInCarEngine",
+      "path": "web/src/engine/in-car.js",
+      "name": "createInCarEngine",
+      "kind": "function_declaration",
+      "line": 25,
+      "end_line": 236,
+      "scope": "module",
+      "signature": "createInCarEngine({scene,renderer,camera,model,mechanics,target,mobile=false,signal=null,offstage=()=>[]})"
+    },
+    {
+      "id": "web/src/engine/in-car.js#48:cancel",
+      "path": "web/src/engine/in-car.js",
+      "name": "cancel",
+      "kind": "variable_declarator",
+      "line": 48,
+      "end_line": 48,
+      "scope": "web/src/engine/in-car.js#25:createInCarEngine",
+      "signature": "cancel()"
+    },
+    {
+      "id": "web/src/engine/in-car.js#54:derive",
+      "path": "web/src/engine/in-car.js",
+      "name": "derive",
+      "kind": "variable_declarator",
+      "line": 54,
+      "end_line": 54,
+      "scope": "web/src/engine/in-car.js#25:createInCarEngine",
+      "signature": "derive(material,planes,intersection)"
+    },
+    {
+      "id": "web/src/engine/in-car.js#55:buildSplit",
+      "path": "web/src/engine/in-car.js",
+      "name": "buildSplit",
+      "kind": "function_declaration",
+      "line": 55,
+      "end_line": 67,
+      "scope": "web/src/engine/in-car.js#25:createInCarEngine",
+      "signature": "buildSplit()"
+    },
+    {
+      "id": "web/src/engine/in-car.js#58:twin",
+      "path": "web/src/engine/in-car.js",
+      "name": "twin",
+      "kind": "variable_declarator",
+      "line": 58,
+      "end_line": 58,
+      "scope": "web/src/engine/in-car.js#55:buildSplit",
+      "signature": "twin(mesh,material)"
+    },
+    {
+      "id": "web/src/engine/in-car.js#68:setSplit",
+      "path": "web/src/engine/in-car.js",
+      "name": "setSplit",
+      "kind": "function_declaration",
+      "line": 68,
+      "end_line": 74,
+      "scope": "web/src/engine/in-car.js#25:createInCarEngine",
+      "signature": "setSplit(on)"
+    },
+    {
+      "id": "web/src/engine/in-car.js#75:poseCover",
+      "path": "web/src/engine/in-car.js",
+      "name": "poseCover",
+      "kind": "function_declaration",
+      "line": 75,
+      "end_line": 83,
+      "scope": "web/src/engine/in-car.js#25:createInCarEngine",
+      "signature": "poseCover(open)"
+    },
+    {
+      "id": "web/src/engine/in-car.js#85:collect",
+      "path": "web/src/engine/in-car.js",
+      "name": "collect",
+      "kind": "function_declaration",
+      "line": 85,
+      "end_line": 87,
+      "scope": "web/src/engine/in-car.js#25:createInCarEngine",
+      "signature": "collect(object)"
+    },
+    {
+      "id": "web/src/engine/in-car.js#88:buildEngine",
+      "path": "web/src/engine/in-car.js",
+      "name": "buildEngine",
+      "kind": "function_declaration",
+      "line": 88,
+      "end_line": 110,
+      "scope": "web/src/engine/in-car.js#25:createInCarEngine",
+      "signature": "buildEngine(gltf)"
+    },
+    {
+      "id": "web/src/engine/in-car.js#104:sectioned",
+      "path": "web/src/engine/in-car.js",
+      "name": "sectioned",
+      "kind": "variable_declarator",
+      "line": 104,
+      "end_line": 104,
+      "scope": "web/src/engine/in-car.js#88:buildEngine",
+      "signature": "sectioned"
+    },
+    {
+      "id": "web/src/engine/in-car.js#107:satin",
+      "path": "web/src/engine/in-car.js",
+      "name": "satin",
+      "kind": "variable_declarator",
+      "line": 107,
+      "end_line": 107,
+      "scope": "web/src/engine/in-car.js#88:buildEngine",
+      "signature": "satin"
+    },
+    {
+      "id": "web/src/engine/in-car.js#115:precompile",
+      "path": "web/src/engine/in-car.js",
+      "name": "precompile",
+      "kind": "function_declaration",
+      "line": 115,
+      "end_line": 132,
+      "scope": "web/src/engine/in-car.js#25:createInCarEngine",
+      "signature": "precompile()"
+    },
+    {
+      "id": "web/src/engine/in-car.js#117:add",
+      "path": "web/src/engine/in-car.js",
+      "name": "add",
+      "kind": "variable_declarator",
+      "line": 117,
+      "end_line": 117,
+      "scope": "web/src/engine/in-car.js#115:precompile",
+      "signature": "add"
+    },
+    {
+      "id": "web/src/engine/in-car.js#134:upload",
+      "path": "web/src/engine/in-car.js",
+      "name": "upload",
+      "kind": "function_declaration",
+      "line": 134,
+      "end_line": 153,
+      "scope": "web/src/engine/in-car.js#25:createInCarEngine",
+      "signature": "upload()"
+    },
+    {
+      "id": "web/src/engine/in-car.js#139:flush",
+      "path": "web/src/engine/in-car.js",
+      "name": "flush",
+      "kind": "variable_declarator",
+      "line": 139,
+      "end_line": 143,
+      "scope": "web/src/engine/in-car.js#134:upload",
+      "signature": "flush()"
+    },
+    {
+      "id": "web/src/engine/in-car.js#154:load",
+      "path": "web/src/engine/in-car.js",
+      "name": "load",
+      "kind": "function_declaration",
+      "line": 154,
+      "end_line": 172,
+      "scope": "web/src/engine/in-car.js#25:createInCarEngine",
+      "signature": "load()"
+    },
+    {
+      "id": "web/src/engine/in-car.js#176:rehearse",
+      "path": "web/src/engine/in-car.js",
+      "name": "rehearse",
+      "kind": "function_declaration",
+      "line": 176,
+      "end_line": 190,
+      "scope": "web/src/engine/in-car.js#25:createInCarEngine",
+      "signature": "rehearse()"
+    },
+    {
+      "id": "web/src/engine/in-car.js#191:releaseEngine",
+      "path": "web/src/engine/in-car.js",
+      "name": "releaseEngine",
+      "kind": "function_declaration",
+      "line": 191,
+      "end_line": 194,
+      "scope": "web/src/engine/in-car.js#25:createInCarEngine",
+      "signature": "releaseEngine()"
+    },
+    {
+      "id": "web/src/engine/in-car.js#199:state",
+      "path": "web/src/engine/in-car.js",
+      "name": "state",
+      "kind": "method_definition",
+      "line": 199,
+      "end_line": 199,
+      "scope": "web/src/engine/in-car.js#25:createInCarEngine",
+      "signature": "state()"
+    },
+    {
+      "id": "web/src/engine/in-car.js#200:ready",
+      "path": "web/src/engine/in-car.js",
+      "name": "ready",
+      "kind": "method_definition",
+      "line": 200,
+      "end_line": 200,
+      "scope": "web/src/engine/in-car.js#25:createInCarEngine",
+      "signature": "ready()"
+    },
+    {
+      "id": "web/src/engine/in-car.js#202:prepare",
+      "path": "web/src/engine/in-car.js",
+      "name": "prepare",
+      "kind": "method_definition",
+      "line": 202,
+      "end_line": 210,
+      "scope": "web/src/engine/in-car.js#25:createInCarEngine",
+      "signature": "prepare()"
+    },
+    {
+      "id": "web/src/engine/in-car.js#212:update",
+      "path": "web/src/engine/in-car.js",
+      "name": "update",
+      "kind": "method_definition",
+      "line": 212,
+      "end_line": 225,
+      "scope": "web/src/engine/in-car.js#25:createInCarEngine",
+      "signature": "update(dt,shot,paused)"
+    },
+    {
+      "id": "web/src/engine/in-car.js#226:dispose",
+      "path": "web/src/engine/in-car.js",
+      "name": "dispose",
+      "kind": "method_definition",
+      "line": 226,
+      "end_line": 234,
+      "scope": "web/src/engine/in-car.js#25:createInCarEngine",
+      "signature": "dispose()"
     },
     {
       "id": "web/src/flow-detail.js#4:createFlowDetail",
@@ -716,6 +1272,96 @@
       "signature": "update(dt,now,reduced)"
     },
     {
+      "id": "web/src/senna-driver.js#4:createSennaDriver",
+      "path": "web/src/senna-driver.js",
+      "name": "createSennaDriver",
+      "kind": "function_declaration",
+      "line": 4,
+      "end_line": 56,
+      "scope": "module",
+      "signature": "createSennaDriver(model, mechanics)"
+    },
+    {
+      "id": "web/src/senna-driver.js#7:mat",
+      "path": "web/src/senna-driver.js",
+      "name": "mat",
+      "kind": "variable_declarator",
+      "line": 7,
+      "end_line": 7,
+      "scope": "web/src/senna-driver.js#4:createSennaDriver",
+      "signature": "mat"
+    },
+    {
+      "id": "web/src/senna-driver.js#19:mesh",
+      "path": "web/src/senna-driver.js",
+      "name": "mesh",
+      "kind": "function_declaration",
+      "line": 19,
+      "end_line": 19,
+      "scope": "web/src/senna-driver.js#4:createSennaDriver",
+      "signature": "mesh(geo,material,parent=root)"
+    },
+    {
+      "id": "web/src/senna-driver.js#20:ellipsoid",
+      "path": "web/src/senna-driver.js",
+      "name": "ellipsoid",
+      "kind": "function_declaration",
+      "line": 20,
+      "end_line": 20,
+      "scope": "web/src/senna-driver.js#4:createSennaDriver",
+      "signature": "ellipsoid(center,scale,material,parent=root)"
+    },
+    {
+      "id": "web/src/senna-driver.js#21:limb",
+      "path": "web/src/senna-driver.js",
+      "name": "limb",
+      "kind": "function_declaration",
+      "line": 21,
+      "end_line": 21,
+      "scope": "web/src/senna-driver.js#4:createSennaDriver",
+      "signature": "limb(a,b,r1,r2,material)"
+    },
+    {
+      "id": "web/src/senna-driver.js#36:radius",
+      "path": "web/src/senna-driver.js",
+      "name": "radius",
+      "kind": "function_declaration",
+      "line": 36,
+      "end_line": 36,
+      "scope": "web/src/senna-driver.js#4:createSennaDriver",
+      "signature": "radius(y)"
+    },
+    {
+      "id": "web/src/senna-driver.js#37:surface",
+      "path": "web/src/senna-driver.js",
+      "name": "surface",
+      "kind": "function_declaration",
+      "line": 37,
+      "end_line": 41,
+      "scope": "web/src/senna-driver.js#4:createSennaDriver",
+      "signature": "surface(y0,y1,a0,a1,material,lift=0,rows=32)"
+    },
+    {
+      "id": "web/src/senna-driver.js#55:update",
+      "path": "web/src/senna-driver.js",
+      "name": "update",
+      "kind": "method_definition",
+      "line": 55,
+      "end_line": 55,
+      "scope": "web/src/senna-driver.js#4:createSennaDriver",
+      "signature": "update()"
+    },
+    {
+      "id": "web/src/senna-driver.js#55:dispose",
+      "path": "web/src/senna-driver.js",
+      "name": "dispose",
+      "kind": "method_definition",
+      "line": 55,
+      "end_line": 55,
+      "scope": "web/src/senna-driver.js#4:createSennaDriver",
+      "signature": "dispose()"
+    },
+    {
       "id": "web/src/studio.js#2:setupStudio",
       "path": "web/src/studio.js",
       "name": "setupStudio",
@@ -823,6 +1469,86 @@
       "line": 251,
       "end_line": 251,
       "scope": "web/src/studio.js#146:applyCarMaterials",
+      "signature": "dispose()"
+    },
+    {
+      "id": "web/src/surface-library.js#16:createSurfaceLibrary",
+      "path": "web/src/surface-library.js",
+      "name": "createSurfaceLibrary",
+      "kind": "function_declaration",
+      "line": 16,
+      "end_line": 99,
+      "scope": "module",
+      "signature": "createSurfaceLibrary(THREE, {renderer, mobile = false} = {})"
+    },
+    {
+      "id": "web/src/surface-library.js#19:clamp",
+      "path": "web/src/surface-library.js",
+      "name": "clamp",
+      "kind": "variable_declarator",
+      "line": 19,
+      "end_line": 19,
+      "scope": "web/src/surface-library.js#16:createSurfaceLibrary",
+      "signature": "clamp(v,a=0,b=1)"
+    },
+    {
+      "id": "web/src/surface-library.js#21:noise",
+      "path": "web/src/surface-library.js",
+      "name": "noise",
+      "kind": "variable_declarator",
+      "line": 21,
+      "end_line": 21,
+      "scope": "web/src/surface-library.js#16:createSurfaceLibrary",
+      "signature": "noise(x,y,seed)"
+    },
+    {
+      "id": "web/src/surface-library.js#22:texture",
+      "path": "web/src/surface-library.js",
+      "name": "texture",
+      "kind": "function_declaration",
+      "line": 22,
+      "end_line": 27,
+      "scope": "web/src/surface-library.js#16:createSurfaceLibrary",
+      "signature": "texture(bytes, color=false)"
+    },
+    {
+      "id": "web/src/surface-library.js#28:bake",
+      "path": "web/src/surface-library.js",
+      "name": "bake",
+      "kind": "function_declaration",
+      "line": 28,
+      "end_line": 44,
+      "scope": "web/src/surface-library.js#16:createSurfaceLibrary",
+      "signature": "bake(kind, tileMeters, pixel, normalStrength)"
+    },
+    {
+      "id": "web/src/surface-library.js#67:transformed",
+      "path": "web/src/surface-library.js",
+      "name": "transformed",
+      "kind": "function_declaration",
+      "line": 67,
+      "end_line": 67,
+      "scope": "web/src/surface-library.js#16:createSurfaceLibrary",
+      "signature": "transformed(map,repeat)"
+    },
+    {
+      "id": "web/src/surface-library.js#68:applyTo",
+      "path": "web/src/surface-library.js",
+      "name": "applyTo",
+      "kind": "function_declaration",
+      "line": 68,
+      "end_line": 97,
+      "scope": "web/src/surface-library.js#16:createSurfaceLibrary",
+      "signature": "applyTo(material,kind,{uvSpanMeters=1}={})"
+    },
+    {
+      "id": "web/src/surface-library.js#98:dispose",
+      "path": "web/src/surface-library.js",
+      "name": "dispose",
+      "kind": "method_definition",
+      "line": 98,
+      "end_line": 98,
+      "scope": "web/src/surface-library.js#16:createSurfaceLibrary",
       "signature": "dispose()"
     },
     {
@@ -1055,1051 +1781,1443 @@
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "$",
-      "line": 18,
+      "line": 23,
       "expression": "$('#stage')"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "matchMedia",
-      "line": 18,
+      "line": 23,
       "expression": "matchMedia('(prefers-reduced-motion: reduce)')"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "brandSVG",
-      "line": 19,
+      "line": 24,
       "expression": "brandSVG()"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "setupStudio",
-      "line": 23,
+      "line": 28,
       "expression": "setupStudio(THREE,renderer,scene)"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "$",
-      "line": 27,
+      "line": 32,
       "expression": "$('#loop')"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "$",
-      "line": 27,
+      "line": 32,
       "expression": "$('#spin')"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "$",
-      "line": 27,
+      "line": 32,
       "expression": "$('#steering')"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "$",
-      "line": 27,
+      "line": 32,
       "expression": "$('#drs')"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "$",
-      "line": 27,
+      "line": 32,
       "expression": "$('#steering-value')"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "$",
-      "line": 27,
+      "line": 32,
       "expression": "$('#drs-value')"
     },
     {
       "path": "web/src/app-v2.js",
-      "source": "web/src/app-v2.js#30:setFlowXray",
+      "source": "web/src/app-v2.js#34:closeEngine",
+      "callee": "$",
+      "line": 34,
+      "expression": "$(\"#engine-open\")"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "web/src/app-v2.js#34:closeEngine",
+      "callee": "$",
+      "line": 34,
+      "expression": "$(\"#engine-open\")"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "web/src/app-v2.js#36:setFlowXray",
       "callee": "clone",
-      "line": 31,
+      "line": 37,
       "expression": "clone(original)"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "$",
-      "line": 36,
+      "line": 43,
       "expression": "$('#loading')"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "$",
-      "line": 36,
+      "line": 43,
       "expression": "$('#status')"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "$",
-      "line": 36,
+      "line": 43,
       "expression": "$('#assembly')"
     },
     {
       "path": "web/src/app-v2.js",
-      "source": "web/src/app-v2.js#38:view",
+      "source": "web/src/app-v2.js#45:view",
       "callee": "moveCamera",
-      "line": 38,
+      "line": 45,
       "expression": "moveCamera(target.clone().addScaledVector(new THREE.Vector3(...views[name]).normalize(),distance*expanded),target,animate)"
     },
     {
       "path": "web/src/app-v2.js",
-      "source": "web/src/app-v2.js#38:view",
+      "source": "web/src/app-v2.js#45:view",
       "callee": "String",
-      "line": 38,
+      "line": 45,
       "expression": "String(b.dataset.view===name)"
     },
     {
       "path": "web/src/app-v2.js",
-      "source": "web/src/app-v2.js#40:resize",
+      "source": "web/src/app-v2.js#47:resize",
       "callee": "view",
-      "line": 40,
+      "line": 47,
       "expression": "view(currentView,false)"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "resize",
-      "line": 41,
+      "line": 48,
       "expression": "resize()"
     },
     {
       "path": "web/src/app-v2.js",
-      "source": "web/src/app-v2.js#42:refreshSelection",
+      "source": "web/src/app-v2.js#49:refreshSelection",
       "callee": "$",
-      "line": 42,
+      "line": 49,
       "expression": "$('#selected-name')"
     },
     {
       "path": "web/src/app-v2.js",
-      "source": "web/src/app-v2.js#42:refreshSelection",
+      "source": "web/src/app-v2.js#49:refreshSelection",
       "callee": "$",
-      "line": 42,
+      "line": 49,
       "expression": "$('#selected-category')"
     },
     {
       "path": "web/src/app-v2.js",
-      "source": "web/src/app-v2.js#42:refreshSelection",
+      "source": "web/src/app-v2.js#49:refreshSelection",
       "callee": "$",
-      "line": 42,
+      "line": 49,
       "expression": "$('#part-offset')"
     },
     {
       "path": "web/src/app-v2.js",
-      "source": "web/src/app-v2.js#42:refreshSelection",
+      "source": "web/src/app-v2.js#49:refreshSelection",
       "callee": "$",
-      "line": 42,
+      "line": 49,
       "expression": "$('#focus-part')"
     },
     {
       "path": "web/src/app-v2.js",
-      "source": "web/src/app-v2.js#42:refreshSelection",
+      "source": "web/src/app-v2.js#49:refreshSelection",
       "callee": "$",
-      "line": 42,
+      "line": 49,
       "expression": "$('#isolate')"
     },
     {
       "path": "web/src/app-v2.js",
-      "source": "web/src/app-v2.js#42:refreshSelection",
+      "source": "web/src/app-v2.js#49:refreshSelection",
       "callee": "$",
-      "line": 42,
+      "line": 49,
       "expression": "$('#isolate')"
     },
     {
       "path": "web/src/app-v2.js",
-      "source": "web/src/app-v2.js#42:refreshSelection",
+      "source": "web/src/app-v2.js#49:refreshSelection",
       "callee": "String",
-      "line": 42,
+      "line": 49,
       "expression": "String(mechanics.isolated)"
     },
     {
       "path": "web/src/app-v2.js",
-      "source": "web/src/app-v2.js#42:refreshSelection",
+      "source": "web/src/app-v2.js#49:refreshSelection",
       "callee": "$",
-      "line": 42,
+      "line": 49,
       "expression": "$('#part-offset')"
     },
     {
       "path": "web/src/app-v2.js",
-      "source": "web/src/app-v2.js#42:refreshSelection",
+      "source": "web/src/app-v2.js#49:refreshSelection",
       "callee": "$",
-      "line": 42,
+      "line": 49,
       "expression": "$('#offset-value')"
     },
     {
       "path": "web/src/app-v2.js",
-      "source": "web/src/app-v2.js#42:refreshSelection",
+      "source": "web/src/app-v2.js#49:refreshSelection",
       "callee": "$",
-      "line": 42,
+      "line": 49,
       "expression": "$('#part-select')"
     },
     {
       "path": "web/src/app-v2.js",
-      "source": "web/src/app-v2.js#43:select",
+      "source": "web/src/app-v2.js#50:select",
+      "callee": "closeEngine",
+      "line": 50,
+      "expression": "closeEngine()"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "web/src/app-v2.js#50:select",
       "callee": "Number",
-      "line": 43,
+      "line": 50,
       "expression": "Number(id)"
     },
     {
       "path": "web/src/app-v2.js",
-      "source": "web/src/app-v2.js#43:select",
+      "source": "web/src/app-v2.js#50:select",
       "callee": "refreshSelection",
-      "line": 43,
+      "line": 50,
       "expression": "refreshSelection()"
     },
     {
       "path": "web/src/app-v2.js",
-      "source": "web/src/app-v2.js#43:select",
+      "source": "web/src/app-v2.js#50:select",
       "callee": "$",
-      "line": 43,
+      "line": 50,
       "expression": "$('#free-move')"
     },
     {
       "path": "web/src/app-v2.js",
-      "source": "web/src/app-v2.js#44:focusPart",
+      "source": "web/src/app-v2.js#51:focusPart",
       "callee": "moveCamera",
-      "line": 44,
+      "line": 51,
       "expression": "moveCamera(target.clone().addScaledVector(camera.position.clone().sub(controls.target).normalize(),d),target)"
     },
     {
       "path": "web/src/app-v2.js",
-      "source": "web/src/app-v2.js#45:assemblyTo",
+      "source": "web/src/app-v2.js#52:assemblyTo",
+      "callee": "closeEngine",
+      "line": 52,
+      "expression": "closeEngine()"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "web/src/app-v2.js#52:assemblyTo",
       "callee": "$",
-      "line": 45,
+      "line": 52,
       "expression": "$('#assembly-value')"
     },
     {
       "path": "web/src/app-v2.js",
-      "source": "web/src/app-v2.js#45:assemblyTo",
+      "source": "web/src/app-v2.js#52:assemblyTo",
       "callee": "$",
-      "line": 45,
+      "line": 52,
       "expression": "$('#loop')"
     },
     {
       "path": "web/src/app-v2.js",
-      "source": "web/src/app-v2.js#45:assemblyTo",
+      "source": "web/src/app-v2.js#52:assemblyTo",
       "callee": "view",
-      "line": 45,
+      "line": 52,
       "expression": "view(currentView)"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "atob",
-      "line": 46,
+      "line": 53,
       "expression": "atob($('#model-data').textContent.trim())"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "$",
-      "line": 46,
+      "line": 53,
       "expression": "$('#model-data')"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "applyCarMaterials",
-      "line": 49,
+      "line": 57,
       "expression": "applyCarMaterials(THREE,model)"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
-      "callee": "setupCustomization",
-      "line": 49,
-      "expression": "setupCustomization(materials,studio,renderer,scene)"
-    },
-    {
-      "path": "web/src/app-v2.js",
-      "source": "module",
       "callee": "createMechanics",
-      "line": 49,
+      "line": 57,
       "expression": "createMechanics(model)"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "applyInteiaBranding",
-      "line": 49,
+      "line": 57,
       "expression": "applyInteiaBranding(model,mechanics)"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
+      "callee": "createSurfaceLibrary",
+      "line": 58,
+      "expression": "createSurfaceLibrary(THREE,{renderer,mobile:innerWidth<700})"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "enhanceCar",
+      "line": 60,
+      "expression": "enhanceCar({model,mechanics,mobile:innerWidth<700})"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "createSennaDriver",
+      "line": 60,
+      "expression": "createSennaDriver(model,mechanics)"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "setupCustomization",
+      "line": 61,
+      "expression": "setupCustomization(materials,studio,renderer,scene)"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "$",
+      "line": 62,
+      "expression": "$('#color-'+id)"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "$",
+      "line": 62,
+      "expression": "$('#value-'+id)"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "createInCarEngine",
+      "line": 63,
+      "expression": "createInCarEngine({scene,renderer,camera,model,mechanics,target:()=>composer.readBuffer,mobile:innerWidth<700})"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
       "callee": "createGarage",
-      "line": 49,
+      "line": 64,
       "expression": "createGarage({scene,renderer,studio,camera,mechanics})"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "createWindTunnel",
-      "line": 49,
-      "expression": "createWindTunnel({scene,model,mechanics,reduced,studio,camera,onBeforeToggle:on=>{if(on){garageWasActive=garage.enabled;garage.setEnabled(false);}},onRegion:region=>{setFlowXray(re"
+      "line": 64,
+      "expression": "createWindTunnel({scene,model,mechanics,reduced,studio,camera,onBeforeToggle:on=>{closeEngine();if(on){garageWasActive=garage.enabled;garage.setEnabled(false);}},onRegion:region=>{"
     },
     {
       "path": "web/src/app-v2.js",
-      "source": "web/src/app-v2.js#49:onRegion",
+      "source": "web/src/app-v2.js#64:onBeforeToggle",
+      "callee": "closeEngine",
+      "line": 64,
+      "expression": "closeEngine()"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "web/src/app-v2.js#64:onRegion",
       "callee": "setFlowXray",
-      "line": 49,
+      "line": 64,
       "expression": "setFlowXray(region==='floor')"
     },
     {
       "path": "web/src/app-v2.js",
-      "source": "web/src/app-v2.js#49:onRegion",
+      "source": "web/src/app-v2.js#64:onRegion",
       "callee": "$",
-      "line": 49,
+      "line": 64,
       "expression": "$('#wind-cinema')"
     },
     {
       "path": "web/src/app-v2.js",
-      "source": "web/src/app-v2.js#49:onRegion",
+      "source": "web/src/app-v2.js#64:onRegion",
       "callee": "$",
-      "line": 49,
+      "line": 64,
       "expression": "$('#orbit')"
     },
     {
       "path": "web/src/app-v2.js",
-      "source": "web/src/app-v2.js#49:onRegion",
+      "source": "web/src/app-v2.js#64:onRegion",
       "callee": "moveCamera",
-      "line": 49,
+      "line": 64,
       "expression": "moveCamera(target.clone().addScaledVector(direction.normalize(),distance*scale),target)"
     },
     {
       "path": "web/src/app-v2.js",
-      "source": "web/src/app-v2.js#49:onToggle",
+      "source": "web/src/app-v2.js#64:onToggle",
       "callee": "setFlowXray",
-      "line": 49,
+      "line": 64,
       "expression": "setFlowXray(on&&$('#flow-region').value==='floor'&&$('#flow-detail').getAttribute('aria-pressed')==='true')"
     },
     {
       "path": "web/src/app-v2.js",
-      "source": "web/src/app-v2.js#49:onToggle",
+      "source": "web/src/app-v2.js#64:onToggle",
       "callee": "$",
-      "line": 49,
+      "line": 64,
       "expression": "$('#flow-region')"
     },
     {
       "path": "web/src/app-v2.js",
-      "source": "web/src/app-v2.js#49:onToggle",
+      "source": "web/src/app-v2.js#64:onToggle",
       "callee": "$",
-      "line": 49,
+      "line": 64,
       "expression": "$('#flow-detail')"
     },
     {
       "path": "web/src/app-v2.js",
-      "source": "web/src/app-v2.js#49:onToggle",
+      "source": "web/src/app-v2.js#64:onToggle",
       "callee": "$",
-      "line": 49,
+      "line": 64,
       "expression": "$(\"#wind-cinema\")"
     },
     {
       "path": "web/src/app-v2.js",
-      "source": "web/src/app-v2.js#49:onToggle",
+      "source": "web/src/app-v2.js#64:onToggle",
       "callee": "$",
-      "line": 49,
+      "line": 64,
       "expression": "$(\"#orbit\")"
     },
     {
       "path": "web/src/app-v2.js",
-      "source": "web/src/app-v2.js#49:onToggle",
+      "source": "web/src/app-v2.js#64:onToggle",
       "callee": "moveCamera",
-      "line": 49,
+      "line": 64,
       "expression": "moveCamera(target.clone().addScaledVector(new THREE.Vector3(1,.28,1.4).normalize(),distance*(on?1.14:1)),target)"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "$",
-      "line": 50,
+      "line": 65,
       "expression": "$('#part-select')"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "$",
-      "line": 51,
+      "line": 66,
       "expression": "$('#part-count')"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "resize",
-      "line": 51,
+      "line": 66,
       "expression": "resize()"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "$",
-      "line": 54,
+      "line": 70,
       "expression": "$('#wind-cinema')"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "$",
-      "line": 54,
+      "line": 70,
       "expression": "$('#orbit')"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "view",
-      "line": 54,
+      "line": 70,
       "expression": "view(b.dataset.view)"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "$",
-      "line": 55,
+      "line": 71,
       "expression": "$('#garage-toggle')"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "$",
-      "line": 55,
+      "line": 71,
       "expression": "$('#wind-toggle')"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "view",
-      "line": 55,
+      "line": 71,
       "expression": "view('hero')"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "$",
-      "line": 56,
+      "line": 72,
       "expression": "$('#garage-export')"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "$",
-      "line": 56,
+      "line": 72,
       "expression": "$('#garage-export')"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "setTimeout",
-      "line": 56,
+      "line": 72,
       "expression": "setTimeout(()=>URL.revokeObjectURL(url),10000)"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "$",
-      "line": 57,
+      "line": 73,
       "expression": "$('#garage-view')"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "moveCamera",
-      "line": 57,
+      "line": 73,
       "expression": "moveCamera(target.clone().addScaledVector(new THREE.Vector3(.65,.40,1).normalize(),distance*1.4),target)"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "$",
-      "line": 58,
+      "line": 74,
       "expression": "$('#orbit')"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "$",
-      "line": 58,
+      "line": 74,
       "expression": "$('#wind-cinema')"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "$",
-      "line": 58,
+      "line": 74,
       "expression": "$('#orbit')"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "String",
-      "line": 58,
+      "line": 74,
       "expression": "String(controls.autoRotate)"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "$",
-      "line": 59,
+      "line": 75,
       "expression": "$('#theme')"
-    },
-    {
-      "path": "web/src/app-v2.js",
-      "source": "module",
-      "callee": "$",
-      "line": 59,
-      "expression": "$('#theme')"
-    },
-    {
-      "path": "web/src/app-v2.js",
-      "source": "module",
-      "callee": "String",
-      "line": 59,
-      "expression": "String(dark)"
-    },
-    {
-      "path": "web/src/app-v2.js",
-      "source": "module",
-      "callee": "$",
-      "line": 59,
-      "expression": "$('#theme')"
-    },
-    {
-      "path": "web/src/app-v2.js",
-      "source": "module",
-      "callee": "$",
-      "line": 60,
-      "expression": "$('#quality')"
-    },
-    {
-      "path": "web/src/app-v2.js",
-      "source": "module",
-      "callee": "$",
-      "line": 60,
-      "expression": "$('#quality')"
-    },
-    {
-      "path": "web/src/app-v2.js",
-      "source": "module",
-      "callee": "String",
-      "line": 60,
-      "expression": "String(highQuality)"
-    },
-    {
-      "path": "web/src/app-v2.js",
-      "source": "module",
-      "callee": "$",
-      "line": 60,
-      "expression": "$('#quality')"
-    },
-    {
-      "path": "web/src/app-v2.js",
-      "source": "module",
-      "callee": "$",
-      "line": 61,
-      "expression": "$('#wire')"
-    },
-    {
-      "path": "web/src/app-v2.js",
-      "source": "module",
-      "callee": "$",
-      "line": 61,
-      "expression": "$('#wire')"
-    },
-    {
-      "path": "web/src/app-v2.js",
-      "source": "module",
-      "callee": "$",
-      "line": 61,
-      "expression": "$('#wire')"
-    },
-    {
-      "path": "web/src/app-v2.js",
-      "source": "module",
-      "callee": "String",
-      "line": 61,
-      "expression": "String(enabled)"
-    },
-    {
-      "path": "web/src/app-v2.js",
-      "source": "module",
-      "callee": "assemblyTo",
-      "line": 62,
-      "expression": "assemblyTo(Number(assembly.value)/100)"
-    },
-    {
-      "path": "web/src/app-v2.js",
-      "source": "module",
-      "callee": "Number",
-      "line": 62,
-      "expression": "Number(assembly.value)"
-    },
-    {
-      "path": "web/src/app-v2.js",
-      "source": "module",
-      "callee": "$",
-      "line": 63,
-      "expression": "$('#explode')"
-    },
-    {
-      "path": "web/src/app-v2.js",
-      "source": "module",
-      "callee": "assemblyTo",
-      "line": 63,
-      "expression": "assemblyTo(1)"
-    },
-    {
-      "path": "web/src/app-v2.js",
-      "source": "module",
-      "callee": "$",
-      "line": 63,
-      "expression": "$('#assemble')"
-    },
-    {
-      "path": "web/src/app-v2.js",
-      "source": "module",
-      "callee": "assemblyTo",
-      "line": 63,
-      "expression": "assemblyTo(0)"
-    },
-    {
-      "path": "web/src/app-v2.js",
-      "source": "module",
-      "callee": "refreshSelection",
-      "line": 63,
-      "expression": "refreshSelection()"
-    },
-    {
-      "path": "web/src/app-v2.js",
-      "source": "module",
-      "callee": "$",
-      "line": 64,
-      "expression": "$('#loop')"
-    },
-    {
-      "path": "web/src/app-v2.js",
-      "source": "module",
-      "callee": "$",
-      "line": 64,
-      "expression": "$('#loop')"
-    },
-    {
-      "path": "web/src/app-v2.js",
-      "source": "module",
-      "callee": "String",
-      "line": 64,
-      "expression": "String(mechanics.playing)"
-    },
-    {
-      "path": "web/src/app-v2.js",
-      "source": "module",
-      "callee": "$",
-      "line": 65,
-      "expression": "$('#part-select')"
-    },
-    {
-      "path": "web/src/app-v2.js",
-      "source": "module",
-      "callee": "select",
-      "line": 65,
-      "expression": "select(e.target.value===''?null:e.target.value)"
-    },
-    {
-      "path": "web/src/app-v2.js",
-      "source": "module",
-      "callee": "$",
-      "line": 66,
-      "expression": "$('#clear-selection')"
-    },
-    {
-      "path": "web/src/app-v2.js",
-      "source": "module",
-      "callee": "select",
-      "line": 66,
-      "expression": "select(null)"
-    },
-    {
-      "path": "web/src/app-v2.js",
-      "source": "module",
-      "callee": "$",
-      "line": 66,
-      "expression": "$('#focus-part')"
-    },
-    {
-      "path": "web/src/app-v2.js",
-      "source": "module",
-      "callee": "$",
-      "line": 66,
-      "expression": "$('#isolate')"
-    },
-    {
-      "path": "web/src/app-v2.js",
-      "source": "module",
-      "callee": "refreshSelection",
-      "line": 66,
-      "expression": "refreshSelection()"
-    },
-    {
-      "path": "web/src/app-v2.js",
-      "source": "module",
-      "callee": "$",
-      "line": 67,
-      "expression": "$('#free-move')"
-    },
-    {
-      "path": "web/src/app-v2.js",
-      "source": "module",
-      "callee": "$",
-      "line": 67,
-      "expression": "$('#free-move')"
-    },
-    {
-      "path": "web/src/app-v2.js",
-      "source": "module",
-      "callee": "String",
-      "line": 67,
-      "expression": "String(freeMove)"
-    },
-    {
-      "path": "web/src/app-v2.js",
-      "source": "module",
-      "callee": "$",
-      "line": 68,
-      "expression": "$('#part-offset')"
-    },
-    {
-      "path": "web/src/app-v2.js",
-      "source": "module",
-      "callee": "Number",
-      "line": 68,
-      "expression": "Number(e.target.value)"
-    },
-    {
-      "path": "web/src/app-v2.js",
-      "source": "module",
-      "callee": "$",
-      "line": 68,
-      "expression": "$('#offset-value')"
-    },
-    {
-      "path": "web/src/app-v2.js",
-      "source": "module",
-      "callee": "$",
-      "line": 69,
-      "expression": "$('#spin')"
-    },
-    {
-      "path": "web/src/app-v2.js",
-      "source": "module",
-      "callee": "$",
-      "line": 69,
-      "expression": "$('#spin')"
-    },
-    {
-      "path": "web/src/app-v2.js",
-      "source": "module",
-      "callee": "$",
-      "line": 69,
-      "expression": "$('#spin')"
-    },
-    {
-      "path": "web/src/app-v2.js",
-      "source": "module",
-      "callee": "String",
-      "line": 69,
-      "expression": "String(on)"
-    },
-    {
-      "path": "web/src/app-v2.js",
-      "source": "module",
-      "callee": "$",
-      "line": 70,
-      "expression": "$('#steering')"
-    },
-    {
-      "path": "web/src/app-v2.js",
-      "source": "module",
-      "callee": "Number",
-      "line": 70,
-      "expression": "Number(e.target.value)"
-    },
-    {
-      "path": "web/src/app-v2.js",
-      "source": "module",
-      "callee": "$",
-      "line": 70,
-      "expression": "$('#steering-value')"
-    },
-    {
-      "path": "web/src/app-v2.js",
-      "source": "module",
-      "callee": "$",
-      "line": 71,
-      "expression": "$('#drs')"
-    },
-    {
-      "path": "web/src/app-v2.js",
-      "source": "module",
-      "callee": "Number",
-      "line": 71,
-      "expression": "Number(e.target.value)"
-    },
-    {
-      "path": "web/src/app-v2.js",
-      "source": "module",
-      "callee": "$",
-      "line": 71,
-      "expression": "$('#drs-value')"
-    },
-    {
-      "path": "web/src/app-v2.js",
-      "source": "module",
-      "callee": "$",
-      "line": 72,
-      "expression": "$('#reset')"
-    },
-    {
-      "path": "web/src/app-v2.js",
-      "source": "module",
-      "callee": "$",
-      "line": 72,
-      "expression": "$('#free-move')"
-    },
-    {
-      "path": "web/src/app-v2.js",
-      "source": "module",
-      "callee": "select",
-      "line": 72,
-      "expression": "select(null)"
-    },
-    {
-      "path": "web/src/app-v2.js",
-      "source": "module",
-      "callee": "$",
-      "line": 72,
-      "expression": "$('#'+id)"
-    },
-    {
-      "path": "web/src/app-v2.js",
-      "source": "module",
-      "callee": "$",
-      "line": 72,
-      "expression": "$('#'+id)"
-    },
-    {
-      "path": "web/src/app-v2.js",
-      "source": "module",
-      "callee": "$",
-      "line": 72,
-      "expression": "$('#assembly-value')"
-    },
-    {
-      "path": "web/src/app-v2.js",
-      "source": "module",
-      "callee": "$",
-      "line": 72,
-      "expression": "$('#steering-value')"
-    },
-    {
-      "path": "web/src/app-v2.js",
-      "source": "module",
-      "callee": "$",
-      "line": 72,
-      "expression": "$('#drs-value')"
-    },
-    {
-      "path": "web/src/app-v2.js",
-      "source": "module",
-      "callee": "view",
-      "line": 72,
-      "expression": "view('hero')"
-    },
-    {
-      "path": "web/src/app-v2.js",
-      "source": "module",
-      "callee": "$",
-      "line": 73,
-      "expression": "$('#zoom-in')"
-    },
-    {
-      "path": "web/src/app-v2.js",
-      "source": "module",
-      "callee": "$",
-      "line": 73,
-      "expression": "$('#zoom-out')"
-    },
-    {
-      "path": "web/src/app-v2.js",
-      "source": "module",
-      "callee": "$",
-      "line": 74,
-      "expression": "$('#photo')"
-    },
-    {
-      "path": "web/src/app-v2.js",
-      "source": "module",
-      "callee": "$",
-      "line": 74,
-      "expression": "$('#photo')"
-    },
-    {
-      "path": "web/src/app-v2.js",
-      "source": "module",
-      "callee": "String",
-      "line": 74,
-      "expression": "String(document.body.classList.contains('photo'))"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "$",
       "line": 75,
-      "expression": "$('#save-photo')"
+      "expression": "$('#theme')"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
-      "callee": "select",
+      "callee": "String",
+      "line": 75,
+      "expression": "String(dark)"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "$",
+      "line": 75,
+      "expression": "$('#theme')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "$",
+      "line": 76,
+      "expression": "$('#quality')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "$",
+      "line": 76,
+      "expression": "$('#quality')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "String",
+      "line": 76,
+      "expression": "String(highQuality)"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "$",
+      "line": 76,
+      "expression": "$('#quality')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "$",
+      "line": 77,
+      "expression": "$('#wire')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "$",
+      "line": 77,
+      "expression": "$('#wire')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "$",
+      "line": 77,
+      "expression": "$('#wire')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "String",
+      "line": 77,
+      "expression": "String(enabled)"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "assemblyTo",
       "line": 78,
-      "expression": "select(hits[0].object.userData.recordId)"
+      "expression": "assemblyTo(Number(assembly.value)/100)"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
-      "callee": "view",
-      "line": 79,
-      "expression": "view('hero')"
-    },
-    {
-      "path": "web/src/app-v2.js",
-      "source": "module",
-      "callee": "select",
-      "line": 79,
-      "expression": "select(null)"
+      "callee": "Number",
+      "line": 78,
+      "expression": "Number(assembly.value)"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "$",
       "line": 79,
-      "expression": "$('#zoom-in')"
+      "expression": "$('#explode')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "assemblyTo",
+      "line": 79,
+      "expression": "assemblyTo(1)"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "$",
       "line": 79,
-      "expression": "$('#zoom-out')"
+      "expression": "$('#assemble')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "assemblyTo",
+      "line": 79,
+      "expression": "assemblyTo(0)"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "refreshSelection",
+      "line": 79,
+      "expression": "refreshSelection()"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "$",
       "line": 80,
-      "expression": "$('#wind-cinema')"
+      "expression": "$('#loop')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "closeEngine",
+      "line": 80,
+      "expression": "closeEngine()"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "$",
       "line": 80,
-      "expression": "$('#wind-cinema')"
+      "expression": "$('#loop')"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "String",
       "line": 80,
-      "expression": "String(cinematic)"
-    },
-    {
-      "path": "web/src/app-v2.js",
-      "source": "module",
-      "callee": "$",
-      "line": 80,
-      "expression": "$('#orbit')"
+      "expression": "String(mechanics.playing)"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "$",
       "line": 81,
-      "expression": "$('#wind-cinema')"
+      "expression": "$('#part-select')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "select",
+      "line": 81,
+      "expression": "select(e.target.value===''?null:e.target.value)"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "$",
+      "line": 82,
+      "expression": "$('#clear-selection')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "select",
+      "line": 82,
+      "expression": "select(null)"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "$",
+      "line": 82,
+      "expression": "$('#focus-part')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "$",
+      "line": 82,
+      "expression": "$('#isolate')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "refreshSelection",
+      "line": 82,
+      "expression": "refreshSelection()"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "$",
       "line": 83,
-      "expression": "$('#assembly-value')"
-    },
-    {
-      "path": "web/src/app-v2.js",
-      "source": "module",
-      "callee": "view",
-      "line": 83,
-      "expression": "view(currentView)"
+      "expression": "$('#free-move')"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "$",
       "line": 83,
-      "expression": "$('#motion-note')"
-    },
-    {
-      "path": "web/src/app-v2.js",
-      "source": "module",
-      "callee": "$",
-      "line": 83,
-      "expression": "$('#'+id)"
-    },
-    {
-      "path": "web/src/app-v2.js",
-      "source": "module",
-      "callee": "$",
-      "line": 83,
-      "expression": "$('#assembly-state')"
+      "expression": "$('#free-move')"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "String",
+      "line": 83,
+      "expression": "String(freeMove)"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "$",
       "line": 84,
-      "expression": "String(Math.round(frameCount*1000/(now-frameStart)))"
+      "expression": "$('#part-offset')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "Number",
+      "line": 84,
+      "expression": "Number(e.target.value)"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "$",
+      "line": 84,
+      "expression": "$('#offset-value')"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "$",
       "line": 85,
+      "expression": "$('#spin')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "$",
+      "line": 85,
+      "expression": "$('#spin')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "$",
+      "line": 85,
+      "expression": "$('#spin')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "String",
+      "line": 85,
+      "expression": "String(on)"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "$",
+      "line": 86,
+      "expression": "$('#steering')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "Number",
+      "line": 86,
+      "expression": "Number(e.target.value)"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "$",
+      "line": 86,
+      "expression": "$('#steering-value')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "$",
+      "line": 87,
+      "expression": "$('#drs')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "Number",
+      "line": 87,
+      "expression": "Number(e.target.value)"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "$",
+      "line": 87,
+      "expression": "$('#drs-value')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "$",
+      "line": 88,
+      "expression": "$('#reset')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "closeEngine",
+      "line": 88,
+      "expression": "closeEngine()"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "$",
+      "line": 88,
+      "expression": "$('#free-move')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "select",
+      "line": 88,
+      "expression": "select(null)"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "$",
+      "line": 88,
+      "expression": "$('#'+id)"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "$",
+      "line": 88,
+      "expression": "$('#'+id)"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "$",
+      "line": 88,
+      "expression": "$('#assembly-value')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "$",
+      "line": 88,
+      "expression": "$('#steering-value')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "$",
+      "line": 88,
+      "expression": "$('#drs-value')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "view",
+      "line": 88,
+      "expression": "view('hero')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "$",
+      "line": 89,
+      "expression": "$('#zoom-in')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "$",
+      "line": 89,
+      "expression": "$('#zoom-out')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "$",
+      "line": 90,
+      "expression": "$('#photo')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "$",
+      "line": 90,
+      "expression": "$('#photo')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "String",
+      "line": 90,
+      "expression": "String(document.body.classList.contains('photo'))"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "$",
+      "line": 91,
+      "expression": "$('#save-photo')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "select",
+      "line": 94,
+      "expression": "select(hits[0].object.userData.recordId)"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "view",
+      "line": 95,
+      "expression": "view('hero')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "select",
+      "line": 95,
+      "expression": "select(null)"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "$",
+      "line": 95,
+      "expression": "$('#zoom-in')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "$",
+      "line": 95,
+      "expression": "$('#zoom-out')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "$",
+      "line": 96,
+      "expression": "$('#engine-open')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "closeEngine",
+      "line": 96,
+      "expression": "closeEngine()"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "view",
+      "line": 96,
+      "expression": "view('hero')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "$",
+      "line": 96,
+      "expression": "$('#wind-toggle')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "$",
+      "line": 96,
+      "expression": "$('#reset')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "$",
+      "line": 96,
+      "expression": "$('#engine-open')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "$",
+      "line": 96,
+      "expression": "$('#engine-open')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "moveCamera",
+      "line": 96,
+      "expression": "moveCamera(new THREE.Vector3(1.8,1.65,-2.35),new THREE.Vector3(0,.52,-.75))"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "$",
+      "line": 97,
+      "expression": "$('#engine-pause')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "$",
+      "line": 97,
+      "expression": "$('#engine-pause')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "String",
+      "line": 97,
+      "expression": "String(enginePaused)"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "$",
+      "line": 97,
+      "expression": "$('#engine-pause')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "$",
+      "line": 98,
+      "expression": "$('#engine-cut')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "$",
+      "line": 98,
+      "expression": "$('#engine-cut-value')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "$",
+      "line": 98,
+      "expression": "$('#engine-cut')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "$",
+      "line": 99,
+      "expression": "$('#wind-cinema')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "$",
+      "line": 99,
+      "expression": "$('#wind-cinema')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "String",
+      "line": 99,
+      "expression": "String(cinematic)"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "$",
+      "line": 99,
+      "expression": "$('#orbit')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "$",
+      "line": 100,
+      "expression": "$('#wind-cinema')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "$",
+      "line": 102,
+      "expression": "$('#assembly-value')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "view",
+      "line": 102,
+      "expression": "view(currentView)"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "$",
+      "line": 102,
+      "expression": "$('#motion-note')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "$",
+      "line": 102,
+      "expression": "$('#'+id)"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "$",
+      "line": 102,
+      "expression": "$('#assembly-state')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "Number",
+      "line": 102,
+      "expression": "Number($('#engine-cut').value)"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "$",
+      "line": 102,
+      "expression": "$('#engine-cut')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "$",
+      "line": 102,
+      "expression": "$('#engine-status')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "$",
+      "line": 102,
+      "expression": "$('#engine-cut')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "$",
+      "line": 102,
+      "expression": "$('#engine-pause')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "String",
+      "line": 103,
+      "expression": "String(Math.round(frameCount*1000/(now-frameStart)))"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "$",
+      "line": 104,
       "expression": "$('#loading')"
     },
     {
       "path": "web/src/branding.js",
-      "source": "web/src/branding.js#6:applyInteiaBranding",
+      "source": "web/src/branding.js#5:applyInteiaBranding",
       "callee": "project",
-      "line": 27,
-      "expression": "project('main_body',[2,.32,-.55],[-1,0,0],[0,Math.PI/2,0],.76,.22)"
+      "line": 36,
+      "expression": "project('main_body',[2,.32,-.40],[-1,0,0],[0,Math.PI/2,0],.64,.22)"
     },
     {
       "path": "web/src/branding.js",
-      "source": "web/src/branding.js#6:applyInteiaBranding",
+      "source": "web/src/branding.js#5:applyInteiaBranding",
+      "callee": "project",
+      "line": 38,
+      "expression": "project('main_body',[2,.76,-.99],[-1,0,0],[0,Math.PI/2,0],.44,.40,sponsorMaterial,1)"
+    },
+    {
+      "path": "web/src/branding.js",
+      "source": "web/src/branding.js#5:applyInteiaBranding",
+      "callee": "project",
+      "line": 39,
+      "expression": "project('main_body',[-2,.76,-.99],[1,0,0],[0,-Math.PI/2,0],.44,.40,sponsorMaterial,1)"
+    },
+    {
+      "path": "web/src/branding.js",
+      "source": "web/src/branding.js#5:applyInteiaBranding",
+      "callee": "project",
+      "line": 41,
+      "expression": "project('main_body',[2,.36,.08],[-1,0,0],[0,Math.PI/2,0],.34,.22,crestMaterial,5/6)"
+    },
+    {
+      "path": "web/src/branding.js",
+      "source": "web/src/branding.js#5:applyInteiaBranding",
+      "callee": "project",
+      "line": 42,
+      "expression": "project('main_body',[0,3,1.35],[0,-1,0],[-Math.PI/2,0,0],.36,.45,crestMaterial,5/6)"
+    },
+    {
+      "path": "web/src/branding.js",
+      "source": "web/src/branding.js#5:applyInteiaBranding",
+      "callee": "project",
+      "line": 43,
+      "expression": "project('main_body',[-2,.36,.08],[1,0,0],[0,-Math.PI/2,0],.34,.22,crestMaterial,5/6)"
+    },
+    {
+      "path": "web/src/branding.js",
+      "source": "web/src/branding.js#5:applyInteiaBranding",
+      "callee": "project",
+      "line": 45,
+      "expression": "project('main_body',[0,3,2.02],[0,-1,0],[-Math.PI/2,0,0],.30,.45,numberMaterial,2/3)"
+    },
+    {
+      "path": "web/src/branding.js",
+      "source": "web/src/branding.js#5:applyInteiaBranding",
+      "callee": "project",
+      "line": 46,
+      "expression": "project('main_body',[2,.34,.58],[-1,0,0],[0,Math.PI/2,0],.30,.25,numberMaterial,2/3)"
+    },
+    {
+      "path": "web/src/branding.js",
+      "source": "web/src/branding.js#5:applyInteiaBranding",
       "callee": "String",
-      "line": 28,
+      "line": 47,
       "expression": "String(decals.length)"
+    },
+    {
+      "path": "web/src/car-look.js",
+      "source": "web/src/car-look.js#36:rimPatch",
+      "callee": "key",
+      "line": 45,
+      "expression": "key()"
+    },
+    {
+      "path": "web/src/car-look.js",
+      "source": "web/src/car-look.js#70:rimShader",
+      "callee": "localVaryings",
+      "line": 72,
+      "expression": "localVaryings(shader, 'Rim')"
+    },
+    {
+      "path": "web/src/car-look.js",
+      "source": "web/src/car-look.js#100:tyreShader",
+      "callee": "localVaryings",
+      "line": 102,
+      "expression": "localVaryings(shader, 'Tyre')"
+    },
+    {
+      "path": "web/src/car-look.js",
+      "source": "web/src/car-look.js#127:discTexture",
+      "callee": "random",
+      "line": 136,
+      "expression": "random()"
+    },
+    {
+      "path": "web/src/car-look.js",
+      "source": "web/src/car-look.js#186:caliperGeometry",
+      "callee": "at",
+      "line": 190,
+      "expression": "at(outer, a0)"
+    },
+    {
+      "path": "web/src/car-look.js",
+      "source": "web/src/car-look.js#186:caliperGeometry",
+      "callee": "at",
+      "line": 192,
+      "expression": "at(inner, a1)"
+    },
+    {
+      "path": "web/src/car-look.js",
+      "source": "web/src/car-look.js#202:enhanceCar",
+      "callee": "paintShader",
+      "line": 217,
+      "expression": "paintShader(m)"
+    },
+    {
+      "path": "web/src/car-look.js",
+      "source": "web/src/car-look.js#202:enhanceCar",
+      "callee": "rimPatch",
+      "line": 224,
+      "expression": "rimPatch(m, rimUniforms)"
+    },
+    {
+      "path": "web/src/car-look.js",
+      "source": "web/src/car-look.js#249:share",
+      "callee": "setup",
+      "line": 250,
+      "expression": "setup(copy)"
+    },
+    {
+      "path": "web/src/car-look.js",
+      "source": "web/src/car-look.js#253:rimSetup",
+      "callee": "rimShader",
+      "line": 253,
+      "expression": "rimShader(m)"
+    },
+    {
+      "path": "web/src/car-look.js",
+      "source": "web/src/car-look.js#254:tyreSetup",
+      "callee": "tyreShader",
+      "line": 254,
+      "expression": "tyreShader(m)"
+    },
+    {
+      "path": "web/src/car-look.js",
+      "source": "web/src/car-look.js#202:enhanceCar",
+      "callee": "share",
+      "line": 263,
+      "expression": "share(o.material, setup)"
+    },
+    {
+      "path": "web/src/car-look.js",
+      "source": "web/src/car-look.js#202:enhanceCar",
+      "callee": "discTexture",
+      "line": 268,
+      "expression": "discTexture(mobile ? 512 : 1024)"
+    },
+    {
+      "path": "web/src/car-look.js",
+      "source": "web/src/car-look.js#202:enhanceCar",
+      "callee": "heatTexture",
+      "line": 268,
+      "expression": "heatTexture()"
+    },
+    {
+      "path": "web/src/car-look.js",
+      "source": "web/src/car-look.js#202:enhanceCar",
+      "callee": "discGeometry",
+      "line": 273,
+      "expression": "discGeometry()"
+    },
+    {
+      "path": "web/src/car-look.js",
+      "source": "web/src/car-look.js#202:enhanceCar",
+      "callee": "caliperGeometry",
+      "line": 273,
+      "expression": "caliperGeometry()"
     },
     {
       "path": "web/src/customize.js",
@@ -2261,6 +3379,447 @@
       "callee": "$",
       "line": 54,
       "expression": "$('background-color')"
+    },
+    {
+      "path": "web/src/engine/engine-shot.js",
+      "source": "web/src/engine/engine-shot.js#5:smooth",
+      "callee": "clamp",
+      "line": 5,
+      "expression": "clamp(t)"
+    },
+    {
+      "path": "web/src/engine/engine-shot.js",
+      "source": "web/src/engine/engine-shot.js#59:spline",
+      "callee": "segment",
+      "line": 60,
+      "expression": "segment(KEYS,p)"
+    },
+    {
+      "path": "web/src/engine/engine-shot.js",
+      "source": "web/src/engine/engine-shot.js#59:spline",
+      "callee": "clamp",
+      "line": 60,
+      "expression": "clamp((p-k1[0])/dt)"
+    },
+    {
+      "path": "web/src/engine/engine-shot.js",
+      "source": "web/src/engine/engine-shot.js#59:spline",
+      "callee": "tangent",
+      "line": 62,
+      "expression": "tangent(KEYS,i,slot,axis)"
+    },
+    {
+      "path": "web/src/engine/engine-shot.js",
+      "source": "web/src/engine/engine-shot.js#59:spline",
+      "callee": "tangent",
+      "line": 62,
+      "expression": "tangent(KEYS,i+1,slot,axis)"
+    },
+    {
+      "path": "web/src/engine/engine-shot.js",
+      "source": "web/src/engine/engine-shot.js#64:eased",
+      "callee": "segment",
+      "line": 65,
+      "expression": "segment(keys,p)"
+    },
+    {
+      "path": "web/src/engine/engine-shot.js",
+      "source": "web/src/engine/engine-shot.js#64:eased",
+      "callee": "smooth",
+      "line": 65,
+      "expression": "smooth((p-t0)/(t1-t0))"
+    },
+    {
+      "path": "web/src/engine/engine-shot.js",
+      "source": "web/src/engine/engine-shot.js#70:engineShot",
+      "callee": "clamp",
+      "line": 71,
+      "expression": "clamp(Number.isFinite(progress)?progress:0)"
+    },
+    {
+      "path": "web/src/engine/engine-shot.js",
+      "source": "web/src/engine/engine-shot.js#70:engineShot",
+      "callee": "spline",
+      "line": 72,
+      "expression": "spline(1,p)"
+    },
+    {
+      "path": "web/src/engine/engine-shot.js",
+      "source": "web/src/engine/engine-shot.js#70:engineShot",
+      "callee": "spline",
+      "line": 72,
+      "expression": "spline(2,p)"
+    },
+    {
+      "path": "web/src/engine/engine-shot.js",
+      "source": "web/src/engine/engine-shot.js#70:engineShot",
+      "callee": "eased",
+      "line": 73,
+      "expression": "eased(FOV,p)"
+    },
+    {
+      "path": "web/src/engine/engine-shot.js",
+      "source": "web/src/engine/engine-shot.js#70:engineShot",
+      "callee": "smooth",
+      "line": 79,
+      "expression": "smooth(p/.12)"
+    },
+    {
+      "path": "web/src/engine/engine-shot.js",
+      "source": "web/src/engine/engine-shot.js#70:engineShot",
+      "callee": "smooth",
+      "line": 79,
+      "expression": "smooth((p-.94)/.06)"
+    },
+    {
+      "path": "web/src/engine/engine-shot.js",
+      "source": "web/src/engine/engine-shot.js#70:engineShot",
+      "callee": "eased",
+      "line": 81,
+      "expression": "eased(FOCUS,p)"
+    },
+    {
+      "path": "web/src/engine/engine-shot.js",
+      "source": "web/src/engine/engine-shot.js#70:engineShot",
+      "callee": "eased",
+      "line": 81,
+      "expression": "eased(RANGE,p)"
+    },
+    {
+      "path": "web/src/engine/engine-shot.js",
+      "source": "web/src/engine/engine-shot.js#70:engineShot",
+      "callee": "eased",
+      "line": 81,
+      "expression": "eased(BOKEH,p)"
+    },
+    {
+      "path": "web/src/engine/engine-shot.js",
+      "source": "web/src/engine/engine-shot.js#70:engineShot",
+      "callee": "smooth",
+      "line": 83,
+      "expression": "smooth((p-.03)/.17)"
+    },
+    {
+      "path": "web/src/engine/engine-shot.js",
+      "source": "web/src/engine/engine-shot.js#70:engineShot",
+      "callee": "smooth",
+      "line": 83,
+      "expression": "smooth((p-.93)/.07)"
+    },
+    {
+      "path": "web/src/engine/engine-shot.js",
+      "source": "web/src/engine/engine-shot.js#70:engineShot",
+      "callee": "smooth",
+      "line": 85,
+      "expression": "smooth((p-.20)/.10)"
+    },
+    {
+      "path": "web/src/engine/engine-shot.js",
+      "source": "web/src/engine/engine-shot.js#70:engineShot",
+      "callee": "smooth",
+      "line": 85,
+      "expression": "smooth((p-.905)/.05)"
+    },
+    {
+      "path": "web/src/engine/engine-shot.js",
+      "source": "web/src/engine/engine-shot.js#70:engineShot",
+      "callee": "smooth",
+      "line": 86,
+      "expression": "smooth((p-.06)/.2)"
+    },
+    {
+      "path": "web/src/engine/engine-shot.js",
+      "source": "web/src/engine/engine-shot.js#70:engineShot",
+      "callee": "smooth",
+      "line": 86,
+      "expression": "smooth((p-.94)/.06)"
+    },
+    {
+      "path": "web/src/engine/in-car.js",
+      "source": "web/src/engine/in-car.js#17:nextFrame",
+      "callee": "requestAnimationFrame",
+      "line": 17,
+      "expression": "requestAnimationFrame(resolve)"
+    },
+    {
+      "path": "web/src/engine/in-car.js",
+      "source": "web/src/engine/in-car.js#25:createInCarEngine",
+      "callee": "matchMedia",
+      "line": 27,
+      "expression": "matchMedia('(prefers-reduced-motion: reduce)')"
+    },
+    {
+      "path": "web/src/engine/in-car.js",
+      "source": "web/src/engine/in-car.js#25:createInCarEngine",
+      "callee": "cancel",
+      "line": 49,
+      "expression": "cancel()"
+    },
+    {
+      "path": "web/src/engine/in-car.js",
+      "source": "web/src/engine/in-car.js#55:buildSplit",
+      "callee": "derive",
+      "line": 62,
+      "expression": "derive(o.material,coverPlanes,false)"
+    },
+    {
+      "path": "web/src/engine/in-car.js",
+      "source": "web/src/engine/in-car.js#55:buildSplit",
+      "callee": "derive",
+      "line": 62,
+      "expression": "derive(o.material,restPlanes,true)"
+    },
+    {
+      "path": "web/src/engine/in-car.js",
+      "source": "web/src/engine/in-car.js#55:buildSplit",
+      "callee": "twin",
+      "line": 63,
+      "expression": "twin(o,coverMaterials.get(o.material))"
+    },
+    {
+      "path": "web/src/engine/in-car.js",
+      "source": "web/src/engine/in-car.js#55:buildSplit",
+      "callee": "twin",
+      "line": 65,
+      "expression": "twin(o,o.material)"
+    },
+    {
+      "path": "web/src/engine/in-car.js",
+      "source": "web/src/engine/in-car.js#75:poseCover",
+      "callee": "smooth",
+      "line": 76,
+      "expression": "smooth(open)"
+    },
+    {
+      "path": "web/src/engine/in-car.js",
+      "source": "web/src/engine/in-car.js#88:buildEngine",
+      "callee": "swap",
+      "line": 108,
+      "expression": "swap(o.material)"
+    },
+    {
+      "path": "web/src/engine/in-car.js",
+      "source": "web/src/engine/in-car.js#115:precompile",
+      "callee": "offstage",
+      "line": 116,
+      "expression": "offstage()"
+    },
+    {
+      "path": "web/src/engine/in-car.js",
+      "source": "web/src/engine/in-car.js#115:precompile",
+      "callee": "add",
+      "line": 118,
+      "expression": "add(o)"
+    },
+    {
+      "path": "web/src/engine/in-car.js",
+      "source": "web/src/engine/in-car.js#115:precompile",
+      "callee": "walk",
+      "line": 118,
+      "expression": "walk(c)"
+    },
+    {
+      "path": "web/src/engine/in-car.js",
+      "source": "web/src/engine/in-car.js#115:precompile",
+      "callee": "add",
+      "line": 119,
+      "expression": "add(new THREE.Mesh(m.geometry,restMaterials.get(original.get(m))))"
+    },
+    {
+      "path": "web/src/engine/in-car.js",
+      "source": "web/src/engine/in-car.js#115:precompile",
+      "callee": "target",
+      "line": 124,
+      "expression": "target()"
+    },
+    {
+      "path": "web/src/engine/in-car.js",
+      "source": "web/src/engine/in-car.js#115:precompile",
+      "callee": "nextFrame",
+      "line": 128,
+      "expression": "nextFrame()"
+    },
+    {
+      "path": "web/src/engine/in-car.js",
+      "source": "web/src/engine/in-car.js#139:flush",
+      "callee": "nextFrame",
+      "line": 142,
+      "expression": "nextFrame()"
+    },
+    {
+      "path": "web/src/engine/in-car.js",
+      "source": "web/src/engine/in-car.js#134:upload",
+      "callee": "flush",
+      "line": 149,
+      "expression": "flush()"
+    },
+    {
+      "path": "web/src/engine/in-car.js",
+      "source": "web/src/engine/in-car.js#134:upload",
+      "callee": "flush",
+      "line": 151,
+      "expression": "flush()"
+    },
+    {
+      "path": "web/src/engine/in-car.js",
+      "source": "web/src/engine/in-car.js#154:load",
+      "callee": "fetch",
+      "line": 156,
+      "expression": "fetch(`./assets/power-unit-v1.glb`,{signal:abort.signal})"
+    },
+    {
+      "path": "web/src/engine/in-car.js",
+      "source": "web/src/engine/in-car.js#154:load",
+      "callee": "aborted",
+      "line": 160,
+      "expression": "aborted()"
+    },
+    {
+      "path": "web/src/engine/in-car.js",
+      "source": "web/src/engine/in-car.js#154:load",
+      "callee": "collect",
+      "line": 162,
+      "expression": "collect(gltf.scene)"
+    },
+    {
+      "path": "web/src/engine/in-car.js",
+      "source": "web/src/engine/in-car.js#154:load",
+      "callee": "releaseEngine",
+      "line": 163,
+      "expression": "releaseEngine()"
+    },
+    {
+      "path": "web/src/engine/in-car.js",
+      "source": "web/src/engine/in-car.js#154:load",
+      "callee": "aborted",
+      "line": 163,
+      "expression": "aborted()"
+    },
+    {
+      "path": "web/src/engine/in-car.js",
+      "source": "web/src/engine/in-car.js#154:load",
+      "callee": "buildEngine",
+      "line": 165,
+      "expression": "buildEngine(gltf)"
+    },
+    {
+      "path": "web/src/engine/in-car.js",
+      "source": "web/src/engine/in-car.js#154:load",
+      "callee": "precompile",
+      "line": 166,
+      "expression": "precompile()"
+    },
+    {
+      "path": "web/src/engine/in-car.js",
+      "source": "web/src/engine/in-car.js#154:load",
+      "callee": "upload",
+      "line": 168,
+      "expression": "upload()"
+    },
+    {
+      "path": "web/src/engine/in-car.js",
+      "source": "web/src/engine/in-car.js#154:load",
+      "callee": "rehearse",
+      "line": 170,
+      "expression": "rehearse()"
+    },
+    {
+      "path": "web/src/engine/in-car.js",
+      "source": "web/src/engine/in-car.js#176:rehearse",
+      "callee": "engineShot",
+      "line": 180,
+      "expression": "engineShot(p,mobile)"
+    },
+    {
+      "path": "web/src/engine/in-car.js",
+      "source": "web/src/engine/in-car.js#176:rehearse",
+      "callee": "setSplit",
+      "line": 183,
+      "expression": "setSplit(true)"
+    },
+    {
+      "path": "web/src/engine/in-car.js",
+      "source": "web/src/engine/in-car.js#176:rehearse",
+      "callee": "poseCover",
+      "line": 183,
+      "expression": "poseCover(take.open)"
+    },
+    {
+      "path": "web/src/engine/in-car.js",
+      "source": "web/src/engine/in-car.js#176:rehearse",
+      "callee": "smooth",
+      "line": 183,
+      "expression": "smooth(take.cut)"
+    },
+    {
+      "path": "web/src/engine/in-car.js",
+      "source": "web/src/engine/in-car.js#176:rehearse",
+      "callee": "target",
+      "line": 184,
+      "expression": "target()"
+    },
+    {
+      "path": "web/src/engine/in-car.js",
+      "source": "web/src/engine/in-car.js#176:rehearse",
+      "callee": "setSplit",
+      "line": 186,
+      "expression": "setSplit(false)"
+    },
+    {
+      "path": "web/src/engine/in-car.js",
+      "source": "web/src/engine/in-car.js#176:rehearse",
+      "callee": "nextFrame",
+      "line": 188,
+      "expression": "nextFrame()"
+    },
+    {
+      "path": "web/src/engine/in-car.js",
+      "source": "web/src/engine/in-car.js#25:createInCarEngine",
+      "callee": "buildSplit",
+      "line": 196,
+      "expression": "buildSplit()"
+    },
+    {
+      "path": "web/src/engine/in-car.js",
+      "source": "web/src/engine/in-car.js#202:prepare",
+      "callee": "load",
+      "line": 205,
+      "expression": "load()"
+    },
+    {
+      "path": "web/src/engine/in-car.js",
+      "source": "web/src/engine/in-car.js#212:update",
+      "callee": "setSplit",
+      "line": 216,
+      "expression": "setSplit(on)"
+    },
+    {
+      "path": "web/src/engine/in-car.js",
+      "source": "web/src/engine/in-car.js#212:update",
+      "callee": "poseCover",
+      "line": 219,
+      "expression": "poseCover(open)"
+    },
+    {
+      "path": "web/src/engine/in-car.js",
+      "source": "web/src/engine/in-car.js#212:update",
+      "callee": "smooth",
+      "line": 222,
+      "expression": "smooth(cut)"
+    },
+    {
+      "path": "web/src/engine/in-car.js",
+      "source": "web/src/engine/in-car.js#226:dispose",
+      "callee": "setSplit",
+      "line": 228,
+      "expression": "setSplit(false)"
+    },
+    {
+      "path": "web/src/engine/in-car.js",
+      "source": "web/src/engine/in-car.js#226:dispose",
+      "callee": "releaseEngine",
+      "line": 233,
+      "expression": "releaseEngine()"
     },
     {
       "path": "web/src/flow-detail.js",
@@ -3089,6 +4648,230 @@
       "expression": "apply()"
     },
     {
+      "path": "web/src/senna-driver.js",
+      "source": "web/src/senna-driver.js#4:createSennaDriver",
+      "callee": "mat",
+      "line": 8,
+      "expression": "mat({color:'#ffd51b',roughness:.23,metalness:.02,clearcoat:1,clearcoatRoughness:.12})"
+    },
+    {
+      "path": "web/src/senna-driver.js",
+      "source": "web/src/senna-driver.js#4:createSennaDriver",
+      "callee": "mat",
+      "line": 9,
+      "expression": "mat({color:'#101217',roughness:.72})"
+    },
+    {
+      "path": "web/src/senna-driver.js",
+      "source": "web/src/senna-driver.js#4:createSennaDriver",
+      "callee": "mat",
+      "line": 10,
+      "expression": "mat({color:'#142229',metalness:.65,roughness:.13,clearcoat:1,clearcoatRoughness:.05})"
+    },
+    {
+      "path": "web/src/senna-driver.js",
+      "source": "web/src/senna-driver.js#4:createSennaDriver",
+      "callee": "mat",
+      "line": 11,
+      "expression": "mat({color:'#adb5b8',metalness:.85,roughness:.3})"
+    },
+    {
+      "path": "web/src/senna-driver.js",
+      "source": "web/src/senna-driver.js#4:createSennaDriver",
+      "callee": "mat",
+      "line": 16,
+      "expression": "mat({color:'#b51c22',roughness:.88,bumpMap:weave,bumpScale:.0007})"
+    },
+    {
+      "path": "web/src/senna-driver.js",
+      "source": "web/src/senna-driver.js#4:createSennaDriver",
+      "callee": "mat",
+      "line": 17,
+      "expression": "mat({color:'#eee9df',roughness:.8,bumpMap:weave,bumpScale:.0004})"
+    },
+    {
+      "path": "web/src/senna-driver.js",
+      "source": "web/src/senna-driver.js#4:createSennaDriver",
+      "callee": "mat",
+      "line": 18,
+      "expression": "mat({color:'#20242b',roughness:.92})"
+    },
+    {
+      "path": "web/src/senna-driver.js",
+      "source": "web/src/senna-driver.js#20:ellipsoid",
+      "callee": "mesh",
+      "line": 20,
+      "expression": "mesh(new THREE.SphereGeometry(1,40,28),material,parent)"
+    },
+    {
+      "path": "web/src/senna-driver.js",
+      "source": "web/src/senna-driver.js#21:limb",
+      "callee": "mesh",
+      "line": 21,
+      "expression": "mesh(new THREE.CylinderGeometry(r2,r1,d.length(),24,6),material)"
+    },
+    {
+      "path": "web/src/senna-driver.js",
+      "source": "web/src/senna-driver.js#4:createSennaDriver",
+      "callee": "ellipsoid",
+      "line": 23,
+      "expression": "ellipsoid([0,.48,.16],[.117,.18,.13],suit)"
+    },
+    {
+      "path": "web/src/senna-driver.js",
+      "source": "web/src/senna-driver.js#4:createSennaDriver",
+      "callee": "ellipsoid",
+      "line": 25,
+      "expression": "ellipsoid([side*.105,.59,.13],[.045,.06,.064],suit)"
+    },
+    {
+      "path": "web/src/senna-driver.js",
+      "source": "web/src/senna-driver.js#4:createSennaDriver",
+      "callee": "limb",
+      "line": 26,
+      "expression": "limb([side*.11,.58,.14],[side*.125,.45,.34],.043,.034,suit)"
+    },
+    {
+      "path": "web/src/senna-driver.js",
+      "source": "web/src/senna-driver.js#4:createSennaDriver",
+      "callee": "ellipsoid",
+      "line": 27,
+      "expression": "ellipsoid([side*.125,.45,.34],[.035,.036,.04],suit)"
+    },
+    {
+      "path": "web/src/senna-driver.js",
+      "source": "web/src/senna-driver.js#4:createSennaDriver",
+      "callee": "limb",
+      "line": 28,
+      "expression": "limb([side*.125,.45,.34],[side*.088,.586,.493],.033,.025,suit)"
+    },
+    {
+      "path": "web/src/senna-driver.js",
+      "source": "web/src/senna-driver.js#4:createSennaDriver",
+      "callee": "ellipsoid",
+      "line": 29,
+      "expression": "ellipsoid([side*.088,.591,.509],[.028,.044,.025],glove)"
+    },
+    {
+      "path": "web/src/senna-driver.js",
+      "source": "web/src/senna-driver.js#4:createSennaDriver",
+      "callee": "ellipsoid",
+      "line": 30,
+      "expression": "ellipsoid([side*.065,.584,.518],[.012,.022,.017],glove)"
+    },
+    {
+      "path": "web/src/senna-driver.js",
+      "source": "web/src/senna-driver.js#4:createSennaDriver",
+      "callee": "limb",
+      "line": 31,
+      "expression": "limb([side*.062,.61,.195],[side*.046,.40,.28],.016,.016,belt)"
+    },
+    {
+      "path": "web/src/senna-driver.js",
+      "source": "web/src/senna-driver.js#4:createSennaDriver",
+      "callee": "ellipsoid",
+      "line": 33,
+      "expression": "ellipsoid([0,.64,.065],[.057,.052,.058],rubber)"
+    },
+    {
+      "path": "web/src/senna-driver.js",
+      "source": "web/src/senna-driver.js#37:surface",
+      "callee": "radius",
+      "line": 38,
+      "expression": "radius(y)"
+    },
+    {
+      "path": "web/src/senna-driver.js",
+      "source": "web/src/senna-driver.js#37:surface",
+      "callee": "mesh",
+      "line": 40,
+      "expression": "mesh(g,material,helmet)"
+    },
+    {
+      "path": "web/src/senna-driver.js",
+      "source": "web/src/senna-driver.js#4:createSennaDriver",
+      "callee": "surface",
+      "line": 42,
+      "expression": "surface(-.132,.153,-Math.PI,Math.PI,paint)"
+    },
+    {
+      "path": "web/src/senna-driver.js",
+      "source": "web/src/senna-driver.js#4:createSennaDriver",
+      "callee": "mat",
+      "line": 43,
+      "expression": "mat({color:'#005b36',roughness:.27,clearcoat:1})"
+    },
+    {
+      "path": "web/src/senna-driver.js",
+      "source": "web/src/senna-driver.js#4:createSennaDriver",
+      "callee": "mat",
+      "line": 43,
+      "expression": "mat({color:'#052456',roughness:.27,clearcoat:1})"
+    },
+    {
+      "path": "web/src/senna-driver.js",
+      "source": "web/src/senna-driver.js#4:createSennaDriver",
+      "callee": "surface",
+      "line": 44,
+      "expression": "surface(.055,.083,-Math.PI,Math.PI,green,.0008,4)"
+    },
+    {
+      "path": "web/src/senna-driver.js",
+      "source": "web/src/senna-driver.js#4:createSennaDriver",
+      "callee": "surface",
+      "line": 45,
+      "expression": "surface(-.054,-.026,-Math.PI,Math.PI,blue,.0008,4)"
+    },
+    {
+      "path": "web/src/senna-driver.js",
+      "source": "web/src/senna-driver.js#4:createSennaDriver",
+      "callee": "surface",
+      "line": 46,
+      "expression": "surface(-.131,-.123,-Math.PI,Math.PI,rubber,.001,2)"
+    },
+    {
+      "path": "web/src/senna-driver.js",
+      "source": "web/src/senna-driver.js#4:createSennaDriver",
+      "callee": "surface",
+      "line": 48,
+      "expression": "surface(-.021,.052,-1.24,1.24,rubber,.002,12)"
+    },
+    {
+      "path": "web/src/senna-driver.js",
+      "source": "web/src/senna-driver.js#4:createSennaDriver",
+      "callee": "surface",
+      "line": 49,
+      "expression": "surface(-.014,.046,-1.18,1.18,visor,.0035,12)"
+    },
+    {
+      "path": "web/src/senna-driver.js",
+      "source": "web/src/senna-driver.js#4:createSennaDriver",
+      "callee": "mesh",
+      "line": 50,
+      "expression": "mesh(new THREE.CylinderGeometry(.008,.008,.004,24),metal,helmet)"
+    },
+    {
+      "path": "web/src/senna-driver.js",
+      "source": "web/src/senna-driver.js#4:createSennaDriver",
+      "callee": "mesh",
+      "line": 51,
+      "expression": "mesh(new THREE.BoxGeometry(.009,.008,.003),rubber,helmet)"
+    },
+    {
+      "path": "web/src/senna-driver.js",
+      "source": "web/src/senna-driver.js#4:createSennaDriver",
+      "callee": "mat",
+      "line": 54,
+      "expression": "mat({map:label,transparent:true,depthWrite:false,roughness:.3})"
+    },
+    {
+      "path": "web/src/senna-driver.js",
+      "source": "web/src/senna-driver.js#4:createSennaDriver",
+      "callee": "surface",
+      "line": 54,
+      "expression": "surface(-.115,-.083,-.7,.7,labelMat,.002,6)"
+    },
+    {
       "path": "web/src/studio.js",
       "source": "web/src/studio.js#2:setupStudio",
       "callee": "panel",
@@ -3164,6 +4947,160 @@
       "callee": "upgrade",
       "line": 247,
       "expression": "upgrade(o.material)"
+    },
+    {
+      "path": "web/src/surface-library.js",
+      "source": "web/src/surface-library.js#28:bake",
+      "callee": "pixel",
+      "line": 31,
+      "expression": "pixel(x,y)"
+    },
+    {
+      "path": "web/src/surface-library.js",
+      "source": "web/src/surface-library.js#28:bake",
+      "callee": "clamp",
+      "line": 32,
+      "expression": "clamp(value)"
+    },
+    {
+      "path": "web/src/surface-library.js",
+      "source": "web/src/surface-library.js#28:bake",
+      "callee": "clamp",
+      "line": 33,
+      "expression": "clamp(roughness)"
+    },
+    {
+      "path": "web/src/surface-library.js",
+      "source": "web/src/surface-library.js#28:bake",
+      "callee": "texture",
+      "line": 41,
+      "expression": "texture(colors,true)"
+    },
+    {
+      "path": "web/src/surface-library.js",
+      "source": "web/src/surface-library.js#28:bake",
+      "callee": "texture",
+      "line": 41,
+      "expression": "texture(rough)"
+    },
+    {
+      "path": "web/src/surface-library.js",
+      "source": "web/src/surface-library.js#28:bake",
+      "callee": "texture",
+      "line": 41,
+      "expression": "texture(normals)"
+    },
+    {
+      "path": "web/src/surface-library.js",
+      "source": "web/src/surface-library.js#16:createSurfaceLibrary",
+      "callee": "bake",
+      "line": 45,
+      "expression": "bake('carbon',.024,(x,y)=>{\r\n  const u=x/size*8,v=y/size*8,ix=Math.floor(u),iy=Math.floor(v),over=((ix-iy+16)%4)<2;\r\n  const cross=over?v%1:u%1,along=over?u:v;\r\n  const crown=Math."
+    },
+    {
+      "path": "web/src/surface-library.js",
+      "source": "web/src/surface-library.js#16:createSurfaceLibrary",
+      "callee": "clamp",
+      "line": 49,
+      "expression": "clamp(crown*3)"
+    },
+    {
+      "path": "web/src/surface-library.js",
+      "source": "web/src/surface-library.js#16:createSurfaceLibrary",
+      "callee": "noise",
+      "line": 49,
+      "expression": "noise(x,y,71)"
+    },
+    {
+      "path": "web/src/surface-library.js",
+      "source": "web/src/surface-library.js#16:createSurfaceLibrary",
+      "callee": "bake",
+      "line": 52,
+      "expression": "bake('rubber',.08,(x,y)=>{\r\n  const grain=noise(x,y,139),soft=(noise(x>>2,y>>2,47)+noise(x>>3,y>>3,113))*.5;\r\n  // Fine mould striations stay faint: no cracks, damage or fake wear "
+    },
+    {
+      "path": "web/src/surface-library.js",
+      "source": "web/src/surface-library.js#16:createSurfaceLibrary",
+      "callee": "noise",
+      "line": 53,
+      "expression": "noise(x,y,139)"
+    },
+    {
+      "path": "web/src/surface-library.js",
+      "source": "web/src/surface-library.js#16:createSurfaceLibrary",
+      "callee": "noise",
+      "line": 53,
+      "expression": "noise(x>>2,y>>2,47)"
+    },
+    {
+      "path": "web/src/surface-library.js",
+      "source": "web/src/surface-library.js#16:createSurfaceLibrary",
+      "callee": "noise",
+      "line": 53,
+      "expression": "noise(x>>3,y>>3,113)"
+    },
+    {
+      "path": "web/src/surface-library.js",
+      "source": "web/src/surface-library.js#16:createSurfaceLibrary",
+      "callee": "bake",
+      "line": 58,
+      "expression": "bake('aluminum',.12,(x,y)=>{\r\n  const band=noise(0,y,307),grain=noise(x,y,311),wave=Math.sin(x/size*Math.PI*8+y/size*Math.PI*2)*.5+.5;\r\n  return {height:band*.06+grain*.004,value:."
+    },
+    {
+      "path": "web/src/surface-library.js",
+      "source": "web/src/surface-library.js#16:createSurfaceLibrary",
+      "callee": "noise",
+      "line": 59,
+      "expression": "noise(0,y,307)"
+    },
+    {
+      "path": "web/src/surface-library.js",
+      "source": "web/src/surface-library.js#16:createSurfaceLibrary",
+      "callee": "noise",
+      "line": 59,
+      "expression": "noise(x,y,311)"
+    },
+    {
+      "path": "web/src/surface-library.js",
+      "source": "web/src/surface-library.js#16:createSurfaceLibrary",
+      "callee": "bake",
+      "line": 62,
+      "expression": "bake('paint',.035,(x,y)=>{\r\n  const grain=noise(x,y,733),orangePeel=Math.sin(x/size*Math.PI*32)*Math.sin(y/size*Math.PI*28);\r\n  return {height:orangePeel*.022+(grain-.5)*.008,value"
+    },
+    {
+      "path": "web/src/surface-library.js",
+      "source": "web/src/surface-library.js#16:createSurfaceLibrary",
+      "callee": "noise",
+      "line": 63,
+      "expression": "noise(x,y,733)"
+    },
+    {
+      "path": "web/src/surface-library.js",
+      "source": "web/src/surface-library.js#68:applyTo",
+      "callee": "clamp",
+      "line": 72,
+      "expression": "clamp(uvSpanMeters/surface.tileMeters,.1,128)"
+    },
+    {
+      "path": "web/src/surface-library.js",
+      "source": "web/src/surface-library.js#68:applyTo",
+      "callee": "transformed",
+      "line": 73,
+      "expression": "transformed(surface.roughness,repeat)"
+    },
+    {
+      "path": "web/src/surface-library.js",
+      "source": "web/src/surface-library.js#68:applyTo",
+      "callee": "transformed",
+      "line": 73,
+      "expression": "transformed(surface.normal,repeat)"
+    },
+    {
+      "path": "web/src/surface-library.js",
+      "source": "web/src/surface-library.js#68:applyTo",
+      "callee": "transformed",
+      "line": 77,
+      "expression": "transformed(surface.color,repeat)"
     },
     {
       "path": "web/src/tunnel-visual.js",
@@ -4065,92 +6002,120 @@
       "path": "web/test-mechanics.mjs",
       "source": "module",
       "callee": "createMechanics",
-      "line": 11,
+      "line": 12,
       "expression": "createMechanics(model)"
     },
     {
       "path": "web/test-mechanics.mjs",
       "source": "module",
       "callee": "Error",
-      "line": 12,
+      "line": 13,
       "expression": "Error('Explosion not converged')"
     },
     {
       "path": "web/test-mechanics.mjs",
       "source": "module",
       "callee": "Error",
-      "line": 12,
+      "line": 13,
       "expression": "Error('Assembly not converged')"
     },
     {
       "path": "web/test-mechanics.mjs",
       "source": "module",
       "callee": "Error",
-      "line": 14,
+      "line": 15,
       "expression": "Error('Geometry drift '+initialError+' '+finalError)"
     },
     {
       "path": "web/test-mechanics.mjs",
       "source": "module",
       "callee": "Error",
-      "line": 15,
+      "line": 16,
       "expression": "Error('Missing parts/pivots')"
     },
     {
       "path": "web/test-mechanics.mjs",
       "source": "module",
       "callee": "Error",
-      "line": 16,
+      "line": 17,
       "expression": "Error('Motion should pause')"
     },
     {
       "path": "web/test-mechanics.mjs",
       "source": "module",
       "callee": "Error",
-      "line": 16,
+      "line": 17,
       "expression": "Error('Motion should resume')"
     },
     {
       "path": "web/test-mechanics.mjs",
       "source": "module",
       "callee": "Error",
-      "line": 17,
+      "line": 18,
       "expression": "Error('Steering missing')"
     },
     {
       "path": "web/test-mechanics.mjs",
       "source": "module",
       "callee": "Error",
-      "line": 18,
+      "line": 19,
       "expression": "Error('Reset drift')"
     },
     {
       "path": "web/test-mechanics.mjs",
       "source": "module",
       "callee": "Error",
-      "line": 19,
+      "line": 20,
       "expression": "Error('Each wheel must steer its inner cover')"
     },
     {
       "path": "web/test-mechanics.mjs",
       "source": "module",
       "callee": "Error",
-      "line": 20,
+      "line": 21,
       "expression": "Error('Assembly should clear isolation')"
     },
     {
       "path": "web/test-mechanics.mjs",
       "source": "module",
       "callee": "Error",
-      "line": 21,
+      "line": 22,
       "expression": "Error('Drag not persisted')"
     },
     {
       "path": "web/test-mechanics.mjs",
       "source": "module",
       "callee": "Error",
-      "line": 22,
+      "line": 23,
       "expression": "Error('Drag reset drift')"
+    },
+    {
+      "path": "web/test-power-unit.mjs",
+      "source": "module",
+      "callee": "Error",
+      "line": 10,
+      "expression": "Error('Motor sem os 19 canais de movimento esperados')"
+    },
+    {
+      "path": "web/test-power-unit.mjs",
+      "source": "module",
+      "callee": "Error",
+      "line": 12,
+      "expression": "Error('Grupos do motor ausentes')"
+    },
+    {
+      "path": "web/test-power-unit.mjs",
+      "source": "module",
+      "callee": "Error",
+      "line": 17,
+      "expression": "Error('Motor nao anima')"
+    },
+    {
+      "path": "web/test-power-unit.mjs",
+      "source": "module",
+      "callee": "Error",
+      "line": 21,
+      "expression": "Error('Deriva no motor: '+drift)"
     }
   ]
 }

@@ -31,10 +31,28 @@
       "path": "web/src/branding.js"
     },
     {
+      "id": "web/src/car-look.js",
+      "label": "web/src/car-look.js",
+      "kind": "file",
+      "path": "web/src/car-look.js"
+    },
+    {
       "id": "web/src/customize.js",
       "label": "web/src/customize.js",
       "kind": "file",
       "path": "web/src/customize.js"
+    },
+    {
+      "id": "web/src/engine/engine-shot.js",
+      "label": "web/src/engine/engine-shot.js",
+      "kind": "file",
+      "path": "web/src/engine/engine-shot.js"
+    },
+    {
+      "id": "web/src/engine/in-car.js",
+      "label": "web/src/engine/in-car.js",
+      "kind": "file",
+      "path": "web/src/engine/in-car.js"
     },
     {
       "id": "web/src/flow-detail.js",
@@ -61,10 +79,22 @@
       "path": "web/src/mechanics.js"
     },
     {
+      "id": "web/src/senna-driver.js",
+      "label": "web/src/senna-driver.js",
+      "kind": "file",
+      "path": "web/src/senna-driver.js"
+    },
+    {
       "id": "web/src/studio.js",
       "label": "web/src/studio.js",
       "kind": "file",
       "path": "web/src/studio.js"
+    },
+    {
+      "id": "web/src/surface-library.js",
+      "label": "web/src/surface-library.js",
+      "kind": "file",
+      "path": "web/src/surface-library.js"
     },
     {
       "id": "web/src/tunnel-visual.js",
@@ -91,6 +121,12 @@
       "path": "web/test-mechanics.mjs"
     },
     {
+      "id": "web/test-power-unit.mjs",
+      "label": "web/test-power-unit.mjs",
+      "kind": "file",
+      "path": "web/test-power-unit.mjs"
+    },
+    {
       "id": "external:fs",
       "label": "fs",
       "kind": "external",
@@ -111,6 +147,12 @@
     {
       "id": "external:http",
       "label": "http",
+      "kind": "external",
+      "path": null
+    },
+    {
+      "id": "external:three/addons/libs/meshopt_decoder.module.js",
+      "label": "three/addons/libs/meshopt_decoder.module.js",
       "kind": "external",
       "path": null
     },
@@ -268,13 +310,73 @@
     },
     {
       "source": "web/src/app-v2.js",
-      "target": "web/src/branding.js",
+      "target": "external:three/addons/libs/meshopt_decoder.module.js",
       "relation": "importa",
       "confidence": "EXTRACTED",
       "confidence_score": 1,
       "evidence": {
         "path": "web/src/app-v2.js",
         "line": 1,
+        "text": "import {MeshoptDecoder} from 'three/addons/libs/meshopt_decoder.module.js'"
+      }
+    },
+    {
+      "source": "web/src/app-v2.js",
+      "target": "web/src/engine/in-car.js",
+      "relation": "importa",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "evidence": {
+        "path": "web/src/app-v2.js",
+        "line": 2,
+        "text": "import {createInCarEngine} from './engine/in-car.js'"
+      }
+    },
+    {
+      "source": "web/src/app-v2.js",
+      "target": "web/src/car-look.js",
+      "relation": "importa",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "evidence": {
+        "path": "web/src/app-v2.js",
+        "line": 3,
+        "text": "import {enhanceCar} from './car-look.js'"
+      }
+    },
+    {
+      "source": "web/src/app-v2.js",
+      "target": "web/src/surface-library.js",
+      "relation": "importa",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "evidence": {
+        "path": "web/src/app-v2.js",
+        "line": 4,
+        "text": "import {createSurfaceLibrary} from './surface-library.js'"
+      }
+    },
+    {
+      "source": "web/src/app-v2.js",
+      "target": "web/src/senna-driver.js",
+      "relation": "importa",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "evidence": {
+        "path": "web/src/app-v2.js",
+        "line": 5,
+        "text": "import {createSennaDriver} from './senna-driver.js'"
+      }
+    },
+    {
+      "source": "web/src/app-v2.js",
+      "target": "web/src/branding.js",
+      "relation": "importa",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "evidence": {
+        "path": "web/src/app-v2.js",
+        "line": 6,
         "text": "import {applyInteiaBranding} from './branding.js'"
       }
     },
@@ -286,7 +388,7 @@
       "confidence_score": 1,
       "evidence": {
         "path": "web/src/app-v2.js",
-        "line": 2,
+        "line": 7,
         "text": "import {brandSVG} from './identity.js'"
       }
     },
@@ -298,7 +400,7 @@
       "confidence_score": 1,
       "evidence": {
         "path": "web/src/app-v2.js",
-        "line": 3,
+        "line": 8,
         "text": "import {GLTFExporter} from 'three/addons/exporters/GLTFExporter.js'"
       }
     },
@@ -310,7 +412,7 @@
       "confidence_score": 1,
       "evidence": {
         "path": "web/src/app-v2.js",
-        "line": 4,
+        "line": 9,
         "text": "import {createGarage} from './garage.js'"
       }
     },
@@ -322,7 +424,7 @@
       "confidence_score": 1,
       "evidence": {
         "path": "web/src/app-v2.js",
-        "line": 5,
+        "line": 10,
         "text": "import {createWindTunnel} from './wind-tunnel.js'"
       }
     },
@@ -334,7 +436,7 @@
       "confidence_score": 1,
       "evidence": {
         "path": "web/src/app-v2.js",
-        "line": 6,
+        "line": 11,
         "text": "import {setupCustomization} from './customize.js'"
       }
     },
@@ -346,7 +448,7 @@
       "confidence_score": 1,
       "evidence": {
         "path": "web/src/app-v2.js",
-        "line": 7,
+        "line": 12,
         "text": "import * as THREE from 'three'"
       }
     },
@@ -358,7 +460,7 @@
       "confidence_score": 1,
       "evidence": {
         "path": "web/src/app-v2.js",
-        "line": 8,
+        "line": 13,
         "text": "import {OrbitControls} from 'three/addons/controls/OrbitControls.js'"
       }
     },
@@ -370,7 +472,7 @@
       "confidence_score": 1,
       "evidence": {
         "path": "web/src/app-v2.js",
-        "line": 9,
+        "line": 14,
         "text": "import {TransformControls} from 'three/addons/controls/TransformControls.js'"
       }
     },
@@ -382,7 +484,7 @@
       "confidence_score": 1,
       "evidence": {
         "path": "web/src/app-v2.js",
-        "line": 10,
+        "line": 15,
         "text": "import {EffectComposer} from 'three/addons/postprocessing/EffectComposer.js'"
       }
     },
@@ -394,7 +496,7 @@
       "confidence_score": 1,
       "evidence": {
         "path": "web/src/app-v2.js",
-        "line": 11,
+        "line": 16,
         "text": "import {RenderPass} from 'three/addons/postprocessing/RenderPass.js'"
       }
     },
@@ -406,7 +508,7 @@
       "confidence_score": 1,
       "evidence": {
         "path": "web/src/app-v2.js",
-        "line": 12,
+        "line": 17,
         "text": "import {SSAOPass} from 'three/addons/postprocessing/SSAOPass.js'"
       }
     },
@@ -418,7 +520,7 @@
       "confidence_score": 1,
       "evidence": {
         "path": "web/src/app-v2.js",
-        "line": 13,
+        "line": 18,
         "text": "import {OutputPass} from 'three/addons/postprocessing/OutputPass.js'"
       }
     },
@@ -430,7 +532,7 @@
       "confidence_score": 1,
       "evidence": {
         "path": "web/src/app-v2.js",
-        "line": 14,
+        "line": 19,
         "text": "import {SMAAPass} from 'three/addons/postprocessing/SMAAPass.js'"
       }
     },
@@ -442,7 +544,7 @@
       "confidence_score": 1,
       "evidence": {
         "path": "web/src/app-v2.js",
-        "line": 15,
+        "line": 20,
         "text": "import {GLTFLoader} from 'three/addons/loaders/GLTFLoader.js'"
       }
     },
@@ -454,7 +556,7 @@
       "confidence_score": 1,
       "evidence": {
         "path": "web/src/app-v2.js",
-        "line": 16,
+        "line": 21,
         "text": "import {setupStudio,applyCarMaterials} from './studio.js'"
       }
     },
@@ -466,20 +568,8 @@
       "confidence_score": 1,
       "evidence": {
         "path": "web/src/app-v2.js",
-        "line": 17,
+        "line": 22,
         "text": "import {createMechanics} from './mechanics.js'"
-      }
-    },
-    {
-      "source": "web/src/branding.js",
-      "target": "web/src/identity.js",
-      "relation": "importa",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1,
-      "evidence": {
-        "path": "web/src/branding.js",
-        "line": 1,
-        "text": "import {glyphs} from './identity.js'"
       }
     },
     {
@@ -490,7 +580,7 @@
       "confidence_score": 1,
       "evidence": {
         "path": "web/src/branding.js",
-        "line": 2,
+        "line": 1,
         "text": "import * as THREE from 'three'"
       }
     },
@@ -502,8 +592,68 @@
       "confidence_score": 1,
       "evidence": {
         "path": "web/src/branding.js",
-        "line": 3,
+        "line": 2,
         "text": "import {DecalGeometry} from 'three/addons/geometries/DecalGeometry.js'"
+      }
+    },
+    {
+      "source": "web/src/car-look.js",
+      "target": "external:three",
+      "relation": "importa",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "evidence": {
+        "path": "web/src/car-look.js",
+        "line": 6,
+        "text": "import * as THREE from 'three'"
+      }
+    },
+    {
+      "source": "web/src/engine/in-car.js",
+      "target": "external:three",
+      "relation": "importa",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "evidence": {
+        "path": "web/src/engine/in-car.js",
+        "line": 1,
+        "text": "import * as THREE from 'three'"
+      }
+    },
+    {
+      "source": "web/src/engine/in-car.js",
+      "target": "external:three/addons/loaders/GLTFLoader.js",
+      "relation": "importa",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "evidence": {
+        "path": "web/src/engine/in-car.js",
+        "line": 2,
+        "text": "import {GLTFLoader} from 'three/addons/loaders/GLTFLoader.js'"
+      }
+    },
+    {
+      "source": "web/src/engine/in-car.js",
+      "target": "external:three/addons/libs/meshopt_decoder.module.js",
+      "relation": "importa",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "evidence": {
+        "path": "web/src/engine/in-car.js",
+        "line": 3,
+        "text": "import {MeshoptDecoder} from 'three/addons/libs/meshopt_decoder.module.js'"
+      }
+    },
+    {
+      "source": "web/src/engine/in-car.js",
+      "target": "web/src/engine/engine-shot.js",
+      "relation": "importa",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "evidence": {
+        "path": "web/src/engine/in-car.js",
+        "line": 4,
+        "text": "import {engineShot} from './engine-shot.js'"
       }
     },
     {
@@ -574,6 +724,18 @@
       "confidence_score": 1,
       "evidence": {
         "path": "web/src/mechanics.js",
+        "line": 1,
+        "text": "import * as THREE from 'three'"
+      }
+    },
+    {
+      "source": "web/src/senna-driver.js",
+      "target": "external:three",
+      "relation": "importa",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "evidence": {
+        "path": "web/src/senna-driver.js",
         "line": 1,
         "text": "import * as THREE from 'three'"
       }
@@ -664,13 +826,25 @@
     },
     {
       "source": "web/test-mechanics.mjs",
-      "target": "external:node:fs",
+      "target": "external:three/addons/libs/meshopt_decoder.module.js",
       "relation": "importa",
       "confidence": "EXTRACTED",
       "confidence_score": 1,
       "evidence": {
         "path": "web/test-mechanics.mjs",
         "line": 1,
+        "text": "import {MeshoptDecoder} from 'three/addons/libs/meshopt_decoder.module.js'"
+      }
+    },
+    {
+      "source": "web/test-mechanics.mjs",
+      "target": "external:node:fs",
+      "relation": "importa",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "evidence": {
+        "path": "web/test-mechanics.mjs",
+        "line": 2,
         "text": "import fs from 'node:fs'"
       }
     },
@@ -682,7 +856,7 @@
       "confidence_score": 1,
       "evidence": {
         "path": "web/test-mechanics.mjs",
-        "line": 2,
+        "line": 3,
         "text": "import * as THREE from 'three'"
       }
     },
@@ -694,7 +868,7 @@
       "confidence_score": 1,
       "evidence": {
         "path": "web/test-mechanics.mjs",
-        "line": 3,
+        "line": 4,
         "text": "import {GLTFLoader} from 'three/addons/loaders/GLTFLoader.js'"
       }
     },
@@ -706,8 +880,56 @@
       "confidence_score": 1,
       "evidence": {
         "path": "web/test-mechanics.mjs",
-        "line": 4,
+        "line": 5,
         "text": "import {createMechanics} from './src/mechanics.js'"
+      }
+    },
+    {
+      "source": "web/test-power-unit.mjs",
+      "target": "external:three/addons/libs/meshopt_decoder.module.js",
+      "relation": "importa",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "evidence": {
+        "path": "web/test-power-unit.mjs",
+        "line": 1,
+        "text": "import {MeshoptDecoder} from 'three/addons/libs/meshopt_decoder.module.js'"
+      }
+    },
+    {
+      "source": "web/test-power-unit.mjs",
+      "target": "external:node:fs",
+      "relation": "importa",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "evidence": {
+        "path": "web/test-power-unit.mjs",
+        "line": 2,
+        "text": "import fs from 'node:fs'"
+      }
+    },
+    {
+      "source": "web/test-power-unit.mjs",
+      "target": "external:three",
+      "relation": "importa",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "evidence": {
+        "path": "web/test-power-unit.mjs",
+        "line": 3,
+        "text": "import * as THREE from 'three'"
+      }
+    },
+    {
+      "source": "web/test-power-unit.mjs",
+      "target": "external:three/addons/loaders/GLTFLoader.js",
+      "relation": "importa",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "evidence": {
+        "path": "web/test-power-unit.mjs",
+        "line": 4,
+        "text": "import {GLTFLoader} from 'three/addons/loaders/GLTFLoader.js'"
       }
     }
   ],

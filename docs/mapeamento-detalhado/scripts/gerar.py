@@ -67,7 +67,10 @@ def glb_info(path):
         times=[]
         for s in a['samplers']:
             acc=g['accessors'][s['input']]; bv=g['bufferViews'][acc['bufferView']]
-            if binary is not None and acc['componentType']==5126:
+            if 'EXT_meshopt_compression' in bv.get('extensions',{}):
+                # Compressed offsets address decoded data, not the binary chunk.
+                times.extend(acc.get('min',[])+acc.get('max',[]))
+            elif binary is not None and acc['componentType']==5126:
                 offset=bv.get('byteOffset',0)+acc.get('byteOffset',0)
                 stride=bv.get('byteStride',4)
                 times.extend(struct.unpack_from('<f',binary,offset+i*stride)[0] for i in range(acc['count']))
@@ -211,12 +214,12 @@ def main():
             if (e['target'] in bypath or e['target'].startswith('external:')) and not e['relation'].startswith(('documenta','declara_licenca','identifica_licenca','registra_fonte')) and (e['relation'] not in output_relations or e['relation']=='le_e_reescreve_com_clipe_unico'):row['dependencies'].append(ref)
         if e['target'] in bypath:bypath[e['target']]['used_by'].append({'source':e['source'],'relation':e['relation']})
     parts=json.loads((ROOT/'documentacao/componentes-origem.json').read_text(encoding='utf-8'))
-    web_parts=bypath['web/assets/carro-movable.glb']['glb']['parts']
+    web_parts=bypath['web/assets/carro-aula-v2.glb']['glb']['parts']
     provenance_check=all(any(w['name']==p['name'] and w['extras']=={k:v for k,v in p.items() if k!='name'} for w in web_parts) for p in parts['parts'])
     # Extras podem incluir o campo name: compare campos presentes no documento sem inferir autoria.
     if not provenance_check:
         provenance_check=all(any(w['name']==p['name'] and all(w['extras'].get(k)==v for k,v in p.items() if k!='name') for w in web_parts) for p in parts['parts'])
-    write('dados/componentes.json',{'source':'documentacao/componentes-origem.json','web_glb':'web/assets/carro-movable.glb','documented_parts':len(parts['parts']),'glb_parts':len(web_parts),'all_documented_fields_match_glb':provenance_check,**parts})
+    write('dados/componentes.json',{'source':'documentacao/componentes-origem.json','web_glb':'web/assets/carro-aula-v2.glb','documented_parts':len(parts['parts']),'glb_parts':len(web_parts),'all_documented_fields_match_glb':provenance_check,**parts})
     manifest=[]
     for m in json.loads((ROOT/'manifesto-sha256.json').read_text(encoding='utf-8')):
         actual=bypath.get(m['arquivo']);manifest.append({**m,'matches':bool(actual and actual['sha256']==m['sha256'] and actual['bytes']==m['bytes'])})

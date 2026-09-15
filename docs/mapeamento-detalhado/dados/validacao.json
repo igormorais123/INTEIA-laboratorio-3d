@@ -1,11 +1,11 @@
 {
-  "timestamp": "2026-09-13T02:35:51.351417+00:00",
+  "timestamp": "2026-09-15T20:00:56.802474+00:00",
   "passed": true,
-  "links_checked": 510,
-  "catalog_files": 90,
-  "symbols": 94,
-  "nodes": 204,
-  "edges": 657,
+  "links_checked": 531,
+  "catalog_files": 106,
+  "symbols": 166,
+  "nodes": 293,
+  "edges": 908,
   "parts": 97,
   "errors": [],
   "warnings": [

@@ -187,7 +187,7 @@ def production_edges():
                       'evidence': {'path': path, 'line': line_of(path, needle), 'text': needle},
                       'href': href(path, line_of(path, needle))})
     add('web/src/app-v2.js', 'web/index.html', 'empacota', 'web/build.cjs', "entryPoints:['src/app-v2.js']")
-    for source, needle in [('web/src/template-v2.html', "'src/template-v2.html'"), ('web/assets/carro-movable.glb', "'assets/carro-movable.glb'")]:
+    for source, needle in [('web/src/template-v2.html', "'src/template-v2.html'"), ('web/assets/carro-aula-v2.glb', "'assets/carro-aula-v2.glb'")]:
         add(source, 'web/index.html', 'incorpora', 'web/build.cjs', needle)
     add('web/assets/carro-movable.glb', 'ferramentas/package_blender.py', 'entrada', 'ferramentas/package_blender.py', "ROOT+'/web/assets/carro-movable.glb'")
     for target in ['INTEIA_F1_Master.blend', 'modelos/INTEIA_F1_estatico.glb', 'modelos/INTEIA_F1_animado.glb', 'texturas/INTEIA_Carbono_BaseColor.png', 'Previa-Blender.png', 'validacao-criacao.json']:
@@ -277,7 +277,7 @@ def make():
     records, imports, symbols = extract(files)
     pipeline = production_edges()
     dom = controls(files)
-    base = next(r['glb'] for r in records if r['path'] == 'web/assets/carro-movable.glb')
+    base = next(r['glb'] for r in records if r['path'] == 'web/assets/carro-aula-v2.glb')
     origin = json.loads(read('documentacao/componentes-origem.json'))['parts']
     actual = {r['extras']['partId']: r for r in base['components']}
     assert len(actual) == len(base['components']), 'partId duplicado no GLB'
@@ -302,7 +302,7 @@ def make():
     put('inventario.json', data)
     put('dependencias.json', graph)
     put('controles.json', {'limits': 'IDs do HTML e referências literais; IDs concatenados, delegação e CSS exigem revisão humana.', 'controls': dom})
-    put('componentes.json', {'source': 'documentacao/componentes-origem.json', 'comparedTo': 'web/assets/carro-movable.glb', 'parts': parts})
+    put('componentes.json', {'source': 'documentacao/componentes-origem.json', 'comparedTo': 'web/assets/carro-aula-v2.glb', 'parts': parts})
     rows = ['# Inventário completo', '', '[Índice dos mapas](README.md) · [Busca interativa](index.html)', '',
             'Gerado por `python ferramentas/mapear.py`. Todos os arquivos do escopo estão listados, inclusive entregas e documentos. Binários Blender são inventariados por hash; não são interpretados.', '',
             '| Arquivo | Papel | Tamanho canônico |', '| --- | --- | --- |']

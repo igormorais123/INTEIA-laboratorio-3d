@@ -20,19 +20,19 @@
     "evidence": {
       "path": "web/build.cjs",
       "line": 3,
-      "text": "const html=fs.readFileSync('src/template-v2.html','utf8').replace('__MODEL__',fs.readFileSync('assets/carro-movable.glb').toString('base64')).replace('__APP__',()=>bundle.replace(/<\\/script/gi,'<\\\\/script'));"
+      "text": "const html=fs.readFileSync('src/template-v2.html','utf8').replace('__MODEL__',fs.readFileSync('assets/carro-aula-v2.glb').toString('base64')).replace('__APP__',()=>bundle.replace(/<\\/script/gi,'<\\\\/script'));"
     }
   },
   {
     "source": "web/build.cjs",
-    "target": "web/assets/carro-movable.glb",
+    "target": "web/assets/carro-aula-v2.glb",
     "relation": "incorpora_como_base64",
     "confidence": "EXTRACTED",
     "confidence_score": 1.0,
     "evidence": {
       "path": "web/build.cjs",
       "line": 3,
-      "text": "const html=fs.readFileSync('src/template-v2.html','utf8').replace('__MODEL__',fs.readFileSync('assets/carro-movable.glb').toString('base64')).replace('__APP__',()=>bundle.replace(/<\\/script/gi,'<\\\\/script'));"
+      "text": "const html=fs.readFileSync('src/template-v2.html','utf8').replace('__MODEL__',fs.readFileSync('assets/carro-aula-v2.glb').toString('base64')).replace('__APP__',()=>bundle.replace(/<\\/script/gi,'<\\\\/script'));"
     }
   },
   {
@@ -92,7 +92,7 @@
     "evidence": {
       "path": "web/package.json",
       "line": 10,
-      "text": "\"test\": \"node test-mechanics.mjs && node test-aerodynamics.mjs\""
+      "text": "    \"test\": \"node test-mechanics.mjs && node test-aerodynamics.mjs && node test-power-unit.mjs\""
     }
   },
   {
@@ -104,7 +104,7 @@
     "evidence": {
       "path": "web/package.json",
       "line": 10,
-      "text": "\"test\": \"node test-mechanics.mjs && node test-aerodynamics.mjs\""
+      "text": "    \"test\": \"node test-mechanics.mjs && node test-aerodynamics.mjs && node test-power-unit.mjs\""
     }
   },
   {
@@ -115,7 +115,7 @@
     "confidence_score": 1.0,
     "evidence": {
       "path": "web/src/app-v2.js",
-      "line": 18,
+      "line": 23,
       "text": "const $=s=>document.querySelector(s),stage=$('#stage'),reduced=matchMedia('(prefers-reduced-motion: reduce)');"
     }
   },
@@ -163,7 +163,7 @@
     "confidence_score": 1.0,
     "evidence": {
       "path": "web/src/app-v2.js",
-      "line": 56,
+      "line": 72,
       "text": "$('#garage-export').onclick=async()=>{const button=$('#garage-export');button.disabled=true;button.textContent='Preparando GLB…';try{const data=await new GLTFExporter().parseAsync(garage.getExportScene(),{binary:true,onlyVisible:false});const url=URL.createObjectURL(new Blob([data],{type:'model/gltf-binary'}));const a=document.createElement('a');a.href=url;a.download='INTEIA-box-laboratorio.glb';a.click();setTimeout(()=>URL.revokeObjectURL(url),10000);}catch(e){console.error(e);status.textContent='Não foi possível exportar o box.';}finally{button.disabled=false;button.textContent='Baixar box 3D';}};"
     }
   },
@@ -175,8 +175,8 @@
     "confidence_score": 1.0,
     "evidence": {
       "path": "web/src/app-v2.js",
-      "line": 83,
-      "text": "renderer.setAnimationLoop(now=>{const dt=Math.min((now-last)/1000,.05);last=now;if(mechanics){mechanics.update(dt,now,reduced.matches);if(mechanics.playing){assembly.value=Math.round(mechanics.amount*100);$('#assembly-value').textContent=Math.round(mechanics.amount*100)+'%';if(lastTarget!==mechanics.target){view(currentView);lastTarget=mechanics.target;}}const paused=!mechanics.motionAvailable;$('#motion-note').hidden=!paused;['spin','steering','drs'].forEach(id=>$('#'+id).disabled=paused);$('#assembly-state').textContent=mechanics.amount<.001?'MONTADO':mechanics.amount>.999?'DESMONTADO':'EM TRANSIÇÃO';if(selectionBox)selectionBox.update();window.viewerInfo.assembly=mechanics.amount;window.viewerInfo.motionAvailable=mechanics.motionAvailable;}"
+      "line": 102,
+      "text": "renderer.setAnimationLoop(now=>{const dt=Math.min((now-last)/1000,.05);last=now;if(mechanics){mechanics.update(dt,now,reduced.matches);if(mechanics.playing){assembly.value=Math.round(mechanics.amount*100);$('#assembly-value').textContent=Math.round(mechanics.amount*100)+'%';if(lastTarget!==mechanics.target){view(currentView);lastTarget=mechanics.target;}}const paused=!mechanics.motionAvailable;$('#motion-note').hidden=!paused;['spin','steering','drs'].forEach(id=>$('#'+id).disabled=paused);$('#assembly-state').textContent=mechanics.amount<.001?'MONTADO':mechanics.amount>.999?'DESMONTADO':'EM TRANSIÇÃO';carLook?.update();driver?.update();if(driver)driver.root.visible=mechanics.motionAvailable&&!mechanics.isolated;engine?.update(dt,engineOpen?{open:1,cut:Number($('#engine-cut').value)/100,light:1}:null,enginePaused);if(engine){$('#engine-status').textContent=engine.state==='loading'?'Carregando motor…':engine.state==='failed'?'Motor indisponível. Recarregue para tentar novamente.':engine.ready?'Motor pronto · V6 ilustrativo':'Motor disponível sob demanda';$('#engine-cut').disabled=!engine.ready||!engineOpen;$('#engine-pause').disabled=!engine.ready;window.viewerInfo.engineState=engine.state;window.viewerInfo.engineOpen=engineOpen;window.viewerInfo.engineVisible=engine.root.visible;}if(selectionBox)selectionBox.update();window.viewerInfo.assembly=mechanics.amount;window.viewerInfo.motionAvailable=mechanics.motionAvailable;}"
     }
   },
   {
@@ -187,8 +187,8 @@
     "confidence_score": 1.0,
     "evidence": {
       "path": "web/src/app-v2.js",
-      "line": 49,
-      "text": "materials=applyCarMaterials(THREE,model);setupCustomization(materials,studio,renderer,scene);mechanics=createMechanics(model);applyInteiaBranding(model,mechanics);garage=createGarage({scene,renderer,studio,camera,mechanics});garage.setEnabled(true);windTunnel=createWindTunnel({scene,model,mechanics,reduced,studio,camera,onBeforeToggle:on=>{if(on){garageWasActive=garage.enabled;garage.setEnabled(false);}},onRegion:region=>{setFlowXray(region==='floor');cinematic=false;$('#wind-cinema').setAttribute('aria-pressed','false');controls.autoRotate=false;$('#orbit').setAttribute('aria-pressed','false');autoFit=false;const target=focus.clone();let direction=new THREE.Vector3(1,.28,1.4),scale=1.14;if(region==='wheels'){target.z=-span*.43;direction.set(1,.38,-.85);scale=1.10;}if(region==='floor'){target.y=.20;direction.set(1,.8,.5);scale=1.05;}moveCamera(target.clone().addScaledVector(direction.normalize(),distance*scale),target);},onToggle:on=>{if(!on&&garageWasActive)garage.setEnabled(true);setFlowXray(on&&$('#flow-region').value==='floor'&&$('#flow-detail').getAttribute('aria-pressed')==='true');tunnelActive=on;cinematic=false;$(\"#wind-cinema\").setAttribute(\"aria-pressed\",\"false\");controls.autoRotate=false;$(\"#orbit\").setAttribute(\"aria-pressed\",\"false\");autoFit=false;const target=focus.clone();target.y+=on?.15:0;moveCamera(target.clone().addScaledVector(new THREE.Vector3(1,.28,1.4).normalize(),distance*(on?1.14:1)),target);}});"
+      "line": 64,
+      "text": " garage=createGarage({scene,renderer,studio,camera,mechanics});garage.setEnabled(true);windTunnel=createWindTunnel({scene,model,mechanics,reduced,studio,camera,onBeforeToggle:on=>{closeEngine();if(on){garageWasActive=garage.enabled;garage.setEnabled(false);}},onRegion:region=>{setFlowXray(region==='floor');cinematic=false;$('#wind-cinema').setAttribute('aria-pressed','false');controls.autoRotate=false;$('#orbit').setAttribute('aria-pressed','false');autoFit=false;const target=focus.clone();let direction=new THREE.Vector3(1,.28,1.4),scale=1.14;if(region==='wheels'){target.z=-span*.43;direction.set(1,.38,-.85);scale=1.10;}if(region==='floor'){target.y=.20;direction.set(1,.8,.5);scale=1.05;}moveCamera(target.clone().addScaledVector(direction.normalize(),distance*scale),target);},onToggle:on=>{if(!on&&garageWasActive)garage.setEnabled(true);setFlowXray(on&&$('#flow-region').value==='floor'&&$('#flow-detail').getAttribute('aria-pressed')==='true');tunnelActive=on;cinematic=false;$(\"#wind-cinema\").setAttribute(\"aria-pressed\",\"false\");controls.autoRotate=false;$(\"#orbit\").setAttribute(\"aria-pressed\",\"false\");autoFit=false;const target=focus.clone();target.y+=on?.15:0;moveCamera(target.clone().addScaledVector(new THREE.Vector3(1,.28,1.4).normalize(),distance*(on?1.14:1)),target);}});"
     }
   },
   {
@@ -199,8 +199,8 @@
     "confidence_score": 1.0,
     "evidence": {
       "path": "web/src/app-v2.js",
-      "line": 84,
-      "text": "if(transition){const t=Math.min(1,(now-transition.start)/800),s=1-(1-t)**3;camera.position.lerpVectors(transition.from,transition.to,s);controls.target.lerpVectors(transition.fromTarget,transition.target,s);if(t===1)transition=null;}if(tunnelActive&&cinematic&&!reduced.matches){cinemaTime+=dt;const angle=.66+Math.sin(cinemaTime*.14)*.18;const radius=distance*1.14;const target=focus.clone();target.y+=.3;camera.position.set(Math.sin(angle)*radius,target.y+radius*(.32+.025*Math.sin(cinemaTime*.11)),Math.cos(angle)*radius);controls.target.copy(target);}controls.update(dt);studio.update(dt);garage?.update(dt);windTunnel?.update(dt);studio.floor.visible=camera.position.y>0;highQuality?composer.render():renderer.render(scene,camera);frameCount++;if(now-frameStart>2000){document.body.dataset.fps=String(Math.round(frameCount*1000/(now-frameStart)));frameCount=0;frameStart=now;}if(mechanics){document.body.dataset.parts=mechanics.records.length;document.body.dataset.assembly=mechanics.amount.toFixed(4);}});"
+      "line": 103,
+      "text": " if(transition){const t=Math.min(1,(now-transition.start)/800),s=1-(1-t)**3;camera.position.lerpVectors(transition.from,transition.to,s);controls.target.lerpVectors(transition.fromTarget,transition.target,s);if(t===1)transition=null;}if(tunnelActive&&cinematic&&!reduced.matches){cinemaTime+=dt;const angle=.66+Math.sin(cinemaTime*.14)*.18;const radius=distance*1.14;const target=focus.clone();target.y+=.3;camera.position.set(Math.sin(angle)*radius,target.y+radius*(.32+.025*Math.sin(cinemaTime*.11)),Math.cos(angle)*radius);controls.target.copy(target);}controls.update(dt);studio.update(dt);garage?.update(dt);windTunnel?.update(dt);studio.floor.visible=camera.position.y>0;highQuality?composer.render():renderer.render(scene,camera);frameCount++;if(now-frameStart>2000){document.body.dataset.fps=String(Math.round(frameCount*1000/(now-frameStart)));frameCount=0;frameStart=now;}if(mechanics){document.body.dataset.parts=mechanics.records.length;document.body.dataset.assembly=mechanics.amount.toFixed(4);}});"
     }
   },
   {
@@ -265,14 +265,14 @@
   },
   {
     "source": "web/test-mechanics.mjs",
-    "target": "web/assets/carro-movable.glb",
+    "target": "web/assets/carro-aula-v2.glb",
     "relation": "le_geometria_para_testes",
     "confidence": "EXTRACTED",
     "confidence_score": 1.0,
     "evidence": {
       "path": "web/test-mechanics.mjs",
-      "line": 5,
-      "text": "const b=fs.readFileSync('assets/carro-movable.glb'),len=b.readUInt32LE(12),j=JSON.parse(b.subarray(20,20+len));"
+      "line": 6,
+      "text": "const b=fs.readFileSync('assets/carro-aula-v2.glb'),len=b.readUInt32LE(12),j=JSON.parse(b.subarray(20,20+len));"
     }
   },
   {
@@ -283,7 +283,7 @@
     "confidence_score": 1.0,
     "evidence": {
       "path": "web/test-mechanics.mjs",
-      "line": 23,
+      "line": 24,
       "text": "const result={parts:m.records.length,wheelPivots:m.wheels.length,innerCovers:m.wheels.map(w=>w.covers.length),drs:!!m.flap,cycles:20,initialError,finalError,resetError,dragResetError,isolationRestored:true,passed:true};fs.writeFileSync('../validacao-mecanica-web.json',JSON.stringify(result,null,2));console.log(result);"
     }
   },
@@ -536,7 +536,7 @@
     "evidence": {
       "path": "ferramentas/manifest.cjs",
       "line": 1,
-      "text": "const fs=require('fs'),path=require('path'),crypto=require('crypto');const root=path.resolve(__dirname,'..');const files=['INTEIA_F1_Master.blend','modelos/INTEIA_F1_estatico.glb','modelos/INTEIA_F1_animado.glb','texturas/INTEIA_Carbono_BaseColor.png','web/assets/carro-movable.glb','web/index.html','Previa-Blender.png','ambientes/INTEIA-box-laboratorio.glb','ambientes/INTEIA_Box_com_carro.blend','ambientes/Previa-Box.png','identidade/INTEIA-principal.svg','identidade/INTEIA-negativo.svg','identidade/INTEIA-monocromatico.svg','identidade/INTEIA-simbolo.svg'];const out=files.map(arquivo=>{const b=fs.readFileSync(path.join(root,arquivo));return {arquivo,bytes:b.length,sha256:crypto.createHash('sha256').update(b).digest('hex')};});fs.writeFileSync(path.join(root,'manifesto-sha256.json'),JSON.stringify(out,null,2)+'\\n');"
+      "text": "const fs=require('fs'),path=require('path'),crypto=require('crypto');const root=path.resolve(__dirname,'..');const files=['INTEIA_F1_Master.blend','modelos/INTEIA_F1_estatico.glb','modelos/INTEIA_F1_animado.glb','texturas/INTEIA_Carbono_BaseColor.png','web/assets/carro-movable.glb','web/assets/carro-aula-v2.glb','web/assets/power-unit-v1.glb','web/assets/inteia-nome-oficial.svg','web/assets/inteia-escudo-oficial.svg','web/assets/inteligencia-mil-grau-transparent.png','web/index.html','Previa-Blender.png','ambientes/INTEIA-box-laboratorio.glb','ambientes/INTEIA_Box_com_carro.blend','ambientes/Previa-Box.png','identidade/INTEIA-principal.svg','identidade/INTEIA-negativo.svg','identidade/INTEIA-monocromatico.svg','identidade/INTEIA-simbolo.svg'];const out=files.map(arquivo=>{const b=fs.readFileSync(path.join(root,arquivo));return {arquivo,bytes:b.length,sha256:crypto.createHash('sha256').update(b).digest('hex')};});fs.writeFileSync(path.join(root,'manifesto-sha256.json'),JSON.stringify(out,null,2)+'\\n');"
     }
   },
   {
@@ -548,7 +548,7 @@
     "evidence": {
       "path": "ferramentas/manifest.cjs",
       "line": 1,
-      "text": "const fs=require('fs'),path=require('path'),crypto=require('crypto');const root=path.resolve(__dirname,'..');const files=['INTEIA_F1_Master.blend','modelos/INTEIA_F1_estatico.glb','modelos/INTEIA_F1_animado.glb','texturas/INTEIA_Carbono_BaseColor.png','web/assets/carro-movable.glb','web/index.html','Previa-Blender.png','ambientes/INTEIA-box-laboratorio.glb','ambientes/INTEIA_Box_com_carro.blend','ambientes/Previa-Box.png','identidade/INTEIA-principal.svg','identidade/INTEIA-negativo.svg','identidade/INTEIA-monocromatico.svg','identidade/INTEIA-simbolo.svg'];const out=files.map(arquivo=>{const b=fs.readFileSync(path.join(root,arquivo));return {arquivo,bytes:b.length,sha256:crypto.createHash('sha256').update(b).digest('hex')};});fs.writeFileSync(path.join(root,'manifesto-sha256.json'),JSON.stringify(out,null,2)+'\\n');"
+      "text": "const fs=require('fs'),path=require('path'),crypto=require('crypto');const root=path.resolve(__dirname,'..');const files=['INTEIA_F1_Master.blend','modelos/INTEIA_F1_estatico.glb','modelos/INTEIA_F1_animado.glb','texturas/INTEIA_Carbono_BaseColor.png','web/assets/carro-movable.glb','web/assets/carro-aula-v2.glb','web/assets/power-unit-v1.glb','web/assets/inteia-nome-oficial.svg','web/assets/inteia-escudo-oficial.svg','web/assets/inteligencia-mil-grau-transparent.png','web/index.html','Previa-Blender.png','ambientes/INTEIA-box-laboratorio.glb','ambientes/INTEIA_Box_com_carro.blend','ambientes/Previa-Box.png','identidade/INTEIA-principal.svg','identidade/INTEIA-negativo.svg','identidade/INTEIA-monocromatico.svg','identidade/INTEIA-simbolo.svg'];const out=files.map(arquivo=>{const b=fs.readFileSync(path.join(root,arquivo));return {arquivo,bytes:b.length,sha256:crypto.createHash('sha256').update(b).digest('hex')};});fs.writeFileSync(path.join(root,'manifesto-sha256.json'),JSON.stringify(out,null,2)+'\\n');"
     }
   },
   {
@@ -560,7 +560,7 @@
     "evidence": {
       "path": "ferramentas/manifest.cjs",
       "line": 1,
-      "text": "const fs=require('fs'),path=require('path'),crypto=require('crypto');const root=path.resolve(__dirname,'..');const files=['INTEIA_F1_Master.blend','modelos/INTEIA_F1_estatico.glb','modelos/INTEIA_F1_animado.glb','texturas/INTEIA_Carbono_BaseColor.png','web/assets/carro-movable.glb','web/index.html','Previa-Blender.png','ambientes/INTEIA-box-laboratorio.glb','ambientes/INTEIA_Box_com_carro.blend','ambientes/Previa-Box.png','identidade/INTEIA-principal.svg','identidade/INTEIA-negativo.svg','identidade/INTEIA-monocromatico.svg','identidade/INTEIA-simbolo.svg'];const out=files.map(arquivo=>{const b=fs.readFileSync(path.join(root,arquivo));return {arquivo,bytes:b.length,sha256:crypto.createHash('sha256').update(b).digest('hex')};});fs.writeFileSync(path.join(root,'manifesto-sha256.json'),JSON.stringify(out,null,2)+'\\n');"
+      "text": "const fs=require('fs'),path=require('path'),crypto=require('crypto');const root=path.resolve(__dirname,'..');const files=['INTEIA_F1_Master.blend','modelos/INTEIA_F1_estatico.glb','modelos/INTEIA_F1_animado.glb','texturas/INTEIA_Carbono_BaseColor.png','web/assets/carro-movable.glb','web/assets/carro-aula-v2.glb','web/assets/power-unit-v1.glb','web/assets/inteia-nome-oficial.svg','web/assets/inteia-escudo-oficial.svg','web/assets/inteligencia-mil-grau-transparent.png','web/index.html','Previa-Blender.png','ambientes/INTEIA-box-laboratorio.glb','ambientes/INTEIA_Box_com_carro.blend','ambientes/Previa-Box.png','identidade/INTEIA-principal.svg','identidade/INTEIA-negativo.svg','identidade/INTEIA-monocromatico.svg','identidade/INTEIA-simbolo.svg'];const out=files.map(arquivo=>{const b=fs.readFileSync(path.join(root,arquivo));return {arquivo,bytes:b.length,sha256:crypto.createHash('sha256').update(b).digest('hex')};});fs.writeFileSync(path.join(root,'manifesto-sha256.json'),JSON.stringify(out,null,2)+'\\n');"
     }
   },
   {
@@ -572,7 +572,7 @@
     "evidence": {
       "path": "ferramentas/manifest.cjs",
       "line": 1,
-      "text": "const fs=require('fs'),path=require('path'),crypto=require('crypto');const root=path.resolve(__dirname,'..');const files=['INTEIA_F1_Master.blend','modelos/INTEIA_F1_estatico.glb','modelos/INTEIA_F1_animado.glb','texturas/INTEIA_Carbono_BaseColor.png','web/assets/carro-movable.glb','web/index.html','Previa-Blender.png','ambientes/INTEIA-box-laboratorio.glb','ambientes/INTEIA_Box_com_carro.blend','ambientes/Previa-Box.png','identidade/INTEIA-principal.svg','identidade/INTEIA-negativo.svg','identidade/INTEIA-monocromatico.svg','identidade/INTEIA-simbolo.svg'];const out=files.map(arquivo=>{const b=fs.readFileSync(path.join(root,arquivo));return {arquivo,bytes:b.length,sha256:crypto.createHash('sha256').update(b).digest('hex')};});fs.writeFileSync(path.join(root,'manifesto-sha256.json'),JSON.stringify(out,null,2)+'\\n');"
+      "text": "const fs=require('fs'),path=require('path'),crypto=require('crypto');const root=path.resolve(__dirname,'..');const files=['INTEIA_F1_Master.blend','modelos/INTEIA_F1_estatico.glb','modelos/INTEIA_F1_animado.glb','texturas/INTEIA_Carbono_BaseColor.png','web/assets/carro-movable.glb','web/assets/carro-aula-v2.glb','web/assets/power-unit-v1.glb','web/assets/inteia-nome-oficial.svg','web/assets/inteia-escudo-oficial.svg','web/assets/inteligencia-mil-grau-transparent.png','web/index.html','Previa-Blender.png','ambientes/INTEIA-box-laboratorio.glb','ambientes/INTEIA_Box_com_carro.blend','ambientes/Previa-Box.png','identidade/INTEIA-principal.svg','identidade/INTEIA-negativo.svg','identidade/INTEIA-monocromatico.svg','identidade/INTEIA-simbolo.svg'];const out=files.map(arquivo=>{const b=fs.readFileSync(path.join(root,arquivo));return {arquivo,bytes:b.length,sha256:crypto.createHash('sha256').update(b).digest('hex')};});fs.writeFileSync(path.join(root,'manifesto-sha256.json'),JSON.stringify(out,null,2)+'\\n');"
     }
   },
   {
@@ -584,7 +584,7 @@
     "evidence": {
       "path": "ferramentas/manifest.cjs",
       "line": 1,
-      "text": "const fs=require('fs'),path=require('path'),crypto=require('crypto');const root=path.resolve(__dirname,'..');const files=['INTEIA_F1_Master.blend','modelos/INTEIA_F1_estatico.glb','modelos/INTEIA_F1_animado.glb','texturas/INTEIA_Carbono_BaseColor.png','web/assets/carro-movable.glb','web/index.html','Previa-Blender.png','ambientes/INTEIA-box-laboratorio.glb','ambientes/INTEIA_Box_com_carro.blend','ambientes/Previa-Box.png','identidade/INTEIA-principal.svg','identidade/INTEIA-negativo.svg','identidade/INTEIA-monocromatico.svg','identidade/INTEIA-simbolo.svg'];const out=files.map(arquivo=>{const b=fs.readFileSync(path.join(root,arquivo));return {arquivo,bytes:b.length,sha256:crypto.createHash('sha256').update(b).digest('hex')};});fs.writeFileSync(path.join(root,'manifesto-sha256.json'),JSON.stringify(out,null,2)+'\\n');"
+      "text": "const fs=require('fs'),path=require('path'),crypto=require('crypto');const root=path.resolve(__dirname,'..');const files=['INTEIA_F1_Master.blend','modelos/INTEIA_F1_estatico.glb','modelos/INTEIA_F1_animado.glb','texturas/INTEIA_Carbono_BaseColor.png','web/assets/carro-movable.glb','web/assets/carro-aula-v2.glb','web/assets/power-unit-v1.glb','web/assets/inteia-nome-oficial.svg','web/assets/inteia-escudo-oficial.svg','web/assets/inteligencia-mil-grau-transparent.png','web/index.html','Previa-Blender.png','ambientes/INTEIA-box-laboratorio.glb','ambientes/INTEIA_Box_com_carro.blend','ambientes/Previa-Box.png','identidade/INTEIA-principal.svg','identidade/INTEIA-negativo.svg','identidade/INTEIA-monocromatico.svg','identidade/INTEIA-simbolo.svg'];const out=files.map(arquivo=>{const b=fs.readFileSync(path.join(root,arquivo));return {arquivo,bytes:b.length,sha256:crypto.createHash('sha256').update(b).digest('hex')};});fs.writeFileSync(path.join(root,'manifesto-sha256.json'),JSON.stringify(out,null,2)+'\\n');"
     }
   },
   {
@@ -596,7 +596,7 @@
     "evidence": {
       "path": "ferramentas/manifest.cjs",
       "line": 1,
-      "text": "const fs=require('fs'),path=require('path'),crypto=require('crypto');const root=path.resolve(__dirname,'..');const files=['INTEIA_F1_Master.blend','modelos/INTEIA_F1_estatico.glb','modelos/INTEIA_F1_animado.glb','texturas/INTEIA_Carbono_BaseColor.png','web/assets/carro-movable.glb','web/index.html','Previa-Blender.png','ambientes/INTEIA-box-laboratorio.glb','ambientes/INTEIA_Box_com_carro.blend','ambientes/Previa-Box.png','identidade/INTEIA-principal.svg','identidade/INTEIA-negativo.svg','identidade/INTEIA-monocromatico.svg','identidade/INTEIA-simbolo.svg'];const out=files.map(arquivo=>{const b=fs.readFileSync(path.join(root,arquivo));return {arquivo,bytes:b.length,sha256:crypto.createHash('sha256').update(b).digest('hex')};});fs.writeFileSync(path.join(root,'manifesto-sha256.json'),JSON.stringify(out,null,2)+'\\n');"
+      "text": "const fs=require('fs'),path=require('path'),crypto=require('crypto');const root=path.resolve(__dirname,'..');const files=['INTEIA_F1_Master.blend','modelos/INTEIA_F1_estatico.glb','modelos/INTEIA_F1_animado.glb','texturas/INTEIA_Carbono_BaseColor.png','web/assets/carro-movable.glb','web/assets/carro-aula-v2.glb','web/assets/power-unit-v1.glb','web/assets/inteia-nome-oficial.svg','web/assets/inteia-escudo-oficial.svg','web/assets/inteligencia-mil-grau-transparent.png','web/index.html','Previa-Blender.png','ambientes/INTEIA-box-laboratorio.glb','ambientes/INTEIA_Box_com_carro.blend','ambientes/Previa-Box.png','identidade/INTEIA-principal.svg','identidade/INTEIA-negativo.svg','identidade/INTEIA-monocromatico.svg','identidade/INTEIA-simbolo.svg'];const out=files.map(arquivo=>{const b=fs.readFileSync(path.join(root,arquivo));return {arquivo,bytes:b.length,sha256:crypto.createHash('sha256').update(b).digest('hex')};});fs.writeFileSync(path.join(root,'manifesto-sha256.json'),JSON.stringify(out,null,2)+'\\n');"
     }
   },
   {
@@ -608,7 +608,7 @@
     "evidence": {
       "path": "ferramentas/manifest.cjs",
       "line": 1,
-      "text": "const fs=require('fs'),path=require('path'),crypto=require('crypto');const root=path.resolve(__dirname,'..');const files=['INTEIA_F1_Master.blend','modelos/INTEIA_F1_estatico.glb','modelos/INTEIA_F1_animado.glb','texturas/INTEIA_Carbono_BaseColor.png','web/assets/carro-movable.glb','web/index.html','Previa-Blender.png','ambientes/INTEIA-box-laboratorio.glb','ambientes/INTEIA_Box_com_carro.blend','ambientes/Previa-Box.png','identidade/INTEIA-principal.svg','identidade/INTEIA-negativo.svg','identidade/INTEIA-monocromatico.svg','identidade/INTEIA-simbolo.svg'];const out=files.map(arquivo=>{const b=fs.readFileSync(path.join(root,arquivo));return {arquivo,bytes:b.length,sha256:crypto.createHash('sha256').update(b).digest('hex')};});fs.writeFileSync(path.join(root,'manifesto-sha256.json'),JSON.stringify(out,null,2)+'\\n');"
+      "text": "const fs=require('fs'),path=require('path'),crypto=require('crypto');const root=path.resolve(__dirname,'..');const files=['INTEIA_F1_Master.blend','modelos/INTEIA_F1_estatico.glb','modelos/INTEIA_F1_animado.glb','texturas/INTEIA_Carbono_BaseColor.png','web/assets/carro-movable.glb','web/assets/carro-aula-v2.glb','web/assets/power-unit-v1.glb','web/assets/inteia-nome-oficial.svg','web/assets/inteia-escudo-oficial.svg','web/assets/inteligencia-mil-grau-transparent.png','web/index.html','Previa-Blender.png','ambientes/INTEIA-box-laboratorio.glb','ambientes/INTEIA_Box_com_carro.blend','ambientes/Previa-Box.png','identidade/INTEIA-principal.svg','identidade/INTEIA-negativo.svg','identidade/INTEIA-monocromatico.svg','identidade/INTEIA-simbolo.svg'];const out=files.map(arquivo=>{const b=fs.readFileSync(path.join(root,arquivo));return {arquivo,bytes:b.length,sha256:crypto.createHash('sha256').update(b).digest('hex')};});fs.writeFileSync(path.join(root,'manifesto-sha256.json'),JSON.stringify(out,null,2)+'\\n');"
     }
   },
   {
@@ -620,7 +620,7 @@
     "evidence": {
       "path": "ferramentas/manifest.cjs",
       "line": 1,
-      "text": "const fs=require('fs'),path=require('path'),crypto=require('crypto');const root=path.resolve(__dirname,'..');const files=['INTEIA_F1_Master.blend','modelos/INTEIA_F1_estatico.glb','modelos/INTEIA_F1_animado.glb','texturas/INTEIA_Carbono_BaseColor.png','web/assets/carro-movable.glb','web/index.html','Previa-Blender.png','ambientes/INTEIA-box-laboratorio.glb','ambientes/INTEIA_Box_com_carro.blend','ambientes/Previa-Box.png','identidade/INTEIA-principal.svg','identidade/INTEIA-negativo.svg','identidade/INTEIA-monocromatico.svg','identidade/INTEIA-simbolo.svg'];const out=files.map(arquivo=>{const b=fs.readFileSync(path.join(root,arquivo));return {arquivo,bytes:b.length,sha256:crypto.createHash('sha256').update(b).digest('hex')};});fs.writeFileSync(path.join(root,'manifesto-sha256.json'),JSON.stringify(out,null,2)+'\\n');"
+      "text": "const fs=require('fs'),path=require('path'),crypto=require('crypto');const root=path.resolve(__dirname,'..');const files=['INTEIA_F1_Master.blend','modelos/INTEIA_F1_estatico.glb','modelos/INTEIA_F1_animado.glb','texturas/INTEIA_Carbono_BaseColor.png','web/assets/carro-movable.glb','web/assets/carro-aula-v2.glb','web/assets/power-unit-v1.glb','web/assets/inteia-nome-oficial.svg','web/assets/inteia-escudo-oficial.svg','web/assets/inteligencia-mil-grau-transparent.png','web/index.html','Previa-Blender.png','ambientes/INTEIA-box-laboratorio.glb','ambientes/INTEIA_Box_com_carro.blend','ambientes/Previa-Box.png','identidade/INTEIA-principal.svg','identidade/INTEIA-negativo.svg','identidade/INTEIA-monocromatico.svg','identidade/INTEIA-simbolo.svg'];const out=files.map(arquivo=>{const b=fs.readFileSync(path.join(root,arquivo));return {arquivo,bytes:b.length,sha256:crypto.createHash('sha256').update(b).digest('hex')};});fs.writeFileSync(path.join(root,'manifesto-sha256.json'),JSON.stringify(out,null,2)+'\\n');"
     }
   },
   {
@@ -632,7 +632,7 @@
     "evidence": {
       "path": "ferramentas/manifest.cjs",
       "line": 1,
-      "text": "const fs=require('fs'),path=require('path'),crypto=require('crypto');const root=path.resolve(__dirname,'..');const files=['INTEIA_F1_Master.blend','modelos/INTEIA_F1_estatico.glb','modelos/INTEIA_F1_animado.glb','texturas/INTEIA_Carbono_BaseColor.png','web/assets/carro-movable.glb','web/index.html','Previa-Blender.png','ambientes/INTEIA-box-laboratorio.glb','ambientes/INTEIA_Box_com_carro.blend','ambientes/Previa-Box.png','identidade/INTEIA-principal.svg','identidade/INTEIA-negativo.svg','identidade/INTEIA-monocromatico.svg','identidade/INTEIA-simbolo.svg'];const out=files.map(arquivo=>{const b=fs.readFileSync(path.join(root,arquivo));return {arquivo,bytes:b.length,sha256:crypto.createHash('sha256').update(b).digest('hex')};});fs.writeFileSync(path.join(root,'manifesto-sha256.json'),JSON.stringify(out,null,2)+'\\n');"
+      "text": "const fs=require('fs'),path=require('path'),crypto=require('crypto');const root=path.resolve(__dirname,'..');const files=['INTEIA_F1_Master.blend','modelos/INTEIA_F1_estatico.glb','modelos/INTEIA_F1_animado.glb','texturas/INTEIA_Carbono_BaseColor.png','web/assets/carro-movable.glb','web/assets/carro-aula-v2.glb','web/assets/power-unit-v1.glb','web/assets/inteia-nome-oficial.svg','web/assets/inteia-escudo-oficial.svg','web/assets/inteligencia-mil-grau-transparent.png','web/index.html','Previa-Blender.png','ambientes/INTEIA-box-laboratorio.glb','ambientes/INTEIA_Box_com_carro.blend','ambientes/Previa-Box.png','identidade/INTEIA-principal.svg','identidade/INTEIA-negativo.svg','identidade/INTEIA-monocromatico.svg','identidade/INTEIA-simbolo.svg'];const out=files.map(arquivo=>{const b=fs.readFileSync(path.join(root,arquivo));return {arquivo,bytes:b.length,sha256:crypto.createHash('sha256').update(b).digest('hex')};});fs.writeFileSync(path.join(root,'manifesto-sha256.json'),JSON.stringify(out,null,2)+'\\n');"
     }
   },
   {
@@ -644,7 +644,7 @@
     "evidence": {
       "path": "ferramentas/manifest.cjs",
       "line": 1,
-      "text": "const fs=require('fs'),path=require('path'),crypto=require('crypto');const root=path.resolve(__dirname,'..');const files=['INTEIA_F1_Master.blend','modelos/INTEIA_F1_estatico.glb','modelos/INTEIA_F1_animado.glb','texturas/INTEIA_Carbono_BaseColor.png','web/assets/carro-movable.glb','web/index.html','Previa-Blender.png','ambientes/INTEIA-box-laboratorio.glb','ambientes/INTEIA_Box_com_carro.blend','ambientes/Previa-Box.png','identidade/INTEIA-principal.svg','identidade/INTEIA-negativo.svg','identidade/INTEIA-monocromatico.svg','identidade/INTEIA-simbolo.svg'];const out=files.map(arquivo=>{const b=fs.readFileSync(path.join(root,arquivo));return {arquivo,bytes:b.length,sha256:crypto.createHash('sha256').update(b).digest('hex')};});fs.writeFileSync(path.join(root,'manifesto-sha256.json'),JSON.stringify(out,null,2)+'\\n');"
+      "text": "const fs=require('fs'),path=require('path'),crypto=require('crypto');const root=path.resolve(__dirname,'..');const files=['INTEIA_F1_Master.blend','modelos/INTEIA_F1_estatico.glb','modelos/INTEIA_F1_animado.glb','texturas/INTEIA_Carbono_BaseColor.png','web/assets/carro-movable.glb','web/assets/carro-aula-v2.glb','web/assets/power-unit-v1.glb','web/assets/inteia-nome-oficial.svg','web/assets/inteia-escudo-oficial.svg','web/assets/inteligencia-mil-grau-transparent.png','web/index.html','Previa-Blender.png','ambientes/INTEIA-box-laboratorio.glb','ambientes/INTEIA_Box_com_carro.blend','ambientes/Previa-Box.png','identidade/INTEIA-principal.svg','identidade/INTEIA-negativo.svg','identidade/INTEIA-monocromatico.svg','identidade/INTEIA-simbolo.svg'];const out=files.map(arquivo=>{const b=fs.readFileSync(path.join(root,arquivo));return {arquivo,bytes:b.length,sha256:crypto.createHash('sha256').update(b).digest('hex')};});fs.writeFileSync(path.join(root,'manifesto-sha256.json'),JSON.stringify(out,null,2)+'\\n');"
     }
   },
   {
@@ -656,7 +656,7 @@
     "evidence": {
       "path": "ferramentas/manifest.cjs",
       "line": 1,
-      "text": "const fs=require('fs'),path=require('path'),crypto=require('crypto');const root=path.resolve(__dirname,'..');const files=['INTEIA_F1_Master.blend','modelos/INTEIA_F1_estatico.glb','modelos/INTEIA_F1_animado.glb','texturas/INTEIA_Carbono_BaseColor.png','web/assets/carro-movable.glb','web/index.html','Previa-Blender.png','ambientes/INTEIA-box-laboratorio.glb','ambientes/INTEIA_Box_com_carro.blend','ambientes/Previa-Box.png','identidade/INTEIA-principal.svg','identidade/INTEIA-negativo.svg','identidade/INTEIA-monocromatico.svg','identidade/INTEIA-simbolo.svg'];const out=files.map(arquivo=>{const b=fs.readFileSync(path.join(root,arquivo));return {arquivo,bytes:b.length,sha256:crypto.createHash('sha256').update(b).digest('hex')};});fs.writeFileSync(path.join(root,'manifesto-sha256.json'),JSON.stringify(out,null,2)+'\\n');"
+      "text": "const fs=require('fs'),path=require('path'),crypto=require('crypto');const root=path.resolve(__dirname,'..');const files=['INTEIA_F1_Master.blend','modelos/INTEIA_F1_estatico.glb','modelos/INTEIA_F1_animado.glb','texturas/INTEIA_Carbono_BaseColor.png','web/assets/carro-movable.glb','web/assets/carro-aula-v2.glb','web/assets/power-unit-v1.glb','web/assets/inteia-nome-oficial.svg','web/assets/inteia-escudo-oficial.svg','web/assets/inteligencia-mil-grau-transparent.png','web/index.html','Previa-Blender.png','ambientes/INTEIA-box-laboratorio.glb','ambientes/INTEIA_Box_com_carro.blend','ambientes/Previa-Box.png','identidade/INTEIA-principal.svg','identidade/INTEIA-negativo.svg','identidade/INTEIA-monocromatico.svg','identidade/INTEIA-simbolo.svg'];const out=files.map(arquivo=>{const b=fs.readFileSync(path.join(root,arquivo));return {arquivo,bytes:b.length,sha256:crypto.createHash('sha256').update(b).digest('hex')};});fs.writeFileSync(path.join(root,'manifesto-sha256.json'),JSON.stringify(out,null,2)+'\\n');"
     }
   },
   {
@@ -668,7 +668,7 @@
     "evidence": {
       "path": "ferramentas/manifest.cjs",
       "line": 1,
-      "text": "const fs=require('fs'),path=require('path'),crypto=require('crypto');const root=path.resolve(__dirname,'..');const files=['INTEIA_F1_Master.blend','modelos/INTEIA_F1_estatico.glb','modelos/INTEIA_F1_animado.glb','texturas/INTEIA_Carbono_BaseColor.png','web/assets/carro-movable.glb','web/index.html','Previa-Blender.png','ambientes/INTEIA-box-laboratorio.glb','ambientes/INTEIA_Box_com_carro.blend','ambientes/Previa-Box.png','identidade/INTEIA-principal.svg','identidade/INTEIA-negativo.svg','identidade/INTEIA-monocromatico.svg','identidade/INTEIA-simbolo.svg'];const out=files.map(arquivo=>{const b=fs.readFileSync(path.join(root,arquivo));return {arquivo,bytes:b.length,sha256:crypto.createHash('sha256').update(b).digest('hex')};});fs.writeFileSync(path.join(root,'manifesto-sha256.json'),JSON.stringify(out,null,2)+'\\n');"
+      "text": "const fs=require('fs'),path=require('path'),crypto=require('crypto');const root=path.resolve(__dirname,'..');const files=['INTEIA_F1_Master.blend','modelos/INTEIA_F1_estatico.glb','modelos/INTEIA_F1_animado.glb','texturas/INTEIA_Carbono_BaseColor.png','web/assets/carro-movable.glb','web/assets/carro-aula-v2.glb','web/assets/power-unit-v1.glb','web/assets/inteia-nome-oficial.svg','web/assets/inteia-escudo-oficial.svg','web/assets/inteligencia-mil-grau-transparent.png','web/index.html','Previa-Blender.png','ambientes/INTEIA-box-laboratorio.glb','ambientes/INTEIA_Box_com_carro.blend','ambientes/Previa-Box.png','identidade/INTEIA-principal.svg','identidade/INTEIA-negativo.svg','identidade/INTEIA-monocromatico.svg','identidade/INTEIA-simbolo.svg'];const out=files.map(arquivo=>{const b=fs.readFileSync(path.join(root,arquivo));return {arquivo,bytes:b.length,sha256:crypto.createHash('sha256').update(b).digest('hex')};});fs.writeFileSync(path.join(root,'manifesto-sha256.json'),JSON.stringify(out,null,2)+'\\n');"
     }
   },
   {
@@ -680,7 +680,7 @@
     "evidence": {
       "path": "ferramentas/manifest.cjs",
       "line": 1,
-      "text": "const fs=require('fs'),path=require('path'),crypto=require('crypto');const root=path.resolve(__dirname,'..');const files=['INTEIA_F1_Master.blend','modelos/INTEIA_F1_estatico.glb','modelos/INTEIA_F1_animado.glb','texturas/INTEIA_Carbono_BaseColor.png','web/assets/carro-movable.glb','web/index.html','Previa-Blender.png','ambientes/INTEIA-box-laboratorio.glb','ambientes/INTEIA_Box_com_carro.blend','ambientes/Previa-Box.png','identidade/INTEIA-principal.svg','identidade/INTEIA-negativo.svg','identidade/INTEIA-monocromatico.svg','identidade/INTEIA-simbolo.svg'];const out=files.map(arquivo=>{const b=fs.readFileSync(path.join(root,arquivo));return {arquivo,bytes:b.length,sha256:crypto.createHash('sha256').update(b).digest('hex')};});fs.writeFileSync(path.join(root,'manifesto-sha256.json'),JSON.stringify(out,null,2)+'\\n');"
+      "text": "const fs=require('fs'),path=require('path'),crypto=require('crypto');const root=path.resolve(__dirname,'..');const files=['INTEIA_F1_Master.blend','modelos/INTEIA_F1_estatico.glb','modelos/INTEIA_F1_animado.glb','texturas/INTEIA_Carbono_BaseColor.png','web/assets/carro-movable.glb','web/assets/carro-aula-v2.glb','web/assets/power-unit-v1.glb','web/assets/inteia-nome-oficial.svg','web/assets/inteia-escudo-oficial.svg','web/assets/inteligencia-mil-grau-transparent.png','web/index.html','Previa-Blender.png','ambientes/INTEIA-box-laboratorio.glb','ambientes/INTEIA_Box_com_carro.blend','ambientes/Previa-Box.png','identidade/INTEIA-principal.svg','identidade/INTEIA-negativo.svg','identidade/INTEIA-monocromatico.svg','identidade/INTEIA-simbolo.svg'];const out=files.map(arquivo=>{const b=fs.readFileSync(path.join(root,arquivo));return {arquivo,bytes:b.length,sha256:crypto.createHash('sha256').update(b).digest('hex')};});fs.writeFileSync(path.join(root,'manifesto-sha256.json'),JSON.stringify(out,null,2)+'\\n');"
     }
   },
   {
@@ -692,7 +692,7 @@
     "evidence": {
       "path": "ferramentas/manifest.cjs",
       "line": 1,
-      "text": "const fs=require('fs'),path=require('path'),crypto=require('crypto');const root=path.resolve(__dirname,'..');const files=['INTEIA_F1_Master.blend','modelos/INTEIA_F1_estatico.glb','modelos/INTEIA_F1_animado.glb','texturas/INTEIA_Carbono_BaseColor.png','web/assets/carro-movable.glb','web/index.html','Previa-Blender.png','ambientes/INTEIA-box-laboratorio.glb','ambientes/INTEIA_Box_com_carro.blend','ambientes/Previa-Box.png','identidade/INTEIA-principal.svg','identidade/INTEIA-negativo.svg','identidade/INTEIA-monocromatico.svg','identidade/INTEIA-simbolo.svg'];const out=files.map(arquivo=>{const b=fs.readFileSync(path.join(root,arquivo));return {arquivo,bytes:b.length,sha256:crypto.createHash('sha256').update(b).digest('hex')};});fs.writeFileSync(path.join(root,'manifesto-sha256.json'),JSON.stringify(out,null,2)+'\\n');"
+      "text": "const fs=require('fs'),path=require('path'),crypto=require('crypto');const root=path.resolve(__dirname,'..');const files=['INTEIA_F1_Master.blend','modelos/INTEIA_F1_estatico.glb','modelos/INTEIA_F1_animado.glb','texturas/INTEIA_Carbono_BaseColor.png','web/assets/carro-movable.glb','web/assets/carro-aula-v2.glb','web/assets/power-unit-v1.glb','web/assets/inteia-nome-oficial.svg','web/assets/inteia-escudo-oficial.svg','web/assets/inteligencia-mil-grau-transparent.png','web/index.html','Previa-Blender.png','ambientes/INTEIA-box-laboratorio.glb','ambientes/INTEIA_Box_com_carro.blend','ambientes/Previa-Box.png','identidade/INTEIA-principal.svg','identidade/INTEIA-negativo.svg','identidade/INTEIA-monocromatico.svg','identidade/INTEIA-simbolo.svg'];const out=files.map(arquivo=>{const b=fs.readFileSync(path.join(root,arquivo));return {arquivo,bytes:b.length,sha256:crypto.createHash('sha256').update(b).digest('hex')};});fs.writeFileSync(path.join(root,'manifesto-sha256.json'),JSON.stringify(out,null,2)+'\\n');"
     }
   },
   {
@@ -704,7 +704,7 @@
     "evidence": {
       "path": "ferramentas/manifest.cjs",
       "line": 1,
-      "text": "const fs=require('fs'),path=require('path'),crypto=require('crypto');const root=path.resolve(__dirname,'..');const files=['INTEIA_F1_Master.blend','modelos/INTEIA_F1_estatico.glb','modelos/INTEIA_F1_animado.glb','texturas/INTEIA_Carbono_BaseColor.png','web/assets/carro-movable.glb','web/index.html','Previa-Blender.png','ambientes/INTEIA-box-laboratorio.glb','ambientes/INTEIA_Box_com_carro.blend','ambientes/Previa-Box.png','identidade/INTEIA-principal.svg','identidade/INTEIA-negativo.svg','identidade/INTEIA-monocromatico.svg','identidade/INTEIA-simbolo.svg'];const out=files.map(arquivo=>{const b=fs.readFileSync(path.join(root,arquivo));return {arquivo,bytes:b.length,sha256:crypto.createHash('sha256').update(b).digest('hex')};});fs.writeFileSync(path.join(root,'manifesto-sha256.json'),JSON.stringify(out,null,2)+'\\n');"
+      "text": "const fs=require('fs'),path=require('path'),crypto=require('crypto');const root=path.resolve(__dirname,'..');const files=['INTEIA_F1_Master.blend','modelos/INTEIA_F1_estatico.glb','modelos/INTEIA_F1_animado.glb','texturas/INTEIA_Carbono_BaseColor.png','web/assets/carro-movable.glb','web/assets/carro-aula-v2.glb','web/assets/power-unit-v1.glb','web/assets/inteia-nome-oficial.svg','web/assets/inteia-escudo-oficial.svg','web/assets/inteligencia-mil-grau-transparent.png','web/index.html','Previa-Blender.png','ambientes/INTEIA-box-laboratorio.glb','ambientes/INTEIA_Box_com_carro.blend','ambientes/Previa-Box.png','identidade/INTEIA-principal.svg','identidade/INTEIA-negativo.svg','identidade/INTEIA-monocromatico.svg','identidade/INTEIA-simbolo.svg'];const out=files.map(arquivo=>{const b=fs.readFileSync(path.join(root,arquivo));return {arquivo,bytes:b.length,sha256:crypto.createHash('sha256').update(b).digest('hex')};});fs.writeFileSync(path.join(root,'manifesto-sha256.json'),JSON.stringify(out,null,2)+'\\n');"
     }
   },
   {
@@ -907,7 +907,7 @@
     "confidence_score": 1.0,
     "evidence": {
       "path": "web/src/app-v2.js",
-      "line": 1,
+      "line": 6,
       "text": "import {applyInteiaBranding} from './branding.js';"
     }
   },
@@ -919,32 +919,8 @@
     "confidence_score": 1.0,
     "evidence": {
       "path": "web/src/app-v2.js",
-      "line": 49,
-      "text": "materials=applyCarMaterials(THREE,model);setupCustomization(materials,studio,renderer,scene);mechanics=createMechanics(model);applyInteiaBranding(model,mechanics);garage=createGarage({scene,renderer,studio,camera,mechanics});garage.setEnabled(true);windTunnel=createWindTunnel({scene,model,mechanics,reduced,studio,camera,onBeforeToggle:on=>{if(on){garageWasActive=garage.enabled;garage.setEnabled(false);}},onRegion:region=>{setFlowXray(region==='floor');cinematic=false;$('#wind-cinema').setAttribute('aria-pressed','false');controls.autoRotate=false;$('#orbit').setAttribute('aria-pressed','false');autoFit=false;const target=focus.clone();let direction=new THREE.Vector3(1,.28,1.4),scale=1.14;if(region==='wheels'){target.z=-span*.43;direction.set(1,.38,-.85);scale=1.10;}if(region==='floor'){target.y=.20;direction.set(1,.8,.5);scale=1.05;}moveCamera(target.clone().addScaledVector(direction.normalize(),distance*scale),target);},onToggle:on=>{if(!on&&garageWasActive)garage.setEnabled(true);setFlowXray(on&&$('#flow-region').value==='floor'&&$('#flow-detail').getAttribute('aria-pressed')==='true');tunnelActive=on;cinematic=false;$(\"#wind-cinema\").setAttribute(\"aria-pressed\",\"false\");controls.autoRotate=false;$(\"#orbit\").setAttribute(\"aria-pressed\",\"false\");autoFit=false;const target=focus.clone();target.y+=on?.15:0;moveCamera(target.clone().addScaledVector(new THREE.Vector3(1,.28,1.4).normalize(),distance*(on?1.14:1)),target);}});"
-    }
-  },
-  {
-    "source": "web/src/branding.js",
-    "target": "web/src/identity.js",
-    "relation": "importa_glyphs_da_identidade",
-    "confidence": "EXTRACTED",
-    "confidence_score": 1.0,
-    "evidence": {
-      "path": "web/src/branding.js",
-      "line": 1,
-      "text": "import {glyphs} from './identity.js';"
-    }
-  },
-  {
-    "source": "web/src/branding.js",
-    "target": "web/src/identity.js",
-    "relation": "desenha_glyphs_em_canvas",
-    "confidence": "EXTRACTED",
-    "confidence_score": 1.0,
-    "evidence": {
-      "path": "web/src/branding.js",
-      "line": 10,
-      "text": "for(const [,path] of glyphs)ctx.fill(new Path2D(path),'evenodd');"
+      "line": 57,
+      "text": " materials=applyCarMaterials(THREE,model);mechanics=createMechanics(model);await applyInteiaBranding(model,mechanics);"
     }
   },
   {
@@ -955,8 +931,68 @@
     "confidence_score": 1.0,
     "evidence": {
       "path": "web/src/branding.js",
-      "line": 17,
-      "text": "const record=mechanics.records.find(r=>r.source===source);if(!record)return;"
+      "line": 26,
+      "text": "    const record=mechanics.records.find(r=>r.source===source);if(!record)return;"
+    }
+  },
+  {
+    "source": "web/src/engine/in-car.js",
+    "target": "web/assets/power-unit-v1.glb",
+    "relation": "carrega_motor",
+    "confidence": "EXTRACTED",
+    "confidence_score": 1,
+    "evidence": {
+      "path": "web/src/engine/in-car.js",
+      "line": 156,
+      "text": "  const response=await fetch(`./assets/power-unit-v1.glb`,{signal:abort.signal});"
+    }
+  },
+  {
+    "source": "web/src/branding.js",
+    "target": "web/assets/inteia-nome-oficial.svg",
+    "relation": "carrega_arte",
+    "confidence": "EXTRACTED",
+    "confidence_score": 1,
+    "evidence": {
+      "path": "web/src/branding.js",
+      "line": 8,
+      "text": "  const [map,crestMap,sponsorMap]=await Promise.all(['inteia-nome-oficial.svg','inteia-escudo-oficial.svg','inteligencia-mil-grau-transparent.png'].map(name=>loader.loadAsync(`./assets/${name}`)));"
+    }
+  },
+  {
+    "source": "web/src/branding.js",
+    "target": "web/assets/inteia-escudo-oficial.svg",
+    "relation": "carrega_arte",
+    "confidence": "EXTRACTED",
+    "confidence_score": 1,
+    "evidence": {
+      "path": "web/src/branding.js",
+      "line": 8,
+      "text": "  const [map,crestMap,sponsorMap]=await Promise.all(['inteia-nome-oficial.svg','inteia-escudo-oficial.svg','inteligencia-mil-grau-transparent.png'].map(name=>loader.loadAsync(`./assets/${name}`)));"
+    }
+  },
+  {
+    "source": "web/src/branding.js",
+    "target": "web/assets/inteligencia-mil-grau-transparent.png",
+    "relation": "carrega_arte",
+    "confidence": "EXTRACTED",
+    "confidence_score": 1,
+    "evidence": {
+      "path": "web/src/branding.js",
+      "line": 8,
+      "text": "  const [map,crestMap,sponsorMap]=await Promise.all(['inteia-nome-oficial.svg','inteia-escudo-oficial.svg','inteligencia-mil-grau-transparent.png'].map(name=>loader.loadAsync(`./assets/${name}`)));"
+    }
+  },
+  {
+    "source": "web/package.json",
+    "target": "web/test-power-unit.mjs",
+    "relation": "executa_teste",
+    "confidence": "EXTRACTED",
+    "confidence_score": 1,
+    "evidence": {
+      "path": "web/package.json",
+      "line": 10,
+      "text": "    \"test\": \"node test-mechanics.mjs && node test-aerodynamics.mjs && node test-power-unit.mjs\""
     }
   }
 ]

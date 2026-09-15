@@ -1,11 +1,12 @@
+import {MeshoptDecoder} from 'three/addons/libs/meshopt_decoder.module.js';
 import fs from 'node:fs';
 import * as THREE from 'three';
 import {GLTFLoader} from 'three/addons/loaders/GLTFLoader.js';
 import {createMechanics} from './src/mechanics.js';
-const b=fs.readFileSync('assets/carro-movable.glb'),len=b.readUInt32LE(12),j=JSON.parse(b.subarray(20,20+len));
-j.materials=[{}];delete j.images;delete j.textures;delete j.samplers;delete j.extensionsUsed;delete j.extensionsRequired;j.meshes.forEach(m=>m.primitives.forEach(p=>p.material=0));
+const b=fs.readFileSync('assets/carro-aula-v2.glb'),len=b.readUInt32LE(12),j=JSON.parse(b.subarray(20,20+len));
+j.materials=[{}];delete j.images;delete j.textures;delete j.samplers;j.extensionsUsed=['EXT_meshopt_compression','KHR_mesh_quantization'];j.extensionsRequired=['EXT_meshopt_compression','KHR_mesh_quantization'];j.meshes.forEach(m=>m.primitives.forEach(p=>p.material=0));
 const json=Buffer.from(JSON.stringify(j)),pad=Buffer.alloc(Math.ceil(json.length/4)*4,32);json.copy(pad);const tail=b.subarray(20+len),out=Buffer.alloc(20+pad.length+tail.length);b.copy(out,0,0,12);out.writeUInt32LE(out.length,8);out.writeUInt32LE(pad.length,12);out.writeUInt32LE(0x4e4f534a,16);pad.copy(out,20);tail.copy(out,20+pad.length);
-const g=await new GLTFLoader().parseAsync(out.buffer.slice(out.byteOffset,out.byteOffset+out.length),'');const model=g.scene;
+const g=await new GLTFLoader().setMeshoptDecoder(MeshoptDecoder).parseAsync(out.buffer.slice(out.byteOffset,out.byteOffset+out.length),'');const model=g.scene;
 const box=new THREE.Box3().setFromObject(model);model.position.y=-box.min.y;model.updateMatrixWorld(true);
 const before=new Map();model.traverse(o=>{if(o.isMesh)before.set(o.uuid,o.matrixWorld.clone());});
 const m=createMechanics(model);m.update(.05,0,true);model.updateMatrixWorld(true);let initialError=0;model.traverse(o=>{if(before.has(o.uuid))initialError=Math.max(initialError,...o.matrixWorld.elements.map((v,i)=>Math.abs(v-before.get(o.uuid).elements[i])));});

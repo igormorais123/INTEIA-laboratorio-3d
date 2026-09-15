@@ -33,6 +33,7 @@ INTEIA-laboratorio-3d/
     BOX-LABORATORIO.md  # Composição e reutilização do box procedural
     DESENVOLVIMENTO.md  # Instalação, build, servidor e testes
     DIREITOS-E-PROCEDENCIA.md  # Separa titularidade INTEIA de geometria fornecida e terceiros
+    INTEGRACAO-MOTOR.md  # Operação e procedência da integração do carro final e motor
     INTEGRACAO.md  # Integração dos GLBs e fontes em outros projetos
     PUBLICACAO.md  # Endereços públicos, atualização e evidência da publicação
     REVISAO-TUNEL-VISUAL.md  # Revisões e limites da representação visual do fluxo
@@ -88,7 +89,16 @@ INTEIA-laboratorio-3d/
     THREE-LICENSE.txt  # Texto de licença de Three.js distribuído junto ao site
     assets/  # Base GLB operacional e wordmark avulso
       INTEIA-wordmark.svg  # Wordmark textual independente presente no pacote
+      carro-aula-v2.glb  # Carro final otimizado do F1 Loop, 97 componentes
+      carro-aula-v2.proveniencia.json  # Procedência e transformações do carro v2
+      carro-aula-v2.validacao.json  # Validação original do carro v2
       carro-movable.glb  # Base exterior com 97 peças e metadados usada pelo build web e Blender
+      inteia-escudo-oficial.svg  # Brasão oficial INTEIA
+      inteia-nome-oficial.svg  # Assinatura oficial INTEIA
+      inteligencia-mil-grau-transparent.png  # Arte do patrocínio Inteligência Mil Grau
+      inteligencia-mil-grau.source.json  # Procedência da arte do patrocinador
+      power-unit-v1.glb  # Motor V6 didático animado do F1 Loop
+      power-unit-v1.manifest.json  # Geometria, animação, hash e licença do motor
     build.cjs  # Empacota app e base64 do GLB no template para HTML autocontido
     index.html  # Site autocontido gerado: template, bundle Three.js e modelo embutido
     package-lock.json  # Versões e integridade das dependências npm
@@ -98,17 +108,24 @@ INTEIA-laboratorio-3d/
       aero-physics.mjs  # Calculadora pura por coeficientes: vento, densidade, forças e limites
       app-v2.js  # Entrada ativa: cena, GLB, módulos, controles DOM e loop de desenho
       branding.js  # Projeta uma assinatura vetorial INTEIA na lateral direita de main_body; chamado pela entrada ativa
+      car-look.js  # Acabamento final, rodas, pneus e freios do carro
       customize.js  # Liga controles de cores/acabamento, luz, piso e fundo aos materiais
+      engine/  # Documentação complementar da conversa paralela
+        engine-shot.js  # Poses de referência para preparação gráfica do motor
+        in-car.js  # Motor integrado, corte e tampa móvel
       flow-detail.js  # Representação didática aproximada do fluxo nas rodas e assoalho
       garage.js  # Constrói box, mobiliário, equipamentos, marcas e cena exportável
       identity.js  # Define glifos, emblema, SVG e desenho Canvas da identidade ativa
       mechanics.js  # Agrupa peças, cria pivôs, explode/monta, seleciona e anima rodas/DRS
+      senna-driver.js  # Piloto ilustrativo do carro final
       studio.js  # Materiais, carbono procedural, iluminação, ambiente, piso e tema
+      surface-library.js  # Texturas de acabamento do carro final
       template-v2.html  # Estrutura e estilos da interface com marcadores __MODEL__ e __APP__
       tunnel-visual.js  # Construção visual do túnel, linhas/partículas e recursos de cena
       wind-tunnel.js  # Liga entradas do túnel, calculadora, gráficos, CSV e efeitos de fluxo
     test-aerodynamics.mjs  # Verifica unidades, escala das fórmulas, condições e coeficientes ausentes
     test-mechanics.mjs  # Verifica peças, pivôs, 20 ciclos, seleção, arraste e restauração
+    test-power-unit.mjs  # Valida animação do motor em 20 ciclos
   docs/mapeamento-detalhado/  # Esta entrega: índice, HTML, catálogos, grafos e scripts
 ```
 

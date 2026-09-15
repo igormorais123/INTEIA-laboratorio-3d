@@ -42,19 +42,21 @@ Chamadas são referências sintáticas conservadoras, não rastreamento de execu
 
 | Nome | Linha | Escopo | Assinatura |
 |---|---:|---|---|
-| $ | 18 | module | `$` |
-| setFlowXray | 30 | module | `setFlowXray(on)` |
-| clone | 31 | 30:setFlowXray | `clone` |
-| moveCamera | 37 | module | `moveCamera(to,target,animate=true)` |
-| view | 38 | module | `view(name,animate=true)` |
-| resize | 40 | module | `resize()` |
-| refreshSelection | 42 | module | `refreshSelection()` |
-| select | 43 | module | `select(id)` |
-| focusPart | 44 | module | `focusPart()` |
-| assemblyTo | 45 | module | `assemblyTo(v)` |
-| onBeforeToggle | 49 | module | `onBeforeToggle` |
-| onRegion | 49 | module | `onRegion` |
-| onToggle | 49 | module | `onToggle` |
+| $ | 23 | module | `$` |
+| closeEngine | 34 | module | `closeEngine()` |
+| setFlowXray | 36 | module | `setFlowXray(on)` |
+| clone | 37 | 36:setFlowXray | `clone` |
+| moveCamera | 44 | module | `moveCamera(to,target,animate=true)` |
+| view | 45 | module | `view(name,animate=true)` |
+| resize | 47 | module | `resize()` |
+| refreshSelection | 49 | module | `refreshSelection()` |
+| select | 50 | module | `select(id)` |
+| focusPart | 51 | module | `focusPart()` |
+| assemblyTo | 52 | module | `assemblyTo(v)` |
+| target | 63 | module | `target()` |
+| onBeforeToggle | 64 | module | `onBeforeToggle` |
+| onRegion | 64 | module | `onRegion` |
+| onToggle | 64 | module | `onToggle` |
 
 ## web/src/branding.js
 
@@ -62,9 +64,36 @@ Chamadas são referências sintáticas conservadoras, não rastreamento de execu
 
 | Nome | Linha | Escopo | Assinatura |
 |---|---:|---|---|
-| applyInteiaBranding | 6 | module | `applyInteiaBranding(model, mechanics)` |
-| project | 16 | 6:applyInteiaBranding | `project(source,origin,direction,rotation,width,depth)` |
-| dispose | 29 | 6:applyInteiaBranding | `dispose()` |
+| applyInteiaBranding | 5 | module | `applyInteiaBranding(model, mechanics)` |
+| project | 25 | 5:applyInteiaBranding | `project(source,origin,direction,rotation,width,depth,decalMaterial=material,decalAspect=aspect)` |
+| dispose | 48 | 5:applyInteiaBranding | `dispose()` |
+
+## web/src/car-look.js
+
+[Fonte](../../web/src/car-look.js)
+
+| Nome | Linha | Escopo | Assinatura |
+|---|---:|---|---|
+| rimPatch | 36 | module | `rimPatch(material, uniforms)` |
+| paintShader | 49 | module | `paintShader(material)` |
+| localVaryings | 62 | module | `localVaryings(shader, tag)` |
+| rimShader | 70 | module | `rimShader(material)` |
+| tyreShader | 100 | module | `tyreShader(material)` |
+| discTexture | 127 | module | `discTexture(width)` |
+| random | 132 | 127:discTexture | `random()` |
+| heatTexture | 160 | module | `heatTexture()` |
+| discGeometry | 174 | module | `discGeometry()` |
+| caliperGeometry | 186 | module | `caliperGeometry()` |
+| at | 188 | 186:caliperGeometry | `at(r, a)` |
+| enhanceCar | 202 | module | `enhanceCar({model, mechanics, mobile})` |
+| share | 249 | 202:enhanceCar | `share(source, setup)` |
+| rimSetup | 253 | 202:enhanceCar | `rimSetup` |
+| tyreSetup | 254 | 202:enhanceCar | `tyreSetup` |
+| nutSetup | 257 | 202:enhanceCar | `nutSetup` |
+| update | 308 | 202:enhanceCar | `update()` |
+| setRim | 314 | 202:enhanceCar | `setRim(color, strength, direction, edge = .72)` |
+| race | 322 | 202:enhanceCar | `race(speed, brake, time)` |
+| dispose | 340 | 202:enhanceCar | `dispose()` |
 
 ## web/src/customize.js
 
@@ -75,6 +104,53 @@ Chamadas são referências sintáticas conservadoras, não rastreamento de execu
 | setupCustomization | 1 | module | `setupCustomization(materials, studio, renderer, scene)` |
 | $ | 2 | 1:setupCustomization | `$` |
 | applyLight | 32 | 1:setupCustomization | `applyLight()` |
+
+## web/src/engine/engine-shot.js
+
+[Fonte](../../web/src/engine/engine-shot.js)
+
+| Nome | Linha | Escopo | Assinatura |
+|---|---:|---|---|
+| clamp | 4 | module | `clamp` |
+| smooth | 5 | module | `smooth` |
+| segment | 48 | module | `segment(keys,p)` |
+| tangent | 50 | module | `tangent(keys,i,slot,axis)` |
+| spline | 59 | module | `spline(slot,p)` |
+| eased | 64 | module | `eased(keys,p)` |
+| engineShot | 70 | module | `engineShot(progress,mobile=false)` |
+
+## web/src/engine/in-car.js
+
+[Fonte](../../web/src/engine/in-car.js)
+
+| Nome | Linha | Escopo | Assinatura |
+|---|---:|---|---|
+| smooth | 16 | module | `smooth` |
+| nextFrame | 17 | module | `nextFrame()` |
+| aborted | 18 | module | `aborted()` |
+| createInCarEngine | 25 | module | `createInCarEngine({scene,renderer,camera,model,mechanics,target,mobile=false,signal=null,offstage=()=>[]})` |
+| cancel | 48 | 25:createInCarEngine | `cancel()` |
+| derive | 54 | 25:createInCarEngine | `derive(material,planes,intersection)` |
+| buildSplit | 55 | 25:createInCarEngine | `buildSplit()` |
+| twin | 58 | 55:buildSplit | `twin(mesh,material)` |
+| setSplit | 68 | 25:createInCarEngine | `setSplit(on)` |
+| poseCover | 75 | 25:createInCarEngine | `poseCover(open)` |
+| collect | 85 | 25:createInCarEngine | `collect(object)` |
+| buildEngine | 88 | 25:createInCarEngine | `buildEngine(gltf)` |
+| sectioned | 104 | 88:buildEngine | `sectioned` |
+| satin | 107 | 88:buildEngine | `satin` |
+| precompile | 115 | 25:createInCarEngine | `precompile()` |
+| add | 117 | 115:precompile | `add` |
+| upload | 134 | 25:createInCarEngine | `upload()` |
+| flush | 139 | 134:upload | `flush()` |
+| load | 154 | 25:createInCarEngine | `load()` |
+| rehearse | 176 | 25:createInCarEngine | `rehearse()` |
+| releaseEngine | 191 | 25:createInCarEngine | `releaseEngine()` |
+| state | 199 | 25:createInCarEngine | `state()` |
+| ready | 200 | 25:createInCarEngine | `ready()` |
+| prepare | 202 | 25:createInCarEngine | `prepare()` |
+| update | 212 | 25:createInCarEngine | `update(dt,shot,paused)` |
+| dispose | 226 | 25:createInCarEngine | `dispose()` |
 
 ## web/src/flow-detail.js
 
@@ -145,6 +221,22 @@ Chamadas são referências sintáticas conservadoras, não rastreamento de execu
 | reset | 64 | 3:createMechanics | `reset()` |
 | update | 65 | 3:createMechanics | `update(dt,now,reduced)` |
 
+## web/src/senna-driver.js
+
+[Fonte](../../web/src/senna-driver.js)
+
+| Nome | Linha | Escopo | Assinatura |
+|---|---:|---|---|
+| createSennaDriver | 4 | module | `createSennaDriver(model, mechanics)` |
+| mat | 7 | 4:createSennaDriver | `mat` |
+| mesh | 19 | 4:createSennaDriver | `mesh(geo,material,parent=root)` |
+| ellipsoid | 20 | 4:createSennaDriver | `ellipsoid(center,scale,material,parent=root)` |
+| limb | 21 | 4:createSennaDriver | `limb(a,b,r1,r2,material)` |
+| radius | 36 | 4:createSennaDriver | `radius(y)` |
+| surface | 37 | 4:createSennaDriver | `surface(y0,y1,a0,a1,material,lift=0,rows=32)` |
+| update | 55 | 4:createSennaDriver | `update()` |
+| dispose | 55 | 4:createSennaDriver | `dispose()` |
+
 ## web/src/studio.js
 
 [Fonte](../../web/src/studio.js)
@@ -162,6 +254,21 @@ Chamadas são referências sintáticas conservadoras, não rastreamento de execu
 | applyCarMaterials | 146 | module | `applyCarMaterials(THREE, model)` |
 | upgrade | 182 | 146:applyCarMaterials | `upgrade` |
 | dispose | 251 | 146:applyCarMaterials | `dispose()` |
+
+## web/src/surface-library.js
+
+[Fonte](../../web/src/surface-library.js)
+
+| Nome | Linha | Escopo | Assinatura |
+|---|---:|---|---|
+| createSurfaceLibrary | 16 | module | `createSurfaceLibrary(THREE, {renderer, mobile = false} = {})` |
+| clamp | 19 | 16:createSurfaceLibrary | `clamp(v,a=0,b=1)` |
+| noise | 21 | 16:createSurfaceLibrary | `noise(x,y,seed)` |
+| texture | 22 | 16:createSurfaceLibrary | `texture(bytes, color=false)` |
+| bake | 28 | 16:createSurfaceLibrary | `bake(kind, tileMeters, pixel, normalStrength)` |
+| transformed | 67 | 16:createSurfaceLibrary | `transformed(map,repeat)` |
+| applyTo | 68 | 16:createSurfaceLibrary | `applyTo(material,kind,{uvSpanMeters=1}={})` |
+| dispose | 98 | 16:createSurfaceLibrary | `dispose()` |
 
 ## web/src/tunnel-visual.js
 

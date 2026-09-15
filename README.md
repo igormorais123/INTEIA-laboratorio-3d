@@ -1,6 +1,6 @@
 # Laboratório 3D INTEIA
 
-Um laboratório interativo para explorar e personalizar um carro de fórmula: 97 componentes, cores independentes, materiais, iluminação e movimentos ilustrativos. Inclui projeto Blender editável e modelos GLB para reutilização.
+Um laboratório interativo para explorar e personalizar um carro de fórmula: 97 componentes exteriores, motor V6 ilustrativo integrado, patrocínios do F1 Loop, cores independentes, materiais, iluminação e movimentos ilustrativos. Inclui projeto Blender editável e modelos GLB para reutilização.
 
 **[Abrir o laboratório online](https://igormorais123.github.io/INTEIA-laboratorio-3d/)** · **[Atlas detalhado online](https://igormorais123.github.io/INTEIA-laboratorio-3d/docs/mapeamento-detalhado/index.html)** · [Publicação e atualização](docs/PUBLICACAO.md)
 
@@ -27,7 +27,7 @@ Um laboratório interativo para explorar e personalizar um carro de fórmula: 97
 
 ## Download e execução
 
-Clone ou use Code > Download ZIP. O HTML já está pronto e contém o modelo; não requer conta nem chave de API.
+Clone ou use Code > Download ZIP. O HTML já está pronto e contém o carro final v2; o motor e as marcas são carregados de web/assets. Não requer conta nem chave de API.
 
 ```sh
 git clone https://github.com/igormorais123/INTEIA-laboratorio-3d.git
@@ -37,7 +37,13 @@ npm run build
 npm run dev
 ```
 
-Abra http://127.0.0.1:5186 se essa for a porta livre usada por este servidor. Se já estiver ocupada, preserve o processo existente e escolha outra porta com `PORT`; veja [Desenvolvimento](docs/DESENVOLVIMENTO.md). Também é possível abrir web/index.html diretamente, sem instalar dependências. O link de um HTML dentro do GitHub mostra o código: ele não é um site publicado por si só.
+Abra http://127.0.0.1:5186 se essa for a porta livre usada por este servidor. Se já estiver ocupada, preserve o processo existente e escolha outra porta com `PORT`; veja [Desenvolvimento](docs/DESENVOLVIMENTO.md). Use o laboratório publicado ou o servidor local para carregar também o motor e os patrocínios. O link de um HTML dentro do GitHub mostra o código: ele não é um site publicado por si só.
+
+## Atualização do carro e motor
+
+O laboratório usa o mesmo carro v2, pintura final, rodas, piloto e patrocínios do F1 Loop: assinatura e brasão INTEIA, número 1 e Inteligência Mil Grau. Abra **MOTOR / V6 TURBO** para levantar a tampa, cortar a vista para mostrar os pistões e pausar/retomar. **Desmontar** mantém o motor visível dentro do conjunto. O túnel fecha a tampa automaticamente.
+
+[Detalhes da integração](docs/INTEGRACAO-MOTOR.md).
 
 ## O que está incluído
 
@@ -54,6 +60,6 @@ As escolhas de personalização ficam na sessão do navegador. Use Salvar imagem
 
 ## Limites e direitos
 
-É uma representação das peças externas fornecidas, com cerca de 753 mil triângulos. Não contém motor/câmbio completos, rig físico, colisores ou LODs. Os movimentos são ilustrativos; o projeto não foi certificado como réplica técnica nem como indistinguível de uma fotografia.
+É uma representação das peças externas fornecidas, com cerca de 260 mil triângulos no carro v2, além do motor e dos detalhes adicionais. Inclui o motor V6 didático do F1 Loop; não contém câmbio completo, rig físico ou colisores. Os arquivos Blender e GLB da pasta modelos continuam sendo a entrega original; esta atualização refere-se ao laboratório web. Os movimentos são ilustrativos; o projeto não foi certificado como réplica técnica nem como indistinguível de uma fotografia.
 
 **© 2026 INTEIA — todos os direitos reservados.** O Laboratório 3D INTEIA é um projeto de titularidade da INTEIA, sob [licença proprietária](LICENSE). Estar público não concede uma licença de código aberto. A procedência dos assets e as licenças de terceiros estão registradas separadamente em [Direitos e procedência](docs/DIREITOS-E-PROCEDENCIA.md) e [THIRD-PARTY-NOTICES.md](THIRD-PARTY-NOTICES.md).

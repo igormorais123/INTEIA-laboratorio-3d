@@ -157,10 +157,28 @@
       "path": "validacao-reabertura.json"
     },
     {
+      "id": "web/assets/carro-aula-v2.glb",
+      "label": "web/assets/carro-aula-v2.glb",
+      "kind": "file",
+      "path": "web/assets/carro-aula-v2.glb"
+    },
+    {
       "id": "web/assets/carro-movable.glb",
       "label": "web/assets/carro-movable.glb",
       "kind": "file",
       "path": "web/assets/carro-movable.glb"
+    },
+    {
+      "id": "web/assets/inteligencia-mil-grau-transparent.png",
+      "label": "web/assets/inteligencia-mil-grau-transparent.png",
+      "kind": "file",
+      "path": "web/assets/inteligencia-mil-grau-transparent.png"
+    },
+    {
+      "id": "web/assets/power-unit-v1.glb",
+      "label": "web/assets/power-unit-v1.glb",
+      "kind": "file",
+      "path": "web/assets/power-unit-v1.glb"
     },
     {
       "id": "web/build.cjs",
@@ -173,6 +191,18 @@
       "label": "web/index.html",
       "kind": "file",
       "path": "web/index.html"
+    },
+    {
+      "id": "web/src/branding.js",
+      "label": "web/src/branding.js",
+      "kind": "file",
+      "path": "web/src/branding.js"
+    },
+    {
+      "id": "web/src/engine/in-car.js",
+      "label": "web/src/engine/in-car.js",
+      "kind": "file",
+      "path": "web/src/engine/in-car.js"
     },
     {
       "id": "web/src/garage.js",
@@ -484,26 +514,26 @@
     },
     {
       "source": "web/build.cjs",
-      "target": "web/assets/carro-movable.glb",
+      "target": "web/assets/carro-aula-v2.glb",
       "relation": "incorpora_como_base64",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "evidence": {
         "path": "web/build.cjs",
         "line": 3,
-        "text": "const html=fs.readFileSync('src/template-v2.html','utf8').replace('__MODEL__',fs.readFileSync('assets/carro-movable.glb').toString('base64')).replace('__APP__',()=>bundle.replace(/<\\/script/gi,'<\\\\/script'));"
+        "text": "const html=fs.readFileSync('src/template-v2.html','utf8').replace('__MODEL__',fs.readFileSync('assets/carro-aula-v2.glb').toString('base64')).replace('__APP__',()=>bundle.replace(/<\\/script/gi,'<\\\\/script'));"
       }
     },
     {
       "source": "web/test-mechanics.mjs",
-      "target": "web/assets/carro-movable.glb",
+      "target": "web/assets/carro-aula-v2.glb",
       "relation": "le_geometria_para_testes",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "evidence": {
         "path": "web/test-mechanics.mjs",
-        "line": 5,
-        "text": "const b=fs.readFileSync('assets/carro-movable.glb'),len=b.readUInt32LE(12),j=JSON.parse(b.subarray(20,20+len));"
+        "line": 6,
+        "text": "const b=fs.readFileSync('assets/carro-aula-v2.glb'),len=b.readUInt32LE(12),j=JSON.parse(b.subarray(20,20+len));"
       }
     },
     {
@@ -743,7 +773,7 @@
       "evidence": {
         "path": "ferramentas/manifest.cjs",
         "line": 1,
-        "text": "const fs=require('fs'),path=require('path'),crypto=require('crypto');const root=path.resolve(__dirname,'..');const files=['INTEIA_F1_Master.blend','modelos/INTEIA_F1_estatico.glb','modelos/INTEIA_F1_animado.glb','texturas/INTEIA_Carbono_BaseColor.png','web/assets/carro-movable.glb','web/index.html','Previa-Blender.png','ambientes/INTEIA-box-laboratorio.glb','ambientes/INTEIA_Box_com_carro.blend','ambientes/Previa-Box.png','identidade/INTEIA-principal.svg','identidade/INTEIA-negativo.svg','identidade/INTEIA-monocromatico.svg','identidade/INTEIA-simbolo.svg'];const out=files.map(arquivo=>{const b=fs.readFileSync(path.join(root,arquivo));return {arquivo,bytes:b.length,sha256:crypto.createHash('sha256').update(b).digest('hex')};});fs.writeFileSync(path.join(root,'manifesto-sha256.json'),JSON.stringify(out,null,2)+'\\n');"
+        "text": "const fs=require('fs'),path=require('path'),crypto=require('crypto');const root=path.resolve(__dirname,'..');const files=['INTEIA_F1_Master.blend','modelos/INTEIA_F1_estatico.glb','modelos/INTEIA_F1_animado.glb','texturas/INTEIA_Carbono_BaseColor.png','web/assets/carro-movable.glb','web/assets/carro-aula-v2.glb','web/assets/power-unit-v1.glb','web/assets/inteia-nome-oficial.svg','web/assets/inteia-escudo-oficial.svg','web/assets/inteligencia-mil-grau-transparent.png','web/index.html','Previa-Blender.png','ambientes/INTEIA-box-laboratorio.glb','ambientes/INTEIA_Box_com_carro.blend','ambientes/Previa-Box.png','identidade/INTEIA-principal.svg','identidade/INTEIA-negativo.svg','identidade/INTEIA-monocromatico.svg','identidade/INTEIA-simbolo.svg'];const out=files.map(arquivo=>{const b=fs.readFileSync(path.join(root,arquivo));return {arquivo,bytes:b.length,sha256:crypto.createHash('sha256').update(b).digest('hex')};});fs.writeFileSync(path.join(root,'manifesto-sha256.json'),JSON.stringify(out,null,2)+'\\n');"
       }
     },
     {
@@ -755,7 +785,7 @@
       "evidence": {
         "path": "ferramentas/manifest.cjs",
         "line": 1,
-        "text": "const fs=require('fs'),path=require('path'),crypto=require('crypto');const root=path.resolve(__dirname,'..');const files=['INTEIA_F1_Master.blend','modelos/INTEIA_F1_estatico.glb','modelos/INTEIA_F1_animado.glb','texturas/INTEIA_Carbono_BaseColor.png','web/assets/carro-movable.glb','web/index.html','Previa-Blender.png','ambientes/INTEIA-box-laboratorio.glb','ambientes/INTEIA_Box_com_carro.blend','ambientes/Previa-Box.png','identidade/INTEIA-principal.svg','identidade/INTEIA-negativo.svg','identidade/INTEIA-monocromatico.svg','identidade/INTEIA-simbolo.svg'];const out=files.map(arquivo=>{const b=fs.readFileSync(path.join(root,arquivo));return {arquivo,bytes:b.length,sha256:crypto.createHash('sha256').update(b).digest('hex')};});fs.writeFileSync(path.join(root,'manifesto-sha256.json'),JSON.stringify(out,null,2)+'\\n');"
+        "text": "const fs=require('fs'),path=require('path'),crypto=require('crypto');const root=path.resolve(__dirname,'..');const files=['INTEIA_F1_Master.blend','modelos/INTEIA_F1_estatico.glb','modelos/INTEIA_F1_animado.glb','texturas/INTEIA_Carbono_BaseColor.png','web/assets/carro-movable.glb','web/assets/carro-aula-v2.glb','web/assets/power-unit-v1.glb','web/assets/inteia-nome-oficial.svg','web/assets/inteia-escudo-oficial.svg','web/assets/inteligencia-mil-grau-transparent.png','web/index.html','Previa-Blender.png','ambientes/INTEIA-box-laboratorio.glb','ambientes/INTEIA_Box_com_carro.blend','ambientes/Previa-Box.png','identidade/INTEIA-principal.svg','identidade/INTEIA-negativo.svg','identidade/INTEIA-monocromatico.svg','identidade/INTEIA-simbolo.svg'];const out=files.map(arquivo=>{const b=fs.readFileSync(path.join(root,arquivo));return {arquivo,bytes:b.length,sha256:crypto.createHash('sha256').update(b).digest('hex')};});fs.writeFileSync(path.join(root,'manifesto-sha256.json'),JSON.stringify(out,null,2)+'\\n');"
       }
     },
     {
@@ -767,7 +797,7 @@
       "evidence": {
         "path": "ferramentas/manifest.cjs",
         "line": 1,
-        "text": "const fs=require('fs'),path=require('path'),crypto=require('crypto');const root=path.resolve(__dirname,'..');const files=['INTEIA_F1_Master.blend','modelos/INTEIA_F1_estatico.glb','modelos/INTEIA_F1_animado.glb','texturas/INTEIA_Carbono_BaseColor.png','web/assets/carro-movable.glb','web/index.html','Previa-Blender.png','ambientes/INTEIA-box-laboratorio.glb','ambientes/INTEIA_Box_com_carro.blend','ambientes/Previa-Box.png','identidade/INTEIA-principal.svg','identidade/INTEIA-negativo.svg','identidade/INTEIA-monocromatico.svg','identidade/INTEIA-simbolo.svg'];const out=files.map(arquivo=>{const b=fs.readFileSync(path.join(root,arquivo));return {arquivo,bytes:b.length,sha256:crypto.createHash('sha256').update(b).digest('hex')};});fs.writeFileSync(path.join(root,'manifesto-sha256.json'),JSON.stringify(out,null,2)+'\\n');"
+        "text": "const fs=require('fs'),path=require('path'),crypto=require('crypto');const root=path.resolve(__dirname,'..');const files=['INTEIA_F1_Master.blend','modelos/INTEIA_F1_estatico.glb','modelos/INTEIA_F1_animado.glb','texturas/INTEIA_Carbono_BaseColor.png','web/assets/carro-movable.glb','web/assets/carro-aula-v2.glb','web/assets/power-unit-v1.glb','web/assets/inteia-nome-oficial.svg','web/assets/inteia-escudo-oficial.svg','web/assets/inteligencia-mil-grau-transparent.png','web/index.html','Previa-Blender.png','ambientes/INTEIA-box-laboratorio.glb','ambientes/INTEIA_Box_com_carro.blend','ambientes/Previa-Box.png','identidade/INTEIA-principal.svg','identidade/INTEIA-negativo.svg','identidade/INTEIA-monocromatico.svg','identidade/INTEIA-simbolo.svg'];const out=files.map(arquivo=>{const b=fs.readFileSync(path.join(root,arquivo));return {arquivo,bytes:b.length,sha256:crypto.createHash('sha256').update(b).digest('hex')};});fs.writeFileSync(path.join(root,'manifesto-sha256.json'),JSON.stringify(out,null,2)+'\\n');"
       }
     },
     {
@@ -779,7 +809,7 @@
       "evidence": {
         "path": "ferramentas/manifest.cjs",
         "line": 1,
-        "text": "const fs=require('fs'),path=require('path'),crypto=require('crypto');const root=path.resolve(__dirname,'..');const files=['INTEIA_F1_Master.blend','modelos/INTEIA_F1_estatico.glb','modelos/INTEIA_F1_animado.glb','texturas/INTEIA_Carbono_BaseColor.png','web/assets/carro-movable.glb','web/index.html','Previa-Blender.png','ambientes/INTEIA-box-laboratorio.glb','ambientes/INTEIA_Box_com_carro.blend','ambientes/Previa-Box.png','identidade/INTEIA-principal.svg','identidade/INTEIA-negativo.svg','identidade/INTEIA-monocromatico.svg','identidade/INTEIA-simbolo.svg'];const out=files.map(arquivo=>{const b=fs.readFileSync(path.join(root,arquivo));return {arquivo,bytes:b.length,sha256:crypto.createHash('sha256').update(b).digest('hex')};});fs.writeFileSync(path.join(root,'manifesto-sha256.json'),JSON.stringify(out,null,2)+'\\n');"
+        "text": "const fs=require('fs'),path=require('path'),crypto=require('crypto');const root=path.resolve(__dirname,'..');const files=['INTEIA_F1_Master.blend','modelos/INTEIA_F1_estatico.glb','modelos/INTEIA_F1_animado.glb','texturas/INTEIA_Carbono_BaseColor.png','web/assets/carro-movable.glb','web/assets/carro-aula-v2.glb','web/assets/power-unit-v1.glb','web/assets/inteia-nome-oficial.svg','web/assets/inteia-escudo-oficial.svg','web/assets/inteligencia-mil-grau-transparent.png','web/index.html','Previa-Blender.png','ambientes/INTEIA-box-laboratorio.glb','ambientes/INTEIA_Box_com_carro.blend','ambientes/Previa-Box.png','identidade/INTEIA-principal.svg','identidade/INTEIA-negativo.svg','identidade/INTEIA-monocromatico.svg','identidade/INTEIA-simbolo.svg'];const out=files.map(arquivo=>{const b=fs.readFileSync(path.join(root,arquivo));return {arquivo,bytes:b.length,sha256:crypto.createHash('sha256').update(b).digest('hex')};});fs.writeFileSync(path.join(root,'manifesto-sha256.json'),JSON.stringify(out,null,2)+'\\n');"
       }
     },
     {
@@ -791,7 +821,7 @@
       "evidence": {
         "path": "ferramentas/manifest.cjs",
         "line": 1,
-        "text": "const fs=require('fs'),path=require('path'),crypto=require('crypto');const root=path.resolve(__dirname,'..');const files=['INTEIA_F1_Master.blend','modelos/INTEIA_F1_estatico.glb','modelos/INTEIA_F1_animado.glb','texturas/INTEIA_Carbono_BaseColor.png','web/assets/carro-movable.glb','web/index.html','Previa-Blender.png','ambientes/INTEIA-box-laboratorio.glb','ambientes/INTEIA_Box_com_carro.blend','ambientes/Previa-Box.png','identidade/INTEIA-principal.svg','identidade/INTEIA-negativo.svg','identidade/INTEIA-monocromatico.svg','identidade/INTEIA-simbolo.svg'];const out=files.map(arquivo=>{const b=fs.readFileSync(path.join(root,arquivo));return {arquivo,bytes:b.length,sha256:crypto.createHash('sha256').update(b).digest('hex')};});fs.writeFileSync(path.join(root,'manifesto-sha256.json'),JSON.stringify(out,null,2)+'\\n');"
+        "text": "const fs=require('fs'),path=require('path'),crypto=require('crypto');const root=path.resolve(__dirname,'..');const files=['INTEIA_F1_Master.blend','modelos/INTEIA_F1_estatico.glb','modelos/INTEIA_F1_animado.glb','texturas/INTEIA_Carbono_BaseColor.png','web/assets/carro-movable.glb','web/assets/carro-aula-v2.glb','web/assets/power-unit-v1.glb','web/assets/inteia-nome-oficial.svg','web/assets/inteia-escudo-oficial.svg','web/assets/inteligencia-mil-grau-transparent.png','web/index.html','Previa-Blender.png','ambientes/INTEIA-box-laboratorio.glb','ambientes/INTEIA_Box_com_carro.blend','ambientes/Previa-Box.png','identidade/INTEIA-principal.svg','identidade/INTEIA-negativo.svg','identidade/INTEIA-monocromatico.svg','identidade/INTEIA-simbolo.svg'];const out=files.map(arquivo=>{const b=fs.readFileSync(path.join(root,arquivo));return {arquivo,bytes:b.length,sha256:crypto.createHash('sha256').update(b).digest('hex')};});fs.writeFileSync(path.join(root,'manifesto-sha256.json'),JSON.stringify(out,null,2)+'\\n');"
       }
     },
     {
@@ -803,7 +833,7 @@
       "evidence": {
         "path": "ferramentas/manifest.cjs",
         "line": 1,
-        "text": "const fs=require('fs'),path=require('path'),crypto=require('crypto');const root=path.resolve(__dirname,'..');const files=['INTEIA_F1_Master.blend','modelos/INTEIA_F1_estatico.glb','modelos/INTEIA_F1_animado.glb','texturas/INTEIA_Carbono_BaseColor.png','web/assets/carro-movable.glb','web/index.html','Previa-Blender.png','ambientes/INTEIA-box-laboratorio.glb','ambientes/INTEIA_Box_com_carro.blend','ambientes/Previa-Box.png','identidade/INTEIA-principal.svg','identidade/INTEIA-negativo.svg','identidade/INTEIA-monocromatico.svg','identidade/INTEIA-simbolo.svg'];const out=files.map(arquivo=>{const b=fs.readFileSync(path.join(root,arquivo));return {arquivo,bytes:b.length,sha256:crypto.createHash('sha256').update(b).digest('hex')};});fs.writeFileSync(path.join(root,'manifesto-sha256.json'),JSON.stringify(out,null,2)+'\\n');"
+        "text": "const fs=require('fs'),path=require('path'),crypto=require('crypto');const root=path.resolve(__dirname,'..');const files=['INTEIA_F1_Master.blend','modelos/INTEIA_F1_estatico.glb','modelos/INTEIA_F1_animado.glb','texturas/INTEIA_Carbono_BaseColor.png','web/assets/carro-movable.glb','web/assets/carro-aula-v2.glb','web/assets/power-unit-v1.glb','web/assets/inteia-nome-oficial.svg','web/assets/inteia-escudo-oficial.svg','web/assets/inteligencia-mil-grau-transparent.png','web/index.html','Previa-Blender.png','ambientes/INTEIA-box-laboratorio.glb','ambientes/INTEIA_Box_com_carro.blend','ambientes/Previa-Box.png','identidade/INTEIA-principal.svg','identidade/INTEIA-negativo.svg','identidade/INTEIA-monocromatico.svg','identidade/INTEIA-simbolo.svg'];const out=files.map(arquivo=>{const b=fs.readFileSync(path.join(root,arquivo));return {arquivo,bytes:b.length,sha256:crypto.createHash('sha256').update(b).digest('hex')};});fs.writeFileSync(path.join(root,'manifesto-sha256.json'),JSON.stringify(out,null,2)+'\\n');"
       }
     },
     {
@@ -815,7 +845,7 @@
       "evidence": {
         "path": "ferramentas/manifest.cjs",
         "line": 1,
-        "text": "const fs=require('fs'),path=require('path'),crypto=require('crypto');const root=path.resolve(__dirname,'..');const files=['INTEIA_F1_Master.blend','modelos/INTEIA_F1_estatico.glb','modelos/INTEIA_F1_animado.glb','texturas/INTEIA_Carbono_BaseColor.png','web/assets/carro-movable.glb','web/index.html','Previa-Blender.png','ambientes/INTEIA-box-laboratorio.glb','ambientes/INTEIA_Box_com_carro.blend','ambientes/Previa-Box.png','identidade/INTEIA-principal.svg','identidade/INTEIA-negativo.svg','identidade/INTEIA-monocromatico.svg','identidade/INTEIA-simbolo.svg'];const out=files.map(arquivo=>{const b=fs.readFileSync(path.join(root,arquivo));return {arquivo,bytes:b.length,sha256:crypto.createHash('sha256').update(b).digest('hex')};});fs.writeFileSync(path.join(root,'manifesto-sha256.json'),JSON.stringify(out,null,2)+'\\n');"
+        "text": "const fs=require('fs'),path=require('path'),crypto=require('crypto');const root=path.resolve(__dirname,'..');const files=['INTEIA_F1_Master.blend','modelos/INTEIA_F1_estatico.glb','modelos/INTEIA_F1_animado.glb','texturas/INTEIA_Carbono_BaseColor.png','web/assets/carro-movable.glb','web/assets/carro-aula-v2.glb','web/assets/power-unit-v1.glb','web/assets/inteia-nome-oficial.svg','web/assets/inteia-escudo-oficial.svg','web/assets/inteligencia-mil-grau-transparent.png','web/index.html','Previa-Blender.png','ambientes/INTEIA-box-laboratorio.glb','ambientes/INTEIA_Box_com_carro.blend','ambientes/Previa-Box.png','identidade/INTEIA-principal.svg','identidade/INTEIA-negativo.svg','identidade/INTEIA-monocromatico.svg','identidade/INTEIA-simbolo.svg'];const out=files.map(arquivo=>{const b=fs.readFileSync(path.join(root,arquivo));return {arquivo,bytes:b.length,sha256:crypto.createHash('sha256').update(b).digest('hex')};});fs.writeFileSync(path.join(root,'manifesto-sha256.json'),JSON.stringify(out,null,2)+'\\n');"
       }
     },
     {
@@ -827,7 +857,7 @@
       "evidence": {
         "path": "ferramentas/manifest.cjs",
         "line": 1,
-        "text": "const fs=require('fs'),path=require('path'),crypto=require('crypto');const root=path.resolve(__dirname,'..');const files=['INTEIA_F1_Master.blend','modelos/INTEIA_F1_estatico.glb','modelos/INTEIA_F1_animado.glb','texturas/INTEIA_Carbono_BaseColor.png','web/assets/carro-movable.glb','web/index.html','Previa-Blender.png','ambientes/INTEIA-box-laboratorio.glb','ambientes/INTEIA_Box_com_carro.blend','ambientes/Previa-Box.png','identidade/INTEIA-principal.svg','identidade/INTEIA-negativo.svg','identidade/INTEIA-monocromatico.svg','identidade/INTEIA-simbolo.svg'];const out=files.map(arquivo=>{const b=fs.readFileSync(path.join(root,arquivo));return {arquivo,bytes:b.length,sha256:crypto.createHash('sha256').update(b).digest('hex')};});fs.writeFileSync(path.join(root,'manifesto-sha256.json'),JSON.stringify(out,null,2)+'\\n');"
+        "text": "const fs=require('fs'),path=require('path'),crypto=require('crypto');const root=path.resolve(__dirname,'..');const files=['INTEIA_F1_Master.blend','modelos/INTEIA_F1_estatico.glb','modelos/INTEIA_F1_animado.glb','texturas/INTEIA_Carbono_BaseColor.png','web/assets/carro-movable.glb','web/assets/carro-aula-v2.glb','web/assets/power-unit-v1.glb','web/assets/inteia-nome-oficial.svg','web/assets/inteia-escudo-oficial.svg','web/assets/inteligencia-mil-grau-transparent.png','web/index.html','Previa-Blender.png','ambientes/INTEIA-box-laboratorio.glb','ambientes/INTEIA_Box_com_carro.blend','ambientes/Previa-Box.png','identidade/INTEIA-principal.svg','identidade/INTEIA-negativo.svg','identidade/INTEIA-monocromatico.svg','identidade/INTEIA-simbolo.svg'];const out=files.map(arquivo=>{const b=fs.readFileSync(path.join(root,arquivo));return {arquivo,bytes:b.length,sha256:crypto.createHash('sha256').update(b).digest('hex')};});fs.writeFileSync(path.join(root,'manifesto-sha256.json'),JSON.stringify(out,null,2)+'\\n');"
       }
     },
     {
@@ -839,7 +869,7 @@
       "evidence": {
         "path": "ferramentas/manifest.cjs",
         "line": 1,
-        "text": "const fs=require('fs'),path=require('path'),crypto=require('crypto');const root=path.resolve(__dirname,'..');const files=['INTEIA_F1_Master.blend','modelos/INTEIA_F1_estatico.glb','modelos/INTEIA_F1_animado.glb','texturas/INTEIA_Carbono_BaseColor.png','web/assets/carro-movable.glb','web/index.html','Previa-Blender.png','ambientes/INTEIA-box-laboratorio.glb','ambientes/INTEIA_Box_com_carro.blend','ambientes/Previa-Box.png','identidade/INTEIA-principal.svg','identidade/INTEIA-negativo.svg','identidade/INTEIA-monocromatico.svg','identidade/INTEIA-simbolo.svg'];const out=files.map(arquivo=>{const b=fs.readFileSync(path.join(root,arquivo));return {arquivo,bytes:b.length,sha256:crypto.createHash('sha256').update(b).digest('hex')};});fs.writeFileSync(path.join(root,'manifesto-sha256.json'),JSON.stringify(out,null,2)+'\\n');"
+        "text": "const fs=require('fs'),path=require('path'),crypto=require('crypto');const root=path.resolve(__dirname,'..');const files=['INTEIA_F1_Master.blend','modelos/INTEIA_F1_estatico.glb','modelos/INTEIA_F1_animado.glb','texturas/INTEIA_Carbono_BaseColor.png','web/assets/carro-movable.glb','web/assets/carro-aula-v2.glb','web/assets/power-unit-v1.glb','web/assets/inteia-nome-oficial.svg','web/assets/inteia-escudo-oficial.svg','web/assets/inteligencia-mil-grau-transparent.png','web/index.html','Previa-Blender.png','ambientes/INTEIA-box-laboratorio.glb','ambientes/INTEIA_Box_com_carro.blend','ambientes/Previa-Box.png','identidade/INTEIA-principal.svg','identidade/INTEIA-negativo.svg','identidade/INTEIA-monocromatico.svg','identidade/INTEIA-simbolo.svg'];const out=files.map(arquivo=>{const b=fs.readFileSync(path.join(root,arquivo));return {arquivo,bytes:b.length,sha256:crypto.createHash('sha256').update(b).digest('hex')};});fs.writeFileSync(path.join(root,'manifesto-sha256.json'),JSON.stringify(out,null,2)+'\\n');"
       }
     },
     {
@@ -851,7 +881,7 @@
       "evidence": {
         "path": "ferramentas/manifest.cjs",
         "line": 1,
-        "text": "const fs=require('fs'),path=require('path'),crypto=require('crypto');const root=path.resolve(__dirname,'..');const files=['INTEIA_F1_Master.blend','modelos/INTEIA_F1_estatico.glb','modelos/INTEIA_F1_animado.glb','texturas/INTEIA_Carbono_BaseColor.png','web/assets/carro-movable.glb','web/index.html','Previa-Blender.png','ambientes/INTEIA-box-laboratorio.glb','ambientes/INTEIA_Box_com_carro.blend','ambientes/Previa-Box.png','identidade/INTEIA-principal.svg','identidade/INTEIA-negativo.svg','identidade/INTEIA-monocromatico.svg','identidade/INTEIA-simbolo.svg'];const out=files.map(arquivo=>{const b=fs.readFileSync(path.join(root,arquivo));return {arquivo,bytes:b.length,sha256:crypto.createHash('sha256').update(b).digest('hex')};});fs.writeFileSync(path.join(root,'manifesto-sha256.json'),JSON.stringify(out,null,2)+'\\n');"
+        "text": "const fs=require('fs'),path=require('path'),crypto=require('crypto');const root=path.resolve(__dirname,'..');const files=['INTEIA_F1_Master.blend','modelos/INTEIA_F1_estatico.glb','modelos/INTEIA_F1_animado.glb','texturas/INTEIA_Carbono_BaseColor.png','web/assets/carro-movable.glb','web/assets/carro-aula-v2.glb','web/assets/power-unit-v1.glb','web/assets/inteia-nome-oficial.svg','web/assets/inteia-escudo-oficial.svg','web/assets/inteligencia-mil-grau-transparent.png','web/index.html','Previa-Blender.png','ambientes/INTEIA-box-laboratorio.glb','ambientes/INTEIA_Box_com_carro.blend','ambientes/Previa-Box.png','identidade/INTEIA-principal.svg','identidade/INTEIA-negativo.svg','identidade/INTEIA-monocromatico.svg','identidade/INTEIA-simbolo.svg'];const out=files.map(arquivo=>{const b=fs.readFileSync(path.join(root,arquivo));return {arquivo,bytes:b.length,sha256:crypto.createHash('sha256').update(b).digest('hex')};});fs.writeFileSync(path.join(root,'manifesto-sha256.json'),JSON.stringify(out,null,2)+'\\n');"
       }
     },
     {
@@ -863,7 +893,7 @@
       "evidence": {
         "path": "ferramentas/manifest.cjs",
         "line": 1,
-        "text": "const fs=require('fs'),path=require('path'),crypto=require('crypto');const root=path.resolve(__dirname,'..');const files=['INTEIA_F1_Master.blend','modelos/INTEIA_F1_estatico.glb','modelos/INTEIA_F1_animado.glb','texturas/INTEIA_Carbono_BaseColor.png','web/assets/carro-movable.glb','web/index.html','Previa-Blender.png','ambientes/INTEIA-box-laboratorio.glb','ambientes/INTEIA_Box_com_carro.blend','ambientes/Previa-Box.png','identidade/INTEIA-principal.svg','identidade/INTEIA-negativo.svg','identidade/INTEIA-monocromatico.svg','identidade/INTEIA-simbolo.svg'];const out=files.map(arquivo=>{const b=fs.readFileSync(path.join(root,arquivo));return {arquivo,bytes:b.length,sha256:crypto.createHash('sha256').update(b).digest('hex')};});fs.writeFileSync(path.join(root,'manifesto-sha256.json'),JSON.stringify(out,null,2)+'\\n');"
+        "text": "const fs=require('fs'),path=require('path'),crypto=require('crypto');const root=path.resolve(__dirname,'..');const files=['INTEIA_F1_Master.blend','modelos/INTEIA_F1_estatico.glb','modelos/INTEIA_F1_animado.glb','texturas/INTEIA_Carbono_BaseColor.png','web/assets/carro-movable.glb','web/assets/carro-aula-v2.glb','web/assets/power-unit-v1.glb','web/assets/inteia-nome-oficial.svg','web/assets/inteia-escudo-oficial.svg','web/assets/inteligencia-mil-grau-transparent.png','web/index.html','Previa-Blender.png','ambientes/INTEIA-box-laboratorio.glb','ambientes/INTEIA_Box_com_carro.blend','ambientes/Previa-Box.png','identidade/INTEIA-principal.svg','identidade/INTEIA-negativo.svg','identidade/INTEIA-monocromatico.svg','identidade/INTEIA-simbolo.svg'];const out=files.map(arquivo=>{const b=fs.readFileSync(path.join(root,arquivo));return {arquivo,bytes:b.length,sha256:crypto.createHash('sha256').update(b).digest('hex')};});fs.writeFileSync(path.join(root,'manifesto-sha256.json'),JSON.stringify(out,null,2)+'\\n');"
       }
     },
     {
@@ -875,7 +905,7 @@
       "evidence": {
         "path": "ferramentas/manifest.cjs",
         "line": 1,
-        "text": "const fs=require('fs'),path=require('path'),crypto=require('crypto');const root=path.resolve(__dirname,'..');const files=['INTEIA_F1_Master.blend','modelos/INTEIA_F1_estatico.glb','modelos/INTEIA_F1_animado.glb','texturas/INTEIA_Carbono_BaseColor.png','web/assets/carro-movable.glb','web/index.html','Previa-Blender.png','ambientes/INTEIA-box-laboratorio.glb','ambientes/INTEIA_Box_com_carro.blend','ambientes/Previa-Box.png','identidade/INTEIA-principal.svg','identidade/INTEIA-negativo.svg','identidade/INTEIA-monocromatico.svg','identidade/INTEIA-simbolo.svg'];const out=files.map(arquivo=>{const b=fs.readFileSync(path.join(root,arquivo));return {arquivo,bytes:b.length,sha256:crypto.createHash('sha256').update(b).digest('hex')};});fs.writeFileSync(path.join(root,'manifesto-sha256.json'),JSON.stringify(out,null,2)+'\\n');"
+        "text": "const fs=require('fs'),path=require('path'),crypto=require('crypto');const root=path.resolve(__dirname,'..');const files=['INTEIA_F1_Master.blend','modelos/INTEIA_F1_estatico.glb','modelos/INTEIA_F1_animado.glb','texturas/INTEIA_Carbono_BaseColor.png','web/assets/carro-movable.glb','web/assets/carro-aula-v2.glb','web/assets/power-unit-v1.glb','web/assets/inteia-nome-oficial.svg','web/assets/inteia-escudo-oficial.svg','web/assets/inteligencia-mil-grau-transparent.png','web/index.html','Previa-Blender.png','ambientes/INTEIA-box-laboratorio.glb','ambientes/INTEIA_Box_com_carro.blend','ambientes/Previa-Box.png','identidade/INTEIA-principal.svg','identidade/INTEIA-negativo.svg','identidade/INTEIA-monocromatico.svg','identidade/INTEIA-simbolo.svg'];const out=files.map(arquivo=>{const b=fs.readFileSync(path.join(root,arquivo));return {arquivo,bytes:b.length,sha256:crypto.createHash('sha256').update(b).digest('hex')};});fs.writeFileSync(path.join(root,'manifesto-sha256.json'),JSON.stringify(out,null,2)+'\\n');"
       }
     },
     {
@@ -887,7 +917,7 @@
       "evidence": {
         "path": "ferramentas/manifest.cjs",
         "line": 1,
-        "text": "const fs=require('fs'),path=require('path'),crypto=require('crypto');const root=path.resolve(__dirname,'..');const files=['INTEIA_F1_Master.blend','modelos/INTEIA_F1_estatico.glb','modelos/INTEIA_F1_animado.glb','texturas/INTEIA_Carbono_BaseColor.png','web/assets/carro-movable.glb','web/index.html','Previa-Blender.png','ambientes/INTEIA-box-laboratorio.glb','ambientes/INTEIA_Box_com_carro.blend','ambientes/Previa-Box.png','identidade/INTEIA-principal.svg','identidade/INTEIA-negativo.svg','identidade/INTEIA-monocromatico.svg','identidade/INTEIA-simbolo.svg'];const out=files.map(arquivo=>{const b=fs.readFileSync(path.join(root,arquivo));return {arquivo,bytes:b.length,sha256:crypto.createHash('sha256').update(b).digest('hex')};});fs.writeFileSync(path.join(root,'manifesto-sha256.json'),JSON.stringify(out,null,2)+'\\n');"
+        "text": "const fs=require('fs'),path=require('path'),crypto=require('crypto');const root=path.resolve(__dirname,'..');const files=['INTEIA_F1_Master.blend','modelos/INTEIA_F1_estatico.glb','modelos/INTEIA_F1_animado.glb','texturas/INTEIA_Carbono_BaseColor.png','web/assets/carro-movable.glb','web/assets/carro-aula-v2.glb','web/assets/power-unit-v1.glb','web/assets/inteia-nome-oficial.svg','web/assets/inteia-escudo-oficial.svg','web/assets/inteligencia-mil-grau-transparent.png','web/index.html','Previa-Blender.png','ambientes/INTEIA-box-laboratorio.glb','ambientes/INTEIA_Box_com_carro.blend','ambientes/Previa-Box.png','identidade/INTEIA-principal.svg','identidade/INTEIA-negativo.svg','identidade/INTEIA-monocromatico.svg','identidade/INTEIA-simbolo.svg'];const out=files.map(arquivo=>{const b=fs.readFileSync(path.join(root,arquivo));return {arquivo,bytes:b.length,sha256:crypto.createHash('sha256').update(b).digest('hex')};});fs.writeFileSync(path.join(root,'manifesto-sha256.json'),JSON.stringify(out,null,2)+'\\n');"
       }
     },
     {
@@ -899,7 +929,7 @@
       "evidence": {
         "path": "ferramentas/manifest.cjs",
         "line": 1,
-        "text": "const fs=require('fs'),path=require('path'),crypto=require('crypto');const root=path.resolve(__dirname,'..');const files=['INTEIA_F1_Master.blend','modelos/INTEIA_F1_estatico.glb','modelos/INTEIA_F1_animado.glb','texturas/INTEIA_Carbono_BaseColor.png','web/assets/carro-movable.glb','web/index.html','Previa-Blender.png','ambientes/INTEIA-box-laboratorio.glb','ambientes/INTEIA_Box_com_carro.blend','ambientes/Previa-Box.png','identidade/INTEIA-principal.svg','identidade/INTEIA-negativo.svg','identidade/INTEIA-monocromatico.svg','identidade/INTEIA-simbolo.svg'];const out=files.map(arquivo=>{const b=fs.readFileSync(path.join(root,arquivo));return {arquivo,bytes:b.length,sha256:crypto.createHash('sha256').update(b).digest('hex')};});fs.writeFileSync(path.join(root,'manifesto-sha256.json'),JSON.stringify(out,null,2)+'\\n');"
+        "text": "const fs=require('fs'),path=require('path'),crypto=require('crypto');const root=path.resolve(__dirname,'..');const files=['INTEIA_F1_Master.blend','modelos/INTEIA_F1_estatico.glb','modelos/INTEIA_F1_animado.glb','texturas/INTEIA_Carbono_BaseColor.png','web/assets/carro-movable.glb','web/assets/carro-aula-v2.glb','web/assets/power-unit-v1.glb','web/assets/inteia-nome-oficial.svg','web/assets/inteia-escudo-oficial.svg','web/assets/inteligencia-mil-grau-transparent.png','web/index.html','Previa-Blender.png','ambientes/INTEIA-box-laboratorio.glb','ambientes/INTEIA_Box_com_carro.blend','ambientes/Previa-Box.png','identidade/INTEIA-principal.svg','identidade/INTEIA-negativo.svg','identidade/INTEIA-monocromatico.svg','identidade/INTEIA-simbolo.svg'];const out=files.map(arquivo=>{const b=fs.readFileSync(path.join(root,arquivo));return {arquivo,bytes:b.length,sha256:crypto.createHash('sha256').update(b).digest('hex')};});fs.writeFileSync(path.join(root,'manifesto-sha256.json'),JSON.stringify(out,null,2)+'\\n');"
       }
     },
     {
@@ -911,7 +941,7 @@
       "evidence": {
         "path": "ferramentas/manifest.cjs",
         "line": 1,
-        "text": "const fs=require('fs'),path=require('path'),crypto=require('crypto');const root=path.resolve(__dirname,'..');const files=['INTEIA_F1_Master.blend','modelos/INTEIA_F1_estatico.glb','modelos/INTEIA_F1_animado.glb','texturas/INTEIA_Carbono_BaseColor.png','web/assets/carro-movable.glb','web/index.html','Previa-Blender.png','ambientes/INTEIA-box-laboratorio.glb','ambientes/INTEIA_Box_com_carro.blend','ambientes/Previa-Box.png','identidade/INTEIA-principal.svg','identidade/INTEIA-negativo.svg','identidade/INTEIA-monocromatico.svg','identidade/INTEIA-simbolo.svg'];const out=files.map(arquivo=>{const b=fs.readFileSync(path.join(root,arquivo));return {arquivo,bytes:b.length,sha256:crypto.createHash('sha256').update(b).digest('hex')};});fs.writeFileSync(path.join(root,'manifesto-sha256.json'),JSON.stringify(out,null,2)+'\\n');"
+        "text": "const fs=require('fs'),path=require('path'),crypto=require('crypto');const root=path.resolve(__dirname,'..');const files=['INTEIA_F1_Master.blend','modelos/INTEIA_F1_estatico.glb','modelos/INTEIA_F1_animado.glb','texturas/INTEIA_Carbono_BaseColor.png','web/assets/carro-movable.glb','web/assets/carro-aula-v2.glb','web/assets/power-unit-v1.glb','web/assets/inteia-nome-oficial.svg','web/assets/inteia-escudo-oficial.svg','web/assets/inteligencia-mil-grau-transparent.png','web/index.html','Previa-Blender.png','ambientes/INTEIA-box-laboratorio.glb','ambientes/INTEIA_Box_com_carro.blend','ambientes/Previa-Box.png','identidade/INTEIA-principal.svg','identidade/INTEIA-negativo.svg','identidade/INTEIA-monocromatico.svg','identidade/INTEIA-simbolo.svg'];const out=files.map(arquivo=>{const b=fs.readFileSync(path.join(root,arquivo));return {arquivo,bytes:b.length,sha256:crypto.createHash('sha256').update(b).digest('hex')};});fs.writeFileSync(path.join(root,'manifesto-sha256.json'),JSON.stringify(out,null,2)+'\\n');"
       }
     },
     {
@@ -972,6 +1002,30 @@
         "path": "docs/ACABAMENTO-E-RENDER.md",
         "line": 19,
         "text": "- `ambientes/INTEIA-box-laboratorio.glb`: geometria e materiais exportáveis do box."
+      }
+    },
+    {
+      "source": "web/src/engine/in-car.js",
+      "target": "web/assets/power-unit-v1.glb",
+      "relation": "carrega_motor",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "evidence": {
+        "path": "web/src/engine/in-car.js",
+        "line": 156,
+        "text": "  const response=await fetch(`./assets/power-unit-v1.glb`,{signal:abort.signal});"
+      }
+    },
+    {
+      "source": "web/src/branding.js",
+      "target": "web/assets/inteligencia-mil-grau-transparent.png",
+      "relation": "carrega_arte",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "evidence": {
+        "path": "web/src/branding.js",
+        "line": 8,
+        "text": "  const [map,crestMap,sponsorMap]=await Promise.all(['inteia-nome-oficial.svg','inteia-escudo-oficial.svg','inteligencia-mil-grau-transparent.png'].map(name=>loader.loadAsync(`./assets/${name}`)));"
       }
     }
   ],

@@ -1,6 +1,6 @@
 {
   "source": "documentacao/componentes-origem.json",
-  "comparedTo": "web/assets/carro-movable.glb",
+  "comparedTo": "web/assets/carro-aula-v2.glb",
   "parts": [
     {
       "partId": "rear_wing_drs__01",

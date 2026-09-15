@@ -9,8 +9,8 @@
       "literalReferences": [
         {
           "path": "web/src/app-v2.js",
-          "line": 19,
-          "href": "../../web/src/app-v2.js#L19"
+          "line": 24,
+          "href": "../../web/src/app-v2.js#L24"
         }
       ]
     },
@@ -22,8 +22,8 @@
       "literalReferences": [
         {
           "path": "web/src/app-v2.js",
-          "line": 36,
-          "href": "../../web/src/app-v2.js#L36"
+          "line": 43,
+          "href": "../../web/src/app-v2.js#L43"
         }
       ]
     },
@@ -35,8 +35,8 @@
       "literalReferences": [
         {
           "path": "web/src/app-v2.js",
-          "line": 18,
-          "href": "../../web/src/app-v2.js#L18"
+          "line": 23,
+          "href": "../../web/src/app-v2.js#L23"
         }
       ]
     },
@@ -74,13 +74,13 @@
       "literalReferences": [
         {
           "path": "web/src/app-v2.js",
-          "line": 73,
-          "href": "../../web/src/app-v2.js#L73"
+          "line": 89,
+          "href": "../../web/src/app-v2.js#L89"
         },
         {
           "path": "web/src/app-v2.js",
-          "line": 79,
-          "href": "../../web/src/app-v2.js#L79"
+          "line": 95,
+          "href": "../../web/src/app-v2.js#L95"
         }
       ]
     },
@@ -92,13 +92,13 @@
       "literalReferences": [
         {
           "path": "web/src/app-v2.js",
-          "line": 73,
-          "href": "../../web/src/app-v2.js#L73"
+          "line": 89,
+          "href": "../../web/src/app-v2.js#L89"
         },
         {
           "path": "web/src/app-v2.js",
-          "line": 79,
-          "href": "../../web/src/app-v2.js#L79"
+          "line": 95,
+          "href": "../../web/src/app-v2.js#L95"
         }
       ]
     },
@@ -110,8 +110,13 @@
       "literalReferences": [
         {
           "path": "web/src/app-v2.js",
-          "line": 72,
-          "href": "../../web/src/app-v2.js#L72"
+          "line": 88,
+          "href": "../../web/src/app-v2.js#L88"
+        },
+        {
+          "path": "web/src/app-v2.js",
+          "line": 96,
+          "href": "../../web/src/app-v2.js#L96"
         }
       ]
     },
@@ -123,13 +128,28 @@
       "literalReferences": [
         {
           "path": "web/src/app-v2.js",
-          "line": 36,
-          "href": "../../web/src/app-v2.js#L36"
+          "line": 43,
+          "href": "../../web/src/app-v2.js#L43"
         },
         {
           "path": "web/src/app-v2.js",
-          "line": 85,
-          "href": "../../web/src/app-v2.js#L85"
+          "line": 102,
+          "href": "../../web/src/app-v2.js#L102"
+        },
+        {
+          "path": "web/src/app-v2.js",
+          "line": 104,
+          "href": "../../web/src/app-v2.js#L104"
+        },
+        {
+          "path": "web/src/engine/in-car.js",
+          "line": 48,
+          "href": "../../web/src/engine/in-car.js#L48"
+        },
+        {
+          "path": "web/src/engine/in-car.js",
+          "line": 204,
+          "href": "../../web/src/engine/in-car.js#L204"
         }
       ]
     },
@@ -141,28 +161,28 @@
       "literalReferences": [
         {
           "path": "web/src/app-v2.js",
-          "line": 49,
-          "href": "../../web/src/app-v2.js#L49"
+          "line": 64,
+          "href": "../../web/src/app-v2.js#L64"
         },
         {
           "path": "web/src/app-v2.js",
-          "line": 54,
-          "href": "../../web/src/app-v2.js#L54"
+          "line": 70,
+          "href": "../../web/src/app-v2.js#L70"
         },
         {
           "path": "web/src/app-v2.js",
-          "line": 58,
-          "href": "../../web/src/app-v2.js#L58"
+          "line": 74,
+          "href": "../../web/src/app-v2.js#L74"
         },
         {
           "path": "web/src/app-v2.js",
-          "line": 72,
-          "href": "../../web/src/app-v2.js#L72"
+          "line": 88,
+          "href": "../../web/src/app-v2.js#L88"
         },
         {
           "path": "web/src/app-v2.js",
-          "line": 80,
-          "href": "../../web/src/app-v2.js#L80"
+          "line": 99,
+          "href": "../../web/src/app-v2.js#L99"
         }
       ]
     },
@@ -174,8 +194,8 @@
       "literalReferences": [
         {
           "path": "web/src/app-v2.js",
-          "line": 55,
-          "href": "../../web/src/app-v2.js#L55"
+          "line": 71,
+          "href": "../../web/src/app-v2.js#L71"
         },
         {
           "path": "web/src/garage.js",
@@ -192,8 +212,8 @@
       "literalReferences": [
         {
           "path": "web/src/app-v2.js",
-          "line": 57,
-          "href": "../../web/src/app-v2.js#L57"
+          "line": 73,
+          "href": "../../web/src/app-v2.js#L73"
         }
       ]
     },
@@ -205,8 +225,8 @@
       "literalReferences": [
         {
           "path": "web/src/app-v2.js",
-          "line": 56,
-          "href": "../../web/src/app-v2.js#L56"
+          "line": 72,
+          "href": "../../web/src/app-v2.js#L72"
         }
       ]
     },
@@ -218,8 +238,13 @@
       "literalReferences": [
         {
           "path": "web/src/app-v2.js",
-          "line": 55,
-          "href": "../../web/src/app-v2.js#L55"
+          "line": 71,
+          "href": "../../web/src/app-v2.js#L71"
+        },
+        {
+          "path": "web/src/app-v2.js",
+          "line": 96,
+          "href": "../../web/src/app-v2.js#L96"
         },
         {
           "path": "web/src/wind-tunnel.js",
@@ -236,28 +261,28 @@
       "literalReferences": [
         {
           "path": "web/src/app-v2.js",
-          "line": 49,
-          "href": "../../web/src/app-v2.js#L49"
+          "line": 64,
+          "href": "../../web/src/app-v2.js#L64"
         },
         {
           "path": "web/src/app-v2.js",
-          "line": 54,
-          "href": "../../web/src/app-v2.js#L54"
+          "line": 70,
+          "href": "../../web/src/app-v2.js#L70"
         },
         {
           "path": "web/src/app-v2.js",
-          "line": 58,
-          "href": "../../web/src/app-v2.js#L58"
+          "line": 74,
+          "href": "../../web/src/app-v2.js#L74"
         },
         {
           "path": "web/src/app-v2.js",
-          "line": 80,
-          "href": "../../web/src/app-v2.js#L80"
+          "line": 99,
+          "href": "../../web/src/app-v2.js#L99"
         },
         {
           "path": "web/src/app-v2.js",
-          "line": 81,
-          "href": "../../web/src/app-v2.js#L81"
+          "line": 100,
+          "href": "../../web/src/app-v2.js#L100"
         }
       ]
     },
@@ -269,13 +294,13 @@
       "literalReferences": [
         {
           "path": "web/src/app-v2.js",
-          "line": 42,
-          "href": "../../web/src/app-v2.js#L42"
+          "line": 49,
+          "href": "../../web/src/app-v2.js#L49"
         },
         {
           "path": "web/src/app-v2.js",
-          "line": 74,
-          "href": "../../web/src/app-v2.js#L74"
+          "line": 90,
+          "href": "../../web/src/app-v2.js#L90"
         }
       ]
     },
@@ -287,8 +312,8 @@
       "literalReferences": [
         {
           "path": "web/src/app-v2.js",
-          "line": 51,
-          "href": "../../web/src/app-v2.js#L51"
+          "line": 66,
+          "href": "../../web/src/app-v2.js#L66"
         }
       ]
     },
@@ -313,8 +338,8 @@
       "literalReferences": [
         {
           "path": "web/src/app-v2.js",
-          "line": 49,
-          "href": "../../web/src/app-v2.js#L49"
+          "line": 64,
+          "href": "../../web/src/app-v2.js#L64"
         },
         {
           "path": "web/src/wind-tunnel.js",
@@ -331,8 +356,8 @@
       "literalReferences": [
         {
           "path": "web/src/app-v2.js",
-          "line": 49,
-          "href": "../../web/src/app-v2.js#L49"
+          "line": 64,
+          "href": "../../web/src/app-v2.js#L64"
         },
         {
           "path": "web/src/wind-tunnel.js",
@@ -1015,6 +1040,86 @@
       ]
     },
     {
+      "id": "engine-open",
+      "tag": "button",
+      "line": 3,
+      "href": "../../web/src/template-v2.html#L3",
+      "literalReferences": [
+        {
+          "path": "web/src/app-v2.js",
+          "line": 34,
+          "href": "../../web/src/app-v2.js#L34"
+        },
+        {
+          "path": "web/src/app-v2.js",
+          "line": 96,
+          "href": "../../web/src/app-v2.js#L96"
+        }
+      ]
+    },
+    {
+      "id": "engine-status",
+      "tag": "p",
+      "line": 3,
+      "href": "../../web/src/template-v2.html#L3",
+      "literalReferences": [
+        {
+          "path": "web/src/app-v2.js",
+          "line": 102,
+          "href": "../../web/src/app-v2.js#L102"
+        }
+      ]
+    },
+    {
+      "id": "engine-cut-value",
+      "tag": "output",
+      "line": 3,
+      "href": "../../web/src/template-v2.html#L3",
+      "literalReferences": [
+        {
+          "path": "web/src/app-v2.js",
+          "line": 98,
+          "href": "../../web/src/app-v2.js#L98"
+        }
+      ]
+    },
+    {
+      "id": "engine-cut",
+      "tag": "input",
+      "line": 3,
+      "href": "../../web/src/template-v2.html#L3",
+      "literalReferences": [
+        {
+          "path": "web/src/app-v2.js",
+          "line": 98,
+          "href": "../../web/src/app-v2.js#L98"
+        },
+        {
+          "path": "web/src/app-v2.js",
+          "line": 102,
+          "href": "../../web/src/app-v2.js#L102"
+        }
+      ]
+    },
+    {
+      "id": "engine-pause",
+      "tag": "button",
+      "line": 3,
+      "href": "../../web/src/template-v2.html#L3",
+      "literalReferences": [
+        {
+          "path": "web/src/app-v2.js",
+          "line": 97,
+          "href": "../../web/src/app-v2.js#L97"
+        },
+        {
+          "path": "web/src/app-v2.js",
+          "line": 102,
+          "href": "../../web/src/app-v2.js#L102"
+        }
+      ]
+    },
+    {
       "id": "assembly-value",
       "tag": "output",
       "line": 3,
@@ -1022,18 +1127,18 @@
       "literalReferences": [
         {
           "path": "web/src/app-v2.js",
-          "line": 45,
-          "href": "../../web/src/app-v2.js#L45"
+          "line": 52,
+          "href": "../../web/src/app-v2.js#L52"
         },
         {
           "path": "web/src/app-v2.js",
-          "line": 72,
-          "href": "../../web/src/app-v2.js#L72"
+          "line": 88,
+          "href": "../../web/src/app-v2.js#L88"
         },
         {
           "path": "web/src/app-v2.js",
-          "line": 83,
-          "href": "../../web/src/app-v2.js#L83"
+          "line": 102,
+          "href": "../../web/src/app-v2.js#L102"
         }
       ]
     },
@@ -1045,13 +1150,13 @@
       "literalReferences": [
         {
           "path": "web/src/app-v2.js",
-          "line": 36,
-          "href": "../../web/src/app-v2.js#L36"
+          "line": 43,
+          "href": "../../web/src/app-v2.js#L43"
         },
         {
           "path": "web/src/app-v2.js",
-          "line": 72,
-          "href": "../../web/src/app-v2.js#L72"
+          "line": 88,
+          "href": "../../web/src/app-v2.js#L88"
         }
       ]
     },
@@ -1063,8 +1168,8 @@
       "literalReferences": [
         {
           "path": "web/src/app-v2.js",
-          "line": 83,
-          "href": "../../web/src/app-v2.js#L83"
+          "line": 102,
+          "href": "../../web/src/app-v2.js#L102"
         }
       ]
     },
@@ -1076,23 +1181,23 @@
       "literalReferences": [
         {
           "path": "web/src/app-v2.js",
-          "line": 27,
-          "href": "../../web/src/app-v2.js#L27"
+          "line": 32,
+          "href": "../../web/src/app-v2.js#L32"
         },
         {
           "path": "web/src/app-v2.js",
-          "line": 45,
-          "href": "../../web/src/app-v2.js#L45"
+          "line": 52,
+          "href": "../../web/src/app-v2.js#L52"
         },
         {
           "path": "web/src/app-v2.js",
-          "line": 64,
-          "href": "../../web/src/app-v2.js#L64"
+          "line": 80,
+          "href": "../../web/src/app-v2.js#L80"
         },
         {
           "path": "web/src/app-v2.js",
-          "line": 72,
-          "href": "../../web/src/app-v2.js#L72"
+          "line": 88,
+          "href": "../../web/src/app-v2.js#L88"
         }
       ]
     },
@@ -1104,8 +1209,8 @@
       "literalReferences": [
         {
           "path": "web/src/app-v2.js",
-          "line": 63,
-          "href": "../../web/src/app-v2.js#L63"
+          "line": 79,
+          "href": "../../web/src/app-v2.js#L79"
         }
       ]
     },
@@ -1117,8 +1222,8 @@
       "literalReferences": [
         {
           "path": "web/src/app-v2.js",
-          "line": 63,
-          "href": "../../web/src/app-v2.js#L63"
+          "line": 79,
+          "href": "../../web/src/app-v2.js#L79"
         }
       ]
     },
@@ -1130,18 +1235,18 @@
       "literalReferences": [
         {
           "path": "web/src/app-v2.js",
-          "line": 42,
-          "href": "../../web/src/app-v2.js#L42"
-        },
-        {
-          "path": "web/src/app-v2.js",
-          "line": 50,
-          "href": "../../web/src/app-v2.js#L50"
+          "line": 49,
+          "href": "../../web/src/app-v2.js#L49"
         },
         {
           "path": "web/src/app-v2.js",
           "line": 65,
           "href": "../../web/src/app-v2.js#L65"
+        },
+        {
+          "path": "web/src/app-v2.js",
+          "line": 81,
+          "href": "../../web/src/app-v2.js#L81"
         }
       ]
     },
@@ -1153,8 +1258,8 @@
       "literalReferences": [
         {
           "path": "web/src/app-v2.js",
-          "line": 42,
-          "href": "../../web/src/app-v2.js#L42"
+          "line": 49,
+          "href": "../../web/src/app-v2.js#L49"
         }
       ]
     },
@@ -1166,8 +1271,8 @@
       "literalReferences": [
         {
           "path": "web/src/app-v2.js",
-          "line": 42,
-          "href": "../../web/src/app-v2.js#L42"
+          "line": 49,
+          "href": "../../web/src/app-v2.js#L49"
         }
       ]
     },
@@ -1179,13 +1284,13 @@
       "literalReferences": [
         {
           "path": "web/src/app-v2.js",
-          "line": 42,
-          "href": "../../web/src/app-v2.js#L42"
+          "line": 49,
+          "href": "../../web/src/app-v2.js#L49"
         },
         {
           "path": "web/src/app-v2.js",
-          "line": 66,
-          "href": "../../web/src/app-v2.js#L66"
+          "line": 82,
+          "href": "../../web/src/app-v2.js#L82"
         }
       ]
     },
@@ -1197,13 +1302,13 @@
       "literalReferences": [
         {
           "path": "web/src/app-v2.js",
-          "line": 42,
-          "href": "../../web/src/app-v2.js#L42"
+          "line": 49,
+          "href": "../../web/src/app-v2.js#L49"
         },
         {
           "path": "web/src/app-v2.js",
-          "line": 66,
-          "href": "../../web/src/app-v2.js#L66"
+          "line": 82,
+          "href": "../../web/src/app-v2.js#L82"
         }
       ]
     },
@@ -1215,18 +1320,18 @@
       "literalReferences": [
         {
           "path": "web/src/app-v2.js",
-          "line": 43,
-          "href": "../../web/src/app-v2.js#L43"
+          "line": 50,
+          "href": "../../web/src/app-v2.js#L50"
         },
         {
           "path": "web/src/app-v2.js",
-          "line": 67,
-          "href": "../../web/src/app-v2.js#L67"
+          "line": 83,
+          "href": "../../web/src/app-v2.js#L83"
         },
         {
           "path": "web/src/app-v2.js",
-          "line": 72,
-          "href": "../../web/src/app-v2.js#L72"
+          "line": 88,
+          "href": "../../web/src/app-v2.js#L88"
         }
       ]
     },
@@ -1238,13 +1343,13 @@
       "literalReferences": [
         {
           "path": "web/src/app-v2.js",
-          "line": 42,
-          "href": "../../web/src/app-v2.js#L42"
+          "line": 49,
+          "href": "../../web/src/app-v2.js#L49"
         },
         {
           "path": "web/src/app-v2.js",
-          "line": 68,
-          "href": "../../web/src/app-v2.js#L68"
+          "line": 84,
+          "href": "../../web/src/app-v2.js#L84"
         }
       ]
     },
@@ -1256,13 +1361,13 @@
       "literalReferences": [
         {
           "path": "web/src/app-v2.js",
-          "line": 42,
-          "href": "../../web/src/app-v2.js#L42"
+          "line": 49,
+          "href": "../../web/src/app-v2.js#L49"
         },
         {
           "path": "web/src/app-v2.js",
-          "line": 68,
-          "href": "../../web/src/app-v2.js#L68"
+          "line": 84,
+          "href": "../../web/src/app-v2.js#L84"
         }
       ]
     },
@@ -1274,8 +1379,8 @@
       "literalReferences": [
         {
           "path": "web/src/app-v2.js",
-          "line": 66,
-          "href": "../../web/src/app-v2.js#L66"
+          "line": 82,
+          "href": "../../web/src/app-v2.js#L82"
         }
       ]
     },
@@ -1287,23 +1392,23 @@
       "literalReferences": [
         {
           "path": "web/src/app-v2.js",
-          "line": 27,
-          "href": "../../web/src/app-v2.js#L27"
+          "line": 32,
+          "href": "../../web/src/app-v2.js#L32"
         },
         {
           "path": "web/src/app-v2.js",
-          "line": 69,
-          "href": "../../web/src/app-v2.js#L69"
+          "line": 85,
+          "href": "../../web/src/app-v2.js#L85"
         },
         {
           "path": "web/src/app-v2.js",
-          "line": 72,
-          "href": "../../web/src/app-v2.js#L72"
+          "line": 88,
+          "href": "../../web/src/app-v2.js#L88"
         },
         {
           "path": "web/src/app-v2.js",
-          "line": 83,
-          "href": "../../web/src/app-v2.js#L83"
+          "line": 102,
+          "href": "../../web/src/app-v2.js#L102"
         }
       ]
     },
@@ -1315,18 +1420,18 @@
       "literalReferences": [
         {
           "path": "web/src/app-v2.js",
-          "line": 27,
-          "href": "../../web/src/app-v2.js#L27"
+          "line": 32,
+          "href": "../../web/src/app-v2.js#L32"
         },
         {
           "path": "web/src/app-v2.js",
-          "line": 70,
-          "href": "../../web/src/app-v2.js#L70"
+          "line": 86,
+          "href": "../../web/src/app-v2.js#L86"
         },
         {
           "path": "web/src/app-v2.js",
-          "line": 72,
-          "href": "../../web/src/app-v2.js#L72"
+          "line": 88,
+          "href": "../../web/src/app-v2.js#L88"
         },
         {
           "path": "web/src/garage.js",
@@ -1343,23 +1448,23 @@
       "literalReferences": [
         {
           "path": "web/src/app-v2.js",
-          "line": 27,
-          "href": "../../web/src/app-v2.js#L27"
+          "line": 32,
+          "href": "../../web/src/app-v2.js#L32"
         },
         {
           "path": "web/src/app-v2.js",
-          "line": 70,
-          "href": "../../web/src/app-v2.js#L70"
+          "line": 86,
+          "href": "../../web/src/app-v2.js#L86"
         },
         {
           "path": "web/src/app-v2.js",
-          "line": 72,
-          "href": "../../web/src/app-v2.js#L72"
+          "line": 88,
+          "href": "../../web/src/app-v2.js#L88"
         },
         {
           "path": "web/src/app-v2.js",
-          "line": 83,
-          "href": "../../web/src/app-v2.js#L83"
+          "line": 102,
+          "href": "../../web/src/app-v2.js#L102"
         }
       ]
     },
@@ -1371,18 +1476,18 @@
       "literalReferences": [
         {
           "path": "web/src/app-v2.js",
-          "line": 27,
-          "href": "../../web/src/app-v2.js#L27"
+          "line": 32,
+          "href": "../../web/src/app-v2.js#L32"
         },
         {
           "path": "web/src/app-v2.js",
-          "line": 71,
-          "href": "../../web/src/app-v2.js#L71"
+          "line": 87,
+          "href": "../../web/src/app-v2.js#L87"
         },
         {
           "path": "web/src/app-v2.js",
-          "line": 72,
-          "href": "../../web/src/app-v2.js#L72"
+          "line": 88,
+          "href": "../../web/src/app-v2.js#L88"
         },
         {
           "path": "web/src/garage.js",
@@ -1399,23 +1504,23 @@
       "literalReferences": [
         {
           "path": "web/src/app-v2.js",
-          "line": 27,
-          "href": "../../web/src/app-v2.js#L27"
+          "line": 32,
+          "href": "../../web/src/app-v2.js#L32"
         },
         {
           "path": "web/src/app-v2.js",
-          "line": 71,
-          "href": "../../web/src/app-v2.js#L71"
+          "line": 87,
+          "href": "../../web/src/app-v2.js#L87"
         },
         {
           "path": "web/src/app-v2.js",
-          "line": 72,
-          "href": "../../web/src/app-v2.js#L72"
+          "line": 88,
+          "href": "../../web/src/app-v2.js#L88"
         },
         {
           "path": "web/src/app-v2.js",
-          "line": 83,
-          "href": "../../web/src/app-v2.js#L83"
+          "line": 102,
+          "href": "../../web/src/app-v2.js#L102"
         }
       ]
     },
@@ -1427,8 +1532,8 @@
       "literalReferences": [
         {
           "path": "web/src/app-v2.js",
-          "line": 83,
-          "href": "../../web/src/app-v2.js#L83"
+          "line": 102,
+          "href": "../../web/src/app-v2.js#L102"
         }
       ]
     },
@@ -1440,8 +1545,8 @@
       "literalReferences": [
         {
           "path": "web/src/app-v2.js",
-          "line": 59,
-          "href": "../../web/src/app-v2.js#L59"
+          "line": 75,
+          "href": "../../web/src/app-v2.js#L75"
         },
         {
           "path": "web/src/customize.js",
@@ -1458,8 +1563,8 @@
       "literalReferences": [
         {
           "path": "web/src/app-v2.js",
-          "line": 61,
-          "href": "../../web/src/app-v2.js#L61"
+          "line": 77,
+          "href": "../../web/src/app-v2.js#L77"
         }
       ]
     },
@@ -1471,8 +1576,8 @@
       "literalReferences": [
         {
           "path": "web/src/app-v2.js",
-          "line": 60,
-          "href": "../../web/src/app-v2.js#L60"
+          "line": 76,
+          "href": "../../web/src/app-v2.js#L76"
         }
       ]
     },
@@ -1484,8 +1589,8 @@
       "literalReferences": [
         {
           "path": "web/src/app-v2.js",
-          "line": 75,
-          "href": "../../web/src/app-v2.js#L75"
+          "line": 91,
+          "href": "../../web/src/app-v2.js#L91"
         }
       ]
     },
@@ -1497,8 +1602,8 @@
       "literalReferences": [
         {
           "path": "web/src/app-v2.js",
-          "line": 46,
-          "href": "../../web/src/app-v2.js#L46"
+          "line": 53,
+          "href": "../../web/src/app-v2.js#L53"
         }
       ]
     }

@@ -25,9 +25,34 @@
     "sha256": "f192b6a4e09f5ec1f65b2ccf55f53ac8d84eb62d13ac19a1347c7f9aca02a3bc"
   },
   {
+    "arquivo": "web/assets/carro-aula-v2.glb",
+    "bytes": 2293292,
+    "sha256": "02bae139775f9c99f069e8ba664f4076cbbaaf8afdce6545a81afb77462ca245"
+  },
+  {
+    "arquivo": "web/assets/power-unit-v1.glb",
+    "bytes": 4640876,
+    "sha256": "2f056193a412878d70cfe96e7c1f42055bde17938a076bdadda704718c403eae"
+  },
+  {
+    "arquivo": "web/assets/inteia-nome-oficial.svg",
+    "bytes": 1292,
+    "sha256": "5b4d15ba39acea6813a7c76de2a06b1fe99ae16bf11c5b9b013cb3d8cc9ee14e"
+  },
+  {
+    "arquivo": "web/assets/inteia-escudo-oficial.svg",
+    "bytes": 5927,
+    "sha256": "5021fd72b3981876ad48fcfa1f63c1c5cba3fe9801770200ef78e069ae834064"
+  },
+  {
+    "arquivo": "web/assets/inteligencia-mil-grau-transparent.png",
+    "bytes": 1070790,
+    "sha256": "e8f5874746919d46f30b4e1f1b1eab91f07c5e2969261ceed3b439cf4bf34f8d"
+  },
+  {
     "arquivo": "web/index.html",
-    "bytes": 36511157,
-    "sha256": "84f13241d40b248176f6428e85a00684ca97fb4ecc4a1a877e6fbc9a2b4c1d22"
+    "bytes": 4351049,
+    "sha256": "f7b57d3e286df679554e24111ef7aa8fa21a0146a9fb0992be0d50de0cd9c61d"
   },
   {
     "arquivo": "Previa-Blender.png",

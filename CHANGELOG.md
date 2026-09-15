@@ -15,3 +15,11 @@
 - Cinco rodadas de avaliação visual; três candidatas mantidas e duas descartadas.
 - Master Blender, texturas incorporadas e GLBs estático/animado.
 - Fontes web, scripts portáteis, documentação e validações para reutilização.
+
+
+## 2026-09-15 — Carro final e motor no box
+
+- Carro v2 do F1 Loop com acabamento final, piloto, número 1, INTEIA e Inteligência Mil Grau.
+- Motor V6 integrado: abertura da tampa, corte dos pistões, pausa e presença na vista explodida.
+- Testes de 20 ciclos do carro e motor sem deriva; box, seleção e túnel conferidos no navegador.
+- Inventários adaptados aos assets comprimidos. Entregas Blender anteriores preservadas.

@@ -7,7 +7,7 @@
   "scripts": {
     "build": "node build.cjs",
     "dev": "node server.cjs",
-    "test": "node test-mechanics.mjs && node test-aerodynamics.mjs"
+    "test": "node test-mechanics.mjs && node test-aerodynamics.mjs && node test-power-unit.mjs"
   },
   "dependencies": {
     "three": "0.180.0"
