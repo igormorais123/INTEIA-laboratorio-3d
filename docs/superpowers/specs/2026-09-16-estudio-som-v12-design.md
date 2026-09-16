@@ -115,9 +115,9 @@ Roda no Node, sem limite de tempo real, a 192 kHz com reamostragem final para 48
 
 ### 3. Reprodução com fase travada (`phase-player.mjs`)
 
-- O estado central é o ângulo do virabrequim θ ∈ [0, 720°), avançado a cada amostra por `RPM/60 × 720 × dt`.
+- O estado central é o ângulo do virabrequim θ ∈ [0, 720°), avançado a cada amostra por `RPM/60 × 360 × dt` graus.
 - Cada loop é lido na posição `θ/720 × amostrasPorCiclo`, com interpolação Hermite. Os dois pontos de RPM vizinhos e as duas cargas são misturados por interpolação bilinear com **ganho linear** (sinais correlacionados, já alinhados em fase).
-- **Dinâmica:** o RPM segue o acelerador com inércia e freio-motor; o limitador corta a ignição ciclo a ciclo silenciando pulsos individuais; ao aliviar em alta rotação, estalos esparsos sincronizados a θ.
+- **Dinâmica:** o RPM segue o acelerador com inércia e freio-motor; o limitador corta a ignição silenciando, com rampa curta, as janelas de θ de cada explosão (60° no V12, 120° no V6), já que cada pulso ocupa uma posição fixa no loop; ao aliviar em alta rotação, estalos esparsos sincronizados a θ.
 - **Camadas sintetizadas por cima:** V6: turbo (rotação com atraso de primeira ordem, assobio + sopro da wastegate) e MGU-K (zumbido tonal proporcional ao RPM); V12: nenhuma, o banco já contém tudo.
 - **Saída:** saturação suave, compressor e limitador em −1 dBFS; volume inicial baixo; o áudio só começa após clique (regra do navegador).
 - O mesmo núcleo roda no Node para testes e dentro do AudioWorklet no navegador. Os buffers chegam ao worklet por `postMessage` com transferência.
