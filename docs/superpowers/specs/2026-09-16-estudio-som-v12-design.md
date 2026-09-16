@@ -6,6 +6,8 @@
 
 Uma nova aba **07 Som** no Box INTEIA onde o visitante liga, acelera e compara o som de dois motores de F1 — o V6 1,6 turbo híbrido de 2026 e um V12 3,5 aspirado dos anos 90 —, vê o motor 3D peça a peça sincronizado com a ignição e confere a afinação: RPM → frequência → nota.
 
+O centro do estúdio é um **acelerador padrão de 0 a 12.000 RPM** desenhado num **editor de curva RPM × tempo** (como as curvas de cor de editores de imagem). A mesma curva tocada com motores de números de cilindros diferentes mostra como o motor "afina".
+
 O som precisa ser convincente. Síntese ingênua (osciladores, ruído filtrado) está vetada.
 
 ## Decisões tomadas
@@ -17,6 +19,18 @@ O som precisa ser convincente. Síntese ingênua (osciladores, ruído filtrado) 
 | Fonte do som | **Síntese calibrada no real**: banco de loops gerado offline por modelo físico de alta resolução e calibrado pelo espectro de gravações reais livres | Não há gravação livre de V12 F1 anos 90 nem de V6 híbrido utilizável; sem risco legal e sem compra |
 | Reprodução | Arquitetura dos jogos de corrida: loops de ciclos inteiros por RPM, lidos com fase travada ao virabrequim | Afinação exata e crossfade sem phasing |
 | Modelagem 3D | Gerador Blender no padrão de `ferramentas/sistemas` | Peças nomeadas, materiais físicos, regenerável |
+| Controle principal | Editor de curva RPM × tempo, eixo 0–12.000 RPM (máximo editável até o limite do motor), duração editável | Reproduzível, didático e "musical": a curva é um glissando |
+| Número de cilindros | Configurações reais com timbre próprio, não número livre | Disposição e ordem de ignição mudam o timbre; cada configuração exige um banco calibrado |
+| Entrega | Duas fases (ver abaixo) | Controla o escopo; o editor entra já na fase 1 |
+
+## Fases
+
+| Fase | Entrega |
+|---|---|
+| **1** | Núcleo de afinação e reprodução, editor de curva, V6 2026 e V12 anos 90 (bancos calibrados), V12 3D, aba 07 Som |
+| **2** | 4 em linha, V8 de virabrequim cruzado e V10 a 72°: perfis, bancos calibrados e seletor de cilindros. Sem modelo 3D novo (o painel mostra a disposição em diagrama) |
+
+A arquitetura da fase 1 já recebe perfis novos só com dados + banco; a fase 2 não muda código de reprodução.
 
 ## Afinação
 
@@ -48,6 +62,17 @@ Estes valores viram casos de teste.
 | Admissão | 12 trompetas, airbox | plenum com 6 trompetas, após compressor |
 | Escape | 6-em-1 por bancada, 2 saídas | coletores → turbina → saída única |
 | Camadas extras | cascata de engrenagens, válvulas | turbo, wastegate, MGU-K |
+| Aceleração livre máxima (inércia) | valor calibrado no perfil, em RPM/s | valor calibrado no perfil, em RPM/s |
+
+**Fase 2 (perfis adicionais):**
+
+| | 4 em linha | V8 90° cruzado | V10 72° |
+|---|---|---|---|
+| Ordem de ignição | 1-3-4-2 | 1-8-7-2-6-5-4-3 | 1-6-5-10-2-7-3-8-4-9 |
+| Intervalo | 180° | 90° (escape por bancada irregular → "borbulhar" em meia ordem) | 72° |
+| f0 a 12.000 RPM | 400 Hz | 800 Hz | 1.000 Hz |
+
+**Partida:** abaixo da marcha lenta não há combustão estável. De 0 à rotação de arranque (~300 RPM) toca o motor de partida; as explosões começam quando a curva cruza a marcha lenta do perfil. Se a curva voltar abaixo da marcha lenta, o motor apaga.
 
 ## Arquitetura
 
@@ -63,7 +88,9 @@ ferramentas/som/
 web/src/sound/
   tuning.mjs              RPM → Hz → nota/cents (puro)
   engine-profiles.mjs     perfis V6 e V12 (dados)
+  rpm-curve.mjs           curva RPM × tempo: pontos, interpolação PCHIP, carga derivada, limite físico (puro)
   phase-player.mjs        núcleo de leitura com fase travada, camadas e limitador (puro, roda no Node)
+  curve-editor.js         editor gráfico da curva (SVG), presets, importar/exportar JSON
   engine-worklet.js       AudioWorklet que envolve phase-player.mjs (embutido como Blob no build)
   sound-studio.js         aba 07: interface, grafo de áudio, afinador, sincronia com o 3D
 
@@ -117,22 +144,42 @@ Roda no Node, sem limite de tempo real, a 192 kHz com reamostragem final para 48
 
 - O estado central é o ângulo do virabrequim θ ∈ [0, 720°), avançado a cada amostra por `RPM/60 × 360 × dt` graus.
 - Cada loop é lido na posição `θ/720 × amostrasPorCiclo`, com interpolação Hermite. Os dois pontos de RPM vizinhos e as duas cargas são misturados por interpolação bilinear com **ganho linear** (sinais correlacionados, já alinhados em fase).
-- **Dinâmica:** o RPM segue o acelerador com inércia e freio-motor; o limitador corta a ignição silenciando, com rampa curta, as janelas de θ de cada explosão (60° no V12, 120° no V6), já que cada pulso ocupa uma posição fixa no loop; ao aliviar em alta rotação, estalos esparsos sincronizados a θ.
+- **Dinâmica:** o RPM vem da curva (modo curva) ou segue o acelerador com inércia e freio-motor (modo livre); o limitador corta a ignição silenciando, com rampa curta, as janelas de θ de cada explosão (60° no V12, 120° no V6), já que cada pulso ocupa uma posição fixa no loop; ao aliviar em alta rotação, estalos esparsos sincronizados a θ.
 - **Camadas sintetizadas por cima:** V6: turbo (rotação com atraso de primeira ordem, assobio + sopro da wastegate) e MGU-K (zumbido tonal proporcional ao RPM); V12: nenhuma, o banco já contém tudo.
 - **Saída:** saturação suave, compressor e limitador em −1 dBFS; volume inicial baixo; o áudio só começa após clique (regra do navegador).
 - O mesmo núcleo roda no Node para testes e dentro do AudioWorklet no navegador. Os buffers chegam ao worklet por `postMessage` com transferência.
 
-### 4. Motor V12 3D (`v12-v1.glb`)
+### 4. Curva de aceleração (`rpm-curve.mjs` + `curve-editor.js`)
+
+**Modelo (puro, testável):**
+- Pontos `(t, rpm)`; o primeiro é fixo em `(0, 0)`. O eixo X vai de 0 à **duração** (padrão 3,0 s, editável de 0,5 a 30 s); o eixo Y vai de 0 ao **RPM máximo do gráfico** (padrão 12.000, editável até o limite do perfil).
+- Interpolação **PCHIP monotônica** entre pontos: não cria picos que não foram desenhados. A curva pode descer (aliviada, troca de marcha em serrote).
+- **Carga derivada da inclinação:** subindo → loops de acelerador pisado; descendo → aliviado; mistura suave pela taxa.
+- **Limite físico:** cada perfil tem a aceleração livre máxima (RPM/s) e a desaceleração máxima. Trechos acima do limite são marcados; o som segue o máximo possível (a curva "real" é mostrada em traço fino sobre a desenhada). Opção para desligar e ouvir a curva exatamente como desenhada.
+- **Limitador:** a curva é cortada no limite do perfil e o limitador entra em ação.
+- Serialização JSON versionada: `{version, durationS, maxRpm, points:[[t,rpm]...]}`.
+
+**Editor (SVG, acessível):**
+- Clicar na área cria ponto; arrastar move; duplo clique ou Delete apaga; setas movem o ponto focado (Shift = passo maior). Pontos não cruzam o vizinho no tempo.
+- **Grade de notas no fundo:** linhas horizontais com nota e Hz para o motor selecionado, recalculadas ao trocar de motor (V12 mostra notas uma oitava acima do V6 na mesma altura).
+- Cursor de reprodução percorre a curva; o afinador mostra RPM, Hz e nota no ponto atual.
+- **Presets:** rampa linear 0–12.000, largada de F1, "blip" em ponto morto, trocas de marcha (serrote), marcha lenta estável.
+- **Tocar / Parar / Repetir**, e alternar V6 ↔ V12 com a mesma curva.
+- Exportar e importar a curva em JSON (arquivo local, no navegador).
+- A curva atual fica salva no `localStorage` do visitante, com `try/catch`.
+
+### 5. Motor V12 3D (`v12-v1.glb`)
 
 Gerador Blender no padrão de `ferramentas/sistemas/lib.py`, com 60–80 peças nomeadas e manifesto:
 bloco a 65°, cárter seco e bomba de óleo, virabrequim de 6 moentes, 12 bielas e pistões, 2 cabeçotes, 4 comandos, 48 válvulas (agrupadas por cabeçote), cascata de engrenagens, 12 trompetas com airbox, coletores 6-em-1 por bancada, alternador e suportes.
 
 O V6 continua sendo o `power-unit-v1.glb` atual.
 
-### 5. Aba 07 Som (`sound-studio.js`)
+### 6. Aba 07 Som (`sound-studio.js`)
 
-- **Motor:** seletor V6 2026 / V12 anos 90; motor 3D na bancada com vista explodida e peças clicáveis (nome e função).
-- **Controles:** Ligar/Desligar, acelerador (0–100%), volume, e os presets: marcha lenta, 6.000 RPM, 7.000 RPM, giro máximo, "mesma rotação nos dois motores".
+- **Motor:** seletor V6 2026 / V12 anos 90 (fase 2: 4 em linha, V8, V10); motor 3D na bancada com vista explodida e peças clicáveis (nome e função).
+- **Editor de curva** (seção 4) como controle principal: modo curva.
+- **Modo livre:** Ligar/Desligar, acelerador (0–100%) e presets de rotação fixa (marcha lenta, 6.000, 7.000, 12.000 RPM); volume em ambos os modos.
 - **Afinador ao vivo:** RPM, f0 prevista, nota e cents; ao lado, a f0 **medida** no áudio de saída (`AnalyserNode` + autocorrelação) — a prova da calibragem.
 - **Ignição visual:** os cilindros acendem na ordem de ignição; abaixo de ~1.500 RPM efetivos da animação, câmera lenta indicada.
 - **Créditos:** link para a página de créditos das referências.
@@ -141,18 +188,19 @@ Falha no carregamento do banco ou do GLB mostra mensagem no painel e mantém o r
 
 ## Fora do escopo
 
-Trocar o motor dentro do carro; V12 na bancada Sistemas; gravações reais tocadas no site; câmbio/troca de marchas; perspectiva onboard; V4/V8/V10 (a arquitetura permite adicionar perfis depois).
+Trocar o motor dentro do carro; V12 na bancada Sistemas; gravações reais tocadas no site; simulação de câmbio com relações e velocidade do carro (as trocas existem só como formato da curva); perspectiva onboard; número de cilindros livre (só configurações reais); modelos 3D dos motores da fase 2; exportar áudio renderizado.
 
 ## Testes
 
 | Arquivo | Verifica |
 |---|---|
 | `web/test-tuning.mjs` | A tabela de afinação acima (Hz, nota e cents) |
+| `web/test-rpm-curve.mjs` | PCHIP sem overshoot; ponto inicial fixo em (0,0); pontos não cruzam no tempo; carga pelo sinal da inclinação; limite físico aplicado e marcado; corte no limite do perfil; partida abaixo da marcha lenta; ida e volta do JSON |
 | `web/test-sound-player.mjs` | Com banco de teste: f0 medida a ±1% da fórmula em 5 RPMs por motor; crossfade entre pontos vizinhos sem queda de RMS maior que 1 dB (sem phasing); ordem de ignição; limitador corta ciclos inteiros; sem NaN; pico ≤ −1 dBFS |
 | `web/test-sound-bank.mjs` | Manifesto dos bancos: cobertura de RPM e cargas, ciclos inteiros, SHA-256, início alinhado ao cilindro 1 (correlação) |
 | `ferramentas/som/test-calibracao.mjs` | Distância log-espectral entre banco gerado e alvos abaixo do limite definido na primeira calibração; o limite fica registrado no manifesto |
 | `web/test-v12.mjs` | Manifesto do V12: 12 pistões, 12 bielas, 48 válvulas, 12 trompetas, 6 moentes; 20 ciclos de animação sem deriva |
-| Navegador | Aba 07 abre, os dois motores tocam, f0 medida ≈ prevista, cilindros sincronizados, 0 erros no console, layout a 400 px |
+| Navegador | Aba 07 abre; os dois motores tocam a rampa padrão 0–12.000; f0 medida ≈ prevista ao longo da curva; editar pontos com mouse e teclado; grade de notas muda ao trocar V6 ↔ V12; cilindros sincronizados; 0 erros no console; layout a 400 px |
 
 Os testes novos entram no `npm test`.
 
@@ -165,3 +213,5 @@ Além dos testes automáticos: audição comparativa lado a lado com as referên
 - **Realismo abaixo do esperado:** a síntese calibrada melhora muito o timbre, mas não iguala gravação de dinamômetro. Mitigação: o banco é substituível por arquivo; um pacote gravado pode entrar depois sem mudar código.
 - **Referências sujas** (público, Doppler): order tracking com filtro de estabilidade; se uma referência não render trechos válidos, ela é descartada e isso fica registrado.
 - **CPU no celular:** o worklet só lê buffers e mistura 4 loops + camadas; custo baixo.
+- **Peso dos bancos na fase 2:** ~1 MB por configuração, carregado só quando escolhida; se passar disso, reduzir pontos de RPM ou duração dos loops antes de reduzir a taxa de amostragem.
+- **Curvas fisicamente impossíveis** (degrau de 0 a 12.000 em 10 ms): o limite físico evita som quebrado; desligado, o reprodutor limita a taxa a um teto técnico para não gerar estalos.
