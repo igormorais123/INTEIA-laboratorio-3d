@@ -33,13 +33,13 @@
     },
     {
       "path": "dados/catalogo.json",
-      "bytes": 745561,
-      "sha256": "7d38e671563d3861773997da38ed0b8ab22382ed3d8dd9661d1cc5c3e5d720e7"
+      "bytes": 744991,
+      "sha256": "e0676baa082a545f8729d7a7784312a0219ca064393227987d2bde38db87bd93"
     },
     {
       "path": "dados/cobertura.json",
-      "bytes": 2484,
-      "sha256": "a42982724c5c763e94fdc0f4550d495a0db8a9246c884087f06fbf754894c3b4"
+      "bytes": 1914,
+      "sha256": "3d99c4200acdb8159cd9aa6a919ee4338a62e0ec98d720e25dc16e2efcb946a5"
     },
     {
       "path": "dados/componentes.json",
@@ -53,8 +53,8 @@
     },
     {
       "path": "dados/grafo.json",
-      "bytes": 673830,
-      "sha256": "1a1309098f7bab1cb0a81d1bc73ab4c9aa13941436079aafe1a3328c7e27ac9e"
+      "bytes": 673260,
+      "sha256": "7850e669b2d1754269af3ea4b0fcd80dc776c1b1ea707fe6dcdad19a330ebc10"
     },
     {
       "path": "dados/graphify-ast.json",
@@ -89,7 +89,7 @@
     {
       "path": "dados/validacao.json",
       "bytes": 530,
-      "sha256": "7eff426456d49baccc1f461089af6ac58c836dfbc05ca54f82ecc529deb2bb1d"
+      "sha256": "d73908ba442cfc4f03929f8339c60e6ef815d98b7e3dbd5d3a2cafe68a0e56bc"
     },
     {
       "path": "dados/verificacao-app.json",
@@ -138,8 +138,8 @@
     },
     {
       "path": "index.html",
-      "bytes": 1108008,
-      "sha256": "e9dd3215dc10fec419f1513fcd7514ea82f516af9c97b564f7a1829232241814"
+      "bytes": 1107438,
+      "sha256": "426a0f92f4d769aff318c0e27264b90ce4b38dc9ef3b843fc68ae02b880b752c"
     },
     {
       "path": "MODULOS-E-FLUXOS.md",

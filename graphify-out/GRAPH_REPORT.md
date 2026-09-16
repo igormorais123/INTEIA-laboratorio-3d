@@ -5,12 +5,12 @@
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 1009 nodes · 1468 edges · 75 communities (56 shown, 19 thin omitted)
+- 1009 nodes · 1455 edges · 72 communities (51 shown, 21 thin omitted)
 - Extraction: 89% EXTRACTED · 11% INFERRED · 0% AMBIGUOUS · INFERRED: 156 edges (avg confidence: 0.8)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `063b26ef`
+- Built from commit: `40c75c6a`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -72,7 +72,6 @@
 - mapeamento-detalhado/README.md
 - Environment Setup Guide
 - Publication Verification
-- docs/DESENVOLVIMENTO.md
 - Driver and Helmet Models
 - Wind Tunnel Visualization
 - Aerodynamics Unit Testing
@@ -80,8 +79,6 @@
 - Studio Material Application
 - Project Directory Tree
 - Symbol Inventory
-- docs/BLENDER.md
-- docs/VALIDACAO.md
 - Documentação do Laboratório 3D INTEIA
 - Publicação do laboratório
 - build.cjs
@@ -121,11 +118,7 @@
 - **Laboratory Atlas Visualization Tools** — docs_mapeamento_detalhado_scripts_interface, ferramentas_mapa_template [INFERRED 0.85]
 - **INTEIA Brand Identity Assets** — identidade_identidade_inteia, identidade_inteia_monocromatico, identidade_inteia_negativo, identidade_inteia_simbolo, web_assets_inteia_wordmark, web_assets_inteia_escudo_oficial, web_assets_inteia_nome_oficial [EXTRACTED 0.95]
 
-## Communities (75 total, 19 thin omitted)
-
-### Community 0 - "docs/INTEGRACAO.md"
-Cohesion: 0.20
-Nodes (9): Carbono portatil e shader web diferem, Clipe INTEIA_Demonstracao_Montagem_Rodas_DRS, Eixo GLB Y e Blender Z, Evitar dois controladores nas mesmas pecas, GLB animado com demonstracao, GLB estatico para controlador proprio, Motores Unity Unreal Godot nao testados, Necessidade de LODs e colisores no destino (+1 more)
+## Communities (72 total, 21 thin omitted)
 
 ### Community 1 - "Build and Catalog Scripts"
 Cohesion: 0.06
@@ -140,8 +133,8 @@ Cohesion: 0.07
 Nodes (33): advanceLocalSpin(), createSystems(), FLOW_SPEEDS, flowTexture(), HIDE_GROUPS, LOCAL_SPIN_AXES, SYSTEM_CATALOG, SYSTEM_IDS (+25 more)
 
 ### Community 4 - "Blender Production Workflow"
-Cohesion: 0.15
-Nodes (11): Licenca do tutorial nao documentada, Original do tutorial ausente, Sem afiliacao ou certificacao esportiva, Titularidade declarada INTEIA, Tutorial F1_2026_tutorial_part7_textures.blend, Direitos de terceiros preservados, Licenca Proprietaria INTEIA, Reutilizacao depende de autorizacao INTEIA (+3 more)
+Cohesion: 0.05
+Nodes (34): Blender 4.5.9 LTS na producao registrada, Colecao de estudio separada, Colecao INTEIA Carro reutilizavel, Desvincular acoes para editar posicoes, Exportar apenas carro e pivos, Raiz INTEIA_F1 e pivos, Timeline montagem rodas direcao DRS, Build web com esbuild e GLB incorporado (+26 more)
 
 ### Community 5 - "System Optimization and Testing"
 Cohesion: 0.14
@@ -156,8 +149,8 @@ Cohesion: 0.12
 Nodes (20): three_addons_loaders_gltfloader_js (dependência externa), BOKEH, clamp(), eased(), ENGINE_PARTS, ENGINE_WINDOWS, engineShot(), FOCUS (+12 more)
 
 ### Community 8 - "Aerodynamics Physics Model"
-Cohesion: 0.13
-Nodes (14): Bloqueios Mach montagem e isolamento, Coeficientes externos nao determinados pelo GLB, Cores de regiao sem medicao fisica, CSV com origem e validade dos parametros, Ensaio aerodinamico por coeficientes, Envelope analitico simplificado, Exemplo hipotetico sem medicao no carro, Fumaca artistica por particulas (+6 more)
+Cohesion: 0.09
+Nodes (20): Bloqueios Mach montagem e isolamento, Coeficientes externos nao determinados pelo GLB, Cores de regiao sem medicao fisica, CSV com origem e validade dos parametros, Ensaio aerodinamico por coeficientes, Envelope analitico simplificado, Exemplo hipotetico sem medicao no carro, Fumaca artistica por particulas (+12 more)
 
 ### Community 9 - "Build and Verification Tools"
 Cohesion: 0.12
@@ -212,7 +205,7 @@ Cohesion: 0.67
 Nodes (3): INTEIA — Identidade Visual, INTEIA Negativo SVG, INTEIA Símbolo SVG
 
 ### Community 41 - "Navigator Validation Guides"
-Cohesion: 0.33
+Cohesion: 0.50
 Nodes (4): Acabamento, reflexos e render do laboratório, Fontes e reutilização, Limites, O que mudou
 
 ### Community 42 - "Asset Reutilization Guide"
@@ -232,8 +225,8 @@ Cohesion: 0.36
 Nodes (10): caliperGeometry(), discGeometry(), discTexture(), enhanceCar(), heatTexture(), localVaryings(), paintShader(), rimPatch() (+2 more)
 
 ### Community 46 - "Technical Documentation Index"
-Cohesion: 0.33
-Nodes (3): Mapa do Laboratório 3D INTEIA, Evidências de verificação do atlas, Chisle
+Cohesion: 0.21
+Nodes (3): Mapa do Laboratório 3D INTEIA, Evidências de verificação do atlas, Validação do atlas no navegador
 
 ### Community 47 - "File Manifest Generation"
 Cohesion: 0.25
@@ -244,15 +237,15 @@ Cohesion: 0.29
 Nodes (7): Abrir sem disputar a porta 5186, Atualizar e reproduzir o mapeamento, Estado, concorrência e exclusões, O que os scripts realmente fazem, Pré-requisitos, Reproduzir o diagnóstico graphify isolado, Sequência de atualização
 
 ### Community 49 - "Graph Architecture Guidance"
-Cohesion: 0.29
+Cohesion: 0.33
 Nodes (6): Dados na sessão, Grafos, evidências e leitura estrutural, Limites de inferência, O que o graphify forneceu, Orientação de arquitetura, Produção e portabilidade
 
 ### Community 50 - "Driver Model Reference"
-Cohesion: 0.29
+Cohesion: 0.25
 Nodes (7): Atualização de encaixe do site principal, Piloto, capacete e bancadas — 15/09/2026, Proporção pela referência lateral enviada, Referências visuais consultadas, Resultado, Uso, Verificação
 
 ### Community 51 - "Final Assembly Verification"
-Cohesion: 0.40
+Cohesion: 0.33
 Nodes (5): Carro final e motor no laboratório — 15/09/2026, Limites, Operação, Procedência, Verificação
 
 ### Community 52 - "Coverage and State Analysis"
@@ -271,10 +264,6 @@ Nodes (5): Como interpretar o levantamento, Encontrar e entender, Entrega indepe
 Cohesion: 0.20
 Nodes (8): node_fs (dependência externa), fs, http, mimeTypes, path, port, root, server
 
-### Community 56 - "mapeamento-detalhado/README.md"
-Cohesion: 0.24
-Nodes (3): Exclusões observadas, Árvore comentada, Validação do atlas no navegador
-
 ### Community 57 - "Environment Setup Guide"
 Cohesion: 0.50
 Nodes (4): Alternar entre computadores, Continuar em outro PC, Documentação, Primeira instalação
@@ -282,10 +271,6 @@ Nodes (4): Alternar entre computadores, Continuar em outro PC, Documentação, P
 ### Community 58 - "Publication Verification"
 Cohesion: 0.15
 Nodes (22): _encode_normal(), image_from_array(), _link(), material(), Materials, mesh_object(), mirror_x(), Paleta física compartilhada pelos 14 sistemas. (+14 more)
-
-### Community 59 - "docs/DESENVOLVIMENTO.md"
-Cohesion: 0.22
-Nodes (7): Build web com esbuild e GLB incorporado, Geometria exige metadados especificos, Gerador sobrescreve master GLBs e previa, HTML gerado nao deve ser editado manualmente, Scripts de reconstrucao Blender e GLBs, Testes automatizados e inspecao visual, Orientacao de leitura pelo README
 
 ### Community 60 - "Driver and Helmet Models"
 Cohesion: 0.21
@@ -315,14 +300,6 @@ Nodes (13): gltf, io, jsonLength, load(), manifest, manifestPath, output, partsA
 Cohesion: 0.18
 Nodes (10): assemblies, b, before, j, json, len, mixer, out (+2 more)
 
-### Community 67 - "docs/BLENDER.md"
-Cohesion: 0.25
-Nodes (7): Blender 4.5.9 LTS na producao registrada, Colecao de estudio separada, Colecao INTEIA Carro reutilizavel, Desvincular acoes para editar posicoes, Exportar apenas carro e pivos, Raiz INTEIA_F1 e pivos, Timeline montagem rodas direcao DRS
-
-### Community 68 - "docs/VALIDACAO.md"
-Cohesion: 0.29
-Nodes (6): Ausencia de testes em jogos e colisao, Diferenca registrada de um triangulo, Historico visual subjetivo, Registros nao garantem edicoes futuras, Testes validam calculadora e nao aerodinamica do carro, Validacao registrada de reabertura e remontagem
-
 ### Community 69 - "Documentação do Laboratório 3D INTEIA"
 Cohesion: 0.40
 Nodes (5): Documentação do Laboratório 3D INTEIA, Fontes de verdade, Mapas do repositório, Operação e desenvolvimento, Produto e conteúdo técnico
@@ -336,28 +313,28 @@ Cohesion: 0.18
 Nodes (8): esbuild (dependência externa), esbuild, fs, html, model, path, template, withModel
 
 ### Community 77 - "branding.js"
-Cohesion: 0.29
+Cohesion: 0.25
 Nodes (7): Arquivos, Extras exportados nos nós, Interface, Limites, Referencial e escala, Regenerar, Sistemas internos em 3D — bancada Sistemas
 
 ## Knowledge Gaps
-- **568 isolated node(s):** `root`, `require`, `esbuild`, `out`, `sourcePaths` (+563 more)
+- **568 isolated node(s):** `.claude/settings.json`, `.cursor/rules/chisle.mdc`, `.gitattributes`, `.github/copilot-instructions.md`, `.github/workflows/verify.yml` (+563 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **19 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **21 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `Catálogo completo de arquivos` connect `Project Documentation and Assets` to `Technical Documentation Index`?**
-  _High betweenness centrality (0.125) - this node is a cross-community bridge._
-- **Why does `Índice de funções e métodos` connect `Web Application Source` to `mapeamento-detalhado/README.md`?**
-  _High betweenness centrality (0.027) - this node is a cross-community bridge._
-- **Why does `Assets visuais e identidade INTEIA` connect `Visual Identity Inventory` to `mapeamento-detalhado/README.md`?**
-  _High betweenness centrality (0.012) - this node is a cross-community bridge._
+  _High betweenness centrality (0.144) - this node is a cross-community bridge._
+- **Why does `Índice de funções e métodos` connect `Web Application Source` to `Technical Documentation Index`?**
+  _High betweenness centrality (0.030) - this node is a cross-community bridge._
+- **Why does `Assets, produção e procedência` connect `Asset Provenance and Identity` to `Technical Documentation Index`?**
+  _High betweenness centrality (0.020) - this node is a cross-community bridge._
 - **Are the 18 inferred relationships involving `sweep()` (e.g. with `build()` and `build()`) actually correct?**
   _`sweep()` has 18 INFERRED edges - model-reasoned connections that need verification._
 - **Are the 17 inferred relationships involving `cube()` (e.g. with `build()` and `build()`) actually correct?**
   _`cube()` has 17 INFERRED edges - model-reasoned connections that need verification._
 - **Are the 16 inferred relationships involving `cyl()` (e.g. with `build()` and `build()`) actually correct?**
   _`cyl()` has 16 INFERRED edges - model-reasoned connections that need verification._
-- **What connects `root`, `require`, `esbuild` to the rest of the system?**
+- **What connects `.claude/settings.json`, `.cursor/rules/chisle.mdc`, `.gitattributes` to the rest of the system?**
   _568 weakly-connected nodes found - possible documentation gaps or missing edges._
