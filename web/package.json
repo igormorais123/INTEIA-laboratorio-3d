@@ -11,7 +11,7 @@
   "scripts": {
     "build": "node build.cjs",
     "dev": "node server.cjs",
-    "test": "node test-systems.mjs && node test-spares.mjs && node test-mechanics.mjs && node test-aerodynamics.mjs && node test-power-unit.mjs && node test-driver-model.mjs && node test-tuning.mjs && node test-rpm-curve.mjs"
+    "test": "node test-systems.mjs && node test-spares.mjs && node test-mechanics.mjs && node test-aerodynamics.mjs && node test-power-unit.mjs && node test-driver-model.mjs && node test-tuning.mjs && node test-rpm-curve.mjs && node test-sound-player.mjs"
   },
   "dependencies": {
     "three": "0.180.0"
