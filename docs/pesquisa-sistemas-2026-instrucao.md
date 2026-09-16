@@ -4,7 +4,7 @@
 
 Este documento apoia os textos exibidos quando o visitante seleciona um sistema no laboratório 3D. O alvo é uma explicação visual e didática de um carro de Fórmula 1 sob o regulamento de 2026; não é CAD, manual de manutenção, cálculo estrutural, CFD, telemetria nem validação de segurança.
 
-A especificação canônica usada como roteiro é [`ESPECIFICACAO_MODELAGEM_F1_3D.md`](C:\Users\igorm\projetos\inteia-f1-loop\ESPECIFICACAO_MODELAGEM_F1_3D.md). O vídeo Animagraffs indicado nela é um registro explicativo de 2021 e serve para a sequência visual e para comparar a arquitetura anterior. Sempre que o vídeo mostrar MGU-H, turbo dividido, trompetas variáveis ou DRS como auxílio de ultrapassagem, isso deve ser rotulado como **contexto 2021**, não como descrição do carro 2026.
+A especificação canônica usada como roteiro é `ESPECIFICACAO_MODELAGEM_F1_3D.md`, documento externo informado pelo usuário. O vídeo Animagraffs indicado nela é um registro explicativo de 2021 e serve para a sequência visual e para comparar a arquitetura anterior. Sempre que o vídeo mostrar MGU-H, turbo dividido, trompetas variáveis ou DRS como auxílio de ultrapassagem, isso deve ser rotulado como **contexto 2021**, não como descrição do carro 2026.
 
 ## Base factual confirmada
 
@@ -161,4 +161,3 @@ Fontes primárias gerais:
 - **Segurança exagerada:** prometer proteção real, homologação ou resistência de impacto para uma visualização que não foi ensaiada.
 - **Telemetria inventada:** descrever linhas de conexão como dados reais, protocolo, ECU específica ou transmissão operacional.
 - **Fonte inadequada:** usar blogs, fóruns, marketing de equipe ou memória do modelo para preencher lacunas que o regulamento e a F1 não confirmam.
-

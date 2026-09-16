@@ -1,7 +1,7 @@
 # Auditoria de aderência à especificação F1 2026
 
-**Data:** 16/09/2026  
-**Escopo:** somente leitura do projeto `C:\Users\igorm\projetos\INTEIA-laboratorio-3d`, comparado com `C:\Users\igorm\projetos\inteia-f1-loop\ESPECIFICACAO_MODELAGEM_F1_3D.md`.  
+**Data:** 16/09/2026
+**Escopo:** somente leitura deste projeto, comparado com o documento externo `ESPECIFICACAO_MODELAGEM_F1_3D.md` informado pelo usuário.
 **Regra:** este documento separa observação do código de recomendação. Nenhuma geometria simplificada é tratada como CAD, homologação ou validação de engenharia.
 
 ## 1. Como os caminhos foram validados
@@ -18,6 +18,8 @@ No projeto auditado, os equivalentes reais são:
 | Motor sob demanda | `web/src/engine/in-car.js` | existe |
 | Câmera do motor | `web/src/engine/engine-shot.js` | existe |
 | Física aerodinâmica didática | `web/src/aero-physics.mjs` | existe |
+| Camadas internas 3D | `web/assets/sistemas-v1.glb` | existe |
+| Manifesto das camadas internas | `web/assets/sistemas-v1.manifest.json` | existe |
 | Modelo de PU | `web/assets/power-unit-v1.glb` | existe |
 | Manifesto da PU | `web/assets/power-unit-v1.manifest.json` | existe |
 | Testes de sistemas | `web/test-systems.mjs` | existe |
@@ -36,13 +38,13 @@ Portanto, referências a `hybrid-kit.js`, `internals-kit.js` ou `mechanics.js` d
 
 ### 2.2 Separação do MGU-H legado
 
-**Fato observado:** `web/src/systems.js` cria o MGU-H e seu acoplamento apenas como nós marcados `legacy2021`. A função `syncERSContextTags()` os oculta no contexto `current2026`; o controle de ERS alterna entre `legacy2021` e `current2026`. O catálogo textual identifica explicitamente os dois contextos.
+**Fato observado:** `web/src/systems.js` carrega `SYSTEMS_ASSET` (`web/assets/sistemas-v1.glb`), distribui os nós `system_*` em grupos e registra a metadada `era` do GLB em `eraNodes`. `applyEra()`, `applyCovers()` e `applyFlows()` ocultam entradas com `era === '2021'` quando o estado `current2026` está selecionado; `setERSContext()` alterna entre `legacy2021` e `current2026`. O catálogo textual identifica explicitamente os dois contextos.
 
 **Avaliação:** a comparação temporal está implementada de forma consciente. O legado não deve ser interpretado como parte da arquitetura 2026 do modelo.
 
 ### 2.3 Estrutura, combustível e Energy Store
 
-**Fato observado:** `SURVIVAL_CELL_LAYOUT` define um envelope didático; `POWER_FUEL_LAYOUT` coloca célula, contenção e Energy Store em posições separadas, testa a contenção da célula dentro da survival cell e posiciona a bateria abaixo do tanque. `web/test-systems.mjs` verifica esses limites, a rota de combustível e a não sobreposição com bloco/câmbio.
+**Fato observado:** `web/assets/sistemas-v1.manifest.json` registra as peças nomeadas de estrutura, combustível e ERS, com bounds e vetores de explosão. `web/test-systems.mjs` verifica a ordem longitudinal célula → motor → câmbio, a posição do Energy Store sob a célula, a rota de alimentação fora do cockpit e a existência dos conjuntos correspondentes. É uma checagem de layout didático, não uma certificação estrutural ou de segurança.
 
 **Avaliação:** a organização espacial está coerente com a intenção da especificação: célula compacta, Energy Store sob a célula e componentes internos mantidos no chassi. É uma checagem de consistência do layout didático, não uma certificação estrutural ou de segurança.
 
@@ -54,7 +56,7 @@ Portanto, referências a `hybrid-kit.js`, `internals-kit.js` ou `mechanics.js` d
 
 ### 2.5 Catálogo instrucional
 
-**Fato observado:** `SYSTEM_CATALOG` possui 14 sistemas, capítulos, descrições e ressalvas de simplificação. A interface atualiza a descrição ao selecionar uma camada e distingue o contexto 2021/2026 no painel de PU/ERS.
+**Fato observado:** `SYSTEM_CATALOG` possui 14 sistemas, capítulos, textos `howItWorks` e `observe`, além de descrições. `updateUI()` preenche os dois blocos instrucionais ao selecionar uma camada; `descriptionFor()` diferencia o contexto 2021/2026 para PU e ERS e identifica a aerodinâmica 2026 como referência com animação conjunta pendente.
 
 **Avaliação:** a base de instrução está presente. Ela ainda usa alguns termos herdados do vídeo de 2021, o que é tratado na seção seguinte e não deve ser confundido com aderência 2026.
 
@@ -64,7 +66,7 @@ Esta seção não classifica os itens como erro isolado: eles são aceitáveis s
 
 ### 3.1 Turbo dividido e MGU-H no overlay
 
-**Fato observado:** em `web/src/systems.js`, o power unit cria `turboCompressor` em `turboAxisStart`, `turboTurbine` em `turboAxisEnd` e um `turboShaft` comum; o texto do sistema chama o conjunto de “TURBO DIVIDIDO”. No mesmo grupo, o MGU-H legado aparece com acoplamento coaxial. Esses nós são ocultados no contexto 2026, mas a geometria 2026 alternativa não é criada.
+**Fato observado:** `web/assets/sistemas-v1.glb` contém o conjunto de comparação do power unit e nós `era: "2021"` para o MGU-H e elementos relacionados; `web/src/systems.js` carrega e organiza essas entradas do GLB, sem construir o turbo por constantes de geometria no runtime. Ao alternar o contexto, `applyEra()` e `applyFlows()` controlam a visibilidade dessas entradas. A variante geométrica completa de 2026 ainda não é criada; o catálogo a declara pendente.
 
 **Interpretação:** isso é uma representação explícita do vídeo de 2021, não uma implementação do power unit 2026. Deve permanecer apenas como comparação até existir uma variante 2026 independente.
 
@@ -117,15 +119,15 @@ Critérios verificáveis para a próxima iteração:
 
 ### P1 — Tornar as trompetas fixas verificáveis
 
-**Fato observado:** `web/src/systems.js` cria seis `Velocity stack / trompeta representativa` em posições fixas e não cria atuadores telescópicos. O teste verifica a quantidade e o loop determinístico, mas não verifica uma propriedade ou estado que prove “fixa”.
+**Fato observado:** `web/assets/sistemas-v1.manifest.json` registra seis peças `Trompeta de admissão` no conjunto `power`; `web/test-systems.mjs` verifica essa quantidade. O runtime carrega e anima o GLB, mas não declara uma propriedade de regulamento que prove “fixa” nem cria atuadores telescópicos.
 
 **Recomendação:** adicionar metadado explícito, como `userData.regulation = 2026` e `userData.intakeType = 'fixed'`, ou uma constante de layout 2026. Testar seis trompetas, três por bancada, ausência de atuadores e ausência de transformação de comprimento durante a animação. A palavra “fixa” deve ser usada como propriedade do asset didático implementado, não como alegação de homologação.
 
-### P2 — Alinhar o catálogo com o estado temporal selecionado
+### P2 — Alinhar o catálogo com o estado temporal selecionado (resolvido)
 
-**Fato observado:** ao selecionar Power, o título e a descrição principal ainda falam em “turbo dividido”, mesmo quando o painel informa “arquitetura atual / 2026”. O catálogo é imutável e a alternância atual muda visibilidade de nós e etiquetas, mas não substitui a descrição por uma explicação 2026.
+**Fato observado:** `descriptionFor()` mantém o catálogo imutável, mas acrescenta ao painel o contexto selecionado: comparação vídeo/2021 com turbo dividido e MGU-H, ou 2026 sem MGU-H e com a variante geométrica completa ainda pendente. O texto `howItWorks` e o bloco `observe` também marcam que o turbo dividido é legado e que a animação conjunta de aero 2026 ainda não está disponível.
 
-**Recomendação:** tornar a descrição dependente do contexto ou exibir dois blocos claramente separados: “O que o vídeo de 2021 mostra” e “O que o carro 2026 implementa”. Até a variante 2026 existir, o painel deve declarar que a geometria exibida é a comparação legada, em vez de sugerir que o turbo dividido é a configuração corrente.
+**Recomendação histórica:** manter essa separação explícita ao implementar a variante geométrica 2026; não remover o rótulo de comparação enquanto a variante completa não existir.
 
 ### P2 — Completar a validação específica da especificação
 
@@ -155,7 +157,7 @@ Enquanto esses itens não forem implementados e verificados, a formulação segu
 
 ## 6. Referências usadas
 
-- Especificação comparada: `C:\Users\igorm\projetos\inteia-f1-loop\ESPECIFICACAO_MODELAGEM_F1_3D.md`.
+- Especificação comparada: `ESPECIFICACAO_MODELAGEM_F1_3D.md` (documento externo informado pelo usuário).
 - Implementação auditada: `web/src/systems.js`, `web/src/mechanics.js`, `web/src/app-v2.js`, `web/src/engine/in-car.js`, `web/src/engine/engine-shot.js`.
 - Asset e escopo: `web/assets/power-unit-v1.manifest.json`.
 - Validações existentes: `web/test-systems.mjs`, `web/test-power-unit.mjs`, `web/test-mechanics.mjs`, `web/test-aerodynamics.mjs`.
