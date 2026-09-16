@@ -1,7 +1,7 @@
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
 import * as THREE from 'three';
-import {POWER_FUEL_LAYOUT, SURVIVAL_CELL_LAYOUT, SUSPENSION_LAYOUT, SYSTEM_CATALOG, SYSTEM_IDS, advanceLocalSpin} from './src/systems.js';
+import {getTagFontSize, getTagScale, POWER_FUEL_LAYOUT, SURVIVAL_CELL_LAYOUT, SUSPENSION_LAYOUT, SYSTEM_CATALOG, SYSTEM_IDS, advanceLocalSpin} from './src/systems.js';
 
 const expected = [
   ['aero', '0:14'], ['structure', '4:47'], ['suspension', '5:19'],
@@ -34,6 +34,10 @@ for (const [index, system] of SYSTEM_CATALOG.entries()) {
 
 assert.equal(Object.isFrozen(SYSTEM_CATALOG), true, 'catálogo deve ser imutável');
 assert.equal(Object.isFrozen(SYSTEM_IDS), true, 'IDs devem ser imutáveis');
+assert.equal(getTagFontSize('CONTEXTO 2026 · MGU-H REMOVIDO'), 37, 'a etiqueta 2026 deve usar fonte legível');
+assert.deepEqual(getTagScale('CONTEXTO 2026 · MGU-H REMOVIDO'), [.62,.14,1], 'a etiqueta 2026 deve receber escala ampliada');
+assert.equal(getTagFontSize('POWER'), 44, 'etiquetas curtas devem preservar a fonte original');
+assert.deepEqual(getTagScale('POWER'), [.52,.117,1], 'etiquetas curtas devem preservar a escala original');
 
 const source = readFileSync(new URL('./src/systems.js', import.meta.url), 'utf8');
 const template = readFileSync(new URL('./src/template-v2.html', import.meta.url), 'utf8');
@@ -109,6 +113,7 @@ assert.match(powerSource, /addSpinner\(mguh,'y',-1\.4\)/, 'MGU-H deve girar no p
 assert.match(powerSource, /addSpinner\(mguHDrive,'y',-1\.4\)/, 'acoplamento do MGU-H deve girar no próprio eixo local');
 assert.match(powerSource, /MGU-H · LEGADO 2021/, 'Power deve exibir identificação textual do MGU-H legado');
 assert.match(powerSource, /CONTEXTO 2026 · MGU-H REMOVIDO/, 'Power deve exibir o contexto temporal de 2026');
+assert.match(source, /context.measureText\(text\)\.width>690/, 'etiquetas longas devem ser limitadas pela largura da textura');
 assert.match(source, /let mguhTag=null,currentContextTag=null/, 'Power deve manter referências explícitas às etiquetas de contexto');
 assert.match(source, /function syncERSContextTags\(\)/, 'as etiquetas de contexto devem ter sincronização explícita');
 assert.match(source, /mguhTag\.visible=active==='power'&&legacyVisible/, 'a etiqueta legada deve acompanhar o modo 2021 somente em Power');
