@@ -19,6 +19,10 @@ A bancada **06 Sistemas** mostra catorze conjuntos internos do carro modelados c
 
 Todo o código dos módulos usa o referencial do site: X para a direita, Y para cima, Z para a frente, metros, piso em y = 0. A biblioteca converte para o Blender e o exportador glTF devolve o referencial do site. Medidas do carro v2 usadas como âncoras: rodas dianteiras em (±0,735; 0,329; 1,521), traseiras em (±0,735; 0,342; −1,838), sidepods até x = ±0,706, cockpit entre z = −0,13 e 0,91, santo antônio em y ≈ 1,13.
 
+**Lados.** O piloto olha para +Z, portanto a esquerda real do carro é +X (o freio, de pé esquerdo, fica em x > 0; o acelerador em x < 0; o intercooler, no sidepod esquerdo, em x > 0). Os módulos novos declaram `X_CONVENTION = 'piloto'` e usam `lib.lado(side)` para os rótulos; os módulos escritos antes dessa correção rotulavam −X como esquerda e são espelhados no lugar pelo gerador (`lib.mirror_system`), de modo que o asset publicado segue uma única convenção. O teste percorre todas as peças e falha se um rótulo "esquerdo"/"direito" estiver do lado errado.
+
+**Peças visíveis copiadas do carro.** `lib.car_part` importa o carro v2 uma vez, separa as ilhas da malha `main_body__01` e copia as que caem em uma caixa dada: é assim que o Halo (arco e pilar) e o encosto de cabeça da camada Segurança coincidem exatamente com o que se vê por fora, com material de titânio e Nomex e fixações modeladas por cima. O volante é centrado no cubo do volante do carro (0; 0,5925; 0,518), com a face dos comandos para −Z, e o cone de impacto dianteiro, o assento e a luz de chuva foram ajustados às fatias medidas da carroceria (nariz, cavidade do cockpit em x = ±0,154 e LED traseiro).
+
 Na camada Sistemas o V6 fica centrado em z = −0,92, com a célula de combustível entre o assento e o bloco e o câmbio até a estrutura traseira. O compartimento do motor da bancada **Motor** mantém o V6 detalhado com pistões em z = −0,72, ajustado à tampa recortada; quando os sistemas são revelados ao desmontar o carro, o motor do compartimento é ocultado para não duplicar a unidade.
 
 ## Extras exportados nos nós
@@ -35,6 +39,8 @@ Na camada Sistemas o V6 fica centrado em z = −0,92, com a célula de combustí
 | `explode` | Vetor de separação usado pelo controle **Separar peças do sistema**. |
 
 ## Interface
+
+Ao clicar em uma peça, o painel mostra o nome, o sistema, o que a peça faz e uma curiosidade técnica, a partir de `web/src/parts-info.js` (regras por família de peça, com texto genérico por sistema quando nenhuma regra casa). O volante segue o leiaute do protótipo Ferrari 2026 (referências fotográficas públicas), com botões de override manual (OT) e aerodinâmica ativa (AA) no lugar do DRS; as legendas são gravadas na placa e cada botão tem descrição própria.
 
 Além dos cartões e das seis vistas: **Fluxos animados**, **Abrir tampas**, **Cores por sistema** (modo esquemático com a cor do catálogo), **Carro fantasma** (desligue para ver os sistemas dentro do carro sólido e use **Desmontar**), **Separar peças do sistema** e leitura do nome da peça por clique. Na bancada Carro, **Desmontar** revela automaticamente os catorze sistemas no lugar enquanto a carroceria se afasta.
 

@@ -107,11 +107,11 @@ assert.ok(find('power', /^Plenum de admissão .* tampa/).every((node) => node.hi
 assert.equal(find('power', /^Tubo da wastegate/).length, 2, 'duas wastegates');
 assert.equal(find('power', /^Primário de escape/).length, 6, 'seis primários de escape');
 assert.ok(nodesOf('ers').some((node) => node.era === '2021'), 'ERS deve ter nós exclusivos do contexto 2021');
-// Refrigeração assimétrica: intercooler só à esquerda; água, óleo e ERS à direita.
+// Refrigeração assimétrica: intercooler só à esquerda (+X); água, óleo e ERS à direita (−X).
 const intercooler = find('cooling', /^Intercooler ar-ar · núcleo/);
-assert.equal(intercooler.length, 1, 'um intercooler'); assert.ok(center(intercooler[0])[0] < -.3, 'intercooler no sidepod esquerdo');
+assert.equal(intercooler.length, 1, 'um intercooler'); assert.ok(center(intercooler[0])[0] > .3, 'intercooler no sidepod esquerdo (+X: o piloto olha para +Z)');
 for (const pattern of [/^Radiador de água do motor · núcleo/, /^Arrefecedor de óleo do motor · núcleo/, /^Arrefecedor de baixa temperatura do ERS · núcleo/]) {
-  const core = find('cooling', pattern); assert.equal(core.length, 1, `trocador ausente: ${pattern}`); assert.ok(center(core[0])[0] > .3, `${pattern} no sidepod direito`);
+  const core = find('cooling', pattern); assert.equal(core.length, 1, `trocador ausente: ${pattern}`); assert.ok(center(core[0])[0] < -.3, `${pattern} no sidepod direito (−X)`);
 }
 for (const kind of ['water', 'oil', 'hyd', 'air']) assert.ok(nodesOf('cooling').some((node) => node.flow === kind), `cooling sem fluxo ${kind}`);
 // Empacotamento: assento → célula → motor → câmbio; energy store sob a célula.
@@ -141,6 +141,18 @@ assert.ok(find('suspension', /^Push-rod /).every((rod) => rod.max[1] - rod.min[1
 assert.equal(find('steering', /^Barra de direção · track rod/).length, 2); assert.equal(find('steering', /^Junta universal/).length, 2);
 assert.equal(find('sensors', /^Tubo de Pitot/).length, 1); assert.equal(find('sensors', /^Telemetria carro → box/).length, 1);
 assert.equal(find('wheel', /^LED de troca/).length, 15); assert.equal(find('wheel', /^Borboleta de marcha/).length, 2);
+// Peças visíveis coincidem com o carro v2 e convenção de lados (o piloto olha para +Z: esquerda = +X).
+const halo = find('safety', /^Halo · arco principal/)[0];
+assert.ok(halo && halo.max[1] < .88 && halo.max[1] > .86 && halo.min[2] < -.27 && halo.max[2] > .93 && Math.abs(halo.max[0] - .306) < .01, 'Halo com a envolvente da carroceria do carro v2');
+const headrest = find('safety', /^Encosto de cabeça/)[0];
+assert.ok(headrest && headrest.min[1] > .72 && headrest.max[1] < .88 && headrest.max[2] < .43, 'encosto de cabeça na posição da carroceria');
+const rainLight = find('safety', /^Luz de chuva/)[0]; assert.ok(rainLight && Math.abs(center(rainLight)[1] - .315) < .01 && center(rainLight)[2] < -2.5, 'luz de chuva no lugar do LED traseiro');
+const wheelBody = find('wheel', /^Corpo do volante/)[0]; assert.ok(wheelBody && Math.abs(center(wheelBody)[0]) < .005 && Math.abs(center(wheelBody)[2] - .518) < .01 && wheelBody.min[1] < .53 && wheelBody.max[1] > .656, 'volante centrado no cubo do carro v2');
+assert.ok(find('wheel', /^Botão · /).length >= 12, 'volante com pelo menos doze botões legendados'); assert.equal(find('wheel', /^Legenda /).length, find('wheel', /^Botão · /).length, 'cada botão tem legenda');
+assert.ok(find('wheel', /^Botão · OT /).length === 1 && find('wheel', /^Botão · AA /).length === 1, 'comandos de 2026: override manual e aerodinâmica ativa');
+assert.ok(find('wheel', /^Display LCD/).every((node) => node.min[2] < .52), 'display voltado ao piloto (−Z)'); assert.ok(find('wheel', /^Borboleta de marcha/).every((node) => node.min[2] > .53), 'borboletas atrás do volante (+Z)');
+assert.ok(center(find('brakes', /^Pedal de freio · pisadeira/)[0])[0] > .03, 'pedal de freio no pé esquerdo (+X)'); assert.ok(center(find('cockpit', /^Pedal do acelerador · pisadeira/)[0])[0] < -.03, 'acelerador no pé direito (−X)');
+for (const id of SYSTEM_IDS) { for (const node of nodesOf(id)) { if (/esquerd/.test(node.part) && !/direit/.test(node.part)) assert.ok(center(node)[0] > -.02, `${node.part}: rotulado esquerdo mas em −X`); if (/direit/.test(node.part) && !/esquerd/.test(node.part)) assert.ok(center(node)[0] < .02, `${node.part}: rotulado direito mas em +X`); } }
 assert.equal(find('ers', /^MGU-K · carcaça/).length, 1); assert.equal(find('ers', /^Engrenagem de acionamento do MGU-K/).length, 1);
 const app = readFileSync(new URL('./src/app-v2.js', import.meta.url), 'utf8');
 assert.match(source, /revealing/, 'sistemas revelados ao desmontar o carro');

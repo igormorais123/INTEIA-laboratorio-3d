@@ -783,15 +783,27 @@
     },
     {
       "source": "web/src/systems.js",
-      "target": "external:three/addons/loaders/GLTFLoader.js",
+      "target": "web/src/parts-info.js",
       "relation": "importa",
       "confidence": "EXTRACTED",
       "evidence": {
         "path": "web/src/systems.js",
         "line": 2,
-        "text": "import {GLTFLoader} from 'three/addons/loaders/GLTFLoader.js'"
+        "text": "import {describePart} from './parts-info.js'"
       },
       "href": "../../web/src/systems.js#L2"
+    },
+    {
+      "source": "web/src/systems.js",
+      "target": "external:three/addons/loaders/GLTFLoader.js",
+      "relation": "importa",
+      "confidence": "EXTRACTED",
+      "evidence": {
+        "path": "web/src/systems.js",
+        "line": 3,
+        "text": "import {GLTFLoader} from 'three/addons/loaders/GLTFLoader.js'"
+      },
+      "href": "../../web/src/systems.js#L3"
     },
     {
       "source": "web/src/systems.js",
@@ -800,10 +812,10 @@
       "confidence": "EXTRACTED",
       "evidence": {
         "path": "web/src/systems.js",
-        "line": 3,
+        "line": 4,
         "text": "import {MeshoptDecoder} from 'three/addons/libs/meshopt_decoder.module.js'"
       },
-      "href": "../../web/src/systems.js#L3"
+      "href": "../../web/src/systems.js#L4"
     },
     {
       "source": "web/src/tunnel-visual.js",
@@ -1150,10 +1162,10 @@
       "confidence": "EXTRACTED",
       "evidence": {
         "path": "ferramentas/gerar_sistemas.py",
-        "line": 145,
+        "line": 149,
         "text": "glb = (OUT if not wanted else PREVIEW_DIR) / f'sistemas-v1{suffix}.glb'"
       },
-      "href": "../../ferramentas/gerar_sistemas.py#L145"
+      "href": "../../ferramentas/gerar_sistemas.py#L149"
     },
     {
       "source": "ferramentas/otimizar_sistemas.mjs",
@@ -1174,10 +1186,10 @@
       "confidence": "EXTRACTED",
       "evidence": {
         "path": "ferramentas/gerar_sistemas.py",
-        "line": 202,
+        "line": 206,
         "text": "f'sistemas-v1{suffix}.manifest.json'"
       },
-      "href": "../../ferramentas/gerar_sistemas.py#L202"
+      "href": "../../ferramentas/gerar_sistemas.py#L206"
     },
     {
       "source": "web/assets/sistemas-v1.glb",
@@ -1186,10 +1198,10 @@
       "confidence": "EXTRACTED",
       "evidence": {
         "path": "web/src/systems.js",
-        "line": 26,
+        "line": 27,
         "text": "export const SYSTEMS_ASSET='./assets/sistemas-v1.glb'"
       },
-      "href": "../../web/src/systems.js#L26"
+      "href": "../../web/src/systems.js#L27"
     },
     {
       "source": "web/assets/carro-movable.glb",

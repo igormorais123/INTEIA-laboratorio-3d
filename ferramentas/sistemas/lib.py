@@ -8,6 +8,7 @@ e o exportador glTF devolve o referencial do site.
 Geometria original INTEIA, ilustrativa e didática; não é CAD de fabricante.
 """
 import bpy, bmesh, math
+from pathlib import Path
 import numpy as np
 from mathutils import Vector, Matrix, Quaternion
 
@@ -148,30 +149,66 @@ def tex_braid(size=128, tow=8):
     h = np.sin(lane * math.pi)
     return image_from_array('Trançado · normal', _encode_normal(h, 1.6), False)
 
+def _seg7(img, ch, x0, y0, w, h, t, col):
+    """Desenha um caractere de 7 segmentos (dígitos, ':' e '.'); origem (x0, y0) no canto inferior esquerdo (linha 0 da imagem Blender = base)."""
+    on = {'0': 'abcdef', '1': 'bc', '2': 'abged', '3': 'abgcd', '4': 'fgbc', '5': 'afgcd', '6': 'afgedc', '7': 'abc', '8': 'abcdefg', '9': 'abcdfg', '-': 'g'}.get(ch, '')
+    H, Wd = img.shape[:2]
+    def rect(xa, ya, xb, yb):
+        img[max(0, ya):min(H, yb), max(0, xa):min(Wd, xb), :3] = col
+    if ch == ':':
+        rect(x0 + w // 2 - t // 2, y0 + h // 4 - t // 2, x0 + w // 2 + t // 2, y0 + h // 4 + t // 2)
+        rect(x0 + w // 2 - t // 2, y0 + 3 * h // 4 - t // 2, x0 + w // 2 + t // 2, y0 + 3 * h // 4 + t // 2)
+        return
+    if ch == '.':
+        rect(x0 + w // 2 - t // 2, y0, x0 + w // 2 + t // 2, y0 + t)
+        return
+    m = h // 2
+    if 'a' in on: rect(x0, y0 + h - t, x0 + w, y0 + h)
+    if 'd' in on: rect(x0, y0, x0 + w, y0 + t)
+    if 'g' in on: rect(x0, y0 + m - t // 2, x0 + w, y0 + m + t // 2)
+    if 'f' in on: rect(x0, y0 + m, x0 + t, y0 + h)
+    if 'b' in on: rect(x0 + w - t, y0 + m, x0 + w, y0 + h)
+    if 'e' in on: rect(x0, y0, x0 + t, y0 + m)
+    if 'c' in on: rect(x0 + w - t, y0, x0 + w, y0 + m)
+
+def _text7(img, text, x, y, w, h, t, col, gap=None):
+    gap = gap if gap is not None else max(2, w // 3)
+    for ch in text:
+        cw = max(3, w // 3) if ch in ':.' else w
+        _seg7(img, ch, x, y, cw, h, t, col)
+        x += cw + gap
+
 def tex_display(size=(512, 256)):
+    """Página de telemetria estilo 2026: campos superiores, marcha central, tempos laterais e barra de energia."""
     w, h = size
     img = np.zeros((h, w, 4)); img[..., 3] = 1
-    img[..., :3] = (.02, .03, .04)
-    # barra de LEDs de troca
-    for i, c in enumerate([(.1, .9, .2)] * 5 + [(.95, .2, .2)] * 5 + [(.3, .4, 1)] * 5):
-        x0 = int(w * (.08 + i * .056)); x1 = x0 + int(w * .04)
-        img[int(h * .06):int(h * .16), x0:x1, :3] = c
-    # número da marcha central
-    gx0, gx1, gy0, gy1 = int(w * .40), int(w * .60), int(h * .25), int(h * .80)
-    img[gy0:gy1, gx0:gx1, :3] = (.06, .08, .1)
-    # dígito 7 estilizado
-    t = int(h * .06)
-    img[gy0 + t:gy0 + 2 * t, gx0 + t:gx1 - t, :3] = (.95, .95, .9)
-    for k in range(gy0 + 2 * t, gy1 - t):
-        frac = (k - gy0) / (gy1 - gy0)
-        xx = int(gx1 - t - frac * (gx1 - gx0 - 2 * t) * .7)
-        img[k, xx - t // 2:xx + t // 2, :3] = (.95, .95, .9)
-    # laterais: barras de dados
-    for side in (0, 1):
-        for j in range(6):
-            y0 = int(h * (.26 + j * .09)); x0 = int(w * (.06 if side == 0 else .66)); x1 = x0 + int(w * .28)
-            img[y0:y0 + int(h * .05), x0:x1, :3] = (.10, .14, .18)
-            img[y0:y0 + int(h * .05), x0:x0 + int((x1 - x0) * (.3 + .1 * j)), :3] = (.2, .8, .9) if side == 0 else (.9, .6, .2)
+    img[..., :3] = (.012, .014, .018)
+    H = h
+    def box(xa, ya, xb, yb, col):
+        img[ya:yb, xa:xb, :3] = col
+    cols = [(.15, .55, .25), (.70, .55, .10), (.20, .40, .80), (.75, .20, .20), (.55, .25, .70)]
+    for i, c in enumerate(cols):
+        xa = int(w * (.03 + i * .195)); xb = xa + int(w * .17)
+        box(xa, int(h * .84), xb, int(h * .96), (.06, .07, .09))
+        box(xa, int(h * .93), xb, int(h * .96), c)
+        _text7(img, str((i * 3 + 2) % 10), xa + int(w * .06), int(h * .855), int(w * .035), int(h * .06), 3, (.85, .88, .9))
+    box(int(w * .40), int(h * .16), int(w * .60), int(h * .80), (.03, .035, .045))
+    _seg7(img, '7', int(w * .445), int(h * .22), int(w * .11), int(h * .52), int(h * .07), (.96, .96, .92))
+    _text7(img, '1:28.4', int(w * .04), int(h * .62), int(w * .04), int(h * .11), 4, (.85, .9, .95))
+    box(int(w * .04), int(h * .48), int(w * .36), int(h * .55), (.06, .07, .09))
+    box(int(w * .20), int(h * .48), int(w * .31), int(h * .55), (.15, .85, .35))
+    _text7(img, '-0.31', int(w * .04), int(h * .34), int(w * .035), int(h * .09), 3, (.15, .85, .35))
+    _text7(img, '312', int(w * .04), int(h * .18), int(w * .045), int(h * .11), 4, (.85, .9, .95))
+    _text7(img, '27', int(w * .66), int(h * .62), int(w * .05), int(h * .11), 4, (.85, .9, .95))
+    _text7(img, '58', int(w * .82), int(h * .62), int(w * .05), int(h * .11), 4, (.6, .62, .66))
+    for j, (val, c) in enumerate((('96', (.95, .6, .2)), ('112', (.3, .6, .95)), ('83', (.95, .3, .3)))):
+        _text7(img, val, int(w * .66), int(h * (.44 - j * .13)), int(w * .03), int(h * .08), 3, c)
+        box(int(w * .84), int(h * (.45 - j * .13)), int(w * .97), int(h * (.50 - j * .13)), (.06, .07, .09))
+        box(int(w * .84), int(h * (.45 - j * .13)), int(w * (.84 + .13 * (.4 + .2 * j))), int(h * (.50 - j * .13)), c)
+    for x in range(int(w * .04), int(w * .96)):
+        f = (x - w * .04) / (w * .92)
+        c = (min(1, 2 * f) * .9, min(1, 2 - 2 * f) * .85, .15)
+        box(x, int(h * .05), x + 1, int(h * .12), c if f < .62 else (.05, .06, .08))
     return image_from_array('Display volante', np.clip(img, 0, 1))
 
 # ----------------------------------------------------------------------------- materiais
@@ -269,6 +306,15 @@ class Materials:
         self.anod_red = material('Anodizado vermelho INTEIA', (.55, .02, .03), .7, .3)
         self.anod_blue = material('Anodizado azul', (.05, .18, .55), .7, .32)
         self.anod_gold = material('Anodizado dourado', (.70, .48, .16), .85, .3)
+        self.anod_green = material('Anodizado verde', (.10, .55, .12), .7, .32)
+        self.anod_yellow = material('Anodizado amarelo', (.85, .70, .05), .7, .3)
+        self.anod_orange = material('Anodizado laranja', (.85, .32, .04), .7, .3)
+        self.anod_purple = material('Anodizado roxo', (.32, .08, .55), .7, .32)
+        self.anod_cyan = material('Anodizado ciano', (.05, .55, .65), .7, .32)
+        self.grip = material('Empunhadura · borracha texturizada', (.03, .03, .032), 0, .9)
+        self.led_white = material('LED branco', (1, 1, .95), 0, .3, emissive=(1, 1, .9), emissive_strength=3)
+        self.button_white = material('Botão branco', (.85, .85, .82), 0, .35)
+        self.button_black = material('Botão preto', (.06, .06, .065), 0, .45)
         self.rubber = material('Borracha preta', (.02, .02, .022), 0, .82)
         self.silicone = material('Silicone azul · mangueira', (.06, .22, .55), 0, .55)
         self.silicone_black = material('Silicone preto · mangueira', (.03, .03, .035), 0, .6)
@@ -799,6 +845,38 @@ def mirror_x(ctx, obj, part=None):
     bm = bmesh.new(); bm.from_mesh(dup.data); bmesh.ops.recalc_face_normals(bm, faces=bm.faces); bm.to_mesh(dup.data); bm.free()
     return dup
 
+def mirror_system(ctx, sid):
+    """Espelha em X, no lugar, todas as peças de um sistema. Usado nos módulos escritos na convenção legada
+    (−X rotulado como esquerda): o piloto olha para +Z, logo a esquerda real do carro é +X."""
+    objs = [p for p in ctx.parts if p.get('system') == sid and p.type == 'MESH']
+    if not objs:
+        return None
+    S = Matrix.Scale(-1, 4, Vector((1, 0, 0)))
+    for o in objs:
+        o.matrix_world = S @ o.matrix_world
+        ex = o.get('explode')
+        if ex is not None:
+            o['explode'] = [-float(ex[0]), float(ex[1]), float(ex[2])]
+    bpy.ops.object.select_all(action='DESELECT')
+    for o in objs:
+        o.select_set(True)
+    bpy.context.view_layer.objects.active = objs[0]
+    bpy.ops.object.transform_apply(location=False, rotation=False, scale=True)
+    # Descobre se a aplicação da escala negativa já inverteu as faces: testa o volume assinado de uma malha fechada.
+    flip = None
+    for o in objs:
+        bm = bmesh.new(); bm.from_mesh(o.data)
+        if len(bm.faces) > 4 and all(e.is_manifold for e in bm.edges):
+            flip = bm.calc_volume(signed=True) < 0
+            bm.free(); break
+        bm.free()
+    if flip:
+        for o in objs:
+            bm = bmesh.new(); bm.from_mesh(o.data)
+            bmesh.ops.reverse_faces(bm, faces=bm.faces)
+            bm.to_mesh(o.data); bm.free(); o.data.update()
+    return flip
+
 def both_sides(fn):
     """Executa fn(side) para side em (-1, +1)."""
     return [fn(-1), fn(1)]
@@ -873,3 +951,115 @@ def auto_explode(ctx, sid, scale=1.0, min_len=.06):
             d = Vector((0, 0, .1))
         d = d.normalized() * max(min_len, d.length * .35 * scale)
         p['explode'] = [round(v, 4) for v in to_web(d)]
+
+# ----------------------------------------------------------------------------- peças copiadas do carro v2
+_CAR_GLB = Path(__file__).resolve().parents[2] / 'web' / 'assets' / 'carro-aula-v2.glb'
+_car_components = {}
+
+def car_components(source='main_body__01'):
+    """Importa o carro v2 uma única vez e devolve os componentes soltos (ilhas de malha) do objeto `source`
+    como dicts {n, min, max, verts, faces} no referencial do site. Os objetos importados são removidos."""
+    if source in _car_components:
+        return _car_components[source]
+    before = set(bpy.data.objects)
+    bpy.ops.import_scene.gltf(filepath=str(_CAR_GLB))
+    new = [o for o in bpy.data.objects if o not in before]
+    src = next(o for o in new if o.type == 'MESH' and o.name.split('.')[0] == source)
+    bm = bmesh.new(); bm.from_mesh(src.data); bm.verts.ensure_lookup_table(); bm.faces.ensure_lookup_table()
+    mw = src.matrix_world
+    seen = set(); comps = []
+    for v in bm.verts:
+        if v.index in seen:
+            continue
+        stack = [v]; seen.add(v.index); comp = []
+        while stack:
+            cur = stack.pop(); comp.append(cur)
+            for e in cur.link_edges:
+                w = e.other_vert(cur)
+                if w.index not in seen:
+                    seen.add(w.index); stack.append(w)
+        idx = {vv.index: k for k, vv in enumerate(comp)}
+        verts = [to_web(mw @ vv.co) for vv in comp]
+        faces = []; fseen = set()
+        for vv in comp:
+            for f in vv.link_faces:
+                if f.index in fseen:
+                    continue
+                fseen.add(f.index); faces.append([idx[x.index] for x in f.verts])
+        mn = [min(p[i] for p in verts) for i in range(3)]; mx = [max(p[i] for p in verts) for i in range(3)]
+        comps.append({'n': len(comp), 'min': mn, 'max': mx, 'verts': verts, 'faces': faces})
+    bm.free()
+    for o in new:
+        bpy.data.objects.remove(o, do_unlink=True)
+    _car_components[source] = comps
+    return comps
+
+def car_part(ctx, part, mat, *, source='main_body__01', box=None, select=None, smooth_angle=math.radians(45), uv=8, **extras):
+    """Copia ilhas da malha do carro v2 para o sistema corrente, garantindo coincidência exata com a carroceria
+    visível. `box=((xmin,ymin,zmin),(xmax,ymax,zmax))` no referencial do site; `select(comp)` refina a escolha."""
+    comps = [c for c in car_components(source)
+             if (box is None or all(c['min'][i] >= box[0][i] - 1e-4 and c['max'][i] <= box[1][i] + 1e-4 for i in range(3)))
+             and (select is None or select(c))]
+    if not comps:
+        raise RuntimeError(f'car_part {part!r}: nenhum componente do carro dentro da caixa {box}')
+    verts = []; faces = []
+    for c in comps:
+        off = len(verts)
+        verts += [W(v) for v in c['verts']]
+        faces += [[i + off for i in f] for f in c['faces']]
+    o = mesh_object(part, verts, faces)
+    shade_smooth(o, smooth_angle)
+    box_uv(o, uv)
+    set_material(o, mat)
+    o['from_car'] = source
+    return ctx.register(o, part, **extras)
+
+def plate(ctx, part, outline, center, thickness, mat, *, normal=FWD, up=UP, bev=.0015, uv=8, **extras):
+    """Placa extrudada a partir de um contorno 2D [(u,v)] no plano definido por `normal`/`up`, centrada em `center`.
+    A face frontal fica no sentido de `normal`."""
+    n = Vector(normal).normalized(); u_axis = Vector(up).normalized()
+    u_axis = (u_axis - n * u_axis.dot(n)).normalized()
+    r_axis = u_axis.cross(n)
+    c = Vector(center)
+    def P(u, v, w):
+        p = c + r_axis * u + u_axis * v + n * w
+        return (p.x, p.y, p.z)
+    back = [P(u, v, -thickness / 2) for u, v in outline]
+    front = [P(u, v, thickness / 2) for u, v in outline]
+    o = loft(ctx, part, [back, front], mat, cap=True, **extras)
+    bm = bmesh.new(); bm.from_mesh(o.data)
+    bmesh.ops.recalc_face_normals(bm, faces=bm.faces)
+    bm.to_mesh(o.data); bm.free(); o.data.update()
+    bevel(o, bev, 2)
+    return o
+
+# ----------------------------------------------------------------------------- lados
+def lado(side, fem=False):
+    """Nome do lado no referencial do carro: o piloto olha para +Z, logo +X é a sua esquerda."""
+    if fem:
+        return 'esquerda' if side > 0 else 'direita'
+    return 'esquerdo' if side > 0 else 'direito'
+
+def arc2d(cx, cy, r, a0, a1, n=6):
+    """Arco 2D em graus, para contornos de placas."""
+    return [(cx + r * math.cos(math.radians(a0 + (a1 - a0) * i / n)), cy + r * math.sin(math.radians(a0 + (a1 - a0) * i / n))) for i in range(n + 1)]
+
+def face_uv_fit(obj, normal=FWD, tol=.9):
+    """Faz as faces cuja normal aponta para `normal` (site frame) cobrirem a textura inteira (UV 0..1),
+    usado em displays e placas com imagem única."""
+    me = obj.data
+    if not me.uv_layers:
+        me.uv_layers.new(name='UVMap')
+    uv = me.uv_layers.active.data
+    n = W(normal).normalized()
+    up = Vector((0, 0, 1)) if abs(n.z) < .9 else Vector((0, 1, 0))
+    u_axis = up.cross(n).normalized(); v_axis = n.cross(u_axis).normalized()
+    for poly in me.polygons:
+        if poly.normal.dot(n) < tol:
+            continue
+        cos = [me.vertices[me.loops[li].vertex_index].co for li in poly.loop_indices]
+        us = [c.dot(u_axis) for c in cos]; vs = [c.dot(v_axis) for c in cos]
+        du = (max(us) - min(us)) or 1; dv = (max(vs) - min(vs)) or 1
+        for li, u_, v_ in zip(poly.loop_indices, us, vs):
+            uv[li].uv = ((u_ - min(us)) / du, (v_ - min(vs)) / dv)
+    return obj

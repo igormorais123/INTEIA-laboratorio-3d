@@ -1,5 +1,5 @@
 {
-  "files": 189,
+  "files": 190,
   "categories": {
     "aplicação gerada": 1,
     "base geométrica derivada": 1,
@@ -9,7 +9,7 @@
     "entrega editável Blender": 2,
     "evidência gerada": 6,
     "ferramenta editável": 24,
-    "fonte web editável": 20,
+    "fonte web editável": 21,
     "identidade editável": 9,
     "licença ou procedência": 4,
     "mapa gerado": 32,
@@ -18,14 +18,14 @@
     "teste": 5,
     "textura gerada": 1
   },
-  "declaredSymbols": 280,
-  "literalImports": 92,
+  "declaredSymbols": 296,
+  "literalImports": 93,
   "productionEdges": 47,
   "templateIds": 141,
   "componentsMatchedByPartId": 97,
-  "localMarkdownLinksChecked": 1531,
+  "localMarkdownLinksChecked": 1549,
   "brokenLocalLinks": 0,
-  "fingerprint": "7f899975b9576b98777bfefd0e812922fe695e7021f7c88700611a46aeffa6a4",
+  "fingerprint": "b317a3beb7c10016b045ddb8c5a25917bccf529f2660b68a30e68db2080f2def",
   "limits": [
     "Não abre Blender nem refaz exports.",
     "Não verifica URLs externas.",

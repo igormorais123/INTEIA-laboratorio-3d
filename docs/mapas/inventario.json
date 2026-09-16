@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "fingerprint": "7f899975b9576b98777bfefd0e812922fe695e7021f7c88700611a46aeffa6a4",
+  "fingerprint": "b317a3beb7c10016b045ddb8c5a25917bccf529f2660b68a30e68db2080f2def",
   "scope": "arquivos Git e novos não ignorados; caches, dependências instaladas e backups ignorados excluídos",
   "hashPolicy": "SHA256 e bytes de texto com LF; binários exatos; mapas gerados sem auto-hash",
   "files": [
@@ -310,8 +310,8 @@
       "path": "docs/SISTEMAS-3D.md",
       "category": "documentação",
       "href": "../../docs/SISTEMAS-3D.md",
-      "bytesCanonical": 5445,
-      "sha256": "b39402d8c838f53829c5a59b3952725c83ee95738b730b7598ed93141931d765"
+      "bytesCanonical": 7133,
+      "sha256": "1a5d314f682e035bf578518c290af609242130a122d1724499c1d2263f0f96ae"
     },
     {
       "path": "docs/VALIDACAO.md",
@@ -686,8 +686,8 @@
       "path": "ferramentas/gerar_sistemas.py",
       "category": "ferramenta editável",
       "href": "../../ferramentas/gerar_sistemas.py",
-      "bytesCanonical": 14239,
-      "sha256": "83c98386926cd261ca0bba9b77d5842b0432ad6084757b1eb56e36d5903133b4"
+      "bytesCanonical": 14534,
+      "sha256": "ebe02d14e1a8436e1e9545e3337d98b9d8187ea5deaeda6ad8e4553b27d3ab5b"
     },
     {
       "path": "ferramentas/manifest.cjs",
@@ -749,8 +749,8 @@
       "path": "ferramentas/sistemas/lib.py",
       "category": "ferramenta editável",
       "href": "../../ferramentas/sistemas/lib.py",
-      "bytesCanonical": 42247,
-      "sha256": "0b3a4c0b4103ff0fae84faf1763b326a052fab524e0afcf421a4636289acb170"
+      "bytesCanonical": 52452,
+      "sha256": "de04806e4bc0a0b411dc678197fd5b7d41a3a20a07ef2a355e722ce70f13d19d"
     },
     {
       "path": "ferramentas/sistemas/s01_aero.py",
@@ -826,22 +826,22 @@
       "path": "ferramentas/sistemas/s11_safety.py",
       "category": "ferramenta editável",
       "href": "../../ferramentas/sistemas/s11_safety.py",
-      "bytesCanonical": 6847,
-      "sha256": "4d98c173fc427d8af929d2f943fe20ab757d10d59a8bfccdf07dddb26fea69c3"
+      "bytesCanonical": 6622,
+      "sha256": "2f4f5087462bc20dd5a0a1ed796d2f52b43659554b118f5a8b1a58eb0f57c34c"
     },
     {
       "path": "ferramentas/sistemas/s12_cockpit.py",
       "category": "ferramenta editável",
       "href": "../../ferramentas/sistemas/s12_cockpit.py",
-      "bytesCanonical": 5638,
-      "sha256": "37b1d6d94320572e7f64d2100eb6ea3772608fa2d6e57e2a3024dee0074b8e3c"
+      "bytesCanonical": 5588,
+      "sha256": "888308e024fb7c37c7ba77a8f17129451296d7dd0caa71e5cc89847eb477cd13"
     },
     {
       "path": "ferramentas/sistemas/s13_wheel.py",
       "category": "ferramenta editável",
       "href": "../../ferramentas/sistemas/s13_wheel.py",
-      "bytesCanonical": 5574,
-      "sha256": "fa0afa157bee89696f6984dc5ba8814fea10d21a170680ac8a1086ea4f58184f"
+      "bytesCanonical": 8363,
+      "sha256": "079a57735bad7c391ff4dfa450cdca26f7be90db27dbaf62ca9277163f33a7b3"
     },
     {
       "path": "ferramentas/sistemas/s14_sensors.py",
@@ -15381,13 +15381,13 @@
       "path": "web/assets/sistemas-v1.glb",
       "category": "entrega GLB",
       "href": "../../web/assets/sistemas-v1.glb",
-      "bytesCanonical": 6335984,
-      "sha256": "4661474cba8f5cc09d5bef75cbd49415132e1f8c24e71a1a18f7d735fbbd7962",
+      "bytesCanonical": 6973812,
+      "sha256": "ec684d8b14249b7befb0b52950c88209fd04523c7684d3c530eb541ea3f39d87",
       "glb": {
-        "nodes": 1130,
-        "meshes": 885,
-        "triangles": 358402,
-        "materials": 56,
+        "nodes": 1178,
+        "meshes": 915,
+        "triangles": 368108,
+        "materials": 66,
         "images": 16,
         "extensionsUsed": [
           "EXT_meshopt_compression",
@@ -15405,8 +15405,8 @@
       "path": "web/assets/sistemas-v1.manifest.json",
       "category": "configuração ou infraestrutura",
       "href": "../../web/assets/sistemas-v1.manifest.json",
-      "bytesCanonical": 392778,
-      "sha256": "1b756fe2a4abedefc729f4b4be05e30f5c5459162fab7b99dde7133960453a96"
+      "bytesCanonical": 409997,
+      "sha256": "3c5bef48b00aadf0a57bb8eb3fe86aa1d460eed06b05aa2b7d32689e9d75663c"
     },
     {
       "path": "web/build.cjs",
@@ -15419,8 +15419,8 @@
       "path": "web/index.html",
       "category": "aplicação gerada",
       "href": "../../web/index.html",
-      "bytesCanonical": 4404242,
-      "sha256": "5c7fe658ba2ea8b384f2b6012a154bfc40f5eebf60bfac275632fe3be77346e4"
+      "bytesCanonical": 4458380,
+      "sha256": "63aea350db5e5f0e14d095e780893dd7fba03aaa8a5186d4fa0465f98b39c6db"
     },
     {
       "path": "web/package-lock.json",
@@ -15540,6 +15540,14 @@
       "reachableFromApp": true
     },
     {
+      "path": "web/src/parts-info.js",
+      "category": "fonte web editável",
+      "href": "../../web/src/parts-info.js",
+      "bytesCanonical": 53026,
+      "sha256": "0978b0890702f019c7d8b3a8fd1ff6c77b794e792801475b4a83b9625ce24996",
+      "reachableFromApp": true
+    },
+    {
       "path": "web/src/senna-driver.js",
       "category": "fonte web editável",
       "href": "../../web/src/senna-driver.js",
@@ -15567,16 +15575,16 @@
       "path": "web/src/systems.js",
       "category": "fonte web editável",
       "href": "../../web/src/systems.js",
-      "bytesCanonical": 32412,
-      "sha256": "8c90044c4098d1e1a12c1184baf777369b4f8d322fce6f85a0a31df2b43d8112",
+      "bytesCanonical": 33660,
+      "sha256": "0181b718de7953bb589af0527237fb73055f9b9bacd76cf3dd8c4f713a80b2d5",
       "reachableFromApp": true
     },
     {
       "path": "web/src/template-v2.html",
       "category": "fonte web editável",
       "href": "../../web/src/template-v2.html",
-      "bytesCanonical": 37569,
-      "sha256": "30b02e63609a8fb87a607375d548f7abe71f4456dc4ea38518ff144f9e073f0b"
+      "bytesCanonical": 38141,
+      "sha256": "9d99cc6293e9a1f97a998833da4e31773869955330d65ea84d8348ec90ac0918"
     },
     {
       "path": "web/src/tunnel-visual.js",
@@ -15634,8 +15642,8 @@
       "path": "web/test-systems.mjs",
       "category": "teste",
       "href": "../../web/test-systems.mjs",
-      "bytesCanonical": 12190,
-      "sha256": "3a4f79d4a4016ea2715411b29bf5d7a80c4b964b3ba29401e7071d0cd79c9864"
+      "bytesCanonical": 14459,
+      "sha256": "1b269900601e0bb4d144896f6529902bb9bb581e3da84d743fc7cfdc40b73243"
     }
   ],
   "symbols": [
@@ -15810,29 +15818,29 @@
     {
       "name": "measure_glb",
       "path": "ferramentas/gerar_sistemas.py",
-      "line": 154,
-      "href": "../../ferramentas/gerar_sistemas.py#L154",
+      "line": 158,
+      "href": "../../ferramentas/gerar_sistemas.py#L158",
       "extraction": "declaração lexical"
     },
     {
       "name": "write_manifest",
       "path": "ferramentas/gerar_sistemas.py",
-      "line": 180,
-      "href": "../../ferramentas/gerar_sistemas.py#L180",
+      "line": 184,
+      "href": "../../ferramentas/gerar_sistemas.py#L184",
       "extraction": "declaração lexical"
     },
     {
       "name": "light",
       "path": "ferramentas/gerar_sistemas.py",
-      "line": 226,
-      "href": "../../ferramentas/gerar_sistemas.py#L226",
+      "line": 230,
+      "href": "../../ferramentas/gerar_sistemas.py#L230",
       "extraction": "declaração lexical"
     },
     {
       "name": "frame",
       "path": "ferramentas/gerar_sistemas.py",
-      "line": 244,
-      "href": "../../ferramentas/gerar_sistemas.py#L244",
+      "line": 248,
+      "href": "../../ferramentas/gerar_sistemas.py#L248",
       "extraction": "declaração lexical"
     },
     {
@@ -16013,407 +16021,491 @@
     {
       "name": "W",
       "path": "ferramentas/sistemas/lib.py",
-      "line": 15,
-      "href": "../../ferramentas/sistemas/lib.py#L15",
+      "line": 16,
+      "href": "../../ferramentas/sistemas/lib.py#L16",
       "extraction": "declaração lexical"
     },
     {
       "name": "to_web",
       "path": "ferramentas/sistemas/lib.py",
-      "line": 20,
-      "href": "../../ferramentas/sistemas/lib.py#L20",
+      "line": 21,
+      "href": "../../ferramentas/sistemas/lib.py#L21",
       "extraction": "declaração lexical"
     },
     {
       "name": "_encode_normal",
       "path": "ferramentas/sistemas/lib.py",
-      "line": 30,
-      "href": "../../ferramentas/sistemas/lib.py#L30",
+      "line": 31,
+      "href": "../../ferramentas/sistemas/lib.py#L31",
       "extraction": "declaração lexical"
     },
     {
       "name": "image_from_array",
       "path": "ferramentas/sistemas/lib.py",
-      "line": 37,
-      "href": "../../ferramentas/sistemas/lib.py#L37",
+      "line": 38,
+      "href": "../../ferramentas/sistemas/lib.py#L38",
       "extraction": "declaração lexical"
     },
     {
       "name": "tex_twill",
       "path": "ferramentas/sistemas/lib.py",
-      "line": 49,
-      "href": "../../ferramentas/sistemas/lib.py#L49",
+      "line": 50,
+      "href": "../../ferramentas/sistemas/lib.py#L50",
       "extraction": "declaração lexical"
     },
     {
       "name": "tex_kevlar",
       "path": "ferramentas/sistemas/lib.py",
-      "line": 60,
-      "href": "../../ferramentas/sistemas/lib.py#L60",
+      "line": 61,
+      "href": "../../ferramentas/sistemas/lib.py#L61",
       "extraction": "declaração lexical"
     },
     {
       "name": "tex_brushed",
       "path": "ferramentas/sistemas/lib.py",
-      "line": 69,
-      "href": "../../ferramentas/sistemas/lib.py#L69",
+      "line": 70,
+      "href": "../../ferramentas/sistemas/lib.py#L70",
       "extraction": "declaração lexical"
     },
     {
       "name": "tex_cast",
       "path": "ferramentas/sistemas/lib.py",
-      "line": 76,
-      "href": "../../ferramentas/sistemas/lib.py#L76",
+      "line": 77,
+      "href": "../../ferramentas/sistemas/lib.py#L77",
       "extraction": "declaração lexical"
     },
     {
       "name": "tex_heat",
       "path": "ferramentas/sistemas/lib.py",
-      "line": 85,
-      "href": "../../ferramentas/sistemas/lib.py#L85",
+      "line": 86,
+      "href": "../../ferramentas/sistemas/lib.py#L86",
       "extraction": "declaração lexical"
     },
     {
       "name": "tex_brake_disc",
       "path": "ferramentas/sistemas/lib.py",
-      "line": 98,
-      "href": "../../ferramentas/sistemas/lib.py#L98",
+      "line": 99,
+      "href": "../../ferramentas/sistemas/lib.py#L99",
       "extraction": "declaração lexical"
     },
     {
       "name": "tex_fins",
       "path": "ferramentas/sistemas/lib.py",
-      "line": 120,
-      "href": "../../ferramentas/sistemas/lib.py#L120",
+      "line": 121,
+      "href": "../../ferramentas/sistemas/lib.py#L121",
       "extraction": "declaração lexical"
     },
     {
       "name": "tex_honeycomb",
       "path": "ferramentas/sistemas/lib.py",
-      "line": 127,
-      "href": "../../ferramentas/sistemas/lib.py#L127",
+      "line": 128,
+      "href": "../../ferramentas/sistemas/lib.py#L128",
       "extraction": "declaração lexical"
     },
     {
       "name": "tex_kapton",
       "path": "ferramentas/sistemas/lib.py",
-      "line": 137,
-      "href": "../../ferramentas/sistemas/lib.py#L137",
+      "line": 138,
+      "href": "../../ferramentas/sistemas/lib.py#L138",
       "extraction": "declaração lexical"
     },
     {
       "name": "tex_braid",
       "path": "ferramentas/sistemas/lib.py",
-      "line": 143,
-      "href": "../../ferramentas/sistemas/lib.py#L143",
+      "line": 144,
+      "href": "../../ferramentas/sistemas/lib.py#L144",
+      "extraction": "declaração lexical"
+    },
+    {
+      "name": "_seg7",
+      "path": "ferramentas/sistemas/lib.py",
+      "line": 151,
+      "href": "../../ferramentas/sistemas/lib.py#L151",
+      "extraction": "declaração lexical"
+    },
+    {
+      "name": "rect",
+      "path": "ferramentas/sistemas/lib.py",
+      "line": 156,
+      "href": "../../ferramentas/sistemas/lib.py#L156",
+      "extraction": "declaração lexical"
+    },
+    {
+      "name": "_text7",
+      "path": "ferramentas/sistemas/lib.py",
+      "line": 173,
+      "href": "../../ferramentas/sistemas/lib.py#L173",
       "extraction": "declaração lexical"
     },
     {
       "name": "tex_display",
       "path": "ferramentas/sistemas/lib.py",
-      "line": 150,
-      "href": "../../ferramentas/sistemas/lib.py#L150",
+      "line": 180,
+      "href": "../../ferramentas/sistemas/lib.py#L180",
+      "extraction": "declaração lexical"
+    },
+    {
+      "name": "box",
+      "path": "ferramentas/sistemas/lib.py",
+      "line": 187,
+      "href": "../../ferramentas/sistemas/lib.py#L187",
       "extraction": "declaração lexical"
     },
     {
       "name": "material",
       "path": "ferramentas/sistemas/lib.py",
-      "line": 179,
-      "href": "../../ferramentas/sistemas/lib.py#L179",
+      "line": 216,
+      "href": "../../ferramentas/sistemas/lib.py#L216",
       "extraction": "declaração lexical"
     },
     {
       "name": "tex_node",
       "path": "ferramentas/sistemas/lib.py",
-      "line": 212,
-      "href": "../../ferramentas/sistemas/lib.py#L212",
+      "line": 249,
+      "href": "../../ferramentas/sistemas/lib.py#L249",
       "extraction": "declaração lexical"
     },
     {
       "name": "Materials",
       "path": "ferramentas/sistemas/lib.py",
-      "line": 239,
-      "href": "../../ferramentas/sistemas/lib.py#L239",
+      "line": 276,
+      "href": "../../ferramentas/sistemas/lib.py#L276",
       "extraction": "declaração lexical"
     },
     {
       "name": "__init__",
       "path": "ferramentas/sistemas/lib.py",
-      "line": 241,
-      "href": "../../ferramentas/sistemas/lib.py#L241",
+      "line": 278,
+      "href": "../../ferramentas/sistemas/lib.py#L278",
       "extraction": "declaração lexical"
     },
     {
       "name": "Context",
-      "path": "ferramentas/sistemas/lib.py",
-      "line": 320,
-      "href": "../../ferramentas/sistemas/lib.py#L320",
-      "extraction": "declaração lexical"
-    },
-    {
-      "name": "__init__",
-      "path": "ferramentas/sistemas/lib.py",
-      "line": 321,
-      "href": "../../ferramentas/sistemas/lib.py#L321",
-      "extraction": "declaração lexical"
-    },
-    {
-      "name": "system",
-      "path": "ferramentas/sistemas/lib.py",
-      "line": 328,
-      "href": "../../ferramentas/sistemas/lib.py#L328",
-      "extraction": "declaração lexical"
-    },
-    {
-      "name": "register",
-      "path": "ferramentas/sistemas/lib.py",
-      "line": 338,
-      "href": "../../ferramentas/sistemas/lib.py#L338",
-      "extraction": "declaração lexical"
-    },
-    {
-      "name": "_link",
       "path": "ferramentas/sistemas/lib.py",
       "line": 366,
       "href": "../../ferramentas/sistemas/lib.py#L366",
       "extraction": "declaração lexical"
     },
     {
+      "name": "__init__",
+      "path": "ferramentas/sistemas/lib.py",
+      "line": 367,
+      "href": "../../ferramentas/sistemas/lib.py#L367",
+      "extraction": "declaração lexical"
+    },
+    {
+      "name": "system",
+      "path": "ferramentas/sistemas/lib.py",
+      "line": 374,
+      "href": "../../ferramentas/sistemas/lib.py#L374",
+      "extraction": "declaração lexical"
+    },
+    {
+      "name": "register",
+      "path": "ferramentas/sistemas/lib.py",
+      "line": 384,
+      "href": "../../ferramentas/sistemas/lib.py#L384",
+      "extraction": "declaração lexical"
+    },
+    {
+      "name": "_link",
+      "path": "ferramentas/sistemas/lib.py",
+      "line": 412,
+      "href": "../../ferramentas/sistemas/lib.py#L412",
+      "extraction": "declaração lexical"
+    },
+    {
       "name": "shade_smooth",
       "path": "ferramentas/sistemas/lib.py",
-      "line": 369,
-      "href": "../../ferramentas/sistemas/lib.py#L369",
+      "line": 415,
+      "href": "../../ferramentas/sistemas/lib.py#L415",
       "extraction": "declaração lexical"
     },
     {
       "name": "bevel",
       "path": "ferramentas/sistemas/lib.py",
-      "line": 383,
-      "href": "../../ferramentas/sistemas/lib.py#L383",
+      "line": 429,
+      "href": "../../ferramentas/sistemas/lib.py#L429",
       "extraction": "declaração lexical"
     },
     {
       "name": "box_uv",
       "path": "ferramentas/sistemas/lib.py",
-      "line": 391,
-      "href": "../../ferramentas/sistemas/lib.py#L391",
+      "line": 437,
+      "href": "../../ferramentas/sistemas/lib.py#L437",
       "extraction": "declaração lexical"
     },
     {
       "name": "mesh_object",
       "path": "ferramentas/sistemas/lib.py",
-      "line": 411,
-      "href": "../../ferramentas/sistemas/lib.py#L411",
+      "line": 457,
+      "href": "../../ferramentas/sistemas/lib.py#L457",
       "extraction": "declaração lexical"
     },
     {
       "name": "bm_to_object",
       "path": "ferramentas/sistemas/lib.py",
-      "line": 423,
-      "href": "../../ferramentas/sistemas/lib.py#L423",
+      "line": 469,
+      "href": "../../ferramentas/sistemas/lib.py#L469",
       "extraction": "declaração lexical"
     },
     {
       "name": "set_material",
       "path": "ferramentas/sistemas/lib.py",
-      "line": 432,
-      "href": "../../ferramentas/sistemas/lib.py#L432",
+      "line": 478,
+      "href": "../../ferramentas/sistemas/lib.py#L478",
       "extraction": "declaração lexical"
     },
     {
       "name": "orient",
       "path": "ferramentas/sistemas/lib.py",
-      "line": 438,
-      "href": "../../ferramentas/sistemas/lib.py#L438",
+      "line": 484,
+      "href": "../../ferramentas/sistemas/lib.py#L484",
       "extraction": "declaração lexical"
     },
     {
       "name": "cube",
       "path": "ferramentas/sistemas/lib.py",
-      "line": 447,
-      "href": "../../ferramentas/sistemas/lib.py#L447",
+      "line": 493,
+      "href": "../../ferramentas/sistemas/lib.py#L493",
       "extraction": "declaração lexical"
     },
     {
       "name": "W_rot",
       "path": "ferramentas/sistemas/lib.py",
-      "line": 460,
-      "href": "../../ferramentas/sistemas/lib.py#L460",
+      "line": 506,
+      "href": "../../ferramentas/sistemas/lib.py#L506",
       "extraction": "declaração lexical"
     },
     {
       "name": "cyl",
-      "path": "ferramentas/sistemas/lib.py",
-      "line": 466,
-      "href": "../../ferramentas/sistemas/lib.py#L466",
-      "extraction": "declaração lexical"
-    },
-    {
-      "name": "tube_cyl",
-      "path": "ferramentas/sistemas/lib.py",
-      "line": 475,
-      "href": "../../ferramentas/sistemas/lib.py#L475",
-      "extraction": "declaração lexical"
-    },
-    {
-      "name": "sphere",
-      "path": "ferramentas/sistemas/lib.py",
-      "line": 496,
-      "href": "../../ferramentas/sistemas/lib.py#L496",
-      "extraction": "declaração lexical"
-    },
-    {
-      "name": "torus",
-      "path": "ferramentas/sistemas/lib.py",
-      "line": 504,
-      "href": "../../ferramentas/sistemas/lib.py#L504",
-      "extraction": "declaração lexical"
-    },
-    {
-      "name": "catmull",
       "path": "ferramentas/sistemas/lib.py",
       "line": 512,
       "href": "../../ferramentas/sistemas/lib.py#L512",
       "extraction": "declaração lexical"
     },
     {
+      "name": "tube_cyl",
+      "path": "ferramentas/sistemas/lib.py",
+      "line": 521,
+      "href": "../../ferramentas/sistemas/lib.py#L521",
+      "extraction": "declaração lexical"
+    },
+    {
+      "name": "sphere",
+      "path": "ferramentas/sistemas/lib.py",
+      "line": 542,
+      "href": "../../ferramentas/sistemas/lib.py#L542",
+      "extraction": "declaração lexical"
+    },
+    {
+      "name": "torus",
+      "path": "ferramentas/sistemas/lib.py",
+      "line": 550,
+      "href": "../../ferramentas/sistemas/lib.py#L550",
+      "extraction": "declaração lexical"
+    },
+    {
+      "name": "catmull",
+      "path": "ferramentas/sistemas/lib.py",
+      "line": 558,
+      "href": "../../ferramentas/sistemas/lib.py#L558",
+      "extraction": "declaração lexical"
+    },
+    {
       "name": "_frames",
       "path": "ferramentas/sistemas/lib.py",
-      "line": 529,
-      "href": "../../ferramentas/sistemas/lib.py#L529",
+      "line": 575,
+      "href": "../../ferramentas/sistemas/lib.py#L575",
       "extraction": "declaração lexical"
     },
     {
       "name": "sweep",
       "path": "ferramentas/sistemas/lib.py",
-      "line": 554,
-      "href": "../../ferramentas/sistemas/lib.py#L554",
+      "line": 600,
+      "href": "../../ferramentas/sistemas/lib.py#L600",
       "extraction": "declaração lexical"
     },
     {
       "name": "airfoil",
       "path": "ferramentas/sistemas/lib.py",
-      "line": 611,
-      "href": "../../ferramentas/sistemas/lib.py#L611",
+      "line": 657,
+      "href": "../../ferramentas/sistemas/lib.py#L657",
       "extraction": "declaração lexical"
     },
     {
       "name": "loft",
       "path": "ferramentas/sistemas/lib.py",
-      "line": 628,
-      "href": "../../ferramentas/sistemas/lib.py#L628",
+      "line": 674,
+      "href": "../../ferramentas/sistemas/lib.py#L674",
       "extraction": "declaração lexical"
     },
     {
       "name": "lathe",
       "path": "ferramentas/sistemas/lib.py",
-      "line": 653,
-      "href": "../../ferramentas/sistemas/lib.py#L653",
+      "line": 699,
+      "href": "../../ferramentas/sistemas/lib.py#L699",
       "extraction": "declaração lexical"
     },
     {
       "name": "helix",
       "path": "ferramentas/sistemas/lib.py",
-      "line": 667,
-      "href": "../../ferramentas/sistemas/lib.py#L667",
+      "line": 713,
+      "href": "../../ferramentas/sistemas/lib.py#L713",
       "extraction": "declaração lexical"
     },
     {
       "name": "gear",
       "path": "ferramentas/sistemas/lib.py",
-      "line": 677,
-      "href": "../../ferramentas/sistemas/lib.py#L677",
+      "line": 723,
+      "href": "../../ferramentas/sistemas/lib.py#L723",
       "extraction": "declaração lexical"
     },
     {
       "name": "ring",
       "path": "ferramentas/sistemas/lib.py",
-      "line": 694,
-      "href": "../../ferramentas/sistemas/lib.py#L694",
+      "line": 740,
+      "href": "../../ferramentas/sistemas/lib.py#L740",
       "extraction": "declaração lexical"
     },
     {
       "name": "bolt_ring",
       "path": "ferramentas/sistemas/lib.py",
-      "line": 729,
-      "href": "../../ferramentas/sistemas/lib.py#L729",
+      "line": 775,
+      "href": "../../ferramentas/sistemas/lib.py#L775",
       "extraction": "declaração lexical"
     },
     {
       "name": "join",
       "path": "ferramentas/sistemas/lib.py",
-      "line": 752,
-      "href": "../../ferramentas/sistemas/lib.py#L752",
+      "line": 798,
+      "href": "../../ferramentas/sistemas/lib.py#L798",
       "extraction": "declaração lexical"
     },
     {
       "name": "mirror_x",
       "path": "ferramentas/sistemas/lib.py",
-      "line": 778,
-      "href": "../../ferramentas/sistemas/lib.py#L778",
+      "line": 824,
+      "href": "../../ferramentas/sistemas/lib.py#L824",
+      "extraction": "declaração lexical"
+    },
+    {
+      "name": "mirror_system",
+      "path": "ferramentas/sistemas/lib.py",
+      "line": 847,
+      "href": "../../ferramentas/sistemas/lib.py#L847",
       "extraction": "declaração lexical"
     },
     {
       "name": "both_sides",
       "path": "ferramentas/sistemas/lib.py",
-      "line": 801,
-      "href": "../../ferramentas/sistemas/lib.py#L801",
+      "line": 879,
+      "href": "../../ferramentas/sistemas/lib.py#L879",
       "extraction": "declaração lexical"
     },
     {
       "name": "hexagon",
       "path": "ferramentas/sistemas/lib.py",
-      "line": 805,
-      "href": "../../ferramentas/sistemas/lib.py#L805",
+      "line": 883,
+      "href": "../../ferramentas/sistemas/lib.py#L883",
       "extraction": "declaração lexical"
     },
     {
       "name": "rounded_rect",
       "path": "ferramentas/sistemas/lib.py",
-      "line": 808,
-      "href": "../../ferramentas/sistemas/lib.py#L808",
+      "line": 886,
+      "href": "../../ferramentas/sistemas/lib.py#L886",
       "extraction": "declaração lexical"
     },
     {
       "name": "super_ellipse",
       "path": "ferramentas/sistemas/lib.py",
-      "line": 816,
-      "href": "../../ferramentas/sistemas/lib.py#L816",
+      "line": 894,
+      "href": "../../ferramentas/sistemas/lib.py#L894",
       "extraction": "declaração lexical"
     },
     {
       "name": "shell",
       "path": "ferramentas/sistemas/lib.py",
-      "line": 825,
-      "href": "../../ferramentas/sistemas/lib.py#L825",
+      "line": 903,
+      "href": "../../ferramentas/sistemas/lib.py#L903",
       "extraction": "declaração lexical"
     },
     {
       "name": "flow_ribbon",
       "path": "ferramentas/sistemas/lib.py",
-      "line": 831,
-      "href": "../../ferramentas/sistemas/lib.py#L831",
+      "line": 909,
+      "href": "../../ferramentas/sistemas/lib.py#L909",
       "extraction": "declaração lexical"
     },
     {
       "name": "text_plate",
       "path": "ferramentas/sistemas/lib.py",
-      "line": 835,
-      "href": "../../ferramentas/sistemas/lib.py#L835",
+      "line": 913,
+      "href": "../../ferramentas/sistemas/lib.py#L913",
       "extraction": "declaração lexical"
     },
     {
       "name": "centroid",
       "path": "ferramentas/sistemas/lib.py",
-      "line": 851,
-      "href": "../../ferramentas/sistemas/lib.py#L851",
+      "line": 929,
+      "href": "../../ferramentas/sistemas/lib.py#L929",
       "extraction": "declaração lexical"
     },
     {
       "name": "auto_explode",
       "path": "ferramentas/sistemas/lib.py",
-      "line": 862,
-      "href": "../../ferramentas/sistemas/lib.py#L862",
+      "line": 940,
+      "href": "../../ferramentas/sistemas/lib.py#L940",
+      "extraction": "declaração lexical"
+    },
+    {
+      "name": "car_components",
+      "path": "ferramentas/sistemas/lib.py",
+      "line": 958,
+      "href": "../../ferramentas/sistemas/lib.py#L958",
+      "extraction": "declaração lexical"
+    },
+    {
+      "name": "car_part",
+      "path": "ferramentas/sistemas/lib.py",
+      "line": 996,
+      "href": "../../ferramentas/sistemas/lib.py#L996",
+      "extraction": "declaração lexical"
+    },
+    {
+      "name": "plate",
+      "path": "ferramentas/sistemas/lib.py",
+      "line": 1016,
+      "href": "../../ferramentas/sistemas/lib.py#L1016",
+      "extraction": "declaração lexical"
+    },
+    {
+      "name": "P",
+      "path": "ferramentas/sistemas/lib.py",
+      "line": 1024,
+      "href": "../../ferramentas/sistemas/lib.py#L1024",
+      "extraction": "declaração lexical"
+    },
+    {
+      "name": "lado",
+      "path": "ferramentas/sistemas/lib.py",
+      "line": 1037,
+      "href": "../../ferramentas/sistemas/lib.py#L1037",
+      "extraction": "declaração lexical"
+    },
+    {
+      "name": "arc2d",
+      "path": "ferramentas/sistemas/lib.py",
+      "line": 1042,
+      "href": "../../ferramentas/sistemas/lib.py#L1042",
+      "extraction": "declaração lexical"
+    },
+    {
+      "name": "face_uv_fit",
+      "path": "ferramentas/sistemas/lib.py",
+      "line": 1046,
+      "href": "../../ferramentas/sistemas/lib.py#L1046",
       "extraction": "declaração lexical"
     },
     {
@@ -16594,36 +16686,50 @@
     {
       "name": "build",
       "path": "ferramentas/sistemas/s11_safety.py",
-      "line": 17,
-      "href": "../../ferramentas/sistemas/s11_safety.py#L17",
+      "line": 19,
+      "href": "../../ferramentas/sistemas/s11_safety.py#L19",
       "extraction": "declaração lexical"
     },
     {
       "name": "strap",
       "path": "ferramentas/sistemas/s12_cockpit.py",
-      "line": 17,
-      "href": "../../ferramentas/sistemas/s12_cockpit.py#L17",
+      "line": 18,
+      "href": "../../ferramentas/sistemas/s12_cockpit.py#L18",
       "extraction": "declaração lexical"
     },
     {
       "name": "build",
       "path": "ferramentas/sistemas/s12_cockpit.py",
-      "line": 20,
-      "href": "../../ferramentas/sistemas/s12_cockpit.py#L20",
+      "line": 21,
+      "href": "../../ferramentas/sistemas/s12_cockpit.py#L21",
       "extraction": "declaração lexical"
     },
     {
       "name": "seat_section",
       "path": "ferramentas/sistemas/s12_cockpit.py",
-      "line": 25,
-      "href": "../../ferramentas/sistemas/s12_cockpit.py#L25",
+      "line": 26,
+      "href": "../../ferramentas/sistemas/s12_cockpit.py#L26",
       "extraction": "declaração lexical"
     },
     {
       "name": "build",
       "path": "ferramentas/sistemas/s13_wheel.py",
-      "line": 16,
-      "href": "../../ferramentas/sistemas/s13_wheel.py#L16",
+      "line": 20,
+      "href": "../../ferramentas/sistemas/s13_wheel.py#L20",
+      "extraction": "declaração lexical"
+    },
+    {
+      "name": "Q",
+      "path": "ferramentas/sistemas/s13_wheel.py",
+      "line": 25,
+      "href": "../../ferramentas/sistemas/s13_wheel.py#L25",
+      "extraction": "declaração lexical"
+    },
+    {
+      "name": "E",
+      "path": "ferramentas/sistemas/s13_wheel.py",
+      "line": 28,
+      "href": "../../ferramentas/sistemas/s13_wheel.py#L28",
       "extraction": "declaração lexical"
     },
     {
@@ -17173,6 +17279,20 @@
       "extraction": "declaração lexical"
     },
     {
+      "name": "describePart",
+      "path": "web/src/parts-info.js",
+      "line": 361,
+      "href": "../../web/src/parts-info.js#L361",
+      "extraction": "declaração lexical"
+    },
+    {
+      "name": "PARTS_INFO_RULES",
+      "path": "web/src/parts-info.js",
+      "line": 368,
+      "href": "../../web/src/parts-info.js#L368",
+      "extraction": "declaração lexical"
+    },
+    {
       "name": "createSennaDriver",
       "path": "web/src/senna-driver.js",
       "line": 6,
@@ -17294,218 +17414,218 @@
     {
       "name": "SYSTEM_CATALOG",
       "path": "web/src/systems.js",
-      "line": 9,
-      "href": "../../web/src/systems.js#L9",
+      "line": 10,
+      "href": "../../web/src/systems.js#L10",
       "extraction": "declaração lexical"
     },
     {
       "name": "SYSTEM_IDS",
-      "path": "web/src/systems.js",
-      "line": 25,
-      "href": "../../web/src/systems.js#L25",
-      "extraction": "declaração lexical"
-    },
-    {
-      "name": "SYSTEMS_ASSET",
       "path": "web/src/systems.js",
       "line": 26,
       "href": "../../web/src/systems.js#L26",
       "extraction": "declaração lexical"
     },
     {
-      "name": "HIDE_GROUPS",
+      "name": "SYSTEMS_ASSET",
       "path": "web/src/systems.js",
       "line": 27,
       "href": "../../web/src/systems.js#L27",
       "extraction": "declaração lexical"
     },
     {
-      "name": "FLOW_SPEEDS",
+      "name": "HIDE_GROUPS",
       "path": "web/src/systems.js",
       "line": 28,
       "href": "../../web/src/systems.js#L28",
       "extraction": "declaração lexical"
     },
     {
+      "name": "FLOW_SPEEDS",
+      "path": "web/src/systems.js",
+      "line": 29,
+      "href": "../../web/src/systems.js#L29",
+      "extraction": "declaração lexical"
+    },
+    {
       "name": "advanceLocalSpin",
       "path": "web/src/systems.js",
-      "line": 31,
-      "href": "../../web/src/systems.js#L31",
+      "line": 32,
+      "href": "../../web/src/systems.js#L32",
       "extraction": "declaração lexical"
     },
     {
       "name": "flowTexture",
       "path": "web/src/systems.js",
-      "line": 34,
-      "href": "../../web/src/systems.js#L34",
+      "line": 35,
+      "href": "../../web/src/systems.js#L35",
       "extraction": "declaração lexical"
     },
     {
       "name": "createSystems",
       "path": "web/src/systems.js",
-      "line": 42,
-      "href": "../../web/src/systems.js#L42",
+      "line": 43,
+      "href": "../../web/src/systems.js#L43",
       "extraction": "declaração lexical"
     },
     {
       "name": "attachPart",
       "path": "web/src/systems.js",
-      "line": 72,
-      "href": "../../web/src/systems.js#L72",
+      "line": 73,
+      "href": "../../web/src/systems.js#L73",
       "extraction": "declaração lexical"
     },
     {
       "name": "prepareMaterials",
       "path": "web/src/systems.js",
-      "line": 84,
-      "href": "../../web/src/systems.js#L84",
+      "line": 85,
+      "href": "../../web/src/systems.js#L85",
       "extraction": "declaração lexical"
     },
     {
       "name": "distribute",
       "path": "web/src/systems.js",
-      "line": 93,
-      "href": "../../web/src/systems.js#L93",
+      "line": 94,
+      "href": "../../web/src/systems.js#L94",
       "extraction": "declaração lexical"
     },
     {
       "name": "load",
       "path": "web/src/systems.js",
-      "line": 110,
-      "href": "../../web/src/systems.js#L110",
+      "line": 111,
+      "href": "../../web/src/systems.js#L111",
       "extraction": "declaração lexical"
     },
     {
       "name": "applyEra",
-      "path": "web/src/systems.js",
-      "line": 125,
-      "href": "../../web/src/systems.js#L125",
-      "extraction": "declaração lexical"
-    },
-    {
-      "name": "applyCovers",
       "path": "web/src/systems.js",
       "line": 126,
       "href": "../../web/src/systems.js#L126",
       "extraction": "declaração lexical"
     },
     {
-      "name": "applyExplode",
+      "name": "applyCovers",
       "path": "web/src/systems.js",
       "line": 127,
       "href": "../../web/src/systems.js#L127",
       "extraction": "declaração lexical"
     },
     {
-      "name": "materialFor",
+      "name": "applyExplode",
       "path": "web/src/systems.js",
-      "line": 130,
-      "href": "../../web/src/systems.js#L130",
+      "line": 128,
+      "href": "../../web/src/systems.js#L128",
       "extraction": "declaração lexical"
     },
     {
-      "name": "applyFlows",
+      "name": "materialFor",
       "path": "web/src/systems.js",
       "line": 131,
       "href": "../../web/src/systems.js#L131",
       "extraction": "declaração lexical"
     },
     {
-      "name": "applySchematic",
+      "name": "applyFlows",
       "path": "web/src/systems.js",
       "line": 132,
       "href": "../../web/src/systems.js#L132",
       "extraction": "declaração lexical"
     },
     {
+      "name": "applySchematic",
+      "path": "web/src/systems.js",
+      "line": 133,
+      "href": "../../web/src/systems.js#L133",
+      "extraction": "declaração lexical"
+    },
+    {
       "name": "highlight",
       "path": "web/src/systems.js",
-      "line": 134,
-      "href": "../../web/src/systems.js#L134",
+      "line": 135,
+      "href": "../../web/src/systems.js#L135",
       "extraction": "declaração lexical"
     },
     {
       "name": "setPicked",
       "path": "web/src/systems.js",
-      "line": 141,
-      "href": "../../web/src/systems.js#L141",
+      "line": 142,
+      "href": "../../web/src/systems.js#L142",
       "extraction": "declaração lexical"
     },
     {
       "name": "setERSContext",
-      "path": "web/src/systems.js",
-      "line": 143,
-      "href": "../../web/src/systems.js#L143",
-      "extraction": "declaração lexical"
-    },
-    {
-      "name": "updateUI",
-      "path": "web/src/systems.js",
-      "line": 144,
-      "href": "../../web/src/systems.js#L144",
-      "extraction": "declaração lexical"
-    },
-    {
-      "name": "objectFor",
-      "path": "web/src/systems.js",
-      "line": 149,
-      "href": "../../web/src/systems.js#L149",
-      "extraction": "declaração lexical"
-    },
-    {
-      "name": "geometryBounds",
-      "path": "web/src/systems.js",
-      "line": 150,
-      "href": "../../web/src/systems.js#L150",
-      "extraction": "declaração lexical"
-    },
-    {
-      "name": "viewportAspect",
-      "path": "web/src/systems.js",
-      "line": 151,
-      "href": "../../web/src/systems.js#L151",
-      "extraction": "declaração lexical"
-    },
-    {
-      "name": "frame",
-      "path": "web/src/systems.js",
-      "line": 153,
-      "href": "../../web/src/systems.js#L153",
-      "extraction": "declaração lexical"
-    },
-    {
-      "name": "show",
-      "path": "web/src/systems.js",
-      "line": 154,
-      "href": "../../web/src/systems.js#L154",
-      "extraction": "declaração lexical"
-    },
-    {
-      "name": "view",
-      "path": "web/src/systems.js",
-      "line": 155,
-      "href": "../../web/src/systems.js#L155",
-      "extraction": "declaração lexical"
-    },
-    {
-      "name": "captureGhost",
       "path": "web/src/systems.js",
       "line": 156,
       "href": "../../web/src/systems.js#L156",
       "extraction": "declaração lexical"
     },
     {
-      "name": "setGhost",
+      "name": "updateUI",
       "path": "web/src/systems.js",
       "line": 157,
       "href": "../../web/src/systems.js#L157",
       "extraction": "declaração lexical"
     },
     {
+      "name": "objectFor",
+      "path": "web/src/systems.js",
+      "line": 162,
+      "href": "../../web/src/systems.js#L162",
+      "extraction": "declaração lexical"
+    },
+    {
+      "name": "geometryBounds",
+      "path": "web/src/systems.js",
+      "line": 163,
+      "href": "../../web/src/systems.js#L163",
+      "extraction": "declaração lexical"
+    },
+    {
+      "name": "viewportAspect",
+      "path": "web/src/systems.js",
+      "line": 164,
+      "href": "../../web/src/systems.js#L164",
+      "extraction": "declaração lexical"
+    },
+    {
+      "name": "frame",
+      "path": "web/src/systems.js",
+      "line": 168,
+      "href": "../../web/src/systems.js#L168",
+      "extraction": "declaração lexical"
+    },
+    {
+      "name": "show",
+      "path": "web/src/systems.js",
+      "line": 169,
+      "href": "../../web/src/systems.js#L169",
+      "extraction": "declaração lexical"
+    },
+    {
+      "name": "view",
+      "path": "web/src/systems.js",
+      "line": 170,
+      "href": "../../web/src/systems.js#L170",
+      "extraction": "declaração lexical"
+    },
+    {
+      "name": "captureGhost",
+      "path": "web/src/systems.js",
+      "line": 171,
+      "href": "../../web/src/systems.js#L171",
+      "extraction": "declaração lexical"
+    },
+    {
+      "name": "setGhost",
+      "path": "web/src/systems.js",
+      "line": 172,
+      "href": "../../web/src/systems.js#L172",
+      "extraction": "declaração lexical"
+    },
+    {
       "name": "setEnabled",
       "path": "web/src/systems.js",
-      "line": 158,
-      "href": "../../web/src/systems.js#L158",
+      "line": 173,
+      "href": "../../web/src/systems.js#L173",
       "extraction": "declaração lexical"
     },
     {
