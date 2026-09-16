@@ -63,6 +63,10 @@ npm --prefix web run build
 
 Sem `F1_ASSET_TOOL_ROOT` o GLB sai sem compressão e o manifesto registra `optimized: false`; o teste exige o asset otimizado antes da publicação.
 
+## Publicação
+
+O ambiente de produção é o ChatGPT Sites, em https://laboratorio-3d-inteia.igor47306.chatgpt.site (ver [PUBLICACAO.md](PUBLICACAO.md)). Depois de regenerar o asset e reconstruir o site, o GLB `sistemas-v1.glb` é um dos sete arquivos que o sincronizador copia para o checkout de deploy; o manifesto e os geradores ficam só no repositório-fonte. Mesclar em `main` não publica nada por si só.
+
 ## Limites
 
 Geometria ilustrativa: dimensões, materiais e quantidades são hipóteses de modelagem coerentes com o vídeo de referência e com o regulamento vigente na época, não medições de um carro real. Não há cinemática, simulação térmica, elétrica ou hidráulica. Os renders EEVEE de conferência não reproduzem a iluminação do estúdio três.js; a validação visual final é feita no navegador.
