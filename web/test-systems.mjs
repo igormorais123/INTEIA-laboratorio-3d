@@ -21,6 +21,7 @@ const expected = [
 
 assert.deepEqual(SYSTEM_IDS, expected.map(([id]) => id), 'IDs fora da ordem do vídeo');
 assert.equal(new Set(SYSTEM_IDS).size, 14, 'IDs duplicados');
+for (const system of SYSTEM_CATALOG) assert.ok(Array.isArray(system.spread) && system.spread.length === 3 && system.spread.some((v) => v !== 0), `${system.id} sem vetor de explosão`);
 assert.equal(Object.isFrozen(SYSTEM_CATALOG), true, 'catálogo mutável');
 assert.equal(Object.isFrozen(SYSTEM_IDS), true, 'lista de IDs mutável');
 assert.equal(Object.isFrozen(HIDE_GROUPS), true, 'grupos ocultáveis mutáveis');
@@ -45,7 +46,7 @@ const template = readFileSync(new URL('./src/template-v2.html', import.meta.url)
 assert.match(source, /new GLTFLoader\(\)\.setMeshoptDecoder\(MeshoptDecoder\)/, 'loader deve habilitar meshopt');
 assert.match(source, /fetch\(assetUrl\)/, 'asset deve ser carregado pela URL configurável');
 assert.equal((template.match(/class="system-card"/g) || []).length, 14, 'painel deve ter 14 cartões');
-for (const id of ['system-flows', 'system-covers', 'system-schematic', 'system-ghost', 'system-explode', 'system-part', 'system-status']) {
+for (const id of ['system-flows', 'system-covers', 'system-schematic', 'system-ghost', 'system-explode', 'system-part', 'system-status', 'systems-assembly', 'systems-assembly-value']) {
   assert.match(template, new RegExp(`id="${id}"`), `controle ausente: ${id}`);
 }
 
