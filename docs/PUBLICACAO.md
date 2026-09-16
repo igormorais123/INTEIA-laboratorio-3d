@@ -21,7 +21,7 @@ manifesto: .openai/hosting.json no checkout de deploy
 static.directory: dist
 fonte local: C:\Users\IgorPC\.claude\projects\Site aula mota\INTEIA-laboratorio-3d
 checkout de deploy: C:\Users\IgorPC\.claude\projects\Site aula mota\INTEIA-laboratorio-3d-site
-audiência atual: acesso personalizado; preservar salvo pedido explícito do usuário
+audiência atual: pública; qualquer pessoa com o link pode acessar
 ```
 
 O `project_id` identifica o Site existente. Uma IA deve reutilizá-lo e **não chamar `create_site`**. Tokens de envio são temporários e não ficam em arquivos, URLs, configuração Git ou documentação.
@@ -49,7 +49,7 @@ powershell -NoProfile -ExecutionPolicy Bypass -File .\sync-from-source.ps1
 O sincronizador publica sete arquivos: HTML compilado, licença do Three.js, duas marcas SVG, a marca Inteligência Mil Grau e os GLBs de motor e sistemas. O carro principal está incorporado no HTML. Arquivos de geração e o GLB-fonte de 26,45 MB permanecem no repositório-fonte; eles não são carregados pela aplicação e excederiam o limite de 25 MiB por arquivo do Sites.
 
 4. Revise e faça commit apenas no checkout de deploy. Envie o `HEAD` ao remoto `origin` usando uma credencial temporária criada pelas ferramentas do Sites.
-5. Leia `.openai/hosting.json`, salve uma versão para o SHA completo enviado e publique preservando a audiência existente. No Windows, use o build remoto de `save_site_version` quando o empacotador local depender de Bash.
+5. Leia `.openai/hosting.json`, salve uma versão para o SHA completo enviado e publique preservando a audiência pública existente. No Windows, use o build remoto de `save_site_version` quando o empacotador local depender de Bash.
 6. Aguarde `get_deployment_status` retornar `succeeded`. Confirme `current_live_url` e a audiência com `get_site` antes de declarar a publicação concluída.
 
 ## Critérios de conclusão
@@ -58,8 +58,8 @@ O sincronizador publica sete arquivos: HTML compilado, licença do Three.js, dua
 - `sync-from-source.ps1` termina sem arquivo acima de 25 MiB.
 - O checkout de deploy está limpo e o commit está no remoto do Sites.
 - A nova versão chega a `succeeded` e mantém a URL oficial.
-- O Site continua com a audiência anterior, salvo autorização explícita para alterá-la.
+- O Site continua público; não restrinja a audiência sem autorização explícita do usuário.
 
 ## Estado da migração
 
-Em 16 de setembro de 2026, o ChatGPT Sites publicou o laboratório em produção e confirmou a URL oficial acima. O GitHub Pages anterior foi desativado; links de produção devem apontar somente para `chatgpt.site`.
+Em 16 de setembro de 2026, o ChatGPT Sites publicou o laboratório em produção e confirmou a URL oficial acima. A audiência foi alterada para pública, permitindo acesso por qualquer pessoa com o link. O GitHub Pages anterior foi desativado; links de produção devem apontar somente para `chatgpt.site`.
