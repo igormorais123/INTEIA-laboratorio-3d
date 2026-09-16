@@ -42,6 +42,8 @@ Na camada Sistemas o V6 fica centrado em z = −0,92, com a célula de combustí
 
 Ao clicar em uma peça, o painel mostra o nome, o sistema, o que a peça faz e uma curiosidade técnica, a partir de `web/src/parts-info.js` (regras por família de peça, com texto genérico por sistema quando nenhuma regra casa). O volante segue o leiaute do protótipo Ferrari 2026 (referências fotográficas públicas), com botões de override manual (OT) e aerodinâmica ativa (AA) no lugar do DRS; as legendas são gravadas na placa e cada botão tem descrição própria.
 
+**Vista explodida.** Na bancada Sistemas o controle **Vista explodida (peças e sistemas)** afasta as peças do sistema isolado ou, na visão geral, também desloca cada um dos catorze conjuntos na direção `spread` do catálogo. Na bancada Carro, abaixo da **Vista explodida** do carro, o controle **Vista explodida dos sistemas** faz o mesmo com os sistemas revelados ao desmontar (se o carro estiver montado, ele é desmontado automaticamente); **Montar** e o reinício zeram o controle.
+
 Além dos cartões e das seis vistas: **Fluxos animados**, **Abrir tampas**, **Cores por sistema** (modo esquemático com a cor do catálogo), **Carro fantasma** (desligue para ver os sistemas dentro do carro sólido e use **Desmontar**), **Separar peças do sistema** e leitura do nome da peça por clique. Na bancada Carro, **Desmontar** revela automaticamente os catorze sistemas no lugar enquanto a carroceria se afasta.
 
 ## Regenerar
