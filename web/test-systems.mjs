@@ -161,12 +161,15 @@ assert.match(app, /systems\?\.enabled\|\|systems\?\.revealing/, 'motor do compar
 
 console.log(`Sistemas: ${SYSTEM_IDS.length} camadas, ${manifest.totals.parts} peças, ${manifest.totals.triangles} triângulos, meshopt, manifesto e contratos didáticos OK.`);
 
-// Interface sem metalinguagem de produção: nada de vídeo de referência, capítulos, prompt ou ressalvas de modelagem.
+// O painel pode explicar a base e os limites do estudo, mas não deve expor metalinguagem de produção desnecessária.
 {
  const template = readFileSync(new URL('./src/template-v2.html', import.meta.url), 'utf8');
+ const source = readFileSync(new URL('./src/systems.js', import.meta.url), 'utf8');
  const systemsPanel = template.slice(template.indexOf('id="systems-panel"'), template.indexOf('PERSONALIZAR / SEU DESIGN'));
- for (const word of ['vídeo', 'youtube', 'capítulo', 'prompt', 'homolog', 'não é CAD', 'didática inspirada']) assert.ok(!systemsPanel.toLowerCase().includes(word), `painel de sistemas ainda cita "${word}"`);
- for (const system of SYSTEM_CATALOG) for (const word of ['vídeo', 'hipótese', 'homolog', 'não é CAD', 'CFD', 'Simplificação', 'não simula', 'não representa']) assert.ok(!system.description.includes(word), `${system.id}: descrição ainda cita "${word}"`);
+ for (const word of ['youtube', 'prompt', 'didática inspirada']) assert.ok(!systemsPanel.toLowerCase().includes(word), `painel de sistemas ainda cita "${word}"`);
+ assert.match(source, /Leitura visual e didática para estudo: não simula medições do carro real e não é CAD, CFD ou homologação\./, 'a nota de limites deve ser visível e acessível');
+ assert.match(systemsPanel, /id="system-context"[^>]*class="note"/, 'a nota deve estar no contexto do painel');
+ for (const system of SYSTEM_CATALOG) for (const word of ['youtube', 'prompt']) assert.ok(!system.description.toLowerCase().includes(word), `${system.id}: descrição ainda cita "${word}"`);
 }
 
 // Leitura instrucional de cada sistema: "Como funciona" e "O que observar", no mesmo tom de produto.
@@ -178,12 +181,17 @@ console.log(`Sistemas: ${SYSTEM_IDS.length} camadas, ${manifest.totals.parts} pe
   assert.ok(system.howItWorks.trim().length >= 120, `${system.id}: Como funciona insuficiente`);
   assert.equal(typeof system.observe, 'string', `${system.id}: O que observar ausente`);
   assert.ok(system.observe.trim().length >= 60, `${system.id}: O que observar insuficiente`);
-  for (const word of ['vídeo', 'hipótese', 'homolog', 'não é CAD', 'CFD', 'Simplificação', 'não simula', 'não representa', 'didátic', 'ilustrativ']) {
+  for (const word of ['youtube', 'prompt']) {
    assert.ok(!system.howItWorks.includes(word) && !system.observe.includes(word), `${system.id}: leitura instrucional cita "${word}"`);
   }
  }
  assert.match(SYSTEM_CATALOG.find(s => s.id === 'power').howItWorks, /2021.*MGU-H.*2026/, 'Power deve diferenciar MGU-H entre 2021 e 2026');
+ assert.match(SYSTEM_CATALOG.find(s => s.id === 'power').howItWorks, /camada de comparação.*vídeo de 2021/, 'Power deve marcar o turbo dividido como comparação de 2021');
+ assert.match(SYSTEM_CATALOG.find(s => s.id === 'power').howItWorks, /turbo dividido.*não deve ser lido como a arquitetura 2026/, 'Power não deve atribuir o turbo dividido à arquitetura 2026');
+ assert.match(SYSTEM_CATALOG.find(s => s.id === 'power').observe, /variante geométrica completa de 2026.*pendente|turbo dividido.*remodelado/, 'Power deve informar a pendência geométrica de 2026');
  assert.match(SYSTEM_CATALOG.find(s => s.id === 'aero').howItWorks, /2026.*aerodinâmica ativa/, 'Aero deve explicar a aerodinâmica ativa de 2026');
+ assert.match(SYSTEM_CATALOG.find(s => s.id === 'aero').howItWorks, /referência de regra e funcionamento.*animação conjunta.*ainda não está modelada/, 'Aero deve marcar a animação conjunta como pendente');
+ assert.match(SYSTEM_CATALOG.find(s => s.id === 'aero').observe, /movimentação conjunta.*não uma animação disponível/, 'Aero deve diferenciar observação de animação disponível');
  assert.match(SYSTEM_CATALOG.find(s => s.id === 'ers').howItWorks, /2026.*MGU-K/, 'ERS deve citar o MGU-K de 2026');
  const detail = template.slice(template.indexOf('id="system-detail"'), template.indexOf('id="system-overview"'));
  assert.match(detail, /id="system-reading" class="system-reading" hidden/, 'a leitura instrucional deve começar oculta na visão geral');
@@ -191,7 +199,10 @@ console.log(`Sistemas: ${SYSTEM_IDS.length} camadas, ${manifest.totals.parts} pe
  assert.match(detail, /<h4 id="system-observe-heading">O que observar<\/h4><p id="system-observe"><\/p>/, 'bloco O que observar');
  assert.ok(detail.indexOf('system-reading') < detail.indexOf('system-meta'), 'a leitura vem antes do rodapé do detalhe');
  assert.match(source, /ui\.reading\.hidden=overview/, 'updateUI deve ocultar a leitura na visão geral');
+ assert.match(source, /descriptionFor\(id,system\)/, 'updateUI deve usar descrição dinâmica para contexto temporal');
  assert.match(source, /ui\.how\.textContent=system\?\.howItWorks/, 'updateUI deve preencher Como funciona');
  assert.match(source, /ui\.observe\.textContent=system\?\.observe/, 'updateUI deve preencher O que observar');
+ assert.match(template, /\.systems-active #system-reading[^}]*font-size:12px[^}]*color:#292b2c/, 'CSS deve priorizar leitura clara legível');
+ assert.match(template, /\.dark\.systems-active #system-reading[^}]*font-size:12px[^}]*color:#f3f4f5/, 'CSS deve ter regra escura no mesmo elemento');
  console.log('Sistemas: leitura instrucional dos 14 sistemas OK.');
 }
