@@ -168,3 +168,30 @@ console.log(`Sistemas: ${SYSTEM_IDS.length} camadas, ${manifest.totals.parts} pe
  for (const word of ['vídeo', 'youtube', 'capítulo', 'prompt', 'homolog', 'não é CAD', 'didática inspirada']) assert.ok(!systemsPanel.toLowerCase().includes(word), `painel de sistemas ainda cita "${word}"`);
  for (const system of SYSTEM_CATALOG) for (const word of ['vídeo', 'hipótese', 'homolog', 'não é CAD', 'CFD', 'Simplificação', 'não simula', 'não representa']) assert.ok(!system.description.includes(word), `${system.id}: descrição ainda cita "${word}"`);
 }
+
+// Leitura instrucional de cada sistema: "Como funciona" e "O que observar", no mesmo tom de produto.
+{
+ const template = readFileSync(new URL('./src/template-v2.html', import.meta.url), 'utf8');
+ const source = readFileSync(new URL('./src/systems.js', import.meta.url), 'utf8');
+ for (const system of SYSTEM_CATALOG) {
+  assert.equal(typeof system.howItWorks, 'string', `${system.id}: Como funciona ausente`);
+  assert.ok(system.howItWorks.trim().length >= 120, `${system.id}: Como funciona insuficiente`);
+  assert.equal(typeof system.observe, 'string', `${system.id}: O que observar ausente`);
+  assert.ok(system.observe.trim().length >= 60, `${system.id}: O que observar insuficiente`);
+  for (const word of ['vídeo', 'hipótese', 'homolog', 'não é CAD', 'CFD', 'Simplificação', 'não simula', 'não representa', 'didátic', 'ilustrativ']) {
+   assert.ok(!system.howItWorks.includes(word) && !system.observe.includes(word), `${system.id}: leitura instrucional cita "${word}"`);
+  }
+ }
+ assert.match(SYSTEM_CATALOG.find(s => s.id === 'power').howItWorks, /2021.*MGU-H.*2026/, 'Power deve diferenciar MGU-H entre 2021 e 2026');
+ assert.match(SYSTEM_CATALOG.find(s => s.id === 'aero').howItWorks, /2026.*aerodinâmica ativa/, 'Aero deve explicar a aerodinâmica ativa de 2026');
+ assert.match(SYSTEM_CATALOG.find(s => s.id === 'ers').howItWorks, /2026.*MGU-K/, 'ERS deve citar o MGU-K de 2026');
+ const detail = template.slice(template.indexOf('id="system-detail"'), template.indexOf('id="system-overview"'));
+ assert.match(detail, /id="system-reading" class="system-reading" hidden/, 'a leitura instrucional deve começar oculta na visão geral');
+ assert.match(detail, /<h4 id="system-how-heading">Como funciona<\/h4><p id="system-how-it-works"><\/p>/, 'bloco Como funciona');
+ assert.match(detail, /<h4 id="system-observe-heading">O que observar<\/h4><p id="system-observe"><\/p>/, 'bloco O que observar');
+ assert.ok(detail.indexOf('system-reading') < detail.indexOf('system-meta'), 'a leitura vem antes do rodapé do detalhe');
+ assert.match(source, /ui\.reading\.hidden=overview/, 'updateUI deve ocultar a leitura na visão geral');
+ assert.match(source, /ui\.how\.textContent=system\?\.howItWorks/, 'updateUI deve preencher Como funciona');
+ assert.match(source, /ui\.observe\.textContent=system\?\.observe/, 'updateUI deve preencher O que observar');
+ console.log('Sistemas: leitura instrucional dos 14 sistemas OK.');
+}

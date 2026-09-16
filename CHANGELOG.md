@@ -1,5 +1,11 @@
 # Histórico
 
+## 2026-09-16 — Leitura dos sistemas
+
+- Bancada Sistemas: blocos "Como funciona" e "O que observar" para os 14 sistemas, no tom de produto da interface.
+- Contexto 2021/2026 explicado em aerodinâmica, unidade de potência e ERS.
+- Pesquisa técnica e auditoria de aderência 2026 registradas em docs/.
+
 ## 2026-09-16 — ChatGPT Site oficial
 
 - Produção transferida do GitHub Pages para o ChatGPT Sites.
