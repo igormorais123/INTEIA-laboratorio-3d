@@ -2,7 +2,7 @@
 > **Estado em 16/09/2026:** a camada procedural em três.js descrita abaixo foi substituída por malhas geradas no Blender 5.2 (`ferramentas/gerar_sistemas.py`) e publicadas em `web/assets/sistemas-v1.glb`. O contrato atual (monoturbo dividido coaxial, MGU-H legado 2021, dois plenums e seis trompetas, refrigeração assimétrica, empacotamento célula → motor → câmbio) é verificado por `web/test-systems.mjs` sobre o manifesto do asset. Veja [SISTEMAS-3D.md](SISTEMAS-3D.md). Os trechos de código abaixo são diagnóstico histórico.
 > **Projeto-Alvo:** `INTEIA-laboratorio-3d` (`c:\Users\igorm\projetos\INTEIA-laboratorio-3d`)
 > **Servidor Local de Teste:** `http://127.0.0.1:5186/`
-> **Deploy de Produção:** [https://igormorais123.github.io/INTEIA-laboratorio-3d/web/](https://igormorais123.github.io/INTEIA-laboratorio-3d/web/)
+> **Deploy de produção:** [Laboratório 3D INTEIA no ChatGPT Sites](https://laboratorio-3d-inteia.igor47306.chatgpt.site)
 > **Repositório GitHub:** [https://github.com/igormorais123/INTEIA-laboratorio-3d](https://github.com/igormorais123/INTEIA-laboratorio-3d)
 > **Referência Técnica Primária:** [Animagraffs — How a Formula 1 Race Car Works (Jake O'Neal)](https://www.youtube.com/watch?v=V7707zEX9X4)
 > **Ponto Crítico de Foco:** `13:23` (`t=803,275s`) — “trumpets”/plenums; waste gate apenas como elemento/trecho adjacente qualificado

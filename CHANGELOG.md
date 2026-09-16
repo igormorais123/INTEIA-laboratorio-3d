@@ -1,5 +1,11 @@
 # Histórico
 
+## 2026-09-16 — ChatGPT Site oficial
+
+- Produção transferida do GitHub Pages para o ChatGPT Sites.
+- Checkout de deploy separado, sincronização determinística e handoff para agentes.
+- GitHub mantido como repositório do código; GitHub Pages retirado da rota oficial.
+
 ## 1.1.0 — 2026-09-12
 
 - Túnel de vento por coeficientes com velocidade, vento frontal/lateral e condições do ar.

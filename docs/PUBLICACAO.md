@@ -1,36 +1,65 @@
-# Publicação do laboratório
+# Publicação oficial do laboratório
 
-- [Laboratório público](https://igormorais123.github.io/INTEIA-laboratorio-3d/)
-- [Repositório público](https://github.com/igormorais123/INTEIA-laboratorio-3d)
-- [Atlas detalhado](https://igormorais123.github.io/INTEIA-laboratorio-3d/docs/mapeamento-detalhado/index.html)
-- [Atlas de arquivos e peças](https://igormorais123.github.io/INTEIA-laboratorio-3d/docs/mapas/index.html)
+- [Laboratório 3D INTEIA](https://laboratorio-3d-inteia.igor47306.chatgpt.site)
+- [Repositório do código](https://github.com/igormorais123/INTEIA-laboratorio-3d)
+- [Atlas detalhado local](mapeamento-detalhado/index.html)
+- [Atlas de arquivos e peças local](mapas/index.html)
 
-O GitHub Pages serve a raiz da branch `main`, com HTTPS. O [index.html da raiz](../index.html) encaminha ao [laboratório em web/](../web/index.html). O arquivo [.nojekyll](../.nojekyll) permite servir os arquivos estáticos já construídos, preservando os caminhos e dispensando a compilação Jekyll. O HTML inclui o modelo e o código necessários para executar a cena.
+O ambiente oficial de produção é o **ChatGPT Sites**. O GitHub permanece como repositório e histórico do código, mas GitHub Pages não participa mais do deploy.
 
-## Atualizar a publicação
+## Identidade imutável do Site
 
-1. Confira o estado do Git e preserve trabalho concorrente.
-2. Após mudanças na aplicação, execute `npm ci` e `npm run build` dentro de `web`. O build atualiza `web/index.html`.
-3. Na raiz, execute `node ferramentas/manifest.cjs` se alguma entrega do manifesto mudou. Confira o diff das entregas.
-4. Execute `node docs/mapeamento-detalhado/scripts/verificar-app.mjs` para verificar o build e os testes mecânicos e aerodinâmicos sem substituir os relatórios originais.
-5. Atualize os mapas com a sequência abaixo. Use um Python com `tree-sitter` e `tree-sitter-javascript` para a extração detalhada; veja [pré-requisitos](mapeamento-detalhado/ATUALIZAR.md).
+Passe este bloco para outra IA encarregada da publicação:
 
-```sh
-python ferramentas/mapear.py
-python docs/mapeamento-detalhado/scripts/gerar.py
-python ferramentas/mapear.py
-python docs/mapeamento-detalhado/scripts/gerar.py
-python docs/mapeamento-detalhado/scripts/validar.py
-python ferramentas/mapear.py --check
+```text
+Site: Laboratório 3D INTEIA
+URL oficial: https://laboratorio-3d-inteia.igor47306.chatgpt.site
+Provedor: ChatGPT Sites
+project_id: appgprj_6aaac720c8b88191be26c74716d13f4d
+slug: laboratorio-3d-inteia
+manifesto: .openai/hosting.json no checkout de deploy
+static.directory: dist
+fonte local: C:\Users\IgorPC\.claude\projects\Site aula mota\INTEIA-laboratorio-3d
+checkout de deploy: C:\Users\IgorPC\.claude\projects\Site aula mota\INTEIA-laboratorio-3d-site
+audiência atual: acesso personalizado; preservar salvo pedido explícito do usuário
 ```
 
-As duas passagens acomodam referências entre os inventários. As saídas geradas do atlas detalhado são inventariadas sem hash pelo primeiro mapa, evitando uma dependência circular. Os documentos editoriais e scripts continuam sujeitos à comparação de hashes.
+O `project_id` identifica o Site existente. Uma IA deve reutilizá-lo e **não chamar `create_site`**. Tokens de envio são temporários e não ficam em arquivos, URLs, configuração Git ou documentação.
 
-6. Revise o diff, faça commit dos arquivos da alteração e envie à branch `main`, diretamente ou por pull request com merge.
-7. Aguarde o status `built` em Settings > Pages. Abra o endereço público e confira carregamento do modelo, controles e os atlas.
+## Atualizar a produção
 
-## Verificação da publicação inicial
+1. Preserve alterações locais e confira `git status` nos dois checkouts.
+2. Dentro de `INTEIA-laboratorio-3d/web`, execute:
 
-Em 13 de setembro de 2026 (UTC), o GitHub Pages confirmou a publicação da revisão `e8a7e7a44d17d5695df2e982390e372054647213`, após a integração do [PR 1](https://github.com/igormorais123/INTEIA-laboratorio-3d/pull/1). O endereço público abriu no navegador com o estado “ESTÚDIO PRONTO” e 97 componentes disponíveis.
+```powershell
+npm ci
+npm test
+npm run build
+npm test
+```
 
-O workflow de verificação do GitHub Actions não iniciou devido ao bloqueio de cobrança da conta informado pelo GitHub. A publicação estática do Pages funcionou. A validação local permanece registrada em [verificacao-app.json](mapeamento-detalhado/dados/verificacao-app.json); o bloqueio do Actions não equivale a testes aprovados remotamente.
+`npm ci` pode ser omitido quando as dependências travadas já estiverem instaladas. O build atualiza `web/index.html`.
+
+3. No checkout `INTEIA-laboratorio-3d-site`, sincronize somente os artefatos de runtime:
+
+```powershell
+powershell -NoProfile -ExecutionPolicy Bypass -File .\sync-from-source.ps1
+```
+
+O sincronizador publica sete arquivos: HTML compilado, licença do Three.js, duas marcas SVG, a marca Inteligência Mil Grau e os GLBs de motor e sistemas. O carro principal está incorporado no HTML. Arquivos de geração e o GLB-fonte de 26,45 MB permanecem no repositório-fonte; eles não são carregados pela aplicação e excederiam o limite de 25 MiB por arquivo do Sites.
+
+4. Revise e faça commit apenas no checkout de deploy. Envie o `HEAD` ao remoto `origin` usando uma credencial temporária criada pelas ferramentas do Sites.
+5. Leia `.openai/hosting.json`, salve uma versão para o SHA completo enviado e publique preservando a audiência existente. No Windows, use o build remoto de `save_site_version` quando o empacotador local depender de Bash.
+6. Aguarde `get_deployment_status` retornar `succeeded`. Confirme `current_live_url` e a audiência com `get_site` antes de declarar a publicação concluída.
+
+## Critérios de conclusão
+
+- Os testes passam antes e depois do build.
+- `sync-from-source.ps1` termina sem arquivo acima de 25 MiB.
+- O checkout de deploy está limpo e o commit está no remoto do Sites.
+- A nova versão chega a `succeeded` e mantém a URL oficial.
+- O Site continua com a audiência anterior, salvo autorização explícita para alterá-la.
+
+## Estado da migração
+
+Em 16 de setembro de 2026, o ChatGPT Sites publicou o laboratório em produção e confirmou a URL oficial acima. O GitHub Pages anterior foi desativado; links de produção devem apontar somente para `chatgpt.site`.

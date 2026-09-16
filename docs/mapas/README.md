@@ -2,7 +2,7 @@
 
 [Voltar ao projeto](../../README.md) · [Abrir atlas pesquisável](index.html)
 
-[Laboratório público](https://igormorais123.github.io/INTEIA-laboratorio-3d/) · [Este atlas online](https://igormorais123.github.io/INTEIA-laboratorio-3d/docs/mapas/index.html) · [Atualizar a publicação e os dois atlas](../PUBLICACAO.md)
+[Laboratório oficial](https://laboratorio-3d-inteia.igor47306.chatgpt.site) · [Atlas offline](index.html) · [Atualizar a publicação e os dois atlas](../PUBLICACAO.md)
 
 Este é o ponto de entrada para encontrar o código, documentos e assets e decidir o que levar para outro projeto. A revisão inicial estudada foi `1ae4fd15062d347dc8462af8f4db33c749e6575b`; o atlas determinístico foi atualizado sobre `e3d58af` (incluindo materiais/luzes de `0346e58` e a assinatura lateral), com a revisão de materiais e iluminação. O graphify mantém o snapshot inicial, identificado separadamente. O inventário inclui também a documentação e as ferramentas adicionadas pelo mapeamento; seu fingerprint identifica o conteúdo analisado.
 

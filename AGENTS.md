@@ -16,5 +16,6 @@ Cobertura real: Claude Code usa o plugin Chisle 3.3.0 em escopo de projeto; Curs
 - Para perguntas sobre código, consulte primeiro `graphify query "termos" --budget 1200`; confirme fatos mutáveis nos arquivos vivos.
 - O código editável do runtime está em `web/src/`. `web/index.html` é gerado por `web/build.cjs`.
 - Assets grandes e binários são localizados pelos atlas em `docs/mapas/` e `docs/mapeamento-detalhado/`; não os despeje em contexto.
+- Para publicar, atualizar ou mudar a audiência do Site oficial, leia `docs/PUBLICACAO.md`; reutilize o checkout irmão e o `project_id` existentes, sem criar outro Site.
 - Após mudança de código, execute os testes afetados e `graphify update .`. Mudança de topologia exige regenerar `.planning/architecture/system.architecture.json` com Archify.
 - Preserve trabalho concorrente e arquivos não rastreados. Confira `git status --short` antes e depois de editar.

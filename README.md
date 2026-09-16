@@ -2,7 +2,7 @@
 
 Um laboratório interativo para explorar e personalizar um carro de fórmula: 97 componentes exteriores, motor V6 ilustrativo integrado, patrocínios do F1 Loop, cores independentes, materiais, iluminação e movimentos ilustrativos. Inclui projeto Blender editável e modelos GLB para reutilização.
 
-**[Abrir o laboratório online](https://igormorais123.github.io/INTEIA-laboratorio-3d/)** · **[Documentação](docs/README.md)** · **[Atlas detalhado online](https://igormorais123.github.io/INTEIA-laboratorio-3d/docs/mapeamento-detalhado/index.html)**
+**[Abrir o laboratório oficial](https://laboratorio-3d-inteia.igor47306.chatgpt.site)** · **[Documentação](docs/README.md)** · **[Atlas detalhado](docs/mapeamento-detalhado/index.html)**
 
 ![Prévia do projeto Blender](Previa-Blender.png)
 
@@ -12,7 +12,7 @@ Comece pelo **[índice canônico da documentação](docs/README.md)**. Para busc
 
 | Quero… | Abra / leia |
 | --- | --- |
-| Explorar e trocar cores | [Laboratório publicado](https://igormorais123.github.io/INTEIA-laboratorio-3d/) ou [HTML para uso local](web/index.html) |
+| Explorar e trocar cores | [Laboratório oficial](https://laboratorio-3d-inteia.igor47306.chatgpt.site) ou [HTML para uso local](web/index.html) |
 | Editar o modelo | [INTEIA_F1_Master.blend](INTEIA_F1_Master.blend) no Blender 4.5 |
 | Usar a identidade visual | [Marca e variantes SVG](identidade/LEIA-ME.md) |
 | Explorar o box-laboratório | [Guia do ambiente](docs/BOX-LABORATORIO.md) · [Box GLB](ambientes/INTEIA-box-laboratorio.glb) · [Blender com carro](ambientes/INTEIA_Box_com_carro.blend) |
