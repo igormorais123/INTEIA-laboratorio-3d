@@ -19,6 +19,7 @@ Comece pelo **[índice canônico da documentação](docs/README.md)**. Para busc
 | Importar apenas o carro | [GLB estático](modelos/INTEIA_F1_estatico.glb) |
 | Reproduzir a demonstração | [GLB animado](modelos/INTEIA_F1_animado.glb) |
 | Desenvolver o site | [Desenvolvimento](docs/DESENVOLVIMENTO.md) |
+| Trocar pneus, asas e arrefecimento por cenário de pista | [Peças sobressalentes do Box](docs/SOBRESSALENTES.md) |
 | Entender ou produzir os sistemas internos | [Sistemas internos em 3D](docs/SISTEMAS-3D.md) · [Especificação histórica](docs/ESPECIFICACAO-ASSET-3D-SISTEMAS-F1.md) |
 | Usar partes em outro Blender | [Guia Blender](docs/BLENDER.md) |
 | Integrar em sites ou jogos | [Integração](docs/INTEGRACAO.md) |
