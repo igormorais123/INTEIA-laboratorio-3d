@@ -27,6 +27,8 @@ Um laboratório interativo para explorar e personalizar um carro de fórmula: 97
 
 ## Download e execução
 
+Para continuar o trabalho em outra máquina, siga o [guia de instalação e sincronização entre PCs](docs/OUTRO-PC.md).
+
 Clone ou use Code > Download ZIP. O HTML já está pronto e contém o carro final v2; o motor e as marcas são carregados de web/assets. Não requer conta nem chave de API.
 
 ```sh
