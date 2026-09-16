@@ -1,12 +1,12 @@
 {
   "metadata": {
-    "captured_at": "2026-09-16T15:24:14.379665+00:00",
-    "revision": "e24bac2ac60ab8a1ec92df807bbc1014c442824d",
+    "captured_at": "2026-09-16T15:26:12.091504+00:00",
+    "revision": "063b26ef362e4b036e7b8422a6a02bdbbf433450",
     "initial_revision": "1ae4fd15062d347dc8462af8f4db33c749e6575b",
-    "branch": "sistemas-3d-blender",
-    "status": "M docs/mapas/INVENTARIO.md\n M docs/mapas/cobertura.json\n M docs/mapas/index.html\n M docs/mapas/inventario.json\n M docs/mapeamento-detalhado/CATALOGO.md\n M docs/mapeamento-detalhado/dados/catalogo.csv\n M docs/mapeamento-detalhado/dados/catalogo.json\n M docs/mapeamento-detalhado/dados/cobertura.json\n M docs/mapeamento-detalhado/dados/grafo.json\n M docs/mapeamento-detalhado/index.html\n M graphify-out/GRAPH_REPORT.md\n M graphify-out/GRAPH_TREE.html\n M graphify-out/graph.html\n M graphify-out/graph.json",
+    "branch": "main",
+    "status": "M docs/mapeamento-detalhado/ARVORE.md\n M docs/mapeamento-detalhado/CATALOGO.md\n M docs/mapeamento-detalhado/FUNCOES.md\n M docs/mapeamento-detalhado/dados/catalogo.csv\n M docs/mapeamento-detalhado/dados/catalogo.json\n M docs/mapeamento-detalhado/dados/cobertura.json\n M docs/mapeamento-detalhado/dados/grafo.json\n M docs/mapeamento-detalhado/dados/manifesto-conferencia.json\n M docs/mapeamento-detalhado/dados/simbolos.json\n M docs/mapeamento-detalhado/grafos/arquitetura.json\n M docs/mapeamento-detalhado/grafos/arquitetura.mmd\n M docs/mapeamento-detalhado/grafos/assets.json\n M docs/mapeamento-detalhado/grafos/assets.mmd\n M docs/mapeamento-detalhado/grafos/dados.json\n M docs/mapeamento-detalhado/index.html\n M graphify-out/GRAPH_REPORT.md\n M graphify-out/GRAPH_TREE.html\n M graphify-out/graph.html\n M graphify-out/graph.json",
     "catalog_count": 214,
-    "bytes": 221371809,
+    "bytes": 221349008,
     "baseline_files": 69,
     "baseline_missing": [],
     "unclassified": [],

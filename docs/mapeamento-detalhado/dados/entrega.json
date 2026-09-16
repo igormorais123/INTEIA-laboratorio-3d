@@ -24,22 +24,22 @@
     {
       "path": "CATALOGO.md",
       "bytes": 124298,
-      "sha256": "b638c0bef025dfd836f3eef985a8ea2cf992c6b7463345ee65123e66a9be8442"
+      "sha256": "5afb42b4c1b0df89886cb389f651259cd0d5c6733d551a6819c0be44ca9ff865"
     },
     {
       "path": "dados/catalogo.csv",
       "bytes": 62035,
-      "sha256": "f9ddbed6d63e73e564d4430ed1b1038e073c087804a6d84cec058c0b3979c07c"
+      "sha256": "d23c69ef207f79d35935e6e2e7e7d4d40130f450632a9ec66d7ed7c68a10fac0"
     },
     {
       "path": "dados/catalogo.json",
-      "bytes": 745246,
-      "sha256": "6b8096124e65dc837056cb5a95eeb4468366e484229d7ddcc3979c2c51031553"
+      "bytes": 745561,
+      "sha256": "7d38e671563d3861773997da38ed0b8ab22382ed3d8dd9661d1cc5c3e5d720e7"
     },
     {
       "path": "dados/cobertura.json",
-      "bytes": 2169,
-      "sha256": "09e45cd6e44f9f83eaa48719ca9371a838f32ad1c99b5bce1874b91215006be5"
+      "bytes": 2484,
+      "sha256": "a42982724c5c763e94fdc0f4550d495a0db8a9246c884087f06fbf754894c3b4"
     },
     {
       "path": "dados/componentes.json",
@@ -53,8 +53,8 @@
     },
     {
       "path": "dados/grafo.json",
-      "bytes": 673515,
-      "sha256": "e556509d710e00d04fb2513099bb78a0bc2a2cae8cc19af9d59cd27d049fb728"
+      "bytes": 673830,
+      "sha256": "1a1309098f7bab1cb0a81d1bc73ab4c9aa13941436079aafe1a3328c7e27ac9e"
     },
     {
       "path": "dados/graphify-ast.json",
@@ -89,12 +89,12 @@
     {
       "path": "dados/validacao.json",
       "bytes": 530,
-      "sha256": "f8bb0f92abce1169bc65d589c467c65662f09a826530e2304a94e4ecec712d8e"
+      "sha256": "7eff426456d49baccc1f461089af6ac58c836dfbc05ca54f82ecc529deb2bb1d"
     },
     {
       "path": "dados/verificacao-app.json",
       "bytes": 4152,
-      "sha256": "2c034a9e51fb116e37e1b97a3178de57c0eab870945d7c26ac86471bf0d39726"
+      "sha256": "762b339ed09c7f886920c27765912f70ca4030ed63f54e0f891ab30e761b22e6"
     },
     {
       "path": "FUNCOES.md",
@@ -138,8 +138,8 @@
     },
     {
       "path": "index.html",
-      "bytes": 1107693,
-      "sha256": "b32a4a47c803e31a5ce7fecf423515d38c4b3f367124fbbf5505541ff1ff9e0c"
+      "bytes": 1108008,
+      "sha256": "e9dd3215dc10fec419f1513fcd7514ea82f516af9c97b564f7a1829232241814"
     },
     {
       "path": "MODULOS-E-FLUXOS.md",

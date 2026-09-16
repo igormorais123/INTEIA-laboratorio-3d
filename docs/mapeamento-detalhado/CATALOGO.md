@@ -1843,7 +1843,7 @@ Asset GLB derivado dos módulos procedurais de sistemas.
 
 ## web/assets/sistemas-v1.manifest.json
 
-[Abrir arquivo](../../web/assets/sistemas-v1.manifest.json) · json · 415,579 bytes
+[Abrir arquivo](../../web/assets/sistemas-v1.manifest.json) · json · 392,778 bytes
 
 Manifesto de composição e métricas do GLB de sistemas correspondente.
 
