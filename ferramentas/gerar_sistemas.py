@@ -125,6 +125,10 @@ for name in modules:
     ctx.system(sid, label)
     mod.build(ctx)
     lib.auto_explode(ctx, sid)
+    # Convenção de lados: o piloto olha para +Z, logo a esquerda real é +X. Módulos escritos antes dessa
+    # correção (sem X_CONVENTION) rotulam −X como esquerda e são espelhados no lugar.
+    if getattr(mod, 'X_CONVENTION', 'legado') == 'legado':
+        lib.mirror_system(ctx, sid)
     built.append(sid)
     shots[sid] = getattr(mod, 'SHOTS', {})
     print(f'SISTEMA {sid}: {sum(1 for p in ctx.parts if p.get("system") == sid)} peças em {time.time() - t0:.1f}s')

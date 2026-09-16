@@ -20,32 +20,34 @@ flowchart LR
   n9["helmet-1991.js"]
   n10["identity.js"]
   n11["mechanics.js"]
-  n12["senna-driver.js"]
-  n13["studio.js"]
-  n14["surface-library.js"]
-  n15["systems.js"]
-  n16["tunnel-visual.js"]
-  n17["wind-tunnel.js"]
-  n18["workbench.js"]
-  n1 -->|"importa"| n18
+  n12["parts-info.js"]
+  n13["senna-driver.js"]
+  n14["studio.js"]
+  n15["surface-library.js"]
+  n16["systems.js"]
+  n17["tunnel-visual.js"]
+  n18["wind-tunnel.js"]
+  n19["workbench.js"]
+  n1 -->|"importa"| n19
   n1 -->|"importa"| n6
   n1 -->|"importa"| n3
-  n1 -->|"importa"| n14
-  n1 -->|"importa"| n12
+  n1 -->|"importa"| n15
+  n1 -->|"importa"| n13
   n1 -->|"importa"| n2
   n1 -->|"importa"| n10
   n1 -->|"importa"| n8
-  n1 -->|"importa"| n17
-  n1 -->|"importa"| n15
+  n1 -->|"importa"| n18
+  n1 -->|"importa"| n16
   n1 -->|"importa"| n4
-  n1 -->|"importa"| n13
+  n1 -->|"importa"| n14
   n1 -->|"importa"| n11
   n6 -->|"importa"| n5
   n8 -->|"importa"| n10
-  n12 -->|"importa"| n9
-  n16 -->|"importa"| n7
-  n17 -->|"importa"| n16
-  n17 -->|"importa"| n0
+  n13 -->|"importa"| n9
+  n16 -->|"importa"| n12
+  n17 -->|"importa"| n7
+  n18 -->|"importa"| n17
+  n18 -->|"importa"| n0
 ```
 
 `branding.js` integra a árvore de imports de `app-v2.js`. Dependências externas constam nos dados e na busca.
@@ -172,8 +174,9 @@ O download do box é uma etapa humana: o grafo descreve o produtor, sem certific
 | `web/src/senna-driver.js` | importa | `external:three/addons/geometries/RoundedBoxGeometry.js` | [web/src/senna-driver.js:2](../../web/src/senna-driver.js#L2) |
 | `web/src/senna-driver.js` | importa | `web/src/helmet-1991.js` | [web/src/senna-driver.js:3](../../web/src/senna-driver.js#L3) |
 | `web/src/systems.js` | importa | `external:three` | [web/src/systems.js:1](../../web/src/systems.js#L1) |
-| `web/src/systems.js` | importa | `external:three/addons/loaders/GLTFLoader.js` | [web/src/systems.js:2](../../web/src/systems.js#L2) |
-| `web/src/systems.js` | importa | `external:three/addons/libs/meshopt_decoder.module.js` | [web/src/systems.js:3](../../web/src/systems.js#L3) |
+| `web/src/systems.js` | importa | `web/src/parts-info.js` | [web/src/systems.js:2](../../web/src/systems.js#L2) |
+| `web/src/systems.js` | importa | `external:three/addons/loaders/GLTFLoader.js` | [web/src/systems.js:3](../../web/src/systems.js#L3) |
+| `web/src/systems.js` | importa | `external:three/addons/libs/meshopt_decoder.module.js` | [web/src/systems.js:4](../../web/src/systems.js#L4) |
 | `web/src/tunnel-visual.js` | importa | `web/src/flow-detail.js` | [web/src/tunnel-visual.js:1](../../web/src/tunnel-visual.js#L1) |
 | `web/src/tunnel-visual.js` | importa | `external:three` | [web/src/tunnel-visual.js:2](../../web/src/tunnel-visual.js#L2) |
 | `web/src/wind-tunnel.js` | importa | `web/src/tunnel-visual.js` | [web/src/wind-tunnel.js:1](../../web/src/wind-tunnel.js#L1) |
@@ -202,10 +205,10 @@ O download do box é uma etapa humana: o grafo descreve o produtor, sem certific
 | `web/src/app-v2.js` | empacota | `web/index.html` | [web/build.cjs:18](../../web/build.cjs#L18) |
 | `web/src/template-v2.html` | incorpora | `web/index.html` | [web/build.cjs:25](../../web/build.cjs#L25) |
 | `web/assets/carro-aula-v2.glb` | incorpora | `web/index.html` | [web/build.cjs:26](../../web/build.cjs#L26) |
-| `ferramentas/gerar_sistemas.py` | gera | `web/assets/sistemas-v1.glb` | [ferramentas/gerar_sistemas.py:145](../../ferramentas/gerar_sistemas.py#L145) |
+| `ferramentas/gerar_sistemas.py` | gera | `web/assets/sistemas-v1.glb` | [ferramentas/gerar_sistemas.py:149](../../ferramentas/gerar_sistemas.py#L149) |
 | `ferramentas/otimizar_sistemas.mjs` | otimiza | `web/assets/sistemas-v1.glb` | [ferramentas/otimizar_sistemas.mjs:51](../../ferramentas/otimizar_sistemas.mjs#L51) |
-| `ferramentas/gerar_sistemas.py` | escreve manifesto | `web/assets/sistemas-v1.manifest.json` | [ferramentas/gerar_sistemas.py:202](../../ferramentas/gerar_sistemas.py#L202) |
-| `web/assets/sistemas-v1.glb` | carrega em runtime | `web/src/systems.js` | [web/src/systems.js:26](../../web/src/systems.js#L26) |
+| `ferramentas/gerar_sistemas.py` | escreve manifesto | `web/assets/sistemas-v1.manifest.json` | [ferramentas/gerar_sistemas.py:206](../../ferramentas/gerar_sistemas.py#L206) |
+| `web/assets/sistemas-v1.glb` | carrega em runtime | `web/src/systems.js` | [web/src/systems.js:27](../../web/src/systems.js#L27) |
 | `web/assets/carro-movable.glb` | entrada | `ferramentas/package_blender.py` | [ferramentas/package_blender.py:9](../../ferramentas/package_blender.py#L9) |
 | `ferramentas/package_blender.py` | gera / sobrescreve | `INTEIA_F1_Master.blend` | [ferramentas/package_blender.py:145](../../ferramentas/package_blender.py#L145) |
 | `ferramentas/package_blender.py` | gera / sobrescreve | `modelos/INTEIA_F1_estatico.glb` | [ferramentas/package_blender.py:126](../../ferramentas/package_blender.py#L126) |
