@@ -9,102 +9,340 @@ flowchart LR
   n7["docs/ACABAMENTO-E-RENDER.md"]
   n8["docs/ARQUITETURA.md"]
   n9["docs/BOX-LABORATORIO.md"]
-  n10["ferramentas/manifest.cjs"]
-  n11["ferramentas/merge-animation.cjs"]
-  n12["ferramentas/package_blender.py"]
-  n13["ferramentas/package_garage.py"]
-  n14["ferramentas/render_garage_preview.py"]
-  n15["ferramentas/validate-kit.py"]
-  n16["identidade/INTEIA-monocromatico.svg"]
-  n17["identidade/INTEIA-negativo.svg"]
-  n18["identidade/INTEIA-principal.svg"]
-  n19["identidade/INTEIA-simbolo.svg"]
-  n20["manifesto-sha256.json"]
-  n21["modelos/INTEIA_F1_animado.glb"]
-  n22["modelos/INTEIA_F1_estatico.glb"]
-  n23["texturas/INTEIA_Carbono_BaseColor.png"]
-  n24["validacao-criacao.json"]
-  n25["validacao-reabertura.json"]
-  n26["web/assets/carro-aula-v2.glb"]
-  n27["web/assets/carro-movable.glb"]
-  n28["web/assets/inteligencia-mil-grau-transparent.png"]
-  n29["web/assets/power-unit-v1.glb"]
-  n30["web/build.cjs"]
-  n31["web/index.html"]
-  n32["web/src/branding.js"]
-  n33["web/src/engine/in-car.js"]
-  n34["web/src/garage.js"]
-  n35["web/test-mechanics.mjs"]
-  n36["fs"]
-  n37["path"]
-  n38["crypto"]
-  n39["linear"]
-  n40["col"]
-  n41["base"]
-  n42["center"]
-  n43["reparent"]
-  n44["select_car"]
-  n45["to_studio"]
-  n46["matrices"]
+  n10["docs/ESPECIFICACAO-ASSET-3D-SISTEMAS-F1.md"]
+  n11["ferramentas/gerar_sistemas.py"]
+  n12["ferramentas/manifest.cjs"]
+  n13["ferramentas/merge-animation.cjs"]
+  n14["ferramentas/otimizar_sistemas.mjs"]
+  n15["ferramentas/package_blender.py"]
+  n16["ferramentas/package_garage.py"]
+  n17["ferramentas/render_garage_preview.py"]
+  n18["ferramentas/sistemas/lib.py"]
+  n19["ferramentas/sistemas/s01_aero.py"]
+  n20["ferramentas/sistemas/s02_structure.py"]
+  n21["ferramentas/sistemas/s03_suspension.py"]
+  n22["ferramentas/sistemas/s04_steering.py"]
+  n23["ferramentas/sistemas/s05_brakes.py"]
+  n24["ferramentas/sistemas/s06_power.py"]
+  n25["ferramentas/sistemas/s07_ers.py"]
+  n26["ferramentas/sistemas/s08_cooling.py"]
+  n27["ferramentas/sistemas/s09_fuel.py"]
+  n28["ferramentas/sistemas/s10_transmission.py"]
+  n29["ferramentas/sistemas/s11_safety.py"]
+  n30["ferramentas/sistemas/s12_cockpit.py"]
+  n31["ferramentas/sistemas/s13_wheel.py"]
+  n32["ferramentas/sistemas/s14_sensors.py"]
+  n33["ferramentas/validate-kit.py"]
+  n34["identidade/INTEIA-monocromatico.svg"]
+  n35["identidade/INTEIA-negativo.svg"]
+  n36["identidade/INTEIA-principal.svg"]
+  n37["identidade/INTEIA-simbolo.svg"]
+  n38["manifesto-sha256.json"]
+  n39["modelos/INTEIA_F1_animado.glb"]
+  n40["modelos/INTEIA_F1_estatico.glb"]
+  n41["texturas/INTEIA_Carbono_BaseColor.png"]
+  n42["validacao-criacao.json"]
+  n43["validacao-reabertura.json"]
+  n44["web/assets/carro-aula-v2.glb"]
+  n45["web/assets/carro-movable.glb"]
+  n46["web/assets/inteligencia-mil-grau-transparent.png"]
+  n47["web/assets/power-unit-v1.glb"]
+  n48["web/build.cjs"]
+  n49["web/index.html"]
+  n50["web/src/branding.js"]
+  n51["web/src/engine/in-car.js"]
+  n52["web/src/garage.js"]
+  n53["web/test-mechanics.mjs"]
+  n54["fs"]
+  n55["path"]
+  n56["crypto"]
+  n57["node:crypto"]
+  n58["node:fs"]
+  n59["node:path"]
+  n60["node:module"]
+  n61["node:url"]
+  n62["_import_glb"]
+  n63["_bbox"]
+  n64["import_car_reference"]
+  n65["power_unit_reference"]
+  n66["measure_glb"]
+  n67["write_manifest"]
+  n68["light"]
+  n69["frame"]
+  n70["load"]
+  n71["systemNames"]
+  n72["partCount"]
+  n73["linear"]
+  n74["col"]
+  n75["base"]
+  n76["center"]
+  n77["reparent"]
+  n78["select_car"]
+  n79["to_studio"]
+  n80["W"]
+  n81["to_web"]
+  n82["_encode_normal"]
+  n83["image_from_array"]
+  n84["tex_twill"]
+  n85["tex_kevlar"]
+  n86["tex_brushed"]
+  n87["tex_cast"]
+  n88["tex_heat"]
+  n89["tex_brake_disc"]
+  n90["tex_fins"]
+  n91["tex_honeycomb"]
+  n92["tex_kapton"]
+  n93["tex_braid"]
+  n94["tex_display"]
+  n95["material"]
+  n96["tex_node"]
+  n97["Materials"]
+  n98["__init__"]
+  n99["Context"]
+  n100["__init__"]
+  n101["system"]
+  n102["register"]
+  n103["_link"]
+  n104["shade_smooth"]
+  n105["bevel"]
+  n106["box_uv"]
+  n107["mesh_object"]
+  n108["bm_to_object"]
+  n109["set_material"]
+  n110["orient"]
+  n111["cube"]
+  n112["W_rot"]
+  n113["cyl"]
+  n114["tube_cyl"]
+  n115["sphere"]
+  n116["torus"]
+  n117["catmull"]
+  n118["_frames"]
+  n119["sweep"]
+  n120["airfoil"]
+  n121["loft"]
+  n122["lathe"]
+  n123["helix"]
+  n124["gear"]
+  n125["ring"]
+  n126["bolt_ring"]
+  n127["join"]
+  n128["mirror_x"]
+  n129["both_sides"]
+  n130["hexagon"]
+  n131["rounded_rect"]
+  n132["super_ellipse"]
+  n133["shell"]
+  n134["flow_ribbon"]
+  n135["text_plate"]
+  n136["centroid"]
+  n137["auto_explode"]
+  n138["build"]
+  n139["tub_section"]
+  n140["build"]
+  n141["leg"]
+  n142["mirror_side"]
+  n143["rod_end"]
+  n144["upright"]
+  n145["corner"]
+  n146["center_elements"]
+  n147["build"]
+  n148["build"]
+  n149["arc"]
+  n150["corner"]
+  n151["build"]
+  n152["bank_frame"]
+  n153["add"]
+  n154["build"]
+  n155["build"]
+  n156["core"]
+  n157["hose"]
+  n158["build"]
+  n159["bladder_sections"]
+  n160["build"]
+  n161["rr_section"]
+  n162["build"]
+  n163["build"]
+  n164["strap"]
+  n165["build"]
+  n166["seat_section"]
+  n167["build"]
+  n168["build"]
+  n169["matrices"]
   n2 -->|"documenta · EXTRACTED"| n1
   n2 -->|"documenta · EXTRACTED"| n0
   n2 -->|"documenta · EXTRACTED"| n3
   n2 -->|"documenta · EXTRACTED"| n4
-  n2 -->|"documenta · EXTRACTED"| n22
-  n2 -->|"documenta · EXTRACTED"| n21
-  n10 -->|"importa · EXTRACTED"| n36
-  n10 -->|"importa · EXTRACTED"| n37
-  n10 -->|"importa · EXTRACTED"| n38
-  n11 -->|"importa · EXTRACTED"| n36
-  n11 -->|"importa · EXTRACTED"| n37
-  n12 -->|"define · EXTRACTED"| n39
-  n12 -->|"define · EXTRACTED"| n40
-  n12 -->|"define · EXTRACTED"| n41
-  n12 -->|"define · EXTRACTED"| n42
-  n12 -->|"define · EXTRACTED"| n43
-  n12 -->|"define · EXTRACTED"| n44
-  n12 -->|"define · EXTRACTED"| n45
-  n15 -->|"define · EXTRACTED"| n46
-  n30 -->|"incorpora_como_base64 · EXTRACTED"| n26
-  n35 -->|"le_geometria_para_testes · EXTRACTED"| n26
-  n12 -->|"importa_base_derivada · EXTRACTED"| n27
-  n12 -->|"gera_ou_sobrescreve · EXTRACTED"| n23
-  n12 -->|"gera_ou_sobrescreve · EXTRACTED"| n22
-  n12 -->|"gera_ou_sobrescreve · EXTRACTED"| n21
-  n12 -->|"gera_ou_sobrescreve · EXTRACTED"| n0
-  n12 -->|"gera_ou_sobrescreve · EXTRACTED"| n1
-  n12 -->|"gera_ou_sobrescreve · EXTRACTED"| n24
-  n11 -->|"le_e_reescreve_com_clipe_unico · EXTRACTED"| n21
-  n15 -->|"reabre_para_validacao · EXTRACTED"| n0
-  n15 -->|"le_e_reimporta_para_validacao · EXTRACTED"| n22
-  n15 -->|"le_e_reimporta_para_validacao · EXTRACTED"| n21
-  n15 -->|"escreve_relatorio · EXTRACTED"| n25
-  n13 -->|"importa_cenario · EXTRACTED"| n3
-  n13 -->|"importa_carro_estatico · EXTRACTED"| n22
-  n13 -->|"registra_fonte_do_cenario_em_metadado · EXTRACTED"| n34
-  n13 -->|"salva_blend_conjunto · EXTRACTED"| n4
-  n13 -->|"escreve_relatorio · EXTRACTED"| n6
-  n14 -->|"abre_cena_para_render · EXTRACTED"| n4
-  n14 -->|"renderiza_previa · EXTRACTED"| n5
-  n10 -->|"le_bytes_para_sha256 · EXTRACTED"| n0
-  n10 -->|"le_bytes_para_sha256 · EXTRACTED"| n22
-  n10 -->|"le_bytes_para_sha256 · EXTRACTED"| n21
-  n10 -->|"le_bytes_para_sha256 · EXTRACTED"| n23
-  n10 -->|"le_bytes_para_sha256 · EXTRACTED"| n27
-  n10 -->|"le_bytes_para_sha256 · EXTRACTED"| n31
-  n10 -->|"le_bytes_para_sha256 · EXTRACTED"| n1
-  n10 -->|"le_bytes_para_sha256 · EXTRACTED"| n3
-  n10 -->|"le_bytes_para_sha256 · EXTRACTED"| n4
-  n10 -->|"le_bytes_para_sha256 · EXTRACTED"| n5
-  n10 -->|"le_bytes_para_sha256 · EXTRACTED"| n18
-  n10 -->|"le_bytes_para_sha256 · EXTRACTED"| n17
-  n10 -->|"le_bytes_para_sha256 · EXTRACTED"| n16
-  n10 -->|"le_bytes_para_sha256 · EXTRACTED"| n19
-  n10 -->|"sobrescreve_manifesto_de_artefatos · EXTRACTED"| n20
+  n2 -->|"documenta · EXTRACTED"| n40
+  n2 -->|"documenta · EXTRACTED"| n39
+  n10 -->|"documenta · EXTRACTED"| n0
+  n10 -->|"documenta · EXTRACTED"| n0
+  n12 -->|"importa · EXTRACTED"| n54
+  n12 -->|"importa · EXTRACTED"| n55
+  n12 -->|"importa · EXTRACTED"| n56
+  n13 -->|"importa · EXTRACTED"| n54
+  n13 -->|"importa · EXTRACTED"| n55
+  n14 -->|"importa · EXTRACTED"| n57
+  n14 -->|"importa · EXTRACTED"| n58
+  n14 -->|"importa · EXTRACTED"| n59
+  n14 -->|"importa · EXTRACTED"| n60
+  n14 -->|"importa · EXTRACTED"| n61
+  n11 -->|"define · EXTRACTED"| n62
+  n11 -->|"define · EXTRACTED"| n63
+  n11 -->|"define · EXTRACTED"| n64
+  n11 -->|"define · EXTRACTED"| n65
+  n11 -->|"define · EXTRACTED"| n66
+  n11 -->|"define · EXTRACTED"| n67
+  n11 -->|"define · EXTRACTED"| n68
+  n11 -->|"define · EXTRACTED"| n69
+  n14 -->|"define · EXTRACTED"| n70
+  n14 -->|"define · EXTRACTED"| n71
+  n14 -->|"define · EXTRACTED"| n72
+  n15 -->|"define · EXTRACTED"| n73
+  n15 -->|"define · EXTRACTED"| n74
+  n15 -->|"define · EXTRACTED"| n75
+  n15 -->|"define · EXTRACTED"| n76
+  n15 -->|"define · EXTRACTED"| n77
+  n15 -->|"define · EXTRACTED"| n78
+  n15 -->|"define · EXTRACTED"| n79
+  n18 -->|"define · EXTRACTED"| n80
+  n18 -->|"define · EXTRACTED"| n81
+  n18 -->|"define · EXTRACTED"| n82
+  n18 -->|"define · EXTRACTED"| n83
+  n18 -->|"define · EXTRACTED"| n84
+  n18 -->|"define · EXTRACTED"| n85
+  n18 -->|"define · EXTRACTED"| n86
+  n18 -->|"define · EXTRACTED"| n87
+  n18 -->|"define · EXTRACTED"| n88
+  n18 -->|"define · EXTRACTED"| n89
+  n18 -->|"define · EXTRACTED"| n90
+  n18 -->|"define · EXTRACTED"| n91
+  n18 -->|"define · EXTRACTED"| n92
+  n18 -->|"define · EXTRACTED"| n93
+  n18 -->|"define · EXTRACTED"| n94
+  n18 -->|"define · EXTRACTED"| n95
+  n18 -->|"define · EXTRACTED"| n96
+  n18 -->|"define · EXTRACTED"| n97
+  n18 -->|"define · EXTRACTED"| n98
+  n18 -->|"define · EXTRACTED"| n99
+  n18 -->|"define · EXTRACTED"| n100
+  n18 -->|"define · EXTRACTED"| n101
+  n18 -->|"define · EXTRACTED"| n102
+  n18 -->|"define · EXTRACTED"| n103
+  n18 -->|"define · EXTRACTED"| n104
+  n18 -->|"define · EXTRACTED"| n105
+  n18 -->|"define · EXTRACTED"| n106
+  n18 -->|"define · EXTRACTED"| n107
+  n18 -->|"define · EXTRACTED"| n108
+  n18 -->|"define · EXTRACTED"| n109
+  n18 -->|"define · EXTRACTED"| n110
+  n18 -->|"define · EXTRACTED"| n111
+  n18 -->|"define · EXTRACTED"| n112
+  n18 -->|"define · EXTRACTED"| n113
+  n18 -->|"define · EXTRACTED"| n114
+  n18 -->|"define · EXTRACTED"| n115
+  n18 -->|"define · EXTRACTED"| n116
+  n18 -->|"define · EXTRACTED"| n117
+  n18 -->|"define · EXTRACTED"| n118
+  n18 -->|"define · EXTRACTED"| n119
+  n18 -->|"define · EXTRACTED"| n120
+  n18 -->|"define · EXTRACTED"| n121
+  n18 -->|"define · EXTRACTED"| n122
+  n18 -->|"define · EXTRACTED"| n123
+  n18 -->|"define · EXTRACTED"| n124
+  n18 -->|"define · EXTRACTED"| n125
+  n18 -->|"define · EXTRACTED"| n126
+  n18 -->|"define · EXTRACTED"| n127
+  n18 -->|"define · EXTRACTED"| n128
+  n18 -->|"define · EXTRACTED"| n129
+  n18 -->|"define · EXTRACTED"| n130
+  n18 -->|"define · EXTRACTED"| n131
+  n18 -->|"define · EXTRACTED"| n132
+  n18 -->|"define · EXTRACTED"| n133
+  n18 -->|"define · EXTRACTED"| n134
+  n18 -->|"define · EXTRACTED"| n135
+  n18 -->|"define · EXTRACTED"| n136
+  n18 -->|"define · EXTRACTED"| n137
+  n19 -->|"define · EXTRACTED"| n138
+  n20 -->|"define · EXTRACTED"| n139
+  n20 -->|"define · EXTRACTED"| n140
+  n21 -->|"define · EXTRACTED"| n141
+  n21 -->|"define · EXTRACTED"| n142
+  n21 -->|"define · EXTRACTED"| n143
+  n21 -->|"define · EXTRACTED"| n144
+  n21 -->|"define · EXTRACTED"| n145
+  n21 -->|"define · EXTRACTED"| n146
+  n21 -->|"define · EXTRACTED"| n147
+  n22 -->|"define · EXTRACTED"| n148
+  n23 -->|"define · EXTRACTED"| n149
+  n23 -->|"define · EXTRACTED"| n150
+  n23 -->|"define · EXTRACTED"| n151
+  n24 -->|"define · EXTRACTED"| n152
+  n24 -->|"define · EXTRACTED"| n153
+  n24 -->|"define · EXTRACTED"| n154
+  n25 -->|"define · EXTRACTED"| n155
+  n26 -->|"define · EXTRACTED"| n156
+  n26 -->|"define · EXTRACTED"| n157
+  n26 -->|"define · EXTRACTED"| n158
+  n27 -->|"define · EXTRACTED"| n159
+  n27 -->|"define · EXTRACTED"| n160
+  n28 -->|"define · EXTRACTED"| n161
+  n28 -->|"define · EXTRACTED"| n162
+  n29 -->|"define · EXTRACTED"| n163
+  n30 -->|"define · EXTRACTED"| n164
+  n30 -->|"define · EXTRACTED"| n165
+  n30 -->|"define · EXTRACTED"| n166
+  n31 -->|"define · EXTRACTED"| n167
+  n32 -->|"define · EXTRACTED"| n168
+  n33 -->|"define · EXTRACTED"| n169
+  n14 -->|"chama_sintaticamente · EXTRACTED"| n70
+  n14 -->|"chama_sintaticamente · EXTRACTED"| n70
+  n14 -->|"chama_sintaticamente · EXTRACTED"| n70
+  n14 -->|"chama_sintaticamente · EXTRACTED"| n70
+  n14 -->|"chama_sintaticamente · EXTRACTED"| n71
+  n14 -->|"chama_sintaticamente · EXTRACTED"| n72
+  n14 -->|"chama_sintaticamente · EXTRACTED"| n71
+  n14 -->|"chama_sintaticamente · EXTRACTED"| n72
+  n48 -->|"incorpora_como_base64 · EXTRACTED"| n44
+  n53 -->|"le_geometria_para_testes · EXTRACTED"| n44
+  n15 -->|"importa_base_derivada · EXTRACTED"| n45
+  n15 -->|"gera_ou_sobrescreve · EXTRACTED"| n41
+  n15 -->|"gera_ou_sobrescreve · EXTRACTED"| n40
+  n15 -->|"gera_ou_sobrescreve · EXTRACTED"| n39
+  n15 -->|"gera_ou_sobrescreve · EXTRACTED"| n0
+  n15 -->|"gera_ou_sobrescreve · EXTRACTED"| n1
+  n15 -->|"gera_ou_sobrescreve · EXTRACTED"| n42
+  n13 -->|"le_e_reescreve_com_clipe_unico · EXTRACTED"| n39
+  n33 -->|"reabre_para_validacao · EXTRACTED"| n0
+  n33 -->|"le_e_reimporta_para_validacao · EXTRACTED"| n40
+  n33 -->|"le_e_reimporta_para_validacao · EXTRACTED"| n39
+  n33 -->|"escreve_relatorio · EXTRACTED"| n43
+  n16 -->|"importa_cenario · EXTRACTED"| n3
+  n16 -->|"importa_carro_estatico · EXTRACTED"| n40
+  n16 -->|"registra_fonte_do_cenario_em_metadado · EXTRACTED"| n52
+  n16 -->|"salva_blend_conjunto · EXTRACTED"| n4
+  n16 -->|"escreve_relatorio · EXTRACTED"| n6
+  n17 -->|"abre_cena_para_render · EXTRACTED"| n4
+  n17 -->|"renderiza_previa · EXTRACTED"| n5
+  n12 -->|"le_bytes_para_sha256 · EXTRACTED"| n0
+  n12 -->|"le_bytes_para_sha256 · EXTRACTED"| n40
+  n12 -->|"le_bytes_para_sha256 · EXTRACTED"| n39
+  n12 -->|"le_bytes_para_sha256 · EXTRACTED"| n41
+  n12 -->|"le_bytes_para_sha256 · EXTRACTED"| n45
+  n12 -->|"le_bytes_para_sha256 · EXTRACTED"| n49
+  n12 -->|"le_bytes_para_sha256 · EXTRACTED"| n1
+  n12 -->|"le_bytes_para_sha256 · EXTRACTED"| n3
+  n12 -->|"le_bytes_para_sha256 · EXTRACTED"| n4
+  n12 -->|"le_bytes_para_sha256 · EXTRACTED"| n5
+  n12 -->|"le_bytes_para_sha256 · EXTRACTED"| n36
+  n12 -->|"le_bytes_para_sha256 · EXTRACTED"| n35
+  n12 -->|"le_bytes_para_sha256 · EXTRACTED"| n34
+  n12 -->|"le_bytes_para_sha256 · EXTRACTED"| n37
+  n12 -->|"sobrescreve_manifesto_de_artefatos · EXTRACTED"| n38
   n9 -->|"documenta_uso_e_origem · EXTRACTED"| n3
   n9 -->|"documenta_uso_e_origem · EXTRACTED"| n4
   n8 -->|"identifica_fonte_editavel_e_risco_de_reconstrucao · EXTRACTED"| n0
   n7 -->|"documenta_acabamento_e_limites_de_exportacao · EXTRACTED"| n4
   n7 -->|"documenta_acabamento_e_limites_de_exportacao · EXTRACTED"| n3
-  n33 -->|"carrega_motor · EXTRACTED"| n29
-  n32 -->|"carrega_arte · EXTRACTED"| n28
+  n51 -->|"carrega_motor · EXTRACTED"| n47
+  n50 -->|"carrega_arte · EXTRACTED"| n46

@@ -1,39 +1,168 @@
 {
   "method": "tree-sitter-javascript: declarações nomeadas, arrow functions atribuídas e métodos; Python ast: funções/classes. Callbacks anônimos e resolução dinâmica não são indexados integralmente.",
   "source_hashes": {
-    "ferramentas/manifest.cjs": "b434940d1c2572ca3f31477e00cf3c3f10e439c558cccbc5ed3d9da8340060d1",
+    "ferramentas/gerar_sistemas.py": "83c98386926cd261ca0bba9b77d5842b0432ad6084757b1eb56e36d5903133b4",
+    "ferramentas/manifest.cjs": "2eb5e9638005525d7a1b455623edadd1ad6433b981766fbd26cc03d779f1c6bb",
     "ferramentas/merge-animation.cjs": "8870463d9db1c8daa8c4646331e8af726e45963f4840b6d91b8937a450890b2f",
+    "ferramentas/otimizar_sistemas.mjs": "edcd36ff24d2a0a01c9ef859e5529bbf3c6694747b3da9cf8c2e0486b0bb72fe",
     "ferramentas/package_blender.py": "6a8bfa4ca77b5dbe8db20b9fca5c2ba1a5d1fbf819dee4808eb316b95b4a0d6a",
-    "ferramentas/package_garage.py": "db9da9c72d2121c7722520405910d5be7f099888b948c09cb6de9651e38dcf9c",
-    "ferramentas/render_garage_preview.py": "2943c2fab0e646463e2cd0e8a6bf8a0a2ac8227a82ae18f7b1e7a657d46aae64",
+    "ferramentas/package_garage.py": "4a863ebd4971f51f74c940e03ddf7018180f31323db34c88dd0d7118ddc802d0",
+    "ferramentas/render_garage_preview.py": "057500ad24adf945bc83a7bcef180779d70b571e74767f96a791bf83cd3a17d2",
+    "ferramentas/sistemas/lib.py": "0b3a4c0b4103ff0fae84faf1763b326a052fab524e0afcf421a4636289acb170",
+    "ferramentas/sistemas/s01_aero.py": "a501d45b9ed523db719b5fbd82db360675592e729a405c2fa9419b684e0d6bf9",
+    "ferramentas/sistemas/s02_structure.py": "d582d3c5115d761636501f304abb15861f1a5ab2d3c007118e2ef85ac5b1b336",
+    "ferramentas/sistemas/s03_suspension.py": "d88129e61c69550ad561c02ec9688caac38b135d72641b1b319dc7da8b0a4a7e",
+    "ferramentas/sistemas/s04_steering.py": "b94fe0d7c52208634bd5fe9c21b9014675e9bde726a264c382fa28511f2c1648",
+    "ferramentas/sistemas/s05_brakes.py": "05150aa7bf76198373e936a9e94c70514c3262ee417af73e5dda8f85412ea41b",
+    "ferramentas/sistemas/s06_power.py": "afd4f2e6fbd2a403596cdf4f5a4dac369148f92a67a39d4910eed46bba1fca87",
+    "ferramentas/sistemas/s07_ers.py": "d4e7a53c7f5ff18cca1becc4f00bb6de7a513efb12abf28231965b88492f9f3a",
+    "ferramentas/sistemas/s08_cooling.py": "66037d0482e6250d377e5a12ce1784f2bf56c08d763a565c3e972d1828ffb871",
+    "ferramentas/sistemas/s09_fuel.py": "c634bbb8444ed9504ad7cf94e0ef49a1df6ba0440b6e7e4c099c2cf4982e4853",
+    "ferramentas/sistemas/s10_transmission.py": "ab6ad844f5250f196e43b9c7e4ed0b566d4cb989dad1fbd78392fa918e3f6ef3",
+    "ferramentas/sistemas/s11_safety.py": "4d98c173fc427d8af929d2f943fe20ab757d10d59a8bfccdf07dddb26fea69c3",
+    "ferramentas/sistemas/s12_cockpit.py": "37b1d6d94320572e7f64d2100eb6ea3772608fa2d6e57e2a3024dee0074b8e3c",
+    "ferramentas/sistemas/s13_wheel.py": "fa0afa157bee89696f6984dc5ba8814fea10d21a170680ac8a1086ea4f58184f",
+    "ferramentas/sistemas/s14_sensors.py": "36b178ac48d80f321c6d888c493defb52d69376b89046c4a6331723d57c72d04",
     "ferramentas/validate-kit.py": "51b3d24db0fe5bc8ec123f269f27907066f1cfb4d1cf13f379807be3bd55c4a9",
-    "web/build.cjs": "49e8e6782e35e4074852afb5db4c02effdd707bb00c21a4d6b0d2c681d8bd0ba",
-    "web/server.cjs": "550af1113de82160b2f449ef9f8a989703707480fec3ef7e75313b37fac06b8b",
+    "web/build.cjs": "eb7f96008c4f4cc769547358c291ea9cc83b681ea3c3533d34fdb0b9c0aa028a",
+    "web/server.cjs": "7e7e6c90657f1b14fb5b1fb87a5ca3d647911805f63764ebe79a9e1558234d97",
     "web/src/aero-physics.mjs": "ddec76df50dd3dba23d2361d5579be999d70a4a1bd58dce99001fd4b9c146482",
-    "web/src/app-v2.js": "5be750af0183a8597c21e23a98bffc4211185568b253c90712dac59a3282290c",
-    "web/src/branding.js": "27fff24dd879f885a088af614902c872624fa7189f167e2233d5ba0e951646ea",
-    "web/src/car-look.js": "83f5204443f41eef3e1d7368c8454b483b2e6abc0955545b3d49a2999d12c7bb",
-    "web/src/customize.js": "9588784fd0e68d0dd4d61ad3c2731ef39c1cba33f6f57f47b172d55abc0a4176",
-    "web/src/engine/engine-shot.js": "165b60f87f7f1ea4627788ee8987bfe61503c10736e0e34bb9f93664cc339958",
-    "web/src/engine/in-car.js": "ebe61051ecf07818e92c2a41064e1b4878e670be7c04d8938878b7a3cb31349a",
-    "web/src/flow-detail.js": "436414a7e85b9ad8a043c469412b63224dc101e4caba06e76340977d85684f1a",
-    "web/src/garage.js": "881afa322c3ed23315549e48147df9f1f47e31836ed29cc24730538bbd91ced4",
-    "web/src/helmet-1991.js": "3dcc5137c202a3271ced7c0759b4125910b41686c8e5b7d1dc50e09074738307",
-    "web/src/identity.js": "f7da18ffada2006737675abb026d621097f8219e37587a5b72c1dfc798b089a6",
+    "web/src/app-v2.js": "6809d9d5183fa74c24aaf49106283a405c459a3156cf96e0be8615f7f51bf3a2",
+    "web/src/branding.js": "ff4ce98312660d17e328fd5d73c002696a361cf66bcf6208bec2d7f42eb271c2",
+    "web/src/car-look.js": "e40c15fa4f302e7bf78698b39cbdf45e837fde8aab31ba296643b6f70375219d",
+    "web/src/customize.js": "36903b6e7782284ac047704ecf76984999fd32c650d36e41eac0734c138e9b4b",
+    "web/src/engine/engine-shot.js": "3e8a752a9a9069abcb6788caf058adc34e9f3125a25f33739d7c3ed9cb1d16b0",
+    "web/src/engine/in-car.js": "cf2990e9ce9c76c39266a4f9cf26b6ced8f17a1d428cf73f3c9289bfc681aab3",
+    "web/src/flow-detail.js": "fc7a0b910fbc7d5f338939e6f6a13491120dfedd8b8528b210d019cd1394c9d4",
+    "web/src/garage.js": "17410d63a5872962b4d91b8d89b6ccce37b35f54a2bb98e2130f89823cb14654",
+    "web/src/helmet-1991.js": "352792f36a89f39ac0f00854328a278a9ccd714742c5686368777f6d4a34d607",
+    "web/src/identity.js": "abec6a2bb045d973157c0e828f1d8f8280a88e9583e69f010707f93bed67dcb9",
     "web/src/mechanics.js": "e6795bbc6ccccca32f2c4582cae3fab14d798ff3d7d0a31b23d59ecc5b1735eb",
-    "web/src/senna-driver.js": "33468bbfe1f1c746d47085d8d6111ebebc7a6fc54e7740abcdd540a0b22aba1b",
-    "web/src/studio.js": "36ca53b97600bcdcec404b67ab42333afefe20c00d046d2c92d28145f6b6d8e1",
-    "web/src/surface-library.js": "66deab1f2a8093aead43d02f0b6b23605fe64a57d9fa0b681c2768bd7257c642",
-    "web/src/tunnel-visual.js": "46435c35174bd737c548b964d23a577214f26c645459bf8f4d792b183ffd02c5",
-    "web/src/wind-tunnel.js": "7795a0a4bf6a3462b7c9c81d20431b26e133041a8930dcda8ee2191bfd9556e5",
-    "web/src/workbench.js": "17e9594ca5acc14b3aeec177c808e9d04961fb242c07dae53d7482a50332f9f3",
+    "web/src/senna-driver.js": "2adb76236f35acada85a40a2cc9ea707f763e20b21ae007818e34d1b30d21006",
+    "web/src/studio.js": "0fafce6fe2bfbc5f0d3728057e7c8c944b9e606c1ba3c8056e68036452ad276b",
+    "web/src/surface-library.js": "2ff94a66aa79369d09b43232cc4c9ebabc354867f3028a05e77f1330146e4951",
+    "web/src/systems.js": "8c90044c4098d1e1a12c1184baf777369b4f8d322fce6f85a0a31df2b43d8112",
+    "web/src/tunnel-visual.js": "eb2e7b1504393fd78e7bb69bd7243c5a3998314bcf8d5a6d5fc8ef3b38d2b1be",
+    "web/src/wind-tunnel.js": "41a68c1ba5fd75464bc7885d1504ade0d7c764448cd83f732e80050b03553f5d",
+    "web/src/workbench.js": "328861323aa5cc1f0c0093128de6ef3bd887b94362fbbec200c20107e30b7407",
     "web/test-aerodynamics.mjs": "a18952d5f54a4917f9fa14d546c55401d9fa57e13d559dea0bc9f7549c32bce8",
-    "web/test-driver-model.mjs": "00570a7ccbd8c8c9254b7cea40469b6dc05a63fa7567d31ea14040256df229ab",
-    "web/test-mechanics.mjs": "f826f8fd87af78e567921a27efb06998f1b830dec12c3a6f50075a253e54fc56",
-    "web/test-power-unit.mjs": "bafd0dfa7616e13bdea328e7f0de6e1896bdf2124b247205e9a67dabcea35b1b"
+    "web/test-driver-model.mjs": "6f0a56a59346ad9670df587c785c06c6c26baf9741285ed3c3c19c8c3795043f",
+    "web/test-mechanics.mjs": "b90ebccb794897ae2da800209fd238c5152ded8a0ed321c6519969c99a3e5dc5",
+    "web/test-power-unit.mjs": "9f0b6990b519a81367bff4bad1adbbac4fb50a0483b2dd5eb344e6f3ded8e4ae",
+    "web/test-systems.mjs": "3a4f79d4a4016ea2715411b29bf5d7a80c4b964b3ba29401e7071d0cd79c9864"
   },
   "parse_errors": [],
   "symbols": [
+    {
+      "id": "ferramentas/gerar_sistemas.py#40:_import_glb",
+      "path": "ferramentas/gerar_sistemas.py",
+      "name": "_import_glb",
+      "kind": "FunctionDef",
+      "line": 40,
+      "end_line": 43,
+      "scope": "module",
+      "signature": "def _import_glb(path):"
+    },
+    {
+      "id": "ferramentas/gerar_sistemas.py#45:_bbox",
+      "path": "ferramentas/gerar_sistemas.py",
+      "name": "_bbox",
+      "kind": "FunctionDef",
+      "line": 45,
+      "end_line": 56,
+      "scope": "module",
+      "signature": "def _bbox(objs):"
+    },
+    {
+      "id": "ferramentas/gerar_sistemas.py#58:import_car_reference",
+      "path": "ferramentas/gerar_sistemas.py",
+      "name": "import_car_reference",
+      "kind": "FunctionDef",
+      "line": 58,
+      "end_line": 73,
+      "scope": "module",
+      "signature": "def import_car_reference(alpha=.045):"
+    },
+    {
+      "id": "ferramentas/gerar_sistemas.py#76:power_unit_reference",
+      "path": "ferramentas/gerar_sistemas.py",
+      "name": "power_unit_reference",
+      "kind": "FunctionDef",
+      "line": 76,
+      "end_line": 107,
+      "scope": "module",
+      "signature": "def power_unit_reference():"
+    },
+    {
+      "id": "ferramentas/gerar_sistemas.py#154:measure_glb",
+      "path": "ferramentas/gerar_sistemas.py",
+      "name": "measure_glb",
+      "kind": "FunctionDef",
+      "line": 154,
+      "end_line": 161,
+      "scope": "module",
+      "signature": "def measure_glb(path):"
+    },
+    {
+      "id": "ferramentas/gerar_sistemas.py#181:write_manifest",
+      "path": "ferramentas/gerar_sistemas.py",
+      "name": "write_manifest",
+      "kind": "FunctionDef",
+      "line": 181,
+      "end_line": 203,
+      "scope": "module",
+      "signature": "def write_manifest(path_glb, optimized):"
+    },
+    {
+      "id": "ferramentas/gerar_sistemas.py#226:light",
+      "path": "ferramentas/gerar_sistemas.py",
+      "name": "light",
+      "kind": "FunctionDef",
+      "line": 226,
+      "end_line": 232,
+      "scope": "module",
+      "signature": "def light(name, kind, loc, energy, size=2.0):"
+    },
+    {
+      "id": "ferramentas/gerar_sistemas.py#244:frame",
+      "path": "ferramentas/gerar_sistemas.py",
+      "name": "frame",
+      "kind": "FunctionDef",
+      "line": 244,
+      "end_line": 252,
+      "scope": "module",
+      "signature": "def frame(objs, direction, pad=1.25):"
+    },
+    {
+      "id": "ferramentas/otimizar_sistemas.mjs#14:load",
+      "path": "ferramentas/otimizar_sistemas.mjs",
+      "name": "load",
+      "kind": "variable_declarator",
+      "line": 14,
+      "end_line": 14,
+      "scope": "module",
+      "signature": "load(name)"
+    },
+    {
+      "id": "ferramentas/otimizar_sistemas.mjs#33:systemNames",
+      "path": "ferramentas/otimizar_sistemas.mjs",
+      "name": "systemNames",
+      "kind": "variable_declarator",
+      "line": 33,
+      "end_line": 33,
+      "scope": "module",
+      "signature": "systemNames(docRoot)"
+    },
+    {
+      "id": "ferramentas/otimizar_sistemas.mjs#34:partCount",
+      "path": "ferramentas/otimizar_sistemas.mjs",
+      "name": "partCount",
+      "kind": "variable_declarator",
+      "line": 34,
+      "end_line": 34,
+      "scope": "module",
+      "signature": "partCount(docRoot)"
+    },
     {
       "id": "ferramentas/package_blender.py#27:linear",
       "path": "ferramentas/package_blender.py",
@@ -105,6 +234,896 @@
       "signature": "def to_studio(o):"
     },
     {
+      "id": "ferramentas/sistemas/lib.py#15:W",
+      "path": "ferramentas/sistemas/lib.py",
+      "name": "W",
+      "kind": "FunctionDef",
+      "line": 15,
+      "end_line": 19,
+      "scope": "module",
+      "signature": "def W(x, y=None, z=None):"
+    },
+    {
+      "id": "ferramentas/sistemas/lib.py#21:to_web",
+      "path": "ferramentas/sistemas/lib.py",
+      "name": "to_web",
+      "kind": "FunctionDef",
+      "line": 21,
+      "end_line": 22,
+      "scope": "module",
+      "signature": "def to_web(v):"
+    },
+    {
+      "id": "ferramentas/sistemas/lib.py#31:_encode_normal",
+      "path": "ferramentas/sistemas/lib.py",
+      "name": "_encode_normal",
+      "kind": "FunctionDef",
+      "line": 31,
+      "end_line": 36,
+      "scope": "module",
+      "signature": "def _encode_normal(height, strength=1.0):"
+    },
+    {
+      "id": "ferramentas/sistemas/lib.py#38:image_from_array",
+      "path": "ferramentas/sistemas/lib.py",
+      "name": "image_from_array",
+      "kind": "FunctionDef",
+      "line": 38,
+      "end_line": 48,
+      "scope": "module",
+      "signature": "def image_from_array(name, rgba, srgb=True):"
+    },
+    {
+      "id": "ferramentas/sistemas/lib.py#50:tex_twill",
+      "path": "ferramentas/sistemas/lib.py",
+      "name": "tex_twill",
+      "kind": "FunctionDef",
+      "line": 50,
+      "end_line": 59,
+      "scope": "module",
+      "signature": "def tex_twill(size=256, tow=16, base=(.028, .032, .038), lift=.055):"
+    },
+    {
+      "id": "ferramentas/sistemas/lib.py#61:tex_kevlar",
+      "path": "ferramentas/sistemas/lib.py",
+      "name": "tex_kevlar",
+      "kind": "FunctionDef",
+      "line": 61,
+      "end_line": 68,
+      "scope": "module",
+      "signature": "def tex_kevlar(size=256, tow=12):"
+    },
+    {
+      "id": "ferramentas/sistemas/lib.py#70:tex_brushed",
+      "path": "ferramentas/sistemas/lib.py",
+      "name": "tex_brushed",
+      "kind": "FunctionDef",
+      "line": 70,
+      "end_line": 75,
+      "scope": "module",
+      "signature": "def tex_brushed(size=256):"
+    },
+    {
+      "id": "ferramentas/sistemas/lib.py#77:tex_cast",
+      "path": "ferramentas/sistemas/lib.py",
+      "name": "tex_cast",
+      "kind": "FunctionDef",
+      "line": 77,
+      "end_line": 84,
+      "scope": "module",
+      "signature": "def tex_cast(size=256):"
+    },
+    {
+      "id": "ferramentas/sistemas/lib.py#86:tex_heat",
+      "path": "ferramentas/sistemas/lib.py",
+      "name": "tex_heat",
+      "kind": "FunctionDef",
+      "line": 86,
+      "end_line": 97,
+      "scope": "module",
+      "signature": "def tex_heat(size=256):"
+    },
+    {
+      "id": "ferramentas/sistemas/lib.py#99:tex_brake_disc",
+      "path": "ferramentas/sistemas/lib.py",
+      "name": "tex_brake_disc",
+      "kind": "FunctionDef",
+      "line": 99,
+      "end_line": 119,
+      "scope": "module",
+      "signature": "def tex_brake_disc(size=512, rings=14, holes_per_ring=64, inner=.42):"
+    },
+    {
+      "id": "ferramentas/sistemas/lib.py#121:tex_fins",
+      "path": "ferramentas/sistemas/lib.py",
+      "name": "tex_fins",
+      "kind": "FunctionDef",
+      "line": 121,
+      "end_line": 126,
+      "scope": "module",
+      "signature": "def tex_fins(size=256, pitch=6):"
+    },
+    {
+      "id": "ferramentas/sistemas/lib.py#128:tex_honeycomb",
+      "path": "ferramentas/sistemas/lib.py",
+      "name": "tex_honeycomb",
+      "kind": "FunctionDef",
+      "line": 128,
+      "end_line": 136,
+      "scope": "module",
+      "signature": "def tex_honeycomb(size=256, cell=18):"
+    },
+    {
+      "id": "ferramentas/sistemas/lib.py#138:tex_kapton",
+      "path": "ferramentas/sistemas/lib.py",
+      "name": "tex_kapton",
+      "kind": "FunctionDef",
+      "line": 138,
+      "end_line": 142,
+      "scope": "module",
+      "signature": "def tex_kapton(size=256):"
+    },
+    {
+      "id": "ferramentas/sistemas/lib.py#144:tex_braid",
+      "path": "ferramentas/sistemas/lib.py",
+      "name": "tex_braid",
+      "kind": "FunctionDef",
+      "line": 144,
+      "end_line": 149,
+      "scope": "module",
+      "signature": "def tex_braid(size=128, tow=8):"
+    },
+    {
+      "id": "ferramentas/sistemas/lib.py#151:tex_display",
+      "path": "ferramentas/sistemas/lib.py",
+      "name": "tex_display",
+      "kind": "FunctionDef",
+      "line": 151,
+      "end_line": 175,
+      "scope": "module",
+      "signature": "def tex_display(size=(512, 256)):"
+    },
+    {
+      "id": "ferramentas/sistemas/lib.py#180:material",
+      "path": "ferramentas/sistemas/lib.py",
+      "name": "material",
+      "kind": "FunctionDef",
+      "line": 180,
+      "end_line": 237,
+      "scope": "module",
+      "signature": "def material(name, color, metallic=0.0, roughness=0.45, *, emissive=None, emissive_strength=1.0, alpha=1.0,"
+    },
+    {
+      "id": "ferramentas/sistemas/lib.py#212:tex_node",
+      "path": "ferramentas/sistemas/lib.py",
+      "name": "tex_node",
+      "kind": "FunctionDef",
+      "line": 212,
+      "end_line": 215,
+      "scope": "ferramentas/sistemas/lib.py#180:material",
+      "signature": "def tex_node(img):"
+    },
+    {
+      "id": "ferramentas/sistemas/lib.py#239:Materials",
+      "path": "ferramentas/sistemas/lib.py",
+      "name": "Materials",
+      "kind": "ClassDef",
+      "line": 239,
+      "end_line": 317,
+      "scope": "module",
+      "signature": "class Materials:"
+    },
+    {
+      "id": "ferramentas/sistemas/lib.py#241:__init__",
+      "path": "ferramentas/sistemas/lib.py",
+      "name": "__init__",
+      "kind": "FunctionDef",
+      "line": 241,
+      "end_line": 317,
+      "scope": "ferramentas/sistemas/lib.py#239:Materials",
+      "signature": "def __init__(self):"
+    },
+    {
+      "id": "ferramentas/sistemas/lib.py#320:Context",
+      "path": "ferramentas/sistemas/lib.py",
+      "name": "Context",
+      "kind": "ClassDef",
+      "line": 320,
+      "end_line": 363,
+      "scope": "module",
+      "signature": "class Context:"
+    },
+    {
+      "id": "ferramentas/sistemas/lib.py#321:__init__",
+      "path": "ferramentas/sistemas/lib.py",
+      "name": "__init__",
+      "kind": "FunctionDef",
+      "line": 321,
+      "end_line": 327,
+      "scope": "ferramentas/sistemas/lib.py#320:Context",
+      "signature": "def __init__(self, scene, mats):"
+    },
+    {
+      "id": "ferramentas/sistemas/lib.py#329:system",
+      "path": "ferramentas/sistemas/lib.py",
+      "name": "system",
+      "kind": "FunctionDef",
+      "line": 329,
+      "end_line": 337,
+      "scope": "ferramentas/sistemas/lib.py#320:Context",
+      "signature": "def system(self, sid, label):"
+    },
+    {
+      "id": "ferramentas/sistemas/lib.py#339:register",
+      "path": "ferramentas/sistemas/lib.py",
+      "name": "register",
+      "kind": "FunctionDef",
+      "line": 339,
+      "end_line": 363,
+      "scope": "ferramentas/sistemas/lib.py#320:Context",
+      "signature": "def register(self, obj, part, *, spin=None, spin_axis='y', flow=None, era=None, explode=None, hide_group=None, tag=None, carrier=False, parent=None):"
+    },
+    {
+      "id": "ferramentas/sistemas/lib.py#366:_link",
+      "path": "ferramentas/sistemas/lib.py",
+      "name": "_link",
+      "kind": "FunctionDef",
+      "line": 366,
+      "end_line": 368,
+      "scope": "module",
+      "signature": "def _link(obj):"
+    },
+    {
+      "id": "ferramentas/sistemas/lib.py#370:shade_smooth",
+      "path": "ferramentas/sistemas/lib.py",
+      "name": "shade_smooth",
+      "kind": "FunctionDef",
+      "line": 370,
+      "end_line": 382,
+      "scope": "module",
+      "signature": "def shade_smooth(obj, angle=math.radians(38)):"
+    },
+    {
+      "id": "ferramentas/sistemas/lib.py#384:bevel",
+      "path": "ferramentas/sistemas/lib.py",
+      "name": "bevel",
+      "kind": "FunctionDef",
+      "line": 384,
+      "end_line": 390,
+      "scope": "module",
+      "signature": "def bevel(obj, width=.002, segments=2, angle=math.radians(40)):"
+    },
+    {
+      "id": "ferramentas/sistemas/lib.py#392:box_uv",
+      "path": "ferramentas/sistemas/lib.py",
+      "name": "box_uv",
+      "kind": "FunctionDef",
+      "line": 392,
+      "end_line": 410,
+      "scope": "module",
+      "signature": "def box_uv(obj, scale=1.0, offset=(0.0, 0.0)):"
+    },
+    {
+      "id": "ferramentas/sistemas/lib.py#412:mesh_object",
+      "path": "ferramentas/sistemas/lib.py",
+      "name": "mesh_object",
+      "kind": "FunctionDef",
+      "line": 412,
+      "end_line": 422,
+      "scope": "module",
+      "signature": "def mesh_object(name, verts, faces, edges=(), uvs=None):"
+    },
+    {
+      "id": "ferramentas/sistemas/lib.py#424:bm_to_object",
+      "path": "ferramentas/sistemas/lib.py",
+      "name": "bm_to_object",
+      "kind": "FunctionDef",
+      "line": 424,
+      "end_line": 431,
+      "scope": "module",
+      "signature": "def bm_to_object(name, bm, smooth=True):"
+    },
+    {
+      "id": "ferramentas/sistemas/lib.py#433:set_material",
+      "path": "ferramentas/sistemas/lib.py",
+      "name": "set_material",
+      "kind": "FunctionDef",
+      "line": 433,
+      "end_line": 437,
+      "scope": "module",
+      "signature": "def set_material(obj, mat):"
+    },
+    {
+      "id": "ferramentas/sistemas/lib.py#439:orient",
+      "path": "ferramentas/sistemas/lib.py",
+      "name": "orient",
+      "kind": "FunctionDef",
+      "line": 439,
+      "end_line": 444,
+      "scope": "module",
+      "signature": "def orient(obj, axis):"
+    },
+    {
+      "id": "ferramentas/sistemas/lib.py#447:cube",
+      "path": "ferramentas/sistemas/lib.py",
+      "name": "cube",
+      "kind": "FunctionDef",
+      "line": 447,
+      "end_line": 459,
+      "scope": "module",
+      "signature": "def cube(ctx, part, center, size, mat, *, bev=.002, segments=2, rot=None, uv=None, **extras):"
+    },
+    {
+      "id": "ferramentas/sistemas/lib.py#461:W_rot",
+      "path": "ferramentas/sistemas/lib.py",
+      "name": "W_rot",
+      "kind": "FunctionDef",
+      "line": 461,
+      "end_line": 465,
+      "scope": "module",
+      "signature": "def W_rot(rot):"
+    },
+    {
+      "id": "ferramentas/sistemas/lib.py#467:cyl",
+      "path": "ferramentas/sistemas/lib.py",
+      "name": "cyl",
+      "kind": "FunctionDef",
+      "line": 467,
+      "end_line": 474,
+      "scope": "module",
+      "signature": "def cyl(ctx, part, center, radius, length, mat, *, axis=UP, verts=32, bev=.0012, segments=2, radius2=None, **extras):"
+    },
+    {
+      "id": "ferramentas/sistemas/lib.py#476:tube_cyl",
+      "path": "ferramentas/sistemas/lib.py",
+      "name": "tube_cyl",
+      "kind": "FunctionDef",
+      "line": 476,
+      "end_line": 495,
+      "scope": "module",
+      "signature": "def tube_cyl(ctx, part, center, radius, wall, length, mat, *, axis=UP, verts=32, **extras):"
+    },
+    {
+      "id": "ferramentas/sistemas/lib.py#497:sphere",
+      "path": "ferramentas/sistemas/lib.py",
+      "name": "sphere",
+      "kind": "FunctionDef",
+      "line": 497,
+      "end_line": 503,
+      "scope": "module",
+      "signature": "def sphere(ctx, part, center, radius, mat, *, segments=24, rings=16, scale=None, **extras):"
+    },
+    {
+      "id": "ferramentas/sistemas/lib.py#505:torus",
+      "path": "ferramentas/sistemas/lib.py",
+      "name": "torus",
+      "kind": "FunctionDef",
+      "line": 505,
+      "end_line": 509,
+      "scope": "module",
+      "signature": "def torus(ctx, part, center, major, minor, mat, *, axis=UP, seg=40, mseg=12, **extras):"
+    },
+    {
+      "id": "ferramentas/sistemas/lib.py#512:catmull",
+      "path": "ferramentas/sistemas/lib.py",
+      "name": "catmull",
+      "kind": "FunctionDef",
+      "line": 512,
+      "end_line": 528,
+      "scope": "module",
+      "signature": "def catmull(points, per_segment=8, closed=False):"
+    },
+    {
+      "id": "ferramentas/sistemas/lib.py#530:_frames",
+      "path": "ferramentas/sistemas/lib.py",
+      "name": "_frames",
+      "kind": "FunctionDef",
+      "line": 530,
+      "end_line": 553,
+      "scope": "module",
+      "signature": "def _frames(pts, closed=False):"
+    },
+    {
+      "id": "ferramentas/sistemas/lib.py#555:sweep",
+      "path": "ferramentas/sistemas/lib.py",
+      "name": "sweep",
+      "kind": "FunctionDef",
+      "line": 555,
+      "end_line": 610,
+      "scope": "module",
+      "signature": "def sweep(ctx, part, points, mat, *, radius=.01, radii=None, sides=14, smooth_path=True, per_segment=8,"
+    },
+    {
+      "id": "ferramentas/sistemas/lib.py#612:airfoil",
+      "path": "ferramentas/sistemas/lib.py",
+      "name": "airfoil",
+      "kind": "FunctionDef",
+      "line": 612,
+      "end_line": 627,
+      "scope": "module",
+      "signature": "def airfoil(chord, thick, camber=0.0, n=18):"
+    },
+    {
+      "id": "ferramentas/sistemas/lib.py#629:loft",
+      "path": "ferramentas/sistemas/lib.py",
+      "name": "loft",
+      "kind": "FunctionDef",
+      "line": 629,
+      "end_line": 652,
+      "scope": "module",
+      "signature": "def loft(ctx, part, sections, mat, *, cap=True, open_ring=False, **extras):"
+    },
+    {
+      "id": "ferramentas/sistemas/lib.py#654:lathe",
+      "path": "ferramentas/sistemas/lib.py",
+      "name": "lathe",
+      "kind": "FunctionDef",
+      "line": 654,
+      "end_line": 666,
+      "scope": "module",
+      "signature": "def lathe(ctx, part, profile, mat, *, center=(0, 0, 0), axis=UP, segments=40, **extras):"
+    },
+    {
+      "id": "ferramentas/sistemas/lib.py#668:helix",
+      "path": "ferramentas/sistemas/lib.py",
+      "name": "helix",
+      "kind": "FunctionDef",
+      "line": 668,
+      "end_line": 676,
+      "scope": "module",
+      "signature": "def helix(ctx, part, center, radius, pitch, turns, wire, mat, *, axis=UP, per_turn=28, **extras):"
+    },
+    {
+      "id": "ferramentas/sistemas/lib.py#678:gear",
+      "path": "ferramentas/sistemas/lib.py",
+      "name": "gear",
+      "kind": "FunctionDef",
+      "line": 678,
+      "end_line": 728,
+      "scope": "module",
+      "signature": "def gear(ctx, part, center, teeth, module, width, mat, *, axis=UP, bore=None, helix_deg=0, hub_r=None, hub_w=None, spokes=0, **extras):"
+    },
+    {
+      "id": "ferramentas/sistemas/lib.py#694:ring",
+      "path": "ferramentas/sistemas/lib.py",
+      "name": "ring",
+      "kind": "FunctionDef",
+      "line": 694,
+      "end_line": 695,
+      "scope": "ferramentas/sistemas/lib.py#678:gear",
+      "signature": "def ring(z, pts):"
+    },
+    {
+      "id": "ferramentas/sistemas/lib.py#730:bolt_ring",
+      "path": "ferramentas/sistemas/lib.py",
+      "name": "bolt_ring",
+      "kind": "FunctionDef",
+      "line": 730,
+      "end_line": 751,
+      "scope": "module",
+      "signature": "def bolt_ring(ctx, part, center, radius, count, axis, mat_head, *, size=.006, head=.004, start=0.0, **extras):"
+    },
+    {
+      "id": "ferramentas/sistemas/lib.py#753:join",
+      "path": "ferramentas/sistemas/lib.py",
+      "name": "join",
+      "kind": "FunctionDef",
+      "line": 753,
+      "end_line": 777,
+      "scope": "module",
+      "signature": "def join(ctx, objects, part=None, **extras):"
+    },
+    {
+      "id": "ferramentas/sistemas/lib.py#779:mirror_x",
+      "path": "ferramentas/sistemas/lib.py",
+      "name": "mirror_x",
+      "kind": "FunctionDef",
+      "line": 779,
+      "end_line": 800,
+      "scope": "module",
+      "signature": "def mirror_x(ctx, obj, part=None):"
+    },
+    {
+      "id": "ferramentas/sistemas/lib.py#802:both_sides",
+      "path": "ferramentas/sistemas/lib.py",
+      "name": "both_sides",
+      "kind": "FunctionDef",
+      "line": 802,
+      "end_line": 804,
+      "scope": "module",
+      "signature": "def both_sides(fn):"
+    },
+    {
+      "id": "ferramentas/sistemas/lib.py#806:hexagon",
+      "path": "ferramentas/sistemas/lib.py",
+      "name": "hexagon",
+      "kind": "FunctionDef",
+      "line": 806,
+      "end_line": 807,
+      "scope": "module",
+      "signature": "def hexagon(r):"
+    },
+    {
+      "id": "ferramentas/sistemas/lib.py#809:rounded_rect",
+      "path": "ferramentas/sistemas/lib.py",
+      "name": "rounded_rect",
+      "kind": "FunctionDef",
+      "line": 809,
+      "end_line": 815,
+      "scope": "module",
+      "signature": "def rounded_rect(w, h, r, n=4):"
+    },
+    {
+      "id": "ferramentas/sistemas/lib.py#817:super_ellipse",
+      "path": "ferramentas/sistemas/lib.py",
+      "name": "super_ellipse",
+      "kind": "FunctionDef",
+      "line": 817,
+      "end_line": 824,
+      "scope": "module",
+      "signature": "def super_ellipse(w, h, n=2.6, seg=32, exp=None):"
+    },
+    {
+      "id": "ferramentas/sistemas/lib.py#826:shell",
+      "path": "ferramentas/sistemas/lib.py",
+      "name": "shell",
+      "kind": "FunctionDef",
+      "line": 826,
+      "end_line": 830,
+      "scope": "module",
+      "signature": "def shell(ctx, part, sections, mat, *, thickness=.004, open_ring=False, **extras):"
+    },
+    {
+      "id": "ferramentas/sistemas/lib.py#832:flow_ribbon",
+      "path": "ferramentas/sistemas/lib.py",
+      "name": "flow_ribbon",
+      "kind": "FunctionDef",
+      "line": 832,
+      "end_line": 834,
+      "scope": "module",
+      "signature": "def flow_ribbon(ctx, part, points, kind, *, radius=.006, **extras):"
+    },
+    {
+      "id": "ferramentas/sistemas/lib.py#836:text_plate",
+      "path": "ferramentas/sistemas/lib.py",
+      "name": "text_plate",
+      "kind": "FunctionDef",
+      "line": 836,
+      "end_line": 850,
+      "scope": "module",
+      "signature": "def text_plate(ctx, part, text, center, size, mat, *, normal=FWD, up=UP, depth=.0006, **extras):"
+    },
+    {
+      "id": "ferramentas/sistemas/lib.py#852:centroid",
+      "path": "ferramentas/sistemas/lib.py",
+      "name": "centroid",
+      "kind": "FunctionDef",
+      "line": 852,
+      "end_line": 861,
+      "scope": "module",
+      "signature": "def centroid(objs):"
+    },
+    {
+      "id": "ferramentas/sistemas/lib.py#863:auto_explode",
+      "path": "ferramentas/sistemas/lib.py",
+      "name": "auto_explode",
+      "kind": "FunctionDef",
+      "line": 863,
+      "end_line": 875,
+      "scope": "module",
+      "signature": "def auto_explode(ctx, sid, scale=1.0, min_len=.06):"
+    },
+    {
+      "id": "ferramentas/sistemas/s01_aero.py#18:build",
+      "path": "ferramentas/sistemas/s01_aero.py",
+      "name": "build",
+      "kind": "FunctionDef",
+      "line": 18,
+      "end_line": 81,
+      "scope": "module",
+      "signature": "def build(ctx):"
+    },
+    {
+      "id": "ferramentas/sistemas/s02_structure.py#22:tub_section",
+      "path": "ferramentas/sistemas/s02_structure.py",
+      "name": "tub_section",
+      "kind": "FunctionDef",
+      "line": 22,
+      "end_line": 26,
+      "scope": "module",
+      "signature": "def tub_section(z, w, y0, y1):"
+    },
+    {
+      "id": "ferramentas/sistemas/s02_structure.py#28:build",
+      "path": "ferramentas/sistemas/s02_structure.py",
+      "name": "build",
+      "kind": "FunctionDef",
+      "line": 28,
+      "end_line": 79,
+      "scope": "module",
+      "signature": "def build(ctx):"
+    },
+    {
+      "id": "ferramentas/sistemas/s03_suspension.py#38:leg",
+      "path": "ferramentas/sistemas/s03_suspension.py",
+      "name": "leg",
+      "kind": "FunctionDef",
+      "line": 38,
+      "end_line": 39,
+      "scope": "module",
+      "signature": "def leg(ctx, name, a, b, mat, chord=.048, thick=.26, camber=0.0):"
+    },
+    {
+      "id": "ferramentas/sistemas/s03_suspension.py#41:mirror_side",
+      "path": "ferramentas/sistemas/s03_suspension.py",
+      "name": "mirror_side",
+      "kind": "FunctionDef",
+      "line": 41,
+      "end_line": 42,
+      "scope": "module",
+      "signature": "def mirror_side(v):"
+    },
+    {
+      "id": "ferramentas/sistemas/s03_suspension.py#44:rod_end",
+      "path": "ferramentas/sistemas/s03_suspension.py",
+      "name": "rod_end",
+      "kind": "FunctionDef",
+      "line": 44,
+      "end_line": 46,
+      "scope": "module",
+      "signature": "def rod_end(ctx, name, p, mat, r=.011):"
+    },
+    {
+      "id": "ferramentas/sistemas/s03_suspension.py#48:upright",
+      "path": "ferramentas/sistemas/s03_suspension.py",
+      "name": "upright",
+      "kind": "FunctionDef",
+      "line": 48,
+      "end_line": 74,
+      "scope": "module",
+      "signature": "def upright(ctx, P, front, label):"
+    },
+    {
+      "id": "ferramentas/sistemas/s03_suspension.py#76:corner",
+      "path": "ferramentas/sistemas/s03_suspension.py",
+      "name": "corner",
+      "kind": "FunctionDef",
+      "line": 76,
+      "end_line": 117,
+      "scope": "module",
+      "signature": "def corner(ctx, P, front, label):"
+    },
+    {
+      "id": "ferramentas/sistemas/s03_suspension.py#119:center_elements",
+      "path": "ferramentas/sistemas/s03_suspension.py",
+      "name": "center_elements",
+      "kind": "FunctionDef",
+      "line": 119,
+      "end_line": 138,
+      "scope": "module",
+      "signature": "def center_elements(ctx, P, front):"
+    },
+    {
+      "id": "ferramentas/sistemas/s03_suspension.py#140:build",
+      "path": "ferramentas/sistemas/s03_suspension.py",
+      "name": "build",
+      "kind": "FunctionDef",
+      "line": 140,
+      "end_line": 146,
+      "scope": "module",
+      "signature": "def build(ctx):"
+    },
+    {
+      "id": "ferramentas/sistemas/s04_steering.py#19:build",
+      "path": "ferramentas/sistemas/s04_steering.py",
+      "name": "build",
+      "kind": "FunctionDef",
+      "line": 19,
+      "end_line": 59,
+      "scope": "module",
+      "signature": "def build(ctx):"
+    },
+    {
+      "id": "ferramentas/sistemas/s05_brakes.py#20:arc",
+      "path": "ferramentas/sistemas/s05_brakes.py",
+      "name": "arc",
+      "kind": "FunctionDef",
+      "line": 20,
+      "end_line": 25,
+      "scope": "module",
+      "signature": "def arc(center, radius, a0, a1, n=12):"
+    },
+    {
+      "id": "ferramentas/sistemas/s05_brakes.py#27:corner",
+      "path": "ferramentas/sistemas/s05_brakes.py",
+      "name": "corner",
+      "kind": "FunctionDef",
+      "line": 27,
+      "end_line": 72,
+      "scope": "module",
+      "signature": "def corner(ctx, wheel, front, label):"
+    },
+    {
+      "id": "ferramentas/sistemas/s05_brakes.py#74:build",
+      "path": "ferramentas/sistemas/s05_brakes.py",
+      "name": "build",
+      "kind": "FunctionDef",
+      "line": 74,
+      "end_line": 136,
+      "scope": "module",
+      "signature": "def build(ctx):"
+    },
+    {
+      "id": "ferramentas/sistemas/s06_power.py#26:bank_frame",
+      "path": "ferramentas/sistemas/s06_power.py",
+      "name": "bank_frame",
+      "kind": "FunctionDef",
+      "line": 26,
+      "end_line": 30,
+      "scope": "module",
+      "signature": "def bank_frame(side):"
+    },
+    {
+      "id": "ferramentas/sistemas/s06_power.py#32:add",
+      "path": "ferramentas/sistemas/s06_power.py",
+      "name": "add",
+      "kind": "FunctionDef",
+      "line": 32,
+      "end_line": 33,
+      "scope": "module",
+      "signature": "def add(a, b, s=1.0):"
+    },
+    {
+      "id": "ferramentas/sistemas/s06_power.py#35:build",
+      "path": "ferramentas/sistemas/s06_power.py",
+      "name": "build",
+      "kind": "FunctionDef",
+      "line": 35,
+      "end_line": 155,
+      "scope": "module",
+      "signature": "def build(ctx):"
+    },
+    {
+      "id": "ferramentas/sistemas/s07_ers.py#20:build",
+      "path": "ferramentas/sistemas/s07_ers.py",
+      "name": "build",
+      "kind": "FunctionDef",
+      "line": 20,
+      "end_line": 72,
+      "scope": "module",
+      "signature": "def build(ctx):"
+    },
+    {
+      "id": "ferramentas/sistemas/s08_cooling.py#17:core",
+      "path": "ferramentas/sistemas/s08_cooling.py",
+      "name": "core",
+      "kind": "FunctionDef",
+      "line": 17,
+      "end_line": 31,
+      "scope": "module",
+      "signature": "def core(ctx, name, center, size, tilt_deg, mat_tank):"
+    },
+    {
+      "id": "ferramentas/sistemas/s08_cooling.py#33:hose",
+      "path": "ferramentas/sistemas/s08_cooling.py",
+      "name": "hose",
+      "kind": "FunctionDef",
+      "line": 33,
+      "end_line": 38,
+      "scope": "module",
+      "signature": "def hose(ctx, name, pts, kind, r=.016):"
+    },
+    {
+      "id": "ferramentas/sistemas/s08_cooling.py#40:build",
+      "path": "ferramentas/sistemas/s08_cooling.py",
+      "name": "build",
+      "kind": "FunctionDef",
+      "line": 40,
+      "end_line": 73,
+      "scope": "module",
+      "signature": "def build(ctx):"
+    },
+    {
+      "id": "ferramentas/sistemas/s09_fuel.py#17:bladder_sections",
+      "path": "ferramentas/sistemas/s09_fuel.py",
+      "name": "bladder_sections",
+      "kind": "FunctionDef",
+      "line": 17,
+      "end_line": 21,
+      "scope": "module",
+      "signature": "def bladder_sections():"
+    },
+    {
+      "id": "ferramentas/sistemas/s09_fuel.py#23:build",
+      "path": "ferramentas/sistemas/s09_fuel.py",
+      "name": "build",
+      "kind": "FunctionDef",
+      "line": 23,
+      "end_line": 62,
+      "scope": "module",
+      "signature": "def build(ctx):"
+    },
+    {
+      "id": "ferramentas/sistemas/s10_transmission.py#26:rr_section",
+      "path": "ferramentas/sistemas/s10_transmission.py",
+      "name": "rr_section",
+      "kind": "FunctionDef",
+      "line": 26,
+      "end_line": 27,
+      "scope": "module",
+      "signature": "def rr_section(w, h, r=.02):"
+    },
+    {
+      "id": "ferramentas/sistemas/s10_transmission.py#29:build",
+      "path": "ferramentas/sistemas/s10_transmission.py",
+      "name": "build",
+      "kind": "FunctionDef",
+      "line": 29,
+      "end_line": 118,
+      "scope": "module",
+      "signature": "def build(ctx):"
+    },
+    {
+      "id": "ferramentas/sistemas/s11_safety.py#18:build",
+      "path": "ferramentas/sistemas/s11_safety.py",
+      "name": "build",
+      "kind": "FunctionDef",
+      "line": 18,
+      "end_line": 78,
+      "scope": "module",
+      "signature": "def build(ctx):"
+    },
+    {
+      "id": "ferramentas/sistemas/s12_cockpit.py#18:strap",
+      "path": "ferramentas/sistemas/s12_cockpit.py",
+      "name": "strap",
+      "kind": "FunctionDef",
+      "line": 18,
+      "end_line": 19,
+      "scope": "module",
+      "signature": "def strap(ctx, name, pts, width=.075):"
+    },
+    {
+      "id": "ferramentas/sistemas/s12_cockpit.py#21:build",
+      "path": "ferramentas/sistemas/s12_cockpit.py",
+      "name": "build",
+      "kind": "FunctionDef",
+      "line": 21,
+      "end_line": 74,
+      "scope": "module",
+      "signature": "def build(ctx):"
+    },
+    {
+      "id": "ferramentas/sistemas/s12_cockpit.py#25:seat_section",
+      "path": "ferramentas/sistemas/s12_cockpit.py",
+      "name": "seat_section",
+      "kind": "FunctionDef",
+      "line": 25,
+      "end_line": 33,
+      "scope": "ferramentas/sistemas/s12_cockpit.py#21:build",
+      "signature": "def seat_section(t):"
+    },
+    {
+      "id": "ferramentas/sistemas/s13_wheel.py#17:build",
+      "path": "ferramentas/sistemas/s13_wheel.py",
+      "name": "build",
+      "kind": "FunctionDef",
+      "line": 17,
+      "end_line": 61,
+      "scope": "module",
+      "signature": "def build(ctx):"
+    },
+    {
+      "id": "ferramentas/sistemas/s14_sensors.py#20:build",
+      "path": "ferramentas/sistemas/s14_sensors.py",
+      "name": "build",
+      "kind": "FunctionDef",
+      "line": 20,
+      "end_line": 74,
+      "scope": "module",
+      "signature": "def build(ctx):"
+    },
+    {
       "id": "ferramentas/validate-kit.py#7:matrices",
       "path": "ferramentas/validate-kit.py",
       "name": "matrices",
@@ -113,6 +1132,36 @@
       "end_line": 8,
       "scope": "module",
       "signature": "def matrices():"
+    },
+    {
+      "id": "web/build.cjs#6:source",
+      "path": "web/build.cjs",
+      "name": "source",
+      "kind": "variable_declarator",
+      "line": 6,
+      "end_line": 6,
+      "scope": "module",
+      "signature": "source(...parts)"
+    },
+    {
+      "id": "web/build.cjs#8:replaceRequired",
+      "path": "web/build.cjs",
+      "name": "replaceRequired",
+      "kind": "function_declaration",
+      "line": 8,
+      "end_line": 15,
+      "scope": "module",
+      "signature": "replaceRequired(template, marker, value)"
+    },
+    {
+      "id": "web/server.cjs#17:reply",
+      "path": "web/server.cjs",
+      "name": "reply",
+      "kind": "function_declaration",
+      "line": 17,
+      "end_line": 23,
+      "scope": "module",
+      "signature": "reply(response, status, body = '')"
     },
     {
       "id": "web/src/aero-physics.mjs#2:aerodynamicTest",
@@ -125,162 +1174,202 @@
       "signature": "aerodynamicTest({speedKmh=0,headwindKmh=0,crosswindKmh=0,temperatureC=15,pressureKPa=101.325,area=null,cd=null,clDown=null,length=5.5})"
     },
     {
-      "id": "web/src/app-v2.js#24:$",
+      "id": "web/src/app-v2.js#25:$",
       "path": "web/src/app-v2.js",
       "name": "$",
       "kind": "variable_declarator",
-      "line": 24,
-      "end_line": 24,
+      "line": 25,
+      "end_line": 25,
       "scope": "module",
       "signature": "$"
     },
     {
-      "id": "web/src/app-v2.js#35:closeEngine",
+      "id": "web/src/app-v2.js#36:closeEngine",
       "path": "web/src/app-v2.js",
       "name": "closeEngine",
       "kind": "function_declaration",
-      "line": 35,
-      "end_line": 35,
+      "line": 36,
+      "end_line": 36,
       "scope": "module",
       "signature": "closeEngine()"
     },
     {
-      "id": "web/src/app-v2.js#37:setFlowXray",
+      "id": "web/src/app-v2.js#38:setFlowXray",
       "path": "web/src/app-v2.js",
       "name": "setFlowXray",
       "kind": "function_declaration",
-      "line": 37,
-      "end_line": 40,
+      "line": 38,
+      "end_line": 41,
       "scope": "module",
       "signature": "setFlowXray(on)"
     },
     {
-      "id": "web/src/app-v2.js#38:clone",
+      "id": "web/src/app-v2.js#39:clone",
       "path": "web/src/app-v2.js",
       "name": "clone",
       "kind": "variable_declarator",
-      "line": 38,
-      "end_line": 38,
-      "scope": "web/src/app-v2.js#37:setFlowXray",
+      "line": 39,
+      "end_line": 39,
+      "scope": "web/src/app-v2.js#38:setFlowXray",
       "signature": "clone"
     },
     {
-      "id": "web/src/app-v2.js#45:moveCamera",
+      "id": "web/src/app-v2.js#46:moveCamera",
       "path": "web/src/app-v2.js",
       "name": "moveCamera",
-      "kind": "function_declaration",
-      "line": 45,
-      "end_line": 45,
-      "scope": "module",
-      "signature": "moveCamera(to,target,animate=true)"
-    },
-    {
-      "id": "web/src/app-v2.js#46:view",
-      "path": "web/src/app-v2.js",
-      "name": "view",
       "kind": "function_declaration",
       "line": 46,
       "end_line": 46,
       "scope": "module",
-      "signature": "view(name,animate=true)"
+      "signature": "moveCamera(to,target,animate=true)"
     },
     {
-      "id": "web/src/app-v2.js#48:resize",
+      "id": "web/src/app-v2.js#47:setCarSelectionEnabled",
       "path": "web/src/app-v2.js",
-      "name": "resize",
+      "name": "setCarSelectionEnabled",
+      "kind": "function_declaration",
+      "line": 47,
+      "end_line": 47,
+      "scope": "module",
+      "signature": "setCarSelectionEnabled(enabled)"
+    },
+    {
+      "id": "web/src/app-v2.js#48:syncSystemMode",
+      "path": "web/src/app-v2.js",
+      "name": "syncSystemMode",
       "kind": "function_declaration",
       "line": 48,
       "end_line": 48,
       "scope": "module",
-      "signature": "resize()"
+      "signature": "syncSystemMode()"
     },
     {
-      "id": "web/src/app-v2.js#50:refreshSelection",
+      "id": "web/src/app-v2.js#50:view",
       "path": "web/src/app-v2.js",
-      "name": "refreshSelection",
+      "name": "view",
       "kind": "function_declaration",
       "line": 50,
       "end_line": 50,
       "scope": "module",
-      "signature": "refreshSelection()"
+      "signature": "view(name,animate=true)"
     },
     {
-      "id": "web/src/app-v2.js#51:select",
+      "id": "web/src/app-v2.js#52:resize",
       "path": "web/src/app-v2.js",
-      "name": "select",
-      "kind": "function_declaration",
-      "line": 51,
-      "end_line": 51,
-      "scope": "module",
-      "signature": "select(id)"
-    },
-    {
-      "id": "web/src/app-v2.js#52:focusPart",
-      "path": "web/src/app-v2.js",
-      "name": "focusPart",
+      "name": "resize",
       "kind": "function_declaration",
       "line": 52,
       "end_line": 52,
       "scope": "module",
+      "signature": "resize()"
+    },
+    {
+      "id": "web/src/app-v2.js#54:refreshSelection",
+      "path": "web/src/app-v2.js",
+      "name": "refreshSelection",
+      "kind": "function_declaration",
+      "line": 54,
+      "end_line": 54,
+      "scope": "module",
+      "signature": "refreshSelection()"
+    },
+    {
+      "id": "web/src/app-v2.js#55:select",
+      "path": "web/src/app-v2.js",
+      "name": "select",
+      "kind": "function_declaration",
+      "line": 55,
+      "end_line": 55,
+      "scope": "module",
+      "signature": "select(id)"
+    },
+    {
+      "id": "web/src/app-v2.js#56:focusPart",
+      "path": "web/src/app-v2.js",
+      "name": "focusPart",
+      "kind": "function_declaration",
+      "line": 56,
+      "end_line": 56,
+      "scope": "module",
       "signature": "focusPart()"
     },
     {
-      "id": "web/src/app-v2.js#53:assemblyTo",
+      "id": "web/src/app-v2.js#57:assemblyTo",
       "path": "web/src/app-v2.js",
       "name": "assemblyTo",
       "kind": "function_declaration",
-      "line": 53,
-      "end_line": 53,
+      "line": 57,
+      "end_line": 57,
       "scope": "module",
       "signature": "assemblyTo(v)"
     },
     {
-      "id": "web/src/app-v2.js#64:target",
+      "id": "web/src/app-v2.js#68:target",
       "path": "web/src/app-v2.js",
       "name": "target",
       "kind": "pair",
-      "line": 64,
-      "end_line": 64,
+      "line": 68,
+      "end_line": 68,
       "scope": "module",
       "signature": "target()"
     },
     {
-      "id": "web/src/app-v2.js#65:onBeforeToggle",
+      "id": "web/src/app-v2.js#69:showCar",
+      "path": "web/src/app-v2.js",
+      "name": "showCar",
+      "kind": "pair",
+      "line": 69,
+      "end_line": 69,
+      "scope": "module",
+      "signature": "showCar()"
+    },
+    {
+      "id": "web/src/app-v2.js#69:onClose",
+      "path": "web/src/app-v2.js",
+      "name": "onClose",
+      "kind": "pair",
+      "line": 69,
+      "end_line": 69,
+      "scope": "module",
+      "signature": "onClose()"
+    },
+    {
+      "id": "web/src/app-v2.js#69:onBeforeToggle",
       "path": "web/src/app-v2.js",
       "name": "onBeforeToggle",
       "kind": "pair",
-      "line": 65,
-      "end_line": 65,
+      "line": 69,
+      "end_line": 69,
       "scope": "module",
       "signature": "onBeforeToggle"
     },
     {
-      "id": "web/src/app-v2.js#65:onRegion",
+      "id": "web/src/app-v2.js#69:onRegion",
       "path": "web/src/app-v2.js",
       "name": "onRegion",
       "kind": "pair",
-      "line": 65,
-      "end_line": 65,
+      "line": 69,
+      "end_line": 69,
       "scope": "module",
       "signature": "onRegion"
     },
     {
-      "id": "web/src/app-v2.js#65:onToggle",
+      "id": "web/src/app-v2.js#69:onToggle",
       "path": "web/src/app-v2.js",
       "name": "onToggle",
       "kind": "pair",
-      "line": 65,
-      "end_line": 65,
+      "line": 69,
+      "end_line": 69,
       "scope": "module",
       "signature": "onToggle"
     },
     {
-      "id": "web/src/app-v2.js#66:showCar",
+      "id": "web/src/app-v2.js#70:showCar",
       "path": "web/src/app-v2.js",
       "name": "showCar",
       "kind": "pair",
-      "line": 66,
-      "end_line": 66,
+      "line": 70,
+      "end_line": 70,
       "scope": "module",
       "signature": "showCar()"
     },
@@ -1745,6 +2834,626 @@
       "signature": "dispose()"
     },
     {
+      "id": "web/src/systems.js#31:advanceLocalSpin",
+      "path": "web/src/systems.js",
+      "name": "advanceLocalSpin",
+      "kind": "variable_declarator",
+      "line": 31,
+      "end_line": 31,
+      "scope": "module",
+      "signature": "advanceLocalSpin(quaternion,axis='y',angle=0)"
+    },
+    {
+      "id": "web/src/systems.js#34:flowTexture",
+      "path": "web/src/systems.js",
+      "name": "flowTexture",
+      "kind": "function_declaration",
+      "line": 34,
+      "end_line": 40,
+      "scope": "module",
+      "signature": "flowTexture()"
+    },
+    {
+      "id": "web/src/systems.js#42:createSystems",
+      "path": "web/src/systems.js",
+      "name": "createSystems",
+      "kind": "function_declaration",
+      "line": 42,
+      "end_line": 202,
+      "scope": "module",
+      "signature": "createSystems({scene,model,mechanics,engine,driver,garage,camera,canvas,moveCamera,showCar=()=>{},onClose=showCar,mobile=false,assetUrl=SYSTEMS_ASSET})"
+    },
+    {
+      "id": "web/src/systems.js#50:onVisibilityChange",
+      "path": "web/src/systems.js",
+      "name": "onVisibilityChange",
+      "kind": "variable_declarator",
+      "line": 50,
+      "end_line": 50,
+      "scope": "web/src/systems.js#42:createSystems",
+      "signature": "onVisibilityChange()"
+    },
+    {
+      "id": "web/src/systems.js#52:meta",
+      "path": "web/src/systems.js",
+      "name": "meta",
+      "kind": "variable_declarator",
+      "line": 52,
+      "end_line": 52,
+      "scope": "web/src/systems.js#42:createSystems",
+      "signature": "meta"
+    },
+    {
+      "id": "web/src/systems.js#57:flowMaterial",
+      "path": "web/src/systems.js",
+      "name": "flowMaterial",
+      "kind": "variable_declarator",
+      "line": 57,
+      "end_line": 57,
+      "scope": "web/src/systems.js#42:createSystems",
+      "signature": "flowMaterial"
+    },
+    {
+      "id": "web/src/systems.js#66:cardFor",
+      "path": "web/src/systems.js",
+      "name": "cardFor",
+      "kind": "variable_declarator",
+      "line": 66,
+      "end_line": 66,
+      "scope": "web/src/systems.js#42:createSystems",
+      "signature": "cardFor"
+    },
+    {
+      "id": "web/src/systems.js#67:logicalPartCount",
+      "path": "web/src/systems.js",
+      "name": "logicalPartCount",
+      "kind": "variable_declarator",
+      "line": 67,
+      "end_line": 67,
+      "scope": "web/src/systems.js#42:createSystems",
+      "signature": "logicalPartCount"
+    },
+    {
+      "id": "web/src/systems.js#68:syncView",
+      "path": "web/src/systems.js",
+      "name": "syncView",
+      "kind": "variable_declarator",
+      "line": 68,
+      "end_line": 68,
+      "scope": "web/src/systems.js#42:createSystems",
+      "signature": "syncView"
+    },
+    {
+      "id": "web/src/systems.js#69:setStatus",
+      "path": "web/src/systems.js",
+      "name": "setStatus",
+      "kind": "variable_declarator",
+      "line": 69,
+      "end_line": 69,
+      "scope": "web/src/systems.js#42:createSystems",
+      "signature": "setStatus"
+    },
+    {
+      "id": "web/src/systems.js#72:attachPart",
+      "path": "web/src/systems.js",
+      "name": "attachPart",
+      "kind": "function_declaration",
+      "line": 72,
+      "end_line": 83,
+      "scope": "web/src/systems.js#42:createSystems",
+      "signature": "attachPart(mesh,systemId,logicalOwner=mesh.uuid)"
+    },
+    {
+      "id": "web/src/systems.js#84:prepareMaterials",
+      "path": "web/src/systems.js",
+      "name": "prepareMaterials",
+      "kind": "function_declaration",
+      "line": 84,
+      "end_line": 92,
+      "scope": "web/src/systems.js#42:createSystems",
+      "signature": "prepareMaterials(sceneRoot)"
+    },
+    {
+      "id": "web/src/systems.js#93:distribute",
+      "path": "web/src/systems.js",
+      "name": "distribute",
+      "kind": "function_declaration",
+      "line": 93,
+      "end_line": 109,
+      "scope": "web/src/systems.js#42:createSystems",
+      "signature": "distribute(gltf)"
+    },
+    {
+      "id": "web/src/systems.js#95:ownerId",
+      "path": "web/src/systems.js",
+      "name": "ownerId",
+      "kind": "variable_declarator",
+      "line": 95,
+      "end_line": 95,
+      "scope": "web/src/systems.js#93:distribute",
+      "signature": "ownerId"
+    },
+    {
+      "id": "web/src/systems.js#110:load",
+      "path": "web/src/systems.js",
+      "name": "load",
+      "kind": "function_declaration",
+      "line": 110,
+      "end_line": 122,
+      "scope": "web/src/systems.js#42:createSystems",
+      "signature": "load()"
+    },
+    {
+      "id": "web/src/systems.js#125:applyEra",
+      "path": "web/src/systems.js",
+      "name": "applyEra",
+      "kind": "function_declaration",
+      "line": 125,
+      "end_line": 125,
+      "scope": "web/src/systems.js#42:createSystems",
+      "signature": "applyEra()"
+    },
+    {
+      "id": "web/src/systems.js#126:applyCovers",
+      "path": "web/src/systems.js",
+      "name": "applyCovers",
+      "kind": "function_declaration",
+      "line": 126,
+      "end_line": 126,
+      "scope": "web/src/systems.js#42:createSystems",
+      "signature": "applyCovers()"
+    },
+    {
+      "id": "web/src/systems.js#127:applyExplode",
+      "path": "web/src/systems.js",
+      "name": "applyExplode",
+      "kind": "function_declaration",
+      "line": 127,
+      "end_line": 127,
+      "scope": "web/src/systems.js#42:createSystems",
+      "signature": "applyExplode()"
+    },
+    {
+      "id": "web/src/systems.js#129:translucentOf",
+      "path": "web/src/systems.js",
+      "name": "translucentOf",
+      "kind": "variable_declarator",
+      "line": 129,
+      "end_line": 129,
+      "scope": "web/src/systems.js#42:createSystems",
+      "signature": "translucentOf"
+    },
+    {
+      "id": "web/src/systems.js#130:materialFor",
+      "path": "web/src/systems.js",
+      "name": "materialFor",
+      "kind": "function_declaration",
+      "line": 130,
+      "end_line": 130,
+      "scope": "web/src/systems.js#42:createSystems",
+      "signature": "materialFor(entry)"
+    },
+    {
+      "id": "web/src/systems.js#131:applyFlows",
+      "path": "web/src/systems.js",
+      "name": "applyFlows",
+      "kind": "function_declaration",
+      "line": 131,
+      "end_line": 131,
+      "scope": "web/src/systems.js#42:createSystems",
+      "signature": "applyFlows()"
+    },
+    {
+      "id": "web/src/systems.js#132:applySchematic",
+      "path": "web/src/systems.js",
+      "name": "applySchematic",
+      "kind": "function_declaration",
+      "line": 132,
+      "end_line": 132,
+      "scope": "web/src/systems.js#42:createSystems",
+      "signature": "applySchematic()"
+    },
+    {
+      "id": "web/src/systems.js#134:highlight",
+      "path": "web/src/systems.js",
+      "name": "highlight",
+      "kind": "function_declaration",
+      "line": 134,
+      "end_line": 140,
+      "scope": "web/src/systems.js#42:createSystems",
+      "signature": "highlight(entry,on)"
+    },
+    {
+      "id": "web/src/systems.js#141:setPicked",
+      "path": "web/src/systems.js",
+      "name": "setPicked",
+      "kind": "function_declaration",
+      "line": 141,
+      "end_line": 141,
+      "scope": "web/src/systems.js#42:createSystems",
+      "signature": "setPicked(entry)"
+    },
+    {
+      "id": "web/src/systems.js#143:setERSContext",
+      "path": "web/src/systems.js",
+      "name": "setERSContext",
+      "kind": "function_declaration",
+      "line": 143,
+      "end_line": 143,
+      "scope": "web/src/systems.js#42:createSystems",
+      "signature": "setERSContext(mode)"
+    },
+    {
+      "id": "web/src/systems.js#144:updateUI",
+      "path": "web/src/systems.js",
+      "name": "updateUI",
+      "kind": "function_declaration",
+      "line": 144,
+      "end_line": 148,
+      "scope": "web/src/systems.js#42:createSystems",
+      "signature": "updateUI(id=active)"
+    },
+    {
+      "id": "web/src/systems.js#149:objectFor",
+      "path": "web/src/systems.js",
+      "name": "objectFor",
+      "kind": "function_declaration",
+      "line": 149,
+      "end_line": 149,
+      "scope": "web/src/systems.js#42:createSystems",
+      "signature": "objectFor(id)"
+    },
+    {
+      "id": "web/src/systems.js#150:geometryBounds",
+      "path": "web/src/systems.js",
+      "name": "geometryBounds",
+      "kind": "function_declaration",
+      "line": 150,
+      "end_line": 150,
+      "scope": "web/src/systems.js#42:createSystems",
+      "signature": "geometryBounds(object)"
+    },
+    {
+      "id": "web/src/systems.js#151:viewportAspect",
+      "path": "web/src/systems.js",
+      "name": "viewportAspect",
+      "kind": "function_declaration",
+      "line": 151,
+      "end_line": 151,
+      "scope": "web/src/systems.js#42:createSystems",
+      "signature": "viewportAspect()"
+    },
+    {
+      "id": "web/src/systems.js#153:frame",
+      "path": "web/src/systems.js",
+      "name": "frame",
+      "kind": "function_declaration",
+      "line": 153,
+      "end_line": 153,
+      "scope": "web/src/systems.js#42:createSystems",
+      "signature": "frame(id,direction=directions[currentView],animate=true)"
+    },
+    {
+      "id": "web/src/systems.js#154:show",
+      "path": "web/src/systems.js",
+      "name": "show",
+      "kind": "function_declaration",
+      "line": 154,
+      "end_line": 154,
+      "scope": "web/src/systems.js#42:createSystems",
+      "signature": "show(id='overview',animate=true)"
+    },
+    {
+      "id": "web/src/systems.js#155:view",
+      "path": "web/src/systems.js",
+      "name": "view",
+      "kind": "function_declaration",
+      "line": 155,
+      "end_line": 155,
+      "scope": "web/src/systems.js#42:createSystems",
+      "signature": "view(name)"
+    },
+    {
+      "id": "web/src/systems.js#156:captureGhost",
+      "path": "web/src/systems.js",
+      "name": "captureGhost",
+      "kind": "function_declaration",
+      "line": 156,
+      "end_line": 156,
+      "scope": "web/src/systems.js#42:createSystems",
+      "signature": "captureGhost()"
+    },
+    {
+      "id": "web/src/systems.js#156:cloneMaterial",
+      "path": "web/src/systems.js",
+      "name": "cloneMaterial",
+      "kind": "variable_declarator",
+      "line": 156,
+      "end_line": 156,
+      "scope": "web/src/systems.js#156:captureGhost",
+      "signature": "cloneMaterial"
+    },
+    {
+      "id": "web/src/systems.js#157:setGhost",
+      "path": "web/src/systems.js",
+      "name": "setGhost",
+      "kind": "function_declaration",
+      "line": 157,
+      "end_line": 157,
+      "scope": "web/src/systems.js#42:createSystems",
+      "signature": "setGhost(on)"
+    },
+    {
+      "id": "web/src/systems.js#158:setEnabled",
+      "path": "web/src/systems.js",
+      "name": "setEnabled",
+      "kind": "function_declaration",
+      "line": 158,
+      "end_line": 158,
+      "scope": "web/src/systems.js#42:createSystems",
+      "signature": "setEnabled(on)"
+    },
+    {
+      "id": "web/src/systems.js#162:onPointerDown",
+      "path": "web/src/systems.js",
+      "name": "onPointerDown",
+      "kind": "variable_declarator",
+      "line": 162,
+      "end_line": 162,
+      "scope": "web/src/systems.js#42:createSystems",
+      "signature": "onPointerDown"
+    },
+    {
+      "id": "web/src/systems.js#163:onPointerUp",
+      "path": "web/src/systems.js",
+      "name": "onPointerUp",
+      "kind": "variable_declarator",
+      "line": 163,
+      "end_line": 163,
+      "scope": "web/src/systems.js#42:createSystems",
+      "signature": "onPointerUp"
+    },
+    {
+      "id": "web/src/systems.js#165:onSystemClick",
+      "path": "web/src/systems.js",
+      "name": "onSystemClick",
+      "kind": "variable_declarator",
+      "line": 165,
+      "end_line": 165,
+      "scope": "web/src/systems.js#42:createSystems",
+      "signature": "onSystemClick"
+    },
+    {
+      "id": "web/src/systems.js#166:onSystemKey",
+      "path": "web/src/systems.js",
+      "name": "onSystemKey",
+      "kind": "variable_declarator",
+      "line": 166,
+      "end_line": 166,
+      "scope": "web/src/systems.js#42:createSystems",
+      "signature": "onSystemKey"
+    },
+    {
+      "id": "web/src/systems.js#167:onOverviewClick",
+      "path": "web/src/systems.js",
+      "name": "onOverviewClick",
+      "kind": "variable_declarator",
+      "line": 167,
+      "end_line": 167,
+      "scope": "web/src/systems.js#42:createSystems",
+      "signature": "onOverviewClick()"
+    },
+    {
+      "id": "web/src/systems.js#168:onBackClick",
+      "path": "web/src/systems.js",
+      "name": "onBackClick",
+      "kind": "variable_declarator",
+      "line": 168,
+      "end_line": 168,
+      "scope": "web/src/systems.js#42:createSystems",
+      "signature": "onBackClick()"
+    },
+    {
+      "id": "web/src/systems.js#169:onContextToggle",
+      "path": "web/src/systems.js",
+      "name": "onContextToggle",
+      "kind": "variable_declarator",
+      "line": 169,
+      "end_line": 169,
+      "scope": "web/src/systems.js#42:createSystems",
+      "signature": "onContextToggle()"
+    },
+    {
+      "id": "web/src/systems.js#170:onFlows",
+      "path": "web/src/systems.js",
+      "name": "onFlows",
+      "kind": "variable_declarator",
+      "line": 170,
+      "end_line": 170,
+      "scope": "web/src/systems.js#42:createSystems",
+      "signature": "onFlows()"
+    },
+    {
+      "id": "web/src/systems.js#171:onCovers",
+      "path": "web/src/systems.js",
+      "name": "onCovers",
+      "kind": "variable_declarator",
+      "line": 171,
+      "end_line": 171,
+      "scope": "web/src/systems.js#42:createSystems",
+      "signature": "onCovers()"
+    },
+    {
+      "id": "web/src/systems.js#172:onSchematic",
+      "path": "web/src/systems.js",
+      "name": "onSchematic",
+      "kind": "variable_declarator",
+      "line": 172,
+      "end_line": 172,
+      "scope": "web/src/systems.js#42:createSystems",
+      "signature": "onSchematic()"
+    },
+    {
+      "id": "web/src/systems.js#173:onGhost",
+      "path": "web/src/systems.js",
+      "name": "onGhost",
+      "kind": "variable_declarator",
+      "line": 173,
+      "end_line": 173,
+      "scope": "web/src/systems.js#42:createSystems",
+      "signature": "onGhost()"
+    },
+    {
+      "id": "web/src/systems.js#174:onExplode",
+      "path": "web/src/systems.js",
+      "name": "onExplode",
+      "kind": "variable_declarator",
+      "line": 174,
+      "end_line": 174,
+      "scope": "web/src/systems.js#42:createSystems",
+      "signature": "onExplode()"
+    },
+    {
+      "id": "web/src/systems.js#183:deactivate",
+      "path": "web/src/systems.js",
+      "name": "deactivate",
+      "kind": "pair",
+      "line": 183,
+      "end_line": 183,
+      "scope": "web/src/systems.js#42:createSystems",
+      "signature": "deactivate()"
+    },
+    {
+      "id": "web/src/systems.js#183:setPaused",
+      "path": "web/src/systems.js",
+      "name": "setPaused",
+      "kind": "method_definition",
+      "line": 183,
+      "end_line": 183,
+      "scope": "web/src/systems.js#42:createSystems",
+      "signature": "setPaused(value)"
+    },
+    {
+      "id": "web/src/systems.js#183:reset",
+      "path": "web/src/systems.js",
+      "name": "reset",
+      "kind": "pair",
+      "line": 183,
+      "end_line": 183,
+      "scope": "web/src/systems.js#42:createSystems",
+      "signature": "reset()"
+    },
+    {
+      "id": "web/src/systems.js#184:setRevealInExplode",
+      "path": "web/src/systems.js",
+      "name": "setRevealInExplode",
+      "kind": "method_definition",
+      "line": 184,
+      "end_line": 184,
+      "scope": "web/src/systems.js#42:createSystems",
+      "signature": "setRevealInExplode(value)"
+    },
+    {
+      "id": "web/src/systems.js#185:active",
+      "path": "web/src/systems.js",
+      "name": "active",
+      "kind": "method_definition",
+      "line": 185,
+      "end_line": 185,
+      "scope": "web/src/systems.js#42:createSystems",
+      "signature": "active()"
+    },
+    {
+      "id": "web/src/systems.js#185:enabled",
+      "path": "web/src/systems.js",
+      "name": "enabled",
+      "kind": "method_definition",
+      "line": 185,
+      "end_line": 185,
+      "scope": "web/src/systems.js#42:createSystems",
+      "signature": "enabled()"
+    },
+    {
+      "id": "web/src/systems.js#185:state",
+      "path": "web/src/systems.js",
+      "name": "state",
+      "kind": "method_definition",
+      "line": 185,
+      "end_line": 185,
+      "scope": "web/src/systems.js#42:createSystems",
+      "signature": "state()"
+    },
+    {
+      "id": "web/src/systems.js#185:ready",
+      "path": "web/src/systems.js",
+      "name": "ready",
+      "kind": "method_definition",
+      "line": 185,
+      "end_line": 185,
+      "scope": "web/src/systems.js#42:createSystems",
+      "signature": "ready()"
+    },
+    {
+      "id": "web/src/systems.js#185:revealing",
+      "path": "web/src/systems.js",
+      "name": "revealing",
+      "kind": "method_definition",
+      "line": 185,
+      "end_line": 185,
+      "scope": "web/src/systems.js#42:createSystems",
+      "signature": "revealing()"
+    },
+    {
+      "id": "web/src/systems.js#185:context",
+      "path": "web/src/systems.js",
+      "name": "context",
+      "kind": "method_definition",
+      "line": 185,
+      "end_line": 185,
+      "scope": "web/src/systems.js#42:createSystems",
+      "signature": "context()"
+    },
+    {
+      "id": "web/src/systems.js#185:parts",
+      "path": "web/src/systems.js",
+      "name": "parts",
+      "kind": "method_definition",
+      "line": 185,
+      "end_line": 185,
+      "scope": "web/src/systems.js#42:createSystems",
+      "signature": "parts()"
+    },
+    {
+      "id": "web/src/systems.js#185:paused",
+      "path": "web/src/systems.js",
+      "name": "paused",
+      "kind": "method_definition",
+      "line": 185,
+      "end_line": 185,
+      "scope": "web/src/systems.js#42:createSystems",
+      "signature": "paused()"
+    },
+    {
+      "id": "web/src/systems.js#186:update",
+      "path": "web/src/systems.js",
+      "name": "update",
+      "kind": "method_definition",
+      "line": 186,
+      "end_line": 200,
+      "scope": "web/src/systems.js#42:createSystems",
+      "signature": "update(dt,now=performance.now()/1000)"
+    },
+    {
+      "id": "web/src/systems.js#201:dispose",
+      "path": "web/src/systems.js",
+      "name": "dispose",
+      "kind": "method_definition",
+      "line": 201,
+      "end_line": 201,
+      "scope": "web/src/systems.js#42:createSystems",
+      "signature": "dispose()"
+    },
+    {
       "id": "web/src/tunnel-visual.js#4:createTunnelVisual",
       "path": "web/src/tunnel-visual.js",
       "name": "createTunnelVisual",
@@ -1880,9 +3589,9 @@
       "name": "createWorkbench",
       "kind": "function_declaration",
       "line": 4,
-      "end_line": 57,
+      "end_line": 62,
       "scope": "module",
-      "signature": "createWorkbench({scene,model,driver,engine,garage,controls,camera,moveCamera,closeEngine,showCar})"
+      "signature": "createWorkbench({scene,model,driver,engine,garage,systems,controls,camera,moveCamera,closeEngine,showCar})"
     },
     {
       "id": "web/src/workbench.js#5:$",
@@ -1895,104 +3604,114 @@
       "signature": "$"
     },
     {
-      "id": "web/src/workbench.js#11:frame",
+      "id": "web/src/workbench.js#14:frame",
       "path": "web/src/workbench.js",
       "name": "frame",
       "kind": "function_declaration",
-      "line": 11,
-      "end_line": 11,
+      "line": 14,
+      "end_line": 14,
       "scope": "web/src/workbench.js#4:createWorkbench",
       "signature": "frame(object)"
     },
     {
-      "id": "web/src/workbench.js#12:view",
+      "id": "web/src/workbench.js#15:view",
       "path": "web/src/workbench.js",
       "name": "view",
       "kind": "function_declaration",
-      "line": 12,
-      "end_line": 19,
+      "line": 15,
+      "end_line": 22,
       "scope": "web/src/workbench.js#4:createWorkbench",
       "signature": "view(name)"
     },
     {
-      "id": "web/src/workbench.js#20:rebuild",
+      "id": "web/src/workbench.js#23:rebuild",
       "path": "web/src/workbench.js",
       "name": "rebuild",
       "kind": "function_declaration",
-      "line": 20,
-      "end_line": 27,
+      "line": 23,
+      "end_line": 30,
       "scope": "web/src/workbench.js#4:createWorkbench",
       "signature": "rebuild()"
     },
     {
-      "id": "web/src/workbench.js#28:refreshPanels",
+      "id": "web/src/workbench.js#31:refreshPanels",
       "path": "web/src/workbench.js",
       "name": "refreshPanels",
       "kind": "function_declaration",
-      "line": 28,
-      "end_line": 28,
+      "line": 31,
+      "end_line": 31,
       "scope": "web/src/workbench.js#4:createWorkbench",
       "signature": "refreshPanels()"
     },
     {
-      "id": "web/src/workbench.js#29:setTab",
+      "id": "web/src/workbench.js#32:setTab",
       "path": "web/src/workbench.js",
       "name": "setTab",
       "kind": "function_declaration",
-      "line": 29,
-      "end_line": 36,
+      "line": 32,
+      "end_line": 40,
       "scope": "web/src/workbench.js#4:createWorkbench",
       "signature": "setTab(next)"
     },
     {
-      "id": "web/src/workbench.js#38:cockpit",
+      "id": "web/src/workbench.js#42:cockpit",
       "path": "web/src/workbench.js",
       "name": "cockpit",
       "kind": "function_declaration",
-      "line": 38,
-      "end_line": 38,
+      "line": 42,
+      "end_line": 42,
       "scope": "web/src/workbench.js#4:createWorkbench",
       "signature": "cockpit()"
     },
     {
-      "id": "web/src/workbench.js#44:downloadModel",
+      "id": "web/src/workbench.js#48:downloadModel",
       "path": "web/src/workbench.js",
       "name": "downloadModel",
       "kind": "function_declaration",
-      "line": 44,
-      "end_line": 46,
+      "line": 48,
+      "end_line": 50,
       "scope": "web/src/workbench.js#4:createWorkbench",
       "signature": "downloadModel(kind)"
     },
     {
-      "id": "web/src/workbench.js#53:inspecting",
+      "id": "web/src/workbench.js#57:inspecting",
       "path": "web/src/workbench.js",
       "name": "inspecting",
       "kind": "method_definition",
-      "line": 53,
-      "end_line": 53,
+      "line": 57,
+      "end_line": 57,
       "scope": "web/src/workbench.js#4:createWorkbench",
       "signature": "inspecting()"
     },
     {
-      "id": "web/src/workbench.js#54:update",
+      "id": "web/src/workbench.js#58:update",
       "path": "web/src/workbench.js",
       "name": "update",
       "kind": "method_definition",
-      "line": 54,
-      "end_line": 54,
+      "line": 58,
+      "end_line": 58,
       "scope": "web/src/workbench.js#4:createWorkbench",
       "signature": "update()"
     },
     {
-      "id": "web/src/workbench.js#55:reset",
+      "id": "web/src/workbench.js#59:reset",
       "path": "web/src/workbench.js",
       "name": "reset",
       "kind": "method_definition",
-      "line": 55,
-      "end_line": 55,
+      "line": 59,
+      "end_line": 59,
       "scope": "web/src/workbench.js#4:createWorkbench",
       "signature": "reset()"
+    },
+    {
+      "id": "web/src/workbench.js#60:systemActive",
+      "path": "web/src/workbench.js",
+      "name": "systemActive",
+      "kind": "method_definition",
+      "line": 60,
+      "end_line": 60,
+      "scope": "web/src/workbench.js#4:createWorkbench",
+      "signature": "systemActive()"
     },
     {
       "id": "web/test-aerodynamics.mjs#5:near",
@@ -2043,6 +3762,36 @@
       "end_line": 6,
       "scope": "web/test-driver-model.mjs#6:createElement",
       "signature": "getContext()"
+    },
+    {
+      "id": "web/test-systems.mjs#88:nodesOf",
+      "path": "web/test-systems.mjs",
+      "name": "nodesOf",
+      "kind": "variable_declarator",
+      "line": 88,
+      "end_line": 88,
+      "scope": "module",
+      "signature": "nodesOf(id)"
+    },
+    {
+      "id": "web/test-systems.mjs#89:find",
+      "path": "web/test-systems.mjs",
+      "name": "find",
+      "kind": "variable_declarator",
+      "line": 89,
+      "end_line": 89,
+      "scope": "module",
+      "signature": "find(id, pattern)"
+    },
+    {
+      "id": "web/test-systems.mjs#90:center",
+      "path": "web/test-systems.mjs",
+      "name": "center",
+      "kind": "variable_declarator",
+      "line": 90,
+      "end_line": 90,
+      "scope": "module",
+      "signature": "center(node)"
     }
   ],
   "direct_calls": [
@@ -2082,1333 +3831,1571 @@
       "expression": "require('path')"
     },
     {
-      "path": "web/build.cjs",
+      "path": "ferramentas/otimizar_sistemas.mjs",
       "source": "module",
-      "callee": "require",
-      "line": 1,
-      "expression": "require('fs')"
+      "callee": "createRequire",
+      "line": 13,
+      "expression": "createRequire(path.join(toolRoot, 'package.json'))"
+    },
+    {
+      "path": "ferramentas/otimizar_sistemas.mjs",
+      "source": "ferramentas/otimizar_sistemas.mjs#14:load",
+      "callee": "pathToFileURL",
+      "line": 14,
+      "expression": "pathToFileURL(require.resolve(name))"
+    },
+    {
+      "path": "ferramentas/otimizar_sistemas.mjs",
+      "source": "module",
+      "callee": "load",
+      "line": 15,
+      "expression": "load('@gltf-transform/core')"
+    },
+    {
+      "path": "ferramentas/otimizar_sistemas.mjs",
+      "source": "module",
+      "callee": "load",
+      "line": 16,
+      "expression": "load('@gltf-transform/extensions')"
+    },
+    {
+      "path": "ferramentas/otimizar_sistemas.mjs",
+      "source": "module",
+      "callee": "load",
+      "line": 17,
+      "expression": "load('meshoptimizer')"
+    },
+    {
+      "path": "ferramentas/otimizar_sistemas.mjs",
+      "source": "module",
+      "callee": "load",
+      "line": 20,
+      "expression": "load('@gltf-transform/functions')"
+    },
+    {
+      "path": "ferramentas/otimizar_sistemas.mjs",
+      "source": "module",
+      "callee": "systemNames",
+      "line": 35,
+      "expression": "systemNames(root)"
+    },
+    {
+      "path": "ferramentas/otimizar_sistemas.mjs",
+      "source": "module",
+      "callee": "partCount",
+      "line": 36,
+      "expression": "partCount(root)"
+    },
+    {
+      "path": "ferramentas/otimizar_sistemas.mjs",
+      "source": "module",
+      "callee": "systemNames",
+      "line": 45,
+      "expression": "systemNames(decoded.getRoot())"
+    },
+    {
+      "path": "ferramentas/otimizar_sistemas.mjs",
+      "source": "module",
+      "callee": "partCount",
+      "line": 46,
+      "expression": "partCount(decoded.getRoot())"
+    },
+    {
+      "path": "ferramentas/otimizar_sistemas.mjs",
+      "source": "module",
+      "callee": "createHash",
+      "line": 70,
+      "expression": "createHash('sha256')"
     },
     {
       "path": "web/build.cjs",
       "source": "module",
       "callee": "require",
       "line": 1,
+      "expression": "require('node:fs')"
+    },
+    {
+      "path": "web/build.cjs",
+      "source": "module",
+      "callee": "require",
+      "line": 2,
+      "expression": "require('node:path')"
+    },
+    {
+      "path": "web/build.cjs",
+      "source": "module",
+      "callee": "require",
+      "line": 3,
       "expression": "require('esbuild')"
     },
     {
-      "path": "web/server.cjs",
+      "path": "web/build.cjs",
       "source": "module",
-      "callee": "require",
-      "line": 1,
-      "expression": "require('http')"
+      "callee": "source",
+      "line": 18,
+      "expression": "source('src', 'app-v2.js')"
+    },
+    {
+      "path": "web/build.cjs",
+      "source": "module",
+      "callee": "source",
+      "line": 25,
+      "expression": "source('src', 'template-v2.html')"
+    },
+    {
+      "path": "web/build.cjs",
+      "source": "module",
+      "callee": "source",
+      "line": 26,
+      "expression": "source('assets', 'carro-aula-v2.glb')"
+    },
+    {
+      "path": "web/build.cjs",
+      "source": "module",
+      "callee": "replaceRequired",
+      "line": 27,
+      "expression": "replaceRequired(template, '__MODEL__', model)"
+    },
+    {
+      "path": "web/build.cjs",
+      "source": "module",
+      "callee": "replaceRequired",
+      "line": 28,
+      "expression": "replaceRequired(withModel, '__APP__', bundle.replace(/<\\/script/gi, '<\\\\/script'))"
+    },
+    {
+      "path": "web/build.cjs",
+      "source": "module",
+      "callee": "source",
+      "line": 30,
+      "expression": "source('index.html')"
     },
     {
       "path": "web/server.cjs",
       "source": "module",
       "callee": "require",
       "line": 1,
-      "expression": "require('fs')"
+      "expression": "require('node:fs')"
     },
     {
       "path": "web/server.cjs",
       "source": "module",
       "callee": "require",
-      "line": 1,
-      "expression": "require('path')"
+      "line": 2,
+      "expression": "require('node:http')"
+    },
+    {
+      "path": "web/server.cjs",
+      "source": "module",
+      "callee": "require",
+      "line": 3,
+      "expression": "require('node:path')"
     },
     {
       "path": "web/server.cjs",
       "source": "module",
       "callee": "Number",
-      "line": 2,
-      "expression": "Number(process.env.PORT||5186)"
+      "line": 6,
+      "expression": "Number(process.env.PORT || 5186)"
+    },
+    {
+      "path": "web/server.cjs",
+      "source": "module",
+      "callee": "reply",
+      "line": 28,
+      "expression": "reply(response, 405, 'Método não permitido')"
     },
     {
       "path": "web/server.cjs",
       "source": "module",
       "callee": "decodeURIComponent",
-      "line": 3,
-      "expression": "decodeURIComponent(new URL(req.url,'http://localhost').pathname)"
+      "line": 34,
+      "expression": "decodeURIComponent(new URL(request.url, 'http://localhost').pathname)"
+    },
+    {
+      "path": "web/server.cjs",
+      "source": "module",
+      "callee": "reply",
+      "line": 36,
+      "expression": "reply(response, 400, 'Endereço inválido')"
+    },
+    {
+      "path": "web/server.cjs",
+      "source": "module",
+      "callee": "reply",
+      "line": 43,
+      "expression": "reply(response, 403, 'Acesso negado')"
+    },
+    {
+      "path": "web/server.cjs",
+      "source": "module",
+      "callee": "reply",
+      "line": 49,
+      "expression": "reply(response, error.code === 'ENOENT' ? 404 : 500, error.code === 'ENOENT' ? 'Não encontrado' : 'Falha ao ler arquivo')"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "$",
-      "line": 24,
+      "line": 25,
       "expression": "$('#stage')"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "matchMedia",
-      "line": 24,
+      "line": 25,
       "expression": "matchMedia('(prefers-reduced-motion: reduce)')"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "brandSVG",
-      "line": 25,
+      "line": 26,
       "expression": "brandSVG()"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "setupStudio",
-      "line": 29,
+      "line": 30,
       "expression": "setupStudio(THREE,renderer,scene)"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "$",
-      "line": 33,
+      "line": 34,
       "expression": "$('#loop')"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "$",
-      "line": 33,
+      "line": 34,
       "expression": "$('#spin')"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "$",
-      "line": 33,
+      "line": 34,
       "expression": "$('#steering')"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "$",
-      "line": 33,
+      "line": 34,
       "expression": "$('#drs')"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "$",
-      "line": 33,
+      "line": 34,
       "expression": "$('#steering-value')"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "$",
-      "line": 33,
+      "line": 34,
       "expression": "$('#drs-value')"
     },
     {
       "path": "web/src/app-v2.js",
-      "source": "web/src/app-v2.js#35:closeEngine",
+      "source": "web/src/app-v2.js#36:closeEngine",
       "callee": "$",
-      "line": 35,
+      "line": 36,
       "expression": "$(\"#engine-open\")"
     },
     {
       "path": "web/src/app-v2.js",
-      "source": "web/src/app-v2.js#35:closeEngine",
+      "source": "web/src/app-v2.js#36:closeEngine",
       "callee": "$",
-      "line": 35,
+      "line": 36,
       "expression": "$(\"#engine-open\")"
     },
     {
       "path": "web/src/app-v2.js",
-      "source": "web/src/app-v2.js#37:setFlowXray",
+      "source": "web/src/app-v2.js#38:setFlowXray",
       "callee": "clone",
-      "line": 38,
+      "line": 39,
       "expression": "clone(original)"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "$",
-      "line": 44,
+      "line": 45,
       "expression": "$('#loading')"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "$",
-      "line": 44,
+      "line": 45,
       "expression": "$('#status')"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "$",
-      "line": 44,
+      "line": 45,
       "expression": "$('#assembly')"
     },
     {
       "path": "web/src/app-v2.js",
-      "source": "web/src/app-v2.js#46:view",
-      "callee": "moveCamera",
-      "line": 46,
-      "expression": "moveCamera(target.clone().addScaledVector(new THREE.Vector3(...views[name]).normalize(),distance*expanded),target,animate)"
+      "source": "web/src/app-v2.js#47:setCarSelectionEnabled",
+      "callee": "$",
+      "line": 47,
+      "expression": "$('#'+id)"
     },
     {
       "path": "web/src/app-v2.js",
-      "source": "web/src/app-v2.js#46:view",
-      "callee": "String",
-      "line": 46,
-      "expression": "String(b.dataset.view===name)"
+      "source": "web/src/app-v2.js#47:setCarSelectionEnabled",
+      "callee": "refreshSelection",
+      "line": 47,
+      "expression": "refreshSelection()"
     },
     {
       "path": "web/src/app-v2.js",
-      "source": "web/src/app-v2.js#48:resize",
-      "callee": "view",
+      "source": "web/src/app-v2.js#48:syncSystemMode",
+      "callee": "Boolean",
       "line": 48,
+      "expression": "Boolean(systems?.enabled)"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "web/src/app-v2.js#48:syncSystemMode",
+      "callee": "setCarSelectionEnabled",
+      "line": 48,
+      "expression": "setCarSelectionEnabled(!active)"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "web/src/app-v2.js#48:syncSystemMode",
+      "callee": "select",
+      "line": 48,
+      "expression": "select(null)"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "web/src/app-v2.js#48:syncSystemMode",
+      "callee": "$",
+      "line": 48,
+      "expression": "$('#orbit')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "web/src/app-v2.js#50:view",
+      "callee": "String",
+      "line": 50,
+      "expression": "String(b.dataset.view===currentView)"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "web/src/app-v2.js#50:view",
+      "callee": "moveCamera",
+      "line": 50,
+      "expression": "moveCamera(target.clone().addScaledVector(new THREE.Vector3(...views[currentView]).normalize(),distance*expanded),target,animate)"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "web/src/app-v2.js#52:resize",
+      "callee": "view",
+      "line": 52,
       "expression": "view(currentView,false)"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "resize",
-      "line": 49,
+      "line": 53,
       "expression": "resize()"
     },
     {
       "path": "web/src/app-v2.js",
-      "source": "web/src/app-v2.js#50:refreshSelection",
+      "source": "web/src/app-v2.js#54:refreshSelection",
       "callee": "$",
-      "line": 50,
+      "line": 54,
       "expression": "$('#selected-name')"
     },
     {
       "path": "web/src/app-v2.js",
-      "source": "web/src/app-v2.js#50:refreshSelection",
+      "source": "web/src/app-v2.js#54:refreshSelection",
       "callee": "$",
-      "line": 50,
+      "line": 54,
       "expression": "$('#selected-category')"
     },
     {
       "path": "web/src/app-v2.js",
-      "source": "web/src/app-v2.js#50:refreshSelection",
+      "source": "web/src/app-v2.js#54:refreshSelection",
       "callee": "$",
-      "line": 50,
+      "line": 54,
       "expression": "$('#part-offset')"
     },
     {
       "path": "web/src/app-v2.js",
-      "source": "web/src/app-v2.js#50:refreshSelection",
+      "source": "web/src/app-v2.js#54:refreshSelection",
       "callee": "$",
-      "line": 50,
+      "line": 54,
       "expression": "$('#focus-part')"
     },
     {
       "path": "web/src/app-v2.js",
-      "source": "web/src/app-v2.js#50:refreshSelection",
+      "source": "web/src/app-v2.js#54:refreshSelection",
       "callee": "$",
-      "line": 50,
+      "line": 54,
       "expression": "$('#isolate')"
     },
     {
       "path": "web/src/app-v2.js",
-      "source": "web/src/app-v2.js#50:refreshSelection",
+      "source": "web/src/app-v2.js#54:refreshSelection",
       "callee": "$",
-      "line": 50,
+      "line": 54,
       "expression": "$('#isolate')"
     },
     {
       "path": "web/src/app-v2.js",
-      "source": "web/src/app-v2.js#50:refreshSelection",
+      "source": "web/src/app-v2.js#54:refreshSelection",
       "callee": "String",
-      "line": 50,
+      "line": 54,
       "expression": "String(mechanics.isolated)"
     },
     {
       "path": "web/src/app-v2.js",
-      "source": "web/src/app-v2.js#50:refreshSelection",
+      "source": "web/src/app-v2.js#54:refreshSelection",
       "callee": "$",
-      "line": 50,
+      "line": 54,
       "expression": "$('#part-offset')"
     },
     {
       "path": "web/src/app-v2.js",
-      "source": "web/src/app-v2.js#50:refreshSelection",
+      "source": "web/src/app-v2.js#54:refreshSelection",
       "callee": "$",
-      "line": 50,
+      "line": 54,
       "expression": "$('#offset-value')"
     },
     {
       "path": "web/src/app-v2.js",
-      "source": "web/src/app-v2.js#50:refreshSelection",
+      "source": "web/src/app-v2.js#54:refreshSelection",
       "callee": "$",
-      "line": 50,
+      "line": 54,
       "expression": "$('#part-select')"
     },
     {
       "path": "web/src/app-v2.js",
-      "source": "web/src/app-v2.js#51:select",
+      "source": "web/src/app-v2.js#55:select",
       "callee": "closeEngine",
-      "line": 51,
+      "line": 55,
       "expression": "closeEngine()"
     },
     {
       "path": "web/src/app-v2.js",
-      "source": "web/src/app-v2.js#51:select",
+      "source": "web/src/app-v2.js#55:select",
       "callee": "Number",
-      "line": 51,
+      "line": 55,
       "expression": "Number(id)"
     },
     {
       "path": "web/src/app-v2.js",
-      "source": "web/src/app-v2.js#51:select",
+      "source": "web/src/app-v2.js#55:select",
       "callee": "refreshSelection",
-      "line": 51,
+      "line": 55,
       "expression": "refreshSelection()"
     },
     {
       "path": "web/src/app-v2.js",
-      "source": "web/src/app-v2.js#51:select",
+      "source": "web/src/app-v2.js#55:select",
       "callee": "$",
-      "line": 51,
+      "line": 55,
       "expression": "$('#free-move')"
     },
     {
       "path": "web/src/app-v2.js",
-      "source": "web/src/app-v2.js#52:focusPart",
+      "source": "web/src/app-v2.js#56:focusPart",
       "callee": "moveCamera",
-      "line": 52,
+      "line": 56,
       "expression": "moveCamera(target.clone().addScaledVector(camera.position.clone().sub(controls.target).normalize(),d),target)"
     },
     {
       "path": "web/src/app-v2.js",
-      "source": "web/src/app-v2.js#53:assemblyTo",
+      "source": "web/src/app-v2.js#57:assemblyTo",
       "callee": "closeEngine",
-      "line": 53,
+      "line": 57,
       "expression": "closeEngine()"
     },
     {
       "path": "web/src/app-v2.js",
-      "source": "web/src/app-v2.js#53:assemblyTo",
+      "source": "web/src/app-v2.js#57:assemblyTo",
       "callee": "$",
-      "line": 53,
+      "line": 57,
       "expression": "$('#assembly-value')"
     },
     {
       "path": "web/src/app-v2.js",
-      "source": "web/src/app-v2.js#53:assemblyTo",
+      "source": "web/src/app-v2.js#57:assemblyTo",
       "callee": "$",
-      "line": 53,
+      "line": 57,
       "expression": "$('#loop')"
     },
     {
       "path": "web/src/app-v2.js",
-      "source": "web/src/app-v2.js#53:assemblyTo",
+      "source": "web/src/app-v2.js#57:assemblyTo",
       "callee": "view",
-      "line": 53,
+      "line": 57,
       "expression": "view(currentView)"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "atob",
-      "line": 54,
+      "line": 58,
       "expression": "atob($('#model-data').textContent.trim())"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "$",
-      "line": 54,
+      "line": 58,
       "expression": "$('#model-data')"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "applyCarMaterials",
-      "line": 58,
+      "line": 62,
       "expression": "applyCarMaterials(THREE,model)"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "createMechanics",
-      "line": 58,
+      "line": 62,
       "expression": "createMechanics(model)"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "applyInteiaBranding",
-      "line": 58,
+      "line": 62,
       "expression": "applyInteiaBranding(model,mechanics)"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "createSurfaceLibrary",
-      "line": 59,
+      "line": 63,
       "expression": "createSurfaceLibrary(THREE,{renderer,mobile:innerWidth<700})"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "enhanceCar",
-      "line": 61,
+      "line": 65,
       "expression": "enhanceCar({model,mechanics,mobile:innerWidth<700})"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "createSennaDriver",
-      "line": 61,
+      "line": 65,
       "expression": "createSennaDriver(model,mechanics)"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "setupCustomization",
-      "line": 62,
+      "line": 66,
       "expression": "setupCustomization(materials,studio,renderer,scene)"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "$",
-      "line": 63,
+      "line": 67,
       "expression": "$('#color-'+id)"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "$",
-      "line": 63,
+      "line": 67,
       "expression": "$('#value-'+id)"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "createInCarEngine",
-      "line": 64,
+      "line": 68,
       "expression": "createInCarEngine({scene,renderer,camera,model,mechanics,target:()=>composer.readBuffer,mobile:innerWidth<700})"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "createGarage",
-      "line": 65,
+      "line": 69,
       "expression": "createGarage({scene,renderer,studio,camera,mechanics})"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
+      "callee": "createSystems",
+      "line": 69,
+      "expression": "createSystems({scene,model,mechanics,engine,driver,garage,camera,canvas:renderer.domElement,moveCamera,showCar:()=>view('hero'),onClose:()=>workbench?.setTab('car'),mobile:innerWid"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "web/src/app-v2.js#69:showCar",
+      "callee": "view",
+      "line": 69,
+      "expression": "view('hero')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
       "callee": "createWindTunnel",
-      "line": 65,
+      "line": 69,
       "expression": "createWindTunnel({scene,model,mechanics,reduced,studio,camera,onBeforeToggle:on=>{closeEngine();if(on){garageWasActive=garage.enabled;garage.setEnabled(false);}},onRegion:region=>{"
     },
     {
       "path": "web/src/app-v2.js",
-      "source": "web/src/app-v2.js#65:onBeforeToggle",
+      "source": "web/src/app-v2.js#69:onBeforeToggle",
       "callee": "closeEngine",
-      "line": 65,
+      "line": 69,
       "expression": "closeEngine()"
     },
     {
       "path": "web/src/app-v2.js",
-      "source": "web/src/app-v2.js#65:onRegion",
+      "source": "web/src/app-v2.js#69:onRegion",
       "callee": "setFlowXray",
-      "line": 65,
+      "line": 69,
       "expression": "setFlowXray(region==='floor')"
     },
     {
       "path": "web/src/app-v2.js",
-      "source": "web/src/app-v2.js#65:onRegion",
+      "source": "web/src/app-v2.js#69:onRegion",
       "callee": "$",
-      "line": 65,
+      "line": 69,
       "expression": "$('#wind-cinema')"
     },
     {
       "path": "web/src/app-v2.js",
-      "source": "web/src/app-v2.js#65:onRegion",
+      "source": "web/src/app-v2.js#69:onRegion",
       "callee": "$",
-      "line": 65,
+      "line": 69,
       "expression": "$('#orbit')"
     },
     {
       "path": "web/src/app-v2.js",
-      "source": "web/src/app-v2.js#65:onRegion",
+      "source": "web/src/app-v2.js#69:onRegion",
       "callee": "moveCamera",
-      "line": 65,
+      "line": 69,
       "expression": "moveCamera(target.clone().addScaledVector(direction.normalize(),distance*scale),target)"
     },
     {
       "path": "web/src/app-v2.js",
-      "source": "web/src/app-v2.js#65:onToggle",
+      "source": "web/src/app-v2.js#69:onToggle",
       "callee": "setFlowXray",
-      "line": 65,
+      "line": 69,
       "expression": "setFlowXray(on&&$('#flow-region').value==='floor'&&$('#flow-detail').getAttribute('aria-pressed')==='true')"
     },
     {
       "path": "web/src/app-v2.js",
-      "source": "web/src/app-v2.js#65:onToggle",
+      "source": "web/src/app-v2.js#69:onToggle",
       "callee": "$",
-      "line": 65,
+      "line": 69,
       "expression": "$('#flow-region')"
     },
     {
       "path": "web/src/app-v2.js",
-      "source": "web/src/app-v2.js#65:onToggle",
+      "source": "web/src/app-v2.js#69:onToggle",
       "callee": "$",
-      "line": 65,
+      "line": 69,
       "expression": "$('#flow-detail')"
     },
     {
       "path": "web/src/app-v2.js",
-      "source": "web/src/app-v2.js#65:onToggle",
+      "source": "web/src/app-v2.js#69:onToggle",
       "callee": "$",
-      "line": 65,
+      "line": 69,
       "expression": "$(\"#wind-cinema\")"
     },
     {
       "path": "web/src/app-v2.js",
-      "source": "web/src/app-v2.js#65:onToggle",
+      "source": "web/src/app-v2.js#69:onToggle",
       "callee": "$",
-      "line": 65,
+      "line": 69,
       "expression": "$(\"#orbit\")"
     },
     {
       "path": "web/src/app-v2.js",
-      "source": "web/src/app-v2.js#65:onToggle",
+      "source": "web/src/app-v2.js#69:onToggle",
       "callee": "moveCamera",
-      "line": 65,
+      "line": 69,
       "expression": "moveCamera(target.clone().addScaledVector(new THREE.Vector3(1,.28,1.4).normalize(),distance*(on?1.14:1)),target)"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "createWorkbench",
-      "line": 66,
-      "expression": "createWorkbench({scene,model,driver,engine,garage,controls,camera,moveCamera,closeEngine,showCar:()=>view('hero')})"
+      "line": 70,
+      "expression": "createWorkbench({scene,model,driver,engine,garage,systems,controls,camera,moveCamera,closeEngine,showCar:()=>view('hero')})"
     },
     {
       "path": "web/src/app-v2.js",
-      "source": "web/src/app-v2.js#66:showCar",
+      "source": "web/src/app-v2.js#70:showCar",
       "callee": "view",
-      "line": 66,
+      "line": 70,
       "expression": "view('hero')"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "$",
-      "line": 67,
+      "line": 71,
       "expression": "$('#part-select')"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "$",
-      "line": 68,
+      "line": 72,
       "expression": "$('#part-count')"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "resize",
-      "line": 68,
+      "line": 72,
       "expression": "resize()"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "$",
-      "line": 72,
+      "line": 76,
       "expression": "$('#wind-cinema')"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "$",
-      "line": 72,
+      "line": 76,
       "expression": "$('#orbit')"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "view",
-      "line": 72,
+      "line": 76,
       "expression": "view(b.dataset.view)"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "$",
-      "line": 73,
+      "line": 77,
       "expression": "$('#garage-toggle')"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "$",
-      "line": 73,
+      "line": 77,
       "expression": "$('#wind-toggle')"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "view",
-      "line": 73,
+      "line": 77,
       "expression": "view('hero')"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "$",
-      "line": 74,
+      "line": 78,
       "expression": "$('#garage-export')"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "$",
-      "line": 74,
+      "line": 78,
       "expression": "$('#garage-export')"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "setTimeout",
-      "line": 74,
+      "line": 78,
       "expression": "setTimeout(()=>URL.revokeObjectURL(url),10000)"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "$",
-      "line": 75,
+      "line": 79,
       "expression": "$('#garage-view')"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "moveCamera",
-      "line": 75,
+      "line": 79,
       "expression": "moveCamera(target.clone().addScaledVector(new THREE.Vector3(.65,.40,1).normalize(),distance*1.4),target)"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "$",
-      "line": 76,
+      "line": 80,
       "expression": "$('#orbit')"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "$",
-      "line": 76,
+      "line": 80,
       "expression": "$('#wind-cinema')"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "$",
-      "line": 76,
+      "line": 80,
       "expression": "$('#orbit')"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "String",
-      "line": 76,
+      "line": 80,
       "expression": "String(controls.autoRotate)"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "$",
-      "line": 77,
+      "line": 81,
       "expression": "$('#theme')"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "$",
-      "line": 77,
+      "line": 81,
       "expression": "$('#theme')"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "String",
-      "line": 77,
+      "line": 81,
       "expression": "String(dark)"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "$",
-      "line": 77,
+      "line": 81,
       "expression": "$('#theme')"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "$",
-      "line": 78,
+      "line": 82,
       "expression": "$('#quality')"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "$",
-      "line": 78,
+      "line": 82,
       "expression": "$('#quality')"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "String",
-      "line": 78,
+      "line": 82,
       "expression": "String(highQuality)"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "$",
-      "line": 78,
+      "line": 82,
       "expression": "$('#quality')"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "$",
-      "line": 79,
+      "line": 83,
       "expression": "$('#wire')"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "$",
-      "line": 79,
+      "line": 83,
       "expression": "$('#wire')"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "$",
-      "line": 79,
+      "line": 83,
       "expression": "$('#wire')"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "String",
-      "line": 79,
+      "line": 83,
       "expression": "String(enabled)"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "assemblyTo",
-      "line": 80,
+      "line": 84,
       "expression": "assemblyTo(Number(assembly.value)/100)"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "Number",
-      "line": 80,
+      "line": 84,
       "expression": "Number(assembly.value)"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "$",
-      "line": 81,
+      "line": 85,
       "expression": "$('#explode')"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "assemblyTo",
-      "line": 81,
+      "line": 85,
       "expression": "assemblyTo(1)"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "$",
-      "line": 81,
+      "line": 85,
       "expression": "$('#assemble')"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "assemblyTo",
-      "line": 81,
+      "line": 85,
       "expression": "assemblyTo(0)"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "refreshSelection",
-      "line": 81,
+      "line": 85,
       "expression": "refreshSelection()"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "$",
-      "line": 82,
+      "line": 86,
       "expression": "$('#loop')"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "closeEngine",
-      "line": 82,
+      "line": 86,
       "expression": "closeEngine()"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "$",
-      "line": 82,
+      "line": 86,
       "expression": "$('#loop')"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "String",
-      "line": 82,
+      "line": 86,
       "expression": "String(mechanics.playing)"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "$",
-      "line": 83,
+      "line": 87,
       "expression": "$('#part-select')"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "select",
-      "line": 83,
+      "line": 87,
       "expression": "select(e.target.value===''?null:e.target.value)"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "$",
-      "line": 84,
+      "line": 88,
       "expression": "$('#clear-selection')"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "select",
-      "line": 84,
+      "line": 88,
       "expression": "select(null)"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "$",
-      "line": 84,
+      "line": 88,
       "expression": "$('#focus-part')"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
+      "callee": "focusPart",
+      "line": 88,
+      "expression": "focusPart()"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
       "callee": "$",
-      "line": 84,
+      "line": 88,
       "expression": "$('#isolate')"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "refreshSelection",
-      "line": 84,
+      "line": 88,
       "expression": "refreshSelection()"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "$",
-      "line": 85,
+      "line": 89,
       "expression": "$('#free-move')"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "$",
-      "line": 85,
+      "line": 89,
       "expression": "$('#free-move')"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "String",
-      "line": 85,
+      "line": 89,
       "expression": "String(freeMove)"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "$",
-      "line": 86,
+      "line": 90,
       "expression": "$('#part-offset')"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "Number",
-      "line": 86,
+      "line": 90,
       "expression": "Number(e.target.value)"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "$",
-      "line": 86,
+      "line": 90,
       "expression": "$('#offset-value')"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "$",
-      "line": 87,
+      "line": 91,
       "expression": "$('#spin')"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "$",
-      "line": 87,
+      "line": 91,
       "expression": "$('#spin')"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "$",
-      "line": 87,
+      "line": 91,
       "expression": "$('#spin')"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "String",
-      "line": 87,
+      "line": 91,
       "expression": "String(on)"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "$",
-      "line": 88,
+      "line": 92,
       "expression": "$('#steering')"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "Number",
-      "line": 88,
+      "line": 92,
       "expression": "Number(e.target.value)"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "$",
-      "line": 88,
+      "line": 92,
       "expression": "$('#steering-value')"
-    },
-    {
-      "path": "web/src/app-v2.js",
-      "source": "module",
-      "callee": "$",
-      "line": 89,
-      "expression": "$('#drs')"
-    },
-    {
-      "path": "web/src/app-v2.js",
-      "source": "module",
-      "callee": "Number",
-      "line": 89,
-      "expression": "Number(e.target.value)"
-    },
-    {
-      "path": "web/src/app-v2.js",
-      "source": "module",
-      "callee": "$",
-      "line": 89,
-      "expression": "$('#drs-value')"
-    },
-    {
-      "path": "web/src/app-v2.js",
-      "source": "module",
-      "callee": "$",
-      "line": 90,
-      "expression": "$('#reset')"
-    },
-    {
-      "path": "web/src/app-v2.js",
-      "source": "module",
-      "callee": "closeEngine",
-      "line": 90,
-      "expression": "closeEngine()"
-    },
-    {
-      "path": "web/src/app-v2.js",
-      "source": "module",
-      "callee": "$",
-      "line": 90,
-      "expression": "$('#free-move')"
-    },
-    {
-      "path": "web/src/app-v2.js",
-      "source": "module",
-      "callee": "select",
-      "line": 90,
-      "expression": "select(null)"
-    },
-    {
-      "path": "web/src/app-v2.js",
-      "source": "module",
-      "callee": "$",
-      "line": 90,
-      "expression": "$('#'+id)"
-    },
-    {
-      "path": "web/src/app-v2.js",
-      "source": "module",
-      "callee": "$",
-      "line": 90,
-      "expression": "$('#'+id)"
-    },
-    {
-      "path": "web/src/app-v2.js",
-      "source": "module",
-      "callee": "$",
-      "line": 90,
-      "expression": "$('#assembly-value')"
-    },
-    {
-      "path": "web/src/app-v2.js",
-      "source": "module",
-      "callee": "$",
-      "line": 90,
-      "expression": "$('#steering-value')"
-    },
-    {
-      "path": "web/src/app-v2.js",
-      "source": "module",
-      "callee": "$",
-      "line": 90,
-      "expression": "$('#drs-value')"
-    },
-    {
-      "path": "web/src/app-v2.js",
-      "source": "module",
-      "callee": "view",
-      "line": 90,
-      "expression": "view('hero')"
-    },
-    {
-      "path": "web/src/app-v2.js",
-      "source": "module",
-      "callee": "$",
-      "line": 91,
-      "expression": "$('#zoom-in')"
-    },
-    {
-      "path": "web/src/app-v2.js",
-      "source": "module",
-      "callee": "$",
-      "line": 91,
-      "expression": "$('#zoom-out')"
-    },
-    {
-      "path": "web/src/app-v2.js",
-      "source": "module",
-      "callee": "$",
-      "line": 92,
-      "expression": "$('#photo')"
-    },
-    {
-      "path": "web/src/app-v2.js",
-      "source": "module",
-      "callee": "$",
-      "line": 92,
-      "expression": "$('#photo')"
-    },
-    {
-      "path": "web/src/app-v2.js",
-      "source": "module",
-      "callee": "String",
-      "line": 92,
-      "expression": "String(document.body.classList.contains('photo'))"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "$",
       "line": 93,
-      "expression": "$('#save-photo')"
+      "expression": "$('#drs')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "Number",
+      "line": 93,
+      "expression": "Number(e.target.value)"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "$",
+      "line": 93,
+      "expression": "$('#drs-value')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "$",
+      "line": 94,
+      "expression": "$('#reset')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "Boolean",
+      "line": 94,
+      "expression": "Boolean(systems?.enabled)"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "closeEngine",
+      "line": 94,
+      "expression": "closeEngine()"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "$",
+      "line": 94,
+      "expression": "$('#free-move')"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "select",
-      "line": 96,
-      "expression": "select(hits[0].object.userData.recordId)"
-    },
-    {
-      "path": "web/src/app-v2.js",
-      "source": "module",
-      "callee": "view",
-      "line": 97,
-      "expression": "view('hero')"
-    },
-    {
-      "path": "web/src/app-v2.js",
-      "source": "module",
-      "callee": "select",
-      "line": 97,
+      "line": 94,
       "expression": "select(null)"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "$",
-      "line": 97,
-      "expression": "$('#zoom-in')"
-    },
-    {
-      "path": "web/src/app-v2.js",
-      "source": "module",
-      "callee": "$",
-      "line": 97,
-      "expression": "$('#zoom-out')"
-    },
-    {
-      "path": "web/src/app-v2.js",
-      "source": "module",
-      "callee": "$",
-      "line": 98,
-      "expression": "$('#engine-open')"
-    },
-    {
-      "path": "web/src/app-v2.js",
-      "source": "module",
-      "callee": "closeEngine",
-      "line": 98,
-      "expression": "closeEngine()"
-    },
-    {
-      "path": "web/src/app-v2.js",
-      "source": "module",
-      "callee": "view",
-      "line": 98,
-      "expression": "view('hero')"
-    },
-    {
-      "path": "web/src/app-v2.js",
-      "source": "module",
-      "callee": "$",
-      "line": 98,
-      "expression": "$('#wind-toggle')"
-    },
-    {
-      "path": "web/src/app-v2.js",
-      "source": "module",
-      "callee": "$",
-      "line": 98,
-      "expression": "$('#reset')"
-    },
-    {
-      "path": "web/src/app-v2.js",
-      "source": "module",
-      "callee": "$",
-      "line": 98,
-      "expression": "$('#engine-open')"
-    },
-    {
-      "path": "web/src/app-v2.js",
-      "source": "module",
-      "callee": "$",
-      "line": 98,
-      "expression": "$('#engine-open')"
-    },
-    {
-      "path": "web/src/app-v2.js",
-      "source": "module",
-      "callee": "moveCamera",
-      "line": 98,
-      "expression": "moveCamera(new THREE.Vector3(1.8,1.65,-2.35),new THREE.Vector3(0,.52,-.75))"
-    },
-    {
-      "path": "web/src/app-v2.js",
-      "source": "module",
-      "callee": "$",
-      "line": 99,
-      "expression": "$('#engine-pause')"
-    },
-    {
-      "path": "web/src/app-v2.js",
-      "source": "module",
-      "callee": "$",
-      "line": 99,
-      "expression": "$('#engine-pause')"
-    },
-    {
-      "path": "web/src/app-v2.js",
-      "source": "module",
-      "callee": "String",
-      "line": 99,
-      "expression": "String(enginePaused)"
-    },
-    {
-      "path": "web/src/app-v2.js",
-      "source": "module",
-      "callee": "$",
-      "line": 99,
-      "expression": "$('#engine-pause')"
-    },
-    {
-      "path": "web/src/app-v2.js",
-      "source": "module",
-      "callee": "$",
-      "line": 100,
-      "expression": "$('#engine-cut')"
-    },
-    {
-      "path": "web/src/app-v2.js",
-      "source": "module",
-      "callee": "$",
-      "line": 100,
-      "expression": "$('#engine-cut-value')"
-    },
-    {
-      "path": "web/src/app-v2.js",
-      "source": "module",
-      "callee": "$",
-      "line": 100,
-      "expression": "$('#engine-cut')"
-    },
-    {
-      "path": "web/src/app-v2.js",
-      "source": "module",
-      "callee": "$",
-      "line": 101,
-      "expression": "$('#wind-cinema')"
-    },
-    {
-      "path": "web/src/app-v2.js",
-      "source": "module",
-      "callee": "$",
-      "line": 101,
-      "expression": "$('#wind-cinema')"
-    },
-    {
-      "path": "web/src/app-v2.js",
-      "source": "module",
-      "callee": "String",
-      "line": 101,
-      "expression": "String(cinematic)"
-    },
-    {
-      "path": "web/src/app-v2.js",
-      "source": "module",
-      "callee": "$",
-      "line": 101,
-      "expression": "$('#orbit')"
-    },
-    {
-      "path": "web/src/app-v2.js",
-      "source": "module",
-      "callee": "$",
-      "line": 102,
-      "expression": "$('#wind-cinema')"
-    },
-    {
-      "path": "web/src/app-v2.js",
-      "source": "module",
-      "callee": "$",
-      "line": 104,
-      "expression": "$('#assembly-value')"
-    },
-    {
-      "path": "web/src/app-v2.js",
-      "source": "module",
-      "callee": "view",
-      "line": 104,
-      "expression": "view(currentView)"
-    },
-    {
-      "path": "web/src/app-v2.js",
-      "source": "module",
-      "callee": "$",
-      "line": 104,
-      "expression": "$('#motion-note')"
-    },
-    {
-      "path": "web/src/app-v2.js",
-      "source": "module",
-      "callee": "$",
-      "line": 104,
+      "line": 94,
       "expression": "$('#'+id)"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "$",
-      "line": 104,
-      "expression": "$('#assembly-state')"
-    },
-    {
-      "path": "web/src/app-v2.js",
-      "source": "module",
-      "callee": "Number",
-      "line": 104,
-      "expression": "Number($('#engine-cut').value)"
+      "line": 94,
+      "expression": "$('#'+id)"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "$",
-      "line": 104,
-      "expression": "$('#engine-cut')"
+      "line": 94,
+      "expression": "$('#assembly-value')"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "$",
-      "line": 104,
-      "expression": "$('#engine-status')"
+      "line": 94,
+      "expression": "$('#steering-value')"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "$",
-      "line": 104,
-      "expression": "$('#engine-cut')"
+      "line": 94,
+      "expression": "$('#drs-value')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "view",
+      "line": 94,
+      "expression": "view('hero')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "syncSystemMode",
+      "line": 94,
+      "expression": "syncSystemMode()"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "$",
-      "line": 104,
+      "line": 95,
+      "expression": "$('#zoom-in')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "$",
+      "line": 95,
+      "expression": "$('#zoom-out')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "$",
+      "line": 96,
+      "expression": "$('#photo')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "$",
+      "line": 96,
+      "expression": "$('#photo')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "String",
+      "line": 96,
+      "expression": "String(document.body.classList.contains('photo'))"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "$",
+      "line": 97,
+      "expression": "$('#save-photo')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "select",
+      "line": 100,
+      "expression": "select(hits[0].object.userData.recordId)"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "view",
+      "line": 101,
+      "expression": "view('hero')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "select",
+      "line": 101,
+      "expression": "select(null)"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "$",
+      "line": 101,
+      "expression": "$('#zoom-in')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "$",
+      "line": 101,
+      "expression": "$('#zoom-out')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "$",
+      "line": 102,
+      "expression": "$('#engine-open')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "closeEngine",
+      "line": 102,
+      "expression": "closeEngine()"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "view",
+      "line": 102,
+      "expression": "view('hero')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "$",
+      "line": 102,
+      "expression": "$('#wind-toggle')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "$",
+      "line": 102,
+      "expression": "$('#reset')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "$",
+      "line": 102,
+      "expression": "$('#engine-open')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "$",
+      "line": 102,
+      "expression": "$('#engine-open')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "moveCamera",
+      "line": 102,
+      "expression": "moveCamera(new THREE.Vector3(1.8,1.65,-2.35),new THREE.Vector3(0,.52,-.75))"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "$",
+      "line": 103,
+      "expression": "$('#engine-pause')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "$",
+      "line": 103,
       "expression": "$('#engine-pause')"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "String",
+      "line": 103,
+      "expression": "String(enginePaused)"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "$",
+      "line": 103,
+      "expression": "$('#engine-pause')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "$",
+      "line": 104,
+      "expression": "$('#engine-cut')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "$",
+      "line": 104,
+      "expression": "$('#engine-cut-value')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "$",
+      "line": 104,
+      "expression": "$('#engine-cut')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "$",
       "line": 105,
-      "expression": "String(Math.round(frameCount*1000/(now-frameStart)))"
+      "expression": "$('#wind-cinema')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "$",
+      "line": 105,
+      "expression": "$('#wind-cinema')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "String",
+      "line": 105,
+      "expression": "String(cinematic)"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "$",
+      "line": 105,
+      "expression": "$('#orbit')"
     },
     {
       "path": "web/src/app-v2.js",
       "source": "module",
       "callee": "$",
       "line": 106,
+      "expression": "$('#wind-cinema')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "$",
+      "line": 108,
+      "expression": "$('#assembly-value')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "view",
+      "line": 108,
+      "expression": "view(currentView)"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "$",
+      "line": 108,
+      "expression": "$('#motion-note')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "$",
+      "line": 108,
+      "expression": "$('#'+id)"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "$",
+      "line": 108,
+      "expression": "$('#assembly-state')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "Number",
+      "line": 108,
+      "expression": "Number($('#engine-cut').value)"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "$",
+      "line": 108,
+      "expression": "$('#engine-cut')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "syncSystemMode",
+      "line": 108,
+      "expression": "syncSystemMode()"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "$",
+      "line": 108,
+      "expression": "$('#engine-status')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "$",
+      "line": 108,
+      "expression": "$('#engine-cut')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "$",
+      "line": 108,
+      "expression": "$('#engine-pause')"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "String",
+      "line": 109,
+      "expression": "String(Math.round(frameCount*1000/(now-frameStart)))"
+    },
+    {
+      "path": "web/src/app-v2.js",
+      "source": "module",
+      "callee": "$",
+      "line": 110,
       "expression": "$('#loading')"
     },
     {
@@ -6055,7 +8042,7 @@
       "source": "web/src/surface-library.js#16:createSurfaceLibrary",
       "callee": "bake",
       "line": 45,
-      "expression": "bake('carbon',.024,(x,y)=>{\r\n  const u=x/size*8,v=y/size*8,ix=Math.floor(u),iy=Math.floor(v),over=((ix-iy+16)%4)<2;\r\n  const cross=over?v%1:u%1,along=over?u:v;\r\n  const crown=Math."
+      "expression": "bake('carbon',.024,(x,y)=>{\n  const u=x/size*8,v=y/size*8,ix=Math.floor(u),iy=Math.floor(v),over=((ix-iy+16)%4)<2;\n  const cross=over?v%1:u%1,along=over?u:v;\n  const crown=Math.sin"
     },
     {
       "path": "web/src/surface-library.js",
@@ -6076,7 +8063,7 @@
       "source": "web/src/surface-library.js#16:createSurfaceLibrary",
       "callee": "bake",
       "line": 52,
-      "expression": "bake('rubber',.08,(x,y)=>{\r\n  const grain=noise(x,y,139),soft=(noise(x>>2,y>>2,47)+noise(x>>3,y>>3,113))*.5;\r\n  // Fine mould striations stay faint: no cracks, damage or fake wear "
+      "expression": "bake('rubber',.08,(x,y)=>{\n  const grain=noise(x,y,139),soft=(noise(x>>2,y>>2,47)+noise(x>>3,y>>3,113))*.5;\n  // Fine mould striations stay faint: no cracks, damage or fake wear hi"
     },
     {
       "path": "web/src/surface-library.js",
@@ -6104,7 +8091,7 @@
       "source": "web/src/surface-library.js#16:createSurfaceLibrary",
       "callee": "bake",
       "line": 58,
-      "expression": "bake('aluminum',.12,(x,y)=>{\r\n  const band=noise(0,y,307),grain=noise(x,y,311),wave=Math.sin(x/size*Math.PI*8+y/size*Math.PI*2)*.5+.5;\r\n  return {height:band*.06+grain*.004,value:."
+      "expression": "bake('aluminum',.12,(x,y)=>{\n  const band=noise(0,y,307),grain=noise(x,y,311),wave=Math.sin(x/size*Math.PI*8+y/size*Math.PI*2)*.5+.5;\n  return {height:band*.06+grain*.004,value:.66"
     },
     {
       "path": "web/src/surface-library.js",
@@ -6125,7 +8112,7 @@
       "source": "web/src/surface-library.js#16:createSurfaceLibrary",
       "callee": "bake",
       "line": 62,
-      "expression": "bake('paint',.035,(x,y)=>{\r\n  const grain=noise(x,y,733),orangePeel=Math.sin(x/size*Math.PI*32)*Math.sin(y/size*Math.PI*28);\r\n  return {height:orangePeel*.022+(grain-.5)*.008,value"
+      "expression": "bake('paint',.035,(x,y)=>{\n  const grain=noise(x,y,733),orangePeel=Math.sin(x/size*Math.PI*32)*Math.sin(y/size*Math.PI*28);\n  return {height:orangePeel*.022+(grain-.5)*.008,value:1"
     },
     {
       "path": "web/src/surface-library.js",
@@ -6161,6 +8148,664 @@
       "callee": "transformed",
       "line": 77,
       "expression": "transformed(surface.color,repeat)"
+    },
+    {
+      "path": "web/src/systems.js",
+      "source": "web/src/systems.js#42:createSystems",
+      "callee": "flowTexture",
+      "line": 55,
+      "expression": "flowTexture()"
+    },
+    {
+      "path": "web/src/systems.js",
+      "source": "web/src/systems.js#68:syncView",
+      "callee": "String",
+      "line": 68,
+      "expression": "String(button.dataset.view===name)"
+    },
+    {
+      "path": "web/src/systems.js",
+      "source": "web/src/systems.js#72:attachPart",
+      "callee": "flowMaterial",
+      "line": 78,
+      "expression": "flowMaterial(entry.flow)"
+    },
+    {
+      "path": "web/src/systems.js",
+      "source": "web/src/systems.js#93:distribute",
+      "callee": "attachPart",
+      "line": 103,
+      "expression": "attachPart(node,id,ownerId(node))"
+    },
+    {
+      "path": "web/src/systems.js",
+      "source": "web/src/systems.js#93:distribute",
+      "callee": "ownerId",
+      "line": 103,
+      "expression": "ownerId(node)"
+    },
+    {
+      "path": "web/src/systems.js",
+      "source": "web/src/systems.js#93:distribute",
+      "callee": "prepareMaterials",
+      "line": 105,
+      "expression": "prepareMaterials(root)"
+    },
+    {
+      "path": "web/src/systems.js",
+      "source": "web/src/systems.js#93:distribute",
+      "callee": "applyEra",
+      "line": 106,
+      "expression": "applyEra()"
+    },
+    {
+      "path": "web/src/systems.js",
+      "source": "web/src/systems.js#93:distribute",
+      "callee": "applyCovers",
+      "line": 106,
+      "expression": "applyCovers()"
+    },
+    {
+      "path": "web/src/systems.js",
+      "source": "web/src/systems.js#93:distribute",
+      "callee": "applyExplode",
+      "line": 106,
+      "expression": "applyExplode()"
+    },
+    {
+      "path": "web/src/systems.js",
+      "source": "web/src/systems.js#93:distribute",
+      "callee": "applyFlows",
+      "line": 106,
+      "expression": "applyFlows()"
+    },
+    {
+      "path": "web/src/systems.js",
+      "source": "web/src/systems.js#93:distribute",
+      "callee": "logicalPartCount",
+      "line": 108,
+      "expression": "logicalPartCount()"
+    },
+    {
+      "path": "web/src/systems.js",
+      "source": "web/src/systems.js#110:load",
+      "callee": "setStatus",
+      "line": 112,
+      "expression": "setStatus('Carregando os sistemas em 3D…')"
+    },
+    {
+      "path": "web/src/systems.js",
+      "source": "web/src/systems.js#110:load",
+      "callee": "fetch",
+      "line": 114,
+      "expression": "fetch(assetUrl)"
+    },
+    {
+      "path": "web/src/systems.js",
+      "source": "web/src/systems.js#110:load",
+      "callee": "distribute",
+      "line": 118,
+      "expression": "distribute(gltf)"
+    },
+    {
+      "path": "web/src/systems.js",
+      "source": "web/src/systems.js#110:load",
+      "callee": "setStatus",
+      "line": 118,
+      "expression": "setStatus('')"
+    },
+    {
+      "path": "web/src/systems.js",
+      "source": "web/src/systems.js#110:load",
+      "callee": "show",
+      "line": 119,
+      "expression": "show(active,false)"
+    },
+    {
+      "path": "web/src/systems.js",
+      "source": "web/src/systems.js#110:load",
+      "callee": "setStatus",
+      "line": 120,
+      "expression": "setStatus('Não foi possível carregar os sistemas. Recarregue a página para tentar novamente.')"
+    },
+    {
+      "path": "web/src/systems.js",
+      "source": "web/src/systems.js#130:materialFor",
+      "callee": "translucentOf",
+      "line": 130,
+      "expression": "translucentOf(base)"
+    },
+    {
+      "path": "web/src/systems.js",
+      "source": "web/src/systems.js#131:applyFlows",
+      "callee": "materialFor",
+      "line": 131,
+      "expression": "materialFor(entry)"
+    },
+    {
+      "path": "web/src/systems.js",
+      "source": "web/src/systems.js#132:applySchematic",
+      "callee": "materialFor",
+      "line": 132,
+      "expression": "materialFor(entry)"
+    },
+    {
+      "path": "web/src/systems.js",
+      "source": "web/src/systems.js#132:applySchematic",
+      "callee": "highlight",
+      "line": 132,
+      "expression": "highlight(picked,true)"
+    },
+    {
+      "path": "web/src/systems.js",
+      "source": "web/src/systems.js#134:highlight",
+      "callee": "materialFor",
+      "line": 135,
+      "expression": "materialFor(prev)"
+    },
+    {
+      "path": "web/src/systems.js",
+      "source": "web/src/systems.js#134:highlight",
+      "callee": "materialFor",
+      "line": 139,
+      "expression": "materialFor(entry)"
+    },
+    {
+      "path": "web/src/systems.js",
+      "source": "web/src/systems.js#141:setPicked",
+      "callee": "highlight",
+      "line": 141,
+      "expression": "highlight(entry,Boolean(entry))"
+    },
+    {
+      "path": "web/src/systems.js",
+      "source": "web/src/systems.js#141:setPicked",
+      "callee": "Boolean",
+      "line": 141,
+      "expression": "Boolean(entry)"
+    },
+    {
+      "path": "web/src/systems.js",
+      "source": "web/src/systems.js#141:setPicked",
+      "callee": "meta",
+      "line": 141,
+      "expression": "meta(entry.system)"
+    },
+    {
+      "path": "web/src/systems.js",
+      "source": "web/src/systems.js#143:setERSContext",
+      "callee": "applyEra",
+      "line": 143,
+      "expression": "applyEra()"
+    },
+    {
+      "path": "web/src/systems.js",
+      "source": "web/src/systems.js#143:setERSContext",
+      "callee": "applyCovers",
+      "line": 143,
+      "expression": "applyCovers()"
+    },
+    {
+      "path": "web/src/systems.js",
+      "source": "web/src/systems.js#143:setERSContext",
+      "callee": "applyFlows",
+      "line": 143,
+      "expression": "applyFlows()"
+    },
+    {
+      "path": "web/src/systems.js",
+      "source": "web/src/systems.js#143:setERSContext",
+      "callee": "updateUI",
+      "line": 143,
+      "expression": "updateUI(active)"
+    },
+    {
+      "path": "web/src/systems.js",
+      "source": "web/src/systems.js#143:setERSContext",
+      "callee": "frame",
+      "line": 143,
+      "expression": "frame(active,directions[currentView],false)"
+    },
+    {
+      "path": "web/src/systems.js",
+      "source": "web/src/systems.js#144:updateUI",
+      "callee": "meta",
+      "line": 146,
+      "expression": "meta(id)"
+    },
+    {
+      "path": "web/src/systems.js",
+      "source": "web/src/systems.js#144:updateUI",
+      "callee": "syncView",
+      "line": 146,
+      "expression": "syncView(currentView)"
+    },
+    {
+      "path": "web/src/systems.js",
+      "source": "web/src/systems.js#144:updateUI",
+      "callee": "logicalPartCount",
+      "line": 146,
+      "expression": "logicalPartCount(overview?null:id)"
+    },
+    {
+      "path": "web/src/systems.js",
+      "source": "web/src/systems.js#144:updateUI",
+      "callee": "String",
+      "line": 146,
+      "expression": "String(ersContext==='current2026')"
+    },
+    {
+      "path": "web/src/systems.js",
+      "source": "web/src/systems.js#144:updateUI",
+      "callee": "String",
+      "line": 146,
+      "expression": "String(overview)"
+    },
+    {
+      "path": "web/src/systems.js",
+      "source": "web/src/systems.js#144:updateUI",
+      "callee": "cardFor",
+      "line": 146,
+      "expression": "cardFor(item.id)"
+    },
+    {
+      "path": "web/src/systems.js",
+      "source": "web/src/systems.js#144:updateUI",
+      "callee": "String",
+      "line": 146,
+      "expression": "String(selected)"
+    },
+    {
+      "path": "web/src/systems.js",
+      "source": "web/src/systems.js#144:updateUI",
+      "callee": "String",
+      "line": 147,
+      "expression": "String(flowsOn)"
+    },
+    {
+      "path": "web/src/systems.js",
+      "source": "web/src/systems.js#144:updateUI",
+      "callee": "String",
+      "line": 147,
+      "expression": "String(coversOpen)"
+    },
+    {
+      "path": "web/src/systems.js",
+      "source": "web/src/systems.js#144:updateUI",
+      "callee": "String",
+      "line": 147,
+      "expression": "String(schematic)"
+    },
+    {
+      "path": "web/src/systems.js",
+      "source": "web/src/systems.js#144:updateUI",
+      "callee": "String",
+      "line": 147,
+      "expression": "String(ghostWanted)"
+    },
+    {
+      "path": "web/src/systems.js",
+      "source": "web/src/systems.js#153:frame",
+      "callee": "objectFor",
+      "line": 153,
+      "expression": "objectFor(id)"
+    },
+    {
+      "path": "web/src/systems.js",
+      "source": "web/src/systems.js#153:frame",
+      "callee": "geometryBounds",
+      "line": 153,
+      "expression": "geometryBounds(object)"
+    },
+    {
+      "path": "web/src/systems.js",
+      "source": "web/src/systems.js#153:frame",
+      "callee": "moveCamera",
+      "line": 153,
+      "expression": "moveCamera(target.clone().addScaledVector(new THREE.Vector3(...direction).normalize(),mobile?6.8:6.4),target,animate)"
+    },
+    {
+      "path": "web/src/systems.js",
+      "source": "web/src/systems.js#153:frame",
+      "callee": "viewportAspect",
+      "line": 153,
+      "expression": "viewportAspect()"
+    },
+    {
+      "path": "web/src/systems.js",
+      "source": "web/src/systems.js#153:frame",
+      "callee": "moveCamera",
+      "line": 153,
+      "expression": "moveCamera(target.clone().addScaledVector(dir,distance),target,animate)"
+    },
+    {
+      "path": "web/src/systems.js",
+      "source": "web/src/systems.js#154:show",
+      "callee": "setEnabled",
+      "line": 154,
+      "expression": "setEnabled(true)"
+    },
+    {
+      "path": "web/src/systems.js",
+      "source": "web/src/systems.js#154:show",
+      "callee": "setPicked",
+      "line": 154,
+      "expression": "setPicked(null)"
+    },
+    {
+      "path": "web/src/systems.js",
+      "source": "web/src/systems.js#154:show",
+      "callee": "applyExplode",
+      "line": 154,
+      "expression": "applyExplode()"
+    },
+    {
+      "path": "web/src/systems.js",
+      "source": "web/src/systems.js#154:show",
+      "callee": "applyFlows",
+      "line": 154,
+      "expression": "applyFlows()"
+    },
+    {
+      "path": "web/src/systems.js",
+      "source": "web/src/systems.js#154:show",
+      "callee": "materialFor",
+      "line": 154,
+      "expression": "materialFor(entry)"
+    },
+    {
+      "path": "web/src/systems.js",
+      "source": "web/src/systems.js#154:show",
+      "callee": "updateUI",
+      "line": 154,
+      "expression": "updateUI(id)"
+    },
+    {
+      "path": "web/src/systems.js",
+      "source": "web/src/systems.js#154:show",
+      "callee": "frame",
+      "line": 154,
+      "expression": "frame(id,directions[currentView],animate)"
+    },
+    {
+      "path": "web/src/systems.js",
+      "source": "web/src/systems.js#155:view",
+      "callee": "syncView",
+      "line": 155,
+      "expression": "syncView(currentView)"
+    },
+    {
+      "path": "web/src/systems.js",
+      "source": "web/src/systems.js#155:view",
+      "callee": "frame",
+      "line": 155,
+      "expression": "frame(active,directions[currentView],false)"
+    },
+    {
+      "path": "web/src/systems.js",
+      "source": "web/src/systems.js#156:captureGhost",
+      "callee": "cloneMaterial",
+      "line": 156,
+      "expression": "cloneMaterial(original)"
+    },
+    {
+      "path": "web/src/systems.js",
+      "source": "web/src/systems.js#157:setGhost",
+      "callee": "captureGhost",
+      "line": 157,
+      "expression": "captureGhost()"
+    },
+    {
+      "path": "web/src/systems.js",
+      "source": "web/src/systems.js#158:setEnabled",
+      "callee": "load",
+      "line": 158,
+      "expression": "load()"
+    },
+    {
+      "path": "web/src/systems.js",
+      "source": "web/src/systems.js#158:setEnabled",
+      "callee": "setGhost",
+      "line": 158,
+      "expression": "setGhost(ghostWanted)"
+    },
+    {
+      "path": "web/src/systems.js",
+      "source": "web/src/systems.js#158:setEnabled",
+      "callee": "setGhost",
+      "line": 158,
+      "expression": "setGhost(false)"
+    },
+    {
+      "path": "web/src/systems.js",
+      "source": "web/src/systems.js#158:setEnabled",
+      "callee": "setPicked",
+      "line": 158,
+      "expression": "setPicked(null)"
+    },
+    {
+      "path": "web/src/systems.js",
+      "source": "web/src/systems.js#163:onPointerUp",
+      "callee": "setPicked",
+      "line": 163,
+      "expression": "setPicked(hits.length?hits[0].object.userData.systemPart:null)"
+    },
+    {
+      "path": "web/src/systems.js",
+      "source": "web/src/systems.js#165:onSystemClick",
+      "callee": "show",
+      "line": 165,
+      "expression": "show(event.currentTarget.dataset.system)"
+    },
+    {
+      "path": "web/src/systems.js",
+      "source": "web/src/systems.js#166:onSystemKey",
+      "callee": "show",
+      "line": 166,
+      "expression": "show(event.currentTarget.dataset.system)"
+    },
+    {
+      "path": "web/src/systems.js",
+      "source": "web/src/systems.js#166:onSystemKey",
+      "callee": "show",
+      "line": 166,
+      "expression": "show(cards[next].dataset.system)"
+    },
+    {
+      "path": "web/src/systems.js",
+      "source": "web/src/systems.js#167:onOverviewClick",
+      "callee": "show",
+      "line": 167,
+      "expression": "show('overview')"
+    },
+    {
+      "path": "web/src/systems.js",
+      "source": "web/src/systems.js#168:onBackClick",
+      "callee": "setEnabled",
+      "line": 168,
+      "expression": "setEnabled(false)"
+    },
+    {
+      "path": "web/src/systems.js",
+      "source": "web/src/systems.js#168:onBackClick",
+      "callee": "updateUI",
+      "line": 168,
+      "expression": "updateUI()"
+    },
+    {
+      "path": "web/src/systems.js",
+      "source": "web/src/systems.js#168:onBackClick",
+      "callee": "onClose",
+      "line": 168,
+      "expression": "onClose()"
+    },
+    {
+      "path": "web/src/systems.js",
+      "source": "web/src/systems.js#169:onContextToggle",
+      "callee": "setERSContext",
+      "line": 169,
+      "expression": "setERSContext(ersContext==='legacy2021'?'current2026':'legacy2021')"
+    },
+    {
+      "path": "web/src/systems.js",
+      "source": "web/src/systems.js#170:onFlows",
+      "callee": "applyFlows",
+      "line": 170,
+      "expression": "applyFlows()"
+    },
+    {
+      "path": "web/src/systems.js",
+      "source": "web/src/systems.js#170:onFlows",
+      "callee": "updateUI",
+      "line": 170,
+      "expression": "updateUI()"
+    },
+    {
+      "path": "web/src/systems.js",
+      "source": "web/src/systems.js#171:onCovers",
+      "callee": "applyCovers",
+      "line": 171,
+      "expression": "applyCovers()"
+    },
+    {
+      "path": "web/src/systems.js",
+      "source": "web/src/systems.js#171:onCovers",
+      "callee": "updateUI",
+      "line": 171,
+      "expression": "updateUI()"
+    },
+    {
+      "path": "web/src/systems.js",
+      "source": "web/src/systems.js#172:onSchematic",
+      "callee": "applySchematic",
+      "line": 172,
+      "expression": "applySchematic()"
+    },
+    {
+      "path": "web/src/systems.js",
+      "source": "web/src/systems.js#172:onSchematic",
+      "callee": "updateUI",
+      "line": 172,
+      "expression": "updateUI()"
+    },
+    {
+      "path": "web/src/systems.js",
+      "source": "web/src/systems.js#173:onGhost",
+      "callee": "setGhost",
+      "line": 173,
+      "expression": "setGhost(ghostWanted)"
+    },
+    {
+      "path": "web/src/systems.js",
+      "source": "web/src/systems.js#173:onGhost",
+      "callee": "updateUI",
+      "line": 173,
+      "expression": "updateUI()"
+    },
+    {
+      "path": "web/src/systems.js",
+      "source": "web/src/systems.js#174:onExplode",
+      "callee": "Number",
+      "line": 174,
+      "expression": "Number(ui.explode.value)"
+    },
+    {
+      "path": "web/src/systems.js",
+      "source": "web/src/systems.js#174:onExplode",
+      "callee": "applyExplode",
+      "line": 174,
+      "expression": "applyExplode()"
+    },
+    {
+      "path": "web/src/systems.js",
+      "source": "web/src/systems.js#42:createSystems",
+      "callee": "cardFor",
+      "line": 175,
+      "expression": "cardFor(system.id)"
+    },
+    {
+      "path": "web/src/systems.js",
+      "source": "web/src/systems.js#42:createSystems",
+      "callee": "setERSContext",
+      "line": 180,
+      "expression": "setERSContext('legacy2021')"
+    },
+    {
+      "path": "web/src/systems.js",
+      "source": "web/src/systems.js#42:createSystems",
+      "callee": "updateUI",
+      "line": 181,
+      "expression": "updateUI('overview')"
+    },
+    {
+      "path": "web/src/systems.js",
+      "source": "web/src/systems.js#183:deactivate",
+      "callee": "setEnabled",
+      "line": 183,
+      "expression": "setEnabled(false)"
+    },
+    {
+      "path": "web/src/systems.js",
+      "source": "web/src/systems.js#183:setPaused",
+      "callee": "Boolean",
+      "line": 183,
+      "expression": "Boolean(value)"
+    },
+    {
+      "path": "web/src/systems.js",
+      "source": "web/src/systems.js#183:reset",
+      "callee": "applyExplode",
+      "line": 183,
+      "expression": "applyExplode()"
+    },
+    {
+      "path": "web/src/systems.js",
+      "source": "web/src/systems.js#183:reset",
+      "callee": "show",
+      "line": 183,
+      "expression": "show('overview',false)"
+    },
+    {
+      "path": "web/src/systems.js",
+      "source": "web/src/systems.js#184:setRevealInExplode",
+      "callee": "Boolean",
+      "line": 184,
+      "expression": "Boolean(value)"
+    },
+    {
+      "path": "web/src/systems.js",
+      "source": "web/src/systems.js#186:update",
+      "callee": "Boolean",
+      "line": 189,
+      "expression": "Boolean(mechanics)"
+    },
+    {
+      "path": "web/src/systems.js",
+      "source": "web/src/systems.js#186:update",
+      "callee": "load",
+      "line": 190,
+      "expression": "load()"
+    },
+    {
+      "path": "web/src/systems.js",
+      "source": "web/src/systems.js#186:update",
+      "callee": "advanceLocalSpin",
+      "line": 197,
+      "expression": "advanceLocalSpin(s.object.quaternion,s.axis,step*s.rate)"
+    },
+    {
+      "path": "web/src/systems.js",
+      "source": "web/src/systems.js#201:dispose",
+      "callee": "setEnabled",
+      "line": 201,
+      "expression": "setEnabled(false)"
+    },
+    {
+      "path": "web/src/systems.js",
+      "source": "web/src/systems.js#201:dispose",
+      "callee": "cardFor",
+      "line": 201,
+      "expression": "cardFor(system.id)"
     },
     {
       "path": "web/src/tunnel-visual.js",
@@ -6906,346 +9551,353 @@
     },
     {
       "path": "web/src/workbench.js",
-      "source": "web/src/workbench.js#11:frame",
+      "source": "web/src/workbench.js#14:frame",
       "callee": "view",
-      "line": 11,
+      "line": 14,
       "expression": "view('hero')"
     },
     {
       "path": "web/src/workbench.js",
-      "source": "web/src/workbench.js#12:view",
+      "source": "web/src/workbench.js#15:view",
       "callee": "moveCamera",
-      "line": 17,
+      "line": 20,
       "expression": "moveCamera(target.clone().addScaledVector(direction,radius),target)"
     },
     {
       "path": "web/src/workbench.js",
-      "source": "web/src/workbench.js#12:view",
+      "source": "web/src/workbench.js#15:view",
       "callee": "String",
-      "line": 18,
+      "line": 21,
       "expression": "String(b.dataset.view===name)"
     },
     {
       "path": "web/src/workbench.js",
-      "source": "web/src/workbench.js#20:rebuild",
+      "source": "web/src/workbench.js#23:rebuild",
       "callee": "frame",
-      "line": 26,
+      "line": 29,
       "expression": "frame(inspection)"
     },
     {
       "path": "web/src/workbench.js",
-      "source": "web/src/workbench.js#29:setTab",
+      "source": "web/src/workbench.js#32:setTab",
       "callee": "$",
-      "line": 30,
+      "line": 34,
       "expression": "$('wind-toggle')"
     },
     {
       "path": "web/src/workbench.js",
-      "source": "web/src/workbench.js#29:setTab",
+      "source": "web/src/workbench.js#32:setTab",
       "callee": "closeEngine",
-      "line": 30,
+      "line": 34,
       "expression": "closeEngine()"
     },
     {
       "path": "web/src/workbench.js",
-      "source": "web/src/workbench.js#29:setTab",
+      "source": "web/src/workbench.js#32:setTab",
       "callee": "$",
-      "line": 31,
+      "line": 35,
       "expression": "$('orbit')"
     },
     {
       "path": "web/src/workbench.js",
-      "source": "web/src/workbench.js#29:setTab",
+      "source": "web/src/workbench.js#32:setTab",
       "callee": "$",
-      "line": 32,
+      "line": 36,
       "expression": "$('reset')"
     },
     {
       "path": "web/src/workbench.js",
-      "source": "web/src/workbench.js#29:setTab",
+      "source": "web/src/workbench.js#32:setTab",
       "callee": "String",
-      "line": 33,
+      "line": 37,
       "expression": "String(on)"
     },
     {
       "path": "web/src/workbench.js",
-      "source": "web/src/workbench.js#29:setTab",
+      "source": "web/src/workbench.js#32:setTab",
       "callee": "refreshPanels",
-      "line": 34,
+      "line": 38,
       "expression": "refreshPanels()"
     },
     {
       "path": "web/src/workbench.js",
-      "source": "web/src/workbench.js#29:setTab",
+      "source": "web/src/workbench.js#32:setTab",
       "callee": "rebuild",
-      "line": 35,
+      "line": 39,
       "expression": "rebuild()"
     },
     {
       "path": "web/src/workbench.js",
-      "source": "web/src/workbench.js#29:setTab",
+      "source": "web/src/workbench.js#32:setTab",
       "callee": "$",
-      "line": 35,
+      "line": 39,
       "expression": "$('engine-open')"
     },
     {
       "path": "web/src/workbench.js",
-      "source": "web/src/workbench.js#29:setTab",
+      "source": "web/src/workbench.js#32:setTab",
       "callee": "showCar",
-      "line": 35,
+      "line": 39,
       "expression": "showCar()"
     },
     {
       "path": "web/src/workbench.js",
       "source": "web/src/workbench.js#4:createWorkbench",
       "callee": "setTab",
-      "line": 37,
+      "line": 41,
       "expression": "setTab(t.dataset.labTab)"
     },
     {
       "path": "web/src/workbench.js",
       "source": "web/src/workbench.js#4:createWorkbench",
       "callee": "setTab",
-      "line": 37,
+      "line": 41,
       "expression": "setTab(tabs[n].dataset.labTab)"
     },
     {
       "path": "web/src/workbench.js",
-      "source": "web/src/workbench.js#38:cockpit",
+      "source": "web/src/workbench.js#42:cockpit",
       "callee": "frame",
-      "line": 38,
+      "line": 42,
       "expression": "frame(driver.helmet.root)"
     },
     {
       "path": "web/src/workbench.js",
       "source": "web/src/workbench.js#4:createWorkbench",
       "callee": "$",
-      "line": 39,
+      "line": 43,
       "expression": "$(prefix+'-cockpit')"
     },
     {
       "path": "web/src/workbench.js",
       "source": "web/src/workbench.js#4:createWorkbench",
       "callee": "$",
-      "line": 39,
+      "line": 43,
       "expression": "$(prefix+'-isolated')"
     },
     {
       "path": "web/src/workbench.js",
       "source": "web/src/workbench.js#4:createWorkbench",
       "callee": "rebuild",
-      "line": 39,
+      "line": 43,
       "expression": "rebuild()"
     },
     {
       "path": "web/src/workbench.js",
       "source": "web/src/workbench.js#4:createWorkbench",
       "callee": "$",
-      "line": 41,
+      "line": 45,
       "expression": "$(id)"
     },
     {
       "path": "web/src/workbench.js",
       "source": "web/src/workbench.js#4:createWorkbench",
       "callee": "Number",
-      "line": 41,
+      "line": 45,
       "expression": "Number($(id).value)"
     },
     {
       "path": "web/src/workbench.js",
       "source": "web/src/workbench.js#4:createWorkbench",
       "callee": "$",
-      "line": 41,
+      "line": 45,
       "expression": "$(id)"
     },
     {
       "path": "web/src/workbench.js",
       "source": "web/src/workbench.js#4:createWorkbench",
       "callee": "$",
-      "line": 41,
+      "line": 45,
       "expression": "$(id+'-value')"
     },
     {
       "path": "web/src/workbench.js",
       "source": "web/src/workbench.js#4:createWorkbench",
       "callee": "$",
-      "line": 41,
+      "line": 45,
       "expression": "$(id)"
     },
     {
       "path": "web/src/workbench.js",
       "source": "web/src/workbench.js#4:createWorkbench",
       "callee": "rebuild",
-      "line": 41,
+      "line": 45,
       "expression": "rebuild()"
     },
     {
       "path": "web/src/workbench.js",
       "source": "web/src/workbench.js#4:createWorkbench",
       "callee": "$",
-      "line": 43,
+      "line": 47,
       "expression": "$('fit-reset')"
     },
     {
       "path": "web/src/workbench.js",
       "source": "web/src/workbench.js#4:createWorkbench",
       "callee": "$",
-      "line": 43,
+      "line": 47,
       "expression": "$(id)"
     },
     {
       "path": "web/src/workbench.js",
       "source": "web/src/workbench.js#4:createWorkbench",
       "callee": "$",
-      "line": 43,
+      "line": 47,
       "expression": "$(id+'-value')"
     },
     {
       "path": "web/src/workbench.js",
       "source": "web/src/workbench.js#4:createWorkbench",
       "callee": "rebuild",
-      "line": 43,
+      "line": 47,
       "expression": "rebuild()"
     },
     {
       "path": "web/src/workbench.js",
-      "source": "web/src/workbench.js#44:downloadModel",
+      "source": "web/src/workbench.js#48:downloadModel",
       "callee": "$",
-      "line": 44,
+      "line": 48,
       "expression": "$(kind+'-export')"
     },
     {
       "path": "web/src/workbench.js",
-      "source": "web/src/workbench.js#44:downloadModel",
+      "source": "web/src/workbench.js#48:downloadModel",
       "callee": "$",
-      "line": 44,
+      "line": 48,
       "expression": "$(kind+'-export-status')"
     },
     {
       "path": "web/src/workbench.js",
-      "source": "web/src/workbench.js#44:downloadModel",
+      "source": "web/src/workbench.js#48:downloadModel",
       "callee": "setTimeout",
-      "line": 45,
+      "line": 49,
       "expression": "setTimeout(()=>URL.revokeObjectURL(url),10000)"
     },
     {
       "path": "web/src/workbench.js",
       "source": "web/src/workbench.js#4:createWorkbench",
       "callee": "$",
-      "line": 47,
+      "line": 51,
       "expression": "$('helmet-export')"
     },
     {
       "path": "web/src/workbench.js",
       "source": "web/src/workbench.js#4:createWorkbench",
       "callee": "downloadModel",
-      "line": 47,
+      "line": 51,
       "expression": "downloadModel('helmet')"
     },
     {
       "path": "web/src/workbench.js",
       "source": "web/src/workbench.js#4:createWorkbench",
       "callee": "$",
-      "line": 47,
+      "line": 51,
       "expression": "$('driver-export')"
     },
     {
       "path": "web/src/workbench.js",
       "source": "web/src/workbench.js#4:createWorkbench",
       "callee": "downloadModel",
-      "line": 47,
+      "line": 51,
       "expression": "downloadModel('driver')"
     },
     {
       "path": "web/src/workbench.js",
       "source": "web/src/workbench.js#4:createWorkbench",
       "callee": "$",
-      "line": 48,
+      "line": 52,
       "expression": "$('world-box')"
     },
     {
       "path": "web/src/workbench.js",
       "source": "web/src/workbench.js#4:createWorkbench",
       "callee": "$",
-      "line": 48,
+      "line": 52,
       "expression": "$('wind-toggle')"
     },
     {
       "path": "web/src/workbench.js",
       "source": "web/src/workbench.js#4:createWorkbench",
       "callee": "$",
-      "line": 48,
+      "line": 52,
       "expression": "$('garage-view')"
     },
     {
       "path": "web/src/workbench.js",
       "source": "web/src/workbench.js#4:createWorkbench",
       "callee": "$",
-      "line": 49,
+      "line": 53,
       "expression": "$('world-studio')"
     },
     {
       "path": "web/src/workbench.js",
       "source": "web/src/workbench.js#4:createWorkbench",
       "callee": "$",
-      "line": 49,
+      "line": 53,
       "expression": "$('wind-toggle')"
     },
     {
       "path": "web/src/workbench.js",
       "source": "web/src/workbench.js#4:createWorkbench",
       "callee": "showCar",
-      "line": 49,
+      "line": 53,
       "expression": "showCar()"
     },
     {
       "path": "web/src/workbench.js",
       "source": "web/src/workbench.js#4:createWorkbench",
       "callee": "$",
-      "line": 50,
+      "line": 54,
       "expression": "$('world-tunnel')"
     },
     {
       "path": "web/src/workbench.js",
       "source": "web/src/workbench.js#4:createWorkbench",
       "callee": "$",
-      "line": 50,
+      "line": 54,
       "expression": "$('wind-toggle')"
     },
     {
       "path": "web/src/workbench.js",
       "source": "web/src/workbench.js#4:createWorkbench",
       "callee": "$",
-      "line": 51,
+      "line": 55,
       "expression": "$('world-export')"
     },
     {
       "path": "web/src/workbench.js",
       "source": "web/src/workbench.js#4:createWorkbench",
       "callee": "$",
-      "line": 51,
+      "line": 55,
       "expression": "$('garage-export')"
     },
     {
       "path": "web/src/workbench.js",
       "source": "web/src/workbench.js#4:createWorkbench",
       "callee": "refreshPanels",
-      "line": 52,
+      "line": 56,
       "expression": "refreshPanels()"
     },
     {
       "path": "web/src/workbench.js",
-      "source": "web/src/workbench.js#55:reset",
+      "source": "web/src/workbench.js#59:reset",
       "callee": "rebuild",
-      "line": 55,
+      "line": 59,
       "expression": "rebuild()"
     },
     {
       "path": "web/src/workbench.js",
-      "source": "web/src/workbench.js#55:reset",
+      "source": "web/src/workbench.js#59:reset",
       "callee": "cockpit",
-      "line": 55,
+      "line": 59,
       "expression": "cockpit()"
+    },
+    {
+      "path": "web/src/workbench.js",
+      "source": "web/src/workbench.js#60:systemActive",
+      "callee": "Boolean",
+      "line": 60,
+      "expression": "Boolean(systems?.enabled)"
     },
     {
       "path": "web/test-aerodynamics.mjs",
@@ -7526,6 +10178,461 @@
       "callee": "Error",
       "line": 21,
       "expression": "Error('Deriva no motor: '+drift)"
+    },
+    {
+      "path": "web/test-systems.mjs",
+      "source": "module",
+      "callee": "String",
+      "line": 32,
+      "expression": "String(index + 1)"
+    },
+    {
+      "path": "web/test-systems.mjs",
+      "source": "module",
+      "callee": "advanceLocalSpin",
+      "line": 39,
+      "expression": "advanceLocalSpin(new THREE.Quaternion(), 'y', Math.PI / 2)"
+    },
+    {
+      "path": "web/test-systems.mjs",
+      "source": "module",
+      "callee": "advanceLocalSpin",
+      "line": 41,
+      "expression": "advanceLocalSpin(new THREE.Quaternion(), 'invalid', 1)"
+    },
+    {
+      "path": "web/test-systems.mjs",
+      "source": "module",
+      "callee": "readFileSync",
+      "line": 43,
+      "expression": "readFileSync(new URL('./src/systems.js', import.meta.url), 'utf8')"
+    },
+    {
+      "path": "web/test-systems.mjs",
+      "source": "module",
+      "callee": "readFileSync",
+      "line": 44,
+      "expression": "readFileSync(new URL('./src/template-v2.html', import.meta.url), 'utf8')"
+    },
+    {
+      "path": "web/test-systems.mjs",
+      "source": "module",
+      "callee": "readFileSync",
+      "line": 52,
+      "expression": "readFileSync(new URL('./assets/sistemas-v1.glb', import.meta.url))"
+    },
+    {
+      "path": "web/test-systems.mjs",
+      "source": "module",
+      "callee": "readFileSync",
+      "line": 53,
+      "expression": "readFileSync(new URL('./assets/sistemas-v1.manifest.json', import.meta.url), 'utf8')"
+    },
+    {
+      "path": "web/test-systems.mjs",
+      "source": "module",
+      "callee": "createHash",
+      "line": 62,
+      "expression": "createHash('sha256')"
+    },
+    {
+      "path": "web/test-systems.mjs",
+      "source": "web/test-systems.mjs#89:find",
+      "callee": "nodesOf",
+      "line": 89,
+      "expression": "nodesOf(id)"
+    },
+    {
+      "path": "web/test-systems.mjs",
+      "source": "module",
+      "callee": "find",
+      "line": 96,
+      "expression": "find('power', /^Compressor · carcaça/)"
+    },
+    {
+      "path": "web/test-systems.mjs",
+      "source": "module",
+      "callee": "find",
+      "line": 96,
+      "expression": "find('power', /^Turbina · carcaça/)"
+    },
+    {
+      "path": "web/test-systems.mjs",
+      "source": "module",
+      "callee": "find",
+      "line": 96,
+      "expression": "find('power', /^Eixo comum do turbo/)"
+    },
+    {
+      "path": "web/test-systems.mjs",
+      "source": "module",
+      "callee": "find",
+      "line": 96,
+      "expression": "find('power', /^MGU-H · carcaça/)"
+    },
+    {
+      "path": "web/test-systems.mjs",
+      "source": "module",
+      "callee": "find",
+      "line": 98,
+      "expression": "find('power', /compressor/i)"
+    },
+    {
+      "path": "web/test-systems.mjs",
+      "source": "module",
+      "callee": "center",
+      "line": 99,
+      "expression": "center(compressor[0])"
+    },
+    {
+      "path": "web/test-systems.mjs",
+      "source": "module",
+      "callee": "center",
+      "line": 99,
+      "expression": "center(turbine[0])"
+    },
+    {
+      "path": "web/test-systems.mjs",
+      "source": "module",
+      "callee": "center",
+      "line": 99,
+      "expression": "center(mguh[0])"
+    },
+    {
+      "path": "web/test-systems.mjs",
+      "source": "module",
+      "callee": "find",
+      "line": 104,
+      "expression": "find('power', /^Trompeta de admissão/)"
+    },
+    {
+      "path": "web/test-systems.mjs",
+      "source": "module",
+      "callee": "find",
+      "line": 105,
+      "expression": "find('power', /^Plenum de admissão .* fundo/)"
+    },
+    {
+      "path": "web/test-systems.mjs",
+      "source": "module",
+      "callee": "find",
+      "line": 106,
+      "expression": "find('power', /^Plenum de admissão .* tampa/)"
+    },
+    {
+      "path": "web/test-systems.mjs",
+      "source": "module",
+      "callee": "find",
+      "line": 107,
+      "expression": "find('power', /^Tubo da wastegate/)"
+    },
+    {
+      "path": "web/test-systems.mjs",
+      "source": "module",
+      "callee": "find",
+      "line": 108,
+      "expression": "find('power', /^Primário de escape/)"
+    },
+    {
+      "path": "web/test-systems.mjs",
+      "source": "module",
+      "callee": "nodesOf",
+      "line": 109,
+      "expression": "nodesOf('ers')"
+    },
+    {
+      "path": "web/test-systems.mjs",
+      "source": "module",
+      "callee": "find",
+      "line": 111,
+      "expression": "find('cooling', /^Intercooler ar-ar · núcleo/)"
+    },
+    {
+      "path": "web/test-systems.mjs",
+      "source": "module",
+      "callee": "center",
+      "line": 112,
+      "expression": "center(intercooler[0])"
+    },
+    {
+      "path": "web/test-systems.mjs",
+      "source": "module",
+      "callee": "find",
+      "line": 114,
+      "expression": "find('cooling', pattern)"
+    },
+    {
+      "path": "web/test-systems.mjs",
+      "source": "module",
+      "callee": "center",
+      "line": 114,
+      "expression": "center(core[0])"
+    },
+    {
+      "path": "web/test-systems.mjs",
+      "source": "module",
+      "callee": "nodesOf",
+      "line": 116,
+      "expression": "nodesOf('cooling')"
+    },
+    {
+      "path": "web/test-systems.mjs",
+      "source": "module",
+      "callee": "find",
+      "line": 118,
+      "expression": "find('fuel', /^Bexiga flexível/)"
+    },
+    {
+      "path": "web/test-systems.mjs",
+      "source": "module",
+      "callee": "find",
+      "line": 118,
+      "expression": "find('power', /^Bloco do motor/)"
+    },
+    {
+      "path": "web/test-systems.mjs",
+      "source": "module",
+      "callee": "find",
+      "line": 118,
+      "expression": "find('transmission', /^Carcaça do câmbio/)"
+    },
+    {
+      "path": "web/test-systems.mjs",
+      "source": "module",
+      "callee": "find",
+      "line": 118,
+      "expression": "find('ers', /^Energy store · caixa/)"
+    },
+    {
+      "path": "web/test-systems.mjs",
+      "source": "module",
+      "callee": "find",
+      "line": 118,
+      "expression": "find('cockpit', /^Assento moldado/)"
+    },
+    {
+      "path": "web/test-systems.mjs",
+      "source": "module",
+      "callee": "center",
+      "line": 121,
+      "expression": "center(es)"
+    },
+    {
+      "path": "web/test-systems.mjs",
+      "source": "module",
+      "callee": "center",
+      "line": 121,
+      "expression": "center(bladder)"
+    },
+    {
+      "path": "web/test-systems.mjs",
+      "source": "module",
+      "callee": "find",
+      "line": 122,
+      "expression": "find('fuel', /^Linha de alimentação/)"
+    },
+    {
+      "path": "web/test-systems.mjs",
+      "source": "module",
+      "callee": "find",
+      "line": 124,
+      "expression": "find('transmission', /^Engrenagem \\dª · primário/)"
+    },
+    {
+      "path": "web/test-systems.mjs",
+      "source": "module",
+      "callee": "find",
+      "line": 124,
+      "expression": "find('transmission', /^Engrenagem \\dª · secundário/)"
+    },
+    {
+      "path": "web/test-systems.mjs",
+      "source": "module",
+      "callee": "Number",
+      "line": 127,
+      "expression": "Number(/\\((\\d+) dentes\\)/.exec(primary[i].part)[1])"
+    },
+    {
+      "path": "web/test-systems.mjs",
+      "source": "module",
+      "callee": "Number",
+      "line": 127,
+      "expression": "Number(/\\((\\d+) dentes\\)/.exec(secondary[i].part)[1])"
+    },
+    {
+      "path": "web/test-systems.mjs",
+      "source": "module",
+      "callee": "find",
+      "line": 130,
+      "expression": "find('transmission', /^Engrenagem intermediária da ré$/)"
+    },
+    {
+      "path": "web/test-systems.mjs",
+      "source": "module",
+      "callee": "find",
+      "line": 130,
+      "expression": "find('transmission', /^Copo da junta tripóide/)"
+    },
+    {
+      "path": "web/test-systems.mjs",
+      "source": "module",
+      "callee": "find",
+      "line": 131,
+      "expression": "find('transmission', /^Carcaça do câmbio/)"
+    },
+    {
+      "path": "web/test-systems.mjs",
+      "source": "module",
+      "callee": "find",
+      "line": 133,
+      "expression": "find('safety', /^Cabo de retenção \\d /)"
+    },
+    {
+      "path": "web/test-systems.mjs",
+      "source": "module",
+      "callee": "find",
+      "line": 134,
+      "expression": "find('safety', /^Halo · arco principal/)"
+    },
+    {
+      "path": "web/test-systems.mjs",
+      "source": "module",
+      "callee": "find",
+      "line": 134,
+      "expression": "find('safety', /^Estrutura principal de capotamento/)"
+    },
+    {
+      "path": "web/test-systems.mjs",
+      "source": "module",
+      "callee": "find",
+      "line": 135,
+      "expression": "find('cockpit', /^Cadarço de (ombro|cintura|virilha)/)"
+    },
+    {
+      "path": "web/test-systems.mjs",
+      "source": "module",
+      "callee": "find",
+      "line": 136,
+      "expression": "find('brakes', /^Disco carbono-carbono/)"
+    },
+    {
+      "path": "web/test-systems.mjs",
+      "source": "module",
+      "callee": "find",
+      "line": 136,
+      "expression": "find('brakes', /^Pinça monobloco/)"
+    },
+    {
+      "path": "web/test-systems.mjs",
+      "source": "module",
+      "callee": "find",
+      "line": 137,
+      "expression": "find('brakes', /^Cilindro mestre · circuito/)"
+    },
+    {
+      "path": "web/test-systems.mjs",
+      "source": "module",
+      "callee": "find",
+      "line": 137,
+      "expression": "find('brakes', /^Unidade brake-by-wire/)"
+    },
+    {
+      "path": "web/test-systems.mjs",
+      "source": "module",
+      "callee": "find",
+      "line": 138,
+      "expression": "find('brakes', /^Disco carbono-carbono/)"
+    },
+    {
+      "path": "web/test-systems.mjs",
+      "source": "module",
+      "callee": "find",
+      "line": 139,
+      "expression": "find('suspension', /^Push-rod /)"
+    },
+    {
+      "path": "web/test-systems.mjs",
+      "source": "module",
+      "callee": "find",
+      "line": 139,
+      "expression": "find('suspension', /^Pull-rod /)"
+    },
+    {
+      "path": "web/test-systems.mjs",
+      "source": "module",
+      "callee": "find",
+      "line": 139,
+      "expression": "find('suspension', /^Wishbone (superior|inferior) · perna/)"
+    },
+    {
+      "path": "web/test-systems.mjs",
+      "source": "module",
+      "callee": "find",
+      "line": 140,
+      "expression": "find('suspension', /^Push-rod /)"
+    },
+    {
+      "path": "web/test-systems.mjs",
+      "source": "module",
+      "callee": "find",
+      "line": 141,
+      "expression": "find('steering', /^Barra de direção · track rod/)"
+    },
+    {
+      "path": "web/test-systems.mjs",
+      "source": "module",
+      "callee": "find",
+      "line": 141,
+      "expression": "find('steering', /^Junta universal/)"
+    },
+    {
+      "path": "web/test-systems.mjs",
+      "source": "module",
+      "callee": "find",
+      "line": 142,
+      "expression": "find('sensors', /^Tubo de Pitot/)"
+    },
+    {
+      "path": "web/test-systems.mjs",
+      "source": "module",
+      "callee": "find",
+      "line": 142,
+      "expression": "find('sensors', /^Telemetria carro → box/)"
+    },
+    {
+      "path": "web/test-systems.mjs",
+      "source": "module",
+      "callee": "find",
+      "line": 143,
+      "expression": "find('wheel', /^LED de troca/)"
+    },
+    {
+      "path": "web/test-systems.mjs",
+      "source": "module",
+      "callee": "find",
+      "line": 143,
+      "expression": "find('wheel', /^Borboleta de marcha/)"
+    },
+    {
+      "path": "web/test-systems.mjs",
+      "source": "module",
+      "callee": "find",
+      "line": 144,
+      "expression": "find('ers', /^MGU-K · carcaça/)"
+    },
+    {
+      "path": "web/test-systems.mjs",
+      "source": "module",
+      "callee": "find",
+      "line": 144,
+      "expression": "find('ers', /^Engrenagem de acionamento do MGU-K/)"
+    },
+    {
+      "path": "web/test-systems.mjs",
+      "source": "module",
+      "callee": "readFileSync",
+      "line": 145,
+      "expression": "readFileSync(new URL('./src/app-v2.js', import.meta.url), 'utf8')"
     }
   ]
 }

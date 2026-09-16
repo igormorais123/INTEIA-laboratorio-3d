@@ -104,6 +104,11 @@
     "documento editável",
     "Orientação de desenvolvimento"
   ],
+  "docs/SISTEMAS-3D.md": [
+    "Guia operacional da bancada Sistemas, do asset publicado e de sua regeneração",
+    "documento editável",
+    "Desenvolvimento, validação e limites dos catorze sistemas internos"
+  ],
   "docs/BLENDER.md": [
     "Uso das coleções, Append, animação e materiais no Blender",
     "documento editável",
@@ -548,5 +553,35 @@
     "Referências, operação e limites do estudo do piloto",
     "documento editável",
     "Consultar proporções e controles"
+  ],
+  "docs/ANALISE-DOSSIE-COMPLEMENTAR.md": [
+    "Auditoria editorial das lacunas, contradições e prioridades do dossiê técnico",
+    "documento editável",
+    "Revisar antes de promover alegações técnicas"
+  ],
+  "docs/ESPECIFICACAO-ASSET-3D-SISTEMAS-F1.md": [
+    "Contrato de modelagem dos catorze sistemas internos do carro",
+    "especificação editável",
+    "Orientar módulos procedurais, integração e aceite visual"
+  ],
+  "docs/OUTRO-PC.md": [
+    "Instalação e sincronização segura entre computadores",
+    "documento editável",
+    "Continuar o desenvolvimento em outro clone"
+  ],
+  "docs/pesquisa-sistemas-carro-video.md": [
+    "Pesquisa e limites das referências usadas para os sistemas do carro",
+    "documento editável",
+    "Separar evidência observada, hipótese didática e versão regulatória"
+  ],
+  "web/src/systems.js": [
+    "Carrega, apresenta e controla o GLB consolidado dos sistemas internos",
+    "fonte web editável",
+    "Bancada Sistemas do laboratório"
+  ],
+  "web/test-systems.mjs": [
+    "Valida catálogo, controles, manifesto, hash e estrutura do GLB de sistemas",
+    "teste",
+    "Executado por npm test"
   ]
 }

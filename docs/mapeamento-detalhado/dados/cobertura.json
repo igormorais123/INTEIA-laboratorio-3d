@@ -1,11 +1,11 @@
 {
-  "captured_at": "2026-09-15T21:09:46.144550+00:00",
-  "revision": "9985d0b4a8a2ff38a3d6cb02c3910e877d06e4b8",
+  "captured_at": "2026-09-16T15:24:14.379665+00:00",
+  "revision": "e24bac2ac60ab8a1ec92df807bbc1014c442824d",
   "initial_revision": "1ae4fd15062d347dc8462af8f4db33c749e6575b",
-  "branch": "main",
-  "status": "M docs/PILOTO-E-CAPACETE.md\n M docs/mapas/INVENTARIO.md\n M docs/mapas/cobertura.json\n M docs/mapas/index.html\n M docs/mapas/inventario.json\n M docs/mapeamento-detalhado/CATALOGO.md\n M docs/mapeamento-detalhado/dados/catalogo.csv\n M docs/mapeamento-detalhado/dados/catalogo.json\n M docs/mapeamento-detalhado/dados/cobertura.json\n M docs/mapeamento-detalhado/dados/entrega.json\n M docs/mapeamento-detalhado/dados/grafo.json\n M docs/mapeamento-detalhado/dados/manifesto-conferencia.json\n M docs/mapeamento-detalhado/dados/simbolos.json\n M docs/mapeamento-detalhado/dados/validacao.json\n M docs/mapeamento-detalhado/dados/verificacao-app.json\n M docs/mapeamento-detalhado/index.html\n M manifesto-sha256.json\n M web/index.html\n M web/src/app-v2.js\n M web/src/senna-driver.js\n M web/src/workbench.js\n M web/test-driver-model.mjs",
-  "catalog_count": 110,
-  "bytes": 142993609,
+  "branch": "sistemas-3d-blender",
+  "status": "M docs/mapas/INVENTARIO.md\n M docs/mapas/cobertura.json\n M docs/mapas/index.html\n M docs/mapas/inventario.json\n M docs/mapeamento-detalhado/CATALOGO.md\n M docs/mapeamento-detalhado/dados/catalogo.csv\n M docs/mapeamento-detalhado/dados/catalogo.json\n M docs/mapeamento-detalhado/dados/cobertura.json\n M docs/mapeamento-detalhado/dados/grafo.json\n M docs/mapeamento-detalhado/index.html\n M graphify-out/GRAPH_REPORT.md\n M graphify-out/GRAPH_TREE.html\n M graphify-out/graph.html\n M graphify-out/graph.json",
+  "catalog_count": 214,
+  "bytes": 221371809,
   "baseline_files": 69,
   "baseline_missing": [],
   "unclassified": [],
@@ -15,35 +15,39 @@
       "reason": "Metadados e objetos internos Git; revisão registrada via Git"
     },
     {
-      "path": ".mapas-worktree",
-      "reason": "Checkout/worktree Git aninhado: cópia operacional do mesmo projeto, não é fonte adicional"
+      "path": ".impeccable",
+      "reason": "Cache efêmero de sessão; ignorado pelo Git e sem valor arquitetural"
     },
     {
       "path": "graphify-out",
       "reason": "Extração/cache da conversa paralela ou cache isolado desta análise"
     },
     {
-      "path": "ambientes/INTEIA_Box_com_carro.blend1",
-      "reason": "Ambiente local, log, backup ou pacote duplicado; conteúdo não lido"
-    },
-    {
       "path": "docs/mapeamento-detalhado",
       "reason": "Esta entrega: inventário próprio em dados/entrega.json; evita autorreferência recursiva"
+    },
+    {
+      "path": "ferramentas/__pycache__",
+      "reason": "Cache Python regenerável"
+    },
+    {
+      "path": "ferramentas/sistemas/__pycache__",
+      "reason": "Cache Python regenerável"
     },
     {
       "path": "web/node_modules",
       "reason": "Dependências instaladas; versões em package-lock.json"
     }
   ],
-  "scope": "Somente C:\\Users\\igorm\\projetos\\INTEIA-laboratorio-3d",
+  "scope": "Somente C:\\Users\\IgorPC\\.claude\\projects\\Site aula mota\\INTEIA-laboratorio-3d",
   "own_delivery": "dados/entrega.json",
   "parallel_thread": "01a09849-3de3-7dc2-bd60-06a9b58be580",
-  "symbols": 201,
+  "symbols": 374,
   "symbol_parse_errors": [],
   "unresolved_local_imports": [],
-  "edges": 1095,
-  "nodes": 332,
+  "edges": 1496,
+  "nodes": 613,
   "confidence_counts": {
-    "EXTRACTED": 1095
+    "EXTRACTED": 1496
   }
 }

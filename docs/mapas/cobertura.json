@@ -23,9 +23,9 @@
   "productionEdges": 47,
   "templateIds": 141,
   "componentsMatchedByPartId": 97,
-  "localMarkdownLinksChecked": 1529,
+  "localMarkdownLinksChecked": 1531,
   "brokenLocalLinks": 0,
-  "fingerprint": "4dcbbc886c68a46fbed9ce9ce9dbc4d17183f47637455e549f8f392f98fb0581",
+  "fingerprint": "7f899975b9576b98777bfefd0e812922fe695e7021f7c88700611a46aeffa6a4",
   "limits": [
     "Não abre Blender nem refaz exports.",
     "Não verifica URLs externas.",

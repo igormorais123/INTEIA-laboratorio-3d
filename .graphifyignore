@@ -1,0 +1,25 @@
+# Dependências, caches e saídas geradas
+.git/
+node_modules/
+web/node_modules/
+dist/
+build/
+graphify-out/
+.planning/architecture/
+.impeccable/
+
+# Atlas HTML/JSON gerado: as fontes Markdown continuam no corpus
+web/index.html
+docs/mapas/index.html
+docs/mapeamento-detalhado/index.html
+docs/mapeamento-detalhado/dados/
+
+# Binários e prévias são cobertos pelos inventários determinísticos
+*.blend
+*.blend1
+*.blend2
+*.glb
+*.png
+*.jpg
+*.jpeg
+*.webp

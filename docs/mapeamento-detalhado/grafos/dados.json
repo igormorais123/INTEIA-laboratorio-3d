@@ -346,8 +346,8 @@
       "confidence_score": 1.0,
       "evidence": {
         "path": "web/build.cjs",
-        "line": 2,
-        "text": "const bundle=esbuild.buildSync({entryPoints:['src/app-v2.js'],bundle:true,minify:true,format:'iife',write:false}).outputFiles[0].text;"
+        "line": 18,
+        "text": "  entryPoints: [source('src', 'app-v2.js')],"
       }
     },
     {
@@ -358,8 +358,8 @@
       "confidence_score": 1.0,
       "evidence": {
         "path": "web/build.cjs",
-        "line": 3,
-        "text": "const html=fs.readFileSync('src/template-v2.html','utf8').replace('__MODEL__',fs.readFileSync('assets/carro-aula-v2.glb').toString('base64')).replace('__APP__',()=>bundle.replace(/<\\/script/gi,'<\\\\/script'));"
+        "line": 25,
+        "text": "const template = fs.readFileSync(source('src', 'template-v2.html'), 'utf8');"
       }
     },
     {
@@ -370,8 +370,8 @@
       "confidence_score": 1.0,
       "evidence": {
         "path": "web/build.cjs",
-        "line": 3,
-        "text": "const html=fs.readFileSync('src/template-v2.html','utf8').replace('__MODEL__',fs.readFileSync('assets/carro-aula-v2.glb').toString('base64')).replace('__APP__',()=>bundle.replace(/<\\/script/gi,'<\\\\/script'));"
+        "line": 26,
+        "text": "const model = fs.readFileSync(source('assets', 'carro-aula-v2.glb')).toString('base64');"
       }
     },
     {
@@ -382,8 +382,8 @@
       "confidence_score": 1.0,
       "evidence": {
         "path": "web/build.cjs",
-        "line": 4,
-        "text": "fs.writeFileSync('index.html',html);"
+        "line": 30,
+        "text": "fs.writeFileSync(source('index.html'), html);"
       }
     },
     {
@@ -394,8 +394,8 @@
       "confidence_score": 1.0,
       "evidence": {
         "path": "web/server.cjs",
-        "line": 4,
-        "text": "const file=path.resolve(root,'.'+(name==='/'?'/index.html':name));if(!file.startsWith(root+path.sep)){res.writeHead(403).end();return;}"
+        "line": 40,
+        "text": "  const relativePath = pathname === '/' ? 'index.html' : pathname.replace(/^\\/+/, '');"
       }
     },
     {
@@ -406,7 +406,7 @@
       "confidence_score": 1.0,
       "evidence": {
         "path": "web/package.json",
-        "line": 8,
+        "line": 12,
         "text": "\"build\": \"node build.cjs\","
       }
     },
@@ -418,7 +418,7 @@
       "confidence_score": 1.0,
       "evidence": {
         "path": "web/package.json",
-        "line": 9,
+        "line": 13,
         "text": "\"dev\": \"node server.cjs\","
       }
     },
@@ -430,8 +430,8 @@
       "confidence_score": 1.0,
       "evidence": {
         "path": "web/package.json",
-        "line": 10,
-        "text": "\"test\": \"node test-mechanics.mjs && node test-aerodynamics.mjs && node test-power-unit.mjs && node test-driver-model.mjs\""
+        "line": 14,
+        "text": "    \"test\": \"node test-systems.mjs && node test-mechanics.mjs && node test-aerodynamics.mjs && node test-power-unit.mjs && node test-driver-model.mjs\""
       }
     },
     {
@@ -442,8 +442,8 @@
       "confidence_score": 1.0,
       "evidence": {
         "path": "web/package.json",
-        "line": 10,
-        "text": "\"test\": \"node test-mechanics.mjs && node test-aerodynamics.mjs && node test-power-unit.mjs && node test-driver-model.mjs\""
+        "line": 14,
+        "text": "    \"test\": \"node test-systems.mjs && node test-mechanics.mjs && node test-aerodynamics.mjs && node test-power-unit.mjs && node test-driver-model.mjs\""
       }
     },
     {
@@ -454,7 +454,7 @@
       "confidence_score": 1.0,
       "evidence": {
         "path": "web/src/app-v2.js",
-        "line": 24,
+        "line": 25,
         "text": "const $=s=>document.querySelector(s),stage=$('#stage'),reduced=matchMedia('(prefers-reduced-motion: reduce)');"
       }
     },
@@ -502,7 +502,7 @@
       "confidence_score": 1.0,
       "evidence": {
         "path": "web/src/app-v2.js",
-        "line": 74,
+        "line": 78,
         "text": "$('#garage-export').onclick=async()=>{const button=$('#garage-export');button.disabled=true;button.textContent='Preparando GLB…';try{const data=await new GLTFExporter().parseAsync(garage.getExportScene(),{binary:true,onlyVisible:false});const url=URL.createObjectURL(new Blob([data],{type:'model/gltf-binary'}));const a=document.createElement('a');a.href=url;a.download='INTEIA-box-laboratorio.glb';a.click();setTimeout(()=>URL.revokeObjectURL(url),10000);}catch(e){console.error(e);status.textContent='Não foi possível exportar o box.';}finally{button.disabled=false;button.textContent='Baixar box 3D';}};"
       }
     },
@@ -514,8 +514,8 @@
       "confidence_score": 1.0,
       "evidence": {
         "path": "web/src/app-v2.js",
-        "line": 104,
-        "text": "renderer.setAnimationLoop(now=>{const dt=Math.min((now-last)/1000,.05);last=now;if(mechanics){mechanics.update(dt,now,reduced.matches);if(mechanics.playing){assembly.value=Math.round(mechanics.amount*100);$('#assembly-value').textContent=Math.round(mechanics.amount*100)+'%';if(lastTarget!==mechanics.target){view(currentView);lastTarget=mechanics.target;}}const paused=!mechanics.motionAvailable;$('#motion-note').hidden=!paused;['spin','steering','drs'].forEach(id=>$('#'+id).disabled=paused);$('#assembly-state').textContent=mechanics.amount<.001?'MONTADO':mechanics.amount>.999?'DESMONTADO':'EM TRANSIÇÃO';carLook?.update();driver?.update();if(driver)driver.root.visible=mechanics.motionAvailable&&!mechanics.isolated;engine?.update(dt,engineOpen?{open:1,cut:Number($('#engine-cut').value)/100,light:1}:null,enginePaused);if(engine){$('#engine-status').textContent=engine.state==='loading'?'Carregando motor…':engine.state==='failed'?'Motor indisponível. Recarregue para tentar novamente.':engine.ready?'Motor pronto · V6 ilustrativo':'Motor disponível sob demanda';$('#engine-cut').disabled=!engine.ready||!engineOpen;$('#engine-pause').disabled=!engine.ready;window.viewerInfo.engineState=engine.state;window.viewerInfo.engineOpen=engineOpen;window.viewerInfo.engineVisible=engine.root.visible;}workbench?.update();if(selectionBox)selectionBox.update();window.viewerInfo.assembly=mechanics.amount;window.viewerInfo.motionAvailable=mechanics.motionAvailable;}"
+        "line": 108,
+        "text": "renderer.setAnimationLoop(now=>{const dt=Math.min((now-last)/1000,.05);last=now;if(mechanics){mechanics.update(dt,now,reduced.matches);if(mechanics.playing){assembly.value=Math.round(mechanics.amount*100);$('#assembly-value').textContent=Math.round(mechanics.amount*100)+'%';if(lastTarget!==mechanics.target){view(currentView);lastTarget=mechanics.target;}}const paused=!mechanics.motionAvailable;$('#motion-note').hidden=!paused;['spin','steering','drs'].forEach(id=>$('#'+id).disabled=paused);$('#assembly-state').textContent=mechanics.amount<.001?'MONTADO':mechanics.amount>.999?'DESMONTADO':'EM TRANSIÇÃO';carLook?.update();driver?.update();engine?.update(dt,engineOpen?{open:1,cut:Number($('#engine-cut').value)/100,light:1}:null,enginePaused);syncSystemMode();if(driver)driver.root.visible=systems?.enabled?false:mechanics.motionAvailable&&!mechanics.isolated;if(engine?.root&&(systems?.enabled||systems?.revealing))engine.root.visible=false;if(engine){$('#engine-status').textContent=engine.state==='loading'?'Carregando motor…':engine.state==='failed'?'Motor indisponível. Recarregue para tentar novamente.':engine.ready?'Motor pronto · V6 ilustrativo':'Motor disponível sob demanda';$('#engine-cut').disabled=!engine.ready||!engineOpen;$('#engine-pause').disabled=!engine.ready;window.viewerInfo.engineState=engine.state;window.viewerInfo.engineOpen=engineOpen;window.viewerInfo.engineVisible=engine.root.visible;}workbench?.update();systems?.update(dt,now/1000);if(selectionBox)selectionBox.update();window.viewerInfo.assembly=mechanics.amount;window.viewerInfo.motionAvailable=mechanics.motionAvailable;window.viewerInfo.systemsActive=systems?.enabled??false;}"
       }
     },
     {
@@ -526,8 +526,8 @@
       "confidence_score": 1.0,
       "evidence": {
         "path": "web/src/app-v2.js",
-        "line": 65,
-        "text": " garage=createGarage({scene,renderer,studio,camera,mechanics});garage.setEnabled(true);windTunnel=createWindTunnel({scene,model,mechanics,reduced,studio,camera,onBeforeToggle:on=>{closeEngine();if(on){garageWasActive=garage.enabled;garage.setEnabled(false);}},onRegion:region=>{setFlowXray(region==='floor');cinematic=false;$('#wind-cinema').setAttribute('aria-pressed','false');controls.autoRotate=false;$('#orbit').setAttribute('aria-pressed','false');autoFit=false;const target=focus.clone();let direction=new THREE.Vector3(1,.28,1.4),scale=1.14;if(region==='wheels'){target.z=-span*.43;direction.set(1,.38,-.85);scale=1.10;}if(region==='floor'){target.y=.20;direction.set(1,.8,.5);scale=1.05;}moveCamera(target.clone().addScaledVector(direction.normalize(),distance*scale),target);},onToggle:on=>{if(!on&&garageWasActive)garage.setEnabled(true);setFlowXray(on&&$('#flow-region').value==='floor'&&$('#flow-detail').getAttribute('aria-pressed')==='true');tunnelActive=on;cinematic=false;$(\"#wind-cinema\").setAttribute(\"aria-pressed\",\"false\");controls.autoRotate=false;$(\"#orbit\").setAttribute(\"aria-pressed\",\"false\");autoFit=false;const target=focus.clone();target.y+=on?.15:0;moveCamera(target.clone().addScaledVector(new THREE.Vector3(1,.28,1.4).normalize(),distance*(on?1.14:1)),target);}});"
+        "line": 69,
+        "text": " garage=createGarage({scene,renderer,studio,camera,mechanics});garage.setEnabled(true);systems=createSystems({scene,model,mechanics,engine,driver,garage,camera,canvas:renderer.domElement,moveCamera,showCar:()=>view('hero'),onClose:()=>workbench?.setTab('car'),mobile:innerWidth<700});windTunnel=createWindTunnel({scene,model,mechanics,reduced,studio,camera,onBeforeToggle:on=>{closeEngine();if(on){garageWasActive=garage.enabled;garage.setEnabled(false);}},onRegion:region=>{setFlowXray(region==='floor');cinematic=false;$('#wind-cinema').setAttribute('aria-pressed','false');controls.autoRotate=false;$('#orbit').setAttribute('aria-pressed','false');autoFit=false;const target=focus.clone();let direction=new THREE.Vector3(1,.28,1.4),scale=1.14;if(region==='wheels'){target.z=-span*.43;direction.set(1,.38,-.85);scale=1.10;}if(region==='floor'){target.y=.20;direction.set(1,.8,.5);scale=1.05;}moveCamera(target.clone().addScaledVector(direction.normalize(),distance*scale),target);},onToggle:on=>{if(!on&&garageWasActive)garage.setEnabled(true);setFlowXray(on&&$('#flow-region').value==='floor'&&$('#flow-detail').getAttribute('aria-pressed')==='true');tunnelActive=on;cinematic=false;$(\"#wind-cinema\").setAttribute(\"aria-pressed\",\"false\");controls.autoRotate=false;$(\"#orbit\").setAttribute(\"aria-pressed\",\"false\");autoFit=false;const target=focus.clone();target.y+=on?.15:0;moveCamera(target.clone().addScaledVector(new THREE.Vector3(1,.28,1.4).normalize(),distance*(on?1.14:1)),target);}});"
       }
     },
     {
@@ -538,7 +538,7 @@
       "confidence_score": 1.0,
       "evidence": {
         "path": "web/src/app-v2.js",
-        "line": 105,
+        "line": 109,
         "text": " if(transition){const t=Math.min(1,(now-transition.start)/800),s=1-(1-t)**3;camera.position.lerpVectors(transition.from,transition.to,s);controls.target.lerpVectors(transition.fromTarget,transition.target,s);if(t===1)transition=null;}if(tunnelActive&&cinematic&&!reduced.matches){cinemaTime+=dt;const angle=.66+Math.sin(cinemaTime*.14)*.18;const radius=distance*1.14;const target=focus.clone();target.y+=.3;camera.position.set(Math.sin(angle)*radius,target.y+radius*(.32+.025*Math.sin(cinemaTime*.11)),Math.cos(angle)*radius);controls.target.copy(target);}controls.update(dt);studio.update(dt);garage?.update(dt);windTunnel?.update(dt);studio.floor.visible=camera.position.y>0;highQuality?composer.render():renderer.render(scene,camera);frameCount++;if(now-frameStart>2000){document.body.dataset.fps=String(Math.round(frameCount*1000/(now-frameStart)));frameCount=0;frameStart=now;}if(mechanics){document.body.dataset.parts=mechanics.records.length;document.body.dataset.assembly=mechanics.amount.toFixed(4);}});"
       }
     },
@@ -1150,8 +1150,8 @@
       "confidence_score": 1.0,
       "evidence": {
         "path": "docs/ARQUITETURA.md",
-        "line": 36,
-        "text": "web/src é a fonte do visualizador. INTEIA_F1_Master.blend é o arquivo de edição reutilizável entregue. package_blender.py reproduz a versão gerada a partir de web/assets; executar novamente não preserva edições manuais posteriores no master. Faça commits dessas edições e decida qual fluxo pretende manter."
+        "line": 39,
+        "text": "`web/src/` é a fonte do visualizador. `INTEIA_F1_Master.blend` é o arquivo de edição reutilizável entregue. `package_blender.py` reproduz a versão gerada a partir de `web/assets/`; executar novamente não preserva edições manuais posteriores no master. Os módulos em `ferramentas/sistemas/` são fontes de outra linha de derivados e não substituem o master automaticamente."
       }
     },
     {
@@ -1258,7 +1258,7 @@
       "confidence_score": 1.0,
       "evidence": {
         "path": "web/src/app-v2.js",
-        "line": 58,
+        "line": 62,
         "text": " materials=applyCarMaterials(THREE,model);mechanics=createMechanics(model);await applyInteiaBranding(model,mechanics);"
       }
     },
@@ -1330,8 +1330,8 @@
       "confidence_score": 1,
       "evidence": {
         "path": "web/package.json",
-        "line": 10,
-        "text": "\"test\": \"node test-mechanics.mjs && node test-aerodynamics.mjs && node test-power-unit.mjs && node test-driver-model.mjs\""
+        "line": 14,
+        "text": "    \"test\": \"node test-systems.mjs && node test-mechanics.mjs && node test-aerodynamics.mjs && node test-power-unit.mjs && node test-driver-model.mjs\""
       }
     }
   ],

@@ -1,0 +1,13 @@
+{
+  "extraKnownMarketplaces": {
+    "chisle": {
+      "source": {
+        "source": "github",
+        "repo": "JayPokale/Chisle"
+      }
+    }
+  },
+  "enabledPlugins": {
+    "chisle@chisle": true
+  }
+}

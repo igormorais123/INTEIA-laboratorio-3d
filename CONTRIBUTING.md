@@ -1,7 +1,12 @@
 # Contribuir
 
-Leia README, Arquitetura e Desenvolvimento. Abra uma branch para cada mudança. Preserve IDs das 97 peças se os controles existentes dependerem deles. Não substitua a geometria, mapas ou metadados silenciosamente.
+Leia o [índice da documentação](docs/README.md), a [arquitetura](docs/ARQUITETURA.md) e o [guia de desenvolvimento](docs/DESENVOLVIMENTO.md). Preserve IDs das 97 peças quando os controles dependerem deles e não substitua geometria, mapas ou metadados sem registrar origem e impacto.
 
-Descreva o comportamento antes/depois, arquivos afetados e testes executados. Para mudanças visuais, inclua capturas comparáveis. Para mudanças Blender/GLB, registre contagem de peças/triângulos e validação de remontagem.
+Antes de propor uma mudança:
 
-Não inclua credenciais, logs pessoais, node_modules ou arquivos cuja origem/licença não possa descrever. Commits de código devem incluir o HTML regenerado quando alterarem a aplicação.
+1. Execute `npm --prefix web test` e `npm --prefix web run build`.
+2. Execute `python ferramentas/mapear.py` e `python ferramentas/mapear.py --check`.
+3. Confira `git diff --check` e separe fontes editáveis de saídas geradas.
+4. Em mudanças visuais, registre capturas comparáveis; em mudanças Blender/GLB, registre peças, triângulos, tamanho e validação de reabertura.
+
+Descreva comportamento anterior e novo, arquivos afetados, testes executados e limitações não verificadas. Não inclua credenciais, logs pessoais, `node_modules`, caches, backups do Blender ou arquivos cuja origem/licença não possa ser descrita. Mudanças em `web/src/` devem incluir `web/index.html` regenerado.

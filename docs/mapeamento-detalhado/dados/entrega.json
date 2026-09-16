@@ -8,38 +8,38 @@
     },
     {
       "path": "ARVORE.md",
-      "bytes": 10904,
-      "sha256": "aabf8e5b906f3baee55ae34c6581693ea536b56120dd0ec927beb9fd78a1179e"
+      "bytes": 20676,
+      "sha256": "75d1467e9177e3c6bcfccd05d8f3c326187328ddddbd0f3ec1face1f171417ff"
     },
     {
       "path": "ASSETS-E-PROCEDENCIA.md",
-      "bytes": 39479,
-      "sha256": "dc416d723b0c609f516af963c87f8d42629c199aba92b99b841e7990beab9800"
+      "bytes": 39146,
+      "sha256": "4e66b14ab75ac5beebe7f64444b4434ba457567f7bb3e9df6be01f4071dc4673"
     },
     {
       "path": "ATUALIZAR.md",
-      "bytes": 7058,
-      "sha256": "24d5081f3428ec0aa125f36863ac13119f4381453c0d440ecf96383bd3d77dd2"
+      "bytes": 7246,
+      "sha256": "043d23ca0ce126eb059c8de0388d938e4bd3ae841137c3a033cc6fe5681855b4"
     },
     {
       "path": "CATALOGO.md",
-      "bytes": 65616,
-      "sha256": "98a0154ef5292e3b0e55457fbc0ca4069451e642b11c5d38375c6c4729c611ea"
+      "bytes": 124298,
+      "sha256": "b638c0bef025dfd836f3eef985a8ea2cf992c6b7463345ee65123e66a9be8442"
     },
     {
       "path": "dados/catalogo.csv",
-      "bytes": 31618,
-      "sha256": "04b66be9eaea7c9ba88742b52d31c5cd16ed42ab0d7c19c27e0bca12d7477036"
+      "bytes": 62035,
+      "sha256": "f9ddbed6d63e73e564d4430ed1b1038e073c087804a6d84cec058c0b3979c07c"
     },
     {
       "path": "dados/catalogo.json",
-      "bytes": 627185,
-      "sha256": "97e33d2e84c060a7398109356c92cea341a90406f6c7d65fa4d73c46d767c582"
+      "bytes": 745246,
+      "sha256": "6b8096124e65dc837056cb5a95eeb4468366e484229d7ddcc3979c2c51031553"
     },
     {
       "path": "dados/cobertura.json",
-      "bytes": 2429,
-      "sha256": "cf3c83ff81cae852cef3a16fc31b59699440ff76362d9e23092df2ee744796cf"
+      "bytes": 2169,
+      "sha256": "09e45cd6e44f9f83eaa48719ca9371a838f32ad1c99b5bce1874b91215006be5"
     },
     {
       "path": "dados/componentes.json",
@@ -48,38 +48,38 @@
     },
     {
       "path": "dados/estado-inicial.json",
-      "bytes": 2687,
-      "sha256": "450c1e5ceae4e7d87f5232c45f5c560dc0494839eb1ec6db679613e7900d148a"
+      "bytes": 2607,
+      "sha256": "ff41e74e5f5975ecd9a38a56bff0cb49035185314849cd0b93999ec5b82c6ec6"
     },
     {
       "path": "dados/grafo.json",
-      "bytes": 477140,
-      "sha256": "76bdeb86654133290f1d8f39d0dd6bbc71f01deef71c7070e6ccace19298b77f"
+      "bytes": 673515,
+      "sha256": "e556509d710e00d04fb2513099bb78a0bc2a2cae8cc19af9d59cd27d049fb728"
     },
     {
       "path": "dados/graphify-ast.json",
-      "bytes": 73194,
-      "sha256": "d42030f22ccebf095bf2ab415d33dda579f63296aae84460f5352343814267b2"
+      "bytes": 70625,
+      "sha256": "5aa56754c07bdffd40280aeaa08f958a0b4ffe6044ab3a381df476367e0fe55a"
     },
     {
       "path": "dados/graphify-execucao.json",
-      "bytes": 4484,
-      "sha256": "bcb02ea9018488b6dd8e55a982dfd991cc0d5a9a8bb6dbe199bb20cef376c6dc"
+      "bytes": 4327,
+      "sha256": "7ef798138bd311633f89be140d369ddf5c5d3a10d4f13a4f87e024b7eac4ca53"
     },
     {
       "path": "dados/manifesto-conferencia.json",
       "bytes": 3563,
-      "sha256": "43174ff9abacce9f0dc9897412b0f354c40325591cb111d8a087a08e1e3029b0"
+      "sha256": "283d8c821fb118e41b92ca4199eacbbf39db95a1ef679ee8ac92a1a784c4d5ff"
     },
     {
       "path": "dados/relacoes-curadas.json",
-      "bytes": 55065,
-      "sha256": "5146afa6cbe413c3d46e09ab0bd3ec6dd3e5512c7552584967fca8996c09bd4d"
+      "bytes": 54243,
+      "sha256": "b62bc7ec53e112db0fde180dd77574969c63106776028e55909456a68c0fdc5a"
     },
     {
       "path": "dados/simbolos.json",
-      "bytes": 223498,
-      "sha256": "f2841035848f19bef8de8c6c80d15029f095c6a2f8301591a2d77891d465fe24"
+      "bytes": 317319,
+      "sha256": "66f1834f0f2edf33ec7272db146aacf44739973f4072190fffb1513611251934"
     },
     {
       "path": "dados/teste-mecanica.json",
@@ -89,42 +89,42 @@
     {
       "path": "dados/validacao.json",
       "bytes": 530,
-      "sha256": "c02a0eb6735a016905891043d374d21208b42062e102c4c19274daf06e0a4055"
+      "sha256": "f8bb0f92abce1169bc65d589c467c65662f09a826530e2304a94e4ecec712d8e"
     },
     {
       "path": "dados/verificacao-app.json",
-      "bytes": 4058,
-      "sha256": "5c17c9c92b77303f4ef231886a80313fc84d377ddad179ad73a9438a00b5a58c"
+      "bytes": 4152,
+      "sha256": "2c034a9e51fb116e37e1b97a3178de57c0eab870945d7c26ac86471bf0d39726"
     },
     {
       "path": "FUNCOES.md",
-      "bytes": 15726,
-      "sha256": "ebc3fef9c62c3f283b45bec97a58de497efdcd7d93d7b222e8a04dd577263fe7"
+      "bytes": 30752,
+      "sha256": "705721d4d9c73fc6cefd8be1a985f4b7b3cfd1eb384c938a718831b2376ad3f2"
     },
     {
       "path": "grafos/arquitetura.json",
-      "bytes": 30726,
-      "sha256": "67ab93db5228e6c852a558f99d60e4ca04740ba8d66dfb109e99c381ab882000"
+      "bytes": 34203,
+      "sha256": "d4c78f5eee8305dbc6fe69854891e049b1599bc559a8e6eeda584fd367da88a3"
     },
     {
       "path": "grafos/arquitetura.mmd",
-      "bytes": 4103,
-      "sha256": "a37c8d818f5e1f1104095b50327e33a43e5f8c6b2bf377dc5627e09a4598d26e"
+      "bytes": 4531,
+      "sha256": "a020853f55574e04410b749ab38874c2135688fbd213a99fb1faea53edf8b909"
     },
     {
       "path": "grafos/assets.json",
-      "bytes": 48293,
-      "sha256": "d2249facb3b604cbe37c1d8cdd4fddc7715fe057157d36444cd386328863c6e0"
+      "bytes": 114113,
+      "sha256": "4565d63868eff233d15d92cafe686e290546c619a4928155836003ccb05d1bce"
     },
     {
       "path": "grafos/assets.mmd",
-      "bytes": 4598,
-      "sha256": "f27a1a28ec8dc81118b56bb1143ac5f5268d015474feab081d42327ba4bd5599"
+      "bytes": 12029,
+      "sha256": "8cde8d029030ef2002b1a4185a7df25e48912bc7e372fb88ed5d7711fcb40b90"
     },
     {
       "path": "grafos/dados.json",
-      "bytes": 66541,
-      "sha256": "1743ffab6a779db75be94fb8fa758c5adc4288b64206f0eba05c96fb488eb397"
+      "bytes": 66717,
+      "sha256": "a74e268f71b5a182f9ed5374b88dbc5820cdb50930eaa57951706313d166ccab"
     },
     {
       "path": "grafos/dados.mmd",
@@ -133,18 +133,18 @@
     },
     {
       "path": "GRAFOS.md",
-      "bytes": 6233,
-      "sha256": "391f7cee57b170cb8984f48e495398ce7fc6a0437d790d8c4a9901c27f11c07f"
+      "bytes": 6139,
+      "sha256": "0fb6d3ff4933c15e94155685cb5ad31a513fc2566ba99de35690742b840142b5"
     },
     {
       "path": "index.html",
-      "bytes": 832181,
-      "sha256": "506e6847ddbd6df0f9e048e698fb2a472db02ee34611c2607d64bf5c2652dbda"
+      "bytes": 1107693,
+      "sha256": "b32a4a47c803e31a5ce7fecf423515d38c4b3f367124fbbf5505541ff1ff9e0c"
     },
     {
       "path": "MODULOS-E-FLUXOS.md",
-      "bytes": 44740,
-      "sha256": "3acfcf11c68b617441665f93cc95677f4f1f9716d0a6db4ab78b088c474ebf93"
+      "bytes": 44428,
+      "sha256": "ad16b3ac267610d638353bd93f312b64e7e7fccac86a16bc35b3b95720e97b75"
     },
     {
       "path": "NAVEGADOR.md",
@@ -153,28 +153,28 @@
     },
     {
       "path": "README.md",
-      "bytes": 5648,
-      "sha256": "6024636d4e725e7588a21ef1391f38a53ac29536043308dff02abbc87a3dcec2"
+      "bytes": 5606,
+      "sha256": "11507377b5c214b6155662f186d5f056cee05a7455b07798773950f835747f32"
     },
     {
       "path": "REUTILIZACAO.md",
-      "bytes": 24499,
-      "sha256": "d466e5ed4cb577b0a1fd208096b43b0f9a9b2c8cb0232154ecdaebd6cb2bf6a2"
+      "bytes": 24304,
+      "sha256": "7d2bf44a03abb7ecc50b4e222035a2e9be0c28ef92809a0a0af5cf67ea76ef29"
     },
     {
       "path": "scripts/finalidades.json",
-      "bytes": 20040,
-      "sha256": "9d480294d1cb789fc79a6e1be131fa2d62af173b9a63a889bec49be19a3d0228"
+      "bytes": 20882,
+      "sha256": "d345ca1fcea1a9e557d4e0e1c9eb8000db5819d94ecf12fdd7bcf01e53a60258"
     },
     {
       "path": "scripts/gerar.py",
-      "bytes": 23869,
-      "sha256": "7bfad0c9fceceff081a509f8cf1573a904b35c8ecd1dd91db7633785b4355feb"
+      "bytes": 26612,
+      "sha256": "33f2ea3370a0be9c3dcecca0a884352251eb324322c0cdc434c1f425215cf27e"
     },
     {
       "path": "scripts/interface.html",
-      "bytes": 16462,
-      "sha256": "18c3303d13f03fa8ea2ce05f32f82fefe2e5092e4607f65322ec6c1d2c774df0"
+      "bytes": 16420,
+      "sha256": "ba83d878aa1358ce8002ac48eecdfd8bc9c7ee91b6e4577bdecbfad61097fe6a"
     },
     {
       "path": "scripts/validar.py",
@@ -183,13 +183,13 @@
     },
     {
       "path": "scripts/verificar-app.mjs",
-      "bytes": 4651,
-      "sha256": "7a5b57a5ad9fb82c09cb643628db1c52dffedebc8aae9467bbffd0acd9fe72c7"
+      "bytes": 4621,
+      "sha256": "7e654c2766204c165895cb91ca3f1828c1cb622b663d9875a1b1a9d445bd1e32"
     },
     {
       "path": "VALIDACAO.md",
-      "bytes": 7223,
-      "sha256": "17f8921febd96e857fae32acc7ec29af304c4b8032268347ce7b9828504d78bd"
+      "bytes": 7169,
+      "sha256": "b21a4ff7f23d1f4d9f4b286118a5877d5a67bec622aa65cbead965c72a37060d"
     },
     {
       "path": "VISUAIS-E-IDENTIDADE.md",

@@ -14,7 +14,34 @@ PREFIX = 'docs/mapeamento-detalhado/'
 EXCLUDES = {'.git': 'Metadados e objetos internos Git; revisão registrada via Git',
             'node_modules': 'Dependências instaladas; versões em package-lock.json',
             '__pycache__': 'Cache Python regenerável',
+            '.impeccable': 'Cache efêmero de sessão; ignorado pelo Git e sem valor arquitetural',
             'graphify-out': 'Extração/cache da conversa paralela ou cache isolado desta análise'}
+
+def family_purpose(path):
+    """Classifica famílias reproduzíveis sem duplicar uma entrada por derivado."""
+    if re.fullmatch(r'ferramentas/sistemas/s\d{2}_[a-z0-9_-]+\.py', path):
+        return ['Módulo procedural de um sistema interno do carro', 'fonte Blender editável', 'Executado por ferramentas/gerar_sistemas.py; preservar SYSTEM e build(ctx)']
+    if path == 'ferramentas/sistemas/lib.py':
+        return ['Biblioteca geométrica compartilhada pelos sistemas internos', 'fonte Blender editável', 'Reutilizar pelos módulos sNN; mudanças afetam múltiplos derivados']
+    if path.startswith('ferramentas/sistemas/previews/') and path.endswith('.png'):
+        return ['Prévia gerada para revisão visual de um sistema interno', 'evidência visual gerada', 'Comparar com a especificação; não é asset carregado pelo runtime']
+    if re.fullmatch(r'web/assets/sistemas-v1(?:-[a-z0-9-]+)?\.glb', path):
+        return ['Asset GLB derivado dos módulos procedurais de sistemas', 'entrega GLB gerada', 'Integrar no runtime somente por carregamento explícito em web/src']
+    if re.fullmatch(r'web/assets/sistemas-v1(?:-[a-z0-9-]+)?\.manifest\.json', path):
+        return ['Manifesto de composição e métricas do GLB de sistemas correspondente', 'evidência gerada', 'Validar sistemas, peças e hash junto ao GLB de mesmo prefixo']
+    if path in ('ferramentas/gerar_sistemas.py', 'ferramentas/otimizar_sistemas.mjs'):
+        return ['Pipeline de geração e otimização dos sistemas internos', 'ferramenta editável', 'Executar a partir da raiz e revisar os derivados antes de integrar']
+    if path.startswith('.planning/architecture/'):
+        return ['Diagrama arquitetural Archify e sua especificação validada', 'mapa arquitetural gerado', 'Regenerar com Archify quando a topologia mudar']
+    if path == '.planning/ai/project-index.json' or path in ('00_INDICE_IA.md', 'AGENTS.md'):
+        return ['Índice e instruções locais para navegação econômica por agentes', 'configuração de agentes', 'Usar para localizar a fonte mínima; não substitui o código']
+    if path.startswith(('.claude/', '.cursor/')) or path == '.github/copilot-instructions.md':
+        return ['Configuração local de assistência e concisão por agente', 'configuração de agentes', 'Aplicar somente no cliente compatível e sem presumir economia medida']
+    if path == '.graphifyignore' or path == 'graphify-out/GRAPH_TREE.html':
+        return ['Configuração ou saída navegável do mapa Graphify', 'mapa estrutural gerado', 'Atualizar com Graphify após mudanças estruturais']
+    if path == 'docs/README.md':
+        return ['Índice canônico da documentação do projeto', 'documentação', 'Começar por este arquivo e abrir apenas o guia necessário']
+    return None
 
 def write(name, data):
     p = OUT / name
@@ -137,10 +164,12 @@ def main():
     for p in paths:
         full=ROOT/p; ext=full.suffix.lower(); meta=purpose.get(p)
         parallel=p.startswith('docs/mapeamento/') or p.startswith('docs/mapa') or p in ('ferramentas/mapear.py','ferramentas/mapa-template.html')
+        family_meta=family_purpose(p)
         if meta is None:
             if parallel:meta=['Mapeamento produzido pela conversa paralela; catalogado como artefato complementar','documentação/código de mapeamento paralelo','Consultar entrada da outra documentação; não editado nesta tarefa']
+            elif family_meta is not None:meta=family_meta
             else:meta=['Arquivo adicional: finalidade ainda requer revisão humana','não classificado','Revisar scripts/finalidades.json antes de reutilizar']
-        row={'path':p,'type':ext.lstrip('.') or 'sem extensão','purpose':meta[0],'nature':meta[1],'usage':meta[2],'classification_reviewed':p in purpose or parallel,'tracked':p in tracked,'bytes':full.stat().st_size,'sha256':sha(full),'dependencies':[],'used_by':[]}
+        row={'path':p,'type':ext.lstrip('.') or 'sem extensão','purpose':meta[0],'nature':meta[1],'usage':meta[2],'classification_reviewed':p in purpose or parallel or family_meta is not None,'tracked':p in tracked,'bytes':full.stat().st_size,'sha256':sha(full),'dependencies':[],'used_by':[]}
         if ext=='.png':
             b=full.read_bytes()
             if b.startswith(b'\x89PNG\r\n\x1a\n'):

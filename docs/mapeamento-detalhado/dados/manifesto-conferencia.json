@@ -43,14 +43,14 @@
   },
   {
     "arquivo": "web/assets/inteia-nome-oficial.svg",
-    "bytes": 1292,
-    "sha256": "5b4d15ba39acea6813a7c76de2a06b1fe99ae16bf11c5b9b013cb3d8cc9ee14e",
+    "bytes": 1289,
+    "sha256": "f1e1cadd4cbca559285e0550e652f636f240f4350726b1455e64580b0105fa17",
     "matches": true
   },
   {
     "arquivo": "web/assets/inteia-escudo-oficial.svg",
-    "bytes": 5927,
-    "sha256": "5021fd72b3981876ad48fcfa1f63c1c5cba3fe9801770200ef78e069ae834064",
+    "bytes": 5924,
+    "sha256": "07c8d7aeed3f3ac9b554399fc743c43d8cacea109cdff2e7d00d53d2ca67d648",
     "matches": true
   },
   {
@@ -61,8 +61,8 @@
   },
   {
     "arquivo": "web/index.html",
-    "bytes": 4369286,
-    "sha256": "bca828521ea8be92d2827c996feee3e764cb5edcd7449d49d7646ebfdd91c395",
+    "bytes": 4404242,
+    "sha256": "5c7fe658ba2ea8b384f2b6012a154bfc40f5eebf60bfac275632fe3be77346e4",
     "matches": true
   },
   {

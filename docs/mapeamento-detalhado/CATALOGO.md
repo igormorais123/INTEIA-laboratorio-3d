@@ -2,15 +2,45 @@
 
 [Índice](README.md) · [Busca interativa](index.html) · [CSV](dados/catalogo.csv) · [JSON](dados/catalogo.json)
 
-110 arquivos catalogados. Hashes de bytes locais em dados/catalogo.json; fontes e derivados têm naturezas distintas. Dependências externas são identificadas como external: e não inventariadas como código do projeto.
+214 arquivos catalogados. Hashes de bytes locais em dados/catalogo.json; fontes e derivados têm naturezas distintas. Dependências externas são identificadas como external: e não inventariadas como código do projeto.
+
+## .claude/settings.json
+
+[Abrir arquivo](../../.claude/settings.json) · json · 202 bytes
+
+Configuração local de assistência e concisão por agente.
+
+**Natureza:** configuração de agentes. **Uso:** Aplicar somente no cliente compatível e sem presumir economia medida.
+**Relações de saída:** Nenhuma relação estrutural encontrada; ausência não prova desuso..
+**Referenciado por:** Nenhuma referência catalogada..
+
+## .cursor/rules/chisle.mdc
+
+[Abrir arquivo](../../.cursor/rules/chisle.mdc) · mdc · 2,362 bytes
+
+Configuração local de assistência e concisão por agente.
+
+**Natureza:** configuração de agentes. **Uso:** Aplicar somente no cliente compatível e sem presumir economia medida.
+**Relações de saída:** Nenhuma relação estrutural encontrada; ausência não prova desuso..
+**Referenciado por:** Nenhuma referência catalogada..
 
 ## .gitattributes
 
-[Abrir arquivo](../../.gitattributes) · sem extensão · 235 bytes
+[Abrir arquivo](../../.gitattributes) · sem extensão · 274 bytes
 
 Política de texto/LF, binários e supressão de diff do HTML empacotado.
 
 **Natureza:** configuração editável. **Uso:** Git.
+**Relações de saída:** Nenhuma relação estrutural encontrada; ausência não prova desuso..
+**Referenciado por:** Nenhuma referência catalogada..
+
+## .github/copilot-instructions.md
+
+[Abrir arquivo](../../.github/copilot-instructions.md) · md · 2,278 bytes
+
+Configuração local de assistência e concisão por agente.
+
+**Natureza:** configuração de agentes. **Uso:** Aplicar somente no cliente compatível e sem presumir economia medida.
 **Relações de saída:** Nenhuma relação estrutural encontrada; ausência não prova desuso..
 **Referenciado por:** Nenhuma referência catalogada..
 
@@ -26,11 +56,21 @@ CI: instala dependências, constrói web e executa testes em Node 24.
 
 ## .gitignore
 
-[Abrir arquivo](../../.gitignore) · sem extensão · 467 bytes
+[Abrir arquivo](../../.gitignore) · sem extensão · 551 bytes
 
 Exclusões de dependências, caches, backups Blender e dados de ambiente.
 
 **Natureza:** configuração editável. **Uso:** Git; pode receber mudanças da conversa paralela.
+**Relações de saída:** Nenhuma relação estrutural encontrada; ausência não prova desuso..
+**Referenciado por:** Nenhuma referência catalogada..
+
+## .graphifyignore
+
+[Abrir arquivo](../../.graphifyignore) · sem extensão · 449 bytes
+
+Configuração ou saída navegável do mapa Graphify.
+
+**Natureza:** mapa estrutural gerado. **Uso:** Atualizar com Graphify após mudanças estruturais.
 **Relações de saída:** Nenhuma relação estrutural encontrada; ausência não prova desuso..
 **Referenciado por:** Nenhuma referência catalogada..
 
@@ -44,9 +84,59 @@ Habilita publicação estática direta pelo GitHub Pages.
 **Relações de saída:** Nenhuma relação estrutural encontrada; ausência não prova desuso..
 **Referenciado por:** `docs/PUBLICACAO.md` (documenta).
 
+## .planning/ai/project-index.json
+
+[Abrir arquivo](../../.planning/ai/project-index.json) · json · 2,997 bytes
+
+Índice e instruções locais para navegação econômica por agentes.
+
+**Natureza:** configuração de agentes. **Uso:** Usar para localizar a fonte mínima; não substitui o código.
+**Relações de saída:** Nenhuma relação estrutural encontrada; ausência não prova desuso..
+**Referenciado por:** Nenhuma referência catalogada..
+
+## .planning/architecture/system-architecture.html
+
+[Abrir arquivo](../../.planning/architecture/system-architecture.html) · html · 623,463 bytes
+
+Diagrama arquitetural Archify e sua especificação validada.
+
+**Natureza:** mapa arquitetural gerado. **Uso:** Regenerar com Archify quando a topologia mudar.
+**Relações de saída:** Nenhuma relação estrutural encontrada; ausência não prova desuso..
+**Referenciado por:** `docs/README.md` (documenta).
+
+## .planning/architecture/system.architecture.json
+
+[Abrir arquivo](../../.planning/architecture/system.architecture.json) · json · 8,454 bytes
+
+Diagrama arquitetural Archify e sua especificação validada.
+
+**Natureza:** mapa arquitetural gerado. **Uso:** Regenerar com Archify quando a topologia mudar.
+**Relações de saída:** Nenhuma relação estrutural encontrada; ausência não prova desuso..
+**Referenciado por:** Nenhuma referência catalogada..
+
+## 00_INDICE_IA.md
+
+[Abrir arquivo](../../00_INDICE_IA.md) · md · 1,794 bytes
+
+Índice e instruções locais para navegação econômica por agentes.
+
+**Natureza:** configuração de agentes. **Uso:** Usar para localizar a fonte mínima; não substitui o código.
+**Relações de saída:** Nenhuma relação estrutural encontrada; ausência não prova desuso..
+**Referenciado por:** Nenhuma referência catalogada..
+
+## AGENTS.md
+
+[Abrir arquivo](../../AGENTS.md) · md · 1,867 bytes
+
+Índice e instruções locais para navegação econômica por agentes.
+
+**Natureza:** configuração de agentes. **Uso:** Usar para localizar a fonte mínima; não substitui o código.
+**Relações de saída:** Nenhuma relação estrutural encontrada; ausência não prova desuso..
+**Referenciado por:** Nenhuma referência catalogada..
+
 ## CHANGELOG.md
 
-[Abrir arquivo](../../CHANGELOG.md) · md · 1,803 bytes
+[Abrir arquivo](../../CHANGELOG.md) · md · 1,770 bytes
 
 Histórico editorial das mudanças e entregas.
 
@@ -56,12 +146,12 @@ Histórico editorial das mudanças e entregas.
 
 ## CONTRIBUTING.md
 
-[Abrir arquivo](../../CONTRIBUTING.md) · md · 652 bytes
+[Abrir arquivo](../../CONTRIBUTING.md) · md · 1,031 bytes
 
 Orientações para contribuir e verificar alterações.
 
 **Natureza:** documento editável. **Uso:** Desenvolvimento.
-**Relações de saída:** Nenhuma relação estrutural encontrada; ausência não prova desuso..
+**Relações de saída:** documenta → `docs/README.md`; documenta → `docs/ARQUITETURA.md`; documenta → `docs/DESENVOLVIMENTO.md`.
 **Referenciado por:** Nenhuma referência catalogada..
 
 ## INTEIA_F1_Master.blend
@@ -72,16 +162,16 @@ Projeto Blender entregue: carro, coleções, materiais, demonstração e estúdi
 
 **Natureza:** derivado editável. **Uso:** Blender; ferramentas/package_blender.py.
 **Relações de saída:** Nenhuma relação estrutural encontrada; ausência não prova desuso..
-**Referenciado por:** `README.md` (documenta); `ferramentas/package_blender.py` (gera_ou_sobrescreve); `ferramentas/validate-kit.py` (reabre_para_validacao); `ferramentas/manifest.cjs` (le_bytes_para_sha256); `docs/ARQUITETURA.md` (identifica_fonte_editavel_e_risco_de_reconstrucao).
+**Referenciado por:** `README.md` (documenta); `docs/ESPECIFICACAO-ASSET-3D-SISTEMAS-F1.md` (documenta); `docs/ESPECIFICACAO-ASSET-3D-SISTEMAS-F1.md` (documenta); `ferramentas/package_blender.py` (gera_ou_sobrescreve); `ferramentas/validate-kit.py` (reabre_para_validacao); `ferramentas/manifest.cjs` (le_bytes_para_sha256); `docs/ARQUITETURA.md` (identifica_fonte_editavel_e_risco_de_reconstrucao).
 
 ## LEIA-ME.md
 
-[Abrir arquivo](../../LEIA-ME.md) · md · 313 bytes
+[Abrir arquivo](../../LEIA-ME.md) · md · 284 bytes
 
 Entrada em português para o pacote e seus destinos.
 
 **Natureza:** documento editável. **Uso:** Leitura inicial.
-**Relações de saída:** documenta → `README.md`; documenta → `docs/BLENDER.md`; documenta → `docs/DESENVOLVIMENTO.md`; documenta → `docs/INTEGRACAO.md`; documenta → `docs/VALIDACAO.md`; documenta → `docs/DIREITOS-E-PROCEDENCIA.md`.
+**Relações de saída:** documenta → `README.md`; documenta → `docs/README.md`; documenta → `docs/VALIDACAO.md`; documenta → `docs/DIREITOS-E-PROCEDENCIA.md`.
 **Referenciado por:** Nenhuma referência catalogada..
 
 ## LICENSE
@@ -106,17 +196,17 @@ Prévia renderizada do projeto Blender; não é textura do modelo.
 
 ## README.md
 
-[Abrir arquivo](../../README.md) · md · 5,750 bytes
+[Abrir arquivo](../../README.md) · md · 6,081 bytes
 
 Entrada pública do laboratório, entregas, instalação e limites.
 
 **Natureza:** documento editável. **Uso:** Leitura inicial.
-**Relações de saída:** documenta → `docs/PUBLICACAO.md`; documenta → `Previa-Blender.png`; documenta → `docs/mapas/README.md`; documenta → `docs/mapas/REUSO.md`; documenta → `docs/mapas/index.html`; documenta → `web/index.html`; documenta → `INTEIA_F1_Master.blend`; documenta → `identidade/LEIA-ME.md`; documenta → `docs/BOX-LABORATORIO.md`; documenta → `ambientes/INTEIA-box-laboratorio.glb`; documenta → `ambientes/INTEIA_Box_com_carro.blend`; documenta → `modelos/INTEIA_F1_estatico.glb`; documenta → `modelos/INTEIA_F1_animado.glb`; documenta → `docs/DESENVOLVIMENTO.md`; documenta → `docs/BLENDER.md`; documenta → `docs/INTEGRACAO.md`; documenta → `docs/ARQUITETURA.md`; documenta → `docs/AERODINAMICA.md`; documenta → `docs/VALIDACAO.md`; documenta → `docs/DESENVOLVIMENTO.md`; documenta → `docs/INTEGRACAO-MOTOR.md`; documenta → `docs/PILOTO-E-CAPACETE.md`; documenta → `LICENSE`; documenta → `docs/DIREITOS-E-PROCEDENCIA.md`; documenta → `THIRD-PARTY-NOTICES.md`.
-**Referenciado por:** `LEIA-ME.md` (documenta).
+**Relações de saída:** documenta → `docs/README.md`; documenta → `Previa-Blender.png`; documenta → `docs/README.md`; documenta → `docs/mapas/README.md`; documenta → `docs/mapas/index.html`; documenta → `web/index.html`; documenta → `INTEIA_F1_Master.blend`; documenta → `identidade/LEIA-ME.md`; documenta → `docs/BOX-LABORATORIO.md`; documenta → `ambientes/INTEIA-box-laboratorio.glb`; documenta → `ambientes/INTEIA_Box_com_carro.blend`; documenta → `modelos/INTEIA_F1_estatico.glb`; documenta → `modelos/INTEIA_F1_animado.glb`; documenta → `docs/DESENVOLVIMENTO.md`; documenta → `docs/SISTEMAS-3D.md`; documenta → `docs/ESPECIFICACAO-ASSET-3D-SISTEMAS-F1.md`; documenta → `docs/BLENDER.md`; documenta → `docs/INTEGRACAO.md`; documenta → `docs/ARQUITETURA.md`; documenta → `docs/AERODINAMICA.md`; documenta → `docs/VALIDACAO.md`; documenta → `docs/OUTRO-PC.md`; documenta → `docs/DESENVOLVIMENTO.md`; documenta → `docs/INTEGRACAO-MOTOR.md`; documenta → `docs/PILOTO-E-CAPACETE.md`; documenta → `LICENSE`; documenta → `docs/DIREITOS-E-PROCEDENCIA.md`; documenta → `THIRD-PARTY-NOTICES.md`.
+**Referenciado por:** `LEIA-ME.md` (documenta); `docs/OUTRO-PC.md` (documenta).
 
 ## THIRD-PARTY-NOTICES.md
 
-[Abrir arquivo](../../THIRD-PARTY-NOTICES.md) · md · 873 bytes
+[Abrir arquivo](../../THIRD-PARTY-NOTICES.md) · md · 861 bytes
 
 Avisos de Three.js e procedência de contribuições externas.
 
@@ -157,7 +247,7 @@ Prévia renderizada da cena Blender com box.
 
 ## ambientes/validacao-box.json
 
-[Abrir arquivo](../../ambientes/validacao-box.json) · json · 369 bytes
+[Abrir arquivo](../../ambientes/validacao-box.json) · json · 351 bytes
 
 Evidência histórica do empacotamento do box e suas imagens.
 
@@ -167,33 +257,43 @@ Evidência histórica do empacotamento do box e suas imagens.
 
 ## docs/ACABAMENTO-E-RENDER.md
 
-[Abrir arquivo](../../docs/ACABAMENTO-E-RENDER.md) · md · 2,866 bytes
+[Abrir arquivo](../../docs/ACABAMENTO-E-RENDER.md) · md · 2,839 bytes
 
 Acabamento, iluminação e ajustes de render documentados em tarefa concorrente.
 
 **Natureza:** documento editável concorrente. **Uso:** Consultar revisão local registrada; não confundir com benchmark validado.
 **Relações de saída:** documenta_acabamento_e_limites_de_exportacao → `web/src/studio.js`; documenta_acabamento_e_limites_de_exportacao → `web/src/customize.js`; documenta_acabamento_e_limites_de_exportacao → `web/src/garage.js`; documenta_acabamento_e_limites_de_exportacao → `ferramentas/package_garage.py`; documenta_acabamento_e_limites_de_exportacao → `ferramentas/render_garage_preview.py`; documenta_acabamento_e_limites_de_exportacao → `ambientes/INTEIA_Box_com_carro.blend`; documenta_acabamento_e_limites_de_exportacao → `ambientes/INTEIA-box-laboratorio.glb`.
-**Referenciado por:** Nenhuma referência catalogada..
+**Referenciado por:** `docs/README.md` (documenta).
 
 ## docs/AERODINAMICA.md
 
-[Abrir arquivo](../../docs/AERODINAMICA.md) · md · 6,311 bytes
+[Abrir arquivo](../../docs/AERODINAMICA.md) · md · 6,254 bytes
 
 Modelo por coeficientes, unidades, entradas, resultados e limitações.
 
 **Natureza:** documento editável. **Uso:** Túnel didático e calculadora.
 **Relações de saída:** documenta_equacoes_e_limites → `web/src/aero-physics.mjs`.
-**Referenciado por:** `README.md` (documenta).
+**Referenciado por:** `README.md` (documenta); `docs/README.md` (documenta).
+
+## docs/ANALISE-DOSSIE-COMPLEMENTAR.md
+
+[Abrir arquivo](../../docs/ANALISE-DOSSIE-COMPLEMENTAR.md) · md · 16,415 bytes
+
+Auditoria editorial das lacunas, contradições e prioridades do dossiê técnico.
+
+**Natureza:** documento editável. **Uso:** Revisar antes de promover alegações técnicas.
+**Relações de saída:** documenta → `docs/pesquisa-sistemas-carro-video.md`; documenta → `docs/ESPECIFICACAO-ASSET-3D-SISTEMAS-F1.md`; documenta → `web/src/systems.js`.
+**Referenciado por:** Nenhuma referência catalogada..
 
 ## docs/ARQUITETURA.md
 
-[Abrir arquivo](../../docs/ARQUITETURA.md) · md · 2,662 bytes
+[Abrir arquivo](../../docs/ARQUITETURA.md) · md · 3,300 bytes
 
 Visão geral das camadas, arquivos e materiais.
 
 **Natureza:** documento editável. **Uso:** Orientação de desenvolvimento.
-**Relações de saída:** documenta → `docs/mapas/README.md`; documenta → `docs/mapas/MODULOS.md`; documenta → `docs/mapas/REUSO.md`; identifica_fonte_editavel_e_risco_de_reconstrucao → `INTEIA_F1_Master.blend`.
-**Referenciado por:** `README.md` (documenta).
+**Relações de saída:** documenta → `docs/README.md`; documenta → `docs/mapas/README.md`; documenta → `docs/mapas/MODULOS.md`; documenta → `docs/mapas/REUSO.md`; identifica_fonte_editavel_e_risco_de_reconstrucao → `INTEIA_F1_Master.blend`.
+**Referenciado por:** `CONTRIBUTING.md` (documenta); `README.md` (documenta); `docs/OUTRO-PC.md` (documenta); `docs/README.md` (documenta).
 
 ## docs/BLENDER.md
 
@@ -203,27 +303,27 @@ Uso das coleções, Append, animação e materiais no Blender.
 
 **Natureza:** documento editável. **Uso:** Reutilização Blender.
 **Relações de saída:** Nenhuma relação estrutural encontrada; ausência não prova desuso..
-**Referenciado por:** `LEIA-ME.md` (documenta); `README.md` (documenta).
+**Referenciado por:** `README.md` (documenta); `docs/OUTRO-PC.md` (documenta); `docs/README.md` (documenta).
 
 ## docs/BOX-LABORATORIO.md
 
-[Abrir arquivo](../../docs/BOX-LABORATORIO.md) · md · 4,715 bytes
+[Abrir arquivo](../../docs/BOX-LABORATORIO.md) · md · 4,670 bytes
 
 Composição e reutilização do box procedural.
 
 **Natureza:** documento editável. **Uso:** Ambiente e exportação.
 **Relações de saída:** documenta_uso_e_origem → `web/src/garage.js`; documenta_uso_e_origem → `ambientes/INTEIA-box-laboratorio.glb`; documenta_uso_e_origem → `ambientes/INTEIA_Box_com_carro.blend`; documenta_uso_e_origem → `web/src/identity.js`.
-**Referenciado por:** `README.md` (documenta).
+**Referenciado por:** `README.md` (documenta); `docs/README.md` (documenta).
 
 ## docs/DESENVOLVIMENTO.md
 
-[Abrir arquivo](../../docs/DESENVOLVIMENTO.md) · md · 2,977 bytes
+[Abrir arquivo](../../docs/DESENVOLVIMENTO.md) · md · 4,011 bytes
 
 Instalação, build, servidor e testes.
 
 **Natureza:** documento editável. **Uso:** Reprodução do projeto.
 **Relações de saída:** documenta → `docs/mapas/MANUTENCAO.md`.
-**Referenciado por:** `LEIA-ME.md` (documenta); `README.md` (documenta); `README.md` (documenta).
+**Referenciado por:** `CONTRIBUTING.md` (documenta); `README.md` (documenta); `README.md` (documenta); `docs/OUTRO-PC.md` (documenta); `docs/README.md` (documenta).
 
 ## docs/DIREITOS-E-PROCEDENCIA.md
 
@@ -233,17 +333,27 @@ Separa titularidade INTEIA de geometria fornecida e terceiros.
 
 **Natureza:** documento editável. **Uso:** Procedência e permissões.
 **Relações de saída:** documenta → `LICENSE`; declara_licenca_proprietaria → `LICENSE`; identifica_licenca_de_dependencia → `web/THREE-LICENSE.txt`.
-**Referenciado por:** `LEIA-ME.md` (documenta); `README.md` (documenta); `THIRD-PARTY-NOTICES.md` (documenta).
+**Referenciado por:** `LEIA-ME.md` (documenta); `README.md` (documenta); `THIRD-PARTY-NOTICES.md` (documenta); `docs/README.md` (documenta).
+
+## docs/ESPECIFICACAO-ASSET-3D-SISTEMAS-F1.md
+
+[Abrir arquivo](../../docs/ESPECIFICACAO-ASSET-3D-SISTEMAS-F1.md) · md · 27,108 bytes
+
+Contrato de modelagem dos catorze sistemas internos do carro.
+
+**Natureza:** especificação editável. **Uso:** Orientar módulos procedurais, integração e aceite visual.
+**Relações de saída:** documenta → `docs/SISTEMAS-3D.md`; documenta → `web/src/workbench.js`; documenta → `docs/pesquisa-sistemas-carro-video.md`; documenta → `web/src/systems.js`; documenta → `INTEIA_F1_Master.blend`; documenta → `web/src/systems.js`; documenta → `web/src/systems.js`; documenta → `docs/pesquisa-sistemas-carro-video.md`; documenta → `web/src/systems.js`; documenta → `docs/pesquisa-sistemas-carro-video.md`; documenta → `web/src/systems.js`; documenta → `web/src/systems.js`; documenta → `web/src/systems.js`; documenta → `web/test-systems.mjs`; documenta → `web/src/systems.js`; documenta → `web/src/systems.js`; documenta → `web/test-systems.mjs`; documenta → `INTEIA_F1_Master.blend`; documenta → `documentacao/componentes-origem.json`.
+**Referenciado por:** `README.md` (documenta); `docs/ANALISE-DOSSIE-COMPLEMENTAR.md` (documenta); `docs/README.md` (documenta).
 
 ## docs/INTEGRACAO-MOTOR.md
 
-[Abrir arquivo](../../docs/INTEGRACAO-MOTOR.md) · md · 2,120 bytes
+[Abrir arquivo](../../docs/INTEGRACAO-MOTOR.md) · md · 2,096 bytes
 
 Operação e procedência da integração do carro final e motor.
 
 **Natureza:** documento editável. **Uso:** Consultar controles e limites.
 **Relações de saída:** Nenhuma relação estrutural encontrada; ausência não prova desuso..
-**Referenciado por:** `README.md` (documenta).
+**Referenciado por:** `README.md` (documenta); `docs/README.md` (documenta); `docs/pesquisa-sistemas-carro-video.md` (documenta).
 
 ## docs/INTEGRACAO.md
 
@@ -253,17 +363,27 @@ Integração dos GLBs e fontes em outros projetos.
 
 **Natureza:** documento editável. **Uso:** Sites e jogos.
 **Relações de saída:** alerta_conflito_com_clipe_glb → `web/src/mechanics.js`.
-**Referenciado por:** `LEIA-ME.md` (documenta); `README.md` (documenta).
+**Referenciado por:** `README.md` (documenta); `docs/README.md` (documenta).
+
+## docs/OUTRO-PC.md
+
+[Abrir arquivo](../../docs/OUTRO-PC.md) · md · 2,281 bytes
+
+Instalação e sincronização segura entre computadores.
+
+**Natureza:** documento editável. **Uso:** Continuar o desenvolvimento em outro clone.
+**Relações de saída:** documenta → `README.md`; documenta → `docs/DESENVOLVIMENTO.md`; documenta → `docs/ARQUITETURA.md`; documenta → `docs/BLENDER.md`; documenta → `docs/PUBLICACAO.md`; documenta → `docs/mapas/README.md`.
+**Referenciado por:** `README.md` (documenta); `docs/README.md` (documenta).
 
 ## docs/PILOTO-E-CAPACETE.md
 
-[Abrir arquivo](../../docs/PILOTO-E-CAPACETE.md) · md · 3,195 bytes
+[Abrir arquivo](../../docs/PILOTO-E-CAPACETE.md) · md · 3,159 bytes
 
 Referências, operação e limites do estudo do piloto.
 
 **Natureza:** documento editável. **Uso:** Consultar proporções e controles.
 **Relações de saída:** Nenhuma relação estrutural encontrada; ausência não prova desuso..
-**Referenciado por:** `README.md` (documenta).
+**Referenciado por:** `README.md` (documenta); `docs/README.md` (documenta).
 
 ## docs/PUBLICACAO.md
 
@@ -273,17 +393,37 @@ Endereços públicos, atualização e evidência da publicação.
 
 **Natureza:** documento editável. **Uso:** Publicar e verificar novas revisões.
 **Relações de saída:** documenta → `index.html`; documenta → `web/index.html`; documenta → `.nojekyll`.
-**Referenciado por:** `README.md` (documenta).
+**Referenciado por:** `docs/OUTRO-PC.md` (documenta); `docs/README.md` (documenta).
+
+## docs/README.md
+
+[Abrir arquivo](../../docs/README.md) · md · 2,872 bytes
+
+Índice canônico da documentação do projeto.
+
+**Natureza:** documentação. **Uso:** Começar por este arquivo e abrir apenas o guia necessário.
+**Relações de saída:** documenta → `docs/ARQUITETURA.md`; documenta → `docs/DESENVOLVIMENTO.md`; documenta → `docs/PUBLICACAO.md`; documenta → `docs/OUTRO-PC.md`; documenta → `docs/INTEGRACAO.md`; documenta → `docs/BLENDER.md`; documenta → `docs/VALIDACAO.md`; documenta → `docs/DIREITOS-E-PROCEDENCIA.md`; documenta → `docs/INTEGRACAO-MOTOR.md`; documenta → `docs/SISTEMAS-3D.md`; documenta → `docs/ESPECIFICACAO-ASSET-3D-SISTEMAS-F1.md`; documenta → `docs/pesquisa-sistemas-carro-video.md`; documenta → `docs/AERODINAMICA.md`; documenta → `docs/BOX-LABORATORIO.md`; documenta → `docs/PILOTO-E-CAPACETE.md`; documenta → `docs/ACABAMENTO-E-RENDER.md`; documenta → `docs/mapas/README.md`; documenta → `.planning/architecture/system-architecture.html`; documenta → `docs/mapas/MANUTENCAO.md`.
+**Referenciado por:** `CONTRIBUTING.md` (documenta); `LEIA-ME.md` (documenta); `README.md` (documenta); `README.md` (documenta); `docs/ARQUITETURA.md` (documenta).
 
 ## docs/REVISAO-TUNEL-VISUAL.md
 
-[Abrir arquivo](../../docs/REVISAO-TUNEL-VISUAL.md) · md · 4,093 bytes
+[Abrir arquivo](../../docs/REVISAO-TUNEL-VISUAL.md) · md · 4,051 bytes
 
 Revisões e limites da representação visual do fluxo.
 
 **Natureza:** documento editável. **Uso:** Histórico do túnel.
 **Relações de saída:** Nenhuma relação estrutural encontrada; ausência não prova desuso..
 **Referenciado por:** Nenhuma referência catalogada..
+
+## docs/SISTEMAS-3D.md
+
+[Abrir arquivo](../../docs/SISTEMAS-3D.md) · md · 5,445 bytes
+
+Guia operacional da bancada Sistemas, do asset publicado e de sua regeneração.
+
+**Natureza:** documento editável. **Uso:** Desenvolvimento, validação e limites dos catorze sistemas internos.
+**Relações de saída:** Nenhuma relação estrutural encontrada; ausência não prova desuso..
+**Referenciado por:** `README.md` (documenta); `docs/ESPECIFICACAO-ASSET-3D-SISTEMAS-F1.md` (documenta); `docs/README.md` (documenta).
 
 ## docs/VALIDACAO.md
 
@@ -293,11 +433,11 @@ Síntese de testes históricos e limites por destino.
 
 **Natureza:** documento editável. **Uso:** Leitura crítica das evidências.
 **Relações de saída:** Nenhuma relação estrutural encontrada; ausência não prova desuso..
-**Referenciado por:** `LEIA-ME.md` (documenta); `README.md` (documenta).
+**Referenciado por:** `LEIA-ME.md` (documenta); `README.md` (documenta); `docs/README.md` (documenta); `docs/pesquisa-sistemas-carro-video.md` (documenta).
 
 ## docs/mapas/GRAFOS.md
 
-[Abrir arquivo](../../docs/mapas/GRAFOS.md) · md · 20,196 bytes
+[Abrir arquivo](../../docs/mapas/GRAFOS.md) · md · 22,759 bytes
 
 Diagramas Mermaid e leitura do grafo geral paralelo.
 
@@ -307,7 +447,7 @@ Diagramas Mermaid e leitura do grafo geral paralelo.
 
 ## docs/mapas/INVENTARIO.md
 
-[Abrir arquivo](../../docs/mapas/INVENTARIO.md) · md · 28,481 bytes
+[Abrir arquivo](../../docs/mapas/INVENTARIO.md) · md · 44,348 bytes
 
 Inventário legível de arquivos da conversa paralela.
 
@@ -323,7 +463,7 @@ Atualização e manutenção do gerador de mapas paralelo.
 
 **Natureza:** documentação/código de mapeamento paralelo. **Uso:** Complementar a esta análise; mantido pela outra tarefa.
 **Relações de saída:** Nenhuma relação estrutural encontrada; ausência não prova desuso..
-**Referenciado por:** `docs/DESENVOLVIMENTO.md` (documenta).
+**Referenciado por:** `docs/DESENVOLVIMENTO.md` (documenta); `docs/README.md` (documenta).
 
 ## docs/mapas/MODULOS.md
 
@@ -353,7 +493,7 @@ Entrada do mapa geral produzido pela conversa paralela.
 
 **Natureza:** documentação/código de mapeamento paralelo. **Uso:** Complementar a esta análise; mantido pela outra tarefa.
 **Relações de saída:** Nenhuma relação estrutural encontrada; ausência não prova desuso..
-**Referenciado por:** `README.md` (documenta); `docs/ARQUITETURA.md` (documenta).
+**Referenciado por:** `README.md` (documenta); `docs/ARQUITETURA.md` (documenta); `docs/OUTRO-PC.md` (documenta); `docs/README.md` (documenta).
 
 ## docs/mapas/REUSO.md
 
@@ -363,7 +503,7 @@ Receitas de reutilização do mapa geral paralelo.
 
 **Natureza:** documentação/código de mapeamento paralelo. **Uso:** Complementar a esta análise; mantido pela outra tarefa.
 **Relações de saída:** Nenhuma relação estrutural encontrada; ausência não prova desuso..
-**Referenciado por:** `README.md` (documenta); `docs/ARQUITETURA.md` (documenta).
+**Referenciado por:** `docs/ARQUITETURA.md` (documenta).
 
 ## docs/mapas/VERIFICACAO.md
 
@@ -377,7 +517,7 @@ Resultados de verificação registrados pela conversa paralela.
 
 ## docs/mapas/cobertura.json
 
-[Abrir arquivo](../../docs/mapas/cobertura.json) · json · 1,126 bytes
+[Abrir arquivo](../../docs/mapas/cobertura.json) · json · 1,127 bytes
 
 Contagens, escopo e exclusões do mapa paralelo.
 
@@ -397,7 +537,7 @@ Catálogo de componentes GLB do mapa paralelo.
 
 ## docs/mapas/controles.json
 
-[Abrir arquivo](../../docs/mapas/controles.json) · json · 45,841 bytes
+[Abrir arquivo](../../docs/mapas/controles.json) · json · 52,918 bytes
 
 Índice de controles DOM extraído pelo gerador paralelo.
 
@@ -407,7 +547,7 @@ Catálogo de componentes GLB do mapa paralelo.
 
 ## docs/mapas/dependencias.json
 
-[Abrir arquivo](../../docs/mapas/dependencias.json) · json · 44,791 bytes
+[Abrir arquivo](../../docs/mapas/dependencias.json) · json · 51,477 bytes
 
 Relações de dependências extraídas pelo gerador paralelo.
 
@@ -427,7 +567,7 @@ Extração graphify preservada pela conversa paralela.
 
 ## docs/mapas/index.html
 
-[Abrir arquivo](../../docs/mapas/index.html) · html · 397,493 bytes
+[Abrir arquivo](../../docs/mapas/index.html) · html · 437,791 bytes
 
 Interface navegável do mapa geral paralelo.
 
@@ -437,7 +577,7 @@ Interface navegável do mapa geral paralelo.
 
 ## docs/mapas/inventario.json
 
-[Abrir arquivo](../../docs/mapas/inventario.json) · json · 513,454 bytes
+[Abrir arquivo](../../docs/mapas/inventario.json) · json · 550,627 bytes
 
 Inventário estruturado de arquivos do gerador paralelo.
 
@@ -445,9 +585,19 @@ Inventário estruturado de arquivos do gerador paralelo.
 **Relações de saída:** Nenhuma relação estrutural encontrada; ausência não prova desuso..
 **Referenciado por:** Nenhuma referência catalogada..
 
+## docs/pesquisa-sistemas-carro-video.md
+
+[Abrir arquivo](../../docs/pesquisa-sistemas-carro-video.md) · md · 21,202 bytes
+
+Pesquisa e limites das referências usadas para os sistemas do carro.
+
+**Natureza:** documento editável. **Uso:** Separar evidência observada, hipótese didática e versão regulatória.
+**Relações de saída:** documenta → `documentacao/componentes-origem.json`; documenta → `docs/INTEGRACAO-MOTOR.md`; documenta → `docs/VALIDACAO.md`.
+**Referenciado por:** `docs/ANALISE-DOSSIE-COMPLEMENTAR.md` (documenta); `docs/ESPECIFICACAO-ASSET-3D-SISTEMAS-F1.md` (documenta); `docs/ESPECIFICACAO-ASSET-3D-SISTEMAS-F1.md` (documenta); `docs/ESPECIFICACAO-ASSET-3D-SISTEMAS-F1.md` (documenta); `docs/README.md` (documenta).
+
 ## documentacao/Comparacao-iluminacao.html
 
-[Abrir arquivo](../../documentacao/Comparacao-iluminacao.html) · html · 370,373 bytes
+[Abrir arquivo](../../documentacao/Comparacao-iluminacao.html) · html · 370,368 bytes
 
 Comparação visual histórica de iluminação em HTML.
 
@@ -467,17 +617,17 @@ Captura da personalização web em uma sessão anterior.
 
 ## documentacao/componentes-origem.json
 
-[Abrir arquivo](../../documentacao/componentes-origem.json) · json · 82,129 bytes
+[Abrir arquivo](../../documentacao/componentes-origem.json) · json · 78,871 bytes
 
 Metadados dos 97 componentes: IDs, categorias, pivôs, limites e sourceObject.
 
 **Natureza:** metadados derivados. **Uso:** Rastrear peças até objetos de origem; caminhos outputs históricos.
 **Relações de saída:** Nenhuma relação estrutural encontrada; ausência não prova desuso..
-**Referenciado por:** Nenhuma referência catalogada..
+**Referenciado por:** `docs/ESPECIFICACAO-ASSET-3D-SISTEMAS-F1.md` (documenta); `docs/pesquisa-sistemas-carro-video.md` (documenta).
 
 ## documentacao/historico-avaliacoes.md
 
-[Abrir arquivo](../../documentacao/historico-avaliacoes.md) · md · 5,664 bytes
+[Abrir arquivo](../../documentacao/historico-avaliacoes.md) · md · 5,659 bytes
 
 Pareceres históricos e subjetivos sobre versões visuais.
 
@@ -485,9 +635,19 @@ Pareceres históricos e subjetivos sobre versões visuais.
 **Relações de saída:** Nenhuma relação estrutural encontrada; ausência não prova desuso..
 **Referenciado por:** Nenhuma referência catalogada..
 
+## ferramentas/gerar_sistemas.py
+
+[Abrir arquivo](../../ferramentas/gerar_sistemas.py) · py · 14,239 bytes
+
+Pipeline de geração e otimização dos sistemas internos.
+
+**Natureza:** ferramenta editável. **Uso:** Executar a partir da raiz e revisar os derivados antes de integrar.
+**Relações de saída:** Nenhuma relação estrutural encontrada; ausência não prova desuso..
+**Referenciado por:** Nenhuma referência catalogada..
+
 ## ferramentas/manifest.cjs
 
-[Abrir arquivo](../../ferramentas/manifest.cjs) · cjs · 1,018 bytes
+[Abrir arquivo](../../ferramentas/manifest.cjs) · cjs · 1,017 bytes
 
 Calcula bytes e SHA-256 de 14 entregas e grava o manifesto.
 
@@ -507,7 +667,7 @@ Template da interface do mapa geral da conversa paralela.
 
 ## ferramentas/mapear.py
 
-[Abrir arquivo](../../ferramentas/mapear.py) · py · 21,927 bytes
+[Abrir arquivo](../../ferramentas/mapear.py) · py · 22,269 bytes
 
 Gerador do mapa geral da conversa paralela; saídas em docs/mapas.
 
@@ -525,6 +685,16 @@ Reúne canais de animação do GLB animado em um único clipe.
 **Relações de saída:** importa → `external:fs`; importa → `external:path`; le_e_reescreve_com_clipe_unico → `modelos/INTEIA_F1_animado.glb`.
 **Referenciado por:** Nenhuma referência catalogada..
 
+## ferramentas/otimizar_sistemas.mjs
+
+[Abrir arquivo](../../ferramentas/otimizar_sistemas.mjs) · mjs · 3,647 bytes
+
+Pipeline de geração e otimização dos sistemas internos.
+
+**Natureza:** ferramenta editável. **Uso:** Executar a partir da raiz e revisar os derivados antes de integrar.
+**Relações de saída:** importa → `external:node:crypto`; importa → `external:node:fs`; importa → `external:node:path`; importa → `external:node:module`; importa → `external:node:url`; chama_sintaticamente → `ferramentas/otimizar_sistemas.mjs#14:load`; chama_sintaticamente → `ferramentas/otimizar_sistemas.mjs#14:load`; chama_sintaticamente → `ferramentas/otimizar_sistemas.mjs#14:load`; chama_sintaticamente → `ferramentas/otimizar_sistemas.mjs#14:load`; chama_sintaticamente → `ferramentas/otimizar_sistemas.mjs#33:systemNames`; chama_sintaticamente → `ferramentas/otimizar_sistemas.mjs#34:partCount`; chama_sintaticamente → `ferramentas/otimizar_sistemas.mjs#33:systemNames`; chama_sintaticamente → `ferramentas/otimizar_sistemas.mjs#34:partCount`.
+**Referenciado por:** Nenhuma referência catalogada..
+
 ## ferramentas/package_blender.py
 
 [Abrir arquivo](../../ferramentas/package_blender.py) · py · 10,622 bytes
@@ -537,7 +707,7 @@ Importa base web e produz Blender mestre, texturas, GLBs e evidências.
 
 ## ferramentas/package_garage.py
 
-[Abrir arquivo](../../ferramentas/package_garage.py) · py · 5,871 bytes
+[Abrir arquivo](../../ferramentas/package_garage.py) · py · 5,795 bytes
 
 Importa GLB do box e GLB estático do carro para compor uma cena Blender.
 
@@ -547,13 +717,843 @@ Importa GLB do box e GLB estático do carro para compor uma cena Blender.
 
 ## ferramentas/render_garage_preview.py
 
-[Abrir arquivo](../../ferramentas/render_garage_preview.py) · py · 505 bytes
+[Abrir arquivo](../../ferramentas/render_garage_preview.py) · py · 498 bytes
 
 Abre cena Blender do box e renderiza prévia.
 
 **Natureza:** código fonte editável. **Uso:** Python do Blender; grava ambientes/Previa-Box.png.
 **Relações de saída:** abre_cena_para_render → `ambientes/INTEIA_Box_com_carro.blend`; renderiza_previa → `ambientes/Previa-Box.png`.
 **Referenciado por:** `docs/ACABAMENTO-E-RENDER.md` (documenta_acabamento_e_limites_de_exportacao).
+
+## ferramentas/sistemas/lib.py
+
+[Abrir arquivo](../../ferramentas/sistemas/lib.py) · py · 42,247 bytes
+
+Biblioteca geométrica compartilhada pelos sistemas internos.
+
+**Natureza:** fonte Blender editável. **Uso:** Reutilizar pelos módulos sNN; mudanças afetam múltiplos derivados.
+**Relações de saída:** Nenhuma relação estrutural encontrada; ausência não prova desuso..
+**Referenciado por:** Nenhuma referência catalogada..
+
+## ferramentas/sistemas/previews/aero-assoalho-por-baixo.png
+
+[Abrir arquivo](../../ferramentas/sistemas/previews/aero-assoalho-por-baixo.png) · png · 1,107,325 bytes
+
+Prévia gerada para revisão visual de um sistema interno.
+
+**Natureza:** evidência visual gerada. **Uso:** Comparar com a especificação; não é asset carregado pelo runtime.
+**Relações de saída:** Nenhuma relação estrutural encontrada; ausência não prova desuso..
+**Referenciado por:** Nenhuma referência catalogada..
+
+## ferramentas/sistemas/previews/aero-bargeboards.png
+
+[Abrir arquivo](../../ferramentas/sistemas/previews/aero-bargeboards.png) · png · 1,001,401 bytes
+
+Prévia gerada para revisão visual de um sistema interno.
+
+**Natureza:** evidência visual gerada. **Uso:** Comparar com a especificação; não é asset carregado pelo runtime.
+**Relações de saída:** Nenhuma relação estrutural encontrada; ausência não prova desuso..
+**Referenciado por:** Nenhuma referência catalogada..
+
+## ferramentas/sistemas/previews/aero-difusor.png
+
+[Abrir arquivo](../../ferramentas/sistemas/previews/aero-difusor.png) · png · 1,088,941 bytes
+
+Prévia gerada para revisão visual de um sistema interno.
+
+**Natureza:** evidência visual gerada. **Uso:** Comparar com a especificação; não é asset carregado pelo runtime.
+**Relações de saída:** Nenhuma relação estrutural encontrada; ausência não prova desuso..
+**Referenciado por:** Nenhuma referência catalogada..
+
+## ferramentas/sistemas/previews/aero-drs.png
+
+[Abrir arquivo](../../ferramentas/sistemas/previews/aero-drs.png) · png · 1,030,120 bytes
+
+Prévia gerada para revisão visual de um sistema interno.
+
+**Natureza:** evidência visual gerada. **Uso:** Comparar com a especificação; não é asset carregado pelo runtime.
+**Relações de saída:** Nenhuma relação estrutural encontrada; ausência não prova desuso..
+**Referenciado por:** Nenhuma referência catalogada..
+
+## ferramentas/sistemas/previews/aero-hero.png
+
+[Abrir arquivo](../../ferramentas/sistemas/previews/aero-hero.png) · png · 973,235 bytes
+
+Prévia gerada para revisão visual de um sistema interno.
+
+**Natureza:** evidência visual gerada. **Uso:** Comparar com a especificação; não é asset carregado pelo runtime.
+**Relações de saída:** Nenhuma relação estrutural encontrada; ausência não prova desuso..
+**Referenciado por:** Nenhuma referência catalogada..
+
+## ferramentas/sistemas/previews/brakes-brake-by-wire.png
+
+[Abrir arquivo](../../ferramentas/sistemas/previews/brakes-brake-by-wire.png) · png · 920,564 bytes
+
+Prévia gerada para revisão visual de um sistema interno.
+
+**Natureza:** evidência visual gerada. **Uso:** Comparar com a especificação; não é asset carregado pelo runtime.
+**Relações de saída:** Nenhuma relação estrutural encontrada; ausência não prova desuso..
+**Referenciado por:** Nenhuma referência catalogada..
+
+## ferramentas/sistemas/previews/brakes-canto-dianteiro.png
+
+[Abrir arquivo](../../ferramentas/sistemas/previews/brakes-canto-dianteiro.png) · png · 1,139,614 bytes
+
+Prévia gerada para revisão visual de um sistema interno.
+
+**Natureza:** evidência visual gerada. **Uso:** Comparar com a especificação; não é asset carregado pelo runtime.
+**Relações de saída:** Nenhuma relação estrutural encontrada; ausência não prova desuso..
+**Referenciado por:** Nenhuma referência catalogada..
+
+## ferramentas/sistemas/previews/brakes-canto-por-dentro.png
+
+[Abrir arquivo](../../ferramentas/sistemas/previews/brakes-canto-por-dentro.png) · png · 1,072,524 bytes
+
+Prévia gerada para revisão visual de um sistema interno.
+
+**Natureza:** evidência visual gerada. **Uso:** Comparar com a especificação; não é asset carregado pelo runtime.
+**Relações de saída:** Nenhuma relação estrutural encontrada; ausência não prova desuso..
+**Referenciado por:** Nenhuma referência catalogada..
+
+## ferramentas/sistemas/previews/brakes-hero.png
+
+[Abrir arquivo](../../ferramentas/sistemas/previews/brakes-hero.png) · png · 989,563 bytes
+
+Prévia gerada para revisão visual de um sistema interno.
+
+**Natureza:** evidência visual gerada. **Uso:** Comparar com a especificação; não é asset carregado pelo runtime.
+**Relações de saída:** Nenhuma relação estrutural encontrada; ausência não prova desuso..
+**Referenciado por:** Nenhuma referência catalogada..
+
+## ferramentas/sistemas/previews/brakes-pedaleira.png
+
+[Abrir arquivo](../../ferramentas/sistemas/previews/brakes-pedaleira.png) · png · 1,023,571 bytes
+
+Prévia gerada para revisão visual de um sistema interno.
+
+**Natureza:** evidência visual gerada. **Uso:** Comparar com a especificação; não é asset carregado pelo runtime.
+**Relações de saída:** Nenhuma relação estrutural encontrada; ausência não prova desuso..
+**Referenciado por:** Nenhuma referência catalogada..
+
+## ferramentas/sistemas/previews/brakes-side.png
+
+[Abrir arquivo](../../ferramentas/sistemas/previews/brakes-side.png) · png · 934,048 bytes
+
+Prévia gerada para revisão visual de um sistema interno.
+
+**Natureza:** evidência visual gerada. **Uso:** Comparar com a especificação; não é asset carregado pelo runtime.
+**Relações de saída:** Nenhuma relação estrutural encontrada; ausência não prova desuso..
+**Referenciado por:** Nenhuma referência catalogada..
+
+## ferramentas/sistemas/previews/cockpit-assento-arnes.png
+
+[Abrir arquivo](../../ferramentas/sistemas/previews/cockpit-assento-arnes.png) · png · 1,091,696 bytes
+
+Prévia gerada para revisão visual de um sistema interno.
+
+**Natureza:** evidência visual gerada. **Uso:** Comparar com a especificação; não é asset carregado pelo runtime.
+**Relações de saída:** Nenhuma relação estrutural encontrada; ausência não prova desuso..
+**Referenciado por:** Nenhuma referência catalogada..
+
+## ferramentas/sistemas/previews/cockpit-hans.png
+
+[Abrir arquivo](../../ferramentas/sistemas/previews/cockpit-hans.png) · png · 1,100,556 bytes
+
+Prévia gerada para revisão visual de um sistema interno.
+
+**Natureza:** evidência visual gerada. **Uso:** Comparar com a especificação; não é asset carregado pelo runtime.
+**Relações de saída:** Nenhuma relação estrutural encontrada; ausência não prova desuso..
+**Referenciado por:** Nenhuma referência catalogada..
+
+## ferramentas/sistemas/previews/cockpit-hero.png
+
+[Abrir arquivo](../../ferramentas/sistemas/previews/cockpit-hero.png) · png · 1,038,275 bytes
+
+Prévia gerada para revisão visual de um sistema interno.
+
+**Natureza:** evidência visual gerada. **Uso:** Comparar com a especificação; não é asset carregado pelo runtime.
+**Relações de saída:** Nenhuma relação estrutural encontrada; ausência não prova desuso..
+**Referenciado por:** Nenhuma referência catalogada..
+
+## ferramentas/sistemas/previews/cockpit-hidratacao.png
+
+[Abrir arquivo](../../ferramentas/sistemas/previews/cockpit-hidratacao.png) · png · 1,056,739 bytes
+
+Prévia gerada para revisão visual de um sistema interno.
+
+**Natureza:** evidência visual gerada. **Uso:** Comparar com a especificação; não é asset carregado pelo runtime.
+**Relações de saída:** Nenhuma relação estrutural encontrada; ausência não prova desuso..
+**Referenciado por:** Nenhuma referência catalogada..
+
+## ferramentas/sistemas/previews/cockpit-pedais.png
+
+[Abrir arquivo](../../ferramentas/sistemas/previews/cockpit-pedais.png) · png · 967,845 bytes
+
+Prévia gerada para revisão visual de um sistema interno.
+
+**Natureza:** evidência visual gerada. **Uso:** Comparar com a especificação; não é asset carregado pelo runtime.
+**Relações de saída:** Nenhuma relação estrutural encontrada; ausência não prova desuso..
+**Referenciado por:** Nenhuma referência catalogada..
+
+## ferramentas/sistemas/previews/cooling-hero.png
+
+[Abrir arquivo](../../ferramentas/sistemas/previews/cooling-hero.png) · png · 1,023,861 bytes
+
+Prévia gerada para revisão visual de um sistema interno.
+
+**Natureza:** evidência visual gerada. **Uso:** Comparar com a especificação; não é asset carregado pelo runtime.
+**Relações de saída:** Nenhuma relação estrutural encontrada; ausência não prova desuso..
+**Referenciado por:** Nenhuma referência catalogada..
+
+## ferramentas/sistemas/previews/cooling-sidepod-direito.png
+
+[Abrir arquivo](../../ferramentas/sistemas/previews/cooling-sidepod-direito.png) · png · 1,079,738 bytes
+
+Prévia gerada para revisão visual de um sistema interno.
+
+**Natureza:** evidência visual gerada. **Uso:** Comparar com a especificação; não é asset carregado pelo runtime.
+**Relações de saída:** Nenhuma relação estrutural encontrada; ausência não prova desuso..
+**Referenciado por:** Nenhuma referência catalogada..
+
+## ferramentas/sistemas/previews/cooling-sidepod-esquerdo.png
+
+[Abrir arquivo](../../ferramentas/sistemas/previews/cooling-sidepod-esquerdo.png) · png · 1,036,336 bytes
+
+Prévia gerada para revisão visual de um sistema interno.
+
+**Natureza:** evidência visual gerada. **Uso:** Comparar com a especificação; não é asset carregado pelo runtime.
+**Relações de saída:** Nenhuma relação estrutural encontrada; ausência não prova desuso..
+**Referenciado por:** Nenhuma referência catalogada..
+
+## ferramentas/sistemas/previews/cooling-superior.png
+
+[Abrir arquivo](../../ferramentas/sistemas/previews/cooling-superior.png) · png · 1,025,670 bytes
+
+Prévia gerada para revisão visual de um sistema interno.
+
+**Natureza:** evidência visual gerada. **Uso:** Comparar com a especificação; não é asset carregado pelo runtime.
+**Relações de saída:** Nenhuma relação estrutural encontrada; ausência não prova desuso..
+**Referenciado por:** Nenhuma referência catalogada..
+
+## ferramentas/sistemas/previews/ers-energy-store.png
+
+[Abrir arquivo](../../ferramentas/sistemas/previews/ers-energy-store.png) · png · 986,905 bytes
+
+Prévia gerada para revisão visual de um sistema interno.
+
+**Natureza:** evidência visual gerada. **Uso:** Comparar com a especificação; não é asset carregado pelo runtime.
+**Relações de saída:** Nenhuma relação estrutural encontrada; ausência não prova desuso..
+**Referenciado por:** Nenhuma referência catalogada..
+
+## ferramentas/sistemas/previews/ers-hero.png
+
+[Abrir arquivo](../../ferramentas/sistemas/previews/ers-hero.png) · png · 992,939 bytes
+
+Prévia gerada para revisão visual de um sistema interno.
+
+**Natureza:** evidência visual gerada. **Uso:** Comparar com a especificação; não é asset carregado pelo runtime.
+**Relações de saída:** Nenhuma relação estrutural encontrada; ausência não prova desuso..
+**Referenciado por:** Nenhuma referência catalogada..
+
+## ferramentas/sistemas/previews/ers-inversor.png
+
+[Abrir arquivo](../../ferramentas/sistemas/previews/ers-inversor.png) · png · 1,169,236 bytes
+
+Prévia gerada para revisão visual de um sistema interno.
+
+**Natureza:** evidência visual gerada. **Uso:** Comparar com a especificação; não é asset carregado pelo runtime.
+**Relações de saída:** Nenhuma relação estrutural encontrada; ausência não prova desuso..
+**Referenciado por:** Nenhuma referência catalogada..
+
+## ferramentas/sistemas/previews/ers-mgu-k.png
+
+[Abrir arquivo](../../ferramentas/sistemas/previews/ers-mgu-k.png) · png · 1,005,640 bytes
+
+Prévia gerada para revisão visual de um sistema interno.
+
+**Natureza:** evidência visual gerada. **Uso:** Comparar com a especificação; não é asset carregado pelo runtime.
+**Relações de saída:** Nenhuma relação estrutural encontrada; ausência não prova desuso..
+**Referenciado por:** Nenhuma referência catalogada..
+
+## ferramentas/sistemas/previews/fuel-celula.png
+
+[Abrir arquivo](../../ferramentas/sistemas/previews/fuel-celula.png) · png · 1,105,994 bytes
+
+Prévia gerada para revisão visual de um sistema interno.
+
+**Natureza:** evidência visual gerada. **Uso:** Comparar com a especificação; não é asset carregado pelo runtime.
+**Relações de saída:** Nenhuma relação estrutural encontrada; ausência não prova desuso..
+**Referenciado por:** Nenhuma referência catalogada..
+
+## ferramentas/sistemas/previews/fuel-hero.png
+
+[Abrir arquivo](../../ferramentas/sistemas/previews/fuel-hero.png) · png · 1,075,268 bytes
+
+Prévia gerada para revisão visual de um sistema interno.
+
+**Natureza:** evidência visual gerada. **Uso:** Comparar com a especificação; não é asset carregado pelo runtime.
+**Relações de saída:** Nenhuma relação estrutural encontrada; ausência não prova desuso..
+**Referenciado por:** Nenhuma referência catalogada..
+
+## ferramentas/sistemas/previews/fuel-interior.png
+
+[Abrir arquivo](../../ferramentas/sistemas/previews/fuel-interior.png) · png · 1,233,471 bytes
+
+Prévia gerada para revisão visual de um sistema interno.
+
+**Natureza:** evidência visual gerada. **Uso:** Comparar com a especificação; não é asset carregado pelo runtime.
+**Relações de saída:** Nenhuma relação estrutural encontrada; ausência não prova desuso..
+**Referenciado por:** Nenhuma referência catalogada..
+
+## ferramentas/sistemas/previews/fuel-linhas.png
+
+[Abrir arquivo](../../ferramentas/sistemas/previews/fuel-linhas.png) · png · 1,059,638 bytes
+
+Prévia gerada para revisão visual de um sistema interno.
+
+**Natureza:** evidência visual gerada. **Uso:** Comparar com a especificação; não é asset carregado pelo runtime.
+**Relações de saída:** Nenhuma relação estrutural encontrada; ausência não prova desuso..
+**Referenciado por:** Nenhuma referência catalogada..
+
+## ferramentas/sistemas/previews/overview-hero.png
+
+[Abrir arquivo](../../ferramentas/sistemas/previews/overview-hero.png) · png · 1,059,285 bytes
+
+Prévia gerada para revisão visual de um sistema interno.
+
+**Natureza:** evidência visual gerada. **Uso:** Comparar com a especificação; não é asset carregado pelo runtime.
+**Relações de saída:** Nenhuma relação estrutural encontrada; ausência não prova desuso..
+**Referenciado por:** Nenhuma referência catalogada..
+
+## ferramentas/sistemas/previews/power-escape-turbina.png
+
+[Abrir arquivo](../../ferramentas/sistemas/previews/power-escape-turbina.png) · png · 1,169,408 bytes
+
+Prévia gerada para revisão visual de um sistema interno.
+
+**Natureza:** evidência visual gerada. **Uso:** Comparar com a especificação; não é asset carregado pelo runtime.
+**Relações de saída:** Nenhuma relação estrutural encontrada; ausência não prova desuso..
+**Referenciado por:** Nenhuma referência catalogada..
+
+## ferramentas/sistemas/previews/power-hero.png
+
+[Abrir arquivo](../../ferramentas/sistemas/previews/power-hero.png) · png · 1,033,160 bytes
+
+Prévia gerada para revisão visual de um sistema interno.
+
+**Natureza:** evidência visual gerada. **Uso:** Comparar com a especificação; não é asset carregado pelo runtime.
+**Relações de saída:** Nenhuma relação estrutural encontrada; ausência não prova desuso..
+**Referenciado por:** Nenhuma referência catalogada..
+
+## ferramentas/sistemas/previews/power-plenum-trompetas.png
+
+[Abrir arquivo](../../ferramentas/sistemas/previews/power-plenum-trompetas.png) · png · 1,119,296 bytes
+
+Prévia gerada para revisão visual de um sistema interno.
+
+**Natureza:** evidência visual gerada. **Uso:** Comparar com a especificação; não é asset carregado pelo runtime.
+**Relações de saída:** Nenhuma relação estrutural encontrada; ausência não prova desuso..
+**Referenciado por:** Nenhuma referência catalogada..
+
+## ferramentas/sistemas/previews/power-tres-quartos.png
+
+[Abrir arquivo](../../ferramentas/sistemas/previews/power-tres-quartos.png) · png · 1,162,037 bytes
+
+Prévia gerada para revisão visual de um sistema interno.
+
+**Natureza:** evidência visual gerada. **Uso:** Comparar com a especificação; não é asset carregado pelo runtime.
+**Relações de saída:** Nenhuma relação estrutural encontrada; ausência não prova desuso..
+**Referenciado por:** Nenhuma referência catalogada..
+
+## ferramentas/sistemas/previews/power-turbo-dianteiro.png
+
+[Abrir arquivo](../../ferramentas/sistemas/previews/power-turbo-dianteiro.png) · png · 1,149,485 bytes
+
+Prévia gerada para revisão visual de um sistema interno.
+
+**Natureza:** evidência visual gerada. **Uso:** Comparar com a especificação; não é asset carregado pelo runtime.
+**Relações de saída:** Nenhuma relação estrutural encontrada; ausência não prova desuso..
+**Referenciado por:** Nenhuma referência catalogada..
+
+## ferramentas/sistemas/previews/power-vale-em-v.png
+
+[Abrir arquivo](../../ferramentas/sistemas/previews/power-vale-em-v.png) · png · 1,070,595 bytes
+
+Prévia gerada para revisão visual de um sistema interno.
+
+**Natureza:** evidência visual gerada. **Uso:** Comparar com a especificação; não é asset carregado pelo runtime.
+**Relações de saída:** Nenhuma relação estrutural encontrada; ausência não prova desuso..
+**Referenciado por:** Nenhuma referência catalogada..
+
+## ferramentas/sistemas/previews/safety-halo.png
+
+[Abrir arquivo](../../ferramentas/sistemas/previews/safety-halo.png) · png · 1,054,996 bytes
+
+Prévia gerada para revisão visual de um sistema interno.
+
+**Natureza:** evidência visual gerada. **Uso:** Comparar com a especificação; não é asset carregado pelo runtime.
+**Relações de saída:** Nenhuma relação estrutural encontrada; ausência não prova desuso..
+**Referenciado por:** Nenhuma referência catalogada..
+
+## ferramentas/sistemas/previews/safety-hero.png
+
+[Abrir arquivo](../../ferramentas/sistemas/previews/safety-hero.png) · png · 978,850 bytes
+
+Prévia gerada para revisão visual de um sistema interno.
+
+**Natureza:** evidência visual gerada. **Uso:** Comparar com a especificação; não é asset carregado pelo runtime.
+**Relações de saída:** Nenhuma relação estrutural encontrada; ausência não prova desuso..
+**Referenciado por:** Nenhuma referência catalogada..
+
+## ferramentas/sistemas/previews/safety-impacto-dianteiro.png
+
+[Abrir arquivo](../../ferramentas/sistemas/previews/safety-impacto-dianteiro.png) · png · 977,953 bytes
+
+Prévia gerada para revisão visual de um sistema interno.
+
+**Natureza:** evidência visual gerada. **Uso:** Comparar com a especificação; não é asset carregado pelo runtime.
+**Relações de saída:** Nenhuma relação estrutural encontrada; ausência não prova desuso..
+**Referenciado por:** Nenhuma referência catalogada..
+
+## ferramentas/sistemas/previews/safety-impacto-traseiro.png
+
+[Abrir arquivo](../../ferramentas/sistemas/previews/safety-impacto-traseiro.png) · png · 996,477 bytes
+
+Prévia gerada para revisão visual de um sistema interno.
+
+**Natureza:** evidência visual gerada. **Uso:** Comparar com a especificação; não é asset carregado pelo runtime.
+**Relações de saída:** Nenhuma relação estrutural encontrada; ausência não prova desuso..
+**Referenciado por:** Nenhuma referência catalogada..
+
+## ferramentas/sistemas/previews/safety-retencao-roda.png
+
+[Abrir arquivo](../../ferramentas/sistemas/previews/safety-retencao-roda.png) · png · 980,298 bytes
+
+Prévia gerada para revisão visual de um sistema interno.
+
+**Natureza:** evidência visual gerada. **Uso:** Comparar com a especificação; não é asset carregado pelo runtime.
+**Relações de saída:** Nenhuma relação estrutural encontrada; ausência não prova desuso..
+**Referenciado por:** Nenhuma referência catalogada..
+
+## ferramentas/sistemas/previews/sensors-antena.png
+
+[Abrir arquivo](../../ferramentas/sistemas/previews/sensors-antena.png) · png · 958,450 bytes
+
+Prévia gerada para revisão visual de um sistema interno.
+
+**Natureza:** evidência visual gerada. **Uso:** Comparar com a especificação; não é asset carregado pelo runtime.
+**Relações de saída:** Nenhuma relação estrutural encontrada; ausência não prova desuso..
+**Referenciado por:** Nenhuma referência catalogada..
+
+## ferramentas/sistemas/previews/sensors-ecu.png
+
+[Abrir arquivo](../../ferramentas/sistemas/previews/sensors-ecu.png) · png · 935,854 bytes
+
+Prévia gerada para revisão visual de um sistema interno.
+
+**Natureza:** evidência visual gerada. **Uso:** Comparar com a especificação; não é asset carregado pelo runtime.
+**Relações de saída:** Nenhuma relação estrutural encontrada; ausência não prova desuso..
+**Referenciado por:** Nenhuma referência catalogada..
+
+## ferramentas/sistemas/previews/sensors-hero.png
+
+[Abrir arquivo](../../ferramentas/sistemas/previews/sensors-hero.png) · png · 967,683 bytes
+
+Prévia gerada para revisão visual de um sistema interno.
+
+**Natureza:** evidência visual gerada. **Uso:** Comparar com a especificação; não é asset carregado pelo runtime.
+**Relações de saída:** Nenhuma relação estrutural encontrada; ausência não prova desuso..
+**Referenciado por:** Nenhuma referência catalogada..
+
+## ferramentas/sistemas/previews/sensors-pitot.png
+
+[Abrir arquivo](../../ferramentas/sistemas/previews/sensors-pitot.png) · png · 905,901 bytes
+
+Prévia gerada para revisão visual de um sistema interno.
+
+**Natureza:** evidência visual gerada. **Uso:** Comparar com a especificação; não é asset carregado pelo runtime.
+**Relações de saída:** Nenhuma relação estrutural encontrada; ausência não prova desuso..
+**Referenciado por:** Nenhuma referência catalogada..
+
+## ferramentas/sistemas/previews/sensors-roda.png
+
+[Abrir arquivo](../../ferramentas/sistemas/previews/sensors-roda.png) · png · 966,987 bytes
+
+Prévia gerada para revisão visual de um sistema interno.
+
+**Natureza:** evidência visual gerada. **Uso:** Comparar com a especificação; não é asset carregado pelo runtime.
+**Relações de saída:** Nenhuma relação estrutural encontrada; ausência não prova desuso..
+**Referenciado por:** Nenhuma referência catalogada..
+
+## ferramentas/sistemas/previews/steering-coluna.png
+
+[Abrir arquivo](../../ferramentas/sistemas/previews/steering-coluna.png) · png · 924,536 bytes
+
+Prévia gerada para revisão visual de um sistema interno.
+
+**Natureza:** evidência visual gerada. **Uso:** Comparar com a especificação; não é asset carregado pelo runtime.
+**Relações de saída:** Nenhuma relação estrutural encontrada; ausência não prova desuso..
+**Referenciado por:** Nenhuma referência catalogada..
+
+## ferramentas/sistemas/previews/steering-cremalheira.png
+
+[Abrir arquivo](../../ferramentas/sistemas/previews/steering-cremalheira.png) · png · 983,328 bytes
+
+Prévia gerada para revisão visual de um sistema interno.
+
+**Natureza:** evidência visual gerada. **Uso:** Comparar com a especificação; não é asset carregado pelo runtime.
+**Relações de saída:** Nenhuma relação estrutural encontrada; ausência não prova desuso..
+**Referenciado por:** Nenhuma referência catalogada..
+
+## ferramentas/sistemas/previews/steering-hero.png
+
+[Abrir arquivo](../../ferramentas/sistemas/previews/steering-hero.png) · png · 993,771 bytes
+
+Prévia gerada para revisão visual de um sistema interno.
+
+**Natureza:** evidência visual gerada. **Uso:** Comparar com a especificação; não é asset carregado pelo runtime.
+**Relações de saída:** Nenhuma relação estrutural encontrada; ausência não prova desuso..
+**Referenciado por:** Nenhuma referência catalogada..
+
+## ferramentas/sistemas/previews/steering-track-rod.png
+
+[Abrir arquivo](../../ferramentas/sistemas/previews/steering-track-rod.png) · png · 948,403 bytes
+
+Prévia gerada para revisão visual de um sistema interno.
+
+**Natureza:** evidência visual gerada. **Uso:** Comparar com a especificação; não é asset carregado pelo runtime.
+**Relações de saída:** Nenhuma relação estrutural encontrada; ausência não prova desuso..
+**Referenciado por:** Nenhuma referência catalogada..
+
+## ferramentas/sistemas/previews/structure-antepara-traseira.png
+
+[Abrir arquivo](../../ferramentas/sistemas/previews/structure-antepara-traseira.png) · png · 956,947 bytes
+
+Prévia gerada para revisão visual de um sistema interno.
+
+**Natureza:** evidência visual gerada. **Uso:** Comparar com a especificação; não é asset carregado pelo runtime.
+**Relações de saída:** Nenhuma relação estrutural encontrada; ausência não prova desuso..
+**Referenciado por:** Nenhuma referência catalogada..
+
+## ferramentas/sistemas/previews/structure-celula.png
+
+[Abrir arquivo](../../ferramentas/sistemas/previews/structure-celula.png) · png · 1,047,822 bytes
+
+Prévia gerada para revisão visual de um sistema interno.
+
+**Natureza:** evidência visual gerada. **Uso:** Comparar com a especificação; não é asset carregado pelo runtime.
+**Relações de saída:** Nenhuma relação estrutural encontrada; ausência não prova desuso..
+**Referenciado por:** Nenhuma referência catalogada..
+
+## ferramentas/sistemas/previews/structure-corte-sanduiche.png
+
+[Abrir arquivo](../../ferramentas/sistemas/previews/structure-corte-sanduiche.png) · png · 1,033,637 bytes
+
+Prévia gerada para revisão visual de um sistema interno.
+
+**Natureza:** evidência visual gerada. **Uso:** Comparar com a especificação; não é asset carregado pelo runtime.
+**Relações de saída:** Nenhuma relação estrutural encontrada; ausência não prova desuso..
+**Referenciado por:** Nenhuma referência catalogada..
+
+## ferramentas/sistemas/previews/structure-hero.png
+
+[Abrir arquivo](../../ferramentas/sistemas/previews/structure-hero.png) · png · 1,004,689 bytes
+
+Prévia gerada para revisão visual de um sistema interno.
+
+**Natureza:** evidência visual gerada. **Uso:** Comparar com a especificação; não é asset carregado pelo runtime.
+**Relações de saída:** Nenhuma relação estrutural encontrada; ausência não prova desuso..
+**Referenciado por:** Nenhuma referência catalogada..
+
+## ferramentas/sistemas/previews/structure-plank.png
+
+[Abrir arquivo](../../ferramentas/sistemas/previews/structure-plank.png) · png · 972,320 bytes
+
+Prévia gerada para revisão visual de um sistema interno.
+
+**Natureza:** evidência visual gerada. **Uso:** Comparar com a especificação; não é asset carregado pelo runtime.
+**Relações de saída:** Nenhuma relação estrutural encontrada; ausência não prova desuso..
+**Referenciado por:** Nenhuma referência catalogada..
+
+## ferramentas/sistemas/previews/suspension-dianteira-inboard.png
+
+[Abrir arquivo](../../ferramentas/sistemas/previews/suspension-dianteira-inboard.png) · png · 1,050,666 bytes
+
+Prévia gerada para revisão visual de um sistema interno.
+
+**Natureza:** evidência visual gerada. **Uso:** Comparar com a especificação; não é asset carregado pelo runtime.
+**Relações de saída:** Nenhuma relação estrutural encontrada; ausência não prova desuso..
+**Referenciado por:** Nenhuma referência catalogada..
+
+## ferramentas/sistemas/previews/suspension-dianteira.png
+
+[Abrir arquivo](../../ferramentas/sistemas/previews/suspension-dianteira.png) · png · 1,044,303 bytes
+
+Prévia gerada para revisão visual de um sistema interno.
+
+**Natureza:** evidência visual gerada. **Uso:** Comparar com a especificação; não é asset carregado pelo runtime.
+**Relações de saída:** Nenhuma relação estrutural encontrada; ausência não prova desuso..
+**Referenciado por:** Nenhuma referência catalogada..
+
+## ferramentas/sistemas/previews/suspension-hero.png
+
+[Abrir arquivo](../../ferramentas/sistemas/previews/suspension-hero.png) · png · 991,128 bytes
+
+Prévia gerada para revisão visual de um sistema interno.
+
+**Natureza:** evidência visual gerada. **Uso:** Comparar com a especificação; não é asset carregado pelo runtime.
+**Relações de saída:** Nenhuma relação estrutural encontrada; ausência não prova desuso..
+**Referenciado por:** Nenhuma referência catalogada..
+
+## ferramentas/sistemas/previews/suspension-traseira.png
+
+[Abrir arquivo](../../ferramentas/sistemas/previews/suspension-traseira.png) · png · 1,051,648 bytes
+
+Prévia gerada para revisão visual de um sistema interno.
+
+**Natureza:** evidência visual gerada. **Uso:** Comparar com a especificação; não é asset carregado pelo runtime.
+**Relações de saída:** Nenhuma relação estrutural encontrada; ausência não prova desuso..
+**Referenciado por:** Nenhuma referência catalogada..
+
+## ferramentas/sistemas/previews/suspension-upright.png
+
+[Abrir arquivo](../../ferramentas/sistemas/previews/suspension-upright.png) · png · 1,084,050 bytes
+
+Prévia gerada para revisão visual de um sistema interno.
+
+**Natureza:** evidência visual gerada. **Uso:** Comparar com a especificação; não é asset carregado pelo runtime.
+**Relações de saída:** Nenhuma relação estrutural encontrada; ausência não prova desuso..
+**Referenciado por:** Nenhuma referência catalogada..
+
+## ferramentas/sistemas/previews/transmission-diferencial.png
+
+[Abrir arquivo](../../ferramentas/sistemas/previews/transmission-diferencial.png) · png · 1,112,696 bytes
+
+Prévia gerada para revisão visual de um sistema interno.
+
+**Natureza:** evidência visual gerada. **Uso:** Comparar com a especificação; não é asset carregado pelo runtime.
+**Relações de saída:** Nenhuma relação estrutural encontrada; ausência não prova desuso..
+**Referenciado por:** Nenhuma referência catalogada..
+
+## ferramentas/sistemas/previews/transmission-embreagem.png
+
+[Abrir arquivo](../../ferramentas/sistemas/previews/transmission-embreagem.png) · png · 1,206,406 bytes
+
+Prévia gerada para revisão visual de um sistema interno.
+
+**Natureza:** evidência visual gerada. **Uso:** Comparar com a especificação; não é asset carregado pelo runtime.
+**Relações de saída:** Nenhuma relação estrutural encontrada; ausência não prova desuso..
+**Referenciado por:** Nenhuma referência catalogada..
+
+## ferramentas/sistemas/previews/transmission-engrenagens.png
+
+[Abrir arquivo](../../ferramentas/sistemas/previews/transmission-engrenagens.png) · png · 1,234,780 bytes
+
+Prévia gerada para revisão visual de um sistema interno.
+
+**Natureza:** evidência visual gerada. **Uso:** Comparar com a especificação; não é asset carregado pelo runtime.
+**Relações de saída:** Nenhuma relação estrutural encontrada; ausência não prova desuso..
+**Referenciado por:** Nenhuma referência catalogada..
+
+## ferramentas/sistemas/previews/transmission-hero.png
+
+[Abrir arquivo](../../ferramentas/sistemas/previews/transmission-hero.png) · png · 995,586 bytes
+
+Prévia gerada para revisão visual de um sistema interno.
+
+**Natureza:** evidência visual gerada. **Uso:** Comparar com a especificação; não é asset carregado pelo runtime.
+**Relações de saída:** Nenhuma relação estrutural encontrada; ausência não prova desuso..
+**Referenciado por:** Nenhuma referência catalogada..
+
+## ferramentas/sistemas/previews/transmission-lateral-corte.png
+
+[Abrir arquivo](../../ferramentas/sistemas/previews/transmission-lateral-corte.png) · png · 1,082,073 bytes
+
+Prévia gerada para revisão visual de um sistema interno.
+
+**Natureza:** evidência visual gerada. **Uso:** Comparar com a especificação; não é asset carregado pelo runtime.
+**Relações de saída:** Nenhuma relação estrutural encontrada; ausência não prova desuso..
+**Referenciado por:** Nenhuma referência catalogada..
+
+## ferramentas/sistemas/previews/wheel-frente.png
+
+[Abrir arquivo](../../ferramentas/sistemas/previews/wheel-frente.png) · png · 1,027,708 bytes
+
+Prévia gerada para revisão visual de um sistema interno.
+
+**Natureza:** evidência visual gerada. **Uso:** Comparar com a especificação; não é asset carregado pelo runtime.
+**Relações de saída:** Nenhuma relação estrutural encontrada; ausência não prova desuso..
+**Referenciado por:** Nenhuma referência catalogada..
+
+## ferramentas/sistemas/previews/wheel-hero.png
+
+[Abrir arquivo](../../ferramentas/sistemas/previews/wheel-hero.png) · png · 992,305 bytes
+
+Prévia gerada para revisão visual de um sistema interno.
+
+**Natureza:** evidência visual gerada. **Uso:** Comparar com a especificação; não é asset carregado pelo runtime.
+**Relações de saída:** Nenhuma relação estrutural encontrada; ausência não prova desuso..
+**Referenciado por:** Nenhuma referência catalogada..
+
+## ferramentas/sistemas/previews/wheel-lateral.png
+
+[Abrir arquivo](../../ferramentas/sistemas/previews/wheel-lateral.png) · png · 936,026 bytes
+
+Prévia gerada para revisão visual de um sistema interno.
+
+**Natureza:** evidência visual gerada. **Uso:** Comparar com a especificação; não é asset carregado pelo runtime.
+**Relações de saída:** Nenhuma relação estrutural encontrada; ausência não prova desuso..
+**Referenciado por:** Nenhuma referência catalogada..
+
+## ferramentas/sistemas/previews/wheel-tras.png
+
+[Abrir arquivo](../../ferramentas/sistemas/previews/wheel-tras.png) · png · 1,053,290 bytes
+
+Prévia gerada para revisão visual de um sistema interno.
+
+**Natureza:** evidência visual gerada. **Uso:** Comparar com a especificação; não é asset carregado pelo runtime.
+**Relações de saída:** Nenhuma relação estrutural encontrada; ausência não prova desuso..
+**Referenciado por:** Nenhuma referência catalogada..
+
+## ferramentas/sistemas/s01_aero.py
+
+[Abrir arquivo](../../ferramentas/sistemas/s01_aero.py) · py · 6,541 bytes
+
+Módulo procedural de um sistema interno do carro.
+
+**Natureza:** fonte Blender editável. **Uso:** Executado por ferramentas/gerar_sistemas.py; preservar SYSTEM e build(ctx).
+**Relações de saída:** Nenhuma relação estrutural encontrada; ausência não prova desuso..
+**Referenciado por:** Nenhuma referência catalogada..
+
+## ferramentas/sistemas/s02_structure.py
+
+[Abrir arquivo](../../ferramentas/sistemas/s02_structure.py) · py · 4,723 bytes
+
+Módulo procedural de um sistema interno do carro.
+
+**Natureza:** fonte Blender editável. **Uso:** Executado por ferramentas/gerar_sistemas.py; preservar SYSTEM e build(ctx).
+**Relações de saída:** Nenhuma relação estrutural encontrada; ausência não prova desuso..
+**Referenciado por:** Nenhuma referência catalogada..
+
+## ferramentas/sistemas/s03_suspension.py
+
+[Abrir arquivo](../../ferramentas/sistemas/s03_suspension.py) · py · 9,525 bytes
+
+Módulo procedural de um sistema interno do carro.
+
+**Natureza:** fonte Blender editável. **Uso:** Executado por ferramentas/gerar_sistemas.py; preservar SYSTEM e build(ctx).
+**Relações de saída:** Nenhuma relação estrutural encontrada; ausência não prova desuso..
+**Referenciado por:** Nenhuma referência catalogada..
+
+## ferramentas/sistemas/s04_steering.py
+
+[Abrir arquivo](../../ferramentas/sistemas/s04_steering.py) · py · 5,136 bytes
+
+Módulo procedural de um sistema interno do carro.
+
+**Natureza:** fonte Blender editável. **Uso:** Executado por ferramentas/gerar_sistemas.py; preservar SYSTEM e build(ctx).
+**Relações de saída:** Nenhuma relação estrutural encontrada; ausência não prova desuso..
+**Referenciado por:** Nenhuma referência catalogada..
+
+## ferramentas/sistemas/s05_brakes.py
+
+[Abrir arquivo](../../ferramentas/sistemas/s05_brakes.py) · py · 10,809 bytes
+
+Módulo procedural de um sistema interno do carro.
+
+**Natureza:** fonte Blender editável. **Uso:** Executado por ferramentas/gerar_sistemas.py; preservar SYSTEM e build(ctx).
+**Relações de saída:** Nenhuma relação estrutural encontrada; ausência não prova desuso..
+**Referenciado por:** Nenhuma referência catalogada..
+
+## ferramentas/sistemas/s06_power.py
+
+[Abrir arquivo](../../ferramentas/sistemas/s06_power.py) · py · 13,559 bytes
+
+Módulo procedural de um sistema interno do carro.
+
+**Natureza:** fonte Blender editável. **Uso:** Executado por ferramentas/gerar_sistemas.py; preservar SYSTEM e build(ctx).
+**Relações de saída:** Nenhuma relação estrutural encontrada; ausência não prova desuso..
+**Referenciado por:** Nenhuma referência catalogada..
+
+## ferramentas/sistemas/s07_ers.py
+
+[Abrir arquivo](../../ferramentas/sistemas/s07_ers.py) · py · 6,349 bytes
+
+Módulo procedural de um sistema interno do carro.
+
+**Natureza:** fonte Blender editável. **Uso:** Executado por ferramentas/gerar_sistemas.py; preservar SYSTEM e build(ctx).
+**Relações de saída:** Nenhuma relação estrutural encontrada; ausência não prova desuso..
+**Referenciado por:** Nenhuma referência catalogada..
+
+## ferramentas/sistemas/s08_cooling.py
+
+[Abrir arquivo](../../ferramentas/sistemas/s08_cooling.py) · py · 5,832 bytes
+
+Módulo procedural de um sistema interno do carro.
+
+**Natureza:** fonte Blender editável. **Uso:** Executado por ferramentas/gerar_sistemas.py; preservar SYSTEM e build(ctx).
+**Relações de saída:** Nenhuma relação estrutural encontrada; ausência não prova desuso..
+**Referenciado por:** Nenhuma referência catalogada..
+
+## ferramentas/sistemas/s09_fuel.py
+
+[Abrir arquivo](../../ferramentas/sistemas/s09_fuel.py) · py · 5,019 bytes
+
+Módulo procedural de um sistema interno do carro.
+
+**Natureza:** fonte Blender editável. **Uso:** Executado por ferramentas/gerar_sistemas.py; preservar SYSTEM e build(ctx).
+**Relações de saída:** Nenhuma relação estrutural encontrada; ausência não prova desuso..
+**Referenciado por:** Nenhuma referência catalogada..
+
+## ferramentas/sistemas/s10_transmission.py
+
+[Abrir arquivo](../../ferramentas/sistemas/s10_transmission.py) · py · 10,035 bytes
+
+Módulo procedural de um sistema interno do carro.
+
+**Natureza:** fonte Blender editável. **Uso:** Executado por ferramentas/gerar_sistemas.py; preservar SYSTEM e build(ctx).
+**Relações de saída:** Nenhuma relação estrutural encontrada; ausência não prova desuso..
+**Referenciado por:** Nenhuma referência catalogada..
+
+## ferramentas/sistemas/s11_safety.py
+
+[Abrir arquivo](../../ferramentas/sistemas/s11_safety.py) · py · 6,847 bytes
+
+Módulo procedural de um sistema interno do carro.
+
+**Natureza:** fonte Blender editável. **Uso:** Executado por ferramentas/gerar_sistemas.py; preservar SYSTEM e build(ctx).
+**Relações de saída:** Nenhuma relação estrutural encontrada; ausência não prova desuso..
+**Referenciado por:** Nenhuma referência catalogada..
+
+## ferramentas/sistemas/s12_cockpit.py
+
+[Abrir arquivo](../../ferramentas/sistemas/s12_cockpit.py) · py · 5,638 bytes
+
+Módulo procedural de um sistema interno do carro.
+
+**Natureza:** fonte Blender editável. **Uso:** Executado por ferramentas/gerar_sistemas.py; preservar SYSTEM e build(ctx).
+**Relações de saída:** Nenhuma relação estrutural encontrada; ausência não prova desuso..
+**Referenciado por:** Nenhuma referência catalogada..
+
+## ferramentas/sistemas/s13_wheel.py
+
+[Abrir arquivo](../../ferramentas/sistemas/s13_wheel.py) · py · 5,574 bytes
+
+Módulo procedural de um sistema interno do carro.
+
+**Natureza:** fonte Blender editável. **Uso:** Executado por ferramentas/gerar_sistemas.py; preservar SYSTEM e build(ctx).
+**Relações de saída:** Nenhuma relação estrutural encontrada; ausência não prova desuso..
+**Referenciado por:** Nenhuma referência catalogada..
+
+## ferramentas/sistemas/s14_sensors.py
+
+[Abrir arquivo](../../ferramentas/sistemas/s14_sensors.py) · py · 6,007 bytes
+
+Módulo procedural de um sistema interno do carro.
+
+**Natureza:** fonte Blender editável. **Uso:** Executado por ferramentas/gerar_sistemas.py; preservar SYSTEM e build(ctx).
+**Relações de saída:** Nenhuma relação estrutural encontrada; ausência não prova desuso..
+**Referenciado por:** Nenhuma referência catalogada..
 
 ## ferramentas/validate-kit.py
 
@@ -617,7 +1617,7 @@ Apresentação visual das versões da marca.
 
 ## identidade/LEIA-ME.md
 
-[Abrir arquivo](../../identidade/LEIA-ME.md) · md · 1,602 bytes
+[Abrir arquivo](../../identidade/LEIA-ME.md) · md · 1,581 bytes
 
 Guia da identidade, versões e orientação de uso.
 
@@ -699,7 +1699,7 @@ Registro de ciclos, pivôs e erros de matrizes do teste mecânico.
 
 ## validacao-reabertura.json
 
-[Abrir arquivo](../../validacao-reabertura.json) · json · 651 bytes
+[Abrir arquivo](../../validacao-reabertura.json) · json · 623 bytes
 
 Registro de reabertura Blender e reimportação de GLBs.
 
@@ -740,7 +1740,7 @@ Carro final otimizado do F1 Loop, 97 componentes.
 
 ## web/assets/carro-aula-v2.proveniencia.json
 
-[Abrir arquivo](../../web/assets/carro-aula-v2.proveniencia.json) · json · 7,442 bytes
+[Abrir arquivo](../../web/assets/carro-aula-v2.proveniencia.json) · json · 7,185 bytes
 
 Procedência e transformações do carro v2.
 
@@ -750,7 +1750,7 @@ Procedência e transformações do carro v2.
 
 ## web/assets/carro-aula-v2.validacao.json
 
-[Abrir arquivo](../../web/assets/carro-aula-v2.validacao.json) · json · 1,070 bytes
+[Abrir arquivo](../../web/assets/carro-aula-v2.validacao.json) · json · 1,041 bytes
 
 Validação original do carro v2.
 
@@ -771,7 +1771,7 @@ Base exterior com 97 peças e metadados usada pelo build web e Blender.
 
 ## web/assets/inteia-escudo-oficial.svg
 
-[Abrir arquivo](../../web/assets/inteia-escudo-oficial.svg) · svg · 5,927 bytes
+[Abrir arquivo](../../web/assets/inteia-escudo-oficial.svg) · svg · 5,924 bytes
 
 Brasão oficial INTEIA.
 
@@ -781,7 +1781,7 @@ Brasão oficial INTEIA.
 
 ## web/assets/inteia-nome-oficial.svg
 
-[Abrir arquivo](../../web/assets/inteia-nome-oficial.svg) · svg · 1,292 bytes
+[Abrir arquivo](../../web/assets/inteia-nome-oficial.svg) · svg · 1,289 bytes
 
 Assinatura oficial INTEIA.
 
@@ -801,7 +1801,7 @@ Arte do patrocínio Inteligência Mil Grau.
 
 ## web/assets/inteligencia-mil-grau.source.json
 
-[Abrir arquivo](../../web/assets/inteligencia-mil-grau.source.json) · json · 564 bytes
+[Abrir arquivo](../../web/assets/inteligencia-mil-grau.source.json) · json · 555 bytes
 
 Procedência da arte do patrocinador.
 
@@ -822,7 +1822,7 @@ Motor V6 didático animado do F1 Loop.
 
 ## web/assets/power-unit-v1.manifest.json
 
-[Abrir arquivo](../../web/assets/power-unit-v1.manifest.json) · json · 1,786 bytes
+[Abrir arquivo](../../web/assets/power-unit-v1.manifest.json) · json · 1,756 bytes
 
 Geometria, animação, hash e licença do motor.
 
@@ -830,19 +1830,40 @@ Geometria, animação, hash e licença do motor.
 **Relações de saída:** Nenhuma relação estrutural encontrada; ausência não prova desuso..
 **Referenciado por:** Nenhuma referência catalogada..
 
+## web/assets/sistemas-v1.glb
+
+[Abrir arquivo](../../web/assets/sistemas-v1.glb) · glb · 6,335,984 bytes
+
+Asset GLB derivado dos módulos procedurais de sistemas.
+
+**Natureza:** entrega GLB gerada. **Uso:** Integrar no runtime somente por carregamento explícito em web/src.
+**Relações de saída:** Nenhuma relação estrutural encontrada; ausência não prova desuso..
+**Referenciado por:** Nenhuma referência catalogada..
+**GLB:** 1130 nós, 885 meshes, 358,402 triângulos, 56 materiais, 16 imagens, 0 clipes.
+
+## web/assets/sistemas-v1.manifest.json
+
+[Abrir arquivo](../../web/assets/sistemas-v1.manifest.json) · json · 415,579 bytes
+
+Manifesto de composição e métricas do GLB de sistemas correspondente.
+
+**Natureza:** evidência gerada. **Uso:** Validar sistemas, peças e hash junto ao GLB de mesmo prefixo.
+**Relações de saída:** Nenhuma relação estrutural encontrada; ausência não prova desuso..
+**Referenciado por:** Nenhuma referência catalogada..
+
 ## web/build.cjs
 
-[Abrir arquivo](../../web/build.cjs) · cjs · 436 bytes
+[Abrir arquivo](../../web/build.cjs) · cjs · 1,130 bytes
 
 Empacota app e base64 do GLB no template para HTML autocontido.
 
 **Natureza:** código fonte editável. **Uso:** Node.js/esbuild; sobrescreve web/index.html.
-**Relações de saída:** importa → `external:fs`; importa → `external:esbuild`; empacota_entrada → `web/src/app-v2.js`; le_template → `web/src/template-v2.html`; incorpora_como_base64 → `web/assets/carro-aula-v2.glb`; sobrescreve_html_gerado → `web/index.html`.
+**Relações de saída:** importa → `external:node:fs`; importa → `external:node:path`; importa → `external:esbuild`; chama_sintaticamente → `web/build.cjs#6:source`; chama_sintaticamente → `web/build.cjs#6:source`; chama_sintaticamente → `web/build.cjs#6:source`; chama_sintaticamente → `web/build.cjs#8:replaceRequired`; chama_sintaticamente → `web/build.cjs#8:replaceRequired`; chama_sintaticamente → `web/build.cjs#6:source`; empacota_entrada → `web/src/app-v2.js`; le_template → `web/src/template-v2.html`; incorpora_como_base64 → `web/assets/carro-aula-v2.glb`; sobrescreve_html_gerado → `web/index.html`.
 **Referenciado por:** `web/package.json` (executa_em_build).
 
 ## web/index.html
 
-[Abrir arquivo](../../web/index.html) · html · 4,369,286 bytes
+[Abrir arquivo](../../web/index.html) · html · 4,404,242 bytes
 
 Site autocontido gerado: template, bundle Three.js e modelo embutido.
 
@@ -852,7 +1873,7 @@ Site autocontido gerado: template, bundle Three.js e modelo embutido.
 
 ## web/package-lock.json
 
-[Abrir arquivo](../../web/package-lock.json) · json · 14,952 bytes
+[Abrir arquivo](../../web/package-lock.json) · json · 15,003 bytes
 
 Versões e integridade das dependências npm.
 
@@ -862,7 +1883,7 @@ Versões e integridade das dependências npm.
 
 ## web/package.json
 
-[Abrir arquivo](../../web/package.json) · json · 469 bytes
+[Abrir arquivo](../../web/package.json) · json · 535 bytes
 
 Scripts e versões fixadas de Three.js 0.180.0/esbuild 0.25.10.
 
@@ -872,12 +1893,12 @@ Scripts e versões fixadas de Three.js 0.180.0/esbuild 0.25.10.
 
 ## web/server.cjs
 
-[Abrir arquivo](../../web/server.cjs) · cjs · 869 bytes
+[Abrir arquivo](../../web/server.cjs) · cjs · 2,026 bytes
 
 Servidor HTTP local da pasta web em PORT ou 5186.
 
 **Natureza:** código fonte editável. **Uso:** Node.js; não iniciar sobre a porta 5186 ocupada.
-**Relações de saída:** importa → `external:http`; importa → `external:fs`; importa → `external:path`; serve_na_rota_raiz → `web/index.html`.
+**Relações de saída:** importa → `external:node:fs`; importa → `external:node:http`; importa → `external:node:path`; chama_sintaticamente → `web/server.cjs#17:reply`; chama_sintaticamente → `web/server.cjs#17:reply`; chama_sintaticamente → `web/server.cjs#17:reply`; chama_sintaticamente → `web/server.cjs#17:reply`; serve_na_rota_raiz → `web/index.html`.
 **Referenciado por:** `web/package.json` (executa_em_dev).
 
 ## web/src/aero-physics.mjs
@@ -892,17 +1913,17 @@ Calculadora pura por coeficientes: vento, densidade, forças e limites.
 
 ## web/src/app-v2.js
 
-[Abrir arquivo](../../web/src/app-v2.js) · js · 22,616 bytes
+[Abrir arquivo](../../web/src/app-v2.js) · js · 24,289 bytes
 
 Entrada ativa: cena, GLB, módulos, controles DOM e loop de desenho.
 
 **Natureza:** código fonte editável. **Uso:** Navegador WebGL; orquestração.
-**Relações de saída:** importa → `web/src/workbench.js`; importa → `external:three/addons/libs/meshopt_decoder.module.js`; importa → `web/src/engine/in-car.js`; importa → `web/src/car-look.js`; importa → `web/src/surface-library.js`; importa → `web/src/senna-driver.js`; importa → `web/src/branding.js`; importa → `web/src/identity.js`; importa → `external:three/addons/exporters/GLTFExporter.js`; importa → `web/src/garage.js`; importa → `web/src/wind-tunnel.js`; importa → `web/src/customize.js`; importa → `external:three`; importa → `external:three/addons/controls/OrbitControls.js`; importa → `external:three/addons/controls/TransformControls.js`; importa → `external:three/addons/postprocessing/EffectComposer.js`; importa → `external:three/addons/postprocessing/RenderPass.js`; importa → `external:three/addons/postprocessing/SSAOPass.js`; importa → `external:three/addons/postprocessing/OutputPass.js`; importa → `external:three/addons/postprocessing/SMAAPass.js`; importa → `external:three/addons/loaders/GLTFLoader.js`; importa → `web/src/studio.js`; importa → `web/src/mechanics.js`; chama_sintaticamente → `web/src/app-v2.js#24:$`; chama_sintaticamente → `web/src/identity.js#11:brandSVG`; chama_sintaticamente → `web/src/studio.js#2:setupStudio`; chama_sintaticamente → `web/src/app-v2.js#24:$`; chama_sintaticamente → `web/src/app-v2.js#24:$`; chama_sintaticamente → `web/src/app-v2.js#24:$`; chama_sintaticamente → `web/src/app-v2.js#24:$`; chama_sintaticamente → `web/src/app-v2.js#24:$`; chama_sintaticamente → `web/src/app-v2.js#24:$`; chama_sintaticamente → `web/src/app-v2.js#24:$`; chama_sintaticamente → `web/src/app-v2.js#24:$`; chama_sintaticamente → `web/src/app-v2.js#24:$`; chama_sintaticamente → `web/src/app-v2.js#48:resize`; chama_sintaticamente → `web/src/app-v2.js#24:$`; chama_sintaticamente → `web/src/studio.js#146:applyCarMaterials`; chama_sintaticamente → `web/src/mechanics.js#3:createMechanics`; chama_sintaticamente → `web/src/branding.js#5:applyInteiaBranding`; chama_sintaticamente → `web/src/surface-library.js#16:createSurfaceLibrary`; chama_sintaticamente → `web/src/car-look.js#202:enhanceCar`; chama_sintaticamente → `web/src/senna-driver.js#6:createSennaDriver`; chama_sintaticamente → `web/src/customize.js#1:setupCustomization`; chama_sintaticamente → `web/src/app-v2.js#24:$`; chama_sintaticamente → `web/src/app-v2.js#24:$`; chama_sintaticamente → `web/src/engine/in-car.js#25:createInCarEngine`; chama_sintaticamente → `web/src/garage.js#7:createGarage`; chama_sintaticamente → `web/src/wind-tunnel.js#4:createWindTunnel`; chama_sintaticamente → `web/src/workbench.js#4:createWorkbench`; chama_sintaticamente → `web/src/app-v2.js#24:$`; chama_sintaticamente → `web/src/app-v2.js#24:$`; chama_sintaticamente → `web/src/app-v2.js#48:resize`; chama_sintaticamente → `web/src/app-v2.js#24:$`; chama_sintaticamente → `web/src/app-v2.js#24:$`; chama_sintaticamente → `web/src/app-v2.js#46:view`; chama_sintaticamente → `web/src/app-v2.js#24:$`; chama_sintaticamente → `web/src/app-v2.js#24:$`; chama_sintaticamente → `web/src/app-v2.js#46:view`; chama_sintaticamente → `web/src/app-v2.js#24:$`; chama_sintaticamente → `web/src/app-v2.js#24:$`; chama_sintaticamente → `web/src/app-v2.js#24:$`; chama_sintaticamente → `web/src/app-v2.js#45:moveCamera`; chama_sintaticamente → `web/src/app-v2.js#24:$`; chama_sintaticamente → `web/src/app-v2.js#24:$`; chama_sintaticamente → `web/src/app-v2.js#24:$`; chama_sintaticamente → `web/src/app-v2.js#24:$`; chama_sintaticamente → `web/src/app-v2.js#24:$`; chama_sintaticamente → `web/src/app-v2.js#24:$`; chama_sintaticamente → `web/src/app-v2.js#24:$`; chama_sintaticamente → `web/src/app-v2.js#24:$`; chama_sintaticamente → `web/src/app-v2.js#24:$`; chama_sintaticamente → `web/src/app-v2.js#24:$`; chama_sintaticamente → `web/src/app-v2.js#24:$`; chama_sintaticamente → `web/src/app-v2.js#24:$`; chama_sintaticamente → `web/src/app-v2.js#53:assemblyTo`; chama_sintaticamente → `web/src/app-v2.js#24:$`; chama_sintaticamente → `web/src/app-v2.js#53:assemblyTo`; chama_sintaticamente → `web/src/app-v2.js#24:$`; chama_sintaticamente → `web/src/app-v2.js#53:assemblyTo`; chama_sintaticamente → `web/src/app-v2.js#50:refreshSelection`; chama_sintaticamente → `web/src/app-v2.js#24:$`; chama_sintaticamente → `web/src/app-v2.js#35:closeEngine`; chama_sintaticamente → `web/src/app-v2.js#24:$`; chama_sintaticamente → `web/src/app-v2.js#24:$`; chama_sintaticamente → `web/src/app-v2.js#51:select`; chama_sintaticamente → `web/src/app-v2.js#24:$`; chama_sintaticamente → `web/src/app-v2.js#51:select`; chama_sintaticamente → `web/src/app-v2.js#24:$`; chama_sintaticamente → `web/src/app-v2.js#24:$`; chama_sintaticamente → `web/src/app-v2.js#50:refreshSelection`; chama_sintaticamente → `web/src/app-v2.js#24:$`; chama_sintaticamente → `web/src/app-v2.js#24:$`; chama_sintaticamente → `web/src/app-v2.js#24:$`; chama_sintaticamente → `web/src/app-v2.js#24:$`; chama_sintaticamente → `web/src/app-v2.js#24:$`; chama_sintaticamente → `web/src/app-v2.js#24:$`; chama_sintaticamente → `web/src/app-v2.js#24:$`; chama_sintaticamente → `web/src/app-v2.js#24:$`; chama_sintaticamente → `web/src/app-v2.js#24:$`; chama_sintaticamente → `web/src/app-v2.js#24:$`; chama_sintaticamente → `web/src/app-v2.js#24:$`; chama_sintaticamente → `web/src/app-v2.js#24:$`; chama_sintaticamente → `web/src/app-v2.js#35:closeEngine`; chama_sintaticamente → `web/src/app-v2.js#24:$`; chama_sintaticamente → `web/src/app-v2.js#51:select`; chama_sintaticamente → `web/src/app-v2.js#24:$`; chama_sintaticamente → `web/src/app-v2.js#24:$`; chama_sintaticamente → `web/src/app-v2.js#24:$`; chama_sintaticamente → `web/src/app-v2.js#24:$`; chama_sintaticamente → `web/src/app-v2.js#24:$`; chama_sintaticamente → `web/src/app-v2.js#46:view`; chama_sintaticamente → `web/src/app-v2.js#24:$`; chama_sintaticamente → `web/src/app-v2.js#24:$`; chama_sintaticamente → `web/src/app-v2.js#24:$`; chama_sintaticamente → `web/src/app-v2.js#24:$`; chama_sintaticamente → `web/src/app-v2.js#24:$`; chama_sintaticamente → `web/src/app-v2.js#51:select`; chama_sintaticamente → `web/src/app-v2.js#46:view`; chama_sintaticamente → `web/src/app-v2.js#51:select`; chama_sintaticamente → `web/src/app-v2.js#24:$`; chama_sintaticamente → `web/src/app-v2.js#24:$`; chama_sintaticamente → `web/src/app-v2.js#24:$`; chama_sintaticamente → `web/src/app-v2.js#35:closeEngine`; chama_sintaticamente → `web/src/app-v2.js#46:view`; chama_sintaticamente → `web/src/app-v2.js#24:$`; chama_sintaticamente → `web/src/app-v2.js#24:$`; chama_sintaticamente → `web/src/app-v2.js#24:$`; chama_sintaticamente → `web/src/app-v2.js#24:$`; chama_sintaticamente → `web/src/app-v2.js#45:moveCamera`; chama_sintaticamente → `web/src/app-v2.js#24:$`; chama_sintaticamente → `web/src/app-v2.js#24:$`; chama_sintaticamente → `web/src/app-v2.js#24:$`; chama_sintaticamente → `web/src/app-v2.js#24:$`; chama_sintaticamente → `web/src/app-v2.js#24:$`; chama_sintaticamente → `web/src/app-v2.js#24:$`; chama_sintaticamente → `web/src/app-v2.js#24:$`; chama_sintaticamente → `web/src/app-v2.js#24:$`; chama_sintaticamente → `web/src/app-v2.js#24:$`; chama_sintaticamente → `web/src/app-v2.js#24:$`; chama_sintaticamente → `web/src/app-v2.js#24:$`; chama_sintaticamente → `web/src/app-v2.js#46:view`; chama_sintaticamente → `web/src/app-v2.js#24:$`; chama_sintaticamente → `web/src/app-v2.js#24:$`; chama_sintaticamente → `web/src/app-v2.js#24:$`; chama_sintaticamente → `web/src/app-v2.js#24:$`; chama_sintaticamente → `web/src/app-v2.js#24:$`; chama_sintaticamente → `web/src/app-v2.js#24:$`; chama_sintaticamente → `web/src/app-v2.js#24:$`; chama_sintaticamente → `web/src/app-v2.js#24:$`; conecta_stage_e_controles_dom → `web/src/template-v2.html`; exporta_clone_do_box_via_gltfexporter → `web/src/garage.js`; atualiza_estado_a_cada_quadro → `web/src/mechanics.js`; coordena_box_e_transparencia_por_callbacks → `web/src/wind-tunnel.js`; renderiza_e_atualiza_piso → `web/src/studio.js`; importa_assinatura_ativa → `web/src/branding.js`; aplica_assinatura_apos_criar_mecanica → `web/src/branding.js`.
+**Relações de saída:** importa → `web/src/workbench.js`; importa → `external:three/addons/libs/meshopt_decoder.module.js`; importa → `web/src/engine/in-car.js`; importa → `web/src/car-look.js`; importa → `web/src/surface-library.js`; importa → `web/src/senna-driver.js`; importa → `web/src/branding.js`; importa → `web/src/identity.js`; importa → `external:three/addons/exporters/GLTFExporter.js`; importa → `web/src/garage.js`; importa → `web/src/wind-tunnel.js`; importa → `web/src/systems.js`; importa → `web/src/customize.js`; importa → `external:three`; importa → `external:three/addons/controls/OrbitControls.js`; importa → `external:three/addons/controls/TransformControls.js`; importa → `external:three/addons/postprocessing/EffectComposer.js`; importa → `external:three/addons/postprocessing/RenderPass.js`; importa → `external:three/addons/postprocessing/SSAOPass.js`; importa → `external:three/addons/postprocessing/OutputPass.js`; importa → `external:three/addons/postprocessing/SMAAPass.js`; importa → `external:three/addons/loaders/GLTFLoader.js`; importa → `web/src/studio.js`; importa → `web/src/mechanics.js`; chama_sintaticamente → `web/src/app-v2.js#25:$`; chama_sintaticamente → `web/src/identity.js#11:brandSVG`; chama_sintaticamente → `web/src/studio.js#2:setupStudio`; chama_sintaticamente → `web/src/app-v2.js#25:$`; chama_sintaticamente → `web/src/app-v2.js#25:$`; chama_sintaticamente → `web/src/app-v2.js#25:$`; chama_sintaticamente → `web/src/app-v2.js#25:$`; chama_sintaticamente → `web/src/app-v2.js#25:$`; chama_sintaticamente → `web/src/app-v2.js#25:$`; chama_sintaticamente → `web/src/app-v2.js#25:$`; chama_sintaticamente → `web/src/app-v2.js#25:$`; chama_sintaticamente → `web/src/app-v2.js#25:$`; chama_sintaticamente → `web/src/app-v2.js#52:resize`; chama_sintaticamente → `web/src/app-v2.js#25:$`; chama_sintaticamente → `web/src/studio.js#146:applyCarMaterials`; chama_sintaticamente → `web/src/mechanics.js#3:createMechanics`; chama_sintaticamente → `web/src/branding.js#5:applyInteiaBranding`; chama_sintaticamente → `web/src/surface-library.js#16:createSurfaceLibrary`; chama_sintaticamente → `web/src/car-look.js#202:enhanceCar`; chama_sintaticamente → `web/src/senna-driver.js#6:createSennaDriver`; chama_sintaticamente → `web/src/customize.js#1:setupCustomization`; chama_sintaticamente → `web/src/app-v2.js#25:$`; chama_sintaticamente → `web/src/app-v2.js#25:$`; chama_sintaticamente → `web/src/engine/in-car.js#25:createInCarEngine`; chama_sintaticamente → `web/src/garage.js#7:createGarage`; chama_sintaticamente → `web/src/systems.js#42:createSystems`; chama_sintaticamente → `web/src/wind-tunnel.js#4:createWindTunnel`; chama_sintaticamente → `web/src/workbench.js#4:createWorkbench`; chama_sintaticamente → `web/src/app-v2.js#25:$`; chama_sintaticamente → `web/src/app-v2.js#25:$`; chama_sintaticamente → `web/src/app-v2.js#52:resize`; chama_sintaticamente → `web/src/app-v2.js#25:$`; chama_sintaticamente → `web/src/app-v2.js#25:$`; chama_sintaticamente → `web/src/app-v2.js#50:view`; chama_sintaticamente → `web/src/app-v2.js#25:$`; chama_sintaticamente → `web/src/app-v2.js#25:$`; chama_sintaticamente → `web/src/app-v2.js#50:view`; chama_sintaticamente → `web/src/app-v2.js#25:$`; chama_sintaticamente → `web/src/app-v2.js#25:$`; chama_sintaticamente → `web/src/app-v2.js#25:$`; chama_sintaticamente → `web/src/app-v2.js#46:moveCamera`; chama_sintaticamente → `web/src/app-v2.js#25:$`; chama_sintaticamente → `web/src/app-v2.js#25:$`; chama_sintaticamente → `web/src/app-v2.js#25:$`; chama_sintaticamente → `web/src/app-v2.js#25:$`; chama_sintaticamente → `web/src/app-v2.js#25:$`; chama_sintaticamente → `web/src/app-v2.js#25:$`; chama_sintaticamente → `web/src/app-v2.js#25:$`; chama_sintaticamente → `web/src/app-v2.js#25:$`; chama_sintaticamente → `web/src/app-v2.js#25:$`; chama_sintaticamente → `web/src/app-v2.js#25:$`; chama_sintaticamente → `web/src/app-v2.js#25:$`; chama_sintaticamente → `web/src/app-v2.js#25:$`; chama_sintaticamente → `web/src/app-v2.js#57:assemblyTo`; chama_sintaticamente → `web/src/app-v2.js#25:$`; chama_sintaticamente → `web/src/app-v2.js#57:assemblyTo`; chama_sintaticamente → `web/src/app-v2.js#25:$`; chama_sintaticamente → `web/src/app-v2.js#57:assemblyTo`; chama_sintaticamente → `web/src/app-v2.js#54:refreshSelection`; chama_sintaticamente → `web/src/app-v2.js#25:$`; chama_sintaticamente → `web/src/app-v2.js#36:closeEngine`; chama_sintaticamente → `web/src/app-v2.js#25:$`; chama_sintaticamente → `web/src/app-v2.js#25:$`; chama_sintaticamente → `web/src/app-v2.js#55:select`; chama_sintaticamente → `web/src/app-v2.js#25:$`; chama_sintaticamente → `web/src/app-v2.js#55:select`; chama_sintaticamente → `web/src/app-v2.js#25:$`; chama_sintaticamente → `web/src/app-v2.js#56:focusPart`; chama_sintaticamente → `web/src/app-v2.js#25:$`; chama_sintaticamente → `web/src/app-v2.js#54:refreshSelection`; chama_sintaticamente → `web/src/app-v2.js#25:$`; chama_sintaticamente → `web/src/app-v2.js#25:$`; chama_sintaticamente → `web/src/app-v2.js#25:$`; chama_sintaticamente → `web/src/app-v2.js#25:$`; chama_sintaticamente → `web/src/app-v2.js#25:$`; chama_sintaticamente → `web/src/app-v2.js#25:$`; chama_sintaticamente → `web/src/app-v2.js#25:$`; chama_sintaticamente → `web/src/app-v2.js#25:$`; chama_sintaticamente → `web/src/app-v2.js#25:$`; chama_sintaticamente → `web/src/app-v2.js#25:$`; chama_sintaticamente → `web/src/app-v2.js#25:$`; chama_sintaticamente → `web/src/app-v2.js#25:$`; chama_sintaticamente → `web/src/app-v2.js#36:closeEngine`; chama_sintaticamente → `web/src/app-v2.js#25:$`; chama_sintaticamente → `web/src/app-v2.js#55:select`; chama_sintaticamente → `web/src/app-v2.js#25:$`; chama_sintaticamente → `web/src/app-v2.js#25:$`; chama_sintaticamente → `web/src/app-v2.js#25:$`; chama_sintaticamente → `web/src/app-v2.js#25:$`; chama_sintaticamente → `web/src/app-v2.js#25:$`; chama_sintaticamente → `web/src/app-v2.js#50:view`; chama_sintaticamente → `web/src/app-v2.js#48:syncSystemMode`; chama_sintaticamente → `web/src/app-v2.js#25:$`; chama_sintaticamente → `web/src/app-v2.js#25:$`; chama_sintaticamente → `web/src/app-v2.js#25:$`; chama_sintaticamente → `web/src/app-v2.js#25:$`; chama_sintaticamente → `web/src/app-v2.js#25:$`; chama_sintaticamente → `web/src/app-v2.js#55:select`; chama_sintaticamente → `web/src/app-v2.js#50:view`; chama_sintaticamente → `web/src/app-v2.js#55:select`; chama_sintaticamente → `web/src/app-v2.js#25:$`; chama_sintaticamente → `web/src/app-v2.js#25:$`; chama_sintaticamente → `web/src/app-v2.js#25:$`; chama_sintaticamente → `web/src/app-v2.js#36:closeEngine`; chama_sintaticamente → `web/src/app-v2.js#50:view`; chama_sintaticamente → `web/src/app-v2.js#25:$`; chama_sintaticamente → `web/src/app-v2.js#25:$`; chama_sintaticamente → `web/src/app-v2.js#25:$`; chama_sintaticamente → `web/src/app-v2.js#25:$`; chama_sintaticamente → `web/src/app-v2.js#46:moveCamera`; chama_sintaticamente → `web/src/app-v2.js#25:$`; chama_sintaticamente → `web/src/app-v2.js#25:$`; chama_sintaticamente → `web/src/app-v2.js#25:$`; chama_sintaticamente → `web/src/app-v2.js#25:$`; chama_sintaticamente → `web/src/app-v2.js#25:$`; chama_sintaticamente → `web/src/app-v2.js#25:$`; chama_sintaticamente → `web/src/app-v2.js#25:$`; chama_sintaticamente → `web/src/app-v2.js#25:$`; chama_sintaticamente → `web/src/app-v2.js#25:$`; chama_sintaticamente → `web/src/app-v2.js#25:$`; chama_sintaticamente → `web/src/app-v2.js#25:$`; chama_sintaticamente → `web/src/app-v2.js#50:view`; chama_sintaticamente → `web/src/app-v2.js#25:$`; chama_sintaticamente → `web/src/app-v2.js#25:$`; chama_sintaticamente → `web/src/app-v2.js#25:$`; chama_sintaticamente → `web/src/app-v2.js#25:$`; chama_sintaticamente → `web/src/app-v2.js#48:syncSystemMode`; chama_sintaticamente → `web/src/app-v2.js#25:$`; chama_sintaticamente → `web/src/app-v2.js#25:$`; chama_sintaticamente → `web/src/app-v2.js#25:$`; chama_sintaticamente → `web/src/app-v2.js#25:$`; conecta_stage_e_controles_dom → `web/src/template-v2.html`; exporta_clone_do_box_via_gltfexporter → `web/src/garage.js`; atualiza_estado_a_cada_quadro → `web/src/mechanics.js`; coordena_box_e_transparencia_por_callbacks → `web/src/wind-tunnel.js`; renderiza_e_atualiza_piso → `web/src/studio.js`; importa_assinatura_ativa → `web/src/branding.js`; aplica_assinatura_apos_criar_mecanica → `web/src/branding.js`.
 **Referenciado por:** `web/build.cjs` (empacota_entrada).
 
 ## web/src/branding.js
 
-[Abrir arquivo](../../web/src/branding.js) · js · 4,204 bytes
+[Abrir arquivo](../../web/src/branding.js) · js · 4,155 bytes
 
 Projeta uma assinatura vetorial INTEIA na lateral direita de main_body; chamado pela entrada ativa.
 
@@ -912,7 +1933,7 @@ Projeta uma assinatura vetorial INTEIA na lateral direita de main_body; chamado 
 
 ## web/src/car-look.js
 
-[Abrir arquivo](../../web/src/car-look.js) · js · 19,357 bytes
+[Abrir arquivo](../../web/src/car-look.js) · js · 19,008 bytes
 
 Acabamento final, rodas, pneus e freios do carro.
 
@@ -922,7 +1943,7 @@ Acabamento final, rodas, pneus e freios do carro.
 
 ## web/src/customize.js
 
-[Abrir arquivo](../../web/src/customize.js) · js · 3,097 bytes
+[Abrir arquivo](../../web/src/customize.js) · js · 3,041 bytes
 
 Liga controles de cores/acabamento, luz, piso e fundo aos materiais.
 
@@ -932,7 +1953,7 @@ Liga controles de cores/acabamento, luz, piso e fundo aos materiais.
 
 ## web/src/engine/engine-shot.js
 
-[Abrir arquivo](../../web/src/engine/engine-shot.js) · js · 5,253 bytes
+[Abrir arquivo](../../web/src/engine/engine-shot.js) · js · 5,165 bytes
 
 Poses de referência para preparação gráfica do motor.
 
@@ -942,7 +1963,7 @@ Poses de referência para preparação gráfica do motor.
 
 ## web/src/engine/in-car.js
 
-[Abrir arquivo](../../web/src/engine/in-car.js) · js · 15,226 bytes
+[Abrir arquivo](../../web/src/engine/in-car.js) · js · 14,990 bytes
 
 Motor integrado, corte e tampa móvel.
 
@@ -952,7 +1973,7 @@ Motor integrado, corte e tampa móvel.
 
 ## web/src/flow-detail.js
 
-[Abrir arquivo](../../web/src/flow-detail.js) · js · 4,668 bytes
+[Abrir arquivo](../../web/src/flow-detail.js) · js · 4,610 bytes
 
 Representação didática aproximada do fluxo nas rodas e assoalho.
 
@@ -962,7 +1983,7 @@ Representação didática aproximada do fluxo nas rodas e assoalho.
 
 ## web/src/garage.js
 
-[Abrir arquivo](../../web/src/garage.js) · js · 16,785 bytes
+[Abrir arquivo](../../web/src/garage.js) · js · 16,633 bytes
 
 Constrói box, mobiliário, equipamentos, marcas e cena exportável.
 
@@ -972,7 +1993,7 @@ Constrói box, mobiliário, equipamentos, marcas e cena exportável.
 
 ## web/src/helmet-1991.js
 
-[Abrir arquivo](../../web/src/helmet-1991.js) · js · 9,148 bytes
+[Abrir arquivo](../../web/src/helmet-1991.js) · js · 9,068 bytes
 
 Capacete detalhado compartilhado com o cockpit.
 
@@ -982,7 +2003,7 @@ Capacete detalhado compartilhado com o cockpit.
 
 ## web/src/identity.js
 
-[Abrir arquivo](../../web/src/identity.js) · js · 2,245 bytes
+[Abrir arquivo](../../web/src/identity.js) · js · 2,244 bytes
 
 Define glifos, emblema, SVG e desenho Canvas da identidade ativa.
 
@@ -1002,7 +2023,7 @@ Agrupa peças, cria pivôs, explode/monta, seleciona e anima rodas/DRS.
 
 ## web/src/senna-driver.js
 
-[Abrir arquivo](../../web/src/senna-driver.js) · js · 7,865 bytes
+[Abrir arquivo](../../web/src/senna-driver.js) · js · 7,795 bytes
 
 Piloto ilustrativo do carro final.
 
@@ -1012,7 +2033,7 @@ Piloto ilustrativo do carro final.
 
 ## web/src/studio.js
 
-[Abrir arquivo](../../web/src/studio.js) · js · 10,769 bytes
+[Abrir arquivo](../../web/src/studio.js) · js · 10,517 bytes
 
 Materiais, carbono procedural, iluminação, ambiente, piso e tema.
 
@@ -1022,7 +2043,7 @@ Materiais, carbono procedural, iluminação, ambiente, piso e tema.
 
 ## web/src/surface-library.js
 
-[Abrir arquivo](../../web/src/surface-library.js) · js · 7,088 bytes
+[Abrir arquivo](../../web/src/surface-library.js) · js · 6,989 bytes
 
 Texturas de acabamento do carro final.
 
@@ -1030,9 +2051,19 @@ Texturas de acabamento do carro final.
 **Relações de saída:** Nenhuma relação estrutural encontrada; ausência não prova desuso..
 **Referenciado por:** `web/src/app-v2.js` (importa).
 
+## web/src/systems.js
+
+[Abrir arquivo](../../web/src/systems.js) · js · 32,412 bytes
+
+Carrega, apresenta e controla o GLB consolidado dos sistemas internos.
+
+**Natureza:** fonte web editável. **Uso:** Bancada Sistemas do laboratório.
+**Relações de saída:** importa → `external:three`; importa → `external:three/addons/loaders/GLTFLoader.js`; importa → `external:three/addons/libs/meshopt_decoder.module.js`.
+**Referenciado por:** `docs/ANALISE-DOSSIE-COMPLEMENTAR.md` (documenta); `docs/ESPECIFICACAO-ASSET-3D-SISTEMAS-F1.md` (documenta); `docs/ESPECIFICACAO-ASSET-3D-SISTEMAS-F1.md` (documenta); `docs/ESPECIFICACAO-ASSET-3D-SISTEMAS-F1.md` (documenta); `docs/ESPECIFICACAO-ASSET-3D-SISTEMAS-F1.md` (documenta); `docs/ESPECIFICACAO-ASSET-3D-SISTEMAS-F1.md` (documenta); `docs/ESPECIFICACAO-ASSET-3D-SISTEMAS-F1.md` (documenta); `docs/ESPECIFICACAO-ASSET-3D-SISTEMAS-F1.md` (documenta); `docs/ESPECIFICACAO-ASSET-3D-SISTEMAS-F1.md` (documenta); `docs/ESPECIFICACAO-ASSET-3D-SISTEMAS-F1.md` (documenta); `web/src/app-v2.js` (importa).
+
 ## web/src/template-v2.html
 
-[Abrir arquivo](../../web/src/template-v2.html) · html · 27,820 bytes
+[Abrir arquivo](../../web/src/template-v2.html) · html · 37,569 bytes
 
 Estrutura e estilos da interface com marcadores __MODEL__ e __APP__.
 
@@ -1042,7 +2073,7 @@ Estrutura e estilos da interface com marcadores __MODEL__ e __APP__.
 
 ## web/src/tunnel-visual.js
 
-[Abrir arquivo](../../web/src/tunnel-visual.js) · js · 6,393 bytes
+[Abrir arquivo](../../web/src/tunnel-visual.js) · js · 6,325 bytes
 
 Construção visual do túnel, linhas/partículas e recursos de cena.
 
@@ -1052,7 +2083,7 @@ Construção visual do túnel, linhas/partículas e recursos de cena.
 
 ## web/src/wind-tunnel.js
 
-[Abrir arquivo](../../web/src/wind-tunnel.js) · js · 8,478 bytes
+[Abrir arquivo](../../web/src/wind-tunnel.js) · js · 8,411 bytes
 
 Liga entradas do túnel, calculadora, gráficos, CSV e efeitos de fluxo.
 
@@ -1062,13 +2093,13 @@ Liga entradas do túnel, calculadora, gráficos, CSV e efeitos de fluxo.
 
 ## web/src/workbench.js
 
-[Abrir arquivo](../../web/src/workbench.js) · js · 6,756 bytes
+[Abrir arquivo](../../web/src/workbench.js) · js · 7,214 bytes
 
 Abas, inspeção, ajustes e exportação dos modelos.
 
 **Natureza:** fonte web editável. **Uso:** Controla bancadas do laboratório.
 **Relações de saída:** importa → `external:three`; importa → `external:three/addons/exporters/GLTFExporter.js`.
-**Referenciado por:** `web/src/app-v2.js` (importa).
+**Referenciado por:** `docs/ESPECIFICACAO-ASSET-3D-SISTEMAS-F1.md` (documenta); `web/src/app-v2.js` (importa).
 
 ## web/test-aerodynamics.mjs
 
@@ -1082,7 +2113,7 @@ Verifica unidades, escala das fórmulas, condições e coeficientes ausentes.
 
 ## web/test-driver-model.mjs
 
-[Abrir arquivo](../../web/test-driver-model.mjs) · mjs · 1,705 bytes
+[Abrir arquivo](../../web/test-driver-model.mjs) · mjs · 1,688 bytes
 
 Geometria e restauração do encaixe do piloto.
 
@@ -1092,7 +2123,7 @@ Geometria e restauração do encaixe do piloto.
 
 ## web/test-mechanics.mjs
 
-[Abrir arquivo](../../web/test-mechanics.mjs) · mjs · 3,954 bytes
+[Abrir arquivo](../../web/test-mechanics.mjs) · mjs · 3,930 bytes
 
 Verifica peças, pivôs, 20 ciclos, seleção, arraste e restauração.
 
@@ -1102,10 +2133,20 @@ Verifica peças, pivôs, 20 ciclos, seleção, arraste e restauração.
 
 ## web/test-power-unit.mjs
 
-[Abrir arquivo](../../web/test-power-unit.mjs) · mjs · 2,267 bytes
+[Abrir arquivo](../../web/test-power-unit.mjs) · mjs · 2,245 bytes
 
 Valida animação do motor em 20 ciclos.
 
 **Natureza:** teste. **Uso:** Executado por npm test.
 **Relações de saída:** importa → `external:three/addons/libs/meshopt_decoder.module.js`; importa → `external:node:fs`; importa → `external:three`; importa → `external:three/addons/loaders/GLTFLoader.js`.
 **Referenciado por:** `web/package.json` (executa_teste).
+
+## web/test-systems.mjs
+
+[Abrir arquivo](../../web/test-systems.mjs) · mjs · 12,190 bytes
+
+Valida catálogo, controles, manifesto, hash e estrutura do GLB de sistemas.
+
+**Natureza:** teste. **Uso:** Executado por npm test.
+**Relações de saída:** importa → `external:node:assert/strict`; importa → `external:node:crypto`; importa → `external:node:fs`; importa → `external:three`; chama_sintaticamente → `web/test-systems.mjs#89:find`; chama_sintaticamente → `web/test-systems.mjs#89:find`; chama_sintaticamente → `web/test-systems.mjs#89:find`; chama_sintaticamente → `web/test-systems.mjs#89:find`; chama_sintaticamente → `web/test-systems.mjs#89:find`; chama_sintaticamente → `web/test-systems.mjs#90:center`; chama_sintaticamente → `web/test-systems.mjs#90:center`; chama_sintaticamente → `web/test-systems.mjs#90:center`; chama_sintaticamente → `web/test-systems.mjs#89:find`; chama_sintaticamente → `web/test-systems.mjs#89:find`; chama_sintaticamente → `web/test-systems.mjs#89:find`; chama_sintaticamente → `web/test-systems.mjs#89:find`; chama_sintaticamente → `web/test-systems.mjs#89:find`; chama_sintaticamente → `web/test-systems.mjs#88:nodesOf`; chama_sintaticamente → `web/test-systems.mjs#89:find`; chama_sintaticamente → `web/test-systems.mjs#90:center`; chama_sintaticamente → `web/test-systems.mjs#89:find`; chama_sintaticamente → `web/test-systems.mjs#90:center`; chama_sintaticamente → `web/test-systems.mjs#88:nodesOf`; chama_sintaticamente → `web/test-systems.mjs#89:find`; chama_sintaticamente → `web/test-systems.mjs#89:find`; chama_sintaticamente → `web/test-systems.mjs#89:find`; chama_sintaticamente → `web/test-systems.mjs#89:find`; chama_sintaticamente → `web/test-systems.mjs#89:find`; chama_sintaticamente → `web/test-systems.mjs#90:center`; chama_sintaticamente → `web/test-systems.mjs#90:center`; chama_sintaticamente → `web/test-systems.mjs#89:find`; chama_sintaticamente → `web/test-systems.mjs#89:find`; chama_sintaticamente → `web/test-systems.mjs#89:find`; chama_sintaticamente → `web/test-systems.mjs#89:find`; chama_sintaticamente → `web/test-systems.mjs#89:find`; chama_sintaticamente → `web/test-systems.mjs#89:find`; chama_sintaticamente → `web/test-systems.mjs#89:find`; chama_sintaticamente → `web/test-systems.mjs#89:find`; chama_sintaticamente → `web/test-systems.mjs#89:find`; chama_sintaticamente → `web/test-systems.mjs#89:find`; chama_sintaticamente → `web/test-systems.mjs#89:find`; chama_sintaticamente → `web/test-systems.mjs#89:find`; chama_sintaticamente → `web/test-systems.mjs#89:find`; chama_sintaticamente → `web/test-systems.mjs#89:find`; chama_sintaticamente → `web/test-systems.mjs#89:find`; chama_sintaticamente → `web/test-systems.mjs#89:find`; chama_sintaticamente → `web/test-systems.mjs#89:find`; chama_sintaticamente → `web/test-systems.mjs#89:find`; chama_sintaticamente → `web/test-systems.mjs#89:find`; chama_sintaticamente → `web/test-systems.mjs#89:find`; chama_sintaticamente → `web/test-systems.mjs#89:find`; chama_sintaticamente → `web/test-systems.mjs#89:find`; chama_sintaticamente → `web/test-systems.mjs#89:find`; chama_sintaticamente → `web/test-systems.mjs#89:find`; chama_sintaticamente → `web/test-systems.mjs#89:find`; chama_sintaticamente → `web/test-systems.mjs#89:find`; chama_sintaticamente → `web/test-systems.mjs#89:find`.
+**Referenciado por:** `docs/ESPECIFICACAO-ASSET-3D-SISTEMAS-F1.md` (documenta); `docs/ESPECIFICACAO-ASSET-3D-SISTEMAS-F1.md` (documenta).

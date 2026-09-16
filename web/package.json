@@ -2,6 +2,10 @@
   "name": "inteia-laboratorio-3d",
   "version": "1.0.0",
   "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=24"
+  },
   "author": "INTEIA",
   "license": "SEE LICENSE IN ../LICENSE",
   "scripts": {

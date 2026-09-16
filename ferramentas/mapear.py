@@ -186,9 +186,13 @@ def production_edges():
         edges.append({'source': source, 'target': target, 'relation': relation, 'confidence': 'EXTRACTED',
                       'evidence': {'path': path, 'line': line_of(path, needle), 'text': needle},
                       'href': href(path, line_of(path, needle))})
-    add('web/src/app-v2.js', 'web/index.html', 'empacota', 'web/build.cjs', "entryPoints:['src/app-v2.js']")
-    for source, needle in [('web/src/template-v2.html', "'src/template-v2.html'"), ('web/assets/carro-aula-v2.glb', "'assets/carro-aula-v2.glb'")]:
+    add('web/src/app-v2.js', 'web/index.html', 'empacota', 'web/build.cjs', "entryPoints: [source('src', 'app-v2.js')]")
+    for source, needle in [('web/src/template-v2.html', "source('src', 'template-v2.html')"), ('web/assets/carro-aula-v2.glb', "source('assets', 'carro-aula-v2.glb')")]:
         add(source, 'web/index.html', 'incorpora', 'web/build.cjs', needle)
+    add('ferramentas/gerar_sistemas.py', 'web/assets/sistemas-v1.glb', 'gera', 'ferramentas/gerar_sistemas.py', "glb = (OUT if not wanted else PREVIEW_DIR) / f'sistemas-v1{suffix}.glb'")
+    add('ferramentas/otimizar_sistemas.mjs', 'web/assets/sistemas-v1.glb', 'otimiza', 'ferramentas/otimizar_sistemas.mjs', 'fs.writeFileSync(file, output)')
+    add('ferramentas/gerar_sistemas.py', 'web/assets/sistemas-v1.manifest.json', 'escreve manifesto', 'ferramentas/gerar_sistemas.py', "f'sistemas-v1{suffix}.manifest.json'")
+    add('web/assets/sistemas-v1.glb', 'web/src/systems.js', 'carrega em runtime', 'web/src/systems.js', "export const SYSTEMS_ASSET='./assets/sistemas-v1.glb'")
     add('web/assets/carro-movable.glb', 'ferramentas/package_blender.py', 'entrada', 'ferramentas/package_blender.py', "ROOT+'/web/assets/carro-movable.glb'")
     for target in ['INTEIA_F1_Master.blend', 'modelos/INTEIA_F1_estatico.glb', 'modelos/INTEIA_F1_animado.glb', 'texturas/INTEIA_Carbono_BaseColor.png', 'Previa-Blender.png', 'validacao-criacao.json']:
         add('ferramentas/package_blender.py', target, 'gera / sobrescreve', 'ferramentas/package_blender.py', "'/" + target + "'")

@@ -3,7 +3,7 @@
 ## Requisitos
 
 - Node.js 24, usado na validação local; npm para instalar dependências.
-- Blender 4.5 para editar ou reconstruir os modelos.
+- Blender 4.5 para editar/reconstruir o master distribuído; Blender 5.2 para reproduzir o gerador procedural de sistemas conforme `ferramentas/gerar_sistemas.py`.
 - Navegador com WebGL e aceleração gráfica.
 
 ## Site
@@ -29,10 +29,22 @@ O primeiro comando reconstrói e **sobrescreve** o master, os GLBs e a prévia a
 
 Os scripts resolvem caminhos pela própria localização; não dependem do computador original. Para trocar a geometria-base, os metadados esperados pelo script precisam ser preservados/adaptados. Não é um conversor genérico de qualquer carro.
 
+### Gerar os sistemas internos
+
+`ferramentas/gerar_sistemas.py` descobre os módulos `ferramentas/sistemas/sNN_<id>.py`. Cada módulo expõe `SYSTEM=(id, rótulo)` e `build(ctx)`. Execute o Blender a partir da raiz:
+
+```powershell
+blender -b --python ferramentas/gerar_sistemas.py
+$env:SISTEMAS='brakes,power'; blender -b --python ferramentas/gerar_sistemas.py
+$env:PREVIEW='1'; blender -b --python ferramentas/gerar_sistemas.py
+```
+
+O primeiro comando gera todos os módulos disponíveis; `SISTEMAS` restringe a geração; `PREVIEW=1` também produz imagens em `ferramentas/sistemas/previews/`. As saídas usam o prefixo `web/assets/sistemas-v1` e incluem manifesto. Trate GLBs, manifestos e prévias como derivados: revise tamanho, lista de sistemas e contagem de peças antes de substituir uma entrega. A geração não conecta automaticamente o asset ao aplicativo web.
+
 ## Antes de enviar mudanças
 
-1. npm ci e npm run build na pasta web.
-2. npm test para verificar o modelo e ciclos mecânicos.
+1. Execute `npm --prefix web ci` e `npm --prefix web run build`.
+2. Execute `npm --prefix web test` para verificar o modelo e ciclos mecânicos.
 3. Abrir a versão construída no navegador; conferir cores, restaurar, montar/desmontar, temas e tela estreita.
 4. Para mudanças Blender, executar validate-kit.py e inspecionar a prévia.
 5. Atualizar documentação/manifesto, revisar git diff e criar commit.

@@ -1,3 +1,3 @@
 # Orientação de leitura
 
-Comece pelo [README](README.md). Depois escolha [Blender](docs/BLENDER.md), [site e desenvolvimento](docs/DESENVOLVIMENTO.md) ou [integração em jogos/sites](docs/INTEGRACAO.md). Leia também [limitações](docs/VALIDACAO.md) e [direitos/procedência](docs/DIREITOS-E-PROCEDENCIA.md).
+Comece pelo [README](README.md) e use o [índice canônico da documentação](docs/README.md) para escolher o guia adequado. Limitações e direitos permanecem em [Validação](docs/VALIDACAO.md) e [Direitos e procedência](docs/DIREITOS-E-PROCEDENCIA.md).

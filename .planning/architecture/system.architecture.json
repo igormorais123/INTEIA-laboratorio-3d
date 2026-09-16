@@ -1,0 +1,234 @@
+{
+  "schema_version": 1,
+  "diagram_type": "architecture",
+  "meta": {
+    "title": "Laboratório 3D INTEIA",
+    "subtitle": "Arquitetura verificada do runtime web, produção procedural 3D, assets e publicação",
+    "output": "system-architecture.html",
+    "visual_preset": "blueprint",
+    "quality_profile": "showcase",
+    "repository": {
+      "url": "https://github.com/igormorais123/INTEIA-laboratorio-3d",
+      "revision": "fb080f3113b8e779e8ed160344b7937890ed3f4f"
+    },
+    "views": [
+      {
+        "id": "runtime-web",
+        "label": "Runtime web",
+        "focus": ["visitante", "hosting", "aplicacao", "cena-three", "assets"],
+        "note": "Do acesso HTTP ao carregamento da cena e dos arquivos 3D versionados."
+      },
+      {
+        "id": "laboratorios",
+        "label": "Bancadas 3D",
+        "focus": ["cena-three", "sistemas-carro", "garagem", "aerodinamica", "piloto-capacete"],
+        "note": "Subsistemas coordenados pela cena Three.js dentro do navegador."
+      },
+      {
+        "id": "entrega",
+        "label": "Build e entrega",
+        "focus": ["template-ui", "build-local", "hosting", "aplicacao"],
+        "note": "Template e módulos são empacotados para execução local ou GitHub Pages."
+      },
+      {
+        "id": "producao-sistemas",
+        "label": "Produção dos sistemas",
+        "focus": ["pipeline-sistemas", "assets", "cena-three", "sistemas-carro"],
+        "note": "Módulos Python geram derivados versionáveis; o runtime só usa o que carregar explicitamente."
+      }
+    ]
+  },
+  "components": [
+    {
+      "id": "visitante",
+      "type": "external",
+      "label": "Visitante",
+      "sublabel": "Navegador desktop / móvel",
+      "pos": [40, 300],
+      "size": [150, 66]
+    },
+    {
+      "id": "hosting",
+      "type": "cloud",
+      "label": "Entrega web",
+      "sublabel": "GitHub Pages ou servidor local",
+      "pos": [270, 300],
+      "size": [170, 72],
+      "sources": [
+        { "path": ".github/workflows/verify.yml", "line": 1, "label": "CI" },
+        { "path": "web/server.cjs", "line": 1, "label": "Servidor local" }
+      ]
+    },
+    {
+      "id": "aplicacao",
+      "type": "frontend",
+      "label": "Aplicação principal",
+      "sublabel": "Orquestra interface, cena e estados",
+      "pos": [520, 300],
+      "size": [180, 72],
+      "tag": "app-v2.js",
+      "sources": [
+        { "path": "web/src/app-v2.js", "line": 1, "label": "Entrada ativa" }
+      ]
+    },
+    {
+      "id": "cena-three",
+      "type": "frontend",
+      "label": "Cena Three.js",
+      "sublabel": "Renderização, câmera e materiais",
+      "pos": [780, 300],
+      "size": [180, 72],
+      "sources": [
+        { "path": "web/src/studio.js", "line": 1, "label": "Estúdio" },
+        { "path": "web/src/car-look.js", "line": 1, "label": "Visual" },
+        { "path": "web/src/surface-library.js", "line": 1, "label": "Materiais" }
+      ]
+    },
+    {
+      "id": "assets",
+      "type": "database",
+      "label": "Assets versionados",
+      "sublabel": "GLB, SVG, texturas e manifestos",
+      "pos": [1040, 300],
+      "size": [180, 72],
+      "sources": [
+        { "path": "web/assets/carro-aula-v2.glb", "label": "Carro" },
+        { "path": "web/assets/power-unit-v1.glb", "label": "Motor" },
+        { "path": "manifesto-sha256.json", "line": 1, "label": "Integridade" }
+      ]
+    },
+    {
+      "id": "template-ui",
+      "type": "frontend",
+      "label": "Template e controles",
+      "sublabel": "DOM, painéis e comandos",
+      "pos": [520, 90],
+      "size": [180, 72],
+      "sources": [
+        { "path": "web/src/template-v2.html", "line": 1, "label": "Template" },
+        { "path": "web/src/customize.js", "line": 1, "label": "Personalização" }
+      ]
+    },
+    {
+      "id": "sistemas-carro",
+      "type": "backend",
+      "label": "Sistemas do carro",
+      "sublabel": "Mecânica, motor e desmontagem",
+      "pos": [780, 90],
+      "size": [180, 72],
+      "sources": [
+        { "path": "web/src/systems.js", "line": 1, "label": "Sistemas" },
+        { "path": "web/src/mechanics.js", "line": 1, "label": "Mecânica" },
+        { "path": "web/src/engine/in-car.js", "line": 1, "label": "Motor" }
+      ]
+    },
+    {
+      "id": "garagem",
+      "type": "frontend",
+      "label": "Garagem e bancada",
+      "sublabel": "Ambiente e inspeção de peças",
+      "pos": [1040, 90],
+      "size": [180, 72],
+      "sources": [
+        { "path": "web/src/garage.js", "line": 1, "label": "Garagem" },
+        { "path": "web/src/workbench.js", "line": 1, "label": "Bancada" }
+      ]
+    },
+    {
+      "id": "build-local",
+      "type": "backend",
+      "label": "Build e servidor",
+      "sublabel": "esbuild + execução local",
+      "pos": [270, 510],
+      "size": [170, 72],
+      "sources": [
+        { "path": "web/build.cjs", "line": 1, "label": "Empacotamento" },
+        { "path": "web/package.json", "line": 1, "label": "Scripts" },
+        { "path": "web/server.cjs", "line": 1, "label": "HTTP local" }
+      ]
+    },
+    {
+      "id": "pipeline-sistemas",
+      "type": "backend",
+      "label": "Produção procedural",
+      "sublabel": "Módulos Python → Blender → GLB",
+      "tag": "estado local não versionado",
+      "pos": [1300, 300],
+      "size": [180, 72]
+    },
+    {
+      "id": "aerodinamica",
+      "type": "backend",
+      "label": "Laboratório aerodinâmico",
+      "sublabel": "Coeficientes e visualização didática",
+      "pos": [780, 510],
+      "size": [190, 72],
+      "sources": [
+        { "path": "web/src/aero-physics.mjs", "line": 1, "label": "Equações" },
+        { "path": "web/src/wind-tunnel.js", "line": 1, "label": "Controles" },
+        { "path": "web/src/tunnel-visual.js", "line": 1, "label": "Visual" }
+      ]
+    },
+    {
+      "id": "piloto-capacete",
+      "type": "backend",
+      "label": "Piloto e capacete",
+      "sublabel": "Modelos, pose e encaixe no cockpit",
+      "pos": [1040, 510],
+      "size": [180, 72],
+      "sources": [
+        { "path": "web/src/senna-driver.js", "line": 1, "label": "Piloto" },
+        { "path": "web/src/helmet-1991.js", "line": 1, "label": "Capacete" }
+      ]
+    }
+  ],
+  "boundaries": [
+    {
+      "kind": "region",
+      "label": "Runtime no navegador",
+      "wraps": ["aplicacao", "cena-three", "template-ui", "sistemas-carro", "garagem", "aerodinamica", "piloto-capacete"],
+      "pad": 28
+    }
+  ],
+  "connections": [
+    { "id": "acesso-http", "from": "visitante", "to": "hosting", "label": "HTTPS", "variant": "emphasis" },
+    { "id": "serve-aplicacao", "from": "hosting", "to": "aplicacao", "label": "HTML + módulos", "variant": "emphasis" },
+    { "id": "orquestra-cena", "from": "aplicacao", "to": "cena-three", "label": "orquestra", "variant": "emphasis" },
+    { "id": "carrega-assets", "from": "cena-three", "to": "assets" },
+    { "id": "template-aplicacao", "from": "template-ui", "to": "aplicacao", "label": "DOM e eventos", "labelAt": [610, 176] },
+    { "id": "cena-sistemas", "from": "cena-three", "to": "sistemas-carro", "label": "aciona" },
+    { "id": "cena-garagem", "from": "cena-three", "to": "garagem", "label": "compõe" },
+    { "id": "cena-aero", "from": "cena-three", "to": "aerodinamica", "label": "integra", "fromSide": "bottom", "toSide": "top" },
+    { "id": "cena-piloto", "from": "cena-three", "to": "piloto-capacete", "label": "encaixa" },
+    { "id": "build-publica", "from": "build-local", "to": "hosting", "label": "gera bundle", "variant": "dashed" },
+    { "id": "sistemas-exportam", "from": "pipeline-sistemas", "to": "assets", "label": "GLB + manifesto", "variant": "dashed" }
+  ],
+  "cards": [
+    {
+      "dot": "cyan",
+      "title": "Fonte da verdade",
+      "items": [
+        "web/src contém o runtime editável",
+        "web/index.html é saída gerada",
+        "web/assets guarda os arquivos carregados pela cena"
+      ]
+    },
+    {
+      "dot": "amber",
+      "title": "Limite físico",
+      "items": [
+        "Túnel usa coeficientes informados, não CFD da geometria",
+        "Movimentos e desmontagem são demonstrações ilustrativas"
+      ]
+    },
+    {
+      "dot": "emerald",
+      "title": "Manutenção",
+      "items": [
+        "Graphify indexa relações estruturais e semânticas",
+        "Testes web cobrem sistemas, mecânica, aero, motor e piloto",
+        "Assets procedurais exigem manifesto e integração explícita no runtime"
+      ]
+    }
+  ]
+}

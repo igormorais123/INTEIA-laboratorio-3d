@@ -12,3 +12,4 @@
 web/index.html -diff
 *.html text eol=lf
 *.txt text eol=lf
+graphify-out/graph.json merge=graphify

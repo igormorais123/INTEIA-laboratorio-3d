@@ -18,7 +18,7 @@ Gerado por `python ferramentas/mapear.py`. Todos os arquivos do escopo estão li
 | [.planning/architecture/system-architecture.html](../../.planning/architecture/system-architecture.html) | documentação | 623463 |
 | [.planning/architecture/system.architecture.json](../../.planning/architecture/system.architecture.json) | configuração ou infraestrutura | 8454 |
 | [00_INDICE_IA.md](../../00_INDICE_IA.md) | documentação | 1794 |
-| [AGENTS.md](../../AGENTS.md) | documentação | 1868 |
+| [AGENTS.md](../../AGENTS.md) | documentação | 1867 |
 | [CHANGELOG.md](../../CHANGELOG.md) | documentação | 1770 |
 | [CONTRIBUTING.md](../../CONTRIBUTING.md) | documentação | 1031 |
 | [INTEIA_F1_Master.blend](../../INTEIA_F1_Master.blend) | entrega editável Blender | 23815409 |
@@ -45,7 +45,7 @@ Gerado por `python ferramentas/mapear.py`. Todos os arquivos do escopo estão li
 | [docs/OUTRO-PC.md](../../docs/OUTRO-PC.md) | documentação | 2281 |
 | [docs/PILOTO-E-CAPACETE.md](../../docs/PILOTO-E-CAPACETE.md) | documentação | 3159 |
 | [docs/PUBLICACAO.md](../../docs/PUBLICACAO.md) | documentação | 3001 |
-| [docs/README.md](../../docs/README.md) | documentação | 2848 |
+| [docs/README.md](../../docs/README.md) | documentação | 2872 |
 | [docs/REVISAO-TUNEL-VISUAL.md](../../docs/REVISAO-TUNEL-VISUAL.md) | documentação | 4051 |
 | [docs/SISTEMAS-3D.md](../../docs/SISTEMAS-3D.md) | documentação | 5445 |
 | [docs/VALIDACAO.md](../../docs/VALIDACAO.md) | documentação | 2128 |
@@ -99,7 +99,7 @@ Gerado por `python ferramentas/mapear.py`. Todos os arquivos do escopo estão li
 | [docs/mapeamento-detalhado/grafos/dados.json](../../docs/mapeamento-detalhado/grafos/dados.json) | mapa gerado | — |
 | [docs/mapeamento-detalhado/grafos/dados.mmd](../../docs/mapeamento-detalhado/grafos/dados.mmd) | mapa gerado | — |
 | [docs/mapeamento-detalhado/index.html](../../docs/mapeamento-detalhado/index.html) | mapa gerado | — |
-| [docs/mapeamento-detalhado/scripts/finalidades.json](../../docs/mapeamento-detalhado/scripts/finalidades.json) | configuração ou infraestrutura | 20661 |
+| [docs/mapeamento-detalhado/scripts/finalidades.json](../../docs/mapeamento-detalhado/scripts/finalidades.json) | configuração ou infraestrutura | 20882 |
 | [docs/mapeamento-detalhado/scripts/gerar.py](../../docs/mapeamento-detalhado/scripts/gerar.py) | configuração ou infraestrutura | 26612 |
 | [docs/mapeamento-detalhado/scripts/interface.html](../../docs/mapeamento-detalhado/scripts/interface.html) | documentação | 16420 |
 | [docs/mapeamento-detalhado/scripts/validar.py](../../docs/mapeamento-detalhado/scripts/validar.py) | configuração ou infraestrutura | 6177 |
@@ -166,7 +166,7 @@ Gerado por `python ferramentas/mapear.py`. Todos os arquivos do escopo estão li
 | [web/assets/sistemas-v1.glb](../../web/assets/sistemas-v1.glb) | entrega GLB | 6335984 |
 | [web/assets/sistemas-v1.manifest.json](../../web/assets/sistemas-v1.manifest.json) | configuração ou infraestrutura | 392778 |
 | [web/build.cjs](../../web/build.cjs) | configuração ou infraestrutura | 1130 |
-| [web/index.html](../../web/index.html) | aplicação gerada | 4403978 |
+| [web/index.html](../../web/index.html) | aplicação gerada | 4404242 |
 | [web/package-lock.json](../../web/package-lock.json) | configuração ou infraestrutura | 15003 |
 | [web/package.json](../../web/package.json) | configuração ou infraestrutura | 535 |
 | [web/server.cjs](../../web/server.cjs) | configuração ou infraestrutura | 2026 |
@@ -185,7 +185,7 @@ Gerado por `python ferramentas/mapear.py`. Todos os arquivos do escopo estão li
 | [web/src/senna-driver.js](../../web/src/senna-driver.js) | fonte web editável | 7795 |
 | [web/src/studio.js](../../web/src/studio.js) | fonte web editável | 10517 |
 | [web/src/surface-library.js](../../web/src/surface-library.js) | fonte web editável | 6989 |
-| [web/src/systems.js](../../web/src/systems.js) | fonte web editável | 32111 |
+| [web/src/systems.js](../../web/src/systems.js) | fonte web editável | 32412 |
 | [web/src/template-v2.html](../../web/src/template-v2.html) | fonte web editável | 37569 |
 | [web/src/tunnel-visual.js](../../web/src/tunnel-visual.js) | fonte web editável | 6325 |
 | [web/src/wind-tunnel.js](../../web/src/wind-tunnel.js) | fonte web editável | 8411 |
@@ -446,29 +446,29 @@ Gerado por `python ferramentas/mapear.py`. Todos os arquivos do escopo estão li
 | `advanceLocalSpin` | [web/src/systems.js:31](../../web/src/systems.js#L31) |
 | `flowTexture` | [web/src/systems.js:34](../../web/src/systems.js#L34) |
 | `createSystems` | [web/src/systems.js:42](../../web/src/systems.js#L42) |
-| `attachPart` | [web/src/systems.js:71](../../web/src/systems.js#L71) |
-| `prepareMaterials` | [web/src/systems.js:83](../../web/src/systems.js#L83) |
-| `distribute` | [web/src/systems.js:92](../../web/src/systems.js#L92) |
-| `load` | [web/src/systems.js:109](../../web/src/systems.js#L109) |
-| `applyEra` | [web/src/systems.js:124](../../web/src/systems.js#L124) |
-| `applyCovers` | [web/src/systems.js:125](../../web/src/systems.js#L125) |
-| `applyExplode` | [web/src/systems.js:126](../../web/src/systems.js#L126) |
-| `materialFor` | [web/src/systems.js:129](../../web/src/systems.js#L129) |
-| `applyFlows` | [web/src/systems.js:130](../../web/src/systems.js#L130) |
-| `applySchematic` | [web/src/systems.js:131](../../web/src/systems.js#L131) |
-| `highlight` | [web/src/systems.js:133](../../web/src/systems.js#L133) |
-| `setPicked` | [web/src/systems.js:140](../../web/src/systems.js#L140) |
-| `setERSContext` | [web/src/systems.js:142](../../web/src/systems.js#L142) |
-| `updateUI` | [web/src/systems.js:143](../../web/src/systems.js#L143) |
-| `objectFor` | [web/src/systems.js:148](../../web/src/systems.js#L148) |
-| `geometryBounds` | [web/src/systems.js:149](../../web/src/systems.js#L149) |
-| `viewportAspect` | [web/src/systems.js:150](../../web/src/systems.js#L150) |
-| `frame` | [web/src/systems.js:152](../../web/src/systems.js#L152) |
-| `show` | [web/src/systems.js:153](../../web/src/systems.js#L153) |
-| `view` | [web/src/systems.js:154](../../web/src/systems.js#L154) |
-| `captureGhost` | [web/src/systems.js:155](../../web/src/systems.js#L155) |
-| `setGhost` | [web/src/systems.js:156](../../web/src/systems.js#L156) |
-| `setEnabled` | [web/src/systems.js:157](../../web/src/systems.js#L157) |
+| `attachPart` | [web/src/systems.js:72](../../web/src/systems.js#L72) |
+| `prepareMaterials` | [web/src/systems.js:84](../../web/src/systems.js#L84) |
+| `distribute` | [web/src/systems.js:93](../../web/src/systems.js#L93) |
+| `load` | [web/src/systems.js:110](../../web/src/systems.js#L110) |
+| `applyEra` | [web/src/systems.js:125](../../web/src/systems.js#L125) |
+| `applyCovers` | [web/src/systems.js:126](../../web/src/systems.js#L126) |
+| `applyExplode` | [web/src/systems.js:127](../../web/src/systems.js#L127) |
+| `materialFor` | [web/src/systems.js:130](../../web/src/systems.js#L130) |
+| `applyFlows` | [web/src/systems.js:131](../../web/src/systems.js#L131) |
+| `applySchematic` | [web/src/systems.js:132](../../web/src/systems.js#L132) |
+| `highlight` | [web/src/systems.js:134](../../web/src/systems.js#L134) |
+| `setPicked` | [web/src/systems.js:141](../../web/src/systems.js#L141) |
+| `setERSContext` | [web/src/systems.js:143](../../web/src/systems.js#L143) |
+| `updateUI` | [web/src/systems.js:144](../../web/src/systems.js#L144) |
+| `objectFor` | [web/src/systems.js:149](../../web/src/systems.js#L149) |
+| `geometryBounds` | [web/src/systems.js:150](../../web/src/systems.js#L150) |
+| `viewportAspect` | [web/src/systems.js:151](../../web/src/systems.js#L151) |
+| `frame` | [web/src/systems.js:153](../../web/src/systems.js#L153) |
+| `show` | [web/src/systems.js:154](../../web/src/systems.js#L154) |
+| `view` | [web/src/systems.js:155](../../web/src/systems.js#L155) |
+| `captureGhost` | [web/src/systems.js:156](../../web/src/systems.js#L156) |
+| `setGhost` | [web/src/systems.js:157](../../web/src/systems.js#L157) |
+| `setEnabled` | [web/src/systems.js:158](../../web/src/systems.js#L158) |
 | `createTunnelVisual` | [web/src/tunnel-visual.js:4](../../web/src/tunnel-visual.js#L4) |
 | `box` | [web/src/tunnel-visual.js:9](../../web/src/tunnel-visual.js#L9) |
 | `createWindTunnel` | [web/src/wind-tunnel.js:4](../../web/src/wind-tunnel.js#L4) |

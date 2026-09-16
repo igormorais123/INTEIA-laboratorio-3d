@@ -21,7 +21,7 @@ uv tool run --from graphifyy python docs/mapeamento-detalhado/scripts/gerar.py
 Após a integração dos dois atlas, siga a [sequência completa de publicação](../PUBLICACAO.md#atualizar-a-publicação) para atualizar também `docs/mapas`. As duas passagens estabilizam as referências entre os inventários; o mapa principal omite hashes dos derivados detalhados para evitar ciclos.
 
 1. Leia `git status --short --branch`, `git log -1` e as instruções locais aplicáveis. Identifique mudanças concorrentes; não use `reset`, `clean`, staging global ou substituição de arquivos alheios. Confira se o mapeamento deve refletir o HEAD ou também mudanças locais.
-2. Revise [finalidades.json](scripts/finalidades.json) para novas fontes. Arquivos adicionais não reconhecidos aparecem como **não classificados** e fazem a validação falhar. `docs/mapas` e suas ferramentas são identificados separadamente como produção paralela.
+2. Revise [finalidades.json](scripts/finalidades.json) para novas fontes únicas. Famílias reproduzíveis — módulos `sNN_*.py`, prévias e derivados `sistemas-v1*`, mapas Archify/Graphify e configurações de agentes — são classificadas por regra em `gerar.py`. Arquivos fora dessas famílias aparecem como **não classificados** e fazem a validação falhar. `docs/mapas` e suas ferramentas são identificados separadamente como produção paralela.
 3. Atualize as páginas editoriais quando contratos, exportações ou limitações mudarem. Revise [relacoes-curadas.json](dados/relacoes-curadas.json), com `source`, `target`, `relation`, confiança, caminho/linha e trecho de evidência reais. Preserve relações incertas como `INFERRED`/`AMBIGUOUS`; não converta suposições em fatos.
 4. Gere os derivados:
 

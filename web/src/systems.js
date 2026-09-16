@@ -64,13 +64,14 @@ export function createSystems({scene,model,mechanics,engine,driver,garage,camera
  const systemsHint='SISTEMAS: USE TAB E SETAS PARA ESCOLHER · ENTER/ESPAÇO PARA ABRIR · CLIQUE EM UMA PEÇA PARA LER O NOME';
  if(ui.detail&&ui.list&&ui.detail.parentElement===ui.list.parentElement)ui.detail.parentElement.insertBefore(ui.detail,ui.list);
  const cardFor=id=>ui.list?.querySelector(`[data-system="${id}"]`);
+ const logicalPartCount=id=>new Set(parts.filter(entry=>!id||entry.system===id).map(entry=>entry.logicalOwner)).size;
  const syncView=name=>ui.views.forEach(button=>button.setAttribute('aria-pressed',String(button.dataset.view===name)));
  const setStatus=text=>{if(ui.status){ui.status.textContent=text;ui.status.hidden=!text;}};
 
  // ------------------------------------------------------------------ carregamento do asset
- function attachPart(mesh,systemId){
+ function attachPart(mesh,systemId,logicalOwner=mesh.uuid){
   const data=mesh.userData||{};
-  const entry={object:mesh,system:systemId,part:data.part||mesh.name,base:mesh.position.clone(),explode:Array.isArray(data.explode)?new THREE.Vector3(...data.explode):new THREE.Vector3(),original:mesh.material,era:data.era||null,hideGroup:data.hide_group||null,flow:data.flow||null};
+  const entry={object:mesh,logicalOwner,system:systemId,part:data.part||mesh.name,base:mesh.position.clone(),explode:Array.isArray(data.explode)?new THREE.Vector3(...data.explode):new THREE.Vector3(),original:mesh.material,era:data.era||null,hideGroup:data.hide_group||null,flow:data.flow||null};
   parts.push(entry);mesh.userData.systemPart=entry;
   mesh.castShadow=false;mesh.receiveShadow=true;mesh.renderOrder=10;
   if(typeof data.spin==='number'&&data.spin!==0)spinners.push({object:mesh,rate:data.spin,axis:LOCAL_SPIN_AXES[data.spin_axis]?data.spin_axis:'y'});
@@ -91,20 +92,20 @@ export function createSystems({scene,model,mechanics,engine,driver,garage,camera
  }
  function distribute(gltf){
   gltfScene=gltf.scene;
+  const ownerId=mesh=>{for(let node=mesh;node;node=node.parent){const index=gltf.parser.associations.get(node)?.nodes;if(Number.isInteger(index))return index;}return mesh.uuid;};
   const stray=[];
   for(const child of [...gltfScene.children]){
    const id=/^system_(\w+)$/.exec(child.name)?.[1];
    const group=id?groups.get(id):null;
    if(!group){stray.push(child.name);continue;}
    for(const node of [...child.children])group.add(node);
-   child.traverse(node=>{if(node.isMesh)attachPart(node,id);});
   }
-  for(const [id,group] of groups)group.traverse(node=>{if(node.isMesh&&!node.userData.systemPart)attachPart(node,id);});
+  for(const [id,group] of groups)group.traverse(node=>{if(node.isMesh&&!node.userData.systemPart)attachPart(node,id,ownerId(node));});
   if(stray.length)console.warn('Sistemas: nós fora do contrato ignorados',stray);
   prepareMaterials(root);
   applyEra();applyCovers();applyExplode();applyFlows();
   root.updateMatrixWorld(true);
-  window.viewerInfo&&(window.viewerInfo.systemsParts=parts.length,window.viewerInfo.systemsLoaded=true);
+  window.viewerInfo&&(window.viewerInfo.systemsParts=logicalPartCount(),window.viewerInfo.systemsMeshes=parts.length,window.viewerInfo.systemsLoaded=true);
  }
  function load(){
   if(loadPromise)return loadPromise;
@@ -142,7 +143,7 @@ export function createSystems({scene,model,mechanics,engine,driver,garage,camera
  function setERSContext(mode){ersContext=mode==='current2026'?'current2026':'legacy2021';applyEra();applyCovers();applyFlows();if(active==='ers'||active==='power'){updateUI(active);frame(active,directions[currentView],false);}}
  function updateUI(id=active){
   if(disposed)return;
-  const overview=id==='overview',system=overview?null:meta(id),rovingId=overview?SYSTEM_CATALOG[0]?.id:id;syncView(currentView);if(ui.title)ui.title.textContent=overview?'Visão geral dos sistemas':system.label;if(ui.kicker)ui.kicker.textContent=overview?'CAMADAS INTERNAS / VISÃO DIDÁTICA':`${system.number} / ${system.short}`;if(ui.description)ui.description.textContent=overview?'Catorze sistemas modelados em escala real dentro do carro fantasma. Selecione uma camada para estudá-la isolada, com fluxos, tampas abertas e peças separadas. Não é CAD nem validação física.':`${system.description} Simplificação didática; conexões indicam função, não escala homologada.${id==='ers'||id==='power'?` Contexto ativo: ${ersContext==='legacy2021'?'arquitetura do vídeo / 2021 (MGU-H legado visível)':'arquitetura atual / 2026 (MGU-H removido)'}.`:''}`;if(ui.chapter)ui.chapter.textContent=overview?'14 sistemas · vídeo de referência':`Capítulo ${system.chapter} · vídeo de referência`;const count=overview?parts.length:parts.filter(entry=>entry.system===id).length;if(ui.count)ui.count.textContent=overview?(count?`${count} PEÇAS · 14 CAMADAS`:'14 CAMADAS'):`${system.number} / 14${count?` · ${count} PEÇAS`:''}`;if(contextToggle){contextToggle.hidden=id!=='ers'&&id!=='power';contextToggle.textContent=ersContext==='legacy2021'?'Ver contexto atual 2026':'Voltar ao vídeo / 2021';contextToggle.setAttribute('aria-pressed',String(ersContext==='current2026'));}if(ui.overview){ui.overview.setAttribute('aria-pressed',String(overview));ui.overview.textContent=overview?'Todos os sistemas visíveis':'Mostrar todos os sistemas';ui.overview.style.color=overview?'#fff':'';ui.overview.style.backgroundColor=overview?'var(--red)':'';}if(ui.hint)ui.hint.style.textShadow=enabled?'0 1px 3px var(--paper),0 0 8px var(--paper)':'';SYSTEM_CATALOG.forEach((item,index)=>{const card=cardFor(item.id);if(card){const selected=!overview&&item.id===id;card.setAttribute('aria-pressed',String(selected));card.tabIndex=item.id===rovingId?0:-1;const chapterLink=ui.chapters[index];if(chapterLink){if(selected)chapterLink.setAttribute('aria-current','true');else chapterLink.removeAttribute('aria-current');}}});if(overview)ui.chapters.forEach(link=>link.removeAttribute('aria-current'));if(ui.detail)ui.detail.style.setProperty('--system-color',overview?'#d92135':system.color);
+  const overview=id==='overview',system=overview?null:meta(id),rovingId=overview?SYSTEM_CATALOG[0]?.id:id;syncView(currentView);if(ui.title)ui.title.textContent=overview?'Visão geral dos sistemas':system.label;if(ui.kicker)ui.kicker.textContent=overview?'CAMADAS INTERNAS / VISÃO DIDÁTICA':`${system.number} / ${system.short}`;if(ui.description)ui.description.textContent=overview?'Catorze sistemas modelados em escala real dentro do carro fantasma. Selecione uma camada para estudá-la isolada, com fluxos, tampas abertas e peças separadas. Não é CAD nem validação física.':`${system.description} Simplificação didática; conexões indicam função, não escala homologada.${id==='ers'||id==='power'?` Contexto ativo: ${ersContext==='legacy2021'?'arquitetura do vídeo / 2021 (MGU-H legado visível)':'arquitetura atual / 2026 (MGU-H removido)'}.`:''}`;if(ui.chapter)ui.chapter.textContent=overview?'14 sistemas · vídeo de referência':`Capítulo ${system.chapter} · vídeo de referência`;const count=logicalPartCount(overview?null:id);if(ui.count)ui.count.textContent=overview?(count?`${count} PEÇAS · 14 CAMADAS`:'14 CAMADAS'):`${system.number} / 14${count?` · ${count} PEÇAS`:''}`;if(contextToggle){contextToggle.hidden=id!=='ers'&&id!=='power';contextToggle.textContent=ersContext==='legacy2021'?'Ver contexto atual 2026':'Voltar ao vídeo / 2021';contextToggle.setAttribute('aria-pressed',String(ersContext==='current2026'));}if(ui.overview){ui.overview.setAttribute('aria-pressed',String(overview));ui.overview.textContent=overview?'Todos os sistemas visíveis':'Mostrar todos os sistemas';ui.overview.style.color=overview?'#fff':'';ui.overview.style.backgroundColor=overview?'var(--red)':'';}if(ui.hint)ui.hint.style.textShadow=enabled?'0 1px 3px var(--paper),0 0 8px var(--paper)':'';SYSTEM_CATALOG.forEach((item,index)=>{const card=cardFor(item.id);if(card){const selected=!overview&&item.id===id;card.setAttribute('aria-pressed',String(selected));card.tabIndex=item.id===rovingId?0:-1;const chapterLink=ui.chapters[index];if(chapterLink){if(selected)chapterLink.setAttribute('aria-current','true');else chapterLink.removeAttribute('aria-current');}}});if(overview)ui.chapters.forEach(link=>link.removeAttribute('aria-current'));if(ui.detail)ui.detail.style.setProperty('--system-color',overview?'#d92135':system.color);
   ui.flows?.setAttribute('aria-pressed',String(flowsOn));ui.covers?.setAttribute('aria-pressed',String(coversOpen));ui.schematic?.setAttribute('aria-pressed',String(schematic));ui.ghost?.setAttribute('aria-pressed',String(ghostWanted));if(ui.flows)ui.flows.disabled=overview;if(ui.explode){ui.explode.value=Math.round(explodeAmount*100);ui.explode.disabled=overview;}if(ui.explodeValue)ui.explodeValue.textContent=Math.round(explodeAmount*100)+'%';
  }
  function objectFor(id){return id==='overview'?root:groups.get(id);}

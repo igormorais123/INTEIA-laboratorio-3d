@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "fingerprint": "4dcbbc886c68a46fbed9ce9ce9dbc4d17183f47637455e549f8f392f98fb0581",
+  "fingerprint": "7f899975b9576b98777bfefd0e812922fe695e7021f7c88700611a46aeffa6a4",
   "scope": "arquivos Git e novos não ignorados; caches, dependências instaladas e backups ignorados excluídos",
   "hashPolicy": "SHA256 e bytes de texto com LF; binários exatos; mapas gerados sem auto-hash",
   "files": [
@@ -65,7 +65,7 @@
       "category": "configuração ou infraestrutura",
       "href": "../../.planning/ai/project-index.json",
       "bytesCanonical": 2997,
-      "sha256": "4b0d1719ef00d60d6cba5a0c4ff04ceb7de3ce344c4ac8e33fa2f2f809bddcdb"
+      "sha256": "49d250b3ce41972890ccc1d46dcdefa579b2ed130968e7285b3463cfb7472168"
     },
     {
       "path": ".planning/architecture/system-architecture.html",
@@ -92,8 +92,8 @@
       "path": "AGENTS.md",
       "category": "documentação",
       "href": "../../AGENTS.md",
-      "bytesCanonical": 1868,
-      "sha256": "bf0ea723b7123c6cfbb91133e04600b7d1ae2bcd55385819d181275e8ff051dd"
+      "bytesCanonical": 1867,
+      "sha256": "ef9587b70acd4c650ecf409c311c0d151b540f202a40e20550581a89d8f3da55"
     },
     {
       "path": "CHANGELOG.md",
@@ -296,8 +296,8 @@
       "path": "docs/README.md",
       "category": "documentação",
       "href": "../../docs/README.md",
-      "bytesCanonical": 2848,
-      "sha256": "d7314e59c608366c4c1938b01f2b6c5d30c57b527fca0b9108f0883a3b09ef1f"
+      "bytesCanonical": 2872,
+      "sha256": "0d5879889482f1ec8f70b0d6a3510c6616ad436f55439416133a7d0e0996d734"
     },
     {
       "path": "docs/REVISAO-TUNEL-VISUAL.md",
@@ -616,8 +616,8 @@
       "path": "docs/mapeamento-detalhado/scripts/finalidades.json",
       "category": "configuração ou infraestrutura",
       "href": "../../docs/mapeamento-detalhado/scripts/finalidades.json",
-      "bytesCanonical": 20661,
-      "sha256": "f4244a3f52cf0da0560556b17b9c3f4756a3f6f9f1e8e5c59579edc9d31afc8f"
+      "bytesCanonical": 20882,
+      "sha256": "d345ca1fcea1a9e557d4e0e1c9eb8000db5819d94ecf12fdd7bcf01e53a60258"
     },
     {
       "path": "docs/mapeamento-detalhado/scripts/gerar.py",
@@ -926,7 +926,7 @@
       "category": "evidência gerada",
       "href": "../../manifesto-sha256.json",
       "bytesCanonical": 3048,
-      "sha256": "0b3abe591b5a5d430e915939d36ecbc8e18a359910e511d546e9ac795d125b3c"
+      "sha256": "79d2006cbb6bf294ba5f04493ea66575af65fbb2fee98c8dd62ce25d603a50ba"
     },
     {
       "path": "modelos/INTEIA_F1_animado.glb",
@@ -15419,8 +15419,8 @@
       "path": "web/index.html",
       "category": "aplicação gerada",
       "href": "../../web/index.html",
-      "bytesCanonical": 4403978,
-      "sha256": "8bc571f5a0e8ef04268abd97285cd8c689a8f674f2ae8fdd73ba9d2274ef8b2e"
+      "bytesCanonical": 4404242,
+      "sha256": "5c7fe658ba2ea8b384f2b6012a154bfc40f5eebf60bfac275632fe3be77346e4"
     },
     {
       "path": "web/package-lock.json",
@@ -15567,8 +15567,8 @@
       "path": "web/src/systems.js",
       "category": "fonte web editável",
       "href": "../../web/src/systems.js",
-      "bytesCanonical": 32111,
-      "sha256": "1ea94f6c7aad85f7515571984f41ed84681f4e88a08b72f53f8a19c1f2516f22",
+      "bytesCanonical": 32412,
+      "sha256": "8c90044c4098d1e1a12c1184baf777369b4f8d322fce6f85a0a31df2b43d8112",
       "reachableFromApp": true
     },
     {
@@ -17350,162 +17350,162 @@
     {
       "name": "attachPart",
       "path": "web/src/systems.js",
-      "line": 71,
-      "href": "../../web/src/systems.js#L71",
+      "line": 72,
+      "href": "../../web/src/systems.js#L72",
       "extraction": "declaração lexical"
     },
     {
       "name": "prepareMaterials",
       "path": "web/src/systems.js",
-      "line": 83,
-      "href": "../../web/src/systems.js#L83",
+      "line": 84,
+      "href": "../../web/src/systems.js#L84",
       "extraction": "declaração lexical"
     },
     {
       "name": "distribute",
       "path": "web/src/systems.js",
-      "line": 92,
-      "href": "../../web/src/systems.js#L92",
+      "line": 93,
+      "href": "../../web/src/systems.js#L93",
       "extraction": "declaração lexical"
     },
     {
       "name": "load",
       "path": "web/src/systems.js",
-      "line": 109,
-      "href": "../../web/src/systems.js#L109",
+      "line": 110,
+      "href": "../../web/src/systems.js#L110",
       "extraction": "declaração lexical"
     },
     {
       "name": "applyEra",
-      "path": "web/src/systems.js",
-      "line": 124,
-      "href": "../../web/src/systems.js#L124",
-      "extraction": "declaração lexical"
-    },
-    {
-      "name": "applyCovers",
       "path": "web/src/systems.js",
       "line": 125,
       "href": "../../web/src/systems.js#L125",
       "extraction": "declaração lexical"
     },
     {
-      "name": "applyExplode",
+      "name": "applyCovers",
       "path": "web/src/systems.js",
       "line": 126,
       "href": "../../web/src/systems.js#L126",
       "extraction": "declaração lexical"
     },
     {
-      "name": "materialFor",
+      "name": "applyExplode",
       "path": "web/src/systems.js",
-      "line": 129,
-      "href": "../../web/src/systems.js#L129",
+      "line": 127,
+      "href": "../../web/src/systems.js#L127",
       "extraction": "declaração lexical"
     },
     {
-      "name": "applyFlows",
+      "name": "materialFor",
       "path": "web/src/systems.js",
       "line": 130,
       "href": "../../web/src/systems.js#L130",
       "extraction": "declaração lexical"
     },
     {
-      "name": "applySchematic",
+      "name": "applyFlows",
       "path": "web/src/systems.js",
       "line": 131,
       "href": "../../web/src/systems.js#L131",
       "extraction": "declaração lexical"
     },
     {
+      "name": "applySchematic",
+      "path": "web/src/systems.js",
+      "line": 132,
+      "href": "../../web/src/systems.js#L132",
+      "extraction": "declaração lexical"
+    },
+    {
       "name": "highlight",
       "path": "web/src/systems.js",
-      "line": 133,
-      "href": "../../web/src/systems.js#L133",
+      "line": 134,
+      "href": "../../web/src/systems.js#L134",
       "extraction": "declaração lexical"
     },
     {
       "name": "setPicked",
       "path": "web/src/systems.js",
-      "line": 140,
-      "href": "../../web/src/systems.js#L140",
+      "line": 141,
+      "href": "../../web/src/systems.js#L141",
       "extraction": "declaração lexical"
     },
     {
       "name": "setERSContext",
-      "path": "web/src/systems.js",
-      "line": 142,
-      "href": "../../web/src/systems.js#L142",
-      "extraction": "declaração lexical"
-    },
-    {
-      "name": "updateUI",
       "path": "web/src/systems.js",
       "line": 143,
       "href": "../../web/src/systems.js#L143",
       "extraction": "declaração lexical"
     },
     {
-      "name": "objectFor",
+      "name": "updateUI",
       "path": "web/src/systems.js",
-      "line": 148,
-      "href": "../../web/src/systems.js#L148",
+      "line": 144,
+      "href": "../../web/src/systems.js#L144",
       "extraction": "declaração lexical"
     },
     {
-      "name": "geometryBounds",
+      "name": "objectFor",
       "path": "web/src/systems.js",
       "line": 149,
       "href": "../../web/src/systems.js#L149",
       "extraction": "declaração lexical"
     },
     {
-      "name": "viewportAspect",
+      "name": "geometryBounds",
       "path": "web/src/systems.js",
       "line": 150,
       "href": "../../web/src/systems.js#L150",
       "extraction": "declaração lexical"
     },
     {
-      "name": "frame",
+      "name": "viewportAspect",
       "path": "web/src/systems.js",
-      "line": 152,
-      "href": "../../web/src/systems.js#L152",
+      "line": 151,
+      "href": "../../web/src/systems.js#L151",
       "extraction": "declaração lexical"
     },
     {
-      "name": "show",
+      "name": "frame",
       "path": "web/src/systems.js",
       "line": 153,
       "href": "../../web/src/systems.js#L153",
       "extraction": "declaração lexical"
     },
     {
-      "name": "view",
+      "name": "show",
       "path": "web/src/systems.js",
       "line": 154,
       "href": "../../web/src/systems.js#L154",
       "extraction": "declaração lexical"
     },
     {
-      "name": "captureGhost",
+      "name": "view",
       "path": "web/src/systems.js",
       "line": 155,
       "href": "../../web/src/systems.js#L155",
       "extraction": "declaração lexical"
     },
     {
-      "name": "setGhost",
+      "name": "captureGhost",
       "path": "web/src/systems.js",
       "line": 156,
       "href": "../../web/src/systems.js#L156",
       "extraction": "declaração lexical"
     },
     {
-      "name": "setEnabled",
+      "name": "setGhost",
       "path": "web/src/systems.js",
       "line": 157,
       "href": "../../web/src/systems.js#L157",
+      "extraction": "declaração lexical"
+    },
+    {
+      "name": "setEnabled",
+      "path": "web/src/systems.js",
+      "line": 158,
+      "href": "../../web/src/systems.js#L158",
       "extraction": "declaração lexical"
     },
     {

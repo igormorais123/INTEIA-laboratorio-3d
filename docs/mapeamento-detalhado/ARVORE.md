@@ -6,12 +6,27 @@ Diretórios de dependências, caches e Git são listados nas exclusões; não s�
 
 ```text
 INTEIA-laboratorio-3d/
+  .claude/  # Documentação complementar da conversa paralela
+    settings.json  # Configuração local de assistência e concisão por agente
+  .cursor/  # Documentação complementar da conversa paralela
+    rules/  # Documentação complementar da conversa paralela
+      chisle.mdc  # Configuração local de assistência e concisão por agente
   .gitattributes  # Política de texto/LF, binários e supressão de diff do HTML empacotado
   .github/  # Automação de verificação remota
+    copilot-instructions.md  # Configuração local de assistência e concisão por agente
     workflows/  # CI de build/test
       verify.yml  # CI: instala dependências, constrói web e executa testes em Node 24
   .gitignore  # Exclusões de dependências, caches, backups Blender e dados de ambiente
+  .graphifyignore  # Configuração ou saída navegável do mapa Graphify
   .nojekyll  # Habilita publicação estática direta pelo GitHub Pages
+  .planning/  # Documentação complementar da conversa paralela
+    ai/  # Documentação complementar da conversa paralela
+      project-index.json  # Índice e instruções locais para navegação econômica por agentes
+    architecture/  # Documentação complementar da conversa paralela
+      system-architecture.html  # Diagrama arquitetural Archify e sua especificação validada
+      system.architecture.json  # Diagrama arquitetural Archify e sua especificação validada
+  00_INDICE_IA.md  # Índice e instruções locais para navegação econômica por agentes
+  AGENTS.md  # Índice e instruções locais para navegação econômica por agentes
   CHANGELOG.md  # Histórico editorial das mudanças e entregas
   CONTRIBUTING.md  # Orientações para contribuir e verificar alterações
   INTEIA_F1_Master.blend  # Projeto Blender entregue: carro, coleções, materiais, demonstração e estúdio
@@ -28,16 +43,21 @@ INTEIA-laboratorio-3d/
   docs/  # Guias técnicos e documentação
     ACABAMENTO-E-RENDER.md  # Acabamento, iluminação e ajustes de render documentados em tarefa concorrente
     AERODINAMICA.md  # Modelo por coeficientes, unidades, entradas, resultados e limitações
+    ANALISE-DOSSIE-COMPLEMENTAR.md  # Auditoria editorial das lacunas, contradições e prioridades do dossiê técnico
     ARQUITETURA.md  # Visão geral das camadas, arquivos e materiais
     BLENDER.md  # Uso das coleções, Append, animação e materiais no Blender
     BOX-LABORATORIO.md  # Composição e reutilização do box procedural
     DESENVOLVIMENTO.md  # Instalação, build, servidor e testes
     DIREITOS-E-PROCEDENCIA.md  # Separa titularidade INTEIA de geometria fornecida e terceiros
+    ESPECIFICACAO-ASSET-3D-SISTEMAS-F1.md  # Contrato de modelagem dos catorze sistemas internos do carro
     INTEGRACAO-MOTOR.md  # Operação e procedência da integração do carro final e motor
     INTEGRACAO.md  # Integração dos GLBs e fontes em outros projetos
+    OUTRO-PC.md  # Instalação e sincronização segura entre computadores
     PILOTO-E-CAPACETE.md  # Referências, operação e limites do estudo do piloto
     PUBLICACAO.md  # Endereços públicos, atualização e evidência da publicação
+    README.md  # Índice canônico da documentação do projeto
     REVISAO-TUNEL-VISUAL.md  # Revisões e limites da representação visual do fluxo
+    SISTEMAS-3D.md  # Guia operacional da bancada Sistemas, do asset publicado e de sua regeneração
     VALIDACAO.md  # Síntese de testes históricos e limites por destino
     mapas/  # Documentação complementar da conversa paralela
       GRAFOS.md  # Diagramas Mermaid e leitura do grafo geral paralelo
@@ -55,19 +75,107 @@ INTEIA-laboratorio-3d/
       graphify-extracao.json  # Extração graphify preservada pela conversa paralela
       index.html  # Interface navegável do mapa geral paralelo
       inventario.json  # Inventário estruturado de arquivos do gerador paralelo
+    pesquisa-sistemas-carro-video.md  # Pesquisa e limites das referências usadas para os sistemas do carro
   documentacao/  # Metadados de peças e histórico visual
     Comparacao-iluminacao.html  # Comparação visual histórica de iluminação em HTML
     INTEIA-personalizacao.png  # Captura da personalização web em uma sessão anterior
     componentes-origem.json  # Metadados dos 97 componentes: IDs, categorias, pivôs, limites e sourceObject
     historico-avaliacoes.md  # Pareceres históricos e subjetivos sobre versões visuais
   ferramentas/  # Conversão, embalagem, validação e manifesto
+    gerar_sistemas.py  # Pipeline de geração e otimização dos sistemas internos
     manifest.cjs  # Calcula bytes e SHA-256 de 14 entregas e grava o manifesto
     mapa-template.html  # Template da interface do mapa geral da conversa paralela
     mapear.py  # Gerador do mapa geral da conversa paralela; saídas em docs/mapas
     merge-animation.cjs  # Reúne canais de animação do GLB animado em um único clipe
+    otimizar_sistemas.mjs  # Pipeline de geração e otimização dos sistemas internos
     package_blender.py  # Importa base web e produz Blender mestre, texturas, GLBs e evidências
     package_garage.py  # Importa GLB do box e GLB estático do carro para compor uma cena Blender
     render_garage_preview.py  # Abre cena Blender do box e renderiza prévia
+    sistemas/  # Documentação complementar da conversa paralela
+      lib.py  # Biblioteca geométrica compartilhada pelos sistemas internos
+      previews/  # Documentação complementar da conversa paralela
+        aero-assoalho-por-baixo.png  # Prévia gerada para revisão visual de um sistema interno
+        aero-bargeboards.png  # Prévia gerada para revisão visual de um sistema interno
+        aero-difusor.png  # Prévia gerada para revisão visual de um sistema interno
+        aero-drs.png  # Prévia gerada para revisão visual de um sistema interno
+        aero-hero.png  # Prévia gerada para revisão visual de um sistema interno
+        brakes-brake-by-wire.png  # Prévia gerada para revisão visual de um sistema interno
+        brakes-canto-dianteiro.png  # Prévia gerada para revisão visual de um sistema interno
+        brakes-canto-por-dentro.png  # Prévia gerada para revisão visual de um sistema interno
+        brakes-hero.png  # Prévia gerada para revisão visual de um sistema interno
+        brakes-pedaleira.png  # Prévia gerada para revisão visual de um sistema interno
+        brakes-side.png  # Prévia gerada para revisão visual de um sistema interno
+        cockpit-assento-arnes.png  # Prévia gerada para revisão visual de um sistema interno
+        cockpit-hans.png  # Prévia gerada para revisão visual de um sistema interno
+        cockpit-hero.png  # Prévia gerada para revisão visual de um sistema interno
+        cockpit-hidratacao.png  # Prévia gerada para revisão visual de um sistema interno
+        cockpit-pedais.png  # Prévia gerada para revisão visual de um sistema interno
+        cooling-hero.png  # Prévia gerada para revisão visual de um sistema interno
+        cooling-sidepod-direito.png  # Prévia gerada para revisão visual de um sistema interno
+        cooling-sidepod-esquerdo.png  # Prévia gerada para revisão visual de um sistema interno
+        cooling-superior.png  # Prévia gerada para revisão visual de um sistema interno
+        ers-energy-store.png  # Prévia gerada para revisão visual de um sistema interno
+        ers-hero.png  # Prévia gerada para revisão visual de um sistema interno
+        ers-inversor.png  # Prévia gerada para revisão visual de um sistema interno
+        ers-mgu-k.png  # Prévia gerada para revisão visual de um sistema interno
+        fuel-celula.png  # Prévia gerada para revisão visual de um sistema interno
+        fuel-hero.png  # Prévia gerada para revisão visual de um sistema interno
+        fuel-interior.png  # Prévia gerada para revisão visual de um sistema interno
+        fuel-linhas.png  # Prévia gerada para revisão visual de um sistema interno
+        overview-hero.png  # Prévia gerada para revisão visual de um sistema interno
+        power-escape-turbina.png  # Prévia gerada para revisão visual de um sistema interno
+        power-hero.png  # Prévia gerada para revisão visual de um sistema interno
+        power-plenum-trompetas.png  # Prévia gerada para revisão visual de um sistema interno
+        power-tres-quartos.png  # Prévia gerada para revisão visual de um sistema interno
+        power-turbo-dianteiro.png  # Prévia gerada para revisão visual de um sistema interno
+        power-vale-em-v.png  # Prévia gerada para revisão visual de um sistema interno
+        safety-halo.png  # Prévia gerada para revisão visual de um sistema interno
+        safety-hero.png  # Prévia gerada para revisão visual de um sistema interno
+        safety-impacto-dianteiro.png  # Prévia gerada para revisão visual de um sistema interno
+        safety-impacto-traseiro.png  # Prévia gerada para revisão visual de um sistema interno
+        safety-retencao-roda.png  # Prévia gerada para revisão visual de um sistema interno
+        sensors-antena.png  # Prévia gerada para revisão visual de um sistema interno
+        sensors-ecu.png  # Prévia gerada para revisão visual de um sistema interno
+        sensors-hero.png  # Prévia gerada para revisão visual de um sistema interno
+        sensors-pitot.png  # Prévia gerada para revisão visual de um sistema interno
+        sensors-roda.png  # Prévia gerada para revisão visual de um sistema interno
+        steering-coluna.png  # Prévia gerada para revisão visual de um sistema interno
+        steering-cremalheira.png  # Prévia gerada para revisão visual de um sistema interno
+        steering-hero.png  # Prévia gerada para revisão visual de um sistema interno
+        steering-track-rod.png  # Prévia gerada para revisão visual de um sistema interno
+        structure-antepara-traseira.png  # Prévia gerada para revisão visual de um sistema interno
+        structure-celula.png  # Prévia gerada para revisão visual de um sistema interno
+        structure-corte-sanduiche.png  # Prévia gerada para revisão visual de um sistema interno
+        structure-hero.png  # Prévia gerada para revisão visual de um sistema interno
+        structure-plank.png  # Prévia gerada para revisão visual de um sistema interno
+        suspension-dianteira-inboard.png  # Prévia gerada para revisão visual de um sistema interno
+        suspension-dianteira.png  # Prévia gerada para revisão visual de um sistema interno
+        suspension-hero.png  # Prévia gerada para revisão visual de um sistema interno
+        suspension-traseira.png  # Prévia gerada para revisão visual de um sistema interno
+        suspension-upright.png  # Prévia gerada para revisão visual de um sistema interno
+        transmission-diferencial.png  # Prévia gerada para revisão visual de um sistema interno
+        transmission-embreagem.png  # Prévia gerada para revisão visual de um sistema interno
+        transmission-engrenagens.png  # Prévia gerada para revisão visual de um sistema interno
+        transmission-hero.png  # Prévia gerada para revisão visual de um sistema interno
+        transmission-lateral-corte.png  # Prévia gerada para revisão visual de um sistema interno
+        wheel-frente.png  # Prévia gerada para revisão visual de um sistema interno
+        wheel-hero.png  # Prévia gerada para revisão visual de um sistema interno
+        wheel-lateral.png  # Prévia gerada para revisão visual de um sistema interno
+        wheel-tras.png  # Prévia gerada para revisão visual de um sistema interno
+      s01_aero.py  # Módulo procedural de um sistema interno do carro
+      s02_structure.py  # Módulo procedural de um sistema interno do carro
+      s03_suspension.py  # Módulo procedural de um sistema interno do carro
+      s04_steering.py  # Módulo procedural de um sistema interno do carro
+      s05_brakes.py  # Módulo procedural de um sistema interno do carro
+      s06_power.py  # Módulo procedural de um sistema interno do carro
+      s07_ers.py  # Módulo procedural de um sistema interno do carro
+      s08_cooling.py  # Módulo procedural de um sistema interno do carro
+      s09_fuel.py  # Módulo procedural de um sistema interno do carro
+      s10_transmission.py  # Módulo procedural de um sistema interno do carro
+      s11_safety.py  # Módulo procedural de um sistema interno do carro
+      s12_cockpit.py  # Módulo procedural de um sistema interno do carro
+      s13_wheel.py  # Módulo procedural de um sistema interno do carro
+      s14_sensors.py  # Módulo procedural de um sistema interno do carro
     validate-kit.py  # Reabre Blender e GLBs para registrar verificações do pacote
   identidade/  # SVGs e guia de identidade
     INTEIA-monocromatico.svg  # Variante vetorial monocromática da marca INTEIA
@@ -100,6 +208,8 @@ INTEIA-laboratorio-3d/
       inteligencia-mil-grau.source.json  # Procedência da arte do patrocinador
       power-unit-v1.glb  # Motor V6 didático animado do F1 Loop
       power-unit-v1.manifest.json  # Geometria, animação, hash e licença do motor
+      sistemas-v1.glb  # Asset GLB derivado dos módulos procedurais de sistemas
+      sistemas-v1.manifest.json  # Manifesto de composição e métricas do GLB de sistemas correspondente
     build.cjs  # Empacota app e base64 do GLB no template para HTML autocontido
     index.html  # Site autocontido gerado: template, bundle Three.js e modelo embutido
     package-lock.json  # Versões e integridade das dependências npm
@@ -122,6 +232,7 @@ INTEIA-laboratorio-3d/
       senna-driver.js  # Piloto ilustrativo do carro final
       studio.js  # Materiais, carbono procedural, iluminação, ambiente, piso e tema
       surface-library.js  # Texturas de acabamento do carro final
+      systems.js  # Carrega, apresenta e controla o GLB consolidado dos sistemas internos
       template-v2.html  # Estrutura e estilos da interface com marcadores __MODEL__ e __APP__
       tunnel-visual.js  # Construção visual do túnel, linhas/partículas e recursos de cena
       wind-tunnel.js  # Liga entradas do túnel, calculadora, gráficos, CSV e efeitos de fluxo
@@ -130,14 +241,16 @@ INTEIA-laboratorio-3d/
     test-driver-model.mjs  # Geometria e restauração do encaixe do piloto
     test-mechanics.mjs  # Verifica peças, pivôs, 20 ciclos, seleção, arraste e restauração
     test-power-unit.mjs  # Valida animação do motor em 20 ciclos
+    test-systems.mjs  # Valida catálogo, controles, manifesto, hash e estrutura do GLB de sistemas
   docs/mapeamento-detalhado/  # Esta entrega: índice, HTML, catálogos, grafos e scripts
 ```
 
 ## Exclusões observadas
 
 - `.git`: Metadados e objetos internos Git; revisão registrada via Git.
-- `.mapas-worktree`: Checkout/worktree Git aninhado: cópia operacional do mesmo projeto, não é fonte adicional.
+- `.impeccable`: Cache efêmero de sessão; ignorado pelo Git e sem valor arquitetural.
 - `graphify-out`: Extração/cache da conversa paralela ou cache isolado desta análise.
-- `ambientes/INTEIA_Box_com_carro.blend1`: Ambiente local, log, backup ou pacote duplicado; conteúdo não lido.
 - `docs/mapeamento-detalhado`: Esta entrega: inventário próprio em dados/entrega.json; evita autorreferência recursiva.
+- `ferramentas/__pycache__`: Cache Python regenerável.
+- `ferramentas/sistemas/__pycache__`: Cache Python regenerável.
 - `web/node_modules`: Dependências instaladas; versões em package-lock.json.
