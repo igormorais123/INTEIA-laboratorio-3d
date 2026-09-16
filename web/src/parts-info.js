@@ -366,3 +366,82 @@ export function describePart(part, systemId) {
 }
 
 export const PARTS_INFO_RULES = RULES.length;
+
+
+// ---------------------------------------------------------------- componentes externos do carro (bancada Carro)
+const CAR_RULES = [
+ R(/^Carroceria/, 'Casca de carbono que envolve a célula de sobrevivência, o motor e os sidepods; dá a forma aerodinâmica ao carro e protege os sistemas internos.',
+  'A carroceria é trocada várias vezes por temporada conforme as atualizações aerodinâmicas; cada painel pesa poucos quilos e é ajustado ao milímetro.'),
+ R(/^Flap traseiro DRS/, 'Flap móvel da asa traseira: em posição fechada gera carga; aberto, reduz o arrasto e libera velocidade na reta.',
+  'A abertura vale de 10 a 15 km/h no fim da reta. Em 2026 o sistema dá lugar à aerodinâmica ativa, que move as duas asas.'),
+ R(/^Asa traseira principal/, 'Plano principal da asa traseira, que gera a maior parte da carga do eixo traseiro e é a maior fonte de arrasto do carro.',
+  'Em Monza a asa é quase plana; em Mônaco, o mais inclinada possível. A escolha muda a velocidade final em dezenas de km/h.'),
+ R(/^Placa lateral traseira/, 'Placa vertical na ponta da asa traseira que impede o ar de escapar pela lateral e mantém a diferença de pressão entre as faces da asa.',
+  'As bordas recortadas geram vórtices controlados que reduzem o arrasto induzido, o mesmo princípio dos winglets dos aviões.'),
+ R(/^Suporte (superior|inferior) traseiro|^Suporte da asa traseira/, 'Pilares e suportes que prendem a asa traseira à estrutura de impacto e ao câmbio, transmitindo centenas de quilos de carga.',
+  'A asa traseira empurra o carro para baixo com mais de 400 kg em alta velocidade; os pilares são ensaiados para não flexionar além do permitido.'),
+ R(/^Suporte do DRS|^Mecanismo do DRS/, 'Atuador e articulações que abrem o flap traseiro por comando do piloto e o fecham ao tocar o freio.',
+  'A abertura é hidráulica e leva menos de meio segundo; só é permitida em zonas definidas e a menos de um segundo do carro da frente.'),
+ R(/^Placa lateral dianteira/, 'Placa lateral da asa dianteira que direciona o ar para fora da roda, reduzindo a turbulência que ela gera.',
+  'O ar jogado para fora da roda dianteira é chamado de outwash; controlá-lo é um dos maiores temas do projeto aerodinâmico.'),
+ R(/^Asa dianteira/, 'Elemento da asa dianteira: o primeiro a tocar o ar, gera carga no eixo dianteiro e organiza o fluxo para todo o resto do carro.',
+  'O ângulo dos flaps é ajustado nos boxes com uma chave em poucos segundos e é o principal ajuste de equilíbrio durante a corrida.'),
+ R(/^Suporte dianteiro|^Suporte da asa dianteira/, 'Pilares e suportes que ligam a asa dianteira ao nariz e sustentam os elementos entre si.',
+  'Os pilares são desenhados para se romper de modo controlado em impacto, junto com o cone do nariz.'),
+ R(/^Detalhe de flap dianteiro/, 'Ajustador e detalhes do flap dianteiro, onde o ângulo é regulado nos boxes.',
+  'Um clique no ajustador muda o ângulo em frações de grau e desloca o equilíbrio do carro para a frente ou para trás.'),
+ R(/^Assoalho/, 'Piso do carro que gera a maior parte da carga aerodinâmica pelo efeito solo, com túneis que aceleram o ar sob o carro.',
+  'Alguns milímetros de altura em relação à pista mudam o comportamento inteiro do carro; é a peça mais sensível do projeto.'),
+ R(/^Conjunto de roda/, 'Roda de magnésio forjado de 18 polegadas com porca única central e tampa aerodinâmica.',
+  'A roda é trocada em menos de dois segundos e meio; a porca já vem presa ao aro para não cair durante a parada.'),
+ R(/^Pneu dianteiro/, 'Pneu dianteiro; a borracha macia aquece rápido e gera a aderência lateral nas curvas.',
+  'Um jogo dura poucas dezenas de voltas; a temperatura ideal fica entre 90 e 110 °C, medida por sensores infravermelhos.'),
+ R(/^Pneu traseiro/, 'Pneu traseiro, mais largo que o dianteiro, que transmite a potência ao asfalto na aceleração.',
+  'A patinagem na saída de curva é o que mais aquece e desgasta o pneu traseiro; por isso os pilotos dosam o acelerador com tanto cuidado.'),
+ R(/^Cobertura interna/, 'Painel interno que fecha o vão entre a roda e a suspensão e controla o ar que sai dos freios.',
+  'O calor dos freios é usado para aquecer o pneu pelo aro; esses painéis regulam quanto calor passa para a roda.'),
+ R(/^Suspensão (dianteira|traseira)/, 'Wishbones em perfil de asa que ligam a roda ao chassi e definem a geometria da suspensão.',
+  'Além de sustentar a roda, eles orientam o ar em direção ao assoalho; a forma é limitada por regra para não virarem asas.'),
+ R(/^Haste dianteira/, 'Push-rod: haste que transmite o movimento da roda ao balancim dentro do chassi, onde ficam molas e amortecedores.',
+  'Colocar molas e amortecedores dentro do chassi limpa o fluxo de ar em volta da roda; a haste trabalha só em compressão.'),
+ R(/^Conjunto de eixo traseiro/, 'Semieixo que leva o torque do diferencial à roda traseira, com juntas homocinéticas nas duas pontas.',
+  'É protegido por uma carenagem em perfil de asa para não perturbar o ar que vai ao difusor.'),
+ R(/^Interior do cockpit/, 'Cavidade onde o piloto se senta, com a abertura definida por regra para permitir a saída em cinco segundos.',
+  'O piloto sai do cockpit sem apoiar as mãos fora da célula; o exercício de evacuação é obrigatório e cronometrado.'),
+ R(/^Defletor transparente/, 'Pequeno para-brisa que desvia o ar acima do capacete e reduz a turbulência sobre o piloto.',
+  'Sem ele, a 300 km/h a corrente de ar empurraria o capacete para cima com força de vários quilos.'),
+ R(/^Display do volante|^Indicadores do volante/, 'Tela e LEDs do volante onde o piloto lê marcha, tempos, temperaturas e o momento de trocar de marcha.',
+  'A marcha aparece grande no centro porque é lida de relance na frenagem; os LEDs acendem em sequência com a rotação.'),
+ R(/^Botões do volante/, 'Botões e seletores do volante: rádio, bebida, limitador de boxes, mapas de motor, energia e freio. Abra a bancada Sistemas para ler cada comando.',
+  'Um volante moderno tem mais de 20 botões e seis seletores; o piloto opera tudo sem tirar as mãos das empunhaduras.'),
+ R(/^Empunhadura do volante/, 'Empunhaduras moldadas à mão do piloto, na vertical porque o volante gira menos de meia volta.',
+  'Atrás delas ficam as borboletas de marcha e de embreagem, acionadas com os dedos.'),
+ R(/^Estrutura do volante/, 'Corpo de carbono do volante que abriga a eletrônica e sustenta todos os comandos.',
+  'Custa em torno de 50 mil euros, pesa cerca de 1,3 kg e sai do carro em segundos pelo engate rápido.'),
+ R(/^Conexão do volante/, 'Engate rápido e coluna que ligam o volante à cremalheira de direção.',
+  'A coluna tem duas juntas universais para contornar os pés do piloto e é projetada para se dobrar em impacto.'),
+ R(/^Luz traseira|^Conjunto de LEDs traseiros/, 'Luz vermelha obrigatória, acesa em chuva e piscando quando o carro recupera energia com o sistema híbrido.',
+  'Pisca também quando o motor está em modo de recarga, avisando o carro de trás que a velocidade pode cair de repente.'),
+ R(/^Escape/, 'Saída dos gases do motor depois da turbina, posicionada na traseira para não soprar a asa.',
+  'O tubo é de Inconel e passa de 900 °C; o tom grave do motor híbrido vem da turbina absorvendo energia dos gases.'),
+ R(/^Detalhe da tomada de ar/, 'Entrada de ar acima do piloto que alimenta o motor e abriga a estrutura principal de capotamento.',
+  'A 300 km/h a pressão dinâmica na entrada pré-comprime o ar do motor, um efeito que vale alguns cavalos.'),
+ R(/^Antena/, 'Antenas de telemetria, rádio e cronometragem, ao lado do cockpit e no nariz.',
+  'A telemetria manda mais de mil canais de dados ao box em tempo real, mas nada pode ser enviado do box para o carro.'),
+ R(/^Espelho retrovisor/, 'Espelho obrigatório que dá visão traseira ao piloto; a carenagem é desenhada para ajudar o fluxo em torno do sidepod.',
+  'A área refletiva mínima é definida por regra; com a vibração, o piloto enxerga pouco mais que a posição do carro de trás.'),
+];
+const CAR_CATEGORY_FALLBACK = {
+ body: ['Painel da carroceria de carbono que dá forma aerodinâmica ao carro e protege os sistemas internos.', 'Cada painel é feito em molde de autoclave e pesa poucos quilos.'],
+ aero: ['Elemento aerodinâmico que orienta o ar e gera carga para o carro grudar na pista.', 'Um carro de Fórmula 1 gera mais de três vezes o próprio peso em carga aerodinâmica a 250 km/h.'],
+ wheels: ['Componente do conjunto roda e pneu.', 'A troca das quatro rodas leva menos de dois segundos e meio.'],
+ suspension: ['Componente da suspensão, que liga a roda ao chassi e controla a altura do assoalho.', 'A suspensão de um Fórmula 1 se move poucos centímetros; a maior parte do conforto vem da flexão do pneu.'],
+ cockpit: ['Componente do cockpit, o espaço do piloto dentro da célula de sobrevivência.', 'O piloto fica quase deitado, com os pés acima do quadril, para o nariz do carro ser baixo.'],
+ details: ['Detalhe externo do carro.', 'Cada detalhe visível passou por túnel de vento ou simulação antes de ir para a pista.'],
+};
+export function describeCarPart(label, category) {
+ const hit = CAR_RULES.find((rule) => rule.pattern.test(label || ''));
+ if (hit) return {funcao: hit.funcao, curiosidade: hit.curiosidade, generico: false};
+ const fb = CAR_CATEGORY_FALLBACK[category] || ['Componente do carro.', ''];
+ return {funcao: fb[0], curiosidade: fb[1], generico: true};
+}

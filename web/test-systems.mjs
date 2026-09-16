@@ -19,7 +19,7 @@ const expected = [
   ['wheel', '19:17'], ['sensors', '22:11'],
 ];
 
-assert.deepEqual(SYSTEM_IDS, expected.map(([id]) => id), 'IDs fora da ordem do vídeo');
+assert.deepEqual(SYSTEM_IDS, expected.map(([id]) => id), 'IDs fora da ordem do catálogo');
 assert.equal(new Set(SYSTEM_IDS).size, 14, 'IDs duplicados');
 for (const system of SYSTEM_CATALOG) assert.ok(Array.isArray(system.spread) && system.spread.length === 3 && system.spread.some((v) => v !== 0), `${system.id} sem vetor de explosão`);
 assert.equal(Object.isFrozen(SYSTEM_CATALOG), true, 'catálogo mutável');
@@ -46,7 +46,7 @@ const template = readFileSync(new URL('./src/template-v2.html', import.meta.url)
 assert.match(source, /new GLTFLoader\(\)\.setMeshoptDecoder\(MeshoptDecoder\)/, 'loader deve habilitar meshopt');
 assert.match(source, /fetch\(assetUrl\)/, 'asset deve ser carregado pela URL configurável');
 assert.equal((template.match(/class="system-card"/g) || []).length, 14, 'painel deve ter 14 cartões');
-for (const id of ['system-flows', 'system-covers', 'system-schematic', 'system-ghost', 'system-explode', 'system-part', 'system-status', 'systems-assembly', 'systems-assembly-value']) {
+for (const id of ['system-flows', 'system-covers', 'system-schematic', 'system-ghost', 'system-explode', 'system-part', 'system-status', 'systems-assembly', 'systems-assembly-value', 'selected-info']) {
   assert.match(template, new RegExp(`id="${id}"`), `controle ausente: ${id}`);
 }
 
@@ -160,3 +160,11 @@ assert.match(source, /revealing/, 'sistemas revelados ao desmontar o carro');
 assert.match(app, /systems\?\.enabled\|\|systems\?\.revealing/, 'motor do compartimento cede lugar aos sistemas revelados');
 
 console.log(`Sistemas: ${SYSTEM_IDS.length} camadas, ${manifest.totals.parts} peças, ${manifest.totals.triangles} triângulos, meshopt, manifesto e contratos didáticos OK.`);
+
+// Interface sem metalinguagem de produção: nada de vídeo de referência, capítulos, prompt ou ressalvas de modelagem.
+{
+ const template = readFileSync(new URL('./src/template-v2.html', import.meta.url), 'utf8');
+ const systemsPanel = template.slice(template.indexOf('id="systems-panel"'), template.indexOf('PERSONALIZAR / SEU DESIGN'));
+ for (const word of ['vídeo', 'youtube', 'capítulo', 'prompt', 'homolog', 'não é CAD', 'didática inspirada']) assert.ok(!systemsPanel.toLowerCase().includes(word), `painel de sistemas ainda cita "${word}"`);
+ for (const system of SYSTEM_CATALOG) for (const word of ['vídeo', 'hipótese', 'homolog', 'não é CAD', 'CFD', 'Simplificação', 'não simula', 'não representa']) assert.ok(!system.description.includes(word), `${system.id}: descrição ainda cita "${word}"`);
+}
