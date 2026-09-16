@@ -1,0 +1,588 @@
+{
+ "asset": "sobressalentes-v1.glb",
+ "bytes": 3922704,
+ "sha256": "95a38d7462509d9d31351df045fcb6dd1b453ac62f36eccae909b611b7c95cf4",
+ "generated_by": "ferramentas/gerar_sobressalentes.py",
+ "blender": "5.2.0 LTS",
+ "slots": {
+  "tyres": {
+   "label": "Pneus",
+   "variants": [
+    "original",
+    "macio",
+    "medio",
+    "duro",
+    "intermediario",
+    "chuva"
+   ]
+  },
+  "rear_wing": {
+   "label": "Asa traseira",
+   "variants": [
+    "original",
+    "baixa",
+    "alta"
+   ]
+  },
+  "front_wing": {
+   "label": "Flap dianteiro",
+   "variants": [
+    "original",
+    "baixa",
+    "alta"
+   ]
+  },
+  "beam_wing": {
+   "label": "Asa de viga",
+   "variants": [
+    "original",
+    "dupla"
+   ]
+  },
+  "cooling": {
+   "label": "Arrefecimento",
+   "variants": [
+    "original",
+    "aberto"
+   ]
+  }
+ },
+ "entries": [
+  {
+   "node": "spare__tyres__macio__front_tire__01",
+   "slot": "tyres",
+   "variant": "macio",
+   "target": "front_tire__01",
+   "mode": "geometry",
+   "label": "Pneu macio (faixa vermelha)",
+   "min": [
+    -0.924,
+    -0.029,
+    1.191
+   ],
+   "max": [
+    -0.562,
+    0.629,
+    1.849
+   ],
+   "triangles": 3136
+  },
+  {
+   "node": "spare__tyres__macio__front_tire__02",
+   "slot": "tyres",
+   "variant": "macio",
+   "target": "front_tire__02",
+   "mode": "geometry",
+   "label": "Pneu macio (faixa vermelha)",
+   "min": [
+    0.562,
+    -0.029,
+    1.191
+   ],
+   "max": [
+    0.924,
+    0.629,
+    1.849
+   ],
+   "triangles": 3136
+  },
+  {
+   "node": "spare__tyres__macio__rear_tire__01",
+   "slot": "tyres",
+   "variant": "macio",
+   "target": "rear_tire__01",
+   "mode": "geometry",
+   "label": "Pneu macio (faixa vermelha)",
+   "min": [
+    -0.9235,
+    -0.028,
+    -2.181
+   ],
+   "max": [
+    -0.5165,
+    0.654,
+    -1.499
+   ],
+   "triangles": 3136
+  },
+  {
+   "node": "spare__tyres__macio__rear_tire__02",
+   "slot": "tyres",
+   "variant": "macio",
+   "target": "rear_tire__02",
+   "mode": "geometry",
+   "label": "Pneu macio (faixa vermelha)",
+   "min": [
+    0.5165,
+    -0.028,
+    -2.181
+   ],
+   "max": [
+    0.9235,
+    0.654,
+    -1.499
+   ],
+   "triangles": 3136
+  },
+  {
+   "node": "spare__tyres__medio__front_tire__01",
+   "slot": "tyres",
+   "variant": "medio",
+   "target": "front_tire__01",
+   "mode": "geometry",
+   "label": "Pneu médio (faixa amarela)",
+   "min": [
+    -0.924,
+    -0.029,
+    1.191
+   ],
+   "max": [
+    -0.562,
+    0.629,
+    1.849
+   ],
+   "triangles": 3136
+  },
+  {
+   "node": "spare__tyres__medio__front_tire__02",
+   "slot": "tyres",
+   "variant": "medio",
+   "target": "front_tire__02",
+   "mode": "geometry",
+   "label": "Pneu médio (faixa amarela)",
+   "min": [
+    0.562,
+    -0.029,
+    1.191
+   ],
+   "max": [
+    0.924,
+    0.629,
+    1.849
+   ],
+   "triangles": 3136
+  },
+  {
+   "node": "spare__tyres__medio__rear_tire__01",
+   "slot": "tyres",
+   "variant": "medio",
+   "target": "rear_tire__01",
+   "mode": "geometry",
+   "label": "Pneu médio (faixa amarela)",
+   "min": [
+    -0.9235,
+    -0.028,
+    -2.181
+   ],
+   "max": [
+    -0.5165,
+    0.654,
+    -1.499
+   ],
+   "triangles": 3136
+  },
+  {
+   "node": "spare__tyres__medio__rear_tire__02",
+   "slot": "tyres",
+   "variant": "medio",
+   "target": "rear_tire__02",
+   "mode": "geometry",
+   "label": "Pneu médio (faixa amarela)",
+   "min": [
+    0.5165,
+    -0.028,
+    -2.181
+   ],
+   "max": [
+    0.9235,
+    0.654,
+    -1.499
+   ],
+   "triangles": 3136
+  },
+  {
+   "node": "spare__tyres__duro__front_tire__01",
+   "slot": "tyres",
+   "variant": "duro",
+   "target": "front_tire__01",
+   "mode": "geometry",
+   "label": "Pneu duro (faixa branca)",
+   "min": [
+    -0.924,
+    -0.029,
+    1.191
+   ],
+   "max": [
+    -0.562,
+    0.629,
+    1.849
+   ],
+   "triangles": 3136
+  },
+  {
+   "node": "spare__tyres__duro__front_tire__02",
+   "slot": "tyres",
+   "variant": "duro",
+   "target": "front_tire__02",
+   "mode": "geometry",
+   "label": "Pneu duro (faixa branca)",
+   "min": [
+    0.562,
+    -0.029,
+    1.191
+   ],
+   "max": [
+    0.924,
+    0.629,
+    1.849
+   ],
+   "triangles": 3136
+  },
+  {
+   "node": "spare__tyres__duro__rear_tire__01",
+   "slot": "tyres",
+   "variant": "duro",
+   "target": "rear_tire__01",
+   "mode": "geometry",
+   "label": "Pneu duro (faixa branca)",
+   "min": [
+    -0.9235,
+    -0.028,
+    -2.181
+   ],
+   "max": [
+    -0.5165,
+    0.654,
+    -1.499
+   ],
+   "triangles": 3136
+  },
+  {
+   "node": "spare__tyres__duro__rear_tire__02",
+   "slot": "tyres",
+   "variant": "duro",
+   "target": "rear_tire__02",
+   "mode": "geometry",
+   "label": "Pneu duro (faixa branca)",
+   "min": [
+    0.5165,
+    -0.028,
+    -2.181
+   ],
+   "max": [
+    0.9235,
+    0.654,
+    -1.499
+   ],
+   "triangles": 3136
+  },
+  {
+   "node": "spare__tyres__intermediario__front_tire__01",
+   "slot": "tyres",
+   "variant": "intermediario",
+   "target": "front_tire__01",
+   "mode": "geometry",
+   "label": "Pneu intermediário (faixa verde)",
+   "min": [
+    -0.924,
+    -0.029,
+    1.191
+   ],
+   "max": [
+    -0.562,
+    0.629,
+    1.849
+   ],
+   "triangles": 3136
+  },
+  {
+   "node": "spare__tyres__intermediario__front_tire__02",
+   "slot": "tyres",
+   "variant": "intermediario",
+   "target": "front_tire__02",
+   "mode": "geometry",
+   "label": "Pneu intermediário (faixa verde)",
+   "min": [
+    0.562,
+    -0.029,
+    1.191
+   ],
+   "max": [
+    0.924,
+    0.629,
+    1.849
+   ],
+   "triangles": 3136
+  },
+  {
+   "node": "spare__tyres__intermediario__rear_tire__01",
+   "slot": "tyres",
+   "variant": "intermediario",
+   "target": "rear_tire__01",
+   "mode": "geometry",
+   "label": "Pneu intermediário (faixa verde)",
+   "min": [
+    -0.9235,
+    -0.028,
+    -2.181
+   ],
+   "max": [
+    -0.5165,
+    0.654,
+    -1.499
+   ],
+   "triangles": 3136
+  },
+  {
+   "node": "spare__tyres__intermediario__rear_tire__02",
+   "slot": "tyres",
+   "variant": "intermediario",
+   "target": "rear_tire__02",
+   "mode": "geometry",
+   "label": "Pneu intermediário (faixa verde)",
+   "min": [
+    0.5165,
+    -0.028,
+    -2.181
+   ],
+   "max": [
+    0.9235,
+    0.654,
+    -1.499
+   ],
+   "triangles": 3136
+  },
+  {
+   "node": "spare__tyres__chuva__front_tire__01",
+   "slot": "tyres",
+   "variant": "chuva",
+   "target": "front_tire__01",
+   "mode": "geometry",
+   "label": "Pneu de chuva extrema (faixa azul)",
+   "min": [
+    -0.924,
+    -0.029,
+    1.191
+   ],
+   "max": [
+    -0.562,
+    0.629,
+    1.849
+   ],
+   "triangles": 3136
+  },
+  {
+   "node": "spare__tyres__chuva__front_tire__02",
+   "slot": "tyres",
+   "variant": "chuva",
+   "target": "front_tire__02",
+   "mode": "geometry",
+   "label": "Pneu de chuva extrema (faixa azul)",
+   "min": [
+    0.562,
+    -0.029,
+    1.191
+   ],
+   "max": [
+    0.924,
+    0.629,
+    1.849
+   ],
+   "triangles": 3136
+  },
+  {
+   "node": "spare__tyres__chuva__rear_tire__01",
+   "slot": "tyres",
+   "variant": "chuva",
+   "target": "rear_tire__01",
+   "mode": "geometry",
+   "label": "Pneu de chuva extrema (faixa azul)",
+   "min": [
+    -0.9235,
+    -0.028,
+    -2.181
+   ],
+   "max": [
+    -0.5165,
+    0.654,
+    -1.499
+   ],
+   "triangles": 3136
+  },
+  {
+   "node": "spare__tyres__chuva__rear_tire__02",
+   "slot": "tyres",
+   "variant": "chuva",
+   "target": "rear_tire__02",
+   "mode": "geometry",
+   "label": "Pneu de chuva extrema (faixa azul)",
+   "min": [
+    0.5165,
+    -0.028,
+    -2.181
+   ],
+   "max": [
+    0.9235,
+    0.654,
+    -1.499
+   ],
+   "triangles": 3136
+  },
+  {
+   "node": "spare__rear_wing__baixa__rear_wing_main_part__01",
+   "slot": "rear_wing",
+   "variant": "baixa",
+   "target": "rear_wing_main_part__01",
+   "mode": "geometry",
+   "label": "Asa traseira de baixa carga (pista rápida)",
+   "min": [
+    -0.6,
+    0.6949,
+    -2.3393
+   ],
+   "max": [
+    0.6,
+    0.7235,
+    -2.06
+   ],
+   "triangles": 572
+  },
+  {
+   "node": "spare__rear_wing__baixa__rear_wing_drs__01",
+   "slot": "rear_wing",
+   "variant": "baixa",
+   "target": "rear_wing_drs__01",
+   "mode": "geometry",
+   "label": "Asa traseira de baixa carga (pista rápida)",
+   "min": [
+    -0.6,
+    0.7205,
+    -2.3491
+   ],
+   "max": [
+    0.6,
+    0.7591,
+    -2.235
+   ],
+   "triangles": 572
+  },
+  {
+   "node": "spare__rear_wing__alta__rear_wing_main_part__01",
+   "slot": "rear_wing",
+   "variant": "alta",
+   "target": "rear_wing_main_part__01",
+   "mode": "geometry",
+   "label": "Asa traseira de alta carga (pista travada / chuva)",
+   "min": [
+    -0.6,
+    0.6763,
+    -2.3916
+   ],
+   "max": [
+    0.6,
+    0.7723,
+    -2.036
+   ],
+   "triangles": 680
+  },
+  {
+   "node": "spare__rear_wing__alta__rear_wing_drs__01",
+   "slot": "rear_wing",
+   "variant": "alta",
+   "target": "rear_wing_drs__01",
+   "mode": "geometry",
+   "label": "Asa traseira de alta carga (pista travada / chuva)",
+   "min": [
+    -0.6,
+    0.7286,
+    -2.3868
+   ],
+   "max": [
+    0.6,
+    0.8476,
+    -2.225
+   ],
+   "triangles": 572
+  },
+  {
+   "node": "spare__front_wing__baixa__front_wing_top__01",
+   "slot": "front_wing",
+   "variant": "baixa",
+   "target": "front_wing_top__01",
+   "mode": "geometry",
+   "label": "Flap dianteiro de baixa carga (pista rápida)",
+   "min": [
+    -0.636,
+    0.1367,
+    2.1105
+   ],
+   "max": [
+    0.636,
+    0.2595,
+    2.268
+   ],
+   "triangles": 700
+  },
+  {
+   "node": "spare__front_wing__alta__front_wing_top__01",
+   "slot": "front_wing",
+   "variant": "alta",
+   "target": "front_wing_top__01",
+   "mode": "geometry",
+   "label": "Flap dianteiro de alta carga (pista travada / chuva)",
+   "min": [
+    -0.636,
+    0.1381,
+    2.0957
+   ],
+   "max": [
+    0.636,
+    0.3024,
+    2.268
+   ],
+   "triangles": 700
+  },
+  {
+   "node": "spare__beam_wing__dupla__rear_wing_bottom_holder__01",
+   "slot": "beam_wing",
+   "variant": "dupla",
+   "target": "rear_wing_bottom_holder__01",
+   "mode": "geometry",
+   "label": "Asa de viga dupla (pista travada / chuva)",
+   "min": [
+    -0.417,
+    0.3643,
+    -2.3495
+   ],
+   "max": [
+    0.417,
+    0.4882,
+    -2.092
+   ],
+   "triangles": 632
+  },
+  {
+   "node": "spare__cooling__aberto__main_body__01",
+   "slot": "cooling",
+   "variant": "aberto",
+   "target": "main_body__01",
+   "mode": "attach",
+   "label": "Venezianas de arrefecimento (calor extremo)",
+   "min": [
+    -0.295,
+    0.6603,
+    -0.916
+   ],
+   "max": [
+    0.295,
+    0.7204,
+    -0.519
+   ],
+   "triangles": 1944
+  }
+ ],
+ "totals": {
+  "nodes": 28,
+  "triangles": 69092
+ }
+}

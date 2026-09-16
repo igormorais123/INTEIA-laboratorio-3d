@@ -20,6 +20,7 @@ Este é o índice canônico da documentação. Use o guia mais estreito para a t
 | --- | --- |
 | Motor V6 no laboratório | [INTEGRACAO-MOTOR.md](INTEGRACAO-MOTOR.md) |
 | Sistemas internos do carro | [SISTEMAS-3D.md](SISTEMAS-3D.md) e [especificação histórica](ESPECIFICACAO-ASSET-3D-SISTEMAS-F1.md) |
+| [Peças sobressalentes do Box](SOBRESSALENTES.md) | Pneus por composto e condição, asas de baixa/alta carga, asa de viga dupla e venezianas, trocáveis no carro montado por cenário de pista. |
 | Base de pesquisa dos sistemas | [pesquisa-sistemas-carro-video.md](pesquisa-sistemas-carro-video.md) |
 | Aerodinâmica didática | [AERODINAMICA.md](AERODINAMICA.md) |
 | Box-laboratório | [BOX-LABORATORIO.md](BOX-LABORATORIO.md) |
