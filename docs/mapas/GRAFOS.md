@@ -23,10 +23,11 @@ flowchart LR
   n12["senna-driver.js"]
   n13["studio.js"]
   n14["surface-library.js"]
-  n15["tunnel-visual.js"]
-  n16["wind-tunnel.js"]
-  n17["workbench.js"]
-  n1 -->|"importa"| n17
+  n15["systems.js"]
+  n16["tunnel-visual.js"]
+  n17["wind-tunnel.js"]
+  n18["workbench.js"]
+  n1 -->|"importa"| n18
   n1 -->|"importa"| n6
   n1 -->|"importa"| n3
   n1 -->|"importa"| n14
@@ -34,16 +35,17 @@ flowchart LR
   n1 -->|"importa"| n2
   n1 -->|"importa"| n10
   n1 -->|"importa"| n8
-  n1 -->|"importa"| n16
+  n1 -->|"importa"| n17
+  n1 -->|"importa"| n15
   n1 -->|"importa"| n4
   n1 -->|"importa"| n13
   n1 -->|"importa"| n11
   n6 -->|"importa"| n5
   n8 -->|"importa"| n10
   n12 -->|"importa"| n9
-  n15 -->|"importa"| n7
-  n16 -->|"importa"| n15
-  n16 -->|"importa"| n0
+  n16 -->|"importa"| n7
+  n17 -->|"importa"| n16
+  n17 -->|"importa"| n0
 ```
 
 `branding.js` integra a árvore de imports de `app-v2.js`. Dependências externas constam nos dados e na busca.
@@ -117,11 +119,17 @@ O download do box é uma etapa humana: o grafo descreve o produtor, sem certific
 | `ferramentas/manifest.cjs` | importa | `external:crypto` | [ferramentas/manifest.cjs:1](../../ferramentas/manifest.cjs#L1) |
 | `ferramentas/merge-animation.cjs` | importa | `external:fs` | [ferramentas/merge-animation.cjs:1](../../ferramentas/merge-animation.cjs#L1) |
 | `ferramentas/merge-animation.cjs` | importa | `external:path` | [ferramentas/merge-animation.cjs:1](../../ferramentas/merge-animation.cjs#L1) |
-| `web/build.cjs` | importa | `external:fs` | [web/build.cjs:1](../../web/build.cjs#L1) |
-| `web/build.cjs` | importa | `external:esbuild` | [web/build.cjs:1](../../web/build.cjs#L1) |
-| `web/server.cjs` | importa | `external:http` | [web/server.cjs:1](../../web/server.cjs#L1) |
-| `web/server.cjs` | importa | `external:fs` | [web/server.cjs:1](../../web/server.cjs#L1) |
-| `web/server.cjs` | importa | `external:path` | [web/server.cjs:1](../../web/server.cjs#L1) |
+| `ferramentas/otimizar_sistemas.mjs` | importa | `external:node:crypto` | [ferramentas/otimizar_sistemas.mjs:2](../../ferramentas/otimizar_sistemas.mjs#L2) |
+| `ferramentas/otimizar_sistemas.mjs` | importa | `external:node:fs` | [ferramentas/otimizar_sistemas.mjs:3](../../ferramentas/otimizar_sistemas.mjs#L3) |
+| `ferramentas/otimizar_sistemas.mjs` | importa | `external:node:path` | [ferramentas/otimizar_sistemas.mjs:4](../../ferramentas/otimizar_sistemas.mjs#L4) |
+| `ferramentas/otimizar_sistemas.mjs` | importa | `external:node:module` | [ferramentas/otimizar_sistemas.mjs:5](../../ferramentas/otimizar_sistemas.mjs#L5) |
+| `ferramentas/otimizar_sistemas.mjs` | importa | `external:node:url` | [ferramentas/otimizar_sistemas.mjs:6](../../ferramentas/otimizar_sistemas.mjs#L6) |
+| `web/build.cjs` | importa | `external:node:fs` | [web/build.cjs:1](../../web/build.cjs#L1) |
+| `web/build.cjs` | importa | `external:node:path` | [web/build.cjs:2](../../web/build.cjs#L2) |
+| `web/build.cjs` | importa | `external:esbuild` | [web/build.cjs:3](../../web/build.cjs#L3) |
+| `web/server.cjs` | importa | `external:node:fs` | [web/server.cjs:1](../../web/server.cjs#L1) |
+| `web/server.cjs` | importa | `external:node:http` | [web/server.cjs:2](../../web/server.cjs#L2) |
+| `web/server.cjs` | importa | `external:node:path` | [web/server.cjs:3](../../web/server.cjs#L3) |
 | `web/src/app-v2.js` | importa | `web/src/workbench.js` | [web/src/app-v2.js:1](../../web/src/app-v2.js#L1) |
 | `web/src/app-v2.js` | importa | `external:three/addons/libs/meshopt_decoder.module.js` | [web/src/app-v2.js:2](../../web/src/app-v2.js#L2) |
 | `web/src/app-v2.js` | importa | `web/src/engine/in-car.js` | [web/src/app-v2.js:3](../../web/src/app-v2.js#L3) |
@@ -133,18 +141,19 @@ O download do box é uma etapa humana: o grafo descreve o produtor, sem certific
 | `web/src/app-v2.js` | importa | `external:three/addons/exporters/GLTFExporter.js` | [web/src/app-v2.js:9](../../web/src/app-v2.js#L9) |
 | `web/src/app-v2.js` | importa | `web/src/garage.js` | [web/src/app-v2.js:10](../../web/src/app-v2.js#L10) |
 | `web/src/app-v2.js` | importa | `web/src/wind-tunnel.js` | [web/src/app-v2.js:11](../../web/src/app-v2.js#L11) |
-| `web/src/app-v2.js` | importa | `web/src/customize.js` | [web/src/app-v2.js:12](../../web/src/app-v2.js#L12) |
-| `web/src/app-v2.js` | importa | `external:three` | [web/src/app-v2.js:13](../../web/src/app-v2.js#L13) |
-| `web/src/app-v2.js` | importa | `external:three/addons/controls/OrbitControls.js` | [web/src/app-v2.js:14](../../web/src/app-v2.js#L14) |
-| `web/src/app-v2.js` | importa | `external:three/addons/controls/TransformControls.js` | [web/src/app-v2.js:15](../../web/src/app-v2.js#L15) |
-| `web/src/app-v2.js` | importa | `external:three/addons/postprocessing/EffectComposer.js` | [web/src/app-v2.js:16](../../web/src/app-v2.js#L16) |
-| `web/src/app-v2.js` | importa | `external:three/addons/postprocessing/RenderPass.js` | [web/src/app-v2.js:17](../../web/src/app-v2.js#L17) |
-| `web/src/app-v2.js` | importa | `external:three/addons/postprocessing/SSAOPass.js` | [web/src/app-v2.js:18](../../web/src/app-v2.js#L18) |
-| `web/src/app-v2.js` | importa | `external:three/addons/postprocessing/OutputPass.js` | [web/src/app-v2.js:19](../../web/src/app-v2.js#L19) |
-| `web/src/app-v2.js` | importa | `external:three/addons/postprocessing/SMAAPass.js` | [web/src/app-v2.js:20](../../web/src/app-v2.js#L20) |
-| `web/src/app-v2.js` | importa | `external:three/addons/loaders/GLTFLoader.js` | [web/src/app-v2.js:21](../../web/src/app-v2.js#L21) |
-| `web/src/app-v2.js` | importa | `web/src/studio.js` | [web/src/app-v2.js:22](../../web/src/app-v2.js#L22) |
-| `web/src/app-v2.js` | importa | `web/src/mechanics.js` | [web/src/app-v2.js:23](../../web/src/app-v2.js#L23) |
+| `web/src/app-v2.js` | importa | `web/src/systems.js` | [web/src/app-v2.js:12](../../web/src/app-v2.js#L12) |
+| `web/src/app-v2.js` | importa | `web/src/customize.js` | [web/src/app-v2.js:13](../../web/src/app-v2.js#L13) |
+| `web/src/app-v2.js` | importa | `external:three` | [web/src/app-v2.js:14](../../web/src/app-v2.js#L14) |
+| `web/src/app-v2.js` | importa | `external:three/addons/controls/OrbitControls.js` | [web/src/app-v2.js:15](../../web/src/app-v2.js#L15) |
+| `web/src/app-v2.js` | importa | `external:three/addons/controls/TransformControls.js` | [web/src/app-v2.js:16](../../web/src/app-v2.js#L16) |
+| `web/src/app-v2.js` | importa | `external:three/addons/postprocessing/EffectComposer.js` | [web/src/app-v2.js:17](../../web/src/app-v2.js#L17) |
+| `web/src/app-v2.js` | importa | `external:three/addons/postprocessing/RenderPass.js` | [web/src/app-v2.js:18](../../web/src/app-v2.js#L18) |
+| `web/src/app-v2.js` | importa | `external:three/addons/postprocessing/SSAOPass.js` | [web/src/app-v2.js:19](../../web/src/app-v2.js#L19) |
+| `web/src/app-v2.js` | importa | `external:three/addons/postprocessing/OutputPass.js` | [web/src/app-v2.js:20](../../web/src/app-v2.js#L20) |
+| `web/src/app-v2.js` | importa | `external:three/addons/postprocessing/SMAAPass.js` | [web/src/app-v2.js:21](../../web/src/app-v2.js#L21) |
+| `web/src/app-v2.js` | importa | `external:three/addons/loaders/GLTFLoader.js` | [web/src/app-v2.js:22](../../web/src/app-v2.js#L22) |
+| `web/src/app-v2.js` | importa | `web/src/studio.js` | [web/src/app-v2.js:23](../../web/src/app-v2.js#L23) |
+| `web/src/app-v2.js` | importa | `web/src/mechanics.js` | [web/src/app-v2.js:24](../../web/src/app-v2.js#L24) |
 | `web/src/branding.js` | importa | `external:three` | [web/src/branding.js:1](../../web/src/branding.js#L1) |
 | `web/src/branding.js` | importa | `external:three/addons/geometries/DecalGeometry.js` | [web/src/branding.js:2](../../web/src/branding.js#L2) |
 | `web/src/car-look.js` | importa | `external:three` | [web/src/car-look.js:6](../../web/src/car-look.js#L6) |
@@ -162,6 +171,9 @@ O download do box é uma etapa humana: o grafo descreve o produtor, sem certific
 | `web/src/senna-driver.js` | importa | `external:three` | [web/src/senna-driver.js:1](../../web/src/senna-driver.js#L1) |
 | `web/src/senna-driver.js` | importa | `external:three/addons/geometries/RoundedBoxGeometry.js` | [web/src/senna-driver.js:2](../../web/src/senna-driver.js#L2) |
 | `web/src/senna-driver.js` | importa | `web/src/helmet-1991.js` | [web/src/senna-driver.js:3](../../web/src/senna-driver.js#L3) |
+| `web/src/systems.js` | importa | `external:three` | [web/src/systems.js:1](../../web/src/systems.js#L1) |
+| `web/src/systems.js` | importa | `external:three/addons/loaders/GLTFLoader.js` | [web/src/systems.js:2](../../web/src/systems.js#L2) |
+| `web/src/systems.js` | importa | `external:three/addons/libs/meshopt_decoder.module.js` | [web/src/systems.js:3](../../web/src/systems.js#L3) |
 | `web/src/tunnel-visual.js` | importa | `web/src/flow-detail.js` | [web/src/tunnel-visual.js:1](../../web/src/tunnel-visual.js#L1) |
 | `web/src/tunnel-visual.js` | importa | `external:three` | [web/src/tunnel-visual.js:2](../../web/src/tunnel-visual.js#L2) |
 | `web/src/wind-tunnel.js` | importa | `web/src/tunnel-visual.js` | [web/src/wind-tunnel.js:1](../../web/src/wind-tunnel.js#L1) |
@@ -183,9 +195,17 @@ O download do box é uma etapa humana: o grafo descreve o produtor, sem certific
 | `web/test-power-unit.mjs` | importa | `external:node:fs` | [web/test-power-unit.mjs:2](../../web/test-power-unit.mjs#L2) |
 | `web/test-power-unit.mjs` | importa | `external:three` | [web/test-power-unit.mjs:3](../../web/test-power-unit.mjs#L3) |
 | `web/test-power-unit.mjs` | importa | `external:three/addons/loaders/GLTFLoader.js` | [web/test-power-unit.mjs:4](../../web/test-power-unit.mjs#L4) |
-| `web/src/app-v2.js` | empacota | `web/index.html` | [web/build.cjs:2](../../web/build.cjs#L2) |
-| `web/src/template-v2.html` | incorpora | `web/index.html` | [web/build.cjs:3](../../web/build.cjs#L3) |
-| `web/assets/carro-aula-v2.glb` | incorpora | `web/index.html` | [web/build.cjs:3](../../web/build.cjs#L3) |
+| `web/test-systems.mjs` | importa | `external:node:assert/strict` | [web/test-systems.mjs:1](../../web/test-systems.mjs#L1) |
+| `web/test-systems.mjs` | importa | `external:node:crypto` | [web/test-systems.mjs:2](../../web/test-systems.mjs#L2) |
+| `web/test-systems.mjs` | importa | `external:node:fs` | [web/test-systems.mjs:3](../../web/test-systems.mjs#L3) |
+| `web/test-systems.mjs` | importa | `external:three` | [web/test-systems.mjs:4](../../web/test-systems.mjs#L4) |
+| `web/src/app-v2.js` | empacota | `web/index.html` | [web/build.cjs:18](../../web/build.cjs#L18) |
+| `web/src/template-v2.html` | incorpora | `web/index.html` | [web/build.cjs:25](../../web/build.cjs#L25) |
+| `web/assets/carro-aula-v2.glb` | incorpora | `web/index.html` | [web/build.cjs:26](../../web/build.cjs#L26) |
+| `ferramentas/gerar_sistemas.py` | gera | `web/assets/sistemas-v1.glb` | [ferramentas/gerar_sistemas.py:145](../../ferramentas/gerar_sistemas.py#L145) |
+| `ferramentas/otimizar_sistemas.mjs` | otimiza | `web/assets/sistemas-v1.glb` | [ferramentas/otimizar_sistemas.mjs:51](../../ferramentas/otimizar_sistemas.mjs#L51) |
+| `ferramentas/gerar_sistemas.py` | escreve manifesto | `web/assets/sistemas-v1.manifest.json` | [ferramentas/gerar_sistemas.py:202](../../ferramentas/gerar_sistemas.py#L202) |
+| `web/assets/sistemas-v1.glb` | carrega em runtime | `web/src/systems.js` | [web/src/systems.js:26](../../web/src/systems.js#L26) |
 | `web/assets/carro-movable.glb` | entrada | `ferramentas/package_blender.py` | [ferramentas/package_blender.py:9](../../ferramentas/package_blender.py#L9) |
 | `ferramentas/package_blender.py` | gera / sobrescreve | `INTEIA_F1_Master.blend` | [ferramentas/package_blender.py:145](../../ferramentas/package_blender.py#L145) |
 | `ferramentas/package_blender.py` | gera / sobrescreve | `modelos/INTEIA_F1_estatico.glb` | [ferramentas/package_blender.py:126](../../ferramentas/package_blender.py#L126) |
@@ -194,7 +214,7 @@ O download do box é uma etapa humana: o grafo descreve o produtor, sem certific
 | `ferramentas/package_blender.py` | gera / sobrescreve | `Previa-Blender.png` | [ferramentas/package_blender.py:146](../../ferramentas/package_blender.py#L146) |
 | `ferramentas/package_blender.py` | gera / sobrescreve | `validacao-criacao.json` | [ferramentas/package_blender.py:148](../../ferramentas/package_blender.py#L148) |
 | `ferramentas/merge-animation.cjs` | reescreve clipe | `modelos/INTEIA_F1_animado.glb` | [ferramentas/merge-animation.cjs:4](../../ferramentas/merge-animation.cjs#L4) |
-| `web/src/garage.js` | download; cópia manual ao repo | `ambientes/INTEIA-box-laboratorio.glb` | [web/src/app-v2.js:74](../../web/src/app-v2.js#L74) |
+| `web/src/garage.js` | download; cópia manual ao repo | `ambientes/INTEIA-box-laboratorio.glb` | [web/src/app-v2.js:78](../../web/src/app-v2.js#L78) |
 | `ambientes/INTEIA-box-laboratorio.glb` | entrada | `ferramentas/package_garage.py` | [ferramentas/package_garage.py:6](../../ferramentas/package_garage.py#L6) |
 | `modelos/INTEIA_F1_estatico.glb` | entrada | `ferramentas/package_garage.py` | [ferramentas/package_garage.py:12](../../ferramentas/package_garage.py#L12) |
 | `ferramentas/package_garage.py` | gera / sobrescreve | `ambientes/INTEIA_Box_com_carro.blend` | [ferramentas/package_garage.py:72](../../ferramentas/package_garage.py#L72) |

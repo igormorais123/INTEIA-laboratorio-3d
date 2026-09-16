@@ -19,9 +19,14 @@ graphify-out/tmp/
 graphify-out/cache/
 graphify-out/cost.json
 graphify-out/benchmark.json
+graphify-out/memory/
+graphify-out/reflections/
+graphify-out/20*/
 __pycache__/
+ferramentas/sistemas/previews/
 /.mapas-worktree/
 /.playwright-cli/
 /output/playwright/
+/.impeccable/
 
 graphify-out/manifest.json

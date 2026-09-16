@@ -146,16 +146,88 @@
       "href": "../../ferramentas/merge-animation.cjs#L1"
     },
     {
+      "source": "ferramentas/otimizar_sistemas.mjs",
+      "target": "external:node:crypto",
+      "relation": "importa",
+      "confidence": "EXTRACTED",
+      "evidence": {
+        "path": "ferramentas/otimizar_sistemas.mjs",
+        "line": 2,
+        "text": "import {createHash} from 'node:crypto'"
+      },
+      "href": "../../ferramentas/otimizar_sistemas.mjs#L2"
+    },
+    {
+      "source": "ferramentas/otimizar_sistemas.mjs",
+      "target": "external:node:fs",
+      "relation": "importa",
+      "confidence": "EXTRACTED",
+      "evidence": {
+        "path": "ferramentas/otimizar_sistemas.mjs",
+        "line": 3,
+        "text": "import fs from 'node:fs'"
+      },
+      "href": "../../ferramentas/otimizar_sistemas.mjs#L3"
+    },
+    {
+      "source": "ferramentas/otimizar_sistemas.mjs",
+      "target": "external:node:path",
+      "relation": "importa",
+      "confidence": "EXTRACTED",
+      "evidence": {
+        "path": "ferramentas/otimizar_sistemas.mjs",
+        "line": 4,
+        "text": "import path from 'node:path'"
+      },
+      "href": "../../ferramentas/otimizar_sistemas.mjs#L4"
+    },
+    {
+      "source": "ferramentas/otimizar_sistemas.mjs",
+      "target": "external:node:module",
+      "relation": "importa",
+      "confidence": "EXTRACTED",
+      "evidence": {
+        "path": "ferramentas/otimizar_sistemas.mjs",
+        "line": 5,
+        "text": "import {createRequire} from 'node:module'"
+      },
+      "href": "../../ferramentas/otimizar_sistemas.mjs#L5"
+    },
+    {
+      "source": "ferramentas/otimizar_sistemas.mjs",
+      "target": "external:node:url",
+      "relation": "importa",
+      "confidence": "EXTRACTED",
+      "evidence": {
+        "path": "ferramentas/otimizar_sistemas.mjs",
+        "line": 6,
+        "text": "import {pathToFileURL} from 'node:url'"
+      },
+      "href": "../../ferramentas/otimizar_sistemas.mjs#L6"
+    },
+    {
       "source": "web/build.cjs",
-      "target": "external:fs",
+      "target": "external:node:fs",
       "relation": "importa",
       "confidence": "EXTRACTED",
       "evidence": {
         "path": "web/build.cjs",
         "line": 1,
-        "text": "require('fs')"
+        "text": "require('node:fs')"
       },
       "href": "../../web/build.cjs#L1"
+    },
+    {
+      "source": "web/build.cjs",
+      "target": "external:node:path",
+      "relation": "importa",
+      "confidence": "EXTRACTED",
+      "evidence": {
+        "path": "web/build.cjs",
+        "line": 2,
+        "text": "require('node:path')"
+      },
+      "href": "../../web/build.cjs#L2"
     },
     {
       "source": "web/build.cjs",
@@ -164,46 +236,46 @@
       "confidence": "EXTRACTED",
       "evidence": {
         "path": "web/build.cjs",
-        "line": 1,
+        "line": 3,
         "text": "require('esbuild')"
       },
-      "href": "../../web/build.cjs#L1"
+      "href": "../../web/build.cjs#L3"
     },
     {
       "source": "web/server.cjs",
-      "target": "external:http",
+      "target": "external:node:fs",
       "relation": "importa",
       "confidence": "EXTRACTED",
       "evidence": {
         "path": "web/server.cjs",
         "line": 1,
-        "text": "require('http')"
+        "text": "require('node:fs')"
       },
       "href": "../../web/server.cjs#L1"
     },
     {
       "source": "web/server.cjs",
-      "target": "external:fs",
+      "target": "external:node:http",
       "relation": "importa",
       "confidence": "EXTRACTED",
       "evidence": {
         "path": "web/server.cjs",
-        "line": 1,
-        "text": "require('fs')"
+        "line": 2,
+        "text": "require('node:http')"
       },
-      "href": "../../web/server.cjs#L1"
+      "href": "../../web/server.cjs#L2"
     },
     {
       "source": "web/server.cjs",
-      "target": "external:path",
+      "target": "external:node:path",
       "relation": "importa",
       "confidence": "EXTRACTED",
       "evidence": {
         "path": "web/server.cjs",
-        "line": 1,
-        "text": "require('path')"
+        "line": 3,
+        "text": "require('node:path')"
       },
-      "href": "../../web/server.cjs#L1"
+      "href": "../../web/server.cjs#L3"
     },
     {
       "source": "web/src/app-v2.js",
@@ -339,15 +411,27 @@
     },
     {
       "source": "web/src/app-v2.js",
-      "target": "web/src/customize.js",
+      "target": "web/src/systems.js",
       "relation": "importa",
       "confidence": "EXTRACTED",
       "evidence": {
         "path": "web/src/app-v2.js",
         "line": 12,
-        "text": "import {setupCustomization} from './customize.js'"
+        "text": "import {createSystems} from './systems.js'"
       },
       "href": "../../web/src/app-v2.js#L12"
+    },
+    {
+      "source": "web/src/app-v2.js",
+      "target": "web/src/customize.js",
+      "relation": "importa",
+      "confidence": "EXTRACTED",
+      "evidence": {
+        "path": "web/src/app-v2.js",
+        "line": 13,
+        "text": "import {setupCustomization} from './customize.js'"
+      },
+      "href": "../../web/src/app-v2.js#L13"
     },
     {
       "source": "web/src/app-v2.js",
@@ -356,10 +440,10 @@
       "confidence": "EXTRACTED",
       "evidence": {
         "path": "web/src/app-v2.js",
-        "line": 13,
+        "line": 14,
         "text": "import * as THREE from 'three'"
       },
-      "href": "../../web/src/app-v2.js#L13"
+      "href": "../../web/src/app-v2.js#L14"
     },
     {
       "source": "web/src/app-v2.js",
@@ -368,10 +452,10 @@
       "confidence": "EXTRACTED",
       "evidence": {
         "path": "web/src/app-v2.js",
-        "line": 14,
+        "line": 15,
         "text": "import {OrbitControls} from 'three/addons/controls/OrbitControls.js'"
       },
-      "href": "../../web/src/app-v2.js#L14"
+      "href": "../../web/src/app-v2.js#L15"
     },
     {
       "source": "web/src/app-v2.js",
@@ -380,10 +464,10 @@
       "confidence": "EXTRACTED",
       "evidence": {
         "path": "web/src/app-v2.js",
-        "line": 15,
+        "line": 16,
         "text": "import {TransformControls} from 'three/addons/controls/TransformControls.js'"
       },
-      "href": "../../web/src/app-v2.js#L15"
+      "href": "../../web/src/app-v2.js#L16"
     },
     {
       "source": "web/src/app-v2.js",
@@ -392,10 +476,10 @@
       "confidence": "EXTRACTED",
       "evidence": {
         "path": "web/src/app-v2.js",
-        "line": 16,
+        "line": 17,
         "text": "import {EffectComposer} from 'three/addons/postprocessing/EffectComposer.js'"
       },
-      "href": "../../web/src/app-v2.js#L16"
+      "href": "../../web/src/app-v2.js#L17"
     },
     {
       "source": "web/src/app-v2.js",
@@ -404,10 +488,10 @@
       "confidence": "EXTRACTED",
       "evidence": {
         "path": "web/src/app-v2.js",
-        "line": 17,
+        "line": 18,
         "text": "import {RenderPass} from 'three/addons/postprocessing/RenderPass.js'"
       },
-      "href": "../../web/src/app-v2.js#L17"
+      "href": "../../web/src/app-v2.js#L18"
     },
     {
       "source": "web/src/app-v2.js",
@@ -416,10 +500,10 @@
       "confidence": "EXTRACTED",
       "evidence": {
         "path": "web/src/app-v2.js",
-        "line": 18,
+        "line": 19,
         "text": "import {SSAOPass} from 'three/addons/postprocessing/SSAOPass.js'"
       },
-      "href": "../../web/src/app-v2.js#L18"
+      "href": "../../web/src/app-v2.js#L19"
     },
     {
       "source": "web/src/app-v2.js",
@@ -428,10 +512,10 @@
       "confidence": "EXTRACTED",
       "evidence": {
         "path": "web/src/app-v2.js",
-        "line": 19,
+        "line": 20,
         "text": "import {OutputPass} from 'three/addons/postprocessing/OutputPass.js'"
       },
-      "href": "../../web/src/app-v2.js#L19"
+      "href": "../../web/src/app-v2.js#L20"
     },
     {
       "source": "web/src/app-v2.js",
@@ -440,10 +524,10 @@
       "confidence": "EXTRACTED",
       "evidence": {
         "path": "web/src/app-v2.js",
-        "line": 20,
+        "line": 21,
         "text": "import {SMAAPass} from 'three/addons/postprocessing/SMAAPass.js'"
       },
-      "href": "../../web/src/app-v2.js#L20"
+      "href": "../../web/src/app-v2.js#L21"
     },
     {
       "source": "web/src/app-v2.js",
@@ -452,10 +536,10 @@
       "confidence": "EXTRACTED",
       "evidence": {
         "path": "web/src/app-v2.js",
-        "line": 21,
+        "line": 22,
         "text": "import {GLTFLoader} from 'three/addons/loaders/GLTFLoader.js'"
       },
-      "href": "../../web/src/app-v2.js#L21"
+      "href": "../../web/src/app-v2.js#L22"
     },
     {
       "source": "web/src/app-v2.js",
@@ -464,10 +548,10 @@
       "confidence": "EXTRACTED",
       "evidence": {
         "path": "web/src/app-v2.js",
-        "line": 22,
+        "line": 23,
         "text": "import {setupStudio,applyCarMaterials} from './studio.js'"
       },
-      "href": "../../web/src/app-v2.js#L22"
+      "href": "../../web/src/app-v2.js#L23"
     },
     {
       "source": "web/src/app-v2.js",
@@ -476,10 +560,10 @@
       "confidence": "EXTRACTED",
       "evidence": {
         "path": "web/src/app-v2.js",
-        "line": 23,
+        "line": 24,
         "text": "import {createMechanics} from './mechanics.js'"
       },
-      "href": "../../web/src/app-v2.js#L23"
+      "href": "../../web/src/app-v2.js#L24"
     },
     {
       "source": "web/src/branding.js",
@@ -684,6 +768,42 @@
         "text": "import {createHelmet1991} from './helmet-1991.js'"
       },
       "href": "../../web/src/senna-driver.js#L3"
+    },
+    {
+      "source": "web/src/systems.js",
+      "target": "external:three",
+      "relation": "importa",
+      "confidence": "EXTRACTED",
+      "evidence": {
+        "path": "web/src/systems.js",
+        "line": 1,
+        "text": "import * as THREE from 'three'"
+      },
+      "href": "../../web/src/systems.js#L1"
+    },
+    {
+      "source": "web/src/systems.js",
+      "target": "external:three/addons/loaders/GLTFLoader.js",
+      "relation": "importa",
+      "confidence": "EXTRACTED",
+      "evidence": {
+        "path": "web/src/systems.js",
+        "line": 2,
+        "text": "import {GLTFLoader} from 'three/addons/loaders/GLTFLoader.js'"
+      },
+      "href": "../../web/src/systems.js#L2"
+    },
+    {
+      "source": "web/src/systems.js",
+      "target": "external:three/addons/libs/meshopt_decoder.module.js",
+      "relation": "importa",
+      "confidence": "EXTRACTED",
+      "evidence": {
+        "path": "web/src/systems.js",
+        "line": 3,
+        "text": "import {MeshoptDecoder} from 'three/addons/libs/meshopt_decoder.module.js'"
+      },
+      "href": "../../web/src/systems.js#L3"
     },
     {
       "source": "web/src/tunnel-visual.js",
@@ -936,6 +1056,54 @@
         "text": "import {GLTFLoader} from 'three/addons/loaders/GLTFLoader.js'"
       },
       "href": "../../web/test-power-unit.mjs#L4"
+    },
+    {
+      "source": "web/test-systems.mjs",
+      "target": "external:node:assert/strict",
+      "relation": "importa",
+      "confidence": "EXTRACTED",
+      "evidence": {
+        "path": "web/test-systems.mjs",
+        "line": 1,
+        "text": "import assert from 'node:assert/strict'"
+      },
+      "href": "../../web/test-systems.mjs#L1"
+    },
+    {
+      "source": "web/test-systems.mjs",
+      "target": "external:node:crypto",
+      "relation": "importa",
+      "confidence": "EXTRACTED",
+      "evidence": {
+        "path": "web/test-systems.mjs",
+        "line": 2,
+        "text": "import {createHash} from 'node:crypto'"
+      },
+      "href": "../../web/test-systems.mjs#L2"
+    },
+    {
+      "source": "web/test-systems.mjs",
+      "target": "external:node:fs",
+      "relation": "importa",
+      "confidence": "EXTRACTED",
+      "evidence": {
+        "path": "web/test-systems.mjs",
+        "line": 3,
+        "text": "import {readFileSync} from 'node:fs'"
+      },
+      "href": "../../web/test-systems.mjs#L3"
+    },
+    {
+      "source": "web/test-systems.mjs",
+      "target": "external:three",
+      "relation": "importa",
+      "confidence": "EXTRACTED",
+      "evidence": {
+        "path": "web/test-systems.mjs",
+        "line": 4,
+        "text": "import * as THREE from 'three'"
+      },
+      "href": "../../web/test-systems.mjs#L4"
     }
   ],
   "production": [
@@ -946,10 +1114,10 @@
       "confidence": "EXTRACTED",
       "evidence": {
         "path": "web/build.cjs",
-        "line": 2,
-        "text": "entryPoints:['src/app-v2.js']"
+        "line": 18,
+        "text": "entryPoints: [source('src', 'app-v2.js')]"
       },
-      "href": "../../web/build.cjs#L2"
+      "href": "../../web/build.cjs#L18"
     },
     {
       "source": "web/src/template-v2.html",
@@ -958,10 +1126,10 @@
       "confidence": "EXTRACTED",
       "evidence": {
         "path": "web/build.cjs",
-        "line": 3,
-        "text": "'src/template-v2.html'"
+        "line": 25,
+        "text": "source('src', 'template-v2.html')"
       },
-      "href": "../../web/build.cjs#L3"
+      "href": "../../web/build.cjs#L25"
     },
     {
       "source": "web/assets/carro-aula-v2.glb",
@@ -970,10 +1138,58 @@
       "confidence": "EXTRACTED",
       "evidence": {
         "path": "web/build.cjs",
-        "line": 3,
-        "text": "'assets/carro-aula-v2.glb'"
+        "line": 26,
+        "text": "source('assets', 'carro-aula-v2.glb')"
       },
-      "href": "../../web/build.cjs#L3"
+      "href": "../../web/build.cjs#L26"
+    },
+    {
+      "source": "ferramentas/gerar_sistemas.py",
+      "target": "web/assets/sistemas-v1.glb",
+      "relation": "gera",
+      "confidence": "EXTRACTED",
+      "evidence": {
+        "path": "ferramentas/gerar_sistemas.py",
+        "line": 145,
+        "text": "glb = (OUT if not wanted else PREVIEW_DIR) / f'sistemas-v1{suffix}.glb'"
+      },
+      "href": "../../ferramentas/gerar_sistemas.py#L145"
+    },
+    {
+      "source": "ferramentas/otimizar_sistemas.mjs",
+      "target": "web/assets/sistemas-v1.glb",
+      "relation": "otimiza",
+      "confidence": "EXTRACTED",
+      "evidence": {
+        "path": "ferramentas/otimizar_sistemas.mjs",
+        "line": 51,
+        "text": "fs.writeFileSync(file, output)"
+      },
+      "href": "../../ferramentas/otimizar_sistemas.mjs#L51"
+    },
+    {
+      "source": "ferramentas/gerar_sistemas.py",
+      "target": "web/assets/sistemas-v1.manifest.json",
+      "relation": "escreve manifesto",
+      "confidence": "EXTRACTED",
+      "evidence": {
+        "path": "ferramentas/gerar_sistemas.py",
+        "line": 202,
+        "text": "f'sistemas-v1{suffix}.manifest.json'"
+      },
+      "href": "../../ferramentas/gerar_sistemas.py#L202"
+    },
+    {
+      "source": "web/assets/sistemas-v1.glb",
+      "target": "web/src/systems.js",
+      "relation": "carrega em runtime",
+      "confidence": "EXTRACTED",
+      "evidence": {
+        "path": "web/src/systems.js",
+        "line": 26,
+        "text": "export const SYSTEMS_ASSET='./assets/sistemas-v1.glb'"
+      },
+      "href": "../../web/src/systems.js#L26"
     },
     {
       "source": "web/assets/carro-movable.glb",
@@ -1078,10 +1294,10 @@
       "confidence": "EXTRACTED",
       "evidence": {
         "path": "web/src/app-v2.js",
-        "line": 74,
+        "line": 78,
         "text": "garage.getExportScene()"
       },
-      "href": "../../web/src/app-v2.js#L74"
+      "href": "../../web/src/app-v2.js#L78"
     },
     {
       "source": "ambientes/INTEIA-box-laboratorio.glb",

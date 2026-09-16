@@ -2,13 +2,13 @@
 
 Um laboratório interativo para explorar e personalizar um carro de fórmula: 97 componentes exteriores, motor V6 ilustrativo integrado, patrocínios do F1 Loop, cores independentes, materiais, iluminação e movimentos ilustrativos. Inclui projeto Blender editável e modelos GLB para reutilização.
 
-**[Abrir o laboratório online](https://igormorais123.github.io/INTEIA-laboratorio-3d/)** · **[Atlas detalhado online](https://igormorais123.github.io/INTEIA-laboratorio-3d/docs/mapeamento-detalhado/index.html)** · [Publicação e atualização](docs/PUBLICACAO.md)
+**[Abrir o laboratório online](https://igormorais123.github.io/INTEIA-laboratorio-3d/)** · **[Documentação](docs/README.md)** · **[Atlas detalhado online](https://igormorais123.github.io/INTEIA-laboratorio-3d/docs/mapeamento-detalhado/index.html)**
 
 ![Prévia do projeto Blender](Previa-Blender.png)
 
 ## Comece aqui
 
-**[Atlas do código, documentos e assets](docs/mapas/README.md)** — índice navegável, busca de arquivos e peças, grafos com evidências e [guia de reaproveitamento](docs/mapas/REUSO.md). Para a busca offline, baixe o repositório e abra [docs/mapas/index.html](docs/mapas/index.html).
+Comece pelo **[índice canônico da documentação](docs/README.md)**. Para busca estrutural, use o [atlas do código, documentos e assets](docs/mapas/README.md), com arquivos, peças e grafos verificáveis. Para a busca offline, baixe o repositório e abra [docs/mapas/index.html](docs/mapas/index.html).
 
 | Quero… | Abra / leia |
 | --- | --- |
@@ -19,6 +19,7 @@ Um laboratório interativo para explorar e personalizar um carro de fórmula: 97
 | Importar apenas o carro | [GLB estático](modelos/INTEIA_F1_estatico.glb) |
 | Reproduzir a demonstração | [GLB animado](modelos/INTEIA_F1_animado.glb) |
 | Desenvolver o site | [Desenvolvimento](docs/DESENVOLVIMENTO.md) |
+| Entender ou produzir os sistemas internos | [Sistemas internos em 3D](docs/SISTEMAS-3D.md) · [Especificação histórica](docs/ESPECIFICACAO-ASSET-3D-SISTEMAS-F1.md) |
 | Usar partes em outro Blender | [Guia Blender](docs/BLENDER.md) |
 | Integrar em sites ou jogos | [Integração](docs/INTEGRACAO.md) |
 | Entender os arquivos e materiais | [Arquitetura](docs/ARQUITETURA.md) |
@@ -68,6 +69,6 @@ As escolhas de personalização ficam na sessão do navegador. Use Salvar imagem
 
 ## Limites e direitos
 
-É uma representação das peças externas fornecidas, com cerca de 260 mil triângulos no carro v2, além do motor e dos detalhes adicionais. Inclui o motor V6 didático do F1 Loop; não contém câmbio completo, rig físico ou colisores. Os arquivos Blender e GLB da pasta modelos continuam sendo a entrega original; esta atualização refere-se ao laboratório web. Os movimentos são ilustrativos; o projeto não foi certificado como réplica técnica nem como indistinguível de uma fotografia.
+É uma representação das peças externas fornecidas, com cerca de 260 mil triângulos no carro v2, além do motor e dos detalhes adicionais. Os sistemas internos são modelos didáticos em evolução; não constituem projeto de engenharia homologado. Não há rig físico nem colisores completos. Os arquivos Blender e GLB da pasta `modelos` continuam sendo a entrega original; mudanças do laboratório web ou dos geradores de sistemas não os substituem automaticamente. Os movimentos são ilustrativos; o projeto não foi certificado como réplica técnica nem como indistinguível de uma fotografia.
 
 **© 2026 INTEIA — todos os direitos reservados.** O Laboratório 3D INTEIA é um projeto de titularidade da INTEIA, sob [licença proprietária](LICENSE). Estar público não concede uma licença de código aberto. A procedência dos assets e as licenças de terceiros estão registradas separadamente em [Direitos e procedência](docs/DIREITOS-E-PROCEDENCIA.md) e [THIRD-PARTY-NOTICES.md](THIRD-PARTY-NOTICES.md).

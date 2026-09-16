@@ -6,17 +6,26 @@ Gerado por `python ferramentas/mapear.py`. Todos os arquivos do escopo estão li
 
 | Arquivo | Papel | Tamanho canônico |
 | --- | --- | --- |
-| [.gitattributes](../../.gitattributes) | configuração ou infraestrutura | 235 |
+| [.claude/settings.json](../../.claude/settings.json) | configuração ou infraestrutura | 202 |
+| [.cursor/rules/chisle.mdc](../../.cursor/rules/chisle.mdc) | configuração ou infraestrutura | 2362 |
+| [.gitattributes](../../.gitattributes) | configuração ou infraestrutura | 274 |
+| [.github/copilot-instructions.md](../../.github/copilot-instructions.md) | documentação | 2278 |
 | [.github/workflows/verify.yml](../../.github/workflows/verify.yml) | configuração ou infraestrutura | 642 |
-| [.gitignore](../../.gitignore) | configuração ou infraestrutura | 441 |
+| [.gitignore](../../.gitignore) | configuração ou infraestrutura | 551 |
+| [.graphifyignore](../../.graphifyignore) | configuração ou infraestrutura | 449 |
 | [.nojekyll](../../.nojekyll) | configuração ou infraestrutura | 0 |
+| [.planning/ai/project-index.json](../../.planning/ai/project-index.json) | configuração ou infraestrutura | 2997 |
+| [.planning/architecture/system-architecture.html](../../.planning/architecture/system-architecture.html) | documentação | 623463 |
+| [.planning/architecture/system.architecture.json](../../.planning/architecture/system.architecture.json) | configuração ou infraestrutura | 8454 |
+| [00_INDICE_IA.md](../../00_INDICE_IA.md) | documentação | 1794 |
+| [AGENTS.md](../../AGENTS.md) | documentação | 1868 |
 | [CHANGELOG.md](../../CHANGELOG.md) | documentação | 1770 |
-| [CONTRIBUTING.md](../../CONTRIBUTING.md) | documentação | 652 |
+| [CONTRIBUTING.md](../../CONTRIBUTING.md) | documentação | 1031 |
 | [INTEIA_F1_Master.blend](../../INTEIA_F1_Master.blend) | entrega editável Blender | 23815409 |
-| [LEIA-ME.md](../../LEIA-ME.md) | documentação | 313 |
+| [LEIA-ME.md](../../LEIA-ME.md) | documentação | 284 |
 | [LICENSE](../../LICENSE) | licença ou procedência | 920 |
 | [Previa-Blender.png](../../Previa-Blender.png) | prévia histórica | 695174 |
-| [README.md](../../README.md) | documentação | 5679 |
+| [README.md](../../README.md) | documentação | 6081 |
 | [THIRD-PARTY-NOTICES.md](../../THIRD-PARTY-NOTICES.md) | licença ou procedência | 861 |
 | [ambientes/INTEIA-box-laboratorio.glb](../../ambientes/INTEIA-box-laboratorio.glb) | entrega GLB | 10302288 |
 | [ambientes/INTEIA_Box_com_carro.blend](../../ambientes/INTEIA_Box_com_carro.blend) | entrega editável Blender | 24679287 |
@@ -24,16 +33,21 @@ Gerado por `python ferramentas/mapear.py`. Todos os arquivos do escopo estão li
 | [ambientes/validacao-box.json](../../ambientes/validacao-box.json) | evidência gerada | 351 |
 | [docs/ACABAMENTO-E-RENDER.md](../../docs/ACABAMENTO-E-RENDER.md) | documentação | 2839 |
 | [docs/AERODINAMICA.md](../../docs/AERODINAMICA.md) | documentação | 6254 |
-| [docs/ARQUITETURA.md](../../docs/ARQUITETURA.md) | documentação | 2662 |
+| [docs/ANALISE-DOSSIE-COMPLEMENTAR.md](../../docs/ANALISE-DOSSIE-COMPLEMENTAR.md) | documentação | 16415 |
+| [docs/ARQUITETURA.md](../../docs/ARQUITETURA.md) | documentação | 3300 |
 | [docs/BLENDER.md](../../docs/BLENDER.md) | documentação | 2220 |
 | [docs/BOX-LABORATORIO.md](../../docs/BOX-LABORATORIO.md) | documentação | 4670 |
-| [docs/DESENVOLVIMENTO.md](../../docs/DESENVOLVIMENTO.md) | documentação | 2977 |
+| [docs/DESENVOLVIMENTO.md](../../docs/DESENVOLVIMENTO.md) | documentação | 4011 |
 | [docs/DIREITOS-E-PROCEDENCIA.md](../../docs/DIREITOS-E-PROCEDENCIA.md) | licença ou procedência | 1581 |
+| [docs/ESPECIFICACAO-ASSET-3D-SISTEMAS-F1.md](../../docs/ESPECIFICACAO-ASSET-3D-SISTEMAS-F1.md) | documentação | 27108 |
 | [docs/INTEGRACAO-MOTOR.md](../../docs/INTEGRACAO-MOTOR.md) | documentação | 2096 |
 | [docs/INTEGRACAO.md](../../docs/INTEGRACAO.md) | documentação | 2578 |
+| [docs/OUTRO-PC.md](../../docs/OUTRO-PC.md) | documentação | 2281 |
 | [docs/PILOTO-E-CAPACETE.md](../../docs/PILOTO-E-CAPACETE.md) | documentação | 3159 |
 | [docs/PUBLICACAO.md](../../docs/PUBLICACAO.md) | documentação | 3001 |
+| [docs/README.md](../../docs/README.md) | documentação | 2848 |
 | [docs/REVISAO-TUNEL-VISUAL.md](../../docs/REVISAO-TUNEL-VISUAL.md) | documentação | 4051 |
+| [docs/SISTEMAS-3D.md](../../docs/SISTEMAS-3D.md) | documentação | 5445 |
 | [docs/VALIDACAO.md](../../docs/VALIDACAO.md) | documentação | 2128 |
 | [docs/mapas/GRAFOS.md](../../docs/mapas/GRAFOS.md) | mapa gerado | — |
 | [docs/mapas/INVENTARIO.md](../../docs/mapas/INVENTARIO.md) | mapa gerado | — |
@@ -53,7 +67,7 @@ Gerado por `python ferramentas/mapear.py`. Todos os arquivos do escopo estão li
 | [docs/mapeamento-detalhado/.gitignore](../../docs/mapeamento-detalhado/.gitignore) | configuração ou infraestrutura | 52 |
 | [docs/mapeamento-detalhado/ARVORE.md](../../docs/mapeamento-detalhado/ARVORE.md) | mapa gerado | — |
 | [docs/mapeamento-detalhado/ASSETS-E-PROCEDENCIA.md](../../docs/mapeamento-detalhado/ASSETS-E-PROCEDENCIA.md) | documentação | 39146 |
-| [docs/mapeamento-detalhado/ATUALIZAR.md](../../docs/mapeamento-detalhado/ATUALIZAR.md) | documentação | 7058 |
+| [docs/mapeamento-detalhado/ATUALIZAR.md](../../docs/mapeamento-detalhado/ATUALIZAR.md) | documentação | 7246 |
 | [docs/mapeamento-detalhado/CATALOGO.md](../../docs/mapeamento-detalhado/CATALOGO.md) | mapa gerado | — |
 | [docs/mapeamento-detalhado/FUNCOES.md](../../docs/mapeamento-detalhado/FUNCOES.md) | mapa gerado | — |
 | [docs/mapeamento-detalhado/GRAFOS.md](../../docs/mapeamento-detalhado/GRAFOS.md) | documentação | 6139 |
@@ -73,7 +87,7 @@ Gerado por `python ferramentas/mapear.py`. Todos os arquivos do escopo estão li
 | [docs/mapeamento-detalhado/dados/graphify-ast.json](../../docs/mapeamento-detalhado/dados/graphify-ast.json) | configuração ou infraestrutura | 70625 |
 | [docs/mapeamento-detalhado/dados/graphify-execucao.json](../../docs/mapeamento-detalhado/dados/graphify-execucao.json) | configuração ou infraestrutura | 4327 |
 | [docs/mapeamento-detalhado/dados/manifesto-conferencia.json](../../docs/mapeamento-detalhado/dados/manifesto-conferencia.json) | mapa gerado | — |
-| [docs/mapeamento-detalhado/dados/relacoes-curadas.json](../../docs/mapeamento-detalhado/dados/relacoes-curadas.json) | configuração ou infraestrutura | 54067 |
+| [docs/mapeamento-detalhado/dados/relacoes-curadas.json](../../docs/mapeamento-detalhado/dados/relacoes-curadas.json) | configuração ou infraestrutura | 54243 |
 | [docs/mapeamento-detalhado/dados/simbolos.json](../../docs/mapeamento-detalhado/dados/simbolos.json) | mapa gerado | — |
 | [docs/mapeamento-detalhado/dados/teste-mecanica.json](../../docs/mapeamento-detalhado/dados/teste-mecanica.json) | mapa gerado | — |
 | [docs/mapeamento-detalhado/dados/validacao.json](../../docs/mapeamento-detalhado/dados/validacao.json) | mapa gerado | — |
@@ -85,22 +99,40 @@ Gerado por `python ferramentas/mapear.py`. Todos os arquivos do escopo estão li
 | [docs/mapeamento-detalhado/grafos/dados.json](../../docs/mapeamento-detalhado/grafos/dados.json) | mapa gerado | — |
 | [docs/mapeamento-detalhado/grafos/dados.mmd](../../docs/mapeamento-detalhado/grafos/dados.mmd) | mapa gerado | — |
 | [docs/mapeamento-detalhado/index.html](../../docs/mapeamento-detalhado/index.html) | mapa gerado | — |
-| [docs/mapeamento-detalhado/scripts/finalidades.json](../../docs/mapeamento-detalhado/scripts/finalidades.json) | configuração ou infraestrutura | 19488 |
-| [docs/mapeamento-detalhado/scripts/gerar.py](../../docs/mapeamento-detalhado/scripts/gerar.py) | configuração ou infraestrutura | 23592 |
+| [docs/mapeamento-detalhado/scripts/finalidades.json](../../docs/mapeamento-detalhado/scripts/finalidades.json) | configuração ou infraestrutura | 20661 |
+| [docs/mapeamento-detalhado/scripts/gerar.py](../../docs/mapeamento-detalhado/scripts/gerar.py) | configuração ou infraestrutura | 26612 |
 | [docs/mapeamento-detalhado/scripts/interface.html](../../docs/mapeamento-detalhado/scripts/interface.html) | documentação | 16420 |
 | [docs/mapeamento-detalhado/scripts/validar.py](../../docs/mapeamento-detalhado/scripts/validar.py) | configuração ou infraestrutura | 6177 |
 | [docs/mapeamento-detalhado/scripts/verificar-app.mjs](../../docs/mapeamento-detalhado/scripts/verificar-app.mjs) | configuração ou infraestrutura | 4621 |
+| [docs/pesquisa-sistemas-carro-video.md](../../docs/pesquisa-sistemas-carro-video.md) | documentação | 21202 |
 | [documentacao/Comparacao-iluminacao.html](../../documentacao/Comparacao-iluminacao.html) | documentação | 370368 |
 | [documentacao/INTEIA-personalizacao.png](../../documentacao/INTEIA-personalizacao.png) | prévia histórica | 83329 |
 | [documentacao/componentes-origem.json](../../documentacao/componentes-origem.json) | metadados de procedência | 78871 |
 | [documentacao/historico-avaliacoes.md](../../documentacao/historico-avaliacoes.md) | documentação | 5659 |
+| [ferramentas/gerar_sistemas.py](../../ferramentas/gerar_sistemas.py) | ferramenta editável | 14239 |
 | [ferramentas/manifest.cjs](../../ferramentas/manifest.cjs) | ferramenta editável | 1017 |
 | [ferramentas/mapa-template.html](../../ferramentas/mapa-template.html) | documentação | 11578 |
-| [ferramentas/mapear.py](../../ferramentas/mapear.py) | ferramenta editável | 21555 |
+| [ferramentas/mapear.py](../../ferramentas/mapear.py) | ferramenta editável | 22269 |
 | [ferramentas/merge-animation.cjs](../../ferramentas/merge-animation.cjs) | ferramenta editável | 911 |
+| [ferramentas/otimizar_sistemas.mjs](../../ferramentas/otimizar_sistemas.mjs) | ferramenta editável | 3647 |
 | [ferramentas/package_blender.py](../../ferramentas/package_blender.py) | ferramenta editável | 10622 |
 | [ferramentas/package_garage.py](../../ferramentas/package_garage.py) | ferramenta editável | 5795 |
 | [ferramentas/render_garage_preview.py](../../ferramentas/render_garage_preview.py) | ferramenta editável | 498 |
+| [ferramentas/sistemas/lib.py](../../ferramentas/sistemas/lib.py) | ferramenta editável | 42247 |
+| [ferramentas/sistemas/s01_aero.py](../../ferramentas/sistemas/s01_aero.py) | ferramenta editável | 6541 |
+| [ferramentas/sistemas/s02_structure.py](../../ferramentas/sistemas/s02_structure.py) | ferramenta editável | 4723 |
+| [ferramentas/sistemas/s03_suspension.py](../../ferramentas/sistemas/s03_suspension.py) | ferramenta editável | 9525 |
+| [ferramentas/sistemas/s04_steering.py](../../ferramentas/sistemas/s04_steering.py) | ferramenta editável | 5136 |
+| [ferramentas/sistemas/s05_brakes.py](../../ferramentas/sistemas/s05_brakes.py) | ferramenta editável | 10809 |
+| [ferramentas/sistemas/s06_power.py](../../ferramentas/sistemas/s06_power.py) | ferramenta editável | 13559 |
+| [ferramentas/sistemas/s07_ers.py](../../ferramentas/sistemas/s07_ers.py) | ferramenta editável | 6349 |
+| [ferramentas/sistemas/s08_cooling.py](../../ferramentas/sistemas/s08_cooling.py) | ferramenta editável | 5832 |
+| [ferramentas/sistemas/s09_fuel.py](../../ferramentas/sistemas/s09_fuel.py) | ferramenta editável | 5019 |
+| [ferramentas/sistemas/s10_transmission.py](../../ferramentas/sistemas/s10_transmission.py) | ferramenta editável | 10035 |
+| [ferramentas/sistemas/s11_safety.py](../../ferramentas/sistemas/s11_safety.py) | ferramenta editável | 6847 |
+| [ferramentas/sistemas/s12_cockpit.py](../../ferramentas/sistemas/s12_cockpit.py) | ferramenta editável | 5638 |
+| [ferramentas/sistemas/s13_wheel.py](../../ferramentas/sistemas/s13_wheel.py) | ferramenta editável | 5574 |
+| [ferramentas/sistemas/s14_sensors.py](../../ferramentas/sistemas/s14_sensors.py) | ferramenta editável | 6007 |
 | [ferramentas/validate-kit.py](../../ferramentas/validate-kit.py) | ferramenta editável | 2057 |
 | [graphify-out/GRAPH_REPORT.md](../../graphify-out/GRAPH_REPORT.md) | mapa gerado | — |
 | [graphify-out/graph.html](../../graphify-out/graph.html) | mapa gerado | — |
@@ -130,14 +162,16 @@ Gerado por `python ferramentas/mapear.py`. Todos os arquivos do escopo estão li
 | [web/assets/inteligencia-mil-grau-transparent.png](../../web/assets/inteligencia-mil-grau-transparent.png) | prévia histórica | 1070790 |
 | [web/assets/inteligencia-mil-grau.source.json](../../web/assets/inteligencia-mil-grau.source.json) | configuração ou infraestrutura | 555 |
 | [web/assets/power-unit-v1.glb](../../web/assets/power-unit-v1.glb) | entrega GLB | 4640876 |
-| [web/assets/power-unit-v1.manifest.json](../../web/assets/power-unit-v1.manifest.json) | configuração ou infraestrutura | 1728 |
-| [web/build.cjs](../../web/build.cjs) | configuração ou infraestrutura | 432 |
-| [web/index.html](../../web/index.html) | aplicação gerada | 4369280 |
-| [web/package-lock.json](../../web/package-lock.json) | configuração ou infraestrutura | 14952 |
-| [web/package.json](../../web/package.json) | configuração ou infraestrutura | 451 |
-| [web/server.cjs](../../web/server.cjs) | configuração ou infraestrutura | 864 |
+| [web/assets/power-unit-v1.manifest.json](../../web/assets/power-unit-v1.manifest.json) | configuração ou infraestrutura | 1756 |
+| [web/assets/sistemas-v1.glb](../../web/assets/sistemas-v1.glb) | entrega GLB | 6335984 |
+| [web/assets/sistemas-v1.manifest.json](../../web/assets/sistemas-v1.manifest.json) | configuração ou infraestrutura | 392778 |
+| [web/build.cjs](../../web/build.cjs) | configuração ou infraestrutura | 1130 |
+| [web/index.html](../../web/index.html) | aplicação gerada | 4403978 |
+| [web/package-lock.json](../../web/package-lock.json) | configuração ou infraestrutura | 15003 |
+| [web/package.json](../../web/package.json) | configuração ou infraestrutura | 535 |
+| [web/server.cjs](../../web/server.cjs) | configuração ou infraestrutura | 2026 |
 | [web/src/aero-physics.mjs](../../web/src/aero-physics.mjs) | fonte web editável | 1377 |
-| [web/src/app-v2.js](../../web/src/app-v2.js) | fonte web editável | 22510 |
+| [web/src/app-v2.js](../../web/src/app-v2.js) | fonte web editável | 24289 |
 | [web/src/branding.js](../../web/src/branding.js) | fonte web editável | 4155 |
 | [web/src/car-look.js](../../web/src/car-look.js) | fonte web editável | 19008 |
 | [web/src/customize.js](../../web/src/customize.js) | fonte web editável | 3041 |
@@ -151,14 +185,16 @@ Gerado por `python ferramentas/mapear.py`. Todos os arquivos do escopo estão li
 | [web/src/senna-driver.js](../../web/src/senna-driver.js) | fonte web editável | 7795 |
 | [web/src/studio.js](../../web/src/studio.js) | fonte web editável | 10517 |
 | [web/src/surface-library.js](../../web/src/surface-library.js) | fonte web editável | 6989 |
-| [web/src/template-v2.html](../../web/src/template-v2.html) | fonte web editável | 27814 |
+| [web/src/systems.js](../../web/src/systems.js) | fonte web editável | 32111 |
+| [web/src/template-v2.html](../../web/src/template-v2.html) | fonte web editável | 37569 |
 | [web/src/tunnel-visual.js](../../web/src/tunnel-visual.js) | fonte web editável | 6325 |
 | [web/src/wind-tunnel.js](../../web/src/wind-tunnel.js) | fonte web editável | 8411 |
-| [web/src/workbench.js](../../web/src/workbench.js) | fonte web editável | 6699 |
+| [web/src/workbench.js](../../web/src/workbench.js) | fonte web editável | 7214 |
 | [web/test-aerodynamics.mjs](../../web/test-aerodynamics.mjs) | teste | 1182 |
 | [web/test-driver-model.mjs](../../web/test-driver-model.mjs) | teste | 1688 |
 | [web/test-mechanics.mjs](../../web/test-mechanics.mjs) | teste | 3930 |
 | [web/test-power-unit.mjs](../../web/test-power-unit.mjs) | teste | 2245 |
+| [web/test-systems.mjs](../../web/test-systems.mjs) | teste | 12190 |
 
 ## Símbolos declarados
 
@@ -166,25 +202,34 @@ Gerado por `python ferramentas/mapear.py`. Todos os arquivos do escopo estão li
 
 | Símbolo | Origem |
 | --- | --- |
-| `write` | [docs/mapeamento-detalhado/scripts/gerar.py:18](../../docs/mapeamento-detalhado/scripts/gerar.py#L18) |
-| `git` | [docs/mapeamento-detalhado/scripts/gerar.py:23](../../docs/mapeamento-detalhado/scripts/gerar.py#L23) |
-| `sha` | [docs/mapeamento-detalhado/scripts/gerar.py:26](../../docs/mapeamento-detalhado/scripts/gerar.py#L26) |
-| `link` | [docs/mapeamento-detalhado/scripts/gerar.py:32](../../docs/mapeamento-detalhado/scripts/gerar.py#L32) |
-| `inventory` | [docs/mapeamento-detalhado/scripts/gerar.py:34](../../docs/mapeamento-detalhado/scripts/gerar.py#L34) |
-| `glb_info` | [docs/mapeamento-detalhado/scripts/gerar.py:54](../../docs/mapeamento-detalhado/scripts/gerar.py#L54) |
-| `gather_symbols` | [docs/mapeamento-detalhado/scripts/gerar.py:79](../../docs/mapeamento-detalhado/scripts/gerar.py#L79) |
-| `walk_py` | [docs/mapeamento-detalhado/scripts/gerar.py:97](../../docs/mapeamento-detalhado/scripts/gerar.py#L97) |
-| `txt` | [docs/mapeamento-detalhado/scripts/gerar.py:106](../../docs/mapeamento-detalhado/scripts/gerar.py#L106) |
-| `walk` | [docs/mapeamento-detalhado/scripts/gerar.py:107](../../docs/mapeamento-detalhado/scripts/gerar.py#L107) |
-| `main` | [docs/mapeamento-detalhado/scripts/gerar.py:127](../../docs/mapeamento-detalhado/scripts/gerar.py#L127) |
-| `node` | [docs/mapeamento-detalhado/scripts/gerar.py:132](../../docs/mapeamento-detalhado/scripts/gerar.py#L132) |
-| `edge` | [docs/mapeamento-detalhado/scripts/gerar.py:134](../../docs/mapeamento-detalhado/scripts/gerar.py#L134) |
-| `code_paths` | [docs/mapeamento-detalhado/scripts/gerar.py:274](../../docs/mapeamento-detalhado/scripts/gerar.py#L274) |
+| `family_purpose` | [docs/mapeamento-detalhado/scripts/gerar.py:19](../../docs/mapeamento-detalhado/scripts/gerar.py#L19) |
+| `write` | [docs/mapeamento-detalhado/scripts/gerar.py:45](../../docs/mapeamento-detalhado/scripts/gerar.py#L45) |
+| `git` | [docs/mapeamento-detalhado/scripts/gerar.py:50](../../docs/mapeamento-detalhado/scripts/gerar.py#L50) |
+| `sha` | [docs/mapeamento-detalhado/scripts/gerar.py:53](../../docs/mapeamento-detalhado/scripts/gerar.py#L53) |
+| `link` | [docs/mapeamento-detalhado/scripts/gerar.py:59](../../docs/mapeamento-detalhado/scripts/gerar.py#L59) |
+| `inventory` | [docs/mapeamento-detalhado/scripts/gerar.py:61](../../docs/mapeamento-detalhado/scripts/gerar.py#L61) |
+| `glb_info` | [docs/mapeamento-detalhado/scripts/gerar.py:81](../../docs/mapeamento-detalhado/scripts/gerar.py#L81) |
+| `gather_symbols` | [docs/mapeamento-detalhado/scripts/gerar.py:106](../../docs/mapeamento-detalhado/scripts/gerar.py#L106) |
+| `walk_py` | [docs/mapeamento-detalhado/scripts/gerar.py:124](../../docs/mapeamento-detalhado/scripts/gerar.py#L124) |
+| `txt` | [docs/mapeamento-detalhado/scripts/gerar.py:133](../../docs/mapeamento-detalhado/scripts/gerar.py#L133) |
+| `walk` | [docs/mapeamento-detalhado/scripts/gerar.py:134](../../docs/mapeamento-detalhado/scripts/gerar.py#L134) |
+| `main` | [docs/mapeamento-detalhado/scripts/gerar.py:154](../../docs/mapeamento-detalhado/scripts/gerar.py#L154) |
+| `node` | [docs/mapeamento-detalhado/scripts/gerar.py:159](../../docs/mapeamento-detalhado/scripts/gerar.py#L159) |
+| `edge` | [docs/mapeamento-detalhado/scripts/gerar.py:161](../../docs/mapeamento-detalhado/scripts/gerar.py#L161) |
+| `code_paths` | [docs/mapeamento-detalhado/scripts/gerar.py:303](../../docs/mapeamento-detalhado/scripts/gerar.py#L303) |
 | `read` | [docs/mapeamento-detalhado/scripts/validar.py:6](../../docs/mapeamento-detalhado/scripts/validar.py#L6) |
 | `hashfile` | [docs/mapeamento-detalhado/scripts/validar.py:7](../../docs/mapeamento-detalhado/scripts/validar.py#L7) |
 | `load` | [docs/mapeamento-detalhado/scripts/validar.py:12](../../docs/mapeamento-detalhado/scripts/validar.py#L12) |
 | `slug` | [docs/mapeamento-detalhado/scripts/validar.py:13](../../docs/mapeamento-detalhado/scripts/validar.py#L13) |
 | `anchors` | [docs/mapeamento-detalhado/scripts/validar.py:17](../../docs/mapeamento-detalhado/scripts/validar.py#L17) |
+| `_import_glb` | [ferramentas/gerar_sistemas.py:39](../../ferramentas/gerar_sistemas.py#L39) |
+| `_bbox` | [ferramentas/gerar_sistemas.py:44](../../ferramentas/gerar_sistemas.py#L44) |
+| `import_car_reference` | [ferramentas/gerar_sistemas.py:57](../../ferramentas/gerar_sistemas.py#L57) |
+| `power_unit_reference` | [ferramentas/gerar_sistemas.py:76](../../ferramentas/gerar_sistemas.py#L76) |
+| `measure_glb` | [ferramentas/gerar_sistemas.py:154](../../ferramentas/gerar_sistemas.py#L154) |
+| `write_manifest` | [ferramentas/gerar_sistemas.py:180](../../ferramentas/gerar_sistemas.py#L180) |
+| `light` | [ferramentas/gerar_sistemas.py:226](../../ferramentas/gerar_sistemas.py#L226) |
+| `frame` | [ferramentas/gerar_sistemas.py:244](../../ferramentas/gerar_sistemas.py#L244) |
 | `is_generated` | [ferramentas/mapear.py:41](../../ferramentas/mapear.py#L41) |
 | `read` | [ferramentas/mapear.py:45](../../ferramentas/mapear.py#L45) |
 | `line_of` | [ferramentas/mapear.py:49](../../ferramentas/mapear.py#L49) |
@@ -196,12 +241,13 @@ Gerado por `python ferramentas/mapear.py`. Todos os arquivos do escopo estão li
 | `visit` | [ferramentas/mapear.py:167](../../ferramentas/mapear.py#L167) |
 | `production_edges` | [ferramentas/mapear.py:180](../../ferramentas/mapear.py#L180) |
 | `add` | [ferramentas/mapear.py:184](../../ferramentas/mapear.py#L184) |
-| `controls` | [ferramentas/mapear.py:211](../../ferramentas/mapear.py#L211) |
-| `mermaid` | [ferramentas/mapear.py:230](../../ferramentas/mapear.py#L230) |
-| `check_links` | [ferramentas/mapear.py:242](../../ferramentas/mapear.py#L242) |
-| `make` | [ferramentas/mapear.py:273](../../ferramentas/mapear.py#L273) |
-| `put` | [ferramentas/mapear.py:298](../../ferramentas/mapear.py#L298) |
-| `main` | [ferramentas/mapear.py:350](../../ferramentas/mapear.py#L350) |
+| `SYSTEMS_ASSET` | [ferramentas/mapear.py:195](../../ferramentas/mapear.py#L195) |
+| `controls` | [ferramentas/mapear.py:215](../../ferramentas/mapear.py#L215) |
+| `mermaid` | [ferramentas/mapear.py:234](../../ferramentas/mapear.py#L234) |
+| `check_links` | [ferramentas/mapear.py:246](../../ferramentas/mapear.py#L246) |
+| `make` | [ferramentas/mapear.py:277](../../ferramentas/mapear.py#L277) |
+| `put` | [ferramentas/mapear.py:302](../../ferramentas/mapear.py#L302) |
+| `main` | [ferramentas/mapear.py:354](../../ferramentas/mapear.py#L354) |
 | `linear` | [ferramentas/package_blender.py:27](../../ferramentas/package_blender.py#L27) |
 | `col` | [ferramentas/package_blender.py:28](../../ferramentas/package_blender.py#L28) |
 | `base` | [ferramentas/package_blender.py:29](../../ferramentas/package_blender.py#L29) |
@@ -209,17 +255,110 @@ Gerado por `python ferramentas/mapear.py`. Todos os arquivos do escopo estão li
 | `reparent` | [ferramentas/package_blender.py:75](../../ferramentas/package_blender.py#L75) |
 | `select_car` | [ferramentas/package_blender.py:121](../../ferramentas/package_blender.py#L121) |
 | `to_studio` | [ferramentas/package_blender.py:130](../../ferramentas/package_blender.py#L130) |
+| `W` | [ferramentas/sistemas/lib.py:15](../../ferramentas/sistemas/lib.py#L15) |
+| `to_web` | [ferramentas/sistemas/lib.py:20](../../ferramentas/sistemas/lib.py#L20) |
+| `_encode_normal` | [ferramentas/sistemas/lib.py:30](../../ferramentas/sistemas/lib.py#L30) |
+| `image_from_array` | [ferramentas/sistemas/lib.py:37](../../ferramentas/sistemas/lib.py#L37) |
+| `tex_twill` | [ferramentas/sistemas/lib.py:49](../../ferramentas/sistemas/lib.py#L49) |
+| `tex_kevlar` | [ferramentas/sistemas/lib.py:60](../../ferramentas/sistemas/lib.py#L60) |
+| `tex_brushed` | [ferramentas/sistemas/lib.py:69](../../ferramentas/sistemas/lib.py#L69) |
+| `tex_cast` | [ferramentas/sistemas/lib.py:76](../../ferramentas/sistemas/lib.py#L76) |
+| `tex_heat` | [ferramentas/sistemas/lib.py:85](../../ferramentas/sistemas/lib.py#L85) |
+| `tex_brake_disc` | [ferramentas/sistemas/lib.py:98](../../ferramentas/sistemas/lib.py#L98) |
+| `tex_fins` | [ferramentas/sistemas/lib.py:120](../../ferramentas/sistemas/lib.py#L120) |
+| `tex_honeycomb` | [ferramentas/sistemas/lib.py:127](../../ferramentas/sistemas/lib.py#L127) |
+| `tex_kapton` | [ferramentas/sistemas/lib.py:137](../../ferramentas/sistemas/lib.py#L137) |
+| `tex_braid` | [ferramentas/sistemas/lib.py:143](../../ferramentas/sistemas/lib.py#L143) |
+| `tex_display` | [ferramentas/sistemas/lib.py:150](../../ferramentas/sistemas/lib.py#L150) |
+| `material` | [ferramentas/sistemas/lib.py:179](../../ferramentas/sistemas/lib.py#L179) |
+| `tex_node` | [ferramentas/sistemas/lib.py:212](../../ferramentas/sistemas/lib.py#L212) |
+| `Materials` | [ferramentas/sistemas/lib.py:239](../../ferramentas/sistemas/lib.py#L239) |
+| `__init__` | [ferramentas/sistemas/lib.py:241](../../ferramentas/sistemas/lib.py#L241) |
+| `Context` | [ferramentas/sistemas/lib.py:320](../../ferramentas/sistemas/lib.py#L320) |
+| `__init__` | [ferramentas/sistemas/lib.py:321](../../ferramentas/sistemas/lib.py#L321) |
+| `system` | [ferramentas/sistemas/lib.py:328](../../ferramentas/sistemas/lib.py#L328) |
+| `register` | [ferramentas/sistemas/lib.py:338](../../ferramentas/sistemas/lib.py#L338) |
+| `_link` | [ferramentas/sistemas/lib.py:366](../../ferramentas/sistemas/lib.py#L366) |
+| `shade_smooth` | [ferramentas/sistemas/lib.py:369](../../ferramentas/sistemas/lib.py#L369) |
+| `bevel` | [ferramentas/sistemas/lib.py:383](../../ferramentas/sistemas/lib.py#L383) |
+| `box_uv` | [ferramentas/sistemas/lib.py:391](../../ferramentas/sistemas/lib.py#L391) |
+| `mesh_object` | [ferramentas/sistemas/lib.py:411](../../ferramentas/sistemas/lib.py#L411) |
+| `bm_to_object` | [ferramentas/sistemas/lib.py:423](../../ferramentas/sistemas/lib.py#L423) |
+| `set_material` | [ferramentas/sistemas/lib.py:432](../../ferramentas/sistemas/lib.py#L432) |
+| `orient` | [ferramentas/sistemas/lib.py:438](../../ferramentas/sistemas/lib.py#L438) |
+| `cube` | [ferramentas/sistemas/lib.py:447](../../ferramentas/sistemas/lib.py#L447) |
+| `W_rot` | [ferramentas/sistemas/lib.py:460](../../ferramentas/sistemas/lib.py#L460) |
+| `cyl` | [ferramentas/sistemas/lib.py:466](../../ferramentas/sistemas/lib.py#L466) |
+| `tube_cyl` | [ferramentas/sistemas/lib.py:475](../../ferramentas/sistemas/lib.py#L475) |
+| `sphere` | [ferramentas/sistemas/lib.py:496](../../ferramentas/sistemas/lib.py#L496) |
+| `torus` | [ferramentas/sistemas/lib.py:504](../../ferramentas/sistemas/lib.py#L504) |
+| `catmull` | [ferramentas/sistemas/lib.py:512](../../ferramentas/sistemas/lib.py#L512) |
+| `_frames` | [ferramentas/sistemas/lib.py:529](../../ferramentas/sistemas/lib.py#L529) |
+| `sweep` | [ferramentas/sistemas/lib.py:554](../../ferramentas/sistemas/lib.py#L554) |
+| `airfoil` | [ferramentas/sistemas/lib.py:611](../../ferramentas/sistemas/lib.py#L611) |
+| `loft` | [ferramentas/sistemas/lib.py:628](../../ferramentas/sistemas/lib.py#L628) |
+| `lathe` | [ferramentas/sistemas/lib.py:653](../../ferramentas/sistemas/lib.py#L653) |
+| `helix` | [ferramentas/sistemas/lib.py:667](../../ferramentas/sistemas/lib.py#L667) |
+| `gear` | [ferramentas/sistemas/lib.py:677](../../ferramentas/sistemas/lib.py#L677) |
+| `ring` | [ferramentas/sistemas/lib.py:694](../../ferramentas/sistemas/lib.py#L694) |
+| `bolt_ring` | [ferramentas/sistemas/lib.py:729](../../ferramentas/sistemas/lib.py#L729) |
+| `join` | [ferramentas/sistemas/lib.py:752](../../ferramentas/sistemas/lib.py#L752) |
+| `mirror_x` | [ferramentas/sistemas/lib.py:778](../../ferramentas/sistemas/lib.py#L778) |
+| `both_sides` | [ferramentas/sistemas/lib.py:801](../../ferramentas/sistemas/lib.py#L801) |
+| `hexagon` | [ferramentas/sistemas/lib.py:805](../../ferramentas/sistemas/lib.py#L805) |
+| `rounded_rect` | [ferramentas/sistemas/lib.py:808](../../ferramentas/sistemas/lib.py#L808) |
+| `super_ellipse` | [ferramentas/sistemas/lib.py:816](../../ferramentas/sistemas/lib.py#L816) |
+| `shell` | [ferramentas/sistemas/lib.py:825](../../ferramentas/sistemas/lib.py#L825) |
+| `flow_ribbon` | [ferramentas/sistemas/lib.py:831](../../ferramentas/sistemas/lib.py#L831) |
+| `text_plate` | [ferramentas/sistemas/lib.py:835](../../ferramentas/sistemas/lib.py#L835) |
+| `centroid` | [ferramentas/sistemas/lib.py:851](../../ferramentas/sistemas/lib.py#L851) |
+| `auto_explode` | [ferramentas/sistemas/lib.py:862](../../ferramentas/sistemas/lib.py#L862) |
+| `build` | [ferramentas/sistemas/s01_aero.py:17](../../ferramentas/sistemas/s01_aero.py#L17) |
+| `tub_section` | [ferramentas/sistemas/s02_structure.py:21](../../ferramentas/sistemas/s02_structure.py#L21) |
+| `build` | [ferramentas/sistemas/s02_structure.py:27](../../ferramentas/sistemas/s02_structure.py#L27) |
+| `leg` | [ferramentas/sistemas/s03_suspension.py:37](../../ferramentas/sistemas/s03_suspension.py#L37) |
+| `mirror_side` | [ferramentas/sistemas/s03_suspension.py:40](../../ferramentas/sistemas/s03_suspension.py#L40) |
+| `rod_end` | [ferramentas/sistemas/s03_suspension.py:43](../../ferramentas/sistemas/s03_suspension.py#L43) |
+| `upright` | [ferramentas/sistemas/s03_suspension.py:47](../../ferramentas/sistemas/s03_suspension.py#L47) |
+| `corner` | [ferramentas/sistemas/s03_suspension.py:75](../../ferramentas/sistemas/s03_suspension.py#L75) |
+| `center_elements` | [ferramentas/sistemas/s03_suspension.py:118](../../ferramentas/sistemas/s03_suspension.py#L118) |
+| `build` | [ferramentas/sistemas/s03_suspension.py:139](../../ferramentas/sistemas/s03_suspension.py#L139) |
+| `build` | [ferramentas/sistemas/s04_steering.py:18](../../ferramentas/sistemas/s04_steering.py#L18) |
+| `arc` | [ferramentas/sistemas/s05_brakes.py:19](../../ferramentas/sistemas/s05_brakes.py#L19) |
+| `corner` | [ferramentas/sistemas/s05_brakes.py:26](../../ferramentas/sistemas/s05_brakes.py#L26) |
+| `build` | [ferramentas/sistemas/s05_brakes.py:73](../../ferramentas/sistemas/s05_brakes.py#L73) |
+| `bank_frame` | [ferramentas/sistemas/s06_power.py:25](../../ferramentas/sistemas/s06_power.py#L25) |
+| `add` | [ferramentas/sistemas/s06_power.py:31](../../ferramentas/sistemas/s06_power.py#L31) |
+| `build` | [ferramentas/sistemas/s06_power.py:34](../../ferramentas/sistemas/s06_power.py#L34) |
+| `build` | [ferramentas/sistemas/s07_ers.py:19](../../ferramentas/sistemas/s07_ers.py#L19) |
+| `core` | [ferramentas/sistemas/s08_cooling.py:16](../../ferramentas/sistemas/s08_cooling.py#L16) |
+| `hose` | [ferramentas/sistemas/s08_cooling.py:32](../../ferramentas/sistemas/s08_cooling.py#L32) |
+| `build` | [ferramentas/sistemas/s08_cooling.py:39](../../ferramentas/sistemas/s08_cooling.py#L39) |
+| `bladder_sections` | [ferramentas/sistemas/s09_fuel.py:16](../../ferramentas/sistemas/s09_fuel.py#L16) |
+| `build` | [ferramentas/sistemas/s09_fuel.py:22](../../ferramentas/sistemas/s09_fuel.py#L22) |
+| `rr_section` | [ferramentas/sistemas/s10_transmission.py:25](../../ferramentas/sistemas/s10_transmission.py#L25) |
+| `build` | [ferramentas/sistemas/s10_transmission.py:28](../../ferramentas/sistemas/s10_transmission.py#L28) |
+| `build` | [ferramentas/sistemas/s11_safety.py:17](../../ferramentas/sistemas/s11_safety.py#L17) |
+| `strap` | [ferramentas/sistemas/s12_cockpit.py:17](../../ferramentas/sistemas/s12_cockpit.py#L17) |
+| `build` | [ferramentas/sistemas/s12_cockpit.py:20](../../ferramentas/sistemas/s12_cockpit.py#L20) |
+| `seat_section` | [ferramentas/sistemas/s12_cockpit.py:25](../../ferramentas/sistemas/s12_cockpit.py#L25) |
+| `build` | [ferramentas/sistemas/s13_wheel.py:16](../../ferramentas/sistemas/s13_wheel.py#L16) |
+| `build` | [ferramentas/sistemas/s14_sensors.py:19](../../ferramentas/sistemas/s14_sensors.py#L19) |
 | `matrices` | [ferramentas/validate-kit.py:7](../../ferramentas/validate-kit.py#L7) |
+| `replaceRequired` | [web/build.cjs:8](../../web/build.cjs#L8) |
+| `reply` | [web/server.cjs:17](../../web/server.cjs#L17) |
 | `aerodynamicTest` | [web/src/aero-physics.mjs:2](../../web/src/aero-physics.mjs#L2) |
-| `closeEngine` | [web/src/app-v2.js:35](../../web/src/app-v2.js#L35) |
-| `setFlowXray` | [web/src/app-v2.js:37](../../web/src/app-v2.js#L37) |
-| `moveCamera` | [web/src/app-v2.js:45](../../web/src/app-v2.js#L45) |
-| `view` | [web/src/app-v2.js:46](../../web/src/app-v2.js#L46) |
-| `resize` | [web/src/app-v2.js:48](../../web/src/app-v2.js#L48) |
-| `refreshSelection` | [web/src/app-v2.js:50](../../web/src/app-v2.js#L50) |
-| `select` | [web/src/app-v2.js:51](../../web/src/app-v2.js#L51) |
-| `focusPart` | [web/src/app-v2.js:52](../../web/src/app-v2.js#L52) |
-| `assemblyTo` | [web/src/app-v2.js:53](../../web/src/app-v2.js#L53) |
+| `closeEngine` | [web/src/app-v2.js:36](../../web/src/app-v2.js#L36) |
+| `setFlowXray` | [web/src/app-v2.js:38](../../web/src/app-v2.js#L38) |
+| `moveCamera` | [web/src/app-v2.js:46](../../web/src/app-v2.js#L46) |
+| `setCarSelectionEnabled` | [web/src/app-v2.js:47](../../web/src/app-v2.js#L47) |
+| `syncSystemMode` | [web/src/app-v2.js:48](../../web/src/app-v2.js#L48) |
+| `view` | [web/src/app-v2.js:50](../../web/src/app-v2.js#L50) |
+| `resize` | [web/src/app-v2.js:52](../../web/src/app-v2.js#L52) |
+| `refreshSelection` | [web/src/app-v2.js:54](../../web/src/app-v2.js#L54) |
+| `select` | [web/src/app-v2.js:55](../../web/src/app-v2.js#L55) |
+| `focusPart` | [web/src/app-v2.js:56](../../web/src/app-v2.js#L56) |
+| `assemblyTo` | [web/src/app-v2.js:57](../../web/src/app-v2.js#L57) |
 | `applyInteiaBranding` | [web/src/branding.js:5](../../web/src/branding.js#L5) |
 | `project` | [web/src/branding.js:25](../../web/src/branding.js#L25) |
 | `rimPatch` | [web/src/car-look.js:36](../../web/src/car-look.js#L36) |
@@ -299,16 +438,47 @@ Gerado por `python ferramentas/mapear.py`. Todos os arquivos do escopo estão li
 | `bake` | [web/src/surface-library.js:28](../../web/src/surface-library.js#L28) |
 | `transformed` | [web/src/surface-library.js:67](../../web/src/surface-library.js#L67) |
 | `applyTo` | [web/src/surface-library.js:68](../../web/src/surface-library.js#L68) |
+| `SYSTEM_CATALOG` | [web/src/systems.js:9](../../web/src/systems.js#L9) |
+| `SYSTEM_IDS` | [web/src/systems.js:25](../../web/src/systems.js#L25) |
+| `SYSTEMS_ASSET` | [web/src/systems.js:26](../../web/src/systems.js#L26) |
+| `HIDE_GROUPS` | [web/src/systems.js:27](../../web/src/systems.js#L27) |
+| `FLOW_SPEEDS` | [web/src/systems.js:28](../../web/src/systems.js#L28) |
+| `advanceLocalSpin` | [web/src/systems.js:31](../../web/src/systems.js#L31) |
+| `flowTexture` | [web/src/systems.js:34](../../web/src/systems.js#L34) |
+| `createSystems` | [web/src/systems.js:42](../../web/src/systems.js#L42) |
+| `attachPart` | [web/src/systems.js:71](../../web/src/systems.js#L71) |
+| `prepareMaterials` | [web/src/systems.js:83](../../web/src/systems.js#L83) |
+| `distribute` | [web/src/systems.js:92](../../web/src/systems.js#L92) |
+| `load` | [web/src/systems.js:109](../../web/src/systems.js#L109) |
+| `applyEra` | [web/src/systems.js:124](../../web/src/systems.js#L124) |
+| `applyCovers` | [web/src/systems.js:125](../../web/src/systems.js#L125) |
+| `applyExplode` | [web/src/systems.js:126](../../web/src/systems.js#L126) |
+| `materialFor` | [web/src/systems.js:129](../../web/src/systems.js#L129) |
+| `applyFlows` | [web/src/systems.js:130](../../web/src/systems.js#L130) |
+| `applySchematic` | [web/src/systems.js:131](../../web/src/systems.js#L131) |
+| `highlight` | [web/src/systems.js:133](../../web/src/systems.js#L133) |
+| `setPicked` | [web/src/systems.js:140](../../web/src/systems.js#L140) |
+| `setERSContext` | [web/src/systems.js:142](../../web/src/systems.js#L142) |
+| `updateUI` | [web/src/systems.js:143](../../web/src/systems.js#L143) |
+| `objectFor` | [web/src/systems.js:148](../../web/src/systems.js#L148) |
+| `geometryBounds` | [web/src/systems.js:149](../../web/src/systems.js#L149) |
+| `viewportAspect` | [web/src/systems.js:150](../../web/src/systems.js#L150) |
+| `frame` | [web/src/systems.js:152](../../web/src/systems.js#L152) |
+| `show` | [web/src/systems.js:153](../../web/src/systems.js#L153) |
+| `view` | [web/src/systems.js:154](../../web/src/systems.js#L154) |
+| `captureGhost` | [web/src/systems.js:155](../../web/src/systems.js#L155) |
+| `setGhost` | [web/src/systems.js:156](../../web/src/systems.js#L156) |
+| `setEnabled` | [web/src/systems.js:157](../../web/src/systems.js#L157) |
 | `createTunnelVisual` | [web/src/tunnel-visual.js:4](../../web/src/tunnel-visual.js#L4) |
 | `box` | [web/src/tunnel-visual.js:9](../../web/src/tunnel-visual.js#L9) |
 | `createWindTunnel` | [web/src/wind-tunnel.js:4](../../web/src/wind-tunnel.js#L4) |
 | `calculate` | [web/src/wind-tunnel.js:21](../../web/src/wind-tunnel.js#L21) |
 | `drawChart` | [web/src/wind-tunnel.js:39](../../web/src/wind-tunnel.js#L39) |
 | `createWorkbench` | [web/src/workbench.js:4](../../web/src/workbench.js#L4) |
-| `frame` | [web/src/workbench.js:11](../../web/src/workbench.js#L11) |
-| `view` | [web/src/workbench.js:12](../../web/src/workbench.js#L12) |
-| `rebuild` | [web/src/workbench.js:20](../../web/src/workbench.js#L20) |
-| `refreshPanels` | [web/src/workbench.js:28](../../web/src/workbench.js#L28) |
-| `setTab` | [web/src/workbench.js:29](../../web/src/workbench.js#L29) |
-| `cockpit` | [web/src/workbench.js:38](../../web/src/workbench.js#L38) |
-| `downloadModel` | [web/src/workbench.js:44](../../web/src/workbench.js#L44) |
+| `frame` | [web/src/workbench.js:14](../../web/src/workbench.js#L14) |
+| `view` | [web/src/workbench.js:15](../../web/src/workbench.js#L15) |
+| `rebuild` | [web/src/workbench.js:23](../../web/src/workbench.js#L23) |
+| `refreshPanels` | [web/src/workbench.js:31](../../web/src/workbench.js#L31) |
+| `setTab` | [web/src/workbench.js:32](../../web/src/workbench.js#L32) |
+| `cockpit` | [web/src/workbench.js:42](../../web/src/workbench.js#L42) |
+| `downloadModel` | [web/src/workbench.js:48](../../web/src/workbench.js#L48) |

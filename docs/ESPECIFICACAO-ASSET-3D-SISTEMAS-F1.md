@@ -1,4 +1,5 @@
 # DIRETRIZES CANÔNICAS DE MODELAGEM 3D — SISTEMAS DO CARRO DE F1 (ANIMAGRAFFS)
+> **Estado em 16/09/2026:** a camada procedural em três.js descrita abaixo foi substituída por malhas geradas no Blender 5.2 (`ferramentas/gerar_sistemas.py`) e publicadas em `web/assets/sistemas-v1.glb`. O contrato atual (monoturbo dividido coaxial, MGU-H legado 2021, dois plenums e seis trompetas, refrigeração assimétrica, empacotamento célula → motor → câmbio) é verificado por `web/test-systems.mjs` sobre o manifesto do asset. Veja [SISTEMAS-3D.md](SISTEMAS-3D.md). Os trechos de código abaixo são diagnóstico histórico.
 > **Projeto-Alvo:** `INTEIA-laboratorio-3d` (`c:\Users\igorm\projetos\INTEIA-laboratorio-3d`)
 > **Servidor Local de Teste:** `http://127.0.0.1:5186/`
 > **Deploy de Produção:** [https://igormorais123.github.io/INTEIA-laboratorio-3d/web/](https://igormorais123.github.io/INTEIA-laboratorio-3d/web/)
