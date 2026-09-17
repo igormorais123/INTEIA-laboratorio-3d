@@ -77,15 +77,19 @@ Estes valores viram casos de teste.
 ## Arquitetura
 
 ```
-ferramentas/som/
+ferramentas/som/                (Node para rede e demos; Python 3 + numpy/scipy/soundfile para análise e modelo)
   referencias.json        URLs, licenças, autores e SHA-256 das gravações de referência
   baixar-referencias.mjs  baixa as referências para ferramentas/som/.referencias/ (fora do Git)
-  analisar-referencias.mjs  order tracking → envelope harmônico por faixa de RPM → alvos-timbre.json
-  modelo-fisico.mjs       modelo de alta resolução (offline)
-  gerar-banco.mjs         calibra o modelo pelos alvos e grava o banco de loops
+  decodificar.py          Ogg/MP3 → cache mono 48 kHz em .cache/ (fora do Git)
+  analisar_referencias.py order tracking → envelope harmônico por faixa de RPM → alvos-timbre.json
+  modelo_fisico.py        modelo físico a 192 kHz (guias de onda como filtros IIR), loops fechados
+  calibrar.py             evolução diferencial + EQ por ponto → perfis/<motor>.json e calibracao-<motor>.json
+  gerar_banco.py          renderiza o banco de loops (.bin + manifesto) em web/assets
+  renderizar_demos.mjs    WAVs de audição em .demos/ (fora do Git) usando os módulos do site
   alvos-timbre.json       números extraídos das referências (versionado; não contém áudio)
 
 web/src/sound/
+  bank-format.mjs         manifesto + .bin PCM Int16 → banco em memória; validação e SHA-256
   tuning.mjs              RPM → Hz → nota/cents (puro)
   engine-profiles.mjs     perfis V6 e V12 (dados)
   rpm-curve.mjs           curva RPM × tempo: pontos, interpolação PCHIP, carga derivada, limite físico (puro)
@@ -198,7 +202,7 @@ Trocar o motor dentro do carro; V12 na bancada Sistemas; gravações reais tocad
 | `web/test-rpm-curve.mjs` | PCHIP sem overshoot; ponto inicial fixo em (0,0); pontos não cruzam no tempo; carga pelo sinal da inclinação; limite físico aplicado e marcado; corte no limite do perfil; partida abaixo da marcha lenta; ida e volta do JSON |
 | `web/test-sound-player.mjs` | Com banco de teste: f0 medida a ±1% da fórmula em 5 RPMs por motor; crossfade entre pontos vizinhos sem queda de RMS maior que 1 dB (sem phasing); ordem de ignição; limitador corta ciclos inteiros; sem NaN; pico ≤ −1 dBFS |
 | `web/test-sound-bank.mjs` | Manifesto dos bancos: cobertura de RPM e cargas, ciclos inteiros, SHA-256, início alinhado ao cilindro 1 (correlação) |
-| `ferramentas/som/test-calibracao.mjs` | Distância log-espectral entre banco gerado e alvos abaixo do limite definido na primeira calibração; o limite fica registrado no manifesto |
+| `ferramentas/som/test_calibracao.py` (+ `test_analise.py`, `test_modelo.py`, `test_decodificar.py`) | Distância log-espectral entre banco gerado e alvos abaixo do limite definido na calibração (registrado no manifesto); order tracking, modelo físico e reamostragem |
 | `web/test-v12.mjs` | Manifesto do V12: 12 pistões, 12 bielas, 48 válvulas, 12 trompetas, 6 moentes; 20 ciclos de animação sem deriva |
 | Navegador | Aba 07 abre; os dois motores tocam a rampa padrão 0–12.000; f0 medida ≈ prevista ao longo da curva; editar pontos com mouse e teclado; grade de notas muda ao trocar V6 ↔ V12; cilindros sincronizados; 0 erros no console; layout a 400 px |
 

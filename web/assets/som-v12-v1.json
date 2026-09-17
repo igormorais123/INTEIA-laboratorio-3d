@@ -1,0 +1,370 @@
+{
+ "version": 1,
+ "engine": "v12_90s",
+ "label": "V12 anos 90 (3,5 L aspirado, 65°)",
+ "generatedAt": "2026-09-17T04:28:36+00:00",
+ "sampleRate": 48000,
+ "format": "pcm_s16le",
+ "bin": "som-v12-v1.bin",
+ "bytes": 2418068,
+ "sha256": "cac7c9e19e3a7e8ad4c8b5afaf18315544a888153654beecfe18ac4dfd6c5dde",
+ "generator": {
+  "script": "ferramentas/som/gerar_banco.py",
+  "sha256": "e2fadcfea9d2b6c2a811b4c5a52c5d17d90f13195aeeddc0ef7c0e25f02cf70d",
+  "model": "ferramentas/som/modelo_fisico.py"
+ },
+ "calibration": {
+  "file": "ferramentas/som/calibracao-v12_90s.json",
+  "maxBandDistanceDb": 9.08,
+  "acceptLimitDb": 9.58
+ },
+ "profile": {
+  "cylinders": 12,
+  "firingOrder": [
+   1,
+   7,
+   5,
+   11,
+   3,
+   9,
+   6,
+   12,
+   2,
+   8,
+   4,
+   10
+  ],
+  "idleRpm": 4000,
+  "limitRpm": 17000
+ },
+ "normalization": {
+  "peakDbfs": -3.0,
+  "starterPeakDbfs": -9.0
+ },
+ "loops": [
+  {
+   "rpm": 4000.0,
+   "load": "on",
+   "samplesPerCycle": 1440,
+   "cycles": 20,
+   "offset": 0,
+   "frames": 28800
+  },
+  {
+   "rpm": 4000.0,
+   "load": "off",
+   "samplesPerCycle": 1440,
+   "cycles": 20,
+   "offset": 57600,
+   "frames": 28800
+  },
+  {
+   "rpm": 4321.08027,
+   "load": "on",
+   "samplesPerCycle": 1333,
+   "cycles": 22,
+   "offset": 115200,
+   "frames": 29326
+  },
+  {
+   "rpm": 4321.08027,
+   "load": "off",
+   "samplesPerCycle": 1333,
+   "cycles": 22,
+   "offset": 173852,
+   "frames": 29326
+  },
+  {
+   "rpm": 4663.967611,
+   "load": "on",
+   "samplesPerCycle": 1235,
+   "cycles": 24,
+   "offset": 232504,
+   "frames": 29640
+  },
+  {
+   "rpm": 4663.967611,
+   "load": "off",
+   "samplesPerCycle": 1235,
+   "cycles": 24,
+   "offset": 291784,
+   "frames": 29640
+  },
+  {
+   "rpm": 5039.370079,
+   "load": "on",
+   "samplesPerCycle": 1143,
+   "cycles": 26,
+   "offset": 351064,
+   "frames": 29718
+  },
+  {
+   "rpm": 5039.370079,
+   "load": "off",
+   "samplesPerCycle": 1143,
+   "cycles": 26,
+   "offset": 410500,
+   "frames": 29718
+  },
+  {
+   "rpm": 5444.234405,
+   "load": "on",
+   "samplesPerCycle": 1058,
+   "cycles": 28,
+   "offset": 469936,
+   "frames": 29624
+  },
+  {
+   "rpm": 5444.234405,
+   "load": "off",
+   "samplesPerCycle": 1058,
+   "cycles": 28,
+   "offset": 529184,
+   "frames": 29624
+  },
+  {
+   "rpm": 5877.55102,
+   "load": "on",
+   "samplesPerCycle": 980,
+   "cycles": 30,
+   "offset": 588432,
+   "frames": 29400
+  },
+  {
+   "rpm": 5877.55102,
+   "load": "off",
+   "samplesPerCycle": 980,
+   "cycles": 30,
+   "offset": 647232,
+   "frames": 29400
+  },
+  {
+   "rpm": 6350.606395,
+   "load": "on",
+   "samplesPerCycle": 907,
+   "cycles": 32,
+   "offset": 706032,
+   "frames": 29024
+  },
+  {
+   "rpm": 6350.606395,
+   "load": "off",
+   "samplesPerCycle": 907,
+   "cycles": 32,
+   "offset": 764080,
+   "frames": 29024
+  },
+  {
+   "rpm": 6857.142857,
+   "load": "on",
+   "samplesPerCycle": 840,
+   "cycles": 35,
+   "offset": 822128,
+   "frames": 29400
+  },
+  {
+   "rpm": 6857.142857,
+   "load": "off",
+   "samplesPerCycle": 840,
+   "cycles": 35,
+   "offset": 880928,
+   "frames": 29400
+  },
+  {
+   "rpm": 7403.598972,
+   "load": "on",
+   "samplesPerCycle": 778,
+   "cycles": 38,
+   "offset": 939728,
+   "frames": 29564
+  },
+  {
+   "rpm": 7403.598972,
+   "load": "off",
+   "samplesPerCycle": 778,
+   "cycles": 38,
+   "offset": 998856,
+   "frames": 29564
+  },
+  {
+   "rpm": 8000.0,
+   "load": "on",
+   "samplesPerCycle": 720,
+   "cycles": 40,
+   "offset": 1057984,
+   "frames": 28800
+  },
+  {
+   "rpm": 8000.0,
+   "load": "off",
+   "samplesPerCycle": 720,
+   "cycles": 40,
+   "offset": 1115584,
+   "frames": 28800
+  },
+  {
+   "rpm": 8635.682159,
+   "load": "on",
+   "samplesPerCycle": 667,
+   "cycles": 44,
+   "offset": 1173184,
+   "frames": 29348
+  },
+  {
+   "rpm": 8635.682159,
+   "load": "off",
+   "samplesPerCycle": 667,
+   "cycles": 44,
+   "offset": 1231880,
+   "frames": 29348
+  },
+  {
+   "rpm": 9320.38835,
+   "load": "on",
+   "samplesPerCycle": 618,
+   "cycles": 47,
+   "offset": 1290576,
+   "frames": 29046
+  },
+  {
+   "rpm": 9320.38835,
+   "load": "off",
+   "samplesPerCycle": 618,
+   "cycles": 47,
+   "offset": 1348668,
+   "frames": 29046
+  },
+  {
+   "rpm": 10069.93007,
+   "load": "on",
+   "samplesPerCycle": 572,
+   "cycles": 51,
+   "offset": 1406760,
+   "frames": 29172
+  },
+  {
+   "rpm": 10069.93007,
+   "load": "off",
+   "samplesPerCycle": 572,
+   "cycles": 51,
+   "offset": 1465104,
+   "frames": 29172
+  },
+  {
+   "rpm": 10888.468809,
+   "load": "on",
+   "samplesPerCycle": 529,
+   "cycles": 55,
+   "offset": 1523448,
+   "frames": 29095
+  },
+  {
+   "rpm": 10888.468809,
+   "load": "off",
+   "samplesPerCycle": 529,
+   "cycles": 55,
+   "offset": 1581638,
+   "frames": 29095
+  },
+  {
+   "rpm": 11755.102041,
+   "load": "on",
+   "samplesPerCycle": 490,
+   "cycles": 59,
+   "offset": 1639828,
+   "frames": 28910
+  },
+  {
+   "rpm": 11755.102041,
+   "load": "off",
+   "samplesPerCycle": 490,
+   "cycles": 59,
+   "offset": 1697648,
+   "frames": 28910
+  },
+  {
+   "rpm": 12687.22467,
+   "load": "on",
+   "samplesPerCycle": 454,
+   "cycles": 64,
+   "offset": 1755468,
+   "frames": 29056
+  },
+  {
+   "rpm": 12687.22467,
+   "load": "off",
+   "samplesPerCycle": 454,
+   "cycles": 64,
+   "offset": 1813580,
+   "frames": 29056
+  },
+  {
+   "rpm": 13714.285714,
+   "load": "on",
+   "samplesPerCycle": 420,
+   "cycles": 69,
+   "offset": 1871692,
+   "frames": 28980
+  },
+  {
+   "rpm": 13714.285714,
+   "load": "off",
+   "samplesPerCycle": 420,
+   "cycles": 69,
+   "offset": 1929652,
+   "frames": 28980
+  },
+  {
+   "rpm": 14807.197943,
+   "load": "on",
+   "samplesPerCycle": 389,
+   "cycles": 75,
+   "offset": 1987612,
+   "frames": 29175
+  },
+  {
+   "rpm": 14807.197943,
+   "load": "off",
+   "samplesPerCycle": 389,
+   "cycles": 75,
+   "offset": 2045962,
+   "frames": 29175
+  },
+  {
+   "rpm": 16000.0,
+   "load": "on",
+   "samplesPerCycle": 360,
+   "cycles": 80,
+   "offset": 2104312,
+   "frames": 28800
+  },
+  {
+   "rpm": 16000.0,
+   "load": "off",
+   "samplesPerCycle": 360,
+   "cycles": 80,
+   "offset": 2161912,
+   "frames": 28800
+  },
+  {
+   "rpm": 17041.420118,
+   "load": "on",
+   "samplesPerCycle": 338,
+   "cycles": 86,
+   "offset": 2219512,
+   "frames": 29068
+  },
+  {
+   "rpm": 17041.420118,
+   "load": "off",
+   "samplesPerCycle": 338,
+   "cycles": 86,
+   "offset": 2277648,
+   "frames": 29068
+  }
+ ],
+ "starter": {
+  "offset": 2335784,
+  "frames": 41142
+ }
+}

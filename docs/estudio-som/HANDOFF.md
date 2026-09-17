@@ -1,6 +1,6 @@
 # Estúdio de som V6 × V12 — passagem de trabalho (comece por aqui)
 
-**Última atualização:** 17/09/2026 · **Branch:** `estudio-som-v12` · **Dono do projeto:** Igor Morais (aprova timbre, merge e publicação)
+**Última atualização:** 17/09/2026 (Plano 2 concluído; aguardando audição do dono) · **Branch:** `estudio-som-v12` · **Dono do projeto:** Igor Morais (aprova timbre, merge e publicação)
 
 Este documento existe para que outra IA, em outro computador, continue o trabalho sem precisar do histórico da conversa.
 
@@ -33,9 +33,10 @@ Documentos: especificação `docs/superpowers/specs/2026-09-16-estudio-som-v12-d
 |---|---|
 | Especificação | Escrita e aprovada pelo dono ("sim, manda ver") |
 | **Plano 1 — núcleo** (`docs/superpowers/plans/2026-09-16-estudio-som-1-nucleo.md`) | **Concluído** e commitado: `web/src/sound/tuning.mjs`, `engine-profiles.mjs`, `rpm-curve.mjs`, `pitch.mjs`, `phase-player.mjs`, `web/test-fixtures/sound-bank.mjs`, testes `test-tuning.mjs`, `test-rpm-curve.mjs`, `test-sound-player.mjs` no `npm test` |
-| Plano 2 — bancos calibrados | Roteiro detalhado pronto; **próximo passo** |
+| **Plano 2 — bancos calibrados** (`docs/superpowers/plans/2026-09-17-estudio-som-2-bancos.md`) | **Concluído** em 17/09/2026: `web/assets/som-v12-v1.bin/.json` (20 pontos, 2,42 MB) e `som-v6-v1.bin/.json` (19 pontos, 2,30 MB), `web/src/sound/bank-format.mjs`, `detectFiringHz` em `pitch.mjs`, `web/test-sound-bank.mjs` no `npm test`; pipeline em `ferramentas/som/` (Python + Node); `docs/ESTUDIO-SOM.md` |
+| **Portão do dono** | **Pendente.** Demos em `ferramentas/som/.demos/` (24 WAVs: presets, rotações fixas e varredura por motor). Regenerar com `node ferramentas/som/renderizar_demos.mjs` |
 | Plano 3 — V12 3D | Roteiro pronto |
-| Plano 4 — aba 07 Som | Roteiro pronto |
+| Plano 4 — aba 07 Som | Roteiro pronto; pode começar com os bancos reais. O afinador deve usar `detectFiringHz` (soma harmônica), não o YIN, porque a ordem de bancada do V12 enviesa o YIN em ~1 % |
 | Referências de áudio | Baixadas e conferidas (SHA-256 no JSON); **não versionadas** |
 | Produção | Nada publicado. O site em produção não tem o estúdio |
 
@@ -52,16 +53,17 @@ npm ci
 npm test          # deve terminar com as linhas "Afinação", "Curva RPM" e "Reprodutor" OK
 ```
 
-Requisitos: Node ≥ 24; para o Plano 2, Python 3 com `numpy` e `scipy`; para o Plano 3, Blender 5.2 (ver `docs/BLENDER.md` e `docs/OUTRO-PC.md`). Se houver `ffmpeg` no PC, ele pode substituir os decodificadores WASM do Plano 2.
+Requisitos: Node ≥ 24; para regenerar os bancos, Python 3.13+ com `numpy`, `scipy` e `soundfile` num venv em `ferramentas/som/.venv` (`requirements.txt`; o `soundfile` decodifica Ogg e MP3 sem ffmpeg); para o Plano 3, Blender 5.2 (ver `docs/BLENDER.md` e `docs/OUTRO-PC.md`). Sequência completa em `docs/ESTUDIO-SOM.md`.
 
 ## 5. O que fazer, em ordem
 
-1. Ler a especificação, `PESQUISA.md` e o roteiro.
-2. **Plano 2:** expandir a seção do roteiro num plano completo (skill `superpowers:writing-plans`), prototipando e validando o código antes, como no Plano 1. Executar. Gerar os demos em `ferramentas/som/.demos/`.
-3. **Portão do dono:** ele ouve os demos (V12 e V6, presets e rotações fixas) ao lado das referências. Só seguir com aprovação; se reprovar, iterar modelo/calibração.
-4. **Plano 4** (a aba) — pode começar antes do fim do Plano 2 usando o banco sintético de teste.
-5. **Plano 3** (V12 3D).
-6. Abrir PR do branch `estudio-som-v12` para `main`, com verificação no navegador. Merge e publicação (`docs/PUBLICACAO.md`, ChatGPT Sites) **somente com autorização do dono**.
+1. Ler a especificação, `PESQUISA.md`, o roteiro, o plano do Plano 2 e `docs/ESTUDIO-SOM.md`.
+2. **Portão do dono (agora):** ele ouve `ferramentas/som/.demos/*.wav` ao lado das referências em `.referencias/` (as varreduras `*-varredura-*.wav` são as mais reveladoras). Se aprovar, seguir. Se reprovar, iterar em `modelo_fisico.py` (estrutura) ou `calibrar.py`/`alvos-timbre.json` (alvos e métrica), regenerar bancos e demos e voltar a este passo. Registrar o veredito e o que mudou em `docs/ESTUDIO-SOM.md`.
+3. **Plano 4** (a aba) com os bancos reais: `loadBank` de `bank-format.mjs`, worklet em volta de `phase-player.mjs`, camadas turbo/MGU-K do V6 e estalos ao aliviar em tempo real, afinador com `detectFiringHz`, créditos das referências visíveis.
+4. **Plano 3** (V12 3D).
+5. Abrir PR do branch `estudio-som-v12` para `main`, com verificação no navegador. Merge e publicação (`docs/PUBLICACAO.md`, ChatGPT Sites — único destino de deploy; o GitHub Actions foi removido) **somente com autorização do dono**.
+
+Lições do Plano 2 que valem para quem iterar o som: (a) a ordem de bancada (cilindros/4) é forte em motores com coletor por bancada, e o V6 turbo não a tem; (b) bancadas idênticas cancelam essa ordem no modelo — a assimetria do ouvinte (`bankBalance`, `bankDelayMs`) é obrigatória; (c) o ganho por rotação entra depois da saturação; (d) medir ordens por soma de potência com janela proporcional ao chirp; (e) alinhar rotações vizinhas e as duas cargas por correlação depois do render, porque perto de ressonâncias o pulso do cilindro 1 sozinho não garante crossfade sem phasing; (f) o pente IIR em blocos de D amostras é 5× mais rápido que o denominador denso.
 
 ## 6. Como o trabalho foi coordenado (repetir se quiser)
 
@@ -72,6 +74,7 @@ Requisitos: Node ≥ 24; para o Plano 2, Python 3 com `numpy` e `scipy`; para o 
   ```
 - A coordenadora revisa: compara arquivos com o plano, roda os testes ela mesma, confere mutações e só então faz o commit (mensagem cita o executor).
 - Tarefas de pesquisa e desenvolvimento (Plano 2: modelo físico e calibração) são adequadas ao `gpt-5.6-sol` alto, com critérios objetivos de aceite (distâncias espectrais, f0 medida) definidos antes.
+- No segundo PC (64 GB, 24 núcleos, 17/09/2026) o Plano 2 foi executado diretamente pela IA coordenadora, sem executores Codex: a calibração roda com 12 processos (`--workers`); `nohup` no Git Bash deixou um processo órfão com a saída presa no buffer — usar `python -u` e conferir `Get-CimInstance Win32_Process` antes de relançar.
 - **Problema visto:** o PC original tinha 15,6 GB de RAM com ~1 GB livre (Chrome com ~3 GB); uma execução do Codex foi morta por falta de memória e deixou um `codex exec` órfão. Verifique processos órfãos após interrupções e não rode vários executores em paralelo com pouca memória.
 
 ## 7. Regras do projeto que não podem ser quebradas
