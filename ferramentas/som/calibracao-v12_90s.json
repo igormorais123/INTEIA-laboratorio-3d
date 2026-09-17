@@ -1,7 +1,7 @@
 {
  "version": 1,
  "engine": "v12_90s",
- "generatedAt": "2026-09-17T04:28:31+00:00",
+ "generatedAt": "2026-09-17T15:27:51+00:00",
  "targetClass": "V12",
  "targetsSha": "2026-09-17T03:57:22+00:00",
  "calibratedParams": [
@@ -26,6 +26,12 @@
   "valveLevel",
   "structureLevel",
   "drive",
+  "jetNoise",
+  "flowNoise",
+  "intakeNoise",
+  "cycleAmpVar",
+  "cycleTimeVarDeg",
+  "cylinderSpread",
   "bankBalance",
   "bankDelayMs",
   "primarySpread"
@@ -45,30 +51,36 @@
   "offLoadNoise": 0.1,
   "turbineHz": 2000,
   "turbineHiss": 0,
-  "gasSpeed": 617.9949740495283,
-  "primaryLength": 0.3658109245481369,
-  "primaryReflection": 0.3689934804737719,
-  "primaryLossHz": 7373.259653534438,
-  "collectorLength": 0.6045535857729243,
-  "tailReflection": 0.22118372003857334,
-  "tailLossHz": 4575.58996514886,
-  "radiationHz": 245.41649710639157,
-  "mouthHz": 4447.3703746948295,
-  "evoDeg": 134.80438990918242,
-  "riseDeg": 29.952500583172085,
-  "decayDeg": 111.72285437132128,
-  "displacementLevel": 0.20470033688673506,
-  "pulseSkew": 0.6065276650144916,
-  "intakeMix": 0.04591790199158935,
-  "trumpetLength": 0.12953342909590965,
-  "airboxHz": 185.5297546593767,
-  "gearLevel": 0.0015493342010250988,
-  "valveLevel": 0.03441950586060104,
-  "structureLevel": 0.07322125858666087,
-  "drive": 1.9187758118043268,
-  "bankBalance": 0.5886163588156254,
-  "bankDelayMs": 0.11653425954074637,
-  "primarySpread": 0.027385369983229546
+  "gasSpeed": 534.0237739630193,
+  "primaryLength": 0.3506286201939466,
+  "primaryReflection": 0.2533871980393366,
+  "primaryLossHz": 3100.3966168978122,
+  "collectorLength": 0.8160258380611983,
+  "tailReflection": 0.2379642537547852,
+  "tailLossHz": 2460.985701673816,
+  "radiationHz": 287.2962213299878,
+  "mouthHz": 3721.0451345276497,
+  "evoDeg": 139.97511510156795,
+  "riseDeg": 12.250140149194046,
+  "decayDeg": 137.19618925766235,
+  "displacementLevel": 0.10238896163717084,
+  "pulseSkew": 0.36352128520494026,
+  "intakeMix": 0.08040111652862841,
+  "trumpetLength": 0.20022139210208728,
+  "airboxHz": 245.5394238702608,
+  "gearLevel": 0.003962744415309596,
+  "valveLevel": 0.014167458754760803,
+  "structureLevel": 0.033130827645405064,
+  "drive": 2.202684636409433,
+  "jetNoise": 0.1672892849621349,
+  "flowNoise": 0.006421849588562789,
+  "intakeNoise": 0.15495520384759795,
+  "cycleAmpVar": 0.0943357334642239,
+  "cycleTimeVarDeg": 2.040722752948574,
+  "cylinderSpread": 0.0822466355041055,
+  "bankBalance": 0.4285306096890307,
+  "bankDelayMs": 0.02628903506170066,
+  "primarySpread": 0.03728085389418916
  },
  "bands": [
   {
@@ -76,115 +88,125 @@
    "rpmMax": 5000,
    "weight": 1.0,
    "extrapolated": false,
-   "total": 7.04,
-   "harmonic": 7.04,
-   "hinge": 0.0,
+   "total": 7.56,
+   "harmonic": 6.31,
+   "hinge": 1.12,
+   "floor": 5.904079121999317,
    "orders": 20,
-   "afterEqDb": 4.48
+   "afterEqDb": 4.56
   },
   {
    "rpmMin": 5000,
    "rpmMax": 6000,
    "weight": 1.0,
    "extrapolated": false,
-   "total": 3.26,
-   "harmonic": 3.26,
-   "hinge": 0.19,
+   "total": 4.12,
+   "harmonic": 3.71,
+   "hinge": 3.59,
+   "floor": 0.17189685750054906,
    "orders": 20,
-   "afterEqDb": 2.37
+   "afterEqDb": 3.64
   },
   {
    "rpmMin": 6000,
    "rpmMax": 7000,
    "weight": 1.0,
    "extrapolated": false,
-   "total": 7.55,
-   "harmonic": 7.54,
-   "hinge": 0.84,
+   "total": 8.46,
+   "harmonic": 7.97,
+   "hinge": 3.02,
+   "floor": 3.4246428057750435,
    "orders": 20,
-   "afterEqDb": 6.11
+   "afterEqDb": 8.49
   },
   {
    "rpmMin": 7000,
    "rpmMax": 8000,
    "weight": 1.0,
    "extrapolated": false,
-   "total": 3.91,
-   "harmonic": 3.91,
-   "hinge": 0.0,
+   "total": 3.33,
+   "harmonic": 3.23,
+   "hinge": 1.46,
+   "floor": 0.573542646562089,
    "orders": 20,
-   "afterEqDb": 3.7
+   "afterEqDb": 3.03
   },
   {
    "rpmMin": 8000,
    "rpmMax": 9000,
    "weight": 1.0,
    "extrapolated": false,
-   "total": 1.64,
-   "harmonic": 1.64,
-   "hinge": 0.0,
+   "total": 3.14,
+   "harmonic": 3.02,
+   "hinge": 1.73,
+   "floor": 0.0664769232772926,
    "orders": 20,
-   "afterEqDb": 1.17
+   "afterEqDb": 3.45
   },
   {
    "rpmMin": 9000,
    "rpmMax": 10000,
    "weight": 1.0,
    "extrapolated": false,
-   "total": 1.88,
-   "harmonic": 1.72,
-   "hinge": 1.54,
+   "total": 2.42,
+   "harmonic": 2.31,
+   "hinge": 1.42,
+   "floor": 0.09331356477145647,
    "orders": 20,
-   "afterEqDb": 2.12
+   "afterEqDb": 2.38
   },
   {
    "rpmMin": 10000,
    "rpmMax": 11000,
    "weight": 1.0,
    "extrapolated": false,
-   "total": 3.38,
-   "harmonic": 3.3,
-   "hinge": 1.46,
+   "total": 4.62,
+   "harmonic": 4.34,
+   "hinge": 2.01,
+   "floor": 1.7453025613799227,
    "orders": 20,
-   "afterEqDb": 2.95
+   "afterEqDb": 5.88
   },
   {
    "rpmMin": 11000,
    "rpmMax": 12000,
    "weight": 0.6,
    "extrapolated": false,
-   "total": 6.06,
-   "harmonic": 5.81,
-   "hinge": 3.45,
+   "total": 8.43,
+   "harmonic": 8.03,
+   "hinge": 3.82,
+   "floor": 2.4276168363393964,
    "orders": 20,
-   "afterEqDb": 4.88
+   "afterEqDb": 8.4
   },
   {
    "rpmMin": 12000,
    "rpmMax": 13000,
    "weight": 0.5,
    "extrapolated": true,
-   "total": 6.72,
-   "harmonic": 6.65,
-   "hinge": 1.95,
+   "total": 9.48,
+   "harmonic": 8.94,
+   "hinge": 6.05,
+   "floor": 1.3010597834503272,
    "orders": 20,
-   "afterEqDb": 5.29
+   "afterEqDb": 8.21
   },
   {
    "rpmMin": 16000,
    "rpmMax": 17000,
    "weight": 0.5,
    "extrapolated": true,
-   "total": 3.27,
-   "harmonic": 2.4,
-   "hinge": 4.43,
+   "total": 4.03,
+   "harmonic": 2.84,
+   "hinge": 4.96,
+   "floor": 2.0646108824218885,
    "orders": 19,
-   "afterEqDb": 2.86
+   "afterEqDb": 4.17
   }
  ],
- "maxBandDistanceDb": 9.08,
- "maxPointDistanceDb": 9.08,
- "acceptLimitDb": 9.58,
+ "maxBandDistanceDb": 8.49,
+ "maxPointDistanceDb": 7.77,
+ "acceptLimitDb": 8.99,
  "eqByPoint": [
   {
    "rpm": 4000.0,
@@ -198,14 +220,14 @@
     14000.0
    ],
    "gainsDb": [
-    -2.76,
+    -3.33,
     0.0,
-    2.63,
-    3.52,
-    -1.8,
-    -2.36
+    3.14,
+    4.45,
+    -1.17,
+    -1.23
    ],
-   "distanceDb": 4.73
+   "distanceDb": 3.67
   },
   {
    "rpm": 4321.08,
@@ -219,14 +241,14 @@
     14000.0
    ],
    "gainsDb": [
-    -2.5,
+    -3.62,
     0.0,
-    2.2,
-    6.8,
-    1.33,
-    -1.2
+    3.26,
+    6.5,
+    -0.45,
+    -1.5
    ],
-   "distanceDb": 4.23
+   "distanceDb": 4.66
   },
   {
    "rpm": 4663.968,
@@ -240,14 +262,14 @@
     14000.0
    ],
    "gainsDb": [
-    -1.37,
+    -2.28,
     0.0,
-    4.56,
-    8.24,
-    0.43,
-    0.24
+    5.19,
+    4.58,
+    -0.24,
+    -0.51
    ],
-   "distanceDb": 3.83
+   "distanceDb": 3.57
   },
   {
    "rpm": 5039.37,
@@ -261,14 +283,14 @@
     14000.0
    ],
    "gainsDb": [
-    -0.52,
+    -0.68,
     0.0,
-    5.22,
-    4.51,
-    0.99,
-    0.97
+    5.21,
+    2.9,
+    0.66,
+    0.65
    ],
-   "distanceDb": 2.83
+   "distanceDb": 3.23
   },
   {
    "rpm": 5444.234,
@@ -282,14 +304,14 @@
     14000.0
    ],
    "gainsDb": [
-    -0.05,
+    -0.01,
     0.0,
-    4.63,
-    2.7,
-    1.21,
-    1.25
+    3.71,
+    0.44,
+    0.83,
+    1.28
    ],
-   "distanceDb": 2.21
+   "distanceDb": 3.43
   },
   {
    "rpm": 5877.551,
@@ -303,14 +325,14 @@
     14000.0
    ],
    "gainsDb": [
-    0.84,
+    0.87,
     0.0,
-    3.9,
-    3.72,
-    2.22,
-    2.17
+    1.53,
+    1.52,
+    3.3,
+    2.39
    ],
-   "distanceDb": 3.22
+   "distanceDb": 5.76
   },
   {
    "rpm": 6350.606,
@@ -324,14 +346,14 @@
     14000.0
    ],
    "gainsDb": [
-    2.08,
+    2.56,
     0.0,
-    3.56,
-    4.87,
-    7.04,
-    3.25
+    3.37,
+    5.07,
+    8.46,
+    3.95
    ],
-   "distanceDb": 4.82
+   "distanceDb": 7.48
   },
   {
    "rpm": 6857.143,
@@ -345,14 +367,14 @@
     14000.0
    ],
    "gainsDb": [
-    1.44,
+    2.11,
     0.0,
-    2.45,
-    3.53,
-    7.63,
-    1.79
+    2.06,
+    0.44,
+    8.45,
+    2.66
    ],
-   "distanceDb": 3.21
+   "distanceDb": 6.06
   },
   {
    "rpm": 7403.599,
@@ -366,14 +388,14 @@
     14000.0
    ],
    "gainsDb": [
-    -2.22,
-    -1.02,
+    -0.3,
+    0.23,
     0.0,
-    0.38,
-    0.27,
-    -2.36
+    -0.12,
+    2.69,
+    -0.35
    ],
-   "distanceDb": 3.5
+   "distanceDb": 2.49
   },
   {
    "rpm": 8000.0,
@@ -387,14 +409,14 @@
     14000.0
    ],
    "gainsDb": [
-    -1.15,
-    0.13,
+    -2.72,
+    -1.75,
     0.0,
-    2.85,
-    -0.38,
-    -1.15
+    -1.21,
+    -1.67,
+    -2.72
    ],
-   "distanceDb": 2.16
+   "distanceDb": 4.13
   },
   {
    "rpm": 8635.682,
@@ -408,14 +430,14 @@
     14000.0
    ],
    "gainsDb": [
-    -0.15,
-    0.02,
+    -2.91,
+    -3.36,
     0.0,
-    0.15,
-    -2.29,
-    -0.15
+    -2.69,
+    -0.86,
+    -2.91
    ],
-   "distanceDb": 1.17
+   "distanceDb": 3.1
   },
   {
    "rpm": 9320.388,
@@ -429,14 +451,14 @@
     14000.0
    ],
    "gainsDb": [
-    -0.96,
-    -1.14,
+    -1.52,
+    -2.53,
     0.0,
-    -1.68,
-    -1.57,
-    -0.96
+    -2.61,
+    0.64,
+    -1.52
    ],
-   "distanceDb": 1.64
+   "distanceDb": 3.4
   },
   {
    "rpm": 10069.93,
@@ -450,14 +472,14 @@
     14000.0
    ],
    "gainsDb": [
-    -1.53,
-    -1.71,
+    -1.77,
+    -2.18,
     0.0,
-    -0.15,
-    -2.51,
-    -1.53
+    -0.45,
+    -1.82,
+    -1.77
    ],
-   "distanceDb": 2.25
+   "distanceDb": 3.33
   },
   {
    "rpm": 10888.469,
@@ -471,14 +493,14 @@
     14000.0
    ],
    "gainsDb": [
-    -1.38,
-    -0.98,
+    -3.06,
+    -2.12,
     0.0,
-    -1.32,
-    -3.79,
-    -1.38
+    -0.58,
+    -4.03,
+    -3.06
    ],
-   "distanceDb": 3.12
+   "distanceDb": 6.82
   },
   {
    "rpm": 11755.102,
@@ -492,14 +514,14 @@
     14000.0
    ],
    "gainsDb": [
-    -1.69,
-    -0.31,
+    -1.43,
+    -0.39,
     0.0,
-    -2.51,
-    -4.25,
-    -1.69
+    -2.38,
+    -5.14,
+    -1.43
    ],
-   "distanceDb": 4.93
+   "distanceDb": 7.77
   },
   {
    "rpm": 12687.225,
@@ -513,14 +535,14 @@
     14000.0
    ],
    "gainsDb": [
-    -1.4,
-    0.12,
+    -0.95,
+    -0.87,
     0.0,
-    2.09,
-    -4.42,
-    -1.42
+    -4.09,
+    -5.5,
+    -0.8
    ],
-   "distanceDb": 3.87
+   "distanceDb": 7.6
   },
   {
    "rpm": 13714.286,
@@ -534,14 +556,14 @@
     14000.0
    ],
    "gainsDb": [
-    -0.49,
-    -0.07,
+    -0.87,
+    -0.81,
     0.0,
-    -0.41,
-    -2.5,
-    -0.71
+    -3.62,
+    -4.93,
+    -0.59
    ],
-   "distanceDb": 7.04
+   "distanceDb": 7.39
   },
   {
    "rpm": 14807.198,
@@ -555,14 +577,14 @@
     14000.0
    ],
    "gainsDb": [
-    0.63,
-    0.22,
+    -0.32,
+    -0.4,
     0.0,
-    -1.63,
-    -5.5,
-    -1.68
+    0.25,
+    -0.49,
+    1.49
    ],
-   "distanceDb": 9.08
+   "distanceDb": 6.96
   },
   {
    "rpm": 16000.0,
@@ -576,14 +598,14 @@
     14000.0
    ],
    "gainsDb": [
-    1.39,
-    0.89,
+    1.29,
+    0.75,
     0.0,
-    1.32,
-    -3.0,
-    0.48
+    0.07,
+    -1.66,
+    1.33
    ],
-   "distanceDb": 4.07
+   "distanceDb": 4.64
   },
   {
    "rpm": 17041.42,
@@ -597,14 +619,14 @@
     14000.0
    ],
    "gainsDb": [
-    0.85,
-    0.68,
+    0.43,
+    0.36,
     0.0,
-    1.89,
-    0.8,
-    2.09
+    1.57,
+    -0.11,
+    1.98
    ],
-   "distanceDb": 2.66
+   "distanceDb": 4.52
   }
  ],
  "inertia": {
@@ -615,6 +637,7 @@
  "notes": [
   "distância = RMS em dB nas ordens harmônicas suavizadas (3 pontos) + 0,5 × dobradiça nas demais ordens",
   "alvos abaixo do piso da gravação + 3 dB contam só como limite superior",
+  "0,7 × |piso entre harmônicos do render − piso da gravação| entra na distância (turbulência e variação ciclo a ciclo)",
   "bandas extrapoladas pesam 0,5; bandas com 5–19 quadros pesam 0,6"
  ]
 }

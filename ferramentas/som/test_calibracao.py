@@ -42,6 +42,10 @@ class Calibracao(unittest.TestCase):
             target, floor = target_at(bands, loop['rpm'])
             d = distance(measured, target, floor, cylinders)['total']
             worst = max(worst, d)
+            # Lição da primeira audição ("parece MIDI"): loops limpos demais soam sintéticos. O piso entre
+            # harmônicos do render fica a menos de 8 dB do piso medido nas gravações.
+            self.assertLess(abs(measured['noiseFloorDb'] - floor), 8.0,
+                            f"{engine} {loop['rpm']:.0f} RPM: piso {measured['noiseFloorDb']:.1f} dB vs gravação {floor:.1f} dB (harmônicos puros demais ou ruído em excesso)")
             self.assertLessEqual(d, limit + 1.0, f"{engine} {loop['rpm']:.0f} RPM: distância {d:.2f} dB acima do limite {limit} dB")
         self.assertGreaterEqual(checked, 3)
         self.assertLessEqual(worst, limit + 1.0)
