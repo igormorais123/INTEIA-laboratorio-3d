@@ -1,6 +1,6 @@
 # Estúdio de som: V6 2026 e V12 anos 90 — desenho
 
-**Data:** 16/09/2026 · **Branch:** `estudio-som-v12` · **Status:** aguardando revisão
+**Data:** 16/09/2026 · **Branch:** `estudio-som-v12` · **Status:** aprovado pelo dono; Plano 1 concluído; continuar por `docs/estudio-som/HANDOFF.md`
 
 ## Objetivo
 

@@ -30,3 +30,9 @@ ferramentas/sistemas/previews/
 /.impeccable/
 
 graphify-out/manifest.json
+
+# Estúdio de som: referências e artefatos locais (não versionar áudio)
+ferramentas/som/.referencias/
+ferramentas/som/.cache/
+ferramentas/som/.demos/
+ferramentas/som/node_modules/

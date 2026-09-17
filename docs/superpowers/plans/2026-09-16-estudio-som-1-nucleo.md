@@ -8,6 +8,8 @@
 
 **Tech Stack:** Node.js ≥ 24, ES modules, `node:assert/strict`, sem dependências novas.
 
+**Status:** concluído em 16–17/09/2026 (commits e2eda44, b8886cf, db923db). Continuação: `docs/estudio-som/HANDOFF.md`.
+
 **Spec:** `docs/superpowers/specs/2026-09-16-estudio-som-v12-design.md`
 
 ## Global Constraints
@@ -55,7 +57,7 @@
 - Consumes: nada.
 - Produces: `NOTE_NAMES: string[12]`; `firingHz(rpm: number, cylinders: int): number` (lança `RangeError`); `rpmForHz(hz: number, cylinders: int): number`; `midiToHz(midi: number): number`; `hzToNote(hz: number): {midi, nearest, name, octave, cents, label} | null`.
 
-- [ ] **Step 1: Escrever o teste que falha**
+- [x] **Step 1: Escrever o teste que falha**
 
 Criar `web/test-tuning.mjs`:
 
@@ -92,12 +94,12 @@ assert.throws(() => firingHz(6000, 2.5), RangeError);
 console.log('Afinação: fórmula RPM → Hz → nota e tabela da especificação OK.');
 ```
 
-- [ ] **Step 2: Rodar e ver falhar**
+- [x] **Step 2: Rodar e ver falhar**
 
 Run: `cd web && node test-tuning.mjs`
 Expected: FAIL com `ERR_MODULE_NOT_FOUND` para `./src/sound/tuning.mjs`.
 
-- [ ] **Step 3: Implementar**
+- [x] **Step 3: Implementar**
 
 Criar `web/src/sound/tuning.mjs`:
 
@@ -129,12 +131,12 @@ export function hzToNote(hz) {
 }
 ```
 
-- [ ] **Step 4: Rodar e ver passar**
+- [x] **Step 4: Rodar e ver passar**
 
 Run: `cd web && node test-tuning.mjs`
 Expected: `Afinação: fórmula RPM → Hz → nota e tabela da especificação OK.`
 
-- [ ] **Step 5: Encadear no `npm test`**
+- [x] **Step 5: Encadear no `npm test`**
 
 Em `web/package.json`, trocar o fim do script `test`:
 
@@ -145,7 +147,7 @@ Em `web/package.json`, trocar o fim do script `test`:
 Run: `cd web && npm test`
 Expected: saída termina com a linha de Afinação OK; código de saída 0.
 
-- [ ] **Step 6: Commit**
+- [x] **Step 6: Commit**
 
 ```bash
 git add web/src/sound/tuning.mjs web/test-tuning.mjs web/package.json
@@ -174,7 +176,7 @@ git commit -m "Adiciona afinação RPM, frequência e nota do estúdio de som"
   - `curveToJSON(curve)`, `curveFromJSON(json | string)`, `CURVE_PRESETS: {linear, launch, blip, shifts, idle}` (cada `{label, curve}`), `presetCurve(id)`.
   - Constantes `CURVE_VERSION = 1`, `MIN_POINT_GAP_S = 0.01`, `TECH_MAX_RATE_RPM_PER_S = 200000`, `DURATION_RANGE_S = [0.5, 30]`.
 
-- [ ] **Step 1: Escrever o teste que falha**
+- [x] **Step 1: Escrever o teste que falha**
 
 Criar `web/test-rpm-curve.mjs`:
 
@@ -269,12 +271,12 @@ for (const id of Object.keys(CURVE_PRESETS)) {
 console.log('Curva RPM: perfis, PCHIP, inércia, limitador, partida, carga, JSON e presets OK.');
 ```
 
-- [ ] **Step 2: Rodar e ver falhar**
+- [x] **Step 2: Rodar e ver falhar**
 
 Run: `cd web && node test-rpm-curve.mjs`
 Expected: FAIL com `ERR_MODULE_NOT_FOUND` para `./src/sound/engine-profiles.mjs`.
 
-- [ ] **Step 3: Implementar os perfis**
+- [x] **Step 3: Implementar os perfis**
 
 Criar `web/src/sound/engine-profiles.mjs`:
 
@@ -311,7 +313,7 @@ export function firingWindowAt(p, thetaDeg) {
 export const cylinderAt = (p, thetaDeg) => p.firingOrder[firingWindowAt(p, thetaDeg)];
 ```
 
-- [ ] **Step 4: Implementar a curva**
+- [x] **Step 4: Implementar a curva**
 
 Criar `web/src/sound/rpm-curve.mjs`:
 
@@ -444,19 +446,19 @@ export const CURVE_PRESETS = Object.freeze({
 export const presetCurve = (id) => createCurve(CURVE_PRESETS[id].curve);
 ```
 
-- [ ] **Step 5: Rodar e ver passar**
+- [x] **Step 5: Rodar e ver passar**
 
 Run: `cd web && node test-rpm-curve.mjs`
 Expected: `Curva RPM: perfis, PCHIP, inércia, limitador, partida, carga, JSON e presets OK.`
 
-- [ ] **Step 6: Encadear no `npm test`**
+- [x] **Step 6: Encadear no `npm test`**
 
 Acrescentar ` && node test-rpm-curve.mjs` ao fim do script `test` em `web/package.json`.
 
 Run: `cd web && npm test`
 Expected: código de saída 0, com as linhas de Afinação e Curva RPM OK.
 
-- [ ] **Step 7: Commit**
+- [x] **Step 7: Commit**
 
 ```bash
 git add web/src/sound/engine-profiles.mjs web/src/sound/rpm-curve.mjs web/test-rpm-curve.mjs web/package.json
@@ -484,7 +486,7 @@ git commit -m "Adiciona perfis V6/V12 e curva RPM editável com inércia"
   - `OUTPUT_CEILING` (−1 dBFS em amplitude linear).
   - Fixture: `createTestBank(profile, {sampleRate?, rpmPoints?, cycles?, withStarter?})`, `pulseCycle(profile, samplesPerCycle, amplitude)`.
 
-- [ ] **Step 1: Criar o banco sintético de teste**
+- [x] **Step 1: Criar o banco sintético de teste**
 
 Criar `web/test-fixtures/sound-bank.mjs`:
 
@@ -525,7 +527,7 @@ export function createTestBank(profile, {sampleRate = 48000, rpmPoints = [4000, 
 }
 ```
 
-- [ ] **Step 2: Escrever o teste que falha**
+- [x] **Step 2: Escrever o teste que falha**
 
 Criar `web/test-sound-player.mjs`:
 
@@ -623,12 +625,12 @@ for (const profile of Object.values(ENGINE_PROFILES)) {
 console.log('Reprodutor: afinação ±1%, crossfade sem phasing, carga, limitador, teto −1 dBFS, partida e rampa contínua OK.');
 ```
 
-- [ ] **Step 3: Rodar e ver falhar**
+- [x] **Step 3: Rodar e ver falhar**
 
 Run: `cd web && node test-sound-player.mjs`
 Expected: FAIL com `ERR_MODULE_NOT_FOUND` para `./src/sound/pitch.mjs`.
 
-- [ ] **Step 4: Implementar o detector**
+- [x] **Step 4: Implementar o detector**
 
 Criar `web/src/sound/pitch.mjs`:
 
@@ -669,7 +671,7 @@ export function detectPitch(samples, sampleRate, {minHz = 50, maxHz = 2500, thre
 }
 ```
 
-- [ ] **Step 5: Implementar o reprodutor**
+- [x] **Step 5: Implementar o reprodutor**
 
 Criar `web/src/sound/phase-player.mjs`:
 
@@ -769,12 +771,12 @@ export function createPhasePlayer({bank, profile, sampleRate}) {
 }
 ```
 
-- [ ] **Step 6: Rodar e ver passar**
+- [x] **Step 6: Rodar e ver passar**
 
 Run: `cd web && node test-sound-player.mjs`
 Expected: `Reprodutor: afinação ±1%, crossfade sem phasing, carga, limitador, teto −1 dBFS, partida e rampa contínua OK.`
 
-- [ ] **Step 7: Conferir que os testes pegam erros (mutação manual, não commitar)**
+- [x] **Step 7: Conferir que os testes pegam erros (mutação manual, não commitar)**
 
 1. Em `phase-player.mjs`, trocar `theta += (rpm / 60) * 360 / sampleRate;` por `* 720`. Rodar o teste → deve falhar com `medido ... Hz, esperado ... Hz`. Desfazer.
 2. Trocar `const cut = state.limiter && firingCount % 2 === 1;` por `const cut = false;`. Rodar → deve falhar com `limitador reduziu só 0.00 dB`. Desfazer.
@@ -782,14 +784,14 @@ Expected: `Reprodutor: afinação ±1%, crossfade sem phasing, carga, limitador,
 Run: `cd web && git diff --stat src/sound/phase-player.mjs`
 Expected: nenhuma alteração pendente de mutação.
 
-- [ ] **Step 8: Encadear no `npm test` e rodar tudo**
+- [x] **Step 8: Encadear no `npm test` e rodar tudo**
 
 Acrescentar ` && node test-sound-player.mjs` ao fim do script `test` em `web/package.json`.
 
 Run: `cd web && npm test`
 Expected: código de saída 0, com as linhas de Afinação, Curva RPM e Reprodutor OK.
 
-- [ ] **Step 9: Commit**
+- [x] **Step 9: Commit**
 
 ```bash
 git add web/src/sound/pitch.mjs web/src/sound/phase-player.mjs web/test-fixtures/sound-bank.mjs web/test-sound-player.mjs web/package.json
