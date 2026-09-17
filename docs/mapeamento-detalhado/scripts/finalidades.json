@@ -1,19 +1,4 @@
 {
-  ".nojekyll": [
-    "Habilita publicação estática direta pelo GitHub Pages",
-    "configuração editável",
-    "GitHub Pages"
-  ],
-  "index.html": [
-    "Entrada pública que encaminha ao laboratório em web/",
-    "fonte web editável",
-    "Página inicial do GitHub Pages"
-  ],
-  "docs/PUBLICACAO.md": [
-    "Endereços públicos, atualização e evidência da publicação",
-    "documento editável",
-    "Publicar e verificar novas revisões"
-  ],
   ".gitattributes": [
     "Política de texto/LF, binários e supressão de diff do HTML empacotado",
     "configuração editável",
@@ -24,20 +9,10 @@
     "configuração editável",
     "Git; pode receber mudanças da conversa paralela"
   ],
-  ".github/workflows/verify.yml": [
-    "CI: instala dependências, constrói web e executa testes em Node 24",
+  ".nojekyll": [
+    "Habilita publicação estática direta pelo GitHub Pages",
     "configuração editável",
-    "GitHub Actions"
-  ],
-  "README.md": [
-    "Entrada pública do laboratório, entregas, instalação e limites",
-    "documento editável",
-    "Leitura inicial"
-  ],
-  "LEIA-ME.md": [
-    "Entrada em português para o pacote e seus destinos",
-    "documento editável",
-    "Leitura inicial"
+    "GitHub Pages"
   ],
   "CHANGELOG.md": [
     "Histórico editorial das mudanças e entregas",
@@ -49,25 +24,35 @@
     "documento editável",
     "Desenvolvimento"
   ],
-  "LICENSE": [
-    "Termos proprietários INTEIA; publicação não equivale a licença aberta",
-    "documento editável",
-    "Direitos de reutilização"
-  ],
-  "THIRD-PARTY-NOTICES.md": [
-    "Avisos de Three.js e procedência de contribuições externas",
-    "documento editável",
-    "Atribuição e limites de distribuição"
-  ],
   "INTEIA_F1_Master.blend": [
     "Projeto Blender entregue: carro, coleções, materiais, demonstração e estúdio",
     "derivado editável",
     "Blender; ferramentas/package_blender.py"
   ],
+  "LEIA-ME.md": [
+    "Entrada em português para o pacote e seus destinos",
+    "documento editável",
+    "Leitura inicial"
+  ],
+  "LICENSE": [
+    "Termos proprietários INTEIA; publicação não equivale a licença aberta",
+    "documento editável",
+    "Direitos de reutilização"
+  ],
   "Previa-Blender.png": [
     "Prévia renderizada do projeto Blender; não é textura do modelo",
     "imagem gerada",
     "Apresentação e comparação visual"
+  ],
+  "README.md": [
+    "Entrada pública do laboratório, entregas, instalação e limites",
+    "documento editável",
+    "Leitura inicial"
+  ],
+  "THIRD-PARTY-NOTICES.md": [
+    "Avisos de Three.js e procedência de contribuições externas",
+    "documento editável",
+    "Atribuição e limites de distribuição"
   ],
   "ambientes/INTEIA-box-laboratorio.glb": [
     "Box procedural exportado; arquivo separado do carro",
@@ -89,25 +74,25 @@
     "relatório gerado",
     "Conferência; não é nova execução Blender"
   ],
-  "docs/AERODINAMICA.md": [
-    "Modelo por coeficientes, unidades, entradas, resultados e limitações",
-    "documento editável",
-    "Túnel didático e calculadora"
-  ],
   "docs/ACABAMENTO-E-RENDER.md": [
     "Acabamento, iluminação e ajustes de render documentados em tarefa concorrente",
     "documento editável concorrente",
     "Consultar revisão local registrada; não confundir com benchmark validado"
   ],
+  "docs/AERODINAMICA.md": [
+    "Modelo por coeficientes, unidades, entradas, resultados e limitações",
+    "documento editável",
+    "Túnel didático e calculadora"
+  ],
+  "docs/ANALISE-DOSSIE-COMPLEMENTAR.md": [
+    "Auditoria editorial das lacunas, contradições e prioridades do dossiê técnico",
+    "documento editável",
+    "Revisar antes de promover alegações técnicas"
+  ],
   "docs/ARQUITETURA.md": [
     "Visão geral das camadas, arquivos e materiais",
     "documento editável",
     "Orientação de desenvolvimento"
-  ],
-  "docs/SISTEMAS-3D.md": [
-    "Guia operacional da bancada Sistemas, do asset publicado e de sua regeneração",
-    "documento editável",
-    "Desenvolvimento, validação e limites dos catorze sistemas internos"
   ],
   "docs/BLENDER.md": [
     "Uso das coleções, Append, animação e materiais no Blender",
@@ -129,20 +114,135 @@
     "documento editável",
     "Procedência e permissões"
   ],
+  "docs/ESPECIFICACAO-ASSET-3D-SISTEMAS-F1.md": [
+    "Contrato de modelagem dos catorze sistemas internos do carro",
+    "especificação editável",
+    "Orientar módulos procedurais, integração e aceite visual"
+  ],
+  "docs/INTEGRACAO-MOTOR.md": [
+    "Operação e procedência da integração do carro final e motor",
+    "documento editável",
+    "Consultar controles e limites"
+  ],
   "docs/INTEGRACAO.md": [
     "Integração dos GLBs e fontes em outros projetos",
     "documento editável",
     "Sites e jogos"
+  ],
+  "docs/OUTRO-PC.md": [
+    "Instalação e sincronização segura entre computadores",
+    "documento editável",
+    "Continuar o desenvolvimento em outro clone"
+  ],
+  "docs/PILOTO-E-CAPACETE.md": [
+    "Referências, operação e limites do estudo do piloto",
+    "documento editável",
+    "Consultar proporções e controles"
+  ],
+  "docs/PUBLICACAO.md": [
+    "Endereços públicos, atualização e evidência da publicação",
+    "documento editável",
+    "Publicar e verificar novas revisões"
   ],
   "docs/REVISAO-TUNEL-VISUAL.md": [
     "Revisões e limites da representação visual do fluxo",
     "documento editável",
     "Histórico do túnel"
   ],
+  "docs/SISTEMAS-3D.md": [
+    "Guia operacional da bancada Sistemas, do asset publicado e de sua regeneração",
+    "documento editável",
+    "Desenvolvimento, validação e limites dos catorze sistemas internos"
+  ],
+  "docs/SOBRESSALENTES.md": [
+    "Guia das peças sobressalentes do Box: cenários, slots, arquivos e regeneração",
+    "documento editável",
+    "Configuração de pista na bancada Carro"
+  ],
   "docs/VALIDACAO.md": [
     "Síntese de testes históricos e limites por destino",
     "documento editável",
     "Leitura crítica das evidências"
+  ],
+  "docs/mapas/GRAFOS.md": [
+    "Diagramas Mermaid e leitura do grafo geral paralelo",
+    "documentação/código de mapeamento paralelo",
+    "Complementar a esta análise; mantido pela outra tarefa"
+  ],
+  "docs/mapas/INVENTARIO.md": [
+    "Inventário legível de arquivos da conversa paralela",
+    "documentação/código de mapeamento paralelo",
+    "Complementar a esta análise; mantido pela outra tarefa"
+  ],
+  "docs/mapas/MANUTENCAO.md": [
+    "Atualização e manutenção do gerador de mapas paralelo",
+    "documentação/código de mapeamento paralelo",
+    "Complementar a esta análise; mantido pela outra tarefa"
+  ],
+  "docs/mapas/MODULOS.md": [
+    "Visão de módulos e responsabilidades do mapa paralelo",
+    "documentação/código de mapeamento paralelo",
+    "Complementar a esta análise; mantido pela outra tarefa"
+  ],
+  "docs/mapas/PRODUCAO.md": [
+    "Pipeline de produção de assets documentado no mapa paralelo",
+    "documentação/código de mapeamento paralelo",
+    "Complementar a esta análise; mantido pela outra tarefa"
+  ],
+  "docs/mapas/README.md": [
+    "Entrada do mapa geral produzido pela conversa paralela",
+    "documentação/código de mapeamento paralelo",
+    "Complementar a esta análise; mantido pela outra tarefa"
+  ],
+  "docs/mapas/REUSO.md": [
+    "Receitas de reutilização do mapa geral paralelo",
+    "documentação/código de mapeamento paralelo",
+    "Complementar a esta análise; mantido pela outra tarefa"
+  ],
+  "docs/mapas/VERIFICACAO.md": [
+    "Resultados de verificação registrados pela conversa paralela",
+    "documentação/código de mapeamento paralelo",
+    "Complementar a esta análise; mantido pela outra tarefa"
+  ],
+  "docs/mapas/cobertura.json": [
+    "Contagens, escopo e exclusões do mapa paralelo",
+    "documentação/código de mapeamento paralelo",
+    "Complementar a esta análise; mantido pela outra tarefa"
+  ],
+  "docs/mapas/componentes.json": [
+    "Catálogo de componentes GLB do mapa paralelo",
+    "documentação/código de mapeamento paralelo",
+    "Complementar a esta análise; mantido pela outra tarefa"
+  ],
+  "docs/mapas/controles.json": [
+    "Índice de controles DOM extraído pelo gerador paralelo",
+    "documentação/código de mapeamento paralelo",
+    "Complementar a esta análise; mantido pela outra tarefa"
+  ],
+  "docs/mapas/dependencias.json": [
+    "Relações de dependências extraídas pelo gerador paralelo",
+    "documentação/código de mapeamento paralelo",
+    "Complementar a esta análise; mantido pela outra tarefa"
+  ],
+  "docs/mapas/graphify-extracao.json": [
+    "Extração graphify preservada pela conversa paralela",
+    "documentação/código de mapeamento paralelo",
+    "Complementar a esta análise; mantido pela outra tarefa"
+  ],
+  "docs/mapas/index.html": [
+    "Interface navegável do mapa geral paralelo",
+    "documentação/código de mapeamento paralelo",
+    "Complementar a esta análise; mantido pela outra tarefa"
+  ],
+  "docs/mapas/inventario.json": [
+    "Inventário estruturado de arquivos do gerador paralelo",
+    "documentação/código de mapeamento paralelo",
+    "Complementar a esta análise; mantido pela outra tarefa"
+  ],
+  "docs/pesquisa-sistemas-carro-video.md": [
+    "Pesquisa e limites das referências usadas para os sistemas do carro",
+    "documento editável",
+    "Separar evidência observada, hipótese didática e versão regulatória"
   ],
   "documentacao/Comparacao-iluminacao.html": [
     "Comparação visual histórica de iluminação em HTML",
@@ -164,10 +264,25 @@
     "documento editável",
     "Histórico; não certificação física"
   ],
+  "ferramentas/gerar_sobressalentes.py": [
+    "Gerador Blender das peças sobressalentes (pneus, asas, asa de viga, venezianas)",
+    "ferramenta editável",
+    "Executar com Blender 5.2 em modo background; grava GLB e manifesto"
+  ],
   "ferramentas/manifest.cjs": [
     "Calcula bytes e SHA-256 de 14 entregas e grava o manifesto",
     "código fonte editável",
     "Node.js; sobrescreve manifesto-sha256.json"
+  ],
+  "ferramentas/mapa-template.html": [
+    "Template da interface do mapa geral da conversa paralela",
+    "documentação/código de mapeamento paralelo",
+    "Complementar a esta análise; mantido pela outra tarefa"
+  ],
+  "ferramentas/mapear.py": [
+    "Gerador do mapa geral da conversa paralela; saídas em docs/mapas",
+    "documentação/código de mapeamento paralelo",
+    "Complementar a esta análise; mantido pela outra tarefa"
   ],
   "ferramentas/merge-animation.cjs": [
     "Reúne canais de animação do GLB animado em um único clipe",
@@ -224,6 +339,11 @@
     "documento editável",
     "Design gráfico"
   ],
+  "index.html": [
+    "Entrada pública que encaminha ao laboratório em web/",
+    "fonte web editável",
+    "Página inicial do GitHub Pages"
+  ],
   "manifesto-sha256.json": [
     "Lista fechada com tamanho e hash de 14 entregas",
     "manifesto gerado",
@@ -269,10 +389,65 @@
     "asset vetorial editável",
     "Sem importação direta na entrada atual"
   ],
+  "web/assets/carro-aula-v2.glb": [
+    "Carro final otimizado do F1 Loop, 97 componentes",
+    "asset GLB",
+    "Modelo incorporado ao laboratório"
+  ],
+  "web/assets/carro-aula-v2.proveniencia.json": [
+    "Procedência e transformações do carro v2",
+    "metadados",
+    "Conferir origem do carro"
+  ],
+  "web/assets/carro-aula-v2.validacao.json": [
+    "Validação original do carro v2",
+    "evidência histórica",
+    "Consultar junto aos testes atuais"
+  ],
   "web/assets/carro-movable.glb": [
     "Base exterior com 97 peças e metadados usada pelo build web e Blender",
     "base derivada fornecida",
     "Fonte operacional local; extração inicial não distribuída"
+  ],
+  "web/assets/inteia-escudo-oficial.svg": [
+    "Brasão oficial INTEIA",
+    "identidade visual",
+    "Aplicado à carroceria"
+  ],
+  "web/assets/inteia-nome-oficial.svg": [
+    "Assinatura oficial INTEIA",
+    "identidade visual",
+    "Aplicada à lateral"
+  ],
+  "web/assets/inteligencia-mil-grau-transparent.png": [
+    "Arte do patrocínio Inteligência Mil Grau",
+    "identidade visual",
+    "Aplicada à tampa do motor"
+  ],
+  "web/assets/inteligencia-mil-grau.source.json": [
+    "Procedência da arte do patrocinador",
+    "metadados",
+    "Consultar origem"
+  ],
+  "web/assets/power-unit-v1.glb": [
+    "Motor V6 didático animado do F1 Loop",
+    "asset GLB",
+    "Carregado sob demanda no box"
+  ],
+  "web/assets/power-unit-v1.manifest.json": [
+    "Geometria, animação, hash e licença do motor",
+    "metadados",
+    "Conferir procedência e limites"
+  ],
+  "web/assets/sobressalentes-v1.glb": [
+    "Asset GLB das peças sobressalentes, um nó por peça com extras slot/variant/target/mode",
+    "entrega GLB gerada",
+    "Carregado sob demanda por web/src/spares.js"
+  ],
+  "web/assets/sobressalentes-v1.manifest.json": [
+    "Manifesto com slots, variantes, caixas e hash do GLB de sobressalentes",
+    "evidência gerada",
+    "Validado por web/test-spares.mjs"
   ],
   "web/build.cjs": [
     "Empacota app e base64 do GLB no template para HTML autocontido",
@@ -314,10 +489,25 @@
     "código fonte editável",
     "Three.js, glyphs de identity.js, DecalGeometry e registros de mechanics; decal da sessão web"
   ],
+  "web/src/car-look.js": [
+    "Acabamento final, rodas, pneus e freios do carro",
+    "fonte web editável",
+    "Usado pelo visualizador"
+  ],
   "web/src/customize.js": [
     "Liga controles de cores/acabamento, luz, piso e fundo aos materiais",
     "código fonte editável",
     "DOM do template; estado em memória da sessão"
+  ],
+  "web/src/engine/engine-shot.js": [
+    "Poses de referência para preparação gráfica do motor",
+    "fonte web editável",
+    "Reaproveitado do F1 Loop"
+  ],
+  "web/src/engine/in-car.js": [
+    "Motor integrado, corte e tampa móvel",
+    "fonte web editável",
+    "Controlado pela oficina"
   ],
   "web/src/flow-detail.js": [
     "Representação didática aproximada do fluxo nas rodas e assoalho",
@@ -329,6 +519,11 @@
     "código fonte editável",
     "Geometria procedural Three.js; identidade ativa"
   ],
+  "web/src/helmet-1991.js": [
+    "Capacete detalhado compartilhado com o cockpit",
+    "fonte web editável",
+    "Modelagem e exportação do capacete"
+  ],
   "web/src/identity.js": [
     "Define glifos, emblema, SVG e desenho Canvas da identidade ativa",
     "código fonte editável",
@@ -339,10 +534,35 @@
     "código fonte editável",
     "Three.js e extras da base GLB"
   ],
+  "web/src/parts-info.js": [
+    "Fichas didáticas das peças: nome, função e curiosidade por regra de rótulo",
+    "fonte web editável",
+    "Usado pelas bancadas Carro e Sistemas ao clicar em uma peça"
+  ],
+  "web/src/senna-driver.js": [
+    "Piloto ilustrativo do carro final",
+    "fonte web editável",
+    "Oculto na desmontagem e isolamento"
+  ],
+  "web/src/spares.js": [
+    "Catálogo e troca em tempo de execução das peças sobressalentes",
+    "fonte web editável",
+    "Seção Box / Configuração de pista da bancada Carro"
+  ],
   "web/src/studio.js": [
     "Materiais, carbono procedural, iluminação, ambiente, piso e tema",
     "código fonte editável",
     "Three.js; efeitos web não integralmente portáveis"
+  ],
+  "web/src/surface-library.js": [
+    "Texturas de acabamento do carro final",
+    "fonte web editável",
+    "Aplicado a pintura, carbono e borracha"
+  ],
+  "web/src/systems.js": [
+    "Carrega, apresenta e controla o GLB consolidado dos sistemas internos",
+    "fonte web editável",
+    "Bancada Sistemas do laboratório"
   ],
   "web/src/template-v2.html": [
     "Estrutura e estilos da interface com marcadores __MODEL__ e __APP__",
@@ -359,225 +579,35 @@
     "código fonte editável",
     "DOM + mechanics + aero-physics + efeitos visuais"
   ],
-  "web/test-aerodynamics.mjs": [
-    "Verifica unidades, escala das fórmulas, condições e coeficientes ausentes",
-    "teste editável",
-    "Node.js; não valida física do carro"
-  ],
-  "web/test-mechanics.mjs": [
-    "Verifica peças, pivôs, 20 ciclos, seleção, arraste e restauração",
-    "teste editável",
-    "Node.js/Three.js; grava relatório na raiz"
-  ],
-  "docs/mapas/README.md": [
-    "Entrada do mapa geral produzido pela conversa paralela",
-    "documentação/código de mapeamento paralelo",
-    "Complementar a esta análise; mantido pela outra tarefa"
-  ],
-  "docs/mapas/REUSO.md": [
-    "Receitas de reutilização do mapa geral paralelo",
-    "documentação/código de mapeamento paralelo",
-    "Complementar a esta análise; mantido pela outra tarefa"
-  ],
-  "docs/mapas/MODULOS.md": [
-    "Visão de módulos e responsabilidades do mapa paralelo",
-    "documentação/código de mapeamento paralelo",
-    "Complementar a esta análise; mantido pela outra tarefa"
-  ],
-  "docs/mapas/PRODUCAO.md": [
-    "Pipeline de produção de assets documentado no mapa paralelo",
-    "documentação/código de mapeamento paralelo",
-    "Complementar a esta análise; mantido pela outra tarefa"
-  ],
-  "docs/mapas/MANUTENCAO.md": [
-    "Atualização e manutenção do gerador de mapas paralelo",
-    "documentação/código de mapeamento paralelo",
-    "Complementar a esta análise; mantido pela outra tarefa"
-  ],
-  "docs/mapas/VERIFICACAO.md": [
-    "Resultados de verificação registrados pela conversa paralela",
-    "documentação/código de mapeamento paralelo",
-    "Complementar a esta análise; mantido pela outra tarefa"
-  ],
-  "docs/mapas/INVENTARIO.md": [
-    "Inventário legível de arquivos da conversa paralela",
-    "documentação/código de mapeamento paralelo",
-    "Complementar a esta análise; mantido pela outra tarefa"
-  ],
-  "docs/mapas/GRAFOS.md": [
-    "Diagramas Mermaid e leitura do grafo geral paralelo",
-    "documentação/código de mapeamento paralelo",
-    "Complementar a esta análise; mantido pela outra tarefa"
-  ],
-  "docs/mapas/index.html": [
-    "Interface navegável do mapa geral paralelo",
-    "documentação/código de mapeamento paralelo",
-    "Complementar a esta análise; mantido pela outra tarefa"
-  ],
-  "docs/mapas/inventario.json": [
-    "Inventário estruturado de arquivos do gerador paralelo",
-    "documentação/código de mapeamento paralelo",
-    "Complementar a esta análise; mantido pela outra tarefa"
-  ],
-  "docs/mapas/graphify-extracao.json": [
-    "Extração graphify preservada pela conversa paralela",
-    "documentação/código de mapeamento paralelo",
-    "Complementar a esta análise; mantido pela outra tarefa"
-  ],
-  "docs/mapas/dependencias.json": [
-    "Relações de dependências extraídas pelo gerador paralelo",
-    "documentação/código de mapeamento paralelo",
-    "Complementar a esta análise; mantido pela outra tarefa"
-  ],
-  "docs/mapas/controles.json": [
-    "Índice de controles DOM extraído pelo gerador paralelo",
-    "documentação/código de mapeamento paralelo",
-    "Complementar a esta análise; mantido pela outra tarefa"
-  ],
-  "docs/mapas/componentes.json": [
-    "Catálogo de componentes GLB do mapa paralelo",
-    "documentação/código de mapeamento paralelo",
-    "Complementar a esta análise; mantido pela outra tarefa"
-  ],
-  "docs/mapas/cobertura.json": [
-    "Contagens, escopo e exclusões do mapa paralelo",
-    "documentação/código de mapeamento paralelo",
-    "Complementar a esta análise; mantido pela outra tarefa"
-  ],
-  "ferramentas/mapear.py": [
-    "Gerador do mapa geral da conversa paralela; saídas em docs/mapas",
-    "documentação/código de mapeamento paralelo",
-    "Complementar a esta análise; mantido pela outra tarefa"
-  ],
-  "ferramentas/mapa-template.html": [
-    "Template da interface do mapa geral da conversa paralela",
-    "documentação/código de mapeamento paralelo",
-    "Complementar a esta análise; mantido pela outra tarefa"
-  ],
-  "docs/INTEGRACAO-MOTOR.md": [
-    "Operação e procedência da integração do carro final e motor",
-    "documento editável",
-    "Consultar controles e limites"
-  ],
-  "web/assets/carro-aula-v2.glb": [
-    "Carro final otimizado do F1 Loop, 97 componentes",
-    "asset GLB",
-    "Modelo incorporado ao laboratório"
-  ],
-  "web/assets/carro-aula-v2.proveniencia.json": [
-    "Procedência e transformações do carro v2",
-    "metadados",
-    "Conferir origem do carro"
-  ],
-  "web/assets/carro-aula-v2.validacao.json": [
-    "Validação original do carro v2",
-    "evidência histórica",
-    "Consultar junto aos testes atuais"
-  ],
-  "web/assets/inteia-escudo-oficial.svg": [
-    "Brasão oficial INTEIA",
-    "identidade visual",
-    "Aplicado à carroceria"
-  ],
-  "web/assets/inteia-nome-oficial.svg": [
-    "Assinatura oficial INTEIA",
-    "identidade visual",
-    "Aplicada à lateral"
-  ],
-  "web/assets/inteligencia-mil-grau-transparent.png": [
-    "Arte do patrocínio Inteligência Mil Grau",
-    "identidade visual",
-    "Aplicada à tampa do motor"
-  ],
-  "web/assets/inteligencia-mil-grau.source.json": [
-    "Procedência da arte do patrocinador",
-    "metadados",
-    "Consultar origem"
-  ],
-  "web/assets/power-unit-v1.glb": [
-    "Motor V6 didático animado do F1 Loop",
-    "asset GLB",
-    "Carregado sob demanda no box"
-  ],
-  "web/assets/power-unit-v1.manifest.json": [
-    "Geometria, animação, hash e licença do motor",
-    "metadados",
-    "Conferir procedência e limites"
-  ],
-  "web/src/car-look.js": [
-    "Acabamento final, rodas, pneus e freios do carro",
-    "fonte web editável",
-    "Usado pelo visualizador"
-  ],
-  "web/src/engine/engine-shot.js": [
-    "Poses de referência para preparação gráfica do motor",
-    "fonte web editável",
-    "Reaproveitado do F1 Loop"
-  ],
-  "web/src/engine/in-car.js": [
-    "Motor integrado, corte e tampa móvel",
-    "fonte web editável",
-    "Controlado pela oficina"
-  ],
-  "web/src/senna-driver.js": [
-    "Piloto ilustrativo do carro final",
-    "fonte web editável",
-    "Oculto na desmontagem e isolamento"
-  ],
-  "web/src/surface-library.js": [
-    "Texturas de acabamento do carro final",
-    "fonte web editável",
-    "Aplicado a pintura, carbono e borracha"
-  ],
-  "web/test-power-unit.mjs": [
-    "Valida animação do motor em 20 ciclos",
-    "teste",
-    "Executado por npm test"
-  ],
-  "web/src/helmet-1991.js": [
-    "Capacete detalhado compartilhado com o cockpit",
-    "fonte web editável",
-    "Modelagem e exportação do capacete"
-  ],
   "web/src/workbench.js": [
     "Abas, inspeção, ajustes e exportação dos modelos",
     "fonte web editável",
     "Controla bancadas do laboratório"
+  ],
+  "web/test-aerodynamics.mjs": [
+    "Verifica unidades, escala das fórmulas, condições e coeficientes ausentes",
+    "teste editável",
+    "Node.js; não valida física do carro"
   ],
   "web/test-driver-model.mjs": [
     "Geometria e restauração do encaixe do piloto",
     "teste",
     "Executado por npm test"
   ],
-  "docs/PILOTO-E-CAPACETE.md": [
-    "Referências, operação e limites do estudo do piloto",
-    "documento editável",
-    "Consultar proporções e controles"
+  "web/test-mechanics.mjs": [
+    "Verifica peças, pivôs, 20 ciclos, seleção, arraste e restauração",
+    "teste editável",
+    "Node.js/Three.js; grava relatório na raiz"
   ],
-  "docs/ANALISE-DOSSIE-COMPLEMENTAR.md": [
-    "Auditoria editorial das lacunas, contradições e prioridades do dossiê técnico",
-    "documento editável",
-    "Revisar antes de promover alegações técnicas"
+  "web/test-power-unit.mjs": [
+    "Valida animação do motor em 20 ciclos",
+    "teste",
+    "Executado por npm test"
   ],
-  "docs/ESPECIFICACAO-ASSET-3D-SISTEMAS-F1.md": [
-    "Contrato de modelagem dos catorze sistemas internos do carro",
-    "especificação editável",
-    "Orientar módulos procedurais, integração e aceite visual"
-  ],
-  "docs/OUTRO-PC.md": [
-    "Instalação e sincronização segura entre computadores",
-    "documento editável",
-    "Continuar o desenvolvimento em outro clone"
-  ],
-  "docs/pesquisa-sistemas-carro-video.md": [
-    "Pesquisa e limites das referências usadas para os sistemas do carro",
-    "documento editável",
-    "Separar evidência observada, hipótese didática e versão regulatória"
-  ],
-  "web/src/systems.js": [
-    "Carrega, apresenta e controla o GLB consolidado dos sistemas internos",
-    "fonte web editável",
-    "Bancada Sistemas do laboratório"
+  "web/test-spares.mjs": [
+    "Valida integridade do GLB de sobressalentes, coerência do catálogo e envelopes das peças",
+    "teste",
+    "Executado por npm test"
   ],
   "web/test-systems.mjs": [
     "Valida catálogo, controles, manifesto, hash e estrutura do GLB de sistemas",

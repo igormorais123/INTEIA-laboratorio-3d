@@ -14,11 +14,8 @@ INTEIA-laboratorio-3d/
   .gitattributes  # Política de texto/LF, binários e supressão de diff do HTML empacotado
   .github/  # Automação de verificação remota
     copilot-instructions.md  # Configuração local de assistência e concisão por agente
-    workflows/  # CI de build/test
-      verify.yml  # CI: instala dependências, constrói web e executa testes em Node 24
   .gitignore  # Exclusões de dependências, caches, backups Blender e dados de ambiente
   .graphifyignore  # Configuração ou saída navegável do mapa Graphify
-  .nojekyll  # Habilita publicação estática direta pelo GitHub Pages
   .planning/  # Documentação complementar da conversa paralela
     ai/  # Documentação complementar da conversa paralela
       project-index.json  # Índice e instruções locais para navegação econômica por agentes
@@ -58,6 +55,7 @@ INTEIA-laboratorio-3d/
     README.md  # Índice canônico da documentação do projeto
     REVISAO-TUNEL-VISUAL.md  # Revisões e limites da representação visual do fluxo
     SISTEMAS-3D.md  # Guia operacional da bancada Sistemas, do asset publicado e de sua regeneração
+    SOBRESSALENTES.md  # Guia das peças sobressalentes do Box: cenários, slots, arquivos e regeneração
     VALIDACAO.md  # Síntese de testes históricos e limites por destino
     mapas/  # Documentação complementar da conversa paralela
       GRAFOS.md  # Diagramas Mermaid e leitura do grafo geral paralelo
@@ -83,6 +81,7 @@ INTEIA-laboratorio-3d/
     historico-avaliacoes.md  # Pareceres históricos e subjetivos sobre versões visuais
   ferramentas/  # Conversão, embalagem, validação e manifesto
     gerar_sistemas.py  # Pipeline de geração e otimização dos sistemas internos
+    gerar_sobressalentes.py  # Gerador Blender das peças sobressalentes (pneus, asas, asa de viga, venezianas)
     manifest.cjs  # Calcula bytes e SHA-256 de 14 entregas e grava o manifesto
     mapa-template.html  # Template da interface do mapa geral da conversa paralela
     mapear.py  # Gerador do mapa geral da conversa paralela; saídas em docs/mapas
@@ -99,6 +98,7 @@ INTEIA-laboratorio-3d/
         aero-difusor.png  # Prévia gerada para revisão visual de um sistema interno
         aero-drs.png  # Prévia gerada para revisão visual de um sistema interno
         aero-hero.png  # Prévia gerada para revisão visual de um sistema interno
+        aero-side.png  # Prévia gerada para revisão visual de um sistema interno
         brakes-brake-by-wire.png  # Prévia gerada para revisão visual de um sistema interno
         brakes-canto-dianteiro.png  # Prévia gerada para revisão visual de um sistema interno
         brakes-canto-por-dentro.png  # Prévia gerada para revisão visual de um sistema interno
@@ -110,7 +110,9 @@ INTEIA-laboratorio-3d/
         cockpit-hero.png  # Prévia gerada para revisão visual de um sistema interno
         cockpit-hidratacao.png  # Prévia gerada para revisão visual de um sistema interno
         cockpit-pedais.png  # Prévia gerada para revisão visual de um sistema interno
+        cockpit-side.png  # Prévia gerada para revisão visual de um sistema interno
         cooling-hero.png  # Prévia gerada para revisão visual de um sistema interno
+        cooling-side.png  # Prévia gerada para revisão visual de um sistema interno
         cooling-sidepod-direito.png  # Prévia gerada para revisão visual de um sistema interno
         cooling-sidepod-esquerdo.png  # Prévia gerada para revisão visual de um sistema interno
         cooling-superior.png  # Prévia gerada para revisão visual de um sistema interno
@@ -118,14 +120,17 @@ INTEIA-laboratorio-3d/
         ers-hero.png  # Prévia gerada para revisão visual de um sistema interno
         ers-inversor.png  # Prévia gerada para revisão visual de um sistema interno
         ers-mgu-k.png  # Prévia gerada para revisão visual de um sistema interno
+        ers-side.png  # Prévia gerada para revisão visual de um sistema interno
         fuel-celula.png  # Prévia gerada para revisão visual de um sistema interno
         fuel-hero.png  # Prévia gerada para revisão visual de um sistema interno
         fuel-interior.png  # Prévia gerada para revisão visual de um sistema interno
         fuel-linhas.png  # Prévia gerada para revisão visual de um sistema interno
+        fuel-side.png  # Prévia gerada para revisão visual de um sistema interno
         overview-hero.png  # Prévia gerada para revisão visual de um sistema interno
         power-escape-turbina.png  # Prévia gerada para revisão visual de um sistema interno
         power-hero.png  # Prévia gerada para revisão visual de um sistema interno
         power-plenum-trompetas.png  # Prévia gerada para revisão visual de um sistema interno
+        power-side.png  # Prévia gerada para revisão visual de um sistema interno
         power-tres-quartos.png  # Prévia gerada para revisão visual de um sistema interno
         power-turbo-dianteiro.png  # Prévia gerada para revisão visual de um sistema interno
         power-vale-em-v.png  # Prévia gerada para revisão visual de um sistema interno
@@ -134,23 +139,32 @@ INTEIA-laboratorio-3d/
         safety-impacto-dianteiro.png  # Prévia gerada para revisão visual de um sistema interno
         safety-impacto-traseiro.png  # Prévia gerada para revisão visual de um sistema interno
         safety-retencao-roda.png  # Prévia gerada para revisão visual de um sistema interno
+        safety-side.png  # Prévia gerada para revisão visual de um sistema interno
         sensors-antena.png  # Prévia gerada para revisão visual de um sistema interno
         sensors-ecu.png  # Prévia gerada para revisão visual de um sistema interno
         sensors-hero.png  # Prévia gerada para revisão visual de um sistema interno
         sensors-pitot.png  # Prévia gerada para revisão visual de um sistema interno
         sensors-roda.png  # Prévia gerada para revisão visual de um sistema interno
+        sensors-side.png  # Prévia gerada para revisão visual de um sistema interno
+        sistemas-v1-safety-cockpit-wheel.glb  # Asset GLB derivado dos módulos procedurais de sistemas
+        sistemas-v1-safety-cockpit-wheel.manifest.json  # Manifesto de composição e métricas do GLB de sistemas correspondente
+        sistemas-v1-wheel.glb  # Asset GLB derivado dos módulos procedurais de sistemas
+        sistemas-v1-wheel.manifest.json  # Manifesto de composição e métricas do GLB de sistemas correspondente
         steering-coluna.png  # Prévia gerada para revisão visual de um sistema interno
         steering-cremalheira.png  # Prévia gerada para revisão visual de um sistema interno
         steering-hero.png  # Prévia gerada para revisão visual de um sistema interno
+        steering-side.png  # Prévia gerada para revisão visual de um sistema interno
         steering-track-rod.png  # Prévia gerada para revisão visual de um sistema interno
         structure-antepara-traseira.png  # Prévia gerada para revisão visual de um sistema interno
         structure-celula.png  # Prévia gerada para revisão visual de um sistema interno
         structure-corte-sanduiche.png  # Prévia gerada para revisão visual de um sistema interno
         structure-hero.png  # Prévia gerada para revisão visual de um sistema interno
         structure-plank.png  # Prévia gerada para revisão visual de um sistema interno
+        structure-side.png  # Prévia gerada para revisão visual de um sistema interno
         suspension-dianteira-inboard.png  # Prévia gerada para revisão visual de um sistema interno
         suspension-dianteira.png  # Prévia gerada para revisão visual de um sistema interno
         suspension-hero.png  # Prévia gerada para revisão visual de um sistema interno
+        suspension-side.png  # Prévia gerada para revisão visual de um sistema interno
         suspension-traseira.png  # Prévia gerada para revisão visual de um sistema interno
         suspension-upright.png  # Prévia gerada para revisão visual de um sistema interno
         transmission-diferencial.png  # Prévia gerada para revisão visual de um sistema interno
@@ -158,9 +172,11 @@ INTEIA-laboratorio-3d/
         transmission-engrenagens.png  # Prévia gerada para revisão visual de um sistema interno
         transmission-hero.png  # Prévia gerada para revisão visual de um sistema interno
         transmission-lateral-corte.png  # Prévia gerada para revisão visual de um sistema interno
+        transmission-side.png  # Prévia gerada para revisão visual de um sistema interno
         wheel-frente.png  # Prévia gerada para revisão visual de um sistema interno
         wheel-hero.png  # Prévia gerada para revisão visual de um sistema interno
         wheel-lateral.png  # Prévia gerada para revisão visual de um sistema interno
+        wheel-side.png  # Prévia gerada para revisão visual de um sistema interno
         wheel-tras.png  # Prévia gerada para revisão visual de um sistema interno
       s01_aero.py  # Módulo procedural de um sistema interno do carro
       s02_structure.py  # Módulo procedural de um sistema interno do carro
@@ -210,6 +226,8 @@ INTEIA-laboratorio-3d/
       power-unit-v1.manifest.json  # Geometria, animação, hash e licença do motor
       sistemas-v1.glb  # Asset GLB derivado dos módulos procedurais de sistemas
       sistemas-v1.manifest.json  # Manifesto de composição e métricas do GLB de sistemas correspondente
+      sobressalentes-v1.glb  # Asset GLB das peças sobressalentes, um nó por peça com extras slot/variant/target/mode
+      sobressalentes-v1.manifest.json  # Manifesto com slots, variantes, caixas e hash do GLB de sobressalentes
     build.cjs  # Empacota app e base64 do GLB no template para HTML autocontido
     index.html  # Site autocontido gerado: template, bundle Three.js e modelo embutido
     package-lock.json  # Versões e integridade das dependências npm
@@ -229,7 +247,9 @@ INTEIA-laboratorio-3d/
       helmet-1991.js  # Capacete detalhado compartilhado com o cockpit
       identity.js  # Define glifos, emblema, SVG e desenho Canvas da identidade ativa
       mechanics.js  # Agrupa peças, cria pivôs, explode/monta, seleciona e anima rodas/DRS
+      parts-info.js  # Fichas didáticas das peças: nome, função e curiosidade por regra de rótulo
       senna-driver.js  # Piloto ilustrativo do carro final
+      spares.js  # Catálogo e troca em tempo de execução das peças sobressalentes
       studio.js  # Materiais, carbono procedural, iluminação, ambiente, piso e tema
       surface-library.js  # Texturas de acabamento do carro final
       systems.js  # Carrega, apresenta e controla o GLB consolidado dos sistemas internos
@@ -241,6 +261,7 @@ INTEIA-laboratorio-3d/
     test-driver-model.mjs  # Geometria e restauração do encaixe do piloto
     test-mechanics.mjs  # Verifica peças, pivôs, 20 ciclos, seleção, arraste e restauração
     test-power-unit.mjs  # Valida animação do motor em 20 ciclos
+    test-spares.mjs  # Valida integridade do GLB de sobressalentes, coerência do catálogo e envelopes das peças
     test-systems.mjs  # Valida catálogo, controles, manifesto, hash e estrutura do GLB de sistemas
   docs/mapeamento-detalhado/  # Esta entrega: índice, HTML, catálogos, grafos e scripts
 ```

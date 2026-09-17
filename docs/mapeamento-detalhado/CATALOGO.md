@@ -2,7 +2,7 @@
 
 [Índice](README.md) · [Busca interativa](index.html) · [CSV](dados/catalogo.csv) · [JSON](dados/catalogo.json)
 
-214 arquivos catalogados. Hashes de bytes locais em dados/catalogo.json; fontes e derivados têm naturezas distintas. Dependências externas são identificadas como external: e não inventariadas como código do projeto.
+236 arquivos catalogados. Hashes de bytes locais em dados/catalogo.json; fontes e derivados têm naturezas distintas. Dependências externas são identificadas como external: e não inventariadas como código do projeto.
 
 ## .claude/settings.json
 
@@ -44,16 +44,6 @@ Configuração local de assistência e concisão por agente.
 **Relações de saída:** Nenhuma relação estrutural encontrada; ausência não prova desuso..
 **Referenciado por:** Nenhuma referência catalogada..
 
-## .github/workflows/verify.yml
-
-[Abrir arquivo](../../.github/workflows/verify.yml) · yml · 642 bytes
-
-CI: instala dependências, constrói web e executa testes em Node 24.
-
-**Natureza:** configuração editável. **Uso:** GitHub Actions.
-**Relações de saída:** Nenhuma relação estrutural encontrada; ausência não prova desuso..
-**Referenciado por:** Nenhuma referência catalogada..
-
 ## .gitignore
 
 [Abrir arquivo](../../.gitignore) · sem extensão · 551 bytes
@@ -73,16 +63,6 @@ Configuração ou saída navegável do mapa Graphify.
 **Natureza:** mapa estrutural gerado. **Uso:** Atualizar com Graphify após mudanças estruturais.
 **Relações de saída:** Nenhuma relação estrutural encontrada; ausência não prova desuso..
 **Referenciado por:** Nenhuma referência catalogada..
-
-## .nojekyll
-
-[Abrir arquivo](../../.nojekyll) · sem extensão · 0 bytes
-
-Habilita publicação estática direta pelo GitHub Pages.
-
-**Natureza:** configuração editável. **Uso:** GitHub Pages.
-**Relações de saída:** Nenhuma relação estrutural encontrada; ausência não prova desuso..
-**Referenciado por:** `docs/PUBLICACAO.md` (documenta).
 
 ## .planning/ai/project-index.json
 
@@ -126,7 +106,7 @@ Diagrama arquitetural Archify e sua especificação validada.
 
 ## AGENTS.md
 
-[Abrir arquivo](../../AGENTS.md) · md · 1,867 bytes
+[Abrir arquivo](../../AGENTS.md) · md · 2,039 bytes
 
 Índice e instruções locais para navegação econômica por agentes.
 
@@ -136,7 +116,7 @@ Diagrama arquitetural Archify e sua especificação validada.
 
 ## CHANGELOG.md
 
-[Abrir arquivo](../../CHANGELOG.md) · md · 1,770 bytes
+[Abrir arquivo](../../CHANGELOG.md) · md · 2,047 bytes
 
 Histórico editorial das mudanças e entregas.
 
@@ -196,12 +176,12 @@ Prévia renderizada do projeto Blender; não é textura do modelo.
 
 ## README.md
 
-[Abrir arquivo](../../README.md) · md · 6,081 bytes
+[Abrir arquivo](../../README.md) · md · 6,133 bytes
 
 Entrada pública do laboratório, entregas, instalação e limites.
 
 **Natureza:** documento editável. **Uso:** Leitura inicial.
-**Relações de saída:** documenta → `docs/README.md`; documenta → `Previa-Blender.png`; documenta → `docs/README.md`; documenta → `docs/mapas/README.md`; documenta → `docs/mapas/index.html`; documenta → `web/index.html`; documenta → `INTEIA_F1_Master.blend`; documenta → `identidade/LEIA-ME.md`; documenta → `docs/BOX-LABORATORIO.md`; documenta → `ambientes/INTEIA-box-laboratorio.glb`; documenta → `ambientes/INTEIA_Box_com_carro.blend`; documenta → `modelos/INTEIA_F1_estatico.glb`; documenta → `modelos/INTEIA_F1_animado.glb`; documenta → `docs/DESENVOLVIMENTO.md`; documenta → `docs/SISTEMAS-3D.md`; documenta → `docs/ESPECIFICACAO-ASSET-3D-SISTEMAS-F1.md`; documenta → `docs/BLENDER.md`; documenta → `docs/INTEGRACAO.md`; documenta → `docs/ARQUITETURA.md`; documenta → `docs/AERODINAMICA.md`; documenta → `docs/VALIDACAO.md`; documenta → `docs/OUTRO-PC.md`; documenta → `docs/DESENVOLVIMENTO.md`; documenta → `docs/INTEGRACAO-MOTOR.md`; documenta → `docs/PILOTO-E-CAPACETE.md`; documenta → `LICENSE`; documenta → `docs/DIREITOS-E-PROCEDENCIA.md`; documenta → `THIRD-PARTY-NOTICES.md`.
+**Relações de saída:** documenta → `docs/README.md`; documenta → `Previa-Blender.png`; documenta → `docs/README.md`; documenta → `docs/mapas/README.md`; documenta → `docs/mapas/index.html`; documenta → `web/index.html`; documenta → `INTEIA_F1_Master.blend`; documenta → `identidade/LEIA-ME.md`; documenta → `docs/BOX-LABORATORIO.md`; documenta → `ambientes/INTEIA-box-laboratorio.glb`; documenta → `ambientes/INTEIA_Box_com_carro.blend`; documenta → `modelos/INTEIA_F1_estatico.glb`; documenta → `modelos/INTEIA_F1_animado.glb`; documenta → `docs/DESENVOLVIMENTO.md`; documenta → `docs/SOBRESSALENTES.md`; documenta → `docs/SISTEMAS-3D.md`; documenta → `docs/ESPECIFICACAO-ASSET-3D-SISTEMAS-F1.md`; documenta → `docs/BLENDER.md`; documenta → `docs/INTEGRACAO.md`; documenta → `docs/ARQUITETURA.md`; documenta → `docs/AERODINAMICA.md`; documenta → `docs/VALIDACAO.md`; documenta → `docs/OUTRO-PC.md`; documenta → `docs/DESENVOLVIMENTO.md`; documenta → `docs/INTEGRACAO-MOTOR.md`; documenta → `docs/PILOTO-E-CAPACETE.md`; documenta → `LICENSE`; documenta → `docs/DIREITOS-E-PROCEDENCIA.md`; documenta → `THIRD-PARTY-NOTICES.md`.
 **Referenciado por:** `LEIA-ME.md` (documenta); `docs/OUTRO-PC.md` (documenta).
 
 ## THIRD-PARTY-NOTICES.md
@@ -337,7 +317,7 @@ Separa titularidade INTEIA de geometria fornecida e terceiros.
 
 ## docs/ESPECIFICACAO-ASSET-3D-SISTEMAS-F1.md
 
-[Abrir arquivo](../../docs/ESPECIFICACAO-ASSET-3D-SISTEMAS-F1.md) · md · 27,108 bytes
+[Abrir arquivo](../../docs/ESPECIFICACAO-ASSET-3D-SISTEMAS-F1.md) · md · 27,083 bytes
 
 Contrato de modelagem dos catorze sistemas internos do carro.
 
@@ -387,22 +367,22 @@ Referências, operação e limites do estudo do piloto.
 
 ## docs/PUBLICACAO.md
 
-[Abrir arquivo](../../docs/PUBLICACAO.md) · md · 3,001 bytes
+[Abrir arquivo](../../docs/PUBLICACAO.md) · md · 4,477 bytes
 
 Endereços públicos, atualização e evidência da publicação.
 
 **Natureza:** documento editável. **Uso:** Publicar e verificar novas revisões.
-**Relações de saída:** documenta → `index.html`; documenta → `web/index.html`; documenta → `.nojekyll`.
-**Referenciado por:** `docs/OUTRO-PC.md` (documenta); `docs/README.md` (documenta).
+**Relações de saída:** documenta → `docs/mapas/index.html`.
+**Referenciado por:** `docs/OUTRO-PC.md` (documenta); `docs/README.md` (documenta); `docs/SISTEMAS-3D.md` (documenta); `docs/SOBRESSALENTES.md` (documenta).
 
 ## docs/README.md
 
-[Abrir arquivo](../../docs/README.md) · md · 2,872 bytes
+[Abrir arquivo](../../docs/README.md) · md · 3,070 bytes
 
 Índice canônico da documentação do projeto.
 
 **Natureza:** documentação. **Uso:** Começar por este arquivo e abrir apenas o guia necessário.
-**Relações de saída:** documenta → `docs/ARQUITETURA.md`; documenta → `docs/DESENVOLVIMENTO.md`; documenta → `docs/PUBLICACAO.md`; documenta → `docs/OUTRO-PC.md`; documenta → `docs/INTEGRACAO.md`; documenta → `docs/BLENDER.md`; documenta → `docs/VALIDACAO.md`; documenta → `docs/DIREITOS-E-PROCEDENCIA.md`; documenta → `docs/INTEGRACAO-MOTOR.md`; documenta → `docs/SISTEMAS-3D.md`; documenta → `docs/ESPECIFICACAO-ASSET-3D-SISTEMAS-F1.md`; documenta → `docs/pesquisa-sistemas-carro-video.md`; documenta → `docs/AERODINAMICA.md`; documenta → `docs/BOX-LABORATORIO.md`; documenta → `docs/PILOTO-E-CAPACETE.md`; documenta → `docs/ACABAMENTO-E-RENDER.md`; documenta → `docs/mapas/README.md`; documenta → `.planning/architecture/system-architecture.html`; documenta → `docs/mapas/MANUTENCAO.md`.
+**Relações de saída:** documenta → `docs/ARQUITETURA.md`; documenta → `docs/DESENVOLVIMENTO.md`; documenta → `docs/PUBLICACAO.md`; documenta → `docs/OUTRO-PC.md`; documenta → `docs/INTEGRACAO.md`; documenta → `docs/BLENDER.md`; documenta → `docs/VALIDACAO.md`; documenta → `docs/DIREITOS-E-PROCEDENCIA.md`; documenta → `docs/INTEGRACAO-MOTOR.md`; documenta → `docs/SISTEMAS-3D.md`; documenta → `docs/ESPECIFICACAO-ASSET-3D-SISTEMAS-F1.md`; documenta → `docs/SOBRESSALENTES.md`; documenta → `docs/pesquisa-sistemas-carro-video.md`; documenta → `docs/AERODINAMICA.md`; documenta → `docs/BOX-LABORATORIO.md`; documenta → `docs/PILOTO-E-CAPACETE.md`; documenta → `docs/ACABAMENTO-E-RENDER.md`; documenta → `docs/mapas/README.md`; documenta → `.planning/architecture/system-architecture.html`; documenta → `docs/mapas/MANUTENCAO.md`.
 **Referenciado por:** `CONTRIBUTING.md` (documenta); `LEIA-ME.md` (documenta); `README.md` (documenta); `README.md` (documenta); `docs/ARQUITETURA.md` (documenta).
 
 ## docs/REVISAO-TUNEL-VISUAL.md
@@ -417,13 +397,23 @@ Revisões e limites da representação visual do fluxo.
 
 ## docs/SISTEMAS-3D.md
 
-[Abrir arquivo](../../docs/SISTEMAS-3D.md) · md · 5,445 bytes
+[Abrir arquivo](../../docs/SISTEMAS-3D.md) · md · 8,042 bytes
 
 Guia operacional da bancada Sistemas, do asset publicado e de sua regeneração.
 
 **Natureza:** documento editável. **Uso:** Desenvolvimento, validação e limites dos catorze sistemas internos.
-**Relações de saída:** Nenhuma relação estrutural encontrada; ausência não prova desuso..
+**Relações de saída:** documenta → `docs/PUBLICACAO.md`.
 **Referenciado por:** `README.md` (documenta); `docs/ESPECIFICACAO-ASSET-3D-SISTEMAS-F1.md` (documenta); `docs/README.md` (documenta).
+
+## docs/SOBRESSALENTES.md
+
+[Abrir arquivo](../../docs/SOBRESSALENTES.md) · md · 3,579 bytes
+
+Guia das peças sobressalentes do Box: cenários, slots, arquivos e regeneração.
+
+**Natureza:** documento editável. **Uso:** Configuração de pista na bancada Carro.
+**Relações de saída:** documenta → `docs/PUBLICACAO.md`.
+**Referenciado por:** `README.md` (documenta); `docs/README.md` (documenta).
 
 ## docs/VALIDACAO.md
 
@@ -437,7 +427,7 @@ Síntese de testes históricos e limites por destino.
 
 ## docs/mapas/GRAFOS.md
 
-[Abrir arquivo](../../docs/mapas/GRAFOS.md) · md · 22,759 bytes
+[Abrir arquivo](../../docs/mapas/GRAFOS.md) · md · 23,920 bytes
 
 Diagramas Mermaid e leitura do grafo geral paralelo.
 
@@ -447,7 +437,7 @@ Diagramas Mermaid e leitura do grafo geral paralelo.
 
 ## docs/mapas/INVENTARIO.md
 
-[Abrir arquivo](../../docs/mapas/INVENTARIO.md) · md · 44,348 bytes
+[Abrir arquivo](../../docs/mapas/INVENTARIO.md) · md · 48,877 bytes
 
 Inventário legível de arquivos da conversa paralela.
 
@@ -467,7 +457,7 @@ Atualização e manutenção do gerador de mapas paralelo.
 
 ## docs/mapas/MODULOS.md
 
-[Abrir arquivo](../../docs/mapas/MODULOS.md) · md · 8,775 bytes
+[Abrir arquivo](../../docs/mapas/MODULOS.md) · md · 8,831 bytes
 
 Visão de módulos e responsabilidades do mapa paralelo.
 
@@ -477,7 +467,7 @@ Visão de módulos e responsabilidades do mapa paralelo.
 
 ## docs/mapas/PRODUCAO.md
 
-[Abrir arquivo](../../docs/mapas/PRODUCAO.md) · md · 17,713 bytes
+[Abrir arquivo](../../docs/mapas/PRODUCAO.md) · md · 17,498 bytes
 
 Pipeline de produção de assets documentado no mapa paralelo.
 
@@ -487,7 +477,7 @@ Pipeline de produção de assets documentado no mapa paralelo.
 
 ## docs/mapas/README.md
 
-[Abrir arquivo](../../docs/mapas/README.md) · md · 3,528 bytes
+[Abrir arquivo](../../docs/mapas/README.md) · md · 3,456 bytes
 
 Entrada do mapa geral produzido pela conversa paralela.
 
@@ -507,7 +497,7 @@ Receitas de reutilização do mapa geral paralelo.
 
 ## docs/mapas/VERIFICACAO.md
 
-[Abrir arquivo](../../docs/mapas/VERIFICACAO.md) · md · 3,816 bytes
+[Abrir arquivo](../../docs/mapas/VERIFICACAO.md) · md · 3,817 bytes
 
 Resultados de verificação registrados pela conversa paralela.
 
@@ -517,7 +507,7 @@ Resultados de verificação registrados pela conversa paralela.
 
 ## docs/mapas/cobertura.json
 
-[Abrir arquivo](../../docs/mapas/cobertura.json) · json · 1,127 bytes
+[Abrir arquivo](../../docs/mapas/cobertura.json) · json · 1,128 bytes
 
 Contagens, escopo e exclusões do mapa paralelo.
 
@@ -537,7 +527,7 @@ Catálogo de componentes GLB do mapa paralelo.
 
 ## docs/mapas/controles.json
 
-[Abrir arquivo](../../docs/mapas/controles.json) · json · 52,918 bytes
+[Abrir arquivo](../../docs/mapas/controles.json) · json · 55,922 bytes
 
 Índice de controles DOM extraído pelo gerador paralelo.
 
@@ -547,7 +537,7 @@ Catálogo de componentes GLB do mapa paralelo.
 
 ## docs/mapas/dependencias.json
 
-[Abrir arquivo](../../docs/mapas/dependencias.json) · json · 51,477 bytes
+[Abrir arquivo](../../docs/mapas/dependencias.json) · json · 54,660 bytes
 
 Relações de dependências extraídas pelo gerador paralelo.
 
@@ -567,17 +557,17 @@ Extração graphify preservada pela conversa paralela.
 
 ## docs/mapas/index.html
 
-[Abrir arquivo](../../docs/mapas/index.html) · html · 437,791 bytes
+[Abrir arquivo](../../docs/mapas/index.html) · html · 451,069 bytes
 
 Interface navegável do mapa geral paralelo.
 
 **Natureza:** documentação/código de mapeamento paralelo. **Uso:** Complementar a esta análise; mantido pela outra tarefa.
 **Relações de saída:** Nenhuma relação estrutural encontrada; ausência não prova desuso..
-**Referenciado por:** `README.md` (documenta).
+**Referenciado por:** `README.md` (documenta); `docs/PUBLICACAO.md` (documenta).
 
 ## docs/mapas/inventario.json
 
-[Abrir arquivo](../../docs/mapas/inventario.json) · json · 550,627 bytes
+[Abrir arquivo](../../docs/mapas/inventario.json) · json · 561,564 bytes
 
 Inventário estruturado de arquivos do gerador paralelo.
 
@@ -637,11 +627,21 @@ Pareceres históricos e subjetivos sobre versões visuais.
 
 ## ferramentas/gerar_sistemas.py
 
-[Abrir arquivo](../../ferramentas/gerar_sistemas.py) · py · 14,239 bytes
+[Abrir arquivo](../../ferramentas/gerar_sistemas.py) · py · 14,534 bytes
 
 Pipeline de geração e otimização dos sistemas internos.
 
 **Natureza:** ferramenta editável. **Uso:** Executar a partir da raiz e revisar os derivados antes de integrar.
+**Relações de saída:** Nenhuma relação estrutural encontrada; ausência não prova desuso..
+**Referenciado por:** Nenhuma referência catalogada..
+
+## ferramentas/gerar_sobressalentes.py
+
+[Abrir arquivo](../../ferramentas/gerar_sobressalentes.py) · py · 16,085 bytes
+
+Gerador Blender das peças sobressalentes (pneus, asas, asa de viga, venezianas).
+
+**Natureza:** ferramenta editável. **Uso:** Executar com Blender 5.2 em modo background; grava GLB e manifesto.
 **Relações de saída:** Nenhuma relação estrutural encontrada; ausência não prova desuso..
 **Referenciado por:** Nenhuma referência catalogada..
 
@@ -727,7 +727,7 @@ Abre cena Blender do box e renderiza prévia.
 
 ## ferramentas/sistemas/lib.py
 
-[Abrir arquivo](../../ferramentas/sistemas/lib.py) · py · 42,247 bytes
+[Abrir arquivo](../../ferramentas/sistemas/lib.py) · py · 52,452 bytes
 
 Biblioteca geométrica compartilhada pelos sistemas internos.
 
@@ -737,7 +737,7 @@ Biblioteca geométrica compartilhada pelos sistemas internos.
 
 ## ferramentas/sistemas/previews/aero-assoalho-por-baixo.png
 
-[Abrir arquivo](../../ferramentas/sistemas/previews/aero-assoalho-por-baixo.png) · png · 1,107,325 bytes
+[Abrir arquivo](../../ferramentas/sistemas/previews/aero-assoalho-por-baixo.png) · png · 1,113,507 bytes
 
 Prévia gerada para revisão visual de um sistema interno.
 
@@ -747,7 +747,7 @@ Prévia gerada para revisão visual de um sistema interno.
 
 ## ferramentas/sistemas/previews/aero-bargeboards.png
 
-[Abrir arquivo](../../ferramentas/sistemas/previews/aero-bargeboards.png) · png · 1,001,401 bytes
+[Abrir arquivo](../../ferramentas/sistemas/previews/aero-bargeboards.png) · png · 1,001,595 bytes
 
 Prévia gerada para revisão visual de um sistema interno.
 
@@ -757,7 +757,7 @@ Prévia gerada para revisão visual de um sistema interno.
 
 ## ferramentas/sistemas/previews/aero-difusor.png
 
-[Abrir arquivo](../../ferramentas/sistemas/previews/aero-difusor.png) · png · 1,088,941 bytes
+[Abrir arquivo](../../ferramentas/sistemas/previews/aero-difusor.png) · png · 1,097,890 bytes
 
 Prévia gerada para revisão visual de um sistema interno.
 
@@ -767,7 +767,7 @@ Prévia gerada para revisão visual de um sistema interno.
 
 ## ferramentas/sistemas/previews/aero-drs.png
 
-[Abrir arquivo](../../ferramentas/sistemas/previews/aero-drs.png) · png · 1,030,120 bytes
+[Abrir arquivo](../../ferramentas/sistemas/previews/aero-drs.png) · png · 1,033,830 bytes
 
 Prévia gerada para revisão visual de um sistema interno.
 
@@ -777,7 +777,17 @@ Prévia gerada para revisão visual de um sistema interno.
 
 ## ferramentas/sistemas/previews/aero-hero.png
 
-[Abrir arquivo](../../ferramentas/sistemas/previews/aero-hero.png) · png · 973,235 bytes
+[Abrir arquivo](../../ferramentas/sistemas/previews/aero-hero.png) · png · 973,692 bytes
+
+Prévia gerada para revisão visual de um sistema interno.
+
+**Natureza:** evidência visual gerada. **Uso:** Comparar com a especificação; não é asset carregado pelo runtime.
+**Relações de saída:** Nenhuma relação estrutural encontrada; ausência não prova desuso..
+**Referenciado por:** Nenhuma referência catalogada..
+
+## ferramentas/sistemas/previews/aero-side.png
+
+[Abrir arquivo](../../ferramentas/sistemas/previews/aero-side.png) · png · 936,741 bytes
 
 Prévia gerada para revisão visual de um sistema interno.
 
@@ -787,7 +797,7 @@ Prévia gerada para revisão visual de um sistema interno.
 
 ## ferramentas/sistemas/previews/brakes-brake-by-wire.png
 
-[Abrir arquivo](../../ferramentas/sistemas/previews/brakes-brake-by-wire.png) · png · 920,564 bytes
+[Abrir arquivo](../../ferramentas/sistemas/previews/brakes-brake-by-wire.png) · png · 780,619 bytes
 
 Prévia gerada para revisão visual de um sistema interno.
 
@@ -797,7 +807,7 @@ Prévia gerada para revisão visual de um sistema interno.
 
 ## ferramentas/sistemas/previews/brakes-canto-dianteiro.png
 
-[Abrir arquivo](../../ferramentas/sistemas/previews/brakes-canto-dianteiro.png) · png · 1,139,614 bytes
+[Abrir arquivo](../../ferramentas/sistemas/previews/brakes-canto-dianteiro.png) · png · 1,140,866 bytes
 
 Prévia gerada para revisão visual de um sistema interno.
 
@@ -807,7 +817,7 @@ Prévia gerada para revisão visual de um sistema interno.
 
 ## ferramentas/sistemas/previews/brakes-canto-por-dentro.png
 
-[Abrir arquivo](../../ferramentas/sistemas/previews/brakes-canto-por-dentro.png) · png · 1,072,524 bytes
+[Abrir arquivo](../../ferramentas/sistemas/previews/brakes-canto-por-dentro.png) · png · 1,071,909 bytes
 
 Prévia gerada para revisão visual de um sistema interno.
 
@@ -817,7 +827,7 @@ Prévia gerada para revisão visual de um sistema interno.
 
 ## ferramentas/sistemas/previews/brakes-hero.png
 
-[Abrir arquivo](../../ferramentas/sistemas/previews/brakes-hero.png) · png · 989,563 bytes
+[Abrir arquivo](../../ferramentas/sistemas/previews/brakes-hero.png) · png · 988,670 bytes
 
 Prévia gerada para revisão visual de um sistema interno.
 
@@ -827,7 +837,7 @@ Prévia gerada para revisão visual de um sistema interno.
 
 ## ferramentas/sistemas/previews/brakes-pedaleira.png
 
-[Abrir arquivo](../../ferramentas/sistemas/previews/brakes-pedaleira.png) · png · 1,023,571 bytes
+[Abrir arquivo](../../ferramentas/sistemas/previews/brakes-pedaleira.png) · png · 1,002,961 bytes
 
 Prévia gerada para revisão visual de um sistema interno.
 
@@ -837,7 +847,7 @@ Prévia gerada para revisão visual de um sistema interno.
 
 ## ferramentas/sistemas/previews/brakes-side.png
 
-[Abrir arquivo](../../ferramentas/sistemas/previews/brakes-side.png) · png · 934,048 bytes
+[Abrir arquivo](../../ferramentas/sistemas/previews/brakes-side.png) · png · 953,334 bytes
 
 Prévia gerada para revisão visual de um sistema interno.
 
@@ -847,7 +857,7 @@ Prévia gerada para revisão visual de um sistema interno.
 
 ## ferramentas/sistemas/previews/cockpit-assento-arnes.png
 
-[Abrir arquivo](../../ferramentas/sistemas/previews/cockpit-assento-arnes.png) · png · 1,091,696 bytes
+[Abrir arquivo](../../ferramentas/sistemas/previews/cockpit-assento-arnes.png) · png · 1,094,047 bytes
 
 Prévia gerada para revisão visual de um sistema interno.
 
@@ -857,7 +867,7 @@ Prévia gerada para revisão visual de um sistema interno.
 
 ## ferramentas/sistemas/previews/cockpit-hans.png
 
-[Abrir arquivo](../../ferramentas/sistemas/previews/cockpit-hans.png) · png · 1,100,556 bytes
+[Abrir arquivo](../../ferramentas/sistemas/previews/cockpit-hans.png) · png · 1,115,179 bytes
 
 Prévia gerada para revisão visual de um sistema interno.
 
@@ -867,7 +877,7 @@ Prévia gerada para revisão visual de um sistema interno.
 
 ## ferramentas/sistemas/previews/cockpit-hero.png
 
-[Abrir arquivo](../../ferramentas/sistemas/previews/cockpit-hero.png) · png · 1,038,275 bytes
+[Abrir arquivo](../../ferramentas/sistemas/previews/cockpit-hero.png) · png · 1,025,462 bytes
 
 Prévia gerada para revisão visual de um sistema interno.
 
@@ -877,7 +887,7 @@ Prévia gerada para revisão visual de um sistema interno.
 
 ## ferramentas/sistemas/previews/cockpit-hidratacao.png
 
-[Abrir arquivo](../../ferramentas/sistemas/previews/cockpit-hidratacao.png) · png · 1,056,739 bytes
+[Abrir arquivo](../../ferramentas/sistemas/previews/cockpit-hidratacao.png) · png · 1,062,103 bytes
 
 Prévia gerada para revisão visual de um sistema interno.
 
@@ -887,7 +897,17 @@ Prévia gerada para revisão visual de um sistema interno.
 
 ## ferramentas/sistemas/previews/cockpit-pedais.png
 
-[Abrir arquivo](../../ferramentas/sistemas/previews/cockpit-pedais.png) · png · 967,845 bytes
+[Abrir arquivo](../../ferramentas/sistemas/previews/cockpit-pedais.png) · png · 1,138,583 bytes
+
+Prévia gerada para revisão visual de um sistema interno.
+
+**Natureza:** evidência visual gerada. **Uso:** Comparar com a especificação; não é asset carregado pelo runtime.
+**Relações de saída:** Nenhuma relação estrutural encontrada; ausência não prova desuso..
+**Referenciado por:** Nenhuma referência catalogada..
+
+## ferramentas/sistemas/previews/cockpit-side.png
+
+[Abrir arquivo](../../ferramentas/sistemas/previews/cockpit-side.png) · png · 978,113 bytes
 
 Prévia gerada para revisão visual de um sistema interno.
 
@@ -897,7 +917,17 @@ Prévia gerada para revisão visual de um sistema interno.
 
 ## ferramentas/sistemas/previews/cooling-hero.png
 
-[Abrir arquivo](../../ferramentas/sistemas/previews/cooling-hero.png) · png · 1,023,861 bytes
+[Abrir arquivo](../../ferramentas/sistemas/previews/cooling-hero.png) · png · 1,016,713 bytes
+
+Prévia gerada para revisão visual de um sistema interno.
+
+**Natureza:** evidência visual gerada. **Uso:** Comparar com a especificação; não é asset carregado pelo runtime.
+**Relações de saída:** Nenhuma relação estrutural encontrada; ausência não prova desuso..
+**Referenciado por:** Nenhuma referência catalogada..
+
+## ferramentas/sistemas/previews/cooling-side.png
+
+[Abrir arquivo](../../ferramentas/sistemas/previews/cooling-side.png) · png · 957,542 bytes
 
 Prévia gerada para revisão visual de um sistema interno.
 
@@ -907,7 +937,7 @@ Prévia gerada para revisão visual de um sistema interno.
 
 ## ferramentas/sistemas/previews/cooling-sidepod-direito.png
 
-[Abrir arquivo](../../ferramentas/sistemas/previews/cooling-sidepod-direito.png) · png · 1,079,738 bytes
+[Abrir arquivo](../../ferramentas/sistemas/previews/cooling-sidepod-direito.png) · png · 1,053,701 bytes
 
 Prévia gerada para revisão visual de um sistema interno.
 
@@ -917,7 +947,7 @@ Prévia gerada para revisão visual de um sistema interno.
 
 ## ferramentas/sistemas/previews/cooling-sidepod-esquerdo.png
 
-[Abrir arquivo](../../ferramentas/sistemas/previews/cooling-sidepod-esquerdo.png) · png · 1,036,336 bytes
+[Abrir arquivo](../../ferramentas/sistemas/previews/cooling-sidepod-esquerdo.png) · png · 1,063,183 bytes
 
 Prévia gerada para revisão visual de um sistema interno.
 
@@ -927,7 +957,7 @@ Prévia gerada para revisão visual de um sistema interno.
 
 ## ferramentas/sistemas/previews/cooling-superior.png
 
-[Abrir arquivo](../../ferramentas/sistemas/previews/cooling-superior.png) · png · 1,025,670 bytes
+[Abrir arquivo](../../ferramentas/sistemas/previews/cooling-superior.png) · png · 1,039,766 bytes
 
 Prévia gerada para revisão visual de um sistema interno.
 
@@ -937,7 +967,7 @@ Prévia gerada para revisão visual de um sistema interno.
 
 ## ferramentas/sistemas/previews/ers-energy-store.png
 
-[Abrir arquivo](../../ferramentas/sistemas/previews/ers-energy-store.png) · png · 986,905 bytes
+[Abrir arquivo](../../ferramentas/sistemas/previews/ers-energy-store.png) · png · 960,746 bytes
 
 Prévia gerada para revisão visual de um sistema interno.
 
@@ -947,7 +977,7 @@ Prévia gerada para revisão visual de um sistema interno.
 
 ## ferramentas/sistemas/previews/ers-hero.png
 
-[Abrir arquivo](../../ferramentas/sistemas/previews/ers-hero.png) · png · 992,939 bytes
+[Abrir arquivo](../../ferramentas/sistemas/previews/ers-hero.png) · png · 987,837 bytes
 
 Prévia gerada para revisão visual de um sistema interno.
 
@@ -957,7 +987,7 @@ Prévia gerada para revisão visual de um sistema interno.
 
 ## ferramentas/sistemas/previews/ers-inversor.png
 
-[Abrir arquivo](../../ferramentas/sistemas/previews/ers-inversor.png) · png · 1,169,236 bytes
+[Abrir arquivo](../../ferramentas/sistemas/previews/ers-inversor.png) · png · 778,709 bytes
 
 Prévia gerada para revisão visual de um sistema interno.
 
@@ -967,7 +997,17 @@ Prévia gerada para revisão visual de um sistema interno.
 
 ## ferramentas/sistemas/previews/ers-mgu-k.png
 
-[Abrir arquivo](../../ferramentas/sistemas/previews/ers-mgu-k.png) · png · 1,005,640 bytes
+[Abrir arquivo](../../ferramentas/sistemas/previews/ers-mgu-k.png) · png · 890,019 bytes
+
+Prévia gerada para revisão visual de um sistema interno.
+
+**Natureza:** evidência visual gerada. **Uso:** Comparar com a especificação; não é asset carregado pelo runtime.
+**Relações de saída:** Nenhuma relação estrutural encontrada; ausência não prova desuso..
+**Referenciado por:** Nenhuma referência catalogada..
+
+## ferramentas/sistemas/previews/ers-side.png
+
+[Abrir arquivo](../../ferramentas/sistemas/previews/ers-side.png) · png · 916,208 bytes
 
 Prévia gerada para revisão visual de um sistema interno.
 
@@ -977,7 +1017,7 @@ Prévia gerada para revisão visual de um sistema interno.
 
 ## ferramentas/sistemas/previews/fuel-celula.png
 
-[Abrir arquivo](../../ferramentas/sistemas/previews/fuel-celula.png) · png · 1,105,994 bytes
+[Abrir arquivo](../../ferramentas/sistemas/previews/fuel-celula.png) · png · 1,087,944 bytes
 
 Prévia gerada para revisão visual de um sistema interno.
 
@@ -987,7 +1027,7 @@ Prévia gerada para revisão visual de um sistema interno.
 
 ## ferramentas/sistemas/previews/fuel-hero.png
 
-[Abrir arquivo](../../ferramentas/sistemas/previews/fuel-hero.png) · png · 1,075,268 bytes
+[Abrir arquivo](../../ferramentas/sistemas/previews/fuel-hero.png) · png · 1,062,327 bytes
 
 Prévia gerada para revisão visual de um sistema interno.
 
@@ -997,7 +1037,7 @@ Prévia gerada para revisão visual de um sistema interno.
 
 ## ferramentas/sistemas/previews/fuel-interior.png
 
-[Abrir arquivo](../../ferramentas/sistemas/previews/fuel-interior.png) · png · 1,233,471 bytes
+[Abrir arquivo](../../ferramentas/sistemas/previews/fuel-interior.png) · png · 1,215,387 bytes
 
 Prévia gerada para revisão visual de um sistema interno.
 
@@ -1007,7 +1047,17 @@ Prévia gerada para revisão visual de um sistema interno.
 
 ## ferramentas/sistemas/previews/fuel-linhas.png
 
-[Abrir arquivo](../../ferramentas/sistemas/previews/fuel-linhas.png) · png · 1,059,638 bytes
+[Abrir arquivo](../../ferramentas/sistemas/previews/fuel-linhas.png) · png · 1,036,326 bytes
+
+Prévia gerada para revisão visual de um sistema interno.
+
+**Natureza:** evidência visual gerada. **Uso:** Comparar com a especificação; não é asset carregado pelo runtime.
+**Relações de saída:** Nenhuma relação estrutural encontrada; ausência não prova desuso..
+**Referenciado por:** Nenhuma referência catalogada..
+
+## ferramentas/sistemas/previews/fuel-side.png
+
+[Abrir arquivo](../../ferramentas/sistemas/previews/fuel-side.png) · png · 960,582 bytes
 
 Prévia gerada para revisão visual de um sistema interno.
 
@@ -1017,7 +1067,7 @@ Prévia gerada para revisão visual de um sistema interno.
 
 ## ferramentas/sistemas/previews/overview-hero.png
 
-[Abrir arquivo](../../ferramentas/sistemas/previews/overview-hero.png) · png · 1,059,285 bytes
+[Abrir arquivo](../../ferramentas/sistemas/previews/overview-hero.png) · png · 1,003,825 bytes
 
 Prévia gerada para revisão visual de um sistema interno.
 
@@ -1027,7 +1077,7 @@ Prévia gerada para revisão visual de um sistema interno.
 
 ## ferramentas/sistemas/previews/power-escape-turbina.png
 
-[Abrir arquivo](../../ferramentas/sistemas/previews/power-escape-turbina.png) · png · 1,169,408 bytes
+[Abrir arquivo](../../ferramentas/sistemas/previews/power-escape-turbina.png) · png · 1,155,479 bytes
 
 Prévia gerada para revisão visual de um sistema interno.
 
@@ -1037,7 +1087,7 @@ Prévia gerada para revisão visual de um sistema interno.
 
 ## ferramentas/sistemas/previews/power-hero.png
 
-[Abrir arquivo](../../ferramentas/sistemas/previews/power-hero.png) · png · 1,033,160 bytes
+[Abrir arquivo](../../ferramentas/sistemas/previews/power-hero.png) · png · 1,029,357 bytes
 
 Prévia gerada para revisão visual de um sistema interno.
 
@@ -1047,7 +1097,17 @@ Prévia gerada para revisão visual de um sistema interno.
 
 ## ferramentas/sistemas/previews/power-plenum-trompetas.png
 
-[Abrir arquivo](../../ferramentas/sistemas/previews/power-plenum-trompetas.png) · png · 1,119,296 bytes
+[Abrir arquivo](../../ferramentas/sistemas/previews/power-plenum-trompetas.png) · png · 1,095,683 bytes
+
+Prévia gerada para revisão visual de um sistema interno.
+
+**Natureza:** evidência visual gerada. **Uso:** Comparar com a especificação; não é asset carregado pelo runtime.
+**Relações de saída:** Nenhuma relação estrutural encontrada; ausência não prova desuso..
+**Referenciado por:** Nenhuma referência catalogada..
+
+## ferramentas/sistemas/previews/power-side.png
+
+[Abrir arquivo](../../ferramentas/sistemas/previews/power-side.png) · png · 1,006,710 bytes
 
 Prévia gerada para revisão visual de um sistema interno.
 
@@ -1057,7 +1117,7 @@ Prévia gerada para revisão visual de um sistema interno.
 
 ## ferramentas/sistemas/previews/power-tres-quartos.png
 
-[Abrir arquivo](../../ferramentas/sistemas/previews/power-tres-quartos.png) · png · 1,162,037 bytes
+[Abrir arquivo](../../ferramentas/sistemas/previews/power-tres-quartos.png) · png · 1,157,697 bytes
 
 Prévia gerada para revisão visual de um sistema interno.
 
@@ -1067,7 +1127,7 @@ Prévia gerada para revisão visual de um sistema interno.
 
 ## ferramentas/sistemas/previews/power-turbo-dianteiro.png
 
-[Abrir arquivo](../../ferramentas/sistemas/previews/power-turbo-dianteiro.png) · png · 1,149,485 bytes
+[Abrir arquivo](../../ferramentas/sistemas/previews/power-turbo-dianteiro.png) · png · 1,166,279 bytes
 
 Prévia gerada para revisão visual de um sistema interno.
 
@@ -1077,7 +1137,7 @@ Prévia gerada para revisão visual de um sistema interno.
 
 ## ferramentas/sistemas/previews/power-vale-em-v.png
 
-[Abrir arquivo](../../ferramentas/sistemas/previews/power-vale-em-v.png) · png · 1,070,595 bytes
+[Abrir arquivo](../../ferramentas/sistemas/previews/power-vale-em-v.png) · png · 1,079,891 bytes
 
 Prévia gerada para revisão visual de um sistema interno.
 
@@ -1087,7 +1147,7 @@ Prévia gerada para revisão visual de um sistema interno.
 
 ## ferramentas/sistemas/previews/safety-halo.png
 
-[Abrir arquivo](../../ferramentas/sistemas/previews/safety-halo.png) · png · 1,054,996 bytes
+[Abrir arquivo](../../ferramentas/sistemas/previews/safety-halo.png) · png · 1,027,392 bytes
 
 Prévia gerada para revisão visual de um sistema interno.
 
@@ -1097,7 +1157,7 @@ Prévia gerada para revisão visual de um sistema interno.
 
 ## ferramentas/sistemas/previews/safety-hero.png
 
-[Abrir arquivo](../../ferramentas/sistemas/previews/safety-hero.png) · png · 978,850 bytes
+[Abrir arquivo](../../ferramentas/sistemas/previews/safety-hero.png) · png · 974,480 bytes
 
 Prévia gerada para revisão visual de um sistema interno.
 
@@ -1107,7 +1167,7 @@ Prévia gerada para revisão visual de um sistema interno.
 
 ## ferramentas/sistemas/previews/safety-impacto-dianteiro.png
 
-[Abrir arquivo](../../ferramentas/sistemas/previews/safety-impacto-dianteiro.png) · png · 977,953 bytes
+[Abrir arquivo](../../ferramentas/sistemas/previews/safety-impacto-dianteiro.png) · png · 982,658 bytes
 
 Prévia gerada para revisão visual de um sistema interno.
 
@@ -1117,7 +1177,7 @@ Prévia gerada para revisão visual de um sistema interno.
 
 ## ferramentas/sistemas/previews/safety-impacto-traseiro.png
 
-[Abrir arquivo](../../ferramentas/sistemas/previews/safety-impacto-traseiro.png) · png · 996,477 bytes
+[Abrir arquivo](../../ferramentas/sistemas/previews/safety-impacto-traseiro.png) · png · 995,211 bytes
 
 Prévia gerada para revisão visual de um sistema interno.
 
@@ -1127,7 +1187,17 @@ Prévia gerada para revisão visual de um sistema interno.
 
 ## ferramentas/sistemas/previews/safety-retencao-roda.png
 
-[Abrir arquivo](../../ferramentas/sistemas/previews/safety-retencao-roda.png) · png · 980,298 bytes
+[Abrir arquivo](../../ferramentas/sistemas/previews/safety-retencao-roda.png) · png · 978,026 bytes
+
+Prévia gerada para revisão visual de um sistema interno.
+
+**Natureza:** evidência visual gerada. **Uso:** Comparar com a especificação; não é asset carregado pelo runtime.
+**Relações de saída:** Nenhuma relação estrutural encontrada; ausência não prova desuso..
+**Referenciado por:** Nenhuma referência catalogada..
+
+## ferramentas/sistemas/previews/safety-side.png
+
+[Abrir arquivo](../../ferramentas/sistemas/previews/safety-side.png) · png · 940,186 bytes
 
 Prévia gerada para revisão visual de um sistema interno.
 
@@ -1137,7 +1207,7 @@ Prévia gerada para revisão visual de um sistema interno.
 
 ## ferramentas/sistemas/previews/sensors-antena.png
 
-[Abrir arquivo](../../ferramentas/sistemas/previews/sensors-antena.png) · png · 958,450 bytes
+[Abrir arquivo](../../ferramentas/sistemas/previews/sensors-antena.png) · png · 946,306 bytes
 
 Prévia gerada para revisão visual de um sistema interno.
 
@@ -1147,7 +1217,7 @@ Prévia gerada para revisão visual de um sistema interno.
 
 ## ferramentas/sistemas/previews/sensors-ecu.png
 
-[Abrir arquivo](../../ferramentas/sistemas/previews/sensors-ecu.png) · png · 935,854 bytes
+[Abrir arquivo](../../ferramentas/sistemas/previews/sensors-ecu.png) · png · 873,122 bytes
 
 Prévia gerada para revisão visual de um sistema interno.
 
@@ -1157,7 +1227,7 @@ Prévia gerada para revisão visual de um sistema interno.
 
 ## ferramentas/sistemas/previews/sensors-hero.png
 
-[Abrir arquivo](../../ferramentas/sistemas/previews/sensors-hero.png) · png · 967,683 bytes
+[Abrir arquivo](../../ferramentas/sistemas/previews/sensors-hero.png) · png · 969,980 bytes
 
 Prévia gerada para revisão visual de um sistema interno.
 
@@ -1167,7 +1237,7 @@ Prévia gerada para revisão visual de um sistema interno.
 
 ## ferramentas/sistemas/previews/sensors-pitot.png
 
-[Abrir arquivo](../../ferramentas/sistemas/previews/sensors-pitot.png) · png · 905,901 bytes
+[Abrir arquivo](../../ferramentas/sistemas/previews/sensors-pitot.png) · png · 901,985 bytes
 
 Prévia gerada para revisão visual de um sistema interno.
 
@@ -1177,7 +1247,7 @@ Prévia gerada para revisão visual de um sistema interno.
 
 ## ferramentas/sistemas/previews/sensors-roda.png
 
-[Abrir arquivo](../../ferramentas/sistemas/previews/sensors-roda.png) · png · 966,987 bytes
+[Abrir arquivo](../../ferramentas/sistemas/previews/sensors-roda.png) · png · 967,200 bytes
 
 Prévia gerada para revisão visual de um sistema interno.
 
@@ -1185,9 +1255,61 @@ Prévia gerada para revisão visual de um sistema interno.
 **Relações de saída:** Nenhuma relação estrutural encontrada; ausência não prova desuso..
 **Referenciado por:** Nenhuma referência catalogada..
 
+## ferramentas/sistemas/previews/sensors-side.png
+
+[Abrir arquivo](../../ferramentas/sistemas/previews/sensors-side.png) · png · 939,805 bytes
+
+Prévia gerada para revisão visual de um sistema interno.
+
+**Natureza:** evidência visual gerada. **Uso:** Comparar com a especificação; não é asset carregado pelo runtime.
+**Relações de saída:** Nenhuma relação estrutural encontrada; ausência não prova desuso..
+**Referenciado por:** Nenhuma referência catalogada..
+
+## ferramentas/sistemas/previews/sistemas-v1-safety-cockpit-wheel.glb
+
+[Abrir arquivo](../../ferramentas/sistemas/previews/sistemas-v1-safety-cockpit-wheel.glb) · glb · 1,979,160 bytes
+
+Asset GLB derivado dos módulos procedurais de sistemas.
+
+**Natureza:** entrega GLB gerada. **Uso:** Integrar no runtime somente por carregamento explícito em web/src.
+**Relações de saída:** Nenhuma relação estrutural encontrada; ausência não prova desuso..
+**Referenciado por:** Nenhuma referência catalogada..
+**GLB:** 215 nós, 212 meshes, 63,154 triângulos, 38 materiais, 7 imagens, 0 clipes.
+
+## ferramentas/sistemas/previews/sistemas-v1-safety-cockpit-wheel.manifest.json
+
+[Abrir arquivo](../../ferramentas/sistemas/previews/sistemas-v1-safety-cockpit-wheel.manifest.json) · json · 76,530 bytes
+
+Manifesto de composição e métricas do GLB de sistemas correspondente.
+
+**Natureza:** evidência gerada. **Uso:** Validar sistemas, peças e hash junto ao GLB de mesmo prefixo.
+**Relações de saída:** Nenhuma relação estrutural encontrada; ausência não prova desuso..
+**Referenciado por:** Nenhuma referência catalogada..
+
+## ferramentas/sistemas/previews/sistemas-v1-wheel.glb
+
+[Abrir arquivo](../../ferramentas/sistemas/previews/sistemas-v1-wheel.glb) · glb · 918,044 bytes
+
+Asset GLB derivado dos módulos procedurais de sistemas.
+
+**Natureza:** entrega GLB gerada. **Uso:** Integrar no runtime somente por carregamento explícito em web/src.
+**Relações de saída:** Nenhuma relação estrutural encontrada; ausência não prova desuso..
+**Referenciado por:** Nenhuma referência catalogada..
+**GLB:** 113 nós, 112 meshes, 23,984 triângulos, 27 materiais, 4 imagens, 0 clipes.
+
+## ferramentas/sistemas/previews/sistemas-v1-wheel.manifest.json
+
+[Abrir arquivo](../../ferramentas/sistemas/previews/sistemas-v1-wheel.manifest.json) · json · 40,364 bytes
+
+Manifesto de composição e métricas do GLB de sistemas correspondente.
+
+**Natureza:** evidência gerada. **Uso:** Validar sistemas, peças e hash junto ao GLB de mesmo prefixo.
+**Relações de saída:** Nenhuma relação estrutural encontrada; ausência não prova desuso..
+**Referenciado por:** Nenhuma referência catalogada..
+
 ## ferramentas/sistemas/previews/steering-coluna.png
 
-[Abrir arquivo](../../ferramentas/sistemas/previews/steering-coluna.png) · png · 924,536 bytes
+[Abrir arquivo](../../ferramentas/sistemas/previews/steering-coluna.png) · png · 924,116 bytes
 
 Prévia gerada para revisão visual de um sistema interno.
 
@@ -1197,7 +1319,7 @@ Prévia gerada para revisão visual de um sistema interno.
 
 ## ferramentas/sistemas/previews/steering-cremalheira.png
 
-[Abrir arquivo](../../ferramentas/sistemas/previews/steering-cremalheira.png) · png · 983,328 bytes
+[Abrir arquivo](../../ferramentas/sistemas/previews/steering-cremalheira.png) · png · 985,769 bytes
 
 Prévia gerada para revisão visual de um sistema interno.
 
@@ -1207,7 +1329,17 @@ Prévia gerada para revisão visual de um sistema interno.
 
 ## ferramentas/sistemas/previews/steering-hero.png
 
-[Abrir arquivo](../../ferramentas/sistemas/previews/steering-hero.png) · png · 993,771 bytes
+[Abrir arquivo](../../ferramentas/sistemas/previews/steering-hero.png) · png · 992,965 bytes
+
+Prévia gerada para revisão visual de um sistema interno.
+
+**Natureza:** evidência visual gerada. **Uso:** Comparar com a especificação; não é asset carregado pelo runtime.
+**Relações de saída:** Nenhuma relação estrutural encontrada; ausência não prova desuso..
+**Referenciado por:** Nenhuma referência catalogada..
+
+## ferramentas/sistemas/previews/steering-side.png
+
+[Abrir arquivo](../../ferramentas/sistemas/previews/steering-side.png) · png · 923,009 bytes
 
 Prévia gerada para revisão visual de um sistema interno.
 
@@ -1217,7 +1349,7 @@ Prévia gerada para revisão visual de um sistema interno.
 
 ## ferramentas/sistemas/previews/steering-track-rod.png
 
-[Abrir arquivo](../../ferramentas/sistemas/previews/steering-track-rod.png) · png · 948,403 bytes
+[Abrir arquivo](../../ferramentas/sistemas/previews/steering-track-rod.png) · png · 953,459 bytes
 
 Prévia gerada para revisão visual de um sistema interno.
 
@@ -1227,7 +1359,7 @@ Prévia gerada para revisão visual de um sistema interno.
 
 ## ferramentas/sistemas/previews/structure-antepara-traseira.png
 
-[Abrir arquivo](../../ferramentas/sistemas/previews/structure-antepara-traseira.png) · png · 956,947 bytes
+[Abrir arquivo](../../ferramentas/sistemas/previews/structure-antepara-traseira.png) · png · 933,726 bytes
 
 Prévia gerada para revisão visual de um sistema interno.
 
@@ -1237,7 +1369,7 @@ Prévia gerada para revisão visual de um sistema interno.
 
 ## ferramentas/sistemas/previews/structure-celula.png
 
-[Abrir arquivo](../../ferramentas/sistemas/previews/structure-celula.png) · png · 1,047,822 bytes
+[Abrir arquivo](../../ferramentas/sistemas/previews/structure-celula.png) · png · 1,047,681 bytes
 
 Prévia gerada para revisão visual de um sistema interno.
 
@@ -1247,7 +1379,7 @@ Prévia gerada para revisão visual de um sistema interno.
 
 ## ferramentas/sistemas/previews/structure-corte-sanduiche.png
 
-[Abrir arquivo](../../ferramentas/sistemas/previews/structure-corte-sanduiche.png) · png · 1,033,637 bytes
+[Abrir arquivo](../../ferramentas/sistemas/previews/structure-corte-sanduiche.png) · png · 981,372 bytes
 
 Prévia gerada para revisão visual de um sistema interno.
 
@@ -1257,7 +1389,7 @@ Prévia gerada para revisão visual de um sistema interno.
 
 ## ferramentas/sistemas/previews/structure-hero.png
 
-[Abrir arquivo](../../ferramentas/sistemas/previews/structure-hero.png) · png · 1,004,689 bytes
+[Abrir arquivo](../../ferramentas/sistemas/previews/structure-hero.png) · png · 1,002,487 bytes
 
 Prévia gerada para revisão visual de um sistema interno.
 
@@ -1267,7 +1399,17 @@ Prévia gerada para revisão visual de um sistema interno.
 
 ## ferramentas/sistemas/previews/structure-plank.png
 
-[Abrir arquivo](../../ferramentas/sistemas/previews/structure-plank.png) · png · 972,320 bytes
+[Abrir arquivo](../../ferramentas/sistemas/previews/structure-plank.png) · png · 969,837 bytes
+
+Prévia gerada para revisão visual de um sistema interno.
+
+**Natureza:** evidência visual gerada. **Uso:** Comparar com a especificação; não é asset carregado pelo runtime.
+**Relações de saída:** Nenhuma relação estrutural encontrada; ausência não prova desuso..
+**Referenciado por:** Nenhuma referência catalogada..
+
+## ferramentas/sistemas/previews/structure-side.png
+
+[Abrir arquivo](../../ferramentas/sistemas/previews/structure-side.png) · png · 948,622 bytes
 
 Prévia gerada para revisão visual de um sistema interno.
 
@@ -1277,7 +1419,7 @@ Prévia gerada para revisão visual de um sistema interno.
 
 ## ferramentas/sistemas/previews/suspension-dianteira-inboard.png
 
-[Abrir arquivo](../../ferramentas/sistemas/previews/suspension-dianteira-inboard.png) · png · 1,050,666 bytes
+[Abrir arquivo](../../ferramentas/sistemas/previews/suspension-dianteira-inboard.png) · png · 1,043,709 bytes
 
 Prévia gerada para revisão visual de um sistema interno.
 
@@ -1287,7 +1429,7 @@ Prévia gerada para revisão visual de um sistema interno.
 
 ## ferramentas/sistemas/previews/suspension-dianteira.png
 
-[Abrir arquivo](../../ferramentas/sistemas/previews/suspension-dianteira.png) · png · 1,044,303 bytes
+[Abrir arquivo](../../ferramentas/sistemas/previews/suspension-dianteira.png) · png · 1,049,607 bytes
 
 Prévia gerada para revisão visual de um sistema interno.
 
@@ -1297,7 +1439,17 @@ Prévia gerada para revisão visual de um sistema interno.
 
 ## ferramentas/sistemas/previews/suspension-hero.png
 
-[Abrir arquivo](../../ferramentas/sistemas/previews/suspension-hero.png) · png · 991,128 bytes
+[Abrir arquivo](../../ferramentas/sistemas/previews/suspension-hero.png) · png · 990,928 bytes
+
+Prévia gerada para revisão visual de um sistema interno.
+
+**Natureza:** evidência visual gerada. **Uso:** Comparar com a especificação; não é asset carregado pelo runtime.
+**Relações de saída:** Nenhuma relação estrutural encontrada; ausência não prova desuso..
+**Referenciado por:** Nenhuma referência catalogada..
+
+## ferramentas/sistemas/previews/suspension-side.png
+
+[Abrir arquivo](../../ferramentas/sistemas/previews/suspension-side.png) · png · 943,013 bytes
 
 Prévia gerada para revisão visual de um sistema interno.
 
@@ -1307,7 +1459,7 @@ Prévia gerada para revisão visual de um sistema interno.
 
 ## ferramentas/sistemas/previews/suspension-traseira.png
 
-[Abrir arquivo](../../ferramentas/sistemas/previews/suspension-traseira.png) · png · 1,051,648 bytes
+[Abrir arquivo](../../ferramentas/sistemas/previews/suspension-traseira.png) · png · 1,050,112 bytes
 
 Prévia gerada para revisão visual de um sistema interno.
 
@@ -1317,7 +1469,7 @@ Prévia gerada para revisão visual de um sistema interno.
 
 ## ferramentas/sistemas/previews/suspension-upright.png
 
-[Abrir arquivo](../../ferramentas/sistemas/previews/suspension-upright.png) · png · 1,084,050 bytes
+[Abrir arquivo](../../ferramentas/sistemas/previews/suspension-upright.png) · png · 1,079,332 bytes
 
 Prévia gerada para revisão visual de um sistema interno.
 
@@ -1327,7 +1479,7 @@ Prévia gerada para revisão visual de um sistema interno.
 
 ## ferramentas/sistemas/previews/transmission-diferencial.png
 
-[Abrir arquivo](../../ferramentas/sistemas/previews/transmission-diferencial.png) · png · 1,112,696 bytes
+[Abrir arquivo](../../ferramentas/sistemas/previews/transmission-diferencial.png) · png · 1,098,286 bytes
 
 Prévia gerada para revisão visual de um sistema interno.
 
@@ -1337,7 +1489,7 @@ Prévia gerada para revisão visual de um sistema interno.
 
 ## ferramentas/sistemas/previews/transmission-embreagem.png
 
-[Abrir arquivo](../../ferramentas/sistemas/previews/transmission-embreagem.png) · png · 1,206,406 bytes
+[Abrir arquivo](../../ferramentas/sistemas/previews/transmission-embreagem.png) · png · 1,194,150 bytes
 
 Prévia gerada para revisão visual de um sistema interno.
 
@@ -1347,7 +1499,7 @@ Prévia gerada para revisão visual de um sistema interno.
 
 ## ferramentas/sistemas/previews/transmission-engrenagens.png
 
-[Abrir arquivo](../../ferramentas/sistemas/previews/transmission-engrenagens.png) · png · 1,234,780 bytes
+[Abrir arquivo](../../ferramentas/sistemas/previews/transmission-engrenagens.png) · png · 1,067,718 bytes
 
 Prévia gerada para revisão visual de um sistema interno.
 
@@ -1357,7 +1509,7 @@ Prévia gerada para revisão visual de um sistema interno.
 
 ## ferramentas/sistemas/previews/transmission-hero.png
 
-[Abrir arquivo](../../ferramentas/sistemas/previews/transmission-hero.png) · png · 995,586 bytes
+[Abrir arquivo](../../ferramentas/sistemas/previews/transmission-hero.png) · png · 986,022 bytes
 
 Prévia gerada para revisão visual de um sistema interno.
 
@@ -1367,7 +1519,17 @@ Prévia gerada para revisão visual de um sistema interno.
 
 ## ferramentas/sistemas/previews/transmission-lateral-corte.png
 
-[Abrir arquivo](../../ferramentas/sistemas/previews/transmission-lateral-corte.png) · png · 1,082,073 bytes
+[Abrir arquivo](../../ferramentas/sistemas/previews/transmission-lateral-corte.png) · png · 1,019,600 bytes
+
+Prévia gerada para revisão visual de um sistema interno.
+
+**Natureza:** evidência visual gerada. **Uso:** Comparar com a especificação; não é asset carregado pelo runtime.
+**Relações de saída:** Nenhuma relação estrutural encontrada; ausência não prova desuso..
+**Referenciado por:** Nenhuma referência catalogada..
+
+## ferramentas/sistemas/previews/transmission-side.png
+
+[Abrir arquivo](../../ferramentas/sistemas/previews/transmission-side.png) · png · 954,368 bytes
 
 Prévia gerada para revisão visual de um sistema interno.
 
@@ -1377,7 +1539,7 @@ Prévia gerada para revisão visual de um sistema interno.
 
 ## ferramentas/sistemas/previews/wheel-frente.png
 
-[Abrir arquivo](../../ferramentas/sistemas/previews/wheel-frente.png) · png · 1,027,708 bytes
+[Abrir arquivo](../../ferramentas/sistemas/previews/wheel-frente.png) · png · 1,044,761 bytes
 
 Prévia gerada para revisão visual de um sistema interno.
 
@@ -1387,7 +1549,7 @@ Prévia gerada para revisão visual de um sistema interno.
 
 ## ferramentas/sistemas/previews/wheel-hero.png
 
-[Abrir arquivo](../../ferramentas/sistemas/previews/wheel-hero.png) · png · 992,305 bytes
+[Abrir arquivo](../../ferramentas/sistemas/previews/wheel-hero.png) · png · 966,267 bytes
 
 Prévia gerada para revisão visual de um sistema interno.
 
@@ -1397,7 +1559,17 @@ Prévia gerada para revisão visual de um sistema interno.
 
 ## ferramentas/sistemas/previews/wheel-lateral.png
 
-[Abrir arquivo](../../ferramentas/sistemas/previews/wheel-lateral.png) · png · 936,026 bytes
+[Abrir arquivo](../../ferramentas/sistemas/previews/wheel-lateral.png) · png · 962,318 bytes
+
+Prévia gerada para revisão visual de um sistema interno.
+
+**Natureza:** evidência visual gerada. **Uso:** Comparar com a especificação; não é asset carregado pelo runtime.
+**Relações de saída:** Nenhuma relação estrutural encontrada; ausência não prova desuso..
+**Referenciado por:** Nenhuma referência catalogada..
+
+## ferramentas/sistemas/previews/wheel-side.png
+
+[Abrir arquivo](../../ferramentas/sistemas/previews/wheel-side.png) · png · 879,445 bytes
 
 Prévia gerada para revisão visual de um sistema interno.
 
@@ -1407,7 +1579,7 @@ Prévia gerada para revisão visual de um sistema interno.
 
 ## ferramentas/sistemas/previews/wheel-tras.png
 
-[Abrir arquivo](../../ferramentas/sistemas/previews/wheel-tras.png) · png · 1,053,290 bytes
+[Abrir arquivo](../../ferramentas/sistemas/previews/wheel-tras.png) · png · 973,955 bytes
 
 Prévia gerada para revisão visual de um sistema interno.
 
@@ -1517,7 +1689,7 @@ Módulo procedural de um sistema interno do carro.
 
 ## ferramentas/sistemas/s11_safety.py
 
-[Abrir arquivo](../../ferramentas/sistemas/s11_safety.py) · py · 6,847 bytes
+[Abrir arquivo](../../ferramentas/sistemas/s11_safety.py) · py · 6,622 bytes
 
 Módulo procedural de um sistema interno do carro.
 
@@ -1527,7 +1699,7 @@ Módulo procedural de um sistema interno do carro.
 
 ## ferramentas/sistemas/s12_cockpit.py
 
-[Abrir arquivo](../../ferramentas/sistemas/s12_cockpit.py) · py · 5,638 bytes
+[Abrir arquivo](../../ferramentas/sistemas/s12_cockpit.py) · py · 5,588 bytes
 
 Módulo procedural de um sistema interno do carro.
 
@@ -1537,7 +1709,7 @@ Módulo procedural de um sistema interno do carro.
 
 ## ferramentas/sistemas/s13_wheel.py
 
-[Abrir arquivo](../../ferramentas/sistemas/s13_wheel.py) · py · 5,574 bytes
+[Abrir arquivo](../../ferramentas/sistemas/s13_wheel.py) · py · 8,363 bytes
 
 Módulo procedural de um sistema interno do carro.
 
@@ -1633,7 +1805,7 @@ Entrada pública que encaminha ao laboratório em web/.
 
 **Natureza:** fonte web editável. **Uso:** Página inicial do GitHub Pages.
 **Relações de saída:** Nenhuma relação estrutural encontrada; ausência não prova desuso..
-**Referenciado por:** `docs/PUBLICACAO.md` (documenta).
+**Referenciado por:** Nenhuma referência catalogada..
 
 ## manifesto-sha256.json
 
@@ -1832,22 +2004,43 @@ Geometria, animação, hash e licença do motor.
 
 ## web/assets/sistemas-v1.glb
 
-[Abrir arquivo](../../web/assets/sistemas-v1.glb) · glb · 6,335,984 bytes
+[Abrir arquivo](../../web/assets/sistemas-v1.glb) · glb · 6,973,812 bytes
 
 Asset GLB derivado dos módulos procedurais de sistemas.
 
 **Natureza:** entrega GLB gerada. **Uso:** Integrar no runtime somente por carregamento explícito em web/src.
 **Relações de saída:** Nenhuma relação estrutural encontrada; ausência não prova desuso..
 **Referenciado por:** Nenhuma referência catalogada..
-**GLB:** 1130 nós, 885 meshes, 358,402 triângulos, 56 materiais, 16 imagens, 0 clipes.
+**GLB:** 1178 nós, 915 meshes, 368,108 triângulos, 66 materiais, 16 imagens, 0 clipes.
 
 ## web/assets/sistemas-v1.manifest.json
 
-[Abrir arquivo](../../web/assets/sistemas-v1.manifest.json) · json · 392,778 bytes
+[Abrir arquivo](../../web/assets/sistemas-v1.manifest.json) · json · 409,997 bytes
 
 Manifesto de composição e métricas do GLB de sistemas correspondente.
 
 **Natureza:** evidência gerada. **Uso:** Validar sistemas, peças e hash junto ao GLB de mesmo prefixo.
+**Relações de saída:** Nenhuma relação estrutural encontrada; ausência não prova desuso..
+**Referenciado por:** Nenhuma referência catalogada..
+
+## web/assets/sobressalentes-v1.glb
+
+[Abrir arquivo](../../web/assets/sobressalentes-v1.glb) · glb · 3,922,704 bytes
+
+Asset GLB das peças sobressalentes, um nó por peça com extras slot/variant/target/mode.
+
+**Natureza:** entrega GLB gerada. **Uso:** Carregado sob demanda por web/src/spares.js.
+**Relações de saída:** Nenhuma relação estrutural encontrada; ausência não prova desuso..
+**Referenciado por:** Nenhuma referência catalogada..
+**GLB:** 28 nós, 28 meshes, 69,092 triângulos, 7 materiais, 12 imagens, 0 clipes.
+
+## web/assets/sobressalentes-v1.manifest.json
+
+[Abrir arquivo](../../web/assets/sobressalentes-v1.manifest.json) · json · 10,307 bytes
+
+Manifesto com slots, variantes, caixas e hash do GLB de sobressalentes.
+
+**Natureza:** evidência gerada. **Uso:** Validado por web/test-spares.mjs.
 **Relações de saída:** Nenhuma relação estrutural encontrada; ausência não prova desuso..
 **Referenciado por:** Nenhuma referência catalogada..
 
@@ -1863,13 +2056,13 @@ Empacota app e base64 do GLB no template para HTML autocontido.
 
 ## web/index.html
 
-[Abrir arquivo](../../web/index.html) · html · 4,404,242 bytes
+[Abrir arquivo](../../web/index.html) · html · 4,478,776 bytes
 
 Site autocontido gerado: template, bundle Three.js e modelo embutido.
 
 **Natureza:** HTML gerado. **Uso:** Abrir localmente; editar fontes e recompilar.
 **Relações de saída:** Nenhuma relação estrutural encontrada; ausência não prova desuso..
-**Referenciado por:** `README.md` (documenta); `docs/PUBLICACAO.md` (documenta); `web/build.cjs` (sobrescreve_html_gerado); `web/server.cjs` (serve_na_rota_raiz); `ferramentas/manifest.cjs` (le_bytes_para_sha256).
+**Referenciado por:** `README.md` (documenta); `web/build.cjs` (sobrescreve_html_gerado); `web/server.cjs` (serve_na_rota_raiz); `ferramentas/manifest.cjs` (le_bytes_para_sha256).
 
 ## web/package-lock.json
 
@@ -1883,7 +2076,7 @@ Versões e integridade das dependências npm.
 
 ## web/package.json
 
-[Abrir arquivo](../../web/package.json) · json · 535 bytes
+[Abrir arquivo](../../web/package.json) · json · 559 bytes
 
 Scripts e versões fixadas de Three.js 0.180.0/esbuild 0.25.10.
 
@@ -1913,12 +2106,12 @@ Calculadora pura por coeficientes: vento, densidade, forças e limites.
 
 ## web/src/app-v2.js
 
-[Abrir arquivo](../../web/src/app-v2.js) · js · 24,289 bytes
+[Abrir arquivo](../../web/src/app-v2.js) · js · 29,574 bytes
 
 Entrada ativa: cena, GLB, módulos, controles DOM e loop de desenho.
 
 **Natureza:** código fonte editável. **Uso:** Navegador WebGL; orquestração.
-**Relações de saída:** importa → `web/src/workbench.js`; importa → `external:three/addons/libs/meshopt_decoder.module.js`; importa → `web/src/engine/in-car.js`; importa → `web/src/car-look.js`; importa → `web/src/surface-library.js`; importa → `web/src/senna-driver.js`; importa → `web/src/branding.js`; importa → `web/src/identity.js`; importa → `external:three/addons/exporters/GLTFExporter.js`; importa → `web/src/garage.js`; importa → `web/src/wind-tunnel.js`; importa → `web/src/systems.js`; importa → `web/src/customize.js`; importa → `external:three`; importa → `external:three/addons/controls/OrbitControls.js`; importa → `external:three/addons/controls/TransformControls.js`; importa → `external:three/addons/postprocessing/EffectComposer.js`; importa → `external:three/addons/postprocessing/RenderPass.js`; importa → `external:three/addons/postprocessing/SSAOPass.js`; importa → `external:three/addons/postprocessing/OutputPass.js`; importa → `external:three/addons/postprocessing/SMAAPass.js`; importa → `external:three/addons/loaders/GLTFLoader.js`; importa → `web/src/studio.js`; importa → `web/src/mechanics.js`; chama_sintaticamente → `web/src/app-v2.js#25:$`; chama_sintaticamente → `web/src/identity.js#11:brandSVG`; chama_sintaticamente → `web/src/studio.js#2:setupStudio`; chama_sintaticamente → `web/src/app-v2.js#25:$`; chama_sintaticamente → `web/src/app-v2.js#25:$`; chama_sintaticamente → `web/src/app-v2.js#25:$`; chama_sintaticamente → `web/src/app-v2.js#25:$`; chama_sintaticamente → `web/src/app-v2.js#25:$`; chama_sintaticamente → `web/src/app-v2.js#25:$`; chama_sintaticamente → `web/src/app-v2.js#25:$`; chama_sintaticamente → `web/src/app-v2.js#25:$`; chama_sintaticamente → `web/src/app-v2.js#25:$`; chama_sintaticamente → `web/src/app-v2.js#52:resize`; chama_sintaticamente → `web/src/app-v2.js#25:$`; chama_sintaticamente → `web/src/studio.js#146:applyCarMaterials`; chama_sintaticamente → `web/src/mechanics.js#3:createMechanics`; chama_sintaticamente → `web/src/branding.js#5:applyInteiaBranding`; chama_sintaticamente → `web/src/surface-library.js#16:createSurfaceLibrary`; chama_sintaticamente → `web/src/car-look.js#202:enhanceCar`; chama_sintaticamente → `web/src/senna-driver.js#6:createSennaDriver`; chama_sintaticamente → `web/src/customize.js#1:setupCustomization`; chama_sintaticamente → `web/src/app-v2.js#25:$`; chama_sintaticamente → `web/src/app-v2.js#25:$`; chama_sintaticamente → `web/src/engine/in-car.js#25:createInCarEngine`; chama_sintaticamente → `web/src/garage.js#7:createGarage`; chama_sintaticamente → `web/src/systems.js#42:createSystems`; chama_sintaticamente → `web/src/wind-tunnel.js#4:createWindTunnel`; chama_sintaticamente → `web/src/workbench.js#4:createWorkbench`; chama_sintaticamente → `web/src/app-v2.js#25:$`; chama_sintaticamente → `web/src/app-v2.js#25:$`; chama_sintaticamente → `web/src/app-v2.js#52:resize`; chama_sintaticamente → `web/src/app-v2.js#25:$`; chama_sintaticamente → `web/src/app-v2.js#25:$`; chama_sintaticamente → `web/src/app-v2.js#50:view`; chama_sintaticamente → `web/src/app-v2.js#25:$`; chama_sintaticamente → `web/src/app-v2.js#25:$`; chama_sintaticamente → `web/src/app-v2.js#50:view`; chama_sintaticamente → `web/src/app-v2.js#25:$`; chama_sintaticamente → `web/src/app-v2.js#25:$`; chama_sintaticamente → `web/src/app-v2.js#25:$`; chama_sintaticamente → `web/src/app-v2.js#46:moveCamera`; chama_sintaticamente → `web/src/app-v2.js#25:$`; chama_sintaticamente → `web/src/app-v2.js#25:$`; chama_sintaticamente → `web/src/app-v2.js#25:$`; chama_sintaticamente → `web/src/app-v2.js#25:$`; chama_sintaticamente → `web/src/app-v2.js#25:$`; chama_sintaticamente → `web/src/app-v2.js#25:$`; chama_sintaticamente → `web/src/app-v2.js#25:$`; chama_sintaticamente → `web/src/app-v2.js#25:$`; chama_sintaticamente → `web/src/app-v2.js#25:$`; chama_sintaticamente → `web/src/app-v2.js#25:$`; chama_sintaticamente → `web/src/app-v2.js#25:$`; chama_sintaticamente → `web/src/app-v2.js#25:$`; chama_sintaticamente → `web/src/app-v2.js#57:assemblyTo`; chama_sintaticamente → `web/src/app-v2.js#25:$`; chama_sintaticamente → `web/src/app-v2.js#57:assemblyTo`; chama_sintaticamente → `web/src/app-v2.js#25:$`; chama_sintaticamente → `web/src/app-v2.js#57:assemblyTo`; chama_sintaticamente → `web/src/app-v2.js#54:refreshSelection`; chama_sintaticamente → `web/src/app-v2.js#25:$`; chama_sintaticamente → `web/src/app-v2.js#36:closeEngine`; chama_sintaticamente → `web/src/app-v2.js#25:$`; chama_sintaticamente → `web/src/app-v2.js#25:$`; chama_sintaticamente → `web/src/app-v2.js#55:select`; chama_sintaticamente → `web/src/app-v2.js#25:$`; chama_sintaticamente → `web/src/app-v2.js#55:select`; chama_sintaticamente → `web/src/app-v2.js#25:$`; chama_sintaticamente → `web/src/app-v2.js#56:focusPart`; chama_sintaticamente → `web/src/app-v2.js#25:$`; chama_sintaticamente → `web/src/app-v2.js#54:refreshSelection`; chama_sintaticamente → `web/src/app-v2.js#25:$`; chama_sintaticamente → `web/src/app-v2.js#25:$`; chama_sintaticamente → `web/src/app-v2.js#25:$`; chama_sintaticamente → `web/src/app-v2.js#25:$`; chama_sintaticamente → `web/src/app-v2.js#25:$`; chama_sintaticamente → `web/src/app-v2.js#25:$`; chama_sintaticamente → `web/src/app-v2.js#25:$`; chama_sintaticamente → `web/src/app-v2.js#25:$`; chama_sintaticamente → `web/src/app-v2.js#25:$`; chama_sintaticamente → `web/src/app-v2.js#25:$`; chama_sintaticamente → `web/src/app-v2.js#25:$`; chama_sintaticamente → `web/src/app-v2.js#25:$`; chama_sintaticamente → `web/src/app-v2.js#36:closeEngine`; chama_sintaticamente → `web/src/app-v2.js#25:$`; chama_sintaticamente → `web/src/app-v2.js#55:select`; chama_sintaticamente → `web/src/app-v2.js#25:$`; chama_sintaticamente → `web/src/app-v2.js#25:$`; chama_sintaticamente → `web/src/app-v2.js#25:$`; chama_sintaticamente → `web/src/app-v2.js#25:$`; chama_sintaticamente → `web/src/app-v2.js#25:$`; chama_sintaticamente → `web/src/app-v2.js#50:view`; chama_sintaticamente → `web/src/app-v2.js#48:syncSystemMode`; chama_sintaticamente → `web/src/app-v2.js#25:$`; chama_sintaticamente → `web/src/app-v2.js#25:$`; chama_sintaticamente → `web/src/app-v2.js#25:$`; chama_sintaticamente → `web/src/app-v2.js#25:$`; chama_sintaticamente → `web/src/app-v2.js#25:$`; chama_sintaticamente → `web/src/app-v2.js#55:select`; chama_sintaticamente → `web/src/app-v2.js#50:view`; chama_sintaticamente → `web/src/app-v2.js#55:select`; chama_sintaticamente → `web/src/app-v2.js#25:$`; chama_sintaticamente → `web/src/app-v2.js#25:$`; chama_sintaticamente → `web/src/app-v2.js#25:$`; chama_sintaticamente → `web/src/app-v2.js#36:closeEngine`; chama_sintaticamente → `web/src/app-v2.js#50:view`; chama_sintaticamente → `web/src/app-v2.js#25:$`; chama_sintaticamente → `web/src/app-v2.js#25:$`; chama_sintaticamente → `web/src/app-v2.js#25:$`; chama_sintaticamente → `web/src/app-v2.js#25:$`; chama_sintaticamente → `web/src/app-v2.js#46:moveCamera`; chama_sintaticamente → `web/src/app-v2.js#25:$`; chama_sintaticamente → `web/src/app-v2.js#25:$`; chama_sintaticamente → `web/src/app-v2.js#25:$`; chama_sintaticamente → `web/src/app-v2.js#25:$`; chama_sintaticamente → `web/src/app-v2.js#25:$`; chama_sintaticamente → `web/src/app-v2.js#25:$`; chama_sintaticamente → `web/src/app-v2.js#25:$`; chama_sintaticamente → `web/src/app-v2.js#25:$`; chama_sintaticamente → `web/src/app-v2.js#25:$`; chama_sintaticamente → `web/src/app-v2.js#25:$`; chama_sintaticamente → `web/src/app-v2.js#25:$`; chama_sintaticamente → `web/src/app-v2.js#50:view`; chama_sintaticamente → `web/src/app-v2.js#25:$`; chama_sintaticamente → `web/src/app-v2.js#25:$`; chama_sintaticamente → `web/src/app-v2.js#25:$`; chama_sintaticamente → `web/src/app-v2.js#25:$`; chama_sintaticamente → `web/src/app-v2.js#48:syncSystemMode`; chama_sintaticamente → `web/src/app-v2.js#25:$`; chama_sintaticamente → `web/src/app-v2.js#25:$`; chama_sintaticamente → `web/src/app-v2.js#25:$`; chama_sintaticamente → `web/src/app-v2.js#25:$`; conecta_stage_e_controles_dom → `web/src/template-v2.html`; exporta_clone_do_box_via_gltfexporter → `web/src/garage.js`; atualiza_estado_a_cada_quadro → `web/src/mechanics.js`; coordena_box_e_transparencia_por_callbacks → `web/src/wind-tunnel.js`; renderiza_e_atualiza_piso → `web/src/studio.js`; importa_assinatura_ativa → `web/src/branding.js`; aplica_assinatura_apos_criar_mecanica → `web/src/branding.js`.
+**Relações de saída:** importa → `web/src/workbench.js`; importa → `web/src/spares.js`; importa → `external:three/addons/libs/meshopt_decoder.module.js`; importa → `web/src/engine/in-car.js`; importa → `web/src/car-look.js`; importa → `web/src/surface-library.js`; importa → `web/src/senna-driver.js`; importa → `web/src/branding.js`; importa → `web/src/identity.js`; importa → `external:three/addons/exporters/GLTFExporter.js`; importa → `web/src/garage.js`; importa → `web/src/wind-tunnel.js`; importa → `web/src/parts-info.js`; importa → `web/src/systems.js`; importa → `web/src/customize.js`; importa → `external:three`; importa → `external:three/addons/controls/OrbitControls.js`; importa → `external:three/addons/controls/TransformControls.js`; importa → `external:three/addons/postprocessing/EffectComposer.js`; importa → `external:three/addons/postprocessing/RenderPass.js`; importa → `external:three/addons/postprocessing/SSAOPass.js`; importa → `external:three/addons/postprocessing/OutputPass.js`; importa → `external:three/addons/postprocessing/SMAAPass.js`; importa → `external:three/addons/loaders/GLTFLoader.js`; importa → `web/src/studio.js`; importa → `web/src/mechanics.js`; chama_sintaticamente → `web/src/app-v2.js#27:$`; chama_sintaticamente → `web/src/identity.js#11:brandSVG`; chama_sintaticamente → `web/src/studio.js#2:setupStudio`; chama_sintaticamente → `web/src/app-v2.js#27:$`; chama_sintaticamente → `web/src/app-v2.js#27:$`; chama_sintaticamente → `web/src/app-v2.js#27:$`; chama_sintaticamente → `web/src/app-v2.js#27:$`; chama_sintaticamente → `web/src/app-v2.js#27:$`; chama_sintaticamente → `web/src/app-v2.js#27:$`; chama_sintaticamente → `web/src/app-v2.js#27:$`; chama_sintaticamente → `web/src/app-v2.js#27:$`; chama_sintaticamente → `web/src/app-v2.js#27:$`; chama_sintaticamente → `web/src/app-v2.js#57:resize`; chama_sintaticamente → `web/src/app-v2.js#27:$`; chama_sintaticamente → `web/src/studio.js#146:applyCarMaterials`; chama_sintaticamente → `web/src/mechanics.js#3:createMechanics`; chama_sintaticamente → `web/src/branding.js#5:applyInteiaBranding`; chama_sintaticamente → `web/src/surface-library.js#16:createSurfaceLibrary`; chama_sintaticamente → `web/src/car-look.js#202:enhanceCar`; chama_sintaticamente → `web/src/senna-driver.js#6:createSennaDriver`; chama_sintaticamente → `web/src/customize.js#1:setupCustomization`; chama_sintaticamente → `web/src/app-v2.js#27:$`; chama_sintaticamente → `web/src/app-v2.js#27:$`; chama_sintaticamente → `web/src/engine/in-car.js#25:createInCarEngine`; chama_sintaticamente → `web/src/garage.js#7:createGarage`; chama_sintaticamente → `web/src/spares.js#48:createSpares`; chama_sintaticamente → `web/src/app-v2.js#62:setupSparesUI`; chama_sintaticamente → `web/src/systems.js#43:createSystems`; chama_sintaticamente → `web/src/wind-tunnel.js#4:createWindTunnel`; chama_sintaticamente → `web/src/workbench.js#4:createWorkbench`; chama_sintaticamente → `web/src/app-v2.js#27:$`; chama_sintaticamente → `web/src/app-v2.js#27:$`; chama_sintaticamente → `web/src/app-v2.js#57:resize`; chama_sintaticamente → `web/src/app-v2.js#27:$`; chama_sintaticamente → `web/src/app-v2.js#27:$`; chama_sintaticamente → `web/src/app-v2.js#52:view`; chama_sintaticamente → `web/src/app-v2.js#27:$`; chama_sintaticamente → `web/src/app-v2.js#27:$`; chama_sintaticamente → `web/src/app-v2.js#52:view`; chama_sintaticamente → `web/src/app-v2.js#27:$`; chama_sintaticamente → `web/src/app-v2.js#27:$`; chama_sintaticamente → `web/src/app-v2.js#27:$`; chama_sintaticamente → `web/src/app-v2.js#48:moveCamera`; chama_sintaticamente → `web/src/app-v2.js#27:$`; chama_sintaticamente → `web/src/app-v2.js#27:$`; chama_sintaticamente → `web/src/app-v2.js#27:$`; chama_sintaticamente → `web/src/app-v2.js#27:$`; chama_sintaticamente → `web/src/app-v2.js#27:$`; chama_sintaticamente → `web/src/app-v2.js#27:$`; chama_sintaticamente → `web/src/app-v2.js#27:$`; chama_sintaticamente → `web/src/app-v2.js#27:$`; chama_sintaticamente → `web/src/app-v2.js#27:$`; chama_sintaticamente → `web/src/app-v2.js#27:$`; chama_sintaticamente → `web/src/app-v2.js#27:$`; chama_sintaticamente → `web/src/app-v2.js#27:$`; chama_sintaticamente → `web/src/app-v2.js#75:assemblyTo`; chama_sintaticamente → `web/src/app-v2.js#27:$`; chama_sintaticamente → `web/src/app-v2.js#27:$`; chama_sintaticamente → `web/src/app-v2.js#75:assemblyTo`; chama_sintaticamente → `web/src/app-v2.js#104:systemsSpreadTo`; chama_sintaticamente → `web/src/app-v2.js#27:$`; chama_sintaticamente → `web/src/app-v2.js#75:assemblyTo`; chama_sintaticamente → `web/src/app-v2.js#27:$`; chama_sintaticamente → `web/src/app-v2.js#75:assemblyTo`; chama_sintaticamente → `web/src/app-v2.js#104:systemsSpreadTo`; chama_sintaticamente → `web/src/app-v2.js#59:refreshSelection`; chama_sintaticamente → `web/src/app-v2.js#27:$`; chama_sintaticamente → `web/src/app-v2.js#38:closeEngine`; chama_sintaticamente → `web/src/app-v2.js#27:$`; chama_sintaticamente → `web/src/app-v2.js#27:$`; chama_sintaticamente → `web/src/app-v2.js#73:select`; chama_sintaticamente → `web/src/app-v2.js#27:$`; chama_sintaticamente → `web/src/app-v2.js#73:select`; chama_sintaticamente → `web/src/app-v2.js#27:$`; chama_sintaticamente → `web/src/app-v2.js#74:focusPart`; chama_sintaticamente → `web/src/app-v2.js#27:$`; chama_sintaticamente → `web/src/app-v2.js#59:refreshSelection`; chama_sintaticamente → `web/src/app-v2.js#27:$`; chama_sintaticamente → `web/src/app-v2.js#27:$`; chama_sintaticamente → `web/src/app-v2.js#27:$`; chama_sintaticamente → `web/src/app-v2.js#27:$`; chama_sintaticamente → `web/src/app-v2.js#27:$`; chama_sintaticamente → `web/src/app-v2.js#27:$`; chama_sintaticamente → `web/src/app-v2.js#27:$`; chama_sintaticamente → `web/src/app-v2.js#27:$`; chama_sintaticamente → `web/src/app-v2.js#27:$`; chama_sintaticamente → `web/src/app-v2.js#27:$`; chama_sintaticamente → `web/src/app-v2.js#27:$`; chama_sintaticamente → `web/src/app-v2.js#27:$`; chama_sintaticamente → `web/src/app-v2.js#38:closeEngine`; chama_sintaticamente → `web/src/app-v2.js#104:systemsSpreadTo`; chama_sintaticamente → `web/src/app-v2.js#27:$`; chama_sintaticamente → `web/src/app-v2.js#73:select`; chama_sintaticamente → `web/src/app-v2.js#27:$`; chama_sintaticamente → `web/src/app-v2.js#27:$`; chama_sintaticamente → `web/src/app-v2.js#27:$`; chama_sintaticamente → `web/src/app-v2.js#27:$`; chama_sintaticamente → `web/src/app-v2.js#27:$`; chama_sintaticamente → `web/src/app-v2.js#52:view`; chama_sintaticamente → `web/src/app-v2.js#50:syncSystemMode`; chama_sintaticamente → `web/src/app-v2.js#27:$`; chama_sintaticamente → `web/src/app-v2.js#27:$`; chama_sintaticamente → `web/src/app-v2.js#27:$`; chama_sintaticamente → `web/src/app-v2.js#27:$`; chama_sintaticamente → `web/src/app-v2.js#27:$`; chama_sintaticamente → `web/src/app-v2.js#27:$`; chama_sintaticamente → `web/src/app-v2.js#27:$`; chama_sintaticamente → `web/src/app-v2.js#72:renderSelectedInfo`; chama_sintaticamente → `web/src/app-v2.js#73:select`; chama_sintaticamente → `web/src/app-v2.js#52:view`; chama_sintaticamente → `web/src/app-v2.js#73:select`; chama_sintaticamente → `web/src/app-v2.js#27:$`; chama_sintaticamente → `web/src/app-v2.js#27:$`; chama_sintaticamente → `web/src/app-v2.js#27:$`; chama_sintaticamente → `web/src/app-v2.js#38:closeEngine`; chama_sintaticamente → `web/src/app-v2.js#52:view`; chama_sintaticamente → `web/src/app-v2.js#27:$`; chama_sintaticamente → `web/src/app-v2.js#27:$`; chama_sintaticamente → `web/src/app-v2.js#27:$`; chama_sintaticamente → `web/src/app-v2.js#27:$`; chama_sintaticamente → `web/src/app-v2.js#48:moveCamera`; chama_sintaticamente → `web/src/app-v2.js#27:$`; chama_sintaticamente → `web/src/app-v2.js#27:$`; chama_sintaticamente → `web/src/app-v2.js#27:$`; chama_sintaticamente → `web/src/app-v2.js#27:$`; chama_sintaticamente → `web/src/app-v2.js#27:$`; chama_sintaticamente → `web/src/app-v2.js#27:$`; chama_sintaticamente → `web/src/app-v2.js#27:$`; chama_sintaticamente → `web/src/app-v2.js#27:$`; chama_sintaticamente → `web/src/app-v2.js#27:$`; chama_sintaticamente → `web/src/app-v2.js#27:$`; chama_sintaticamente → `web/src/app-v2.js#27:$`; chama_sintaticamente → `web/src/app-v2.js#52:view`; chama_sintaticamente → `web/src/app-v2.js#27:$`; chama_sintaticamente → `web/src/app-v2.js#27:$`; chama_sintaticamente → `web/src/app-v2.js#27:$`; chama_sintaticamente → `web/src/app-v2.js#27:$`; chama_sintaticamente → `web/src/app-v2.js#50:syncSystemMode`; chama_sintaticamente → `web/src/app-v2.js#27:$`; chama_sintaticamente → `web/src/app-v2.js#27:$`; chama_sintaticamente → `web/src/app-v2.js#27:$`; chama_sintaticamente → `web/src/app-v2.js#27:$`; conecta_stage_e_controles_dom → `web/src/template-v2.html`; exporta_clone_do_box_via_gltfexporter → `web/src/garage.js`; atualiza_estado_a_cada_quadro → `web/src/mechanics.js`; coordena_box_e_transparencia_por_callbacks → `web/src/wind-tunnel.js`; renderiza_e_atualiza_piso → `web/src/studio.js`; importa_assinatura_ativa → `web/src/branding.js`; aplica_assinatura_apos_criar_mecanica → `web/src/branding.js`.
 **Referenciado por:** `web/build.cjs` (empacota_entrada).
 
 ## web/src/branding.js
@@ -2003,7 +2196,7 @@ Capacete detalhado compartilhado com o cockpit.
 
 ## web/src/identity.js
 
-[Abrir arquivo](../../web/src/identity.js) · js · 2,244 bytes
+[Abrir arquivo](../../web/src/identity.js) · js · 2,423 bytes
 
 Define glifos, emblema, SVG e desenho Canvas da identidade ativa.
 
@@ -2021,6 +2214,16 @@ Agrupa peças, cria pivôs, explode/monta, seleciona e anima rodas/DRS.
 **Relações de saída:** importa → `external:three`.
 **Referenciado por:** `web/src/app-v2.js` (importa); `web/test-mechanics.mjs` (importa); `web/src/app-v2.js` (atualiza_estado_a_cada_quadro); `web/src/garage.js` (le_quantidade_e_montagem_no_monitor); `web/src/wind-tunnel.js` (bloqueia_forcas_com_pecas_deslocadas_ou_isoladas); `docs/INTEGRACAO.md` (alerta_conflito_com_clipe_glb); `web/src/branding.js` (localiza_registro_da_carroceria_para_decal).
 
+## web/src/parts-info.js
+
+[Abrir arquivo](../../web/src/parts-info.js) · js · 62,496 bytes
+
+Fichas didáticas das peças: nome, função e curiosidade por regra de rótulo.
+
+**Natureza:** fonte web editável. **Uso:** Usado pelas bancadas Carro e Sistemas ao clicar em uma peça.
+**Relações de saída:** chama_sintaticamente → `web/src/parts-info.js#6:R`; chama_sintaticamente → `web/src/parts-info.js#6:R`; chama_sintaticamente → `web/src/parts-info.js#6:R`; chama_sintaticamente → `web/src/parts-info.js#6:R`; chama_sintaticamente → `web/src/parts-info.js#6:R`; chama_sintaticamente → `web/src/parts-info.js#6:R`; chama_sintaticamente → `web/src/parts-info.js#6:R`; chama_sintaticamente → `web/src/parts-info.js#6:R`; chama_sintaticamente → `web/src/parts-info.js#6:R`; chama_sintaticamente → `web/src/parts-info.js#6:R`; chama_sintaticamente → `web/src/parts-info.js#6:R`; chama_sintaticamente → `web/src/parts-info.js#6:R`; chama_sintaticamente → `web/src/parts-info.js#6:R`; chama_sintaticamente → `web/src/parts-info.js#6:R`; chama_sintaticamente → `web/src/parts-info.js#6:R`; chama_sintaticamente → `web/src/parts-info.js#6:R`; chama_sintaticamente → `web/src/parts-info.js#6:R`; chama_sintaticamente → `web/src/parts-info.js#6:R`; chama_sintaticamente → `web/src/parts-info.js#6:R`; chama_sintaticamente → `web/src/parts-info.js#6:R`; chama_sintaticamente → `web/src/parts-info.js#6:R`; chama_sintaticamente → `web/src/parts-info.js#6:R`; chama_sintaticamente → `web/src/parts-info.js#6:R`; chama_sintaticamente → `web/src/parts-info.js#6:R`; chama_sintaticamente → `web/src/parts-info.js#6:R`; chama_sintaticamente → `web/src/parts-info.js#6:R`; chama_sintaticamente → `web/src/parts-info.js#6:R`; chama_sintaticamente → `web/src/parts-info.js#6:R`; chama_sintaticamente → `web/src/parts-info.js#6:R`; chama_sintaticamente → `web/src/parts-info.js#6:R`; chama_sintaticamente → `web/src/parts-info.js#6:R`; chama_sintaticamente → `web/src/parts-info.js#6:R`; chama_sintaticamente → `web/src/parts-info.js#6:R`; chama_sintaticamente → `web/src/parts-info.js#6:R`; chama_sintaticamente → `web/src/parts-info.js#6:R`; chama_sintaticamente → `web/src/parts-info.js#6:R`; chama_sintaticamente → `web/src/parts-info.js#6:R`; chama_sintaticamente → `web/src/parts-info.js#6:R`; chama_sintaticamente → `web/src/parts-info.js#6:R`; chama_sintaticamente → `web/src/parts-info.js#6:R`; chama_sintaticamente → `web/src/parts-info.js#6:R`; chama_sintaticamente → `web/src/parts-info.js#6:R`; chama_sintaticamente → `web/src/parts-info.js#6:R`; chama_sintaticamente → `web/src/parts-info.js#6:R`; chama_sintaticamente → `web/src/parts-info.js#6:R`; chama_sintaticamente → `web/src/parts-info.js#6:R`; chama_sintaticamente → `web/src/parts-info.js#6:R`; chama_sintaticamente → `web/src/parts-info.js#6:R`; chama_sintaticamente → `web/src/parts-info.js#6:R`; chama_sintaticamente → `web/src/parts-info.js#6:R`; chama_sintaticamente → `web/src/parts-info.js#6:R`; chama_sintaticamente → `web/src/parts-info.js#6:R`; chama_sintaticamente → `web/src/parts-info.js#6:R`; chama_sintaticamente → `web/src/parts-info.js#6:R`; chama_sintaticamente → `web/src/parts-info.js#6:R`; chama_sintaticamente → `web/src/parts-info.js#6:R`; chama_sintaticamente → `web/src/parts-info.js#6:R`; chama_sintaticamente → `web/src/parts-info.js#6:R`; chama_sintaticamente → `web/src/parts-info.js#6:R`; chama_sintaticamente → `web/src/parts-info.js#6:R`; chama_sintaticamente → `web/src/parts-info.js#6:R`; chama_sintaticamente → `web/src/parts-info.js#6:R`; chama_sintaticamente → `web/src/parts-info.js#6:R`; chama_sintaticamente → `web/src/parts-info.js#6:R`; chama_sintaticamente → `web/src/parts-info.js#6:R`; chama_sintaticamente → `web/src/parts-info.js#6:R`; chama_sintaticamente → `web/src/parts-info.js#6:R`; chama_sintaticamente → `web/src/parts-info.js#6:R`; chama_sintaticamente → `web/src/parts-info.js#6:R`; chama_sintaticamente → `web/src/parts-info.js#6:R`; chama_sintaticamente → `web/src/parts-info.js#6:R`; chama_sintaticamente → `web/src/parts-info.js#6:R`; chama_sintaticamente → `web/src/parts-info.js#6:R`; chama_sintaticamente → `web/src/parts-info.js#6:R`; chama_sintaticamente → `web/src/parts-info.js#6:R`; chama_sintaticamente → `web/src/parts-info.js#6:R`; chama_sintaticamente → `web/src/parts-info.js#6:R`; chama_sintaticamente → `web/src/parts-info.js#6:R`; chama_sintaticamente → `web/src/parts-info.js#6:R`; chama_sintaticamente → `web/src/parts-info.js#6:R`; chama_sintaticamente → `web/src/parts-info.js#6:R`; chama_sintaticamente → `web/src/parts-info.js#6:R`; chama_sintaticamente → `web/src/parts-info.js#6:R`; chama_sintaticamente → `web/src/parts-info.js#6:R`; chama_sintaticamente → `web/src/parts-info.js#6:R`; chama_sintaticamente → `web/src/parts-info.js#6:R`; chama_sintaticamente → `web/src/parts-info.js#6:R`; chama_sintaticamente → `web/src/parts-info.js#6:R`; chama_sintaticamente → `web/src/parts-info.js#6:R`; chama_sintaticamente → `web/src/parts-info.js#6:R`; chama_sintaticamente → `web/src/parts-info.js#6:R`; chama_sintaticamente → `web/src/parts-info.js#6:R`; chama_sintaticamente → `web/src/parts-info.js#6:R`; chama_sintaticamente → `web/src/parts-info.js#6:R`; chama_sintaticamente → `web/src/parts-info.js#6:R`; chama_sintaticamente → `web/src/parts-info.js#6:R`; chama_sintaticamente → `web/src/parts-info.js#6:R`; chama_sintaticamente → `web/src/parts-info.js#6:R`; chama_sintaticamente → `web/src/parts-info.js#6:R`; chama_sintaticamente → `web/src/parts-info.js#6:R`; chama_sintaticamente → `web/src/parts-info.js#6:R`; chama_sintaticamente → `web/src/parts-info.js#6:R`; chama_sintaticamente → `web/src/parts-info.js#6:R`; chama_sintaticamente → `web/src/parts-info.js#6:R`; chama_sintaticamente → `web/src/parts-info.js#6:R`; chama_sintaticamente → `web/src/parts-info.js#6:R`; chama_sintaticamente → `web/src/parts-info.js#6:R`; chama_sintaticamente → `web/src/parts-info.js#6:R`; chama_sintaticamente → `web/src/parts-info.js#6:R`; chama_sintaticamente → `web/src/parts-info.js#6:R`; chama_sintaticamente → `web/src/parts-info.js#6:R`; chama_sintaticamente → `web/src/parts-info.js#6:R`; chama_sintaticamente → `web/src/parts-info.js#6:R`; chama_sintaticamente → `web/src/parts-info.js#6:R`; chama_sintaticamente → `web/src/parts-info.js#6:R`; chama_sintaticamente → `web/src/parts-info.js#6:R`; chama_sintaticamente → `web/src/parts-info.js#6:R`; chama_sintaticamente → `web/src/parts-info.js#6:R`; chama_sintaticamente → `web/src/parts-info.js#6:R`; chama_sintaticamente → `web/src/parts-info.js#6:R`; chama_sintaticamente → `web/src/parts-info.js#6:R`; chama_sintaticamente → `web/src/parts-info.js#6:R`; chama_sintaticamente → `web/src/parts-info.js#6:R`; chama_sintaticamente → `web/src/parts-info.js#6:R`; chama_sintaticamente → `web/src/parts-info.js#6:R`; chama_sintaticamente → `web/src/parts-info.js#6:R`; chama_sintaticamente → `web/src/parts-info.js#6:R`; chama_sintaticamente → `web/src/parts-info.js#6:R`; chama_sintaticamente → `web/src/parts-info.js#6:R`; chama_sintaticamente → `web/src/parts-info.js#6:R`; chama_sintaticamente → `web/src/parts-info.js#6:R`; chama_sintaticamente → `web/src/parts-info.js#6:R`; chama_sintaticamente → `web/src/parts-info.js#6:R`; chama_sintaticamente → `web/src/parts-info.js#6:R`; chama_sintaticamente → `web/src/parts-info.js#6:R`; chama_sintaticamente → `web/src/parts-info.js#6:R`; chama_sintaticamente → `web/src/parts-info.js#6:R`; chama_sintaticamente → `web/src/parts-info.js#6:R`; chama_sintaticamente → `web/src/parts-info.js#6:R`; chama_sintaticamente → `web/src/parts-info.js#6:R`; chama_sintaticamente → `web/src/parts-info.js#6:R`; chama_sintaticamente → `web/src/parts-info.js#6:R`; chama_sintaticamente → `web/src/parts-info.js#6:R`; chama_sintaticamente → `web/src/parts-info.js#6:R`; chama_sintaticamente → `web/src/parts-info.js#6:R`; chama_sintaticamente → `web/src/parts-info.js#6:R`; chama_sintaticamente → `web/src/parts-info.js#6:R`; chama_sintaticamente → `web/src/parts-info.js#6:R`; chama_sintaticamente → `web/src/parts-info.js#6:R`; chama_sintaticamente → `web/src/parts-info.js#6:R`; chama_sintaticamente → `web/src/parts-info.js#6:R`; chama_sintaticamente → `web/src/parts-info.js#6:R`; chama_sintaticamente → `web/src/parts-info.js#6:R`; chama_sintaticamente → `web/src/parts-info.js#6:R`; chama_sintaticamente → `web/src/parts-info.js#6:R`; chama_sintaticamente → `web/src/parts-info.js#6:R`; chama_sintaticamente → `web/src/parts-info.js#6:R`; chama_sintaticamente → `web/src/parts-info.js#6:R`; chama_sintaticamente → `web/src/parts-info.js#6:R`; chama_sintaticamente → `web/src/parts-info.js#6:R`; chama_sintaticamente → `web/src/parts-info.js#6:R`; chama_sintaticamente → `web/src/parts-info.js#6:R`; chama_sintaticamente → `web/src/parts-info.js#6:R`; chama_sintaticamente → `web/src/parts-info.js#6:R`; chama_sintaticamente → `web/src/parts-info.js#6:R`; chama_sintaticamente → `web/src/parts-info.js#6:R`; chama_sintaticamente → `web/src/parts-info.js#6:R`; chama_sintaticamente → `web/src/parts-info.js#6:R`; chama_sintaticamente → `web/src/parts-info.js#6:R`; chama_sintaticamente → `web/src/parts-info.js#6:R`; chama_sintaticamente → `web/src/parts-info.js#6:R`; chama_sintaticamente → `web/src/parts-info.js#6:R`; chama_sintaticamente → `web/src/parts-info.js#6:R`; chama_sintaticamente → `web/src/parts-info.js#6:R`; chama_sintaticamente → `web/src/parts-info.js#6:R`; chama_sintaticamente → `web/src/parts-info.js#6:R`; chama_sintaticamente → `web/src/parts-info.js#6:R`; chama_sintaticamente → `web/src/parts-info.js#6:R`; chama_sintaticamente → `web/src/parts-info.js#6:R`; chama_sintaticamente → `web/src/parts-info.js#6:R`; chama_sintaticamente → `web/src/parts-info.js#6:R`; chama_sintaticamente → `web/src/parts-info.js#6:R`; chama_sintaticamente → `web/src/parts-info.js#6:R`; chama_sintaticamente → `web/src/parts-info.js#6:R`; chama_sintaticamente → `web/src/parts-info.js#6:R`; chama_sintaticamente → `web/src/parts-info.js#6:R`; chama_sintaticamente → `web/src/parts-info.js#6:R`; chama_sintaticamente → `web/src/parts-info.js#6:R`; chama_sintaticamente → `web/src/parts-info.js#6:R`; chama_sintaticamente → `web/src/parts-info.js#6:R`; chama_sintaticamente → `web/src/parts-info.js#6:R`; chama_sintaticamente → `web/src/parts-info.js#6:R`; chama_sintaticamente → `web/src/parts-info.js#6:R`; chama_sintaticamente → `web/src/parts-info.js#6:R`; chama_sintaticamente → `web/src/parts-info.js#6:R`; chama_sintaticamente → `web/src/parts-info.js#6:R`; chama_sintaticamente → `web/src/parts-info.js#6:R`; chama_sintaticamente → `web/src/parts-info.js#6:R`; chama_sintaticamente → `web/src/parts-info.js#6:R`.
+**Referenciado por:** `web/src/app-v2.js` (importa); `web/src/systems.js` (importa).
+
 ## web/src/senna-driver.js
 
 [Abrir arquivo](../../web/src/senna-driver.js) · js · 7,795 bytes
@@ -2030,6 +2233,16 @@ Piloto ilustrativo do carro final.
 **Natureza:** fonte web editável. **Uso:** Oculto na desmontagem e isolamento.
 **Relações de saída:** importa → `external:three`; importa → `external:three/addons/geometries/RoundedBoxGeometry.js`; importa → `web/src/helmet-1991.js`.
 **Referenciado por:** `web/src/app-v2.js` (importa); `web/test-driver-model.mjs` (importa).
+
+## web/src/spares.js
+
+[Abrir arquivo](../../web/src/spares.js) · js · 9,845 bytes
+
+Catálogo e troca em tempo de execução das peças sobressalentes.
+
+**Natureza:** fonte web editável. **Uso:** Seção Box / Configuração de pista da bancada Carro.
+**Relações de saída:** importa → `external:three`; importa → `external:three/addons/loaders/GLTFLoader.js`.
+**Referenciado por:** `web/src/app-v2.js` (importa); `web/test-spares.mjs` (importa).
 
 ## web/src/studio.js
 
@@ -2053,17 +2266,17 @@ Texturas de acabamento do carro final.
 
 ## web/src/systems.js
 
-[Abrir arquivo](../../web/src/systems.js) · js · 32,412 bytes
+[Abrir arquivo](../../web/src/systems.js) · js · 34,653 bytes
 
 Carrega, apresenta e controla o GLB consolidado dos sistemas internos.
 
 **Natureza:** fonte web editável. **Uso:** Bancada Sistemas do laboratório.
-**Relações de saída:** importa → `external:three`; importa → `external:three/addons/loaders/GLTFLoader.js`; importa → `external:three/addons/libs/meshopt_decoder.module.js`.
+**Relações de saída:** importa → `external:three`; importa → `web/src/parts-info.js`; importa → `external:three/addons/loaders/GLTFLoader.js`; importa → `external:three/addons/libs/meshopt_decoder.module.js`.
 **Referenciado por:** `docs/ANALISE-DOSSIE-COMPLEMENTAR.md` (documenta); `docs/ESPECIFICACAO-ASSET-3D-SISTEMAS-F1.md` (documenta); `docs/ESPECIFICACAO-ASSET-3D-SISTEMAS-F1.md` (documenta); `docs/ESPECIFICACAO-ASSET-3D-SISTEMAS-F1.md` (documenta); `docs/ESPECIFICACAO-ASSET-3D-SISTEMAS-F1.md` (documenta); `docs/ESPECIFICACAO-ASSET-3D-SISTEMAS-F1.md` (documenta); `docs/ESPECIFICACAO-ASSET-3D-SISTEMAS-F1.md` (documenta); `docs/ESPECIFICACAO-ASSET-3D-SISTEMAS-F1.md` (documenta); `docs/ESPECIFICACAO-ASSET-3D-SISTEMAS-F1.md` (documenta); `docs/ESPECIFICACAO-ASSET-3D-SISTEMAS-F1.md` (documenta); `web/src/app-v2.js` (importa).
 
 ## web/src/template-v2.html
 
-[Abrir arquivo](../../web/src/template-v2.html) · html · 37,569 bytes
+[Abrir arquivo](../../web/src/template-v2.html) · html · 37,170 bytes
 
 Estrutura e estilos da interface com marcadores __MODEL__ e __APP__.
 
@@ -2141,12 +2354,22 @@ Valida animação do motor em 20 ciclos.
 **Relações de saída:** importa → `external:three/addons/libs/meshopt_decoder.module.js`; importa → `external:node:fs`; importa → `external:three`; importa → `external:three/addons/loaders/GLTFLoader.js`.
 **Referenciado por:** `web/package.json` (executa_teste).
 
+## web/test-spares.mjs
+
+[Abrir arquivo](../../web/test-spares.mjs) · mjs · 4,381 bytes
+
+Valida integridade do GLB de sobressalentes, coerência do catálogo e envelopes das peças.
+
+**Natureza:** teste. **Uso:** Executado por npm test.
+**Relações de saída:** importa → `external:node:assert/strict`; importa → `external:node:crypto`; importa → `external:node:fs`; importa → `web/src/spares.js`; chama_sintaticamente → `web/test-spares.mjs#6:read`; chama_sintaticamente → `web/test-spares.mjs#6:read`; chama_sintaticamente → `web/test-spares.mjs#41:near`; chama_sintaticamente → `web/test-spares.mjs#41:near`; chama_sintaticamente → `web/test-spares.mjs#41:near`; chama_sintaticamente → `web/test-spares.mjs#41:near`; chama_sintaticamente → `web/test-spares.mjs#41:near`.
+**Referenciado por:** Nenhuma referência catalogada..
+
 ## web/test-systems.mjs
 
-[Abrir arquivo](../../web/test-systems.mjs) · mjs · 12,190 bytes
+[Abrir arquivo](../../web/test-systems.mjs) · mjs · 15,533 bytes
 
 Valida catálogo, controles, manifesto, hash e estrutura do GLB de sistemas.
 
 **Natureza:** teste. **Uso:** Executado por npm test.
-**Relações de saída:** importa → `external:node:assert/strict`; importa → `external:node:crypto`; importa → `external:node:fs`; importa → `external:three`; chama_sintaticamente → `web/test-systems.mjs#89:find`; chama_sintaticamente → `web/test-systems.mjs#89:find`; chama_sintaticamente → `web/test-systems.mjs#89:find`; chama_sintaticamente → `web/test-systems.mjs#89:find`; chama_sintaticamente → `web/test-systems.mjs#89:find`; chama_sintaticamente → `web/test-systems.mjs#90:center`; chama_sintaticamente → `web/test-systems.mjs#90:center`; chama_sintaticamente → `web/test-systems.mjs#90:center`; chama_sintaticamente → `web/test-systems.mjs#89:find`; chama_sintaticamente → `web/test-systems.mjs#89:find`; chama_sintaticamente → `web/test-systems.mjs#89:find`; chama_sintaticamente → `web/test-systems.mjs#89:find`; chama_sintaticamente → `web/test-systems.mjs#89:find`; chama_sintaticamente → `web/test-systems.mjs#88:nodesOf`; chama_sintaticamente → `web/test-systems.mjs#89:find`; chama_sintaticamente → `web/test-systems.mjs#90:center`; chama_sintaticamente → `web/test-systems.mjs#89:find`; chama_sintaticamente → `web/test-systems.mjs#90:center`; chama_sintaticamente → `web/test-systems.mjs#88:nodesOf`; chama_sintaticamente → `web/test-systems.mjs#89:find`; chama_sintaticamente → `web/test-systems.mjs#89:find`; chama_sintaticamente → `web/test-systems.mjs#89:find`; chama_sintaticamente → `web/test-systems.mjs#89:find`; chama_sintaticamente → `web/test-systems.mjs#89:find`; chama_sintaticamente → `web/test-systems.mjs#90:center`; chama_sintaticamente → `web/test-systems.mjs#90:center`; chama_sintaticamente → `web/test-systems.mjs#89:find`; chama_sintaticamente → `web/test-systems.mjs#89:find`; chama_sintaticamente → `web/test-systems.mjs#89:find`; chama_sintaticamente → `web/test-systems.mjs#89:find`; chama_sintaticamente → `web/test-systems.mjs#89:find`; chama_sintaticamente → `web/test-systems.mjs#89:find`; chama_sintaticamente → `web/test-systems.mjs#89:find`; chama_sintaticamente → `web/test-systems.mjs#89:find`; chama_sintaticamente → `web/test-systems.mjs#89:find`; chama_sintaticamente → `web/test-systems.mjs#89:find`; chama_sintaticamente → `web/test-systems.mjs#89:find`; chama_sintaticamente → `web/test-systems.mjs#89:find`; chama_sintaticamente → `web/test-systems.mjs#89:find`; chama_sintaticamente → `web/test-systems.mjs#89:find`; chama_sintaticamente → `web/test-systems.mjs#89:find`; chama_sintaticamente → `web/test-systems.mjs#89:find`; chama_sintaticamente → `web/test-systems.mjs#89:find`; chama_sintaticamente → `web/test-systems.mjs#89:find`; chama_sintaticamente → `web/test-systems.mjs#89:find`; chama_sintaticamente → `web/test-systems.mjs#89:find`; chama_sintaticamente → `web/test-systems.mjs#89:find`; chama_sintaticamente → `web/test-systems.mjs#89:find`; chama_sintaticamente → `web/test-systems.mjs#89:find`; chama_sintaticamente → `web/test-systems.mjs#89:find`; chama_sintaticamente → `web/test-systems.mjs#89:find`; chama_sintaticamente → `web/test-systems.mjs#89:find`; chama_sintaticamente → `web/test-systems.mjs#89:find`.
+**Relações de saída:** importa → `external:node:assert/strict`; importa → `external:node:crypto`; importa → `external:node:fs`; importa → `external:three`; chama_sintaticamente → `web/test-systems.mjs#90:find`; chama_sintaticamente → `web/test-systems.mjs#90:find`; chama_sintaticamente → `web/test-systems.mjs#90:find`; chama_sintaticamente → `web/test-systems.mjs#90:find`; chama_sintaticamente → `web/test-systems.mjs#90:find`; chama_sintaticamente → `web/test-systems.mjs#91:center`; chama_sintaticamente → `web/test-systems.mjs#91:center`; chama_sintaticamente → `web/test-systems.mjs#91:center`; chama_sintaticamente → `web/test-systems.mjs#90:find`; chama_sintaticamente → `web/test-systems.mjs#90:find`; chama_sintaticamente → `web/test-systems.mjs#90:find`; chama_sintaticamente → `web/test-systems.mjs#90:find`; chama_sintaticamente → `web/test-systems.mjs#90:find`; chama_sintaticamente → `web/test-systems.mjs#89:nodesOf`; chama_sintaticamente → `web/test-systems.mjs#90:find`; chama_sintaticamente → `web/test-systems.mjs#91:center`; chama_sintaticamente → `web/test-systems.mjs#90:find`; chama_sintaticamente → `web/test-systems.mjs#91:center`; chama_sintaticamente → `web/test-systems.mjs#89:nodesOf`; chama_sintaticamente → `web/test-systems.mjs#90:find`; chama_sintaticamente → `web/test-systems.mjs#90:find`; chama_sintaticamente → `web/test-systems.mjs#90:find`; chama_sintaticamente → `web/test-systems.mjs#90:find`; chama_sintaticamente → `web/test-systems.mjs#90:find`; chama_sintaticamente → `web/test-systems.mjs#91:center`; chama_sintaticamente → `web/test-systems.mjs#91:center`; chama_sintaticamente → `web/test-systems.mjs#90:find`; chama_sintaticamente → `web/test-systems.mjs#90:find`; chama_sintaticamente → `web/test-systems.mjs#90:find`; chama_sintaticamente → `web/test-systems.mjs#90:find`; chama_sintaticamente → `web/test-systems.mjs#90:find`; chama_sintaticamente → `web/test-systems.mjs#90:find`; chama_sintaticamente → `web/test-systems.mjs#90:find`; chama_sintaticamente → `web/test-systems.mjs#90:find`; chama_sintaticamente → `web/test-systems.mjs#90:find`; chama_sintaticamente → `web/test-systems.mjs#90:find`; chama_sintaticamente → `web/test-systems.mjs#90:find`; chama_sintaticamente → `web/test-systems.mjs#90:find`; chama_sintaticamente → `web/test-systems.mjs#90:find`; chama_sintaticamente → `web/test-systems.mjs#90:find`; chama_sintaticamente → `web/test-systems.mjs#90:find`; chama_sintaticamente → `web/test-systems.mjs#90:find`; chama_sintaticamente → `web/test-systems.mjs#90:find`; chama_sintaticamente → `web/test-systems.mjs#90:find`; chama_sintaticamente → `web/test-systems.mjs#90:find`; chama_sintaticamente → `web/test-systems.mjs#90:find`; chama_sintaticamente → `web/test-systems.mjs#90:find`; chama_sintaticamente → `web/test-systems.mjs#90:find`; chama_sintaticamente → `web/test-systems.mjs#90:find`; chama_sintaticamente → `web/test-systems.mjs#90:find`; chama_sintaticamente → `web/test-systems.mjs#90:find`; chama_sintaticamente → `web/test-systems.mjs#90:find`; chama_sintaticamente → `web/test-systems.mjs#90:find`; chama_sintaticamente → `web/test-systems.mjs#90:find`; chama_sintaticamente → `web/test-systems.mjs#91:center`; chama_sintaticamente → `web/test-systems.mjs#91:center`; chama_sintaticamente → `web/test-systems.mjs#90:find`; chama_sintaticamente → `web/test-systems.mjs#91:center`; chama_sintaticamente → `web/test-systems.mjs#91:center`; chama_sintaticamente → `web/test-systems.mjs#90:find`; chama_sintaticamente → `web/test-systems.mjs#90:find`; chama_sintaticamente → `web/test-systems.mjs#90:find`; chama_sintaticamente → `web/test-systems.mjs#90:find`; chama_sintaticamente → `web/test-systems.mjs#90:find`; chama_sintaticamente → `web/test-systems.mjs#90:find`; chama_sintaticamente → `web/test-systems.mjs#90:find`; chama_sintaticamente → `web/test-systems.mjs#91:center`; chama_sintaticamente → `web/test-systems.mjs#90:find`; chama_sintaticamente → `web/test-systems.mjs#91:center`; chama_sintaticamente → `web/test-systems.mjs#90:find`; chama_sintaticamente → `web/test-systems.mjs#89:nodesOf`; chama_sintaticamente → `web/test-systems.mjs#91:center`; chama_sintaticamente → `web/test-systems.mjs#91:center`; chama_sintaticamente → `web/test-systems.mjs#90:find`; chama_sintaticamente → `web/test-systems.mjs#90:find`.
 **Referenciado por:** `docs/ESPECIFICACAO-ASSET-3D-SISTEMAS-F1.md` (documenta); `docs/ESPECIFICACAO-ASSET-3D-SISTEMAS-F1.md` (documenta).

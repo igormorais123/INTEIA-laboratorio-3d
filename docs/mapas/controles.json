@@ -9,8 +9,8 @@
       "literalReferences": [
         {
           "path": "web/src/app-v2.js",
-          "line": 26,
-          "href": "../../web/src/app-v2.js#L26"
+          "line": 28,
+          "href": "../../web/src/app-v2.js#L28"
         }
       ]
     },
@@ -22,8 +22,8 @@
       "literalReferences": [
         {
           "path": "web/src/app-v2.js",
-          "line": 45,
-          "href": "../../web/src/app-v2.js#L45"
+          "line": 47,
+          "href": "../../web/src/app-v2.js#L47"
         }
       ]
     },
@@ -77,8 +77,8 @@
       "literalReferences": [
         {
           "path": "web/src/app-v2.js",
-          "line": 25,
-          "href": "../../web/src/app-v2.js#L25"
+          "line": 27,
+          "href": "../../web/src/app-v2.js#L27"
         }
       ]
     },
@@ -116,13 +116,13 @@
       "literalReferences": [
         {
           "path": "web/src/app-v2.js",
-          "line": 95,
-          "href": "../../web/src/app-v2.js#L95"
+          "line": 116,
+          "href": "../../web/src/app-v2.js#L116"
         },
         {
           "path": "web/src/app-v2.js",
-          "line": 101,
-          "href": "../../web/src/app-v2.js#L101"
+          "line": 122,
+          "href": "../../web/src/app-v2.js#L122"
         }
       ]
     },
@@ -134,13 +134,13 @@
       "literalReferences": [
         {
           "path": "web/src/app-v2.js",
-          "line": 95,
-          "href": "../../web/src/app-v2.js#L95"
+          "line": 116,
+          "href": "../../web/src/app-v2.js#L116"
         },
         {
           "path": "web/src/app-v2.js",
-          "line": 101,
-          "href": "../../web/src/app-v2.js#L101"
+          "line": 122,
+          "href": "../../web/src/app-v2.js#L122"
         }
       ]
     },
@@ -152,13 +152,13 @@
       "literalReferences": [
         {
           "path": "web/src/app-v2.js",
-          "line": 94,
-          "href": "../../web/src/app-v2.js#L94"
+          "line": 115,
+          "href": "../../web/src/app-v2.js#L115"
         },
         {
           "path": "web/src/app-v2.js",
-          "line": 102,
-          "href": "../../web/src/app-v2.js#L102"
+          "line": 123,
+          "href": "../../web/src/app-v2.js#L123"
         },
         {
           "path": "web/src/workbench.js",
@@ -175,18 +175,18 @@
       "literalReferences": [
         {
           "path": "web/src/app-v2.js",
-          "line": 45,
-          "href": "../../web/src/app-v2.js#L45"
+          "line": 47,
+          "href": "../../web/src/app-v2.js#L47"
         },
         {
           "path": "web/src/app-v2.js",
-          "line": 108,
-          "href": "../../web/src/app-v2.js#L108"
+          "line": 130,
+          "href": "../../web/src/app-v2.js#L130"
         },
         {
           "path": "web/src/app-v2.js",
-          "line": 110,
-          "href": "../../web/src/app-v2.js#L110"
+          "line": 132,
+          "href": "../../web/src/app-v2.js#L132"
         },
         {
           "path": "web/src/engine/in-car.js",
@@ -197,6 +197,11 @@
           "path": "web/src/engine/in-car.js",
           "line": 204,
           "href": "../../web/src/engine/in-car.js#L204"
+        },
+        {
+          "path": "web/src/spares.js",
+          "line": 59,
+          "href": "../../web/src/spares.js#L59"
         },
         {
           "path": "web/src/systems.js",
@@ -213,23 +218,13 @@
       "literalReferences": [
         {
           "path": "web/src/app-v2.js",
-          "line": 48,
-          "href": "../../web/src/app-v2.js#L48"
+          "line": 50,
+          "href": "../../web/src/app-v2.js#L50"
         },
         {
           "path": "web/src/app-v2.js",
-          "line": 69,
-          "href": "../../web/src/app-v2.js#L69"
-        },
-        {
-          "path": "web/src/app-v2.js",
-          "line": 76,
-          "href": "../../web/src/app-v2.js#L76"
-        },
-        {
-          "path": "web/src/app-v2.js",
-          "line": 80,
-          "href": "../../web/src/app-v2.js#L80"
+          "line": 87,
+          "href": "../../web/src/app-v2.js#L87"
         },
         {
           "path": "web/src/app-v2.js",
@@ -238,8 +233,18 @@
         },
         {
           "path": "web/src/app-v2.js",
-          "line": 105,
-          "href": "../../web/src/app-v2.js#L105"
+          "line": 98,
+          "href": "../../web/src/app-v2.js#L98"
+        },
+        {
+          "path": "web/src/app-v2.js",
+          "line": 115,
+          "href": "../../web/src/app-v2.js#L115"
+        },
+        {
+          "path": "web/src/app-v2.js",
+          "line": 126,
+          "href": "../../web/src/app-v2.js#L126"
         },
         {
           "path": "web/src/workbench.js",
@@ -256,8 +261,8 @@
       "literalReferences": [
         {
           "path": "web/src/app-v2.js",
-          "line": 77,
-          "href": "../../web/src/app-v2.js#L77"
+          "line": 95,
+          "href": "../../web/src/app-v2.js#L95"
         },
         {
           "path": "web/src/garage.js",
@@ -274,8 +279,8 @@
       "literalReferences": [
         {
           "path": "web/src/app-v2.js",
-          "line": 79,
-          "href": "../../web/src/app-v2.js#L79"
+          "line": 97,
+          "href": "../../web/src/app-v2.js#L97"
         },
         {
           "path": "web/src/workbench.js",
@@ -292,8 +297,8 @@
       "literalReferences": [
         {
           "path": "web/src/app-v2.js",
-          "line": 78,
-          "href": "../../web/src/app-v2.js#L78"
+          "line": 96,
+          "href": "../../web/src/app-v2.js#L96"
         },
         {
           "path": "web/src/workbench.js",
@@ -310,13 +315,13 @@
       "literalReferences": [
         {
           "path": "web/src/app-v2.js",
-          "line": 77,
-          "href": "../../web/src/app-v2.js#L77"
+          "line": 95,
+          "href": "../../web/src/app-v2.js#L95"
         },
         {
           "path": "web/src/app-v2.js",
-          "line": 102,
-          "href": "../../web/src/app-v2.js#L102"
+          "line": 123,
+          "href": "../../web/src/app-v2.js#L123"
         },
         {
           "path": "web/src/wind-tunnel.js",
@@ -353,28 +358,28 @@
       "literalReferences": [
         {
           "path": "web/src/app-v2.js",
-          "line": 69,
-          "href": "../../web/src/app-v2.js#L69"
+          "line": 87,
+          "href": "../../web/src/app-v2.js#L87"
         },
         {
           "path": "web/src/app-v2.js",
-          "line": 76,
-          "href": "../../web/src/app-v2.js#L76"
+          "line": 94,
+          "href": "../../web/src/app-v2.js#L94"
         },
         {
           "path": "web/src/app-v2.js",
-          "line": 80,
-          "href": "../../web/src/app-v2.js#L80"
+          "line": 98,
+          "href": "../../web/src/app-v2.js#L98"
         },
         {
           "path": "web/src/app-v2.js",
-          "line": 105,
-          "href": "../../web/src/app-v2.js#L105"
+          "line": 126,
+          "href": "../../web/src/app-v2.js#L126"
         },
         {
           "path": "web/src/app-v2.js",
-          "line": 106,
-          "href": "../../web/src/app-v2.js#L106"
+          "line": 127,
+          "href": "../../web/src/app-v2.js#L127"
         }
       ]
     },
@@ -386,13 +391,13 @@
       "literalReferences": [
         {
           "path": "web/src/app-v2.js",
-          "line": 54,
-          "href": "../../web/src/app-v2.js#L54"
+          "line": 59,
+          "href": "../../web/src/app-v2.js#L59"
         },
         {
           "path": "web/src/app-v2.js",
-          "line": 96,
-          "href": "../../web/src/app-v2.js#L96"
+          "line": 117,
+          "href": "../../web/src/app-v2.js#L117"
         }
       ]
     },
@@ -404,8 +409,8 @@
       "literalReferences": [
         {
           "path": "web/src/app-v2.js",
-          "line": 72,
-          "href": "../../web/src/app-v2.js#L72"
+          "line": 90,
+          "href": "../../web/src/app-v2.js#L90"
         }
       ]
     },
@@ -435,8 +440,8 @@
       "literalReferences": [
         {
           "path": "web/src/app-v2.js",
-          "line": 69,
-          "href": "../../web/src/app-v2.js#L69"
+          "line": 87,
+          "href": "../../web/src/app-v2.js#L87"
         },
         {
           "path": "web/src/wind-tunnel.js",
@@ -453,8 +458,8 @@
       "literalReferences": [
         {
           "path": "web/src/app-v2.js",
-          "line": 69,
-          "href": "../../web/src/app-v2.js#L69"
+          "line": 87,
+          "href": "../../web/src/app-v2.js#L87"
         },
         {
           "path": "web/src/wind-tunnel.js",
@@ -1392,13 +1397,13 @@
       "literalReferences": [
         {
           "path": "web/src/app-v2.js",
-          "line": 36,
-          "href": "../../web/src/app-v2.js#L36"
+          "line": 38,
+          "href": "../../web/src/app-v2.js#L38"
         },
         {
           "path": "web/src/app-v2.js",
-          "line": 102,
-          "href": "../../web/src/app-v2.js#L102"
+          "line": 123,
+          "href": "../../web/src/app-v2.js#L123"
         },
         {
           "path": "web/src/workbench.js",
@@ -1415,8 +1420,8 @@
       "literalReferences": [
         {
           "path": "web/src/app-v2.js",
-          "line": 108,
-          "href": "../../web/src/app-v2.js#L108"
+          "line": 130,
+          "href": "../../web/src/app-v2.js#L130"
         }
       ]
     },
@@ -1428,8 +1433,8 @@
       "literalReferences": [
         {
           "path": "web/src/app-v2.js",
-          "line": 104,
-          "href": "../../web/src/app-v2.js#L104"
+          "line": 125,
+          "href": "../../web/src/app-v2.js#L125"
         }
       ]
     },
@@ -1441,13 +1446,13 @@
       "literalReferences": [
         {
           "path": "web/src/app-v2.js",
-          "line": 104,
-          "href": "../../web/src/app-v2.js#L104"
+          "line": 125,
+          "href": "../../web/src/app-v2.js#L125"
         },
         {
           "path": "web/src/app-v2.js",
-          "line": 108,
-          "href": "../../web/src/app-v2.js#L108"
+          "line": 130,
+          "href": "../../web/src/app-v2.js#L130"
         }
       ]
     },
@@ -1459,13 +1464,13 @@
       "literalReferences": [
         {
           "path": "web/src/app-v2.js",
-          "line": 103,
-          "href": "../../web/src/app-v2.js#L103"
+          "line": 124,
+          "href": "../../web/src/app-v2.js#L124"
         },
         {
           "path": "web/src/app-v2.js",
-          "line": 108,
-          "href": "../../web/src/app-v2.js#L108"
+          "line": 130,
+          "href": "../../web/src/app-v2.js#L130"
         }
       ]
     },
@@ -1477,18 +1482,18 @@
       "literalReferences": [
         {
           "path": "web/src/app-v2.js",
-          "line": 57,
-          "href": "../../web/src/app-v2.js#L57"
+          "line": 75,
+          "href": "../../web/src/app-v2.js#L75"
         },
         {
           "path": "web/src/app-v2.js",
-          "line": 94,
-          "href": "../../web/src/app-v2.js#L94"
+          "line": 115,
+          "href": "../../web/src/app-v2.js#L115"
         },
         {
           "path": "web/src/app-v2.js",
-          "line": 108,
-          "href": "../../web/src/app-v2.js#L108"
+          "line": 130,
+          "href": "../../web/src/app-v2.js#L130"
         }
       ]
     },
@@ -1500,15 +1505,48 @@
       "literalReferences": [
         {
           "path": "web/src/app-v2.js",
-          "line": 45,
-          "href": "../../web/src/app-v2.js#L45"
+          "line": 47,
+          "href": "../../web/src/app-v2.js#L47"
         },
         {
           "path": "web/src/app-v2.js",
-          "line": 94,
-          "href": "../../web/src/app-v2.js#L94"
+          "line": 115,
+          "href": "../../web/src/app-v2.js#L115"
         }
       ]
+    },
+    {
+      "id": "systems-assembly-value",
+      "tag": "output",
+      "line": 5,
+      "href": "../../web/src/template-v2.html#L5",
+      "literalReferences": [
+        {
+          "path": "web/src/app-v2.js",
+          "line": 103,
+          "href": "../../web/src/app-v2.js#L103"
+        }
+      ]
+    },
+    {
+      "id": "systems-assembly",
+      "tag": "input",
+      "line": 5,
+      "href": "../../web/src/template-v2.html#L5",
+      "literalReferences": [
+        {
+          "path": "web/src/app-v2.js",
+          "line": 103,
+          "href": "../../web/src/app-v2.js#L103"
+        }
+      ]
+    },
+    {
+      "id": "systems-assembly-note",
+      "tag": "p",
+      "line": 5,
+      "href": "../../web/src/template-v2.html#L5",
+      "literalReferences": []
     },
     {
       "id": "assembly-state",
@@ -1518,8 +1556,8 @@
       "literalReferences": [
         {
           "path": "web/src/app-v2.js",
-          "line": 108,
-          "href": "../../web/src/app-v2.js#L108"
+          "line": 130,
+          "href": "../../web/src/app-v2.js#L130"
         }
       ]
     },
@@ -1531,23 +1569,23 @@
       "literalReferences": [
         {
           "path": "web/src/app-v2.js",
-          "line": 34,
-          "href": "../../web/src/app-v2.js#L34"
+          "line": 36,
+          "href": "../../web/src/app-v2.js#L36"
         },
         {
           "path": "web/src/app-v2.js",
-          "line": 57,
-          "href": "../../web/src/app-v2.js#L57"
+          "line": 75,
+          "href": "../../web/src/app-v2.js#L75"
         },
         {
           "path": "web/src/app-v2.js",
-          "line": 86,
-          "href": "../../web/src/app-v2.js#L86"
+          "line": 107,
+          "href": "../../web/src/app-v2.js#L107"
         },
         {
           "path": "web/src/app-v2.js",
-          "line": 94,
-          "href": "../../web/src/app-v2.js#L94"
+          "line": 115,
+          "href": "../../web/src/app-v2.js#L115"
         }
       ]
     },
@@ -1559,8 +1597,8 @@
       "literalReferences": [
         {
           "path": "web/src/app-v2.js",
-          "line": 85,
-          "href": "../../web/src/app-v2.js#L85"
+          "line": 106,
+          "href": "../../web/src/app-v2.js#L106"
         }
       ]
     },
@@ -1572,8 +1610,8 @@
       "literalReferences": [
         {
           "path": "web/src/app-v2.js",
-          "line": 85,
-          "href": "../../web/src/app-v2.js#L85"
+          "line": 106,
+          "href": "../../web/src/app-v2.js#L106"
         }
       ]
     },
@@ -1585,23 +1623,23 @@
       "literalReferences": [
         {
           "path": "web/src/app-v2.js",
-          "line": 47,
-          "href": "../../web/src/app-v2.js#L47"
+          "line": 49,
+          "href": "../../web/src/app-v2.js#L49"
         },
         {
           "path": "web/src/app-v2.js",
-          "line": 54,
-          "href": "../../web/src/app-v2.js#L54"
+          "line": 59,
+          "href": "../../web/src/app-v2.js#L59"
         },
         {
           "path": "web/src/app-v2.js",
-          "line": 71,
-          "href": "../../web/src/app-v2.js#L71"
+          "line": 89,
+          "href": "../../web/src/app-v2.js#L89"
         },
         {
           "path": "web/src/app-v2.js",
-          "line": 87,
-          "href": "../../web/src/app-v2.js#L87"
+          "line": 108,
+          "href": "../../web/src/app-v2.js#L108"
         }
       ]
     },
@@ -1613,8 +1651,13 @@
       "literalReferences": [
         {
           "path": "web/src/app-v2.js",
-          "line": 54,
-          "href": "../../web/src/app-v2.js#L54"
+          "line": 59,
+          "href": "../../web/src/app-v2.js#L59"
+        },
+        {
+          "path": "web/src/app-v2.js",
+          "line": 121,
+          "href": "../../web/src/app-v2.js#L121"
         }
       ]
     },
@@ -1626,8 +1669,26 @@
       "literalReferences": [
         {
           "path": "web/src/app-v2.js",
-          "line": 54,
-          "href": "../../web/src/app-v2.js#L54"
+          "line": 59,
+          "href": "../../web/src/app-v2.js#L59"
+        },
+        {
+          "path": "web/src/app-v2.js",
+          "line": 121,
+          "href": "../../web/src/app-v2.js#L121"
+        }
+      ]
+    },
+    {
+      "id": "selected-info",
+      "tag": "div",
+      "line": 5,
+      "href": "../../web/src/template-v2.html#L5",
+      "literalReferences": [
+        {
+          "path": "web/src/app-v2.js",
+          "line": 72,
+          "href": "../../web/src/app-v2.js#L72"
         }
       ]
     },
@@ -1639,18 +1700,18 @@
       "literalReferences": [
         {
           "path": "web/src/app-v2.js",
-          "line": 47,
-          "href": "../../web/src/app-v2.js#L47"
+          "line": 49,
+          "href": "../../web/src/app-v2.js#L49"
         },
         {
           "path": "web/src/app-v2.js",
-          "line": 54,
-          "href": "../../web/src/app-v2.js#L54"
+          "line": 59,
+          "href": "../../web/src/app-v2.js#L59"
         },
         {
           "path": "web/src/app-v2.js",
-          "line": 88,
-          "href": "../../web/src/app-v2.js#L88"
+          "line": 109,
+          "href": "../../web/src/app-v2.js#L109"
         }
       ]
     },
@@ -1662,18 +1723,18 @@
       "literalReferences": [
         {
           "path": "web/src/app-v2.js",
-          "line": 47,
-          "href": "../../web/src/app-v2.js#L47"
+          "line": 49,
+          "href": "../../web/src/app-v2.js#L49"
         },
         {
           "path": "web/src/app-v2.js",
-          "line": 54,
-          "href": "../../web/src/app-v2.js#L54"
+          "line": 59,
+          "href": "../../web/src/app-v2.js#L59"
         },
         {
           "path": "web/src/app-v2.js",
-          "line": 88,
-          "href": "../../web/src/app-v2.js#L88"
+          "line": 109,
+          "href": "../../web/src/app-v2.js#L109"
         }
       ]
     },
@@ -1685,23 +1746,23 @@
       "literalReferences": [
         {
           "path": "web/src/app-v2.js",
-          "line": 47,
-          "href": "../../web/src/app-v2.js#L47"
+          "line": 49,
+          "href": "../../web/src/app-v2.js#L49"
         },
         {
           "path": "web/src/app-v2.js",
-          "line": 55,
-          "href": "../../web/src/app-v2.js#L55"
+          "line": 73,
+          "href": "../../web/src/app-v2.js#L73"
         },
         {
           "path": "web/src/app-v2.js",
-          "line": 89,
-          "href": "../../web/src/app-v2.js#L89"
+          "line": 110,
+          "href": "../../web/src/app-v2.js#L110"
         },
         {
           "path": "web/src/app-v2.js",
-          "line": 94,
-          "href": "../../web/src/app-v2.js#L94"
+          "line": 115,
+          "href": "../../web/src/app-v2.js#L115"
         }
       ]
     },
@@ -1713,13 +1774,13 @@
       "literalReferences": [
         {
           "path": "web/src/app-v2.js",
-          "line": 54,
-          "href": "../../web/src/app-v2.js#L54"
+          "line": 59,
+          "href": "../../web/src/app-v2.js#L59"
         },
         {
           "path": "web/src/app-v2.js",
-          "line": 90,
-          "href": "../../web/src/app-v2.js#L90"
+          "line": 111,
+          "href": "../../web/src/app-v2.js#L111"
         }
       ]
     },
@@ -1731,18 +1792,18 @@
       "literalReferences": [
         {
           "path": "web/src/app-v2.js",
-          "line": 47,
-          "href": "../../web/src/app-v2.js#L47"
+          "line": 49,
+          "href": "../../web/src/app-v2.js#L49"
         },
         {
           "path": "web/src/app-v2.js",
-          "line": 54,
-          "href": "../../web/src/app-v2.js#L54"
+          "line": 59,
+          "href": "../../web/src/app-v2.js#L59"
         },
         {
           "path": "web/src/app-v2.js",
-          "line": 90,
-          "href": "../../web/src/app-v2.js#L90"
+          "line": 111,
+          "href": "../../web/src/app-v2.js#L111"
         }
       ]
     },
@@ -1754,13 +1815,77 @@
       "literalReferences": [
         {
           "path": "web/src/app-v2.js",
-          "line": 47,
-          "href": "../../web/src/app-v2.js#L47"
+          "line": 49,
+          "href": "../../web/src/app-v2.js#L49"
         },
         {
           "path": "web/src/app-v2.js",
-          "line": 88,
-          "href": "../../web/src/app-v2.js#L88"
+          "line": 109,
+          "href": "../../web/src/app-v2.js#L109"
+        }
+      ]
+    },
+    {
+      "id": "spares-panel",
+      "tag": "section",
+      "line": 5,
+      "href": "../../web/src/template-v2.html#L5",
+      "literalReferences": []
+    },
+    {
+      "id": "spare-presets",
+      "tag": "div",
+      "line": 5,
+      "href": "../../web/src/template-v2.html#L5",
+      "literalReferences": [
+        {
+          "path": "web/src/app-v2.js",
+          "line": 63,
+          "href": "../../web/src/app-v2.js#L63"
+        }
+      ]
+    },
+    {
+      "id": "spare-slots",
+      "tag": "div",
+      "line": 5,
+      "href": "../../web/src/template-v2.html#L5",
+      "literalReferences": [
+        {
+          "path": "web/src/app-v2.js",
+          "line": 63,
+          "href": "../../web/src/app-v2.js#L63"
+        }
+      ]
+    },
+    {
+      "id": "spare-info",
+      "tag": "div",
+      "line": 5,
+      "href": "../../web/src/template-v2.html#L5",
+      "literalReferences": [
+        {
+          "path": "web/src/app-v2.js",
+          "line": 69,
+          "href": "../../web/src/app-v2.js#L69"
+        },
+        {
+          "path": "web/src/app-v2.js",
+          "line": 71,
+          "href": "../../web/src/app-v2.js#L71"
+        }
+      ]
+    },
+    {
+      "id": "spare-status",
+      "tag": "p",
+      "line": 5,
+      "href": "../../web/src/template-v2.html#L5",
+      "literalReferences": [
+        {
+          "path": "web/src/app-v2.js",
+          "line": 68,
+          "href": "../../web/src/app-v2.js#L68"
         }
       ]
     },
@@ -1772,23 +1897,23 @@
       "literalReferences": [
         {
           "path": "web/src/app-v2.js",
-          "line": 34,
-          "href": "../../web/src/app-v2.js#L34"
+          "line": 36,
+          "href": "../../web/src/app-v2.js#L36"
         },
         {
           "path": "web/src/app-v2.js",
-          "line": 91,
-          "href": "../../web/src/app-v2.js#L91"
+          "line": 112,
+          "href": "../../web/src/app-v2.js#L112"
         },
         {
           "path": "web/src/app-v2.js",
-          "line": 94,
-          "href": "../../web/src/app-v2.js#L94"
+          "line": 115,
+          "href": "../../web/src/app-v2.js#L115"
         },
         {
           "path": "web/src/app-v2.js",
-          "line": 108,
-          "href": "../../web/src/app-v2.js#L108"
+          "line": 130,
+          "href": "../../web/src/app-v2.js#L130"
         }
       ]
     },
@@ -1800,18 +1925,18 @@
       "literalReferences": [
         {
           "path": "web/src/app-v2.js",
-          "line": 34,
-          "href": "../../web/src/app-v2.js#L34"
+          "line": 36,
+          "href": "../../web/src/app-v2.js#L36"
         },
         {
           "path": "web/src/app-v2.js",
-          "line": 92,
-          "href": "../../web/src/app-v2.js#L92"
+          "line": 113,
+          "href": "../../web/src/app-v2.js#L113"
         },
         {
           "path": "web/src/app-v2.js",
-          "line": 94,
-          "href": "../../web/src/app-v2.js#L94"
+          "line": 115,
+          "href": "../../web/src/app-v2.js#L115"
         },
         {
           "path": "web/src/garage.js",
@@ -1828,23 +1953,23 @@
       "literalReferences": [
         {
           "path": "web/src/app-v2.js",
-          "line": 34,
-          "href": "../../web/src/app-v2.js#L34"
+          "line": 36,
+          "href": "../../web/src/app-v2.js#L36"
         },
         {
           "path": "web/src/app-v2.js",
-          "line": 92,
-          "href": "../../web/src/app-v2.js#L92"
+          "line": 113,
+          "href": "../../web/src/app-v2.js#L113"
         },
         {
           "path": "web/src/app-v2.js",
-          "line": 94,
-          "href": "../../web/src/app-v2.js#L94"
+          "line": 115,
+          "href": "../../web/src/app-v2.js#L115"
         },
         {
           "path": "web/src/app-v2.js",
-          "line": 108,
-          "href": "../../web/src/app-v2.js#L108"
+          "line": 130,
+          "href": "../../web/src/app-v2.js#L130"
         },
         {
           "path": "web/src/systems.js",
@@ -1861,18 +1986,18 @@
       "literalReferences": [
         {
           "path": "web/src/app-v2.js",
-          "line": 34,
-          "href": "../../web/src/app-v2.js#L34"
+          "line": 36,
+          "href": "../../web/src/app-v2.js#L36"
         },
         {
           "path": "web/src/app-v2.js",
-          "line": 93,
-          "href": "../../web/src/app-v2.js#L93"
+          "line": 114,
+          "href": "../../web/src/app-v2.js#L114"
         },
         {
           "path": "web/src/app-v2.js",
-          "line": 94,
-          "href": "../../web/src/app-v2.js#L94"
+          "line": 115,
+          "href": "../../web/src/app-v2.js#L115"
         },
         {
           "path": "web/src/garage.js",
@@ -1889,23 +2014,23 @@
       "literalReferences": [
         {
           "path": "web/src/app-v2.js",
-          "line": 34,
-          "href": "../../web/src/app-v2.js#L34"
+          "line": 36,
+          "href": "../../web/src/app-v2.js#L36"
         },
         {
           "path": "web/src/app-v2.js",
-          "line": 93,
-          "href": "../../web/src/app-v2.js#L93"
+          "line": 114,
+          "href": "../../web/src/app-v2.js#L114"
         },
         {
           "path": "web/src/app-v2.js",
-          "line": 94,
-          "href": "../../web/src/app-v2.js#L94"
+          "line": 115,
+          "href": "../../web/src/app-v2.js#L115"
         },
         {
           "path": "web/src/app-v2.js",
-          "line": 108,
-          "href": "../../web/src/app-v2.js#L108"
+          "line": 130,
+          "href": "../../web/src/app-v2.js#L130"
         }
       ]
     },
@@ -1917,8 +2042,8 @@
       "literalReferences": [
         {
           "path": "web/src/app-v2.js",
-          "line": 108,
-          "href": "../../web/src/app-v2.js#L108"
+          "line": 130,
+          "href": "../../web/src/app-v2.js#L130"
         }
       ]
     },
@@ -1930,8 +2055,8 @@
       "literalReferences": [
         {
           "path": "web/src/app-v2.js",
-          "line": 81,
-          "href": "../../web/src/app-v2.js#L81"
+          "line": 99,
+          "href": "../../web/src/app-v2.js#L99"
         },
         {
           "path": "web/src/customize.js",
@@ -1948,8 +2073,8 @@
       "literalReferences": [
         {
           "path": "web/src/app-v2.js",
-          "line": 83,
-          "href": "../../web/src/app-v2.js#L83"
+          "line": 101,
+          "href": "../../web/src/app-v2.js#L101"
         }
       ]
     },
@@ -1961,8 +2086,8 @@
       "literalReferences": [
         {
           "path": "web/src/app-v2.js",
-          "line": 82,
-          "href": "../../web/src/app-v2.js#L82"
+          "line": 100,
+          "href": "../../web/src/app-v2.js#L100"
         }
       ]
     },
@@ -1974,8 +2099,8 @@
       "literalReferences": [
         {
           "path": "web/src/app-v2.js",
-          "line": 97,
-          "href": "../../web/src/app-v2.js#L97"
+          "line": 118,
+          "href": "../../web/src/app-v2.js#L118"
         }
       ]
     },
@@ -2195,8 +2320,8 @@
       "literalReferences": [
         {
           "path": "web/src/app-v2.js",
-          "line": 58,
-          "href": "../../web/src/app-v2.js#L58"
+          "line": 76,
+          "href": "../../web/src/app-v2.js#L76"
         }
       ]
     }

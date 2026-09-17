@@ -25,9 +25,9 @@ def family_purpose(path):
         return ['Biblioteca geométrica compartilhada pelos sistemas internos', 'fonte Blender editável', 'Reutilizar pelos módulos sNN; mudanças afetam múltiplos derivados']
     if path.startswith('ferramentas/sistemas/previews/') and path.endswith('.png'):
         return ['Prévia gerada para revisão visual de um sistema interno', 'evidência visual gerada', 'Comparar com a especificação; não é asset carregado pelo runtime']
-    if re.fullmatch(r'web/assets/sistemas-v1(?:-[a-z0-9-]+)?\.glb', path):
+    if re.fullmatch(r'(?:web/assets|ferramentas/sistemas/previews)/sistemas-v1(?:-[a-z0-9-]+)?\.glb', path):
         return ['Asset GLB derivado dos módulos procedurais de sistemas', 'entrega GLB gerada', 'Integrar no runtime somente por carregamento explícito em web/src']
-    if re.fullmatch(r'web/assets/sistemas-v1(?:-[a-z0-9-]+)?\.manifest\.json', path):
+    if re.fullmatch(r'(?:web/assets|ferramentas/sistemas/previews)/sistemas-v1(?:-[a-z0-9-]+)?\.manifest\.json', path):
         return ['Manifesto de composição e métricas do GLB de sistemas correspondente', 'evidência gerada', 'Validar sistemas, peças e hash junto ao GLB de mesmo prefixo']
     if path in ('ferramentas/gerar_sistemas.py', 'ferramentas/otimizar_sistemas.mjs'):
         return ['Pipeline de geração e otimização dos sistemas internos', 'ferramenta editável', 'Executar a partir da raiz e revisar os derivados antes de integrar']

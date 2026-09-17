@@ -291,15 +291,27 @@
     },
     {
       "source": "web/src/app-v2.js",
-      "target": "external:three/addons/libs/meshopt_decoder.module.js",
+      "target": "web/src/spares.js",
       "relation": "importa",
       "confidence": "EXTRACTED",
       "evidence": {
         "path": "web/src/app-v2.js",
         "line": 2,
-        "text": "import {MeshoptDecoder} from 'three/addons/libs/meshopt_decoder.module.js'"
+        "text": "import {createSpares,SPARE_SLOTS,SPARE_PRESETS} from './spares.js'"
       },
       "href": "../../web/src/app-v2.js#L2"
+    },
+    {
+      "source": "web/src/app-v2.js",
+      "target": "external:three/addons/libs/meshopt_decoder.module.js",
+      "relation": "importa",
+      "confidence": "EXTRACTED",
+      "evidence": {
+        "path": "web/src/app-v2.js",
+        "line": 3,
+        "text": "import {MeshoptDecoder} from 'three/addons/libs/meshopt_decoder.module.js'"
+      },
+      "href": "../../web/src/app-v2.js#L3"
     },
     {
       "source": "web/src/app-v2.js",
@@ -308,10 +320,10 @@
       "confidence": "EXTRACTED",
       "evidence": {
         "path": "web/src/app-v2.js",
-        "line": 3,
+        "line": 4,
         "text": "import {createInCarEngine} from './engine/in-car.js'"
       },
-      "href": "../../web/src/app-v2.js#L3"
+      "href": "../../web/src/app-v2.js#L4"
     },
     {
       "source": "web/src/app-v2.js",
@@ -320,10 +332,10 @@
       "confidence": "EXTRACTED",
       "evidence": {
         "path": "web/src/app-v2.js",
-        "line": 4,
+        "line": 5,
         "text": "import {enhanceCar} from './car-look.js'"
       },
-      "href": "../../web/src/app-v2.js#L4"
+      "href": "../../web/src/app-v2.js#L5"
     },
     {
       "source": "web/src/app-v2.js",
@@ -332,10 +344,10 @@
       "confidence": "EXTRACTED",
       "evidence": {
         "path": "web/src/app-v2.js",
-        "line": 5,
+        "line": 6,
         "text": "import {createSurfaceLibrary} from './surface-library.js'"
       },
-      "href": "../../web/src/app-v2.js#L5"
+      "href": "../../web/src/app-v2.js#L6"
     },
     {
       "source": "web/src/app-v2.js",
@@ -344,10 +356,10 @@
       "confidence": "EXTRACTED",
       "evidence": {
         "path": "web/src/app-v2.js",
-        "line": 6,
+        "line": 7,
         "text": "import {createSennaDriver} from './senna-driver.js'"
       },
-      "href": "../../web/src/app-v2.js#L6"
+      "href": "../../web/src/app-v2.js#L7"
     },
     {
       "source": "web/src/app-v2.js",
@@ -356,10 +368,10 @@
       "confidence": "EXTRACTED",
       "evidence": {
         "path": "web/src/app-v2.js",
-        "line": 7,
+        "line": 8,
         "text": "import {applyInteiaBranding} from './branding.js'"
       },
-      "href": "../../web/src/app-v2.js#L7"
+      "href": "../../web/src/app-v2.js#L8"
     },
     {
       "source": "web/src/app-v2.js",
@@ -368,10 +380,10 @@
       "confidence": "EXTRACTED",
       "evidence": {
         "path": "web/src/app-v2.js",
-        "line": 8,
+        "line": 9,
         "text": "import {brandSVG} from './identity.js'"
       },
-      "href": "../../web/src/app-v2.js#L8"
+      "href": "../../web/src/app-v2.js#L9"
     },
     {
       "source": "web/src/app-v2.js",
@@ -380,10 +392,10 @@
       "confidence": "EXTRACTED",
       "evidence": {
         "path": "web/src/app-v2.js",
-        "line": 9,
+        "line": 10,
         "text": "import {GLTFExporter} from 'three/addons/exporters/GLTFExporter.js'"
       },
-      "href": "../../web/src/app-v2.js#L9"
+      "href": "../../web/src/app-v2.js#L10"
     },
     {
       "source": "web/src/app-v2.js",
@@ -392,10 +404,10 @@
       "confidence": "EXTRACTED",
       "evidence": {
         "path": "web/src/app-v2.js",
-        "line": 10,
+        "line": 11,
         "text": "import {createGarage} from './garage.js'"
       },
-      "href": "../../web/src/app-v2.js#L10"
+      "href": "../../web/src/app-v2.js#L11"
     },
     {
       "source": "web/src/app-v2.js",
@@ -404,10 +416,22 @@
       "confidence": "EXTRACTED",
       "evidence": {
         "path": "web/src/app-v2.js",
-        "line": 11,
+        "line": 12,
         "text": "import {createWindTunnel} from './wind-tunnel.js'"
       },
-      "href": "../../web/src/app-v2.js#L11"
+      "href": "../../web/src/app-v2.js#L12"
+    },
+    {
+      "source": "web/src/app-v2.js",
+      "target": "web/src/parts-info.js",
+      "relation": "importa",
+      "confidence": "EXTRACTED",
+      "evidence": {
+        "path": "web/src/app-v2.js",
+        "line": 13,
+        "text": "import {describeCarPart} from './parts-info.js'"
+      },
+      "href": "../../web/src/app-v2.js#L13"
     },
     {
       "source": "web/src/app-v2.js",
@@ -416,10 +440,10 @@
       "confidence": "EXTRACTED",
       "evidence": {
         "path": "web/src/app-v2.js",
-        "line": 12,
+        "line": 14,
         "text": "import {createSystems} from './systems.js'"
       },
-      "href": "../../web/src/app-v2.js#L12"
+      "href": "../../web/src/app-v2.js#L14"
     },
     {
       "source": "web/src/app-v2.js",
@@ -428,10 +452,10 @@
       "confidence": "EXTRACTED",
       "evidence": {
         "path": "web/src/app-v2.js",
-        "line": 13,
+        "line": 15,
         "text": "import {setupCustomization} from './customize.js'"
       },
-      "href": "../../web/src/app-v2.js#L13"
+      "href": "../../web/src/app-v2.js#L15"
     },
     {
       "source": "web/src/app-v2.js",
@@ -440,10 +464,10 @@
       "confidence": "EXTRACTED",
       "evidence": {
         "path": "web/src/app-v2.js",
-        "line": 14,
+        "line": 16,
         "text": "import * as THREE from 'three'"
       },
-      "href": "../../web/src/app-v2.js#L14"
+      "href": "../../web/src/app-v2.js#L16"
     },
     {
       "source": "web/src/app-v2.js",
@@ -452,10 +476,10 @@
       "confidence": "EXTRACTED",
       "evidence": {
         "path": "web/src/app-v2.js",
-        "line": 15,
+        "line": 17,
         "text": "import {OrbitControls} from 'three/addons/controls/OrbitControls.js'"
       },
-      "href": "../../web/src/app-v2.js#L15"
+      "href": "../../web/src/app-v2.js#L17"
     },
     {
       "source": "web/src/app-v2.js",
@@ -464,10 +488,10 @@
       "confidence": "EXTRACTED",
       "evidence": {
         "path": "web/src/app-v2.js",
-        "line": 16,
+        "line": 18,
         "text": "import {TransformControls} from 'three/addons/controls/TransformControls.js'"
       },
-      "href": "../../web/src/app-v2.js#L16"
+      "href": "../../web/src/app-v2.js#L18"
     },
     {
       "source": "web/src/app-v2.js",
@@ -476,10 +500,10 @@
       "confidence": "EXTRACTED",
       "evidence": {
         "path": "web/src/app-v2.js",
-        "line": 17,
+        "line": 19,
         "text": "import {EffectComposer} from 'three/addons/postprocessing/EffectComposer.js'"
       },
-      "href": "../../web/src/app-v2.js#L17"
+      "href": "../../web/src/app-v2.js#L19"
     },
     {
       "source": "web/src/app-v2.js",
@@ -488,10 +512,10 @@
       "confidence": "EXTRACTED",
       "evidence": {
         "path": "web/src/app-v2.js",
-        "line": 18,
+        "line": 20,
         "text": "import {RenderPass} from 'three/addons/postprocessing/RenderPass.js'"
       },
-      "href": "../../web/src/app-v2.js#L18"
+      "href": "../../web/src/app-v2.js#L20"
     },
     {
       "source": "web/src/app-v2.js",
@@ -500,10 +524,10 @@
       "confidence": "EXTRACTED",
       "evidence": {
         "path": "web/src/app-v2.js",
-        "line": 19,
+        "line": 21,
         "text": "import {SSAOPass} from 'three/addons/postprocessing/SSAOPass.js'"
       },
-      "href": "../../web/src/app-v2.js#L19"
+      "href": "../../web/src/app-v2.js#L21"
     },
     {
       "source": "web/src/app-v2.js",
@@ -512,10 +536,10 @@
       "confidence": "EXTRACTED",
       "evidence": {
         "path": "web/src/app-v2.js",
-        "line": 20,
+        "line": 22,
         "text": "import {OutputPass} from 'three/addons/postprocessing/OutputPass.js'"
       },
-      "href": "../../web/src/app-v2.js#L20"
+      "href": "../../web/src/app-v2.js#L22"
     },
     {
       "source": "web/src/app-v2.js",
@@ -524,10 +548,10 @@
       "confidence": "EXTRACTED",
       "evidence": {
         "path": "web/src/app-v2.js",
-        "line": 21,
+        "line": 23,
         "text": "import {SMAAPass} from 'three/addons/postprocessing/SMAAPass.js'"
       },
-      "href": "../../web/src/app-v2.js#L21"
+      "href": "../../web/src/app-v2.js#L23"
     },
     {
       "source": "web/src/app-v2.js",
@@ -536,10 +560,10 @@
       "confidence": "EXTRACTED",
       "evidence": {
         "path": "web/src/app-v2.js",
-        "line": 22,
+        "line": 24,
         "text": "import {GLTFLoader} from 'three/addons/loaders/GLTFLoader.js'"
       },
-      "href": "../../web/src/app-v2.js#L22"
+      "href": "../../web/src/app-v2.js#L24"
     },
     {
       "source": "web/src/app-v2.js",
@@ -548,10 +572,10 @@
       "confidence": "EXTRACTED",
       "evidence": {
         "path": "web/src/app-v2.js",
-        "line": 23,
+        "line": 25,
         "text": "import {setupStudio,applyCarMaterials} from './studio.js'"
       },
-      "href": "../../web/src/app-v2.js#L23"
+      "href": "../../web/src/app-v2.js#L25"
     },
     {
       "source": "web/src/app-v2.js",
@@ -560,10 +584,10 @@
       "confidence": "EXTRACTED",
       "evidence": {
         "path": "web/src/app-v2.js",
-        "line": 24,
+        "line": 26,
         "text": "import {createMechanics} from './mechanics.js'"
       },
-      "href": "../../web/src/app-v2.js#L24"
+      "href": "../../web/src/app-v2.js#L26"
     },
     {
       "source": "web/src/branding.js",
@@ -768,6 +792,30 @@
         "text": "import {createHelmet1991} from './helmet-1991.js'"
       },
       "href": "../../web/src/senna-driver.js#L3"
+    },
+    {
+      "source": "web/src/spares.js",
+      "target": "external:three",
+      "relation": "importa",
+      "confidence": "EXTRACTED",
+      "evidence": {
+        "path": "web/src/spares.js",
+        "line": 1,
+        "text": "import * as THREE from 'three'"
+      },
+      "href": "../../web/src/spares.js#L1"
+    },
+    {
+      "source": "web/src/spares.js",
+      "target": "external:three/addons/loaders/GLTFLoader.js",
+      "relation": "importa",
+      "confidence": "EXTRACTED",
+      "evidence": {
+        "path": "web/src/spares.js",
+        "line": 2,
+        "text": "import {GLTFLoader} from 'three/addons/loaders/GLTFLoader.js'"
+      },
+      "href": "../../web/src/spares.js#L2"
     },
     {
       "source": "web/src/systems.js",
@@ -1070,6 +1118,54 @@
       "href": "../../web/test-power-unit.mjs#L4"
     },
     {
+      "source": "web/test-spares.mjs",
+      "target": "external:node:assert/strict",
+      "relation": "importa",
+      "confidence": "EXTRACTED",
+      "evidence": {
+        "path": "web/test-spares.mjs",
+        "line": 1,
+        "text": "import assert from 'node:assert/strict'"
+      },
+      "href": "../../web/test-spares.mjs#L1"
+    },
+    {
+      "source": "web/test-spares.mjs",
+      "target": "external:node:crypto",
+      "relation": "importa",
+      "confidence": "EXTRACTED",
+      "evidence": {
+        "path": "web/test-spares.mjs",
+        "line": 2,
+        "text": "import {createHash} from 'node:crypto'"
+      },
+      "href": "../../web/test-spares.mjs#L2"
+    },
+    {
+      "source": "web/test-spares.mjs",
+      "target": "external:node:fs",
+      "relation": "importa",
+      "confidence": "EXTRACTED",
+      "evidence": {
+        "path": "web/test-spares.mjs",
+        "line": 3,
+        "text": "import {readFileSync} from 'node:fs'"
+      },
+      "href": "../../web/test-spares.mjs#L3"
+    },
+    {
+      "source": "web/test-spares.mjs",
+      "target": "web/src/spares.js",
+      "relation": "importa",
+      "confidence": "EXTRACTED",
+      "evidence": {
+        "path": "web/test-spares.mjs",
+        "line": 4,
+        "text": "import {SPARE_SLOTS, SPARE_PRESETS, SPARE_INFO, SPARES_ASSET} from './src/spares.js'"
+      },
+      "href": "../../web/test-spares.mjs#L4"
+    },
+    {
       "source": "web/test-systems.mjs",
       "target": "external:node:assert/strict",
       "relation": "importa",
@@ -1306,10 +1402,10 @@
       "confidence": "EXTRACTED",
       "evidence": {
         "path": "web/src/app-v2.js",
-        "line": 78,
+        "line": 96,
         "text": "garage.getExportScene()"
       },
-      "href": "../../web/src/app-v2.js#L78"
+      "href": "../../web/src/app-v2.js#L96"
     },
     {
       "source": "ambientes/INTEIA-box-laboratorio.glb",

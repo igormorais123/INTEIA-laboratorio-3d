@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "fingerprint": "b317a3beb7c10016b045ddb8c5a25917bccf529f2660b68a30e68db2080f2def",
+  "fingerprint": "aeaa864f23973800631fab935cbee932d0749c1af58d65d025298d4cbb9154bb",
   "scope": "arquivos Git e novos não ignorados; caches, dependências instaladas e backups ignorados excluídos",
   "hashPolicy": "SHA256 e bytes de texto com LF; binários exatos; mapas gerados sem auto-hash",
   "files": [
@@ -33,13 +33,6 @@
       "sha256": "32d38e5186c29bc16752b24dda06e478f7bd82306a1b1abf4a53734cd02e58aa"
     },
     {
-      "path": ".github/workflows/verify.yml",
-      "category": "configuração ou infraestrutura",
-      "href": "../../.github/workflows/verify.yml",
-      "bytesCanonical": 642,
-      "sha256": "948d7b4c40e7b94dfc1dcedf1c0d306309f32fdc7ba6a30f42422955eb2a6883"
-    },
-    {
       "path": ".gitignore",
       "category": "configuração ou infraestrutura",
       "href": "../../.gitignore",
@@ -52,13 +45,6 @@
       "href": "../../.graphifyignore",
       "bytesCanonical": 449,
       "sha256": "209b7dfc5538d7400c0dfde3647d2511c1c47563b384e323b50daeb1fce12d85"
-    },
-    {
-      "path": ".nojekyll",
-      "category": "configuração ou infraestrutura",
-      "href": "../../.nojekyll",
-      "bytesCanonical": 0,
-      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
     },
     {
       "path": ".planning/ai/project-index.json",
@@ -92,15 +78,15 @@
       "path": "AGENTS.md",
       "category": "documentação",
       "href": "../../AGENTS.md",
-      "bytesCanonical": 1867,
-      "sha256": "ef9587b70acd4c650ecf409c311c0d151b540f202a40e20550581a89d8f3da55"
+      "bytesCanonical": 2039,
+      "sha256": "7ca04a43b6886cb9122cec9f4b51b7fc9621d92db1fca7be7086340da7197595"
     },
     {
       "path": "CHANGELOG.md",
       "category": "documentação",
       "href": "../../CHANGELOG.md",
-      "bytesCanonical": 1770,
-      "sha256": "536b570896086dd79c2db383b008db16af10d9d4dc774028dfe43d163568a1f9"
+      "bytesCanonical": 2047,
+      "sha256": "58a0128b5c14f1f76f1a519480f66a4ab2068489ac8ec95088ac8f57cbf584b0"
     },
     {
       "path": "CONTRIBUTING.md",
@@ -141,8 +127,8 @@
       "path": "README.md",
       "category": "documentação",
       "href": "../../README.md",
-      "bytesCanonical": 6081,
-      "sha256": "29f98bf8380d9fcb563afcbb709864ef130c8adf5926636c0ede03f8201c80ce"
+      "bytesCanonical": 6133,
+      "sha256": "8aee17133f68cbc50cd5b8036118bdf84102d5bcd9e54e7230b950253e9a3b00"
     },
     {
       "path": "THIRD-PARTY-NOTICES.md",
@@ -254,8 +240,8 @@
       "path": "docs/ESPECIFICACAO-ASSET-3D-SISTEMAS-F1.md",
       "category": "documentação",
       "href": "../../docs/ESPECIFICACAO-ASSET-3D-SISTEMAS-F1.md",
-      "bytesCanonical": 27108,
-      "sha256": "9dc9458bad35d200320f0472a283ad188cc62fac8879a78c04060b7a8cc4927a"
+      "bytesCanonical": 27083,
+      "sha256": "7f8007810d74446b50e98b33ebd8cef8ec13d81c9df58cf6ab3c29d502773e35"
     },
     {
       "path": "docs/INTEGRACAO-MOTOR.md",
@@ -289,15 +275,15 @@
       "path": "docs/PUBLICACAO.md",
       "category": "documentação",
       "href": "../../docs/PUBLICACAO.md",
-      "bytesCanonical": 3001,
-      "sha256": "47af7c747fe0c28961c468feec1d19b9fca5cbb7a8b26703ba797dcf5980efc2"
+      "bytesCanonical": 4477,
+      "sha256": "c63e0ddc1209b140185dad0156e230677ca9c4a18b7669c3260485e7bf7f517c"
     },
     {
       "path": "docs/README.md",
       "category": "documentação",
       "href": "../../docs/README.md",
-      "bytesCanonical": 2872,
-      "sha256": "0d5879889482f1ec8f70b0d6a3510c6616ad436f55439416133a7d0e0996d734"
+      "bytesCanonical": 3070,
+      "sha256": "7fef5009fd40466ba66b53770391540353659ca3246bbc8cc275e9f81827f576"
     },
     {
       "path": "docs/REVISAO-TUNEL-VISUAL.md",
@@ -310,8 +296,15 @@
       "path": "docs/SISTEMAS-3D.md",
       "category": "documentação",
       "href": "../../docs/SISTEMAS-3D.md",
-      "bytesCanonical": 7133,
-      "sha256": "1a5d314f682e035bf578518c290af609242130a122d1724499c1d2263f0f96ae"
+      "bytesCanonical": 8042,
+      "sha256": "a3374928e284b78a4970b7284da6a15f26376aecde010d2f2e1ab1d1575e4bed"
+    },
+    {
+      "path": "docs/SOBRESSALENTES.md",
+      "category": "documentação",
+      "href": "../../docs/SOBRESSALENTES.md",
+      "bytesCanonical": 3579,
+      "sha256": "1f9cde11d28c99727380cc1eaa6b5da025ebc011f2bf894f07f8eb10f4646224"
     },
     {
       "path": "docs/VALIDACAO.md",
@@ -341,22 +334,22 @@
       "path": "docs/mapas/MODULOS.md",
       "category": "documentação",
       "href": "../../docs/mapas/MODULOS.md",
-      "bytesCanonical": 8775,
-      "sha256": "1026a1bb93549de31a77348976c1366b03a587bbe46029e87cb00fbdadd4c633"
+      "bytesCanonical": 8831,
+      "sha256": "b7157d4f1254b709e7cfdaf401f7afed4ebe06a117bb3083fbcec05f84afe44c"
     },
     {
       "path": "docs/mapas/PRODUCAO.md",
       "category": "documentação",
       "href": "../../docs/mapas/PRODUCAO.md",
-      "bytesCanonical": 17713,
-      "sha256": "3f1f3b800d081c56600b85ba5eb50f002b3fca5ac805e0b80e697446d4d6caa2"
+      "bytesCanonical": 17498,
+      "sha256": "0495d329c060197cb36550ff22396cf138d1f33a702f785a3d8bd727b592162b"
     },
     {
       "path": "docs/mapas/README.md",
       "category": "documentação",
       "href": "../../docs/mapas/README.md",
-      "bytesCanonical": 3528,
-      "sha256": "13121594abce3b0f2994f78dee664ebdbc2aadfee02395b9b31064eb65e1b0a0"
+      "bytesCanonical": 3456,
+      "sha256": "87e74d70938e52bf70b2152308b4c83782b3f4338e13761d3f48d5560d088204"
     },
     {
       "path": "docs/mapas/REUSO.md",
@@ -369,8 +362,8 @@
       "path": "docs/mapas/VERIFICACAO.md",
       "category": "documentação",
       "href": "../../docs/mapas/VERIFICACAO.md",
-      "bytesCanonical": 3816,
-      "sha256": "a2413ba1ff1b66c37141e830b28368faeb44577c56eca0af79df3be48239ff93"
+      "bytesCanonical": 3817,
+      "sha256": "ff4c6c69cf7835e293abb7cab5b95b88776f221b284c05cc4517eadb5a265e69"
     },
     {
       "path": "docs/mapas/cobertura.json",
@@ -432,8 +425,8 @@
       "path": "docs/mapeamento-detalhado/ATUALIZAR.md",
       "category": "documentação",
       "href": "../../docs/mapeamento-detalhado/ATUALIZAR.md",
-      "bytesCanonical": 7246,
-      "sha256": "043d23ca0ce126eb059c8de0388d938e4bd3ae841137c3a033cc6fe5681855b4"
+      "bytesCanonical": 7244,
+      "sha256": "aaed243c73c18d8094c99f3742c268d1980eb5cc1ba22477eda74c74cf692bfb"
     },
     {
       "path": "docs/mapeamento-detalhado/CATALOGO.md",
@@ -616,15 +609,15 @@
       "path": "docs/mapeamento-detalhado/scripts/finalidades.json",
       "category": "configuração ou infraestrutura",
       "href": "../../docs/mapeamento-detalhado/scripts/finalidades.json",
-      "bytesCanonical": 20882,
-      "sha256": "d345ca1fcea1a9e557d4e0e1c9eb8000db5819d94ecf12fdd7bcf01e53a60258"
+      "bytesCanonical": 22142,
+      "sha256": "fd549384d6dfc2245a3f9c3b3bb22690e0be3543495b7dbb3326b09cbc52c931"
     },
     {
       "path": "docs/mapeamento-detalhado/scripts/gerar.py",
       "category": "configuração ou infraestrutura",
       "href": "../../docs/mapeamento-detalhado/scripts/gerar.py",
-      "bytesCanonical": 26612,
-      "sha256": "33f2ea3370a0be9c3dcecca0a884352251eb324322c0cdc434c1f425215cf27e"
+      "bytesCanonical": 26680,
+      "sha256": "e8714ebae804b64d6954d264cf4af7481827a70fa07446a9955aab994c2b83db"
     },
     {
       "path": "docs/mapeamento-detalhado/scripts/interface.html",
@@ -688,6 +681,13 @@
       "href": "../../ferramentas/gerar_sistemas.py",
       "bytesCanonical": 14534,
       "sha256": "ebe02d14e1a8436e1e9545e3337d98b9d8187ea5deaeda6ad8e4553b27d3ab5b"
+    },
+    {
+      "path": "ferramentas/gerar_sobressalentes.py",
+      "category": "ferramenta editável",
+      "href": "../../ferramentas/gerar_sobressalentes.py",
+      "bytesCanonical": 16085,
+      "sha256": "a209f9b5d0472e3d29d7e9c78378de5fcbd2809c972a93f8ebfb360a55fd71ae"
     },
     {
       "path": "ferramentas/manifest.cjs",
@@ -15409,6 +15409,33 @@
       "sha256": "3c5bef48b00aadf0a57bb8eb3fe86aa1d460eed06b05aa2b7d32689e9d75663c"
     },
     {
+      "path": "web/assets/sobressalentes-v1.glb",
+      "category": "entrega GLB",
+      "href": "../../web/assets/sobressalentes-v1.glb",
+      "bytesCanonical": 3922704,
+      "sha256": "95a38d7462509d9d31351df045fcb6dd1b453ac62f36eccae909b611b7c95cf4",
+      "glb": {
+        "nodes": 28,
+        "meshes": 28,
+        "triangles": 69092,
+        "materials": 7,
+        "images": 12,
+        "extensionsUsed": [
+          "KHR_materials_clearcoat",
+          "KHR_texture_transform"
+        ],
+        "animations": [],
+        "components": []
+      }
+    },
+    {
+      "path": "web/assets/sobressalentes-v1.manifest.json",
+      "category": "configuração ou infraestrutura",
+      "href": "../../web/assets/sobressalentes-v1.manifest.json",
+      "bytesCanonical": 10307,
+      "sha256": "9d10c0693182a265074b58e65af07dfcd49df23e39fd74d92a1a892ac01e0041"
+    },
+    {
       "path": "web/build.cjs",
       "category": "configuração ou infraestrutura",
       "href": "../../web/build.cjs",
@@ -15419,8 +15446,8 @@
       "path": "web/index.html",
       "category": "aplicação gerada",
       "href": "../../web/index.html",
-      "bytesCanonical": 4458380,
-      "sha256": "63aea350db5e5f0e14d095e780893dd7fba03aaa8a5186d4fa0465f98b39c6db"
+      "bytesCanonical": 4478776,
+      "sha256": "4810c4f478077c6baf8f51eb45d92c0d91bf6f4df22f31fbaa9dfbc03c0299cc"
     },
     {
       "path": "web/package-lock.json",
@@ -15433,8 +15460,8 @@
       "path": "web/package.json",
       "category": "configuração ou infraestrutura",
       "href": "../../web/package.json",
-      "bytesCanonical": 535,
-      "sha256": "b136135dfd1f6b5e91d68ce38a92ad3cc7590bf0be757e21b13fc98f4a0fae46"
+      "bytesCanonical": 559,
+      "sha256": "76f9085be5e195420cbfc734406de454b80866914d9d6679e24492fda65da878"
     },
     {
       "path": "web/server.cjs",
@@ -15455,8 +15482,8 @@
       "path": "web/src/app-v2.js",
       "category": "fonte web editável",
       "href": "../../web/src/app-v2.js",
-      "bytesCanonical": 24289,
-      "sha256": "6809d9d5183fa74c24aaf49106283a405c459a3156cf96e0be8615f7f51bf3a2",
+      "bytesCanonical": 29574,
+      "sha256": "960056481f22a702694f77d950ed12832db0feadd2b070d36fdcd1a25344ff8c",
       "reachableFromApp": true
     },
     {
@@ -15527,8 +15554,8 @@
       "path": "web/src/identity.js",
       "category": "fonte web editável",
       "href": "../../web/src/identity.js",
-      "bytesCanonical": 2244,
-      "sha256": "abec6a2bb045d973157c0e828f1d8f8280a88e9583e69f010707f93bed67dcb9",
+      "bytesCanonical": 2423,
+      "sha256": "5473dd121c542d46265076c29c95a6974b2bc57a62cea751917cd925bc334255",
       "reachableFromApp": true
     },
     {
@@ -15543,8 +15570,8 @@
       "path": "web/src/parts-info.js",
       "category": "fonte web editável",
       "href": "../../web/src/parts-info.js",
-      "bytesCanonical": 53026,
-      "sha256": "0978b0890702f019c7d8b3a8fd1ff6c77b794e792801475b4a83b9625ce24996",
+      "bytesCanonical": 62496,
+      "sha256": "e237073d751b06095e6c25d6a15b08671838e0e0a6ef2e032ee5a650e9154548",
       "reachableFromApp": true
     },
     {
@@ -15553,6 +15580,14 @@
       "href": "../../web/src/senna-driver.js",
       "bytesCanonical": 7795,
       "sha256": "2adb76236f35acada85a40a2cc9ea707f763e20b21ae007818e34d1b30d21006",
+      "reachableFromApp": true
+    },
+    {
+      "path": "web/src/spares.js",
+      "category": "fonte web editável",
+      "href": "../../web/src/spares.js",
+      "bytesCanonical": 9845,
+      "sha256": "e8aea02446e5ae1de333bc29c824342b6dff5a1d1fd395996f8c7e3aa97b17dd",
       "reachableFromApp": true
     },
     {
@@ -15575,16 +15610,16 @@
       "path": "web/src/systems.js",
       "category": "fonte web editável",
       "href": "../../web/src/systems.js",
-      "bytesCanonical": 33660,
-      "sha256": "0181b718de7953bb589af0527237fb73055f9b9bacd76cf3dd8c4f713a80b2d5",
+      "bytesCanonical": 34653,
+      "sha256": "95212b15458c12d85061b7dc4956c10e5cf58b941a070512f5be2fba7268e6e9",
       "reachableFromApp": true
     },
     {
       "path": "web/src/template-v2.html",
       "category": "fonte web editável",
       "href": "../../web/src/template-v2.html",
-      "bytesCanonical": 38141,
-      "sha256": "9d99cc6293e9a1f97a998833da4e31773869955330d65ea84d8348ec90ac0918"
+      "bytesCanonical": 37170,
+      "sha256": "7f7687a5c73381d9d537bb656f36310435f0769d77f647c9cb3b614998b4f17f"
     },
     {
       "path": "web/src/tunnel-visual.js",
@@ -15639,11 +15674,18 @@
       "sha256": "9f0b6990b519a81367bff4bad1adbbac4fb50a0483b2dd5eb344e6f3ded8e4ae"
     },
     {
+      "path": "web/test-spares.mjs",
+      "category": "teste",
+      "href": "../../web/test-spares.mjs",
+      "bytesCanonical": 4381,
+      "sha256": "f922f9c99114755ff86d02eb724284f7305d4f99e450ffa1bc4f9ee37bc75d8f"
+    },
+    {
       "path": "web/test-systems.mjs",
       "category": "teste",
       "href": "../../web/test-systems.mjs",
-      "bytesCanonical": 14459,
-      "sha256": "1b269900601e0bb4d144896f6529902bb9bb581e3da84d743fc7cfdc40b73243"
+      "bytesCanonical": 15533,
+      "sha256": "2e90c8ce95bd60de8d0cb3c2ece2c493b9010d7f5f3d30e150163a4510340bc5"
     }
   ],
   "symbols": [
@@ -15841,6 +15883,76 @@
       "path": "ferramentas/gerar_sistemas.py",
       "line": 248,
       "href": "../../ferramentas/gerar_sistemas.py#L248",
+      "extraction": "declaração lexical"
+    },
+    {
+      "name": "surface_y",
+      "path": "ferramentas/gerar_sobressalentes.py",
+      "line": 54,
+      "href": "../../ferramentas/gerar_sobressalentes.py#L54",
+      "extraction": "declaração lexical"
+    },
+    {
+      "name": "spare",
+      "path": "ferramentas/gerar_sobressalentes.py",
+      "line": 61,
+      "href": "../../ferramentas/gerar_sobressalentes.py#L61",
+      "extraction": "declaração lexical"
+    },
+    {
+      "name": "tyre_profile",
+      "path": "ferramentas/gerar_sobressalentes.py",
+      "line": 93,
+      "href": "../../ferramentas/gerar_sobressalentes.py#L93",
+      "extraction": "declaração lexical"
+    },
+    {
+      "name": "tyre_texture",
+      "path": "ferramentas/gerar_sobressalentes.py",
+      "line": 98,
+      "href": "../../ferramentas/gerar_sobressalentes.py#L98",
+      "extraction": "declaração lexical"
+    },
+    {
+      "name": "build_tyre",
+      "path": "ferramentas/gerar_sobressalentes.py",
+      "line": 138,
+      "href": "../../ferramentas/gerar_sobressalentes.py#L138",
+      "extraction": "declaração lexical"
+    },
+    {
+      "name": "wing_section",
+      "path": "ferramentas/gerar_sobressalentes.py",
+      "line": 174,
+      "href": "../../ferramentas/gerar_sobressalentes.py#L174",
+      "extraction": "declaração lexical"
+    },
+    {
+      "name": "span_loft",
+      "path": "ferramentas/gerar_sobressalentes.py",
+      "line": 187,
+      "href": "../../ferramentas/gerar_sobressalentes.py#L187",
+      "extraction": "declaração lexical"
+    },
+    {
+      "name": "fw_at",
+      "path": "ferramentas/gerar_sobressalentes.py",
+      "line": 214,
+      "href": "../../ferramentas/gerar_sobressalentes.py#L214",
+      "extraction": "declaração lexical"
+    },
+    {
+      "name": "sec",
+      "path": "ferramentas/gerar_sobressalentes.py",
+      "line": 225,
+      "href": "../../ferramentas/gerar_sobressalentes.py#L225",
+      "extraction": "declaração lexical"
+    },
+    {
+      "name": "bbox_web",
+      "path": "ferramentas/gerar_sobressalentes.py",
+      "line": 265,
+      "href": "../../ferramentas/gerar_sobressalentes.py#L265",
       "extraction": "declaração lexical"
     },
     {
@@ -16770,78 +16882,127 @@
     {
       "name": "closeEngine",
       "path": "web/src/app-v2.js",
-      "line": 36,
-      "href": "../../web/src/app-v2.js#L36",
-      "extraction": "declaração lexical"
-    },
-    {
-      "name": "setFlowXray",
-      "path": "web/src/app-v2.js",
       "line": 38,
       "href": "../../web/src/app-v2.js#L38",
       "extraction": "declaração lexical"
     },
     {
+      "name": "setFlowXray",
+      "path": "web/src/app-v2.js",
+      "line": 40,
+      "href": "../../web/src/app-v2.js#L40",
+      "extraction": "declaração lexical"
+    },
+    {
       "name": "moveCamera",
-      "path": "web/src/app-v2.js",
-      "line": 46,
-      "href": "../../web/src/app-v2.js#L46",
-      "extraction": "declaração lexical"
-    },
-    {
-      "name": "setCarSelectionEnabled",
-      "path": "web/src/app-v2.js",
-      "line": 47,
-      "href": "../../web/src/app-v2.js#L47",
-      "extraction": "declaração lexical"
-    },
-    {
-      "name": "syncSystemMode",
       "path": "web/src/app-v2.js",
       "line": 48,
       "href": "../../web/src/app-v2.js#L48",
       "extraction": "declaração lexical"
     },
     {
-      "name": "view",
+      "name": "setCarSelectionEnabled",
+      "path": "web/src/app-v2.js",
+      "line": 49,
+      "href": "../../web/src/app-v2.js#L49",
+      "extraction": "declaração lexical"
+    },
+    {
+      "name": "syncSystemMode",
       "path": "web/src/app-v2.js",
       "line": 50,
       "href": "../../web/src/app-v2.js#L50",
       "extraction": "declaração lexical"
     },
     {
-      "name": "resize",
+      "name": "view",
       "path": "web/src/app-v2.js",
       "line": 52,
       "href": "../../web/src/app-v2.js#L52",
       "extraction": "declaração lexical"
     },
     {
+      "name": "resize",
+      "path": "web/src/app-v2.js",
+      "line": 57,
+      "href": "../../web/src/app-v2.js#L57",
+      "extraction": "declaração lexical"
+    },
+    {
       "name": "refreshSelection",
       "path": "web/src/app-v2.js",
-      "line": 54,
-      "href": "../../web/src/app-v2.js#L54",
+      "line": 59,
+      "href": "../../web/src/app-v2.js#L59",
+      "extraction": "declaração lexical"
+    },
+    {
+      "name": "setupSparesUI",
+      "path": "web/src/app-v2.js",
+      "line": 62,
+      "href": "../../web/src/app-v2.js#L62",
+      "extraction": "declaração lexical"
+    },
+    {
+      "name": "setSpareStatus",
+      "path": "web/src/app-v2.js",
+      "line": 68,
+      "href": "../../web/src/app-v2.js#L68",
+      "extraction": "declaração lexical"
+    },
+    {
+      "name": "showSpareInfo",
+      "path": "web/src/app-v2.js",
+      "line": 69,
+      "href": "../../web/src/app-v2.js#L69",
+      "extraction": "declaração lexical"
+    },
+    {
+      "name": "renderInto",
+      "path": "web/src/app-v2.js",
+      "line": 70,
+      "href": "../../web/src/app-v2.js#L70",
+      "extraction": "declaração lexical"
+    },
+    {
+      "name": "syncSpares",
+      "path": "web/src/app-v2.js",
+      "line": 71,
+      "href": "../../web/src/app-v2.js#L71",
+      "extraction": "declaração lexical"
+    },
+    {
+      "name": "renderSelectedInfo",
+      "path": "web/src/app-v2.js",
+      "line": 72,
+      "href": "../../web/src/app-v2.js#L72",
       "extraction": "declaração lexical"
     },
     {
       "name": "select",
       "path": "web/src/app-v2.js",
-      "line": 55,
-      "href": "../../web/src/app-v2.js#L55",
+      "line": 73,
+      "href": "../../web/src/app-v2.js#L73",
       "extraction": "declaração lexical"
     },
     {
       "name": "focusPart",
       "path": "web/src/app-v2.js",
-      "line": 56,
-      "href": "../../web/src/app-v2.js#L56",
+      "line": 74,
+      "href": "../../web/src/app-v2.js#L74",
       "extraction": "declaração lexical"
     },
     {
       "name": "assemblyTo",
       "path": "web/src/app-v2.js",
-      "line": 57,
-      "href": "../../web/src/app-v2.js#L57",
+      "line": 75,
+      "href": "../../web/src/app-v2.js#L75",
+      "extraction": "declaração lexical"
+    },
+    {
+      "name": "systemsSpreadTo",
+      "path": "web/src/app-v2.js",
+      "line": 104,
+      "href": "../../web/src/app-v2.js#L104",
       "extraction": "declaração lexical"
     },
     {
@@ -17293,6 +17454,13 @@
       "extraction": "declaração lexical"
     },
     {
+      "name": "describeCarPart",
+      "path": "web/src/parts-info.js",
+      "line": 442,
+      "href": "../../web/src/parts-info.js#L442",
+      "extraction": "declaração lexical"
+    },
+    {
       "name": "createSennaDriver",
       "path": "web/src/senna-driver.js",
       "line": 6,
@@ -17346,6 +17514,90 @@
       "path": "web/src/senna-driver.js",
       "line": 66,
       "href": "../../web/src/senna-driver.js#L66",
+      "extraction": "declaração lexical"
+    },
+    {
+      "name": "SPARES_ASSET",
+      "path": "web/src/spares.js",
+      "line": 9,
+      "href": "../../web/src/spares.js#L9",
+      "extraction": "declaração lexical"
+    },
+    {
+      "name": "SPARE_SLOTS",
+      "path": "web/src/spares.js",
+      "line": 11,
+      "href": "../../web/src/spares.js#L11",
+      "extraction": "declaração lexical"
+    },
+    {
+      "name": "SPARE_PRESETS",
+      "path": "web/src/spares.js",
+      "line": 19,
+      "href": "../../web/src/spares.js#L19",
+      "extraction": "declaração lexical"
+    },
+    {
+      "name": "SPARE_INFO",
+      "path": "web/src/spares.js",
+      "line": 28,
+      "href": "../../web/src/spares.js#L28",
+      "extraction": "declaração lexical"
+    },
+    {
+      "name": "createSpares",
+      "path": "web/src/spares.js",
+      "line": 48,
+      "href": "../../web/src/spares.js#L48",
+      "extraction": "declaração lexical"
+    },
+    {
+      "name": "load",
+      "path": "web/src/spares.js",
+      "line": 57,
+      "href": "../../web/src/spares.js#L57",
+      "extraction": "declaração lexical"
+    },
+    {
+      "name": "remember",
+      "path": "web/src/spares.js",
+      "line": 64,
+      "href": "../../web/src/spares.js#L64",
+      "extraction": "declaração lexical"
+    },
+    {
+      "name": "revert",
+      "path": "web/src/spares.js",
+      "line": 66,
+      "href": "../../web/src/spares.js#L66",
+      "extraction": "declaração lexical"
+    },
+    {
+      "name": "applySlot",
+      "path": "web/src/spares.js",
+      "line": 71,
+      "href": "../../web/src/spares.js#L71",
+      "extraction": "declaração lexical"
+    },
+    {
+      "name": "set",
+      "path": "web/src/spares.js",
+      "line": 83,
+      "href": "../../web/src/spares.js#L83",
+      "extraction": "declaração lexical"
+    },
+    {
+      "name": "preset",
+      "path": "web/src/spares.js",
+      "line": 92,
+      "href": "../../web/src/spares.js#L92",
+      "extraction": "declaração lexical"
+    },
+    {
+      "name": "presetMatching",
+      "path": "web/src/spares.js",
+      "line": 94,
+      "href": "../../web/src/spares.js#L94",
       "extraction": "declaração lexical"
     },
     {
@@ -17512,120 +17764,127 @@
     {
       "name": "applyExplode",
       "path": "web/src/systems.js",
-      "line": 128,
-      "href": "../../web/src/systems.js#L128",
+      "line": 130,
+      "href": "../../web/src/systems.js#L130",
       "extraction": "declaração lexical"
     },
     {
       "name": "materialFor",
       "path": "web/src/systems.js",
-      "line": 131,
-      "href": "../../web/src/systems.js#L131",
+      "line": 139,
+      "href": "../../web/src/systems.js#L139",
       "extraction": "declaração lexical"
     },
     {
       "name": "applyFlows",
       "path": "web/src/systems.js",
-      "line": 132,
-      "href": "../../web/src/systems.js#L132",
+      "line": 140,
+      "href": "../../web/src/systems.js#L140",
       "extraction": "declaração lexical"
     },
     {
       "name": "applySchematic",
       "path": "web/src/systems.js",
-      "line": 133,
-      "href": "../../web/src/systems.js#L133",
+      "line": 141,
+      "href": "../../web/src/systems.js#L141",
       "extraction": "declaração lexical"
     },
     {
       "name": "highlight",
       "path": "web/src/systems.js",
-      "line": 135,
-      "href": "../../web/src/systems.js#L135",
+      "line": 143,
+      "href": "../../web/src/systems.js#L143",
       "extraction": "declaração lexical"
     },
     {
       "name": "setPicked",
       "path": "web/src/systems.js",
-      "line": 142,
-      "href": "../../web/src/systems.js#L142",
+      "line": 150,
+      "href": "../../web/src/systems.js#L150",
       "extraction": "declaração lexical"
     },
     {
       "name": "setERSContext",
-      "path": "web/src/systems.js",
-      "line": 156,
-      "href": "../../web/src/systems.js#L156",
-      "extraction": "declaração lexical"
-    },
-    {
-      "name": "updateUI",
-      "path": "web/src/systems.js",
-      "line": 157,
-      "href": "../../web/src/systems.js#L157",
-      "extraction": "declaração lexical"
-    },
-    {
-      "name": "objectFor",
-      "path": "web/src/systems.js",
-      "line": 162,
-      "href": "../../web/src/systems.js#L162",
-      "extraction": "declaração lexical"
-    },
-    {
-      "name": "geometryBounds",
-      "path": "web/src/systems.js",
-      "line": 163,
-      "href": "../../web/src/systems.js#L163",
-      "extraction": "declaração lexical"
-    },
-    {
-      "name": "viewportAspect",
       "path": "web/src/systems.js",
       "line": 164,
       "href": "../../web/src/systems.js#L164",
       "extraction": "declaração lexical"
     },
     {
-      "name": "frame",
+      "name": "updateUI",
       "path": "web/src/systems.js",
-      "line": 168,
-      "href": "../../web/src/systems.js#L168",
+      "line": 165,
+      "href": "../../web/src/systems.js#L165",
       "extraction": "declaração lexical"
     },
     {
-      "name": "show",
-      "path": "web/src/systems.js",
-      "line": 169,
-      "href": "../../web/src/systems.js#L169",
-      "extraction": "declaração lexical"
-    },
-    {
-      "name": "view",
+      "name": "objectFor",
       "path": "web/src/systems.js",
       "line": 170,
       "href": "../../web/src/systems.js#L170",
       "extraction": "declaração lexical"
     },
     {
-      "name": "captureGhost",
+      "name": "geometryBounds",
       "path": "web/src/systems.js",
       "line": 171,
       "href": "../../web/src/systems.js#L171",
       "extraction": "declaração lexical"
     },
     {
-      "name": "setGhost",
+      "name": "viewportAspect",
       "path": "web/src/systems.js",
       "line": 172,
       "href": "../../web/src/systems.js#L172",
       "extraction": "declaração lexical"
     },
     {
+      "name": "frame",
+      "path": "web/src/systems.js",
+      "line": 176,
+      "href": "../../web/src/systems.js#L176",
+      "extraction": "declaração lexical"
+    },
+    {
+      "name": "show",
+      "path": "web/src/systems.js",
+      "line": 177,
+      "href": "../../web/src/systems.js#L177",
+      "extraction": "declaração lexical"
+    },
+    {
+      "name": "view",
+      "path": "web/src/systems.js",
+      "line": 178,
+      "href": "../../web/src/systems.js#L178",
+      "extraction": "declaração lexical"
+    },
+    {
+      "name": "captureGhost",
+      "path": "web/src/systems.js",
+      "line": 179,
+      "href": "../../web/src/systems.js#L179",
+      "extraction": "declaração lexical"
+    },
+    {
+      "name": "setGhost",
+      "path": "web/src/systems.js",
+      "line": 180,
+      "href": "../../web/src/systems.js#L180",
+      "extraction": "declaração lexical"
+    },
+    {
       "name": "setEnabled",
       "path": "web/src/systems.js",
-      "line": 173,
-      "href": "../../web/src/systems.js#L173",
+      "line": 181,
+      "href": "../../web/src/systems.js#L181",
+      "extraction": "declaração lexical"
+    },
+    {
+      "name": "pickFromEvent",
+      "path": "web/src/systems.js",
+      "line": 186,
+      "href": "../../web/src/systems.js#L186",
       "extraction": "declaração lexical"
     },
     {

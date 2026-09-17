@@ -22,4 +22,4 @@ O Node avisou que o tipo de módulo de `mechanics.js` não está declarado no pa
 
 A tentativa de iniciar servidor de prévia foi rejeitada pela revisão automática de aprovação sem motivo específico. A ferramenta inicial de navegador não respondeu, e a CLI bloqueou navegação `file:`. A alternativa validada foi renderizar os arquivos autorizados em Chrome com requisições interceptadas para um domínio reservado `.test`, sem servidor de rede e sem navegar pelo protocolo de arquivos. As capturas e o relatório local da sessão estão em `output/playwright/` na worktree, excluídos do commit.
 
-A primeira execução remota da branch no GitHub Actions foi encerrada antes de iniciar qualquer etapa: a anotação informa bloqueio da conta por cobrança. Portanto, os resultados de testes desta entrega são locais; não são uma aprovação da CI remota.
+Não há integração contínua remota: o fluxo do GitHub Actions foi removido em setembro de 2026 porque a conta exige pagamento para executá-lo. Todos os resultados de testes são locais e devem ser reproduzidos antes de cada publicação no ChatGPT Sites.
