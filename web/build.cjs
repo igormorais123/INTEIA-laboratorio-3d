@@ -22,9 +22,18 @@ const bundle = esbuild.buildSync({
   write: false,
 }).outputFiles[0].text;
 
+const worklet = esbuild.buildSync({
+  entryPoints: [source('src', 'sound', 'engine-worklet.js')],
+  bundle: true,
+  minify: true,
+  format: 'iife',
+  write: false,
+}).outputFiles[0].text;
+
 const template = fs.readFileSync(source('src', 'template-v2.html'), 'utf8');
 const model = fs.readFileSync(source('assets', 'carro-aula-v2.glb')).toString('base64');
 const withModel = replaceRequired(template, '__MODEL__', model);
-const html = replaceRequired(withModel, '__APP__', bundle.replace(/<\/script/gi, '<\\/script'));
+const withWorklet = replaceRequired(withModel, '__SOUND_WORKLET__', worklet.replace(/<\/script/gi, '<\\/script'));
+const html = replaceRequired(withWorklet, '__APP__', bundle.replace(/<\/script/gi, '<\\/script'));
 
 fs.writeFileSync(source('index.html'), html);

@@ -1,11 +1,11 @@
 import * as THREE from 'three';
 import {GLTFExporter} from 'three/addons/exporters/GLTFExporter.js';
 
-export function createWorkbench({scene,model,driver,engine,garage,systems,controls,camera,moveCamera,closeEngine,showCar}){
+export function createWorkbench({scene,model,driver,engine,garage,systems,controls,camera,moveCamera,closeEngine,showCar,onTab=()=>{}}){
  const $=id=>document.getElementById(id),inspection=new THREE.Group();inspection.name='Bancada de inspeção';scene.add(inspection);
  let active='car',mode='isolated',currentObject=null,target=new THREE.Vector3(),radius=1;
  const panels=[...document.querySelectorAll('.panel > .block')];
- for(const panel of panels){const title=panel.querySelector('h3')?.textContent||'';panel.dataset.labPanel=title.startsWith('MOTOR')?'engine':panel.id==='air-panel'?'air':title.startsWith('CAPACETE')?'helmet':title.startsWith('PILOTO')?'driver':title.startsWith('AMBIENTES')?'world':title.startsWith('SISTEMAS')?'systems':'car';}
+ for(const panel of panels){const title=panel.querySelector('h3')?.textContent||'';panel.dataset.labPanel=title.startsWith('MOTOR')?'engine':panel.id==='air-panel'?'air':title.startsWith('CAPACETE')?'helmet':title.startsWith('PILOTO')?'driver':title.startsWith('AMBIENTES')?'world':title.startsWith('SISTEMAS')?'systems':title.startsWith('SOM')?'sound':'car';}
  const tabs=[...document.querySelectorAll('[data-lab-tab]')];
  const panel=document.querySelector('.panel');
  if(panel){panel.id='lab-panel';panel.setAttribute('role','tabpanel');panel.setAttribute('tabindex','-1');}
@@ -28,15 +28,16 @@ export function createWorkbench({scene,model,driver,engine,garage,systems,contro
   inspection.add(clone);inspection.position.set(0,0,0);inspection.updateMatrixWorld(true);
   const b=new THREE.Box3().setFromObject(inspection),center=b.getCenter(new THREE.Vector3());inspection.position.set(-center.x,-b.min.y+.015,-center.z);currentObject=clone;inspection.updateMatrixWorld(true);frame(inspection);
  }
- function refreshPanels(){for(const p of panels)if(p.dataset.labPanel!=='air')p.hidden=p.dataset.labPanel!==active;document.querySelector('.panel-heading h2').textContent={car:'Carro',engine:'Motor V6',helmet:'Capacete',driver:'Piloto',world:'Ambientes',systems:'Sistemas reais'}[active];document.querySelector('.panel-heading .badge').style.display=active==='car'?'':'none';}
+ function refreshPanels(){for(const p of panels)if(p.dataset.labPanel!=='air')p.hidden=p.dataset.labPanel!==active;document.querySelector('.panel-heading h2').textContent={car:'Carro',engine:'Motor V6',helmet:'Capacete',driver:'Piloto',world:'Ambientes',systems:'Sistemas reais',sound:'Som'}[active];document.querySelector('.panel-heading .badge').style.display=active==='car'?'':'none';}
  function setTab(next){
-  if(active==='systems')systems?.deactivate();
+  const previous=active;if(active==='systems')systems?.deactivate();
   if(document.body.classList.contains('wind-active'))$('wind-toggle').click();closeEngine();
   active=next;mode='isolated';document.body.dataset.labTab=active;inspection.visible=false;inspection.clear();model.visible=true;controls.autoRotate=false;$('orbit').setAttribute('aria-pressed','false');
-  $('reset').click();garage.setEnabled(active==='car'||active==='engine'||active==='world');
+  $('reset').click();garage.setEnabled(active==='car'||active==='engine'||active==='world'||active==='sound');
   tabs.forEach(t=>{const on=t.dataset.labTab===active;t.setAttribute('aria-selected',String(on));t.tabIndex=on?0:-1;});
   document.querySelector('.panel').setAttribute('aria-labelledby','tab-'+active);refreshPanels();
-  if(active==='helmet'||active==='driver'){rebuild();}else if(active==='engine')$('engine-open').click();else if(active==='systems')systems?.show('overview');else showCar();
+  if(active==='helmet'||active==='driver'){rebuild();}else if(active==='engine')$('engine-open').click();else if(active==='systems')systems?.show('overview');else if(active==='sound'){showCar();moveCamera(new THREE.Vector3(3.2,1.25,-4.6),new THREE.Vector3(0,.55,-1.2));}else showCar();
+  onTab(active,previous);
  }
  tabs.forEach((t,i)=>{t.onclick=()=>setTab(t.dataset.labTab);t.onkeydown=e=>{let n=null;if(e.key==='ArrowRight')n=(i+1)%tabs.length;if(e.key==='ArrowLeft')n=(i+tabs.length-1)%tabs.length;if(e.key==='Home')n=0;if(e.key==='End')n=tabs.length-1;if(n!==null){e.preventDefault();tabs[n].focus();setTab(tabs[n].dataset.labTab);}};});
  function cockpit(){mode='cockpit';inspection.visible=false;model.visible=true;garage.setEnabled(true);model.updateMatrixWorld(true);frame(driver.helmet.root);}

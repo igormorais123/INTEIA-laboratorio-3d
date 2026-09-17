@@ -1,0 +1,94 @@
+{
+  "version": 1,
+  "retrievedAt": "2026-09-17",
+  "purpose": "Gravações reais usadas SOMENTE para análise espectral (order tracking) e calibração do timbre. Os áudios não são versionados nem publicados; baixe para ferramentas/som/.referencias/ e confira o SHA-256.",
+  "userAgent": "INTEIA-lab/1.0 (igormorais123@gmail.com)",
+  "references": [
+    {
+      "id": "superleague_v12",
+      "file": "superleague_v12.ogg",
+      "use": "Timbre de monoposto V12 aspirado (marcha lenta, acelerações, passagens)",
+      "engine": "V12",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/64/Superleague_Formula_V12_Brands_Hatch_2010.ogg",
+      "page": "https://commons.wikimedia.org/wiki/File:Superleague_Formula_V12_Brands_Hatch_2010.ogg",
+      "author": "Ed Pond (Edvvc)",
+      "license": "CC BY-SA 3.0",
+      "format": "Ogg Vorbis, 2:28",
+      "bytes": 3566293,
+      "sha256": "14167ec3b22eaf4a350349ab55b9f77fc2cd4060956a62d319211da9a88f5a35",
+      "notes": "Editado pelo autor (inclui pistola de roda, marcha lenta encurtada)."
+    },
+    {
+      "id": "ferrari_312_v12",
+      "file": "ferrari_312_v12.ogg",
+      "use": "Timbre Ferrari F1 V12 (1968), arrancada curta",
+      "engine": "V12",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/2/23/Ferrari_312_68_%281968%29.ogg",
+      "page": "https://commons.wikimedia.org/wiki/File:Ferrari_312_68_(1968).ogg",
+      "author": "Ed Pond (Edvvc)",
+      "license": "CC BY-SA 3.0",
+      "format": "Ogg Vorbis, 8,9 s",
+      "bytes": 239474,
+      "sha256": "61ef299821a88d3d42ce496d449f8c3705e11132c628e5c3567f3f61f2fb9994"
+    },
+    {
+      "id": "williams_v10",
+      "file": "williams_v10.ogg",
+      "use": "Timbre F1 V10 aspirado anos 90 (Williams-Renault FW18, 1996)",
+      "engine": "V10",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/c/cd/Williams-Renault_FW18_%281996%29.ogg",
+      "page": "https://commons.wikimedia.org/wiki/File:Williams-Renault_FW18_(1996).ogg",
+      "author": "Ed Pond (Edvvc)",
+      "license": "CC BY-SA 3.0",
+      "format": "Ogg Vorbis, 14 s",
+      "bytes": 335354,
+      "sha256": "64b3b81b3cc7df20a0a73a34e6eac02871d53c433e27897e40dcde688bcbce39"
+    },
+    {
+      "id": "ears68_v8_a",
+      "file": "ears68_v8_a.mp3",
+      "use": "Grito de alta rotação (F1 2012, V8 2.4 até 18.000 RPM), passagens na curva 11 de Melbourne",
+      "engine": "V8",
+      "url": "https://cdn.freesound.org/previews/150/150338_2214631-hq.mp3",
+      "page": "https://freesound.org/s/150338/",
+      "author": "Ears68",
+      "license": "CC0",
+      "format": "Prévia MP3 hq (original WAV 44,1 kHz exige login na API do Freesound)",
+      "bytes": 3511315,
+      "sha256": "cca0edd4b564cd515c76f5aa95c0ccb783ab999e9b6f01ee6224584114a50ae8",
+      "notes": "Tem público, locutor e helicóptero misturados."
+    },
+    {
+      "id": "ears68_v8_b",
+      "file": "ears68_v8_b.mp3",
+      "use": "Mesmo evento, treino 3: passagens e trocas de marcha",
+      "engine": "V8",
+      "url": "https://cdn.freesound.org/previews/150/150337_2214631-hq.mp3",
+      "page": "https://freesound.org/s/150337/",
+      "author": "Ears68",
+      "license": "CC0",
+      "format": "Prévia MP3 hq",
+      "bytes": 2311814,
+      "sha256": "c0fc3fe3c94ebcce9ae96989f28fab491287df8eb7881177818c2a75364fd6fe"
+    },
+    {
+      "id": "monza2014_v6",
+      "file": "monza2014_v6.mp3",
+      "use": "Único V6 turbo híbrido livre encontrado (GP da Itália 2014), ambiência com carros se aproximando",
+      "engine": "V6 turbo híbrido",
+      "url": "https://cdn.freesound.org/previews/410/410894_7987814-hq.mp3",
+      "page": "https://freesound.org/s/410894/",
+      "author": "wandererscapes",
+      "license": "CC0",
+      "format": "Prévia MP3 hq, 21 s",
+      "bytes": 489414,
+      "sha256": "e1ef7dd1a0ed8f77ffd79bf5da157b66438cb616c80f869581c18e57e7103026"
+    }
+  ],
+  "rejected": [
+    {"page": "https://freesound.org/people/monsteruno/sounds/67893/", "reason": "Único 'V12 F1' encontrado, mas MP3 22 kHz/56 kbps de origem provável TV; licença Sampling+. Não usar."},
+    {"page": "https://www.overtake.gg/downloads/ferrari-412t2-sound-mod.29508/", "reason": "Mod de jogo sem licença de redistribuição."},
+    {"page": "https://sonniss.com/gdc-bundle-license/", "reason": "Proíbe fornecer os sons como arquivos; incompatível com servir áudio no site."},
+    {"page": "BBC Sound Effects (RemArc)", "reason": "Uso não comercial apenas."}
+  ]
+}

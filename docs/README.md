@@ -19,7 +19,9 @@ Este é o índice canônico da documentação. Use o guia mais estreito para a t
 | Área | Fonte |
 | --- | --- |
 | Motor V6 no laboratório | [INTEGRACAO-MOTOR.md](INTEGRACAO-MOTOR.md) |
+| Estúdio de som V6 × V12 (em desenvolvimento) | [Passagem de trabalho](estudio-som/HANDOFF.md), [pesquisa](estudio-som/PESQUISA.md) e [especificação](superpowers/specs/2026-09-16-estudio-som-v12-design.md) |
 | Sistemas internos do carro | [SISTEMAS-3D.md](SISTEMAS-3D.md) e [especificação histórica](ESPECIFICACAO-ASSET-3D-SISTEMAS-F1.md) |
+| [Estúdio de som](ESTUDIO-SOM.md) | Bancos de loops do V12 anos 90 e do V6 2026 gerados por modelo físico calibrado em gravações livres; regeneração, distâncias, limitações e créditos. Continuação do trabalho em [estudio-som/HANDOFF.md](estudio-som/HANDOFF.md). |
 | [Peças sobressalentes do Box](SOBRESSALENTES.md) | Pneus por composto e condição, asas de baixa/alta carga, asa de viga dupla e venezianas, trocáveis no carro montado por cenário de pista. |
 | Base de pesquisa dos sistemas | [pesquisa-sistemas-carro-video.md](pesquisa-sistemas-carro-video.md) |
 | Aerodinâmica didática | [AERODINAMICA.md](AERODINAMICA.md) |

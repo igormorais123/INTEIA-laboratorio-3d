@@ -1,0 +1,544 @@
+{
+ "version": 1,
+ "engine": "v6_2026",
+ "generatedAt": "2026-09-17T04:26:14+00:00",
+ "targetClass": "V6",
+ "targetsSha": "2026-09-17T03:57:22+00:00",
+ "calibratedParams": [
+  "gasSpeed",
+  "primaryLength",
+  "primaryReflection",
+  "primaryLossHz",
+  "collectorLength",
+  "tailReflection",
+  "tailLossHz",
+  "radiationHz",
+  "mouthHz",
+  "evoDeg",
+  "riseDeg",
+  "decayDeg",
+  "displacementLevel",
+  "pulseSkew",
+  "intakeMix",
+  "trumpetLength",
+  "airboxHz",
+  "gearLevel",
+  "valveLevel",
+  "structureLevel",
+  "drive",
+  "turbineHz",
+  "turbineHiss",
+  "bankBalance",
+  "bankDelayMs",
+  "primarySpread"
+ ],
+ "fixedParams": {
+  "gearTeeth": 28,
+  "levelPerOctaveDb": 4,
+  "offLoadLevel": 0.25,
+  "offLoadNoise": 0.12
+ },
+ "params": {
+  "gearTeeth": 28,
+  "levelPerOctaveDb": 4,
+  "offLoadLevel": 0.25,
+  "offLoadNoise": 0.12,
+  "gasSpeed": 663.6504598736205,
+  "primaryLength": 0.4108842963490741,
+  "primaryReflection": 0.7968491151780575,
+  "primaryLossHz": 2836.0026636975836,
+  "collectorLength": 0.5613513981824777,
+  "tailReflection": 0.2823177888616577,
+  "tailLossHz": 2249.487162834039,
+  "radiationHz": 173.29622271798905,
+  "mouthHz": 10260.275070847241,
+  "evoDeg": 119.33914385894721,
+  "riseDeg": 18.726373879969714,
+  "decayDeg": 51.22947313889205,
+  "displacementLevel": 0.32909986771302,
+  "pulseSkew": 0.854056957418616,
+  "intakeMix": 0.4927235563986986,
+  "trumpetLength": 0.143585666049298,
+  "airboxHz": 140.78530617024188,
+  "gearLevel": 0.06524662422064004,
+  "valveLevel": 0.03289599018306358,
+  "structureLevel": 0.10872054983633167,
+  "drive": 2.8049220318535673,
+  "turbineHz": 2827.0934089631455,
+  "turbineHiss": 0.0027244384192436633,
+  "bankBalance": 0.6336763178979784,
+  "bankDelayMs": 2.4480841514702565,
+  "primarySpread": 0.00360443167106754
+ },
+ "bands": [
+  {
+   "rpmMin": 8000,
+   "rpmMax": 9000,
+   "weight": 1.0,
+   "extrapolated": false,
+   "total": 4.84,
+   "harmonic": 4.43,
+   "hinge": 3.9,
+   "orders": 20,
+   "afterEqDb": 4.19
+  },
+  {
+   "rpmMin": 9000,
+   "rpmMax": 10000,
+   "weight": 1.0,
+   "extrapolated": false,
+   "total": 3.23,
+   "harmonic": 3.14,
+   "hinge": 1.48,
+   "orders": 20,
+   "afterEqDb": 2.74
+  },
+  {
+   "rpmMin": 10000,
+   "rpmMax": 11000,
+   "weight": 0.5,
+   "extrapolated": true,
+   "total": 2.86,
+   "harmonic": 2.84,
+   "hinge": 0.65,
+   "orders": 20,
+   "afterEqDb": 2.67
+  },
+  {
+   "rpmMin": 13000,
+   "rpmMax": 14000,
+   "weight": 0.5,
+   "extrapolated": true,
+   "total": 4.42,
+   "harmonic": 4.35,
+   "hinge": 1.64,
+   "orders": 20,
+   "afterEqDb": 2.93
+  },
+  {
+   "rpmMin": 14000,
+   "rpmMax": 15000,
+   "weight": 0.6,
+   "extrapolated": false,
+   "total": 2.35,
+   "harmonic": 2.31,
+   "hinge": 0.91,
+   "orders": 20,
+   "afterEqDb": 2.31
+  }
+ ],
+ "maxBandDistanceDb": 6.76,
+ "maxPointDistanceDb": 6.76,
+ "acceptLimitDb": 7.26,
+ "eqByPoint": [
+  {
+   "rpm": 4000.0,
+   "samplesPerCycle": 1440,
+   "knotsHz": [
+    150.0,
+    400.0,
+    1000.0,
+    2500.0,
+    6000.0,
+    14000.0
+   ],
+   "gainsDb": [
+    0.0,
+    -1.83,
+    -8.14,
+    -8.14,
+    -0.14,
+    -0.14
+   ],
+   "distanceDb": null
+  },
+  {
+   "rpm": 4321.08,
+   "samplesPerCycle": 1333,
+   "knotsHz": [
+    150.0,
+    400.0,
+    1000.0,
+    2500.0,
+    6000.0,
+    14000.0
+   ],
+   "gainsDb": [
+    0.0,
+    0.35,
+    -4.68,
+    -7.97,
+    0.03,
+    0.03
+   ],
+   "distanceDb": null
+  },
+  {
+   "rpm": 4663.968,
+   "samplesPerCycle": 1235,
+   "knotsHz": [
+    150.0,
+    400.0,
+    1000.0,
+    2500.0,
+    6000.0,
+    14000.0
+   ],
+   "gainsDb": [
+    0.0,
+    1.92,
+    -1.4,
+    -7.81,
+    0.19,
+    0.19
+   ],
+   "distanceDb": null
+  },
+  {
+   "rpm": 5039.37,
+   "samplesPerCycle": 1143,
+   "knotsHz": [
+    150.0,
+    400.0,
+    1000.0,
+    2500.0,
+    6000.0,
+    14000.0
+   ],
+   "gainsDb": [
+    0.0,
+    3.8,
+    2.2,
+    -4.83,
+    0.38,
+    0.38
+   ],
+   "distanceDb": null
+  },
+  {
+   "rpm": 5444.234,
+   "samplesPerCycle": 1058,
+   "knotsHz": [
+    150.0,
+    400.0,
+    1000.0,
+    2500.0,
+    6000.0,
+    14000.0
+   ],
+   "gainsDb": [
+    0.0,
+    5.34,
+    2.77,
+    0.45,
+    0.59,
+    0.53
+   ],
+   "distanceDb": null
+  },
+  {
+   "rpm": 5877.551,
+   "samplesPerCycle": 980,
+   "knotsHz": [
+    150.0,
+    400.0,
+    1000.0,
+    2500.0,
+    6000.0,
+    14000.0
+   ],
+   "gainsDb": [
+    -2.96,
+    0.0,
+    -2.92,
+    -7.54,
+    -3.3,
+    -2.68
+   ],
+   "distanceDb": null
+  },
+  {
+   "rpm": 6350.606,
+   "samplesPerCycle": 907,
+   "knotsHz": [
+    150.0,
+    400.0,
+    1000.0,
+    2500.0,
+    6000.0,
+    14000.0
+   ],
+   "gainsDb": [
+    -2.43,
+    0.0,
+    -1.46,
+    -2.36,
+    -0.96,
+    -2.23
+   ],
+   "distanceDb": null
+  },
+  {
+   "rpm": 6857.143,
+   "samplesPerCycle": 840,
+   "knotsHz": [
+    150.0,
+    400.0,
+    1000.0,
+    2500.0,
+    6000.0,
+    14000.0
+   ],
+   "gainsDb": [
+    -1.47,
+    0.0,
+    1.72,
+    -6.39,
+    -3.12,
+    -1.38
+   ],
+   "distanceDb": null
+  },
+  {
+   "rpm": 7403.599,
+   "samplesPerCycle": 778,
+   "knotsHz": [
+    150.0,
+    400.0,
+    1000.0,
+    2500.0,
+    6000.0,
+    14000.0
+   ],
+   "gainsDb": [
+    -1.96,
+    0.0,
+    2.37,
+    -2.84,
+    -1.85,
+    -1.9
+   ],
+   "distanceDb": null
+  },
+  {
+   "rpm": 8000.0,
+   "samplesPerCycle": 720,
+   "knotsHz": [
+    150.0,
+    400.0,
+    1000.0,
+    2500.0,
+    6000.0,
+    14000.0
+   ],
+   "gainsDb": [
+    -1.33,
+    0.0,
+    4.19,
+    -6.69,
+    -4.65,
+    -1.33
+   ],
+   "distanceDb": 6.76
+  },
+  {
+   "rpm": 8635.682,
+   "samplesPerCycle": 667,
+   "knotsHz": [
+    150.0,
+    400.0,
+    1000.0,
+    2500.0,
+    6000.0,
+    14000.0
+   ],
+   "gainsDb": [
+    -0.5,
+    0.0,
+    3.43,
+    -2.52,
+    0.61,
+    -0.5
+   ],
+   "distanceDb": 4.65
+  },
+  {
+   "rpm": 9320.388,
+   "samplesPerCycle": 618,
+   "knotsHz": [
+    150.0,
+    400.0,
+    1000.0,
+    2500.0,
+    6000.0,
+    14000.0
+   ],
+   "gainsDb": [
+    -0.02,
+    0.0,
+    1.97,
+    -2.05,
+    1.57,
+    0.51
+   ],
+   "distanceDb": 3.05
+  },
+  {
+   "rpm": 10069.93,
+   "samplesPerCycle": 572,
+   "knotsHz": [
+    150.0,
+    400.0,
+    1000.0,
+    2500.0,
+    6000.0,
+    14000.0
+   ],
+   "gainsDb": [
+    0.06,
+    0.0,
+    0.84,
+    -1.61,
+    0.75,
+    1.04
+   ],
+   "distanceDb": 2.79
+  },
+  {
+   "rpm": 10888.469,
+   "samplesPerCycle": 529,
+   "knotsHz": [
+    150.0,
+    400.0,
+    1000.0,
+    2500.0,
+    6000.0,
+    14000.0
+   ],
+   "gainsDb": [
+    0.07,
+    0.0,
+    0.88,
+    -1.55,
+    0.76,
+    1.84
+   ],
+   "distanceDb": 2.2
+  },
+  {
+   "rpm": 11755.102,
+   "samplesPerCycle": 490,
+   "knotsHz": [
+    150.0,
+    400.0,
+    1000.0,
+    2500.0,
+    6000.0,
+    14000.0
+   ],
+   "gainsDb": [
+    -0.16,
+    0.0,
+    -1.67,
+    -3.6,
+    -1.69,
+    1.84
+   ],
+   "distanceDb": 3.18
+  },
+  {
+   "rpm": 12687.225,
+   "samplesPerCycle": 454,
+   "knotsHz": [
+    150.0,
+    400.0,
+    1000.0,
+    2500.0,
+    6000.0,
+    14000.0
+   ],
+   "gainsDb": [
+    -0.0,
+    0.0,
+    -0.01,
+    -0.6,
+    0.86,
+    4.3
+   ],
+   "distanceDb": 2.47
+  },
+  {
+   "rpm": 13714.286,
+   "samplesPerCycle": 420,
+   "knotsHz": [
+    150.0,
+    400.0,
+    1000.0,
+    2500.0,
+    6000.0,
+    14000.0
+   ],
+   "gainsDb": [
+    0.14,
+    0.0,
+    1.44,
+    0.63,
+    1.43,
+    4.96
+   ],
+   "distanceDb": 2.53
+  },
+  {
+   "rpm": 14807.198,
+   "samplesPerCycle": 389,
+   "knotsHz": [
+    150.0,
+    400.0,
+    1000.0,
+    2500.0,
+    6000.0,
+    14000.0
+   ],
+   "gainsDb": [
+    -1.25,
+    -1.38,
+    0.0,
+    2.83,
+    -1.21,
+    2.85
+   ],
+   "distanceDb": 2.98
+  },
+  {
+   "rpm": 15000.0,
+   "samplesPerCycle": 384,
+   "knotsHz": [
+    150.0,
+    400.0,
+    1000.0,
+    2500.0,
+    6000.0,
+    14000.0
+   ],
+   "gainsDb": [
+    -1.18,
+    -1.3,
+    0.0,
+    3.18,
+    -0.41,
+    4.42
+   ],
+   "distanceDb": 3.42
+  }
+ ],
+ "inertia": {
+  "maxRiseRpmPerS": null,
+  "maxFallRpmPerS": null,
+  "note": "não medido nas referências (nenhuma aceleração em ponto morto isolada); valores de engine-profiles.mjs mantidos"
+ },
+ "notes": [
+  "distância = RMS em dB nas ordens harmônicas suavizadas (3 pontos) + 0,5 × dobradiça nas demais ordens",
+  "alvos abaixo do piso da gravação + 3 dB contam só como limite superior",
+  "bandas extrapoladas pesam 0,5; bandas com 5–19 quadros pesam 0,6"
+ ]
+}
