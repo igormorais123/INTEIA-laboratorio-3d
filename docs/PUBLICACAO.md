@@ -5,7 +5,7 @@
 - [Atlas detalhado local](mapeamento-detalhado/index.html)
 - [Atlas de arquivos e peças local](mapas/index.html)
 
-O ambiente oficial de produção é o **ChatGPT Sites**. O GitHub permanece como repositório e histórico do código, mas GitHub Pages não participa mais do deploy.
+O ambiente oficial de produção é o **ChatGPT Sites**, e é o **único** destino de deploy. O GitHub permanece apenas como repositório e histórico do código: GitHub Pages está desativado e não há GitHub Actions (a conta exige pagamento para executá-las). Build, testes e verificação de mapas rodam localmente antes de cada publicação.
 
 ## Identidade imutável do Site
 
@@ -49,6 +49,14 @@ powershell -NoProfile -ExecutionPolicy Bypass -File .\sync-from-source.ps1
 O sincronizador publica oito arquivos: HTML compilado, licença do Three.js, duas marcas SVG, a marca Inteligência Mil Grau e os GLBs de motor, sistemas e peças sobressalentes. O carro principal está incorporado no HTML. Arquivos de geração e o GLB-fonte de 26,45 MB permanecem no repositório-fonte; eles não são carregados pela aplicação e excederiam o limite de 25 MiB por arquivo do Sites.
 
 4. Revise e faça commit apenas no checkout de deploy. Envie o `HEAD` ao remoto `origin` usando uma credencial temporária criada pelas ferramentas do Sites.
+
+   As ferramentas do Sites pertencem ao agente ChatGPT/Codex. Quando quem publica é o Claude Code, delegue esta etapa e as seguintes ao Codex CLI rodando direto no checkout de deploy, sem sandbox:
+
+```powershell
+codex exec -s danger-full-access -C "C:\Users\IgorPC\.claude\projects\Site aula mota\INTEIA-laboratorio-3d-site" --skip-git-repo-check "<instruções com project_id, SHA do HEAD e os passos 4 a 6>"
+```
+
+   O subagente com sandbox falha no Windows (erro de ACL) e o conector do Sites não repassa tokens; a chamada direta acima é a que funciona.
 5. Leia `.openai/hosting.json`, salve uma versão para o SHA completo enviado e publique preservando a audiência pública existente. No Windows, use o build remoto de `save_site_version` quando o empacotador local depender de Bash.
 6. Aguarde `get_deployment_status` retornar `succeeded`. Confirme `current_live_url` e a audiência com `get_site` antes de declarar a publicação concluída.
 
@@ -62,4 +70,4 @@ O sincronizador publica oito arquivos: HTML compilado, licença do Three.js, dua
 
 ## Estado da migração
 
-Em 16 de setembro de 2026, o ChatGPT Sites publicou o laboratório em produção e confirmou a URL oficial acima. A audiência foi alterada para pública, permitindo acesso por qualquer pessoa com o link. O GitHub Pages anterior foi desativado; links de produção devem apontar somente para `chatgpt.site`.
+Em 16 de setembro de 2026, o ChatGPT Sites publicou o laboratório em produção e confirmou a URL oficial acima. A audiência foi alterada para pública, permitindo acesso por qualquer pessoa com o link. O GitHub Pages anterior foi desativado; links de produção devem apontar somente para `chatgpt.site`. Em 17 de setembro de 2026, o fluxo de verificação no GitHub Actions foi removido do repositório, porque a conta do GitHub passou a exigir pagamento para executá-lo; desde então todo deploy acontece exclusivamente no ChatGPT Sites.

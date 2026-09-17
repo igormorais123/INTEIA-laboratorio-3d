@@ -73,6 +73,12 @@
       "path": "ferramentas/gerar_sistemas.py"
     },
     {
+      "id": "ferramentas/gerar_sobressalentes.py",
+      "label": "ferramentas/gerar_sobressalentes.py",
+      "kind": "file",
+      "path": "ferramentas/gerar_sobressalentes.py"
+    },
+    {
       "id": "ferramentas/manifest.cjs",
       "label": "ferramentas/manifest.cjs",
       "kind": "file",
@@ -397,28 +403,88 @@
       "path": "ferramentas/gerar_sistemas.py"
     },
     {
-      "id": "ferramentas/gerar_sistemas.py#154:measure_glb",
+      "id": "ferramentas/gerar_sistemas.py#158:measure_glb",
       "label": "measure_glb",
       "kind": "symbol",
       "path": "ferramentas/gerar_sistemas.py"
     },
     {
-      "id": "ferramentas/gerar_sistemas.py#181:write_manifest",
+      "id": "ferramentas/gerar_sistemas.py#185:write_manifest",
       "label": "write_manifest",
       "kind": "symbol",
       "path": "ferramentas/gerar_sistemas.py"
     },
     {
-      "id": "ferramentas/gerar_sistemas.py#226:light",
+      "id": "ferramentas/gerar_sistemas.py#230:light",
       "label": "light",
       "kind": "symbol",
       "path": "ferramentas/gerar_sistemas.py"
     },
     {
-      "id": "ferramentas/gerar_sistemas.py#244:frame",
+      "id": "ferramentas/gerar_sistemas.py#248:frame",
       "label": "frame",
       "kind": "symbol",
       "path": "ferramentas/gerar_sistemas.py"
+    },
+    {
+      "id": "ferramentas/gerar_sobressalentes.py#55:surface_y",
+      "label": "surface_y",
+      "kind": "symbol",
+      "path": "ferramentas/gerar_sobressalentes.py"
+    },
+    {
+      "id": "ferramentas/gerar_sobressalentes.py#62:spare",
+      "label": "spare",
+      "kind": "symbol",
+      "path": "ferramentas/gerar_sobressalentes.py"
+    },
+    {
+      "id": "ferramentas/gerar_sobressalentes.py#94:tyre_profile",
+      "label": "tyre_profile",
+      "kind": "symbol",
+      "path": "ferramentas/gerar_sobressalentes.py"
+    },
+    {
+      "id": "ferramentas/gerar_sobressalentes.py#99:tyre_texture",
+      "label": "tyre_texture",
+      "kind": "symbol",
+      "path": "ferramentas/gerar_sobressalentes.py"
+    },
+    {
+      "id": "ferramentas/gerar_sobressalentes.py#139:build_tyre",
+      "label": "build_tyre",
+      "kind": "symbol",
+      "path": "ferramentas/gerar_sobressalentes.py"
+    },
+    {
+      "id": "ferramentas/gerar_sobressalentes.py#174:wing_section",
+      "label": "wing_section",
+      "kind": "symbol",
+      "path": "ferramentas/gerar_sobressalentes.py"
+    },
+    {
+      "id": "ferramentas/gerar_sobressalentes.py#188:span_loft",
+      "label": "span_loft",
+      "kind": "symbol",
+      "path": "ferramentas/gerar_sobressalentes.py"
+    },
+    {
+      "id": "ferramentas/gerar_sobressalentes.py#214:fw_at",
+      "label": "fw_at",
+      "kind": "symbol",
+      "path": "ferramentas/gerar_sobressalentes.py"
+    },
+    {
+      "id": "ferramentas/gerar_sobressalentes.py#225:sec",
+      "label": "sec",
+      "kind": "symbol",
+      "path": "ferramentas/gerar_sobressalentes.py"
+    },
+    {
+      "id": "ferramentas/gerar_sobressalentes.py#266:bbox_web",
+      "label": "bbox_web",
+      "kind": "symbol",
+      "path": "ferramentas/gerar_sobressalentes.py"
     },
     {
       "id": "ferramentas/otimizar_sistemas.mjs#14:load",
@@ -481,350 +547,422 @@
       "path": "ferramentas/package_blender.py"
     },
     {
-      "id": "ferramentas/sistemas/lib.py#15:W",
+      "id": "ferramentas/sistemas/lib.py#16:W",
       "label": "W",
       "kind": "symbol",
       "path": "ferramentas/sistemas/lib.py"
     },
     {
-      "id": "ferramentas/sistemas/lib.py#21:to_web",
+      "id": "ferramentas/sistemas/lib.py#22:to_web",
       "label": "to_web",
       "kind": "symbol",
       "path": "ferramentas/sistemas/lib.py"
     },
     {
-      "id": "ferramentas/sistemas/lib.py#31:_encode_normal",
+      "id": "ferramentas/sistemas/lib.py#32:_encode_normal",
       "label": "_encode_normal",
       "kind": "symbol",
       "path": "ferramentas/sistemas/lib.py"
     },
     {
-      "id": "ferramentas/sistemas/lib.py#38:image_from_array",
+      "id": "ferramentas/sistemas/lib.py#39:image_from_array",
       "label": "image_from_array",
       "kind": "symbol",
       "path": "ferramentas/sistemas/lib.py"
     },
     {
-      "id": "ferramentas/sistemas/lib.py#50:tex_twill",
+      "id": "ferramentas/sistemas/lib.py#51:tex_twill",
       "label": "tex_twill",
       "kind": "symbol",
       "path": "ferramentas/sistemas/lib.py"
     },
     {
-      "id": "ferramentas/sistemas/lib.py#61:tex_kevlar",
+      "id": "ferramentas/sistemas/lib.py#62:tex_kevlar",
       "label": "tex_kevlar",
       "kind": "symbol",
       "path": "ferramentas/sistemas/lib.py"
     },
     {
-      "id": "ferramentas/sistemas/lib.py#70:tex_brushed",
+      "id": "ferramentas/sistemas/lib.py#71:tex_brushed",
       "label": "tex_brushed",
       "kind": "symbol",
       "path": "ferramentas/sistemas/lib.py"
     },
     {
-      "id": "ferramentas/sistemas/lib.py#77:tex_cast",
+      "id": "ferramentas/sistemas/lib.py#78:tex_cast",
       "label": "tex_cast",
       "kind": "symbol",
       "path": "ferramentas/sistemas/lib.py"
     },
     {
-      "id": "ferramentas/sistemas/lib.py#86:tex_heat",
+      "id": "ferramentas/sistemas/lib.py#87:tex_heat",
       "label": "tex_heat",
       "kind": "symbol",
       "path": "ferramentas/sistemas/lib.py"
     },
     {
-      "id": "ferramentas/sistemas/lib.py#99:tex_brake_disc",
+      "id": "ferramentas/sistemas/lib.py#100:tex_brake_disc",
       "label": "tex_brake_disc",
       "kind": "symbol",
       "path": "ferramentas/sistemas/lib.py"
     },
     {
-      "id": "ferramentas/sistemas/lib.py#121:tex_fins",
+      "id": "ferramentas/sistemas/lib.py#122:tex_fins",
       "label": "tex_fins",
       "kind": "symbol",
       "path": "ferramentas/sistemas/lib.py"
     },
     {
-      "id": "ferramentas/sistemas/lib.py#128:tex_honeycomb",
+      "id": "ferramentas/sistemas/lib.py#129:tex_honeycomb",
       "label": "tex_honeycomb",
       "kind": "symbol",
       "path": "ferramentas/sistemas/lib.py"
     },
     {
-      "id": "ferramentas/sistemas/lib.py#138:tex_kapton",
+      "id": "ferramentas/sistemas/lib.py#139:tex_kapton",
       "label": "tex_kapton",
       "kind": "symbol",
       "path": "ferramentas/sistemas/lib.py"
     },
     {
-      "id": "ferramentas/sistemas/lib.py#144:tex_braid",
+      "id": "ferramentas/sistemas/lib.py#145:tex_braid",
       "label": "tex_braid",
       "kind": "symbol",
       "path": "ferramentas/sistemas/lib.py"
     },
     {
-      "id": "ferramentas/sistemas/lib.py#151:tex_display",
+      "id": "ferramentas/sistemas/lib.py#152:_seg7",
+      "label": "_seg7",
+      "kind": "symbol",
+      "path": "ferramentas/sistemas/lib.py"
+    },
+    {
+      "id": "ferramentas/sistemas/lib.py#156:rect",
+      "label": "rect",
+      "kind": "symbol",
+      "path": "ferramentas/sistemas/lib.py"
+    },
+    {
+      "id": "ferramentas/sistemas/lib.py#174:_text7",
+      "label": "_text7",
+      "kind": "symbol",
+      "path": "ferramentas/sistemas/lib.py"
+    },
+    {
+      "id": "ferramentas/sistemas/lib.py#181:tex_display",
       "label": "tex_display",
       "kind": "symbol",
       "path": "ferramentas/sistemas/lib.py"
     },
     {
-      "id": "ferramentas/sistemas/lib.py#180:material",
+      "id": "ferramentas/sistemas/lib.py#187:box",
+      "label": "box",
+      "kind": "symbol",
+      "path": "ferramentas/sistemas/lib.py"
+    },
+    {
+      "id": "ferramentas/sistemas/lib.py#217:material",
       "label": "material",
       "kind": "symbol",
       "path": "ferramentas/sistemas/lib.py"
     },
     {
-      "id": "ferramentas/sistemas/lib.py#212:tex_node",
+      "id": "ferramentas/sistemas/lib.py#249:tex_node",
       "label": "tex_node",
       "kind": "symbol",
       "path": "ferramentas/sistemas/lib.py"
     },
     {
-      "id": "ferramentas/sistemas/lib.py#239:Materials",
+      "id": "ferramentas/sistemas/lib.py#276:Materials",
       "label": "Materials",
       "kind": "symbol",
       "path": "ferramentas/sistemas/lib.py"
     },
     {
-      "id": "ferramentas/sistemas/lib.py#241:__init__",
+      "id": "ferramentas/sistemas/lib.py#278:__init__",
       "label": "__init__",
       "kind": "symbol",
       "path": "ferramentas/sistemas/lib.py"
     },
     {
-      "id": "ferramentas/sistemas/lib.py#320:Context",
+      "id": "ferramentas/sistemas/lib.py#366:Context",
       "label": "Context",
       "kind": "symbol",
       "path": "ferramentas/sistemas/lib.py"
     },
     {
-      "id": "ferramentas/sistemas/lib.py#321:__init__",
+      "id": "ferramentas/sistemas/lib.py#367:__init__",
       "label": "__init__",
       "kind": "symbol",
       "path": "ferramentas/sistemas/lib.py"
     },
     {
-      "id": "ferramentas/sistemas/lib.py#329:system",
+      "id": "ferramentas/sistemas/lib.py#375:system",
       "label": "system",
       "kind": "symbol",
       "path": "ferramentas/sistemas/lib.py"
     },
     {
-      "id": "ferramentas/sistemas/lib.py#339:register",
+      "id": "ferramentas/sistemas/lib.py#385:register",
       "label": "register",
       "kind": "symbol",
       "path": "ferramentas/sistemas/lib.py"
     },
     {
-      "id": "ferramentas/sistemas/lib.py#366:_link",
+      "id": "ferramentas/sistemas/lib.py#412:_link",
       "label": "_link",
       "kind": "symbol",
       "path": "ferramentas/sistemas/lib.py"
     },
     {
-      "id": "ferramentas/sistemas/lib.py#370:shade_smooth",
+      "id": "ferramentas/sistemas/lib.py#416:shade_smooth",
       "label": "shade_smooth",
       "kind": "symbol",
       "path": "ferramentas/sistemas/lib.py"
     },
     {
-      "id": "ferramentas/sistemas/lib.py#384:bevel",
+      "id": "ferramentas/sistemas/lib.py#430:bevel",
       "label": "bevel",
       "kind": "symbol",
       "path": "ferramentas/sistemas/lib.py"
     },
     {
-      "id": "ferramentas/sistemas/lib.py#392:box_uv",
+      "id": "ferramentas/sistemas/lib.py#438:box_uv",
       "label": "box_uv",
       "kind": "symbol",
       "path": "ferramentas/sistemas/lib.py"
     },
     {
-      "id": "ferramentas/sistemas/lib.py#412:mesh_object",
+      "id": "ferramentas/sistemas/lib.py#458:mesh_object",
       "label": "mesh_object",
       "kind": "symbol",
       "path": "ferramentas/sistemas/lib.py"
     },
     {
-      "id": "ferramentas/sistemas/lib.py#424:bm_to_object",
+      "id": "ferramentas/sistemas/lib.py#470:bm_to_object",
       "label": "bm_to_object",
       "kind": "symbol",
       "path": "ferramentas/sistemas/lib.py"
     },
     {
-      "id": "ferramentas/sistemas/lib.py#433:set_material",
+      "id": "ferramentas/sistemas/lib.py#479:set_material",
       "label": "set_material",
       "kind": "symbol",
       "path": "ferramentas/sistemas/lib.py"
     },
     {
-      "id": "ferramentas/sistemas/lib.py#439:orient",
+      "id": "ferramentas/sistemas/lib.py#485:orient",
       "label": "orient",
       "kind": "symbol",
       "path": "ferramentas/sistemas/lib.py"
     },
     {
-      "id": "ferramentas/sistemas/lib.py#447:cube",
+      "id": "ferramentas/sistemas/lib.py#493:cube",
       "label": "cube",
       "kind": "symbol",
       "path": "ferramentas/sistemas/lib.py"
     },
     {
-      "id": "ferramentas/sistemas/lib.py#461:W_rot",
+      "id": "ferramentas/sistemas/lib.py#507:W_rot",
       "label": "W_rot",
       "kind": "symbol",
       "path": "ferramentas/sistemas/lib.py"
     },
     {
-      "id": "ferramentas/sistemas/lib.py#467:cyl",
+      "id": "ferramentas/sistemas/lib.py#513:cyl",
       "label": "cyl",
       "kind": "symbol",
       "path": "ferramentas/sistemas/lib.py"
     },
     {
-      "id": "ferramentas/sistemas/lib.py#476:tube_cyl",
+      "id": "ferramentas/sistemas/lib.py#522:tube_cyl",
       "label": "tube_cyl",
       "kind": "symbol",
       "path": "ferramentas/sistemas/lib.py"
     },
     {
-      "id": "ferramentas/sistemas/lib.py#497:sphere",
+      "id": "ferramentas/sistemas/lib.py#543:sphere",
       "label": "sphere",
       "kind": "symbol",
       "path": "ferramentas/sistemas/lib.py"
     },
     {
-      "id": "ferramentas/sistemas/lib.py#505:torus",
+      "id": "ferramentas/sistemas/lib.py#551:torus",
       "label": "torus",
       "kind": "symbol",
       "path": "ferramentas/sistemas/lib.py"
     },
     {
-      "id": "ferramentas/sistemas/lib.py#512:catmull",
+      "id": "ferramentas/sistemas/lib.py#558:catmull",
       "label": "catmull",
       "kind": "symbol",
       "path": "ferramentas/sistemas/lib.py"
     },
     {
-      "id": "ferramentas/sistemas/lib.py#530:_frames",
+      "id": "ferramentas/sistemas/lib.py#576:_frames",
       "label": "_frames",
       "kind": "symbol",
       "path": "ferramentas/sistemas/lib.py"
     },
     {
-      "id": "ferramentas/sistemas/lib.py#555:sweep",
+      "id": "ferramentas/sistemas/lib.py#601:sweep",
       "label": "sweep",
       "kind": "symbol",
       "path": "ferramentas/sistemas/lib.py"
     },
     {
-      "id": "ferramentas/sistemas/lib.py#612:airfoil",
+      "id": "ferramentas/sistemas/lib.py#658:airfoil",
       "label": "airfoil",
       "kind": "symbol",
       "path": "ferramentas/sistemas/lib.py"
     },
     {
-      "id": "ferramentas/sistemas/lib.py#629:loft",
+      "id": "ferramentas/sistemas/lib.py#675:loft",
       "label": "loft",
       "kind": "symbol",
       "path": "ferramentas/sistemas/lib.py"
     },
     {
-      "id": "ferramentas/sistemas/lib.py#654:lathe",
+      "id": "ferramentas/sistemas/lib.py#700:lathe",
       "label": "lathe",
       "kind": "symbol",
       "path": "ferramentas/sistemas/lib.py"
     },
     {
-      "id": "ferramentas/sistemas/lib.py#668:helix",
+      "id": "ferramentas/sistemas/lib.py#714:helix",
       "label": "helix",
       "kind": "symbol",
       "path": "ferramentas/sistemas/lib.py"
     },
     {
-      "id": "ferramentas/sistemas/lib.py#678:gear",
+      "id": "ferramentas/sistemas/lib.py#724:gear",
       "label": "gear",
       "kind": "symbol",
       "path": "ferramentas/sistemas/lib.py"
     },
     {
-      "id": "ferramentas/sistemas/lib.py#694:ring",
+      "id": "ferramentas/sistemas/lib.py#740:ring",
       "label": "ring",
       "kind": "symbol",
       "path": "ferramentas/sistemas/lib.py"
     },
     {
-      "id": "ferramentas/sistemas/lib.py#730:bolt_ring",
+      "id": "ferramentas/sistemas/lib.py#776:bolt_ring",
       "label": "bolt_ring",
       "kind": "symbol",
       "path": "ferramentas/sistemas/lib.py"
     },
     {
-      "id": "ferramentas/sistemas/lib.py#753:join",
+      "id": "ferramentas/sistemas/lib.py#799:join",
       "label": "join",
       "kind": "symbol",
       "path": "ferramentas/sistemas/lib.py"
     },
     {
-      "id": "ferramentas/sistemas/lib.py#779:mirror_x",
+      "id": "ferramentas/sistemas/lib.py#825:mirror_x",
       "label": "mirror_x",
       "kind": "symbol",
       "path": "ferramentas/sistemas/lib.py"
     },
     {
-      "id": "ferramentas/sistemas/lib.py#802:both_sides",
+      "id": "ferramentas/sistemas/lib.py#848:mirror_system",
+      "label": "mirror_system",
+      "kind": "symbol",
+      "path": "ferramentas/sistemas/lib.py"
+    },
+    {
+      "id": "ferramentas/sistemas/lib.py#880:both_sides",
       "label": "both_sides",
       "kind": "symbol",
       "path": "ferramentas/sistemas/lib.py"
     },
     {
-      "id": "ferramentas/sistemas/lib.py#806:hexagon",
+      "id": "ferramentas/sistemas/lib.py#884:hexagon",
       "label": "hexagon",
       "kind": "symbol",
       "path": "ferramentas/sistemas/lib.py"
     },
     {
-      "id": "ferramentas/sistemas/lib.py#809:rounded_rect",
+      "id": "ferramentas/sistemas/lib.py#887:rounded_rect",
       "label": "rounded_rect",
       "kind": "symbol",
       "path": "ferramentas/sistemas/lib.py"
     },
     {
-      "id": "ferramentas/sistemas/lib.py#817:super_ellipse",
+      "id": "ferramentas/sistemas/lib.py#895:super_ellipse",
       "label": "super_ellipse",
       "kind": "symbol",
       "path": "ferramentas/sistemas/lib.py"
     },
     {
-      "id": "ferramentas/sistemas/lib.py#826:shell",
+      "id": "ferramentas/sistemas/lib.py#904:shell",
       "label": "shell",
       "kind": "symbol",
       "path": "ferramentas/sistemas/lib.py"
     },
     {
-      "id": "ferramentas/sistemas/lib.py#832:flow_ribbon",
+      "id": "ferramentas/sistemas/lib.py#910:flow_ribbon",
       "label": "flow_ribbon",
       "kind": "symbol",
       "path": "ferramentas/sistemas/lib.py"
     },
     {
-      "id": "ferramentas/sistemas/lib.py#836:text_plate",
+      "id": "ferramentas/sistemas/lib.py#914:text_plate",
       "label": "text_plate",
       "kind": "symbol",
       "path": "ferramentas/sistemas/lib.py"
     },
     {
-      "id": "ferramentas/sistemas/lib.py#852:centroid",
+      "id": "ferramentas/sistemas/lib.py#930:centroid",
       "label": "centroid",
       "kind": "symbol",
       "path": "ferramentas/sistemas/lib.py"
     },
     {
-      "id": "ferramentas/sistemas/lib.py#863:auto_explode",
+      "id": "ferramentas/sistemas/lib.py#941:auto_explode",
       "label": "auto_explode",
+      "kind": "symbol",
+      "path": "ferramentas/sistemas/lib.py"
+    },
+    {
+      "id": "ferramentas/sistemas/lib.py#959:car_components",
+      "label": "car_components",
+      "kind": "symbol",
+      "path": "ferramentas/sistemas/lib.py"
+    },
+    {
+      "id": "ferramentas/sistemas/lib.py#997:car_part",
+      "label": "car_part",
+      "kind": "symbol",
+      "path": "ferramentas/sistemas/lib.py"
+    },
+    {
+      "id": "ferramentas/sistemas/lib.py#1017:plate",
+      "label": "plate",
+      "kind": "symbol",
+      "path": "ferramentas/sistemas/lib.py"
+    },
+    {
+      "id": "ferramentas/sistemas/lib.py#1024:P",
+      "label": "P",
+      "kind": "symbol",
+      "path": "ferramentas/sistemas/lib.py"
+    },
+    {
+      "id": "ferramentas/sistemas/lib.py#1037:lado",
+      "label": "lado",
+      "kind": "symbol",
+      "path": "ferramentas/sistemas/lib.py"
+    },
+    {
+      "id": "ferramentas/sistemas/lib.py#1043:arc2d",
+      "label": "arc2d",
+      "kind": "symbol",
+      "path": "ferramentas/sistemas/lib.py"
+    },
+    {
+      "id": "ferramentas/sistemas/lib.py#1047:face_uv_fit",
+      "label": "face_uv_fit",
       "kind": "symbol",
       "path": "ferramentas/sistemas/lib.py"
     },
@@ -979,32 +1117,44 @@
       "path": "ferramentas/sistemas/s10_transmission.py"
     },
     {
-      "id": "ferramentas/sistemas/s11_safety.py#18:build",
+      "id": "ferramentas/sistemas/s11_safety.py#20:build",
       "label": "build",
       "kind": "symbol",
       "path": "ferramentas/sistemas/s11_safety.py"
     },
     {
-      "id": "ferramentas/sistemas/s12_cockpit.py#18:strap",
+      "id": "ferramentas/sistemas/s12_cockpit.py#19:strap",
       "label": "strap",
       "kind": "symbol",
       "path": "ferramentas/sistemas/s12_cockpit.py"
     },
     {
-      "id": "ferramentas/sistemas/s12_cockpit.py#21:build",
+      "id": "ferramentas/sistemas/s12_cockpit.py#22:build",
       "label": "build",
       "kind": "symbol",
       "path": "ferramentas/sistemas/s12_cockpit.py"
     },
     {
-      "id": "ferramentas/sistemas/s12_cockpit.py#25:seat_section",
+      "id": "ferramentas/sistemas/s12_cockpit.py#26:seat_section",
       "label": "seat_section",
       "kind": "symbol",
       "path": "ferramentas/sistemas/s12_cockpit.py"
     },
     {
-      "id": "ferramentas/sistemas/s13_wheel.py#17:build",
+      "id": "ferramentas/sistemas/s13_wheel.py#21:build",
       "label": "build",
+      "kind": "symbol",
+      "path": "ferramentas/sistemas/s13_wheel.py"
+    },
+    {
+      "id": "ferramentas/sistemas/s13_wheel.py#25:Q",
+      "label": "Q",
+      "kind": "symbol",
+      "path": "ferramentas/sistemas/s13_wheel.py"
+    },
+    {
+      "id": "ferramentas/sistemas/s13_wheel.py#28:E",
+      "label": "E",
       "kind": "symbol",
       "path": "ferramentas/sistemas/s13_wheel.py"
     },
@@ -1288,50 +1438,170 @@
     },
     {
       "source": "ferramentas/gerar_sistemas.py",
-      "target": "ferramentas/gerar_sistemas.py#154:measure_glb",
+      "target": "ferramentas/gerar_sistemas.py#158:measure_glb",
       "relation": "define",
       "confidence": "EXTRACTED",
       "confidence_score": 1,
       "evidence": {
         "path": "ferramentas/gerar_sistemas.py",
-        "line": 154,
+        "line": 158,
         "text": "def measure_glb(path):"
       }
     },
     {
       "source": "ferramentas/gerar_sistemas.py",
-      "target": "ferramentas/gerar_sistemas.py#181:write_manifest",
+      "target": "ferramentas/gerar_sistemas.py#185:write_manifest",
       "relation": "define",
       "confidence": "EXTRACTED",
       "confidence_score": 1,
       "evidence": {
         "path": "ferramentas/gerar_sistemas.py",
-        "line": 181,
+        "line": 185,
         "text": "def write_manifest(path_glb, optimized):"
       }
     },
     {
       "source": "ferramentas/gerar_sistemas.py",
-      "target": "ferramentas/gerar_sistemas.py#226:light",
+      "target": "ferramentas/gerar_sistemas.py#230:light",
       "relation": "define",
       "confidence": "EXTRACTED",
       "confidence_score": 1,
       "evidence": {
         "path": "ferramentas/gerar_sistemas.py",
-        "line": 226,
+        "line": 230,
         "text": "def light(name, kind, loc, energy, size=2.0):"
       }
     },
     {
       "source": "ferramentas/gerar_sistemas.py",
-      "target": "ferramentas/gerar_sistemas.py#244:frame",
+      "target": "ferramentas/gerar_sistemas.py#248:frame",
       "relation": "define",
       "confidence": "EXTRACTED",
       "confidence_score": 1,
       "evidence": {
         "path": "ferramentas/gerar_sistemas.py",
-        "line": 244,
+        "line": 248,
         "text": "def frame(objs, direction, pad=1.25):"
+      }
+    },
+    {
+      "source": "ferramentas/gerar_sobressalentes.py",
+      "target": "ferramentas/gerar_sobressalentes.py#55:surface_y",
+      "relation": "define",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "evidence": {
+        "path": "ferramentas/gerar_sobressalentes.py",
+        "line": 55,
+        "text": "def surface_y(x, z, r=.035):"
+      }
+    },
+    {
+      "source": "ferramentas/gerar_sobressalentes.py",
+      "target": "ferramentas/gerar_sobressalentes.py#62:spare",
+      "relation": "define",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "evidence": {
+        "path": "ferramentas/gerar_sobressalentes.py",
+        "line": 62,
+        "text": "def spare(obj, slot, variant, target, label, mode='geometry', **extra):"
+      }
+    },
+    {
+      "source": "ferramentas/gerar_sobressalentes.py",
+      "target": "ferramentas/gerar_sobressalentes.py#94:tyre_profile",
+      "relation": "define",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "evidence": {
+        "path": "ferramentas/gerar_sobressalentes.py",
+        "line": 94,
+        "text": "def tyre_profile(width, R):"
+      }
+    },
+    {
+      "source": "ferramentas/gerar_sobressalentes.py",
+      "target": "ferramentas/gerar_sobressalentes.py#99:tyre_texture",
+      "relation": "define",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "evidence": {
+        "path": "ferramentas/gerar_sobressalentes.py",
+        "line": 99,
+        "text": "def tyre_texture(kind, band, size=(1024, 512)):"
+      }
+    },
+    {
+      "source": "ferramentas/gerar_sobressalentes.py",
+      "target": "ferramentas/gerar_sobressalentes.py#139:build_tyre",
+      "relation": "define",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "evidence": {
+        "path": "ferramentas/gerar_sobressalentes.py",
+        "line": 139,
+        "text": "def build_tyre(name, center, width, R, mat):"
+      }
+    },
+    {
+      "source": "ferramentas/gerar_sobressalentes.py",
+      "target": "ferramentas/gerar_sobressalentes.py#174:wing_section",
+      "relation": "define",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "evidence": {
+        "path": "ferramentas/gerar_sobressalentes.py",
+        "line": 174,
+        "text": "def wing_section(le, chord, angle_deg, thick=.10, camber=-.05, n=16):"
+      }
+    },
+    {
+      "source": "ferramentas/gerar_sobressalentes.py",
+      "target": "ferramentas/gerar_sobressalentes.py#188:span_loft",
+      "relation": "define",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "evidence": {
+        "path": "ferramentas/gerar_sobressalentes.py",
+        "line": 188,
+        "text": "def span_loft(name, xs, section_at, mat):"
+      }
+    },
+    {
+      "source": "ferramentas/gerar_sobressalentes.py",
+      "target": "ferramentas/gerar_sobressalentes.py#214:fw_at",
+      "relation": "define",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "evidence": {
+        "path": "ferramentas/gerar_sobressalentes.py",
+        "line": 214,
+        "text": "def fw_at(ax, d_angle, k_chord):"
+      }
+    },
+    {
+      "source": "ferramentas/gerar_sobressalentes.py",
+      "target": "ferramentas/gerar_sobressalentes.py#225:sec",
+      "relation": "define",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "evidence": {
+        "path": "ferramentas/gerar_sobressalentes.py",
+        "line": 225,
+        "text": "def sec(x, da=da, kc=kc):"
+      }
+    },
+    {
+      "source": "ferramentas/gerar_sobressalentes.py",
+      "target": "ferramentas/gerar_sobressalentes.py#266:bbox_web",
+      "relation": "define",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "evidence": {
+        "path": "ferramentas/gerar_sobressalentes.py",
+        "line": 266,
+        "text": "def bbox_web(o):"
       }
     },
     {
@@ -1456,698 +1726,842 @@
     },
     {
       "source": "ferramentas/sistemas/lib.py",
-      "target": "ferramentas/sistemas/lib.py#15:W",
+      "target": "ferramentas/sistemas/lib.py#16:W",
       "relation": "define",
       "confidence": "EXTRACTED",
       "confidence_score": 1,
       "evidence": {
         "path": "ferramentas/sistemas/lib.py",
-        "line": 15,
+        "line": 16,
         "text": "def W(x, y=None, z=None):"
       }
     },
     {
       "source": "ferramentas/sistemas/lib.py",
-      "target": "ferramentas/sistemas/lib.py#21:to_web",
+      "target": "ferramentas/sistemas/lib.py#22:to_web",
       "relation": "define",
       "confidence": "EXTRACTED",
       "confidence_score": 1,
       "evidence": {
         "path": "ferramentas/sistemas/lib.py",
-        "line": 21,
+        "line": 22,
         "text": "def to_web(v):"
       }
     },
     {
       "source": "ferramentas/sistemas/lib.py",
-      "target": "ferramentas/sistemas/lib.py#31:_encode_normal",
+      "target": "ferramentas/sistemas/lib.py#32:_encode_normal",
       "relation": "define",
       "confidence": "EXTRACTED",
       "confidence_score": 1,
       "evidence": {
         "path": "ferramentas/sistemas/lib.py",
-        "line": 31,
+        "line": 32,
         "text": "def _encode_normal(height, strength=1.0):"
       }
     },
     {
       "source": "ferramentas/sistemas/lib.py",
-      "target": "ferramentas/sistemas/lib.py#38:image_from_array",
+      "target": "ferramentas/sistemas/lib.py#39:image_from_array",
       "relation": "define",
       "confidence": "EXTRACTED",
       "confidence_score": 1,
       "evidence": {
         "path": "ferramentas/sistemas/lib.py",
-        "line": 38,
+        "line": 39,
         "text": "def image_from_array(name, rgba, srgb=True):"
       }
     },
     {
       "source": "ferramentas/sistemas/lib.py",
-      "target": "ferramentas/sistemas/lib.py#50:tex_twill",
+      "target": "ferramentas/sistemas/lib.py#51:tex_twill",
       "relation": "define",
       "confidence": "EXTRACTED",
       "confidence_score": 1,
       "evidence": {
         "path": "ferramentas/sistemas/lib.py",
-        "line": 50,
+        "line": 51,
         "text": "def tex_twill(size=256, tow=16, base=(.028, .032, .038), lift=.055):"
       }
     },
     {
       "source": "ferramentas/sistemas/lib.py",
-      "target": "ferramentas/sistemas/lib.py#61:tex_kevlar",
+      "target": "ferramentas/sistemas/lib.py#62:tex_kevlar",
       "relation": "define",
       "confidence": "EXTRACTED",
       "confidence_score": 1,
       "evidence": {
         "path": "ferramentas/sistemas/lib.py",
-        "line": 61,
+        "line": 62,
         "text": "def tex_kevlar(size=256, tow=12):"
       }
     },
     {
       "source": "ferramentas/sistemas/lib.py",
-      "target": "ferramentas/sistemas/lib.py#70:tex_brushed",
+      "target": "ferramentas/sistemas/lib.py#71:tex_brushed",
       "relation": "define",
       "confidence": "EXTRACTED",
       "confidence_score": 1,
       "evidence": {
         "path": "ferramentas/sistemas/lib.py",
-        "line": 70,
+        "line": 71,
         "text": "def tex_brushed(size=256):"
       }
     },
     {
       "source": "ferramentas/sistemas/lib.py",
-      "target": "ferramentas/sistemas/lib.py#77:tex_cast",
+      "target": "ferramentas/sistemas/lib.py#78:tex_cast",
       "relation": "define",
       "confidence": "EXTRACTED",
       "confidence_score": 1,
       "evidence": {
         "path": "ferramentas/sistemas/lib.py",
-        "line": 77,
+        "line": 78,
         "text": "def tex_cast(size=256):"
       }
     },
     {
       "source": "ferramentas/sistemas/lib.py",
-      "target": "ferramentas/sistemas/lib.py#86:tex_heat",
+      "target": "ferramentas/sistemas/lib.py#87:tex_heat",
       "relation": "define",
       "confidence": "EXTRACTED",
       "confidence_score": 1,
       "evidence": {
         "path": "ferramentas/sistemas/lib.py",
-        "line": 86,
+        "line": 87,
         "text": "def tex_heat(size=256):"
       }
     },
     {
       "source": "ferramentas/sistemas/lib.py",
-      "target": "ferramentas/sistemas/lib.py#99:tex_brake_disc",
+      "target": "ferramentas/sistemas/lib.py#100:tex_brake_disc",
       "relation": "define",
       "confidence": "EXTRACTED",
       "confidence_score": 1,
       "evidence": {
         "path": "ferramentas/sistemas/lib.py",
-        "line": 99,
+        "line": 100,
         "text": "def tex_brake_disc(size=512, rings=14, holes_per_ring=64, inner=.42):"
       }
     },
     {
       "source": "ferramentas/sistemas/lib.py",
-      "target": "ferramentas/sistemas/lib.py#121:tex_fins",
+      "target": "ferramentas/sistemas/lib.py#122:tex_fins",
       "relation": "define",
       "confidence": "EXTRACTED",
       "confidence_score": 1,
       "evidence": {
         "path": "ferramentas/sistemas/lib.py",
-        "line": 121,
+        "line": 122,
         "text": "def tex_fins(size=256, pitch=6):"
       }
     },
     {
       "source": "ferramentas/sistemas/lib.py",
-      "target": "ferramentas/sistemas/lib.py#128:tex_honeycomb",
+      "target": "ferramentas/sistemas/lib.py#129:tex_honeycomb",
       "relation": "define",
       "confidence": "EXTRACTED",
       "confidence_score": 1,
       "evidence": {
         "path": "ferramentas/sistemas/lib.py",
-        "line": 128,
+        "line": 129,
         "text": "def tex_honeycomb(size=256, cell=18):"
       }
     },
     {
       "source": "ferramentas/sistemas/lib.py",
-      "target": "ferramentas/sistemas/lib.py#138:tex_kapton",
+      "target": "ferramentas/sistemas/lib.py#139:tex_kapton",
       "relation": "define",
       "confidence": "EXTRACTED",
       "confidence_score": 1,
       "evidence": {
         "path": "ferramentas/sistemas/lib.py",
-        "line": 138,
+        "line": 139,
         "text": "def tex_kapton(size=256):"
       }
     },
     {
       "source": "ferramentas/sistemas/lib.py",
-      "target": "ferramentas/sistemas/lib.py#144:tex_braid",
+      "target": "ferramentas/sistemas/lib.py#145:tex_braid",
       "relation": "define",
       "confidence": "EXTRACTED",
       "confidence_score": 1,
       "evidence": {
         "path": "ferramentas/sistemas/lib.py",
-        "line": 144,
+        "line": 145,
         "text": "def tex_braid(size=128, tow=8):"
       }
     },
     {
       "source": "ferramentas/sistemas/lib.py",
-      "target": "ferramentas/sistemas/lib.py#151:tex_display",
+      "target": "ferramentas/sistemas/lib.py#152:_seg7",
       "relation": "define",
       "confidence": "EXTRACTED",
       "confidence_score": 1,
       "evidence": {
         "path": "ferramentas/sistemas/lib.py",
-        "line": 151,
+        "line": 152,
+        "text": "def _seg7(img, ch, x0, y0, w, h, t, col):"
+      }
+    },
+    {
+      "source": "ferramentas/sistemas/lib.py",
+      "target": "ferramentas/sistemas/lib.py#156:rect",
+      "relation": "define",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "evidence": {
+        "path": "ferramentas/sistemas/lib.py",
+        "line": 156,
+        "text": "def rect(xa, ya, xb, yb):"
+      }
+    },
+    {
+      "source": "ferramentas/sistemas/lib.py",
+      "target": "ferramentas/sistemas/lib.py#174:_text7",
+      "relation": "define",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "evidence": {
+        "path": "ferramentas/sistemas/lib.py",
+        "line": 174,
+        "text": "def _text7(img, text, x, y, w, h, t, col, gap=None):"
+      }
+    },
+    {
+      "source": "ferramentas/sistemas/lib.py",
+      "target": "ferramentas/sistemas/lib.py#181:tex_display",
+      "relation": "define",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "evidence": {
+        "path": "ferramentas/sistemas/lib.py",
+        "line": 181,
         "text": "def tex_display(size=(512, 256)):"
       }
     },
     {
       "source": "ferramentas/sistemas/lib.py",
-      "target": "ferramentas/sistemas/lib.py#180:material",
+      "target": "ferramentas/sistemas/lib.py#187:box",
       "relation": "define",
       "confidence": "EXTRACTED",
       "confidence_score": 1,
       "evidence": {
         "path": "ferramentas/sistemas/lib.py",
-        "line": 180,
+        "line": 187,
+        "text": "def box(xa, ya, xb, yb, col):"
+      }
+    },
+    {
+      "source": "ferramentas/sistemas/lib.py",
+      "target": "ferramentas/sistemas/lib.py#217:material",
+      "relation": "define",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "evidence": {
+        "path": "ferramentas/sistemas/lib.py",
+        "line": 217,
         "text": "def material(name, color, metallic=0.0, roughness=0.45, *, emissive=None, emissive_strength=1.0, alpha=1.0,"
       }
     },
     {
       "source": "ferramentas/sistemas/lib.py",
-      "target": "ferramentas/sistemas/lib.py#212:tex_node",
+      "target": "ferramentas/sistemas/lib.py#249:tex_node",
       "relation": "define",
       "confidence": "EXTRACTED",
       "confidence_score": 1,
       "evidence": {
         "path": "ferramentas/sistemas/lib.py",
-        "line": 212,
+        "line": 249,
         "text": "def tex_node(img):"
       }
     },
     {
       "source": "ferramentas/sistemas/lib.py",
-      "target": "ferramentas/sistemas/lib.py#239:Materials",
+      "target": "ferramentas/sistemas/lib.py#276:Materials",
       "relation": "define",
       "confidence": "EXTRACTED",
       "confidence_score": 1,
       "evidence": {
         "path": "ferramentas/sistemas/lib.py",
-        "line": 239,
+        "line": 276,
         "text": "class Materials:"
       }
     },
     {
       "source": "ferramentas/sistemas/lib.py",
-      "target": "ferramentas/sistemas/lib.py#241:__init__",
+      "target": "ferramentas/sistemas/lib.py#278:__init__",
       "relation": "define",
       "confidence": "EXTRACTED",
       "confidence_score": 1,
       "evidence": {
         "path": "ferramentas/sistemas/lib.py",
-        "line": 241,
+        "line": 278,
         "text": "def __init__(self):"
       }
     },
     {
       "source": "ferramentas/sistemas/lib.py",
-      "target": "ferramentas/sistemas/lib.py#320:Context",
-      "relation": "define",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1,
-      "evidence": {
-        "path": "ferramentas/sistemas/lib.py",
-        "line": 320,
-        "text": "class Context:"
-      }
-    },
-    {
-      "source": "ferramentas/sistemas/lib.py",
-      "target": "ferramentas/sistemas/lib.py#321:__init__",
-      "relation": "define",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1,
-      "evidence": {
-        "path": "ferramentas/sistemas/lib.py",
-        "line": 321,
-        "text": "def __init__(self, scene, mats):"
-      }
-    },
-    {
-      "source": "ferramentas/sistemas/lib.py",
-      "target": "ferramentas/sistemas/lib.py#329:system",
-      "relation": "define",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1,
-      "evidence": {
-        "path": "ferramentas/sistemas/lib.py",
-        "line": 329,
-        "text": "def system(self, sid, label):"
-      }
-    },
-    {
-      "source": "ferramentas/sistemas/lib.py",
-      "target": "ferramentas/sistemas/lib.py#339:register",
-      "relation": "define",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1,
-      "evidence": {
-        "path": "ferramentas/sistemas/lib.py",
-        "line": 339,
-        "text": "def register(self, obj, part, *, spin=None, spin_axis='y', flow=None, era=None, explode=None, hide_group=None, tag=None, carrier=False, parent=None):"
-      }
-    },
-    {
-      "source": "ferramentas/sistemas/lib.py",
-      "target": "ferramentas/sistemas/lib.py#366:_link",
+      "target": "ferramentas/sistemas/lib.py#366:Context",
       "relation": "define",
       "confidence": "EXTRACTED",
       "confidence_score": 1,
       "evidence": {
         "path": "ferramentas/sistemas/lib.py",
         "line": 366,
-        "text": "def _link(obj):"
+        "text": "class Context:"
       }
     },
     {
       "source": "ferramentas/sistemas/lib.py",
-      "target": "ferramentas/sistemas/lib.py#370:shade_smooth",
+      "target": "ferramentas/sistemas/lib.py#367:__init__",
       "relation": "define",
       "confidence": "EXTRACTED",
       "confidence_score": 1,
       "evidence": {
         "path": "ferramentas/sistemas/lib.py",
-        "line": 370,
-        "text": "def shade_smooth(obj, angle=math.radians(38)):"
+        "line": 367,
+        "text": "def __init__(self, scene, mats):"
       }
     },
     {
       "source": "ferramentas/sistemas/lib.py",
-      "target": "ferramentas/sistemas/lib.py#384:bevel",
+      "target": "ferramentas/sistemas/lib.py#375:system",
       "relation": "define",
       "confidence": "EXTRACTED",
       "confidence_score": 1,
       "evidence": {
         "path": "ferramentas/sistemas/lib.py",
-        "line": 384,
-        "text": "def bevel(obj, width=.002, segments=2, angle=math.radians(40)):"
+        "line": 375,
+        "text": "def system(self, sid, label):"
       }
     },
     {
       "source": "ferramentas/sistemas/lib.py",
-      "target": "ferramentas/sistemas/lib.py#392:box_uv",
+      "target": "ferramentas/sistemas/lib.py#385:register",
       "relation": "define",
       "confidence": "EXTRACTED",
       "confidence_score": 1,
       "evidence": {
         "path": "ferramentas/sistemas/lib.py",
-        "line": 392,
-        "text": "def box_uv(obj, scale=1.0, offset=(0.0, 0.0)):"
+        "line": 385,
+        "text": "def register(self, obj, part, *, spin=None, spin_axis='y', flow=None, era=None, explode=None, hide_group=None, tag=None, carrier=False, parent=None):"
       }
     },
     {
       "source": "ferramentas/sistemas/lib.py",
-      "target": "ferramentas/sistemas/lib.py#412:mesh_object",
+      "target": "ferramentas/sistemas/lib.py#412:_link",
       "relation": "define",
       "confidence": "EXTRACTED",
       "confidence_score": 1,
       "evidence": {
         "path": "ferramentas/sistemas/lib.py",
         "line": 412,
+        "text": "def _link(obj):"
+      }
+    },
+    {
+      "source": "ferramentas/sistemas/lib.py",
+      "target": "ferramentas/sistemas/lib.py#416:shade_smooth",
+      "relation": "define",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "evidence": {
+        "path": "ferramentas/sistemas/lib.py",
+        "line": 416,
+        "text": "def shade_smooth(obj, angle=math.radians(38)):"
+      }
+    },
+    {
+      "source": "ferramentas/sistemas/lib.py",
+      "target": "ferramentas/sistemas/lib.py#430:bevel",
+      "relation": "define",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "evidence": {
+        "path": "ferramentas/sistemas/lib.py",
+        "line": 430,
+        "text": "def bevel(obj, width=.002, segments=2, angle=math.radians(40)):"
+      }
+    },
+    {
+      "source": "ferramentas/sistemas/lib.py",
+      "target": "ferramentas/sistemas/lib.py#438:box_uv",
+      "relation": "define",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "evidence": {
+        "path": "ferramentas/sistemas/lib.py",
+        "line": 438,
+        "text": "def box_uv(obj, scale=1.0, offset=(0.0, 0.0)):"
+      }
+    },
+    {
+      "source": "ferramentas/sistemas/lib.py",
+      "target": "ferramentas/sistemas/lib.py#458:mesh_object",
+      "relation": "define",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "evidence": {
+        "path": "ferramentas/sistemas/lib.py",
+        "line": 458,
         "text": "def mesh_object(name, verts, faces, edges=(), uvs=None):"
       }
     },
     {
       "source": "ferramentas/sistemas/lib.py",
-      "target": "ferramentas/sistemas/lib.py#424:bm_to_object",
+      "target": "ferramentas/sistemas/lib.py#470:bm_to_object",
       "relation": "define",
       "confidence": "EXTRACTED",
       "confidence_score": 1,
       "evidence": {
         "path": "ferramentas/sistemas/lib.py",
-        "line": 424,
+        "line": 470,
         "text": "def bm_to_object(name, bm, smooth=True):"
       }
     },
     {
       "source": "ferramentas/sistemas/lib.py",
-      "target": "ferramentas/sistemas/lib.py#433:set_material",
+      "target": "ferramentas/sistemas/lib.py#479:set_material",
       "relation": "define",
       "confidence": "EXTRACTED",
       "confidence_score": 1,
       "evidence": {
         "path": "ferramentas/sistemas/lib.py",
-        "line": 433,
+        "line": 479,
         "text": "def set_material(obj, mat):"
       }
     },
     {
       "source": "ferramentas/sistemas/lib.py",
-      "target": "ferramentas/sistemas/lib.py#439:orient",
+      "target": "ferramentas/sistemas/lib.py#485:orient",
       "relation": "define",
       "confidence": "EXTRACTED",
       "confidence_score": 1,
       "evidence": {
         "path": "ferramentas/sistemas/lib.py",
-        "line": 439,
+        "line": 485,
         "text": "def orient(obj, axis):"
       }
     },
     {
       "source": "ferramentas/sistemas/lib.py",
-      "target": "ferramentas/sistemas/lib.py#447:cube",
+      "target": "ferramentas/sistemas/lib.py#493:cube",
       "relation": "define",
       "confidence": "EXTRACTED",
       "confidence_score": 1,
       "evidence": {
         "path": "ferramentas/sistemas/lib.py",
-        "line": 447,
+        "line": 493,
         "text": "def cube(ctx, part, center, size, mat, *, bev=.002, segments=2, rot=None, uv=None, **extras):"
       }
     },
     {
       "source": "ferramentas/sistemas/lib.py",
-      "target": "ferramentas/sistemas/lib.py#461:W_rot",
+      "target": "ferramentas/sistemas/lib.py#507:W_rot",
       "relation": "define",
       "confidence": "EXTRACTED",
       "confidence_score": 1,
       "evidence": {
         "path": "ferramentas/sistemas/lib.py",
-        "line": 461,
+        "line": 507,
         "text": "def W_rot(rot):"
       }
     },
     {
       "source": "ferramentas/sistemas/lib.py",
-      "target": "ferramentas/sistemas/lib.py#467:cyl",
+      "target": "ferramentas/sistemas/lib.py#513:cyl",
       "relation": "define",
       "confidence": "EXTRACTED",
       "confidence_score": 1,
       "evidence": {
         "path": "ferramentas/sistemas/lib.py",
-        "line": 467,
+        "line": 513,
         "text": "def cyl(ctx, part, center, radius, length, mat, *, axis=UP, verts=32, bev=.0012, segments=2, radius2=None, **extras):"
       }
     },
     {
       "source": "ferramentas/sistemas/lib.py",
-      "target": "ferramentas/sistemas/lib.py#476:tube_cyl",
+      "target": "ferramentas/sistemas/lib.py#522:tube_cyl",
       "relation": "define",
       "confidence": "EXTRACTED",
       "confidence_score": 1,
       "evidence": {
         "path": "ferramentas/sistemas/lib.py",
-        "line": 476,
+        "line": 522,
         "text": "def tube_cyl(ctx, part, center, radius, wall, length, mat, *, axis=UP, verts=32, **extras):"
       }
     },
     {
       "source": "ferramentas/sistemas/lib.py",
-      "target": "ferramentas/sistemas/lib.py#497:sphere",
+      "target": "ferramentas/sistemas/lib.py#543:sphere",
       "relation": "define",
       "confidence": "EXTRACTED",
       "confidence_score": 1,
       "evidence": {
         "path": "ferramentas/sistemas/lib.py",
-        "line": 497,
+        "line": 543,
         "text": "def sphere(ctx, part, center, radius, mat, *, segments=24, rings=16, scale=None, **extras):"
       }
     },
     {
       "source": "ferramentas/sistemas/lib.py",
-      "target": "ferramentas/sistemas/lib.py#505:torus",
+      "target": "ferramentas/sistemas/lib.py#551:torus",
       "relation": "define",
       "confidence": "EXTRACTED",
       "confidence_score": 1,
       "evidence": {
         "path": "ferramentas/sistemas/lib.py",
-        "line": 505,
+        "line": 551,
         "text": "def torus(ctx, part, center, major, minor, mat, *, axis=UP, seg=40, mseg=12, **extras):"
       }
     },
     {
       "source": "ferramentas/sistemas/lib.py",
-      "target": "ferramentas/sistemas/lib.py#512:catmull",
+      "target": "ferramentas/sistemas/lib.py#558:catmull",
       "relation": "define",
       "confidence": "EXTRACTED",
       "confidence_score": 1,
       "evidence": {
         "path": "ferramentas/sistemas/lib.py",
-        "line": 512,
+        "line": 558,
         "text": "def catmull(points, per_segment=8, closed=False):"
       }
     },
     {
       "source": "ferramentas/sistemas/lib.py",
-      "target": "ferramentas/sistemas/lib.py#530:_frames",
+      "target": "ferramentas/sistemas/lib.py#576:_frames",
       "relation": "define",
       "confidence": "EXTRACTED",
       "confidence_score": 1,
       "evidence": {
         "path": "ferramentas/sistemas/lib.py",
-        "line": 530,
+        "line": 576,
         "text": "def _frames(pts, closed=False):"
       }
     },
     {
       "source": "ferramentas/sistemas/lib.py",
-      "target": "ferramentas/sistemas/lib.py#555:sweep",
+      "target": "ferramentas/sistemas/lib.py#601:sweep",
       "relation": "define",
       "confidence": "EXTRACTED",
       "confidence_score": 1,
       "evidence": {
         "path": "ferramentas/sistemas/lib.py",
-        "line": 555,
+        "line": 601,
         "text": "def sweep(ctx, part, points, mat, *, radius=.01, radii=None, sides=14, smooth_path=True, per_segment=8,"
       }
     },
     {
       "source": "ferramentas/sistemas/lib.py",
-      "target": "ferramentas/sistemas/lib.py#612:airfoil",
+      "target": "ferramentas/sistemas/lib.py#658:airfoil",
       "relation": "define",
       "confidence": "EXTRACTED",
       "confidence_score": 1,
       "evidence": {
         "path": "ferramentas/sistemas/lib.py",
-        "line": 612,
+        "line": 658,
         "text": "def airfoil(chord, thick, camber=0.0, n=18):"
       }
     },
     {
       "source": "ferramentas/sistemas/lib.py",
-      "target": "ferramentas/sistemas/lib.py#629:loft",
+      "target": "ferramentas/sistemas/lib.py#675:loft",
       "relation": "define",
       "confidence": "EXTRACTED",
       "confidence_score": 1,
       "evidence": {
         "path": "ferramentas/sistemas/lib.py",
-        "line": 629,
+        "line": 675,
         "text": "def loft(ctx, part, sections, mat, *, cap=True, open_ring=False, **extras):"
       }
     },
     {
       "source": "ferramentas/sistemas/lib.py",
-      "target": "ferramentas/sistemas/lib.py#654:lathe",
+      "target": "ferramentas/sistemas/lib.py#700:lathe",
       "relation": "define",
       "confidence": "EXTRACTED",
       "confidence_score": 1,
       "evidence": {
         "path": "ferramentas/sistemas/lib.py",
-        "line": 654,
+        "line": 700,
         "text": "def lathe(ctx, part, profile, mat, *, center=(0, 0, 0), axis=UP, segments=40, **extras):"
       }
     },
     {
       "source": "ferramentas/sistemas/lib.py",
-      "target": "ferramentas/sistemas/lib.py#668:helix",
+      "target": "ferramentas/sistemas/lib.py#714:helix",
       "relation": "define",
       "confidence": "EXTRACTED",
       "confidence_score": 1,
       "evidence": {
         "path": "ferramentas/sistemas/lib.py",
-        "line": 668,
+        "line": 714,
         "text": "def helix(ctx, part, center, radius, pitch, turns, wire, mat, *, axis=UP, per_turn=28, **extras):"
       }
     },
     {
       "source": "ferramentas/sistemas/lib.py",
-      "target": "ferramentas/sistemas/lib.py#678:gear",
+      "target": "ferramentas/sistemas/lib.py#724:gear",
       "relation": "define",
       "confidence": "EXTRACTED",
       "confidence_score": 1,
       "evidence": {
         "path": "ferramentas/sistemas/lib.py",
-        "line": 678,
+        "line": 724,
         "text": "def gear(ctx, part, center, teeth, module, width, mat, *, axis=UP, bore=None, helix_deg=0, hub_r=None, hub_w=None, spokes=0, **extras):"
       }
     },
     {
       "source": "ferramentas/sistemas/lib.py",
-      "target": "ferramentas/sistemas/lib.py#694:ring",
+      "target": "ferramentas/sistemas/lib.py#740:ring",
       "relation": "define",
       "confidence": "EXTRACTED",
       "confidence_score": 1,
       "evidence": {
         "path": "ferramentas/sistemas/lib.py",
-        "line": 694,
+        "line": 740,
         "text": "def ring(z, pts):"
       }
     },
     {
       "source": "ferramentas/sistemas/lib.py",
-      "target": "ferramentas/sistemas/lib.py#730:bolt_ring",
+      "target": "ferramentas/sistemas/lib.py#776:bolt_ring",
       "relation": "define",
       "confidence": "EXTRACTED",
       "confidence_score": 1,
       "evidence": {
         "path": "ferramentas/sistemas/lib.py",
-        "line": 730,
+        "line": 776,
         "text": "def bolt_ring(ctx, part, center, radius, count, axis, mat_head, *, size=.006, head=.004, start=0.0, **extras):"
       }
     },
     {
       "source": "ferramentas/sistemas/lib.py",
-      "target": "ferramentas/sistemas/lib.py#753:join",
+      "target": "ferramentas/sistemas/lib.py#799:join",
       "relation": "define",
       "confidence": "EXTRACTED",
       "confidence_score": 1,
       "evidence": {
         "path": "ferramentas/sistemas/lib.py",
-        "line": 753,
+        "line": 799,
         "text": "def join(ctx, objects, part=None, **extras):"
       }
     },
     {
       "source": "ferramentas/sistemas/lib.py",
-      "target": "ferramentas/sistemas/lib.py#779:mirror_x",
+      "target": "ferramentas/sistemas/lib.py#825:mirror_x",
       "relation": "define",
       "confidence": "EXTRACTED",
       "confidence_score": 1,
       "evidence": {
         "path": "ferramentas/sistemas/lib.py",
-        "line": 779,
+        "line": 825,
         "text": "def mirror_x(ctx, obj, part=None):"
       }
     },
     {
       "source": "ferramentas/sistemas/lib.py",
-      "target": "ferramentas/sistemas/lib.py#802:both_sides",
+      "target": "ferramentas/sistemas/lib.py#848:mirror_system",
       "relation": "define",
       "confidence": "EXTRACTED",
       "confidence_score": 1,
       "evidence": {
         "path": "ferramentas/sistemas/lib.py",
-        "line": 802,
+        "line": 848,
+        "text": "def mirror_system(ctx, sid):"
+      }
+    },
+    {
+      "source": "ferramentas/sistemas/lib.py",
+      "target": "ferramentas/sistemas/lib.py#880:both_sides",
+      "relation": "define",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "evidence": {
+        "path": "ferramentas/sistemas/lib.py",
+        "line": 880,
         "text": "def both_sides(fn):"
       }
     },
     {
       "source": "ferramentas/sistemas/lib.py",
-      "target": "ferramentas/sistemas/lib.py#806:hexagon",
+      "target": "ferramentas/sistemas/lib.py#884:hexagon",
       "relation": "define",
       "confidence": "EXTRACTED",
       "confidence_score": 1,
       "evidence": {
         "path": "ferramentas/sistemas/lib.py",
-        "line": 806,
+        "line": 884,
         "text": "def hexagon(r):"
       }
     },
     {
       "source": "ferramentas/sistemas/lib.py",
-      "target": "ferramentas/sistemas/lib.py#809:rounded_rect",
+      "target": "ferramentas/sistemas/lib.py#887:rounded_rect",
       "relation": "define",
       "confidence": "EXTRACTED",
       "confidence_score": 1,
       "evidence": {
         "path": "ferramentas/sistemas/lib.py",
-        "line": 809,
+        "line": 887,
         "text": "def rounded_rect(w, h, r, n=4):"
       }
     },
     {
       "source": "ferramentas/sistemas/lib.py",
-      "target": "ferramentas/sistemas/lib.py#817:super_ellipse",
+      "target": "ferramentas/sistemas/lib.py#895:super_ellipse",
       "relation": "define",
       "confidence": "EXTRACTED",
       "confidence_score": 1,
       "evidence": {
         "path": "ferramentas/sistemas/lib.py",
-        "line": 817,
+        "line": 895,
         "text": "def super_ellipse(w, h, n=2.6, seg=32, exp=None):"
       }
     },
     {
       "source": "ferramentas/sistemas/lib.py",
-      "target": "ferramentas/sistemas/lib.py#826:shell",
+      "target": "ferramentas/sistemas/lib.py#904:shell",
       "relation": "define",
       "confidence": "EXTRACTED",
       "confidence_score": 1,
       "evidence": {
         "path": "ferramentas/sistemas/lib.py",
-        "line": 826,
+        "line": 904,
         "text": "def shell(ctx, part, sections, mat, *, thickness=.004, open_ring=False, **extras):"
       }
     },
     {
       "source": "ferramentas/sistemas/lib.py",
-      "target": "ferramentas/sistemas/lib.py#832:flow_ribbon",
+      "target": "ferramentas/sistemas/lib.py#910:flow_ribbon",
       "relation": "define",
       "confidence": "EXTRACTED",
       "confidence_score": 1,
       "evidence": {
         "path": "ferramentas/sistemas/lib.py",
-        "line": 832,
+        "line": 910,
         "text": "def flow_ribbon(ctx, part, points, kind, *, radius=.006, **extras):"
       }
     },
     {
       "source": "ferramentas/sistemas/lib.py",
-      "target": "ferramentas/sistemas/lib.py#836:text_plate",
+      "target": "ferramentas/sistemas/lib.py#914:text_plate",
       "relation": "define",
       "confidence": "EXTRACTED",
       "confidence_score": 1,
       "evidence": {
         "path": "ferramentas/sistemas/lib.py",
-        "line": 836,
+        "line": 914,
         "text": "def text_plate(ctx, part, text, center, size, mat, *, normal=FWD, up=UP, depth=.0006, **extras):"
       }
     },
     {
       "source": "ferramentas/sistemas/lib.py",
-      "target": "ferramentas/sistemas/lib.py#852:centroid",
+      "target": "ferramentas/sistemas/lib.py#930:centroid",
       "relation": "define",
       "confidence": "EXTRACTED",
       "confidence_score": 1,
       "evidence": {
         "path": "ferramentas/sistemas/lib.py",
-        "line": 852,
+        "line": 930,
         "text": "def centroid(objs):"
       }
     },
     {
       "source": "ferramentas/sistemas/lib.py",
-      "target": "ferramentas/sistemas/lib.py#863:auto_explode",
+      "target": "ferramentas/sistemas/lib.py#941:auto_explode",
       "relation": "define",
       "confidence": "EXTRACTED",
       "confidence_score": 1,
       "evidence": {
         "path": "ferramentas/sistemas/lib.py",
-        "line": 863,
+        "line": 941,
         "text": "def auto_explode(ctx, sid, scale=1.0, min_len=.06):"
+      }
+    },
+    {
+      "source": "ferramentas/sistemas/lib.py",
+      "target": "ferramentas/sistemas/lib.py#959:car_components",
+      "relation": "define",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "evidence": {
+        "path": "ferramentas/sistemas/lib.py",
+        "line": 959,
+        "text": "def car_components(source='main_body__01'):"
+      }
+    },
+    {
+      "source": "ferramentas/sistemas/lib.py",
+      "target": "ferramentas/sistemas/lib.py#997:car_part",
+      "relation": "define",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "evidence": {
+        "path": "ferramentas/sistemas/lib.py",
+        "line": 997,
+        "text": "def car_part(ctx, part, mat, *, source='main_body__01', box=None, select=None, smooth_angle=math.radians(45), uv=8, **extras):"
+      }
+    },
+    {
+      "source": "ferramentas/sistemas/lib.py",
+      "target": "ferramentas/sistemas/lib.py#1017:plate",
+      "relation": "define",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "evidence": {
+        "path": "ferramentas/sistemas/lib.py",
+        "line": 1017,
+        "text": "def plate(ctx, part, outline, center, thickness, mat, *, normal=FWD, up=UP, bev=.0015, uv=8, **extras):"
+      }
+    },
+    {
+      "source": "ferramentas/sistemas/lib.py",
+      "target": "ferramentas/sistemas/lib.py#1024:P",
+      "relation": "define",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "evidence": {
+        "path": "ferramentas/sistemas/lib.py",
+        "line": 1024,
+        "text": "def P(u, v, w):"
+      }
+    },
+    {
+      "source": "ferramentas/sistemas/lib.py",
+      "target": "ferramentas/sistemas/lib.py#1037:lado",
+      "relation": "define",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "evidence": {
+        "path": "ferramentas/sistemas/lib.py",
+        "line": 1037,
+        "text": "def lado(side, fem=False):"
+      }
+    },
+    {
+      "source": "ferramentas/sistemas/lib.py",
+      "target": "ferramentas/sistemas/lib.py#1043:arc2d",
+      "relation": "define",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "evidence": {
+        "path": "ferramentas/sistemas/lib.py",
+        "line": 1043,
+        "text": "def arc2d(cx, cy, r, a0, a1, n=6):"
+      }
+    },
+    {
+      "source": "ferramentas/sistemas/lib.py",
+      "target": "ferramentas/sistemas/lib.py#1047:face_uv_fit",
+      "relation": "define",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "evidence": {
+        "path": "ferramentas/sistemas/lib.py",
+        "line": 1047,
+        "text": "def face_uv_fit(obj, normal=FWD, tol=.9):"
       }
     },
     {
@@ -2452,62 +2866,86 @@
     },
     {
       "source": "ferramentas/sistemas/s11_safety.py",
-      "target": "ferramentas/sistemas/s11_safety.py#18:build",
+      "target": "ferramentas/sistemas/s11_safety.py#20:build",
       "relation": "define",
       "confidence": "EXTRACTED",
       "confidence_score": 1,
       "evidence": {
         "path": "ferramentas/sistemas/s11_safety.py",
-        "line": 18,
+        "line": 20,
         "text": "def build(ctx):"
       }
     },
     {
       "source": "ferramentas/sistemas/s12_cockpit.py",
-      "target": "ferramentas/sistemas/s12_cockpit.py#18:strap",
+      "target": "ferramentas/sistemas/s12_cockpit.py#19:strap",
       "relation": "define",
       "confidence": "EXTRACTED",
       "confidence_score": 1,
       "evidence": {
         "path": "ferramentas/sistemas/s12_cockpit.py",
-        "line": 18,
+        "line": 19,
         "text": "def strap(ctx, name, pts, width=.075):"
       }
     },
     {
       "source": "ferramentas/sistemas/s12_cockpit.py",
-      "target": "ferramentas/sistemas/s12_cockpit.py#21:build",
+      "target": "ferramentas/sistemas/s12_cockpit.py#22:build",
       "relation": "define",
       "confidence": "EXTRACTED",
       "confidence_score": 1,
       "evidence": {
         "path": "ferramentas/sistemas/s12_cockpit.py",
-        "line": 21,
+        "line": 22,
         "text": "def build(ctx):"
       }
     },
     {
       "source": "ferramentas/sistemas/s12_cockpit.py",
-      "target": "ferramentas/sistemas/s12_cockpit.py#25:seat_section",
+      "target": "ferramentas/sistemas/s12_cockpit.py#26:seat_section",
       "relation": "define",
       "confidence": "EXTRACTED",
       "confidence_score": 1,
       "evidence": {
         "path": "ferramentas/sistemas/s12_cockpit.py",
-        "line": 25,
+        "line": 26,
         "text": "def seat_section(t):"
       }
     },
     {
       "source": "ferramentas/sistemas/s13_wheel.py",
-      "target": "ferramentas/sistemas/s13_wheel.py#17:build",
+      "target": "ferramentas/sistemas/s13_wheel.py#21:build",
       "relation": "define",
       "confidence": "EXTRACTED",
       "confidence_score": 1,
       "evidence": {
         "path": "ferramentas/sistemas/s13_wheel.py",
-        "line": 17,
+        "line": 21,
         "text": "def build(ctx):"
+      }
+    },
+    {
+      "source": "ferramentas/sistemas/s13_wheel.py",
+      "target": "ferramentas/sistemas/s13_wheel.py#25:Q",
+      "relation": "define",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "evidence": {
+        "path": "ferramentas/sistemas/s13_wheel.py",
+        "line": 25,
+        "text": "def Q(u, v, w=0.0):"
+      }
+    },
+    {
+      "source": "ferramentas/sistemas/s13_wheel.py",
+      "target": "ferramentas/sistemas/s13_wheel.py#28:E",
+      "relation": "define",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "evidence": {
+        "path": "ferramentas/sistemas/s13_wheel.py",
+        "line": 28,
+        "text": "def E(u, v, w):"
       }
     },
     {

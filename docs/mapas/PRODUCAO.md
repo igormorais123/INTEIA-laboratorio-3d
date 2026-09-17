@@ -152,7 +152,6 @@ O relatório do box é escrito durante a criação e lista malhas, limites do ca
 | [validacao-criacao.json](../../validacao-criacao.json) | Dados reportados pelo gerador do master. | É saída de criação; a checagem de reabertura é separada. |
 | [validacao-reabertura.json](../../validacao-reabertura.json) | Execução registrada: 97 peças, 752.823 triângulos, erro de remontagem zero, 104 canais no export animado. | Registro histórico até ser reexecutado com os assets escolhidos. |
 | [validacao-box.json](../../ambientes/validacao-box.json) | Execução registrada: 568 malhas do box, 97 do carro, 12 imagens empacotadas e nenhuma externa. | Não contém uma revisão visual automática nem atesta edições posteriores. |
-| [workflow verify.yml](../../.github/workflows/verify.yml) | Configura Node 24, instala dependências, faz build e testes web em push/PR. | Não abre navegador, não executa Blender nem verifica render de jogos. |
 | [manifest.cjs](../../ferramentas/manifest.cjs) | Calcula bytes e SHA-256 de 14 caminhos explícitos e escreve [manifesto-sha256.json](../../manifesto-sha256.json). | Não é inventário completo do código/documentação e não comprova autoria, licença ou qualidade. |
 
 Os documentos de validação registram 752.824 triângulos na base web e 752.823 na conversão Blender. A diferença de um triângulo já foi registrada; não afirme identidade topológica exata. O estado atual precisa ser conferido pela rotina apropriada ao arquivo alterado.

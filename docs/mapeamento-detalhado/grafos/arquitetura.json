@@ -85,10 +85,22 @@
       "path": "web/src/mechanics.js"
     },
     {
+      "id": "web/src/parts-info.js",
+      "label": "web/src/parts-info.js",
+      "kind": "file",
+      "path": "web/src/parts-info.js"
+    },
+    {
       "id": "web/src/senna-driver.js",
       "label": "web/src/senna-driver.js",
       "kind": "file",
       "path": "web/src/senna-driver.js"
+    },
+    {
+      "id": "web/src/spares.js",
+      "label": "web/src/spares.js",
+      "kind": "file",
+      "path": "web/src/spares.js"
     },
     {
       "id": "web/src/studio.js",
@@ -149,6 +161,12 @@
       "label": "web/test-power-unit.mjs",
       "kind": "file",
       "path": "web/test-power-unit.mjs"
+    },
+    {
+      "id": "web/test-spares.mjs",
+      "label": "web/test-spares.mjs",
+      "kind": "file",
+      "path": "web/test-spares.mjs"
     },
     {
       "id": "web/test-systems.mjs",
@@ -364,13 +382,25 @@
     },
     {
       "source": "web/src/app-v2.js",
-      "target": "external:three/addons/libs/meshopt_decoder.module.js",
+      "target": "web/src/spares.js",
       "relation": "importa",
       "confidence": "EXTRACTED",
       "confidence_score": 1,
       "evidence": {
         "path": "web/src/app-v2.js",
         "line": 2,
+        "text": "import {createSpares,SPARE_SLOTS,SPARE_PRESETS} from './spares.js'"
+      }
+    },
+    {
+      "source": "web/src/app-v2.js",
+      "target": "external:three/addons/libs/meshopt_decoder.module.js",
+      "relation": "importa",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "evidence": {
+        "path": "web/src/app-v2.js",
+        "line": 3,
         "text": "import {MeshoptDecoder} from 'three/addons/libs/meshopt_decoder.module.js'"
       }
     },
@@ -382,7 +412,7 @@
       "confidence_score": 1,
       "evidence": {
         "path": "web/src/app-v2.js",
-        "line": 3,
+        "line": 4,
         "text": "import {createInCarEngine} from './engine/in-car.js'"
       }
     },
@@ -394,7 +424,7 @@
       "confidence_score": 1,
       "evidence": {
         "path": "web/src/app-v2.js",
-        "line": 4,
+        "line": 5,
         "text": "import {enhanceCar} from './car-look.js'"
       }
     },
@@ -406,7 +436,7 @@
       "confidence_score": 1,
       "evidence": {
         "path": "web/src/app-v2.js",
-        "line": 5,
+        "line": 6,
         "text": "import {createSurfaceLibrary} from './surface-library.js'"
       }
     },
@@ -418,7 +448,7 @@
       "confidence_score": 1,
       "evidence": {
         "path": "web/src/app-v2.js",
-        "line": 6,
+        "line": 7,
         "text": "import {createSennaDriver} from './senna-driver.js'"
       }
     },
@@ -430,7 +460,7 @@
       "confidence_score": 1,
       "evidence": {
         "path": "web/src/app-v2.js",
-        "line": 7,
+        "line": 8,
         "text": "import {applyInteiaBranding} from './branding.js'"
       }
     },
@@ -442,7 +472,7 @@
       "confidence_score": 1,
       "evidence": {
         "path": "web/src/app-v2.js",
-        "line": 8,
+        "line": 9,
         "text": "import {brandSVG} from './identity.js'"
       }
     },
@@ -454,7 +484,7 @@
       "confidence_score": 1,
       "evidence": {
         "path": "web/src/app-v2.js",
-        "line": 9,
+        "line": 10,
         "text": "import {GLTFExporter} from 'three/addons/exporters/GLTFExporter.js'"
       }
     },
@@ -466,7 +496,7 @@
       "confidence_score": 1,
       "evidence": {
         "path": "web/src/app-v2.js",
-        "line": 10,
+        "line": 11,
         "text": "import {createGarage} from './garage.js'"
       }
     },
@@ -478,8 +508,20 @@
       "confidence_score": 1,
       "evidence": {
         "path": "web/src/app-v2.js",
-        "line": 11,
+        "line": 12,
         "text": "import {createWindTunnel} from './wind-tunnel.js'"
+      }
+    },
+    {
+      "source": "web/src/app-v2.js",
+      "target": "web/src/parts-info.js",
+      "relation": "importa",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "evidence": {
+        "path": "web/src/app-v2.js",
+        "line": 13,
+        "text": "import {describeCarPart} from './parts-info.js'"
       }
     },
     {
@@ -490,7 +532,7 @@
       "confidence_score": 1,
       "evidence": {
         "path": "web/src/app-v2.js",
-        "line": 12,
+        "line": 14,
         "text": "import {createSystems} from './systems.js'"
       }
     },
@@ -502,7 +544,7 @@
       "confidence_score": 1,
       "evidence": {
         "path": "web/src/app-v2.js",
-        "line": 13,
+        "line": 15,
         "text": "import {setupCustomization} from './customize.js'"
       }
     },
@@ -514,7 +556,7 @@
       "confidence_score": 1,
       "evidence": {
         "path": "web/src/app-v2.js",
-        "line": 14,
+        "line": 16,
         "text": "import * as THREE from 'three'"
       }
     },
@@ -526,7 +568,7 @@
       "confidence_score": 1,
       "evidence": {
         "path": "web/src/app-v2.js",
-        "line": 15,
+        "line": 17,
         "text": "import {OrbitControls} from 'three/addons/controls/OrbitControls.js'"
       }
     },
@@ -538,7 +580,7 @@
       "confidence_score": 1,
       "evidence": {
         "path": "web/src/app-v2.js",
-        "line": 16,
+        "line": 18,
         "text": "import {TransformControls} from 'three/addons/controls/TransformControls.js'"
       }
     },
@@ -550,7 +592,7 @@
       "confidence_score": 1,
       "evidence": {
         "path": "web/src/app-v2.js",
-        "line": 17,
+        "line": 19,
         "text": "import {EffectComposer} from 'three/addons/postprocessing/EffectComposer.js'"
       }
     },
@@ -562,7 +604,7 @@
       "confidence_score": 1,
       "evidence": {
         "path": "web/src/app-v2.js",
-        "line": 18,
+        "line": 20,
         "text": "import {RenderPass} from 'three/addons/postprocessing/RenderPass.js'"
       }
     },
@@ -574,7 +616,7 @@
       "confidence_score": 1,
       "evidence": {
         "path": "web/src/app-v2.js",
-        "line": 19,
+        "line": 21,
         "text": "import {SSAOPass} from 'three/addons/postprocessing/SSAOPass.js'"
       }
     },
@@ -586,7 +628,7 @@
       "confidence_score": 1,
       "evidence": {
         "path": "web/src/app-v2.js",
-        "line": 20,
+        "line": 22,
         "text": "import {OutputPass} from 'three/addons/postprocessing/OutputPass.js'"
       }
     },
@@ -598,7 +640,7 @@
       "confidence_score": 1,
       "evidence": {
         "path": "web/src/app-v2.js",
-        "line": 21,
+        "line": 23,
         "text": "import {SMAAPass} from 'three/addons/postprocessing/SMAAPass.js'"
       }
     },
@@ -610,7 +652,7 @@
       "confidence_score": 1,
       "evidence": {
         "path": "web/src/app-v2.js",
-        "line": 22,
+        "line": 24,
         "text": "import {GLTFLoader} from 'three/addons/loaders/GLTFLoader.js'"
       }
     },
@@ -622,7 +664,7 @@
       "confidence_score": 1,
       "evidence": {
         "path": "web/src/app-v2.js",
-        "line": 23,
+        "line": 25,
         "text": "import {setupStudio,applyCarMaterials} from './studio.js'"
       }
     },
@@ -634,7 +676,7 @@
       "confidence_score": 1,
       "evidence": {
         "path": "web/src/app-v2.js",
-        "line": 24,
+        "line": 26,
         "text": "import {createMechanics} from './mechanics.js'"
       }
     },
@@ -843,6 +885,30 @@
       }
     },
     {
+      "source": "web/src/spares.js",
+      "target": "external:three",
+      "relation": "importa",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "evidence": {
+        "path": "web/src/spares.js",
+        "line": 1,
+        "text": "import * as THREE from 'three'"
+      }
+    },
+    {
+      "source": "web/src/spares.js",
+      "target": "external:three/addons/loaders/GLTFLoader.js",
+      "relation": "importa",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "evidence": {
+        "path": "web/src/spares.js",
+        "line": 2,
+        "text": "import {GLTFLoader} from 'three/addons/loaders/GLTFLoader.js'"
+      }
+    },
+    {
       "source": "web/src/systems.js",
       "target": "external:three",
       "relation": "importa",
@@ -856,13 +922,25 @@
     },
     {
       "source": "web/src/systems.js",
-      "target": "external:three/addons/loaders/GLTFLoader.js",
+      "target": "web/src/parts-info.js",
       "relation": "importa",
       "confidence": "EXTRACTED",
       "confidence_score": 1,
       "evidence": {
         "path": "web/src/systems.js",
         "line": 2,
+        "text": "import {describePart} from './parts-info.js'"
+      }
+    },
+    {
+      "source": "web/src/systems.js",
+      "target": "external:three/addons/loaders/GLTFLoader.js",
+      "relation": "importa",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "evidence": {
+        "path": "web/src/systems.js",
+        "line": 3,
         "text": "import {GLTFLoader} from 'three/addons/loaders/GLTFLoader.js'"
       }
     },
@@ -874,7 +952,7 @@
       "confidence_score": 1,
       "evidence": {
         "path": "web/src/systems.js",
-        "line": 3,
+        "line": 4,
         "text": "import {MeshoptDecoder} from 'three/addons/libs/meshopt_decoder.module.js'"
       }
     },
@@ -1128,6 +1206,54 @@
         "path": "web/test-power-unit.mjs",
         "line": 4,
         "text": "import {GLTFLoader} from 'three/addons/loaders/GLTFLoader.js'"
+      }
+    },
+    {
+      "source": "web/test-spares.mjs",
+      "target": "external:node:assert/strict",
+      "relation": "importa",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "evidence": {
+        "path": "web/test-spares.mjs",
+        "line": 1,
+        "text": "import assert from 'node:assert/strict'"
+      }
+    },
+    {
+      "source": "web/test-spares.mjs",
+      "target": "external:node:crypto",
+      "relation": "importa",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "evidence": {
+        "path": "web/test-spares.mjs",
+        "line": 2,
+        "text": "import {createHash} from 'node:crypto'"
+      }
+    },
+    {
+      "source": "web/test-spares.mjs",
+      "target": "external:node:fs",
+      "relation": "importa",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "evidence": {
+        "path": "web/test-spares.mjs",
+        "line": 3,
+        "text": "import {readFileSync} from 'node:fs'"
+      }
+    },
+    {
+      "source": "web/test-spares.mjs",
+      "target": "web/src/spares.js",
+      "relation": "importa",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "evidence": {
+        "path": "web/test-spares.mjs",
+        "line": 4,
+        "text": "import {SPARE_SLOTS, SPARE_PRESETS, SPARE_INFO, SPARES_ASSET} from './src/spares.js'"
       }
     },
     {

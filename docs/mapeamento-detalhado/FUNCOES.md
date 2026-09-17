@@ -16,10 +16,27 @@ Chamadas são referências sintáticas conservadoras, não rastreamento de execu
 | _bbox | 45 | module | `def _bbox(objs):` |
 | import_car_reference | 58 | module | `def import_car_reference(alpha=.045):` |
 | power_unit_reference | 76 | module | `def power_unit_reference():` |
-| measure_glb | 154 | module | `def measure_glb(path):` |
-| write_manifest | 181 | module | `def write_manifest(path_glb, optimized):` |
-| light | 226 | module | `def light(name, kind, loc, energy, size=2.0):` |
-| frame | 244 | module | `def frame(objs, direction, pad=1.25):` |
+| measure_glb | 158 | module | `def measure_glb(path):` |
+| write_manifest | 185 | module | `def write_manifest(path_glb, optimized):` |
+| light | 230 | module | `def light(name, kind, loc, energy, size=2.0):` |
+| frame | 248 | module | `def frame(objs, direction, pad=1.25):` |
+
+## ferramentas/gerar_sobressalentes.py
+
+[Fonte](../../ferramentas/gerar_sobressalentes.py)
+
+| Nome | Linha | Escopo | Assinatura |
+|---|---:|---|---|
+| surface_y | 55 | module | `def surface_y(x, z, r=.035):` |
+| spare | 62 | module | `def spare(obj, slot, variant, target, label, mode='geometry', **extra):` |
+| tyre_profile | 94 | module | `def tyre_profile(width, R):` |
+| tyre_texture | 99 | module | `def tyre_texture(kind, band, size=(1024, 512)):` |
+| build_tyre | 139 | module | `def build_tyre(name, center, width, R, mat):` |
+| wing_section | 174 | module | `def wing_section(le, chord, angle_deg, thick=.10, camber=-.05, n=16):` |
+| span_loft | 188 | module | `def span_loft(name, xs, section_at, mat):` |
+| fw_at | 214 | module | `def fw_at(ax, d_angle, k_chord):` |
+| sec | 225 | module | `def sec(x, da=da, kc=kc):` |
+| bbox_web | 266 | module | `def bbox_web(o):` |
 
 ## ferramentas/otimizar_sistemas.mjs
 
@@ -51,64 +68,76 @@ Chamadas são referências sintáticas conservadoras, não rastreamento de execu
 
 | Nome | Linha | Escopo | Assinatura |
 |---|---:|---|---|
-| W | 15 | module | `def W(x, y=None, z=None):` |
-| to_web | 21 | module | `def to_web(v):` |
-| _encode_normal | 31 | module | `def _encode_normal(height, strength=1.0):` |
-| image_from_array | 38 | module | `def image_from_array(name, rgba, srgb=True):` |
-| tex_twill | 50 | module | `def tex_twill(size=256, tow=16, base=(.028, .032, .038), lift=.055):` |
-| tex_kevlar | 61 | module | `def tex_kevlar(size=256, tow=12):` |
-| tex_brushed | 70 | module | `def tex_brushed(size=256):` |
-| tex_cast | 77 | module | `def tex_cast(size=256):` |
-| tex_heat | 86 | module | `def tex_heat(size=256):` |
-| tex_brake_disc | 99 | module | `def tex_brake_disc(size=512, rings=14, holes_per_ring=64, inner=.42):` |
-| tex_fins | 121 | module | `def tex_fins(size=256, pitch=6):` |
-| tex_honeycomb | 128 | module | `def tex_honeycomb(size=256, cell=18):` |
-| tex_kapton | 138 | module | `def tex_kapton(size=256):` |
-| tex_braid | 144 | module | `def tex_braid(size=128, tow=8):` |
-| tex_display | 151 | module | `def tex_display(size=(512, 256)):` |
-| material | 180 | module | `def material(name, color, metallic=0.0, roughness=0.45, *, emissive=None, emissive_strength=1.0, alpha=1.0,` |
-| tex_node | 212 | 180:material | `def tex_node(img):` |
-| Materials | 239 | module | `class Materials:` |
-| __init__ | 241 | 239:Materials | `def __init__(self):` |
-| Context | 320 | module | `class Context:` |
-| __init__ | 321 | 320:Context | `def __init__(self, scene, mats):` |
-| system | 329 | 320:Context | `def system(self, sid, label):` |
-| register | 339 | 320:Context | `def register(self, obj, part, *, spin=None, spin_axis='y', flow=None, era=None, explode=None, hide_group=None, tag=None, carrier=False, parent=None):` |
-| _link | 366 | module | `def _link(obj):` |
-| shade_smooth | 370 | module | `def shade_smooth(obj, angle=math.radians(38)):` |
-| bevel | 384 | module | `def bevel(obj, width=.002, segments=2, angle=math.radians(40)):` |
-| box_uv | 392 | module | `def box_uv(obj, scale=1.0, offset=(0.0, 0.0)):` |
-| mesh_object | 412 | module | `def mesh_object(name, verts, faces, edges=(), uvs=None):` |
-| bm_to_object | 424 | module | `def bm_to_object(name, bm, smooth=True):` |
-| set_material | 433 | module | `def set_material(obj, mat):` |
-| orient | 439 | module | `def orient(obj, axis):` |
-| cube | 447 | module | `def cube(ctx, part, center, size, mat, *, bev=.002, segments=2, rot=None, uv=None, **extras):` |
-| W_rot | 461 | module | `def W_rot(rot):` |
-| cyl | 467 | module | `def cyl(ctx, part, center, radius, length, mat, *, axis=UP, verts=32, bev=.0012, segments=2, radius2=None, **extras):` |
-| tube_cyl | 476 | module | `def tube_cyl(ctx, part, center, radius, wall, length, mat, *, axis=UP, verts=32, **extras):` |
-| sphere | 497 | module | `def sphere(ctx, part, center, radius, mat, *, segments=24, rings=16, scale=None, **extras):` |
-| torus | 505 | module | `def torus(ctx, part, center, major, minor, mat, *, axis=UP, seg=40, mseg=12, **extras):` |
-| catmull | 512 | module | `def catmull(points, per_segment=8, closed=False):` |
-| _frames | 530 | module | `def _frames(pts, closed=False):` |
-| sweep | 555 | module | `def sweep(ctx, part, points, mat, *, radius=.01, radii=None, sides=14, smooth_path=True, per_segment=8,` |
-| airfoil | 612 | module | `def airfoil(chord, thick, camber=0.0, n=18):` |
-| loft | 629 | module | `def loft(ctx, part, sections, mat, *, cap=True, open_ring=False, **extras):` |
-| lathe | 654 | module | `def lathe(ctx, part, profile, mat, *, center=(0, 0, 0), axis=UP, segments=40, **extras):` |
-| helix | 668 | module | `def helix(ctx, part, center, radius, pitch, turns, wire, mat, *, axis=UP, per_turn=28, **extras):` |
-| gear | 678 | module | `def gear(ctx, part, center, teeth, module, width, mat, *, axis=UP, bore=None, helix_deg=0, hub_r=None, hub_w=None, spokes=0, **extras):` |
-| ring | 694 | 678:gear | `def ring(z, pts):` |
-| bolt_ring | 730 | module | `def bolt_ring(ctx, part, center, radius, count, axis, mat_head, *, size=.006, head=.004, start=0.0, **extras):` |
-| join | 753 | module | `def join(ctx, objects, part=None, **extras):` |
-| mirror_x | 779 | module | `def mirror_x(ctx, obj, part=None):` |
-| both_sides | 802 | module | `def both_sides(fn):` |
-| hexagon | 806 | module | `def hexagon(r):` |
-| rounded_rect | 809 | module | `def rounded_rect(w, h, r, n=4):` |
-| super_ellipse | 817 | module | `def super_ellipse(w, h, n=2.6, seg=32, exp=None):` |
-| shell | 826 | module | `def shell(ctx, part, sections, mat, *, thickness=.004, open_ring=False, **extras):` |
-| flow_ribbon | 832 | module | `def flow_ribbon(ctx, part, points, kind, *, radius=.006, **extras):` |
-| text_plate | 836 | module | `def text_plate(ctx, part, text, center, size, mat, *, normal=FWD, up=UP, depth=.0006, **extras):` |
-| centroid | 852 | module | `def centroid(objs):` |
-| auto_explode | 863 | module | `def auto_explode(ctx, sid, scale=1.0, min_len=.06):` |
+| W | 16 | module | `def W(x, y=None, z=None):` |
+| to_web | 22 | module | `def to_web(v):` |
+| _encode_normal | 32 | module | `def _encode_normal(height, strength=1.0):` |
+| image_from_array | 39 | module | `def image_from_array(name, rgba, srgb=True):` |
+| tex_twill | 51 | module | `def tex_twill(size=256, tow=16, base=(.028, .032, .038), lift=.055):` |
+| tex_kevlar | 62 | module | `def tex_kevlar(size=256, tow=12):` |
+| tex_brushed | 71 | module | `def tex_brushed(size=256):` |
+| tex_cast | 78 | module | `def tex_cast(size=256):` |
+| tex_heat | 87 | module | `def tex_heat(size=256):` |
+| tex_brake_disc | 100 | module | `def tex_brake_disc(size=512, rings=14, holes_per_ring=64, inner=.42):` |
+| tex_fins | 122 | module | `def tex_fins(size=256, pitch=6):` |
+| tex_honeycomb | 129 | module | `def tex_honeycomb(size=256, cell=18):` |
+| tex_kapton | 139 | module | `def tex_kapton(size=256):` |
+| tex_braid | 145 | module | `def tex_braid(size=128, tow=8):` |
+| _seg7 | 152 | module | `def _seg7(img, ch, x0, y0, w, h, t, col):` |
+| rect | 156 | 152:_seg7 | `def rect(xa, ya, xb, yb):` |
+| _text7 | 174 | module | `def _text7(img, text, x, y, w, h, t, col, gap=None):` |
+| tex_display | 181 | module | `def tex_display(size=(512, 256)):` |
+| box | 187 | 181:tex_display | `def box(xa, ya, xb, yb, col):` |
+| material | 217 | module | `def material(name, color, metallic=0.0, roughness=0.45, *, emissive=None, emissive_strength=1.0, alpha=1.0,` |
+| tex_node | 249 | 217:material | `def tex_node(img):` |
+| Materials | 276 | module | `class Materials:` |
+| __init__ | 278 | 276:Materials | `def __init__(self):` |
+| Context | 366 | module | `class Context:` |
+| __init__ | 367 | 366:Context | `def __init__(self, scene, mats):` |
+| system | 375 | 366:Context | `def system(self, sid, label):` |
+| register | 385 | 366:Context | `def register(self, obj, part, *, spin=None, spin_axis='y', flow=None, era=None, explode=None, hide_group=None, tag=None, carrier=False, parent=None):` |
+| _link | 412 | module | `def _link(obj):` |
+| shade_smooth | 416 | module | `def shade_smooth(obj, angle=math.radians(38)):` |
+| bevel | 430 | module | `def bevel(obj, width=.002, segments=2, angle=math.radians(40)):` |
+| box_uv | 438 | module | `def box_uv(obj, scale=1.0, offset=(0.0, 0.0)):` |
+| mesh_object | 458 | module | `def mesh_object(name, verts, faces, edges=(), uvs=None):` |
+| bm_to_object | 470 | module | `def bm_to_object(name, bm, smooth=True):` |
+| set_material | 479 | module | `def set_material(obj, mat):` |
+| orient | 485 | module | `def orient(obj, axis):` |
+| cube | 493 | module | `def cube(ctx, part, center, size, mat, *, bev=.002, segments=2, rot=None, uv=None, **extras):` |
+| W_rot | 507 | module | `def W_rot(rot):` |
+| cyl | 513 | module | `def cyl(ctx, part, center, radius, length, mat, *, axis=UP, verts=32, bev=.0012, segments=2, radius2=None, **extras):` |
+| tube_cyl | 522 | module | `def tube_cyl(ctx, part, center, radius, wall, length, mat, *, axis=UP, verts=32, **extras):` |
+| sphere | 543 | module | `def sphere(ctx, part, center, radius, mat, *, segments=24, rings=16, scale=None, **extras):` |
+| torus | 551 | module | `def torus(ctx, part, center, major, minor, mat, *, axis=UP, seg=40, mseg=12, **extras):` |
+| catmull | 558 | module | `def catmull(points, per_segment=8, closed=False):` |
+| _frames | 576 | module | `def _frames(pts, closed=False):` |
+| sweep | 601 | module | `def sweep(ctx, part, points, mat, *, radius=.01, radii=None, sides=14, smooth_path=True, per_segment=8,` |
+| airfoil | 658 | module | `def airfoil(chord, thick, camber=0.0, n=18):` |
+| loft | 675 | module | `def loft(ctx, part, sections, mat, *, cap=True, open_ring=False, **extras):` |
+| lathe | 700 | module | `def lathe(ctx, part, profile, mat, *, center=(0, 0, 0), axis=UP, segments=40, **extras):` |
+| helix | 714 | module | `def helix(ctx, part, center, radius, pitch, turns, wire, mat, *, axis=UP, per_turn=28, **extras):` |
+| gear | 724 | module | `def gear(ctx, part, center, teeth, module, width, mat, *, axis=UP, bore=None, helix_deg=0, hub_r=None, hub_w=None, spokes=0, **extras):` |
+| ring | 740 | 724:gear | `def ring(z, pts):` |
+| bolt_ring | 776 | module | `def bolt_ring(ctx, part, center, radius, count, axis, mat_head, *, size=.006, head=.004, start=0.0, **extras):` |
+| join | 799 | module | `def join(ctx, objects, part=None, **extras):` |
+| mirror_x | 825 | module | `def mirror_x(ctx, obj, part=None):` |
+| mirror_system | 848 | module | `def mirror_system(ctx, sid):` |
+| both_sides | 880 | module | `def both_sides(fn):` |
+| hexagon | 884 | module | `def hexagon(r):` |
+| rounded_rect | 887 | module | `def rounded_rect(w, h, r, n=4):` |
+| super_ellipse | 895 | module | `def super_ellipse(w, h, n=2.6, seg=32, exp=None):` |
+| shell | 904 | module | `def shell(ctx, part, sections, mat, *, thickness=.004, open_ring=False, **extras):` |
+| flow_ribbon | 910 | module | `def flow_ribbon(ctx, part, points, kind, *, radius=.006, **extras):` |
+| text_plate | 914 | module | `def text_plate(ctx, part, text, center, size, mat, *, normal=FWD, up=UP, depth=.0006, **extras):` |
+| centroid | 930 | module | `def centroid(objs):` |
+| auto_explode | 941 | module | `def auto_explode(ctx, sid, scale=1.0, min_len=.06):` |
+| car_components | 959 | module | `def car_components(source='main_body__01'):` |
+| car_part | 997 | module | `def car_part(ctx, part, mat, *, source='main_body__01', box=None, select=None, smooth_angle=math.radians(45), uv=8, **extras):` |
+| plate | 1017 | module | `def plate(ctx, part, outline, center, thickness, mat, *, normal=FWD, up=UP, bev=.0015, uv=8, **extras):` |
+| P | 1024 | 1017:plate | `def P(u, v, w):` |
+| lado | 1037 | module | `def lado(side, fem=False):` |
+| arc2d | 1043 | module | `def arc2d(cx, cy, r, a0, a1, n=6):` |
+| face_uv_fit | 1047 | module | `def face_uv_fit(obj, normal=FWD, tol=.9):` |
 
 ## ferramentas/sistemas/s01_aero.py
 
@@ -211,7 +240,7 @@ Chamadas são referências sintáticas conservadoras, não rastreamento de execu
 
 | Nome | Linha | Escopo | Assinatura |
 |---|---:|---|---|
-| build | 18 | module | `def build(ctx):` |
+| build | 20 | module | `def build(ctx):` |
 
 ## ferramentas/sistemas/s12_cockpit.py
 
@@ -219,9 +248,9 @@ Chamadas são referências sintáticas conservadoras, não rastreamento de execu
 
 | Nome | Linha | Escopo | Assinatura |
 |---|---:|---|---|
-| strap | 18 | module | `def strap(ctx, name, pts, width=.075):` |
-| build | 21 | module | `def build(ctx):` |
-| seat_section | 25 | 21:build | `def seat_section(t):` |
+| strap | 19 | module | `def strap(ctx, name, pts, width=.075):` |
+| build | 22 | module | `def build(ctx):` |
+| seat_section | 26 | 22:build | `def seat_section(t):` |
 
 ## ferramentas/sistemas/s13_wheel.py
 
@@ -229,7 +258,9 @@ Chamadas são referências sintáticas conservadoras, não rastreamento de execu
 
 | Nome | Linha | Escopo | Assinatura |
 |---|---:|---|---|
-| build | 17 | module | `def build(ctx):` |
+| build | 21 | module | `def build(ctx):` |
+| Q | 25 | 21:build | `def Q(u, v, w=0.0):` |
+| E | 28 | 21:build | `def E(u, v, w):` |
 
 ## ferramentas/sistemas/s14_sensors.py
 
@@ -278,26 +309,33 @@ Chamadas são referências sintáticas conservadoras, não rastreamento de execu
 
 | Nome | Linha | Escopo | Assinatura |
 |---|---:|---|---|
-| $ | 25 | module | `$` |
-| closeEngine | 36 | module | `closeEngine()` |
-| setFlowXray | 38 | module | `setFlowXray(on)` |
-| clone | 39 | 38:setFlowXray | `clone` |
-| moveCamera | 46 | module | `moveCamera(to,target,animate=true)` |
-| setCarSelectionEnabled | 47 | module | `setCarSelectionEnabled(enabled)` |
-| syncSystemMode | 48 | module | `syncSystemMode()` |
-| view | 50 | module | `view(name,animate=true)` |
-| resize | 52 | module | `resize()` |
-| refreshSelection | 54 | module | `refreshSelection()` |
-| select | 55 | module | `select(id)` |
-| focusPart | 56 | module | `focusPart()` |
-| assemblyTo | 57 | module | `assemblyTo(v)` |
-| target | 68 | module | `target()` |
-| showCar | 69 | module | `showCar()` |
-| onClose | 69 | module | `onClose()` |
-| onBeforeToggle | 69 | module | `onBeforeToggle` |
-| onRegion | 69 | module | `onRegion` |
-| onToggle | 69 | module | `onToggle` |
-| showCar | 70 | module | `showCar()` |
+| $ | 27 | module | `$` |
+| closeEngine | 38 | module | `closeEngine()` |
+| setFlowXray | 40 | module | `setFlowXray(on)` |
+| clone | 41 | 40:setFlowXray | `clone` |
+| moveCamera | 48 | module | `moveCamera(to,target,animate=true)` |
+| setCarSelectionEnabled | 49 | module | `setCarSelectionEnabled(enabled)` |
+| syncSystemMode | 50 | module | `syncSystemMode()` |
+| view | 52 | module | `view(name,animate=true)` |
+| resize | 57 | module | `resize()` |
+| refreshSelection | 59 | module | `refreshSelection()` |
+| setupSparesUI | 62 | module | `setupSparesUI()` |
+| setSpareStatus | 68 | module | `setSpareStatus(text)` |
+| showSpareInfo | 69 | module | `showSpareInfo(slotId,variant)` |
+| renderInto | 70 | module | `renderInto(box,info)` |
+| syncSpares | 71 | module | `syncSpares(setup,state)` |
+| renderSelectedInfo | 72 | module | `renderSelectedInfo(info)` |
+| select | 73 | module | `select(id)` |
+| focusPart | 74 | module | `focusPart()` |
+| assemblyTo | 75 | module | `assemblyTo(v)` |
+| target | 86 | module | `target()` |
+| showCar | 87 | module | `showCar()` |
+| onClose | 87 | module | `onClose()` |
+| onBeforeToggle | 87 | module | `onBeforeToggle` |
+| onRegion | 87 | module | `onRegion` |
+| onToggle | 87 | module | `onToggle` |
+| showCar | 88 | module | `showCar()` |
+| systemsSpreadTo | 104 | module | `systemsSpreadTo(v)` |
 
 ## web/src/branding.js
 
@@ -482,6 +520,16 @@ Chamadas são referências sintáticas conservadoras, não rastreamento de execu
 | reset | 64 | 3:createMechanics | `reset()` |
 | update | 65 | 3:createMechanics | `update(dt,now,reduced)` |
 
+## web/src/parts-info.js
+
+[Fonte](../../web/src/parts-info.js)
+
+| Nome | Linha | Escopo | Assinatura |
+|---|---:|---|---|
+| R | 6 | module | `R(pattern, funcao, curiosidade)` |
+| describePart | 361 | module | `describePart(part, systemId)` |
+| describeCarPart | 442 | module | `describeCarPart(label, category)` |
+
 ## web/src/senna-driver.js
 
 [Fonte](../../web/src/senna-driver.js)
@@ -502,6 +550,28 @@ Chamadas são referências sintáticas conservadoras, não rastreamento de execu
 | setFit | 69 | 6:createSennaDriver | `setFit(values)` |
 | update | 69 | 6:createSennaDriver | `update()` |
 | dispose | 69 | 6:createSennaDriver | `dispose()` |
+
+## web/src/spares.js
+
+[Fonte](../../web/src/spares.js)
+
+| Nome | Linha | Escopo | Assinatura |
+|---|---:|---|---|
+| createSpares | 48 | module | `createSpares({model,mechanics,assetUrl=SPARES_ASSET,onChange=()=>{}}={})` |
+| targetObject | 55 | 48:createSpares | `targetObject` |
+| load | 57 | 48:createSpares | `load()` |
+| remember | 64 | 48:createSpares | `remember(target)` |
+| revert | 66 | 48:createSpares | `revert(slot)` |
+| applySlot | 71 | 48:createSpares | `applySlot(slot,variant)` |
+| set | 83 | 48:createSpares | `set(slot,variant)` |
+| preset | 92 | 48:createSpares | `preset(id)` |
+| presetMatching | 94 | 48:createSpares | `presetMatching()` |
+| describe | 98 | 48:createSpares | `describe(slot,variant)` |
+| setup | 99 | 48:createSpares | `setup()` |
+| state | 99 | 48:createSpares | `state()` |
+| ready | 99 | 48:createSpares | `ready()` |
+| reset | 100 | 48:createSpares | `reset()` |
+| dispose | 101 | 48:createSpares | `dispose()` |
 
 ## web/src/studio.js
 
@@ -542,68 +612,74 @@ Chamadas são referências sintáticas conservadoras, não rastreamento de execu
 
 | Nome | Linha | Escopo | Assinatura |
 |---|---:|---|---|
-| advanceLocalSpin | 31 | module | `advanceLocalSpin(quaternion,axis='y',angle=0)` |
-| flowTexture | 34 | module | `flowTexture()` |
-| createSystems | 42 | module | `createSystems({scene,model,mechanics,engine,driver,garage,camera,canvas,moveCamera,showCar=()=>{},onClose=showCar,mobile=false,assetUrl=SYSTEMS_ASSET})` |
-| onVisibilityChange | 50 | 42:createSystems | `onVisibilityChange()` |
-| meta | 52 | 42:createSystems | `meta` |
-| flowMaterial | 57 | 42:createSystems | `flowMaterial` |
-| cardFor | 66 | 42:createSystems | `cardFor` |
-| logicalPartCount | 67 | 42:createSystems | `logicalPartCount` |
-| syncView | 68 | 42:createSystems | `syncView` |
-| setStatus | 69 | 42:createSystems | `setStatus` |
-| attachPart | 72 | 42:createSystems | `attachPart(mesh,systemId,logicalOwner=mesh.uuid)` |
-| prepareMaterials | 84 | 42:createSystems | `prepareMaterials(sceneRoot)` |
-| distribute | 93 | 42:createSystems | `distribute(gltf)` |
-| ownerId | 95 | 93:distribute | `ownerId` |
-| load | 110 | 42:createSystems | `load()` |
-| applyEra | 125 | 42:createSystems | `applyEra()` |
-| applyCovers | 126 | 42:createSystems | `applyCovers()` |
-| applyExplode | 127 | 42:createSystems | `applyExplode()` |
-| translucentOf | 129 | 42:createSystems | `translucentOf` |
-| materialFor | 130 | 42:createSystems | `materialFor(entry)` |
-| applyFlows | 131 | 42:createSystems | `applyFlows()` |
-| applySchematic | 132 | 42:createSystems | `applySchematic()` |
-| highlight | 134 | 42:createSystems | `highlight(entry,on)` |
-| setPicked | 141 | 42:createSystems | `setPicked(entry)` |
-| setERSContext | 143 | 42:createSystems | `setERSContext(mode)` |
-| updateUI | 144 | 42:createSystems | `updateUI(id=active)` |
-| objectFor | 149 | 42:createSystems | `objectFor(id)` |
-| geometryBounds | 150 | 42:createSystems | `geometryBounds(object)` |
-| viewportAspect | 151 | 42:createSystems | `viewportAspect()` |
-| frame | 153 | 42:createSystems | `frame(id,direction=directions[currentView],animate=true)` |
-| show | 154 | 42:createSystems | `show(id='overview',animate=true)` |
-| view | 155 | 42:createSystems | `view(name)` |
-| captureGhost | 156 | 42:createSystems | `captureGhost()` |
-| cloneMaterial | 156 | 156:captureGhost | `cloneMaterial` |
-| setGhost | 157 | 42:createSystems | `setGhost(on)` |
-| setEnabled | 158 | 42:createSystems | `setEnabled(on)` |
-| onPointerDown | 162 | 42:createSystems | `onPointerDown` |
-| onPointerUp | 163 | 42:createSystems | `onPointerUp` |
-| onSystemClick | 165 | 42:createSystems | `onSystemClick` |
-| onSystemKey | 166 | 42:createSystems | `onSystemKey` |
-| onOverviewClick | 167 | 42:createSystems | `onOverviewClick()` |
-| onBackClick | 168 | 42:createSystems | `onBackClick()` |
-| onContextToggle | 169 | 42:createSystems | `onContextToggle()` |
-| onFlows | 170 | 42:createSystems | `onFlows()` |
-| onCovers | 171 | 42:createSystems | `onCovers()` |
-| onSchematic | 172 | 42:createSystems | `onSchematic()` |
-| onGhost | 173 | 42:createSystems | `onGhost()` |
-| onExplode | 174 | 42:createSystems | `onExplode()` |
-| deactivate | 183 | 42:createSystems | `deactivate()` |
-| setPaused | 183 | 42:createSystems | `setPaused(value)` |
-| reset | 183 | 42:createSystems | `reset()` |
-| setRevealInExplode | 184 | 42:createSystems | `setRevealInExplode(value)` |
-| active | 185 | 42:createSystems | `active()` |
-| enabled | 185 | 42:createSystems | `enabled()` |
-| state | 185 | 42:createSystems | `state()` |
-| ready | 185 | 42:createSystems | `ready()` |
-| revealing | 185 | 42:createSystems | `revealing()` |
-| context | 185 | 42:createSystems | `context()` |
-| parts | 185 | 42:createSystems | `parts()` |
-| paused | 185 | 42:createSystems | `paused()` |
-| update | 186 | 42:createSystems | `update(dt,now=performance.now()/1000)` |
-| dispose | 201 | 42:createSystems | `dispose()` |
+| advanceLocalSpin | 32 | module | `advanceLocalSpin(quaternion,axis='y',angle=0)` |
+| flowTexture | 35 | module | `flowTexture()` |
+| createSystems | 43 | module | `createSystems({scene,model,mechanics,engine,driver,garage,camera,canvas,moveCamera,showCar=()=>{},onClose=showCar,mobile=false,assetUrl=SYSTEMS_ASSET})` |
+| onVisibilityChange | 51 | 43:createSystems | `onVisibilityChange()` |
+| meta | 53 | 43:createSystems | `meta` |
+| flowMaterial | 58 | 43:createSystems | `flowMaterial` |
+| cardFor | 67 | 43:createSystems | `cardFor` |
+| logicalPartCount | 68 | 43:createSystems | `logicalPartCount` |
+| syncView | 69 | 43:createSystems | `syncView` |
+| setStatus | 70 | 43:createSystems | `setStatus` |
+| attachPart | 73 | 43:createSystems | `attachPart(mesh,systemId,logicalOwner=mesh.uuid)` |
+| prepareMaterials | 85 | 43:createSystems | `prepareMaterials(sceneRoot)` |
+| distribute | 94 | 43:createSystems | `distribute(gltf)` |
+| ownerId | 96 | 94:distribute | `ownerId` |
+| load | 111 | 43:createSystems | `load()` |
+| applyEra | 126 | 43:createSystems | `applyEra()` |
+| applyCovers | 127 | 43:createSystems | `applyCovers()` |
+| applyExplode | 130 | 43:createSystems | `applyExplode()` |
+| translucentOf | 138 | 43:createSystems | `translucentOf` |
+| materialFor | 139 | 43:createSystems | `materialFor(entry)` |
+| applyFlows | 140 | 43:createSystems | `applyFlows()` |
+| applySchematic | 141 | 43:createSystems | `applySchematic()` |
+| highlight | 143 | 43:createSystems | `highlight(entry,on)` |
+| setPicked | 150 | 43:createSystems | `setPicked(entry)` |
+| setERSContext | 164 | 43:createSystems | `setERSContext(mode)` |
+| updateUI | 165 | 43:createSystems | `updateUI(id=active)` |
+| objectFor | 170 | 43:createSystems | `objectFor(id)` |
+| geometryBounds | 171 | 43:createSystems | `geometryBounds(object)` |
+| viewportAspect | 172 | 43:createSystems | `viewportAspect()` |
+| dirFor | 175 | 43:createSystems | `dirFor(id,name)` |
+| frame | 176 | 43:createSystems | `frame(id,direction=dirFor(id,currentView),animate=true)` |
+| show | 177 | 43:createSystems | `show(id='overview',animate=true)` |
+| view | 178 | 43:createSystems | `view(name)` |
+| captureGhost | 179 | 43:createSystems | `captureGhost()` |
+| cloneMaterial | 179 | 179:captureGhost | `cloneMaterial` |
+| setGhost | 180 | 43:createSystems | `setGhost(on)` |
+| setEnabled | 181 | 43:createSystems | `setEnabled(on)` |
+| onPointerDown | 185 | 43:createSystems | `onPointerDown` |
+| pickFromEvent | 186 | 43:createSystems | `pickFromEvent(event)` |
+| onPointerUp | 187 | 43:createSystems | `onPointerUp` |
+| onSystemClick | 189 | 43:createSystems | `onSystemClick` |
+| onSystemKey | 190 | 43:createSystems | `onSystemKey` |
+| onOverviewClick | 191 | 43:createSystems | `onOverviewClick()` |
+| onBackClick | 192 | 43:createSystems | `onBackClick()` |
+| onContextToggle | 193 | 43:createSystems | `onContextToggle()` |
+| onFlows | 194 | 43:createSystems | `onFlows()` |
+| onCovers | 195 | 43:createSystems | `onCovers()` |
+| onSchematic | 196 | 43:createSystems | `onSchematic()` |
+| onGhost | 197 | 43:createSystems | `onGhost()` |
+| onExplode | 198 | 43:createSystems | `onExplode()` |
+| deactivate | 207 | 43:createSystems | `deactivate()` |
+| setPaused | 207 | 43:createSystems | `setPaused(value)` |
+| reset | 207 | 43:createSystems | `reset()` |
+| clearPick | 207 | 43:createSystems | `clearPick()` |
+| systemLabel | 207 | 43:createSystems | `systemLabel(id)` |
+| setSpread | 207 | 43:createSystems | `setSpread(value)` |
+| spread | 207 | 43:createSystems | `spread()` |
+| setRevealInExplode | 208 | 43:createSystems | `setRevealInExplode(value)` |
+| active | 209 | 43:createSystems | `active()` |
+| enabled | 209 | 43:createSystems | `enabled()` |
+| state | 209 | 43:createSystems | `state()` |
+| ready | 209 | 43:createSystems | `ready()` |
+| revealing | 209 | 43:createSystems | `revealing()` |
+| context | 209 | 43:createSystems | `context()` |
+| parts | 209 | 43:createSystems | `parts()` |
+| paused | 209 | 43:createSystems | `paused()` |
+| update | 210 | 43:createSystems | `update(dt,now=performance.now()/1000)` |
+| dispose | 225 | 43:createSystems | `dispose()` |
 
 ## web/src/tunnel-visual.js
 
@@ -671,12 +747,21 @@ Chamadas são referências sintáticas conservadoras, não rastreamento de execu
 | createElement | 6 | module | `createElement()` |
 | getContext | 6 | 6:createElement | `getContext()` |
 
+## web/test-spares.mjs
+
+[Fonte](../../web/test-spares.mjs)
+
+| Nome | Linha | Escopo | Assinatura |
+|---|---:|---|---|
+| read | 6 | module | `read(path)` |
+| near | 41 | module | `near(entry, box, tol = .06)` |
+
 ## web/test-systems.mjs
 
 [Fonte](../../web/test-systems.mjs)
 
 | Nome | Linha | Escopo | Assinatura |
 |---|---:|---|---|
-| nodesOf | 88 | module | `nodesOf(id)` |
-| find | 89 | module | `find(id, pattern)` |
-| center | 90 | module | `center(node)` |
+| nodesOf | 89 | module | `nodesOf(id)` |
+| find | 90 | module | `find(id, pattern)` |
+| center | 91 | module | `center(node)` |

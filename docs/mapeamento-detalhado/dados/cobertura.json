@@ -1,13 +1,15 @@
 {
-  "captured_at": "2026-09-16T15:26:58.560377+00:00",
-  "revision": "40c75c6a1a3fe70df654c1277870af28398d9fad",
+  "captured_at": "2026-09-17T03:18:39.892085+00:00",
+  "revision": "0d86aec2cdb9e776f6b126f0b8a9ef29a9a8d325",
   "initial_revision": "1ae4fd15062d347dc8462af8f4db33c749e6575b",
-  "branch": "main",
-  "status": "M docs/mapeamento-detalhado/dados/catalogo.json\n M docs/mapeamento-detalhado/dados/cobertura.json\n M docs/mapeamento-detalhado/dados/grafo.json\n M docs/mapeamento-detalhado/index.html\n M graphify-out/GRAPH_REPORT.md\n M graphify-out/graph.html\n M graphify-out/graph.json",
-  "catalog_count": 214,
-  "bytes": 221349008,
+  "branch": "deploy-somente-chatgpt-sites",
+  "status": "D  .github/workflows/verify.yml\n M docs/PUBLICACAO.md\n M docs/mapas/GRAFOS.md\n M docs/mapas/INVENTARIO.md\n M docs/mapas/MODULOS.md\n M docs/mapas/PRODUCAO.md\n M docs/mapas/VERIFICACAO.md\n M docs/mapas/cobertura.json\n M docs/mapas/controles.json\n M docs/mapas/dependencias.json\n M docs/mapas/index.html\n M docs/mapas/inventario.json\n M docs/mapeamento-detalhado/ARVORE.md\n M docs/mapeamento-detalhado/CATALOGO.md\n M docs/mapeamento-detalhado/FUNCOES.md\n M docs/mapeamento-detalhado/dados/catalogo.csv\n M docs/mapeamento-detalhado/dados/catalogo.json\n M docs/mapeamento-detalhado/dados/cobertura.json\n M docs/mapeamento-detalhado/dados/grafo.json\n M docs/mapeamento-detalhado/dados/manifesto-conferencia.json\n M docs/mapeamento-detalhado/dados/simbolos.json\n M docs/mapeamento-detalhado/grafos/arquitetura.json\n M docs/mapeamento-detalhado/grafos/arquitetura.mmd\n M docs/mapeamento-detalhado/grafos/assets.json\n M docs/mapeamento-detalhado/grafos/assets.mmd\n M docs/mapeamento-detalhado/index.html\n M docs/mapeamento-detalhado/scripts/finalidades.json\n M docs/mapeamento-detalhado/scripts/gerar.py",
+  "catalog_count": 236,
+  "bytes": 240334190,
   "baseline_files": 69,
-  "baseline_missing": [],
+  "baseline_missing": [
+    ".github/workflows/verify.yml"
+  ],
   "unclassified": [],
   "excluded": [
     {
@@ -42,12 +44,12 @@
   "scope": "Somente C:\\Users\\IgorPC\\.claude\\projects\\Site aula mota\\INTEIA-laboratorio-3d",
   "own_delivery": "dados/entrega.json",
   "parallel_thread": "01a09849-3de3-7dc2-bd60-06a9b58be580",
-  "symbols": 374,
+  "symbols": 431,
   "symbol_parse_errors": [],
   "unresolved_local_imports": [],
-  "edges": 1496,
-  "nodes": 613,
+  "edges": 1846,
+  "nodes": 692,
   "confidence_counts": {
-    "EXTRACTED": 1496
+    "EXTRACTED": 1846
   }
 }

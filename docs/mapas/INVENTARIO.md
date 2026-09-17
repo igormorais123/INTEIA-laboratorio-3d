@@ -10,22 +10,20 @@ Gerado por `python ferramentas/mapear.py`. Todos os arquivos do escopo estão li
 | [.cursor/rules/chisle.mdc](../../.cursor/rules/chisle.mdc) | configuração ou infraestrutura | 2362 |
 | [.gitattributes](../../.gitattributes) | configuração ou infraestrutura | 274 |
 | [.github/copilot-instructions.md](../../.github/copilot-instructions.md) | documentação | 2278 |
-| [.github/workflows/verify.yml](../../.github/workflows/verify.yml) | configuração ou infraestrutura | 642 |
 | [.gitignore](../../.gitignore) | configuração ou infraestrutura | 551 |
 | [.graphifyignore](../../.graphifyignore) | configuração ou infraestrutura | 449 |
-| [.nojekyll](../../.nojekyll) | configuração ou infraestrutura | 0 |
 | [.planning/ai/project-index.json](../../.planning/ai/project-index.json) | configuração ou infraestrutura | 2997 |
 | [.planning/architecture/system-architecture.html](../../.planning/architecture/system-architecture.html) | documentação | 623463 |
 | [.planning/architecture/system.architecture.json](../../.planning/architecture/system.architecture.json) | configuração ou infraestrutura | 8454 |
 | [00_INDICE_IA.md](../../00_INDICE_IA.md) | documentação | 1794 |
-| [AGENTS.md](../../AGENTS.md) | documentação | 1867 |
-| [CHANGELOG.md](../../CHANGELOG.md) | documentação | 1770 |
+| [AGENTS.md](../../AGENTS.md) | documentação | 2039 |
+| [CHANGELOG.md](../../CHANGELOG.md) | documentação | 2047 |
 | [CONTRIBUTING.md](../../CONTRIBUTING.md) | documentação | 1031 |
 | [INTEIA_F1_Master.blend](../../INTEIA_F1_Master.blend) | entrega editável Blender | 23815409 |
 | [LEIA-ME.md](../../LEIA-ME.md) | documentação | 284 |
 | [LICENSE](../../LICENSE) | licença ou procedência | 920 |
 | [Previa-Blender.png](../../Previa-Blender.png) | prévia histórica | 695174 |
-| [README.md](../../README.md) | documentação | 6081 |
+| [README.md](../../README.md) | documentação | 6133 |
 | [THIRD-PARTY-NOTICES.md](../../THIRD-PARTY-NOTICES.md) | licença ou procedência | 861 |
 | [ambientes/INTEIA-box-laboratorio.glb](../../ambientes/INTEIA-box-laboratorio.glb) | entrega GLB | 10302288 |
 | [ambientes/INTEIA_Box_com_carro.blend](../../ambientes/INTEIA_Box_com_carro.blend) | entrega editável Blender | 24679287 |
@@ -39,24 +37,25 @@ Gerado por `python ferramentas/mapear.py`. Todos os arquivos do escopo estão li
 | [docs/BOX-LABORATORIO.md](../../docs/BOX-LABORATORIO.md) | documentação | 4670 |
 | [docs/DESENVOLVIMENTO.md](../../docs/DESENVOLVIMENTO.md) | documentação | 4011 |
 | [docs/DIREITOS-E-PROCEDENCIA.md](../../docs/DIREITOS-E-PROCEDENCIA.md) | licença ou procedência | 1581 |
-| [docs/ESPECIFICACAO-ASSET-3D-SISTEMAS-F1.md](../../docs/ESPECIFICACAO-ASSET-3D-SISTEMAS-F1.md) | documentação | 27108 |
+| [docs/ESPECIFICACAO-ASSET-3D-SISTEMAS-F1.md](../../docs/ESPECIFICACAO-ASSET-3D-SISTEMAS-F1.md) | documentação | 27083 |
 | [docs/INTEGRACAO-MOTOR.md](../../docs/INTEGRACAO-MOTOR.md) | documentação | 2096 |
 | [docs/INTEGRACAO.md](../../docs/INTEGRACAO.md) | documentação | 2578 |
 | [docs/OUTRO-PC.md](../../docs/OUTRO-PC.md) | documentação | 2281 |
 | [docs/PILOTO-E-CAPACETE.md](../../docs/PILOTO-E-CAPACETE.md) | documentação | 3159 |
-| [docs/PUBLICACAO.md](../../docs/PUBLICACAO.md) | documentação | 3001 |
-| [docs/README.md](../../docs/README.md) | documentação | 2872 |
+| [docs/PUBLICACAO.md](../../docs/PUBLICACAO.md) | documentação | 4477 |
+| [docs/README.md](../../docs/README.md) | documentação | 3070 |
 | [docs/REVISAO-TUNEL-VISUAL.md](../../docs/REVISAO-TUNEL-VISUAL.md) | documentação | 4051 |
-| [docs/SISTEMAS-3D.md](../../docs/SISTEMAS-3D.md) | documentação | 7133 |
+| [docs/SISTEMAS-3D.md](../../docs/SISTEMAS-3D.md) | documentação | 8042 |
+| [docs/SOBRESSALENTES.md](../../docs/SOBRESSALENTES.md) | documentação | 3579 |
 | [docs/VALIDACAO.md](../../docs/VALIDACAO.md) | documentação | 2128 |
 | [docs/mapas/GRAFOS.md](../../docs/mapas/GRAFOS.md) | mapa gerado | — |
 | [docs/mapas/INVENTARIO.md](../../docs/mapas/INVENTARIO.md) | mapa gerado | — |
 | [docs/mapas/MANUTENCAO.md](../../docs/mapas/MANUTENCAO.md) | documentação | 6127 |
-| [docs/mapas/MODULOS.md](../../docs/mapas/MODULOS.md) | documentação | 8775 |
-| [docs/mapas/PRODUCAO.md](../../docs/mapas/PRODUCAO.md) | documentação | 17713 |
-| [docs/mapas/README.md](../../docs/mapas/README.md) | documentação | 3528 |
+| [docs/mapas/MODULOS.md](../../docs/mapas/MODULOS.md) | documentação | 8831 |
+| [docs/mapas/PRODUCAO.md](../../docs/mapas/PRODUCAO.md) | documentação | 17498 |
+| [docs/mapas/README.md](../../docs/mapas/README.md) | documentação | 3456 |
 | [docs/mapas/REUSO.md](../../docs/mapas/REUSO.md) | documentação | 16017 |
-| [docs/mapas/VERIFICACAO.md](../../docs/mapas/VERIFICACAO.md) | documentação | 3816 |
+| [docs/mapas/VERIFICACAO.md](../../docs/mapas/VERIFICACAO.md) | documentação | 3817 |
 | [docs/mapas/cobertura.json](../../docs/mapas/cobertura.json) | mapa gerado | — |
 | [docs/mapas/componentes.json](../../docs/mapas/componentes.json) | mapa gerado | — |
 | [docs/mapas/controles.json](../../docs/mapas/controles.json) | mapa gerado | — |
@@ -67,7 +66,7 @@ Gerado por `python ferramentas/mapear.py`. Todos os arquivos do escopo estão li
 | [docs/mapeamento-detalhado/.gitignore](../../docs/mapeamento-detalhado/.gitignore) | configuração ou infraestrutura | 52 |
 | [docs/mapeamento-detalhado/ARVORE.md](../../docs/mapeamento-detalhado/ARVORE.md) | mapa gerado | — |
 | [docs/mapeamento-detalhado/ASSETS-E-PROCEDENCIA.md](../../docs/mapeamento-detalhado/ASSETS-E-PROCEDENCIA.md) | documentação | 39146 |
-| [docs/mapeamento-detalhado/ATUALIZAR.md](../../docs/mapeamento-detalhado/ATUALIZAR.md) | documentação | 7246 |
+| [docs/mapeamento-detalhado/ATUALIZAR.md](../../docs/mapeamento-detalhado/ATUALIZAR.md) | documentação | 7244 |
 | [docs/mapeamento-detalhado/CATALOGO.md](../../docs/mapeamento-detalhado/CATALOGO.md) | mapa gerado | — |
 | [docs/mapeamento-detalhado/FUNCOES.md](../../docs/mapeamento-detalhado/FUNCOES.md) | mapa gerado | — |
 | [docs/mapeamento-detalhado/GRAFOS.md](../../docs/mapeamento-detalhado/GRAFOS.md) | documentação | 6139 |
@@ -99,8 +98,8 @@ Gerado por `python ferramentas/mapear.py`. Todos os arquivos do escopo estão li
 | [docs/mapeamento-detalhado/grafos/dados.json](../../docs/mapeamento-detalhado/grafos/dados.json) | mapa gerado | — |
 | [docs/mapeamento-detalhado/grafos/dados.mmd](../../docs/mapeamento-detalhado/grafos/dados.mmd) | mapa gerado | — |
 | [docs/mapeamento-detalhado/index.html](../../docs/mapeamento-detalhado/index.html) | mapa gerado | — |
-| [docs/mapeamento-detalhado/scripts/finalidades.json](../../docs/mapeamento-detalhado/scripts/finalidades.json) | configuração ou infraestrutura | 20882 |
-| [docs/mapeamento-detalhado/scripts/gerar.py](../../docs/mapeamento-detalhado/scripts/gerar.py) | configuração ou infraestrutura | 26612 |
+| [docs/mapeamento-detalhado/scripts/finalidades.json](../../docs/mapeamento-detalhado/scripts/finalidades.json) | configuração ou infraestrutura | 22142 |
+| [docs/mapeamento-detalhado/scripts/gerar.py](../../docs/mapeamento-detalhado/scripts/gerar.py) | configuração ou infraestrutura | 26680 |
 | [docs/mapeamento-detalhado/scripts/interface.html](../../docs/mapeamento-detalhado/scripts/interface.html) | documentação | 16420 |
 | [docs/mapeamento-detalhado/scripts/validar.py](../../docs/mapeamento-detalhado/scripts/validar.py) | configuração ou infraestrutura | 6177 |
 | [docs/mapeamento-detalhado/scripts/verificar-app.mjs](../../docs/mapeamento-detalhado/scripts/verificar-app.mjs) | configuração ou infraestrutura | 4621 |
@@ -110,6 +109,7 @@ Gerado por `python ferramentas/mapear.py`. Todos os arquivos do escopo estão li
 | [documentacao/componentes-origem.json](../../documentacao/componentes-origem.json) | metadados de procedência | 78871 |
 | [documentacao/historico-avaliacoes.md](../../documentacao/historico-avaliacoes.md) | documentação | 5659 |
 | [ferramentas/gerar_sistemas.py](../../ferramentas/gerar_sistemas.py) | ferramenta editável | 14534 |
+| [ferramentas/gerar_sobressalentes.py](../../ferramentas/gerar_sobressalentes.py) | ferramenta editável | 16085 |
 | [ferramentas/manifest.cjs](../../ferramentas/manifest.cjs) | ferramenta editável | 1017 |
 | [ferramentas/mapa-template.html](../../ferramentas/mapa-template.html) | documentação | 11578 |
 | [ferramentas/mapear.py](../../ferramentas/mapear.py) | ferramenta editável | 22269 |
@@ -165,13 +165,15 @@ Gerado por `python ferramentas/mapear.py`. Todos os arquivos do escopo estão li
 | [web/assets/power-unit-v1.manifest.json](../../web/assets/power-unit-v1.manifest.json) | configuração ou infraestrutura | 1756 |
 | [web/assets/sistemas-v1.glb](../../web/assets/sistemas-v1.glb) | entrega GLB | 6973812 |
 | [web/assets/sistemas-v1.manifest.json](../../web/assets/sistemas-v1.manifest.json) | configuração ou infraestrutura | 409997 |
+| [web/assets/sobressalentes-v1.glb](../../web/assets/sobressalentes-v1.glb) | entrega GLB | 3922704 |
+| [web/assets/sobressalentes-v1.manifest.json](../../web/assets/sobressalentes-v1.manifest.json) | configuração ou infraestrutura | 10307 |
 | [web/build.cjs](../../web/build.cjs) | configuração ou infraestrutura | 1130 |
-| [web/index.html](../../web/index.html) | aplicação gerada | 4458380 |
+| [web/index.html](../../web/index.html) | aplicação gerada | 4478776 |
 | [web/package-lock.json](../../web/package-lock.json) | configuração ou infraestrutura | 15003 |
-| [web/package.json](../../web/package.json) | configuração ou infraestrutura | 535 |
+| [web/package.json](../../web/package.json) | configuração ou infraestrutura | 559 |
 | [web/server.cjs](../../web/server.cjs) | configuração ou infraestrutura | 2026 |
 | [web/src/aero-physics.mjs](../../web/src/aero-physics.mjs) | fonte web editável | 1377 |
-| [web/src/app-v2.js](../../web/src/app-v2.js) | fonte web editável | 24289 |
+| [web/src/app-v2.js](../../web/src/app-v2.js) | fonte web editável | 29574 |
 | [web/src/branding.js](../../web/src/branding.js) | fonte web editável | 4155 |
 | [web/src/car-look.js](../../web/src/car-look.js) | fonte web editável | 19008 |
 | [web/src/customize.js](../../web/src/customize.js) | fonte web editável | 3041 |
@@ -180,14 +182,15 @@ Gerado por `python ferramentas/mapear.py`. Todos os arquivos do escopo estão li
 | [web/src/flow-detail.js](../../web/src/flow-detail.js) | fonte web editável | 4610 |
 | [web/src/garage.js](../../web/src/garage.js) | fonte web editável | 16633 |
 | [web/src/helmet-1991.js](../../web/src/helmet-1991.js) | fonte web editável | 9068 |
-| [web/src/identity.js](../../web/src/identity.js) | fonte web editável | 2244 |
+| [web/src/identity.js](../../web/src/identity.js) | fonte web editável | 2423 |
 | [web/src/mechanics.js](../../web/src/mechanics.js) | fonte web editável | 7149 |
-| [web/src/parts-info.js](../../web/src/parts-info.js) | fonte web editável | 53026 |
+| [web/src/parts-info.js](../../web/src/parts-info.js) | fonte web editável | 62496 |
 | [web/src/senna-driver.js](../../web/src/senna-driver.js) | fonte web editável | 7795 |
+| [web/src/spares.js](../../web/src/spares.js) | fonte web editável | 9845 |
 | [web/src/studio.js](../../web/src/studio.js) | fonte web editável | 10517 |
 | [web/src/surface-library.js](../../web/src/surface-library.js) | fonte web editável | 6989 |
-| [web/src/systems.js](../../web/src/systems.js) | fonte web editável | 33660 |
-| [web/src/template-v2.html](../../web/src/template-v2.html) | fonte web editável | 38141 |
+| [web/src/systems.js](../../web/src/systems.js) | fonte web editável | 34653 |
+| [web/src/template-v2.html](../../web/src/template-v2.html) | fonte web editável | 37170 |
 | [web/src/tunnel-visual.js](../../web/src/tunnel-visual.js) | fonte web editável | 6325 |
 | [web/src/wind-tunnel.js](../../web/src/wind-tunnel.js) | fonte web editável | 8411 |
 | [web/src/workbench.js](../../web/src/workbench.js) | fonte web editável | 7214 |
@@ -195,7 +198,8 @@ Gerado por `python ferramentas/mapear.py`. Todos os arquivos do escopo estão li
 | [web/test-driver-model.mjs](../../web/test-driver-model.mjs) | teste | 1688 |
 | [web/test-mechanics.mjs](../../web/test-mechanics.mjs) | teste | 3930 |
 | [web/test-power-unit.mjs](../../web/test-power-unit.mjs) | teste | 2245 |
-| [web/test-systems.mjs](../../web/test-systems.mjs) | teste | 14459 |
+| [web/test-spares.mjs](../../web/test-spares.mjs) | teste | 4381 |
+| [web/test-systems.mjs](../../web/test-systems.mjs) | teste | 15533 |
 
 ## Símbolos declarados
 
@@ -231,6 +235,16 @@ Gerado por `python ferramentas/mapear.py`. Todos os arquivos do escopo estão li
 | `write_manifest` | [ferramentas/gerar_sistemas.py:184](../../ferramentas/gerar_sistemas.py#L184) |
 | `light` | [ferramentas/gerar_sistemas.py:230](../../ferramentas/gerar_sistemas.py#L230) |
 | `frame` | [ferramentas/gerar_sistemas.py:248](../../ferramentas/gerar_sistemas.py#L248) |
+| `surface_y` | [ferramentas/gerar_sobressalentes.py:54](../../ferramentas/gerar_sobressalentes.py#L54) |
+| `spare` | [ferramentas/gerar_sobressalentes.py:61](../../ferramentas/gerar_sobressalentes.py#L61) |
+| `tyre_profile` | [ferramentas/gerar_sobressalentes.py:93](../../ferramentas/gerar_sobressalentes.py#L93) |
+| `tyre_texture` | [ferramentas/gerar_sobressalentes.py:98](../../ferramentas/gerar_sobressalentes.py#L98) |
+| `build_tyre` | [ferramentas/gerar_sobressalentes.py:138](../../ferramentas/gerar_sobressalentes.py#L138) |
+| `wing_section` | [ferramentas/gerar_sobressalentes.py:174](../../ferramentas/gerar_sobressalentes.py#L174) |
+| `span_loft` | [ferramentas/gerar_sobressalentes.py:187](../../ferramentas/gerar_sobressalentes.py#L187) |
+| `fw_at` | [ferramentas/gerar_sobressalentes.py:214](../../ferramentas/gerar_sobressalentes.py#L214) |
+| `sec` | [ferramentas/gerar_sobressalentes.py:225](../../ferramentas/gerar_sobressalentes.py#L225) |
+| `bbox_web` | [ferramentas/gerar_sobressalentes.py:265](../../ferramentas/gerar_sobressalentes.py#L265) |
 | `is_generated` | [ferramentas/mapear.py:41](../../ferramentas/mapear.py#L41) |
 | `read` | [ferramentas/mapear.py:45](../../ferramentas/mapear.py#L45) |
 | `line_of` | [ferramentas/mapear.py:49](../../ferramentas/mapear.py#L49) |
@@ -363,17 +377,24 @@ Gerado por `python ferramentas/mapear.py`. Todos os arquivos do escopo estão li
 | `replaceRequired` | [web/build.cjs:8](../../web/build.cjs#L8) |
 | `reply` | [web/server.cjs:17](../../web/server.cjs#L17) |
 | `aerodynamicTest` | [web/src/aero-physics.mjs:2](../../web/src/aero-physics.mjs#L2) |
-| `closeEngine` | [web/src/app-v2.js:36](../../web/src/app-v2.js#L36) |
-| `setFlowXray` | [web/src/app-v2.js:38](../../web/src/app-v2.js#L38) |
-| `moveCamera` | [web/src/app-v2.js:46](../../web/src/app-v2.js#L46) |
-| `setCarSelectionEnabled` | [web/src/app-v2.js:47](../../web/src/app-v2.js#L47) |
-| `syncSystemMode` | [web/src/app-v2.js:48](../../web/src/app-v2.js#L48) |
-| `view` | [web/src/app-v2.js:50](../../web/src/app-v2.js#L50) |
-| `resize` | [web/src/app-v2.js:52](../../web/src/app-v2.js#L52) |
-| `refreshSelection` | [web/src/app-v2.js:54](../../web/src/app-v2.js#L54) |
-| `select` | [web/src/app-v2.js:55](../../web/src/app-v2.js#L55) |
-| `focusPart` | [web/src/app-v2.js:56](../../web/src/app-v2.js#L56) |
-| `assemblyTo` | [web/src/app-v2.js:57](../../web/src/app-v2.js#L57) |
+| `closeEngine` | [web/src/app-v2.js:38](../../web/src/app-v2.js#L38) |
+| `setFlowXray` | [web/src/app-v2.js:40](../../web/src/app-v2.js#L40) |
+| `moveCamera` | [web/src/app-v2.js:48](../../web/src/app-v2.js#L48) |
+| `setCarSelectionEnabled` | [web/src/app-v2.js:49](../../web/src/app-v2.js#L49) |
+| `syncSystemMode` | [web/src/app-v2.js:50](../../web/src/app-v2.js#L50) |
+| `view` | [web/src/app-v2.js:52](../../web/src/app-v2.js#L52) |
+| `resize` | [web/src/app-v2.js:57](../../web/src/app-v2.js#L57) |
+| `refreshSelection` | [web/src/app-v2.js:59](../../web/src/app-v2.js#L59) |
+| `setupSparesUI` | [web/src/app-v2.js:62](../../web/src/app-v2.js#L62) |
+| `setSpareStatus` | [web/src/app-v2.js:68](../../web/src/app-v2.js#L68) |
+| `showSpareInfo` | [web/src/app-v2.js:69](../../web/src/app-v2.js#L69) |
+| `renderInto` | [web/src/app-v2.js:70](../../web/src/app-v2.js#L70) |
+| `syncSpares` | [web/src/app-v2.js:71](../../web/src/app-v2.js#L71) |
+| `renderSelectedInfo` | [web/src/app-v2.js:72](../../web/src/app-v2.js#L72) |
+| `select` | [web/src/app-v2.js:73](../../web/src/app-v2.js#L73) |
+| `focusPart` | [web/src/app-v2.js:74](../../web/src/app-v2.js#L74) |
+| `assemblyTo` | [web/src/app-v2.js:75](../../web/src/app-v2.js#L75) |
+| `systemsSpreadTo` | [web/src/app-v2.js:104](../../web/src/app-v2.js#L104) |
 | `applyInteiaBranding` | [web/src/branding.js:5](../../web/src/branding.js#L5) |
 | `project` | [web/src/branding.js:25](../../web/src/branding.js#L25) |
 | `rimPatch` | [web/src/car-look.js:36](../../web/src/car-look.js#L36) |
@@ -438,6 +459,7 @@ Gerado por `python ferramentas/mapear.py`. Todos os arquivos do escopo estão li
 | `apply` | [web/src/mechanics.js:43](../../web/src/mechanics.js#L43) |
 | `describePart` | [web/src/parts-info.js:361](../../web/src/parts-info.js#L361) |
 | `PARTS_INFO_RULES` | [web/src/parts-info.js:368](../../web/src/parts-info.js#L368) |
+| `describeCarPart` | [web/src/parts-info.js:442](../../web/src/parts-info.js#L442) |
 | `createSennaDriver` | [web/src/senna-driver.js:6](../../web/src/senna-driver.js#L6) |
 | `mesh` | [web/src/senna-driver.js:20](../../web/src/senna-driver.js#L20) |
 | `loft` | [web/src/senna-driver.js:23](../../web/src/senna-driver.js#L23) |
@@ -446,6 +468,18 @@ Gerado por `python ferramentas/mapear.py`. Todos os arquivos do escopo estão li
 | `chest` | [web/src/senna-driver.js:39](../../web/src/senna-driver.js#L39) |
 | `ribbon` | [web/src/senna-driver.js:55](../../web/src/senna-driver.js#L55) |
 | `applyFit` | [web/src/senna-driver.js:66](../../web/src/senna-driver.js#L66) |
+| `SPARES_ASSET` | [web/src/spares.js:9](../../web/src/spares.js#L9) |
+| `SPARE_SLOTS` | [web/src/spares.js:11](../../web/src/spares.js#L11) |
+| `SPARE_PRESETS` | [web/src/spares.js:19](../../web/src/spares.js#L19) |
+| `SPARE_INFO` | [web/src/spares.js:28](../../web/src/spares.js#L28) |
+| `createSpares` | [web/src/spares.js:48](../../web/src/spares.js#L48) |
+| `load` | [web/src/spares.js:57](../../web/src/spares.js#L57) |
+| `remember` | [web/src/spares.js:64](../../web/src/spares.js#L64) |
+| `revert` | [web/src/spares.js:66](../../web/src/spares.js#L66) |
+| `applySlot` | [web/src/spares.js:71](../../web/src/spares.js#L71) |
+| `set` | [web/src/spares.js:83](../../web/src/spares.js#L83) |
+| `preset` | [web/src/spares.js:92](../../web/src/spares.js#L92) |
+| `presetMatching` | [web/src/spares.js:94](../../web/src/spares.js#L94) |
 | `setupStudio` | [web/src/studio.js:2](../../web/src/studio.js#L2) |
 | `texture` | [web/src/studio.js:75](../../web/src/studio.js#L75) |
 | `applyLocalCarbonProjection` | [web/src/studio.js:104](../../web/src/studio.js#L104) |
@@ -469,23 +503,24 @@ Gerado por `python ferramentas/mapear.py`. Todos os arquivos do escopo estão li
 | `load` | [web/src/systems.js:111](../../web/src/systems.js#L111) |
 | `applyEra` | [web/src/systems.js:126](../../web/src/systems.js#L126) |
 | `applyCovers` | [web/src/systems.js:127](../../web/src/systems.js#L127) |
-| `applyExplode` | [web/src/systems.js:128](../../web/src/systems.js#L128) |
-| `materialFor` | [web/src/systems.js:131](../../web/src/systems.js#L131) |
-| `applyFlows` | [web/src/systems.js:132](../../web/src/systems.js#L132) |
-| `applySchematic` | [web/src/systems.js:133](../../web/src/systems.js#L133) |
-| `highlight` | [web/src/systems.js:135](../../web/src/systems.js#L135) |
-| `setPicked` | [web/src/systems.js:142](../../web/src/systems.js#L142) |
-| `setERSContext` | [web/src/systems.js:156](../../web/src/systems.js#L156) |
-| `updateUI` | [web/src/systems.js:157](../../web/src/systems.js#L157) |
-| `objectFor` | [web/src/systems.js:162](../../web/src/systems.js#L162) |
-| `geometryBounds` | [web/src/systems.js:163](../../web/src/systems.js#L163) |
-| `viewportAspect` | [web/src/systems.js:164](../../web/src/systems.js#L164) |
-| `frame` | [web/src/systems.js:168](../../web/src/systems.js#L168) |
-| `show` | [web/src/systems.js:169](../../web/src/systems.js#L169) |
-| `view` | [web/src/systems.js:170](../../web/src/systems.js#L170) |
-| `captureGhost` | [web/src/systems.js:171](../../web/src/systems.js#L171) |
-| `setGhost` | [web/src/systems.js:172](../../web/src/systems.js#L172) |
-| `setEnabled` | [web/src/systems.js:173](../../web/src/systems.js#L173) |
+| `applyExplode` | [web/src/systems.js:130](../../web/src/systems.js#L130) |
+| `materialFor` | [web/src/systems.js:139](../../web/src/systems.js#L139) |
+| `applyFlows` | [web/src/systems.js:140](../../web/src/systems.js#L140) |
+| `applySchematic` | [web/src/systems.js:141](../../web/src/systems.js#L141) |
+| `highlight` | [web/src/systems.js:143](../../web/src/systems.js#L143) |
+| `setPicked` | [web/src/systems.js:150](../../web/src/systems.js#L150) |
+| `setERSContext` | [web/src/systems.js:164](../../web/src/systems.js#L164) |
+| `updateUI` | [web/src/systems.js:165](../../web/src/systems.js#L165) |
+| `objectFor` | [web/src/systems.js:170](../../web/src/systems.js#L170) |
+| `geometryBounds` | [web/src/systems.js:171](../../web/src/systems.js#L171) |
+| `viewportAspect` | [web/src/systems.js:172](../../web/src/systems.js#L172) |
+| `frame` | [web/src/systems.js:176](../../web/src/systems.js#L176) |
+| `show` | [web/src/systems.js:177](../../web/src/systems.js#L177) |
+| `view` | [web/src/systems.js:178](../../web/src/systems.js#L178) |
+| `captureGhost` | [web/src/systems.js:179](../../web/src/systems.js#L179) |
+| `setGhost` | [web/src/systems.js:180](../../web/src/systems.js#L180) |
+| `setEnabled` | [web/src/systems.js:181](../../web/src/systems.js#L181) |
+| `pickFromEvent` | [web/src/systems.js:186](../../web/src/systems.js#L186) |
 | `createTunnelVisual` | [web/src/tunnel-visual.js:4](../../web/src/tunnel-visual.js#L4) |
 | `box` | [web/src/tunnel-visual.js:9](../../web/src/tunnel-visual.js#L9) |
 | `createWindTunnel` | [web/src/wind-tunnel.js:4](../../web/src/wind-tunnel.js#L4) |

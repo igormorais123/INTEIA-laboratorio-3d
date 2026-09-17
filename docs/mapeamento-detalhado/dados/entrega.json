@@ -8,8 +8,8 @@
     },
     {
       "path": "ARVORE.md",
-      "bytes": 20676,
-      "sha256": "75d1467e9177e3c6bcfccd05d8f3c326187328ddddbd0f3ec1face1f171417ff"
+      "bytes": 22809,
+      "sha256": "eb1bc058bab290483719e8f0b0e930374ad8bd9d9d66961de256dee675d55c4e"
     },
     {
       "path": "ASSETS-E-PROCEDENCIA.md",
@@ -18,28 +18,28 @@
     },
     {
       "path": "ATUALIZAR.md",
-      "bytes": 7246,
-      "sha256": "043d23ca0ce126eb059c8de0388d938e4bd3ae841137c3a033cc6fe5681855b4"
+      "bytes": 7244,
+      "sha256": "aaed243c73c18d8094c99f3742c268d1980eb5cc1ba22477eda74c74cf692bfb"
     },
     {
       "path": "CATALOGO.md",
-      "bytes": 124298,
-      "sha256": "5afb42b4c1b0df89886cb389f651259cd0d5c6733d551a6819c0be44ca9ff865"
+      "bytes": 148589,
+      "sha256": "eb4eeac200fca8a31ad90dc593a97560d945d5fc94d366478d38ada9c90edfeb"
     },
     {
       "path": "dados/catalogo.csv",
-      "bytes": 62035,
-      "sha256": "d23c69ef207f79d35935e6e2e7e7d4d40130f450632a9ec66d7ed7c68a10fac0"
+      "bytes": 68506,
+      "sha256": "2b041114b6a5e841f91a7f27d13bae55b2138bf816e47ef532c3adef8a9965e6"
     },
     {
       "path": "dados/catalogo.json",
-      "bytes": 744991,
-      "sha256": "e0676baa082a545f8729d7a7784312a0219ca064393227987d2bde38db87bd93"
+      "bytes": 809438,
+      "sha256": "b95b4b2406fd8e2e2055a6e082f64307205e3874c029b0bb952926140f26f641"
     },
     {
       "path": "dados/cobertura.json",
-      "bytes": 1914,
-      "sha256": "3d99c4200acdb8159cd9aa6a919ee4338a62e0ec98d720e25dc16e2efcb946a5"
+      "bytes": 2824,
+      "sha256": "23a72c60e83c4bf70368ccb567f72e4d4b1a5cb174943cb88d7d9eeca9b85776"
     },
     {
       "path": "dados/componentes.json",
@@ -53,8 +53,8 @@
     },
     {
       "path": "dados/grafo.json",
-      "bytes": 673260,
-      "sha256": "7850e669b2d1754269af3ea4b0fcd80dc776c1b1ea707fe6dcdad19a330ebc10"
+      "bytes": 843506,
+      "sha256": "ca1eb68cb5a2e749f3e46157414f8433d20302a45a79bf6bd0eb1af5a6bd130e"
     },
     {
       "path": "dados/graphify-ast.json",
@@ -68,8 +68,8 @@
     },
     {
       "path": "dados/manifesto-conferencia.json",
-      "bytes": 3563,
-      "sha256": "283d8c821fb118e41b92ca4199eacbbf39db95a1ef679ee8ac92a1a784c4d5ff"
+      "bytes": 3564,
+      "sha256": "e205b7bf9979910054a1e8b049bdb4ddec76c5429302a6eafd6f119106067667"
     },
     {
       "path": "dados/relacoes-curadas.json",
@@ -78,8 +78,8 @@
     },
     {
       "path": "dados/simbolos.json",
-      "bytes": 317319,
-      "sha256": "66f1834f0f2edf33ec7272db146aacf44739973f4072190fffb1513611251934"
+      "bytes": 420615,
+      "sha256": "e94c0e5fcc04d3dc9839a154f26aa876ffb3db52c372ddb9852f86d64c5571a9"
     },
     {
       "path": "dados/teste-mecanica.json",
@@ -88,8 +88,8 @@
     },
     {
       "path": "dados/validacao.json",
-      "bytes": 530,
-      "sha256": "d73908ba442cfc4f03929f8339c60e6ef815d98b7e3dbd5d3a2cafe68a0e56bc"
+      "bytes": 1535,
+      "sha256": "d6a934a1d54e5b5b84817ab9c5115406ca2bb658f194fcb88cb96c9ce4962c57"
     },
     {
       "path": "dados/verificacao-app.json",
@@ -98,28 +98,28 @@
     },
     {
       "path": "FUNCOES.md",
-      "bytes": 30752,
-      "sha256": "705721d4d9c73fc6cefd8be1a985f4b7b3cfd1eb384c938a718831b2376ad3f2"
+      "bytes": 35011,
+      "sha256": "cef09e74bd72d4a03e1e1bcf224f955436563909628d06ce57126a5b484ae771"
     },
     {
       "path": "grafos/arquitetura.json",
-      "bytes": 34203,
-      "sha256": "d4c78f5eee8305dbc6fe69854891e049b1599bc559a8e6eeda584fd367da88a3"
+      "bytes": 37798,
+      "sha256": "117301e3d938ab389f854bf3ffccdacd6711f44c0666e3fdc1b9972c6bd9cdf5"
     },
     {
       "path": "grafos/arquitetura.mmd",
-      "bytes": 4531,
-      "sha256": "a020853f55574e04410b749ab38874c2135688fbd213a99fb1faea53edf8b909"
+      "bytes": 4970,
+      "sha256": "bbfcd608c66e586d724b56457d7bc47a8ea7b009785253e4f795b7673cc23860"
     },
     {
       "path": "grafos/assets.json",
-      "bytes": 114113,
-      "sha256": "4565d63868eff233d15d92cafe686e290546c619a4928155836003ccb05d1bce"
+      "bytes": 127858,
+      "sha256": "27b2f14ef5c95d181e3d97b02c0863677382825f41c6004aae6254d26f288d47"
     },
     {
       "path": "grafos/assets.mmd",
-      "bytes": 12029,
-      "sha256": "8cde8d029030ef2002b1a4185a7df25e48912bc7e372fb88ed5d7711fcb40b90"
+      "bytes": 13467,
+      "sha256": "62d2f51676dc1632ee2765f49f1ac750cace8f913885c3d108feabe4e4e7bf7f"
     },
     {
       "path": "grafos/dados.json",
@@ -138,8 +138,8 @@
     },
     {
       "path": "index.html",
-      "bytes": 1107438,
-      "sha256": "426a0f92f4d769aff318c0e27264b90ce4b38dc9ef3b843fc68ae02b880b752c"
+      "bytes": 1298815,
+      "sha256": "9a25d9c2c48c6f4d78003fb7246d9a163fc7ced07a8d87ebe8c6ced30e02e935"
     },
     {
       "path": "MODULOS-E-FLUXOS.md",
@@ -163,13 +163,13 @@
     },
     {
       "path": "scripts/finalidades.json",
-      "bytes": 20882,
-      "sha256": "d345ca1fcea1a9e557d4e0e1c9eb8000db5819d94ecf12fdd7bcf01e53a60258"
+      "bytes": 22142,
+      "sha256": "fd549384d6dfc2245a3f9c3b3bb22690e0be3543495b7dbb3326b09cbc52c931"
     },
     {
       "path": "scripts/gerar.py",
-      "bytes": 26612,
-      "sha256": "33f2ea3370a0be9c3dcecca0a884352251eb324322c0cdc434c1f425215cf27e"
+      "bytes": 26680,
+      "sha256": "e8714ebae804b64d6954d264cf4af7481827a70fa07446a9955aab994c2b83db"
     },
     {
       "path": "scripts/interface.html",
