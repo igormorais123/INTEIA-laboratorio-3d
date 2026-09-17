@@ -2,12 +2,12 @@
  "version": 1,
  "engine": "v6_2026",
  "label": "V6 2026 (1,6 L turbo híbrido, 90°)",
- "generatedAt": "2026-09-17T04:27:01+00:00",
+ "generatedAt": "2026-09-17T15:21:35+00:00",
  "sampleRate": 48000,
  "format": "pcm_s16le",
  "bin": "som-v6-v1.bin",
  "bytes": 2301796,
- "sha256": "f9880a4ee69d50cf8cbc88c62855c8889afebbefc01f80486bcd02349a75ca36",
+ "sha256": "dfb42d1565950d16f278a4f1df79230e564b0de0cf0ec462386eb140239f838f",
  "generator": {
   "script": "ferramentas/som/gerar_banco.py",
   "sha256": "e2fadcfea9d2b6c2a811b4c5a52c5d17d90f13195aeeddc0ef7c0e25f02cf70d",
@@ -15,8 +15,8 @@
  },
  "calibration": {
   "file": "ferramentas/som/calibracao-v6_2026.json",
-  "maxBandDistanceDb": 6.76,
-  "acceptLimitDb": 7.26
+  "maxBandDistanceDb": 6.16,
+  "acceptLimitDb": 6.66
  },
  "profile": {
   "cylinders": 6,

@@ -46,7 +46,7 @@ npm test
 powershell -NoProfile -ExecutionPolicy Bypass -File .\sync-from-source.ps1
 ```
 
-O sincronizador publica oito arquivos: HTML compilado, licença do Three.js, duas marcas SVG, a marca Inteligência Mil Grau e os GLBs de motor, sistemas e peças sobressalentes. O carro principal está incorporado no HTML. Arquivos de geração e o GLB-fonte de 26,45 MB permanecem no repositório-fonte; eles não são carregados pela aplicação e excederiam o limite de 25 MiB por arquivo do Sites.
+O sincronizador publica doze arquivos: HTML compilado, licença do Three.js, duas marcas SVG, a marca Inteligência Mil Grau, os GLBs de motor, sistemas e peças sobressalentes e os bancos de som do V12 e do V6 (`som-v12-v1.bin/.json`, `som-v6-v1.bin/.json`). O carro principal está incorporado no HTML. Arquivos de geração e o GLB-fonte de 26,45 MB permanecem no repositório-fonte; eles não são carregados pela aplicação e excederiam o limite de 25 MiB por arquivo do Sites.
 
 4. Revise e faça commit apenas no checkout de deploy. Envie o `HEAD` ao remoto `origin` usando uma credencial temporária criada pelas ferramentas do Sites.
 

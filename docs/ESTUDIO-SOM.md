@@ -40,38 +40,38 @@ A calibração é determinística (semente fixa) mas demorada; `--rapido` roda p
 
 ### V12 anos 90 (`v12_90s`)
 
-Banco: 20 pontos de RPM (4000–17041) × 2 cargas + partida, 2.42 MB, SHA-256 `cac7c9e19e3a7e8a…`. Distância máxima 9.08 dB (pior ponto do banco, em 14.807 RPM, região extrapolada; pior banda 6,11 dB); limite de aceite 9.58 dB (teste de regressão `test_calibracao.py`).
+Banco: 20 pontos de RPM (4000–17041) × 2 cargas + partida, 2.42 MB, SHA-256 `f9cdd80f39a77124…`. Distância máxima por banda 8.49 dB; limite de aceite 8.99 dB (teste de regressão `test_calibracao.py`).
 
 | Faixa (RPM) | Origem | Antes da EQ (dB) | Depois da EQ (dB) |
 | --- | --- | --- | --- |
-| 4000–5000 | medida | 7.04 | 4.48 |
-| 5000–6000 | medida | 3.26 | 2.37 |
-| 6000–7000 | medida | 7.55 | 6.11 |
-| 7000–8000 | medida | 3.91 | 3.70 |
-| 8000–9000 | medida | 1.64 | 1.17 |
-| 9000–10000 | medida | 1.88 | 2.12 |
-| 10000–11000 | medida | 3.38 | 2.95 |
-| 11000–12000 | medida | 6.06 | 4.88 |
-| 12000–13000 | extrapolada | 6.72 | 5.29 |
-| 16000–17000 | extrapolada | 3.27 | 2.86 |
+| 4000–5000 | medida | 7.56 | 4.56 |
+| 5000–6000 | medida | 4.12 | 3.64 |
+| 6000–7000 | medida | 8.46 | 8.49 |
+| 7000–8000 | medida | 3.33 | 3.03 |
+| 8000–9000 | medida | 3.14 | 3.45 |
+| 9000–10000 | medida | 2.42 | 2.38 |
+| 10000–11000 | medida | 4.62 | 5.88 |
+| 11000–12000 | medida | 8.43 | 8.40 |
+| 12000–13000 | extrapolada | 9.48 | 8.21 |
+| 16000–17000 | extrapolada | 4.03 | 4.17 |
 
-Parâmetros físicos finais (`ferramentas/som/perfis/v12_90s.json`): airboxHz = 186, bankBalance = 0.589, bankDelayMs = 0.117, collectorLength = 0.605, decayDeg = 112, displacementLevel = 0.205, drive = 1.92, evoDeg = 135, gasSpeed = 618, gearLevel = 0.00155, gearTeeth = 30, intakeMix = 0.0459, levelPerOctaveDb = 4, mouthHz = 4.45e+03, offLoadLevel = 0.25, offLoadNoise = 0.1, primaryLength = 0.366, primaryLossHz = 7.37e+03, primaryReflection = 0.369, primarySpread = 0.0274, pulseSkew = 0.607, radiationHz = 245, riseDeg = 30, structureLevel = 0.0732, tailLossHz = 4.58e+03, tailReflection = 0.221, trumpetLength = 0.13, turbineHiss = 0, turbineHz = 2e+03, valveLevel = 0.0344.
+Parâmetros físicos finais (`ferramentas/som/perfis/v12_90s.json`): airboxHz = 246, bankBalance = 0.429, bankDelayMs = 0.0263, collectorLength = 0.816, cycleAmpVar = 0.0943, cycleTimeVarDeg = 2.04, cylinderSpread = 0.0822, decayDeg = 137, displacementLevel = 0.102, drive = 2.2, evoDeg = 140, flowNoise = 0.00642, gasSpeed = 534, gearLevel = 0.00396, gearTeeth = 30, intakeMix = 0.0804, intakeNoise = 0.155, jetNoise = 0.167, levelPerOctaveDb = 4, mouthHz = 3.72e+03, offLoadLevel = 0.25, offLoadNoise = 0.1, primaryLength = 0.351, primaryLossHz = 3.1e+03, primaryReflection = 0.253, primarySpread = 0.0373, pulseSkew = 0.364, radiationHz = 287, riseDeg = 12.3, structureLevel = 0.0331, tailLossHz = 2.46e+03, tailReflection = 0.238, trumpetLength = 0.2, turbineHiss = 0, turbineHz = 2e+03, valveLevel = 0.0142.
 
 Inércia: não medido nas referências (nenhuma aceleração em ponto morto isolada); valores de engine-profiles.mjs mantidos.
 
 ### V6 2026 (`v6_2026`)
 
-Banco: 19 pontos de RPM (4000–15000) × 2 cargas + partida, 2.30 MB, SHA-256 `f9880a4ee69d50cf…`. Distância máxima 6.76 dB (pior ponto do banco, em 8.000 RPM; pior banda 4,19 dB); limite de aceite 7.26 dB (teste de regressão `test_calibracao.py`).
+Banco: 19 pontos de RPM (4000–15000) × 2 cargas + partida, 2.30 MB, SHA-256 `dfb42d1565950d16…`. Distância máxima por banda 6.16 dB; limite de aceite 6.66 dB (teste de regressão `test_calibracao.py`).
 
 | Faixa (RPM) | Origem | Antes da EQ (dB) | Depois da EQ (dB) |
 | --- | --- | --- | --- |
-| 8000–9000 | medida | 4.84 | 4.19 |
-| 9000–10000 | medida | 3.23 | 2.74 |
-| 10000–11000 | extrapolada | 2.86 | 2.67 |
-| 13000–14000 | extrapolada | 4.42 | 2.93 |
-| 14000–15000 | medida | 2.35 | 2.31 |
+| 8000–9000 | medida | 8.87 | 6.16 |
+| 9000–10000 | medida | 5.10 | 4.90 |
+| 10000–11000 | extrapolada | 4.75 | 4.03 |
+| 13000–14000 | extrapolada | 9.09 | 5.14 |
+| 14000–15000 | medida | 4.81 | 2.82 |
 
-Parâmetros físicos finais (`ferramentas/som/perfis/v6_2026.json`): airboxHz = 141, bankBalance = 0.634, bankDelayMs = 2.45, collectorLength = 0.561, decayDeg = 51.2, displacementLevel = 0.329, drive = 2.8, evoDeg = 119, gasSpeed = 664, gearLevel = 0.0652, gearTeeth = 28, intakeMix = 0.493, levelPerOctaveDb = 4, mouthHz = 1.03e+04, offLoadLevel = 0.25, offLoadNoise = 0.12, primaryLength = 0.411, primaryLossHz = 2.84e+03, primaryReflection = 0.797, primarySpread = 0.0036, pulseSkew = 0.854, radiationHz = 173, riseDeg = 18.7, structureLevel = 0.109, tailLossHz = 2.25e+03, tailReflection = 0.282, trumpetLength = 0.144, turbineHiss = 0.00272, turbineHz = 2.83e+03, valveLevel = 0.0329.
+Parâmetros físicos finais (`ferramentas/som/perfis/v6_2026.json`): airboxHz = 217, bankBalance = 0.808, bankDelayMs = 2.25, collectorLength = 0.96, cycleAmpVar = 0.11, cycleTimeVarDeg = 0.634, cylinderSpread = 0.00409, decayDeg = 136, displacementLevel = 0.226, drive = 2.35, evoDeg = 120, flowNoise = 0.00831, gasSpeed = 556, gearLevel = 0.0662, gearTeeth = 28, intakeMix = 0.05, intakeNoise = 0.474, jetNoise = 0.241, levelPerOctaveDb = 4, mouthHz = 1.41e+04, offLoadLevel = 0.25, offLoadNoise = 0.12, primaryLength = 0.334, primaryLossHz = 3.64e+03, primaryReflection = 0.35, primarySpread = 0.0222, pulseSkew = 0.971, radiationHz = 392, riseDeg = 18.8, structureLevel = 0.0969, tailLossHz = 3.89e+03, tailReflection = 0.341, trumpetLength = 0.261, turbineHiss = 0.0688, turbineHz = 3.78e+03, valveLevel = 0.0663.
 
 Inércia: não medido nas referências (nenhuma aceleração em ponto morto isolada); valores de engine-profiles.mjs mantidos.
 <!-- calibracao:fim -->

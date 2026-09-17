@@ -42,7 +42,9 @@ function renderVoice(profile, bank, seconds, drive) {
   for (let start = 0; start < total; start += BLOCK) {
     const frames = Math.min(BLOCK, total - start);
     drive(voice, start / SR);
-    out.set(voice.render(new Float32Array(frames)), start);
+    const block = new Float32Array(frames);
+    voice.render(block);
+    out.set(block, start);
   }
   const fade = Math.round(SR * 0.01);
   for (let i = 0; i < fade; i++) { out[i] *= i / fade; out[total - 1 - i] *= i / fade; }

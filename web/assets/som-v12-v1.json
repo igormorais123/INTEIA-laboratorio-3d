@@ -2,12 +2,12 @@
  "version": 1,
  "engine": "v12_90s",
  "label": "V12 anos 90 (3,5 L aspirado, 65°)",
- "generatedAt": "2026-09-17T04:28:36+00:00",
+ "generatedAt": "2026-09-17T15:28:08+00:00",
  "sampleRate": 48000,
  "format": "pcm_s16le",
  "bin": "som-v12-v1.bin",
  "bytes": 2418068,
- "sha256": "cac7c9e19e3a7e8ad4c8b5afaf18315544a888153654beecfe18ac4dfd6c5dde",
+ "sha256": "f9cdd80f39a771243e7bb51cd42ffb3a485968db846686c6ae369f19a07935a6",
  "generator": {
   "script": "ferramentas/som/gerar_banco.py",
   "sha256": "e2fadcfea9d2b6c2a811b4c5a52c5d17d90f13195aeeddc0ef7c0e25f02cf70d",
@@ -15,8 +15,8 @@
  },
  "calibration": {
   "file": "ferramentas/som/calibracao-v12_90s.json",
-  "maxBandDistanceDb": 9.08,
-  "acceptLimitDb": 9.58
+  "maxBandDistanceDb": 8.49,
+  "acceptLimitDb": 8.99
  },
  "profile": {
   "cylinders": 12,

@@ -1,6 +1,6 @@
 # Estúdio de som V6 × V12 — passagem de trabalho (comece por aqui)
 
-**Última atualização:** 17/09/2026 (Plano 2 concluído; aguardando audição do dono) · **Branch:** `estudio-som-v12` · **Dono do projeto:** Igor Morais (aprova timbre, merge e publicação)
+**Última atualização:** 17/09/2026 (aba 07 Som publicada a pedido do dono; timbre reprovado na 1ª audição e em iteração) · **Branch:** `estudio-som-v12` · **Dono do projeto:** Igor Morais (aprova timbre, merge e publicação)
 
 Este documento existe para que outra IA, em outro computador, continue o trabalho sem precisar do histórico da conversa.
 
@@ -34,11 +34,11 @@ Documentos: especificação `docs/superpowers/specs/2026-09-16-estudio-som-v12-d
 | Especificação | Escrita e aprovada pelo dono ("sim, manda ver") |
 | **Plano 1 — núcleo** (`docs/superpowers/plans/2026-09-16-estudio-som-1-nucleo.md`) | **Concluído** e commitado: `web/src/sound/tuning.mjs`, `engine-profiles.mjs`, `rpm-curve.mjs`, `pitch.mjs`, `phase-player.mjs`, `web/test-fixtures/sound-bank.mjs`, testes `test-tuning.mjs`, `test-rpm-curve.mjs`, `test-sound-player.mjs` no `npm test` |
 | **Plano 2 — bancos calibrados** (`docs/superpowers/plans/2026-09-17-estudio-som-2-bancos.md`) | **Concluído** em 17/09/2026: `web/assets/som-v12-v1.bin/.json` (20 pontos, 2,42 MB) e `som-v6-v1.bin/.json` (19 pontos, 2,30 MB), `web/src/sound/bank-format.mjs`, `detectFiringHz` em `pitch.mjs`, `web/test-sound-bank.mjs` no `npm test`; pipeline em `ferramentas/som/` (Python + Node); `docs/ESTUDIO-SOM.md` |
-| **Portão do dono** | **Pendente.** Demos em `ferramentas/som/.demos/` (24 WAVs: presets, rotações fixas e varredura por motor). Regenerar com `node ferramentas/som/renderizar_demos.mjs` |
+| **Portão do dono** | **1ª audição reprovada** ("muito artificial, parece MIDI de baixa qualidade"). Causa medida e corrigida no modelo (ruído de jato/fluxo, variação ciclo a ciclo, piso como alvo) e na voz em tempo real (`engine-voice.mjs`: desvio de rotação, ambiente, camadas sem senóides). Nova audição pendente: demos em `ferramentas/som/.demos/` (26 WAVs, agora com a mesma voz do site, inclusive `*-blips.wav`) e a própria aba 07 em produção |
 | Plano 3 — V12 3D | Roteiro pronto |
-| Plano 4 — aba 07 Som | Roteiro pronto; pode começar com os bancos reais. O afinador deve usar `detectFiringHz` (soma harmônica), não o YIN, porque a ordem de bancada do V12 enviesa o YIN em ~1 % |
+| **Plano 4 — aba 07 Som** | **Construído e mesclado na main (PR #12)** a pedido do dono para teste em produção: `web/src/sound/sound-studio.js`, `curve-editor.js`, `engine-voice.mjs`, `engine-worklet.js` (IIFE injetada no template como `__SOUND_WORKLET__`), testes `test-sound-studio.mjs`, `test-curve-editor.mjs`, `test-engine-voice.mjs`. Sem motor 3D sincronizado (depende do Plano 3); a ignição é mostrada num diagrama de cilindros. Afinador com `detectFiringHz` |
 | Referências de áudio | Baixadas e conferidas (SHA-256 no JSON); **não versionadas** |
-| Produção | Nada publicado. O site em produção não tem o estúdio |
+| Produção | Aba 07 publicada no ChatGPT Sites em 17/09/2026 (checkout de deploy com 12 arquivos, incluindo os bancos). Segunda publicação no mesmo dia com os bancos recalibrados (V12 pior banda 8,49 dB, V6 6,16 dB) |
 
 Roteiro dos Planos 2–4: `docs/superpowers/plans/2026-09-17-estudio-som-2-a-4-roteiro.md`.
 
