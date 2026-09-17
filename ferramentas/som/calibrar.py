@@ -109,7 +109,9 @@ def distance(render: dict, target: dict, floor_db: float, cylinders: int) -> dic
     others = [(render['orders'][float(o)], target[str(o)]) for o in ORDERS
               if float(o) in render['orders'] and str(o) in target and o not in harmonics]
     hinge = float(np.sqrt(np.mean([max(0.0, rv - tv) ** 2 for rv, tv in others]))) if others else 0.0
-    return {'total': float(np.sqrt(harmonic ** 2 + (0.5 * hinge) ** 2)), 'harmonic': harmonic, 'hinge': hinge, 'orders': len(pairs)}
+    # Piso entre harmônicos (turbulência, variação ciclo a ciclo): alvo de duas pontas, não só limite superior
+    floor_term = abs(float(render.get('noiseFloorDb', floor_db)) - float(floor_db)) if np.isfinite(floor_db) else 0.0
+    return {'total': float(np.sqrt(harmonic ** 2 + (0.5 * hinge) ** 2 + (0.7 * floor_term) ** 2)), 'harmonic': harmonic, 'hinge': hinge, 'floor': floor_term, 'orders': len(pairs)}
 
 
 def calibration_bands(bands: list[dict], idle_rpm: float = 0.0) -> list[tuple[dict, float]]:
@@ -258,6 +260,7 @@ def main() -> int:
         'inertia': {'maxRiseRpmPerS': None, 'maxFallRpmPerS': None, 'note': 'não medido nas referências (nenhuma aceleração em ponto morto isolada); valores de engine-profiles.mjs mantidos'},
         'notes': ['distância = RMS em dB nas ordens harmônicas suavizadas (3 pontos) + 0,5 × dobradiça nas demais ordens',
                   'alvos abaixo do piso da gravação + 3 dB contam só como limite superior',
+                  '0,7 × |piso entre harmônicos do render − piso da gravação| entra na distância (turbulência e variação ciclo a ciclo)',
                   'bandas extrapoladas pesam 0,5; bandas com 5–19 quadros pesam 0,6'],
     }
     (HERE / f'calibracao-{args.engine}.json').write_text(json.dumps(report, ensure_ascii=False, indent=1) + '\n', encoding='utf-8')

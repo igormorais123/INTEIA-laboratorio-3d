@@ -1,18 +1,19 @@
-// Renderiza demonstrações em WAV (48 kHz, mono, 16 bits) dos bancos calibrados usando os módulos do site
-// (reprodutor com fase travada + seguidor de curva), para audição lado a lado com as referências.
+// Renderiza demonstrações em WAV (48 kHz, mono, 16 bits) dos bancos calibrados com a MESMA voz do site
+// (engine-voice.mjs: reprodutor com fase travada, seguidor com inércia, partida, desvio de rotação, camadas do
+// V6, estalos ao aliviar e ambiente do box), para audição lado a lado com as referências.
 // Saída: ferramentas/som/.demos/<motor>-<nome>.wav (fora do Git). Uso: node ferramentas/som/renderizar_demos.mjs [v12_90s|v6_2026]
 import {existsSync, mkdirSync, readFileSync, writeFileSync} from 'node:fs';
 import {dirname, join} from 'node:path';
 import {fileURLToPath} from 'node:url';
 import {ENGINE_PROFILES} from '../../web/src/sound/engine-profiles.mjs';
-import {createPhasePlayer} from '../../web/src/sound/phase-player.mjs';
+import {createEngineVoice} from '../../web/src/sound/engine-voice.mjs';
 import {parseBank} from '../../web/src/sound/bank-format.mjs';
-import {CURVE_PRESETS, createRpmFollower, evaluateCurve, presetCurve} from '../../web/src/sound/rpm-curve.mjs';
+import {CURVE_PRESETS, curveToJSON, presetCurve} from '../../web/src/sound/rpm-curve.mjs';
 
 const here = dirname(fileURLToPath(import.meta.url));
 const assets = join(here, '..', '..', 'web', 'assets');
 const outDir = join(here, '.demos');
-const SR = 48000, BLOCK = 128, GAIN = 0.85;
+const SR = 48000, BLOCK = 128, VOLUME = 0.8;
 mkdirSync(outDir, {recursive: true});
 
 function writeWav(path, samples) {
@@ -33,23 +34,16 @@ function loadBank(profile) {
   return parseBank(manifest, bin.buffer.slice(bin.byteOffset, bin.byteOffset + bin.byteLength));
 }
 
-/** Toca uma sequência de alvos de RPM (função t → rpm alvo) pelo seguidor físico e pelo reprodutor. */
-function renderTargets(profile, bank, seconds, targetAt) {
-  const player = createPhasePlayer({bank, profile, sampleRate: SR});
-  const follower = createRpmFollower(profile, {physical: true});
-  const total = Math.round(seconds * SR);
-  const out = new Float32Array(total);
-  let previous = follower.step(targetAt(0), 0);
+/** Toca a voz por `seconds`, chamando `drive(voice, t)` a cada bloco para mexer nos controles como um visitante. */
+function renderVoice(profile, bank, seconds, drive) {
+  const voice = createEngineVoice({bank, profile, sampleRate: SR});
+  voice.setState({volume: VOLUME});
+  const total = Math.round(seconds * SR), out = new Float32Array(total);
   for (let start = 0; start < total; start += BLOCK) {
     const frames = Math.min(BLOCK, total - start);
-    const t = (start + frames) / SR;
-    const next = follower.step(targetAt(t), frames / SR);
-    const state = {rpmFrom: previous.rpm, rpmTo: next.rpm, load: next.load, running: next.running, cranking: next.cranking, limiter: next.limiter};
-    const block = player.render(new Float32Array(frames), state, GAIN);
-    out.set(block, start);
-    previous = next;
+    drive(voice, start / SR);
+    out.set(voice.render(new Float32Array(frames)), start);
   }
-  // Fade curto nas pontas para não estalar no reprodutor de áudio
   const fade = Math.round(SR * 0.01);
   for (let i = 0; i < fade; i++) { out[i] *= i / fade; out[total - 1 - i] *= i / fade; }
   return out;
@@ -62,24 +56,35 @@ for (const profile of Object.values(ENGINE_PROFILES)) {
   const bank = loadBank(profile);
   if (!bank) { console.log(`${profile.id}: banco ausente, pulado`); continue; }
   for (const [id, preset] of Object.entries(CURVE_PRESETS)) {
-    const curve = presetCurve(id);
-    const lead = 0.4, tail = 0.6;
-    const samples = renderTargets(profile, bank, lead + curve.durationS + tail, (t) => (t < lead ? 0 : evaluateCurve(curve, t - lead)));
-    const path = join(outDir, `${profile.id}-curva-${id}.wav`);
-    writeWav(path, samples);
-    written.push([path, preset.label]);
+    const curve = presetCurve(id), lead = 0.3, tail = 1.2;
+    let started = false;
+    const samples = renderVoice(profile, bank, lead + curve.durationS + 0.7 + tail, (voice, t) => {
+      if (!started) { voice.setState({mode: 'curve', power: false}); voice.setCurve(curveToJSON(curve)); started = true; }
+      if (t >= lead && !voice.playing && voice.ignition === 'off' && t < lead + 0.1) voice.play();
+    });
+    written.push([join(outDir, `${profile.id}-curva-${id}.wav`), preset.label, samples]);
   }
   for (const rpm of [profile.idleRpm, 6000, 7000, 9000, 12000, Math.min(15000, profile.limitRpm)]) {
-    const samples = renderTargets(profile, bank, 3.0, () => rpm);
-    const path = join(outDir, `${profile.id}-fixo-${rpm}.wav`);
-    writeWav(path, samples);
-    written.push([path, `${rpm} RPM fixo`]);
+    const samples = renderVoice(profile, bank, 4.0, (voice, t) => { if (t === 0) voice.setState({mode: 'free', fixedRpm: rpm, power: true}); if (t > 3.2 && voice.state.power) voice.setState({power: false}); });
+    written.push([join(outDir, `${profile.id}-fixo-${rpm}.wav`), `${rpm} RPM fixo`, samples]);
   }
-  // Rampa completa da marcha lenta ao limite e volta (12 s), a mais reveladora para julgar o timbre
-  const sweep = renderTargets(profile, bank, 12.5, (t) => (t < 0.5 ? 0 : t < 6.5 ? profile.idleRpm + ((profile.limitRpm - profile.idleRpm) * (t - 0.5)) / 6 : profile.limitRpm - ((profile.limitRpm - profile.idleRpm) * (t - 6.5)) / 6));
-  const sweepPath = join(outDir, `${profile.id}-varredura-${profile.idleRpm}-${profile.limitRpm}.wav`);
-  writeWav(sweepPath, sweep);
-  written.push([sweepPath, `varredura ${profile.idleRpm}→${profile.limitRpm}→${profile.idleRpm} RPM`]);
+  // Varredura completa pelo acelerador (marcha lenta → limite → marcha lenta) e desligamento
+  const span = profile.limitRpm - profile.idleRpm;
+  const sweep = renderVoice(profile, bank, 14.0, (voice, t) => {
+    if (t === 0) voice.setState({mode: 'free', fixedRpm: null, throttle: 0, power: true});
+    const throttle = t < 1 ? 0 : t < 7 ? (t - 1) / 6 : t < 13 ? 1 - (t - 7) / 6 : 0;
+    voice.setState({throttle});
+    if (t > 13.2 && voice.state.power) voice.setState({power: false});
+  });
+  written.push([join(outDir, `${profile.id}-varredura-${profile.idleRpm}-${profile.limitRpm}.wav`), `varredura ${profile.idleRpm}→${profile.limitRpm}→${profile.idleRpm} RPM`, sweep]);
+  // Blips no acelerador em ponto morto: o teste clássico de timbre
+  const blips = renderVoice(profile, bank, 8.0, (voice, t) => {
+    if (t === 0) voice.setState({mode: 'free', fixedRpm: null, throttle: 0, power: true});
+    const phase = (t - 1.2) % 1.6, open = t > 1.2 && phase < 0.35;
+    voice.setState({throttle: open ? 0.85 : 0});
+    if (t > 7.4 && voice.state.power) voice.setState({power: false});
+  });
+  written.push([join(outDir, `${profile.id}-blips.wav`), 'blips em ponto morto', blips]);
 }
-for (const [path, label] of written) console.log(`${label.padEnd(44)} ${path}`);
+for (const [path, label, samples] of written) { writeWav(path, samples); console.log(`${label.padEnd(44)} ${path}`); }
 console.log(`${written.length} demonstrações em ${outDir}`);

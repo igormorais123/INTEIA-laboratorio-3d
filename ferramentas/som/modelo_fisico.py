@@ -60,6 +60,12 @@ PARAM_SPACE = {
     'offLoadNoise': (0.0, 0.3),
     'turbineHz': (800.0, 4000.0),         # só motores turbo
     'turbineHiss': (0.0, 0.3),
+    'jetNoise': (0.0, 0.9),               # ruído de jato (turbulência) gerado em cada blowdown, entra nos primários
+    'flowNoise': (0.0, 0.5),              # ruído de fluxo contínuo no coletor, cresce com a rotação
+    'intakeNoise': (0.0, 0.6),            # turbulência da sucção nas trompetas
+    'cycleAmpVar': (0.02, 0.30),          # variação de amplitude ciclo a ciclo (desvio padrão relativo)
+    'cycleTimeVarDeg': (0.3, 3.0),        # variação de instante ciclo a ciclo (graus de virabrequim)
+    'cylinderSpread': (0.0, 0.15),        # desequilíbrio fixo entre cilindros
     'bankBalance': (0.15, 1.0),           # nível da bancada distante em relação à próxima (assimetria do ouvinte)
     'bankDelayMs': (0.0, 3.0),            # atraso extra do percurso da bancada distante
     'primarySpread': (0.0, 0.10),         # dispersão de comprimento entre primários (conteúdo de meia ordem)
@@ -180,18 +186,31 @@ def render_loop(profile: dict, params: dict, rpm: float, samples_per_cycle: int,
     click = np.hanning(click_len) * np.sin(np.arange(click_len) * 0.9)
     window_deg = 720.0 / n_cyl
     pop_chance = p['offLoadNoise'] * 0.5 if not on else 0.0
+    # Ruído de jato: turbulência gerada no blowdown, com envelope mais longo que o pulso; fonte periódica em N ciclos
+    jet_source = _periodic_noise(np.random.default_rng([seed, 7]), period, total + 2 * spc + pulse_len)
+    jet_env = _pulse(theta_rel, rise * 0.8, decay * 1.6, p['pulseSkew'])
+    intake_source = _periodic_noise(np.random.default_rng([seed, 11]), period, total + 2 * spc + suction_len)
+    balance_rng = np.random.default_rng([seed, 5])
+    cylinder_gain = 1 + p['cylinderSpread'] * balance_rng.uniform(-1, 1, n_cyl)
     for c in range(total_cycles):
         cycle_rng = np.random.default_rng([seed, c % cycles])
         for slot, cylinder in enumerate(firing_order):
-            jitter_amp = 1 + 0.02 * cycle_rng.standard_normal()
-            jitter_deg = 0.3 * cycle_rng.standard_normal()
+            g1, g2, g3 = np.clip(cycle_rng.standard_normal(3), -2.5, 2.5)
+            jitter_amp = max(0.2, 1 + p['cycleAmpVar'] * g1)
+            jitter_deg = p['cycleTimeVarDeg'] * g2
             pop = cycle_rng.random() < pop_chance
             start_deg = c * 720 + slot * window_deg + jitter_deg
             evo = int(round((start_deg + p['evoDeg']) / deg_per_sample))
-            amp = amp_load * jitter_amp * (3.0 if pop else 1.0)
-            _add(exhaust[cylinder - 1], evo, base_pulse * amp)
+            amp = amp_load * jitter_amp * cylinder_gain[cylinder - 1] * (3.0 if pop else 1.0)
+            pulse = _pulse(theta_rel, rise, decay * (1 + 0.15 * g3), p['pulseSkew']) if abs(g3) > 0.3 else base_pulse
+            _add(exhaust[cylinder - 1], evo, pulse * amp)
+            if evo >= 0:
+                _add(exhaust[cylinder - 1], evo, jet_source[evo:evo + pulse_len] * jet_env * (p['jetNoise'] * amp * (1.0 if on else 1.4)))
             _add(exhaust[cylinder - 1], int(round((start_deg + 180) / deg_per_sample)), disp)
-            _add(intake, int(round((start_deg + 350) / deg_per_sample)), suction)
+            ivo = int(round((start_deg + 350) / deg_per_sample))
+            _add(intake, ivo, suction)
+            if ivo >= 0:
+                _add(intake, ivo, intake_source[ivo:ivo + suction_len] * np.abs(suction) * p['intakeNoise'])
             _add(combustion_env, evo, base_pulse * amp)
             # Cliques de fechamento das válvulas: escape (~ 370°) e admissão (~ 580°)
             for close_deg in (370.0, 580.0):
@@ -208,6 +227,10 @@ def render_loop(profile: dict, params: dict, rpm: float, samples_per_cycle: int,
         round_trip = primary_round * length_factor[cylinder - 1]
         primary = _comb(exhaust[cylinder - 1], round_trip, p['primaryReflection'], p['primaryLossHz'], FS)
         bank_out[cylinder_bank(profile, cylinder)] += (1 - p['primaryReflection']) * _delay(primary, round_trip / 2)
+    flow_level = p['flowNoise'] * amp_load * (rpm / profile['limitRpm']) ** 1.5 * max(1e-9, np.abs(bank_out[0]).max())
+    flow = _lowpass(_periodic_noise(np.random.default_rng([seed, 13]), period, total), 3500.0, FS, order=2) * flow_level
+    bank_out[0] = bank_out[0] + flow
+    bank_out[1] = bank_out[1] + np.roll(flow, period // 3)
     if turbo:
         merged = bank_out[0] + bank_out[1]
         turbine = _lowpass(merged, p['turbineHz'], FS, order=2) * 0.7

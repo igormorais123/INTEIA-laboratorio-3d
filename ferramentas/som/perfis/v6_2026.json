@@ -44,6 +44,12 @@
     "turbineHiss": 0.0027244384192436633,
     "bankBalance": 0.6336763178979784,
     "bankDelayMs": 2.4480841514702565,
-    "primarySpread": 0.00360443167106754
+    "primarySpread": 0.00360443167106754,
+    "jetNoise": 0.3,
+    "flowNoise": 0.15,
+    "intakeNoise": 0.1,
+    "cycleAmpVar": 0.08,
+    "cycleTimeVarDeg": 0.8,
+    "cylinderSpread": 0.05
   }
 }

@@ -76,6 +76,14 @@ Parâmetros físicos finais (`ferramentas/som/perfis/v6_2026.json`): airboxHz = 
 Inércia: não medido nas referências (nenhuma aceleração em ponto morto isolada); valores de engine-profiles.mjs mantidos.
 <!-- calibracao:fim -->
 
+## Iteração após a primeira audição (17/09/2026)
+
+Veredito do dono sobre a primeira versão: "muito artificial, parece MIDI de baixa qualidade". A medição confirmou a causa: os loops tinham relação harmônico/ruído de 44 dB e piso entre harmônicos em −55 dB, contra 20–23 dB e −32 a −44 dB nas gravações. Harmônicos puros sem o rugido turbulento do escape soam como sintetizador. Mudanças:
+
+- **Modelo físico:** ruído de jato gerado em cada blowdown (entra nos primários e ganha as ressonâncias do escape), ruído de fluxo contínuo no coletor, turbulência da sucção, variação ciclo a ciclo calibrável (amplitude, instante e decaimento) e desequilíbrio fixo entre cilindros. Todas as fontes de ruído são periódicas em N ciclos, então o loop continua fechando sem emenda.
+- **Calibração:** o piso entre harmônicos passou a ser alvo de duas pontas (0,7 × |piso do render − piso da gravação| entra na distância), então a quantidade de turbulência é decidida pelas gravações, não a olho.
+- **Voz em tempo real (`web/src/sound/engine-voice.mjs`, usada pelo worklet do site e pelos demos):** desvio lento de rotação (maior em marcha lenta e aliviado), ambiente do box (reflexões primeiras e cauda curta), camadas do V6 com ruído ressonante em vez de senóides puras, estalos ao aliviar. Os demos em `.demos/` agora são renderizados por essa mesma voz, inclusive um arquivo de blips em ponto morto por motor.
+
 ## Conferência visual
 
 Os espectrogramas das varreduras (`.demos/*-varredura-*.png`, gerados com `ferramentas/som/espectrograma_demo.py`) mostram harmônicos contínuos da marcha lenta ao limite e de volta, sem degraus nos crossfades entre pontos do banco, com a ordem de bancada visível no V12 e a partida no início. Isso confirma a mecânica do banco; o timbre em si só a audição do dono aprova.
