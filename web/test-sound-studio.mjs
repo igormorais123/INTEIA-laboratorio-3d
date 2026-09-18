@@ -13,7 +13,7 @@ const worklet = read('./src/sound/engine-worklet.js');
 // Aba e painel
 assert.match(template, /<button id="tab-sound" role="tab" data-lab-tab="sound"[^>]*><span>07<\/span>Som<\/button>/, 'aba 07 Som ausente');
 assert.ok(template.includes('id="sound-panel"') && template.includes('SOM / ESTÚDIO DE AFINAÇÃO'));
-for (const id of ['sound-status', 'sound-power', 'sound-volume', 'sound-mode-curve', 'sound-mode-free', 'sound-curve', 'sound-play', 'sound-stop', 'sound-loop', 'sound-presets', 'sound-duration', 'sound-maxrpm', 'sound-physical', 'sound-export', 'sound-import', 'sound-throttle', 'sound-fixed', 'tuner-rpm', 'tuner-hz', 'tuner-note', 'tuner-measured', 'tuner-deviation', 'tuner-state', 'sound-cylinders', 'sound-credits', 'sound-credits-list', 'sound-worklet']) {
+for (const id of ['sound-status', 'sound-power', 'sound-volume', 'sound-mode-curve', 'sound-mode-free', 'sound-curve', 'sound-play', 'sound-stop', 'sound-loop', 'sound-presets', 'sound-duration', 'sound-maxrpm', 'sound-physical', 'sound-export', 'sound-import', 'sound-throttle', 'sound-fixed', 'tuner-rpm', 'tuner-hz', 'tuner-note', 'tuner-measured', 'tuner-deviation', 'tuner-state', 'sound-cylinders', 'sound-credits', 'sound-credits-list', 'sound-worklet', 'sound-bench', 'sound-cut', 'sound-airbox', 'sound-bench-status']) {
   assert.ok(template.includes(`id="${id}"`), `template sem #${id}`);
 }
 assert.equal((template.match(/data-sound-engine="/g) || []).length, 2, 'dois motores selecionáveis');
@@ -39,6 +39,13 @@ assert.match(studio, /async function ensureAudio/);
 assert.ok(!/^\s*const context\s*=\s*new/m.test(studio), 'AudioContext não pode nascer no carregamento');
 assert.match(studio, /sampleRate: 48000/);
 assert.match(studio, /detectFiringHz/);
+
+// A bancada 3D do V12 anda pelo mesmo ângulo do som e não grava movimento no GLB.
+const bench = read('./src/sound/v12-view.js'), kin = read('./src/sound/v12-kinematics.mjs');
+assert.match(studio, /bench\.setPose\(status\.thetaDeg/, 'a bancada não segue o ângulo do virabrequim');
+assert.match(bench, /poseV12/); assert.ok(!/document\./.test(kin), 'a cinemática não pode tocar no DOM');
+assert.match(read('./src/app-v2.js'), /createV12View\(/);
+assert.match(read('./src/workbench.js'), /frameBench\(/);
 
 // Créditos completos
 assert.ok(SOUND_CREDITS.length >= 5 && SOUND_CREDITS.every((c) => c.title && c.author && /^(CC0|CC BY-SA 3\.0)$/.test(c.license) && c.url.startsWith('https://')));

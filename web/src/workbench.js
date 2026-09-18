@@ -1,7 +1,7 @@
 import * as THREE from 'three';
 import {GLTFExporter} from 'three/addons/exporters/GLTFExporter.js';
 
-export function createWorkbench({scene,model,driver,engine,garage,systems,controls,camera,moveCamera,closeEngine,showCar,onTab=()=>{}}){
+export function createWorkbench({scene,model,driver,engine,garage,systems,controls,camera,moveCamera,closeEngine,showCar,bench=null,onTab=()=>{}}){
  const $=id=>document.getElementById(id),inspection=new THREE.Group();inspection.name='Bancada de inspeção';scene.add(inspection);
  let active='car',mode='isolated',currentObject=null,target=new THREE.Vector3(),radius=1;
  const panels=[...document.querySelectorAll('.panel > .block')];
@@ -20,6 +20,13 @@ export function createWorkbench({scene,model,driver,engine,garage,systems,contro
   moveCamera(target.clone().addScaledVector(direction,radius),target);
   document.querySelectorAll('[data-view]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.view===name)));
  }
+ function frameBench(){
+  // A bancada do V12 fica na origem: o plano de corte vive no espaço do mundo e não pode ser deslocado.
+  if(!bench){showCar();moveCamera(new THREE.Vector3(3.2,1.25,-4.6),new THREE.Vector3(0,.55,-1.2));return;}
+  model.visible=false;engine.root.visible=false;
+  bounds=new THREE.Box3(new THREE.Vector3(-.28,0,-.48),new THREE.Vector3(.28,.56,.48));
+  target=bounds.getCenter(new THREE.Vector3());view('hero');
+ }
  function rebuild(){
   inspection.clear();currentObject=null;
   if((active!=='helmet'&&active!=='driver')||mode==='cockpit')return;
@@ -36,7 +43,7 @@ export function createWorkbench({scene,model,driver,engine,garage,systems,contro
   $('reset').click();garage.setEnabled(active==='car'||active==='engine'||active==='world'||active==='sound');
   tabs.forEach(t=>{const on=t.dataset.labTab===active;t.setAttribute('aria-selected',String(on));t.tabIndex=on?0:-1;});
   document.querySelector('.panel').setAttribute('aria-labelledby','tab-'+active);refreshPanels();
-  if(active==='helmet'||active==='driver'){rebuild();}else if(active==='engine')$('engine-open').click();else if(active==='systems')systems?.show('overview');else if(active==='sound'){showCar();moveCamera(new THREE.Vector3(3.2,1.25,-4.6),new THREE.Vector3(0,.55,-1.2));}else showCar();
+  if(active==='helmet'||active==='driver'){rebuild();}else if(active==='engine')$('engine-open').click();else if(active==='systems')systems?.show('overview');else if(active==='sound'){frameBench();}else showCar();
   onTab(active,previous);
  }
  tabs.forEach((t,i)=>{t.onclick=()=>setTab(t.dataset.labTab);t.onkeydown=e=>{let n=null;if(e.key==='ArrowRight')n=(i+1)%tabs.length;if(e.key==='ArrowLeft')n=(i+tabs.length-1)%tabs.length;if(e.key==='Home')n=0;if(e.key==='End')n=tabs.length-1;if(n!==null){e.preventDefault();tabs[n].focus();setTab(tabs[n].dataset.labTab);}};});
@@ -55,8 +62,8 @@ export function createWorkbench({scene,model,driver,engine,garage,systems,contro
  $('world-tunnel').onclick=()=>{if(!document.body.classList.contains('wind-active'))$('wind-toggle').click();};
  $('world-export').onclick=()=>$('garage-export').click();
  refreshPanels();
- return {get inspecting(){return active==='helmet'||active==='driver';},view,setTab,
-  update(){const isolated=(active==='helmet'||active==='driver')&&mode==='isolated';inspection.visible=isolated;model.visible=!isolated;if(isolated)engine.root.visible=false;},
+ return {get inspecting(){return active==='helmet'||active==='driver'||(active==='sound'&&Boolean(bench));},view,setTab,
+  update(){const isolated=(active==='helmet'||active==='driver')&&mode==='isolated';inspection.visible=isolated;model.visible=active==='sound'?false:!isolated;if(isolated||active==='sound')engine.root.visible=false;},
   reset(){if(active==='systems')systems?.reset();else if(active==='helmet'||active==='driver'){if(mode==='isolated')rebuild();else cockpit();}},
   get systemActive(){return active==='systems'&&Boolean(systems?.enabled);}
  };
