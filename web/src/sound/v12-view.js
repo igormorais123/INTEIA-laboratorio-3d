@@ -100,6 +100,7 @@ export function createV12View({onStatus = () => {}} = {}) {
     get state() { return state; },
     get manifest() { return manifest; },
     get thetaDeg() { return theta; },
+    get wanted() { return wanted; },
     get counts() { return {cut: cutMaterials.size, airbox: airboxMeshes.length}; },
     load,
     setVisible(visible) {
