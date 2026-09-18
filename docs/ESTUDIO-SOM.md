@@ -130,6 +130,13 @@ Na aba 07 o motor fica na bancada do box, no lugar do carro. O controle de corte
 cabeçotes, tampas e airbox (as peças móveis ficam inteiras) e o botão do airbox descobre as trompetas.
 As peças são reconhecidas pelos extras do nó, não pelo nome, porque o carregador higieniza nomes com espaço.
 
+## Vereditos de audição
+
+| Data | Veredito | O que mudou depois |
+| --- | --- | --- |
+| 17/09/2026 | Reprovado: "muito artificial, parece MIDI de baixa qualidade" | Ruído de jato por explosão, ruído de fluxo e de admissão, variação ciclo a ciclo e o piso entre harmônicos como alvo de calibração. Relação harmônico/ruído caiu de 44 dB para a faixa de 20 a 23 dB das gravações |
+| 18/09/2026 | Aceito com ressalva: "ruim mas aceitável" | Nada. O timbre passa no portão e fica em produção. A próxima iteração, quando houver, deve atacar o ambiente acústico (reverberação do box e da pista) e a resposta ao acelerador; o piso de ruído já está resolvido |
+
 ## Limitações conhecidas
 
 - As referências foram gravadas de fora da pista, a dezenas de metros, com público e Doppler. O filtro de estabilidade descarta a maior parte disso, mas a inclinação espectral dos alvos inclui a absorção do ar dessa distância; a compensação aplicada só remove diferenças entre gravações da mesma classe.
