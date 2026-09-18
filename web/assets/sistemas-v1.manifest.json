@@ -17654,8 +17654,8 @@
      ]
     },
     {
-     "node": "transmission__761__Copo da junta tripóide esquerdo",
-     "part": "Copo da junta tripóide esquerdo",
+     "node": "transmission__761__Copo da junta tripoide esquerdo",
+     "part": "Copo da junta tripoide esquerdo",
      "min": [
       0.135,
       0.296,
@@ -17676,8 +17676,8 @@
      ]
     },
     {
-     "node": "transmission__762__Rolete da tripóide 1 esquerdo",
-     "part": "Rolete da tripóide 1 esquerdo",
+     "node": "transmission__762__Rolete da tripoide 1 esquerdo",
+     "part": "Rolete da tripoide 1 esquerdo",
      "min": [
       0.1703,
       0.332,
@@ -17698,8 +17698,8 @@
      ]
     },
     {
-     "node": "transmission__763__Rolete da tripóide 2 esquerdo",
-     "part": "Rolete da tripóide 2 esquerdo",
+     "node": "transmission__763__Rolete da tripoide 2 esquerdo",
+     "part": "Rolete da tripoide 2 esquerdo",
      "min": [
       0.1703,
       0.3535,
@@ -17720,8 +17720,8 @@
      ]
     },
     {
-     "node": "transmission__764__Rolete da tripóide 3 esquerdo",
-     "part": "Rolete da tripóide 3 esquerdo",
+     "node": "transmission__764__Rolete da tripoide 3 esquerdo",
+     "part": "Rolete da tripoide 3 esquerdo",
      "min": [
       0.1703,
       0.3084,
@@ -17742,8 +17742,8 @@
      ]
     },
     {
-     "node": "transmission__765__Coifa da junta tripóide esquerdo",
-     "part": "Coifa da junta tripóide esquerdo",
+     "node": "transmission__765__Coifa da junta tripoide esquerdo",
+     "part": "Coifa da junta tripoide esquerdo",
      "min": [
       0.196,
       0.298,
@@ -17870,8 +17870,8 @@
      ]
     },
     {
-     "node": "transmission__771__Copo da junta tripóide direito",
-     "part": "Copo da junta tripóide direito",
+     "node": "transmission__771__Copo da junta tripoide direito",
+     "part": "Copo da junta tripoide direito",
      "min": [
       -0.205,
       0.296,
@@ -17892,8 +17892,8 @@
      ]
     },
     {
-     "node": "transmission__772__Rolete da tripóide 1 direito",
-     "part": "Rolete da tripóide 1 direito",
+     "node": "transmission__772__Rolete da tripoide 1 direito",
+     "part": "Rolete da tripoide 1 direito",
      "min": [
       -0.1897,
       0.332,
@@ -17914,8 +17914,8 @@
      ]
     },
     {
-     "node": "transmission__773__Rolete da tripóide 2 direito",
-     "part": "Rolete da tripóide 2 direito",
+     "node": "transmission__773__Rolete da tripoide 2 direito",
+     "part": "Rolete da tripoide 2 direito",
      "min": [
       -0.1897,
       0.3535,
@@ -17936,8 +17936,8 @@
      ]
     },
     {
-     "node": "transmission__774__Rolete da tripóide 3 direito",
-     "part": "Rolete da tripóide 3 direito",
+     "node": "transmission__774__Rolete da tripoide 3 direito",
+     "part": "Rolete da tripoide 3 direito",
      "min": [
       -0.1897,
       0.3084,
@@ -17958,8 +17958,8 @@
      ]
     },
     {
-     "node": "transmission__775__Coifa da junta tripóide direito",
-     "part": "Coifa da junta tripóide direito",
+     "node": "transmission__775__Coifa da junta tripoide direito",
+     "part": "Coifa da junta tripoide direito",
      "min": [
       -0.234,
       0.298,
@@ -18210,8 +18210,8 @@
   },
   "safety": {
    "label": "Segurança",
-   "parts": 60,
-   "triangles": 20026,
+   "parts": 52,
+   "triangles": 17034,
    "nodes": [
     {
      "node": "safety__787__Halo · arco principal",
@@ -18228,9 +18228,9 @@
      ],
      "triangles": 2607,
      "explode": [
-      -0.0034,
-      0.1013,
-      0.1177
+      -0.0039,
+      0.0982,
+      0.1107
      ]
     },
     {
@@ -18248,9 +18248,9 @@
      ],
      "triangles": 108,
      "explode": [
-      -0.1,
-      0.0788,
-      -0.0973
+      -0.1005,
+      0.0757,
+      -0.1042
      ]
     },
     {
@@ -18268,9 +18268,9 @@
      ],
      "triangles": 288,
      "explode": [
-      -0.1,
-      0.085,
-      -0.0996
+      -0.1005,
+      0.0819,
+      -0.1065
      ]
     },
     {
@@ -18288,9 +18288,9 @@
      ],
      "triangles": 108,
      "explode": [
-      0.0932,
-      0.0788,
-      -0.0973
+      0.0927,
+      0.0757,
+      -0.1042
      ]
     },
     {
@@ -18308,9 +18308,9 @@
      ],
      "triangles": 288,
      "explode": [
-      0.0932,
-      0.085,
-      -0.0996
+      0.0927,
+      0.0819,
+      -0.1065
      ]
     },
     {
@@ -18328,9 +18328,9 @@
      ],
      "triangles": 108,
      "explode": [
-      -0.0034,
-      0.0631,
-      0.2895
+      -0.0039,
+      0.06,
+      0.2825
      ]
     },
     {
@@ -18348,9 +18348,9 @@
      ],
      "triangles": 384,
      "explode": [
-      -0.0034,
-      0.0663,
-      0.2895
+      -0.0039,
+      0.0632,
+      0.2825
      ]
     },
     {
@@ -18368,9 +18368,9 @@
      ],
      "triangles": 1948,
      "explode": [
-      -0.0034,
-      0.1307,
-      -0.0797
+      -0.0039,
+      0.1276,
+      -0.0867
      ]
     },
     {
@@ -18388,9 +18388,9 @@
      ],
      "triangles": 80,
      "explode": [
-      -0.0034,
-      0.141,
-      -0.1745
+      -0.0039,
+      0.1379,
+      -0.1815
      ]
     },
     {
@@ -18408,9 +18408,9 @@
      ],
      "triangles": 108,
      "explode": [
-      -0.0559,
-      0.0736,
-      -0.0815
+      -0.0564,
+      0.0705,
+      -0.0885
      ]
     },
     {
@@ -18428,9 +18428,9 @@
      ],
      "triangles": 108,
      "explode": [
-      0.0491,
-      0.0736,
-      -0.0815
+      0.0486,
+      0.0705,
+      -0.0885
      ]
     },
     {
@@ -18448,9 +18448,9 @@
      ],
      "triangles": 448,
      "explode": [
-      -0.0034,
-      -0.0445,
-      0.7584
+      -0.0039,
+      -0.0476,
+      0.7515
      ]
     },
     {
@@ -18468,9 +18468,9 @@
      ],
      "triangles": 92,
      "explode": [
-      -0.0034,
-      -0.0314,
-      0.6955
+      -0.0039,
+      -0.0345,
+      0.6885
      ]
     },
     {
@@ -18488,9 +18488,9 @@
      ],
      "triangles": 92,
      "explode": [
-      -0.0034,
-      -0.0524,
-      0.7655
+      -0.0039,
+      -0.0555,
+      0.7585
      ]
     },
     {
@@ -18508,9 +18508,9 @@
      ],
      "triangles": 92,
      "explode": [
-      -0.0034,
-      -0.0769,
-      0.8355
+      -0.0039,
+      -0.08,
+      0.8285
      ]
     },
     {
@@ -18528,9 +18528,9 @@
      ],
      "triangles": 448,
      "explode": [
-      -0.0034,
-      -0.0419,
-      -0.7906
+      -0.0039,
+      -0.045,
+      -0.7976
      ]
     },
     {
@@ -18548,9 +18548,9 @@
      ],
      "triangles": 92,
      "explode": [
-      -0.0034,
-      -0.0437,
-      -0.7801
+      -0.0039,
+      -0.0468,
+      -0.7871
      ]
     },
     {
@@ -18568,9 +18568,9 @@
      ],
      "triangles": 108,
      "explode": [
-      -0.0034,
-      -0.0577,
-      -0.8883
+      -0.0039,
+      -0.0608,
+      -0.8952
      ]
     },
     {
@@ -18588,9 +18588,9 @@
      ],
      "triangles": 76,
      "explode": [
-      -0.171,
-      -0.0284,
-      0.1017
+      -0.1715,
+      -0.0316,
+      0.0947
      ]
     },
     {
@@ -18608,9 +18608,9 @@
      ],
      "triangles": 108,
      "explode": [
-      -0.1119,
-      -0.0279,
-      0.1075
+      -0.1124,
+      -0.031,
+      0.1005
      ]
     },
     {
@@ -18628,9 +18628,9 @@
      ],
      "triangles": 76,
      "explode": [
-      -0.171,
-      -0.0425,
-      -0.1083
+      -0.1715,
+      -0.0456,
+      -0.1153
      ]
     },
     {
@@ -18648,9 +18648,9 @@
      ],
      "triangles": 108,
      "explode": [
-      -0.1119,
-      -0.0419,
-      -0.1025
+      -0.1124,
+      -0.045,
+      -0.1095
      ]
     },
     {
@@ -18668,9 +18668,9 @@
      ],
      "triangles": 76,
      "explode": [
-      0.1641,
-      -0.0284,
-      0.1017
+      0.1636,
+      -0.0316,
+      0.0947
      ]
     },
     {
@@ -18688,9 +18688,9 @@
      ],
      "triangles": 108,
      "explode": [
-      0.1051,
-      -0.0279,
-      0.1075
+      0.1046,
+      -0.031,
+      0.1005
      ]
     },
     {
@@ -18708,9 +18708,9 @@
      ],
      "triangles": 76,
      "explode": [
-      0.1641,
-      -0.0425,
-      -0.1083
+      0.1636,
+      -0.0456,
+      -0.1153
      ]
     },
     {
@@ -18728,9 +18728,9 @@
      ],
      "triangles": 108,
      "explode": [
-      0.1051,
-      -0.0419,
-      -0.1025
+      0.1046,
+      -0.045,
+      -0.1095
      ]
     },
     {
@@ -18748,9 +18748,9 @@
      ],
      "triangles": 28,
      "explode": [
-      -0.1539,
-      0.0149,
-      0.574
+      -0.1544,
+      0.0118,
+      0.5671
      ]
     },
     {
@@ -18768,9 +18768,9 @@
      ],
      "triangles": 720,
      "explode": [
-      -0.0909,
-      0.0263,
-      0.6132
+      -0.0914,
+      0.0232,
+      0.6062
      ]
     },
     {
@@ -18788,9 +18788,9 @@
      ],
      "triangles": 28,
      "explode": [
-      -0.1548,
-      -0.0935,
-      0.4988
+      -0.1553,
+      -0.0966,
+      0.4918
      ]
     },
     {
@@ -18808,53 +18808,13 @@
      ],
      "triangles": 720,
      "explode": [
-      -0.0874,
-      -0.0979,
-      0.4627
+      -0.0879,
+      -0.101,
+      0.4557
      ]
     },
     {
-     "node": "safety__817__Cabo de retenção 3 dianteiro direito",
-     "part": "Cabo de retenção 3 dianteiro direito",
-     "min": [
-      -0.5631,
-      0.2395,
-      1.466
-     ],
-     "max": [
-      -0.2619,
-      0.6075,
-      1.509
-     ],
-     "triangles": 28,
-     "explode": [
-      -0.1478,
-      -0.0197,
-      0.5231
-     ]
-    },
-    {
-     "node": "safety__818__Terminal do cabo de retenção 3 dianteiro direito",
-     "part": "Terminal do cabo de retenção 3 dianteiro direito",
-     "min": [
-      -0.273,
-      0.597,
-      1.462
-     ],
-     "max": [
-      -0.257,
-      0.613,
-      1.478
-     ],
-     "triangles": 720,
-     "explode": [
-      -0.0962,
-      0.0438,
-      0.517
-     ]
-    },
-    {
-     "node": "safety__819__Cabo de retenção 1 dianteiro esquerdo",
+     "node": "safety__817__Cabo de retenção 1 dianteiro esquerdo",
      "part": "Cabo de retenção 1 dianteiro esquerdo",
      "min": [
       0.2479,
@@ -18868,13 +18828,13 @@
      ],
      "triangles": 28,
      "explode": [
-      0.1471,
-      0.0149,
-      0.574
+      0.1466,
+      0.0118,
+      0.5671
      ]
     },
     {
-     "node": "safety__820__Terminal do cabo de retenção 1 dianteiro esquerdo",
+     "node": "safety__818__Terminal do cabo de retenção 1 dianteiro esquerdo",
      "part": "Terminal do cabo de retenção 1 dianteiro esquerdo",
      "min": [
       0.242,
@@ -18888,13 +18848,13 @@
      ],
      "triangles": 720,
      "explode": [
-      0.0841,
-      0.0263,
-      0.6132
+      0.0836,
+      0.0232,
+      0.6062
      ]
     },
     {
-     "node": "safety__821__Cabo de retenção 2 dianteiro esquerdo",
+     "node": "safety__819__Cabo de retenção 2 dianteiro esquerdo",
      "part": "Cabo de retenção 2 dianteiro esquerdo",
      "min": [
       0.2381,
@@ -18908,13 +18868,13 @@
      ],
      "triangles": 28,
      "explode": [
-      0.148,
-      -0.0935,
-      0.4988
+      0.1474,
+      -0.0966,
+      0.4918
      ]
     },
     {
-     "node": "safety__822__Terminal do cabo de retenção 2 dianteiro esquerdo",
+     "node": "safety__820__Terminal do cabo de retenção 2 dianteiro esquerdo",
      "part": "Terminal do cabo de retenção 2 dianteiro esquerdo",
      "min": [
       0.232,
@@ -18928,53 +18888,13 @@
      ],
      "triangles": 720,
      "explode": [
-      0.0806,
-      -0.0979,
-      0.4627
+      0.0801,
+      -0.101,
+      0.4557
      ]
     },
     {
-     "node": "safety__823__Cabo de retenção 3 dianteiro esquerdo",
-     "part": "Cabo de retenção 3 dianteiro esquerdo",
-     "min": [
-      0.2619,
-      0.2395,
-      1.466
-     ],
-     "max": [
-      0.5631,
-      0.6075,
-      1.509
-     ],
-     "triangles": 28,
-     "explode": [
-      0.141,
-      -0.0197,
-      0.5231
-     ]
-    },
-    {
-     "node": "safety__824__Terminal do cabo de retenção 3 dianteiro esquerdo",
-     "part": "Terminal do cabo de retenção 3 dianteiro esquerdo",
-     "min": [
-      0.257,
-      0.597,
-      1.462
-     ],
-     "max": [
-      0.273,
-      0.613,
-      1.478
-     ],
-     "triangles": 720,
-     "explode": [
-      0.0893,
-      0.0438,
-      0.517
-     ]
-    },
-    {
-     "node": "safety__825__Cabo de retenção 1 traseiro direito",
+     "node": "safety__821__Cabo de retenção 1 traseiro direito",
      "part": "Cabo de retenção 1 traseiro direito",
      "min": [
       -0.6168,
@@ -18988,13 +18908,13 @@
      ],
      "triangles": 28,
      "explode": [
-      -0.1417,
-      0.0097,
-      -0.6009
+      -0.1422,
+      0.0066,
+      -0.6079
      ]
     },
     {
-     "node": "safety__826__Terminal do cabo de retenção 1 traseiro direito",
+     "node": "safety__822__Terminal do cabo de retenção 1 traseiro direito",
      "part": "Terminal do cabo de retenção 1 traseiro direito",
      "min": [
       -0.183,
@@ -19008,13 +18928,13 @@
      ],
      "triangles": 720,
      "explode": [
-      -0.0647,
-      0.0158,
-      -0.561
+      -0.0652,
+      0.0127,
+      -0.568
      ]
     },
     {
-     "node": "safety__827__Cabo de retenção 2 traseiro direito",
+     "node": "safety__823__Cabo de retenção 2 traseiro direito",
      "part": "Cabo de retenção 2 traseiro direito",
      "min": [
       -0.6315,
@@ -19028,13 +18948,13 @@
      ],
      "triangles": 28,
      "explode": [
-      -0.1417,
-      -0.0892,
-      -0.6744
+      -0.1422,
+      -0.0923,
+      -0.6814
      ]
     },
     {
-     "node": "safety__828__Terminal do cabo de retenção 2 traseiro direito",
+     "node": "safety__824__Terminal do cabo de retenção 2 traseiro direito",
      "part": "Terminal do cabo de retenção 2 traseiro direito",
      "min": [
       -0.168,
@@ -19048,53 +18968,13 @@
      ],
      "triangles": 720,
      "explode": [
-      -0.0594,
-      -0.0927,
-      -0.708
+      -0.0599,
+      -0.0958,
+      -0.715
      ]
     },
     {
-     "node": "safety__829__Cabo de retenção 3 traseiro direito",
-     "part": "Cabo de retenção 3 traseiro direito",
-     "min": [
-      -0.5919,
-      0.2785,
-      -1.8039
-     ],
-     "max": [
-      -0.2431,
-      0.4785,
-      -1.7311
-     ],
-     "triangles": 28,
-     "explode": [
-      -0.1495,
-      -0.0355,
-      -0.6162
-     ]
-    },
-    {
-     "node": "safety__830__Terminal do cabo de retenção 3 traseiro direito",
-     "part": "Terminal do cabo de retenção 3 traseiro direito",
-     "min": [
-      -0.253,
-      0.274,
-      -1.743
-     ],
-     "max": [
-      -0.237,
-      0.29,
-      -1.727
-     ],
-     "triangles": 720,
-     "explode": [
-      -0.0892,
-      -0.0692,
-      -0.6048
-     ]
-    },
-    {
-     "node": "safety__831__Cabo de retenção 1 traseiro esquerdo",
+     "node": "safety__825__Cabo de retenção 1 traseiro esquerdo",
      "part": "Cabo de retenção 1 traseiro esquerdo",
      "min": [
       0.1732,
@@ -19108,13 +18988,13 @@
      ],
      "triangles": 28,
      "explode": [
-      0.1348,
-      0.0097,
-      -0.6009
+      0.1343,
+      0.0066,
+      -0.6079
      ]
     },
     {
-     "node": "safety__832__Terminal do cabo de retenção 1 traseiro esquerdo",
+     "node": "safety__826__Terminal do cabo de retenção 1 traseiro esquerdo",
      "part": "Terminal do cabo de retenção 1 traseiro esquerdo",
      "min": [
       0.167,
@@ -19128,13 +19008,13 @@
      ],
      "triangles": 720,
      "explode": [
-      0.0578,
-      0.0158,
-      -0.561
+      0.0573,
+      0.0127,
+      -0.568
      ]
     },
     {
-     "node": "safety__833__Cabo de retenção 2 traseiro esquerdo",
+     "node": "safety__827__Cabo de retenção 2 traseiro esquerdo",
      "part": "Cabo de retenção 2 traseiro esquerdo",
      "min": [
       0.1585,
@@ -19148,13 +19028,13 @@
      ],
      "triangles": 28,
      "explode": [
-      0.1348,
-      -0.0892,
-      -0.6744
+      0.1343,
+      -0.0923,
+      -0.6814
      ]
     },
     {
-     "node": "safety__834__Terminal do cabo de retenção 2 traseiro esquerdo",
+     "node": "safety__828__Terminal do cabo de retenção 2 traseiro esquerdo",
      "part": "Terminal do cabo de retenção 2 traseiro esquerdo",
      "min": [
       0.152,
@@ -19168,53 +19048,13 @@
      ],
      "triangles": 720,
      "explode": [
-      0.0526,
-      -0.0927,
-      -0.708
+      0.0521,
+      -0.0958,
+      -0.715
      ]
     },
     {
-     "node": "safety__835__Cabo de retenção 3 traseiro esquerdo",
-     "part": "Cabo de retenção 3 traseiro esquerdo",
-     "min": [
-      0.2431,
-      0.2785,
-      -1.8039
-     ],
-     "max": [
-      0.5919,
-      0.4785,
-      -1.7311
-     ],
-     "triangles": 28,
-     "explode": [
-      0.1427,
-      -0.0355,
-      -0.6162
-     ]
-    },
-    {
-     "node": "safety__836__Terminal do cabo de retenção 3 traseiro esquerdo",
-     "part": "Terminal do cabo de retenção 3 traseiro esquerdo",
-     "min": [
-      0.237,
-      0.274,
-      -1.743
-     ],
-     "max": [
-      0.253,
-      0.29,
-      -1.727
-     ],
-     "triangles": 720,
-     "explode": [
-      0.0823,
-      -0.0692,
-      -0.6048
-     ]
-    },
-    {
-     "node": "safety__837__Encosto de cabeça removível",
+     "node": "safety__829__Encosto de cabeça removível",
      "part": "Encosto de cabeça removível",
      "min": [
       -0.2642,
@@ -19228,13 +19068,13 @@
      ],
      "triangles": 815,
      "explode": [
-      -0.0034,
-      0.1115,
-      0.0477
+      -0.0039,
+      0.1084,
+      0.0407
      ]
     },
     {
-     "node": "safety__838__Pino de retenção do encosto direito",
+     "node": "safety__830__Pino de retenção do encosto direito",
      "part": "Pino de retenção do encosto direito",
      "min": [
       -0.221,
@@ -19248,13 +19088,13 @@
      ],
      "triangles": 140,
      "explode": [
-      -0.0787,
-      0.1261,
-      0.1425
+      -0.0792,
+      0.123,
+      0.1355
      ]
     },
     {
-     "node": "safety__839__Pino de retenção do encosto esquerdo",
+     "node": "safety__831__Pino de retenção do encosto esquerdo",
      "part": "Pino de retenção do encosto esquerdo",
      "min": [
       0.209,
@@ -19268,13 +19108,13 @@
      ],
      "triangles": 140,
      "explode": [
-      0.0718,
-      0.1261,
-      0.1425
+      0.0713,
+      0.123,
+      0.1355
      ]
     },
     {
-     "node": "safety__840__Extintor · garrafa",
+     "node": "safety__832__Extintor · garrafa",
      "part": "Extintor · garrafa",
      "min": [
       -0.056,
@@ -19288,13 +19128,13 @@
      ],
      "triangles": 320,
      "explode": [
-      -0.0034,
-      -0.0909,
-      0.2195
+      -0.0039,
+      -0.094,
+      0.2125
      ]
     },
     {
-     "node": "safety__841__Válvula do extintor",
+     "node": "safety__833__Válvula do extintor",
      "part": "Válvula do extintor",
      "min": [
       -0.022,
@@ -19308,13 +19148,13 @@
      ],
      "triangles": 236,
      "explode": [
-      -0.0034,
-      -0.0909,
-      0.2702
+      -0.0039,
+      -0.094,
+      0.2632
      ]
     },
     {
-     "node": "safety__842__Bico do extintor · cockpit",
+     "node": "safety__834__Bico do extintor · cockpit",
      "part": "Bico do extintor · cockpit",
      "min": [
       -0.0035,
@@ -19328,13 +19168,13 @@
      ],
      "triangles": 336,
      "explode": [
-      0.0281,
-      -0.0559,
-      0.209
+      0.0276,
+      -0.059,
+      0.2021
      ]
     },
     {
-     "node": "safety__843__Bico do extintor · compartimento do motor",
+     "node": "safety__835__Bico do extintor · compartimento do motor",
      "part": "Bico do extintor · compartimento do motor",
      "min": [
       -0.2113,
@@ -19348,13 +19188,13 @@
      ],
      "triangles": 496,
      "explode": [
-      -0.0397,
-      -0.042,
-      -0.0694
+      -0.0402,
+      -0.0451,
+      -0.0763
      ]
     },
     {
-     "node": "safety__844__Chave externa · corte geral (E)",
+     "node": "safety__836__Chave externa · corte geral (E)",
      "part": "Chave externa · corte geral (E)",
      "min": [
       0.208,
@@ -19368,13 +19208,13 @@
      ],
      "triangles": 140,
      "explode": [
-      0.0736,
-      0.1121,
-      -0.0955
+      0.0731,
+      0.109,
+      -0.1025
      ]
     },
     {
-     "node": "safety__845__Chave externa · extintor",
+     "node": "safety__837__Chave externa · extintor",
      "part": "Chave externa · extintor",
      "min": [
       0.148,
@@ -19388,13 +19228,13 @@
      ],
      "triangles": 140,
      "explode": [
-      0.0526,
-      0.1121,
-      -0.0955
+      0.0521,
+      0.109,
+      -0.1025
      ]
     },
     {
-     "node": "safety__846__Marcação de corte geral",
+     "node": "safety__838__Marcação de corte geral",
      "part": "Marcação de corte geral",
      "min": [
       0.2156,
@@ -19408,9 +19248,9 @@
      ],
      "triangles": 44,
      "explode": [
-      0.0734,
-      0.1191,
-      -0.0953
+      0.0729,
+      0.116,
+      -0.1022
      ]
     }
    ]
@@ -19421,7 +19261,7 @@
    "triangles": 19144,
    "nodes": [
     {
-     "node": "cockpit__847__Assento moldado em carbono",
+     "node": "cockpit__839__Assento moldado em carbono",
      "part": "Assento moldado em carbono",
      "min": [
       -0.2029,
@@ -19441,7 +19281,7 @@
      ]
     },
     {
-     "node": "cockpit__848__Apoio lateral de coxa direito",
+     "node": "cockpit__840__Apoio lateral de coxa direito",
      "part": "Apoio lateral de coxa direito",
      "min": [
       -0.14,
@@ -19461,7 +19301,7 @@
      ]
     },
     {
-     "node": "cockpit__849__Acolchoado de perna direito",
+     "node": "cockpit__841__Acolchoado de perna direito",
      "part": "Acolchoado de perna direito",
      "min": [
       -0.115,
@@ -19481,7 +19321,7 @@
      ]
     },
     {
-     "node": "cockpit__850__Apoio lateral de coxa esquerdo",
+     "node": "cockpit__842__Apoio lateral de coxa esquerdo",
      "part": "Apoio lateral de coxa esquerdo",
      "min": [
       0.11,
@@ -19501,7 +19341,7 @@
      ]
     },
     {
-     "node": "cockpit__851__Acolchoado de perna esquerdo",
+     "node": "cockpit__843__Acolchoado de perna esquerdo",
      "part": "Acolchoado de perna esquerdo",
      "min": [
       0.085,
@@ -19521,7 +19361,7 @@
      ]
     },
     {
-     "node": "cockpit__852__Cadarço de ombro direito",
+     "node": "cockpit__844__Cadarço de ombro direito",
      "part": "Cadarço de ombro direito",
      "min": [
       -0.1397,
@@ -19541,7 +19381,7 @@
      ]
     },
     {
-     "node": "cockpit__853__Cadarço de cintura direito",
+     "node": "cockpit__845__Cadarço de cintura direito",
      "part": "Cadarço de cintura direito",
      "min": [
       -0.1517,
@@ -19561,7 +19401,7 @@
      ]
     },
     {
-     "node": "cockpit__854__Cadarço de virilha direito",
+     "node": "cockpit__846__Cadarço de virilha direito",
      "part": "Cadarço de virilha direito",
      "min": [
       -0.0775,
@@ -19581,7 +19421,7 @@
      ]
     },
     {
-     "node": "cockpit__855__Ajustador do cadarço de ombro direito",
+     "node": "cockpit__847__Ajustador do cadarço de ombro direito",
      "part": "Ajustador do cadarço de ombro direito",
      "min": [
       -0.135,
@@ -19601,7 +19441,7 @@
      ]
     },
     {
-     "node": "cockpit__856__Ancoragem de ombro direito",
+     "node": "cockpit__848__Ancoragem de ombro direito",
      "part": "Ancoragem de ombro direito",
      "min": [
       -0.13,
@@ -19621,7 +19461,7 @@
      ]
     },
     {
-     "node": "cockpit__857__Ancoragem de cintura direito",
+     "node": "cockpit__849__Ancoragem de cintura direito",
      "part": "Ancoragem de cintura direito",
      "min": [
       -0.161,
@@ -19641,7 +19481,7 @@
      ]
     },
     {
-     "node": "cockpit__858__Cadarço de ombro esquerdo",
+     "node": "cockpit__850__Cadarço de ombro esquerdo",
      "part": "Cadarço de ombro esquerdo",
      "min": [
       -0.0058,
@@ -19661,7 +19501,7 @@
      ]
     },
     {
-     "node": "cockpit__859__Cadarço de cintura esquerdo",
+     "node": "cockpit__851__Cadarço de cintura esquerdo",
      "part": "Cadarço de cintura esquerdo",
      "min": [
       0.0492,
@@ -19681,7 +19521,7 @@
      ]
     },
     {
-     "node": "cockpit__860__Cadarço de virilha esquerdo",
+     "node": "cockpit__852__Cadarço de virilha esquerdo",
      "part": "Cadarço de virilha esquerdo",
      "min": [
       0.0032,
@@ -19701,7 +19541,7 @@
      ]
     },
     {
-     "node": "cockpit__861__Ajustador do cadarço de ombro esquerdo",
+     "node": "cockpit__853__Ajustador do cadarço de ombro esquerdo",
      "part": "Ajustador do cadarço de ombro esquerdo",
      "min": [
       0.055,
@@ -19721,7 +19561,7 @@
      ]
     },
     {
-     "node": "cockpit__862__Ancoragem de ombro esquerdo",
+     "node": "cockpit__854__Ancoragem de ombro esquerdo",
      "part": "Ancoragem de ombro esquerdo",
      "min": [
       0.07,
@@ -19741,7 +19581,7 @@
      ]
     },
     {
-     "node": "cockpit__863__Ancoragem de cintura esquerdo",
+     "node": "cockpit__855__Ancoragem de cintura esquerdo",
      "part": "Ancoragem de cintura esquerdo",
      "min": [
       0.149,
@@ -19761,7 +19601,7 @@
      ]
     },
     {
-     "node": "cockpit__864__Fecho rotativo central do arnês",
+     "node": "cockpit__856__Fecho rotativo central do arnês",
      "part": "Fecho rotativo central do arnês",
      "min": [
       -0.04,
@@ -19781,7 +19621,7 @@
      ]
     },
     {
-     "node": "cockpit__865__Alavanca de liberação do fecho",
+     "node": "cockpit__857__Alavanca de liberação do fecho",
      "part": "Alavanca de liberação do fecho",
      "min": [
       -0.0318,
@@ -19801,7 +19641,7 @@
      ]
     },
     {
-     "node": "cockpit__866__HANS · colar de carbono",
+     "node": "cockpit__858__HANS · colar de carbono",
      "part": "HANS · colar de carbono",
      "min": [
       -0.283,
@@ -19821,7 +19661,7 @@
      ]
     },
     {
-     "node": "cockpit__867__Tirante do HANS direito",
+     "node": "cockpit__859__Tirante do HANS direito",
      "part": "Tirante do HANS direito",
      "min": [
       -0.1325,
@@ -19841,7 +19681,7 @@
      ]
     },
     {
-     "node": "cockpit__868__Ancoragem do tirante no capacete direita",
+     "node": "cockpit__860__Ancoragem do tirante no capacete direita",
      "part": "Ancoragem do tirante no capacete direita",
      "min": [
       -0.11,
@@ -19861,7 +19701,7 @@
      ]
     },
     {
-     "node": "cockpit__869__Tirante do HANS esquerdo",
+     "node": "cockpit__861__Tirante do HANS esquerdo",
      "part": "Tirante do HANS esquerdo",
      "min": [
       0.0875,
@@ -19881,7 +19721,7 @@
      ]
     },
     {
-     "node": "cockpit__870__Ancoragem do tirante no capacete esquerda",
+     "node": "cockpit__862__Ancoragem do tirante no capacete esquerda",
      "part": "Ancoragem do tirante no capacete esquerda",
      "min": [
       0.09,
@@ -19901,7 +19741,7 @@
      ]
     },
     {
-     "node": "cockpit__871__Braço do pedal do acelerador",
+     "node": "cockpit__863__Braço do pedal do acelerador",
      "part": "Braço do pedal do acelerador",
      "min": [
       -0.093,
@@ -19921,7 +19761,7 @@
      ]
     },
     {
-     "node": "cockpit__872__Pedal do acelerador · pisadeira",
+     "node": "cockpit__864__Pedal do acelerador · pisadeira",
      "part": "Pedal do acelerador · pisadeira",
      "min": [
       -0.112,
@@ -19941,7 +19781,7 @@
      ]
     },
     {
-     "node": "cockpit__873__Pivô do pedal do acelerador",
+     "node": "cockpit__865__Pivô do pedal do acelerador",
      "part": "Pivô do pedal do acelerador",
      "min": [
       -0.1,
@@ -19961,7 +19801,7 @@
      ]
     },
     {
-     "node": "cockpit__874__Sensor de posição do acelerador",
+     "node": "cockpit__866__Sensor de posição do acelerador",
      "part": "Sensor de posição do acelerador",
      "min": [
       -0.12,
@@ -19981,7 +19821,7 @@
      ]
     },
     {
-     "node": "cockpit__875__Mola de retorno do acelerador",
+     "node": "cockpit__867__Mola de retorno do acelerador",
      "part": "Mola de retorno do acelerador",
      "min": [
       -0.0814,
@@ -20001,7 +19841,7 @@
      ]
     },
     {
-     "node": "cockpit__876__Batente do calcanhar",
+     "node": "cockpit__868__Batente do calcanhar",
      "part": "Batente do calcanhar",
      "min": [
       -0.12,
@@ -20021,7 +19861,7 @@
      ]
     },
     {
-     "node": "cockpit__877__Bolsa de hidratação",
+     "node": "cockpit__869__Bolsa de hidratação",
      "part": "Bolsa de hidratação",
      "min": [
       0.1025,
@@ -20041,7 +19881,7 @@
      ]
     },
     {
-     "node": "cockpit__878__Bomba de hidratação",
+     "node": "cockpit__870__Bomba de hidratação",
      "part": "Bomba de hidratação",
      "min": [
       0.104,
@@ -20061,7 +19901,7 @@
      ]
     },
     {
-     "node": "cockpit__879__Tubo de hidratação → capacete",
+     "node": "cockpit__871__Tubo de hidratação → capacete",
      "part": "Tubo de hidratação → capacete",
      "min": [
       0.0366,
@@ -20081,7 +19921,7 @@
      ]
     },
     {
-     "node": "cockpit__880__Painel de chaves auxiliares",
+     "node": "cockpit__872__Painel de chaves auxiliares",
      "part": "Painel de chaves auxiliares",
      "min": [
       -0.08,
@@ -20101,7 +19941,7 @@
      ]
     },
     {
-     "node": "cockpit__881__Chave auxiliar 1",
+     "node": "cockpit__873__Chave auxiliar 1",
      "part": "Chave auxiliar 1",
      "min": [
       -0.0557,
@@ -20121,7 +19961,7 @@
      ]
     },
     {
-     "node": "cockpit__882__Chave auxiliar 2",
+     "node": "cockpit__874__Chave auxiliar 2",
      "part": "Chave auxiliar 2",
      "min": [
       -0.0207,
@@ -20141,7 +19981,7 @@
      ]
     },
     {
-     "node": "cockpit__883__Chave auxiliar 3",
+     "node": "cockpit__875__Chave auxiliar 3",
      "part": "Chave auxiliar 3",
      "min": [
       0.0143,
@@ -20161,7 +20001,7 @@
      ]
     },
     {
-     "node": "cockpit__884__Chave auxiliar 4",
+     "node": "cockpit__876__Chave auxiliar 4",
      "part": "Chave auxiliar 4",
      "min": [
       0.0493,
@@ -20181,7 +20021,7 @@
      ]
     },
     {
-     "node": "cockpit__885__Rádio · caixa de comunicação",
+     "node": "cockpit__877__Rádio · caixa de comunicação",
      "part": "Rádio · caixa de comunicação",
      "min": [
       -0.1375,
@@ -20201,7 +20041,7 @@
      ]
     },
     {
-     "node": "cockpit__886__Cabo do rádio → capacete",
+     "node": "cockpit__878__Cabo do rádio → capacete",
      "part": "Cabo do rádio → capacete",
      "min": [
       -0.1643,
@@ -20228,7 +20068,7 @@
    "triangles": 23984,
    "nodes": [
     {
-     "node": "wheel__887__Corpo do volante · placa de carbono",
+     "node": "wheel__879__Corpo do volante · placa de carbono",
      "part": "Corpo do volante · placa de carbono",
      "min": [
       -0.146,
@@ -20248,7 +20088,7 @@
      ]
     },
     {
-     "node": "wheel__888__Tampa traseira de carbono",
+     "node": "wheel__880__Tampa traseira de carbono",
      "part": "Tampa traseira de carbono",
      "min": [
       -0.1358,
@@ -20268,7 +20108,7 @@
      ]
     },
     {
-     "node": "wheel__889__Placa eletrônica do volante",
+     "node": "wheel__881__Placa eletrônica do volante",
      "part": "Placa eletrônica do volante",
      "min": [
       -0.1,
@@ -20288,7 +20128,7 @@
      ]
     },
     {
-     "node": "wheel__890__Empunhadura esquerda",
+     "node": "wheel__882__Empunhadura esquerda",
      "part": "Empunhadura esquerda",
      "min": [
       0.0933,
@@ -20308,7 +20148,7 @@
      ]
     },
     {
-     "node": "wheel__891__Rolo de polegar esquerdo · ajuste fino",
+     "node": "wheel__883__Rolo de polegar esquerdo · ajuste fino",
      "part": "Rolo de polegar esquerdo · ajuste fino",
      "min": [
       0.11,
@@ -20328,7 +20168,7 @@
      ]
     },
     {
-     "node": "wheel__892__Empunhadura direita",
+     "node": "wheel__884__Empunhadura direita",
      "part": "Empunhadura direita",
      "min": [
       -0.1501,
@@ -20348,7 +20188,7 @@
      ]
     },
     {
-     "node": "wheel__893__Rolo de polegar direito · ajuste fino",
+     "node": "wheel__885__Rolo de polegar direito · ajuste fino",
      "part": "Rolo de polegar direito · ajuste fino",
      "min": [
       -0.122,
@@ -20368,7 +20208,7 @@
      ]
     },
     {
-     "node": "wheel__894__Moldura do display",
+     "node": "wheel__886__Moldura do display",
      "part": "Moldura do display",
      "min": [
       -0.067,
@@ -20388,7 +20228,7 @@
      ]
     },
     {
-     "node": "wheel__895__Display LCD central",
+     "node": "wheel__887__Display LCD central",
      "part": "Display LCD central",
      "min": [
       -0.06,
@@ -20408,7 +20248,7 @@
      ]
     },
     {
-     "node": "wheel__896__LED de troca 1",
+     "node": "wheel__888__LED de troca 1",
      "part": "LED de troca 1",
      "min": [
       0.053,
@@ -20428,7 +20268,7 @@
      ]
     },
     {
-     "node": "wheel__897__LED de troca 2",
+     "node": "wheel__889__LED de troca 2",
      "part": "LED de troca 2",
      "min": [
       0.045,
@@ -20448,7 +20288,7 @@
      ]
     },
     {
-     "node": "wheel__898__LED de troca 3",
+     "node": "wheel__890__LED de troca 3",
      "part": "LED de troca 3",
      "min": [
       0.037,
@@ -20468,7 +20308,7 @@
      ]
     },
     {
-     "node": "wheel__899__LED de troca 4",
+     "node": "wheel__891__LED de troca 4",
      "part": "LED de troca 4",
      "min": [
       0.029,
@@ -20488,7 +20328,7 @@
      ]
     },
     {
-     "node": "wheel__900__LED de troca 5",
+     "node": "wheel__892__LED de troca 5",
      "part": "LED de troca 5",
      "min": [
       0.021,
@@ -20508,7 +20348,7 @@
      ]
     },
     {
-     "node": "wheel__901__LED de troca 6",
+     "node": "wheel__893__LED de troca 6",
      "part": "LED de troca 6",
      "min": [
       0.013,
@@ -20528,7 +20368,7 @@
      ]
     },
     {
-     "node": "wheel__902__LED de troca 7",
+     "node": "wheel__894__LED de troca 7",
      "part": "LED de troca 7",
      "min": [
       0.005,
@@ -20548,7 +20388,7 @@
      ]
     },
     {
-     "node": "wheel__903__LED de troca 8",
+     "node": "wheel__895__LED de troca 8",
      "part": "LED de troca 8",
      "min": [
       -0.003,
@@ -20568,7 +20408,7 @@
      ]
     },
     {
-     "node": "wheel__904__LED de troca 9",
+     "node": "wheel__896__LED de troca 9",
      "part": "LED de troca 9",
      "min": [
       -0.011,
@@ -20588,7 +20428,7 @@
      ]
     },
     {
-     "node": "wheel__905__LED de troca 10",
+     "node": "wheel__897__LED de troca 10",
      "part": "LED de troca 10",
      "min": [
       -0.019,
@@ -20608,7 +20448,7 @@
      ]
     },
     {
-     "node": "wheel__906__LED de troca 11",
+     "node": "wheel__898__LED de troca 11",
      "part": "LED de troca 11",
      "min": [
       -0.027,
@@ -20628,7 +20468,7 @@
      ]
     },
     {
-     "node": "wheel__907__LED de troca 12",
+     "node": "wheel__899__LED de troca 12",
      "part": "LED de troca 12",
      "min": [
       -0.035,
@@ -20648,7 +20488,7 @@
      ]
     },
     {
-     "node": "wheel__908__LED de troca 13",
+     "node": "wheel__900__LED de troca 13",
      "part": "LED de troca 13",
      "min": [
       -0.043,
@@ -20668,7 +20508,7 @@
      ]
     },
     {
-     "node": "wheel__909__LED de troca 14",
+     "node": "wheel__901__LED de troca 14",
      "part": "LED de troca 14",
      "min": [
       -0.051,
@@ -20688,7 +20528,7 @@
      ]
     },
     {
-     "node": "wheel__910__LED de troca 15",
+     "node": "wheel__902__LED de troca 15",
      "part": "LED de troca 15",
      "min": [
       -0.059,
@@ -20708,7 +20548,7 @@
      ]
     },
     {
-     "node": "wheel__911__LED de bandeira amarela esquerdo",
+     "node": "wheel__903__LED de bandeira amarela esquerdo",
      "part": "LED de bandeira amarela esquerdo",
      "min": [
       0.0715,
@@ -20728,7 +20568,7 @@
      ]
     },
     {
-     "node": "wheel__912__LED de bandeira azul esquerdo",
+     "node": "wheel__904__LED de bandeira azul esquerdo",
      "part": "LED de bandeira azul esquerdo",
      "min": [
       0.0715,
@@ -20748,7 +20588,7 @@
      ]
     },
     {
-     "node": "wheel__913__LED de bandeira branca esquerdo",
+     "node": "wheel__905__LED de bandeira branca esquerdo",
      "part": "LED de bandeira branca esquerdo",
      "min": [
       0.0715,
@@ -20768,7 +20608,7 @@
      ]
     },
     {
-     "node": "wheel__914__LED de bandeira amarela direito",
+     "node": "wheel__906__LED de bandeira amarela direito",
      "part": "LED de bandeira amarela direito",
      "min": [
       -0.0765,
@@ -20788,7 +20628,7 @@
      ]
     },
     {
-     "node": "wheel__915__LED de bandeira azul direito",
+     "node": "wheel__907__LED de bandeira azul direito",
      "part": "LED de bandeira azul direito",
      "min": [
       -0.0765,
@@ -20808,7 +20648,7 @@
      ]
     },
     {
-     "node": "wheel__916__LED de bandeira branca direito",
+     "node": "wheel__908__LED de bandeira branca direito",
      "part": "LED de bandeira branca direito",
      "min": [
       -0.0765,
@@ -20828,7 +20668,7 @@
      ]
     },
     {
-     "node": "wheel__917__Botão · N · ponto morto",
+     "node": "wheel__909__Botão · N · ponto morto",
      "part": "Botão · N · ponto morto",
      "min": [
       0.0882,
@@ -20848,7 +20688,7 @@
      ]
     },
     {
-     "node": "wheel__918__Legenda N",
+     "node": "wheel__910__Legenda N",
      "part": "Legenda N",
      "min": [
       0.0967,
@@ -20868,7 +20708,7 @@
      ]
     },
     {
-     "node": "wheel__919__Botão · R · rádio",
+     "node": "wheel__911__Botão · R · rádio",
      "part": "Botão · R · rádio",
      "min": [
       0.0706,
@@ -20888,7 +20728,7 @@
      ]
     },
     {
-     "node": "wheel__920__Legenda R",
+     "node": "wheel__912__Legenda R",
      "part": "Legenda R",
      "min": [
       0.0767,
@@ -20908,7 +20748,7 @@
      ]
     },
     {
-     "node": "wheel__921__Botão · DRINK · bebida",
+     "node": "wheel__913__Botão · DRINK · bebida",
      "part": "Botão · DRINK · bebida",
      "min": [
       0.0706,
@@ -20928,7 +20768,7 @@
      ]
     },
     {
-     "node": "wheel__922__Legenda DRK",
+     "node": "wheel__914__Legenda DRK",
      "part": "Legenda DRK",
      "min": [
       0.0738,
@@ -20948,7 +20788,7 @@
      ]
     },
     {
-     "node": "wheel__923__Botão · OT · override manual (2026)",
+     "node": "wheel__915__Botão · OT · override manual (2026)",
      "part": "Botão · OT · override manual (2026)",
      "min": [
       0.0706,
@@ -20968,7 +20808,7 @@
      ]
     },
     {
-     "node": "wheel__924__Legenda OT",
+     "node": "wheel__916__Legenda OT",
      "part": "Legenda OT",
      "min": [
       0.0751,
@@ -20988,7 +20828,7 @@
      ]
     },
     {
-     "node": "wheel__925__Botão · OK · confirmação",
+     "node": "wheel__917__Botão · OK · confirmação",
      "part": "Botão · OK · confirmação",
      "min": [
       0.0906,
@@ -21008,7 +20848,7 @@
      ]
     },
     {
-     "node": "wheel__926__Legenda OK",
+     "node": "wheel__918__Legenda OK",
      "part": "Legenda OK",
      "min": [
       0.0949,
@@ -21028,7 +20868,7 @@
      ]
     },
     {
-     "node": "wheel__927__Botão · P · limitador de boxes",
+     "node": "wheel__919__Botão · P · limitador de boxes",
      "part": "Botão · P · limitador de boxes",
      "min": [
       -0.1078,
@@ -21048,7 +20888,7 @@
      ]
     },
     {
-     "node": "wheel__928__Legenda P",
+     "node": "wheel__920__Legenda P",
      "part": "Legenda P",
      "min": [
       -0.099,
@@ -21068,7 +20908,7 @@
      ]
     },
     {
-     "node": "wheel__929__Botão · K1 · recuperação extra de energia",
+     "node": "wheel__921__Botão · K1 · recuperação extra de energia",
      "part": "Botão · K1 · recuperação extra de energia",
      "min": [
       -0.0854,
@@ -21088,7 +20928,7 @@
      ]
     },
     {
-     "node": "wheel__930__Legenda K1",
+     "node": "wheel__922__Legenda K1",
      "part": "Legenda K1",
      "min": [
       -0.0796,
@@ -21108,7 +20948,7 @@
      ]
     },
     {
-     "node": "wheel__931__Botão · AA · aerodinâmica ativa (2026)",
+     "node": "wheel__923__Botão · AA · aerodinâmica ativa (2026)",
      "part": "Botão · AA · aerodinâmica ativa (2026)",
      "min": [
       -0.0854,
@@ -21128,7 +20968,7 @@
      ]
     },
     {
-     "node": "wheel__932__Legenda AA",
+     "node": "wheel__924__Legenda AA",
      "part": "Legenda AA",
      "min": [
       -0.0808,
@@ -21148,7 +20988,7 @@
      ]
     },
     {
-     "node": "wheel__933__Botão · SOC · gestão de carga da bateria",
+     "node": "wheel__925__Botão · SOC · gestão de carga da bateria",
      "part": "Botão · SOC · gestão de carga da bateria",
      "min": [
       -0.0854,
@@ -21168,7 +21008,7 @@
      ]
     },
     {
-     "node": "wheel__934__Legenda SOC",
+     "node": "wheel__926__Legenda SOC",
      "part": "Legenda SOC",
      "min": [
       -0.082,
@@ -21188,7 +21028,7 @@
      ]
     },
     {
-     "node": "wheel__935__Botão · KO · cancelar",
+     "node": "wheel__927__Botão · KO · cancelar",
      "part": "Botão · KO · cancelar",
      "min": [
       -0.1054,
@@ -21208,7 +21048,7 @@
      ]
     },
     {
-     "node": "wheel__936__Legenda KO",
+     "node": "wheel__928__Legenda KO",
      "part": "Legenda KO",
      "min": [
       -0.1009,
@@ -21228,7 +21068,7 @@
      ]
     },
     {
-     "node": "wheel__937__Botão · PF · chamada de boxes",
+     "node": "wheel__929__Botão · PF · chamada de boxes",
      "part": "Botão · PF · chamada de boxes",
      "min": [
       0.1141,
@@ -21248,7 +21088,7 @@
      ]
     },
     {
-     "node": "wheel__938__Legenda PF",
+     "node": "wheel__930__Legenda PF",
      "part": "Legenda PF",
      "min": [
       0.1181,
@@ -21268,7 +21108,7 @@
      ]
     },
     {
-     "node": "wheel__939__Botão · FLAG · confirmação de bandeira",
+     "node": "wheel__931__Botão · FLAG · confirmação de bandeira",
      "part": "Botão · FLAG · confirmação de bandeira",
      "min": [
       -0.1259,
@@ -21288,7 +21128,7 @@
      ]
     },
     {
-     "node": "wheel__940__Legenda FLG",
+     "node": "wheel__932__Legenda FLG",
      "part": "Legenda FLG",
      "min": [
       -0.1233,
@@ -21308,7 +21148,7 @@
      ]
     },
     {
-     "node": "wheel__941__Balancim BMIG · migração de freio (−10/+10)",
+     "node": "wheel__933__Balancim BMIG · migração de freio (−10/+10)",
      "part": "Balancim BMIG · migração de freio (−10/+10)",
      "min": [
       0.099,
@@ -21328,7 +21168,7 @@
      ]
     },
     {
-     "node": "wheel__942__Balancim BBAL · balanço de freio (−1/+1)",
+     "node": "wheel__934__Balancim BBAL · balanço de freio (−1/+1)",
      "part": "Balancim BBAL · balanço de freio (−1/+1)",
      "min": [
       -0.109,
@@ -21348,7 +21188,7 @@
      ]
     },
     {
-     "node": "wheel__943__Seletor MID · mapa intermediário",
+     "node": "wheel__935__Seletor MID · mapa intermediário",
      "part": "Seletor MID · mapa intermediário",
      "min": [
       0.0951,
@@ -21368,7 +21208,7 @@
      ]
     },
     {
-     "node": "wheel__944__Seletor EB · freio-motor",
+     "node": "wheel__936__Seletor EB · freio-motor",
      "part": "Seletor EB · freio-motor",
      "min": [
       -0.1129,
@@ -21388,7 +21228,7 @@
      ]
     },
     {
-     "node": "wheel__945__Seletor multifunção esquerdo · estratégia (1–8)",
+     "node": "wheel__937__Seletor multifunção esquerdo · estratégia (1–8)",
      "part": "Seletor multifunção esquerdo · estratégia (1–8)",
      "min": [
       0.044,
@@ -21408,7 +21248,7 @@
      ]
     },
     {
-     "node": "wheel__946__Tampa usinada · Seletor multifunção esquerdo",
+     "node": "wheel__938__Tampa usinada · Seletor multifunção esquerdo",
      "part": "Tampa usinada · Seletor multifunção esquerdo",
      "min": [
       0.0512,
@@ -21428,7 +21268,7 @@
      ]
     },
     {
-     "node": "wheel__947__Indicador · Seletor multifunção esquerdo",
+     "node": "wheel__939__Indicador · Seletor multifunção esquerdo",
      "part": "Indicador · Seletor multifunção esquerdo",
      "min": [
       0.0612,
@@ -21448,7 +21288,7 @@
      ]
     },
     {
-     "node": "wheel__948__Posição 1 · Seletor multifunção esquerdo",
+     "node": "wheel__940__Posição 1 · Seletor multifunção esquerdo",
      "part": "Posição 1 · Seletor multifunção esquerdo",
      "min": [
       0.0772,
@@ -21468,7 +21308,7 @@
      ]
     },
     {
-     "node": "wheel__949__Posição 2 · Seletor multifunção esquerdo",
+     "node": "wheel__941__Posição 2 · Seletor multifunção esquerdo",
      "part": "Posição 2 · Seletor multifunção esquerdo",
      "min": [
       0.0841,
@@ -21488,7 +21328,7 @@
      ]
     },
     {
-     "node": "wheel__950__Posição 3 · Seletor multifunção esquerdo",
+     "node": "wheel__942__Posição 3 · Seletor multifunção esquerdo",
      "part": "Posição 3 · Seletor multifunção esquerdo",
      "min": [
       0.0806,
@@ -21508,7 +21348,7 @@
      ]
     },
     {
-     "node": "wheel__951__Posição 4 · Seletor multifunção esquerdo",
+     "node": "wheel__943__Posição 4 · Seletor multifunção esquerdo",
      "part": "Posição 4 · Seletor multifunção esquerdo",
      "min": [
       0.0682,
@@ -21528,7 +21368,7 @@
      ]
     },
     {
-     "node": "wheel__952__Posição 5 · Seletor multifunção esquerdo",
+     "node": "wheel__944__Posição 5 · Seletor multifunção esquerdo",
      "part": "Posição 5 · Seletor multifunção esquerdo",
      "min": [
       0.0523,
@@ -21548,7 +21388,7 @@
      ]
     },
     {
-     "node": "wheel__953__Posição 6 · Seletor multifunção esquerdo",
+     "node": "wheel__945__Posição 6 · Seletor multifunção esquerdo",
      "part": "Posição 6 · Seletor multifunção esquerdo",
      "min": [
       0.0399,
@@ -21568,7 +21408,7 @@
      ]
     },
     {
-     "node": "wheel__954__Posição 7 · Seletor multifunção esquerdo",
+     "node": "wheel__946__Posição 7 · Seletor multifunção esquerdo",
      "part": "Posição 7 · Seletor multifunção esquerdo",
      "min": [
       0.0364,
@@ -21588,7 +21428,7 @@
      ]
     },
     {
-     "node": "wheel__955__Posição 8 · Seletor multifunção esquerdo",
+     "node": "wheel__947__Posição 8 · Seletor multifunção esquerdo",
      "part": "Posição 8 · Seletor multifunção esquerdo",
      "min": [
       0.0433,
@@ -21608,7 +21448,7 @@
      ]
     },
     {
-     "node": "wheel__956__Seletor central · modo de corrida",
+     "node": "wheel__948__Seletor central · modo de corrida",
      "part": "Seletor central · modo de corrida",
      "min": [
       -0.021,
@@ -21628,7 +21468,7 @@
      ]
     },
     {
-     "node": "wheel__957__Tampa usinada · Seletor central",
+     "node": "wheel__949__Tampa usinada · Seletor central",
      "part": "Tampa usinada · Seletor central",
      "min": [
       -0.0126,
@@ -21648,7 +21488,7 @@
      ]
     },
     {
-     "node": "wheel__958__Indicador · Seletor central",
+     "node": "wheel__950__Indicador · Seletor central",
      "part": "Indicador · Seletor central",
      "min": [
       -0.0008,
@@ -21668,7 +21508,7 @@
      ]
     },
     {
-     "node": "wheel__959__Posição 1 · Seletor central",
+     "node": "wheel__951__Posição 1 · Seletor central",
      "part": "Posição 1 · Seletor central",
      "min": [
       0.0173,
@@ -21688,7 +21528,7 @@
      ]
     },
     {
-     "node": "wheel__960__Posição 2 · Seletor central",
+     "node": "wheel__952__Posição 2 · Seletor central",
      "part": "Posição 2 · Seletor central",
      "min": [
       0.0235,
@@ -21708,7 +21548,7 @@
      ]
     },
     {
-     "node": "wheel__961__Posição 3 · Seletor central",
+     "node": "wheel__953__Posição 3 · Seletor central",
      "part": "Posição 3 · Seletor central",
      "min": [
       0.0252,
@@ -21728,7 +21568,7 @@
      ]
     },
     {
-     "node": "wheel__962__Posição 4 · Seletor central",
+     "node": "wheel__954__Posição 4 · Seletor central",
      "part": "Posição 4 · Seletor central",
      "min": [
       0.0219,
@@ -21748,7 +21588,7 @@
      ]
     },
     {
-     "node": "wheel__963__Posição 5 · Seletor central",
+     "node": "wheel__955__Posição 5 · Seletor central",
      "part": "Posição 5 · Seletor central",
      "min": [
       0.0144,
@@ -21768,7 +21608,7 @@
      ]
     },
     {
-     "node": "wheel__964__Posição 6 · Seletor central",
+     "node": "wheel__956__Posição 6 · Seletor central",
      "part": "Posição 6 · Seletor central",
      "min": [
       0.004,
@@ -21788,7 +21628,7 @@
      ]
     },
     {
-     "node": "wheel__965__Posição 7 · Seletor central",
+     "node": "wheel__957__Posição 7 · Seletor central",
      "part": "Posição 7 · Seletor central",
      "min": [
       -0.0075,
@@ -21808,7 +21648,7 @@
      ]
     },
     {
-     "node": "wheel__966__Posição 8 · Seletor central",
+     "node": "wheel__958__Posição 8 · Seletor central",
      "part": "Posição 8 · Seletor central",
      "min": [
       -0.0179,
@@ -21828,7 +21668,7 @@
      ]
     },
     {
-     "node": "wheel__967__Posição 9 · Seletor central",
+     "node": "wheel__959__Posição 9 · Seletor central",
      "part": "Posição 9 · Seletor central",
      "min": [
       -0.0254,
@@ -21848,7 +21688,7 @@
      ]
     },
     {
-     "node": "wheel__968__Posição 10 · Seletor central",
+     "node": "wheel__960__Posição 10 · Seletor central",
      "part": "Posição 10 · Seletor central",
      "min": [
       -0.0287,
@@ -21868,7 +21708,7 @@
      ]
     },
     {
-     "node": "wheel__969__Posição 11 · Seletor central",
+     "node": "wheel__961__Posição 11 · Seletor central",
      "part": "Posição 11 · Seletor central",
      "min": [
       -0.027,
@@ -21888,7 +21728,7 @@
      ]
     },
     {
-     "node": "wheel__970__Posição 12 · Seletor central",
+     "node": "wheel__962__Posição 12 · Seletor central",
      "part": "Posição 12 · Seletor central",
      "min": [
       -0.0208,
@@ -21908,7 +21748,7 @@
      ]
     },
     {
-     "node": "wheel__971__Seletor multifunção direito · energia (1–12)",
+     "node": "wheel__963__Seletor multifunção direito · energia (1–12)",
      "part": "Seletor multifunção direito · energia (1–12)",
      "min": [
       -0.08,
@@ -21928,7 +21768,7 @@
      ]
     },
     {
-     "node": "wheel__972__Tampa usinada · Seletor multifunção direito",
+     "node": "wheel__964__Tampa usinada · Seletor multifunção direito",
      "part": "Tampa usinada · Seletor multifunção direito",
      "min": [
       -0.0728,
@@ -21948,7 +21788,7 @@
      ]
     },
     {
-     "node": "wheel__973__Indicador · Seletor multifunção direito",
+     "node": "wheel__965__Indicador · Seletor multifunção direito",
      "part": "Indicador · Seletor multifunção direito",
      "min": [
       -0.0627,
@@ -21968,7 +21808,7 @@
      ]
     },
     {
-     "node": "wheel__974__Posição 1 · Seletor multifunção direito",
+     "node": "wheel__966__Posição 1 · Seletor multifunção direito",
      "part": "Posição 1 · Seletor multifunção direito",
      "min": [
       -0.0468,
@@ -21988,7 +21828,7 @@
      ]
     },
     {
-     "node": "wheel__975__Posição 2 · Seletor multifunção direito",
+     "node": "wheel__967__Posição 2 · Seletor multifunção direito",
      "part": "Posição 2 · Seletor multifunção direito",
      "min": [
       -0.0413,
@@ -22008,7 +21848,7 @@
      ]
     },
     {
-     "node": "wheel__976__Posição 3 · Seletor multifunção direito",
+     "node": "wheel__968__Posição 3 · Seletor multifunção direito",
      "part": "Posição 3 · Seletor multifunção direito",
      "min": [
       -0.0398,
@@ -22028,7 +21868,7 @@
      ]
     },
     {
-     "node": "wheel__977__Posição 4 · Seletor multifunção direito",
+     "node": "wheel__969__Posição 4 · Seletor multifunção direito",
      "part": "Posição 4 · Seletor multifunção direito",
      "min": [
       -0.0427,
@@ -22048,7 +21888,7 @@
      ]
     },
     {
-     "node": "wheel__978__Posição 5 · Seletor multifunção direito",
+     "node": "wheel__970__Posição 5 · Seletor multifunção direito",
      "part": "Posição 5 · Seletor multifunção direito",
      "min": [
       -0.0494,
@@ -22068,7 +21908,7 @@
      ]
     },
     {
-     "node": "wheel__979__Posição 6 · Seletor multifunção direito",
+     "node": "wheel__971__Posição 6 · Seletor multifunção direito",
      "part": "Posição 6 · Seletor multifunção direito",
      "min": [
       -0.0586,
@@ -22088,7 +21928,7 @@
      ]
     },
     {
-     "node": "wheel__980__Posição 7 · Seletor multifunção direito",
+     "node": "wheel__972__Posição 7 · Seletor multifunção direito",
      "part": "Posição 7 · Seletor multifunção direito",
      "min": [
       -0.0689,
@@ -22108,7 +21948,7 @@
      ]
     },
     {
-     "node": "wheel__981__Posição 8 · Seletor multifunção direito",
+     "node": "wheel__973__Posição 8 · Seletor multifunção direito",
      "part": "Posição 8 · Seletor multifunção direito",
      "min": [
       -0.0781,
@@ -22128,7 +21968,7 @@
      ]
     },
     {
-     "node": "wheel__982__Posição 9 · Seletor multifunção direito",
+     "node": "wheel__974__Posição 9 · Seletor multifunção direito",
      "part": "Posição 9 · Seletor multifunção direito",
      "min": [
       -0.0848,
@@ -22148,7 +21988,7 @@
      ]
     },
     {
-     "node": "wheel__983__Posição 10 · Seletor multifunção direito",
+     "node": "wheel__975__Posição 10 · Seletor multifunção direito",
      "part": "Posição 10 · Seletor multifunção direito",
      "min": [
       -0.0877,
@@ -22168,7 +22008,7 @@
      ]
     },
     {
-     "node": "wheel__984__Posição 11 · Seletor multifunção direito",
+     "node": "wheel__976__Posição 11 · Seletor multifunção direito",
      "part": "Posição 11 · Seletor multifunção direito",
      "min": [
       -0.0862,
@@ -22188,7 +22028,7 @@
      ]
     },
     {
-     "node": "wheel__985__Posição 12 · Seletor multifunção direito",
+     "node": "wheel__977__Posição 12 · Seletor multifunção direito",
      "part": "Posição 12 · Seletor multifunção direito",
      "min": [
       -0.0807,
@@ -22208,7 +22048,7 @@
      ]
     },
     {
-     "node": "wheel__986__Emblema INTEIA do seletor central",
+     "node": "wheel__978__Emblema INTEIA do seletor central",
      "part": "Emblema INTEIA do seletor central",
      "min": [
       -0.008,
@@ -22228,7 +22068,7 @@
      ]
     },
     {
-     "node": "wheel__987__Gravação INTEIA no volante",
+     "node": "wheel__979__Gravação INTEIA no volante",
      "part": "Gravação INTEIA no volante",
      "min": [
       -0.0122,
@@ -22248,7 +22088,7 @@
      ]
     },
     {
-     "node": "wheel__988__Borboleta de marcha esquerda (−)",
+     "node": "wheel__980__Borboleta de marcha esquerda (−)",
      "part": "Borboleta de marcha esquerda (−)",
      "min": [
       0.0525,
@@ -22268,7 +22108,7 @@
      ]
     },
     {
-     "node": "wheel__989__Borboleta de embreagem esquerda",
+     "node": "wheel__981__Borboleta de embreagem esquerda",
      "part": "Borboleta de embreagem esquerda",
      "min": [
       0.05,
@@ -22288,7 +22128,7 @@
      ]
     },
     {
-     "node": "wheel__990__Sensor da borboleta esquerda",
+     "node": "wheel__982__Sensor da borboleta esquerda",
      "part": "Sensor da borboleta esquerda",
      "min": [
       0.037,
@@ -22308,7 +22148,7 @@
      ]
     },
     {
-     "node": "wheel__991__Borboleta de marcha direita (+)",
+     "node": "wheel__983__Borboleta de marcha direita (+)",
      "part": "Borboleta de marcha direita (+)",
      "min": [
       -0.1475,
@@ -22328,7 +22168,7 @@
      ]
     },
     {
-     "node": "wheel__992__Borboleta de embreagem direita",
+     "node": "wheel__984__Borboleta de embreagem direita",
      "part": "Borboleta de embreagem direita",
      "min": [
       -0.13,
@@ -22348,7 +22188,7 @@
      ]
     },
     {
-     "node": "wheel__993__Sensor da borboleta direita",
+     "node": "wheel__985__Sensor da borboleta direita",
      "part": "Sensor da borboleta direita",
      "min": [
       -0.053,
@@ -22368,7 +22208,7 @@
      ]
     },
     {
-     "node": "wheel__994__Engate rápido · cubo",
+     "node": "wheel__986__Engate rápido · cubo",
      "part": "Engate rápido · cubo",
      "min": [
       -0.036,
@@ -22388,7 +22228,7 @@
      ]
     },
     {
-     "node": "wheel__995__Engate rápido · anel de liberação",
+     "node": "wheel__987__Engate rápido · anel de liberação",
      "part": "Engate rápido · anel de liberação",
      "min": [
       -0.046,
@@ -22408,7 +22248,7 @@
      ]
     },
     {
-     "node": "wheel__996__Eixo estriado",
+     "node": "wheel__988__Eixo estriado",
      "part": "Eixo estriado",
      "min": [
       -0.0138,
@@ -22428,7 +22268,7 @@
      ]
     },
     {
-     "node": "wheel__997__Conector elétrico do volante",
+     "node": "wheel__989__Conector elétrico do volante",
      "part": "Conector elétrico do volante",
      "min": [
       -0.0117,
@@ -22448,7 +22288,7 @@
      ]
     },
     {
-     "node": "wheel__998__Cabo helicoidal do volante",
+     "node": "wheel__990__Cabo helicoidal do volante",
      "part": "Cabo helicoidal do volante",
      "min": [
       -0.0125,
@@ -22475,7 +22315,7 @@
    "triangles": 27388,
    "nodes": [
     {
-     "node": "sensors__999__Mastro do Pitot",
+     "node": "sensors__991__Mastro do Pitot",
      "part": "Mastro do Pitot",
      "min": [
       -0.0045,
@@ -22495,7 +22335,7 @@
      ]
     },
     {
-     "node": "sensors__1000__Tubo de Pitot",
+     "node": "sensors__992__Tubo de Pitot",
      "part": "Tubo de Pitot",
      "min": [
       -0.005,
@@ -22515,7 +22355,7 @@
      ]
     },
     {
-     "node": "sensors__1001__Ponta do Pitot · tomada dinâmica",
+     "node": "sensors__993__Ponta do Pitot · tomada dinâmica",
      "part": "Ponta do Pitot · tomada dinâmica",
      "min": [
       -0.0027,
@@ -22535,7 +22375,7 @@
      ]
     },
     {
-     "node": "sensors__1002__Tomada estática 0°",
+     "node": "sensors__994__Tomada estática 0°",
      "part": "Tomada estática 0°",
      "min": [
       -0.0075,
@@ -22555,7 +22395,7 @@
      ]
     },
     {
-     "node": "sensors__1003__Tomada estática 90°",
+     "node": "sensors__995__Tomada estática 90°",
      "part": "Tomada estática 90°",
      "min": [
       -0.0009,
@@ -22575,7 +22415,7 @@
      ]
     },
     {
-     "node": "sensors__1004__Tomada estática 180°",
+     "node": "sensors__996__Tomada estática 180°",
      "part": "Tomada estática 180°",
      "min": [
       0.0045,
@@ -22595,7 +22435,7 @@
      ]
     },
     {
-     "node": "sensors__1005__Tomada estática 270°",
+     "node": "sensors__997__Tomada estática 270°",
      "part": "Tomada estática 270°",
      "min": [
       -0.0009,
@@ -22615,7 +22455,7 @@
      ]
     },
     {
-     "node": "sensors__1006__Pressão do Pitot → transdutor → ECU",
+     "node": "sensors__998__Pressão do Pitot → transdutor → ECU",
      "part": "Pressão do Pitot → transdutor → ECU",
      "min": [
       -0.0103,
@@ -22636,7 +22476,7 @@
      ]
     },
     {
-     "node": "sensors__1007__Anel dentado do sensor de velocidade dianteiro e",
+     "node": "sensors__999__Anel dentado do sensor de velocidade dianteiro es",
      "part": "Anel dentado do sensor de velocidade dianteiro esquerdo",
      "min": [
       0.557,
@@ -22658,7 +22498,7 @@
      ]
     },
     {
-     "node": "sensors__1008__Sensor de velocidade de roda dianteiro esquerdo",
+     "node": "sensors__1000__Sensor de velocidade de roda dianteiro esquerdo",
      "part": "Sensor de velocidade de roda dianteiro esquerdo",
      "min": [
       0.548,
@@ -22678,7 +22518,7 @@
      ]
     },
     {
-     "node": "sensors__1009__Câmera infravermelha de temperatura do pneu dian",
+     "node": "sensors__1001__Câmera infravermelha de temperatura do pneu dian",
      "part": "Câmera infravermelha de temperatura do pneu dianteiro esquerdo",
      "min": [
       0.585,
@@ -22698,7 +22538,7 @@
      ]
     },
     {
-     "node": "sensors__1010__Lente da câmera IR dianteiro esquerdo",
+     "node": "sensors__1002__Lente da câmera IR dianteiro esquerdo",
      "part": "Lente da câmera IR dianteiro esquerdo",
      "min": [
       0.592,
@@ -22718,7 +22558,7 @@
      ]
     },
     {
-     "node": "sensors__1011__Anel dentado do sensor de velocidade dianteiro d",
+     "node": "sensors__1003__Anel dentado do sensor de velocidade dianteiro d",
      "part": "Anel dentado do sensor de velocidade dianteiro direito",
      "min": [
       -0.563,
@@ -22740,7 +22580,7 @@
      ]
     },
     {
-     "node": "sensors__1012__Sensor de velocidade de roda dianteiro direito",
+     "node": "sensors__1004__Sensor de velocidade de roda dianteiro direito",
      "part": "Sensor de velocidade de roda dianteiro direito",
      "min": [
       -0.562,
@@ -22760,7 +22600,7 @@
      ]
     },
     {
-     "node": "sensors__1013__Câmera infravermelha de temperatura do pneu dian",
+     "node": "sensors__1005__Câmera infravermelha de temperatura do pneu dian",
      "part": "Câmera infravermelha de temperatura do pneu dianteiro direito",
      "min": [
       -0.615,
@@ -22780,7 +22620,7 @@
      ]
     },
     {
-     "node": "sensors__1014__Lente da câmera IR dianteiro direito",
+     "node": "sensors__1006__Lente da câmera IR dianteiro direito",
      "part": "Lente da câmera IR dianteiro direito",
      "min": [
       -0.608,
@@ -22800,7 +22640,7 @@
      ]
     },
     {
-     "node": "sensors__1015__Anel dentado do sensor de velocidade traseiro es",
+     "node": "sensors__1007__Anel dentado do sensor de velocidade traseiro es",
      "part": "Anel dentado do sensor de velocidade traseiro esquerdo",
      "min": [
       0.557,
@@ -22822,7 +22662,7 @@
      ]
     },
     {
-     "node": "sensors__1016__Sensor de velocidade de roda traseiro esquerdo",
+     "node": "sensors__1008__Sensor de velocidade de roda traseiro esquerdo",
      "part": "Sensor de velocidade de roda traseiro esquerdo",
      "min": [
       0.548,
@@ -22842,7 +22682,7 @@
      ]
     },
     {
-     "node": "sensors__1017__Câmera infravermelha de temperatura do pneu tras",
+     "node": "sensors__1009__Câmera infravermelha de temperatura do pneu tras",
      "part": "Câmera infravermelha de temperatura do pneu traseiro esquerdo",
      "min": [
       0.585,
@@ -22862,7 +22702,7 @@
      ]
     },
     {
-     "node": "sensors__1018__Lente da câmera IR traseiro esquerdo",
+     "node": "sensors__1010__Lente da câmera IR traseiro esquerdo",
      "part": "Lente da câmera IR traseiro esquerdo",
      "min": [
       0.592,
@@ -22882,7 +22722,7 @@
      ]
     },
     {
-     "node": "sensors__1019__Anel dentado do sensor de velocidade traseiro di",
+     "node": "sensors__1011__Anel dentado do sensor de velocidade traseiro di",
      "part": "Anel dentado do sensor de velocidade traseiro direito",
      "min": [
       -0.563,
@@ -22904,7 +22744,7 @@
      ]
     },
     {
-     "node": "sensors__1020__Sensor de velocidade de roda traseiro direito",
+     "node": "sensors__1012__Sensor de velocidade de roda traseiro direito",
      "part": "Sensor de velocidade de roda traseiro direito",
      "min": [
       -0.562,
@@ -22924,7 +22764,7 @@
      ]
     },
     {
-     "node": "sensors__1021__Câmera infravermelha de temperatura do pneu tras",
+     "node": "sensors__1013__Câmera infravermelha de temperatura do pneu tras",
      "part": "Câmera infravermelha de temperatura do pneu traseiro direito",
      "min": [
       -0.615,
@@ -22944,7 +22784,7 @@
      ]
     },
     {
-     "node": "sensors__1022__Lente da câmera IR traseiro direito",
+     "node": "sensors__1014__Lente da câmera IR traseiro direito",
      "part": "Lente da câmera IR traseiro direito",
      "min": [
       -0.608,
@@ -22964,7 +22804,7 @@
      ]
     },
     {
-     "node": "sensors__1023__Sensor laser de altura dianteiro",
+     "node": "sensors__1015__Sensor laser de altura dianteiro",
      "part": "Sensor laser de altura dianteiro",
      "min": [
       -0.145,
@@ -22984,7 +22824,7 @@
      ]
     },
     {
-     "node": "sensors__1024__Janela do laser dianteiro",
+     "node": "sensors__1016__Janela do laser dianteiro",
      "part": "Janela do laser dianteiro",
      "min": [
       -0.135,
@@ -23004,7 +22844,7 @@
      ]
     },
     {
-     "node": "sensors__1025__Feixe do laser de altura dianteiro",
+     "node": "sensors__1017__Feixe do laser de altura dianteiro",
      "part": "Feixe do laser de altura dianteiro",
      "min": [
       -0.122,
@@ -23025,7 +22865,7 @@
      ]
     },
     {
-     "node": "sensors__1026__Sensor laser de altura traseiro",
+     "node": "sensors__1018__Sensor laser de altura traseiro",
      "part": "Sensor laser de altura traseiro",
      "min": [
       -0.145,
@@ -23045,7 +22885,7 @@
      ]
     },
     {
-     "node": "sensors__1027__Janela do laser traseiro",
+     "node": "sensors__1019__Janela do laser traseiro",
      "part": "Janela do laser traseiro",
      "min": [
       -0.135,
@@ -23065,7 +22905,7 @@
      ]
     },
     {
-     "node": "sensors__1028__Feixe do laser de altura traseiro",
+     "node": "sensors__1020__Feixe do laser de altura traseiro",
      "part": "Feixe do laser de altura traseiro",
      "min": [
       -0.122,
@@ -23086,7 +22926,7 @@
      ]
     },
     {
-     "node": "sensors__1029__ECU padrão · unidade de controle",
+     "node": "sensors__1021__ECU padrão · unidade de controle",
      "part": "ECU padrão · unidade de controle",
      "min": [
       0.165,
@@ -23106,7 +22946,7 @@
      ]
     },
     {
-     "node": "sensors__1030__Conector circular da ECU 1",
+     "node": "sensors__1022__Conector circular da ECU 1",
      "part": "Conector circular da ECU 1",
      "min": [
       0.2033,
@@ -23126,7 +22966,7 @@
      ]
     },
     {
-     "node": "sensors__1031__Conector circular da ECU 2",
+     "node": "sensors__1023__Conector circular da ECU 2",
      "part": "Conector circular da ECU 2",
      "min": [
       0.2033,
@@ -23146,7 +22986,7 @@
      ]
     },
     {
-     "node": "sensors__1032__Conector circular da ECU 3",
+     "node": "sensors__1024__Conector circular da ECU 3",
      "part": "Conector circular da ECU 3",
      "min": [
       0.2033,
@@ -23166,7 +23006,7 @@
      ]
     },
     {
-     "node": "sensors__1033__Gravação da ECU",
+     "node": "sensors__1025__Gravação da ECU",
      "part": "Gravação da ECU",
      "min": [
       0.2754,
@@ -23186,7 +23026,7 @@
      ]
     },
     {
-     "node": "sensors__1034__Gravador de dados de acidente",
+     "node": "sensors__1026__Gravador de dados de acidente",
      "part": "Gravador de dados de acidente",
      "min": [
       -0.27,
@@ -23206,7 +23046,7 @@
      ]
     },
     {
-     "node": "sensors__1035__Unidade inercial · IMU",
+     "node": "sensors__1027__Unidade inercial · IMU",
      "part": "Unidade inercial · IMU",
      "min": [
       -0.025,
@@ -23226,7 +23066,7 @@
      ]
     },
     {
-     "node": "sensors__1036__Transceptor de telemetria",
+     "node": "sensors__1028__Transceptor de telemetria",
      "part": "Transceptor de telemetria",
      "min": [
       0.17,
@@ -23246,7 +23086,7 @@
      ]
     },
     {
-     "node": "sensors__1037__Cabo coaxial → antena",
+     "node": "sensors__1029__Cabo coaxial → antena",
      "part": "Cabo coaxial → antena",
      "min": [
       -0.0025,
@@ -23266,7 +23106,7 @@
      ]
     },
     {
-     "node": "sensors__1038__Antena de telemetria em lâmina",
+     "node": "sensors__1030__Antena de telemetria em lâmina",
      "part": "Antena de telemetria em lâmina",
      "min": [
       -0.0062,
@@ -23286,7 +23126,7 @@
      ]
     },
     {
-     "node": "sensors__1039__Célula de carga do push-rod esquerdo",
+     "node": "sensors__1031__Célula de carga do push-rod esquerdo",
      "part": "Célula de carga do push-rod esquerdo",
      "min": [
       0.3857,
@@ -23306,7 +23146,7 @@
      ]
     },
     {
-     "node": "sensors__1040__Célula de carga do push-rod direito",
+     "node": "sensors__1032__Célula de carga do push-rod direito",
      "part": "Célula de carga do push-rod direito",
      "min": [
       -0.4393,
@@ -23326,7 +23166,7 @@
      ]
     },
     {
-     "node": "sensors__1041__Célula de carga do pull-rod esquerdo",
+     "node": "sensors__1033__Célula de carga do pull-rod esquerdo",
      "part": "Célula de carga do pull-rod esquerdo",
      "min": [
       0.3897,
@@ -23346,7 +23186,7 @@
      ]
     },
     {
-     "node": "sensors__1042__Célula de carga do pull-rod direito",
+     "node": "sensors__1034__Célula de carga do pull-rod direito",
      "part": "Célula de carga do pull-rod direito",
      "min": [
       -0.4453,
@@ -23366,7 +23206,7 @@
      ]
     },
     {
-     "node": "sensors__1043__Termopar de escape esquerdo",
+     "node": "sensors__1035__Termopar de escape esquerdo",
      "part": "Termopar de escape esquerdo",
      "min": [
       0.3311,
@@ -23386,7 +23226,7 @@
      ]
     },
     {
-     "node": "sensors__1044__Termopar de escape direito",
+     "node": "sensors__1036__Termopar de escape direito",
      "part": "Termopar de escape direito",
      "min": [
       -0.3389,
@@ -23406,7 +23246,7 @@
      ]
     },
     {
-     "node": "sensors__1045__Sensor de pressão do freio · circuito dianteiro",
+     "node": "sensors__1037__Sensor de pressão do freio · circuito dianteiro",
      "part": "Sensor de pressão do freio · circuito dianteiro",
      "min": [
       0.0893,
@@ -23426,7 +23266,7 @@
      ]
     },
     {
-     "node": "sensors__1046__Sensor de pressão do freio · circuito traseiro",
+     "node": "sensors__1038__Sensor de pressão do freio · circuito traseiro",
      "part": "Sensor de pressão do freio · circuito traseiro",
      "min": [
       0.0173,
@@ -23446,7 +23286,7 @@
      ]
     },
     {
-     "node": "sensors__1047__Sensor de temperatura da água",
+     "node": "sensors__1039__Sensor de temperatura da água",
      "part": "Sensor de temperatura da água",
      "min": [
       -0.2457,
@@ -23466,7 +23306,7 @@
      ]
     },
     {
-     "node": "sensors__1048__Sensor de pressão do óleo",
+     "node": "sensors__1040__Sensor de pressão do óleo",
      "part": "Sensor de pressão do óleo",
      "min": [
       0.3043,
@@ -23486,7 +23326,7 @@
      ]
     },
     {
-     "node": "sensors__1049__Chicote principal traseiro",
+     "node": "sensors__1041__Chicote principal traseiro",
      "part": "Chicote principal traseiro",
      "min": [
       0.0902,
@@ -23506,7 +23346,7 @@
      ]
     },
     {
-     "node": "sensors__1050__Conector do chicote traseiro",
+     "node": "sensors__1042__Conector do chicote traseiro",
      "part": "Conector do chicote traseiro",
      "min": [
       0.2573,
@@ -23526,7 +23366,7 @@
      ]
     },
     {
-     "node": "sensors__1051__Conector do chicote traseiro",
+     "node": "sensors__1043__Conector do chicote traseiro",
      "part": "Conector do chicote traseiro",
      "min": [
       0.2073,
@@ -23546,7 +23386,7 @@
      ]
     },
     {
-     "node": "sensors__1052__Conector do chicote traseiro",
+     "node": "sensors__1044__Conector do chicote traseiro",
      "part": "Conector do chicote traseiro",
      "min": [
       0.1473,
@@ -23566,7 +23406,7 @@
      ]
     },
     {
-     "node": "sensors__1053__Conector do chicote traseiro",
+     "node": "sensors__1045__Conector do chicote traseiro",
      "part": "Conector do chicote traseiro",
      "min": [
       0.0873,
@@ -23586,7 +23426,7 @@
      ]
     },
     {
-     "node": "sensors__1054__Dados dos sensores → ECU (traseiro)",
+     "node": "sensors__1046__Dados dos sensores → ECU (traseiro)",
      "part": "Dados dos sensores → ECU (traseiro)",
      "min": [
       0.0966,
@@ -23607,7 +23447,7 @@
      ]
     },
     {
-     "node": "sensors__1055__Chicote principal dianteiro",
+     "node": "sensors__1047__Chicote principal dianteiro",
      "part": "Chicote principal dianteiro",
      "min": [
       0.0904,
@@ -23627,7 +23467,7 @@
      ]
     },
     {
-     "node": "sensors__1056__Conector do chicote dianteiro",
+     "node": "sensors__1048__Conector do chicote dianteiro",
      "part": "Conector do chicote dianteiro",
      "min": [
       0.2073,
@@ -23647,7 +23487,7 @@
      ]
     },
     {
-     "node": "sensors__1057__Conector do chicote dianteiro",
+     "node": "sensors__1049__Conector do chicote dianteiro",
      "part": "Conector do chicote dianteiro",
      "min": [
       0.1273,
@@ -23667,7 +23507,7 @@
      ]
     },
     {
-     "node": "sensors__1058__Conector do chicote dianteiro",
+     "node": "sensors__1050__Conector do chicote dianteiro",
      "part": "Conector do chicote dianteiro",
      "min": [
       0.0873,
@@ -23687,7 +23527,7 @@
      ]
     },
     {
-     "node": "sensors__1059__Dados dos sensores → ECU (dianteiro)",
+     "node": "sensors__1051__Dados dos sensores → ECU (dianteiro)",
      "part": "Dados dos sensores → ECU (dianteiro)",
      "min": [
       0.0966,
@@ -23708,7 +23548,7 @@
      ]
     },
     {
-     "node": "sensors__1060__Telemetria carro → box",
+     "node": "sensors__1052__Telemetria carro → box",
      "part": "Telemetria carro → box",
      "min": [
       -1.2036,
@@ -23733,14 +23573,14 @@
  },
  "totals": {
   "systems": 14,
-  "parts": 1164,
-  "triangles": 417604,
-  "meshes": 915,
-  "nodes": 1178,
+  "parts": 1156,
+  "triangles": 414612,
+  "meshes": 891,
+  "nodes": 1170,
   "materials": 66,
   "images": 16,
-  "bytes": 6973812,
-  "raw_bytes": 13814212
+  "bytes": 6951372,
+  "raw_bytes": 13742256
  },
  "extensions_required": [
   "EXT_meshopt_compression",
@@ -23755,8 +23595,8 @@
   "KHR_texture_transform"
  ],
  "optimized": true,
- "sha256": "ec684d8b14249b7befb0b52950c88209fd04523c7684d3c530eb541ea3f39d87",
- "generator_sha256": "d4c60a4fc88945a704b8d7825ee9e65f5404573c67676d6063aeefbb7924e339",
- "library_sha256": "7c83bfd18e338fa731e445276b65db5acb6b57a18014a0f9d0672c9fa44823c5",
+ "sha256": "f4af6a2a82de6a4749e90dd0ad3ef002bdfd45e9591fd912d926cf3543fe65be",
+ "generator_sha256": "ebe02d14e1a8436e1e9545e3337d98b9d8187ea5deaeda6ad8e4553b27d3ab5b",
+ "library_sha256": "de04806e4bc0a0b411dc678197fd5b7d41a3a20a07ef2a355e722ce70f13d19d",
  "license": "© 2026 INTEIA — todos os direitos reservados; geometria didática original."
 }
