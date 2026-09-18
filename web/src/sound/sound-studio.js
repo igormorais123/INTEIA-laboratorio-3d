@@ -21,7 +21,7 @@ export const SOUND_CREDITS = Object.freeze([
 function readStoredCurve() { try { const raw = localStorage.getItem(STORAGE_KEY); return raw ? curveFromJSON(raw) : null; } catch { return null; } }
 function storeCurve(curve) { try { localStorage.setItem(STORAGE_KEY, JSON.stringify(curveToJSON(curve))); } catch { /* armazenamento indisponível */ } }
 
-export function createSoundStudio({workletSource, onEngineChange = () => {}} = {}) {
+export function createSoundStudio({workletSource, bench = null, onEngineChange = () => {}} = {}) {
   const ui = {
     panel: $('sound-panel'), status: $('sound-status'), power: $('sound-power'), volume: $('sound-volume'), volumeValue: $('sound-volume-value'),
     modeCurve: $('sound-mode-curve'), modeFree: $('sound-mode-free'), curveBlock: $('sound-curve-block'), freeBlock: $('sound-free-block'),
@@ -29,6 +29,7 @@ export function createSoundStudio({workletSource, onEngineChange = () => {}} = {
     throttle: $('sound-throttle'), throttleValue: $('sound-throttle-value'), fixed: $('sound-fixed'),
     tunerRpm: $('tuner-rpm'), tunerHz: $('tuner-hz'), tunerNote: $('tuner-note'), tunerMeasured: $('tuner-measured'), tunerDeviation: $('tuner-deviation'), tunerState: $('tuner-state'),
     cylinders: $('sound-cylinders'), cylinderNote: $('sound-cylinder-note'), credits: $('sound-credits-list'),
+    bench: $('sound-bench'), cut: $('sound-cut'), cutValue: $('sound-cut-value'), airbox: $('sound-airbox'), benchStatus: $('sound-bench-status'),
   };
   if (!ui.panel) return null;
   let engineId = 'v12_90s', profile = ENGINE_PROFILES[engineId];
@@ -38,6 +39,34 @@ export function createSoundStudio({workletSource, onEngineChange = () => {}} = {
   let status = {rpm: 0, thetaDeg: 0, running: false, cranking: false, limiter: false, load: 0.5, t: 0};
   let visualSlot = 0, lastMeasureAt = 0, measured = null;
   const analysis = new Float32Array(2048);
+  let active = false, airboxOpen = false;
+
+  // ---- bancada 3D: só o V12 tem modelo próprio; o V6 continua com o motor do carro
+  const benchFor = (id) => Boolean(bench) && id === 'v12_90s';
+  const syncBench = () => {
+    if (ui.bench) ui.bench.hidden = !benchFor(engineId);
+    bench?.setVisible(active && benchFor(engineId));
+  };
+  if (bench) {
+    bench.onStatus = (state, message) => {
+      if (!ui.benchStatus) return;
+      const text = state === 'loading' ? 'Carregando o motor da bancada…'
+        : state === 'failed' ? `Motor da bancada indisponível${message ? `: ${message}` : ''}.` : '';
+      ui.benchStatus.textContent = text; ui.benchStatus.hidden = !text;
+      ui.benchStatus.classList.toggle('warning', state === 'failed');
+    };
+  }
+  if (ui.cut) ui.cut.oninput = () => {
+    const amount = Number(ui.cut.value) / 100;
+    if (ui.cutValue) ui.cutValue.textContent = `${ui.cut.value}%`;
+    bench?.setCut(amount);
+  };
+  if (ui.airbox) ui.airbox.onclick = () => {
+    airboxOpen = !airboxOpen;
+    ui.airbox.setAttribute('aria-pressed', String(!airboxOpen));
+    ui.airbox.textContent = airboxOpen ? 'Fechar o airbox' : 'Abrir o airbox';
+    bench?.setAirbox(!airboxOpen);
+  };
 
   const setStatus = (text, warn = false) => { if (!ui.status) return; ui.status.textContent = text || ''; ui.status.hidden = !text; ui.status.classList.toggle('warning', warn); };
   const post = (message, transfer) => { node?.port.postMessage(message, transfer || []); };
@@ -161,7 +190,7 @@ export function createSoundStudio({workletSource, onEngineChange = () => {}} = {
     stopCurve(); if (power) { power = false; pushState({power: false}); }
     engineId = next; profile = ENGINE_PROFILES[next]; bankReady = false; fixedRpm = null;
     editorState = setMaxRpm(editorState, Math.min(editorState.maxRpm, profile.limitRpm), profile.limitRpm); editor?.render(); syncCurve();
-    renderCylinders(); syncButtons(); setStatus(`${profile.label} selecionado. Ligue o motor ou toque a curva para carregar o som.`);
+    renderCylinders(); syncButtons(); syncBench(); setStatus(`${profile.label} selecionado. Ligue o motor ou toque a curva para carregar o som.`);
     onEngineChange(profile);
   }
   document.querySelectorAll('[data-sound-engine]').forEach((b) => { b.onclick = () => setEngine(b.dataset.soundEngine); });
@@ -226,15 +255,16 @@ export function createSoundStudio({workletSource, onEngineChange = () => {}} = {
       }
       ui.cylinders.querySelectorAll('.sound-cylinder').forEach((cell) => cell.classList.toggle('firing', Number(cell.dataset.cylinder) === active));
     }
+    if (benchFor(engineId)) bench.setPose(status.thetaDeg || 0);
     editor?.setPlayhead(mode === 'curve' && playing ? status.t : null);
   }
 
-  syncButtons(); syncCurve();
+  syncButtons(); syncCurve(); syncBench();
   return {
     update, setEngine,
     get engine() { return profile; },
-    activate() { setStatus(bankReady ? `${profile.label}: banco pronto.` : `${profile.label} selecionado. Ligue o motor ou toque a curva para carregar o som.`); },
-    deactivate() { if (playing) stopCurve(); if (power) setPower(false); },
+    activate() { active = true; syncBench(); setStatus(bankReady ? `${profile.label}: banco pronto.` : `${profile.label} selecionado. Ligue o motor ou toque a curva para carregar o som.`); },
+    deactivate() { active = false; syncBench(); if (playing) stopCurve(); if (power) setPower(false); },
     dispose() { disposed = true; abort?.abort(); node?.disconnect(); context?.close(); },
   };
 }

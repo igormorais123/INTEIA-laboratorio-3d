@@ -1,0 +1,1825 @@
+{
+ "asset": "v12-v1.glb",
+ "bytes": 4676336,
+ "sha256": "c69a0b35c35f03e5d3605c375cf3555ccdbe5434bc3b7e30f11335e69f073632",
+ "generated_by": "ferramentas/v12/gerar_v12.py",
+ "blender": "5.2.0 LTS",
+ "license": "Geometria original INTEIA, ilustrativa e didática; proporções inspiradas em V12 de 3.5 L dos anos 90.",
+ "engine": {
+  "id": "v12_90s",
+  "cylinders": 12,
+  "bankAngleDeg": 65.0,
+  "boreM": 0.085,
+  "strokeM": 0.0645,
+  "crankRadiusM": 0.03225,
+  "rodLengthM": 0.118,
+  "cylinderSpacingM": 0.104,
+  "deckHeightM": 0.148,
+  "firingOrder": [
+   1,
+   7,
+   5,
+   11,
+   3,
+   9,
+   6,
+   12,
+   2,
+   8,
+   4,
+   10
+  ],
+  "firingIntervalDeg": 60.0,
+  "crankNode": "v12_virabrequim",
+  "crankAxis": "z",
+  "crankSignDeg": -1,
+  "camNodes": [
+   "v12_comando_adm_a",
+   "v12_comando_esc_a",
+   "v12_comando_adm_b",
+   "v12_comando_esc_b"
+  ],
+  "camRatio": 0.5
+ },
+ "cylinders": [
+  {
+   "cylinder": 1,
+   "bank": "A",
+   "axisDeg": -32.5,
+   "pinOffsetDeg": 327.5,
+   "firesAtDeg": 0.0,
+   "z": 0.274,
+   "piston": "v12_pistao_01",
+   "rod": "v12_biela_01",
+   "trumpet": "v12_trompeta_01"
+  },
+  {
+   "cylinder": 2,
+   "bank": "A",
+   "axisDeg": -32.5,
+   "pinOffsetDeg": 207.5,
+   "firesAtDeg": 480.0,
+   "z": 0.17,
+   "piston": "v12_pistao_02",
+   "rod": "v12_biela_02",
+   "trumpet": "v12_trompeta_02"
+  },
+  {
+   "cylinder": 3,
+   "bank": "A",
+   "axisDeg": -32.5,
+   "pinOffsetDeg": 87.5,
+   "firesAtDeg": 240.0,
+   "z": 0.066,
+   "piston": "v12_pistao_03",
+   "rod": "v12_biela_03",
+   "trumpet": "v12_trompeta_03"
+  },
+  {
+   "cylinder": 4,
+   "bank": "A",
+   "axisDeg": -32.5,
+   "pinOffsetDeg": 87.5,
+   "firesAtDeg": 600.0,
+   "z": -0.038,
+   "piston": "v12_pistao_04",
+   "rod": "v12_biela_04",
+   "trumpet": "v12_trompeta_04"
+  },
+  {
+   "cylinder": 5,
+   "bank": "A",
+   "axisDeg": -32.5,
+   "pinOffsetDeg": 207.5,
+   "firesAtDeg": 120.0,
+   "z": -0.142,
+   "piston": "v12_pistao_05",
+   "rod": "v12_biela_05",
+   "trumpet": "v12_trompeta_05"
+  },
+  {
+   "cylinder": 6,
+   "bank": "A",
+   "axisDeg": -32.5,
+   "pinOffsetDeg": 327.5,
+   "firesAtDeg": 360.0,
+   "z": -0.246,
+   "piston": "v12_pistao_06",
+   "rod": "v12_biela_06",
+   "trumpet": "v12_trompeta_06"
+  },
+  {
+   "cylinder": 7,
+   "bank": "B",
+   "axisDeg": 32.5,
+   "pinOffsetDeg": 332.5,
+   "firesAtDeg": 60.0,
+   "z": 0.246,
+   "piston": "v12_pistao_07",
+   "rod": "v12_biela_07",
+   "trumpet": "v12_trompeta_07"
+  },
+  {
+   "cylinder": 8,
+   "bank": "B",
+   "axisDeg": 32.5,
+   "pinOffsetDeg": 212.5,
+   "firesAtDeg": 540.0,
+   "z": 0.142,
+   "piston": "v12_pistao_08",
+   "rod": "v12_biela_08",
+   "trumpet": "v12_trompeta_08"
+  },
+  {
+   "cylinder": 9,
+   "bank": "B",
+   "axisDeg": 32.5,
+   "pinOffsetDeg": 92.5,
+   "firesAtDeg": 300.0,
+   "z": 0.038,
+   "piston": "v12_pistao_09",
+   "rod": "v12_biela_09",
+   "trumpet": "v12_trompeta_09"
+  },
+  {
+   "cylinder": 10,
+   "bank": "B",
+   "axisDeg": 32.5,
+   "pinOffsetDeg": 92.5,
+   "firesAtDeg": 660.0,
+   "z": -0.066,
+   "piston": "v12_pistao_10",
+   "rod": "v12_biela_10",
+   "trumpet": "v12_trompeta_10"
+  },
+  {
+   "cylinder": 11,
+   "bank": "B",
+   "axisDeg": 32.5,
+   "pinOffsetDeg": 212.5,
+   "firesAtDeg": 180.0,
+   "z": -0.17,
+   "piston": "v12_pistao_11",
+   "rod": "v12_biela_11",
+   "trumpet": "v12_trompeta_11"
+  },
+  {
+   "cylinder": 12,
+   "bank": "B",
+   "axisDeg": 32.5,
+   "pinOffsetDeg": 332.5,
+   "firesAtDeg": 420.0,
+   "z": -0.274,
+   "piston": "v12_pistao_12",
+   "rod": "v12_biela_12",
+   "trumpet": "v12_trompeta_12"
+  }
+ ],
+ "counts": {
+  "pistons": 12,
+  "rods": 12,
+  "trumpets": 12,
+  "crankpins": 6,
+  "valves": 48,
+  "valvesPerBank": {
+   "A": 24,
+   "B": 24
+  },
+  "camshafts": 4,
+  "nodes": 87
+ },
+ "totals": {
+  "nodes": 87,
+  "triangles": 132952
+ },
+ "nodes": [
+  {
+   "node": "v12__001__Bloco · cárter superior",
+   "part": "Bloco · cárter superior",
+   "triangles": 188,
+   "min": [
+    -0.106,
+    -0.1,
+    -0.345
+   ],
+   "max": [
+    0.106,
+    0.076,
+    0.345
+   ],
+   "cut": true
+  },
+  {
+   "node": "v12__002__Cárter seco · bandeja rasa",
+   "part": "Cárter seco · bandeja rasa",
+   "triangles": 108,
+   "min": [
+    -0.119,
+    -0.141,
+    -0.335
+   ],
+   "max": [
+    0.119,
+    -0.095,
+    0.335
+   ],
+   "cut": true
+  },
+  {
+   "node": "v12__010__Tampas dos mancais principais",
+   "part": "Tampas dos mancais principais",
+   "triangles": 756,
+   "min": [
+    -0.075,
+    -0.088,
+    -0.374
+   ],
+   "max": [
+    0.075,
+    -0.016,
+    0.27
+   ],
+   "cut": true
+  },
+  {
+   "node": "v12__011__Flange do cárter",
+   "part": "Flange do cárter",
+   "triangles": 108,
+   "min": [
+    -0.123,
+    -0.099,
+    -0.34
+   ],
+   "max": [
+    0.123,
+    -0.089,
+    0.34
+   ]
+  },
+  {
+   "node": "v12__012__Bancada de cilindros esquerda",
+   "part": "Bancada de cilindros esquerda",
+   "triangles": 108,
+   "min": [
+    -0.1218,
+    -0.0204,
+    -0.33
+   ],
+   "max": [
+    0.0391,
+    0.1503,
+    0.33
+   ],
+   "cut": true
+  },
+  {
+   "node": "v12__013__Cabeçote esquerda",
+   "part": "Cabeçote esquerda",
+   "triangles": 108,
+   "min": [
+    -0.168,
+    0.0931,
+    -0.325
+   ],
+   "max": [
+    -0.0298,
+    0.2172,
+    0.325
+   ],
+   "cut": true
+  },
+  {
+   "node": "v12__014__Tampa de comando esquerda",
+   "part": "Tampa de comando esquerda",
+   "triangles": 188,
+   "min": [
+    -0.1902,
+    0.1538,
+    -0.32
+   ],
+   "max": [
+    -0.0699,
+    0.2544,
+    0.32
+   ],
+   "cut": true
+  },
+  {
+   "node": "v12__015__Gravação da tampa esquerda",
+   "part": "Gravação da tampa esquerda",
+   "triangles": 564,
+   "min": [
+    -0.1854,
+    0.1994,
+    0.1139
+   ],
+   "max": [
+    -0.1033,
+    0.2522,
+    0.1278
+   ]
+  },
+  {
+   "node": "v12__022__Camisas úmidas esquerda",
+   "part": "Camisas úmidas esquerda",
+   "triangles": 1704,
+   "min": [
+    -0.1199,
+    0.049,
+    -0.2945
+   ],
+   "max": [
+    -0.0069,
+    0.15,
+    0.3225
+   ],
+   "cut": true
+  },
+  {
+   "node": "v12__035__Bobinas de ignição esquerda",
+   "part": "Bobinas de ignição esquerda",
+   "triangles": 984,
+   "min": [
+    -0.1676,
+    0.2052,
+    -0.2577
+   ],
+   "max": [
+    -0.1247,
+    0.2536,
+    0.2857
+   ]
+  },
+  {
+   "node": "v12__036__Injetores e galeria esquerda",
+   "part": "Injetores e galeria esquerda",
+   "triangles": 696,
+   "min": [
+    -0.0563,
+    0.091,
+    -0.2508
+   ],
+   "max": [
+    -0.0264,
+    0.1301,
+    0.2788
+   ]
+  },
+  {
+   "node": "v12__037__Bancada de cilindros direita",
+   "part": "Bancada de cilindros direita",
+   "triangles": 108,
+   "min": [
+    -0.0391,
+    -0.0204,
+    -0.33
+   ],
+   "max": [
+    0.1218,
+    0.1503,
+    0.33
+   ],
+   "cut": true
+  },
+  {
+   "node": "v12__038__Cabeçote direita",
+   "part": "Cabeçote direita",
+   "triangles": 108,
+   "min": [
+    0.0298,
+    0.0931,
+    -0.325
+   ],
+   "max": [
+    0.168,
+    0.2172,
+    0.325
+   ],
+   "cut": true
+  },
+  {
+   "node": "v12__039__Tampa de comando direita",
+   "part": "Tampa de comando direita",
+   "triangles": 188,
+   "min": [
+    0.0699,
+    0.1538,
+    -0.32
+   ],
+   "max": [
+    0.1902,
+    0.2544,
+    0.32
+   ],
+   "cut": true
+  },
+  {
+   "node": "v12__040__Gravação da tampa direita",
+   "part": "Gravação da tampa direita",
+   "triangles": 564,
+   "min": [
+    0.1026,
+    0.1998,
+    0.1139
+   ],
+   "max": [
+    0.1847,
+    0.2527,
+    0.1278
+   ]
+  },
+  {
+   "node": "v12__047__Camisas úmidas direita",
+   "part": "Camisas úmidas direita",
+   "triangles": 1704,
+   "min": [
+    0.0069,
+    0.049,
+    -0.3225
+   ],
+   "max": [
+    0.1199,
+    0.15,
+    0.2945
+   ],
+   "cut": true
+  },
+  {
+   "node": "v12__060__Bobinas de ignição direita",
+   "part": "Bobinas de ignição direita",
+   "triangles": 984,
+   "min": [
+    0.1247,
+    0.2052,
+    -0.2857
+   ],
+   "max": [
+    0.1676,
+    0.2536,
+    0.2577
+   ]
+  },
+  {
+   "node": "v12__061__Injetores e galeria direita",
+   "part": "Injetores e galeria direita",
+   "triangles": 696,
+   "min": [
+    0.0264,
+    0.1533,
+    -0.2788
+   ],
+   "max": [
+    0.0563,
+    0.1924,
+    0.2508
+   ]
+  },
+  {
+   "node": "v12_virabrequim",
+   "part": "Virabrequim de 6 moentes",
+   "triangles": 12708,
+   "min": [
+    -0.072,
+    -0.072,
+    -0.365
+   ],
+   "max": [
+    0.072,
+    0.072,
+    0.383
+   ],
+   "kinematics": {
+    "kinematics": "crank",
+    "axisDeg": 0.0
+   }
+  },
+  {
+   "node": "v12_pistao_01",
+   "part": "Pistão 1",
+   "triangles": 1860,
+   "min": [
+    -0.1326,
+    0.0906,
+    0.2318
+   ],
+   "max": [
+    -0.0383,
+    0.1756,
+    0.3162
+   ],
+   "kinematics": {
+    "kinematics": "piston",
+    "cylinder": 1,
+    "bank": "A",
+    "pinOffsetDeg": 327.5,
+    "axisDeg": -32.5,
+    "z": 0.274
+   }
+  },
+  {
+   "node": "v12_biela_01",
+   "part": "Biela 1",
+   "triangles": 1220,
+   "min": [
+    -0.0418,
+    0.0027,
+    0.26
+   ],
+   "max": [
+    0.0072,
+    0.1597,
+    0.288
+   ],
+   "kinematics": {
+    "kinematics": "rod",
+    "cylinder": 1,
+    "bank": "A",
+    "pinOffsetDeg": 327.5,
+    "axisDeg": -32.5,
+    "rodLength": 0.118,
+    "crankRadius": 0.03225,
+    "z": 0.274
+   }
+  },
+  {
+   "node": "v12_pistao_02",
+   "part": "Pistão 2",
+   "triangles": 1860,
+   "min": [
+    -0.1048,
+    0.0469,
+    0.1278
+   ],
+   "max": [
+    -0.0105,
+    0.132,
+    0.2122
+   ],
+   "kinematics": {
+    "kinematics": "piston",
+    "cylinder": 2,
+    "bank": "A",
+    "pinOffsetDeg": 207.5,
+    "axisDeg": -32.5,
+    "z": 0.17
+   }
+  },
+  {
+   "node": "v12_biela_02",
+   "part": "Biela 2",
+   "triangles": 1220,
+   "min": [
+    -0.0394,
+    -0.0531,
+    0.156
+   ],
+   "max": [
+    0.0096,
+    0.1039,
+    0.184
+   ],
+   "kinematics": {
+    "kinematics": "rod",
+    "cylinder": 2,
+    "bank": "A",
+    "pinOffsetDeg": 207.5,
+    "axisDeg": -32.5,
+    "rodLength": 0.118,
+    "crankRadius": 0.03225,
+    "z": 0.17
+   }
+  },
+  {
+   "node": "v12_pistao_03",
+   "part": "Pistão 3",
+   "triangles": 1860,
+   "min": [
+    -0.1048,
+    0.0469,
+    0.0238
+   ],
+   "max": [
+    -0.0105,
+    0.132,
+    0.1082
+   ],
+   "kinematics": {
+    "kinematics": "piston",
+    "cylinder": 3,
+    "bank": "A",
+    "pinOffsetDeg": 87.5,
+    "axisDeg": -32.5,
+    "z": 0.066
+   }
+  },
+  {
+   "node": "v12_biela_03",
+   "part": "Biela 3",
+   "triangles": 1220,
+   "min": [
+    0.0077,
+    -0.0231,
+    0.052
+   ],
+   "max": [
+    0.0567,
+    0.1339,
+    0.08
+   ],
+   "kinematics": {
+    "kinematics": "rod",
+    "cylinder": 3,
+    "bank": "A",
+    "pinOffsetDeg": 87.5,
+    "axisDeg": -32.5,
+    "rodLength": 0.118,
+    "crankRadius": 0.03225,
+    "z": 0.066
+   }
+  },
+  {
+   "node": "v12_pistao_04",
+   "part": "Pistão 4",
+   "triangles": 1860,
+   "min": [
+    -0.1048,
+    0.0469,
+    -0.0802
+   ],
+   "max": [
+    -0.0105,
+    0.132,
+    0.0042
+   ],
+   "kinematics": {
+    "kinematics": "piston",
+    "cylinder": 4,
+    "bank": "A",
+    "pinOffsetDeg": 87.5,
+    "axisDeg": -32.5,
+    "z": -0.038
+   }
+  },
+  {
+   "node": "v12_biela_04",
+   "part": "Biela 4",
+   "triangles": 1220,
+   "min": [
+    0.0077,
+    -0.0231,
+    -0.052
+   ],
+   "max": [
+    0.0567,
+    0.1339,
+    -0.024
+   ],
+   "kinematics": {
+    "kinematics": "rod",
+    "cylinder": 4,
+    "bank": "A",
+    "pinOffsetDeg": 87.5,
+    "axisDeg": -32.5,
+    "rodLength": 0.118,
+    "crankRadius": 0.03225,
+    "z": -0.038
+   }
+  },
+  {
+   "node": "v12_pistao_05",
+   "part": "Pistão 5",
+   "triangles": 1860,
+   "min": [
+    -0.1048,
+    0.0469,
+    -0.1842
+   ],
+   "max": [
+    -0.0105,
+    0.132,
+    -0.0998
+   ],
+   "kinematics": {
+    "kinematics": "piston",
+    "cylinder": 5,
+    "bank": "A",
+    "pinOffsetDeg": 207.5,
+    "axisDeg": -32.5,
+    "z": -0.142
+   }
+  },
+  {
+   "node": "v12_biela_05",
+   "part": "Biela 5",
+   "triangles": 1220,
+   "min": [
+    -0.0394,
+    -0.0531,
+    -0.156
+   ],
+   "max": [
+    0.0096,
+    0.1039,
+    -0.128
+   ],
+   "kinematics": {
+    "kinematics": "rod",
+    "cylinder": 5,
+    "bank": "A",
+    "pinOffsetDeg": 207.5,
+    "axisDeg": -32.5,
+    "rodLength": 0.118,
+    "crankRadius": 0.03225,
+    "z": -0.142
+   }
+  },
+  {
+   "node": "v12_pistao_06",
+   "part": "Pistão 6",
+   "triangles": 1860,
+   "min": [
+    -0.1326,
+    0.0906,
+    -0.2882
+   ],
+   "max": [
+    -0.0383,
+    0.1756,
+    -0.2038
+   ],
+   "kinematics": {
+    "kinematics": "piston",
+    "cylinder": 6,
+    "bank": "A",
+    "pinOffsetDeg": 327.5,
+    "axisDeg": -32.5,
+    "z": -0.246
+   }
+  },
+  {
+   "node": "v12_biela_06",
+   "part": "Biela 6",
+   "triangles": 1220,
+   "min": [
+    -0.0418,
+    0.0027,
+    -0.26
+   ],
+   "max": [
+    0.0072,
+    0.1597,
+    -0.232
+   ],
+   "kinematics": {
+    "kinematics": "rod",
+    "cylinder": 6,
+    "bank": "A",
+    "pinOffsetDeg": 327.5,
+    "axisDeg": -32.5,
+    "rodLength": 0.118,
+    "crankRadius": 0.03225,
+    "z": -0.246
+   }
+  },
+  {
+   "node": "v12_pistao_07",
+   "part": "Pistão 7",
+   "triangles": 1860,
+   "min": [
+    0.0278,
+    0.0741,
+    0.2038
+   ],
+   "max": [
+    0.1221,
+    0.1592,
+    0.2882
+   ],
+   "kinematics": {
+    "kinematics": "piston",
+    "cylinder": 7,
+    "bank": "B",
+    "pinOffsetDeg": 332.5,
+    "axisDeg": 32.5,
+    "z": 0.246
+   }
+  },
+  {
+   "node": "v12_biela_07",
+   "part": "Biela 7",
+   "triangles": 1220,
+   "min": [
+    -0.0394,
+    0.0041,
+    0.232
+   ],
+   "max": [
+    0.0096,
+    0.1611,
+    0.26
+   ],
+   "kinematics": {
+    "kinematics": "rod",
+    "cylinder": 7,
+    "bank": "B",
+    "pinOffsetDeg": 332.5,
+    "axisDeg": 32.5,
+    "rodLength": 0.118,
+    "crankRadius": 0.03225,
+    "z": 0.246
+   }
+  },
+  {
+   "node": "v12_pistao_08",
+   "part": "Pistão 8",
+   "triangles": 1860,
+   "min": [
+    0.0037,
+    0.0362,
+    0.0998
+   ],
+   "max": [
+    0.0979,
+    0.1212,
+    0.1842
+   ],
+   "kinematics": {
+    "kinematics": "piston",
+    "cylinder": 8,
+    "bank": "B",
+    "pinOffsetDeg": 212.5,
+    "axisDeg": 32.5,
+    "z": 0.142
+   }
+  },
+  {
+   "node": "v12_biela_08",
+   "part": "Biela 8",
+   "triangles": 1220,
+   "min": [
+    -0.0418,
+    -0.0517,
+    0.128
+   ],
+   "max": [
+    0.0072,
+    0.1053,
+    0.156
+   ],
+   "kinematics": {
+    "kinematics": "rod",
+    "cylinder": 8,
+    "bank": "B",
+    "pinOffsetDeg": 212.5,
+    "axisDeg": 32.5,
+    "rodLength": 0.118,
+    "crankRadius": 0.03225,
+    "z": 0.142
+   }
+  },
+  {
+   "node": "v12_pistao_09",
+   "part": "Pistão 9",
+   "triangles": 1860,
+   "min": [
+    0.0278,
+    0.0741,
+    -0.0042
+   ],
+   "max": [
+    0.1221,
+    0.1592,
+    0.0802
+   ],
+   "kinematics": {
+    "kinematics": "piston",
+    "cylinder": 9,
+    "bank": "B",
+    "pinOffsetDeg": 92.5,
+    "axisDeg": 32.5,
+    "z": 0.038
+   }
+  },
+  {
+   "node": "v12_biela_09",
+   "part": "Biela 9",
+   "triangles": 1220,
+   "min": [
+    0.0077,
+    -0.0259,
+    0.024
+   ],
+   "max": [
+    0.0567,
+    0.1311,
+    0.052
+   ],
+   "kinematics": {
+    "kinematics": "rod",
+    "cylinder": 9,
+    "bank": "B",
+    "pinOffsetDeg": 92.5,
+    "axisDeg": 32.5,
+    "rodLength": 0.118,
+    "crankRadius": 0.03225,
+    "z": 0.038
+   }
+  },
+  {
+   "node": "v12_pistao_10",
+   "part": "Pistão 10",
+   "triangles": 1860,
+   "min": [
+    0.0278,
+    0.0741,
+    -0.1082
+   ],
+   "max": [
+    0.1221,
+    0.1592,
+    -0.0238
+   ],
+   "kinematics": {
+    "kinematics": "piston",
+    "cylinder": 10,
+    "bank": "B",
+    "pinOffsetDeg": 92.5,
+    "axisDeg": 32.5,
+    "z": -0.066
+   }
+  },
+  {
+   "node": "v12_biela_10",
+   "part": "Biela 10",
+   "triangles": 1220,
+   "min": [
+    0.0077,
+    -0.0259,
+    -0.08
+   ],
+   "max": [
+    0.0567,
+    0.1311,
+    -0.052
+   ],
+   "kinematics": {
+    "kinematics": "rod",
+    "cylinder": 10,
+    "bank": "B",
+    "pinOffsetDeg": 92.5,
+    "axisDeg": 32.5,
+    "rodLength": 0.118,
+    "crankRadius": 0.03225,
+    "z": -0.066
+   }
+  },
+  {
+   "node": "v12_pistao_11",
+   "part": "Pistão 11",
+   "triangles": 1860,
+   "min": [
+    0.0037,
+    0.0362,
+    -0.2122
+   ],
+   "max": [
+    0.0979,
+    0.1212,
+    -0.1278
+   ],
+   "kinematics": {
+    "kinematics": "piston",
+    "cylinder": 11,
+    "bank": "B",
+    "pinOffsetDeg": 212.5,
+    "axisDeg": 32.5,
+    "z": -0.17
+   }
+  },
+  {
+   "node": "v12_biela_11",
+   "part": "Biela 11",
+   "triangles": 1220,
+   "min": [
+    -0.0418,
+    -0.0517,
+    -0.184
+   ],
+   "max": [
+    0.0072,
+    0.1053,
+    -0.156
+   ],
+   "kinematics": {
+    "kinematics": "rod",
+    "cylinder": 11,
+    "bank": "B",
+    "pinOffsetDeg": 212.5,
+    "axisDeg": 32.5,
+    "rodLength": 0.118,
+    "crankRadius": 0.03225,
+    "z": -0.17
+   }
+  },
+  {
+   "node": "v12_pistao_12",
+   "part": "Pistão 12",
+   "triangles": 1860,
+   "min": [
+    0.0278,
+    0.0741,
+    -0.3162
+   ],
+   "max": [
+    0.1221,
+    0.1592,
+    -0.2318
+   ],
+   "kinematics": {
+    "kinematics": "piston",
+    "cylinder": 12,
+    "bank": "B",
+    "pinOffsetDeg": 332.5,
+    "axisDeg": 32.5,
+    "z": -0.274
+   }
+  },
+  {
+   "node": "v12_biela_12",
+   "part": "Biela 12",
+   "triangles": 1220,
+   "min": [
+    -0.0394,
+    0.0041,
+    -0.288
+   ],
+   "max": [
+    0.0096,
+    0.1611,
+    -0.26
+   ],
+   "kinematics": {
+    "kinematics": "rod",
+    "cylinder": 12,
+    "bank": "B",
+    "pinOffsetDeg": 332.5,
+    "axisDeg": 32.5,
+    "rodLength": 0.118,
+    "crankRadius": 0.03225,
+    "z": -0.274
+   }
+  },
+  {
+   "node": "v12_comando_adm_a",
+   "part": "Comando de admissão esquerda",
+   "triangles": 2780,
+   "min": [
+    -0.101,
+    0.1417,
+    -0.3175
+   ],
+   "max": [
+    -0.0636,
+    0.1797,
+    0.305
+   ],
+   "kinematics": {
+    "kinematics": "cam",
+    "bank": "A",
+    "ratio": 0.5,
+    "axisDeg": -32.5
+   }
+  },
+  {
+   "node": "v12_comando_esc_a",
+   "part": "Comando de escape esquerda",
+   "triangles": 2780,
+   "min": [
+    -0.1685,
+    0.1847,
+    -0.3175
+   ],
+   "max": [
+    -0.1311,
+    0.2227,
+    0.305
+   ],
+   "kinematics": {
+    "kinematics": "cam",
+    "bank": "A",
+    "ratio": 0.5,
+    "axisDeg": -32.5
+   }
+  },
+  {
+   "node": "v12__370__Válvulas do cabeçote esquerda (24)",
+   "part": "Válvulas do cabeçote esquerda (24)",
+   "triangles": 7872,
+   "min": [
+    -0.1608,
+    0.079,
+    -0.2813
+   ],
+   "max": [
+    -0.035,
+    0.1995,
+    0.3093
+   ]
+  },
+  {
+   "node": "v12_comando_adm_b",
+   "part": "Comando de admissão direita",
+   "triangles": 2780,
+   "min": [
+    0.0636,
+    0.1847,
+    -0.3175
+   ],
+   "max": [
+    0.101,
+    0.2227,
+    0.305
+   ],
+   "kinematics": {
+    "kinematics": "cam",
+    "bank": "B",
+    "ratio": 0.5,
+    "axisDeg": 32.5
+   }
+  },
+  {
+   "node": "v12_comando_esc_b",
+   "part": "Comando de escape direita",
+   "triangles": 2780,
+   "min": [
+    0.1311,
+    0.1417,
+    -0.3175
+   ],
+   "max": [
+    0.1685,
+    0.1797,
+    0.305
+   ],
+   "kinematics": {
+    "kinematics": "cam",
+    "bank": "B",
+    "ratio": 0.5,
+    "axisDeg": 32.5
+   }
+  },
+  {
+   "node": "v12__447__Válvulas do cabeçote direita (24)",
+   "part": "Válvulas do cabeçote direita (24)",
+   "triangles": 7872,
+   "min": [
+    0.035,
+    0.0758,
+    -0.3093
+   ],
+   "max": [
+    0.1608,
+    0.2026,
+    0.2813
+   ]
+  },
+  {
+   "node": "v12__448__Engrenagem do virabrequim",
+   "part": "Engrenagem do virabrequim",
+   "triangles": 2720,
+   "min": [
+    -0.0287,
+    -0.0288,
+    -0.385
+   ],
+   "max": [
+    0.0287,
+    0.0288,
+    -0.373
+   ]
+  },
+  {
+   "node": "v12__449__Engrenagem intermediária esquerda",
+   "part": "Engrenagem intermediária esquerda",
+   "triangles": 2400,
+   "min": [
+    -0.0748,
+    0.0518,
+    -0.385
+   ],
+   "max": [
+    -0.0238,
+    0.103,
+    -0.373
+   ]
+  },
+  {
+   "node": "v12__450__Engrenagem do comando de admissão esquerda",
+   "part": "Engrenagem do comando de admissão esquerda",
+   "triangles": 5440,
+   "min": [
+    -0.1383,
+    0.1047,
+    -0.385
+   ],
+   "max": [
+    -0.0263,
+    0.2167,
+    -0.373
+   ]
+  },
+  {
+   "node": "v12__451__Engrenagem do comando de escape esquerda",
+   "part": "Engrenagem do comando de escape esquerda",
+   "triangles": 5440,
+   "min": [
+    -0.2058,
+    0.1477,
+    -0.385
+   ],
+   "max": [
+    -0.0938,
+    0.2596,
+    -0.373
+   ]
+  },
+  {
+   "node": "v12__452__Engrenagem intermediária direita",
+   "part": "Engrenagem intermediária direita",
+   "triangles": 2400,
+   "min": [
+    0.0238,
+    0.0518,
+    -0.385
+   ],
+   "max": [
+    0.0748,
+    0.103,
+    -0.373
+   ]
+  },
+  {
+   "node": "v12__453__Engrenagem do comando de admissão direita",
+   "part": "Engrenagem do comando de admissão direita",
+   "triangles": 5440,
+   "min": [
+    0.0263,
+    0.1477,
+    -0.385
+   ],
+   "max": [
+    0.1383,
+    0.2596,
+    -0.373
+   ]
+  },
+  {
+   "node": "v12__454__Engrenagem do comando de escape direita",
+   "part": "Engrenagem do comando de escape direita",
+   "triangles": 5440,
+   "min": [
+    0.0938,
+    0.1047,
+    -0.385
+   ],
+   "max": [
+    0.2058,
+    0.2167,
+    -0.373
+   ]
+  },
+  {
+   "node": "v12__455__Carcaça da cascata de engrenagens",
+   "part": "Carcaça da cascata de engrenagens",
+   "triangles": 108,
+   "min": [
+    -0.15,
+    -0.1182,
+    -0.399
+   ],
+   "max": [
+    0.15,
+    0.2218,
+    -0.383
+   ]
+  },
+  {
+   "node": "v12_trompeta_01",
+   "part": "Trompeta de admissão 1",
+   "triangles": 392,
+   "min": [
+    -0.0814,
+    0.1105,
+    0.234
+   ],
+   "max": [
+    -0.0014,
+    0.2065,
+    0.314
+   ],
+   "kinematics": {
+    "intake": 1,
+    "cylinder": 1,
+    "bank": "A"
+   }
+  },
+  {
+   "node": "v12_trompeta_02",
+   "part": "Trompeta de admissão 2",
+   "triangles": 392,
+   "min": [
+    -0.0814,
+    0.1105,
+    0.13
+   ],
+   "max": [
+    -0.0014,
+    0.2065,
+    0.21
+   ],
+   "kinematics": {
+    "intake": 1,
+    "cylinder": 2,
+    "bank": "A"
+   }
+  },
+  {
+   "node": "v12_trompeta_03",
+   "part": "Trompeta de admissão 3",
+   "triangles": 392,
+   "min": [
+    -0.0814,
+    0.1105,
+    0.026
+   ],
+   "max": [
+    -0.0014,
+    0.2065,
+    0.106
+   ],
+   "kinematics": {
+    "intake": 1,
+    "cylinder": 3,
+    "bank": "A"
+   }
+  },
+  {
+   "node": "v12_trompeta_04",
+   "part": "Trompeta de admissão 4",
+   "triangles": 392,
+   "min": [
+    -0.0814,
+    0.1105,
+    -0.078
+   ],
+   "max": [
+    -0.0014,
+    0.2065,
+    0.002
+   ],
+   "kinematics": {
+    "intake": 1,
+    "cylinder": 4,
+    "bank": "A"
+   }
+  },
+  {
+   "node": "v12_trompeta_05",
+   "part": "Trompeta de admissão 5",
+   "triangles": 392,
+   "min": [
+    -0.0814,
+    0.1105,
+    -0.182
+   ],
+   "max": [
+    -0.0014,
+    0.2065,
+    -0.102
+   ],
+   "kinematics": {
+    "intake": 1,
+    "cylinder": 5,
+    "bank": "A"
+   }
+  },
+  {
+   "node": "v12_trompeta_06",
+   "part": "Trompeta de admissão 6",
+   "triangles": 392,
+   "min": [
+    -0.0814,
+    0.1105,
+    -0.286
+   ],
+   "max": [
+    -0.0014,
+    0.2065,
+    -0.206
+   ],
+   "kinematics": {
+    "intake": 1,
+    "cylinder": 6,
+    "bank": "A"
+   }
+  },
+  {
+   "node": "v12_trompeta_07",
+   "part": "Trompeta de admissão 7",
+   "triangles": 392,
+   "min": [
+    0.0014,
+    0.1729,
+    0.206
+   ],
+   "max": [
+    0.0814,
+    0.2688,
+    0.286
+   ],
+   "kinematics": {
+    "intake": 1,
+    "cylinder": 7,
+    "bank": "B"
+   }
+  },
+  {
+   "node": "v12_trompeta_08",
+   "part": "Trompeta de admissão 8",
+   "triangles": 392,
+   "min": [
+    0.0014,
+    0.1729,
+    0.102
+   ],
+   "max": [
+    0.0814,
+    0.2688,
+    0.182
+   ],
+   "kinematics": {
+    "intake": 1,
+    "cylinder": 8,
+    "bank": "B"
+   }
+  },
+  {
+   "node": "v12_trompeta_09",
+   "part": "Trompeta de admissão 9",
+   "triangles": 392,
+   "min": [
+    0.0014,
+    0.1729,
+    -0.002
+   ],
+   "max": [
+    0.0814,
+    0.2688,
+    0.078
+   ],
+   "kinematics": {
+    "intake": 1,
+    "cylinder": 9,
+    "bank": "B"
+   }
+  },
+  {
+   "node": "v12_trompeta_10",
+   "part": "Trompeta de admissão 10",
+   "triangles": 392,
+   "min": [
+    0.0014,
+    0.1729,
+    -0.106
+   ],
+   "max": [
+    0.0814,
+    0.2688,
+    -0.026
+   ],
+   "kinematics": {
+    "intake": 1,
+    "cylinder": 10,
+    "bank": "B"
+   }
+  },
+  {
+   "node": "v12_trompeta_11",
+   "part": "Trompeta de admissão 11",
+   "triangles": 392,
+   "min": [
+    0.0014,
+    0.1729,
+    -0.21
+   ],
+   "max": [
+    0.0814,
+    0.2688,
+    -0.13
+   ],
+   "kinematics": {
+    "intake": 1,
+    "cylinder": 11,
+    "bank": "B"
+   }
+  },
+  {
+   "node": "v12_trompeta_12",
+   "part": "Trompeta de admissão 12",
+   "triangles": 392,
+   "min": [
+    0.0014,
+    0.1729,
+    -0.314
+   ],
+   "max": [
+    0.0814,
+    0.2688,
+    -0.234
+   ],
+   "kinematics": {
+    "intake": 1,
+    "cylinder": 12,
+    "bank": "B"
+   }
+  },
+  {
+   "node": "v12__468__Airbox · plenum central",
+   "part": "Airbox · plenum central",
+   "triangles": 188,
+   "min": [
+    -0.123,
+    0.277,
+    -0.28
+   ],
+   "max": [
+    0.123,
+    0.329,
+    0.28
+   ],
+   "cut": true,
+   "hideGroup": "airbox"
+  },
+  {
+   "node": "v12__469__Airbox · flange do plenum",
+   "part": "Airbox · flange do plenum",
+   "triangles": 108,
+   "min": [
+    -0.131,
+    0.269,
+    -0.285
+   ],
+   "max": [
+    0.131,
+    0.277,
+    0.285
+   ],
+   "cut": true,
+   "hideGroup": "airbox"
+  },
+  {
+   "node": "v12__470__Airbox · garganta de entrada",
+   "part": "Airbox · garganta de entrada",
+   "triangles": 332,
+   "min": [
+    -0.0398,
+    0.2632,
+    0.279
+   ],
+   "max": [
+    0.0398,
+    0.3428,
+    0.313
+   ],
+   "cut": true,
+   "hideGroup": "airbox"
+  },
+  {
+   "node": "v12__471__Airbox · aro da garganta",
+   "part": "Airbox · aro da garganta",
+   "triangles": 448,
+   "min": [
+    -0.0445,
+    0.2585,
+    0.3075
+   ],
+   "max": [
+    0.0445,
+    0.3475,
+    0.3165
+   ],
+   "cut": true,
+   "hideGroup": "airbox"
+  },
+  {
+   "node": "v12__480__Coletor de escape 6-em-1 esquerda",
+   "part": "Coletor de escape 6-em-1 esquerda",
+   "triangles": 3976,
+   "min": [
+    -0.2279,
+    0.0957,
+    -0.479
+   ],
+   "max": [
+    -0.1309,
+    0.1958,
+    0.2872
+   ]
+  },
+  {
+   "node": "v12__489__Coletor de escape 6-em-1 direita",
+   "part": "Coletor de escape 6-em-1 direita",
+   "triangles": 3976,
+   "min": [
+    0.1265,
+    -0.1085,
+    -0.479
+   ],
+   "max": [
+    0.2279,
+    0.1247,
+    0.2624
+   ]
+  },
+  {
+   "node": "v12__490__Alternador",
+   "part": "Alternador",
+   "triangles": 284,
+   "min": [
+    0.092,
+    0.05,
+    0.312
+   ],
+   "max": [
+    0.164,
+    0.122,
+    0.398
+   ]
+  },
+  {
+   "node": "v12__491__Polia do alternador",
+   "part": "Polia do alternador",
+   "triangles": 236,
+   "min": [
+    0.106,
+    0.064,
+    0.397
+   ],
+   "max": [
+    0.15,
+    0.108,
+    0.409
+   ]
+  },
+  {
+   "node": "v12__492__Polia do virabrequim",
+   "part": "Polia do virabrequim",
+   "triangles": 284,
+   "min": [
+    -0.034,
+    -0.034,
+    0.389
+   ],
+   "max": [
+    0.034,
+    0.034,
+    0.401
+   ]
+  },
+  {
+   "node": "v12__493__Bomba de óleo · estágio de pressão",
+   "part": "Bomba de óleo · estágio de pressão",
+   "triangles": 236,
+   "min": [
+    -0.142,
+    -0.116,
+    0.119
+   ],
+   "max": [
+    -0.082,
+    -0.056,
+    0.181
+   ]
+  },
+  {
+   "node": "v12__494__Bomba de óleo · estágios de recuperação",
+   "part": "Bomba de óleo · estágios de recuperação",
+   "triangles": 236,
+   "min": [
+    -0.14,
+    -0.114,
+    -0.02
+   ],
+   "max": [
+    -0.084,
+    -0.058,
+    0.1
+   ]
+  },
+  {
+   "node": "v12__495__Bomba de água",
+   "part": "Bomba de água",
+   "triangles": 236,
+   "min": [
+    0.078,
+    -0.112,
+    0.141
+   ],
+   "max": [
+    0.146,
+    -0.044,
+    0.199
+   ]
+  },
+  {
+   "node": "v12__496__Mangueira de água · saída",
+   "part": "Mangueira de água · saída",
+   "triangles": 404,
+   "min": [
+    0.0989,
+    -0.0879,
+    0.1892
+   ],
+   "max": [
+    0.1439,
+    0.0452,
+    0.2809
+   ]
+  },
+  {
+   "node": "v12__497__Filtro de óleo",
+   "part": "Filtro de óleo",
+   "triangles": 236,
+   "min": [
+    -0.162,
+    -0.086,
+    -0.175
+   ],
+   "max": [
+    -0.094,
+    -0.018,
+    -0.085
+   ]
+  },
+  {
+   "node": "v12__498__Suporte do motor esquerdo",
+   "part": "Suporte do motor esquerdo",
+   "triangles": 108,
+   "min": [
+    -0.126,
+    0.005,
+    0.287
+   ],
+   "max": [
+    -0.11,
+    0.075,
+    0.343
+   ]
+  },
+  {
+   "node": "v12__499__Suporte do motor direito",
+   "part": "Suporte do motor direito",
+   "triangles": 108,
+   "min": [
+    0.11,
+    0.005,
+    0.287
+   ],
+   "max": [
+    0.126,
+    0.075,
+    0.343
+   ]
+  },
+  {
+   "node": "v12__500__Suporte traseiro · flange da caixa",
+   "part": "Suporte traseiro · flange da caixa",
+   "triangles": 108,
+   "min": [
+    -0.095,
+    -0.105,
+    -0.394
+   ],
+   "max": [
+    0.095,
+    0.085,
+    -0.38
+   ]
+  },
+  {
+   "node": "v12__501__Parafusos do flange traseiro",
+   "part": "Parafusos do flange traseiro",
+   "triangles": 960,
+   "min": [
+    -0.0887,
+    -0.0947,
+    -0.395
+   ],
+   "max": [
+    0.0887,
+    0.0747,
+    -0.3897
+   ]
+  }
+ ]
+}

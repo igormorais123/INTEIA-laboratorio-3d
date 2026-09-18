@@ -88,12 +88,55 @@ Veredito do dono sobre a primeira versão: "muito artificial, parece MIDI de bai
 
 Os espectrogramas das varreduras (`.demos/*-varredura-*.png`, gerados com `ferramentas/som/espectrograma_demo.py`) mostram harmônicos contínuos da marcha lenta ao limite e de volta, sem degraus nos crossfades entre pontos do banco, com a ordem de bancada visível no V12 e a partida no início. Isso confirma a mecânica do banco; o timbre em si só a audição do dono aprova.
 
+## Motor V12 em 3D (Plano 3)
+
+`web/assets/v12-v1.glb` (4,68 MB, 87 nós, 132.952 triângulos) e
+`v12-v1.manifest.json` são gerados por `ferramentas/v12/gerar_v12.py` no Blender 5.2:
+
+```powershell
+& "C:\Program Files\Blender Foundation\Blender 5.2\blender.exe" -b --python ferramentas/v12/gerar_v12.py
+cd web; npm test        # test-v12.mjs confere integridade, contagens e a montagem biela-manivela
+```
+
+Geometria original INTEIA, ilustrativa e didática, com as proporções de um V12 de 3,5 L dos anos 90:
+bloco em V de 65°, cárter seco, virabrequim de 6 moentes, 12 bielas e 12 pistões, 2 cabeçotes, 4 comandos,
+48 válvulas, cascata de engrenagens, 12 trompetas sob o airbox, dois coletores 6-em-1 e acessórios.
+Diâmetro 85 mm, curso 64,5 mm, biela 118 mm.
+
+**O movimento não é gravado no arquivo.** O GLB traz nós nomeados (`v12_virabrequim`, `v12_pistao_01..12`,
+`v12_biela_01..12`, `v12_comando_*`) com extras de cinemática, e `web/src/sound/v12-kinematics.mjs` os coloca
+a cada quadro a partir do ângulo θ que o reprodutor de som informa. É isso que mantém a imagem e o áudio no
+mesmo tempo: o pistão chega ao ponto morto superior exatamente quando aquele cilindro explode no som.
+
+O V de 65° com ignição uniforme a cada 60° exige moente partido: as duas bielas de cada moente ficam
+separadas em 5°. A tabela sai do manifesto e o teste a confere contra a ordem de ignição do perfil de som.
+
+| Cilindro | Bancada | Eixo | Defasagem do moente | Explode em |
+| --- | --- | --- | --- | --- |
+| 1 | A | -32.5° | 327.5° | 0° |
+| 2 | A | -32.5° | 207.5° | 480° |
+| 3 | A | -32.5° | 87.5° | 240° |
+| 4 | A | -32.5° | 87.5° | 600° |
+| 5 | A | -32.5° | 207.5° | 120° |
+| 6 | A | -32.5° | 327.5° | 360° |
+| 7 | B | +32.5° | 332.5° | 60° |
+| 8 | B | +32.5° | 212.5° | 540° |
+| 9 | B | +32.5° | 92.5° | 300° |
+| 10 | B | +32.5° | 92.5° | 660° |
+| 11 | B | +32.5° | 212.5° | 180° |
+| 12 | B | +32.5° | 332.5° | 420° |
+
+Na aba 07 o motor fica na bancada do box, no lugar do carro. O controle de corte secciona bloco, bancadas,
+cabeçotes, tampas e airbox (as peças móveis ficam inteiras) e o botão do airbox descobre as trompetas.
+As peças são reconhecidas pelos extras do nó, não pelo nome, porque o carregador higieniza nomes com espaço.
+
 ## Limitações conhecidas
 
 - As referências foram gravadas de fora da pista, a dezenas de metros, com público e Doppler. O filtro de estabilidade descarta a maior parte disso, mas a inclinação espectral dos alvos inclui a absorção do ar dessa distância; a compensação aplicada só remove diferenças entre gravações da mesma classe.
 - Não há gravação livre de V12 de F1 dos anos 90 nem de V6 híbrido em condição controlada. O V12 vem de um monoposto V12 de 2010 (até ~11.000 RPM medidos) e de um Ferrari 312 de 1968; acima disso as bandas são extrapoladas com a tendência do V8/V10. O V6 tem poucos quadros (uma ambiência de Monza 2014); as bandas ausentes também são extrapoladas.
 - O nível absoluto por rotação (`levelPerOctaveDb`), o comportamento aliviado e a inércia não são observáveis nos alvos relativos e ficam como escolhas de projeto no perfil.
-- As camadas do V6 (assobio do turbo, wastegate, MGU-K) e os estalos ao aliviar são sintetizados em tempo real pelo Plano 4, não pelo banco.
+- As camadas do V6 (assobio do turbo, wastegate, MGU-K) e os estalos ao aliviar são sintetizados em tempo real pela voz do motor, não pelo banco.
+- O V6 não tem modelo 3D próprio na bancada da aba 07; só o V12 tem.
 - Síntese calibrada não iguala gravação de dinamômetro. O banco é substituível por arquivo sem mudar código.
 
 ## Créditos das referências
@@ -106,4 +149,4 @@ Os espectrogramas das varreduras (`.demos/*-varredura-*.png`, gerados com `ferra
 | [Freesound 150338](https://freesound.org/s/150338/) e [150337](https://freesound.org/s/150337/) | Ears68 | CC0 | Grito de alta rotação (V8 2012) |
 | [Freesound 410894](https://freesound.org/s/410894/) | wandererscapes | CC0 | V6 turbo híbrido (Monza 2014) |
 
-Os créditos devem aparecer na aba 07 Som (Plano 4).
+Os créditos aparecem na aba 07 Som.
