@@ -31,7 +31,7 @@ ferramentas/som/.venv/Scripts/python.exe ferramentas/som/gerar_banco.py v6_2026
 node ferramentas/som/renderizar_demos.mjs
 ```
 
-Testes: dentro de `ferramentas/som`, `.venv/Scripts/python.exe -m unittest` (decodificação, análise, modelo, calibração) e `node test-referencias.mjs`; no site, `npm --prefix web test` inclui `test-sound-bank.mjs`.
+Testes: dentro de `ferramentas/som`, `.venv/Scripts/python.exe -m unittest` (decodificação, análise, modelo, calibração) e `node test-referencias.mjs`; no site, `npm --prefix web test` inclui `test-sound-bank.mjs`, `test-engine-voice.mjs`, `test-curve-editor.mjs`, `test-sound-studio.mjs` e `test-v12.mjs`.
 
 A calibração é determinística (semente fixa) mas demorada; `--rapido` roda poucas gerações para conferir o fluxo e `--sem-otimizar` só recalcula a EQ e o relatório com os parâmetros atuais do perfil.
 
