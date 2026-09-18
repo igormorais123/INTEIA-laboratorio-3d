@@ -1,6 +1,6 @@
 """11 · Segurança: Halo e acolchoado do cockpit copiados da malha visível do carro v2 (coincidência exata),
 estrutura principal de capotamento dentro do airbox, cone de impacto dianteiro dentro do envelope do nariz,
-estrutura de impacto traseira, tubos anti-intrusão laterais, três cabos de retenção de roda por canto,
+estrutura de impacto traseira, tubos anti-intrusão laterais, dois cabos de retenção de roda por canto,
 extintor e chaves externas. Luz de chuva no mesmo lugar do LED traseiro do carro.
 """
 import math
@@ -55,12 +55,13 @@ def build(ctx):
         for k, (z, y) in enumerate(((.30, .40), (-.30, .36))):
             sweep(ctx, f'Tubo anti-intrusão lateral {k + 1} {lab}', [(side * .30, y, z), (side * .66, y - .02, z - .05)], m.carbon_matte, radius=.045, radii=[.045, .028], sides=20, smooth_path=False)
             cube(ctx, f'Flange do tubo anti-intrusão {k + 1} {lab}', (side * .31, y, z), (.012, .12, .12), m.titanium, bev=.002)
-    # Cabos de retenção de roda (Zylon): três por canto, ao longo das pernas dos wishbones e do push/pull-rod
+    # Cabos de retenção de roda (Zylon): dois por canto desde 2011, em caminhos independentes pelos wishbones
+    # superior e inferior, para que um segure a roda se o outro romper.
     for axle, front in (('front', True), ('rear', False)):
         P = PICKUPS[axle]
         for side in (-1, 1):
             lab = f'{"dianteiro" if front else "traseiro"} {lado(side)}'
-            routes = [(P['uwo'], P['uwi_f']), (P['lwo'], P['lwi_a']), (P['pro'], P['rocker_arm'])]
+            routes = [(P['uwo'], P['uwi_f']), (P['lwo'], P['lwi_a'])]
             for k, (a, b) in enumerate(routes):
                 a2 = (side * a[0], a[1] + .02, a[2]); b2 = (side * b[0], b[1] + .02, b[2])
                 sweep(ctx, f'Cabo de retenção {k + 1} {lab}', [a2, b2], m.zylon, radius=.004, sides=8, smooth_path=False)

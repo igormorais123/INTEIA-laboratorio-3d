@@ -1,5 +1,12 @@
 # Histórico
 
+## 2026-09-18 — Leitura dos sistemas e correções de fato
+
+- Cada um dos catorze sistemas ganha **Como funciona** e **O que observar** ao ser isolado, ocultos na visão geral.
+- Dois cabos de retenção por roda no texto e na geometria, como o regulamento exige desde 2011; eram três.
+- Grafia das juntas tripoide corrigida no gerador, nas fichas e nos textos.
+- O teste de metalinguagem passa a cobrir rótulo, descrição e os dois textos novos, além do corpo de `systems.js`.
+
 ## 2026-09-16 — ChatGPT Site oficial
 
 - Produção transferida do GitHub Pages para o ChatGPT Sites.

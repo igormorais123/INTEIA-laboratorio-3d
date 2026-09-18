@@ -313,7 +313,7 @@ const RULES = [
   'A relação final é escolhida por circuito conforme a velocidade máxima esperada na reta.'),
  R(/^Diferencial|^Satélite|^Planetária|^Caixa do diferencial/, 'Diferencial que permite às rodas traseiras girarem em velocidades diferentes em curva; o travamento é controlado hidraulicamente.',
   'O piloto ajusta o travamento no volante para entrada, meio e saída de curva; mais travado dá tração, menos travado dá rotação.'),
- R(/^Junta tripóide|^Copo da junta|^Rolete da tripóide|^Coifa da junta/, 'Junta homocinética que permite ao semieixo transmitir torque enquanto a suspensão se move.',
+ R(/^Junta tripoide|^Copo da junta|^Rolete da tripoide|^Coifa da junta/, 'Junta homocinética que permite ao semieixo transmitir torque enquanto a suspensão se move.',
   'Trabalha com ângulos pequenos porque a suspensão traseira quase não se move; a coifa segura a graxa a 15 mil rpm.'),
  R(/^Semieixo|^Driveshaft/, 'Semieixo tubular que leva o torque do diferencial à roda.', 'De aço ou compósito, é dimensionado para torcer alguns graus sob carga e amortecer as trocas de marcha.'),
  R(/^Flange de saída/, 'Flange do diferencial onde o semieixo se acopla.', 'Gira à rotação da roda; esta maquete o anima na relação correta com as engrenagens.'),

@@ -121,17 +121,17 @@ assert.ok(bladder && block && gearbox && es && seat, 'peças de referência do e
 assert.ok(bladder.max[2] <= seat.max[2] && bladder.min[2] >= block.max[2] - .02 && block.min[2] >= gearbox.max[2] - .02, 'ordem longitudinal célula → motor → câmbio');
 assert.ok(es.max[1] <= bladder.min[1] + .01 && Math.abs(center(es)[2] - center(bladder)[2]) < .15, 'energy store sob a célula');
 assert.ok(find('fuel', /^Linha de alimentação/).every((node) => node.max[2] < 0), 'linha de alimentação fora do cockpit');
-// Câmbio: oito pares com distância entre centros constante e giro coerente com os dentes; ré; tripóides; carcaça ocultável.
+// Câmbio: oito pares com distância entre centros constante e giro coerente com os dentes; ré; juntas tripoide; carcaça ocultável.
 const primary = find('transmission', /^Engrenagem \dª · primário/), secondary = find('transmission', /^Engrenagem \dª · secundário/);
 assert.equal(primary.length, 8); assert.equal(secondary.length, 8);
 for (let i = 0; i < 8; i += 1) {
   const n1 = Number(/\((\d+) dentes\)/.exec(primary[i].part)[1]), n2 = Number(/\((\d+) dentes\)/.exec(secondary[i].part)[1]);
   assert.equal(n1 + n2, 44, `par ${i + 1}: soma de dentes`); assert.ok(Math.abs(secondary[i].spin * n2 + primary[i].spin * n1) < 1e-6, `par ${i + 1}: relação de giro`);
 }
-assert.equal(find('transmission', /^Engrenagem intermediária da ré$/).length, 1, 'ré'); assert.equal(find('transmission', /^Copo da junta tripóide/).length, 2, 'tripóides');
+assert.equal(find('transmission', /^Engrenagem intermediária da ré$/).length, 1, 'ré'); assert.equal(find('transmission', /^Copo da junta tripoide/).length, 2, 'juntas tripoide');
 assert.ok(find('transmission', /^Carcaça do câmbio/).every((node) => node.hide_group === 'gearbox_case'), 'carcaça ocultável');
 // Demais contratos por sistema.
-assert.equal(find('safety', /^Cabo de retenção \d /).length, 12, 'três cabos de retenção por roda');
+assert.equal(find('safety', /^Cabo de retenção \d /).length, 8, 'dois cabos de retenção por roda, como o regulamento exige desde 2011');
 assert.equal(find('safety', /^Halo · arco principal/).length + find('safety', /^Estrutura principal de capotamento/).length, 2, 'Halo e estrutura de capotamento distintos');
 assert.equal(find('cockpit', /^Cadarço de (ombro|cintura|virilha)/).length, 6, 'arnês de seis pontos');
 assert.equal(find('brakes', /^Disco carbono-carbono/).length, 4, 'quatro discos'); assert.equal(find('brakes', /^Pinça monobloco/).length, 4, 'quatro pinças');
@@ -166,5 +166,36 @@ console.log(`Sistemas: ${SYSTEM_IDS.length} camadas, ${manifest.totals.parts} pe
  const template = readFileSync(new URL('./src/template-v2.html', import.meta.url), 'utf8');
  const systemsPanel = template.slice(template.indexOf('id="systems-panel"'), template.indexOf('PERSONALIZAR / SEU DESIGN'));
  for (const word of ['vídeo', 'youtube', 'capítulo', 'prompt', 'homolog', 'não é CAD', 'didática inspirada']) assert.ok(!systemsPanel.toLowerCase().includes(word), `painel de sistemas ainda cita "${word}"`);
- for (const system of SYSTEM_CATALOG) for (const word of ['vídeo', 'hipótese', 'homolog', 'não é CAD', 'CFD', 'Simplificação', 'não simula', 'não representa']) assert.ok(!system.description.includes(word), `${system.id}: descrição ainda cita "${word}"`);
+ // A regra vale para todo texto que chega à tela, não só para a descrição: a leitura instrucional e os
+ // rótulos entram na mesma lista, e o próprio controlador não pode injetar ressalvas em tempo de execução.
+ const PROIBIDOS = ['vídeo', 'hipótese', 'homolog', 'não é CAD', 'CFD', 'simplificação', 'não simula',
+   'não representa', 'nesta camada', 'ainda não está modelad', 'pendente', 'protótipo', 'didátic'];
+ for (const system of SYSTEM_CATALOG) {
+  for (const campo of ['label', 'description', 'howItWorks', 'observe']) {
+   const texto = (system[campo] || '').toLowerCase();
+   for (const word of PROIBIDOS) assert.ok(!texto.includes(word), `${system.id}: ${campo} ainda cita "${word}"`);
+  }
+ }
+ const controlador = readFileSync(new URL('./src/systems.js', import.meta.url), 'utf8');
+ const corpo = controlador.slice(controlador.indexOf(']);')).toLowerCase();
+ for (const word of PROIBIDOS) assert.ok(!corpo.includes(word), `systems.js monta texto de tela com "${word}"`);
+}
+
+// Leitura instrucional de cada sistema: Como funciona e O que observar, ocultas na visão geral.
+{
+ const template = readFileSync(new URL('./src/template-v2.html', import.meta.url), 'utf8');
+ const controlador = readFileSync(new URL('./src/systems.js', import.meta.url), 'utf8');
+ for (const system of SYSTEM_CATALOG) {
+  assert.ok(typeof system.howItWorks === 'string' && system.howItWorks.trim().length >= 120, `${system.id}: Como funciona ausente ou curto`);
+  assert.ok(typeof system.observe === 'string' && system.observe.trim().length >= 60, `${system.id}: O que observar ausente ou curto`);
+ }
+ const detalhe = template.slice(template.indexOf('id="system-detail"'), template.indexOf('id="system-overview"'));
+ assert.match(detalhe, /id="system-reading" class="system-reading" hidden/, 'a leitura deve nascer oculta');
+ assert.match(detalhe, /<h4 id="system-how-heading">Como funciona<\/h4><p id="system-how-it-works"><\/p>/, 'bloco Como funciona');
+ assert.match(detalhe, /<h4 id="system-observe-heading">O que observar<\/h4><p id="system-observe"><\/p>/, 'bloco O que observar');
+ assert.ok(detalhe.indexOf('system-reading') < detalhe.indexOf('system-meta'), 'a leitura vem antes do rodapé do detalhe');
+ assert.match(controlador, /ui\.reading\.hidden=overview/, 'a leitura deve sumir na visão geral');
+ assert.match(controlador, /ui\.how\.textContent=system\?\.howItWorks/, 'Como funciona deve ser preenchido');
+ assert.match(controlador, /ui\.observe\.textContent=system\?\.observe/, 'O que observar deve ser preenchido');
+ console.log('Sistemas: leitura instrucional dos 14 sistemas OK.');
 }

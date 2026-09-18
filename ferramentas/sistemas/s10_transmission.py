@@ -1,6 +1,6 @@
 """10 · Câmbio e diferencial: carcaça estrutural com janela de corte, embreagem multidisco,
 oito pares de engrenagens em tomada constante mais ré, anéis de engate, tambor seletor com
-garfos, pinhão e coroa, diferencial, semieixos com juntas tripóide e homocinética.
+garfos, pinhão e coroa, diferencial, semieixos com juntas tripoide e homocinética.
 """
 import math
 from lib import *
@@ -97,12 +97,12 @@ def build(ctx):
     for side in (-1, 1):
         lab = 'esquerdo' if side < 0 else 'direito'
         cyl(ctx, f'Flange de saída {lab}', (side * .11, AXLE[1], AXLE[2]), .036, .026, m.steel, axis=RIGHT, verts=28, spin=diff_rate)
-        # tripóide interna: copo, aranha de três roletes
-        lathe(ctx, f'Copo da junta tripóide {lab}', [(.0, -.03), (.046, -.03), (.046, .04), (.040, .04), (.040, -.024), (.0, -.024)], m.steel, center=(side * .165, AXLE[1], AXLE[2]), axis=(side, 0, 0), segments=32, spin=diff_rate)
+        # tripoide interna: copo, aranha de três roletes
+        lathe(ctx, f'Copo da junta tripoide {lab}', [(.0, -.03), (.046, -.03), (.046, .04), (.040, .04), (.040, -.024), (.0, -.024)], m.steel, center=(side * .165, AXLE[1], AXLE[2]), axis=(side, 0, 0), segments=32, spin=diff_rate)
         for r_i in range(3):
             a = 2 * math.pi * r_i / 3
-            cyl(ctx, f'Rolete da tripóide {r_i + 1} {lab}', (side * .18, AXLE[1] + .026 * math.sin(a), AXLE[2] + .026 * math.cos(a)), .010, .014, m.steel_dark, axis=(0, math.sin(a), math.cos(a)), verts=14, spin=diff_rate)
-        helix(ctx, f'Coifa da junta tripóide {lab}', (side * .215, AXLE[1], AXLE[2]), .040, .010, 3, .004, m.rubber, axis=RIGHT, per_turn=20)
+            cyl(ctx, f'Rolete da tripoide {r_i + 1} {lab}', (side * .18, AXLE[1] + .026 * math.sin(a), AXLE[2] + .026 * math.cos(a)), .010, .014, m.steel_dark, axis=(0, math.sin(a), math.cos(a)), verts=14, spin=diff_rate)
+        helix(ctx, f'Coifa da junta tripoide {lab}', (side * .215, AXLE[1], AXLE[2]), .040, .010, 3, .004, m.rubber, axis=RIGHT, per_turn=20)
         # semieixo oco em aço, junta homocinética externa e flange do cubo
         cyl(ctx, f'Semieixo {lab}', (side * .40, AXLE[1], AXLE[2]), .017, .36, m.steel, axis=RIGHT, verts=24, spin=diff_rate, carrier=True)
         sphere(ctx, f'Junta homocinética externa {lab}', (side * .585, AXLE[1], AXLE[2]), .040, m.steel, spin=diff_rate)

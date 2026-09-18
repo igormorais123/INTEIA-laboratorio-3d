@@ -46,6 +46,17 @@ Ao clicar em uma peça, o painel mostra o nome, o sistema, o que a peça faz e u
 
 Além dos cartões e das seis vistas: **Fluxos animados**, **Abrir tampas**, **Cores por sistema** (modo esquemático com a cor do catálogo), **Carro fantasma** (desligue para ver os sistemas dentro do carro sólido e use **Desmontar**), **Separar peças do sistema** e leitura do nome da peça por clique. Na bancada Carro, **Desmontar** revela automaticamente os catorze sistemas no lugar enquanto a carroceria se afasta.
 
+## Leitura de cada sistema
+
+Ao isolar um sistema, o painel mostra dois blocos além da descrição: **Como funciona**, que explica o princípio,
+e **O que observar**, que aponta o que procurar no modelo. Ficam ocultos na visão geral. Os textos moram em
+`howItWorks` e `observe` no `SYSTEM_CATALOG` de `web/src/systems.js`.
+
+Eles seguem a mesma regra dos outros textos de tela: nada de metalinguagem de produção. O visitante não precisa
+saber de que material o modelo nasceu nem o que ainda não foi modelado; ressalvas ficam aqui na documentação.
+`web/test-systems.mjs` bloqueia a lista de termos proibidos em `label`, `description`, `howItWorks` e `observe`,
+e também no corpo de `systems.js`, para que ninguém volte a injetar ressalvas em tempo de execução.
+
 ## Regenerar
 
 ```powershell
