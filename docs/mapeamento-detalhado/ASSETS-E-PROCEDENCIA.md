@@ -1,5 +1,7 @@
 # Assets, produção e procedência
 
+> **Autoria e licença atualizadas em 21/09/2026:** Conforme declaração de autoria de Igor Morais Vasconcelos em 21/09/2026, o vídeo foi usado como referência para as funções das peças; a modelagem disponibilizada é de sua autoria. A carroceria, suas versões GLB, o master Blender e os demais modelos autorais estão incluídos na licença MIT, com permissão de uso, modificação, redistribuição e uso comercial. As descrições anteriores de licença pendente da carroceria, inclusive nos inventários históricos, estão superadas por esta declaração. Os registros técnicos de conversão continuam preservados.
+
 
 [Índice do mapeamento](README.md) · [Guia de reutilização](REUTILIZACAO.md)
 
