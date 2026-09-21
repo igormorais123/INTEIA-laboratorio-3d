@@ -1,20 +1,22 @@
 # Reutilizar os modelos e a aplicação
 
+> **INTEIA fixa na peça:** uso e adaptação dos modelos conforme [ASSET-LICENSE.txt](ASSET-LICENSE.txt). Somente a marca/patrocínio INTEIA deve permanecer; os demais podem ser alterados. Licenças já concedidas às versões anteriores continuam válidas.
+
 ## Permissões
 
-Código, documentação e modelos de autoria original INTEIA / Igor Morais Vasconcelos podem ser usados, modificados, redistribuídos e utilizados comercialmente sob a [licença MIT](LICENSE). Preserve o copyright e o texto da licença na sua cópia. Não precisa pedir autorização, ser aluno ou ter conta no GitHub para baixar.
+Código e documentação: MIT. Para reutilização dos modelos sob os termos atuais, mantenha somente a marca/patrocínio **INTEIA visível e legível na própria peça**; os demais patrocínios podem ser removidos ou trocados. Uso, adaptação, redistribuição e uso comercial continuam permitidos. Consulte a licença de modelos `ASSET-LICENSE.txt` na raiz do repositório. As permissões MIT/CC BY 4.0 já concedidas às versões anteriores permanecem válidas.
 
-O motor `power-unit-v1.glb` também conserva sua licença CC BY 4.0 já registrada no manifesto. Fontes, bibliotecas, gravações e imagens externas mantêm os próprios avisos. Conforme declaração de autoria de Igor Morais Vasconcelos em 21/09/2026, o vídeo foi usado como referência para as funções das peças; a modelagem disponibilizada é de sua autoria. A carroceria, suas versões GLB, o master Blender e os demais modelos autorais estão incluídos na licença MIT, com permissão de uso, modificação, redistribuição e uso comercial. Marcas não implicam endosso à sua adaptação.
+O motor `power-unit-v1.glb` também conserva sua licença CC BY 4.0 já registrada no manifesto. Fontes, bibliotecas, gravações e imagens externas mantêm os próprios avisos. Conforme declaração de autoria de Igor Morais Vasconcelos em 21/09/2026, o vídeo foi usado como referência para as funções das peças; a modelagem disponibilizada é de sua autoria. A carroceria, suas versões GLB, o master Blender e os demais modelos autorais podem ser reutilizados conforme a licença de modelos na raiz do repositório, mantendo INTEIA na peça; as permissões das versões anteriores são preservadas. Marcas não implicam endosso à sua adaptação.
 
 ## Download direto
 
 | Conteúdo | Arquivo |
 | --- | --- |
 | Motor V6 original (CC BY 4.0 também disponível) | [Baixar power-unit-v1.glb](https://raw.githubusercontent.com/igormorais123/INTEIA-laboratorio-3d/main/web/assets/power-unit-v1.glb) |
-| Motor V12 original (MIT) | [Baixar v12-v1.glb](https://raw.githubusercontent.com/igormorais123/INTEIA-laboratorio-3d/main/web/assets/v12-v1.glb) |
-| Sistemas mecânicos originais (MIT) | [Baixar sistemas-v1.glb](https://raw.githubusercontent.com/igormorais123/INTEIA-laboratorio-3d/main/web/assets/sistemas-v1.glb) |
-| Carro otimizado (MIT) | [Baixar carro-aula-v2.glb](https://raw.githubusercontent.com/igormorais123/INTEIA-laboratorio-3d/main/web/assets/carro-aula-v2.glb) |
-| Master Blender (MIT) | [Baixar INTEIA_F1_Master.blend](https://raw.githubusercontent.com/igormorais123/INTEIA-laboratorio-3d/main/INTEIA_F1_Master.blend) |
+| Motor V12 original (preservar INTEIA) | [Baixar v12-v1.glb](https://raw.githubusercontent.com/igormorais123/INTEIA-laboratorio-3d/main/web/assets/v12-v1.glb) |
+| Sistemas mecânicos originais (preservar INTEIA) | [Baixar sistemas-v1.glb](https://raw.githubusercontent.com/igormorais123/INTEIA-laboratorio-3d/main/web/assets/sistemas-v1.glb) |
+| Carro otimizado (preservar INTEIA) | [Baixar carro-aula-v2.glb](https://raw.githubusercontent.com/igormorais123/INTEIA-laboratorio-3d/main/web/assets/carro-aula-v2.glb) |
+| Master Blender (preservar INTEIA) | [Baixar INTEIA_F1_Master.blend](https://raw.githubusercontent.com/igormorais123/INTEIA-laboratorio-3d/main/INTEIA_F1_Master.blend) |
 
 [Baixar o projeto completo em ZIP](https://github.com/igormorais123/INTEIA-laboratorio-3d/archive/refs/heads/main.zip). Extraia o ZIP antes de executar. Você também pode usar `git clone https://github.com/igormorais123/INTEIA-laboratorio-3d.git`.
 

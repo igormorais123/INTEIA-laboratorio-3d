@@ -1,8 +1,10 @@
 # Laboratório 3D INTEIA
 
+> **INTEIA fixa na peça:** uso e adaptação dos modelos conforme [ASSET-LICENSE.txt](ASSET-LICENSE.txt). Somente a marca/patrocínio INTEIA deve permanecer; os demais podem ser alterados. Licenças já concedidas às versões anteriores continuam válidas.
+
 ## Baixar e reutilizar
 
-Os conteúdos originais de INTEIA / Igor Morais Vasconcelos estão disponíveis sob licença MIT: qualquer pessoa pode usar, copiar, modificar, redistribuir e utilizar comercialmente, preservando o aviso de copyright e a licença. Não é necessário pedir autorização adicional. Esta concessão inclui código, documentação e geometria original, inclusive seus arquivos exportados. Materiais de terceiros conservam suas próprias licenças; o motor V6 já publicado em CC BY 4.0 mantém essa opção de uso. Conforme declaração de autoria de Igor Morais Vasconcelos em 21/09/2026, o vídeo foi usado como referência para as funções das peças; a modelagem disponibilizada é de sua autoria. A carroceria, suas versões GLB, o master Blender e os demais modelos autorais estão incluídos na licença MIT, com permissão de uso, modificação, redistribuição e uso comercial.
+Código e documentação: MIT. Para reutilização dos modelos sob os termos atuais, mantenha somente a marca/patrocínio **INTEIA visível e legível na própria peça**; os demais patrocínios podem ser removidos ou trocados. Uso, adaptação, redistribuição e uso comercial continuam permitidos. Consulte a licença de modelos `ASSET-LICENSE.txt` na raiz do repositório. As permissões MIT/CC BY 4.0 já concedidas às versões anteriores permanecem válidas.
 
 [Guia de assets e reutilização](REUTILIZACAO.md) · [Licença MIT](LICENSE) · [Baixar ZIP sem conta](https://github.com/igormorais123/INTEIA-laboratorio-3d/archive/refs/heads/main.zip)
 
@@ -79,4 +81,4 @@ As escolhas de personalização ficam na sessão do navegador. Use Salvar imagem
 
 É uma representação das peças externas fornecidas, com cerca de 260 mil triângulos no carro v2, além do motor e dos detalhes adicionais. Os sistemas internos são modelos didáticos em evolução; não constituem projeto de engenharia homologado. Não há rig físico nem colisores completos. Os arquivos Blender e GLB da pasta `modelos` continuam sendo a entrega original; mudanças do laboratório web ou dos geradores de sistemas não os substituem automaticamente. Os movimentos são ilustrativos; o projeto não foi certificado como réplica técnica nem como indistinguível de uma fotografia.
 
-Código, documentação e assets originais: [MIT](LICENSE). Consulte [Direitos e procedência](docs/DIREITOS-E-PROCEDENCIA.md) e [THIRD-PARTY-NOTICES.md](THIRD-PARTY-NOTICES.md) para os materiais de terceiros.
+Código e documentação: [MIT](LICENSE). Modelos: [licença com preservação da marca INTEIA](ASSET-LICENSE.txt). Consulte [Direitos e procedência](docs/DIREITOS-E-PROCEDENCIA.md) e [THIRD-PARTY-NOTICES.md](THIRD-PARTY-NOTICES.md) para os materiais de terceiros.

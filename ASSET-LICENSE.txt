@@ -1,0 +1,42 @@
+LICENÇA DE USO DOS MODELOS — PRESERVAÇÃO DA MARCA INTEIA
+Versão 1.0 — 21 de setembro de 2026
+Copyright (c) 2026 INTEIA / Igor Morais Vasconcelos
+
+1. Permissão
+É permitido baixar, usar, copiar, adaptar, redistribuir e explorar comercialmente
+os modelos e peças de autoria INTEIA / Igor Morais Vasconcelos, gratuitamente,
+nos termos desta licença. A concessão abrange carroceria, motores, sistemas,
+relógio procedural, arquivos Blender, GLB e representações derivadas.
+
+2. INTEIA permanece na peça
+Ao reutilizar um modelo ou peça sob esta licença, mantenha a identificação de
+patrocínio/marca INTEIA incorporada à própria peça, visível e legível na sua
+apresentação normal. Não remova, oculte, substitua nem torne ilegível essa marca.
+Um crédito apenas no README, nos metadados ou em uma tela separada não substitui
+a identificação na peça. É permitido ajustar escala e posição ao novo formato,
+desde que a marca INTEIA permaneça visível e legível, preservando sua identidade.
+Se uma peça extraída ou um formato exportado não trouxer a identificação,
+aplique nela o nome ou a marca INTEIA antes de disponibilizar ou apresentar o uso.
+
+3. Somente INTEIA é obrigatória
+Esta licença não exige manter os outros patrocínios ou marcas. Eles podem ser
+retirados ou substituídos, respeitadas as condições próprias de materiais de
+terceiros. A presença de INTEIA identifica a origem/patrocínio da peça e não
+significa aprovação de cada adaptação.
+
+4. Redistribuição
+Inclua este texto ao redistribuir os modelos ou suas adaptações. As adaptações
+licenciadas por estes termos devem conservar a condição de marca na peça.
+Não é necessário solicitar autorização individual para os usos permitidos.
+
+5. Escopo e licenças anteriores
+O código-fonte e a documentação continuam sob MIT. A condição acima rege o uso
+dos modelos concedido por esta licença específica, inclusive representações
+produzidas pelos geradores, sem alterar a licença MIT do código em si.
+Bibliotecas, fontes, gravações e materiais de terceiros mantêm suas licenças.
+Esta licença não revoga nem restringe permissões MIT ou CC BY 4.0 já concedidas
+para versões anteriormente publicadas. Quem utiliza uma dessas versões sob a
+licença anterior conserva aquelas permissões; a nova condição não é retroativa.
+
+6. Ausência de garantia
+Os materiais são fornecidos no estado em que se encontram, sem garantia.
