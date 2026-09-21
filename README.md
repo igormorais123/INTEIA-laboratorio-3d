@@ -1,5 +1,11 @@
 # Laboratório 3D INTEIA
 
+## Baixar e reutilizar
+
+Os conteúdos originais de INTEIA / Igor Morais Vasconcelos estão disponíveis sob licença MIT: qualquer pessoa pode usar, copiar, modificar, redistribuir e utilizar comercialmente, preservando o aviso de copyright e a licença. Não é necessário pedir autorização adicional. Esta concessão inclui código, documentação e geometria original, inclusive seus arquivos exportados. Materiais de terceiros conservam suas próprias licenças; o motor V6 já publicado em CC BY 4.0 mantém essa opção de uso. A carroceria derivada do tutorial tem licença de origem não documentada; a MIT cobre as contribuições originais, sem relicenciar a geometria de terceiros.
+
+[Guia de assets e reutilização](REUTILIZACAO.md) · [Licença MIT](LICENSE) · [Baixar ZIP sem conta](https://github.com/igormorais123/INTEIA-laboratorio-3d/archive/refs/heads/main.zip)
+
 Um laboratório interativo para explorar e personalizar um carro de fórmula: 97 componentes exteriores, motor V6 ilustrativo integrado, patrocínios do F1 Loop, cores independentes, materiais, iluminação e movimentos ilustrativos. Inclui projeto Blender editável e modelos GLB para reutilização.
 
 **[Abrir o laboratório oficial](https://laboratorio-3d-inteia.igor47306.chatgpt.site)** · **[Documentação](docs/README.md)** · **[Atlas detalhado](docs/mapeamento-detalhado/index.html)**
@@ -73,4 +79,4 @@ As escolhas de personalização ficam na sessão do navegador. Use Salvar imagem
 
 É uma representação das peças externas fornecidas, com cerca de 260 mil triângulos no carro v2, além do motor e dos detalhes adicionais. Os sistemas internos são modelos didáticos em evolução; não constituem projeto de engenharia homologado. Não há rig físico nem colisores completos. Os arquivos Blender e GLB da pasta `modelos` continuam sendo a entrega original; mudanças do laboratório web ou dos geradores de sistemas não os substituem automaticamente. Os movimentos são ilustrativos; o projeto não foi certificado como réplica técnica nem como indistinguível de uma fotografia.
 
-**© 2026 INTEIA — todos os direitos reservados.** O Laboratório 3D INTEIA é um projeto de titularidade da INTEIA, sob [licença proprietária](LICENSE). Estar público não concede uma licença de código aberto. A procedência dos assets e as licenças de terceiros estão registradas separadamente em [Direitos e procedência](docs/DIREITOS-E-PROCEDENCIA.md) e [THIRD-PARTY-NOTICES.md](THIRD-PARTY-NOTICES.md).
+Código, documentação e assets originais: [MIT](LICENSE). Consulte [Direitos e procedência](docs/DIREITOS-E-PROCEDENCIA.md) e [THIRD-PARTY-NOTICES.md](THIRD-PARTY-NOTICES.md) para os materiais de terceiros.

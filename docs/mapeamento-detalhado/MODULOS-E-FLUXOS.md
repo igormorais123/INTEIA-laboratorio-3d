@@ -266,7 +266,7 @@ O navegador usa `mechanics.js`, sem `AnimationMixer` na entrada inspecionada. A 
 | Importar carro animado em outro renderizador | [INTEIA_F1_animado.glb](../../modelos/INTEIA_F1_animado.glb) | Usar controlador de animação do destino; em Three.js, mixer e clipe conforme [integração](../INTEGRACAO.md). Não há validação de Unity/Unreal/Godot registrada. |
 | Editar modelo/coleções no Blender | [INTEIA_F1_Master.blend](../../INTEIA_F1_Master.blend) | Seguir [BLENDER.md](../BLENDER.md), preservar cópia de edições manuais antes de reconstrução. GLB usa Y para cima; Blender Z; conferir escala/eixos uma só vez. |
 
-A reutilização técnica não concede autorização jurídica. Consulte [LICENSE](../../LICENSE), [direitos e procedência](../DIREITOS-E-PROCEDENCIA.md) e [licença Three.js](../../web/THREE-LICENSE.txt). O repositório público declara licença proprietária INTEIA; a licença da geometria do tutorial não está documentada. Não atribuir à INTEIA criação original integral da geometria nem tratar disponibilidade pública como licença aberta.
+Os conteúdos originais de INTEIA / Igor Morais Vasconcelos estão disponíveis sob licença MIT: qualquer pessoa pode usar, copiar, modificar, redistribuir e utilizar comercialmente, preservando o aviso de copyright e a licença. Não é necessário pedir autorização adicional. Esta concessão inclui código, documentação e geometria original, inclusive seus arquivos exportados. Materiais de terceiros conservam suas próprias licenças; o motor V6 já publicado em CC BY 4.0 mantém essa opção de uso. A carroceria derivada do tutorial tem licença de origem não documentada; a MIT cobre as contribuições originais, sem relicenciar a geometria de terceiros.
 
 ## 14. Como atualizar esta página e as relações
 

@@ -19,7 +19,7 @@ Este guia descreve os arquivos locais conferidos em **2026-09-13T01:37:41Z**, co
 | Editar o conjunto box + carro | [INTEIA_Box_com_carro.blend](../../ambientes/INTEIA_Box_com_carro.blend) | Box e carro estático em coleções distintas, câmera e luzes Cycles | Não contém a apresentação animada do master |
 | Usar apenas a identidade visual | [identidade/LEIA-ME.md](../../identidade/LEIA-ME.md) e [identity.js](../../web/src/identity.js) | SVGs prontos e desenho compartilhado entre SVG/Canvas | Observar proporção, cores e atribuição documentadas |
 
-A disponibilidade técnica não amplia permissões de uso. O repositório declara licença proprietária para as contribuições INTEIA e não documenta a licença do tutorial de origem. Consulte [LICENSE](../../LICENSE), [avisos de terceiros](../../THIRD-PARTY-NOTICES.md) e [Direitos e procedência](../DIREITOS-E-PROCEDENCIA.md). Esta seção registra o conteúdo desses arquivos; não resolve a licença de origem ausente.
+Os conteúdos originais de INTEIA / Igor Morais Vasconcelos estão disponíveis sob licença MIT: qualquer pessoa pode usar, copiar, modificar, redistribuir e utilizar comercialmente, preservando o aviso de copyright e a licença. Não é necessário pedir autorização adicional. Esta concessão inclui código, documentação e geometria original, inclusive seus arquivos exportados. Materiais de terceiros conservam suas próprias licenças; o motor V6 já publicado em CC BY 4.0 mantém essa opção de uso. A carroceria derivada do tutorial tem licença de origem não documentada; a MIT cobre as contribuições originais, sem relicenciar a geometria de terceiros.
 
 ## 1. Abrir ou modificar o site completo
 

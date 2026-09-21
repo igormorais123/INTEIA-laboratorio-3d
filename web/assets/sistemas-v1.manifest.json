@@ -23598,5 +23598,5 @@
  "sha256": "f4af6a2a82de6a4749e90dd0ad3ef002bdfd45e9591fd912d926cf3543fe65be",
  "generator_sha256": "ebe02d14e1a8436e1e9545e3337d98b9d8187ea5deaeda6ad8e4553b27d3ab5b",
  "library_sha256": "de04806e4bc0a0b411dc678197fd5b7d41a3a20a07ef2a355e722ce70f13d19d",
- "license": "© 2026 INTEIA — todos os direitos reservados; geometria didática original."
+ "license": "MIT; copyright (c) 2026 INTEIA; geometria didática original."
 }

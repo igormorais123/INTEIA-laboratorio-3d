@@ -4,7 +4,7 @@
 
 Este guia separa o que pode ser transportado como arquivo do que precisa ser integrado como código. As instruções partiram de `1ae4fd1` e o atlas foi atualizado sobre `e3d58af` (incluindo materiais/luzes de `0346e58` e a assinatura lateral). Consulte também [acabamento e render](../ACABAMENTO-E-RENDER.md): o box Blender recebeu novos materiais/luzes, enquanto o GLB estático do carro foi preservado. Os números de Blender citados abaixo pertencem aos relatórios já entregues; criar os mapas não executa uma nova conversão nem testa um motor de jogos.
 
-O projeto tem [licença proprietária INTEIA](../../LICENSE). Reutilização depende das permissões aplicáveis ao conteúdo; o código público não concede uma licença geral. A geometria deriva do tutorial `F1_2026_tutorial_part7_textures.blend`, cujo original está ausente e cuja licença não foi documentada. Consulte [procedência](../DIREITOS-E-PROCEDENCIA.md) e [avisos de terceiros](../../THIRD-PARTY-NOTICES.md). Este guia descreve o caminho técnico, sem ampliar essas permissões.
+Os conteúdos originais de INTEIA / Igor Morais Vasconcelos estão disponíveis sob licença MIT: qualquer pessoa pode usar, copiar, modificar, redistribuir e utilizar comercialmente, preservando o aviso de copyright e a licença. Não é necessário pedir autorização adicional. Esta concessão inclui código, documentação e geometria original, inclusive seus arquivos exportados. Materiais de terceiros conservam suas próprias licenças; o motor V6 já publicado em CC BY 4.0 mantém essa opção de uso. A carroceria derivada do tutorial tem licença de origem não documentada; a MIT cobre as contribuições originais, sem relicenciar a geometria de terceiros.
 
 ## Escolher a unidade de reaproveitamento
 

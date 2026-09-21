@@ -2,7 +2,7 @@
 
 ## Titularidade do projeto
 
-**INTEIA é a titular do projeto Laboratório 3D INTEIA**, conforme declaração de seu responsável. O projeto adota a [Licença Proprietária INTEIA](../LICENSE), com todos os direitos reservados. Autorizações de uso do conteúdo de titularidade da INTEIA devem ser obtidas junto à INTEIA. O repositório público não transforma o projeto em código aberto.
+Os conteúdos originais de INTEIA / Igor Morais Vasconcelos estão disponíveis sob licença MIT: qualquer pessoa pode usar, copiar, modificar, redistribuir e utilizar comercialmente, preservando o aviso de copyright e a licença. Não é necessário pedir autorização adicional. Esta concessão inclui código, documentação e geometria original, inclusive seus arquivos exportados. Materiais de terceiros conservam suas próprias licenças; o motor V6 já publicado em CC BY 4.0 mantém essa opção de uso. A carroceria derivada do tutorial tem licença de origem não documentada; a MIT cobre as contribuições originais, sem relicenciar a geometria de terceiros.
 
 ## Procedência e conteúdo de terceiros
 

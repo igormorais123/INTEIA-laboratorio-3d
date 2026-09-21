@@ -201,7 +201,7 @@ def write_manifest(path_glb, optimized):
         'sha256': hashlib.sha256(raw).hexdigest(),
         'generator_sha256': hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
         'library_sha256': hashlib.sha256((SYS_DIR / 'lib.py').read_bytes()).hexdigest(),
-        'license': '© 2026 INTEIA — todos os direitos reservados; geometria didática original.',
+        'license': 'MIT; copyright (c) 2026 INTEIA; geometria didática original.',
     }
     (glb.parent / f'sistemas-v1{suffix}.manifest.json').write_text(json.dumps(manifest, indent=1, ensure_ascii=False), encoding='utf-8')
     return manifest

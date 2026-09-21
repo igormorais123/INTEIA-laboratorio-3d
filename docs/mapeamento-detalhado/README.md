@@ -1,5 +1,7 @@
 # Mapeamento detalhado — Laboratório 3D INTEIA
 
+> Licença atualizada em 21/09/2026: as contribuições originais estão sob [MIT](../../LICENSE). Comece pelo [guia atual de download e reutilização](../../REUTILIZACAO.md). Os catálogos e grafos gerados abaixo são fotografias históricas: referências à licença proprietária nesses snapshots foram substituídas pela concessão atual para as contribuições originais.
+
 **Abra o [atlas pesquisável](index.html)** para encontrar arquivos, as 97 peças, funções e relações. Funciona como HTML local, sem CDN, conta ou API. Na página de arquivos do GitHub, baixe o repositório e abra esse HTML localmente; o GitHub exibe o código de HTML, não o executa.
 
 Este levantamento cobre exclusivamente `INTEIA-laboratorio-3d`. A leitura começou em `1ae4fd15062d347dc8462af8f4db33c749e6575b` e foi atualizada até `e3d58af3c59a87b308444e678b0b25803e00e727`, incorporando os commits concorrentes de acabamento e assinatura no carro. A documentação paralela ainda estava em elaboração durante a coleta. **Os hashes e horários do [catálogo](dados/catalogo.json) identificam os bytes analisados; o SHA de HEAD, sozinho, não descreve esse estado local.** A [validação](VALIDACAO.md) separa testes desta tarefa, registros anteriores e lacunas.
@@ -31,7 +33,7 @@ Este levantamento cobre exclusivamente `INTEIA-laboratorio-3d`. A leitura começ
 
 `EXTRACTED` significa referência explícita no arquivo citado. `INFERRED` significa interpretação com evidência indireta. `AMBIGUOUS` marca relação incerta. O grafo curado atual usa relações explícitas; a legenda também define os outros estados para futuras revisões. Ausência de aresta não prova ausência de uso. Chamadas estáticas não garantem execução de todos os ramos e não cobrem reflexão, callbacks anônimos e resolução dinâmica integralmente.
 
-O exterior do carro deriva da geometria fornecida, com 41 nomes de objeto de origem mapeados para 97 peças. A extração inicial dos caminhos históricos `outputs/` não foi distribuída neste repositório. Código, organização, identidade e ambientes do projeto devem ser distinguidos da autoria da geometria de entrada. Consulte a [licença proprietária](../../LICENSE) e os [avisos de terceiros](../../THIRD-PARTY-NOTICES.md).
+Os conteúdos originais de INTEIA / Igor Morais Vasconcelos estão disponíveis sob licença MIT: qualquer pessoa pode usar, copiar, modificar, redistribuir e utilizar comercialmente, preservando o aviso de copyright e a licença. Não é necessário pedir autorização adicional. Esta concessão inclui código, documentação e geometria original, inclusive seus arquivos exportados. Materiais de terceiros conservam suas próprias licenças; o motor V6 já publicado em CC BY 4.0 mantém essa opção de uso. A carroceria derivada do tutorial tem licença de origem não documentada; a MIT cobre as contribuições originais, sem relicenciar a geometria de terceiros.
 
 O túnel combina calculadora por coeficientes informados com efeitos visuais aproximados. Não foi localizada CFD validada da malha, rig físico completo, colisores ou LODs. Também não houve homologação contra um carro real. Essas limitações acompanham as receitas de reutilização.
 

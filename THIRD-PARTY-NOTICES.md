@@ -4,7 +4,7 @@
 - esbuild 0.25.10: ferramenta de build instalada pelo npm; sua licença acompanha o pacote.
 - Geometria e imagens do tutorial fornecido: licença não disponibilizada/verificada. Veja [procedência](docs/DIREITOS-E-PROCEDENCIA.md).
 
-O projeto adota a [Licença Proprietária INTEIA](LICENSE). Ela se aplica aos conteúdos de titularidade da INTEIA e não substitui os direitos e licenças dos terceiros listados acima.
+Os conteúdos originais de INTEIA / Igor Morais Vasconcelos estão disponíveis sob licença MIT: qualquer pessoa pode usar, copiar, modificar, redistribuir e utilizar comercialmente, preservando o aviso de copyright e a licença. Não é necessário pedir autorização adicional. Esta concessão inclui código, documentação e geometria original, inclusive seus arquivos exportados. Materiais de terceiros conservam suas próprias licenças; o motor V6 já publicado em CC BY 4.0 mantém essa opção de uso. A carroceria derivada do tutorial tem licença de origem não documentada; a MIT cobre as contribuições originais, sem relicenciar a geometria de terceiros.
 
 
 ## Motor V6 e marcas do F1 Loop (15/09/2026)

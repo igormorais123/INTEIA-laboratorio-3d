@@ -7,7 +7,7 @@
     "node": ">=24"
   },
   "author": "INTEIA",
-  "license": "SEE LICENSE IN ../LICENSE",
+  "license": "MIT",
   "scripts": {
     "build": "node build.cjs",
     "dev": "node server.cjs",
