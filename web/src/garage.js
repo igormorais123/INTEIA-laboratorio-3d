@@ -4,7 +4,7 @@ import * as THREE from 'three';
 import {RoundedBoxGeometry} from 'three/addons/geometries/RoundedBoxGeometry.js';
 
 /** INTEIA development bay. Original scene inspired by publicly visible F1 garages. */
-export function createGarage({scene,renderer,studio,camera,mechanics}) {
+export function createGarage({scene,renderer,studio,camera,mechanics,environment}) {
  const root=new THREE.Group();root.name='INTEIA development garage';scene.add(root);
  const walls=[],roof=[],entrance=[],screenUpdates=[];let section='Architecture',serial=0;
  const mat=(color,metalness=.0,roughness=.5)=>new THREE.MeshStandardMaterial({color,metalness,roughness});
@@ -141,12 +141,11 @@ export function createGarage({scene,renderer,studio,camera,mechanics}) {
  roof.forEach(o=>{o.castShadow=false;});
  const key=new THREE.DirectionalLight('#fff8ed',.85);key.position.set(2.5,7,3);key.castShadow=true;key.shadow.mapSize.set(2048,2048);Object.assign(key.shadow.camera,{left:-9,right:9,top:9,bottom:-9,near:.1,far:30});key.shadow.camera.updateProjectionMatrix();key.shadow.normalBias=.006;key.shadow.bias=-.0001;key.shadow.radius=7;key.shadow.blurSamples=8;garageLights.add(key);
  const fill=new THREE.DirectionalLight('#e6edf4',.55);fill.position.set(-4,3,-4);garageLights.add(fill);garageLights.add(new THREE.HemisphereLight('#f2f6ff','#32383d',.45));
- // The car reflects the actual bay and its luminous panels.
- const environmentScene=new THREE.Scene();environmentScene.background=new THREE.Color('#30373e');const reflectedRoom=root.clone(true);reflectedRoom.position.y=-.75;environmentScene.add(reflectedRoom);
- const pmrem=new THREE.PMREMGenerator(renderer),env=pmrem.fromScene(environmentScene,.012);pmrem.dispose();
+ // Cycles probe of the bay: indirect wall/floor bounce and broad luminaires.
+ const env=environment;
  const studioLights=scene.getObjectByName('Studio lighting');let enabled=false,saved=null,timer=0;root.visible=false;
  return {getExportScene(){const out=root.clone(true);out.traverse(o=>o.visible=true);return out;},get enabled(){return enabled;},root,setEnabled(on){if(on===enabled)return;enabled=on;root.visible=on;document.body.classList.toggle('garage-active',on);document.getElementById('garage-toggle').setAttribute('aria-pressed',String(on));
-  if(on){saved={background:scene.background,fog:scene.fog,environment:scene.environment,intensity:scene.environmentIntensity,floor:studio.floor.material.color.clone(),lights:studioLights.visible};studioLights.visible=false;scene.background=new THREE.Color('#6e777c');scene.fog=new THREE.Fog('#6e777c',28,65);scene.environment=env.texture;scene.environmentIntensity=1.05;studio.floor.material.color.set('#969d9f');}
+  if(on){saved={background:scene.background,fog:scene.fog,environment:scene.environment,intensity:scene.environmentIntensity,floor:studio.floor.material.color.clone(),lights:studioLights.visible};studioLights.visible=false;scene.background=new THREE.Color('#6e777c');scene.fog=new THREE.Fog('#6e777c',28,65);scene.environment=env.texture;scene.environmentIntensity=.8;studio.floor.material.color.set('#969d9f');}
   else if(saved){scene.background=saved.background;scene.fog=saved.fog;scene.environment=saved.environment;scene.environmentIntensity=saved.intensity;studio.floor.material.color.copy(saved.floor);studioLights.visible=saved.lights;}
  },update(dt){if(!enabled)return;for(const w of walls)w.o.visible=camera.position[w.axis]>w.limit;roof.forEach(o=>o.visible=camera.position.y<3.10);entrance.forEach(o=>o.visible=camera.position.z<5.25);timer+=dt;if(timer>1){screenUpdates.forEach(fn=>fn());timer=0;}}};
 }

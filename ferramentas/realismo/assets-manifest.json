@@ -1,0 +1,26 @@
+[
+  {
+    "file": "pitlane-cycles.hdr",
+    "bytes": 3916103,
+    "sha256": "24151fbbceec3e6c683cd39f0e2b957f3ea1d48accdf7f917a72df87101c8b23",
+    "copiesVerified": 4
+  },
+  {
+    "file": "pitlane-cycles-mobile.hdr",
+    "bytes": 1166060,
+    "sha256": "17579ad1fe80c27c0d57ab634bb063cadf14042c391d085a023b9253a827fda5",
+    "copiesVerified": 4
+  },
+  {
+    "file": "lacquer-cycles-normal.png",
+    "bytes": 498489,
+    "sha256": "057a79eeb91e1b5b127d7dd9b6d0e811a9a73b2236bb084c45b386b0c2d28bb9",
+    "copiesVerified": 4
+  },
+  {
+    "file": "lacquer-cycles-roughness.png",
+    "bytes": 262234,
+    "sha256": "8537c3052893c943ac630b0d87165d7ab14958f356829999b82393cba2d848b2",
+    "copiesVerified": 4
+  }
+]

@@ -1,0 +1,19 @@
+{
+  "blender": "5.2.0 LTS",
+  "engine": "Cycles",
+  "device": "OPTIX",
+  "gpu": [
+    "NVIDIA GeForce RTX 3060 Ti"
+  ],
+  "hdri": [
+    2048,
+    1024
+  ],
+  "samples": 96,
+  "maps": [
+    512,
+    512
+  ],
+  "source": "Procedural original INTEIA bay; no third-party assets",
+  "geometryModified": false
+}

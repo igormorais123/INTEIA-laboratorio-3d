@@ -1,16 +1,16 @@
-# Graph Report - INTEIA-laboratorio-3d  (2026-09-16)
+# Graph Report - INTEIA-laboratorio-3d  (2026-09-22)
 
 ## Corpus Check
-- 127 files · ~236,992 words
+- 189 files · ~312,422 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 1032 nodes · 1511 edges · 75 communities (57 shown, 18 thin omitted)
-- Extraction: 89% EXTRACTED · 11% INFERRED · 0% AMBIGUOUS · INFERRED: 159 edges (avg confidence: 0.8)
+- 1524 nodes · 2449 edges · 114 communities (93 shown, 21 thin omitted)
+- Extraction: 93% EXTRACTED · 7% INFERRED · 0% AMBIGUOUS · INFERRED: 175 edges (avg confidence: 0.79)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `829f3101`
+- Built from commit: `f5ccca58`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -86,32 +86,71 @@
 - Publicação do laboratório
 - build.cjs
 - test-power-unit.mjs
-- Inventário completo
+- gerar_sistemas.py
+- build.cjs
+- test-power-unit.mjs
+- docs/INTEGRACAO.md
 - branding.js
+- Publicação oficial do laboratório
+- ARVORE.md
+- gerar_v12.py
+- render_loop
+- test-rpm-curve.mjs
+- gerar_sobressalentes.py
+- test-sound-studio.mjs
+- Estúdio de som — bancos calibrados do V12 anos 90 e do V6 2026
+- Plano 2 — Bancos de loops calibrados (V12 e V6)
+- gerar_sistemas.py
+- build.cjs
+- Mapa de arquivos
+- sound-studio.js
+- engine-voice.mjs
+- test-power-unit.mjs
+- Estúdio de som V6 × V12 — passagem de trabalho (comece por aqui)
+- docs/INTEGRACAO.md
+- test_analise.py
+- docs/DESENVOLVIMENTO.md
+- server.cjs
+- docs/BLENDER.md
+- Estúdio de som — Plano 1: núcleo de afinação, curva e reprodução
+- node_fs (dependência externa)
+- parts-info.js
+- docs/VALIDACAO.md
+- Peças sobressalentes do Box — configuração de pista
+- Publicação oficial do laboratório
+- main
+- Estúdio de som — pesquisa de 16 e 17/09/2026
+- diagnostico_analise.py
+- Context
+- face_uv_fit
+- W_rot
+- node_fs (dependência externa)
+- face_uv_fit
+- W_rot
 
 ## God Nodes (most connected - your core abstractions)
-1. `Catálogo completo de arquivos` - 215 edges
-2. `Índice de funções e métodos` - 44 edges
+1. `Catálogo completo de arquivos` - 237 edges
+2. `Índice de funções e métodos` - 48 edges
 3. `sweep()` - 28 edges
 4. `cube()` - 25 edges
-5. `cyl()` - 23 edges
-6. `W()` - 21 edges
-7. `lathe()` - 16 edges
-8. `loft()` - 15 edges
-9. `build()` - 15 edges
-10. `sphere()` - 14 edges
+5. `W()` - 24 edges
+6. `cyl()` - 23 edges
+7. `render_loop()` - 21 edges
+8. `loft()` - 16 edges
+9. `lathe()` - 16 edges
+10. `analyse_signal()` - 16 edges
 
 ## Surprising Connections (you probably didn't know these)
-- `createSystems()` --indirect_call--> `load()`  [INFERRED]
-  web/src/systems.js → ferramentas/otimizar_sistemas.mjs
 - `Atlas Detalhado do Laboratório (Interface)` --conceptually_related_to--> `INTEIA Escudo Oficial SVG`  [INFERRED]
   docs/mapeamento-detalhado/scripts/interface.html → web/assets/inteia-escudo-oficial.svg
-- `INTEIA — Identidade Visual` --references--> `INTEIA Negativo SVG`  [INFERRED]
-  identidade/Identidade-INTEIA.html → identidade/INTEIA-negativo.svg
-- `INTEIA — Identidade Visual` --references--> `INTEIA Símbolo SVG`  [INFERRED]
-  identidade/Identidade-INTEIA.html → identidade/INTEIA-simbolo.svg
-- `production_edges()` --calls--> `add()`  [INFERRED]
-  ferramentas/mapear.py → ferramentas/sistemas/s06_power.py
+- `createSystems()` --indirect_call--> `load()`  [INFERRED]
+  web/src/systems.js → ferramentas/otimizar_sistemas.mjs
+- `createTestBank()` --indirect_call--> `load()`  [INFERRED]
+  web/test-fixtures/sound-bank.mjs → ferramentas/otimizar_sistemas.mjs
+- `renderVoice()` --calls--> `createEngineVoice()`  [EXTRACTED]
+  ferramentas/som/renderizar_demos.mjs → web/src/sound/engine-voice.mjs
+- `span_loft()` --calls--> `loft()`  [INFERRED]
+  ferramentas/gerar_sobressalentes.py → ferramentas/sistemas/lib.py
 
 ## Import Cycles
 - None detected.
@@ -121,27 +160,27 @@
 - **Laboratory Atlas Visualization Tools** — docs_mapeamento_detalhado_scripts_interface, ferramentas_mapa_template [INFERRED 0.85]
 - **INTEIA Brand Identity Assets** — identidade_identidade_inteia, identidade_inteia_monocromatico, identidade_inteia_negativo, identidade_inteia_simbolo, web_assets_inteia_wordmark, web_assets_inteia_escudo_oficial, web_assets_inteia_nome_oficial [EXTRACTED 0.95]
 
-## Communities (75 total, 18 thin omitted)
+## Communities (114 total, 21 thin omitted)
 
 ### Community 0 - "docs/INTEGRACAO.md"
-Cohesion: 0.08
-Nodes (27): arc2d(), auto_explode(), bevel(), both_sides(), car_components(), centroid(), Context, face_uv_fit() (+19 more)
+Cohesion: 0.25
+Nodes (8): bbox_web(), auto_explode(), car_components(), centroid(), Preenche o extra `explode` das peças sem valor: direção do centroide do sistema, Importa o carro v2 uma única vez e devolve os componentes soltos (ilhas de malha, to_web(), bbox_web()
 
 ### Community 1 - "Build and Catalog Scripts"
-Cohesion: 0.06
-Nodes (51): bpy (dependência externa), code_paths(), family_purpose(), gather_symbols(), git(), glb_info(), inventory(), link() (+43 more)
+Cohesion: 0.12
+Nodes (29): code_paths(), family_purpose(), gather_symbols(), git(), glb_info(), inventory(), link(), main() (+21 more)
 
 ### Community 2 - "Three.js Scene Controls"
-Cohesion: 0.12
-Nodes (22): three_addons_controls_orbitcontrols_js (dependência externa), three_addons_exporters_gltfexporter_js (dependência externa), three_addons_geometries_decalgeometry_js (dependência externa), three_addons_postprocessing_effectcomposer_js (dependência externa), three_addons_postprocessing_smaapass_js (dependência externa), assemblyTo(), categoryLabels, closeEngine() (+14 more)
+Cohesion: 0.09
+Nodes (27): load(), three_addons_controls_orbitcontrols_js (dependência externa), three_addons_exporters_gltfexporter_js (dependência externa), three_addons_geometries_decalgeometry_js (dependência externa), three_addons_postprocessing_effectcomposer_js (dependência externa), three_addons_postprocessing_smaapass_js (dependência externa), assemblyTo(), categoryLabels (+19 more)
 
 ### Community 3 - "Vehicle Systems Configuration"
 Cohesion: 0.06
-Nodes (36): describePart(), RULES, SYSTEM_FALLBACK, advanceLocalSpin(), createSystems(), FLOW_SPEEDS, flowTexture(), HIDE_GROUPS (+28 more)
+Nodes (39): CAR_CATEGORY_FALLBACK, CAR_RULES, describeCarPart(), describePart(), RULES, SYSTEM_FALLBACK, advanceLocalSpin(), createSystems() (+31 more)
 
 ### Community 4 - "Blender Production Workflow"
-Cohesion: 0.05
-Nodes (34): Blender 4.5.9 LTS na producao registrada, Colecao de estudio separada, Colecao INTEIA Carro reutilizavel, Desvincular acoes para editar posicoes, Exportar apenas carro e pivos, Raiz INTEIA_F1 e pivos, Timeline montagem rodas direcao DRS, Build web com esbuild e GLB incorporado (+26 more)
+Cohesion: 0.15
+Nodes (11): Licenca do tutorial nao documentada, Original do tutorial ausente, Sem afiliacao ou certificacao esportiva, Titularidade declarada INTEIA, Tutorial F1_2026_tutorial_part7_textures.blend, Direitos de terceiros preservados, Licenca Proprietaria INTEIA, Reutilizacao depende de autorizacao INTEIA (+3 more)
 
 ### Community 5 - "System Optimization and Testing"
 Cohesion: 0.14
@@ -149,23 +188,23 @@ Nodes (13): createMechanics(), names, b, before, box, j, json, len (+5 more)
 
 ### Community 6 - "Project Documentation and Assets"
 Cohesion: 0.01
-Nodes (215): 00_INDICE_IA.md, AGENTS.md, ambientes/INTEIA_Box_com_carro.blend, ambientes/INTEIA-box-laboratorio.glb, ambientes/Previa-Box.png, ambientes/validacao-box.json, Catálogo completo de arquivos, CHANGELOG.md (+207 more)
+Nodes (237): 00_INDICE_IA.md, AGENTS.md, ambientes/INTEIA_Box_com_carro.blend, ambientes/INTEIA-box-laboratorio.glb, ambientes/Previa-Box.png, ambientes/validacao-box.json, Catálogo completo de arquivos, CHANGELOG.md (+229 more)
 
 ### Community 7 - "Engine Visualization Engine"
 Cohesion: 0.21
 Nodes (15): BOKEH, clamp(), eased(), ENGINE_PARTS, ENGINE_WINDOWS, engineShot(), FOCUS, FOV (+7 more)
 
 ### Community 8 - "Aerodynamics Physics Model"
-Cohesion: 0.09
-Nodes (20): Bloqueios Mach montagem e isolamento, Coeficientes externos nao determinados pelo GLB, Cores de regiao sem medicao fisica, CSV com origem e validade dos parametros, Ensaio aerodinamico por coeficientes, Envelope analitico simplificado, Exemplo hipotetico sem medicao no carro, Fumaca artistica por particulas (+12 more)
+Cohesion: 0.13
+Nodes (14): Bloqueios Mach montagem e isolamento, Coeficientes externos nao determinados pelo GLB, Cores de regiao sem medicao fisica, CSV com origem e validade dos parametros, Ensaio aerodinamico por coeficientes, Envelope analitico simplificado, Exemplo hipotetico sem medicao no carro, Fumaca artistica por particulas (+6 more)
 
 ### Community 9 - "Build and Verification Tools"
-Cohesion: 0.04
-Nodes (40): aero, after, before, built, changed, driver, engine, esbuild (+32 more)
+Cohesion: 0.12
+Nodes (14): aero, after, before, built, changed, driver, engine, esbuild (+6 more)
 
 ### Community 10 - "Web Application Source"
-Cohesion: 0.05
-Nodes (44): ferramentas/gerar_sistemas.py, ferramentas/otimizar_sistemas.mjs, ferramentas/package_blender.py, ferramentas/sistemas/lib.py, ferramentas/sistemas/s01_aero.py, ferramentas/sistemas/s02_structure.py, ferramentas/sistemas/s03_suspension.py, ferramentas/sistemas/s04_steering.py (+36 more)
+Cohesion: 0.04
+Nodes (48): ferramentas/gerar_sistemas.py, ferramentas/gerar_sobressalentes.py, ferramentas/otimizar_sistemas.mjs, ferramentas/package_blender.py, ferramentas/sistemas/lib.py, ferramentas/sistemas/s01_aero.py, ferramentas/sistemas/s02_structure.py, ferramentas/sistemas/s03_suspension.py (+40 more)
 
 ### Community 11 - "Project Dependencies and Scripts"
 Cohesion: 0.11
@@ -192,8 +231,8 @@ Cohesion: 0.29
 Nodes (6): 30 FPS observado sem garantia, Avaliacao subjetiva sem certificacao fisica, Cinco iteracoes visuais historicas do tunel, Detalhamento informativo posterior do fluxo, Pausa conferida por imagens identicas, Revisao adicional com particulas
 
 ### Community 17 - "CI/CD GitHub Workflows"
-Cohesion: 0.50
-Nodes (3): Build e testes web no workflow, Node 24 no workflow, Verificar site em push e pull_request
+Cohesion: 0.06
+Nodes (57): bank_points(), calibration_bands(), distance(), fit_eq(), harmonic_orders(), loop_cycles(), main(), measure_loop() (+49 more)
 
 ### Community 18 - "Version Release History"
 Cohesion: 0.50
@@ -232,7 +271,7 @@ Cohesion: 0.36
 Nodes (10): caliperGeometry(), discGeometry(), discTexture(), enhanceCar(), heatTexture(), localVaryings(), paintShader(), rimPatch() (+2 more)
 
 ### Community 46 - "Technical Documentation Index"
-Cohesion: 0.33
+Cohesion: 0.26
 Nodes (3): Mapa do Laboratório 3D INTEIA, Evidências de verificação do atlas, Chisle
 
 ### Community 47 - "File Manifest Generation"
@@ -268,8 +307,8 @@ Cohesion: 0.40
 Nodes (5): Como interpretar o levantamento, Encontrar e entender, Entrega independente e concorrência, Escolher a fonte adequada, Mapeamento detalhado — Laboratório 3D INTEIA
 
 ### Community 55 - "Local Development Server"
-Cohesion: 0.17
-Nodes (25): bm_to_object(), bolt_ring(), car_part(), gear(), helix(), lathe(), _link(), mesh_object() (+17 more)
+Cohesion: 0.16
+Nodes (33): bm_to_object(), bolt_ring(), box_uv(), car_part(), gear(), helix(), lathe(), loft() (+25 more)
 
 ### Community 56 - "mapeamento-detalhado/README.md"
 Cohesion: 0.24
@@ -280,24 +319,24 @@ Cohesion: 0.50
 Nodes (4): Alternar entre computadores, Continuar em outro PC, Documentação, Primeira instalação
 
 ### Community 58 - "Publication Verification"
-Cohesion: 0.16
-Nodes (22): _encode_normal(), image_from_array(), material(), Materials, Desenha um caractere de 7 segmentos (dígitos, ':' e '.'); origem (x0, y0) no can, Página de telemetria estilo 2026: campos superiores, marcha central, tempos late, Paleta física compartilhada pelos 14 sistemas., rgba: float array (h, w, 4) em 0..1. Retorna bpy.types.Image empacotada. (+14 more)
+Cohesion: 0.10
+Nodes (37): arc2d(), both_sides(), _encode_normal(), _frames(), image_from_array(), join(), _link(), material() (+29 more)
 
 ### Community 59 - "cube"
-Cohesion: 0.16
-Nodes (18): cube(), flow_ribbon(), Fita translúcida de fluxo (o site anima o deslocamento da textura)., super_ellipse(), add(), bank_frame(), build(), 06 · Unidade de potência térmica: V6 de 90° com bloco, cárter seco, cabeçotes e (+10 more)
+Cohesion: 0.19
+Nodes (11): super_ellipse(), 02 · Estrutura central: célula de sobrevivência em sanduíche de carbono e colmei, tub_section(), add(), bank_frame(), build(), 06 · Unidade de potência térmica: V6 de 90° com bloco, cárter seco, cabeçotes e, Eixo do cilindro (para cima e para fora) e normal externa da bancada. (+3 more)
 
 ### Community 60 - "Driver and Helmet Models"
 Cohesion: 0.24
 Nodes (8): createHelmet1991(), createSennaDriver(), box, context, driver, mechanics, model, rest
 
 ### Community 61 - "Wind Tunnel Visualization"
-Cohesion: 0.44
-Nodes (5): three (dependência externa), aerodynamicTest(), createFlowDetail(), createTunnelVisual(), createWindTunnel()
+Cohesion: 0.20
+Nodes (10): three (dependência externa), aerodynamicTest(), createFlowDetail(), createTunnelVisual(), createWindTunnel(), a, b, cross (+2 more)
 
 ### Community 62 - "Aerodynamics Unit Testing"
-Cohesion: 0.11
-Nodes (19): airfoil(), mirror_x(), Seção tipo NACA simétrica (com leve arqueamento) para braços de suspensão e asas, Duplica a peça espelhada em X (site) mantendo materiais e extras., 01 · Aerodinâmica: o que a carroceria esconde — túneis venturi do assoalho, cerc, build(), center_elements(), corner() (+11 more)
+Cohesion: 0.24
+Nodes (11): airfoil(), Seção tipo NACA simétrica (com leve arqueamento) para braços de suspensão e asas, build(), center_elements(), corner(), leg(), 03 · Suspensão: wishbones em perfil aerodinâmico, uprights usinados, pushrod dia, Elemento heave com pilha Belleville e barra antirrolagem entre os dois balancins (+3 more)
 
 ### Community 63 - "Garage UI and Branding"
 Cohesion: 0.38
@@ -308,60 +347,204 @@ Cohesion: 0.60
 Nodes (4): applyCarMaterials(), applyLocalCarbonProjection(), setupStudio(), texture()
 
 ### Community 65 - "Project Directory Tree"
-Cohesion: 0.12
-Nodes (13): gltf, io, jsonLength, load(), manifest, manifestPath, output, partsAfter (+5 more)
+Cohesion: 0.13
+Nodes (12): gltf, io, jsonLength, manifest, manifestPath, output, partsAfter, partsBefore (+4 more)
 
 ### Community 66 - "Symbol Inventory"
-Cohesion: 0.21
-Nodes (12): catmull(), _frames(), Quadros paralelos (rotation-minimizing) ao longo da polilinha., Varre uma seção (círculo por padrão, ou função t->[(x,y)...]) ao longo de pontos, rounded_rect(), sweep(), build(), 10 · Câmbio e diferencial: carcaça estrutural com janela de corte, embreagem mul (+4 more)
+Cohesion: 0.15
+Nodes (26): bevel(), catmull(), cube(), cyl(), flow_ribbon(), lado(), plate(), Placa extrudada a partir de um contorno 2D [(u,v)] no plano definido por `normal (+18 more)
 
 ### Community 67 - "loft"
-Cohesion: 0.23
-Nodes (12): box_uv(), loft(), Projeção em caixa (triplanar discreta) para texturas de trama., sections: lista de anéis 3D (site frame), mesmo número de pontos, em ordem. open, Loft aberto com espessura (modificador Solidify)., shell(), sphere(), build() (+4 more)
+Cohesion: 0.14
+Nodes (15): node_assert_strict (dependência externa), cylinderAt(), ENGINE_PROFILES, firingIntervalDeg(), firingWindowAt(), createPhasePlayer(), prepareBank(), detectFiringHz() (+7 more)
 
 ### Community 68 - "in-car.js"
-Cohesion: 0.22
-Nodes (5): three_addons_loaders_gltfloader_js (dependência externa), BAY, createInCarEngine(), ENGINE_AT, HINGE
+Cohesion: 0.25
+Nodes (4): BAY, createInCarEngine(), ENGINE_AT, HINGE
 
 ### Community 69 - "Documentação do Laboratório 3D INTEIA"
 Cohesion: 0.40
 Nodes (5): Documentação do Laboratório 3D INTEIA, Fontes de verdade, Mapas do repositório, Operação e desenvolvimento, Produto e conteúdo técnico
 
 ### Community 70 - "Publicação do laboratório"
-Cohesion: 0.67
-Nodes (3): Atualizar a publicação, Publicação do laboratório, Verificação da publicação inicial
+Cohesion: 0.12
+Nodes (26): crankRotationZ(), pinAngleDeg(), pinPosition(), pistonDistance(), poseV12(), rodRotationZ(), strokeOf(), wristPosition() (+18 more)
 
 ### Community 71 - "build.cjs"
-Cohesion: 0.25
-Nodes (6): node_assert_strict (dependência externa), a, b, cross, p, still
+Cohesion: 0.15
+Nodes (17): addPoint(), clamp(), mountCurveEditor(), movePoint(), nudgePoint(), removePoint(), capped, curve (+9 more)
 
 ### Community 72 - "test-power-unit.mjs"
-Cohesion: 0.43
-Nodes (6): cyl(), arc(), build(), corner(), 05 · Freios: discos carbono-carbono, campânulas, pinças monobloco, tambores de r, Pontos no plano da roda: ângulo medido de +Z (frente) para +Y (cima), em graus.
+Cohesion: 0.10
+Nodes (12): 01 · Aerodinâmica: o que a carroceria esconde — túneis venturi do assoalho, cerc, 04 · Direção: coluna em carbono com juntas universais, pinhão e cremalheira hidr, arc(), 05 · Freios: discos carbono-carbono, campânulas, pinças monobloco, tambores de r, Pontos no plano da roda: ângulo medido de +Z (frente) para +Y (cima), em graus., 07 · ERS híbrido: energy store sob o tanque (módulos de células, barramentos, co, 10 · Câmbio e diferencial: carcaça estrutural com janela de corte, embreagem mul, rr_section() (+4 more)
+
+### Community 74 - "build.cjs"
+Cohesion: 0.13
+Nodes (23): axis_deg(), axis_vec(), bank_of(), corte(), index_in_bank(), marcar(), origem_em(), pin_offset_deg() (+15 more)
+
+### Community 75 - "test-power-unit.mjs"
+Cohesion: 0.16
+Nodes (20): analyse_signal(), crank_candidates(), engine_orders(), _interp_rows(), measure_frame(), noise_floor(), order_level(), ndarray (+12 more)
+
+### Community 76 - "docs/INTEGRACAO.md"
+Cohesion: 0.15
+Nodes (17): clamp(), createRpmFollower(), DURATION_RANGE_S, evaluateCurve(), simulateCurve(), tangents(), first, follower (+9 more)
 
 ### Community 77 - "branding.js"
+Cohesion: 0.22
+Nodes (9): Arquivos, Extras exportados nos nós, Interface, Leitura de cada sistema, Limites, Publicação, Referencial e escala, Regenerar (+1 more)
+
+### Community 78 - "Publicação oficial do laboratório"
+Cohesion: 0.39
+Nodes (9): describeTuning(), noteGrid(), PAD, firingHz(), hzToNote(), midiToHz(), NOTE_NAMES, rpmForHz() (+1 more)
+
+### Community 79 - "ARVORE.md"
+Cohesion: 0.12
+Nodes (17): 1. Referências reais (só para análise), 2. Modelo físico offline e banco de loops, 3. Reprodução com fase travada (`phase-player.mjs`), 4. Curva de aceleração (`rpm-curve.mjs` + `curve-editor.js`), 5. Motor V12 3D (`v12-v1.glb`), 6. Aba 07 Som (`sound-studio.js`), Afinação, Arquitetura (+9 more)
+
+### Community 80 - "gerar_v12.py"
+Cohesion: 0.22
+Nodes (11): decode_reference(), load_cached(), main(), ndarray, Path, Decodifica as referências de .referencias/ para o cache de análise.  Cada referê, Mistura para mono e reamostra para 48 kHz com FIR polifásico (fase linear)., sha256_of() (+3 more)
+
+### Community 81 - "render_loop"
+Cohesion: 0.20
+Nodes (12): assets, here, loadBank(), outDir, renderVoice(), written, loadBank(), parseBank() (+4 more)
+
+### Community 82 - "test-rpm-curve.mjs"
+Cohesion: 0.17
+Nodes (7): bpy (dependência externa), base(), col(), linear(), box(), Generate the shared web lighting probe and lacquer maps with Cycles/OptiX.  Run, pathlib (dependência externa)
+
+### Community 83 - "gerar_sobressalentes.py"
+Cohesion: 0.18
+Nodes (12): build_tyre(), fw_at(), Gera web/assets/sobressalentes-v1.glb: peças sobressalentes do Box INTEIA para c, Textura do pneu em (u = volta, v = perfil): banda colorida no flanco, sulcos na, Anel 3D de um perfil no plano (z, y): bordo de ataque em `le` = (x, y, z), corda, Rebaseia a malha na origem do nó alvo (coordenadas locais idênticas às do carro), sec(), span_loft() (+4 more)
+
+### Community 84 - "test-sound-studio.mjs"
+Cohesion: 0.15
+Nodes (11): SOUND_CREDITS, app, bench, build, kin, panel, studio, template (+3 more)
+
+### Community 85 - "Estúdio de som — bancos calibrados do V12 anos 90 e do V6 2026"
+Cohesion: 0.17
+Nodes (12): Como o som é produzido, Conferência visual, Créditos das referências, Estúdio de som — bancos calibrados do V12 anos 90 e do V6 2026, Iteração após a primeira audição (17/09/2026), Limitações conhecidas, Motor V12 em 3D (Plano 3), Regenerar (+4 more)
+
+### Community 86 - "Plano 2 — Bancos de loops calibrados (V12 e V6)"
+Cohesion: 0.17
+Nodes (11): Estúdio de som — roteiro dos Planos 2, 3 e 4, Plano 2 — Bancos de loops calibrados (V12 e V6), Plano 3 — Motor V12 3D, Plano 4 — Aba 07 Som, Tarefa 2.1 — Referências locais, Tarefa 2.2 — Decodificação para cache, Tarefa 2.3 — Order tracking → `alvos-timbre.json`, Tarefa 2.4 — Modelo físico offline (+3 more)
+
+### Community 87 - "gerar_sistemas.py"
+Cohesion: 0.26
+Nodes (10): _bbox(), frame(), import_car_reference(), _import_glb(), measure_glb(), power_unit_reference(), Gera o asset dos sistemas internos do carro (web/assets/sistemas-v1.glb) com Ble, Carro fantasma para os renders de conferência (não exportado). (+2 more)
+
+### Community 88 - "build.cjs"
+Cohesion: 0.17
+Nodes (9): esbuild (dependência externa), esbuild, fs, html, model, path, template, withModel (+1 more)
+
+### Community 89 - "Mapa de arquivos"
+Cohesion: 0.18
+Nodes (10): Estúdio de som — Plano 2: bancos de loops calibrados (V12 e V6), Global Constraints, Mapa de arquivos, Task 1: Referências locais, Task 2: Decodificação para cache, Task 3: Order tracking → `alvos-timbre.json`, Task 4: Modelo físico offline, Task 5: Calibração (+2 more)
+
+### Community 90 - "sound-studio.js"
+Cohesion: 0.35
+Nodes (12): createEditorState(), normalize(), setDuration(), setMaxRpm(), stateToCurve(), createCurve(), curveFromJSON(), curveToJSON() (+4 more)
+
+### Community 91 - "engine-voice.mjs"
+Cohesion: 0.33
+Nodes (5): createAmbience(), createEngineVoice(), createResonator(), lcg(), EngineProcessor
+
+### Community 92 - "test-power-unit.mjs"
+Cohesion: 0.18
+Nodes (10): assemblies, b, before, j, json, len, mixer, out (+2 more)
+
+### Community 93 - "Estúdio de som V6 × V12 — passagem de trabalho (comece por aqui)"
+Cohesion: 0.20
+Nodes (10): 1. O que o dono pediu, 2. Decisões já tomadas com o dono (não reabrir), 3. Estado atual, 4. Primeiros comandos no outro PC, 5. O que fazer, em ordem, 6. Como o trabalho foi coordenado (repetir se quiser), 7. Regras do projeto que não podem ser quebradas, 8. Pendências fora do estúdio de som (+2 more)
+
+### Community 94 - "docs/INTEGRACAO.md"
+Cohesion: 0.20
+Nodes (9): Carbono portatil e shader web diferem, Clipe INTEIA_Demonstracao_Montagem_Rodas_DRS, Eixo GLB Y e Blender Z, Evitar dois controladores nas mesmas pecas, GLB animado com demonstracao, GLB estatico para controlador proprio, Motores Unity Unreal Godot nao testados, Necessidade de LODs e colisores no destino (+1 more)
+
+### Community 95 - "test_analise.py"
+Cohesion: 0.27
+Nodes (5): aggregate_bands(), OrderTracking, Testes do order tracking com sinais sintéticos (python -m unittest ferramentas/s, Soma de ordens de virabrequim com níveis conhecidos (dB relativo à ordem de igni, synthetic_engine()
+
+### Community 96 - "docs/DESENVOLVIMENTO.md"
+Cohesion: 0.22
+Nodes (7): Build web com esbuild e GLB incorporado, Geometria exige metadados especificos, Gerador sobrescreve master GLBs e previa, HTML gerado nao deve ser editado manualmente, Scripts de reconstrucao Blender e GLBs, Testes automatizados e inspecao visual, Orientacao de leitura pelo README
+
+### Community 97 - "server.cjs"
+Cohesion: 0.22
+Nodes (7): fs, http, mimeTypes, path, port, root, server
+
+### Community 98 - "docs/BLENDER.md"
+Cohesion: 0.25
+Nodes (7): Blender 4.5.9 LTS na producao registrada, Colecao de estudio separada, Colecao INTEIA Carro reutilizavel, Desvincular acoes para editar posicoes, Exportar apenas carro e pivos, Raiz INTEIA_F1 e pivos, Timeline montagem rodas direcao DRS
+
+### Community 99 - "Estúdio de som — Plano 1: núcleo de afinação, curva e reprodução"
+Cohesion: 0.25
+Nodes (7): Estúdio de som — Plano 1: núcleo de afinação, curva e reprodução, Global Constraints, Mapa de arquivos, Planos seguintes (fora deste plano), Task 1: Afinação (`tuning.mjs`), Task 2: Perfis e curva RPM × tempo, Task 3: Detector de f0 e reprodutor com fase travada
+
+### Community 100 - "node_fs (dependência externa)"
+Cohesion: 0.33
+Nodes (6): check(), here, manifest, outDir, sha256(), wanted
+
+### Community 101 - "parts-info.js"
+Cohesion: 0.15
+Nodes (14): three_addons_loaders_gltfloader_js (dependência externa), renderInto(), setSpareStatus(), setupSparesUI(), showSpareInfo(), syncSpares(), SPARE_INFO, SPARE_PRESETS (+6 more)
+
+### Community 102 - "docs/VALIDACAO.md"
 Cohesion: 0.29
-Nodes (7): Arquivos, Extras exportados nos nós, Interface, Limites, Referencial e escala, Regenerar, Sistemas internos em 3D — bancada Sistemas
+Nodes (6): Ausencia de testes em jogos e colisao, Diferenca registrada de um triangulo, Historico visual subjetivo, Registros nao garantem edicoes futuras, Testes validam calculadora e nao aerodinamica do carro, Validacao registrada de reabertura e remontagem
+
+### Community 103 - "Peças sobressalentes do Box — configuração de pista"
+Cohesion: 0.33
+Nodes (6): Arquivos, Cenários, Limites, Peças, Peças sobressalentes do Box — configuração de pista, Regenerar
+
+### Community 104 - "Publicação oficial do laboratório"
+Cohesion: 0.40
+Nodes (5): Atualizar a produção, Critérios de conclusão, Estado da migração, Identidade imutável do Site, Publicação oficial do laboratório
+
+### Community 105 - "main"
+Cohesion: 0.40
+Nodes (5): compensate_distance(), extrapolate_bands(), main(), Remove, por fonte, a diferença de inclinação alta em relação à mediana da classe, Bandas acima do observado: forma da última banda medida com a tendência de incli
+
+### Community 106 - "Estúdio de som — pesquisa de 16 e 17/09/2026"
+Cohesion: 0.50
+Nodes (3): 1. Gravações reais com licença livre, 2. Como fazer som de motor realista, Estúdio de som — pesquisa de 16 e 17/09/2026
+
+### Community 107 - "diagnostico_analise.py"
+Cohesion: 0.40
+Nodes (4): Acabamento F1 — 22/09/2026, Integração, Produção, Verificação e limites
+
+### Community 108 - "Context"
+Cohesion: 0.29
+Nodes (6): Espectrograma em dB (quadros × bins) e eixo de frequências., stft_db(), plot(), Path, Espectrograma com o traçado de f0 e os quadros aceitos, para conferência visual, Espectrograma de um WAV de demonstração (mesma STFT da análise), gravado ao lado
+
+### Community 110 - "W_rot"
+Cohesion: 0.48
+Nodes (6): anchors(), hashfile(), load(), Valida a entrega sem executar app nem escrever fora deste diretório., read(), slug()
+
+### Community 111 - "node_fs (dependência externa)"
+Cohesion: 0.33
+Nodes (5): ALLOWED_LICENSES, ids, manifest, REQUIRED, node_fs (dependência externa)
 
 ## Knowledge Gaps
-- **569 isolated node(s):** `root`, `require`, `esbuild`, `out`, `sourcePaths` (+564 more)
+- **732 isolated node(s):** `root`, `require`, `esbuild`, `out`, `sourcePaths` (+727 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **18 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **21 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `Catálogo completo de arquivos` connect `Project Documentation and Assets` to `Technical Documentation Index`?**
-  _High betweenness centrality (0.115) - this node is a cross-community bridge._
+  _High betweenness centrality (0.061) - this node is a cross-community bridge._
 - **Why does `Índice de funções e métodos` connect `Web Application Source` to `mapeamento-detalhado/README.md`?**
-  _High betweenness centrality (0.026) - this node is a cross-community bridge._
-- **Why does `Assets, produção e procedência` connect `Asset Provenance and Identity` to `Navigator Validation Guides`?**
-  _High betweenness centrality (0.022) - this node is a cross-community bridge._
+  _High betweenness centrality (0.021) - this node is a cross-community bridge._
+- **Why does `Estúdio de som — bancos calibrados do V12 anos 90 e do V6 2026` connect `Estúdio de som — bancos calibrados do V12 anos 90 e do V6 2026` to `Technical Documentation Index`?**
+  _High betweenness centrality (0.012) - this node is a cross-community bridge._
 - **Are the 18 inferred relationships involving `sweep()` (e.g. with `build()` and `build()`) actually correct?**
   _`sweep()` has 18 INFERRED edges - model-reasoned connections that need verification._
 - **Are the 17 inferred relationships involving `cube()` (e.g. with `build()` and `build()`) actually correct?**
   _`cube()` has 17 INFERRED edges - model-reasoned connections that need verification._
-- **Are the 16 inferred relationships involving `cyl()` (e.g. with `build()` and `build()`) actually correct?**
-  _`cyl()` has 16 INFERRED edges - model-reasoned connections that need verification._
+- **Are the 6 inferred relationships involving `W()` (e.g. with `build_tyre()` and `spare()`) actually correct?**
+  _`W()` has 6 INFERRED edges - model-reasoned connections that need verification._
 - **What connects `root`, `require`, `esbuild` to the rest of the system?**
-  _569 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _732 weakly-connected nodes found - possible documentation gaps or missing edges._
