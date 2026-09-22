@@ -19,7 +19,30 @@ def core(ctx, name, center, size, tilt_deg, mat_tank):
     m = ctx.m
     w, h, d = size   # espessura (x), altura (y), comprimento (z)
     rot = (0, 0, tilt_deg)
-    parts = [cube(ctx, f'{name} · núcleo aletado', center, (w, h, d), m.radiator, rot=rot, bev=.002, uv=1)]
+    # Tubos achatados e folhas corrugadas com passagem de ar: uma só malha,
+    # com vazios reais entre aletas, em vez do antigo bloco texturizado.
+    verts=[]; faces=[]
+    def quad(points):
+        start=len(verts); verts.extend([W(p) for p in points]); faces.append(tuple(range(start,start+4)))
+    tubes=max(8,round(d/.016)); pitch=d/tubes; tube=.0022
+    for i in range(tubes+1):
+        zz=-d/2+i*pitch
+        x0,x1=-w/2,w/2;y0,y1=-h/2,h/2;z0,z1=zz-tube/2,zz+tube/2
+        for q in [[(x0,y0,z0),(x1,y0,z0),(x1,y1,z0),(x0,y1,z0)],[(x0,y0,z1),(x0,y1,z1),(x1,y1,z1),(x1,y0,z1)],
+                  [(x0,y0,z0),(x0,y1,z0),(x0,y1,z1),(x0,y0,z1)],[(x1,y0,z0),(x1,y0,z1),(x1,y1,z1),(x1,y1,z0)],
+                  [(x0,y0,z0),(x0,y0,z1),(x1,y0,z1),(x1,y0,z0)],[(x0,y1,z0),(x1,y1,z0),(x1,y1,z1),(x0,y1,z1)]]:quad(q)
+        if i==tubes:continue
+        folds=max(20,round(h/.0035))
+        for k in range(folds):
+            ya=-h/2+h*k/folds;yb=-h/2+h*(k+1)/folds
+            za=zz+tube*.6+(pitch-tube*1.2)*(k%2)
+            zb=zz+tube*.6+(pitch-tube*1.2)*((k+1)%2)
+            quad([(-w/2+.001,ya,za),(w/2-.001,ya,za),(w/2-.001,yb,zb),(-w/2+.001,yb,zb)])
+    core_mesh=mesh_object(f'{name} · núcleo aletado',verts,faces)
+    core_mesh.location=W(center);core_mesh.rotation_euler=W_rot(rot)
+    set_material(core_mesh,m.alu);box_uv(core_mesh,1)
+    core_mesh['cooling_tubes']=tubes+1;core_mesh['corrugated_fins']=tubes*folds
+    parts=[ctx.register(core_mesh,f'{name} · núcleo aletado')]
     a = math.radians(tilt_deg)
     # deslocamento ao longo do eixo inclinado (para cima do núcleo): rotação de (0,1,0) por tilt em torno de Z
     up = (-math.sin(a), math.cos(a), 0)
@@ -33,8 +56,15 @@ def core(ctx, name, center, size, tilt_deg, mat_tank):
 def hose(ctx, name, pts, kind, r=.016):
     m = ctx.m
     sweep(ctx, name, pts, m.silicone_black, radius=r, sides=16, uv_len=8, carrier=True)
-    for p in (pts[0], pts[-1]):
-        torus(ctx, f'Abraçadeira · {name}', p, r + .002, .003, m.anod_blue, axis=(0, 0, 1), seg=24, mseg=6)
+    for p,near in ((pts[0],pts[1]),(pts[-1],pts[-2])):
+        axis=(Vector(p)-Vector(near)).normalized()
+        tube_cyl(ctx, f'Abraçadeira · {name}', p, r+.0018, .0012, .008, m.alu, axis=axis, verts=32)
+        sleeve=Vector(p)-axis*.012
+        tube_cyl(ctx,f'Luva de conexão · {name}',sleeve,r+.0008,.001,.020,m.anod_black,axis=axis,verts=32)
+        # Cabeça de aperto assentada na cinta, alinhada com a mangueira.
+        ref=Vector((0,1,0)) if abs(axis.y)<.9 else Vector((1,0,0))
+        radial=axis.cross(ref).normalized()
+        cyl(ctx,f'Parafuso da abraçadeira · {name}',Vector(p)+radial*(r+.004),.003,.010,m.steel,axis=axis,verts=6,bev=.0003)
     flow_ribbon(ctx, f'Fluxo · {name}', pts, kind, radius=r * .35)
 
 def build(ctx):

@@ -77,12 +77,13 @@ def tex_brushed(size=256):
 
 def tex_cast(size=256):
     rng = np.random.default_rng(3)
-    base = rng.random((size // 8, size // 8))
-    big = np.kron(base, np.ones((8, 8)))
-    fine = rng.random((size, size))
-    h = big * .6 + fine * .4
-    r = np.clip(.42 + h * .35, 0, 1)
-    return image_from_array('Fundido · rugosidade', np.stack([r, r, r, np.ones_like(r)], -1), False), image_from_array('Fundido · normal', _encode_normal(h * .35, .9), False)
+    h = rng.random((size, size))
+    # Grão arredondado e periódico: evita os quadrados de 8 px do antigo mapa.
+    for _ in range(4):
+        h = (h * 4 + sum(np.roll(h, shift, axis) for axis in (0, 1) for shift in (-1, 1))) / 8
+    h = (h - h.min()) / (h.max() - h.min())
+    r = .42 + h * .16
+    return image_from_array('Fundido · rugosidade', np.stack([r, r, r, np.ones_like(r)], -1), False), image_from_array('Fundido · normal', _encode_normal(h, .65), False)
 
 def tex_heat(size=256):
     """Gradiente de pátina térmica de Inconel ao longo de U (0 = frio, 1 = quente)."""
@@ -98,26 +99,15 @@ def tex_heat(size=256):
     return image_from_array('Inconel · pátina térmica', rgba)
 
 def tex_brake_disc(size=512, rings=14, holes_per_ring=64, inner=.42):
+    """Pista de atrito com grão e marcas concêntricas; ventilação é geometria radial."""
     y, x = np.mgrid[0:size, 0:size]
     cx = (x - size / 2) / (size / 2); cy = (y - size / 2) / (size / 2)
-    r = np.sqrt(cx * cx + cy * cy); a = np.arctan2(cy, cx)
-    disc = (r <= 1.0) & (r >= inner)
-    col = np.full((size, size), .22)
-    h = np.zeros((size, size))
-    for i in range(rings):
-        rr = inner + (1 - inner) * (i + .5) / rings
-        n = int(holes_per_ring * (.55 + .45 * i / rings))
-        phase = (i % 2) * math.pi / n
-        ang = np.round((a - phase) / (2 * math.pi / n)) * (2 * math.pi / n) + phase
-        hx = rr * np.cos(ang); hy = rr * np.sin(ang)
-        d = np.sqrt((cx - hx) ** 2 + (cy - hy) ** 2)
-        hole = d < (1 - inner) / rings * .30
-        col[hole] = .05; h[hole] = -1
-    # grooves radiais suaves
-    col += .03 * np.sin(a * 48) ** 6
-    col[~disc] = .22
+    r = np.sqrt(cx * cx + cy * cy)
+    grain = np.random.default_rng(91).random((size, size))
+    h = .1 * np.sin(r * 1100) + grain * .16
+    col = .19 + h * .22
     rgba = np.stack([col * .95, col, col * 1.02, np.ones_like(col)], -1)
-    return image_from_array('Disco carbono · furos', np.clip(rgba, 0, 1)), image_from_array('Disco carbono · normal', _encode_normal(h * .8, 1.2), False)
+    return image_from_array('Disco carbono · pista de atrito', rgba), image_from_array('Disco carbono · normal', _encode_normal(h, .45), False)
 
 def tex_fins(size=256, pitch=6):
     y, x = np.mgrid[0:size, 0:size]
@@ -311,7 +301,7 @@ class Materials:
         self.anod_orange = material('Anodizado laranja', (.85, .32, .04), .7, .3)
         self.anod_purple = material('Anodizado roxo', (.32, .08, .55), .7, .32)
         self.anod_cyan = material('Anodizado ciano', (.05, .55, .65), .7, .32)
-        self.grip = material('Empunhadura · borracha texturizada', (.03, .03, .032), 0, .9)
+        self.grip = material('Empunhadura · borracha texturizada', (.03, .03, .032), 0, .82, normal_tex=cast_n, normal_strength=.3, uv_scale=12)
         self.led_white = material('LED branco', (1, 1, .95), 0, .3, emissive=(1, 1, .9), emissive_strength=3)
         self.button_white = material('Botão branco', (.85, .85, .82), 0, .35)
         self.button_black = material('Botão preto', (.06, .06, .065), 0, .45)
@@ -337,8 +327,8 @@ class Materials:
         self.kapton = material('Manta térmica dourada', (.78, .56, .18), .85, .32, normal_tex=kapton_n, normal_strength=.9, uv_scale=12)
         self.honeycomb = material('Colmeia Nomex · núcleo', (1, 1, 1), 0, .7, base_tex=hon_c, normal_tex=hon_n, normal_strength=1.0, uv_scale=20)
         self.foam = material('Espuma antichama', (.06, .06, .07), 0, .95)
-        self.nomex = material('Tecido Nomex · azul marinho', (.06, .08, .18), 0, .85)
-        self.webbing = material('Cadarço do arnês', (.05, .08, .35), 0, .8)
+        self.nomex = material('Tecido Nomex · azul marinho', (.06, .08, .18), 0, .85, normal_tex=braid_n, normal_strength=.25, uv_scale=35)
+        self.webbing = material('Cadarço do arnês', (.05, .08, .35), 0, .8, normal_tex=braid_n, normal_strength=.3, uv_scale=40)
         self.paint_red = material('Pintura INTEIA vermelha', (.62, .03, .05), 0, .25, clearcoat=1, clearcoat_roughness=.06)
         self.paint_white = material('Pintura branca', (.9, .9, .88), 0, .3, clearcoat=.8)
         self.radiator = material('Núcleo de radiador · aletas', (1, 1, 1), 1, .55, base_tex=fins_c, normal_tex=fins_n, normal_strength=1.0, uv_scale=60)
@@ -385,6 +375,10 @@ class Context:
     def register(self, obj, part, *, spin=None, spin_axis='y', flow=None, era=None, explode=None, hide_group=None, tag=None, carrier=False, parent=None):
         """Registra uma malha como peça nomeada do sistema corrente com extras exportados.
         carrier=True marca tubos/eixos que conduzem um fluxo: o site os torna translúcidos com os fluxos ligados."""
+        # Trama em escala métrica em todos os sistemas, sem multiplicar novamente
+        # por UVs diferentes de cubos, lofts e tubos. Texturas de fluxo ficam intactas.
+        if obj.type == 'MESH' and any(m and m.name.startswith(('Carbono ·', 'Kevlar ·', 'Tecido Nomex', 'Cadarço', 'Empunhadura')) for m in obj.data.materials):
+            box_uv(obj, 1)
         self.counter += 1
         sid = self.current['system']
         obj.name = f'{sid}__{self.counter:03d}__{part}'[:63]
@@ -536,6 +530,7 @@ def tube_cyl(ctx, part, center, radius, wall, length, mat, *, axis=UP, verts=32,
         bm.faces.new((outer[j], outer[i], inner[i], inner[j]))
         bm.faces.new((top_o[i], top_o[j], top_i[j], top_i[i]))
     o = bm_to_object(part, bm)
+    box_uv(o, 1)
     o.location = W(center); orient(o, axis)
     set_material(o, mat)
     return ctx.register(o, part, **extras)
@@ -711,6 +706,46 @@ def lathe(ctx, part, profile, mat, *, center=(0, 0, 0), axis=UP, segments=40, **
     set_material(o, mat)
     return ctx.register(o, part, **extras)
 
+def ventilated_disc(ctx, part, center, inner, outer, mat, *, front=True, **extras):
+    """Anel com canais radiais abertos, pistas sólidas e furos na borda, sem booleanos."""
+    count, rows = (144, 7) if front else (120, 5)
+    half = .016; end_skin = .0017; pitch = (2*half-2*end_skin)/rows
+    verts=[]; faces=[]
+    def point(r, angle, z):
+        verts.append((r*math.cos(angle),r*math.sin(angle),z)); return len(verts)-1
+    for i in range(count):
+        mid=2*math.pi*(i+.5)/count; da=math.pi/count
+        for row in range(rows):
+            z=-half+end_skin+pitch*(row+.5)
+            border=[(-1,-1),(0,-1),(1,-1),(1,0),(1,1),(0,1),(-1,1),(-1,0)]
+            loops=[]
+            for r in (outer,inner):
+                outside=[point(r,mid+u*da,z+v*pitch*.5) for u,v in border]
+                hole=[point(r,mid+.0016/r*math.cos(-3*math.pi/4+k*math.pi/4),z+.0016*math.sin(-3*math.pi/4+k*math.pi/4)) for k in range(8)]
+                loops.append(hole)
+                for k in range(8):
+                    j=(k+1)%8; faces.append((outside[k],outside[j],hole[j],hole[k]))
+            for k in range(8):
+                j=(k+1)%8;faces.append((loops[0][k],loops[0][j],loops[1][j],loops[1][k]))
+        # Faixas sólidas nas duas pistas e bordas externas/internas da pele.
+        for sign in (-1,1):
+            z=sign*half; inside=sign*(half-end_skin)
+            for a0,a1 in [(mid-da,mid),(mid,mid+da)]:
+                faces.append(tuple(point(r,a,z) for r,a in [(inner,a0),(outer,a0),(outer,a1),(inner,a1)]))
+                for r in (inner,outer):
+                    faces.append((point(r,a0,z),point(r,a1,z),point(r,a1,inside),point(r,a0,inside)))
+    o=mesh_object(part,verts,faces)
+    bm=bmesh.new();bm.from_mesh(o.data);bmesh.ops.remove_doubles(bm,verts=bm.verts,dist=1e-6)
+    bmesh.ops.recalc_face_normals(bm,faces=bm.faces);bm.to_mesh(o.data);bm.free()
+    check=bmesh.new();check.from_mesh(o.data)
+    assert all(e.is_manifold for e in check.edges), f'Disco com borda aberta: {part}'
+    check.free()
+    shade_smooth(o,math.radians(30));box_uv(o,1/(2*outer),(.5,.5))
+    o.location=W(center);orient(o,RIGHT);set_material(o,mat)
+    o['ventilation_channels']=count*rows
+    return ctx.register(o,part,**extras)
+
+
 def helix(ctx, part, center, radius, pitch, turns, wire, mat, *, axis=UP, per_turn=28, **extras):
     pts = []
     n = int(turns * per_turn)
@@ -774,7 +809,7 @@ def gear(ctx, part, center, teeth, module, width, mat, *, axis=UP, bore=None, he
     return ctx.register(o, part, **extras)
 
 def bolt_ring(ctx, part, center, radius, count, axis, mat_head, *, size=.006, head=.004, start=0.0, **extras):
-    """Anel de parafusos de cabeça sextavada com arruela (unidos em uma única malha)."""
+    """Fixadores com arruela, chanfros e encaixe sextavado rebaixado; uma malha por anel."""
     d = Vector(axis).normalized()
     # base ortonormal no site frame
     ref = Vector((0, 1, 0)) if abs(d.y) < .9 else Vector((1, 0, 0))
@@ -783,16 +818,27 @@ def bolt_ring(ctx, part, center, radius, count, axis, mat_head, *, size=.006, he
     for i in range(count):
         a = start + 2 * math.pi * i / count
         c = Vector(center) + u * radius * math.cos(a) + v * radius * math.sin(a)
-        for r, h0, h1, sides in ((size * 1.35, 0, size * .25, 20), (size * .78, size * .25, size * .25 + head, 6)):
-            ring0 = [bm.verts.new(W(c + d * h0 + u * r * math.cos(2 * math.pi * k / sides) + v * r * math.sin(2 * math.pi * k / sides))) for k in range(sides)]
-            ring1 = [bm.verts.new(W(c + d * h1 + u * r * math.cos(2 * math.pi * k / sides) + v * r * math.sin(2 * math.pi * k / sides))) for k in range(sides)]
-            for k in range(sides):
-                k2 = (k + 1) % sides
-                bm.faces.new((ring0[k], ring0[k2], ring1[k2], ring1[k]))
-            bm.faces.new(ring1)
-            bm.faces.new(list(reversed(ring0)))
+        z = size * .23; top = z + head
+        profile = [(1.24, 0, False), (1.35, size*.08, False), (1.35, z*.7, False),
+                   (1.24, z, False), (.87, z, False), (.87, top-head*.18, False),
+                   (.74, top, False), (.42, top, True), (.36, top-head*.18, True),
+                   (.36, z+head*.30, True)]
+        rings = []
+        for r, height, hexagonal in profile:
+            ring=[]
+            for k in range(24):
+                angle=2*math.pi*k/24
+                rr=size*r*(math.cos(math.pi/6)/math.cos((angle % (math.pi/3))-math.pi/6) if hexagonal else 1)
+                ring.append(bm.verts.new(W(c+d*height+u*rr*math.cos(angle)+v*rr*math.sin(angle))))
+            rings.append(ring)
+        for ring0,ring1 in zip(rings,rings[1:]):
+            for k in range(24):
+                j=(k+1)%24; bm.faces.new((ring0[k],ring0[j],ring1[j],ring1[k]))
+        bm.faces.new(rings[-1]); bm.faces.new(list(reversed(rings[0])))
     bmesh.ops.recalc_face_normals(bm, faces=bm.faces)
     o = bm_to_object(part, bm, smooth=False)
+    box_uv(o, 1)
+    shade_smooth(o, math.radians(32))
     set_material(o, mat_head)
     return ctx.register(o, part, **extras)
 

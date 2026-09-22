@@ -22,7 +22,7 @@ def build(ctx):
     # Tubo de Pitot no nariz com mastro carenado e tomadas estáticas
     sweep(ctx, 'Mastro do Pitot', [(0, .33, 1.98), (0, .44, 1.98)], m.carbon_fine, section=lambda t: airfoil(.03, .3, 0, 10), smooth_path=False)
     cyl(ctx, 'Tubo de Pitot', (0, .445, 2.06), .005, .17, m.alu_bright, axis=FWD, verts=12)
-    cyl(ctx, 'Ponta do Pitot · tomada dinâmica', (0, .445, 2.15), .0028, .02, m.brass, axis=FWD, verts=10)
+    tube_cyl(ctx, 'Ponta do Pitot · tomada dinâmica', (0, .445, 2.15), .0028, .0006, .02, m.brass, axis=FWD, verts=24)
     for a in (0, 90, 180, 270):
         cyl(ctx, f'Tomada estática {a}°', (0.006 * math.cos(math.radians(a)), .445 + .006 * math.sin(math.radians(a)), 2.08), .001, .003, m.steel_dark, axis=(math.cos(math.radians(a)), math.sin(math.radians(a)), 0), verts=6)
     flow_ribbon(ctx, 'Pressão do Pitot → transdutor → ECU', [(0, .445, 2.06), (0, .36, 1.90), (-.10, .30, 1.40), (-.20, .26, .90), ECU], 'data', radius=.003)
@@ -42,7 +42,14 @@ def build(ctx):
     # ECU padrão, gravador de acidentes, IMU e transceptor de telemetria
     cube(ctx, 'ECU padrão · unidade de controle', ECU, (.11, .05, .24), m.alu_cast, bev=.004, uv=8)
     for k in range(3):
-        cyl(ctx, f'Conector circular da ECU {k + 1}', (ECU[0], ECU[1] + .03, ECU[2] - .08 + k * .08), .017, .014, m.plastic_grey, axis=UP, verts=18)
+        p=(ECU[0], ECU[1]+.03, ECU[2]-.08+k*.08)
+        tube_cyl(ctx,f'Conector circular da ECU {k + 1}',p,.017,.0025,.018,m.anod_black,axis=UP,verts=32)
+        cyl(ctx,f'Isolador do conector ECU {k + 1}',(p[0],p[1]-.003,p[2]),.0135,.008,m.plastic_black,axis=UP,verts=24)
+        for pin in range(7):
+            a=pin*2*math.pi/6
+            rr=.008 if pin<6 else 0
+            cyl(ctx,f'Contato do conector ECU {k + 1} · pino {pin + 1}',(p[0]+rr*math.cos(a),p[1]+.003,p[2]+rr*math.sin(a)),.0013,.009,m.brass,axis=UP,verts=8,bev=.0002)
+        torus(ctx,f'Anel de trava do conector ECU {k + 1}',(p[0],p[1]+.006,p[2]),.017,.0013,m.alu,axis=UP,seg=32,mseg=6)
     text_plate(ctx, 'Gravação da ECU', 'SECU', (ECU[0] - .056, ECU[1], ECU[2]), .014, m.alu_bright, normal=(-1, 0, 0), up=UP)
     cube(ctx, 'Gravador de dados de acidente', (.22, .22, .32), (.10, .03, .14), m.anod_red, bev=.003)
     cube(ctx, 'Unidade inercial · IMU', (0, .30, -.05), (.05, .03, .05), m.anod_black, bev=.003)

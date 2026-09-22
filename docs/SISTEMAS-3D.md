@@ -4,13 +4,23 @@ A bancada **06 Sistemas** mostra catorze conjuntos internos do carro modelados c
 
 ## Arquivos
 
+### Refinamento de fabricação — setembro de 2026
+
+Os discos têm pistas de atrito contínuas e canais radiais abertos na malha: 1.008 por disco dianteiro e 600 por traseiro nesta representação. As marcas concêntricas da pista substituem o antigo desenho de furos na face. O arranjo é original e didático; a localização radial da ventilação foi conferida na [explicação da Brembo](https://www.brembo.com/en/motorsport/formula1/ventilation-holes), sem reproduzir um projeto de fabricante.
+
+Os cinco trocadores de calor usam tubos achatados e aletas corrugadas, com vazios reais para a passagem de ar, preservando posições e circuitos. A construção toma como referência o princípio de [tubos e aletas da PWR](https://www.pwr.com.au/products/tube-fin-heat-exchangers/). Abraçadeiras acompanham a direção da mangueira e incluem luva e fixação.
+
+Os anéis de fixadores compartilhados ganharam arruelas chanfradas e encaixes sextavados rebaixados. Rótulas e olhais da suspensão têm furo passante; os conectores da ECU mostram isolador, sete contatos e anel de trava; a tomada do Pitot é oca. Carbono, Kevlar, tecidos e empunhaduras usam projeção métrica consistente, com novos relevos nos tecidos e grão de fundição suavizado.
+
+Na bancada, os fluxos começam desligados para permitir a leitura dos materiais, podendo ser ativados pelo mesmo controle. Discos frios não emitem luz vermelha. As peças sólidas projetam sombras; a carroceria fantasma deixa de bloquear a luz e recupera sua configuração ao voltar ao carro. As quatorze categorias, relações, animações e controles permanecem no mesmo contrato.
+
 | Arquivo | Função |
 | --- | --- |
 | `ferramentas/gerar_sistemas.py` | Gerador executado pelo Blender 5.2 em modo background. Monta a cena, chama os módulos, exporta o GLB, chama o otimizador e grava o manifesto. |
 | `ferramentas/sistemas/lib.py` | Biblioteca: conversão de referencial, primitivas (`cube`, `cyl`, `lathe`, `sweep`, `loft`, `gear`, `helix`, `bolt_ring`), materiais e texturas geradas por numpy (sarja 2x2, Kevlar, escovado, fundido, pátina térmica, furação dos discos, aletas, colmeia). |
 | `ferramentas/sistemas/sNN_<id>.py` | Um módulo por sistema, na ordem dos capítulos do vídeo de referência. Cada módulo expõe `SYSTEM = (id, rótulo)`, `build(ctx)` e, opcionalmente, `SHOTS` para renders de conferência. |
 | `ferramentas/otimizar_sistemas.mjs` | Empacotamento `EXT_meshopt_compression` sem perda, com deduplicação de malhas idênticas, via `@gltf-transform` e `meshoptimizer`. |
-| `web/assets/sistemas-v1.glb` | Asset publicado (cerca de 6,3 MB comprimidos; 12,7 MB brutos). |
+| `web/assets/sistemas-v1.glb` | Asset publicado (12,1 MB comprimidos; 24,0 MB brutos). |
 | `web/assets/sistemas-v1.manifest.json` | Medição do GLB publicado: peças por sistema com nome, bounds no referencial do site, extras, triângulos, materiais, hash SHA-256. |
 | `web/src/systems.js` | Carrega o GLB sob demanda, distribui os nós `system_<id>` nos grupos, anima rotores, engrenagens e fluxos, e controla a interface. |
 | `web/test-systems.mjs` | Contratos do catálogo, do GLB, do manifesto e da arquitetura didática (monoturbo dividido, refrigeração assimétrica, empacotamento célula → motor → câmbio, relações do câmbio, cabos de retenção etc.). |

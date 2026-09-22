@@ -42,8 +42,11 @@ def mirror_side(v):
     return (-v[0], v[1], v[2])
 
 def rod_end(ctx, name, p, mat, r=.011):
-    """Rótula esférica em alojamento usinado."""
-    return sphere(ctx, name, p, r, mat)
+    """Olhal abaulado com furo passante e lábios usinados para o pino."""
+    profile=[(.48*r,-.8*r),(.85*r,-.8*r),(1.15*r,-.45*r),(1.23*r,0),
+             (1.15*r,.45*r),(.85*r,.8*r),(.48*r,.8*r),(.40*r,.68*r),
+             (.40*r,-.68*r),(.48*r,-.8*r)]
+    return lathe(ctx,name,profile,mat,center=p,axis=UP,segments=32)
 
 def upright(ctx, P, front, label):
     m = ctx.m

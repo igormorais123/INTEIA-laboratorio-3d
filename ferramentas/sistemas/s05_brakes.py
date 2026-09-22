@@ -31,10 +31,8 @@ def corner(ctx, wheel, front, label):
     r_out = .164 if front else .140
     r_in = r_out - .066
     made = []
-    # Disco ventilado carbono-carbono (anel com 1.100+ furos radiais representados em textura)
-    prof = [(r_in, -.016), (r_out, -.016), (r_out, .016), (r_in, .016), (r_in, -.016)]
-    disc = lathe(ctx, f'Disco carbono-carbono {label}', prof, m.brake_disc, center=c, axis=RIGHT, segments=64, spin=1.2, tag='disc')
-    box_uv(disc, 1 / (2 * r_out), (.5, .5))
+    # Pistas contínuas e canais radiais reais: a ventilação fica na borda do disco.
+    disc = ventilated_disc(ctx, f'Disco carbono-carbono {label}', c, r_in, r_out, m.brake_disc, front=front, spin=1.2, tag='disc')
     made.append(disc)
     # Campânula (bell) em alumínio usinado com pinos de arrasto flutuantes
     bell_prof = [(.046, -.082), (.060, -.082), (.060, -.040), (r_in + .004, -.024), (r_in + .004, -.010), (r_in - .004, -.010), (r_in - .004, -.020), (.052, -.034), (.052, -.082), (.046, -.082)]
