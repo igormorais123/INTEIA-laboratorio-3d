@@ -14,7 +14,9 @@
     "test": "node test-systems.mjs && node test-spares.mjs && node test-mechanics.mjs && node test-aerodynamics.mjs && node test-power-unit.mjs && node test-v12.mjs && node test-driver-model.mjs && node test-tuning.mjs && node test-rpm-curve.mjs && node test-sound-player.mjs && node test-sound-bank.mjs && node test-engine-voice.mjs && node test-curve-editor.mjs && node test-sound-studio.mjs"
   },
   "dependencies": {
-    "three": "0.180.0"
+    "three": "0.180.0",
+    "three-gpu-pathtracer": "^0.0.24",
+    "three-mesh-bvh": "^0.9.15"
   },
   "devDependencies": {
     "esbuild": "0.25.10"
