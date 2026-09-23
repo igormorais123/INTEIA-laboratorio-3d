@@ -4,6 +4,7 @@
 import * as THREE from 'three';
 import {GLTFLoader} from 'three/addons/loaders/GLTFLoader.js';
 import {poseV12} from './v12-kinematics.mjs';
+import {fetchBakedOcclusion, tryAttachBakedOcclusion, patchBakedOcclusion} from '../baked-ao.js';
 
 const ASSET = './assets/v12-v1.glb';
 const MANIFEST = './assets/v12-v1.manifest.json';
@@ -26,13 +27,15 @@ export function createV12View({onStatus = () => {}} = {}) {
     if (loading) return loading;
     setState('loading');
     loading = (async () => {
-      const [gltf, data] = await Promise.all([
+      const [gltf, data, bakedAO] = await Promise.all([
         new GLTFLoader().loadAsync(ASSET),
         fetch(MANIFEST).then((r) => { if (!r.ok) throw new Error(`manifesto ${r.status}`); return r.json(); }),
+        fetchBakedOcclusion(ASSET),
       ]);
       if (disposed) return;
       manifest = data;
       const scene = gltf.scene;
+      tryAttachBakedOcclusion(scene, bakedAO);
       const map = new Map();
       scene.traverse((o) => {
         if (o.name) map.set(o.name, o);
@@ -55,6 +58,8 @@ export function createV12View({onStatus = () => {}} = {}) {
         };
         o.material = Array.isArray(o.material) ? o.material.map(seccionar) : seccionar(o.material);
       });
+      // Depois das cópias de corte: todas recebem a oclusão assada no Cycles.
+      patchBakedOcclusion(scene);
       // Apoia o motor no piso do box e o centra na origem.
       poseV12(nodes, manifest, 0);
       scene.updateMatrixWorld(true);

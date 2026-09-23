@@ -97,29 +97,61 @@ function rimShader(material) {
   material.needsUpdate = true;
 }
 
-function tyreShader(material) {
+// Sidewall lettering, one repeat per half turn: white glyphs on black, read as raised rubber in the shader.
+function letteringTexture() {
+  const canvas = document.createElement('canvas');
+  canvas.width = 2048; canvas.height = 128;
+  const g = canvas.getContext('2d');
+  g.fillStyle = '#000'; g.fillRect(0, 0, canvas.width, canvas.height);
+  g.fillStyle = '#fff'; g.textAlign = 'center'; g.textBaseline = 'middle';
+  g.font = '800 104px "Arial Black", Arial, sans-serif';
+  g.fillText('INTEIA', canvas.width * .5, canvas.height * .54, canvas.width * .34);
+  g.font = '700 46px Arial, sans-serif';
+  for (const x of [.14, .86]) g.fillText('SLICK 18', canvas.width * x, canvas.height * .52, canvas.width * .16);
+  const texture = new THREE.CanvasTexture(canvas);
+  texture.colorSpace = THREE.NoColorSpace;
+  texture.wrapS = THREE.RepeatWrapping;
+  texture.anisotropy = 8;
+  return texture;
+}
+
+function tyreShader(material, lettering) {
   material.onBeforeCompile = shader => {
     localVaryings(shader, 'Tyre');
-    shader.fragmentShader = shader.fragmentShader.replace('#include <metalnessmap_fragment>', `#include <metalnessmap_fragment>
+    shader.uniforms.tTyreLetters = {value: lettering};
+    shader.fragmentShader = shader.fragmentShader
+      .replace('#include <common>', '#include <common>\nuniform sampler2D tTyreLetters;')
+      .replace('#include <metalnessmap_fragment>', `#include <metalnessmap_fragment>
 {
   float rr = length(vTyreP.yz);
   float nx = abs(normalize(vTyreN).x);
   float grain = roughnessFactor / max(roughness, 1e-3);
   float side = smoothstep(.55, .85, nx);
+  float tread = 1. - smoothstep(.18, .45, nx);
   float shoulder = smoothstep(.12, .4, nx) * (1. - smoothstep(.6, .85, nx));
   float fw = max(fwidth(rr), 1e-5);
+  float ang = atan(vTyreP.z, vTyreP.y);
   // Front faces only: the inside of the carcass shows through the rim windows.
   float stripe = side * float(gl_FrontFacing) * (smoothstep(.2765 - fw, .2765 + fw, rr) - smoothstep(.2885 - fw, .2885 + fw, rr));
   if (!gl_FrontFacing) diffuseColor.rgb *= .35;
   float bead = side * (1. - smoothstep(.246, .256, rr));
+  // Raised lettering between the compound band and the shoulder; mirrored per side so it reads outward.
+  float lv = (rr - .292) / .034;
+  float lu = fract(ang / 3.14159265 * (vTyreN.x > 0. ? -1. : 1.));
+  float letter = side * float(gl_FrontFacing) * step(0., lv) * step(lv, 1.) * texture2D(tTyreLetters, vec2(lu, lv)).r;
+  // Tread after running: fine circumferential streaks of scrubbed rubber, lighter and fully matte.
+  float streak = fract(sin(floor(vTyreP.x * 900.) * 12.9898) * 43758.5453);
+  float scrub = tread * (.55 + .45 * streak);
   roughnessFactor = mix(.86, .6, side) * grain;
-  roughnessFactor = mix(roughnessFactor, .95, shoulder * .7);
-  diffuseColor.rgb *= 1. + shoulder * .45 - bead * .3;
+  roughnessFactor = mix(roughnessFactor, .95, max(shoulder * .7, scrub));
+  diffuseColor.rgb *= 1. + shoulder * .45 - bead * .3 + scrub * .55;
+  diffuseColor.rgb = mix(diffuseColor.rgb, vec3(.27, .27, .28), letter * .9);
+  roughnessFactor = mix(roughnessFactor, .5, letter);
   diffuseColor.rgb = mix(diffuseColor.rgb, vec3(1., .66, .03), stripe);
   roughnessFactor = mix(roughnessFactor, .42, stripe);
 }`);
   };
-  material.customProgramCacheKey = () => 'car-look-tyre-v1';
+  material.customProgramCacheKey = () => 'car-look-tyre-v2';
   material.needsUpdate = true;
 }
 
@@ -251,7 +283,9 @@ export function enhanceCar({model, mechanics, mobile}) {
     return source.__carLook;
   };
   const rimSetup = m => { m.map = null; m.clearcoat = .35; m.clearcoatRoughness = .12; m.envMapIntensity = 1.3; rimShader(m); };
-  const tyreSetup = m => { m.color.set('#151618'); m.bumpScale = .0003; m.sheen = .18; m.sheenColor.set('#34383d'); m.sheenRoughness = .55; m.envMapIntensity = .8; tyreShader(m); };
+  // Rubber albedo near 0.03 linear: darker read as a black hole with no shading under the box lights.
+  const lettering = letteringTexture();
+  const tyreSetup = m => { m.color.set('#2a2b2e'); m.bumpScale = .0003; m.sheen = .18; m.sheenColor.set('#34383d'); m.sheenRoughness = .55; m.envMapIntensity = .8; tyreShader(m, lettering); };
   // Wheel hardware (centre nut, bolt liners) as machined titanium: the body steel's
   // tiled normal map sparkles at this scale.
   const nutSetup = m => { m.normalMap = m.roughnessMap = m.bumpMap = null; m.anisotropy = 0; m.color.set('#b9bcc0'); m.metalness = 1; m.roughness = .3; m.envMapIntensity = 1.1; };

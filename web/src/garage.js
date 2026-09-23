@@ -19,12 +19,14 @@ export function createGarage({scene,renderer,studio,camera,mechanics,environment
  const epoxy=mat('#707c83',0,.36);epoxy.roughnessMap=grain(12,16);epoxy.bumpMap=epoxy.roughnessMap;epoxy.bumpScale=.0012;
  const benchFinish=mat('#9da8ae',1,.25);benchFinish.roughnessMap=grain(1,64);
  // Seamless epoxy working floor and flush inspection plates.
+ // Chapas de aço escovado: espelho polido estourava as luminárias e apagava a sombra das rodas.
+ const plate=mat('#7a8187',.55,.62);plate.roughnessMap=grain(2,24);
  box(11,.10,15,0,-.068,0,epoxy);
  box(3.4,.012,7.6,0,-.007,0,mat('#414b53',.12,.4));
  for(const x of [-1.77,1.77])box(.035,.003,8.2,x,.003,0,red);
  for(const z of [-4.1,4.1])box(3.58,.003,.035,0,.003,z,red);
  for(const x of [-1.05,1.05])for(const z of [-1.65,1.65]){
-  box(.72,.006,.80,x,-.001,z,steel);for(const dx of [-.28,.28])for(const dz of [-.32,.32]){const screw=cylinder(.014,.014,.004,x+dx,.004,z+dz,black);}
+  box(.72,.006,.80,x,-.001,z,plate);for(const dx of [-.28,.28])for(const dz of [-.32,.32]){const screw=cylinder(.014,.014,.004,x+dx,.004,z+dz,black);}
  }
  // Expansion joints outside the vehicle envelope.
  for(const x of [-3.25,3.25])box(.008,.002,14,x,-.016,0,charcoal);

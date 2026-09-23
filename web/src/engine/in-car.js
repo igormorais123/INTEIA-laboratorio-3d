@@ -2,6 +2,7 @@ import * as THREE from 'three';
 import {GLTFLoader} from 'three/addons/loaders/GLTFLoader.js';
 import {MeshoptDecoder} from 'three/addons/libs/meshopt_decoder.module.js';
 import {engineShot} from './engine-shot.js';
+import {fetchBakedOcclusion,tryAttachBakedOcclusion,patchBakedOcclusion} from '../baked-ao.js';
 
 // Engine bay in the car model frame (tools/car-hull.json): from behind the cockpit rim to the tail,
 // above the sidepod lip. The body shell is one mesh, so the cover is the same geometry split by planes.
@@ -153,16 +154,20 @@ export function createInCarEngine({scene,renderer,camera,model,mechanics,target,
  }
  async function load(){
   abort=new AbortController();
+  const bakedAO=fetchBakedOcclusion(`./assets/power-unit-v1.glb`,abort.signal);
   const response=await fetch(`./assets/power-unit-v1.glb`,{signal:abort.signal});
   if(!response.ok)throw new Error('Motor HTTP '+response.status);
   const bytes=await response.arrayBuffer();
   await MeshoptDecoder.ready;
   if(abort.signal.aborted)throw aborted();
   const gltf=await new GLTFLoader().setMeshoptDecoder(MeshoptDecoder).parseAsync(bytes,`./assets/`);
+  tryAttachBakedOcclusion(gltf.scene,await bakedAO);
   collect(gltf.scene);
   if(disposed||abort.signal.aborted){releaseEngine();throw aborted();}
   // From here the work is local (no network) and finishes even if reading mode is chosen meanwhile.
   buildEngine(gltf);
+  // Depois das cópias de corte e acetinadas: todas herdam a oclusão assada no Cycles.
+  patchBakedOcclusion(gltf.scene);
   await precompile();
   if(disposed)return;
   await upload();

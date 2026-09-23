@@ -5,6 +5,7 @@ import {createInCarEngine} from './engine/in-car.js';
 import {enhanceCar} from './car-look.js';
 import {createSurfaceLibrary} from './surface-library.js';
 import {loadCyclesFinish} from './cycles-finish.js';
+import {attachBakedOcclusion,patchBakedOcclusion,addContactShadow} from './baked-ao.js';
 import {createSennaDriver} from './senna-driver.js';
 import {applyInteiaBranding} from './branding.js';
 import {brandSVG} from './identity.js';
@@ -79,13 +80,17 @@ function assemblyTo(v){if(engineOpen){autoFit=true;currentView="hero";}closeEngi
 const raw=Uint8Array.from(atob($('#model-data').textContent.trim()),c=>c.charCodeAt(0));
 new GLTFLoader().setMeshoptDecoder(MeshoptDecoder).parse(raw.buffer,'',async g=>{
  try{
- model=g.scene;const box=new THREE.Box3().setFromObject(model),center=box.getCenter(new THREE.Vector3()),size=box.getSize(new THREE.Vector3());model.position.set(-center.x,-box.min.y,-center.z);scene.add(model);span=Math.max(size.x,size.z);focus.set(0,size.y*.43,0);model.updateMatrixWorld(true);
- materials=applyCarMaterials(THREE,model);mechanics=createMechanics(model);await applyInteiaBranding(model,mechanics);
+ model=g.scene;
+ // Oclusão assada no Cycles: anexada antes de qualquer malha nova entrar no modelo.
+ let bakedAO=null;try{bakedAO=Uint8Array.from(atob($('#model-ao').textContent.trim()),c=>c.charCodeAt(0)).buffer;attachBakedOcclusion(model,bakedAO);}catch(e){bakedAO=null;console.warn(e);}
+ const box=new THREE.Box3().setFromObject(model),center=box.getCenter(new THREE.Vector3()),size=box.getSize(new THREE.Vector3());model.position.set(-center.x,-box.min.y,-center.z);scene.add(model);span=Math.max(size.x,size.z);focus.set(0,size.y*.43,0);model.updateMatrixWorld(true);
+ materials=applyCarMaterials(THREE,model);mechanics=createMechanics(model);if(bakedAO)addContactShadow(model,bakedAO,{mechanics}).catch(e=>console.warn(e));await applyInteiaBranding(model,mechanics);
  const surfaces=createSurfaceLibrary(THREE,{renderer,mobile:innerWidth<700});
  for(const m of materials.materials){const n=m.name.toLowerCase();const kind=n.startsWith('pintura')?'paint':n.includes('carbon')?'carbon':['pneus','borracha'].includes(n)?'rubber':n==='aço'?'aluminum':null;if(kind)surfaces.applyTo(m,kind,{uvSpanMeters:n==='pneus'?.65:1});}
  carLook=enhanceCar({model,mechanics,mobile:innerWidth<700});driver=createSennaDriver(model,mechanics);
  const cyclesFinish=await loadCyclesFinish({renderer,model,mobile:innerWidth<700});
  scene.environment=cyclesFinish.environment.texture;
+ patchBakedOcclusion(model);
  setupCustomization(materials,studio,renderer,scene);
  for(const [id,name] of [['body','pintura'],['wings','pintura'],['wheels','rodas'],['carbon','carbon']]){const m=materials.materials.find(m=>m.name.toLowerCase().includes(name));if(m){$('#color-'+id).value='#'+m.color.getHexString();$('#value-'+id).textContent=('#'+m.color.getHexString()).toUpperCase();}}
  engine=createInCarEngine({scene,renderer,camera,model,mechanics,target:()=>composer.readBuffer,mobile:innerWidth<700});
