@@ -32,7 +32,8 @@ const worklet = esbuild.buildSync({
 
 const template = fs.readFileSync(source('src', 'template-v2.html'), 'utf8');
 const model = fs.readFileSync(source('assets', 'carro-aula-v2.glb')).toString('base64');
-const withModel = replaceRequired(template, '__MODEL__', model);
+const modelAO = fs.readFileSync(source('assets', 'carro-aula-v2.ao.bin')).toString('base64');
+const withModel = replaceRequired(replaceRequired(template, '__MODEL_AO__', modelAO), '__MODEL__', model);
 const withWorklet = replaceRequired(withModel, '__SOUND_WORKLET__', worklet.replace(/<\/script/gi, '<\\/script'));
 const html = replaceRequired(withWorklet, '__APP__', bundle.replace(/<\/script/gi, '<\\/script'));
 

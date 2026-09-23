@@ -2,6 +2,7 @@ import * as THREE from 'three';
 import {describePart} from './parts-info.js';
 import {GLTFLoader} from 'three/addons/loaders/GLTFLoader.js';
 import {MeshoptDecoder} from 'three/addons/libs/meshopt_decoder.module.js';
+import {fetchBakedOcclusion,tryAttachBakedOcclusion,patchBakedOcclusion} from './baked-ao.js';
 
 // Catálogo dos 14 sistemas na ordem dos capítulos do vídeo de referência (Animagraffs, 2021).
 // A geometria vem de web/assets/sistemas-v1.glb, gerada por ferramentas/gerar_sistemas.py (Blender 5.2):
@@ -113,10 +114,13 @@ export function createSystems({scene,model,mechanics,engine,driver,garage,camera
   if(loadPromise)return loadPromise;
   state='loading';setStatus('Carregando os sistemas em 3D…');
   loadPromise=(async()=>{
+   const bakedAO=fetchBakedOcclusion(assetUrl);
    const response=await fetch(assetUrl);if(!response.ok)throw new Error('Sistemas HTTP '+response.status);
    const bytes=await response.arrayBuffer();await MeshoptDecoder.ready;
    const gltf=await new GLTFLoader().setMeshoptDecoder(MeshoptDecoder).parseAsync(bytes,assetUrl.replace(/[^/]+$/,''));
    if(disposed)return;
+   // Oclusão assada no Cycles, na ordem de malhas do GLB: antes de distribuir as peças pelos grupos.
+   tryAttachBakedOcclusion(gltf.scene,await bakedAO);patchBakedOcclusion(gltf.scene);
    distribute(gltf);state='ready';setStatus('');
    if(enabled){show(active,false);}
   })().catch(error=>{console.error(error);state='failed';setStatus('Não foi possível carregar os sistemas. Recarregue a página para tentar novamente.');});
